@@ -1,0 +1,121 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import QuizPlayer from "../../components/QuizPlayer";
+import { allQuizzes } from "../../data/quizzes";
+
+// SSG: generate all quiz pages at build time
+export function getStaticPaths() {
+  return allQuizzes.map((quiz) => ({
+    params: { slug: quiz.slug },
+    props: { quiz },
+  }));
+}
+
+const { quiz } = Astro.props;
+---
+
+<Layout
+  title={`${quiz.title} - Quiz`}
+  description={quiz.description}
+  ogImage={quiz.coverImage}
+>
+  <main class="max-w-4xl mx-auto px-4">
+    {/* Interactive quiz - replaces the static content when JS loads */}
+    <div id="quiz-app">
+      <QuizPlayer quiz={quiz} client:load />
+    </div>
+
+    {/* Static content visible to everyone (Google + users) */}
+    {/* Hidden by JS once the quiz app hydrates */}
+    <section id="quiz-static-content" class="py-8 space-y-6">
+      <div class="text-center space-y-3 mb-8">
+        <span class="inline-block text-violet-600 font-semibold text-sm tracking-wide uppercase">{quiz.category}</span>
+        <h1 class="font-bold text-3xl md:text-4xl text-gray-900 leading-tight">{quiz.title}</h1>
+        <p class="text-gray-600 text-base max-w-xl mx-auto">{quiz.description}</p>
+        <div class="flex items-center justify-center gap-4 text-sm text-gray-500">
+          <span>{quiz.difficulty}</span>
+          <span>•</span>
+          <span>{quiz.questions.length} questions</span>
+        </div>
+      </div>
+
+      {quiz.questions.map((q: any, i: number) => (
+        <article class="bg-white rounded-2xl p-5 md:p-6 shadow-sm border border-gray-100">
+          <h2 class="text-lg font-semibold text-gray-900 mb-3">
+            <span class="text-violet-500 font-bold mr-2">Q{i + 1}.</span>
+            {q.question}
+          </h2>
+          {q.image && (
+            <img
+              src={q.image}
+              alt={q.question}
+              class="rounded-xl mb-4 w-full max-w-md object-cover aspect-video"
+              loading="lazy"
+            />
+          )}
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-3">
+            {q.answers.map((a: any, j: number) => (
+              <li class={`p-3 rounded-xl text-sm font-medium ${
+                a.id === q.correctAnswer
+                  ? 'bg-green-50 text-green-800 border border-green-200'
+                  : 'bg-gray-50 text-gray-700 border border-gray-100'
+              }`}>
+                <span class="font-bold mr-1.5">{String.fromCharCode(65 + j)}.</span>
+                {a.text}
+                {a.id === q.correctAnswer ? ' ✓' : ''}
+              </li>
+            ))}
+          </ul>
+          {q.explanation && (
+            <p class="text-sm text-gray-500 italic">{q.explanation}</p>
+          )}
+        </article>
+      ))}
+    </section>
+  </main>
+
+  {/* Hide static content once quiz JS is loaded */}
+  <script>
+    // When the quiz React component hydrates, hide the static fallback
+    const observer = new MutationObserver(() => {
+      const quizApp = document.getElementById('quiz-app');
+      const staticContent = document.getElementById('quiz-static-content');
+      if (quizApp && quizApp.querySelector('button') && staticContent) {
+        staticContent.style.display = 'none';
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  </script>
+
+  <!-- Structured data for SEO -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      name: quiz.title,
+      description: quiz.description,
+      educationalLevel: quiz.difficulty,
+      about: {
+        "@type": "Thing",
+        name: quiz.category,
+      },
+      hasPart: quiz.questions.map((q: any, i: number) => ({
+        "@type": "Question",
+        position: i + 1,
+        text: q.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: q.answers.find((a: any) => a.id === q.correctAnswer)?.text,
+        },
+        suggestedAnswer: q.answers
+          .filter((a: any) => a.id !== q.correctAnswer)
+          .map((a: any) => ({
+            "@type": "Answer",
+            text: a.text,
+          })),
+      })),
+    })}
+  />
+</Layout>
