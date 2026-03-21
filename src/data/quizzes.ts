@@ -1,5 +1,10 @@
 import type { QuizData } from "./types";
 import { sampleQuiz } from "./sample-quiz";
+import { quizDrapeaux, quizDepartementsFrancais, quizPaysEurope } from "./quiz-geographie";
+import { quizDisney, quizHarryPotter, quizOnePiece, quizNaruto, quizAnime } from "./quiz-cinema";
+import { quizPokemon, quizBrawlStars, quizGamer } from "./quiz-jeux-video";
+import { quizIslam, quizAnimaux, quizLogos, quizAnglais, quizBrevetHistoire, quizAmitie } from "./quiz-autres";
+import { quizFootball } from "./quiz-football";
 
 // Re-export the original quiz with extra metadata
 const sportCultureGenerale: QuizData = {
@@ -1090,6 +1095,7 @@ const ordreSport: QuizData = {
 
 // All quizzes exported
 export const allQuizzes: QuizData[] = [
+  // Sport
   sportCultureGenerale,
   footballLegendes,
   joQuizFacile,
@@ -1102,6 +1108,33 @@ export const allQuizzes: QuizData[] = [
   estimationSport,
   duelSport,
   ordreSport,
+  // Géographie
+  quizDrapeaux,
+  quizDepartementsFrancais,
+  quizPaysEurope,
+  // Cinéma
+  quizDisney,
+  quizHarryPotter,
+  quizOnePiece,
+  quizNaruto,
+  quizAnime,
+  // Jeux Vidéo
+  quizPokemon,
+  quizBrawlStars,
+  quizGamer,
+  // Culture Générale
+  quizIslam,
+  // Animaux & Nature
+  quizAnimaux,
+  // Logos & Marques
+  quizLogos,
+  // Scolaire
+  quizAnglais,
+  quizBrevetHistoire,
+  // Amour & Amitié
+  quizAmitie,
+  // Football
+  quizFootball,
 ];
 
 // Get quizzes by category
@@ -1113,6 +1146,29 @@ export const getQuizzesByCategory = (categorySlug: string): QuizData[] => {
     sciences: "Sciences",
     musique: "Musique",
     geographie: "Géographie",
+    "culture-generale": "Culture Générale",
+    "jeux-video": "Jeux Vidéo",
+    animaux: "Animaux & Nature",
+    logos: "Logos & Marques",
+    scolaire: "Scolaire",
+    amour: "Amour & Amitié",
+    // New specific categories
+    drapeaux: "Drapeaux",
+    disney: "Disney",
+    islam: "Islam",
+    "departements-francais": "Départements français",
+    "one-piece": "One Piece",
+    "harry-potter": "Harry Potter",
+    football: "Football",
+    pokemon: "Pokémon",
+    anglais: "Anglais",
+    naruto: "Naruto",
+    gamer: "Gamer",
+    "brevet-histoire": "Brevet Histoire",
+    "pays-europe": "Pays d'Europe",
+    "brawl-stars": "Brawl Stars",
+    anime: "Anime & Manga",
+    amitie: "Amitié",
   };
   const categoryName = categoryMap[categorySlug] || categorySlug;
   return allQuizzes.filter((q) => q.category === categoryName);

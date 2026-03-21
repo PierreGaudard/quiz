@@ -344,7 +344,7 @@ export default function QuizPlayer({ quiz }: Props) {
 
   const resultTotal = isChrono ? chronoQuestionIndex + (hasAnswered ? 1 : 0) : quiz.questions.length;
   const scorePercent = resultTotal > 0 ? Math.round((score / resultTotal) * 100) : 0;
-  const scoreEmoji = scorePercent >= 80 ? "🏆" : scorePercent >= 50 ? "👏" : "💪";
+  const scoreEmoji = scorePercent >= 80 ? "" : scorePercent >= 50 ? "" : "";
   const scoreMessage =
     isChrono
       ? `${score} bonnes réponses en ${CHRONO_DURATION} secondes !`
@@ -390,22 +390,22 @@ export default function QuizPlayer({ quiz }: Props) {
             <p className="text-text-secondary text-sm leading-relaxed">{quiz.description}</p>
             <div className="flex items-center justify-center gap-5 text-xs text-text-secondary pt-1">
               <span>{totalQuestions} questions</span>
-              <span>⚡ Jusqu'à {(BASE_XP + SPEED_BONUS_MAX) * totalQuestions} XP</span>
+              <span>Jusqu'a {(BASE_XP + SPEED_BONUS_MAX) * totalQuestions} XP</span>
               {quiz.gameType && (
                 <span className="font-semibold text-primary">{
-                  quiz.gameType === "chrono" ? "⏱️ 30 secondes"
-                  : quiz.gameType === "vrai-faux" ? "✅ Vrai ou Faux"
-                  : quiz.gameType === "estimation" ? "🎯 Estimation"
-                  : quiz.gameType === "duel" ? "⚔️ Duel"
-                  : quiz.gameType === "ordre" ? "📅 Ordre chrono"
-                  : "❓ QCM"
+                  quiz.gameType === "chrono" ? "30 secondes"
+                  : quiz.gameType === "vrai-faux" ? "Vrai ou Faux"
+                  : quiz.gameType === "estimation" ? "Estimation"
+                  : quiz.gameType === "duel" ? "Duel"
+                  : quiz.gameType === "ordre" ? "Ordre chrono"
+                  : "QCM"
                 }</span>
               )}
             </div>
             <div className="flex items-center justify-center gap-2 pt-1">
-              <span className="px-3 py-1.5 bg-emerald-500 rounded-xl text-xs font-bold text-white shadow-sm">🎯 50/50</span>
-              <span className="px-3 py-1.5 bg-fuchsia-500 rounded-xl text-xs font-bold text-white shadow-sm">🔄 2e chance</span>
-              <span className="px-3 py-1.5 bg-cyan-500 rounded-xl text-xs font-bold text-white shadow-sm">💡 Indice</span>
+              <span className="px-3 py-1.5 bg-emerald-500 rounded-xl text-xs font-bold text-white shadow-sm">50/50</span>
+              <span className="px-3 py-1.5 bg-fuchsia-500 rounded-xl text-xs font-bold text-white shadow-sm">2e chance</span>
+              <span className="px-3 py-1.5 bg-cyan-500 rounded-xl text-xs font-bold text-white shadow-sm">Indice</span>
             </div>
             <button
               onClick={handleStart}
@@ -428,11 +428,11 @@ export default function QuizPlayer({ quiz }: Props) {
     const wrongCount = resultTotal - correctCount;
     const xpPerQuestion = totalQuestions > 0 ? Math.round(totalXp / Math.max(correctCount, 1)) : 0;
 
-    const rank = scorePercent >= 90 ? { label: "Légende", color: "bg-amber-500", icon: "👑" }
-      : scorePercent >= 70 ? { label: "Expert", color: "bg-violet-500", icon: "🔥" }
-      : scorePercent >= 50 ? { label: "Confirmé", color: "bg-blue-500", icon: "⭐" }
-      : scorePercent >= 30 ? { label: "Apprenti", color: "bg-green-500", icon: "🌱" }
-      : { label: "Débutant", color: "bg-gray-500", icon: "📚" };
+    const rank = scorePercent >= 90 ? { label: "Legende", color: "bg-amber-500", icon: "S" }
+      : scorePercent >= 70 ? { label: "Expert", color: "bg-violet-500", icon: "A" }
+      : scorePercent >= 50 ? { label: "Confirme", color: "bg-blue-500", icon: "B" }
+      : scorePercent >= 30 ? { label: "Apprenti", color: "bg-green-500", icon: "C" }
+      : { label: "Debutant", color: "bg-gray-500", icon: "D" };
 
     const shareText = `${rank.icon} ${rank.label} — ${score}/${totalQuestions} (${totalXp} XP) au quiz "${quiz.title}" !`;
     const shareUrl = typeof window !== "undefined" ? window.location.href : "";
@@ -707,7 +707,7 @@ export default function QuizPlayer({ quiz }: Props) {
                     <span className="text-text-secondary">{currentIndex + (hasAnswered ? 1 : 0)}</span>
                   </div>
                   <div className="relative flex items-center gap-1 text-xs font-semibold text-amber-600">
-                    <span>⚡ {totalXp} XP</span>
+                    <span>{totalXp} XP</span>
                     {showXpPop && (
                       <span className="absolute -top-4 left-1/2 -translate-x-1/2 text-xs font-bold text-green-500 animate-score-reveal">+{lastXpGain}</span>
                     )}
@@ -741,7 +741,7 @@ export default function QuizPlayer({ quiz }: Props) {
           {/* Hint */}
           {showHint && question.hint && (
             <div className="mb-3 p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-800 animate-slide-up">
-              <span className="font-semibold">💡 Indice :</span> {question.hint}
+              <span className="font-semibold">Indice :</span> {question.hint}
             </div>
           )}
 
@@ -785,7 +785,7 @@ export default function QuizPlayer({ quiz }: Props) {
                       disabled={hasAnswered}
                       className={`flex flex-col items-center justify-center py-6 rounded-2xl border-2 transition-all duration-200 ${classes}`}
                     >
-                      <span className="text-4xl mb-2">{isVrai ? "✅" : "❌"}</span>
+                      <span className="text-4xl mb-2">{isVrai ? "V" : "F"}</span>
                       <span className="font-display text-xl font-bold">{answer.text}</span>
                     </button>
                   );
@@ -801,7 +801,7 @@ export default function QuizPlayer({ quiz }: Props) {
                 {/* VS lightning badge */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                   <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-orange-500 text-white rounded-full flex items-center justify-center font-display font-black text-base shadow-xl border-3 border-white">
-                    <span className="drop-shadow-lg">⚡</span>
+                    <span className="drop-shadow-lg">VS</span>
                   </div>
                 </div>
                 {question.answers.map((answer, i) => {
@@ -864,7 +864,7 @@ export default function QuizPlayer({ quiz }: Props) {
 
               {estimationDone ? (
                 <div className="text-center space-y-3 py-4">
-                  <div className="text-5xl animate-confetti-pop">🎉</div>
+                  <div className="text-5xl animate-confetti-pop font-bold text-green-500">!</div>
                   <div className="font-display text-2xl font-bold text-green-600">Trouvé !</div>
                   <div className="text-lg text-text-secondary">
                     La réponse était <span className="font-bold text-text-primary">{question.correctValue?.toLocaleString("fr-FR")}</span>
@@ -893,7 +893,7 @@ export default function QuizPlayer({ quiz }: Props) {
                     <div className={`text-center py-3 rounded-xl font-display text-lg font-bold animate-slide-up ${
                       estimationFeedback === "higher" ? "bg-blue-50 text-blue-600" : "bg-orange-50 text-orange-600"
                     }`}>
-                      {estimationFeedback === "higher" ? "⬆️ C'est plus haut !" : "⬇️ C'est plus bas !"}
+                      {estimationFeedback === "higher" ? "C'est plus haut !" : "C'est plus bas !"}
                     </div>
                   )}
                   {/* Input */}
@@ -1045,7 +1045,7 @@ export default function QuizPlayer({ quiz }: Props) {
               ) : (
                 <div className="space-y-2">
                   <div className={`text-center py-2 rounded-xl font-bold ${ordreCorrect ? "bg-green-50 text-green-700" : "bg-red-50 text-red-700"}`}>
-                    {ordreCorrect ? "🎉 Parfait ! Bon ordre !" : "❌ Pas dans le bon ordre"}
+                    {ordreCorrect ? "Parfait ! Bon ordre !" : "Pas dans le bon ordre"}
                   </div>
                   {!ordreCorrect && question.correctOrder && (
                     <div className="text-xs text-text-secondary p-3 bg-gray-50 rounded-xl">
@@ -1157,7 +1157,7 @@ export default function QuizPlayer({ quiz }: Props) {
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                     : "bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-200 hover:shadow-lg"
                 }`}>
-                <span className="text-lg">🎯</span> 50/50
+                50/50
               </button>
               <button onClick={handleSecondChance} disabled={bonusUsed["second-chance"]}
                 className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer hover:-translate-y-0.5 ${
@@ -1167,7 +1167,7 @@ export default function QuizPlayer({ quiz }: Props) {
                       ? "bg-fuchsia-600 text-white shadow-lg shadow-fuchsia-300 ring-2 ring-fuchsia-300"
                       : "bg-fuchsia-500 hover:bg-fuchsia-600 text-white shadow-md shadow-fuchsia-200 hover:shadow-lg"
                 }`}>
-                <span className="text-lg">🔄</span> 2e chance
+                2e chance
               </button>
               <button onClick={handleHint} disabled={bonusUsed.hint}
                 className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer hover:-translate-y-0.5 ${
@@ -1175,7 +1175,7 @@ export default function QuizPlayer({ quiz }: Props) {
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                     : "bg-cyan-500 hover:bg-cyan-600 text-white shadow-md shadow-cyan-200 hover:shadow-lg"
                 }`}>
-                <span className="text-lg">💡</span> Indice
+                Indice
               </button>
             </div>
           )}
@@ -1185,7 +1185,7 @@ export default function QuizPlayer({ quiz }: Props) {
             <div className="mt-3 space-y-2.5 animate-slide-up">
               {timedOut && (
                 <div className="p-3 rounded-xl text-xs leading-relaxed bg-red-50 text-red-800">
-                  <span className="font-semibold">⏰ Temps écoulé ! </span>{question.explanation}
+                  <span className="font-semibold">Temps ecoul\u00e9 ! </span>{question.explanation}
                 </div>
               )}
               {!timedOut && question.explanation && (
@@ -1196,7 +1196,7 @@ export default function QuizPlayer({ quiz }: Props) {
               )}
               {isCorrect && (
                 <div className="text-xs font-semibold text-amber-600 animate-confetti-pop">
-                  ⚡ +{lastXpGain} XP {lastXpGain > 150 ? "— Rapide !" : ""}
+                  +{lastXpGain} XP {lastXpGain > 150 ? "-- Rapide !" : ""}
                 </div>
               )}
               <button

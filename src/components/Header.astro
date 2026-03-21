@@ -2,21 +2,21 @@
 const currentPath = Astro.url.pathname;
 
 const megaCategories = [
-  { label: "Culture Générale", icon: "📚", href: "/categorie/culture-generale", color: "bg-yellow-500", tags: ["Quiz culture G", "Facile", "Difficile", "Miss France", "Gratuit"], topVol: "37 400" },
-  { label: "Cinéma & Séries", icon: "🎬", href: "/categorie/cinema", color: "bg-pink-500", tags: ["Harry Potter", "Disney", "Marvel", "Star Wars", "One Piece"], topVol: "7 100" },
-  { label: "Géographie", icon: "🌍", href: "/categorie/geographie", color: "bg-blue-500", tags: ["Drapeaux", "Pays du monde", "Capitales", "Europe", "Villes"], topVol: "9 200" },
-  { label: "Musique", icon: "🎵", href: "/categorie/musique", color: "bg-purple-500", tags: ["Blind test", "Années 80", "Rap", "Classique", "Disney"], topVol: "5 100" },
-  { label: "Histoire", icon: "🏛️", href: "/categorie/histoire", color: "bg-orange-500", tags: ["Brevet", "France", "Guerres", "Napoléon", "Moyen Âge"], topVol: "2 000" },
-  { label: "Sport & Football", icon: "⚽", href: "/categorie/sport", color: "bg-emerald-500", tags: ["Football", "JO", "NBA", "Boxe", "F1", "Tennis"], topVol: "3 600" },
-  { label: "Personnalité", icon: "🔮", href: "/categorie/personnalite", color: "bg-fuchsia-500", tags: ["Test perso", "Orientation", "Métier", "Animal totem"], topVol: "25 500" },
-  { label: "Amour & Amitié", icon: "❤️", href: "/categorie/amour", color: "bg-red-500", tags: ["Entre amis", "Couple", "BFF", "Meilleure amie"], topVol: "2 100" },
-  { label: "Animaux & Nature", icon: "🐾", href: "/categorie/animaux", color: "bg-teal-500", tags: ["Chiens", "Dinosaures", "Sauvages", "Marins"], topVol: "800" },
-  { label: "Logos & Marques", icon: "🏷️", href: "/categorie/logos", color: "bg-sky-500", tags: ["Logo quiz", "Marques", "Voitures", "Sport"], topVol: "1 800" },
-  { label: "Scolaire", icon: "📝", href: "/categorie/scolaire", color: "bg-amber-500", tags: ["Brevet", "Figure de style", "Orthographe", "Anglais"], topVol: "3 300" },
-  { label: "Jeux Vidéo", icon: "🎮", href: "/categorie/jeux-video", color: "bg-violet-500", tags: ["Pokémon", "Brawl Stars", "Fortnite", "Zelda", "Mario"], topVol: "1 600" },
-  { label: "Sciences & Tech", icon: "🔬", href: "/categorie/sciences", color: "bg-cyan-500", tags: ["Planètes", "Maths", "Corps humain", "Espace"], topVol: "1 900" },
-  { label: "Littérature", icon: "📖", href: "/categorie/litterature", color: "bg-rose-600", tags: ["Mythologie", "Tintin", "Astérix", "BD", "Poésie"], topVol: "800" },
-  { label: "Fêtes & Cuisine", icon: "🎉", href: "/categorie/fetes", color: "bg-lime-600", tags: ["Noël", "Halloween", "Cuisine", "Baby Shower"], topVol: "880" },
+  { label: "Culture Générale", href: "/categorie/culture-generale", color: "bg-yellow-500", tags: ["Quiz culture G", "Facile", "Difficile", "Miss France", "Gratuit"], topVol: "37 400" },
+  { label: "Cinéma & Séries", href: "/categorie/cinema", color: "bg-pink-500", tags: ["Harry Potter", "Disney", "Marvel", "Star Wars", "One Piece"], topVol: "7 100" },
+  { label: "Géographie", href: "/categorie/geographie", color: "bg-blue-500", tags: ["Drapeaux", "Pays du monde", "Capitales", "Europe", "Villes"], topVol: "9 200" },
+  { label: "Musique", href: "/categorie/musique", color: "bg-purple-500", tags: ["Blind test", "Années 80", "Rap", "Classique", "Disney"], topVol: "5 100" },
+  { label: "Histoire", href: "/categorie/histoire", color: "bg-orange-500", tags: ["Brevet", "France", "Guerres", "Napoléon", "Moyen Âge"], topVol: "2 000" },
+  { label: "Sport & Football", href: "/categorie/sport", color: "bg-emerald-500", tags: ["Football", "JO", "NBA", "Boxe", "F1", "Tennis"], topVol: "3 600" },
+  { label: "Personnalité", href: "/categorie/personnalite", color: "bg-fuchsia-500", tags: ["Test perso", "Orientation", "Métier", "Animal totem"], topVol: "25 500" },
+  { label: "Amour & Amitié", href: "/categorie/amour", color: "bg-red-500", tags: ["Entre amis", "Couple", "BFF", "Meilleure amie"], topVol: "2 100" },
+  { label: "Animaux & Nature", href: "/categorie/animaux", color: "bg-teal-500", tags: ["Chiens", "Dinosaures", "Sauvages", "Marins"], topVol: "800" },
+  { label: "Logos & Marques", href: "/categorie/logos", color: "bg-sky-500", tags: ["Logo quiz", "Marques", "Voitures", "Sport"], topVol: "1 800" },
+  { label: "Scolaire", href: "/categorie/scolaire", color: "bg-amber-500", tags: ["Brevet", "Figure de style", "Orthographe", "Anglais"], topVol: "3 300" },
+  { label: "Jeux Vidéo", href: "/categorie/jeux-video", color: "bg-violet-500", tags: ["Pokémon", "Brawl Stars", "Fortnite", "Zelda", "Mario"], topVol: "1 600" },
+  { label: "Sciences & Tech", href: "/categorie/sciences", color: "bg-cyan-500", tags: ["Planètes", "Maths", "Corps humain", "Espace"], topVol: "1 900" },
+  { label: "Littérature", href: "/categorie/litterature", color: "bg-rose-600", tags: ["Mythologie", "Tintin", "Astérix", "BD", "Poésie"], topVol: "800" },
+  { label: "Fêtes & Cuisine", href: "/categorie/fetes", color: "bg-lime-600", tags: ["Noël", "Halloween", "Cuisine", "Baby Shower"], topVol: "880" },
 ];
 
 const trendingChips = [
@@ -26,13 +26,13 @@ const trendingChips = [
 ];
 
 const navLinks = [
-  { label: "Tous les Quiz", href: "/", icon: "🎯", megamenu: true },
-  { label: "Culture G", href: "/categorie/culture-generale", icon: "📚" },
-  { label: "Sport", href: "/categorie/sport", icon: "⚽" },
-  { label: "Géographie", href: "/categorie/geographie", icon: "🌍" },
-  { label: "Personnalité", href: "/categorie/personnalite", icon: "🔮" },
-  { label: "Question du Jour", href: "/", icon: "📆" },
-  { label: "Créer un Quiz", href: "/creer", icon: "✏️", highlight: true },
+  { label: "Tous les Quiz", href: "/", megamenu: true },
+  { label: "Culture G", href: "/categorie/culture-generale" },
+  { label: "Sport", href: "/categorie/sport" },
+  { label: "Géographie", href: "/categorie/geographie" },
+  { label: "Personnalité", href: "/categorie/personnalite" },
+  { label: "Question du Jour", href: "/" },
+  { label: "Créer un Quiz", href: "/creer", highlight: true },
 ];
 ---
 
@@ -42,10 +42,10 @@ const navLinks = [
     <div class="max-w-7xl mx-auto px-4 flex items-center h-14 gap-4">
       <a href="/" class="flex items-center gap-2 shrink-0 group">
         <div class="w-10 h-10 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform border border-white/20">
-          <span class="text-white font-display font-black text-xl leading-none">Q</span>
+          <span class="text-white font-display font-black text-xl leading-none">W</span>
         </div>
         <div class="hidden sm:flex flex-col leading-none">
-          <span class="font-display font-extrabold text-white text-lg tracking-tight">Quiz<span class="text-yellow-400">.fr</span></span>
+          <span class="font-display font-extrabold text-white text-lg tracking-tight">Wi<span class="text-yellow-400">zy</span></span>
         </div>
       </a>
 
@@ -106,7 +106,6 @@ const navLinks = [
                   ? "bg-white/15 text-white"
                   : "text-white/80 hover:text-white hover:bg-white/10"
             }`}>
-              <span class="text-base leading-none">{link.icon}</span>
               <span>{link.label}</span>
               {link.megamenu && (
                 <svg class="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity mt-px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={3}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
@@ -129,7 +128,7 @@ const navLinks = [
                 <div class="p-3 grid grid-cols-3 gap-1.5">
                   {megaCategories.map((cat) => (
                     <a href={cat.href} class="group/card flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-violet-50 transition-colors">
-                      <span class={`w-8 h-8 rounded-lg flex items-center justify-center text-base text-white shrink-0 ${cat.color}`}>{cat.icon}</span>
+                      <span class={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white shrink-0 ${cat.color}`}>{cat.label.substring(0, 2)}</span>
                       <div class="min-w-0 flex-1">
                         <div class="flex items-center gap-1.5">
                           <span class="text-[13px] font-bold text-gray-800 group-hover/card:text-violet-700 leading-none">{cat.label}</span>
@@ -148,7 +147,7 @@ const navLinks = [
                 {/* Footer */}
                 <div class="border-t border-gray-100 flex items-center justify-between px-4 py-2 bg-gray-50">
                   <a href="/" class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">Voir tous les quiz →</a>
-                  <a href="/creer" class="text-xs font-bold text-yellow-600 hover:text-yellow-700 bg-yellow-50 hover:bg-yellow-100 px-3 py-1 rounded transition-colors">✏️ Créer mon quiz</a>
+                  <a href="/creer" class="text-xs font-bold text-yellow-600 hover:text-yellow-700 bg-yellow-50 hover:bg-yellow-100 px-3 py-1 rounded transition-colors">Créer mon quiz</a>
                 </div>
               </div>
             )}
@@ -168,11 +167,11 @@ const navLinks = [
         </button>
       </div>
       {megaCategories.map((cat) => (
-        <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium transition-colors">{cat.icon} {cat.label}</a>
+        <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium transition-colors">{cat.label}</a>
       ))}
       <div class="border-t border-white/10 my-2"></div>
-      <a href="/creer" class="flex items-center gap-3 px-3 py-2.5 rounded bg-yellow-500 text-white text-sm font-bold">✏️ Créer un quiz</a>
-      <a href="/connexion" class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium">👤 Mon compte</a>
+      <a href="/creer" class="flex items-center gap-3 px-3 py-2.5 rounded bg-yellow-500 text-white text-sm font-bold">Créer un quiz</a>
+      <a href="/connexion" class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium">Mon compte</a>
     </div>
   </div>
 </header>

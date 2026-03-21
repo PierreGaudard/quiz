@@ -1,9 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import QuizPlayer from "../../components/QuizPlayer";
+import QuizPagePlayer from "../../components/QuizPagePlayer";
 import { allQuizzes } from "../../data/quizzes";
+import { categories } from "../../data/categories";
+import { categoryIcons } from "../../data/icons";
 
-// SSG: generate all quiz pages at build time
 export function getStaticPaths() {
   return allQuizzes.map((quiz) => ({
     params: { slug: quiz.slug },
@@ -12,81 +13,265 @@ export function getStaticPaths() {
 }
 
 const { quiz } = Astro.props;
+
+const sameCategory = allQuizzes.filter((q) => q.category === quiz.category && q.slug !== quiz.slug);
+const otherPopular = allQuizzes
+  .filter((q) => q.slug !== quiz.slug && q.category !== quiz.category)
+  .sort((a, b) => (b.playCount || 0) - (a.playCount || 0));
+const recommendedQuizzes = [...sameCategory, ...otherPopular].slice(0, 6);
+const categoryInfo = categories.find((c) => c.name === quiz.category || c.slug === quiz.category.toLowerCase());
+
+const mainCategorySlugs = ["sport", "cinema", "histoire", "sciences", "geographie", "culture-generale"];
+
+// Build a summary of quiz topics from questions for SEO paragraph
+const questionTopics = quiz.questions.map((q: any) => q.question).slice(0, 6);
+const topicSummary = questionTopics.map((q: string) => {
+  // Extract the core subject from each question
+  return q.replace(/\?$/, '').replace(/^(Quel|Quelle|Quels|Quelles|Qui|Combien|En quelle|Comment|Où|Dans quel|Lequel) /i, '').trim();
+}).join(', ');
+const sidebarCategories = categories.filter((c) => mainCategorySlugs.includes(c.slug));
+
+const gameLabels = {
+  qcm: "QCM",
+  "vrai-faux": "Vrai/Faux",
+  chrono: "Chrono",
+  estimation: "Estimation",
+  duel: "Duel",
+  ordre: "Ordre",
+};
+
+const formatCount = (n) => {
+  if (n >= 1000) {
+    const val = (n / 1000).toFixed(1);
+    return val.endsWith('.0') ? val.slice(0, -2) + 'k' : val + 'k';
+  }
+  return n.toString();
+};
 ---
 
 <Layout
-  title={`${quiz.title} - Quiz`}
+  title={`${quiz.title} - Wizy`}
   description={quiz.description}
   ogImage={quiz.coverImage}
 >
-  <main class="max-w-4xl mx-auto px-4">
-    {/* Interactive quiz - replaces the static content when JS loads */}
-    <div id="quiz-app">
-      <QuizPlayer quiz={quiz} client:load />
-    </div>
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <div class="flex flex-col lg:flex-row gap-6">
 
-    {/* Static content visible to everyone (Google + users) */}
-    {/* Hidden by JS once the quiz app hydrates */}
-    <section id="quiz-static-content" class="py-8 space-y-6">
-      <div class="text-center space-y-3 mb-8">
-        <span class="inline-block text-violet-600 font-semibold text-sm tracking-wide uppercase">{quiz.category}</span>
-        <h1 class="font-bold text-3xl md:text-4xl text-gray-900 leading-tight">{quiz.title}</h1>
-        <p class="text-gray-600 text-base max-w-xl mx-auto">{quiz.description}</p>
-        <div class="flex items-center justify-center gap-4 text-sm text-gray-500">
-          <span>{quiz.difficulty}</span>
-          <span>•</span>
-          <span>{quiz.questions.length} questions</span>
+      {/* ===== MAIN CONTENT (center) ===== */}
+      <main class="flex-1 min-w-0">
+
+        {/* Interactive quiz player (renders its own left sidebar internally) */}
+        <div id="quiz-app">
+          <QuizPagePlayer quiz={quiz} client:load />
         </div>
-      </div>
 
-      {quiz.questions.map((q: any, i: number) => (
-        <article class="bg-white rounded-2xl p-5 md:p-6 shadow-sm border border-gray-100">
-          <h2 class="text-lg font-semibold text-gray-900 mb-3">
-            <span class="text-violet-500 font-bold mr-2">Q{i + 1}.</span>
-            {q.question}
-          </h2>
-          {q.image && (
-            <img
-              src={q.image}
-              alt={q.question}
-              class="rounded-xl mb-4 w-full max-w-md object-cover aspect-video"
-              loading="lazy"
-            />
-          )}
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-3">
-            {q.answers.map((a: any, j: number) => (
-              <li class={`p-3 rounded-xl text-sm font-medium ${
-                a.id === q.correctAnswer
-                  ? 'bg-green-50 text-green-800 border border-green-200'
-                  : 'bg-gray-50 text-gray-700 border border-gray-100'
-              }`}>
-                <span class="font-bold mr-1.5">{String.fromCharCode(65 + j)}.</span>
-                {a.text}
-                {a.id === q.correctAnswer ? ' ✓' : ''}
-              </li>
+        {/* Static fallback for no-JS / SEO crawlers */}
+        <noscript>
+          <section class="py-8 space-y-6">
+            <div class="text-center space-y-3 mb-8">
+              <span class="inline-block text-violet-600 font-semibold text-sm tracking-wide uppercase">{quiz.category}</span>
+              <h1 class="font-bold text-3xl md:text-4xl text-gray-900 leading-tight">{quiz.title}</h1>
+              <p class="text-gray-600 text-base max-w-xl mx-auto">{quiz.description}</p>
+            </div>
+            {quiz.questions.map((q: any, i: number) => (
+              <article class="bg-white rounded-2xl p-5 md:p-6 shadow-sm border border-gray-100">
+                <h2 class="text-lg font-semibold text-gray-900 mb-3">
+                  <span class="text-violet-500 font-bold mr-2">Q{i + 1}.</span>
+                  {q.question}
+                </h2>
+                {q.image && (
+                  <img src={q.image} alt={q.question} class="rounded-xl mb-4 w-full max-w-md object-cover aspect-video" loading="lazy" />
+                )}
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-3">
+                  {q.answers.map((a: any, j: number) => (
+                    <li class={`p-3 rounded-xl text-sm font-medium ${a.id === q.correctAnswer ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-gray-50 text-gray-700 border border-gray-100'}`}>
+                      <span class="font-bold mr-1.5">{String.fromCharCode(65 + j)}.</span>
+                      {a.text}
+                    </li>
+                  ))}
+                </ul>
+                {q.explanation && (
+                  <p class="text-sm text-gray-500 italic">{q.explanation}</p>
+                )}
+              </article>
             ))}
-          </ul>
-          {q.explanation && (
-            <p class="text-sm text-gray-500 italic">{q.explanation}</p>
-          )}
-        </article>
-      ))}
-    </section>
-  </main>
+          </section>
+        </noscript>
 
-  {/* Hide static content once quiz JS is loaded */}
-  <script>
-    // When the quiz React component hydrates, hide the static fallback
-    const observer = new MutationObserver(() => {
-      const quizApp = document.getElementById('quiz-app');
-      const staticContent = document.getElementById('quiz-static-content');
-      if (quizApp && quizApp.querySelector('button') && staticContent) {
-        staticContent.style.display = 'none';
-        observer.disconnect();
-      }
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-  </script>
+        {/* Quiz recommandes */}
+        {recommendedQuizzes.length > 0 && (
+          <section class="mt-16 pt-12 border-t border-gray-200">
+            <h2 class="font-display text-2xl font-bold text-gray-900 mb-6">Quiz recommandes</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {recommendedQuizzes.map((rq) => (
+                <a href={`/quiz/${rq.slug}`} class="group bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
+                  {rq.coverImage && (
+                    <div class="relative h-32 overflow-hidden">
+                      <img src={rq.coverImage} alt={rq.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    </div>
+                  )}
+                  <div class="p-3.5">
+                    <div class="text-[10px] font-semibold text-violet-600 uppercase tracking-wide mb-1">{rq.category}</div>
+                    <h3 class="font-display font-bold text-sm text-gray-900 leading-snug group-hover:text-violet-700 transition-colors">{rq.title}</h3>
+                    <div class="flex items-center gap-2 mt-2 text-[11px] text-gray-500">
+                      <span>{rq.questions.length} questions</span>
+                      {rq.playCount && (
+                        <span>&bull; {formatCount(rq.playCount)} parties</span>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Bloc SEO - encart stylise */}
+        <section class="mt-12">
+          <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-2xl border border-violet-100/60 shadow-sm overflow-hidden">
+            {/* Header de l'encart */}
+            <div class="bg-gradient-to-r from-violet-600 to-purple-700 px-6 py-4">
+              <h2 class="font-display text-lg font-bold text-white flex items-center gap-2">
+                <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                {quiz.title}
+              </h2>
+            </div>
+
+            <div class="p-6 space-y-5">
+              {/* Description longue du quiz */}
+              <div class="space-y-3 text-sm text-gray-600 leading-relaxed">
+                <p>
+                  Ce quiz <strong class="text-gray-800">{quiz.title}</strong> contient
+                  <strong class="text-violet-700"> {quiz.questions.length} questions</strong> de niveau
+                  <span class={`inline-block ml-1 mr-1 px-2 py-0.5 rounded-full text-xs font-semibold ${
+                    quiz.difficulty === 'Facile' ? 'bg-green-100 text-green-700' :
+                    quiz.difficulty === 'Moyen' ? 'bg-amber-100 text-amber-700' :
+                    'bg-red-100 text-red-700'
+                  }`}>{quiz.difficulty}</span>
+                  dans la categorie
+                  <a href={categoryInfo ? `/categorie/${categoryInfo.slug}` : '#'} class="text-violet-600 font-semibold hover:text-violet-800 hover:underline transition-colors"> {quiz.category}</a>.
+                  {quiz.gameType && <Fragment> Il se joue en mode <strong class="text-gray-800">{gameLabels[quiz.gameType] || quiz.gameType}</strong>.</Fragment>}
+                </p>
+                <p>
+                  Au fil des questions, tu seras amene a tester tes connaissances sur des sujets varies :
+                  {' '}{topicSummary}... Chaque question est accompagnee d'une explication detaillee
+                  qui te permet de comprendre la bonne reponse et d'apprendre de nouvelles choses, meme si tu te trompes.
+                </p>
+                <p>
+                  Que tu sois debutant ou expert{categoryInfo ? ` en ${categoryInfo.name.toLowerCase()}` : ''},
+                  ce quiz est concu pour etre a la fois amusant et instructif. Tu peux utiliser les bonus
+                  (50/50, seconde chance, indice) pour t'aider sur les questions les plus difficiles et
+                  maximiser ton score. A la fin du quiz, decouvre ton rang et le nombre de points XP gagnes,
+                  puis partage ton resultat avec tes amis pour les defier !
+                </p>
+              </div>
+
+              {/* Lien vers la categorie principale */}
+              {categoryInfo && (
+                <a href={`/categorie/${categoryInfo.slug}`} class="flex items-center gap-3 p-3.5 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                  <span class={`w-10 h-10 ${categoryInfo.color} rounded-xl flex items-center justify-center text-white p-2 flex-shrink-0`} set:html={categoryIcons[categoryInfo.slug] || categoryInfo.icon}>
+                  </span>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-sm font-bold text-gray-900 group-hover:text-violet-700 transition-colors">Tous les quiz {categoryInfo.name}</div>
+                    <div class="text-xs text-gray-500 mt-0.5">
+                      {sameCategory.length > 0
+                        ? `${sameCategory.length} autre${sameCategory.length > 1 ? 's' : ''} quiz dans cette categorie`
+                        : 'Decouvre tous les quiz de cette categorie'}
+                    </div>
+                  </div>
+                  <svg class="w-4 h-4 text-gray-400 group-hover:text-violet-500 group-hover:translate-x-0.5 transition-all flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              )}
+
+              {/* Sous-categories / themes de la categorie courante */}
+              {categoryInfo && categoryInfo.subcategories && categoryInfo.subcategories.length > 0 && (
+                <div class="pt-4 border-t border-violet-100/60">
+                  <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2.5">Themes {categoryInfo.name}</div>
+                  <div class="flex flex-wrap gap-1.5">
+                    {categoryInfo.subcategories.map((sub: string) => (
+                      <span class="inline-block px-3 py-1.5 bg-white rounded-full border border-gray-100 text-xs text-gray-600 hover:border-violet-200 hover:text-violet-700 hover:bg-violet-50 transition-colors cursor-pointer">
+                        {sub}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* ===== SIDEBAR (right) ===== */}
+      <aside class="lg:w-64 flex-shrink-0">
+        <div class="lg:sticky lg:top-[130px] space-y-6">
+
+          {/* Categories - grille 3 colonnes */}
+          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+            <div class="bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-3">
+              <h3 class="font-display font-bold text-white text-sm">Explorer par categorie</h3>
+            </div>
+            <div class="p-3 grid grid-cols-2 gap-2">
+              {sidebarCategories.map((cat) => (
+                <a
+                  href={`/categorie/${cat.slug}`}
+                  class={`flex flex-col items-center gap-1.5 p-2.5 rounded-lg text-center transition-all hover:bg-gray-50 hover:-translate-y-0.5 ${
+                    cat.name === quiz.category
+                      ? 'bg-violet-50 ring-1 ring-violet-200'
+                      : ''
+                  }`}
+                >
+                  <span class={`w-9 h-9 ${cat.color} rounded-lg flex items-center justify-center text-white p-1.5`} set:html={categoryIcons[cat.slug] || cat.icon}>
+                  </span>
+                  <span class={`text-[11px] font-medium leading-tight ${
+                    cat.name === quiz.category ? 'text-violet-700 font-semibold' : 'text-gray-700'
+                  }`}>{cat.name}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Devenez membre */}
+          <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-5">
+            <h3 class="font-display font-bold text-gray-900 text-base text-center mb-4">Devenez membre</h3>
+            <ul class="space-y-2.5 mb-5">
+              <li class="flex items-center gap-2.5 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                Enregistrez vos scores
+              </li>
+              <li class="flex items-center gap-2.5 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                Gagnez des points XP
+              </li>
+              <li class="flex items-center gap-2.5 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                Comparez-vous aux autres
+              </li>
+            </ul>
+            <a
+              href="/inscription"
+              class="block w-full text-center bg-violet-600 hover:bg-violet-700 text-white font-semibold text-sm py-3 rounded-xl transition-colors"
+            >
+              Creer mon compte
+            </a>
+            <p class="text-center text-xs text-gray-400 mt-2.5">Gratuit, sans engagement</p>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
 
   <!-- Structured data for SEO -->
   <script
@@ -97,10 +282,7 @@ const { quiz } = Astro.props;
       name: quiz.title,
       description: quiz.description,
       educationalLevel: quiz.difficulty,
-      about: {
-        "@type": "Thing",
-        name: quiz.category,
-      },
+      about: { "@type": "Thing", name: quiz.category },
       hasPart: quiz.questions.map((q: any, i: number) => ({
         "@type": "Question",
         position: i + 1,
@@ -111,10 +293,7 @@ const { quiz } = Astro.props;
         },
         suggestedAnswer: q.answers
           .filter((a: any) => a.id !== q.correctAnswer)
-          .map((a: any) => ({
-            "@type": "Answer",
-            text: a.text,
-          })),
+          .map((a: any) => ({ "@type": "Answer", text: a.text })),
       })),
     })}
   />

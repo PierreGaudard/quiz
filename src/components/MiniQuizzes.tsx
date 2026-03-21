@@ -14,7 +14,7 @@ export function MiniQCM() {
         <img src="/images/cover-football.jpg" alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
-          <span className="text-[10px] font-bold bg-violet-500 text-white px-2 py-0.5 rounded">❓ QCM</span>
+          <span className="text-[10px] font-bold bg-violet-500 text-white px-2 py-0.5 rounded">QCM</span>
         </div>
         <div className="absolute bottom-3 left-3 right-3">
           <p className="text-white font-bold text-sm leading-tight drop-shadow">Quel pays a remporté le plus de Coupes du monde de football ?</p>
@@ -43,7 +43,7 @@ export function MiniQCM() {
         </div>
         {answered && (
           <div className={`text-xs leading-relaxed p-3 rounded-lg ${isCorrect ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'}`}>
-            <span className="font-bold">{isCorrect ? "Bien joué ! ✅" : "Raté ! ❌"}</span>{" "}
+            <span className="font-bold">{isCorrect ? "Bien joué !" : "Raté !"}</span>{" "}
             Le Brésil a gagné 5 Coupes du monde (1958, 1962, 1970, 1994, 2002), un record !
           </div>
         )}
@@ -70,7 +70,7 @@ export function MiniVraiFaux() {
         <img src="/images/cover-histoire.jpg" alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
-          <span className="text-[10px] font-bold bg-emerald-500 text-white px-2 py-0.5 rounded">✅ Vrai ou Faux</span>
+          <span className="text-[10px] font-bold bg-emerald-500 text-white px-2 py-0.5 rounded">Vrai ou Faux</span>
         </div>
         <div className="absolute bottom-3 left-3 right-3">
           <p className="text-white font-bold text-sm leading-tight drop-shadow">La Grande Muraille de Chine est visible depuis l'espace à l'œil nu.</p>
@@ -101,7 +101,7 @@ export function MiniVraiFaux() {
         </div>
         {answered && (
           <div className={`text-xs leading-relaxed p-3 rounded-lg ${isCorrect ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'}`}>
-            <span className="font-bold">{isCorrect ? "Bien joué ! ✅" : "Raté ! ❌"}</span>{" "}
+            <span className="font-bold">{isCorrect ? "Bien joué !" : "Raté !"}</span>{" "}
             C'est un mythe ! La muraille est trop étroite (6m) pour être vue depuis l'orbite sans aide optique.
           </div>
         )}
@@ -129,9 +129,9 @@ export function MiniEstimation() {
       setFound(true);
       setAttempts([...attempts, { value: num, feedback: "correct" }]);
     } else if (num < correctValue) {
-      setAttempts([...attempts, { value: num, feedback: "C'est plus haut ⬆️" }]);
+      setAttempts([...attempts, { value: num, feedback: "C'est plus haut" }]);
     } else {
-      setAttempts([...attempts, { value: num, feedback: "C'est plus bas ⬇️" }]);
+      setAttempts([...attempts, { value: num, feedback: "C'est plus bas" }]);
     }
     setGuess("");
   }
@@ -142,7 +142,7 @@ export function MiniEstimation() {
         <img src="/images/cover-geographie.jpg" alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
-          <span className="text-[10px] font-bold bg-cyan-500 text-white px-2 py-0.5 rounded">🎯 Estimation</span>
+          <span className="text-[10px] font-bold bg-cyan-500 text-white px-2 py-0.5 rounded">Estimation</span>
         </div>
         <div className="absolute bottom-3 left-3 right-3">
           <p className="text-white font-bold text-sm leading-tight drop-shadow">Combien de pays sont membres de l'ONU en 2024 ?</p>
@@ -178,7 +178,7 @@ export function MiniEstimation() {
         ) : (
           <div className="space-y-2">
             <div className="text-xs leading-relaxed p-3 rounded-lg bg-green-50 text-green-700">
-              <span className="font-bold">Bravo en {attempts.length} essai{attempts.length > 1 ? "s" : ""} ! 🎯</span>{" "}
+              <span className="font-bold">Bravo en {attempts.length} essai{attempts.length > 1 ? "s" : ""} !</span>{" "}
               L'ONU compte 193 États membres. Le dernier admis est le Soudan du Sud en 2011.
             </div>
             <a href="/quiz/estimation-records-sport" className="block text-center text-xs font-bold text-violet-600 hover:text-violet-800 py-1 transition-colors">

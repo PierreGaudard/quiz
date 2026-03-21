@@ -3,6 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import { MiniQCM, MiniVraiFaux, MiniEstimation } from "../components/MiniQuizzes";
 import { allQuizzes } from "../data/quizzes";
 import { categories, gameTypes } from "../data/categories";
+import { categoryIcons, gameTypeIcons } from "../data/icons";
+
+const mainCategorySlugs = ["sport", "cinema", "geographie", "culture-generale", "jeux-video", "histoire"];
+const mainCategories = categories.filter(c => mainCategorySlugs.includes(c.slug));
 
 const popularQuizzes = [...allQuizzes].sort((a, b) => (b.playCount || 0) - (a.playCount || 0));
 const newestQuizzes = [...allQuizzes].slice(-4).reverse();
@@ -27,7 +31,7 @@ function formatCount(n: number): string {
 }
 ---
 
-<Layout title="Quiz.fr - Teste tes connaissances avec des quiz fun et gratuits">
+<Layout title="Wizy - Teste tes connaissances avec des quiz fun et gratuits">
   <main>
 
     {/* ===== HERO — texte à gauche + Question du Jour à droite ===== */}
@@ -37,12 +41,12 @@ function formatCount(n: number): string {
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_370px] gap-5 items-center">
           {/* Left */}
           <div class="space-y-5">
-            <p class="text-yellow-400 font-bold text-xs uppercase tracking-[0.2em]">La plateforme de quiz n°1</p>
-            <h1 class="font-display text-3xl md:text-5xl font-black text-white leading-tight">
+            <p class="text-yellow-400 font-bold text-sm uppercase tracking-[0.15em]">La plateforme de quiz n°1 en France</p>
+            <h1 class="font-display text-4xl md:text-[3.5rem] font-black text-white leading-[1.1]">
               Des quiz pour<br/><span class="text-yellow-400">chaque passion</span>
             </h1>
-            <p class="text-white/50 text-sm md:text-base max-w-md">
-              {allQuizzes.length * 40}+ questions de Culture Générale, Géographie, Histoire, Cinéma, Sport...
+            <p class="text-white/60 text-base md:text-lg max-w-lg leading-relaxed">
+              {allQuizzes.length * 40}+ questions rédigées par des experts, des explications à chaque réponse, 6 modes de jeu. Gratuit, sans inscription.
             </p>
             <div class="max-w-sm">
               <div class="relative">
@@ -57,7 +61,7 @@ function formatCount(n: number): string {
           {/* Right: Question du Jour */}
           <div class="bg-white rounded-xl p-5 shadow-2xl border border-gray-100">
             <div class="flex items-center gap-2 mb-4">
-              <span class="w-8 h-8 bg-violet-100 rounded-lg flex items-center justify-center text-base">📅</span>
+              <span class="w-8 h-8 bg-violet-100 rounded-lg flex items-center justify-center text-xs font-bold text-violet-600">QJ</span>
               <div>
                 <h3 class="font-display font-bold text-sm text-gray-900">Question du Jour</h3>
                 <p class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">18 Mars 2026</p>
@@ -118,7 +122,7 @@ function formatCount(n: number): string {
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
             <div class="relative h-full flex flex-col justify-center p-8 md:p-12 max-w-lg">
               <div class="flex items-center gap-2 mb-3">
-                <span class="text-[10px] font-bold bg-orange-500 text-white px-2 py-0.5 rounded">🔥 Quiz le plus joué</span>
+                <span class="text-[10px] font-bold bg-orange-500 text-white px-2 py-0.5 rounded">Quiz le plus joué</span>
                 <span class={`text-[10px] font-bold px-2 py-0.5 rounded ${DIFFICULTY_STYLE[featured.difficulty]}`}>{featured.difficulty}</span>
                 <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-sm">{GAME_TYPE_LABELS[featured.gameType] || "QCM"}</span>
               </div>
@@ -137,7 +141,7 @@ function formatCount(n: number): string {
     {/* ===== GRILLE DE QUIZ — 4 colonnes, grandes images ===== */}
     <section class="max-w-6xl mx-auto px-4 pb-12">
       <div class="flex items-center justify-between mb-6">
-        <h2 class="font-display text-xl font-bold text-gray-900">⭐ Quiz Incontournables</h2>
+        <h2 class="font-display text-xl font-bold text-gray-900">Quiz Incontournables</h2>
         <a href="/" class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">Tout voir →</a>
       </div>
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -168,7 +172,7 @@ function formatCount(n: number): string {
     {/* ===== NOUVEAUX QUIZ — horizontal scroll ===== */}
     <section class="bg-gray-50 py-10">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="font-display text-xl font-bold text-gray-900 mb-6">🆕 Ajoutés récemment</h2>
+        <h2 class="font-display text-xl font-bold text-gray-900 mb-6">Ajoutés récemment</h2>
         <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
           {newestQuizzes.map((quiz, i) => (
             <a href={`/quiz/${quiz.slug}`} class="group shrink-0 w-[240px] bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
@@ -195,14 +199,14 @@ function formatCount(n: number): string {
         <div>
           <h2 class="font-display text-lg font-bold text-gray-900 mb-3">On a tous ce pote incollable en soirée...</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Tu sais, celui qui sort des anecdotes sur les JO de 1936 entre deux parts de pizza. Celui qui connaît la capitale du Bhoutan et le nombre exact de dents d'un escargot. Eh bien ce pote-là, il s'entraîne probablement sur des quiz en ligne, et honnêtement c'est comme ça qu'on a eu l'idée de créer <strong class="text-gray-700">Quiz.fr</strong>.</p>
+            <p>Tu sais, celui qui sort des anecdotes sur les JO de 1936 entre deux parts de pizza. Celui qui connaît la capitale du Bhoutan et le nombre exact de dents d'un escargot. Eh bien ce pote-là, il s'entraîne probablement sur des quiz en ligne, et honnêtement c'est comme ça qu'on a eu l'idée de créer <strong class="text-gray-700">Wizy</strong>.</p>
             <p>L'objectif c'était simple : proposer des quiz qui donnent vraiment envie de jouer. Pas des questionnaires scolaires barbants, mais des <a href="/categorie/sport" class="text-violet-600 hover:underline">quiz sport</a> où tu découvres que Pelé a marqué plus de 1 000 buts, des <a href="/categorie/cinema" class="text-violet-600 hover:underline">quiz cinéma</a> qui te font réaliser que tu ne connais rien à Disney, ou des <a href="/categorie/geographie" class="text-violet-600 hover:underline">quiz géographie</a> où tu confonds encore le drapeau de Monaco et celui de l'Indonésie (on est passés par là aussi).</p>
             <p>Et le meilleur ? Chaque question vient avec son explication. Tu te trompes, tu apprends. Tu as raison, tu apprends quand même. C'est le truc cool avec les quiz : on retient 10 fois mieux une info quand on a essayé de deviner la réponse.</p>
           </div>
         </div>
         <div class="bg-violet-50 rounded-xl p-4 border border-violet-100">
           <div class="flex items-center gap-2 mb-3">
-            <span class="w-7 h-7 bg-violet-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">❓</span>
+            <span class="w-7 h-7 bg-violet-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">?</span>
             <p class="text-xs font-bold text-violet-700">Teste-toi sur un QCM</p>
           </div>
           <MiniQCM client:load />
@@ -213,7 +217,7 @@ function formatCount(n: number): string {
     {/* ===== CATÉGORIES — grandes cartes portrait avec vraies images ===== */}
     <section class="max-w-6xl mx-auto px-4 py-12">
       <div class="flex items-center justify-between mb-6">
-        <h2 class="font-display text-xl font-bold text-gray-900">📂 Explore par catégorie</h2>
+        <h2 class="font-display text-xl font-bold text-gray-900">Explore par catégorie</h2>
         <a href="/" class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">Toutes →</a>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -248,7 +252,7 @@ function formatCount(n: number): string {
     <section class="bg-[#1a0e42] py-10">
       <div class="max-w-6xl mx-auto px-4">
         <div class="text-center mb-8">
-          <h2 class="font-display text-xl font-bold text-white mb-1">🎲 6 façons de jouer</h2>
+          <h2 class="font-display text-xl font-bold text-white mb-1">6 façons de jouer</h2>
           <p class="text-sm text-white/40">Pas juste du QCM, découvre des modes de jeu uniques</p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
@@ -279,7 +283,7 @@ function formatCount(n: number): string {
       <div class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 items-start">
         <div class="bg-emerald-50 rounded-xl p-4 border border-emerald-100">
           <div class="flex items-center gap-2 mb-3">
-            <span class="w-7 h-7 bg-emerald-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">✅</span>
+            <span class="w-7 h-7 bg-emerald-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">V/F</span>
             <p class="text-xs font-bold text-emerald-700">Vrai ou Faux ? A toi de trancher</p>
           </div>
           <MiniVraiFaux client:load />
@@ -301,13 +305,13 @@ function formatCount(n: number): string {
         <div>
           <h2 class="font-display text-lg font-bold text-gray-900 mb-3">Un quiz, c'est pas juste 4 réponses au pif</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Le truc qu'on voulait absolument éviter, c'est le côté "tu cliques au hasard et tu passes à la suite". Sur Quiz.fr, chaque mauvaise réponse est une occasion d'apprendre quelque chose. L'explication après chaque question, c'est notre marque de fabrique, et franchement c'est souvent la partie la plus intéressante.</p>
+            <p>Le truc qu'on voulait absolument éviter, c'est le côté "tu cliques au hasard et tu passes à la suite". Sur Wizy, chaque mauvaise réponse est une occasion d'apprendre quelque chose. L'explication après chaque question, c'est notre marque de fabrique, et franchement c'est souvent la partie la plus intéressante.</p>
             <p>On a aussi bossé sur les modes de jeu pour que ça reste frais. L'<strong class="text-gray-700">Estimation</strong> par exemple, c'est complètement différent : pas de choix multiples, juste toi et un chiffre à trouver. Tu proposes un nombre, on te dit "plus haut" ou "plus bas", et tu continues jusqu'à trouver. C'est addictif, essaie juste à côté.</p>
           </div>
         </div>
         <div class="bg-cyan-50 rounded-xl p-4 border border-cyan-100">
           <div class="flex items-center gap-2 mb-3">
-            <span class="w-7 h-7 bg-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">🎯</span>
+            <span class="w-7 h-7 bg-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">#</span>
             <p class="text-xs font-bold text-cyan-700">Plus haut ou plus bas ?</p>
           </div>
           <MiniEstimation client:load />
@@ -320,7 +324,7 @@ function formatCount(n: number): string {
       <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#1a0e42] to-[#5D2DC7] p-8 md:p-12 text-center">
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 24px 24px;"></div>
         <div class="relative space-y-4">
-          <span class="text-4xl">✏️</span>
+          <span class="text-4xl font-display font-black text-yellow-400">+</span>
           <h2 class="font-display text-2xl md:text-3xl font-black text-white">Tu as une idée de quiz ?</h2>
           <p class="text-white/50 text-sm max-w-md mx-auto">Crée-le en 5 minutes et partage-le avec tes amis. C'est gratuit, rapide et fun.</p>
           <a href="/creer" class="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-sm px-6 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl">Créer mon quiz →</a>
@@ -343,7 +347,7 @@ function formatCount(n: number): string {
         <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8">
           <div class="lg:sticky lg:top-32">
             <h2 class="font-display text-2xl font-black text-gray-900 mb-2">Questions fréquentes</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">Les réponses aux questions que vous nous posez le plus souvent sur Quiz.fr.</p>
+            <p class="text-sm text-gray-400 leading-relaxed">Les réponses aux questions que vous nous posez le plus souvent sur Wizy.</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
@@ -351,7 +355,7 @@ function formatCount(n: number): string {
                 Les quiz sont-ils vraiment gratuits et sans inscription ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Tous les quiz sur Quiz.fr sont 100% gratuits. Vous pouvez jouer à n'importe quel quiz sans créer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Tous les quiz sur Wizy sont 100% gratuits. Vous pouvez jouer à n'importe quel quiz sans créer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis.</p>
             </details>
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
@@ -372,21 +376,21 @@ function formatCount(n: number): string {
                 Quels sont les différents modes de jeu disponibles ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Quiz.fr propose 6 modes de jeu : le QCM classique à 4 réponses, le Vrai ou Faux, le Chrono Challenge (30 secondes pour un maximum de bonnes réponses), l'Estimation (devinez un nombre, on vous dit plus haut ou plus bas), le Duel (comparez deux options) et l'Ordre chronologique.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizy propose 6 modes de jeu : le QCM classique à 4 réponses, le Vrai ou Faux, le Chrono Challenge (30 secondes pour un maximum de bonnes réponses), l'Estimation (devinez un nombre, on vous dit plus haut ou plus bas), le Duel (comparez deux options) et l'Ordre chronologique.</p>
             </details>
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Comment créer son propre quiz sur Quiz.fr ?
+                Comment créer son propre quiz sur Wizy ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">C'est simple et rapide : choisissez une catégorie, ajoutez vos questions avec les réponses et les explications, et votre quiz est en ligne en quelques minutes. Vous pouvez ensuite le partager avec un lien unique. C'est idéal pour animer une soirée entre amis ou tester vos collègues.</p>
             </details>
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Quiz.fr fonctionne-t-il sur mobile et tablette ?
+                Wizy fonctionne-t-il sur mobile et tablette ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Quiz.fr est entièrement responsive et optimisé pour tous les écrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la même expérience. Aucune application à télécharger, tout fonctionne directement dans votre navigateur.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizy est entièrement responsive et optimisé pour tous les écrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la même expérience. Aucune application à télécharger, tout fonctionne directement dans votre navigateur.</p>
             </details>
           </div>
         </div>

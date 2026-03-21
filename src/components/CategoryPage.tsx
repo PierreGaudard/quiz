@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import type { CategoryData, QuizData, GameTypeInfo, GameType } from "../data/types";
 
 const GAME_TYPE_LABELS: Record<GameType, { name: string; icon: string; color: string }> = {
-  qcm: { name: "QCM", icon: "\u2753", color: "bg-violet-500" },
-  "vrai-faux": { name: "Vrai/Faux", icon: "\u2705", color: "bg-emerald-500" },
-  chrono: { name: "Chrono", icon: "\u23f1\ufe0f", color: "bg-amber-500" },
-  estimation: { name: "Estimation", icon: "\ud83c\udfaf", color: "bg-cyan-500" },
-  duel: { name: "Duel", icon: "\u2694\ufe0f", color: "bg-rose-500" },
-  ordre: { name: "Ordre", icon: "\ud83d\udcc5", color: "bg-indigo-500" },
+  qcm: { name: "QCM", icon: "?", color: "bg-violet-500" },
+  "vrai-faux": { name: "Vrai/Faux", icon: "VF", color: "bg-emerald-500" },
+  chrono: { name: "Chrono", icon: "CH", color: "bg-amber-500" },
+  estimation: { name: "Estimation", icon: "#", color: "bg-cyan-500" },
+  duel: { name: "Duel", icon: "VS", color: "bg-rose-500" },
+  ordre: { name: "Ordre", icon: "OR", color: "bg-indigo-500" },
 };
 
 interface QuizProgress {
@@ -118,7 +118,7 @@ export default function CategoryPage({ category, quizzes, featured, gameTypes, q
         {featured && !activeFilter && (
           <section className="mb-8">
             <h2 className="font-display text-lg font-bold text-text-primary mb-4 flex items-center gap-2">
-              <span className="text-xl">🏆</span> Quiz à la une
+              Quiz à la une
             </h2>
             <a href={`/quiz/${featured.slug}`} className="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex flex-col md:flex-row">
@@ -352,7 +352,7 @@ function SidebarContent({
         <h3 className="font-display text-base font-bold text-text-primary">Tous les jeux</h3>
         <div className="space-y-1.5">
           <button onClick={() => setActiveFilter(null)} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left transition-all cursor-pointer ${!activeFilter ? "bg-primary/10 text-primary" : "hover:bg-gray-50 text-text-secondary"}`}>
-            <span className="w-9 h-9 bg-gray-100 rounded-lg flex items-center justify-center text-lg shrink-0">📋</span>
+            <span className="w-9 h-9 bg-gray-100 rounded-lg flex items-center justify-center text-xs font-bold shrink-0">ALL</span>
             <div className="flex-1 min-w-0">
               <div className={`text-sm font-semibold ${!activeFilter ? "text-primary" : "text-text-primary"}`}>Tous les quiz</div>
               <div className="text-xs text-text-muted">{totalCount} quiz</div>
@@ -485,7 +485,7 @@ function ScoreBadge({ progress, large }: { progress: QuizProgress; large?: boole
       large ? "text-sm px-3 py-1 rounded-lg" : "text-xs px-2 py-0.5 rounded-md"
     }`}>
       {progress.score}/{progress.total}
-      {percent >= 80 && <span>⭐</span>}
+      {percent >= 80 && <span>*</span>}
     </span>
   );
 }

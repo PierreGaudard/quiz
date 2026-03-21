@@ -1,0 +1,85 @@
+// SVG pictogram icons for categories and game types
+// Each returns an SVG string that can be rendered with set:html (Astro) or dangerouslySetInnerHTML (React)
+
+export const categoryIcons: Record<string, string> = {
+  // Main categories
+  sport: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`,
+
+  cinema: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>`,
+
+  histoire: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>`,
+
+  sciences: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M13 3c0-.55-.45-1-1-1s-1 .45-1 1v6.34L7.11 15.9c-1.56 2.62.4 5.1 2.39 5.1h5c1.99 0 3.95-2.48 2.39-5.1L13 9.34V3zm-4.5 14c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm3 2c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm2-3.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5z"/></svg>`,
+
+  musique: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>`,
+
+  geographie: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`,
+
+  "culture-generale": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 017 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>`,
+
+  "jeux-video": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>`,
+
+  animaux: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M4.5 9.5m-2.5 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0M9 5.5m-2.5 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0M15 5.5m-2.5 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0M19.5 9.5m-2.5 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.17-.81-1.86-.81h-2c-.69 0-1.4.27-1.86.81-.88 1.02-1.61 1.89-2.48 2.91-1.31 1.31-.49 3.57 1.32 3.57.56 0 1.1-.22 1.49-.62L12 15.28l2.53 2.53c.39.4.93.62 1.49.62 1.81 0 2.63-2.26 1.32-3.57z"/></svg>`,
+
+  logos: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"/></svg>`,
+
+  scolaire: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>`,
+
+  amour: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>`,
+
+  drapeaux: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg>`,
+
+  disney: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M11.5 9C11.5 7.62 12.62 6.5 14 6.5c.55 0 1 .45 1 1s-.45 1-1 1c-.28 0-.5.22-.5.5v2c0 .28-.22.5-.5.5s-.5-.22-.5-.5V9zM12 2l-5.5 9h11L12 2zm0 3.84L13.93 9h-3.87L12 5.84zM17.5 13c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM6.5 13C4.01 13 2 15.01 2 17.5S4.01 22 6.5 22 11 19.99 11 17.5 8.99 13 6.5 13zm0 7C5.12 20 4 18.88 4 17.5S5.12 15 6.5 15 9 16.12 9 17.5 7.88 20 6.5 20z"/></svg>`,
+
+  islam: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12.3 2c-.97 0-1.92.17-2.82.5A7.49 7.49 0 0014 9.5c0 2.79-1.53 5.22-3.78 6.53.9.32 1.85.47 2.78.47 4.41 0 8-3.59 8-8.5S16.71 2 12.3 2zM9 2l1.18 3.64L14 5.18 10.82 7.5 12 11.14 9 8.82 6 11.14 7.18 7.5 4 5.18l3.82.46z"/></svg>`,
+
+  "departements-francais": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>`,
+
+  "one-piece": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2a9 9 0 00-9 9c0 3.07 1.55 5.77 3.9 7.38L6 22h12l-.9-3.62A8.98 8.98 0 0021 11a9 9 0 00-9-9zm-2.5 8a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm-5.24 3.55c.42-.73 1.48-1.3 2.74-1.3s2.32.57 2.74 1.3c.17.29-.05.63-.37.63H10.13c-.32 0-.54-.34-.37-.63z"/></svg>`,
+
+  "harry-potter": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>`,
+
+  football: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 3.3l1.35-.95c1.82.56 3.37 1.76 4.38 3.34l-.39 1.34-1.35.46L13 6.7V5.3zm-3.35-.95L11 5.3v1.4L7.01 9.49l-1.35-.46-.39-1.34c1.01-1.58 2.56-2.78 4.38-3.34zM7.08 17.11l-1.14.1A7.942 7.942 0 014 12c0-.12.01-.23.02-.35l1-.73 1.38.48 1.46 4.34-.78 1.37zm7.42 2.48c-.79.26-1.63.41-2.5.41s-1.71-.15-2.5-.41l-.69-1.49.64-1.1h5.11l.64 1.11-.7 1.48zM14.27 15H9.73l-1.35-4.02L12 8.44l3.63 2.54L14.27 15zm3.79 2.21l-1.14-.1-.78-1.37 1.46-4.34 1.38-.48 1 .73c.01.12.02.23.02.35 0 1.9-.67 3.64-1.94 4.21z"/></svg>`,
+
+  pokemon: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 2c3.07 0 5.7 1.73 7.02 4.27h-3.44c-.79-1.26-2.17-2.1-3.73-2.1s-2.95.85-3.74 2.1H4.98A8.01 8.01 0 0112 4zm0 5.83c1.2 0 2.17.97 2.17 2.17S13.2 14.17 12 14.17 9.83 13.2 9.83 12 10.8 9.83 12 9.83zM12 20c-3.07 0-5.7-1.73-7.02-4.27h3.44c.79 1.26 2.17 2.1 3.73 2.1s2.95-.85 3.74-2.1h3.13A8.01 8.01 0 0112 20z"/></svg>`,
+
+  anglais: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0014.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>`,
+
+  naruto: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 9.5c-1.93 0-3.5-1.57-3.5-3.5S10.07 8.5 12 8.5s3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/><circle cx="12" cy="12" r="1.5"/></svg>`,
+
+  gamer: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>`,
+
+  "brevet-histoire": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>`,
+
+  "pays-europe": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`,
+
+  "brawl-stars": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2L12 16.4 5.6 21.2 8 14 2 9.2h7.6z"/></svg>`,
+
+  anime: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-1 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>`,
+
+  amitie: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>`,
+};
+
+// Game type icons
+export const gameTypeIcons: Record<string, string> = {
+  qcm: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>`,
+
+  "vrai-faux": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`,
+
+  chrono: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42A8.962 8.962 0 0012 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></svg>`,
+
+  estimation: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-1.5v-4.5h-2V17H9V7h1.5v3.5h2V7H14v10z"/></svg>`,
+
+  duel: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M6 6h4v4H6zm8 8h4v4h-4zM6 18l4-4M14 6l4 4" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M19.07 4.93l-1.41 1.41L19.07 7.76l1.41-1.42-1.41-1.41zM4.93 19.07l1.41-1.41-1.42-1.41-1.41 1.41 1.42 1.41zM3 11h3v2H3zm15 0h3v2h-3zM11 3h2v3h-2zm0 15h2v3h-2z"/></svg>`,
+
+  ordre: `<svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z"/></svg>`,
+};
+
+// Helper to get icon SVG by category slug (falls back to first 2 letters)
+export function getCategoryIconSvg(slug: string): string | null {
+  return categoryIcons[slug] || null;
+}
+
+export function getGameTypeIconSvg(id: string): string | null {
+  return gameTypeIcons[id] || null;
+}
