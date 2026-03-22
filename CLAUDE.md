@@ -1,13 +1,38 @@
 # Wizy - Multilingual Quiz Platform
 
 ## Project Overview
-Wizy is a multilingual quiz platform built with Astro 6 + React + TailwindCSS v4, deployed on GitHub Pages.
+Wizy is a multilingual quiz platform built with Astro 6 + React + TailwindCSS v4, deployed on Cloudflare Workers.
 
-- **Site URL**: https://PierreGaudard.github.io/
+- **Site URL (dev)**: https://quiz.pierretartare94440.workers.dev
 - **Base path**: `/` (configured in `astro.config.mjs`)
-- **Deployment**: GitHub Actions → GitHub Pages (Node.js 22+ required for Astro 6)
+- **Deployment**: Push to `main` → Cloudflare auto-builds and deploys (Node.js 22+)
 
 ## CRITICAL RULES
+
+### Images: Always WebP
+**ALL images MUST be in WebP format.** Never use JPG or PNG in `public/images/`.
+- Max width: 800px (resize larger images before adding)
+- Quality: 80 (good balance between size and quality)
+- Reference images as `.webp` in all data files and components
+- When adding a new image: convert to WebP first, then add to `public/images/`
+- `coverImage` paths in quiz data: `/images/my-image.webp`
+
+### Images in Templates: Use the Right Helper
+**NEVER use `localePath()` / `lp()` for image `src` attributes.** This adds `/fr/` or `/es/` prefix to static assets, causing 404s.
+- Image `src` → `withBase(path)` (no locale prefix)
+- Navigation `href` → `localePath(path, locale)` or `lp(path)` (with locale prefix)
+- In React components: use `withBase()` for images, `lp()` for links (see CategoryPage.tsx pattern)
+
+### React Components: Locale-Aware Links
+React components (CategoryPage, QuizCard, SidebarContent) MUST use a locale-aware link helper:
+```tsx
+const lp = (path: string) => {
+  const prefix = locale && locale !== "en" ? `/${locale}` : "";
+  const p = path.startsWith("/") ? path : `/${path}`;
+  return withBase(`${prefix}${p}`);
+};
+```
+**NEVER use bare `withBase()` for navigation links in React.** It omits the locale prefix for FR/ES.
 
 ### Locale Parity
 **Every page that exists in one locale MUST exist in ALL locales (en, fr, es).**
@@ -17,10 +42,68 @@ When creating a new page, quiz, category, or any content: always create the EN, 
 - Quiz data (every TranslatedQuiz must have all 3 translations)
 - Category data (every CategoryDef must have all 3 translations)
 
-### Sitemap Consistency
-- The HTML sitemap (`plan-du-site.astro`) must list ALL categories, subcategories, and quizzes
-- A `sitemap.xml` should be generated for search engines
-- Every quiz must belong to a category, every category must have subcategories
+### Subcategory Slugs Are Locale-Specific
+Subcategory names differ per locale (e.g. EN "Olympics" → FR "JO & Athletisme" → ES "Juegos Olimpicos"). Their slugs are generated from the locale-specific name via `slugifySubcategory()`. When generating links to subcategories, always use the current locale's subcategory names.
+
+For hreflang on subcategory pages, use `getHreflangSubcategoryPaths()` from `src/lib/hreflang-helpers.ts` to compute the correct paths for each locale, and pass them as `hreflangPaths` prop to Layout.
+
+### No Em Dashes
+Never use -- or em dashes in any content. Rephrase naturally instead.
+
+## Accessibility Rules
+
+### Every Interactive Element Must Be Accessible
+- All `<button>` elements MUST have either visible text content or an `aria-label`
+- All `<img>` elements MUST have an `alt` attribute (empty `alt=""` only for purely decorative images)
+- All `<input>` elements MUST have a `<label>` or `aria-label`
+
+### Heading Hierarchy
+- Each page has exactly ONE `<h1>`
+- Headings must be sequential: h1 → h2 → h3 (never skip levels)
+- Use `<p>` or `<div>` with heading styles for non-semantic visual headings
+
+### Color Contrast (WCAG AA)
+- Small text (< 14px bold / < 18px regular): contrast ratio >= 4.5:1
+- Use `bg-orange-700` (not 500) for badges with white text
+- Use `bg-green-700` (not 500) for badges with white text
+- Use `text-violet-700` (not 500) for text on white background
+- Avoid `text-white/40` or `text-white/30` for readable content
+
+## SEO Rules
+
+### Every Page Must Have
+- Correct `<html lang="">` attribute
+- `<title>` between 30 and 60 characters
+- `<meta name="description">` between 70 and 155 characters
+- Self-referencing `<link rel="canonical">` with trailing slash
+- `<link rel="alternate" hreflang="">` for all locales + x-default (absolute URLs, trailing slash)
+- Open Graph tags: og:title, og:description, og:url, og:type, og:locale, og:site_name
+- Twitter card tags: twitter:card, twitter:title, twitter:description, twitter:image (when image available)
+- JSON-LD structured data (see below)
+
+### Structured Data (JSON-LD) per Page Type
+- **Homepage**: WebSite + Organization + FAQPage
+- **Quiz pages**: Quiz (with questions) + BreadcrumbList
+- **Category pages**: CollectionPage + BreadcrumbList
+- **Subcategory pages**: CollectionPage (with isPartOf) + BreadcrumbList
+
+### Canonical & Trailing Slash
+- Always use trailing slash on all URLs (matches Astro output format)
+- Canonical, hreflang, og:url must all use the same trailing-slash format
+- Layout.astro handles this automatically
+
+### Sitemap
+- `@astrojs/sitemap` generates `sitemap-index.xml` automatically
+- Referenced in `public/robots.txt`
+- HTML sitemap at `/plan-du-site` must list ALL categories, subcategories, and quizzes
+
+## Security Headers
+Configured in `public/_headers` (Cloudflare format):
+- X-Frame-Options: SAMEORIGIN
+- X-Content-Type-Options: nosniff
+- Strict-Transport-Security with max-age=31536000
+- Content-Security-Policy
+- Referrer-Policy: strict-origin-when-cross-origin
 
 ## i18n Architecture
 
@@ -34,6 +117,7 @@ When creating a new page, quiz, category, or any content: always create the EN, 
 - `src/i18n/ui.ts` — All UI string translations (nav, buttons, labels) for en/fr/es
 - `src/i18n/index.ts` — Re-exports everything
 - `src/utils/base.ts` — `withBase()` (no locale) and `localePath()` (with locale)
+- `src/lib/hreflang-helpers.ts` — `getHreflangSubcategoryPaths()` for cross-locale subcategory slugs
 
 ### Data Translation Model
 - **Categories** (`src/data/categories.ts`): `CategoryDef` with `translations: Record<Locale, CategoryLocaleContent>`
@@ -59,25 +143,17 @@ src/pages/
 
 Each locale page sets `const locale: Locale = "xx"` and calls shared helpers from `src/lib/page-helpers.ts`.
 
-### Adding a New Locale
-1. Add locale to `src/i18n/config.ts` → `locales` array
-2. Add UI strings in `src/i18n/ui.ts`
-3. Add translations to `src/data/categories.ts` (in each `CategoryDef.translations`)
-4. Add translations to each `src/data/quiz-*.ts` file
-5. Create page directory `src/pages/{locale}/` with copies of index, [slug], [category]/[sub]
-6. Update `astro.config.mjs` → `i18n.locales`
-
 ## Routing
 
 ### URL Patterns
 - Category: `/{category-slug}` (EN), `/fr/{category-slug}` (FR), `/es/{category-slug}` (ES)
-- Subcategory: `/{category-slug}/{sub-slug}`
-- Quiz: `/{quiz-slug}`
-- Same slugs across all locales (only content changes)
+- Subcategory: `/{category-slug}/{sub-slug}` — **sub-slug is locale-specific**
+- Quiz: `/{quiz-slug}` — same slug across all locales
+- All URLs use trailing slash
 
 ### Link Generation
 - **Astro templates**: Use `localePath(path, locale)` for locale-aware links
-- **React components**: Use `withBase(path)` (locale not needed in client components — pages pass resolved data)
+- **React components**: Use the `lp()` helper (see Critical Rules above) for links, `withBase()` for images
 - **Never hardcode** base path prefix — always use helpers
 
 ## Categories (5 active)
@@ -86,23 +162,6 @@ Each locale page sets `const locale: Locale = "xx"` and calls shared helpers fro
 3. **History** (`histoire`) — Antiquity, Middle Ages, World Wars, Revolutions, Kings of France, Modern History
 4. **General Knowledge** (`culture-generale`) — Society, Religion, Traditions, Current Events, Celebrities, Misc
 5. **Geography** (`geographie`) — Capitals, Flags, Europe, Asia, Americas, Africa
-
-## SEO Rules
-
-### Every Page Must Have
-- Correct `<html lang="">` attribute
-- `<title>` and `<meta name="description">`
-- `<link rel="alternate" hreflang="">` for all locales + x-default
-- Open Graph tags
-
-### Content Organization
-- Every quiz belongs to exactly one category via `categorySlug`
-- Every quiz should have a `subcategory` matching parent category's subcategories
-- Quiz pages include Schema.org `Quiz` structured data (JSON-LD)
-- Breadcrumbs on every page
-
-### HTML Sitemap
-- `/plan-du-site` lists all categories, subcategories, and quizzes
 
 ## Data Types
 
@@ -115,7 +174,7 @@ Each locale page sets `const locale: Locale = "xx"` and calls shared helpers fro
   difficulty: "easy" | "medium" | "hard";
   gameType?: GameType;
   playCount?: number;
-  coverImage?: string;
+  coverImage?: string;    // MUST be .webp, e.g. "/images/cover-sport.webp"
   featured?: boolean;
   translations: {
     en: { title, description, questions[] },
@@ -146,8 +205,21 @@ npm run preview  # Preview production build
 1. Create or edit a `src/data/quiz-*.ts` file
 2. Export a `TranslatedQuiz[]` as default export
 3. Set `categorySlug` to match an existing category slug
-4. Add translations for at least `en` (falls back to `en` if locale missing)
-5. The quiz is auto-discovered via `import.meta.glob`
+4. Add translations for all 3 locales (en, fr, es)
+5. Use `.webp` for coverImage and question images
+6. The quiz is auto-discovered via `import.meta.glob`
+
+### Adding an Image
+1. Convert to WebP (max 800px wide, quality 80)
+2. Place in `public/images/`
+3. Reference as `/images/filename.webp` in data files
+4. Use `withBase()` in templates for `src`, never `localePath()`
+
+### Performance Checklist
+- Google Fonts loaded async (preload + print/onload pattern in Layout.astro)
+- Images in WebP format, max 800px
+- `loading="lazy"` on all images below the fold
+- `fetchpriority="high"` on LCP image if applicable
 
 ### Key Constraints
 - Astro 6 requires Node.js >= 22.12.0
