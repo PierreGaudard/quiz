@@ -6,7 +6,7 @@ export const quizDrapeaux: TranslatedQuiz = {
   categorySlug: "geographie",
   subcategory: "Drapeaux",
   difficulty: "medium",
-  coverImage: "/images/cover-geographie.webp",
+  coverImage: "/images/cover-drapeaux.webp",
   gameType: "qcm",
   playCount: 18500,
   translations: {

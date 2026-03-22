@@ -6,7 +6,7 @@ export const quizMinecraft: TranslatedQuiz = {
   categorySlug: "jeux-video",
   subcategory: "Minecraft",
   difficulty: "medium",
-  coverImage: "/images/cover-jeux-video.webp",
+  coverImage: "/images/cover-minecraft.webp",
   gameType: "qcm",
   playCount: 22100,
   translations: {
