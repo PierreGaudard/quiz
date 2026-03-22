@@ -7,7 +7,6 @@ export const quizDrapeaux: TranslatedQuiz = {
   difficulty: "medium",
   gameType: "qcm",
   playCount: 18500,
-  coverImage: "https://picsum.photos/seed/cover-drapeaux/1200/600",
   translations: {
     fr: {
       title: "Quiz drapeaux : reconnais les pays",
@@ -790,7 +789,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
   difficulty: "hard",
   gameType: "qcm",
   playCount: 7200,
-  coverImage: "https://picsum.photos/seed/cover-departements/1200/600",
   translations: {
     fr: {
       title: "Quiz départements français",
@@ -800,7 +798,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 1,
           question: "Quel département porte le numéro 29 ?",
-          image: "https://picsum.photos/seed/dept-finistere/800/450",
           answers: [
             { id: "a", text: "Côtes-d'Armor" },
             { id: "b", text: "Finistère" },
@@ -814,7 +811,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 2,
           question: "Quelle est la préfecture du département du Var (83) ?",
-          image: "https://picsum.photos/seed/dept-var-toulon/800/450",
           answers: [
             { id: "a", text: "Toulon" },
             { id: "b", text: "Draguignan" },
@@ -829,7 +825,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 3,
           question:
             "Quel est le plus grand département de France métropolitaine par sa superficie ?",
-          image: "https://picsum.photos/seed/dept-gironde/800/450",
           answers: [
             { id: "a", text: "Landes" },
             { id: "b", text: "Gironde" },
@@ -843,7 +838,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 4,
           question: "Quel numéro porte le département de la Savoie ?",
-          image: "https://picsum.photos/seed/dept-savoie-alpes/800/450",
           answers: [
             { id: "a", text: "72" },
             { id: "b", text: "73" },
@@ -858,7 +852,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 5,
           question:
             "De quelle région fait partie le département du Bas-Rhin (67) ?",
-          image: "https://picsum.photos/seed/dept-var-toulon/800/450",
           answers: [
             { id: "a", text: "Lorraine" },
             { id: "b", text: "Grand Est" },
@@ -872,7 +865,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 6,
           question: "Quelle est la préfecture du département de l'Ain (01) ?",
-          image: "https://picsum.photos/seed/dept-ain-bresse/800/450",
           answers: [
             { id: "a", text: "Belley" },
             { id: "b", text: "Nantua" },
@@ -886,7 +878,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 7,
           question: "Quel département a le numéro 2A ?",
-          image: "https://picsum.photos/seed/dept-corse-sud/800/450",
           answers: [
             { id: "a", text: "Haute-Corse" },
             { id: "b", text: "Corse-du-Sud" },
@@ -901,7 +892,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 8,
           question:
             "Quel est le département le plus peuplé de France (hors Paris) ?",
-          image: "https://picsum.photos/seed/dept-finistere/800/450",
           answers: [
             { id: "a", text: "Bouches-du-Rhône" },
             { id: "b", text: "Rhône" },
@@ -915,7 +905,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 9,
           question: "Quel département porte le numéro 44 ?",
-          image: "https://picsum.photos/seed/dept-loire-atlantique/800/450",
           answers: [
             { id: "a", text: "Lot" },
             { id: "b", text: "Loire-Atlantique" },
@@ -929,7 +918,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 10,
           question: "Quelle est la préfecture du département de l'Hérault (34) ?",
-          image: "https://picsum.photos/seed/dept-herault-montpellier/800/450",
           answers: [
             { id: "a", text: "Béziers" },
             { id: "b", text: "Sète" },
@@ -943,7 +931,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 11,
           question: "Quel département porte le numéro 13 ?",
-          image: "https://picsum.photos/seed/dept-bouches-du-rhone/800/450",
           answers: [
             { id: "a", text: "Bouches-du-Rhône" },
             { id: "b", text: "Calvados" },
@@ -958,7 +945,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 12,
           question:
             "Quel est le plus petit département de France métropolitaine par sa superficie ?",
-          image: "https://picsum.photos/seed/cover-departements/1200/600",
           answers: [
             { id: "a", text: "Paris" },
             { id: "b", text: "Hauts-de-Seine" },
@@ -972,7 +958,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 13,
           question: "Quelle est la préfecture du département de la Moselle (57) ?",
-          image: "https://picsum.photos/seed/dept-moselle-metz/800/450",
           answers: [
             { id: "a", text: "Thionville" },
             { id: "b", text: "Sarreguemines" },
@@ -986,7 +971,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 14,
           question: "Quel département porte le numéro 69 ?",
-          image: "https://picsum.photos/seed/dept-rhone-lyon/800/450",
           answers: [
             { id: "a", text: "Haute-Saône" },
             { id: "b", text: "Rhône" },
@@ -1001,7 +985,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 15,
           question:
             "De quelle région fait partie le département de la Haute-Garonne (31) ?",
-          image: "https://picsum.photos/seed/dept-haute-garonne-toulouse/800/450",
           answers: [
             { id: "a", text: "Nouvelle-Aquitaine" },
             { id: "b", text: "Auvergne-Rhône-Alpes" },
@@ -1016,7 +999,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 16,
           question:
             "Quel département d'outre-mer porte le numéro 974 ?",
-          image: "https://picsum.photos/seed/dept-reunion/800/450",
           answers: [
             { id: "a", text: "Guadeloupe" },
             { id: "b", text: "Martinique" },
@@ -1030,7 +1012,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 17,
           question: "Quelle est la préfecture du département du Puy-de-Dôme (63) ?",
-          image: "https://picsum.photos/seed/dept-moselle-metz/800/450",
           answers: [
             { id: "a", text: "Vichy" },
             { id: "b", text: "Clermont-Ferrand" },
@@ -1051,7 +1032,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 1,
           question: "Which department has the number 29?",
-          image: "https://picsum.photos/seed/dept-finistere/800/450",
           answers: [
             { id: "a", text: "Côtes-d'Armor" },
             { id: "b", text: "Finistère" },
@@ -1065,7 +1045,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 2,
           question: "What is the prefecture of the Var department (83)?",
-          image: "https://picsum.photos/seed/dept-var-toulon/800/450",
           answers: [
             { id: "a", text: "Toulon" },
             { id: "b", text: "Draguignan" },
@@ -1080,7 +1059,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 3,
           question:
             "Which is the largest department in mainland France by area?",
-          image: "https://picsum.photos/seed/dept-gironde/800/450",
           answers: [
             { id: "a", text: "Landes" },
             { id: "b", text: "Gironde" },
@@ -1094,7 +1072,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 4,
           question: "What number does the Savoie department have?",
-          image: "https://picsum.photos/seed/dept-savoie-alpes/800/450",
           answers: [
             { id: "a", text: "72" },
             { id: "b", text: "73" },
@@ -1109,7 +1086,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 5,
           question:
             "Which region does the Bas-Rhin department (67) belong to?",
-          image: "https://picsum.photos/seed/dept-var-toulon/800/450",
           answers: [
             { id: "a", text: "Lorraine" },
             { id: "b", text: "Grand Est" },
@@ -1123,7 +1099,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 6,
           question: "What is the prefecture of the Ain department (01)?",
-          image: "https://picsum.photos/seed/dept-ain-bresse/800/450",
           answers: [
             { id: "a", text: "Belley" },
             { id: "b", text: "Nantua" },
@@ -1137,7 +1112,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 7,
           question: "Which department has the number 2A?",
-          image: "https://picsum.photos/seed/dept-corse-sud/800/450",
           answers: [
             { id: "a", text: "Haute-Corse" },
             { id: "b", text: "Corse-du-Sud" },
@@ -1152,7 +1126,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 8,
           question:
             "Which is the most populated department in France (excluding Paris)?",
-          image: "https://picsum.photos/seed/dept-finistere/800/450",
           answers: [
             { id: "a", text: "Bouches-du-Rhône" },
             { id: "b", text: "Rhône" },
@@ -1166,7 +1139,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 9,
           question: "Which department has the number 44?",
-          image: "https://picsum.photos/seed/dept-loire-atlantique/800/450",
           answers: [
             { id: "a", text: "Lot" },
             { id: "b", text: "Loire-Atlantique" },
@@ -1180,7 +1152,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 10,
           question: "What is the prefecture of the Hérault department (34)?",
-          image: "https://picsum.photos/seed/dept-herault-montpellier/800/450",
           answers: [
             { id: "a", text: "Béziers" },
             { id: "b", text: "Sète" },
@@ -1194,7 +1165,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 11,
           question: "Which department has the number 13?",
-          image: "https://picsum.photos/seed/dept-bouches-du-rhone/800/450",
           answers: [
             { id: "a", text: "Bouches-du-Rhône" },
             { id: "b", text: "Calvados" },
@@ -1209,7 +1179,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 12,
           question:
             "Which is the smallest department in mainland France by area?",
-          image: "https://picsum.photos/seed/cover-departements/1200/600",
           answers: [
             { id: "a", text: "Paris" },
             { id: "b", text: "Hauts-de-Seine" },
@@ -1223,7 +1192,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 13,
           question: "What is the prefecture of the Moselle department (57)?",
-          image: "https://picsum.photos/seed/dept-moselle-metz/800/450",
           answers: [
             { id: "a", text: "Thionville" },
             { id: "b", text: "Sarreguemines" },
@@ -1237,7 +1205,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 14,
           question: "Which department has the number 69?",
-          image: "https://picsum.photos/seed/dept-rhone-lyon/800/450",
           answers: [
             { id: "a", text: "Haute-Saône" },
             { id: "b", text: "Rhône" },
@@ -1252,7 +1219,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 15,
           question:
             "Which region does the Haute-Garonne department (31) belong to?",
-          image: "https://picsum.photos/seed/dept-haute-garonne-toulouse/800/450",
           answers: [
             { id: "a", text: "Nouvelle-Aquitaine" },
             { id: "b", text: "Auvergne-Rhône-Alpes" },
@@ -1267,7 +1233,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 16,
           question:
             "Which overseas department has the number 974?",
-          image: "https://picsum.photos/seed/dept-reunion/800/450",
           answers: [
             { id: "a", text: "Guadeloupe" },
             { id: "b", text: "Martinique" },
@@ -1281,7 +1246,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 17,
           question: "What is the prefecture of the Puy-de-Dôme department (63)?",
-          image: "https://picsum.photos/seed/dept-moselle-metz/800/450",
           answers: [
             { id: "a", text: "Vichy" },
             { id: "b", text: "Clermont-Ferrand" },
@@ -1302,7 +1266,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 1,
           question: "\u00bfQué departamento tiene el número 29?",
-          image: "https://picsum.photos/seed/dept-finistere/800/450",
           answers: [
             { id: "a", text: "Côtes-d'Armor" },
             { id: "b", text: "Finistère" },
@@ -1316,7 +1279,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 2,
           question: "\u00bfCuál es la prefectura del departamento de Var (83)?",
-          image: "https://picsum.photos/seed/dept-var-toulon/800/450",
           answers: [
             { id: "a", text: "Toulon" },
             { id: "b", text: "Draguignan" },
@@ -1331,7 +1293,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 3,
           question:
             "\u00bfCuál es el departamento más grande de Francia metropolitana por superficie?",
-          image: "https://picsum.photos/seed/dept-gironde/800/450",
           answers: [
             { id: "a", text: "Landes" },
             { id: "b", text: "Gironde" },
@@ -1345,7 +1306,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 4,
           question: "\u00bfQué número tiene el departamento de Savoie?",
-          image: "https://picsum.photos/seed/dept-savoie-alpes/800/450",
           answers: [
             { id: "a", text: "72" },
             { id: "b", text: "73" },
@@ -1360,7 +1320,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 5,
           question:
             "\u00bfA qué región pertenece el departamento de Bas-Rhin (67)?",
-          image: "https://picsum.photos/seed/dept-var-toulon/800/450",
           answers: [
             { id: "a", text: "Lorraine" },
             { id: "b", text: "Grand Est" },
@@ -1374,7 +1333,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 6,
           question: "\u00bfCuál es la prefectura del departamento de Ain (01)?",
-          image: "https://picsum.photos/seed/dept-ain-bresse/800/450",
           answers: [
             { id: "a", text: "Belley" },
             { id: "b", text: "Nantua" },
@@ -1388,7 +1346,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 7,
           question: "\u00bfQué departamento tiene el número 2A?",
-          image: "https://picsum.photos/seed/dept-corse-sud/800/450",
           answers: [
             { id: "a", text: "Haute-Corse" },
             { id: "b", text: "Corse-du-Sud" },
@@ -1403,7 +1360,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 8,
           question:
             "\u00bfCuál es el departamento más poblado de Francia (excluyendo París)?",
-          image: "https://picsum.photos/seed/dept-finistere/800/450",
           answers: [
             { id: "a", text: "Bouches-du-Rhône" },
             { id: "b", text: "Rhône" },
@@ -1417,7 +1373,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 9,
           question: "\u00bfQué departamento tiene el número 44?",
-          image: "https://picsum.photos/seed/dept-loire-atlantique/800/450",
           answers: [
             { id: "a", text: "Lot" },
             { id: "b", text: "Loire-Atlantique" },
@@ -1431,7 +1386,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 10,
           question: "\u00bfCuál es la prefectura del departamento de Hérault (34)?",
-          image: "https://picsum.photos/seed/dept-herault-montpellier/800/450",
           answers: [
             { id: "a", text: "Béziers" },
             { id: "b", text: "Sète" },
@@ -1445,7 +1399,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 11,
           question: "\u00bfQué departamento tiene el número 13?",
-          image: "https://picsum.photos/seed/dept-bouches-du-rhone/800/450",
           answers: [
             { id: "a", text: "Bouches-du-Rhône" },
             { id: "b", text: "Calvados" },
@@ -1460,7 +1413,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 12,
           question:
             "\u00bfCuál es el departamento más pequeño de Francia metropolitana por superficie?",
-          image: "https://picsum.photos/seed/cover-departements/1200/600",
           answers: [
             { id: "a", text: "París" },
             { id: "b", text: "Hauts-de-Seine" },
@@ -1474,7 +1426,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 13,
           question: "\u00bfCuál es la prefectura del departamento de Moselle (57)?",
-          image: "https://picsum.photos/seed/dept-moselle-metz/800/450",
           answers: [
             { id: "a", text: "Thionville" },
             { id: "b", text: "Sarreguemines" },
@@ -1488,7 +1439,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 14,
           question: "\u00bfQué departamento tiene el número 69?",
-          image: "https://picsum.photos/seed/dept-rhone-lyon/800/450",
           answers: [
             { id: "a", text: "Haute-Saône" },
             { id: "b", text: "Rhône" },
@@ -1503,7 +1453,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 15,
           question:
             "\u00bfA qué región pertenece el departamento de Haute-Garonne (31)?",
-          image: "https://picsum.photos/seed/dept-haute-garonne-toulouse/800/450",
           answers: [
             { id: "a", text: "Nouvelle-Aquitaine" },
             { id: "b", text: "Auvergne-Rhône-Alpes" },
@@ -1518,7 +1467,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           id: 16,
           question:
             "\u00bfQué departamento de ultramar tiene el número 974?",
-          image: "https://picsum.photos/seed/dept-reunion/800/450",
           answers: [
             { id: "a", text: "Guadalupe" },
             { id: "b", text: "Martinica" },
@@ -1532,7 +1480,6 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         {
           id: 17,
           question: "\u00bfCuál es la prefectura del departamento de Puy-de-Dôme (63)?",
-          image: "https://picsum.photos/seed/dept-moselle-metz/800/450",
           answers: [
             { id: "a", text: "Vichy" },
             { id: "b", text: "Clermont-Ferrand" },
@@ -1555,7 +1502,6 @@ export const quizPaysEurope: TranslatedQuiz = {
   difficulty: "medium",
   gameType: "qcm",
   playCount: 8100,
-  coverImage: "https://picsum.photos/seed/cover-pays-europe/1200/600",
   translations: {
     fr: {
       title: "Quiz pays d'Europe : capitales et frontières",
@@ -1565,7 +1511,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 1,
           question: "Quelle est la capitale de la Roumanie ?",
-          image: "https://picsum.photos/seed/europe-roumanie-bucarest/800/450",
           answers: [
             { id: "a", text: "Budapest" },
             { id: "b", text: "Bucarest" },
@@ -1579,7 +1524,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 2,
           question: "Quel est le plus petit pays d'Europe par sa superficie ?",
-          image: "https://picsum.photos/seed/dept-herault-montpellier/800/450",
           answers: [
             { id: "a", text: "Monaco" },
             { id: "b", text: "Saint-Marin" },
@@ -1593,7 +1537,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 3,
           question: "Combien de pays font partie de l'Union européenne en 2025 ?",
-          image: "https://picsum.photos/seed/europe-map/800/450",
           answers: [
             { id: "a", text: "25" },
             { id: "b", text: "27" },
@@ -1607,7 +1550,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 4,
           question: "Quel pays européen ne partage de frontière terrestre avec aucun autre pays ?",
-          image: "https://picsum.photos/seed/europe-iles-insulaires/800/450",
           answers: [
             { id: "a", text: "Malte" },
             { id: "b", text: "Chypre" },
@@ -1621,7 +1563,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 5,
           question: "Quelle est la capitale de la Slovénie ?",
-          image: "https://picsum.photos/seed/europe-slovenie-ljubljana/800/450",
           answers: [
             { id: "a", text: "Bratislava" },
             { id: "b", text: "Zagreb" },
@@ -1635,7 +1576,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 6,
           question: "Quel pays borde à la fois la France et le Portugal ?",
-          image: "https://picsum.photos/seed/europe-espagne/800/450",
           answers: [
             { id: "a", text: "Italie" },
             { id: "b", text: "Espagne" },
@@ -1649,7 +1589,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 7,
           question: "Quelle est la capitale de la Finlande ?",
-          image: "https://picsum.photos/seed/europe-finlande-helsinki/800/450",
           answers: [
             { id: "a", text: "Oslo" },
             { id: "b", text: "Stockholm" },
@@ -1663,7 +1602,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 8,
           question: "Quel est le plus long fleuve d'Europe ?",
-          image: "https://picsum.photos/seed/dept-savoie-alpes/800/450",
           answers: [
             { id: "a", text: "Danube" },
             { id: "b", text: "Rhin" },
@@ -1677,7 +1615,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 9,
           question: "Quelle est la capitale de la Tchéquie (République tchèque) ?",
-          image: "https://picsum.photos/seed/europe-tcheque-prague/800/450",
           answers: [
             { id: "a", text: "Varsovie" },
             { id: "b", text: "Prague" },
@@ -1691,7 +1628,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 10,
           question: "Quel pays européen a le plus grand nombre d'habitants ?",
-          image: "https://picsum.photos/seed/europe-allemagne/800/450",
           answers: [
             { id: "a", text: "France" },
             { id: "b", text: "Royaume-Uni" },
@@ -1705,7 +1641,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 11,
           question: "Quelle est la capitale de la Grèce ?",
-          image: "https://picsum.photos/seed/europe-grece-athenes/800/450",
           answers: [
             { id: "a", text: "Thessalonique" },
             { id: "b", text: "Athènes" },
@@ -1719,7 +1654,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 12,
           question: "Quel pays européen a la plus grande superficie ?",
-          image: "https://picsum.photos/seed/europe-ukraine/800/450",
           answers: [
             { id: "a", text: "Ukraine" },
             { id: "b", text: "France" },
@@ -1733,7 +1667,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 13,
           question: "Quelle est la capitale de l'Autriche ?",
-          image: "https://picsum.photos/seed/europe-autriche-vienne/800/450",
           answers: [
             { id: "a", text: "Salzbourg" },
             { id: "b", text: "Innsbruck" },
@@ -1747,7 +1680,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 14,
           question: "Quel pays européen est traversé par le plus grand nombre de fuseaux horaires ?",
-          image: "https://picsum.photos/seed/europe-ukraine/800/450",
           answers: [
             { id: "a", text: "Russie" },
             { id: "b", text: "France" },
@@ -1761,7 +1693,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 15,
           question: "Quelle est la capitale du Portugal ?",
-          image: "https://picsum.photos/seed/europe-portugal-lisbonne/800/450",
           answers: [
             { id: "a", text: "Porto" },
             { id: "b", text: "Lisbonne" },
@@ -1775,7 +1706,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 16,
           question: "Quel détroit sépare l'Europe de l'Asie en Turquie ?",
-          image: "https://picsum.photos/seed/dept-bouches-du-rhone/800/450",
           answers: [
             { id: "a", text: "Détroit de Gibraltar" },
             { id: "b", text: "Détroit de Messine" },
@@ -1789,7 +1719,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 17,
           question: "Quelle est la capitale de la Norvège ?",
-          image: "https://picsum.photos/seed/europe-norvege-oslo/800/450",
           answers: [
             { id: "a", text: "Bergen" },
             { id: "b", text: "Oslo" },
@@ -1810,7 +1739,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 1,
           question: "What is the capital of Romania?",
-          image: "https://picsum.photos/seed/europe-roumanie-bucarest/800/450",
           answers: [
             { id: "a", text: "Budapest" },
             { id: "b", text: "Bucharest" },
@@ -1824,7 +1752,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 2,
           question: "What is the smallest country in Europe by area?",
-          image: "https://picsum.photos/seed/dept-herault-montpellier/800/450",
           answers: [
             { id: "a", text: "Monaco" },
             { id: "b", text: "San Marino" },
@@ -1838,7 +1765,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 3,
           question: "How many countries are part of the European Union in 2025?",
-          image: "https://picsum.photos/seed/europe-map/800/450",
           answers: [
             { id: "a", text: "25" },
             { id: "b", text: "27" },
@@ -1852,7 +1778,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 4,
           question: "Which European country shares no land border with any other country?",
-          image: "https://picsum.photos/seed/europe-iles-insulaires/800/450",
           answers: [
             { id: "a", text: "Malta" },
             { id: "b", text: "Cyprus" },
@@ -1866,7 +1791,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 5,
           question: "What is the capital of Slovenia?",
-          image: "https://picsum.photos/seed/europe-slovenie-ljubljana/800/450",
           answers: [
             { id: "a", text: "Bratislava" },
             { id: "b", text: "Zagreb" },
@@ -1880,7 +1804,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 6,
           question: "Which country borders both France and Portugal?",
-          image: "https://picsum.photos/seed/europe-espagne/800/450",
           answers: [
             { id: "a", text: "Italy" },
             { id: "b", text: "Spain" },
@@ -1894,7 +1817,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 7,
           question: "What is the capital of Finland?",
-          image: "https://picsum.photos/seed/europe-finlande-helsinki/800/450",
           answers: [
             { id: "a", text: "Oslo" },
             { id: "b", text: "Stockholm" },
@@ -1908,7 +1830,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 8,
           question: "What is the longest river in Europe?",
-          image: "https://picsum.photos/seed/dept-savoie-alpes/800/450",
           answers: [
             { id: "a", text: "Danube" },
             { id: "b", text: "Rhine" },
@@ -1922,7 +1843,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 9,
           question: "What is the capital of Czechia (Czech Republic)?",
-          image: "https://picsum.photos/seed/europe-tcheque-prague/800/450",
           answers: [
             { id: "a", text: "Warsaw" },
             { id: "b", text: "Prague" },
@@ -1936,7 +1856,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 10,
           question: "Which European country has the largest population?",
-          image: "https://picsum.photos/seed/europe-allemagne/800/450",
           answers: [
             { id: "a", text: "France" },
             { id: "b", text: "United Kingdom" },
@@ -1950,7 +1869,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 11,
           question: "What is the capital of Greece?",
-          image: "https://picsum.photos/seed/europe-grece-athenes/800/450",
           answers: [
             { id: "a", text: "Thessaloniki" },
             { id: "b", text: "Athens" },
@@ -1964,7 +1882,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 12,
           question: "Which European country has the largest area?",
-          image: "https://picsum.photos/seed/europe-ukraine/800/450",
           answers: [
             { id: "a", text: "Ukraine" },
             { id: "b", text: "France" },
@@ -1978,7 +1895,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 13,
           question: "What is the capital of Austria?",
-          image: "https://picsum.photos/seed/europe-autriche-vienne/800/450",
           answers: [
             { id: "a", text: "Salzburg" },
             { id: "b", text: "Innsbruck" },
@@ -1992,7 +1908,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 14,
           question: "Which European country spans the most time zones?",
-          image: "https://picsum.photos/seed/europe-ukraine/800/450",
           answers: [
             { id: "a", text: "Russia" },
             { id: "b", text: "France" },
@@ -2006,7 +1921,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 15,
           question: "What is the capital of Portugal?",
-          image: "https://picsum.photos/seed/europe-portugal-lisbonne/800/450",
           answers: [
             { id: "a", text: "Porto" },
             { id: "b", text: "Lisbon" },
@@ -2020,7 +1934,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 16,
           question: "Which strait separates Europe from Asia in Turkey?",
-          image: "https://picsum.photos/seed/dept-bouches-du-rhone/800/450",
           answers: [
             { id: "a", text: "Strait of Gibraltar" },
             { id: "b", text: "Strait of Messina" },
@@ -2034,7 +1947,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 17,
           question: "What is the capital of Norway?",
-          image: "https://picsum.photos/seed/europe-norvege-oslo/800/450",
           answers: [
             { id: "a", text: "Bergen" },
             { id: "b", text: "Oslo" },
@@ -2055,7 +1967,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 1,
           question: "\u00bfCuál es la capital de Rumanía?",
-          image: "https://picsum.photos/seed/europe-roumanie-bucarest/800/450",
           answers: [
             { id: "a", text: "Budapest" },
             { id: "b", text: "Bucarest" },
@@ -2069,7 +1980,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 2,
           question: "\u00bfCuál es el país más pequeño de Europa por superficie?",
-          image: "https://picsum.photos/seed/dept-herault-montpellier/800/450",
           answers: [
             { id: "a", text: "Mónaco" },
             { id: "b", text: "San Marino" },
@@ -2083,7 +1993,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 3,
           question: "\u00bfCuántos países forman parte de la Unión Europea en 2025?",
-          image: "https://picsum.photos/seed/europe-map/800/450",
           answers: [
             { id: "a", text: "25" },
             { id: "b", text: "27" },
@@ -2097,7 +2006,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 4,
           question: "\u00bfQué país europeo no comparte frontera terrestre con ningún otro país?",
-          image: "https://picsum.photos/seed/europe-iles-insulaires/800/450",
           answers: [
             { id: "a", text: "Malta" },
             { id: "b", text: "Chipre" },
@@ -2111,7 +2019,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 5,
           question: "\u00bfCuál es la capital de Eslovenia?",
-          image: "https://picsum.photos/seed/europe-slovenie-ljubljana/800/450",
           answers: [
             { id: "a", text: "Bratislava" },
             { id: "b", text: "Zagreb" },
@@ -2125,7 +2032,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 6,
           question: "\u00bfQué país limita tanto con Francia como con Portugal?",
-          image: "https://picsum.photos/seed/europe-espagne/800/450",
           answers: [
             { id: "a", text: "Italia" },
             { id: "b", text: "España" },
@@ -2139,7 +2045,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 7,
           question: "\u00bfCuál es la capital de Finlandia?",
-          image: "https://picsum.photos/seed/europe-finlande-helsinki/800/450",
           answers: [
             { id: "a", text: "Oslo" },
             { id: "b", text: "Estocolmo" },
@@ -2153,7 +2058,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 8,
           question: "\u00bfCuál es el río más largo de Europa?",
-          image: "https://picsum.photos/seed/dept-savoie-alpes/800/450",
           answers: [
             { id: "a", text: "Danubio" },
             { id: "b", text: "Rin" },
@@ -2167,7 +2071,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 9,
           question: "\u00bfCuál es la capital de Chequia (República Checa)?",
-          image: "https://picsum.photos/seed/europe-tcheque-prague/800/450",
           answers: [
             { id: "a", text: "Varsovia" },
             { id: "b", text: "Praga" },
@@ -2181,7 +2084,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 10,
           question: "\u00bfQué país europeo tiene el mayor número de habitantes?",
-          image: "https://picsum.photos/seed/europe-allemagne/800/450",
           answers: [
             { id: "a", text: "Francia" },
             { id: "b", text: "Reino Unido" },
@@ -2195,7 +2097,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 11,
           question: "\u00bfCuál es la capital de Grecia?",
-          image: "https://picsum.photos/seed/europe-grece-athenes/800/450",
           answers: [
             { id: "a", text: "Tesalónica" },
             { id: "b", text: "Atenas" },
@@ -2209,7 +2110,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 12,
           question: "\u00bfQué país europeo tiene la mayor superficie?",
-          image: "https://picsum.photos/seed/europe-ukraine/800/450",
           answers: [
             { id: "a", text: "Ucrania" },
             { id: "b", text: "Francia" },
@@ -2223,7 +2123,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 13,
           question: "\u00bfCuál es la capital de Austria?",
-          image: "https://picsum.photos/seed/europe-autriche-vienne/800/450",
           answers: [
             { id: "a", text: "Salzburgo" },
             { id: "b", text: "Innsbruck" },
@@ -2237,7 +2136,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 14,
           question: "\u00bfQué país europeo abarca el mayor número de husos horarios?",
-          image: "https://picsum.photos/seed/europe-ukraine/800/450",
           answers: [
             { id: "a", text: "Rusia" },
             { id: "b", text: "Francia" },
@@ -2251,7 +2149,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 15,
           question: "\u00bfCuál es la capital de Portugal?",
-          image: "https://picsum.photos/seed/europe-portugal-lisbonne/800/450",
           answers: [
             { id: "a", text: "Oporto" },
             { id: "b", text: "Lisboa" },
@@ -2265,7 +2162,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 16,
           question: "\u00bfQué estrecho separa Europa de Asia en Turquía?",
-          image: "https://picsum.photos/seed/dept-bouches-du-rhone/800/450",
           answers: [
             { id: "a", text: "Estrecho de Gibraltar" },
             { id: "b", text: "Estrecho de Mesina" },
@@ -2279,7 +2175,6 @@ export const quizPaysEurope: TranslatedQuiz = {
         {
           id: 17,
           question: "\u00bfCuál es la capital de Noruega?",
-          image: "https://picsum.photos/seed/europe-norvege-oslo/800/450",
           answers: [
             { id: "a", text: "Bergen" },
             { id: "b", text: "Oslo" },

@@ -5,7 +5,6 @@ export const quizFootball: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
-  coverImage: "https://picsum.photos/seed/cover-football/1200/600",
   timePerQuestion: 20,
   gameType: "qcm",
   playCount: 19800,
@@ -17,7 +16,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 1,
           question: "Quel pays a gagné le plus de Coupes du Monde ?",
-          image: "https://picsum.photos/seed/foot-coupe-du-monde/800/450",
           answers: [
             { id: "a", text: "Allemagne" },
             { id: "b", text: "Italie" },
@@ -30,7 +28,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 2,
           question: "Qui est le meilleur buteur de l'histoire de la Coupe du Monde ?",
-          image: "https://picsum.photos/seed/foot-buteur-klose/800/450",
           answers: [
             { id: "a", text: "Ronaldo (Brésil)" },
             { id: "b", text: "Miroslav Klose" },
@@ -43,7 +40,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 3,
           question: "En quelle année la France a-t-elle gagné sa première Coupe du Monde ?",
-          image: "https://picsum.photos/seed/foot-france-1998/800/450",
           answers: [
             { id: "a", text: "1994" },
             { id: "b", text: "1998" },
@@ -56,7 +52,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 4,
           question: "Quel club a le plus de titres en Ligue 1 ?",
-          image: "https://picsum.photos/seed/foot-ligue1-psg/800/450",
           answers: [
             { id: "a", text: "Olympique de Marseille" },
             { id: "b", text: "AS Saint-Étienne" },
@@ -69,7 +64,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 5,
           question: "Quel joueur a le plus de sélections en équipe de France ?",
-          image: "https://picsum.photos/seed/foot-selections-france/800/450",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
             { id: "b", text: "Thierry Henry" },
@@ -82,7 +76,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 6,
           question: "Combien de temps dure un match de football (temps réglementaire) ?",
-          image: "https://picsum.photos/seed/foot-duree-match/800/450",
           answers: [
             { id: "a", text: "80 minutes" },
             { id: "b", text: "90 minutes" },
@@ -95,7 +88,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 7,
           question: "Quel stade accueille les matchs de l'équipe de France ?",
-          image: "https://picsum.photos/seed/foot-stade-de-france/800/450",
           answers: [
             { id: "a", text: "Parc des Princes" },
             { id: "b", text: "Stade Vélodrome" },
@@ -108,7 +100,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 8,
           question: "Qui a inscrit le but en or en finale de l'Euro 2000 pour la France ?",
-          image: "https://picsum.photos/seed/foot-euro-2000/800/450",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
             { id: "b", text: "Thierry Henry" },
@@ -121,7 +112,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 9,
           question: "Quel joueur a marqué le but le plus rapide en Coupe du Monde ?",
-          image: "https://picsum.photos/seed/foot-but-rapide/800/450",
           answers: [
             { id: "a", text: "Clint Dempsey" },
             { id: "b", text: "Hakan Şükür" },
@@ -134,7 +124,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 10,
           question: "Quelle équipe a remporté la première Coupe des clubs champions européens (Ligue des Champions) ?",
-          image: "https://picsum.photos/seed/foot-champions-league/800/450",
           answers: [
             { id: "a", text: "AC Milan" },
             { id: "b", text: "Real Madrid" },
@@ -147,7 +136,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 11,
           question: "Quel est le transfert le plus cher de l'histoire du football ?",
-          image: "https://picsum.photos/seed/foot-transfert-neymar/800/450",
           answers: [
             { id: "a", text: "Kylian Mbappé au Real Madrid" },
             { id: "b", text: "Cristiano Ronaldo à la Juventus" },
@@ -160,7 +148,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 12,
           question: "Combien de joueurs minimum une équipe doit-elle avoir sur le terrain pour qu'un match puisse continuer ?",
-          image: "https://picsum.photos/seed/foot-joueurs-minimum/800/450",
           answers: [
             { id: "a", text: "8" },
             { id: "b", text: "7" },
@@ -173,7 +160,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 13,
           question: "Quel pays est considéré comme l'inventeur du football moderne ?",
-          image: "https://picsum.photos/seed/foot-angleterre-inventeur/800/450",
           answers: [
             { id: "a", text: "France" },
             { id: "b", text: "Brésil" },
@@ -186,7 +172,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 14,
           question: "Quel est le plus grand stade de football au monde en termes de capacité ?",
-          image: "https://picsum.photos/seed/foot-grand-stade/800/450",
           answers: [
             { id: "a", text: "Camp Nou (Barcelone)" },
             { id: "b", text: "Maracanã (Rio de Janeiro)" },
@@ -199,7 +184,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 15,
           question: "Quel joueur a remporté le plus de Ballons d'Or consécutifs ?",
-          image: "https://picsum.photos/seed/foot-ballon-dor-messi/800/450",
           answers: [
             { id: "a", text: "Cristiano Ronaldo (2)" },
             { id: "b", text: "Lionel Messi (4)" },
@@ -212,7 +196,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 16,
           question: "Quel gardien de but a marqué le plus de buts en carrière professionnelle ?",
-          image: "https://picsum.photos/seed/foot-gardien-buteur-ceni/800/450",
           answers: [
             { id: "a", text: "René Higuita" },
             { id: "b", text: "José Luis Chilavert" },
@@ -231,7 +214,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 1,
           question: "Which country has won the most FIFA World Cups?",
-          image: "https://picsum.photos/seed/foot-coupe-du-monde/800/450",
           answers: [
             { id: "a", text: "Germany" },
             { id: "b", text: "Italy" },
@@ -244,7 +226,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 2,
           question: "Who is the all-time top scorer in FIFA World Cup history?",
-          image: "https://picsum.photos/seed/foot-buteur-klose/800/450",
           answers: [
             { id: "a", text: "Ronaldo (Brazil)" },
             { id: "b", text: "Miroslav Klose" },
@@ -257,7 +238,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 3,
           question: "In what year did France win their first World Cup?",
-          image: "https://picsum.photos/seed/foot-france-1998/800/450",
           answers: [
             { id: "a", text: "1994" },
             { id: "b", text: "1998" },
@@ -270,7 +250,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 4,
           question: "Which club has won the most Ligue 1 titles?",
-          image: "https://picsum.photos/seed/foot-ligue1-psg/800/450",
           answers: [
             { id: "a", text: "Olympique de Marseille" },
             { id: "b", text: "AS Saint-Étienne" },
@@ -283,7 +262,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 5,
           question: "Which player holds the record for the most caps for the French national team?",
-          image: "https://picsum.photos/seed/foot-selections-france/800/450",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
             { id: "b", text: "Thierry Henry" },
@@ -296,7 +274,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 6,
           question: "How long does a football match last in regulation time?",
-          image: "https://picsum.photos/seed/foot-duree-match/800/450",
           answers: [
             { id: "a", text: "80 minutes" },
             { id: "b", text: "90 minutes" },
@@ -309,7 +286,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 7,
           question: "Which stadium hosts the French national team's matches?",
-          image: "https://picsum.photos/seed/foot-stade-de-france/800/450",
           answers: [
             { id: "a", text: "Parc des Princes" },
             { id: "b", text: "Stade Vélodrome" },
@@ -322,7 +298,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 8,
           question: "Who scored the golden goal in the Euro 2000 final for France?",
-          image: "https://picsum.photos/seed/foot-euro-2000/800/450",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
             { id: "b", text: "Thierry Henry" },
@@ -335,7 +310,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 9,
           question: "Which player scored the fastest goal in World Cup history?",
-          image: "https://picsum.photos/seed/foot-but-rapide/800/450",
           answers: [
             { id: "a", text: "Clint Dempsey" },
             { id: "b", text: "Hakan Şükür" },
@@ -348,7 +322,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 10,
           question: "Which team won the first European Champion Clubs' Cup (Champions League)?",
-          image: "https://picsum.photos/seed/foot-champions-league/800/450",
           answers: [
             { id: "a", text: "AC Milan" },
             { id: "b", text: "Real Madrid" },
@@ -361,7 +334,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 11,
           question: "What is the most expensive transfer in football history?",
-          image: "https://picsum.photos/seed/foot-transfert-neymar/800/450",
           answers: [
             { id: "a", text: "Kylian Mbappé to Real Madrid" },
             { id: "b", text: "Cristiano Ronaldo to Juventus" },
@@ -374,7 +346,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 12,
           question: "What is the minimum number of players a team must have on the pitch for a match to continue?",
-          image: "https://picsum.photos/seed/foot-joueurs-minimum/800/450",
           answers: [
             { id: "a", text: "8" },
             { id: "b", text: "7" },
@@ -387,7 +358,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 13,
           question: "Which country is considered the birthplace of modern football?",
-          image: "https://picsum.photos/seed/foot-angleterre-inventeur/800/450",
           answers: [
             { id: "a", text: "France" },
             { id: "b", text: "Brazil" },
@@ -400,7 +370,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 14,
           question: "What is the largest football stadium in the world by capacity?",
-          image: "https://picsum.photos/seed/foot-grand-stade/800/450",
           answers: [
             { id: "a", text: "Camp Nou (Barcelona)" },
             { id: "b", text: "Maracanã (Rio de Janeiro)" },
@@ -413,7 +382,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 15,
           question: "Which player has won the most consecutive Ballon d'Or awards?",
-          image: "https://picsum.photos/seed/foot-ballon-dor-messi/800/450",
           answers: [
             { id: "a", text: "Cristiano Ronaldo (2)" },
             { id: "b", text: "Lionel Messi (4)" },
@@ -426,7 +394,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 16,
           question: "Which goalkeeper has scored the most goals in a professional career?",
-          image: "https://picsum.photos/seed/foot-gardien-buteur-ceni/800/450",
           answers: [
             { id: "a", text: "René Higuita" },
             { id: "b", text: "José Luis Chilavert" },
@@ -445,7 +412,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 1,
           question: "¿Qué país ha ganado más Copas del Mundo?",
-          image: "https://picsum.photos/seed/foot-coupe-du-monde/800/450",
           answers: [
             { id: "a", text: "Alemania" },
             { id: "b", text: "Italia" },
@@ -458,7 +424,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 2,
           question: "¿Quién es el máximo goleador en la historia de la Copa del Mundo?",
-          image: "https://picsum.photos/seed/foot-buteur-klose/800/450",
           answers: [
             { id: "a", text: "Ronaldo (Brasil)" },
             { id: "b", text: "Miroslav Klose" },
@@ -471,7 +436,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 3,
           question: "¿En qué año ganó Francia su primera Copa del Mundo?",
-          image: "https://picsum.photos/seed/foot-france-1998/800/450",
           answers: [
             { id: "a", text: "1994" },
             { id: "b", text: "1998" },
@@ -484,7 +448,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 4,
           question: "¿Qué club tiene más títulos de la Ligue 1?",
-          image: "https://picsum.photos/seed/foot-ligue1-psg/800/450",
           answers: [
             { id: "a", text: "Olympique de Marseille" },
             { id: "b", text: "AS Saint-Étienne" },
@@ -497,7 +460,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 5,
           question: "¿Qué jugador tiene más convocatorias con la selección francesa?",
-          image: "https://picsum.photos/seed/foot-selections-france/800/450",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
             { id: "b", text: "Thierry Henry" },
@@ -510,7 +472,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 6,
           question: "¿Cuánto dura un partido de fútbol en tiempo reglamentario?",
-          image: "https://picsum.photos/seed/foot-duree-match/800/450",
           answers: [
             { id: "a", text: "80 minutos" },
             { id: "b", text: "90 minutos" },
@@ -523,7 +484,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 7,
           question: "¿Qué estadio alberga los partidos de la selección francesa?",
-          image: "https://picsum.photos/seed/foot-stade-de-france/800/450",
           answers: [
             { id: "a", text: "Parc des Princes" },
             { id: "b", text: "Stade Vélodrome" },
@@ -536,7 +496,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 8,
           question: "¿Quién marcó el gol de oro en la final de la Euro 2000 para Francia?",
-          image: "https://picsum.photos/seed/foot-euro-2000/800/450",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
             { id: "b", text: "Thierry Henry" },
@@ -549,7 +508,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 9,
           question: "¿Qué jugador marcó el gol más rápido en la historia de la Copa del Mundo?",
-          image: "https://picsum.photos/seed/foot-but-rapide/800/450",
           answers: [
             { id: "a", text: "Clint Dempsey" },
             { id: "b", text: "Hakan Şükür" },
@@ -562,7 +520,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 10,
           question: "¿Qué equipo ganó la primera Copa de Clubes Campeones Europeos (Champions League)?",
-          image: "https://picsum.photos/seed/foot-champions-league/800/450",
           answers: [
             { id: "a", text: "AC Milan" },
             { id: "b", text: "Real Madrid" },
@@ -575,7 +532,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 11,
           question: "¿Cuál es el fichaje más caro en la historia del fútbol?",
-          image: "https://picsum.photos/seed/foot-transfert-neymar/800/450",
           answers: [
             { id: "a", text: "Kylian Mbappé al Real Madrid" },
             { id: "b", text: "Cristiano Ronaldo a la Juventus" },
@@ -588,7 +544,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 12,
           question: "¿Cuál es el número mínimo de jugadores que un equipo debe tener en el campo para que el partido continúe?",
-          image: "https://picsum.photos/seed/foot-joueurs-minimum/800/450",
           answers: [
             { id: "a", text: "8" },
             { id: "b", text: "7" },
@@ -601,7 +556,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 13,
           question: "¿Qué país es considerado el inventor del fútbol moderno?",
-          image: "https://picsum.photos/seed/foot-angleterre-inventeur/800/450",
           answers: [
             { id: "a", text: "Francia" },
             { id: "b", text: "Brasil" },
@@ -614,7 +568,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 14,
           question: "¿Cuál es el estadio de fútbol más grande del mundo en términos de capacidad?",
-          image: "https://picsum.photos/seed/foot-grand-stade/800/450",
           answers: [
             { id: "a", text: "Camp Nou (Barcelona)" },
             { id: "b", text: "Maracanã (Río de Janeiro)" },
@@ -627,7 +580,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 15,
           question: "¿Qué jugador ha ganado más Balones de Oro consecutivos?",
-          image: "https://picsum.photos/seed/foot-ballon-dor-messi/800/450",
           answers: [
             { id: "a", text: "Cristiano Ronaldo (2)" },
             { id: "b", text: "Lionel Messi (4)" },
@@ -640,7 +592,6 @@ export const quizFootball: TranslatedQuiz = {
         {
           id: 16,
           question: "¿Qué portero ha marcado más goles en su carrera profesional?",
-          image: "https://picsum.photos/seed/foot-gardien-buteur-ceni/800/450",
           answers: [
             { id: "a", text: "René Higuita" },
             { id: "b", text: "José Luis Chilavert" },

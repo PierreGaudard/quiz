@@ -7,7 +7,6 @@ export const quizIslam: TranslatedQuiz = {
   difficulty: "medium",
   gameType: "qcm",
   playCount: 13200,
-  coverImage: "https://picsum.photos/seed/cover-islam/1200/600",
   translations: {
     fr: {
       title: "Quiz Islam : culture et traditions",
@@ -16,7 +15,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 1,
           question: "Combien de piliers compte l'Islam ?",
-          image: "https://picsum.photos/seed/islam-q1/800/450",
           answers: [
             { id: "a", text: "3" },
             { id: "b", text: "4" },
@@ -29,7 +27,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 2,
           question: "Quel est le nom du livre sacré de l'Islam ?",
-          image: "https://picsum.photos/seed/islam-q2/800/450",
           answers: [
             { id: "a", text: "La Torah" },
             { id: "b", text: "La Bible" },
@@ -42,7 +39,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 3,
           question: "Dans quelle ville se trouve la Kaaba ?",
-          image: "https://picsum.photos/seed/islam-q3/800/450",
           answers: [
             { id: "a", text: "Médine" },
             { id: "b", text: "Jérusalem" },
@@ -55,7 +51,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 4,
           question: "Comment s'appelle le mois de jeûne dans l'Islam ?",
-          image: "https://picsum.photos/seed/islam-q4/800/450",
           answers: [
             { id: "a", text: "Mouharram" },
             { id: "b", text: "Ramadan" },
@@ -68,7 +63,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 5,
           question: "Quel prophète est considéré comme le dernier prophète selon l'Islam ?",
-          image: "https://picsum.photos/seed/islam-q5/800/450",
           answers: [
             { id: "a", text: "Ibrahim (Abraham)" },
             { id: "b", text: "Moussa (Moïse)" },
@@ -81,7 +75,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 6,
           question: "Combien de sourates contient le Coran ?",
-          image: "https://picsum.photos/seed/islam-q6/800/450",
           answers: [
             { id: "a", text: "99" },
             { id: "b", text: "114" },
@@ -94,7 +87,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 7,
           question: "Quel jour de la semaine est le jour de la prière collective en Islam ?",
-          image: "https://picsum.photos/seed/islam-q7/800/450",
           answers: [
             { id: "a", text: "Dimanche" },
             { id: "b", text: "Samedi" },
@@ -107,7 +99,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 8,
           question: "Comment s'appelle la fête qui marque la fin du mois de Ramadan ?",
-          image: "https://picsum.photos/seed/islam-q8/800/450",
           answers: [
             { id: "a", text: "Aïd el-Adha" },
             { id: "b", text: "Aïd el-Fitr" },
@@ -120,7 +111,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 9,
           question: "Comment s'appelle le célèbre palais islamique situé à Grenade, en Espagne ?",
-          image: "https://picsum.photos/seed/islam-q9/800/450",
           answers: [
             { id: "a", text: "L'Alcazar" },
             { id: "b", text: "L'Alhambra" },
@@ -133,7 +123,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 10,
           question: "Comment s'appelle la célèbre mosquée d'Istanbul, connue pour ses carreaux bleus ?",
-          image: "https://picsum.photos/seed/islam-q10/800/450",
           answers: [
             { id: "a", text: "La Mosquée Sainte-Sophie" },
             { id: "b", text: "La Mosquée Süleymaniye" },
@@ -146,7 +135,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 11,
           question: "Comment s'appelle l'art de la belle écriture arabe, très développé dans la culture islamique ?",
-          image: "https://picsum.photos/seed/islam-q11/800/450",
           answers: [
             { id: "a", text: "L'arabesque" },
             { id: "b", text: "La calligraphie" },
@@ -159,7 +147,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 12,
           question: "Quel scientifique de l'âge d'or islamique est considéré comme le père de l'algèbre ?",
-          image: "https://picsum.photos/seed/islam-q12/800/450",
           answers: [
             { id: "a", text: "Avicenne (Ibn Sina)" },
             { id: "b", text: "Al-Khwarizmi" },
@@ -172,7 +159,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 13,
           question: "Comment s'appelle la première prière de la journée dans l'Islam ?",
-          image: "https://picsum.photos/seed/islam-q13/800/450",
           answers: [
             { id: "a", text: "Dhouhr" },
             { id: "b", text: "Fajr" },
@@ -185,7 +171,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 14,
           question: "Quel est le premier mois du calendrier hégirien (calendrier islamique) ?",
-          image: "https://picsum.photos/seed/islam-q14/800/450",
           answers: [
             { id: "a", text: "Ramadan" },
             { id: "b", text: "Mouharram" },
@@ -198,7 +183,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 15,
           question: "Quel pourcentage minimum de sa richesse un musulman doit-il donner au titre de la Zakat ?",
-          image: "https://picsum.photos/seed/islam-q15/800/450",
           answers: [
             { id: "a", text: "1 %" },
             { id: "b", text: "2,5 %" },
@@ -211,7 +195,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 16,
           question: "Quel rituel du Hajj consiste à marcher sept fois entre les collines de Safa et Marwa ?",
-          image: "https://picsum.photos/seed/islam-q16/800/450",
           answers: [
             { id: "a", text: "Le Tawaf" },
             { id: "b", text: "Le Sa'i" },
@@ -224,7 +207,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 17,
           question: "Quel événement marque le début du calendrier hégirien (an 1) ?",
-          image: "https://picsum.photos/seed/islam-q17/800/450",
           answers: [
             { id: "a", text: "La naissance du Prophète Muhammad" },
             { id: "b", text: "La révélation du Coran" },
@@ -243,7 +225,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 1,
           question: "How many pillars does Islam have?",
-          image: "https://picsum.photos/seed/islam-q1/800/450",
           answers: [
             { id: "a", text: "3" },
             { id: "b", text: "4" },
@@ -256,7 +237,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 2,
           question: "What is the name of the holy book of Islam?",
-          image: "https://picsum.photos/seed/islam-q2/800/450",
           answers: [
             { id: "a", text: "The Torah" },
             { id: "b", text: "The Bible" },
@@ -269,7 +249,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 3,
           question: "In which city is the Kaaba located?",
-          image: "https://picsum.photos/seed/islam-q3/800/450",
           answers: [
             { id: "a", text: "Medina" },
             { id: "b", text: "Jerusalem" },
@@ -282,7 +261,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 4,
           question: "What is the name of the fasting month in Islam?",
-          image: "https://picsum.photos/seed/islam-q4/800/450",
           answers: [
             { id: "a", text: "Muharram" },
             { id: "b", text: "Ramadan" },
@@ -295,7 +273,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 5,
           question: "Which prophet is considered the last prophet according to Islam?",
-          image: "https://picsum.photos/seed/islam-q5/800/450",
           answers: [
             { id: "a", text: "Ibrahim (Abraham)" },
             { id: "b", text: "Musa (Moses)" },
@@ -308,7 +285,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 6,
           question: "How many surahs does the Quran contain?",
-          image: "https://picsum.photos/seed/islam-q6/800/450",
           answers: [
             { id: "a", text: "99" },
             { id: "b", text: "114" },
@@ -321,7 +297,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 7,
           question: "Which day of the week is the day of congregational prayer in Islam?",
-          image: "https://picsum.photos/seed/islam-q7/800/450",
           answers: [
             { id: "a", text: "Sunday" },
             { id: "b", text: "Saturday" },
@@ -334,7 +309,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 8,
           question: "What is the name of the celebration that marks the end of Ramadan?",
-          image: "https://picsum.photos/seed/islam-q8/800/450",
           answers: [
             { id: "a", text: "Eid al-Adha" },
             { id: "b", text: "Eid al-Fitr" },
@@ -347,7 +321,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 9,
           question: "What is the name of the famous Islamic palace located in Granada, Spain?",
-          image: "https://picsum.photos/seed/islam-q9/800/450",
           answers: [
             { id: "a", text: "The Alcázar" },
             { id: "b", text: "The Alhambra" },
@@ -360,7 +333,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 10,
           question: "What is the name of the famous mosque in Istanbul, known for its blue tiles?",
-          image: "https://picsum.photos/seed/islam-q10/800/450",
           answers: [
             { id: "a", text: "Hagia Sophia Mosque" },
             { id: "b", text: "Süleymaniye Mosque" },
@@ -373,7 +345,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 11,
           question: "What is the art of beautiful Arabic writing, highly developed in Islamic culture, called?",
-          image: "https://picsum.photos/seed/islam-q11/800/450",
           answers: [
             { id: "a", text: "Arabesque" },
             { id: "b", text: "Calligraphy" },
@@ -386,7 +357,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 12,
           question: "Which scientist from the Islamic Golden Age is considered the father of algebra?",
-          image: "https://picsum.photos/seed/islam-q12/800/450",
           answers: [
             { id: "a", text: "Avicenna (Ibn Sina)" },
             { id: "b", text: "Al-Khwarizmi" },
@@ -399,7 +369,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 13,
           question: "What is the name of the first prayer of the day in Islam?",
-          image: "https://picsum.photos/seed/islam-q13/800/450",
           answers: [
             { id: "a", text: "Dhuhr" },
             { id: "b", text: "Fajr" },
@@ -412,7 +381,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 14,
           question: "What is the first month of the Hijri (Islamic) calendar?",
-          image: "https://picsum.photos/seed/islam-q14/800/450",
           answers: [
             { id: "a", text: "Ramadan" },
             { id: "b", text: "Muharram" },
@@ -425,7 +393,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 15,
           question: "What minimum percentage of wealth must a Muslim give as Zakat?",
-          image: "https://picsum.photos/seed/islam-q15/800/450",
           answers: [
             { id: "a", text: "1%" },
             { id: "b", text: "2.5%" },
@@ -438,7 +405,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 16,
           question: "Which Hajj ritual involves walking seven times between the hills of Safa and Marwa?",
-          image: "https://picsum.photos/seed/islam-q16/800/450",
           answers: [
             { id: "a", text: "Tawaf" },
             { id: "b", text: "Sa'i" },
@@ -451,7 +417,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 17,
           question: "Which event marks the beginning of the Hijri calendar (Year 1)?",
-          image: "https://picsum.photos/seed/islam-q17/800/450",
           answers: [
             { id: "a", text: "The birth of Prophet Muhammad" },
             { id: "b", text: "The revelation of the Quran" },
@@ -470,7 +435,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 1,
           question: "¿Cuántos pilares tiene el Islam?",
-          image: "https://picsum.photos/seed/islam-q1/800/450",
           answers: [
             { id: "a", text: "3" },
             { id: "b", text: "4" },
@@ -483,7 +447,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 2,
           question: "¿Cuál es el nombre del libro sagrado del Islam?",
-          image: "https://picsum.photos/seed/islam-q2/800/450",
           answers: [
             { id: "a", text: "La Torá" },
             { id: "b", text: "La Biblia" },
@@ -496,7 +459,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 3,
           question: "¿En qué ciudad se encuentra la Kaaba?",
-          image: "https://picsum.photos/seed/islam-q3/800/450",
           answers: [
             { id: "a", text: "Medina" },
             { id: "b", text: "Jerusalén" },
@@ -509,7 +471,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 4,
           question: "¿Cómo se llama el mes de ayuno en el Islam?",
-          image: "https://picsum.photos/seed/islam-q4/800/450",
           answers: [
             { id: "a", text: "Muharram" },
             { id: "b", text: "Ramadán" },
@@ -522,7 +483,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 5,
           question: "¿Qué profeta es considerado el último profeta según el Islam?",
-          image: "https://picsum.photos/seed/islam-q5/800/450",
           answers: [
             { id: "a", text: "Ibrahim (Abraham)" },
             { id: "b", text: "Musa (Moisés)" },
@@ -535,7 +495,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 6,
           question: "¿Cuántas suras contiene el Corán?",
-          image: "https://picsum.photos/seed/islam-q6/800/450",
           answers: [
             { id: "a", text: "99" },
             { id: "b", text: "114" },
@@ -548,7 +507,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 7,
           question: "¿Qué día de la semana es el día de la oración colectiva en el Islam?",
-          image: "https://picsum.photos/seed/islam-q7/800/450",
           answers: [
             { id: "a", text: "Domingo" },
             { id: "b", text: "Sábado" },
@@ -561,7 +519,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 8,
           question: "¿Cómo se llama la fiesta que marca el final del Ramadán?",
-          image: "https://picsum.photos/seed/islam-q8/800/450",
           answers: [
             { id: "a", text: "Eid al-Adha" },
             { id: "b", text: "Eid al-Fitr" },
@@ -574,7 +531,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 9,
           question: "¿Cómo se llama el famoso palacio islámico situado en Granada, España?",
-          image: "https://picsum.photos/seed/islam-q9/800/450",
           answers: [
             { id: "a", text: "El Alcázar" },
             { id: "b", text: "La Alhambra" },
@@ -587,7 +543,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 10,
           question: "¿Cómo se llama la famosa mezquita de Estambul, conocida por sus azulejos azules?",
-          image: "https://picsum.photos/seed/islam-q10/800/450",
           answers: [
             { id: "a", text: "Mezquita de Santa Sofía" },
             { id: "b", text: "Mezquita de Süleymaniye" },
@@ -600,7 +555,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 11,
           question: "¿Cómo se llama el arte de la escritura árabe ornamental, muy desarrollado en la cultura islámica?",
-          image: "https://picsum.photos/seed/islam-q11/800/450",
           answers: [
             { id: "a", text: "Arabesco" },
             { id: "b", text: "Caligrafía" },
@@ -613,7 +567,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 12,
           question: "¿Qué científico de la Edad de Oro islámica es considerado el padre del álgebra?",
-          image: "https://picsum.photos/seed/islam-q12/800/450",
           answers: [
             { id: "a", text: "Avicena (Ibn Sina)" },
             { id: "b", text: "Al-Juarismi" },
@@ -626,7 +579,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 13,
           question: "¿Cómo se llama la primera oración del día en el Islam?",
-          image: "https://picsum.photos/seed/islam-q13/800/450",
           answers: [
             { id: "a", text: "Dhuhr" },
             { id: "b", text: "Fajr" },
@@ -639,7 +591,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 14,
           question: "¿Cuál es el primer mes del calendario hijri (calendario islámico)?",
-          image: "https://picsum.photos/seed/islam-q14/800/450",
           answers: [
             { id: "a", text: "Ramadán" },
             { id: "b", text: "Muharram" },
@@ -652,7 +603,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 15,
           question: "¿Qué porcentaje mínimo de su riqueza debe dar un musulmán como Zakat?",
-          image: "https://picsum.photos/seed/islam-q15/800/450",
           answers: [
             { id: "a", text: "1%" },
             { id: "b", text: "2,5%" },
@@ -665,7 +615,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 16,
           question: "¿Qué ritual del Hajj consiste en caminar siete veces entre las colinas de Safa y Marwa?",
-          image: "https://picsum.photos/seed/islam-q16/800/450",
           answers: [
             { id: "a", text: "Tawaf" },
             { id: "b", text: "Sa'i" },
@@ -678,7 +627,6 @@ export const quizIslam: TranslatedQuiz = {
         {
           id: 17,
           question: "¿Qué acontecimiento marca el inicio del calendario hijri (año 1)?",
-          image: "https://picsum.photos/seed/islam-q17/800/450",
           answers: [
             { id: "a", text: "El nacimiento del Profeta Muhammad" },
             { id: "b", text: "La revelación del Corán" },
@@ -700,7 +648,6 @@ export const quizAnglais: TranslatedQuiz = {
   difficulty: "easy",
   gameType: "qcm",
   playCount: 10200,
-  coverImage: "https://picsum.photos/seed/cover-anglais/1200/600",
   translations: {
     fr: {
       title: "Quiz anglais : vocabulaire et grammaire",
@@ -709,7 +656,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 1,
           question: "Comment dit-on « bonjour » en anglais ?",
-          image: "https://picsum.photos/seed/anglais-q1/800/450",
           answers: [
             { id: "a", text: "Goodbye" },
             { id: "b", text: "Hello" },
@@ -722,7 +668,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 2,
           question: "Quel est le prétérit (passé simple) du verbe « go » ?",
-          image: "https://picsum.photos/seed/anglais-q2/800/450",
           answers: [
             { id: "a", text: "Goed" },
             { id: "b", text: "Gone" },
@@ -735,7 +680,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 3,
           question: "Que signifie le mot « whatever » en français ?",
-          image: "https://picsum.photos/seed/anglais-q3/800/450",
           answers: [
             { id: "a", text: "Toujours" },
             { id: "b", text: "N'importe où" },
@@ -748,7 +692,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 4,
           question: "Quel est le pluriel du mot « child » ?",
-          image: "https://picsum.photos/seed/anglais-q4/800/450",
           answers: [
             { id: "a", text: "Childs" },
             { id: "b", text: "Childrens" },
@@ -761,7 +704,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 5,
           question: "Comment dit-on « je suis d'accord » en anglais ?",
-          image: "https://picsum.photos/seed/anglais-q5/800/450",
           answers: [
             { id: "a", text: "I am accord" },
             { id: "b", text: "I agree" },
@@ -774,7 +716,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 6,
           question: "Quelle est la traduction correcte du mot anglais « library » ?",
-          image: "https://picsum.photos/seed/anglais-q6/800/450",
           answers: [
             { id: "a", text: "Librairie" },
             { id: "b", text: "Bibliothèque" },
@@ -787,7 +728,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 7,
           question: "Quel temps utilise-t-on en anglais pour décrire une action en cours au moment où l'on parle ?",
-          image: "https://picsum.photos/seed/anglais-q7/800/450",
           answers: [
             { id: "a", text: "Present simple" },
             { id: "b", text: "Present continuous (progressive)" },
@@ -800,7 +740,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 8,
           question: "Comment dit-on « malgré » en anglais ?",
-          image: "https://picsum.photos/seed/anglais-q8/800/450",
           answers: [
             { id: "a", text: "Despite" },
             { id: "b", text: "Besides" },
@@ -813,7 +752,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 9,
           question: "Quel est le prétérit du verbe irrégulier « buy » (acheter) ?",
-          image: "https://picsum.photos/seed/anglais-q9/800/450",
           answers: [
             { id: "a", text: "Buyed" },
             { id: "b", text: "Buyd" },
@@ -826,7 +764,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 10,
           question: "Que signifie le faux ami « actually » en français ?",
-          image: "https://picsum.photos/seed/anglais-q10/800/450",
           answers: [
             { id: "a", text: "Actuellement" },
             { id: "b", text: "En fait / en réalité" },
@@ -839,7 +776,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 11,
           question: "Que signifie le faux ami « eventually » en français ?",
-          image: "https://picsum.photos/seed/anglais-q11/800/450",
           answers: [
             { id: "a", text: "Éventuellement" },
             { id: "b", text: "Évidemment" },
@@ -852,7 +788,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 12,
           question: "Quelle préposition utilise-t-on en anglais pour dire « le lundi » (habitude) ?",
-          image: "https://picsum.photos/seed/anglais-q12/800/450",
           answers: [
             { id: "a", text: "In Monday" },
             { id: "b", text: "At Monday" },
@@ -865,7 +800,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 13,
           question: "Quelle est l'erreur fréquente des francophones dans la phrase « I am agree with you » ?",
-          image: "https://picsum.photos/seed/anglais-q13/800/450",
           answers: [
             { id: "a", text: "Il faut dire « I am agreeing »" },
             { id: "b", text: "Il faut dire « I agree » (sans « am »)" },
@@ -878,7 +812,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 14,
           question: "Comment dit-on « un appartement » en anglais britannique ?",
-          image: "https://picsum.photos/seed/anglais-q14/800/450",
           answers: [
             { id: "a", text: "Apartment" },
             { id: "b", text: "Flat" },
@@ -891,7 +824,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 15,
           question: "Comment dit-on « des chips » en anglais britannique ?",
-          image: "https://picsum.photos/seed/anglais-q15/800/450",
           answers: [
             { id: "a", text: "Chips" },
             { id: "b", text: "French fries" },
@@ -904,7 +836,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 16,
           question: "Quel est le participe passé du verbe irrégulier « write » ?",
-          image: "https://picsum.photos/seed/anglais-q16/800/450",
           answers: [
             { id: "a", text: "Writed" },
             { id: "b", text: "Wrote" },
@@ -917,7 +848,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 17,
           question: "Que signifie le faux ami anglais « to attend » ?",
-          image: "https://picsum.photos/seed/anglais-q17/800/450",
           answers: [
             { id: "a", text: "Attendre" },
             { id: "b", text: "Assister à / participer à" },
@@ -936,7 +866,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 1,
           question: "How do you say 'bonjour' (hello) in English?",
-          image: "https://picsum.photos/seed/anglais-q1/800/450",
           answers: [
             { id: "a", text: "Goodbye" },
             { id: "b", text: "Hello" },
@@ -949,7 +878,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 2,
           question: "What is the past simple (preterite) of the verb 'go'?",
-          image: "https://picsum.photos/seed/anglais-q2/800/450",
           answers: [
             { id: "a", text: "Goed" },
             { id: "b", text: "Gone" },
@@ -962,7 +890,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 3,
           question: "What does the word 'whatever' mean?",
-          image: "https://picsum.photos/seed/anglais-q3/800/450",
           answers: [
             { id: "a", text: "Always" },
             { id: "b", text: "Anywhere" },
@@ -975,7 +902,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 4,
           question: "What is the plural of the word 'child'?",
-          image: "https://picsum.photos/seed/anglais-q4/800/450",
           answers: [
             { id: "a", text: "Childs" },
             { id: "b", text: "Childrens" },
@@ -988,7 +914,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 5,
           question: "How do you say 'I agree' correctly in English?",
-          image: "https://picsum.photos/seed/anglais-q5/800/450",
           answers: [
             { id: "a", text: "I am accord" },
             { id: "b", text: "I agree" },
@@ -1001,7 +926,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 6,
           question: "What is the correct meaning of the English word 'library'?",
-          image: "https://picsum.photos/seed/anglais-q6/800/450",
           answers: [
             { id: "a", text: "Bookshop" },
             { id: "b", text: "A place to borrow books" },
@@ -1014,7 +938,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 7,
           question: "Which tense is used in English to describe an action happening right now?",
-          image: "https://picsum.photos/seed/anglais-q7/800/450",
           answers: [
             { id: "a", text: "Present simple" },
             { id: "b", text: "Present continuous (progressive)" },
@@ -1027,7 +950,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 8,
           question: "What does 'despite' mean?",
-          image: "https://picsum.photos/seed/anglais-q8/800/450",
           answers: [
             { id: "a", text: "Despite (in spite of)" },
             { id: "b", text: "Besides" },
@@ -1040,7 +962,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 9,
           question: "What is the past simple of the irregular verb 'buy'?",
-          image: "https://picsum.photos/seed/anglais-q9/800/450",
           answers: [
             { id: "a", text: "Buyed" },
             { id: "b", text: "Buyd" },
@@ -1053,7 +974,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 10,
           question: "What does the false friend 'actually' really mean?",
-          image: "https://picsum.photos/seed/anglais-q10/800/450",
           answers: [
             { id: "a", text: "Currently" },
             { id: "b", text: "In fact / in reality" },
@@ -1066,7 +986,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 11,
           question: "What does the false friend 'eventually' really mean?",
-          image: "https://picsum.photos/seed/anglais-q11/800/450",
           answers: [
             { id: "a", text: "Possibly" },
             { id: "b", text: "Obviously" },
@@ -1079,7 +998,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 12,
           question: "Which preposition is used in English to say 'on Monday' (habitual)?",
-          image: "https://picsum.photos/seed/anglais-q12/800/450",
           answers: [
             { id: "a", text: "In Monday" },
             { id: "b", text: "At Monday" },
@@ -1092,7 +1010,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 13,
           question: "What is the common mistake French speakers make in 'I am agree with you'?",
-          image: "https://picsum.photos/seed/anglais-q13/800/450",
           answers: [
             { id: "a", text: "It should be 'I am agreeing'" },
             { id: "b", text: "It should be 'I agree' (without 'am')" },
@@ -1105,7 +1022,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 14,
           question: "How do you say 'an apartment' in British English?",
-          image: "https://picsum.photos/seed/anglais-q14/800/450",
           answers: [
             { id: "a", text: "Apartment" },
             { id: "b", text: "Flat" },
@@ -1118,7 +1034,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 15,
           question: "How do you say 'potato chips' in British English?",
-          image: "https://picsum.photos/seed/anglais-q15/800/450",
           answers: [
             { id: "a", text: "Chips" },
             { id: "b", text: "French fries" },
@@ -1131,7 +1046,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 16,
           question: "What is the past participle of the irregular verb 'write'?",
-          image: "https://picsum.photos/seed/anglais-q16/800/450",
           answers: [
             { id: "a", text: "Writed" },
             { id: "b", text: "Wrote" },
@@ -1144,7 +1058,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 17,
           question: "What does the false friend 'to attend' actually mean?",
-          image: "https://picsum.photos/seed/anglais-q17/800/450",
           answers: [
             { id: "a", text: "To wait" },
             { id: "b", text: "To be present at / to participate in" },
@@ -1163,7 +1076,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 1,
           question: "¿Cómo se dice 'hola' en inglés?",
-          image: "https://picsum.photos/seed/anglais-q1/800/450",
           answers: [
             { id: "a", text: "Goodbye" },
             { id: "b", text: "Hello" },
@@ -1176,7 +1088,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 2,
           question: "¿Cuál es el pasado simple del verbo 'go'?",
-          image: "https://picsum.photos/seed/anglais-q2/800/450",
           answers: [
             { id: "a", text: "Goed" },
             { id: "b", text: "Gone" },
@@ -1189,7 +1100,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 3,
           question: "¿Qué significa la palabra 'whatever'?",
-          image: "https://picsum.photos/seed/anglais-q3/800/450",
           answers: [
             { id: "a", text: "Siempre" },
             { id: "b", text: "En cualquier lugar" },
@@ -1202,7 +1112,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 4,
           question: "¿Cuál es el plural de la palabra 'child'?",
-          image: "https://picsum.photos/seed/anglais-q4/800/450",
           answers: [
             { id: "a", text: "Childs" },
             { id: "b", text: "Childrens" },
@@ -1215,7 +1124,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 5,
           question: "¿Cómo se dice 'estoy de acuerdo' en inglés?",
-          image: "https://picsum.photos/seed/anglais-q5/800/450",
           answers: [
             { id: "a", text: "I am accord" },
             { id: "b", text: "I agree" },
@@ -1228,7 +1136,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 6,
           question: "¿Cuál es la traducción correcta de la palabra inglesa 'library'?",
-          image: "https://picsum.photos/seed/anglais-q6/800/450",
           answers: [
             { id: "a", text: "Librería" },
             { id: "b", text: "Biblioteca" },
@@ -1241,7 +1148,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 7,
           question: "¿Qué tiempo se usa en inglés para describir una acción que está ocurriendo en este momento?",
-          image: "https://picsum.photos/seed/anglais-q7/800/450",
           answers: [
             { id: "a", text: "Present simple" },
             { id: "b", text: "Present continuous (progressive)" },
@@ -1254,7 +1160,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 8,
           question: "¿Cómo se dice 'a pesar de' en inglés?",
-          image: "https://picsum.photos/seed/anglais-q8/800/450",
           answers: [
             { id: "a", text: "Despite" },
             { id: "b", text: "Besides" },
@@ -1267,7 +1172,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 9,
           question: "¿Cuál es el pasado simple del verbo irregular 'buy' (comprar)?",
-          image: "https://picsum.photos/seed/anglais-q9/800/450",
           answers: [
             { id: "a", text: "Buyed" },
             { id: "b", text: "Buyd" },
@@ -1280,7 +1184,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 10,
           question: "¿Qué significa realmente el falso amigo 'actually'?",
-          image: "https://picsum.photos/seed/anglais-q10/800/450",
           answers: [
             { id: "a", text: "Actualmente" },
             { id: "b", text: "En realidad / de hecho" },
@@ -1293,7 +1196,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 11,
           question: "¿Qué significa realmente el falso amigo 'eventually'?",
-          image: "https://picsum.photos/seed/anglais-q11/800/450",
           answers: [
             { id: "a", text: "Eventualmente" },
             { id: "b", text: "Evidentemente" },
@@ -1306,7 +1208,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 12,
           question: "¿Qué preposición se usa en inglés para decir 'el lunes' (hábito)?",
-          image: "https://picsum.photos/seed/anglais-q12/800/450",
           answers: [
             { id: "a", text: "In Monday" },
             { id: "b", text: "At Monday" },
@@ -1319,7 +1220,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 13,
           question: "¿Cuál es el error frecuente en la frase 'I am agree with you'?",
-          image: "https://picsum.photos/seed/anglais-q13/800/450",
           answers: [
             { id: "a", text: "Debería ser 'I am agreeing'" },
             { id: "b", text: "Debería ser 'I agree' (sin 'am')" },
@@ -1332,7 +1232,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 14,
           question: "¿Cómo se dice 'un apartamento' en inglés británico?",
-          image: "https://picsum.photos/seed/anglais-q14/800/450",
           answers: [
             { id: "a", text: "Apartment" },
             { id: "b", text: "Flat" },
@@ -1345,7 +1244,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 15,
           question: "¿Cómo se dicen 'patatas fritas de bolsa' en inglés británico?",
-          image: "https://picsum.photos/seed/anglais-q15/800/450",
           answers: [
             { id: "a", text: "Chips" },
             { id: "b", text: "French fries" },
@@ -1358,7 +1256,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 16,
           question: "¿Cuál es el participio pasado del verbo irregular 'write'?",
-          image: "https://picsum.photos/seed/anglais-q16/800/450",
           answers: [
             { id: "a", text: "Writed" },
             { id: "b", text: "Wrote" },
@@ -1371,7 +1268,6 @@ export const quizAnglais: TranslatedQuiz = {
         {
           id: 17,
           question: "¿Qué significa realmente el falso amigo 'to attend'?",
-          image: "https://picsum.photos/seed/anglais-q17/800/450",
           answers: [
             { id: "a", text: "Esperar" },
             { id: "b", text: "Asistir a / participar en" },
@@ -1393,7 +1289,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
   difficulty: "medium",
   gameType: "qcm",
   playCount: 9600,
-  coverImage: "https://picsum.photos/seed/cover-brevet-histoire/1200/600",
   translations: {
     fr: {
       title: "Quiz brevet histoire : révise en jouant",
@@ -1402,7 +1297,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 1,
           question: "En quelle année a commencé la Première Guerre mondiale ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q1/800/450",
           answers: [
             { id: "a", text: "1905" },
             { id: "b", text: "1914" },
@@ -1415,7 +1309,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 2,
           question: "En quelle année la Bastille a-t-elle été prise d'assaut ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q2/800/450",
           answers: [
             { id: "a", text: "1776" },
             { id: "b", text: "1789" },
@@ -1428,7 +1321,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 3,
           question: "Quel régime politique la France a-t-elle adopté après la chute du Second Empire en 1870 ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q3/800/450",
           answers: [
             { id: "a", text: "La IIe République" },
             { id: "b", text: "La IIIe République" },
@@ -1441,7 +1333,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 4,
           question: "Qui était le chef de la France libre pendant la Seconde Guerre mondiale ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q4/800/450",
           answers: [
             { id: "a", text: "Philippe Pétain" },
             { id: "b", text: "Jean Moulin" },
@@ -1454,7 +1345,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 5,
           question: "En quelle année les femmes ont-elles obtenu le droit de vote en France ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q5/800/450",
           answers: [
             { id: "a", text: "1936" },
             { id: "b", text: "1944" },
@@ -1467,7 +1357,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 6,
           question: "Quel traité a mis fin à la Première Guerre mondiale avec l'Allemagne ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q6/800/450",
           answers: [
             { id: "a", text: "Traité de Paris" },
             { id: "b", text: "Traité de Versailles" },
@@ -1480,7 +1369,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 7,
           question: "Quel événement est traditionnellement considéré comme le point de départ de la Révolution française ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q7/800/450",
           answers: [
             { id: "a", text: "L'exécution de Louis XVI" },
             { id: "b", text: "La prise de la Bastille le 14 juillet 1789" },
@@ -1493,7 +1381,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 8,
           question: "En quelle année le mur de Berlin est-il tombé ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q8/800/450",
           answers: [
             { id: "a", text: "1985" },
             { id: "b", text: "1987" },
@@ -1506,7 +1393,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 9,
           question: "En quelle année a été adoptée la Déclaration des droits de l'homme et du citoyen ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q9/800/450",
           answers: [
             { id: "a", text: "1776" },
             { id: "b", text: "1789" },
@@ -1519,7 +1405,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 10,
           question: "En quelle année Napoléon Bonaparte s'est-il sacré empereur des Français ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q10/800/450",
           answers: [
             { id: "a", text: "1799" },
             { id: "b", text: "1802" },
@@ -1532,7 +1417,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 11,
           question: "Quel traité, signé en 1957, est considéré comme l'acte fondateur de la construction européenne ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q11/800/450",
           answers: [
             { id: "a", text: "Le traité de Maastricht" },
             { id: "b", text: "Le traité de Rome" },
@@ -1545,7 +1429,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 12,
           question: "Quelle grande puissance était l'adversaire principal des États-Unis pendant la Guerre froide ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q12/800/450",
           answers: [
             { id: "a", text: "La Chine" },
             { id: "b", text: "Le Royaume-Uni" },
@@ -1558,7 +1441,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 13,
           question: "Que s'est-il passé en France en mai 1968 ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q13/800/450",
           answers: [
             { id: "a", text: "L'élection de De Gaulle" },
             { id: "b", text: "Une crise étudiante et sociale majeure" },
@@ -1571,7 +1453,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 14,
           question: "En quelle année l'Algérie a-t-elle obtenu son indépendance de la France ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q14/800/450",
           answers: [
             { id: "a", text: "1954" },
             { id: "b", text: "1958" },
@@ -1584,7 +1465,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 15,
           question: "Quel code juridique, promulgué par Napoléon, est encore la base du droit civil français ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q15/800/450",
           answers: [
             { id: "a", text: "Le Code pénal" },
             { id: "b", text: "Le Code Napoléon (Code civil)" },
@@ -1597,7 +1477,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 16,
           question: "Quel événement mondial a conduit à la création de l'ONU en 1945 ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q16/800/450",
           answers: [
             { id: "a", text: "La Première Guerre mondiale" },
             { id: "b", text: "La crise de 1929" },
@@ -1610,7 +1489,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 17,
           question: "Quel empire colonial était le plus vaste au début du XXe siècle ?",
-          image: "https://picsum.photos/seed/brevet-histoire-q17/800/450",
           answers: [
             { id: "a", text: "L'Empire français" },
             { id: "b", text: "L'Empire britannique" },
@@ -1629,7 +1507,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 1,
           question: "In what year did World War I begin?",
-          image: "https://picsum.photos/seed/brevet-histoire-q1/800/450",
           answers: [
             { id: "a", text: "1905" },
             { id: "b", text: "1914" },
@@ -1642,7 +1519,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 2,
           question: "In what year was the Bastille stormed?",
-          image: "https://picsum.photos/seed/brevet-histoire-q2/800/450",
           answers: [
             { id: "a", text: "1776" },
             { id: "b", text: "1789" },
@@ -1655,7 +1531,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 3,
           question: "What political regime did France adopt after the fall of the Second Empire in 1870?",
-          image: "https://picsum.photos/seed/brevet-histoire-q3/800/450",
           answers: [
             { id: "a", text: "The Second Republic" },
             { id: "b", text: "The Third Republic" },
@@ -1668,7 +1543,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 4,
           question: "Who was the leader of Free France during World War II?",
-          image: "https://picsum.photos/seed/brevet-histoire-q4/800/450",
           answers: [
             { id: "a", text: "Philippe Pétain" },
             { id: "b", text: "Jean Moulin" },
@@ -1681,7 +1555,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 5,
           question: "In what year did women gain the right to vote in France?",
-          image: "https://picsum.photos/seed/brevet-histoire-q5/800/450",
           answers: [
             { id: "a", text: "1936" },
             { id: "b", text: "1944" },
@@ -1694,7 +1567,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 6,
           question: "Which treaty ended World War I with Germany?",
-          image: "https://picsum.photos/seed/brevet-histoire-q6/800/450",
           answers: [
             { id: "a", text: "Treaty of Paris" },
             { id: "b", text: "Treaty of Versailles" },
@@ -1707,7 +1579,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 7,
           question: "What event is traditionally considered the starting point of the French Revolution?",
-          image: "https://picsum.photos/seed/brevet-histoire-q7/800/450",
           answers: [
             { id: "a", text: "The execution of Louis XVI" },
             { id: "b", text: "The storming of the Bastille on July 14, 1789" },
@@ -1720,7 +1591,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 8,
           question: "In what year did the Berlin Wall fall?",
-          image: "https://picsum.photos/seed/brevet-histoire-q8/800/450",
           answers: [
             { id: "a", text: "1985" },
             { id: "b", text: "1987" },
@@ -1733,7 +1603,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 9,
           question: "In what year was the Declaration of the Rights of Man and of the Citizen adopted?",
-          image: "https://picsum.photos/seed/brevet-histoire-q9/800/450",
           answers: [
             { id: "a", text: "1776" },
             { id: "b", text: "1789" },
@@ -1746,7 +1615,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 10,
           question: "In what year did Napoleon Bonaparte crown himself Emperor of the French?",
-          image: "https://picsum.photos/seed/brevet-histoire-q10/800/450",
           answers: [
             { id: "a", text: "1799" },
             { id: "b", text: "1802" },
@@ -1759,7 +1627,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 11,
           question: "Which treaty, signed in 1957, is considered the founding act of European integration?",
-          image: "https://picsum.photos/seed/brevet-histoire-q11/800/450",
           answers: [
             { id: "a", text: "Treaty of Maastricht" },
             { id: "b", text: "Treaty of Rome" },
@@ -1772,7 +1639,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 12,
           question: "Which great power was the main adversary of the United States during the Cold War?",
-          image: "https://picsum.photos/seed/brevet-histoire-q12/800/450",
           answers: [
             { id: "a", text: "China" },
             { id: "b", text: "United Kingdom" },
@@ -1785,7 +1651,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 13,
           question: "What happened in France in May 1968?",
-          image: "https://picsum.photos/seed/brevet-histoire-q13/800/450",
           answers: [
             { id: "a", text: "The election of De Gaulle" },
             { id: "b", text: "A major student and social crisis" },
@@ -1798,7 +1663,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 14,
           question: "In what year did Algeria gain its independence from France?",
-          image: "https://picsum.photos/seed/brevet-histoire-q14/800/450",
           answers: [
             { id: "a", text: "1954" },
             { id: "b", text: "1958" },
@@ -1811,7 +1675,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 15,
           question: "Which legal code, enacted by Napoleon, is still the basis of French civil law?",
-          image: "https://picsum.photos/seed/brevet-histoire-q15/800/450",
           answers: [
             { id: "a", text: "The Penal Code" },
             { id: "b", text: "The Napoleonic Code (Civil Code)" },
@@ -1824,7 +1687,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 16,
           question: "Which global event led to the creation of the United Nations in 1945?",
-          image: "https://picsum.photos/seed/brevet-histoire-q16/800/450",
           answers: [
             { id: "a", text: "World War I" },
             { id: "b", text: "The 1929 crash" },
@@ -1837,7 +1699,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 17,
           question: "Which colonial empire was the largest at the beginning of the 20th century?",
-          image: "https://picsum.photos/seed/brevet-histoire-q17/800/450",
           answers: [
             { id: "a", text: "The French Empire" },
             { id: "b", text: "The British Empire" },
@@ -1856,7 +1717,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 1,
           question: "¿En qué año comenzó la Primera Guerra Mundial?",
-          image: "https://picsum.photos/seed/brevet-histoire-q1/800/450",
           answers: [
             { id: "a", text: "1905" },
             { id: "b", text: "1914" },
@@ -1869,7 +1729,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 2,
           question: "¿En qué año fue tomada la Bastilla por asalto?",
-          image: "https://picsum.photos/seed/brevet-histoire-q2/800/450",
           answers: [
             { id: "a", text: "1776" },
             { id: "b", text: "1789" },
@@ -1882,7 +1741,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 3,
           question: "¿Qué régimen político adoptó Francia tras la caída del Segundo Imperio en 1870?",
-          image: "https://picsum.photos/seed/brevet-histoire-q3/800/450",
           answers: [
             { id: "a", text: "La II República" },
             { id: "b", text: "La III República" },
@@ -1895,7 +1753,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 4,
           question: "¿Quién fue el líder de la Francia Libre durante la Segunda Guerra Mundial?",
-          image: "https://picsum.photos/seed/brevet-histoire-q4/800/450",
           answers: [
             { id: "a", text: "Philippe Pétain" },
             { id: "b", text: "Jean Moulin" },
@@ -1908,7 +1765,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 5,
           question: "¿En qué año obtuvieron las mujeres el derecho al voto en Francia?",
-          image: "https://picsum.photos/seed/brevet-histoire-q5/800/450",
           answers: [
             { id: "a", text: "1936" },
             { id: "b", text: "1944" },
@@ -1921,7 +1777,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 6,
           question: "¿Qué tratado puso fin a la Primera Guerra Mundial con Alemania?",
-          image: "https://picsum.photos/seed/brevet-histoire-q6/800/450",
           answers: [
             { id: "a", text: "Tratado de París" },
             { id: "b", text: "Tratado de Versalles" },
@@ -1934,7 +1789,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 7,
           question: "¿Qué acontecimiento se considera tradicionalmente el punto de partida de la Revolución Francesa?",
-          image: "https://picsum.photos/seed/brevet-histoire-q7/800/450",
           answers: [
             { id: "a", text: "La ejecución de Luis XVI" },
             { id: "b", text: "La toma de la Bastilla el 14 de julio de 1789" },
@@ -1947,7 +1801,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 8,
           question: "¿En qué año cayó el Muro de Berlín?",
-          image: "https://picsum.photos/seed/brevet-histoire-q8/800/450",
           answers: [
             { id: "a", text: "1985" },
             { id: "b", text: "1987" },
@@ -1960,7 +1813,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 9,
           question: "¿En qué año fue adoptada la Declaración de los Derechos del Hombre y del Ciudadano?",
-          image: "https://picsum.photos/seed/brevet-histoire-q9/800/450",
           answers: [
             { id: "a", text: "1776" },
             { id: "b", text: "1789" },
@@ -1973,7 +1825,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 10,
           question: "¿En qué año se coronó Napoleón Bonaparte emperador de los franceses?",
-          image: "https://picsum.photos/seed/brevet-histoire-q10/800/450",
           answers: [
             { id: "a", text: "1799" },
             { id: "b", text: "1802" },
@@ -1986,7 +1837,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 11,
           question: "¿Qué tratado, firmado en 1957, es considerado el acto fundador de la construcción europea?",
-          image: "https://picsum.photos/seed/brevet-histoire-q11/800/450",
           answers: [
             { id: "a", text: "El Tratado de Maastricht" },
             { id: "b", text: "El Tratado de Roma" },
@@ -1999,7 +1849,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 12,
           question: "¿Qué gran potencia fue el principal adversario de Estados Unidos durante la Guerra Fría?",
-          image: "https://picsum.photos/seed/brevet-histoire-q12/800/450",
           answers: [
             { id: "a", text: "China" },
             { id: "b", text: "Reino Unido" },
@@ -2012,7 +1861,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 13,
           question: "¿Qué ocurrió en Francia en mayo de 1968?",
-          image: "https://picsum.photos/seed/brevet-histoire-q13/800/450",
           answers: [
             { id: "a", text: "La elección de De Gaulle" },
             { id: "b", text: "Una crisis estudiantil y social importante" },
@@ -2025,7 +1873,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 14,
           question: "¿En qué año obtuvo Argelia su independencia de Francia?",
-          image: "https://picsum.photos/seed/brevet-histoire-q14/800/450",
           answers: [
             { id: "a", text: "1954" },
             { id: "b", text: "1958" },
@@ -2038,7 +1885,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 15,
           question: "¿Qué código jurídico, promulgado por Napoleón, sigue siendo la base del derecho civil francés?",
-          image: "https://picsum.photos/seed/brevet-histoire-q15/800/450",
           answers: [
             { id: "a", text: "El Código Penal" },
             { id: "b", text: "El Código Napoleónico (Código Civil)" },
@@ -2051,7 +1897,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 16,
           question: "¿Qué acontecimiento mundial condujo a la creación de la ONU en 1945?",
-          image: "https://picsum.photos/seed/brevet-histoire-q16/800/450",
           answers: [
             { id: "a", text: "La Primera Guerra Mundial" },
             { id: "b", text: "La crisis de 1929" },
@@ -2064,7 +1909,6 @@ export const quizBrevetHistoire: TranslatedQuiz = {
         {
           id: 17,
           question: "¿Qué imperio colonial era el más extenso a principios del siglo XX?",
-          image: "https://picsum.photos/seed/brevet-histoire-q17/800/450",
           answers: [
             { id: "a", text: "El Imperio francés" },
             { id: "b", text: "El Imperio británico" },

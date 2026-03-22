@@ -26,7 +26,7 @@ export default function DailyQuestion({ question, answers, correctAnswer, explan
 
   return (
     <div className="space-y-3">
-      {image && <img src={image} alt="" className="w-full aspect-video object-cover rounded-lg" />}
+      {image && <img src={image} alt={question} className="w-full aspect-video object-cover rounded-lg" fetchPriority="high" />}
       <p className="font-display font-bold text-gray-900 text-sm leading-snug">{question}</p>
       <div className="grid grid-cols-2 gap-2">
         {answers.map((a) => (

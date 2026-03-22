@@ -7,7 +7,6 @@ export const quizDisney: TranslatedQuiz = {
   difficulty: "easy",
   gameType: "qcm",
   playCount: 21300,
-  coverImage: "https://picsum.photos/seed/cover-disney/1200/600",
   translations: {
     fr: {
       title: "Quiz Disney : le monde enchanté",
@@ -18,7 +17,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 1,
           question:
             "Quel est le premier long-métrage d'animation des studios Disney ?",
-          image: "https://picsum.photos/seed/disney-q1/800/450",
           answers: [
             { id: "a", text: "Pinocchio" },
             { id: "b", text: "Blanche-Neige et les Sept Nains" },
@@ -33,7 +31,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 2,
           question:
             "Dans \u00ab Le Monde de Nemo \u00bb, comment s'appelle le père du petit poisson-clown Nemo ?",
-          image: "https://picsum.photos/seed/disney-q2/800/450",
           answers: [
             { id: "a", text: "Gill" },
             { id: "b", text: "Marin" },
@@ -48,7 +45,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 3,
           question:
             "Quelle chanson iconique est associée au film \u00ab La Reine des Neiges \u00bb ?",
-          image: "https://picsum.photos/seed/disney-q3/800/450",
           answers: [
             { id: "a", text: "Un jour mon prince viendra" },
             { id: "b", text: "Hakuna Matata" },
@@ -63,7 +59,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 4,
           question:
             "Combien de nains accompagnent Blanche-Neige dans le classique Disney ?",
-          image: "https://picsum.photos/seed/disney-q4/800/450",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -78,7 +73,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 5,
           question:
             "Dans \u00ab Aladdin \u00bb, quel acteur américain a doublé le Génie dans la version originale ?",
-          image: "https://picsum.photos/seed/disney-q5/800/450",
           answers: [
             { id: "a", text: "Eddie Murphy" },
             { id: "b", text: "Jim Carrey" },
@@ -92,7 +86,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 6,
           question: "Quel film Disney se déroule en Polynésie ?",
-          image: "https://picsum.photos/seed/disney-q6/800/450",
           answers: [
             { id: "a", text: "Lilo et Stitch" },
             { id: "b", text: "Vaiana (Moana)" },
@@ -107,7 +100,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 7,
           question:
             "Comment s'appelle le méchant dans \u00ab Le Roi Lion \u00bb ?",
-          image: "https://picsum.photos/seed/disney-q7/800/450",
           answers: [
             { id: "a", text: "Zazu" },
             { id: "b", text: "Shenzi" },
@@ -122,7 +114,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 8,
           question:
             "Quel studio a créé le film \u00ab Toy Story \u00bb en 1995 ?",
-          image: "https://picsum.photos/seed/disney-q8/800/450",
           answers: [
             { id: "a", text: "DreamWorks" },
             { id: "b", text: "Walt Disney Animation" },
@@ -137,7 +128,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 9,
           question:
             "Dans \u00ab La Reine des Neiges \u00bb, quel est le nom du bonhomme de neige créé par Elsa ?",
-          image: "https://picsum.photos/seed/disney-q9/800/450",
           answers: [
             { id: "a", text: "Sven" },
             { id: "b", text: "Olaf" },
@@ -152,7 +142,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 10,
           question:
             "Dans \u00ab Raiponce \u00bb, combien d'années Raiponce passe-t-elle enfermée dans sa tour ?",
-          image: "https://picsum.photos/seed/disney-q10/800/450",
           answers: [
             { id: "a", text: "12 ans" },
             { id: "b", text: "16 ans" },
@@ -167,7 +156,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 11,
           question:
             "Quel film Pixar met en scène des émotions personnifiées dans le cerveau d'une fillette ?",
-          image: "https://picsum.photos/seed/disney-q11/800/450",
           answers: [
             { id: "a", text: "Soul" },
             { id: "b", text: "Vice-Versa (Inside Out)" },
@@ -181,7 +169,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 12,
           question: "Quel méchant Disney possède un miroir magique ?",
-          image: "https://picsum.photos/seed/disney-q12/800/450",
           answers: [
             { id: "a", text: "Maléfique" },
             { id: "b", text: "Ursula" },
@@ -195,7 +182,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 13,
           question: "Quel animal est Mushu, le compagnon de Mulan ?",
-          image: "https://picsum.photos/seed/disney-q13/800/450",
           answers: [
             { id: "a", text: "Un serpent" },
             { id: "b", text: "Un dragon" },
@@ -210,7 +196,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 14,
           question:
             "Dans \u00ab Coco \u00bb (Pixar), quel instrument de musique joue Miguel ?",
-          image: "https://picsum.photos/seed/disney-q14/800/450",
           answers: [
             { id: "a", text: "Le violon" },
             { id: "b", text: "La trompette" },
@@ -225,7 +210,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 15,
           question:
             "Comment s'appelle le caméléon, compagnon de Raiponce ?",
-          image: "https://picsum.photos/seed/disney-q15/800/450",
           answers: [
             { id: "a", text: "Maximus" },
             { id: "b", text: "Pascal" },
@@ -240,7 +224,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 16,
           question:
             "Quel film Disney met en scène une famille colombienne dotée de pouvoirs magiques ?",
-          image: "https://picsum.photos/seed/disney-q16/800/450",
           answers: [
             { id: "a", text: "Coco" },
             { id: "b", text: "Encanto" },
@@ -255,7 +238,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 17,
           question:
             "Dans \u00ab La Petite Sirène \u00bb, comment s'appelle la sorcière des mers ?",
-          image: "https://picsum.photos/seed/disney-q17/800/450",
           answers: [
             { id: "a", text: "Morgana" },
             { id: "b", text: "Ursula" },
@@ -270,7 +252,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 18,
           question:
             "Quel animal est Simba dans \u00ab Le Roi Lion \u00bb ?",
-          image: "https://picsum.photos/seed/disney-q18/800/450",
           answers: [
             { id: "a", text: "Un guépard" },
             { id: "b", text: "Un tigre" },
@@ -292,7 +273,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 1,
           question:
             "What was the first animated feature film produced by Disney Studios?",
-          image: "https://picsum.photos/seed/disney-q1/800/450",
           answers: [
             { id: "a", text: "Pinocchio" },
             { id: "b", text: "Snow White and the Seven Dwarfs" },
@@ -307,7 +287,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 2,
           question:
             "In 'Finding Nemo', what is the name of Nemo's clownfish father?",
-          image: "https://picsum.photos/seed/disney-q2/800/450",
           answers: [
             { id: "a", text: "Gill" },
             { id: "b", text: "Marlin" },
@@ -322,7 +301,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 3,
           question:
             "Which iconic song is associated with the film 'Frozen'?",
-          image: "https://picsum.photos/seed/disney-q3/800/450",
           answers: [
             { id: "a", text: "Someday My Prince Will Come" },
             { id: "b", text: "Hakuna Matata" },
@@ -337,7 +315,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 4,
           question:
             "How many dwarfs accompany Snow White in the Disney classic?",
-          image: "https://picsum.photos/seed/disney-q4/800/450",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -352,7 +329,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 5,
           question:
             "In 'Aladdin', which American actor voiced the Genie in the original version?",
-          image: "https://picsum.photos/seed/disney-q5/800/450",
           answers: [
             { id: "a", text: "Eddie Murphy" },
             { id: "b", text: "Jim Carrey" },
@@ -366,7 +342,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 6,
           question: "Which Disney film is set in Polynesia?",
-          image: "https://picsum.photos/seed/disney-q6/800/450",
           answers: [
             { id: "a", text: "Lilo & Stitch" },
             { id: "b", text: "Moana" },
@@ -380,7 +355,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 7,
           question: "What is the name of the villain in 'The Lion King'?",
-          image: "https://picsum.photos/seed/disney-q7/800/450",
           answers: [
             { id: "a", text: "Zazu" },
             { id: "b", text: "Shenzi" },
@@ -394,7 +368,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 8,
           question: "Which studio created the film 'Toy Story' in 1995?",
-          image: "https://picsum.photos/seed/disney-q8/800/450",
           answers: [
             { id: "a", text: "DreamWorks" },
             { id: "b", text: "Walt Disney Animation" },
@@ -409,7 +382,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 9,
           question:
             "In 'Frozen', what is the name of the snowman created by Elsa?",
-          image: "https://picsum.photos/seed/disney-q9/800/450",
           answers: [
             { id: "a", text: "Sven" },
             { id: "b", text: "Olaf" },
@@ -424,7 +396,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 10,
           question:
             "In 'Tangled', how many years does Rapunzel spend locked in her tower?",
-          image: "https://picsum.photos/seed/disney-q10/800/450",
           answers: [
             { id: "a", text: "12 years" },
             { id: "b", text: "16 years" },
@@ -439,7 +410,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 11,
           question:
             "Which Pixar film features personified emotions inside a girl's brain?",
-          image: "https://picsum.photos/seed/disney-q11/800/450",
           answers: [
             { id: "a", text: "Soul" },
             { id: "b", text: "Inside Out" },
@@ -453,7 +423,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 12,
           question: "Which Disney villain owns a magic mirror?",
-          image: "https://picsum.photos/seed/disney-q12/800/450",
           answers: [
             { id: "a", text: "Maleficent" },
             { id: "b", text: "Ursula" },
@@ -467,7 +436,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 13,
           question: "What kind of animal is Mushu, Mulan's companion?",
-          image: "https://picsum.photos/seed/disney-q13/800/450",
           answers: [
             { id: "a", text: "A snake" },
             { id: "b", text: "A dragon" },
@@ -482,7 +450,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 14,
           question:
             "In 'Coco' (Pixar), which musical instrument does Miguel play?",
-          image: "https://picsum.photos/seed/disney-q14/800/450",
           answers: [
             { id: "a", text: "The violin" },
             { id: "b", text: "The trumpet" },
@@ -497,7 +464,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 15,
           question:
             "What is the name of Rapunzel's chameleon companion?",
-          image: "https://picsum.photos/seed/disney-q15/800/450",
           answers: [
             { id: "a", text: "Maximus" },
             { id: "b", text: "Pascal" },
@@ -512,7 +478,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 16,
           question:
             "Which Disney film features a Colombian family with magical powers?",
-          image: "https://picsum.photos/seed/disney-q16/800/450",
           answers: [
             { id: "a", text: "Coco" },
             { id: "b", text: "Encanto" },
@@ -527,7 +492,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 17,
           question:
             "In 'The Little Mermaid', what is the name of the sea witch?",
-          image: "https://picsum.photos/seed/disney-q17/800/450",
           answers: [
             { id: "a", text: "Morgana" },
             { id: "b", text: "Ursula" },
@@ -541,7 +505,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 18,
           question: "What kind of animal is Simba in 'The Lion King'?",
-          image: "https://picsum.photos/seed/disney-q18/800/450",
           answers: [
             { id: "a", text: "A cheetah" },
             { id: "b", text: "A tiger" },
@@ -563,7 +526,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 1,
           question:
             "\u00bfCuál fue el primer largometraje de animación de los estudios Disney?",
-          image: "https://picsum.photos/seed/disney-q1/800/450",
           answers: [
             { id: "a", text: "Pinocho" },
             { id: "b", text: "Blancanieves y los siete enanitos" },
@@ -578,7 +540,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 2,
           question:
             "En 'Buscando a Nemo', \u00bfcómo se llama el padre del pez payaso Nemo?",
-          image: "https://picsum.photos/seed/disney-q2/800/450",
           answers: [
             { id: "a", text: "Gill" },
             { id: "b", text: "Marlin" },
@@ -593,7 +554,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 3,
           question:
             "\u00bfQué canción icónica está asociada a la película 'Frozen'?",
-          image: "https://picsum.photos/seed/disney-q3/800/450",
           answers: [
             { id: "a", text: "Algún día mi príncipe vendrá" },
             { id: "b", text: "Hakuna Matata" },
@@ -608,7 +568,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 4,
           question:
             "\u00bfCuántos enanitos acompañan a Blancanieves en el clásico de Disney?",
-          image: "https://picsum.photos/seed/disney-q4/800/450",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -623,7 +582,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 5,
           question:
             "En 'Aladdin', \u00bfqué actor estadounidense prestó su voz al Genio en la versión original?",
-          image: "https://picsum.photos/seed/disney-q5/800/450",
           answers: [
             { id: "a", text: "Eddie Murphy" },
             { id: "b", text: "Jim Carrey" },
@@ -637,7 +595,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 6,
           question: "\u00bfQué película de Disney se desarrolla en Polinesia?",
-          image: "https://picsum.photos/seed/disney-q6/800/450",
           answers: [
             { id: "a", text: "Lilo y Stitch" },
             { id: "b", text: "Vaiana (Moana)" },
@@ -652,7 +609,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 7,
           question:
             "\u00bfCómo se llama el villano en 'El Rey León'?",
-          image: "https://picsum.photos/seed/disney-q7/800/450",
           answers: [
             { id: "a", text: "Zazu" },
             { id: "b", text: "Shenzi" },
@@ -667,7 +623,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 8,
           question:
             "\u00bfQué estudio creó la película 'Toy Story' en 1995?",
-          image: "https://picsum.photos/seed/disney-q8/800/450",
           answers: [
             { id: "a", text: "DreamWorks" },
             { id: "b", text: "Walt Disney Animation" },
@@ -682,7 +637,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 9,
           question:
             "En 'Frozen', \u00bfcómo se llama el muñeco de nieve creado por Elsa?",
-          image: "https://picsum.photos/seed/disney-q9/800/450",
           answers: [
             { id: "a", text: "Sven" },
             { id: "b", text: "Olaf" },
@@ -697,7 +651,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 10,
           question:
             "En 'Enredados', \u00bfcuántos años pasa Rapunzel encerrada en su torre?",
-          image: "https://picsum.photos/seed/disney-q10/800/450",
           answers: [
             { id: "a", text: "12 años" },
             { id: "b", text: "16 años" },
@@ -712,7 +665,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 11,
           question:
             "\u00bfQué película de Pixar presenta emociones personificadas dentro del cerebro de una niña?",
-          image: "https://picsum.photos/seed/disney-q11/800/450",
           answers: [
             { id: "a", text: "Soul" },
             { id: "b", text: "Del revés (Inside Out)" },
@@ -726,7 +678,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 12,
           question: "\u00bfQué villano de Disney posee un espejo mágico?",
-          image: "https://picsum.photos/seed/disney-q12/800/450",
           answers: [
             { id: "a", text: "Maléfica" },
             { id: "b", text: "Úrsula" },
@@ -740,7 +691,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 13,
           question: "\u00bfQué animal es Mushu, el compañero de Mulán?",
-          image: "https://picsum.photos/seed/disney-q13/800/450",
           answers: [
             { id: "a", text: "Una serpiente" },
             { id: "b", text: "Un dragón" },
@@ -755,7 +705,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 14,
           question:
             "En 'Coco' (Pixar), \u00bfqué instrumento musical toca Miguel?",
-          image: "https://picsum.photos/seed/disney-q14/800/450",
           answers: [
             { id: "a", text: "El violín" },
             { id: "b", text: "La trompeta" },
@@ -770,7 +719,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 15,
           question:
             "\u00bfCómo se llama el camaleón compañero de Rapunzel?",
-          image: "https://picsum.photos/seed/disney-q15/800/450",
           answers: [
             { id: "a", text: "Maximus" },
             { id: "b", text: "Pascal" },
@@ -785,7 +733,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 16,
           question:
             "\u00bfQué película de Disney presenta a una familia colombiana con poderes mágicos?",
-          image: "https://picsum.photos/seed/disney-q16/800/450",
           answers: [
             { id: "a", text: "Coco" },
             { id: "b", text: "Encanto" },
@@ -800,7 +747,6 @@ export const quizDisney: TranslatedQuiz = {
           id: 17,
           question:
             "En 'La Sirenita', \u00bfcómo se llama la bruja del mar?",
-          image: "https://picsum.photos/seed/disney-q17/800/450",
           answers: [
             { id: "a", text: "Morgana" },
             { id: "b", text: "Úrsula" },
@@ -814,7 +760,6 @@ export const quizDisney: TranslatedQuiz = {
         {
           id: 18,
           question: "\u00bfQué animal es Simba en 'El Rey León'?",
-          image: "https://picsum.photos/seed/disney-q18/800/450",
           answers: [
             { id: "a", text: "Un guepardo" },
             { id: "b", text: "Un tigre" },
@@ -837,7 +782,6 @@ export const quizHarryPotter: TranslatedQuiz = {
   difficulty: "medium",
   gameType: "qcm",
   playCount: 28400,
-  coverImage: "https://picsum.photos/seed/cover-hp/1200/600",
   translations: {
     fr: {
       title: "Quiz Harry Potter : es-tu un vrai sorcier ?",
@@ -848,7 +792,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 1,
           question:
             "Quel animal représente la maison Serdaigle (Ravenclaw) à Poudlard ?",
-          image: "https://picsum.photos/seed/hp-q1/800/450",
           answers: [
             { id: "a", text: "Un corbeau" },
             { id: "b", text: "Un faucon" },
@@ -863,7 +806,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 2,
           question:
             "Comment s'appelle le sport pratiqué par les sorciers sur des balais volants ?",
-          image: "https://picsum.photos/seed/hp-q2/800/450",
           answers: [
             { id: "a", text: "Le Quodpot" },
             { id: "b", text: "Le Quidditch" },
@@ -877,7 +819,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 3,
           question: "Quelle forme prend le Patronus de Harry Potter ?",
-          image: "https://picsum.photos/seed/hp-q3/800/450",
           answers: [
             { id: "a", text: "Un phénix" },
             { id: "b", text: "Un loup" },
@@ -892,7 +833,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 4,
           question:
             "Quel acteur a interprété Dumbledore dans la majorité des films Harry Potter (du 3e au 8e) ?",
-          image: "https://picsum.photos/seed/hp-q4/800/450",
           answers: [
             { id: "a", text: "Ian McKellen" },
             { id: "b", text: "Richard Harris" },
@@ -907,7 +847,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 5,
           question:
             "Combien d'Horcruxes Voldemort a-t-il créé intentionnellement ?",
-          image: "https://picsum.photos/seed/hp-q5/800/450",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -921,7 +860,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 6,
           question: "Quel sort permet de désarmer un adversaire ?",
-          image: "https://picsum.photos/seed/hp-q6/800/450",
           answers: [
             { id: "a", text: "Stupefix" },
             { id: "b", text: "Expelliarmus" },
@@ -935,7 +873,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 7,
           question: "Comment s'appelle le serpent de Voldemort ?",
-          image: "https://picsum.photos/seed/hp-q7/800/450",
           answers: [
             { id: "a", text: "Basilic" },
             { id: "b", text: "Nagini" },
@@ -950,7 +887,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 8,
           question:
             "Quel objet magique permet à Harry de devenir invisible ?",
-          image: "https://picsum.photos/seed/hp-q8/800/450",
           answers: [
             { id: "a", text: "La Carte du Maraudeur" },
             { id: "b", text: "Le Retourneur de Temps" },
@@ -965,7 +901,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 9,
           question:
             "Quel bois compose la baguette magique de Harry Potter ?",
-          image: "https://picsum.photos/seed/hp-q9/800/450",
           answers: [
             { id: "a", text: "Chêne" },
             { id: "b", text: "Saule" },
@@ -980,7 +915,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 10,
           question:
             "Quelle créature garde la Chambre des Secrets ?",
-          image: "https://picsum.photos/seed/hp-q10/800/450",
           answers: [
             { id: "a", text: "Un dragon" },
             { id: "b", text: "Un Basilic" },
@@ -995,7 +929,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 11,
           question:
             "Quelle est la première épreuve du Tournoi des Trois Sorciers dans \u00ab La Coupe de Feu \u00bb ?",
-          image: "https://picsum.photos/seed/hp-q11/800/450",
           answers: [
             { id: "a", text: "Le labyrinthe" },
             { id: "b", text: "Le lac noir" },
@@ -1009,7 +942,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 12,
           question: "Quel est le vrai nom de Voldemort ?",
-          image: "https://picsum.photos/seed/hp-q12/800/450",
           answers: [
             { id: "a", text: "Tom Elvis Jedusor" },
             { id: "b", text: "Severus Prince" },
@@ -1024,7 +956,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 13,
           question:
             "Qui est le professeur de potions durant les cinq premières années de Harry à Poudlard ?",
-          image: "https://picsum.photos/seed/hp-q13/800/450",
           answers: [
             { id: "a", text: "Horace Slughorn" },
             { id: "b", text: "Severus Rogue (Snape)" },
@@ -1039,7 +970,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 14,
           question:
             "Quel Mangemort (Death Eater) a tué Sirius Black ?",
-          image: "https://picsum.photos/seed/hp-q14/800/450",
           answers: [
             { id: "a", text: "Lucius Malefoy" },
             { id: "b", text: "Bellatrix Lestrange" },
@@ -1054,7 +984,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 15,
           question:
             "Quel sort impardonnable permet de contrôler l'esprit d'une personne ?",
-          image: "https://picsum.photos/seed/hp-q15/800/450",
           answers: [
             { id: "a", text: "Avada Kedavra" },
             { id: "b", text: "Endoloris (Crucio)" },
@@ -1068,7 +997,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 16,
           question: "Combien y a-t-il de Reliques de la Mort ?",
-          image: "https://picsum.photos/seed/hp-q16/800/450",
           answers: [
             { id: "a", text: "2" },
             { id: "b", text: "3" },
@@ -1083,7 +1011,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 17,
           question:
             "Quel type de créature est Buck (Buckbeak) ?",
-          image: "https://picsum.photos/seed/hp-q17/800/450",
           answers: [
             { id: "a", text: "Un Sombral" },
             { id: "b", text: "Un Hippogriffe" },
@@ -1098,7 +1025,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 18,
           question:
             "Quel elfe de maison avertit Harry du danger et l'aide dans la Chambre des Secrets ?",
-          image: "https://picsum.photos/seed/hp-q18/800/450",
           answers: [
             { id: "a", text: "Winky" },
             { id: "b", text: "Kreattur" },
@@ -1120,7 +1046,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 1,
           question:
             "Which animal represents the Ravenclaw house at Hogwarts?",
-          image: "https://picsum.photos/seed/hp-q1/800/450",
           answers: [
             { id: "a", text: "A raven" },
             { id: "b", text: "A falcon" },
@@ -1135,7 +1060,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 2,
           question:
             "What is the name of the sport played by wizards on flying broomsticks?",
-          image: "https://picsum.photos/seed/hp-q2/800/450",
           answers: [
             { id: "a", text: "Quodpot" },
             { id: "b", text: "Quidditch" },
@@ -1149,7 +1073,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 3,
           question: "What form does Harry Potter's Patronus take?",
-          image: "https://picsum.photos/seed/hp-q3/800/450",
           answers: [
             { id: "a", text: "A phoenix" },
             { id: "b", text: "A wolf" },
@@ -1164,7 +1087,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 4,
           question:
             "Which actor played Dumbledore in most of the Harry Potter films (3rd to 8th)?",
-          image: "https://picsum.photos/seed/hp-q4/800/450",
           answers: [
             { id: "a", text: "Ian McKellen" },
             { id: "b", text: "Richard Harris" },
@@ -1179,7 +1101,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 5,
           question:
             "How many Horcruxes did Voldemort intentionally create?",
-          image: "https://picsum.photos/seed/hp-q5/800/450",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -1193,7 +1114,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 6,
           question: "Which spell disarms an opponent?",
-          image: "https://picsum.photos/seed/hp-q6/800/450",
           answers: [
             { id: "a", text: "Stupefy" },
             { id: "b", text: "Expelliarmus" },
@@ -1207,7 +1127,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 7,
           question: "What is the name of Voldemort's snake?",
-          image: "https://picsum.photos/seed/hp-q7/800/450",
           answers: [
             { id: "a", text: "Basilisk" },
             { id: "b", text: "Nagini" },
@@ -1222,7 +1141,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 8,
           question:
             "Which magical object allows Harry to become invisible?",
-          image: "https://picsum.photos/seed/hp-q8/800/450",
           answers: [
             { id: "a", text: "The Marauder's Map" },
             { id: "b", text: "The Time-Turner" },
@@ -1237,7 +1155,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 9,
           question:
             "What wood is Harry Potter's wand made of?",
-          image: "https://picsum.photos/seed/hp-q9/800/450",
           answers: [
             { id: "a", text: "Oak" },
             { id: "b", text: "Willow" },
@@ -1252,7 +1169,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 10,
           question:
             "Which creature guards the Chamber of Secrets?",
-          image: "https://picsum.photos/seed/hp-q10/800/450",
           answers: [
             { id: "a", text: "A dragon" },
             { id: "b", text: "A Basilisk" },
@@ -1267,7 +1183,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 11,
           question:
             "What is the first task of the Triwizard Tournament in 'The Goblet of Fire'?",
-          image: "https://picsum.photos/seed/hp-q11/800/450",
           answers: [
             { id: "a", text: "The maze" },
             { id: "b", text: "The Black Lake" },
@@ -1281,7 +1196,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 12,
           question: "What is Voldemort's real name?",
-          image: "https://picsum.photos/seed/hp-q12/800/450",
           answers: [
             { id: "a", text: "Tom Marvolo Riddle" },
             { id: "b", text: "Severus Prince" },
@@ -1296,7 +1210,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 13,
           question:
             "Who is the Potions professor during Harry's first five years at Hogwarts?",
-          image: "https://picsum.photos/seed/hp-q13/800/450",
           answers: [
             { id: "a", text: "Horace Slughorn" },
             { id: "b", text: "Severus Snape" },
@@ -1311,7 +1224,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 14,
           question:
             "Which Death Eater killed Sirius Black?",
-          image: "https://picsum.photos/seed/hp-q14/800/450",
           answers: [
             { id: "a", text: "Lucius Malfoy" },
             { id: "b", text: "Bellatrix Lestrange" },
@@ -1326,7 +1238,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 15,
           question:
             "Which Unforgivable Curse allows control over a person's mind?",
-          image: "https://picsum.photos/seed/hp-q15/800/450",
           answers: [
             { id: "a", text: "Avada Kedavra" },
             { id: "b", text: "Crucio (Cruciatus Curse)" },
@@ -1340,7 +1251,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 16,
           question: "How many Deathly Hallows are there?",
-          image: "https://picsum.photos/seed/hp-q16/800/450",
           answers: [
             { id: "a", text: "2" },
             { id: "b", text: "3" },
@@ -1355,7 +1265,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 17,
           question:
             "What type of creature is Buckbeak?",
-          image: "https://picsum.photos/seed/hp-q17/800/450",
           answers: [
             { id: "a", text: "A Thestral" },
             { id: "b", text: "A Hippogriff" },
@@ -1370,7 +1279,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 18,
           question:
             "Which house-elf warns Harry of danger and helps him in the Chamber of Secrets?",
-          image: "https://picsum.photos/seed/hp-q18/800/450",
           answers: [
             { id: "a", text: "Winky" },
             { id: "b", text: "Kreacher" },
@@ -1392,7 +1300,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 1,
           question:
             "\u00bfQué animal representa a la casa Ravenclaw en Hogwarts?",
-          image: "https://picsum.photos/seed/hp-q1/800/450",
           answers: [
             { id: "a", text: "Un cuervo" },
             { id: "b", text: "Un halcón" },
@@ -1407,7 +1314,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 2,
           question:
             "\u00bfCómo se llama el deporte que practican los magos sobre escobas voladoras?",
-          image: "https://picsum.photos/seed/hp-q2/800/450",
           answers: [
             { id: "a", text: "Quodpot" },
             { id: "b", text: "Quidditch" },
@@ -1421,7 +1327,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 3,
           question: "\u00bfQué forma toma el Patronus de Harry Potter?",
-          image: "https://picsum.photos/seed/hp-q3/800/450",
           answers: [
             { id: "a", text: "Un fénix" },
             { id: "b", text: "Un lobo" },
@@ -1436,7 +1341,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 4,
           question:
             "\u00bfQué actor interpretó a Dumbledore en la mayoría de las películas de Harry Potter (de la 3.a a la 8.a)?",
-          image: "https://picsum.photos/seed/hp-q4/800/450",
           answers: [
             { id: "a", text: "Ian McKellen" },
             { id: "b", text: "Richard Harris" },
@@ -1451,7 +1355,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 5,
           question:
             "\u00bfCuántos Horrocruxes creó Voldemort intencionalmente?",
-          image: "https://picsum.photos/seed/hp-q5/800/450",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -1465,7 +1368,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 6,
           question: "\u00bfQué hechizo permite desarmar a un adversario?",
-          image: "https://picsum.photos/seed/hp-q6/800/450",
           answers: [
             { id: "a", text: "Desmaius" },
             { id: "b", text: "Expelliarmus" },
@@ -1479,7 +1381,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 7,
           question: "\u00bfCómo se llama la serpiente de Voldemort?",
-          image: "https://picsum.photos/seed/hp-q7/800/450",
           answers: [
             { id: "a", text: "Basilisco" },
             { id: "b", text: "Nagini" },
@@ -1494,7 +1395,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 8,
           question:
             "\u00bfQué objeto mágico permite a Harry hacerse invisible?",
-          image: "https://picsum.photos/seed/hp-q8/800/450",
           answers: [
             { id: "a", text: "El Mapa del Merodeador" },
             { id: "b", text: "El Giratiempo" },
@@ -1509,7 +1409,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 9,
           question:
             "\u00bfDe qué madera está hecha la varita mágica de Harry Potter?",
-          image: "https://picsum.photos/seed/hp-q9/800/450",
           answers: [
             { id: "a", text: "Roble" },
             { id: "b", text: "Sauce" },
@@ -1524,7 +1423,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 10,
           question:
             "\u00bfQué criatura custodia la Cámara de los Secretos?",
-          image: "https://picsum.photos/seed/hp-q10/800/450",
           answers: [
             { id: "a", text: "Un dragón" },
             { id: "b", text: "Un Basilisco" },
@@ -1539,7 +1437,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 11,
           question:
             "\u00bfCuál es la primera prueba del Torneo de los Tres Magos en 'El cáliz de fuego'?",
-          image: "https://picsum.photos/seed/hp-q11/800/450",
           answers: [
             { id: "a", text: "El laberinto" },
             { id: "b", text: "El lago negro" },
@@ -1553,7 +1450,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 12,
           question: "\u00bfCuál es el verdadero nombre de Voldemort?",
-          image: "https://picsum.photos/seed/hp-q12/800/450",
           answers: [
             { id: "a", text: "Tom Marvolo Riddle" },
             { id: "b", text: "Severus Prince" },
@@ -1568,7 +1464,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 13,
           question:
             "\u00bfQuién es el profesor de pociones durante los primeros cinco años de Harry en Hogwarts?",
-          image: "https://picsum.photos/seed/hp-q13/800/450",
           answers: [
             { id: "a", text: "Horace Slughorn" },
             { id: "b", text: "Severus Snape" },
@@ -1583,7 +1478,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 14,
           question:
             "\u00bfQué Mortífago mató a Sirius Black?",
-          image: "https://picsum.photos/seed/hp-q14/800/450",
           answers: [
             { id: "a", text: "Lucius Malfoy" },
             { id: "b", text: "Bellatrix Lestrange" },
@@ -1598,7 +1492,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 15,
           question:
             "\u00bfQué maldición imperdonable permite controlar la mente de una persona?",
-          image: "https://picsum.photos/seed/hp-q15/800/450",
           answers: [
             { id: "a", text: "Avada Kedavra" },
             { id: "b", text: "Crucio (Maldición Cruciatus)" },
@@ -1612,7 +1505,6 @@ export const quizHarryPotter: TranslatedQuiz = {
         {
           id: 16,
           question: "\u00bfCuántas Reliquias de la Muerte existen?",
-          image: "https://picsum.photos/seed/hp-q16/800/450",
           answers: [
             { id: "a", text: "2" },
             { id: "b", text: "3" },
@@ -1627,7 +1519,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 17,
           question:
             "\u00bfQué tipo de criatura es Buckbeak?",
-          image: "https://picsum.photos/seed/hp-q17/800/450",
           answers: [
             { id: "a", text: "Un Thestral" },
             { id: "b", text: "Un Hipogrifo" },
@@ -1642,7 +1533,6 @@ export const quizHarryPotter: TranslatedQuiz = {
           id: 18,
           question:
             "\u00bfQué elfo doméstico advierte a Harry del peligro y lo ayuda en la Cámara de los Secretos?",
-          image: "https://picsum.photos/seed/hp-q18/800/450",
           answers: [
             { id: "a", text: "Winky" },
             { id: "b", text: "Kreacher" },
