@@ -137,8 +137,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
         const xp = currentState.hasSecondChance === false ? Math.round(BASE_XP * 0.5) : BASE_XP;
         setTotalXp((prev) => prev + xp);
         setLastXpGain(xp);
-        setXpPopup({ amount: xp, key: Date.now() });
-        setTimeout(() => setXpPopup(null), 1500);
+        // Dispatch XP event to header
+        window.dispatchEvent(new CustomEvent("wizy-xp-gain", { detail: { amount: xp } }));
       } else {
         setLastXpGain(0);
       }
@@ -410,14 +410,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
         </div>
       </div>
 
-      {/* XP popup animation */}
-      {xpPopup && (
-        <div key={xpPopup.key} className="fixed top-20 right-6 z-50 animate-bounce">
-          <div className="bg-gradient-to-r from-yellow-400 to-amber-500 text-white font-display font-black text-lg px-4 py-2 rounded-xl shadow-lg shadow-amber-300/50">
-            +{xpPopup.amount} XP
-          </div>
-        </div>
-      )}
+      {/* XP popup - dispatches event to header */}
 
       {/* ===== MAIN QUIZ CONTENT ===== */}
       <div className="flex-1 min-w-0 space-y-4 md:space-y-6 pb-16 lg:pb-0">
