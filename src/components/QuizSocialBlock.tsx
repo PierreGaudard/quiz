@@ -16,14 +16,15 @@ interface QuizSocialBlockProps {
 }
 
 const socialT: Record<string, Record<string, string>> = {
-  ranking: { en: "Your ranking", fr: "Votre classement", es: "Tu clasificacion" },
+  ranking: { en: "Your ranking among friends", fr: "Ton classement entre amis", es: "Tu ranking entre amigos" },
   friendsScores: { en: "Friends' scores", fr: "Scores des amis", es: "Puntuaciones de amigos" },
   notPlayed: { en: "Not played", fr: "Non joue", es: "No jugado" },
   noFriends: { en: "Add friends to compare scores!", fr: "Ajoutez des amis pour comparer !", es: "Agrega amigos para comparar!" },
+  first: { en: "1st", fr: "1er", es: "1ro" },
+  outOf: { en: "out of", fr: "sur", es: "de" },
 };
 
 export default function QuizSocialBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: QuizSocialBlockProps) {
-  const [rank, setRank] = useState<{ rank: number; total: number } | null>(null);
   const [friends, setFriends] = useState<FriendScore[]>([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -39,14 +40,9 @@ export default function QuizSocialBlock({ quizSlug, userScore, totalQuestions, l
         if (!meData.user || cancelled) { setLoading(false); return; }
         setIsLoggedIn(true);
 
-        const [rankRes, friendsRes] = await Promise.all([
-          fetch("/api/auth/rank"),
-          fetch("/api/friends"),
-        ]);
-        const rankData = await rankRes.json();
+        const friendsRes = await fetch("/api/friends");
         const friendsData = await friendsRes.json();
         if (cancelled) return;
-        if (rankData?.rank) setRank(rankData);
 
         const friendsList = (friendsData.friends || []).slice(0, 5);
         const friendScores: FriendScore[] = await Promise.all(
@@ -85,30 +81,36 @@ export default function QuizSocialBlock({ quizSlug, userScore, totalQuestions, l
 
   if (loading || !isLoggedIn) return null;
 
-  const leaderboardHref = locale === "fr" ? "/fr/classement/" : locale === "es" ? "/es/clasificacion/" : "/leaderboard/";
+  // Compute quiz-specific ranking among friends
+  const playedFriends = friends.filter((f) => f.bestScore !== null);
+  const betterThanUser = playedFriends.filter((f) => (f.bestScore ?? 0) > userScore).length;
+  const friendRank = betterThanUser + 1;
+  const totalPlayers = playedFriends.length + 1; // friends who played + user
 
   return (
     <div className="mt-6 bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-      {rank && (
-        <a
-          href={leaderboardHref}
-          className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-violet-50 to-purple-50 border-b border-gray-100 hover:from-violet-100 hover:to-purple-100 transition-colors"
-        >
-          <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center">
-            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z" />
-            </svg>
+      {playedFriends.length > 0 && (
+        <div className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-violet-50 to-purple-50 border-b border-gray-100">
+          <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${friendRank === 1 ? "bg-yellow-400" : "bg-violet-400"}`}>
+            <span className="text-white text-sm font-black">#{friendRank}</span>
           </div>
           <div className="flex-1">
             <p className="text-xs text-gray-500 font-medium">{tt("ranking")}</p>
             <p className="text-sm font-bold text-gray-900">
-              #{rank.rank} <span className="text-gray-400 font-normal">/ {rank.total}</span>
+              {friendRank === 1 ? (
+                <span className="text-yellow-600">{tt("first")}</span>
+              ) : (
+                <span>#{friendRank}</span>
+              )}
+              {" "}<span className="text-gray-400 font-normal">{tt("outOf")} {totalPlayers}</span>
             </p>
           </div>
-          <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
+          {friendRank === 1 && (
+            <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z" />
+            </svg>
+          )}
+        </div>
       )}
 
       {friends.length > 0 ? (

@@ -74,8 +74,8 @@ const catPageT: Record<string, Record<string, string>> = {
   ranking: { en: "General ranking", fr: "Classement general", es: "Clasificacion general" },
   catSports: { en: "Sports", fr: "Sport", es: "Deportes" },
   catCinema: { en: "Cinema", fr: "Cinéma", es: "Cine" },
-  catHistory: { en: "History", fr: "Histoire", es: "Historia" },
-  catGeneralKnowledge: { en: "General Knowledge", fr: "Culture Générale", es: "Cultura General" },
+  catAnime: { en: "Anime", fr: "Anime", es: "Anime" },
+  catVideoGames: { en: "Video Games", fr: "Jeux Video", es: "Videojuegos" },
   catGeography: { en: "Geography", fr: "Géographie", es: "Geografía" },
   miniQuiz: { en: "Mini quiz", fr: "Mini quiz", es: "Mini quiz" },
   noQuizzesFound: { en: "No quizzes found for this filter.", fr: "Aucun quiz trouvé pour ce filtre.", es: "No se encontraron quizzes para este filtro." },
@@ -1132,11 +1132,11 @@ function SidebarContent({
   ];
 
   const sidebarCategories = [
-    { nameKey: "catSports", slug: "sport", color: "bg-emerald-500" },
-    { nameKey: "catCinema", slug: "cinema", color: "bg-red-500" },
-    { nameKey: "catHistory", slug: "histoire", color: "bg-amber-600" },
-    { nameKey: "catGeneralKnowledge", slug: "culture-generale", color: "bg-yellow-500" },
-    { nameKey: "catGeography", slug: "geographie", color: "bg-teal-500" },
+    { nameKey: "catSports", slug: "sport", color: "bg-emerald-500", coverImage: "/images/cover-sport.webp", name: "Sport" },
+    { nameKey: "catCinema", slug: "cinema", color: "bg-red-500", coverImage: "/images/cover-cinema.webp", name: "Cinema" },
+    { nameKey: "catAnime", slug: "anime", color: "bg-pink-500", coverImage: "/images/cover-anime.webp", name: "Anime" },
+    { nameKey: "catVideoGames", slug: "jeux-video", color: "bg-purple-500", coverImage: "/images/cover-jeux-video.webp", name: "Jeux Video" },
+    { nameKey: "catGeography", slug: "geographie", color: "bg-teal-500", coverImage: "/images/cover-geographie.webp", name: "Geographie" },
   ];
 
   return (
@@ -1238,9 +1238,7 @@ function SidebarContent({
               href={lp(`/${cat.slug}`)}
               className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-gray-50 transition-colors group"
             >
-              <span className={`w-7 h-7 ${cat.color} rounded-lg flex items-center justify-center text-white shrink-0 p-1`}
-                dangerouslySetInnerHTML={{ __html: categoryIcons[cat.slug] || "" }}
-              />
+              <img src={withBase(cat.coverImage)} alt={cat.name} className="w-7 h-7 rounded-lg object-cover shrink-0" />
               <span className="text-sm font-medium text-gray-700 group-hover:text-violet-600 transition-colors">{tt(cat.nameKey)}</span>
             </a>
           ))}

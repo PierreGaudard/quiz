@@ -141,6 +141,16 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
             var levelBadge = document.getElementById('header-level');
             if (levelBadge) { levelBadge.textContent = 'Lv.' + lv.level; levelBadge.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color; }
 
+            // Update mobile level badge in real-time
+            var mobileIcon = document.getElementById('mobile-user-icon');
+            if (mobileIcon) {
+              var mobileLvSpan = mobileIcon.querySelector('span:last-child');
+              if (mobileLvSpan && mobileLvSpan.textContent.indexOf('Lv.') !== -1) {
+                mobileLvSpan.textContent = 'Lv.' + lv.level;
+                mobileLvSpan.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded text-white shrink-0 ' + lv.color;
+              }
+            }
+
             // Show XP popup next to level badge
             var popup = document.createElement('span');
             popup.textContent = '+' + amount + ' XP';
