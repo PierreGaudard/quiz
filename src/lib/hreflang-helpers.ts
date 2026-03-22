@@ -15,6 +15,7 @@ export const staticPageSlugs: Record<string, Record<Locale, string>> = {
   legal: { en: "/legal-notices/", fr: "/mentions-legales/", es: "/aviso-legal/" },
   privacy: { en: "/privacy-policy/", fr: "/confidentialite/", es: "/politica-privacidad/" },
   terms: { en: "/terms-of-use/", fr: "/cgv/", es: "/condiciones-uso/" },
+  profile: { en: "/profile/", fr: "/profil/", es: "/perfil/" },
 };
 
 /** Get hreflang paths for a static page by key. */

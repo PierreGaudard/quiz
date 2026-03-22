@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
+import ProfilePage from "../components/ProfilePage";
+import type { Locale } from "../i18n/config";
+
+const locale: Locale = "en";
+---
+
+<Layout title="My Profile | Wizy" description="View your quiz stats, level, XP and quiz history." locale={locale} hreflangPaths={getHreflangStaticPaths("profile")}>
+  <ProfilePage client:load locale={locale} />
+</Layout>

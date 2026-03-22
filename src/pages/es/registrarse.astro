@@ -118,7 +118,7 @@ const lp = (path: string) => localePath(path, locale);
         btn.disabled = true; var orig = btn.textContent; btn.textContent = '...';
         fetch('/api/auth/register', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: username, email: email, password: password }) })
         .then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
-        .then(function(r) { if (!r.ok) { errEl.textContent = r.data.error || 'Error'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; return; } window.location.href = '/es/'; })
+        .then(function(r) { if (!r.ok) { errEl.textContent = r.data.error || 'Error'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; return; } window.location.href = '/es/perfil/'; })
         .catch(function() { errEl.textContent = 'Error de red'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; });
       });
     });

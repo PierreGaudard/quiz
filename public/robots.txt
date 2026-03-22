@@ -1,2 +1,7 @@
 User-agent: *
 Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+Sitemap: https://wizyquiz.com/sitemap-index.xml
