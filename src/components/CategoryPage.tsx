@@ -481,7 +481,7 @@ export default function CategoryPage({
 
       {/* ─── 5. MINI QUIZ (inside main column) ─── */}
       {miniQuiz && miniQuestion && (
-        <section className="mb-12">
+        <section className="mt-10 mb-12">
           <div className="bg-gradient-to-br from-violet-50 via-white to-indigo-50 rounded-2xl border border-violet-100 p-6 md:p-8 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
               <span className="w-8 h-8 bg-violet-600 rounded-lg flex items-center justify-center text-white text-sm font-bold">
@@ -489,7 +489,7 @@ export default function CategoryPage({
               </span>
               <span className="text-sm font-semibold text-violet-600">{tt("miniQuiz")}</span>
               <span className="text-xs text-gray-400 ml-1">
-                &mdash; {miniQuiz.title}
+                | {miniQuiz.title}
               </span>
             </div>
             <h2 className="font-display text-lg md:text-xl font-bold text-gray-900 mb-5 leading-snug">
@@ -1158,7 +1158,7 @@ function SidebarContent({
               <p className="font-display font-bold text-sm">{authUser.username}</p>
               <div className="flex items-center gap-1.5 mt-0.5">
                 <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded text-white ${(() => { const l = authUser.xp || 0; if (l >= 7000) return 'bg-amber-500'; if (l >= 3500) return 'bg-violet-500'; if (l >= 1500) return 'bg-blue-500'; if (l >= 500) return 'bg-green-500'; return 'bg-gray-400'; })()}`}>
-                  Lv.{(() => { const x = authUser.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(50*i*i - 50*i + 200)) lv = i; else break; } return lv; })()}
+                  Lv.{(() => { const x = authUser.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(10*i*i - 10*i + 200)) lv = i; else break; } return lv; })()}
                 </span>
                 <span className="text-white/60 text-[10px]">{authUser.xp || 0} XP</span>
               </div>
@@ -1186,7 +1186,7 @@ function SidebarContent({
               <p className="text-[10px] font-bold text-white/50 uppercase tracking-wider mb-2">{tt("friendsLabel")}</p>
               <div className="space-y-1.5">
                 {friends.slice(0, 5).map((f: any) => {
-                  const fLv = (() => { const x = f.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(50*i*i - 50*i + 200)) lv = i; else break; } return lv; })();
+                  const fLv = (() => { const x = f.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(10*i*i - 10*i + 200)) lv = i; else break; } return lv; })();
                   const fProfileHref = locale === "fr" ? `/fr/profil/${f.username}/` : locale === "es" ? `/es/perfil/${f.username}/` : `/profile/${f.username}/`;
                   return (
                     <a key={f.id} href={fProfileHref} className="flex items-center gap-2 text-xs hover:bg-white/10 rounded-lg p-1.5 -mx-1 transition-colors">
