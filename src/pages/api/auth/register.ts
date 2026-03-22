@@ -25,10 +25,21 @@ export const POST: APIRoute = async ({ request }) => {
     return new Response(JSON.stringify({ error: "Username must be 3-30 characters" }), { status: 400 });
   }
 
-  // Check if user already exists
-  const existing = await db.prepare("SELECT id FROM users WHERE email = ? OR username = ?").bind(email, username).first();
-  if (existing) {
-    return new Response(JSON.stringify({ error: "Email or username already taken" }), { status: 409 });
+  // Validate username format (alphanumeric + underscore only)
+  if (!/^[a-zA-Z0-9_]+$/.test(username)) {
+    return new Response(JSON.stringify({ error: "Username can only contain letters, numbers and underscores" }), { status: 400 });
+  }
+
+  // Check if email already exists
+  const existingEmail = await db.prepare("SELECT id FROM users WHERE email = ?").bind(email).first();
+  if (existingEmail) {
+    return new Response(JSON.stringify({ error: "An account already exists with this email" }), { status: 409 });
+  }
+
+  // Check if username already exists
+  const existingUsername = await db.prepare("SELECT id FROM users WHERE username = ?").bind(username).first();
+  if (existingUsername) {
+    return new Response(JSON.stringify({ error: "This username is already taken" }), { status: 409 });
   }
 
   const passwordHash = await hashPassword(password);

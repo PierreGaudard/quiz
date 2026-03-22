@@ -19,7 +19,8 @@ export const POST: APIRoute = async ({ request }) => {
     return new Response(JSON.stringify({ error: "Missing fields" }), { status: 400 });
   }
 
-  const user = await db.prepare("SELECT id, username, email, password_hash, xp FROM users WHERE email = ?").bind(email).first() as any;
+  // Accept email OR username
+  const user = await db.prepare("SELECT id, username, email, password_hash, xp FROM users WHERE email = ? OR username = ?").bind(email, email).first() as any;
   if (!user) {
     return new Response(JSON.stringify({ error: "Invalid credentials" }), { status: 401 });
   }

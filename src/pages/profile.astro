@@ -2,11 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
 import ProfilePage from "../components/ProfilePage";
+import FriendsSidebar from "../components/FriendsSidebar";
 import type { Locale } from "../i18n/config";
 
 const locale: Locale = "en";
 ---
 
 <Layout title="My Profile | Wizy" description="View your quiz stats, level, XP and quiz history." locale={locale} hreflangPaths={getHreflangStaticPaths("profile")}>
-  <ProfilePage client:load locale={locale} />
+  <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col lg:flex-row gap-6">
+    <div class="flex-1 min-w-0">
+      <ProfilePage client:load locale={locale} />
+    </div>
+    <div class="lg:w-72 shrink-0">
+      <div class="lg:sticky lg:top-[120px]">
+        <FriendsSidebar client:load locale={locale} />
+      </div>
+    </div>
+  </div>
 </Layout>

@@ -59,7 +59,7 @@ export async function createSession(db: D1Database, userId: number): Promise<str
 /** Get user from session ID. Returns null if invalid/expired. */
 export async function getUserFromSession(db: D1Database, sessionId: string): Promise<any | null> {
   const row = await db
-    .prepare("SELECT u.id, u.username, u.email, u.xp, u.created_at FROM sessions s JOIN users u ON s.user_id = u.id WHERE s.id = ? AND s.expires_at > datetime('now')")
+    .prepare("SELECT u.id, u.username, u.email, u.xp, u.avatar, u.created_at FROM sessions s JOIN users u ON s.user_id = u.id WHERE s.id = ? AND s.expires_at > datetime('now')")
     .bind(sessionId)
     .first();
   return row || null;
