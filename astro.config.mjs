@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 
 import react from '@astrojs/react';
+import cloudflare from '@astrojs/cloudflare';
 import tailwindcss from '@tailwindcss/vite';
 import customSitemap from './src/integrations/sitemap.ts';
 
@@ -9,6 +10,10 @@ import customSitemap from './src/integrations/sitemap.ts';
 export default defineConfig({
   site: 'https://quiz.pierretartare94440.workers.dev',
   base: '/',
+  output: 'hybrid',
+  adapter: cloudflare({
+    platformProxy: { enabled: true },
+  }),
   integrations: [react(), customSitemap()],
 
   i18n: {

@@ -1,0 +1,7 @@
+name = "quiz"
+compatibility_date = "2024-12-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wizy-db"
+database_id = "240e5c71-4603-4811-9624-f349334c9a6e"
