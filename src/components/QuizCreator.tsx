@@ -218,7 +218,12 @@ export default function QuizCreator() {
     saveCustomQuiz(quiz);
 
     const encoded = encodeQuizToURL(quiz);
-    const link = window.location.origin + withBase("/creer/jouer") + "#data=" + encoded;
+    // Detect locale from current URL and use locale-aware play page path
+    const path = window.location.pathname;
+    const playPath = path.startsWith("/fr/") ? "/fr/creer/jouer"
+      : path.startsWith("/es/") ? "/es/crear/jugar"
+      : "/create/play";
+    const link = window.location.origin + withBase(playPath) + "#data=" + encoded;
 
     setSubmittedSlug(slug);
     setPreviewLink(link);

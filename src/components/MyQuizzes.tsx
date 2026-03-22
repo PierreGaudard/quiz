@@ -46,7 +46,12 @@ export default function MyQuizzes() {
 
   const handleShare = (entry: StoredQuizEntry) => {
     const encoded = encodeQuizToURL(entry.quiz as any);
-    const baseUrl = window.location.origin + withBase("/creer/jouer");
+    // Detect locale from current URL and use locale-aware play page path
+    const path = window.location.pathname;
+    const playPath = path.startsWith("/fr/") ? "/fr/creer/jouer"
+      : path.startsWith("/es/") ? "/es/crear/jugar"
+      : "/create/play";
+    const baseUrl = window.location.origin + withBase(playPath);
     const url = `${baseUrl}#data=${encoded}`;
     navigator.clipboard.writeText(url).then(() => {
       setCopiedId(entry.id);

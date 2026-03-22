@@ -22,7 +22,9 @@ const popularQuizzes = [...allQuizzes].sort((a, b) => (b.playCount || 0) - (a.pl
 const newestQuizzes = [...allQuizzes].slice(-4).reverse();
 const totalPlays = allQuizzes.reduce((sum, q) => sum + (q.playCount || 0), 0);
 
-const qdj = allQuizzes[0]?.questions[0];
+const qdjQuiz = allQuizzes[0];
+const qdj = qdjQuiz?.questions[0];
+const qdjImage = qdj?.image || qdjQuiz?.coverImage;
 
 const DIFFICULTY_STYLE: Record<string, string> = {
   "Easy": "text-green-700 bg-green-100",
@@ -92,7 +94,7 @@ function formatCount(n: number): string {
                 answers={qdj.answers}
                 correctAnswer={qdj.correctAnswer}
                 explanation={qdj.explanation}
-                image={qdj.image ? withBase(qdj.image) : undefined}
+                image={qdjImage ? withBase(qdjImage) : undefined}
                 locale="en"
               />
             )}
@@ -342,7 +344,7 @@ function formatCount(n: number): string {
           <span class="text-4xl font-display font-black text-yellow-400">+</span>
           <h2 class="font-display text-2xl md:text-3xl font-black text-white">Got a quiz idea?</h2>
           <p class="text-white/50 text-sm max-w-md mx-auto">Create it in 5 minutes and share it with your friends. It's free, fast and fun.</p>
-          <a href={lp('/creer')} class="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-sm px-6 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl">Create my quiz →</a>
+          <a href={lp('/create')} class="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-sm px-6 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl">Create my quiz →</a>
         </div>
       </div>
     </section>

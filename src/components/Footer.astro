@@ -10,6 +10,16 @@ const lp = (path: string) => localePath(path, locale);
 const withBase = lp; // alias for template compatibility
 const currentYear = new Date().getFullYear();
 
+// Locale-aware slug mapping for static pages
+const slugs: Record<string, Record<string, string>> = {
+  create: { en: "/create", fr: "/creer", es: "/crear" },
+  legal: { en: "/legal-notices", fr: "/mentions-legales", es: "/aviso-legal" },
+  privacy: { en: "/privacy-policy", fr: "/confidentialite", es: "/politica-privacidad" },
+  terms: { en: "/terms-of-use", fr: "/cgv", es: "/condiciones-uso" },
+  sitemap: { en: "/sitemap", fr: "/plan-du-site", es: "/mapa-del-sitio" },
+};
+const s = (key: string) => slugs[key]?.[locale] || slugs[key]?.en || key;
+
 const sitemapCategories = getCategories(locale);
 ---
 
@@ -49,7 +59,7 @@ const sitemapCategories = getCategories(locale);
         <h3 class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.quizzesAndGames")}</h3>
         <ul class="space-y-2.5">
           <li><a href={withBase('/')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.allQuizzes")}</a></li>
-          <li><a href={withBase('/creer')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.createQuiz")}</a></li>
+          <li><a href={withBase(s('create'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.createQuiz")}</a></li>
         </ul>
       </div>
 
@@ -57,11 +67,11 @@ const sitemapCategories = getCategories(locale);
       <div>
         <h3 class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.information")}</h3>
         <ul class="space-y-2.5">
-          <li><a href={withBase('/mentions-legales')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.legal")}</a></li>
-          <li><a href={withBase('/confidentialite')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.privacy")}</a></li>
-          <li><a href={withBase('/cgv')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.terms")}</a></li>
+          <li><a href={withBase(s('legal'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.legal")}</a></li>
+          <li><a href={withBase(s('privacy'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.privacy")}</a></li>
+          <li><a href={withBase(s('terms'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.terms")}</a></li>
           <li><a href="mailto:pierretartare94440@gmail.com" class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.contactUs")}</a></li>
-          <li><a href={withBase('/plan-du-site')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.sitemap")}</a></li>
+          <li><a href={withBase(s('sitemap'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.sitemap")}</a></li>
         </ul>
       </div>
     </div>
@@ -71,11 +81,11 @@ const sitemapCategories = getCategories(locale);
   <div class="border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col items-center gap-2 text-center">
       <div class="flex items-center gap-4 text-xs text-white/30">
-        <a href={withBase('/mentions-legales')} class="hover:text-white/60 transition-colors">{t(locale, "footer.legal")}</a>
+        <a href={withBase(s('legal'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.legal")}</a>
         <span class="text-white/10">|</span>
-        <a href={withBase('/confidentialite')} class="hover:text-white/60 transition-colors">{t(locale, "footer.privacy")}</a>
+        <a href={withBase(s('privacy'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.privacy")}</a>
         <span class="text-white/10">|</span>
-        <a href={withBase('/cgv')} class="hover:text-white/60 transition-colors">{t(locale, "footer.terms")}</a>
+        <a href={withBase(s('terms'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.terms")}</a>
       </div>
       <p class="text-xs text-white/30">
         &copy; {currentYear} <span class="font-semibold text-white/50">Wizy</span> — {t(locale, "footer.allRightsReserved")}

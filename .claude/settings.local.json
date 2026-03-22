@@ -57,7 +57,9 @@
       "Bash(grep -l \"translations: {\" /c/Users/pierr/Quiz/src/data/quiz-*.ts)",
       "Bash(diff /c/Users/pierr/Quiz/src/pages/[slug].astro /c/Users/pierr/Quiz/src/pages/fr/[slug].astro)",
       "Bash(grep:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(echo \"=== EN pages \\(should be English slugs\\) ===\" ls C:/Users/pierr/Quiz/src/pages/*.astro)",
+      "Bash(xargs -I{} basename {} .astro)"
     ]
   }
 }

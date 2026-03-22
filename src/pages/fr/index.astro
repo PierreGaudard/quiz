@@ -22,7 +22,9 @@ const popularQuizzes = [...allQuizzes].sort((a, b) => (b.playCount || 0) - (a.pl
 const newestQuizzes = [...allQuizzes].slice(-4).reverse();
 const totalPlays = allQuizzes.reduce((sum, q) => sum + (q.playCount || 0), 0);
 
-const qdj = allQuizzes[0]?.questions[0];
+const qdjQuiz = allQuizzes[0];
+const qdj = qdjQuiz?.questions[0];
+const qdjImage = qdj?.image || qdjQuiz?.coverImage;
 
 const DIFFICULTY_STYLE: Record<string, string> = {
   "Easy": "text-green-700 bg-green-100",
@@ -92,7 +94,7 @@ function formatCount(n: number): string {
                 answers={qdj.answers}
                 correctAnswer={qdj.correctAnswer}
                 explanation={qdj.explanation}
-                image={qdj.image ? withBase(qdj.image) : undefined}
+                image={qdjImage ? withBase(qdjImage) : undefined}
                 locale="fr"
               />
             )}
