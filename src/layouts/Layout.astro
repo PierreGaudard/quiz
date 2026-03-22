@@ -148,6 +148,16 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
             setTimeout(function() { if (popup.parentNode) popup.parentNode.removeChild(popup); }, 1500);
           });
 
+          // Update mobile user icon (top right)
+          var mobileIcon = document.getElementById('mobile-user-icon');
+          if (mobileIcon) {
+            var profileMobilePath = window.location.pathname.startsWith('/fr/') ? '/fr/profil/' : window.location.pathname.startsWith('/es/') ? '/es/perfil/' : '/profile/';
+            mobileIcon.href = profileMobilePath;
+            if (data.user.avatar) {
+              mobileIcon.innerHTML = '<img src="' + data.user.avatar + '" class="w-7 h-7 rounded-full object-cover border-2 border-white/30" />';
+            }
+          }
+
           // Update mobile menu
           var mobileAuth = document.getElementById('mobile-auth-links');
           if (mobileAuth) {
