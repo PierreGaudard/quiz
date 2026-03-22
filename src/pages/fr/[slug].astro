@@ -4,6 +4,7 @@ import CategoryPage from "../../components/CategoryPage";
 import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
 import { getSlugPaths, resolveCategoryData } from "../../lib/page-helpers";
+import { getHreflangCategoryPaths } from "../../lib/hreflang-helpers";
 import type { Locale } from "../../i18n/config";
 
 const locale: Locale = "fr";
@@ -17,7 +18,7 @@ const { category, catQuizzes, featured, availableGameTypes, quizzesByType } = re
 const lp = (path: string) => localePath(path, locale);
 ---
 
-<Layout title={`${category.name} Quiz - Test your knowledge`} description={category.seoIntro || category.description} locale={locale}>
+<Layout title={`${category.name} Quiz - Test your knowledge`} description={category.seoIntro || category.description} locale={locale} hreflangPaths={getHreflangCategoryPaths(categorySlug)}>
   <CategoryPage
     client:load
     category={category}

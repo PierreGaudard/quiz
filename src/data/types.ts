@@ -76,6 +76,8 @@ export interface CategoryLocaleContent {
 /** Translated category stored in data files. */
 export interface CategoryDef {
   slug: string;
+  /** Locale-specific slugs for URL. Falls back to slug if not provided. */
+  slugs?: Partial<Record<Locale, string>>;
   icon: string;
   color: string;
   coverImage?: string;

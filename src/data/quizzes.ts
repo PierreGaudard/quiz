@@ -23,6 +23,12 @@ function resolveSubcategorySlug(quiz: TranslatedQuiz, locale: Locale): string {
   return slugifySubcategory(localeSubs[subIndex] || quiz.subcategory);
 }
 
+/** Resolve the locale-specific category slug. */
+function resolveCategorySlug(baseCatSlug: string, locale: Locale): string {
+  const catDef = categoryDefs.find((c) => c.slug === baseCatSlug);
+  return catDef?.slugs?.[locale] || baseCatSlug;
+}
+
 /** Resolve a TranslatedQuiz into a QuizData for a given locale. */
 export function resolveQuiz(quiz: TranslatedQuiz, locale: Locale): QuizData {
   const content = quiz.translations[locale] || quiz.translations.en || Object.values(quiz.translations)[0]!;
@@ -30,13 +36,14 @@ export function resolveQuiz(quiz: TranslatedQuiz, locale: Locale): QuizData {
   const diffLabel = difficultyLabels[locale]?.[quiz.difficulty] || difficultyLabels.en[quiz.difficulty];
   const quizSlug = quiz.slugs?.[locale] || quiz.slug;
   const subSlug = resolveSubcategorySlug(quiz, locale);
+  const catSlug = resolveCategorySlug(quiz.categorySlug, locale);
   return {
     slug: quizSlug,
-    path: `${quiz.categorySlug}/${subSlug}/${quizSlug}`,
+    path: `${catSlug}/${subSlug}/${quizSlug}`,
     title: content.title,
     description: content.description,
     category: catName,
-    categorySlug: quiz.categorySlug,
+    categorySlug: catSlug,
     subcategory: quiz.subcategory,
     subcategorySlug: subSlug,
     difficulty: diffLabel,
@@ -54,10 +61,20 @@ export function getAllQuizzes(locale: Locale): QuizData[] {
   return allTranslatedQuizzes.map((q) => resolveQuiz(q, locale));
 }
 
-/** Get quizzes by category slug for a locale. */
+/** Find the base (FR) category slug from any locale slug. */
+function toBaseCategorySlug(slug: string): string {
+  const def = categoryDefs.find((c) => {
+    if (c.slug === slug) return true;
+    return c.slugs ? Object.values(c.slugs).includes(slug) : false;
+  });
+  return def?.slug || slug;
+}
+
+/** Get quizzes by category slug (accepts any locale slug) for a locale. */
 export function getQuizzesByCategory(categorySlug: string, locale: Locale): QuizData[] {
+  const baseSlug = toBaseCategorySlug(categorySlug);
   return allTranslatedQuizzes
-    .filter((q) => q.categorySlug === categorySlug)
+    .filter((q) => q.categorySlug === baseSlug)
     .map((q) => resolveQuiz(q, locale));
 }
 
@@ -90,9 +107,10 @@ export function getAllSubcategoryPaths(locale: Locale) {
   const cats = categoryDefs;
   const paths: { category: string; sub: string; subName: string }[] = [];
   for (const cat of cats) {
+    const catSlug = cat.slugs?.[locale] || cat.slug;
     const content = cat.translations[locale] || cat.translations.en;
     for (const sub of content.subcategories) {
-      paths.push({ category: cat.slug, sub: slugifySubcategory(sub), subName: sub });
+      paths.push({ category: catSlug, sub: slugifySubcategory(sub), subName: sub });
     }
   }
   return paths;

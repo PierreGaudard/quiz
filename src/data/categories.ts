@@ -31,6 +31,7 @@ export const difficultyLabels: Record<Locale, Record<Difficulty, string>> = {
 export const categoryDefs: CategoryDef[] = [
   {
     slug: "sport",
+    slugs: { en: "sports", fr: "sport", es: "deportes" },
     icon: "SP",
     color: "bg-emerald-500",
     coverImage: "/images/cover-sport.webp",
@@ -60,6 +61,7 @@ export const categoryDefs: CategoryDef[] = [
   },
   {
     slug: "cinema",
+    slugs: { en: "cinema", fr: "cinema", es: "cine" },
     icon: "CI",
     color: "bg-red-500",
     coverImage: "/images/cover-cinema.webp",
@@ -89,6 +91,7 @@ export const categoryDefs: CategoryDef[] = [
   },
   {
     slug: "histoire",
+    slugs: { en: "history", fr: "histoire", es: "historia" },
     icon: "HI",
     color: "bg-amber-600",
     coverImage: "/images/cover-histoire.webp",
@@ -118,6 +121,7 @@ export const categoryDefs: CategoryDef[] = [
   },
   {
     slug: "culture-generale",
+    slugs: { en: "general-knowledge", fr: "culture-generale", es: "cultura-general" },
     icon: "CU",
     color: "bg-yellow-500",
     coverImage: "/images/cover-sciences.webp",
@@ -147,6 +151,7 @@ export const categoryDefs: CategoryDef[] = [
   },
   {
     slug: "geographie",
+    slugs: { en: "geography", fr: "geographie", es: "geografia" },
     icon: "GE",
     color: "bg-teal-500",
     coverImage: "/images/cover-geographie.webp",
@@ -183,7 +188,7 @@ export function getCategories(locale: Locale): CategoryData[] {
   return categoryDefs.map((def) => {
     const content = def.translations[locale] || def.translations.en;
     return {
-      slug: def.slug,
+      slug: def.slugs?.[locale] || def.slug,
       name: content.name,
       description: content.description,
       icon: def.icon,
@@ -196,9 +201,18 @@ export function getCategories(locale: Locale): CategoryData[] {
   });
 }
 
-/** Get a single resolved category. */
+/** Get a single resolved category by any locale slug or base slug. */
 export function getCategory(slug: string, locale: Locale): CategoryData | undefined {
   return getCategories(locale).find((c) => c.slug === slug);
+}
+
+/** Find a CategoryDef by any of its slugs (base or locale-specific). */
+export function findCategoryDef(slug: string): CategoryDef | undefined {
+  return categoryDefs.find((def) => {
+    if (def.slug === slug) return true;
+    if (def.slugs) return Object.values(def.slugs).includes(slug);
+    return false;
+  });
 }
 
 /** Get category name for a given slug and locale. */

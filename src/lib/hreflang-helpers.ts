@@ -23,6 +23,22 @@ export function getHreflangStaticPaths(key: string): Partial<Record<Locale, stri
 }
 
 /**
+ * Build hreflang paths for category pages.
+ */
+export function getHreflangCategoryPaths(
+  categorySlug: string,
+): Partial<Record<Locale, string>> {
+  const catDef = categoryDefs.find((c) => c.slug === categorySlug || (c.slugs && Object.values(c.slugs).includes(categorySlug)));
+  if (!catDef) return {};
+
+  const paths: Partial<Record<Locale, string>> = {};
+  for (const loc of locales) {
+    paths[loc] = `/${catDef.slugs?.[loc] || catDef.slug}/`;
+  }
+  return paths;
+}
+
+/**
  * Build hreflang paths for subcategory pages.
  * Since subcategory slugs differ per locale (e.g. "society" EN vs "societe" FR),
  * we need to compute the correct path for each locale.
@@ -32,7 +48,7 @@ export function getHreflangSubcategoryPaths(
   subName: string,
   currentLocale: Locale
 ): Partial<Record<Locale, string>> {
-  const catDef = categoryDefs.find((c) => c.slug === categorySlug);
+  const catDef = categoryDefs.find((c) => c.slug === categorySlug || (c.slugs && Object.values(c.slugs).includes(categorySlug)));
   if (!catDef) return {};
 
   // Find the index of this subcategory in the current locale
@@ -42,10 +58,11 @@ export function getHreflangSubcategoryPaths(
 
   const paths: Partial<Record<Locale, string>> = {};
   for (const loc of locales) {
+    const locCatSlug = catDef.slugs?.[loc] || catDef.slug;
     const content = catDef.translations[loc] || catDef.translations.en;
     const localizedSubName = content.subcategories[subIndex];
     if (localizedSubName) {
-      paths[loc] = `/${categorySlug}/${slugifySubcategory(localizedSubName)}/`;
+      paths[loc] = `/${locCatSlug}/${slugifySubcategory(localizedSubName)}/`;
     }
   }
 
