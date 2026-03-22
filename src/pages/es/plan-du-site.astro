@@ -12,7 +12,7 @@ const categories = getCategories(locale);
 const allQuizzes = getAllQuizzes(locale);
 ---
 
-<Layout title="Mapa del sitio - Wizy" description="Todas las páginas del sitio Wizy: categorías, subcategorías y quizzes." locale={locale}>
+<Layout title="Mapa del sitio: todos los quizzes | Wizy" description="Explora el mapa del sitio Wizy con todas las categorias, subcategorias y quizzes disponibles." locale={locale}>
   <main class="max-w-6xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>

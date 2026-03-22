@@ -3,6 +3,9 @@ import Layout from "../../../layouts/Layout.astro";
 import QuizCreator from "../../../components/QuizCreator";
 ---
 
-<Layout title="Créer un quiz - Wizy" description="Crée ton propre quiz en quelques minutes. Choisis ta catégorie, ajoute tes questions et partage ton lien unique.">
+<Layout title="Creer un quiz personnalise - Wizy" description="Cree ton propre quiz en quelques minutes. Choisis ta categorie, ajoute tes questions et partage ton lien unique." locale="fr">
+  <div class="max-w-4xl mx-auto px-4 pt-8">
+    <h1 class="font-display text-3xl font-bold text-gray-900 mb-6">Creez votre propre quiz</h1>
+  </div>
   <QuizCreator client:load />
 </Layout>

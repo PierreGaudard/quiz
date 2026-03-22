@@ -382,9 +382,9 @@ export default function OrdrePlayer({ quiz }: Props) {
             <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">
               {quiz.category}
             </span>
-            <h1 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
+            <div className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
               {quiz.title}
-            </h1>
+            </div>
             <p className="text-white/70 text-sm md:text-base mt-2 max-w-2xl">
               {quiz.description}
             </p>

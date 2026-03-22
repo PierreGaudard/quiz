@@ -115,8 +115,8 @@ const ui = {
     "auth.signupCta": "Create my account",
     "auth.noAccount": "No account yet?",
     "auth.hasAccount": "Already have an account?",
-    "auth.loginTitle": "Log in - Wizy",
-    "auth.signupTitle": "Sign up - Wizy",
+    "auth.loginTitle": "Log In to Your Wizy Account | Free Quiz Platform",
+    "auth.signupTitle": "Sign Up for Free | Wizy Quiz Platform",
     "auth.loginDescription": "Log in to your Wizy account to save your scores, track your progress and challenge your friends.",
     "auth.signupDescription": "Create your free Wizy account and start tracking your quiz scores, earning XP and competing with friends.",
 
@@ -131,7 +131,7 @@ const ui = {
     "ranking.allTime": "All time",
     "ranking.thisWeek": "This week",
     "ranking.thisMonth": "This month",
-    "ranking.metaTitle": "Leaderboard - Wizy",
+    "ranking.metaTitle": "Leaderboard and Rankings | Wizy Quizzes",
     "ranking.metaDescription": "Check the Wizy leaderboard. Compete with other players, earn XP by completing quizzes and climb the ranks.",
 
     // Misc
@@ -245,8 +245,8 @@ const ui = {
     "auth.signupCta": "Créer mon compte",
     "auth.noAccount": "Pas encore de compte ?",
     "auth.hasAccount": "Déjà un compte ?",
-    "auth.loginTitle": "Se connecter - Wizy",
-    "auth.signupTitle": "S'inscrire - Wizy",
+    "auth.loginTitle": "Se connecter a Wizy | Quiz gratuits en ligne",
+    "auth.signupTitle": "Inscription gratuite | Wizy Quiz",
     "auth.loginDescription": "Connectez-vous à votre compte Wizy pour sauvegarder vos scores, suivre votre progression et défier vos amis.",
     "auth.signupDescription": "Créez votre compte Wizy gratuitement et commencez à suivre vos scores, gagner des XP et vous mesurer à vos amis.",
 
@@ -261,7 +261,7 @@ const ui = {
     "ranking.allTime": "Depuis toujours",
     "ranking.thisWeek": "Cette semaine",
     "ranking.thisMonth": "Ce mois-ci",
-    "ranking.metaTitle": "Classement - Wizy",
+    "ranking.metaTitle": "Classement des meilleurs joueurs | Wizy",
     "ranking.metaDescription": "Consultez le classement Wizy. Affrontez les autres joueurs, gagnez des XP en completant des quiz et grimpez dans le classement.",
 
     "misc.free": "Gratuit",
@@ -374,8 +374,8 @@ const ui = {
     "auth.signupCta": "Crear mi cuenta",
     "auth.noAccount": "¿Aún no tienes cuenta?",
     "auth.hasAccount": "¿Ya tienes una cuenta?",
-    "auth.loginTitle": "Iniciar sesión - Wizy",
-    "auth.signupTitle": "Registrarse - Wizy",
+    "auth.loginTitle": "Iniciar sesion en Wizy | Quizzes gratuitos",
+    "auth.signupTitle": "Registrate gratis | Wizy Quiz",
     "auth.loginDescription": "Inicia sesión en tu cuenta Wizy para guardar tus puntuaciones, seguir tu progreso y desafiar a tus amigos.",
     "auth.signupDescription": "Crea tu cuenta Wizy gratis y empieza a seguir tus puntuaciones, ganar XP y competir con tus amigos.",
 
@@ -390,7 +390,7 @@ const ui = {
     "ranking.allTime": "Desde siempre",
     "ranking.thisWeek": "Esta semana",
     "ranking.thisMonth": "Este mes",
-    "ranking.metaTitle": "Clasificacion - Wizy",
+    "ranking.metaTitle": "Clasificacion de los mejores jugadores | Wizy",
     "ranking.metaDescription": "Consulta la clasificacion de Wizy. Compite con otros jugadores, gana XP completando quizzes y sube en el ranking.",
 
     "misc.free": "Gratis",
