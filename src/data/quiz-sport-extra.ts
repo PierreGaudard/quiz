@@ -5,7 +5,7 @@ const sport1: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
-  coverImage: "/images/q3-rugby.jpg",
+  coverImage: "/images/q3-rugby.webp",
   gameType: "qcm",
   playCount: 4230,
   translations: {
@@ -422,7 +422,7 @@ const sport2: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "JO & Athlétisme",
   difficulty: "medium",
-  coverImage: "/images/q-cycling.jpg",
+  coverImage: "/images/q-cycling.webp",
   gameType: "qcm",
   playCount: 3890,
   translations: {
@@ -842,7 +842,7 @@ const sport3: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "JO & Athlétisme",
   difficulty: "easy",
-  coverImage: "/images/q-swimming-pool.jpg",
+  coverImage: "/images/q-swimming-pool.webp",
   gameType: "qcm",
   playCount: 2745,
   translations: {
@@ -1262,7 +1262,7 @@ const sport4: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Sports US",
   difficulty: "medium",
-  coverImage: "/images/q-f1.jpg",
+  coverImage: "/images/q-f1.webp",
   gameType: "qcm",
   playCount: 5620,
   translations: {
@@ -1682,7 +1682,7 @@ const sport5: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "easy",
-  coverImage: "/images/q-handball.jpg",
+  coverImage: "/images/q-handball.webp",
   gameType: "qcm",
   playCount: 1980,
   translations: {
@@ -2099,7 +2099,7 @@ const sport6: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Sports de combat",
   difficulty: "medium",
-  coverImage: "/images/q-boxing.jpg",
+  coverImage: "/images/q-boxing.webp",
   gameType: "qcm",
   playCount: 4150,
   translations: {
@@ -2522,7 +2522,7 @@ const sport7: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Sports d'hiver",
   difficulty: "hard",
-  coverImage: "/images/cover-extreme.jpg",
+  coverImage: "/images/cover-extreme.webp",
   gameType: "qcm",
   playCount: 1560,
   translations: {

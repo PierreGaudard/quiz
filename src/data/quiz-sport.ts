@@ -5,7 +5,7 @@ const sportCultureGenerale: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
-  coverImage: "/images/cover-sport.jpg",
+  coverImage: "/images/cover-sport.webp",
   timePerQuestion: 20,
   gameType: "qcm",
   featured: true,
@@ -20,7 +20,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 1,
           question:
             "Aux Jeux olympiques, combien de membres composent au maximum une équipe masculine de bobsleigh ?",
-          image: "/images/q1-bobsleigh.jpg",
+          image: "/images/q1-bobsleigh.webp",
           answers: [
             { id: "a", text: "2 personnes" },
             { id: "b", text: "3 personnes" },
@@ -35,7 +35,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 2,
           question: "Dans quel sport utilise-t-on un volant ?",
-          image: "/images/q2-badminton.jpg",
+          image: "/images/q2-badminton.webp",
           answers: [
             { id: "a", text: "Tennis" },
             { id: "b", text: "Badminton" },
@@ -50,7 +50,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 3,
           question: "Combien de joueurs composent une équipe de rugby à XV ?",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "13 joueurs" },
             { id: "b", text: "14 joueurs" },
@@ -66,7 +66,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 4,
           question:
             "Quel pays a remporté la Coupe du Monde de football en 2022 ?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "Brésil" },
             { id: "b", text: "France" },
@@ -81,7 +81,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 5,
           question: "Quelle est la distance d'un marathon ?",
-          image: "/images/q5-marathon.jpg",
+          image: "/images/q5-marathon.webp",
           answers: [
             { id: "a", text: "40,195 km" },
             { id: "b", text: "42,195 km" },
@@ -97,7 +97,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 6,
           question:
             "Au tennis, comment appelle-t-on un score de 40-40 ?",
-          image: "/images/q6-tennis.jpg",
+          image: "/images/q6-tennis.webp",
           answers: [
             { id: "a", text: "Tie-break" },
             { id: "b", text: "Deuce" },
@@ -112,7 +112,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 7,
           question: "Quel sport se pratique sur un tatami ?",
-          image: "/images/q7-judo.jpg",
+          image: "/images/q7-judo.webp",
           answers: [
             { id: "a", text: "Escrime" },
             { id: "b", text: "Boxe" },
@@ -128,7 +128,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 8,
           question:
             "Combien de sets faut-il gagner pour remporter un match de volleyball ?",
-          image: "/images/q8-volleyball.jpg",
+          image: "/images/q8-volleyball.webp",
           answers: [
             { id: "a", text: "2 sets" },
             { id: "b", text: "3 sets" },
@@ -143,7 +143,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 9,
           question: "Dans quel pays le cricket est-il le sport national ?",
-          image: "/images/q9-cricket.jpg",
+          image: "/images/q9-cricket.webp",
           answers: [
             { id: "a", text: "Australie" },
             { id: "b", text: "Angleterre" },
@@ -159,7 +159,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 10,
           question:
             "Quel nageur détient le record du plus grand nombre de médailles olympiques ?",
-          image: "/images/q10-swimming.jpg",
+          image: "/images/q10-swimming.webp",
           answers: [
             { id: "a", text: "Ian Thorpe" },
             { id: "b", text: "Mark Spitz" },
@@ -182,7 +182,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 1,
           question:
             "At the Olympics, what is the maximum number of members in a men's bobsled team?",
-          image: "/images/q1-bobsleigh.jpg",
+          image: "/images/q1-bobsleigh.webp",
           answers: [
             { id: "a", text: "2 people" },
             { id: "b", text: "3 people" },
@@ -197,7 +197,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 2,
           question: "In which sport is a shuttlecock used?",
-          image: "/images/q2-badminton.jpg",
+          image: "/images/q2-badminton.webp",
           answers: [
             { id: "a", text: "Tennis" },
             { id: "b", text: "Badminton" },
@@ -212,7 +212,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 3,
           question: "How many players make up a rugby union team?",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "13 players" },
             { id: "b", text: "14 players" },
@@ -228,7 +228,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 4,
           question:
             "Which country won the 2022 FIFA World Cup?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "Brazil" },
             { id: "b", text: "France" },
@@ -243,7 +243,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 5,
           question: "What is the distance of a marathon?",
-          image: "/images/q5-marathon.jpg",
+          image: "/images/q5-marathon.webp",
           answers: [
             { id: "a", text: "40.195 km" },
             { id: "b", text: "42.195 km" },
@@ -259,7 +259,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 6,
           question:
             "In tennis, what do you call a score of 40-40?",
-          image: "/images/q6-tennis.jpg",
+          image: "/images/q6-tennis.webp",
           answers: [
             { id: "a", text: "Tie-break" },
             { id: "b", text: "Deuce" },
@@ -274,7 +274,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 7,
           question: "Which sport is practiced on a tatami?",
-          image: "/images/q7-judo.jpg",
+          image: "/images/q7-judo.webp",
           answers: [
             { id: "a", text: "Fencing" },
             { id: "b", text: "Boxing" },
@@ -290,7 +290,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 8,
           question:
             "How many sets do you need to win to take a volleyball match?",
-          image: "/images/q8-volleyball.jpg",
+          image: "/images/q8-volleyball.webp",
           answers: [
             { id: "a", text: "2 sets" },
             { id: "b", text: "3 sets" },
@@ -305,7 +305,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 9,
           question: "In which country is cricket the national sport?",
-          image: "/images/q9-cricket.jpg",
+          image: "/images/q9-cricket.webp",
           answers: [
             { id: "a", text: "Australia" },
             { id: "b", text: "England" },
@@ -321,7 +321,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 10,
           question:
             "Which swimmer holds the record for the most Olympic medals?",
-          image: "/images/q10-swimming.jpg",
+          image: "/images/q10-swimming.webp",
           answers: [
             { id: "a", text: "Ian Thorpe" },
             { id: "b", text: "Mark Spitz" },
@@ -344,7 +344,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 1,
           question:
             "En los Juegos Olímpicos, ¿cuántos miembros componen como máximo un equipo masculino de bobsled?",
-          image: "/images/q1-bobsleigh.jpg",
+          image: "/images/q1-bobsleigh.webp",
           answers: [
             { id: "a", text: "2 personas" },
             { id: "b", text: "3 personas" },
@@ -359,7 +359,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 2,
           question: "¿En qué deporte se usa un volante (plumilla)?",
-          image: "/images/q2-badminton.jpg",
+          image: "/images/q2-badminton.webp",
           answers: [
             { id: "a", text: "Tenis" },
             { id: "b", text: "Bádminton" },
@@ -374,7 +374,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 3,
           question: "¿Cuántos jugadores componen un equipo de rugby XV?",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "13 jugadores" },
             { id: "b", text: "14 jugadores" },
@@ -390,7 +390,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 4,
           question:
             "¿Qué país ganó la Copa del Mundo de fútbol en 2022?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "Brasil" },
             { id: "b", text: "Francia" },
@@ -405,7 +405,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 5,
           question: "¿Cuál es la distancia de un maratón?",
-          image: "/images/q5-marathon.jpg",
+          image: "/images/q5-marathon.webp",
           answers: [
             { id: "a", text: "40,195 km" },
             { id: "b", text: "42,195 km" },
@@ -421,7 +421,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 6,
           question:
             "En tenis, ¿cómo se llama una puntuación de 40-40?",
-          image: "/images/q6-tennis.jpg",
+          image: "/images/q6-tennis.webp",
           answers: [
             { id: "a", text: "Tie-break" },
             { id: "b", text: "Deuce" },
@@ -436,7 +436,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 7,
           question: "¿Qué deporte se practica sobre un tatami?",
-          image: "/images/q7-judo.jpg",
+          image: "/images/q7-judo.webp",
           answers: [
             { id: "a", text: "Esgrima" },
             { id: "b", text: "Boxeo" },
@@ -452,7 +452,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 8,
           question:
             "¿Cuántos sets hay que ganar para ganar un partido de voleibol?",
-          image: "/images/q8-volleyball.jpg",
+          image: "/images/q8-volleyball.webp",
           answers: [
             { id: "a", text: "2 sets" },
             { id: "b", text: "3 sets" },
@@ -467,7 +467,7 @@ const sportCultureGenerale: TranslatedQuiz = {
         {
           id: 9,
           question: "¿En qué país el críquet es el deporte nacional?",
-          image: "/images/q9-cricket.jpg",
+          image: "/images/q9-cricket.webp",
           answers: [
             { id: "a", text: "Australia" },
             { id: "b", text: "Inglaterra" },
@@ -483,7 +483,7 @@ const sportCultureGenerale: TranslatedQuiz = {
           id: 10,
           question:
             "¿Qué nadador tiene el récord de más medallas olímpicas?",
-          image: "/images/q10-swimming.jpg",
+          image: "/images/q10-swimming.webp",
           answers: [
             { id: "a", text: "Ian Thorpe" },
             { id: "b", text: "Mark Spitz" },
@@ -505,7 +505,7 @@ const footballLegendes: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
-  coverImage: "/images/cover-football.jpg",
+  coverImage: "/images/cover-football.webp",
   timePerQuestion: 20,
   gameType: "qcm",
   playCount: 23150,
@@ -518,7 +518,7 @@ const footballLegendes: TranslatedQuiz = {
         {
           id: 1,
           question: "Quel joueur détient le record de Ballons d'Or ?",
-          image: "/images/q-messi.jpg",
+          image: "/images/q-messi.webp",
           answers: [
             { id: "a", text: "Cristiano Ronaldo" },
             { id: "b", text: "Lionel Messi" },
@@ -533,7 +533,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 2,
           question:
             "Quelle équipe a remporté la première Coupe du Monde en 1930 ?",
-          image: "/images/q-worldcup.jpg",
+          image: "/images/q-worldcup.webp",
           answers: [
             { id: "a", text: "Brésil" },
             { id: "b", text: "Argentine" },
@@ -562,7 +562,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 4,
           question:
             "Quel club a remporté le plus de Ligues des Champions ?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "AC Milan" },
             { id: "b", text: "FC Barcelone" },
@@ -590,7 +590,7 @@ const footballLegendes: TranslatedQuiz = {
         {
           id: 6,
           question: "Quel pays a remporté le plus de Coupes du Monde ?",
-          image: "/images/q-worldcup.jpg",
+          image: "/images/q-worldcup.webp",
           answers: [
             { id: "a", text: "Allemagne" },
             { id: "b", text: "Italie" },
@@ -605,7 +605,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 7,
           question:
             "En quelle année Zinédine Zidane a-t-il mis son fameux coup de tête en finale ?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "2002" },
             { id: "b", text: "2006" },
@@ -633,7 +633,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 9,
           question:
             "Combien de joueurs composent une équipe de football sur le terrain ?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "9" },
             { id: "b", text: "10" },
@@ -648,7 +648,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 10,
           question:
             "Quel joueur français a inscrit un triplé en finale de Coupe du Monde 2022 ?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "Antoine Griezmann" },
             { id: "b", text: "Kylian Mbappé" },
@@ -669,7 +669,7 @@ const footballLegendes: TranslatedQuiz = {
         {
           id: 1,
           question: "Which player holds the record for Ballon d'Or awards?",
-          image: "/images/q-messi.jpg",
+          image: "/images/q-messi.webp",
           answers: [
             { id: "a", text: "Cristiano Ronaldo" },
             { id: "b", text: "Lionel Messi" },
@@ -683,7 +683,7 @@ const footballLegendes: TranslatedQuiz = {
         {
           id: 2,
           question: "Which team won the first World Cup in 1930?",
-          image: "/images/q-worldcup.jpg",
+          image: "/images/q-worldcup.webp",
           answers: [
             { id: "a", text: "Brazil" },
             { id: "b", text: "Argentina" },
@@ -712,7 +712,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 4,
           question:
             "Which club has won the most Champions League titles?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "AC Milan" },
             { id: "b", text: "FC Barcelona" },
@@ -740,7 +740,7 @@ const footballLegendes: TranslatedQuiz = {
         {
           id: 6,
           question: "Which country has won the most World Cups?",
-          image: "/images/q-worldcup.jpg",
+          image: "/images/q-worldcup.webp",
           answers: [
             { id: "a", text: "Germany" },
             { id: "b", text: "Italy" },
@@ -755,7 +755,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 7,
           question:
             "In what year did Zinédine Zidane deliver his infamous headbutt in the final?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "2002" },
             { id: "b", text: "2006" },
@@ -783,7 +783,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 9,
           question:
             "How many players make up a football team on the pitch?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "9" },
             { id: "b", text: "10" },
@@ -798,7 +798,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 10,
           question:
             "Which French player scored a hat-trick in the 2022 World Cup final?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "Antoine Griezmann" },
             { id: "b", text: "Kylian Mbappé" },
@@ -819,7 +819,7 @@ const footballLegendes: TranslatedQuiz = {
         {
           id: 1,
           question: "¿Qué jugador tiene el récord de Balones de Oro?",
-          image: "/images/q-messi.jpg",
+          image: "/images/q-messi.webp",
           answers: [
             { id: "a", text: "Cristiano Ronaldo" },
             { id: "b", text: "Lionel Messi" },
@@ -833,7 +833,7 @@ const footballLegendes: TranslatedQuiz = {
         {
           id: 2,
           question: "¿Qué equipo ganó la primera Copa del Mundo en 1930?",
-          image: "/images/q-worldcup.jpg",
+          image: "/images/q-worldcup.webp",
           answers: [
             { id: "a", text: "Brasil" },
             { id: "b", text: "Argentina" },
@@ -862,7 +862,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 4,
           question:
             "¿Qué club ha ganado más Ligas de Campeones?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "AC Milan" },
             { id: "b", text: "FC Barcelona" },
@@ -890,7 +890,7 @@ const footballLegendes: TranslatedQuiz = {
         {
           id: 6,
           question: "¿Qué país ha ganado más Copas del Mundo?",
-          image: "/images/q-worldcup.jpg",
+          image: "/images/q-worldcup.webp",
           answers: [
             { id: "a", text: "Alemania" },
             { id: "b", text: "Italia" },
@@ -905,7 +905,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 7,
           question:
             "¿En qué año Zinédine Zidane dio su famoso cabezazo en la final?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "2002" },
             { id: "b", text: "2006" },
@@ -933,7 +933,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 9,
           question:
             "¿Cuántos jugadores componen un equipo de fútbol en el campo?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "9" },
             { id: "b", text: "10" },
@@ -948,7 +948,7 @@ const footballLegendes: TranslatedQuiz = {
           id: 10,
           question:
             "¿Qué jugador francés marcó un triplete en la final de la Copa del Mundo 2022?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [
             { id: "a", text: "Antoine Griezmann" },
             { id: "b", text: "Kylian Mbappé" },
@@ -969,7 +969,7 @@ const joQuizFacile: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "JO & Athlétisme",
   difficulty: "easy",
-  coverImage: "/images/cover-olympics.jpg",
+  coverImage: "/images/cover-olympics.webp",
   timePerQuestion: 25,
   gameType: "qcm",
   playCount: 8730,
@@ -982,7 +982,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 1,
           question: "Combien d'anneaux olympiques y a-t-il ?",
-          image: "/images/q-olympics-rings.jpg",
+          image: "/images/q-olympics-rings.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -1009,7 +1009,7 @@ const joQuizFacile: TranslatedQuiz = {
           id: 3,
           question:
             "Dans quel pays sont nés les Jeux Olympiques antiques ?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "Italie" },
             { id: "b", text: "Égypte" },
@@ -1023,7 +1023,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 4,
           question: "Quelle ville a accueilli les JO d'été 2024 ?",
-          image: "/images/q-olympics-rings.jpg",
+          image: "/images/q-olympics-rings.webp",
           answers: [
             { id: "a", text: "Tokyo" },
             { id: "b", text: "Los Angeles" },
@@ -1037,7 +1037,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 5,
           question: "Quelle est la devise olympique ?",
-          image: "/images/q-running-track.jpg",
+          image: "/images/q-running-track.webp",
           answers: [
             { id: "a", text: "Plus vite, plus haut, plus fort – ensemble" },
             { id: "b", text: "L'important c'est de participer" },
@@ -1051,7 +1051,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 6,
           question: "Quel sportif a gagné 23 médailles d'or olympiques ?",
-          image: "/images/q-swimming-pool.jpg",
+          image: "/images/q-swimming-pool.webp",
           answers: [
             { id: "a", text: "Carl Lewis" },
             { id: "b", text: "Usain Bolt" },
@@ -1065,7 +1065,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 7,
           question: "Quel sport a été ajouté aux JO de Paris 2024 ?",
-          image: "/images/q-running-track.jpg",
+          image: "/images/q-running-track.webp",
           answers: [
             { id: "a", text: "Escalade" },
             { id: "b", text: "Breaking" },
@@ -1098,7 +1098,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 1,
           question: "How many Olympic rings are there?",
-          image: "/images/q-olympics-rings.jpg",
+          image: "/images/q-olympics-rings.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -1125,7 +1125,7 @@ const joQuizFacile: TranslatedQuiz = {
           id: 3,
           question:
             "In which country were the ancient Olympic Games born?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "Italy" },
             { id: "b", text: "Egypt" },
@@ -1139,7 +1139,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 4,
           question: "Which city hosted the 2024 Summer Olympics?",
-          image: "/images/q-olympics-rings.jpg",
+          image: "/images/q-olympics-rings.webp",
           answers: [
             { id: "a", text: "Tokyo" },
             { id: "b", text: "Los Angeles" },
@@ -1152,7 +1152,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 5,
           question: "What is the Olympic motto?",
-          image: "/images/q-running-track.jpg",
+          image: "/images/q-running-track.webp",
           answers: [
             { id: "a", text: "Faster, Higher, Stronger – Together" },
             { id: "b", text: "The important thing is to participate" },
@@ -1166,7 +1166,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 6,
           question: "Which athlete won 23 Olympic gold medals?",
-          image: "/images/q-swimming-pool.jpg",
+          image: "/images/q-swimming-pool.webp",
           answers: [
             { id: "a", text: "Carl Lewis" },
             { id: "b", text: "Usain Bolt" },
@@ -1180,7 +1180,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 7,
           question: "Which sport was added to the Paris 2024 Olympics?",
-          image: "/images/q-running-track.jpg",
+          image: "/images/q-running-track.webp",
           answers: [
             { id: "a", text: "Climbing" },
             { id: "b", text: "Breaking" },
@@ -1213,7 +1213,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 1,
           question: "¿Cuántos anillos olímpicos hay?",
-          image: "/images/q-olympics-rings.jpg",
+          image: "/images/q-olympics-rings.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -1240,7 +1240,7 @@ const joQuizFacile: TranslatedQuiz = {
           id: 3,
           question:
             "¿En qué país nacieron los Juegos Olímpicos antiguos?",
-          image: "/images/q-stadium.jpg",
+          image: "/images/q-stadium.webp",
           answers: [
             { id: "a", text: "Italia" },
             { id: "b", text: "Egipto" },
@@ -1254,7 +1254,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 4,
           question: "¿Qué ciudad acogió los JJ.OO. de verano de 2024?",
-          image: "/images/q-olympics-rings.jpg",
+          image: "/images/q-olympics-rings.webp",
           answers: [
             { id: "a", text: "Tokio" },
             { id: "b", text: "Los Ángeles" },
@@ -1268,7 +1268,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 5,
           question: "¿Cuál es el lema olímpico?",
-          image: "/images/q-running-track.jpg",
+          image: "/images/q-running-track.webp",
           answers: [
             { id: "a", text: "Más rápido, más alto, más fuerte – juntos" },
             { id: "b", text: "Lo importante es participar" },
@@ -1282,7 +1282,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 6,
           question: "¿Qué deportista ganó 23 medallas de oro olímpicas?",
-          image: "/images/q-swimming-pool.jpg",
+          image: "/images/q-swimming-pool.webp",
           answers: [
             { id: "a", text: "Carl Lewis" },
             { id: "b", text: "Usain Bolt" },
@@ -1296,7 +1296,7 @@ const joQuizFacile: TranslatedQuiz = {
         {
           id: 7,
           question: "¿Qué deporte fue añadido a los JJ.OO. de París 2024?",
-          image: "/images/q-running-track.jpg",
+          image: "/images/q-running-track.webp",
           answers: [
             { id: "a", text: "Escalada" },
             { id: "b", text: "Breaking" },
@@ -1329,7 +1329,7 @@ const tennisQuiz: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Tennis",
   difficulty: "medium",
-  coverImage: "/images/cover-tennis.jpg",
+  coverImage: "/images/cover-tennis.webp",
   timePerQuestion: 20,
   gameType: "qcm",
   playCount: 6280,
@@ -1342,7 +1342,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 1,
           question: "Combien de tournois du Grand Chelem existe-t-il ?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "3" },
             { id: "b", text: "4" },
@@ -1356,7 +1356,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 2,
           question: "Sur quelle surface joue-t-on à Roland-Garros ?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "Gazon" },
             { id: "b", text: "Dur" },
@@ -1371,7 +1371,7 @@ const tennisQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "Qui détient le record de victoires à Roland-Garros (hommes) ?",
-          image: "/images/q-tennis-racket.jpg",
+          image: "/images/q-tennis-racket.webp",
           answers: [
             { id: "a", text: "Roger Federer" },
             { id: "b", text: "Novak Djokovic" },
@@ -1414,7 +1414,7 @@ const tennisQuiz: TranslatedQuiz = {
           id: 6,
           question:
             "Quelle joueuse française a gagné Roland-Garros en 2000 ?",
-          image: "/images/q-tennis-racket.jpg",
+          image: "/images/q-tennis-racket.webp",
           answers: [
             { id: "a", text: "Amélie Mauresmo" },
             { id: "b", text: "Mary Pierce" },
@@ -1428,7 +1428,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 7,
           question: "Quel est le surnom de Rafael Nadal ?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "Le Maestro" },
             { id: "b", text: "Le Roi de la Terre" },
@@ -1442,7 +1442,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 8,
           question: "Que signifie 'love' au tennis ?",
-          image: "/images/q6-tennis.jpg",
+          image: "/images/q6-tennis.webp",
           answers: [
             { id: "a", text: "15 points" },
             { id: "b", text: "30 points" },
@@ -1463,7 +1463,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 1,
           question: "How many Grand Slam tournaments are there?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "3" },
             { id: "b", text: "4" },
@@ -1477,7 +1477,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 2,
           question: "On what surface is Roland-Garros played?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "Grass" },
             { id: "b", text: "Hard court" },
@@ -1492,7 +1492,7 @@ const tennisQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "Who holds the record for the most Roland-Garros titles (men)?",
-          image: "/images/q-tennis-racket.jpg",
+          image: "/images/q-tennis-racket.webp",
           answers: [
             { id: "a", text: "Roger Federer" },
             { id: "b", text: "Novak Djokovic" },
@@ -1535,7 +1535,7 @@ const tennisQuiz: TranslatedQuiz = {
           id: 6,
           question:
             "Which French female player won Roland-Garros in 2000?",
-          image: "/images/q-tennis-racket.jpg",
+          image: "/images/q-tennis-racket.webp",
           answers: [
             { id: "a", text: "Amélie Mauresmo" },
             { id: "b", text: "Mary Pierce" },
@@ -1549,7 +1549,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 7,
           question: "What is Rafael Nadal's nickname?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "The Maestro" },
             { id: "b", text: "The King of Clay" },
@@ -1563,7 +1563,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 8,
           question: "What does 'love' mean in tennis?",
-          image: "/images/q6-tennis.jpg",
+          image: "/images/q6-tennis.webp",
           answers: [
             { id: "a", text: "15 points" },
             { id: "b", text: "30 points" },
@@ -1584,7 +1584,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 1,
           question: "¿Cuántos torneos de Grand Slam existen?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "3" },
             { id: "b", text: "4" },
@@ -1598,7 +1598,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 2,
           question: "¿Sobre qué superficie se juega en Roland-Garros?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "Hierba" },
             { id: "b", text: "Pista dura" },
@@ -1613,7 +1613,7 @@ const tennisQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "¿Quién tiene el récord de victorias en Roland-Garros (hombres)?",
-          image: "/images/q-tennis-racket.jpg",
+          image: "/images/q-tennis-racket.webp",
           answers: [
             { id: "a", text: "Roger Federer" },
             { id: "b", text: "Novak Djokovic" },
@@ -1656,7 +1656,7 @@ const tennisQuiz: TranslatedQuiz = {
           id: 6,
           question:
             "¿Qué jugadora francesa ganó Roland-Garros en 2000?",
-          image: "/images/q-tennis-racket.jpg",
+          image: "/images/q-tennis-racket.webp",
           answers: [
             { id: "a", text: "Amélie Mauresmo" },
             { id: "b", text: "Mary Pierce" },
@@ -1670,7 +1670,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 7,
           question: "¿Cuál es el apodo de Rafael Nadal?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "El Maestro" },
             { id: "b", text: "El Rey de la Tierra" },
@@ -1684,7 +1684,7 @@ const tennisQuiz: TranslatedQuiz = {
         {
           id: 8,
           question: "¿Qué significa 'love' en tenis?",
-          image: "/images/q6-tennis.jpg",
+          image: "/images/q6-tennis.webp",
           answers: [
             { id: "a", text: "15 puntos" },
             { id: "b", text: "30 puntos" },
@@ -1705,7 +1705,7 @@ const sportVraiFaux: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "easy",
-  coverImage: "/images/cover-vraifaux.jpg",
+  coverImage: "/images/cover-vraifaux.webp",
   timePerQuestion: 15,
   gameType: "vrai-faux",
   playCount: 12400,
@@ -1718,7 +1718,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 1,
           question: "Le marathon fait exactement 42 km.",
-          image: "/images/q5-marathon.jpg",
+          image: "/images/q5-marathon.webp",
           answers: [
             { id: "a", text: "Vrai" },
             { id: "b", text: "Faux" },
@@ -1729,7 +1729,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 2,
           question: "Un match de rugby dure 80 minutes.",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "Vrai" },
             { id: "b", text: "Faux" },
@@ -1741,7 +1741,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 3,
           question: "Le basketball a été inventé au Canada.",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "Vrai" },
             { id: "b", text: "Faux" },
@@ -1764,7 +1764,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 5,
           question: "Le Tour de France a toujours lieu en juillet.",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "Vrai" },
             { id: "b", text: "Faux" },
@@ -1795,7 +1795,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 1,
           question: "A marathon is exactly 42 km.",
-          image: "/images/q5-marathon.jpg",
+          image: "/images/q5-marathon.webp",
           answers: [
             { id: "a", text: "True" },
             { id: "b", text: "False" },
@@ -1806,7 +1806,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 2,
           question: "A rugby match lasts 80 minutes.",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "True" },
             { id: "b", text: "False" },
@@ -1818,7 +1818,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 3,
           question: "Basketball was invented in Canada.",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "True" },
             { id: "b", text: "False" },
@@ -1841,7 +1841,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 5,
           question: "The Tour de France always takes place in July.",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "True" },
             { id: "b", text: "False" },
@@ -1872,7 +1872,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 1,
           question: "El maratón mide exactamente 42 km.",
-          image: "/images/q5-marathon.jpg",
+          image: "/images/q5-marathon.webp",
           answers: [
             { id: "a", text: "Verdadero" },
             { id: "b", text: "Falso" },
@@ -1883,7 +1883,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 2,
           question: "Un partido de rugby dura 80 minutos.",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "Verdadero" },
             { id: "b", text: "Falso" },
@@ -1895,7 +1895,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 3,
           question: "El baloncesto fue inventado en Canadá.",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "Verdadero" },
             { id: "b", text: "Falso" },
@@ -1918,7 +1918,7 @@ const sportVraiFaux: TranslatedQuiz = {
         {
           id: 5,
           question: "El Tour de Francia siempre se celebra en julio.",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "Verdadero" },
             { id: "b", text: "Falso" },
@@ -1949,7 +1949,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Sports de combat",
   difficulty: "hard",
-  coverImage: "/images/cover-extreme.jpg",
+  coverImage: "/images/cover-extreme.webp",
   timePerQuestion: 20,
   gameType: "qcm",
   playCount: 4320,
@@ -1963,7 +1963,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 1,
           question:
             "Quelle est la hauteur de la plus grande vague jamais surfée (record 2024) ?",
-          image: "/images/q-surfing.jpg",
+          image: "/images/q-surfing.webp",
           answers: [
             { id: "a", text: "18 mètres" },
             { id: "b", text: "22 mètres" },
@@ -1978,7 +1978,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 2,
           question:
             "En wingsuit, quelle vitesse maximale peut-on atteindre ?",
-          image: "/images/q-parachute.jpg",
+          image: "/images/q-parachute.webp",
           answers: [
             { id: "a", text: "150 km/h" },
             { id: "b", text: "250 km/h" },
@@ -1993,7 +1993,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "Quelle est la discipline reine du triathlon Ironman ?",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "3,8 km natation + 180 km vélo + 42 km course" },
             { id: "b", text: "1,5 km natation + 40 km vélo + 10 km course" },
@@ -2008,7 +2008,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 4,
           question:
             "À quelle altitude se fait un saut en parachute classique ?",
-          image: "/images/q-parachute.jpg",
+          image: "/images/q-parachute.webp",
           answers: [
             { id: "a", text: "1 000 m" },
             { id: "b", text: "2 500 m" },
@@ -2050,7 +2050,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 7,
           question:
             "En escalade sportive, combien de disciplines aux JO 2024 ?",
-          image: "/images/q-climbing.jpg",
+          image: "/images/q-climbing.webp",
           answers: [
             { id: "a", text: "1" },
             { id: "b", text: "2" },
@@ -2065,7 +2065,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 8,
           question:
             "Le free solo consiste à escalader sans aucune...",
-          image: "/images/q-climbing.jpg",
+          image: "/images/q-climbing.webp",
           answers: [
             { id: "a", text: "Chaussure spéciale" },
             { id: "b", text: "Protection ni corde" },
@@ -2087,7 +2087,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 1,
           question:
             "What is the height of the biggest wave ever surfed (2024 record)?",
-          image: "/images/q-surfing.jpg",
+          image: "/images/q-surfing.webp",
           answers: [
             { id: "a", text: "18 meters" },
             { id: "b", text: "22 meters" },
@@ -2102,7 +2102,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 2,
           question:
             "In wingsuit flying, what maximum speed can be reached?",
-          image: "/images/q-parachute.jpg",
+          image: "/images/q-parachute.webp",
           answers: [
             { id: "a", text: "150 km/h" },
             { id: "b", text: "250 km/h" },
@@ -2117,7 +2117,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "What are the distances in a full Ironman triathlon?",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "3.8 km swim + 180 km bike + 42 km run" },
             { id: "b", text: "1.5 km swim + 40 km bike + 10 km run" },
@@ -2132,7 +2132,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 4,
           question:
             "At what altitude is a standard skydive performed?",
-          image: "/images/q-parachute.jpg",
+          image: "/images/q-parachute.webp",
           answers: [
             { id: "a", text: "1,000 m" },
             { id: "b", text: "2,500 m" },
@@ -2174,7 +2174,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 7,
           question:
             "In sport climbing, how many disciplines were there at the 2024 Olympics?",
-          image: "/images/q-climbing.jpg",
+          image: "/images/q-climbing.webp",
           answers: [
             { id: "a", text: "1" },
             { id: "b", text: "2" },
@@ -2189,7 +2189,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 8,
           question:
             "Free soloing involves climbing without any...",
-          image: "/images/q-climbing.jpg",
+          image: "/images/q-climbing.webp",
           answers: [
             { id: "a", text: "Special shoes" },
             { id: "b", text: "Protection or rope" },
@@ -2211,7 +2211,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 1,
           question:
             "¿Cuál es la altura de la ola más grande jamás surfeada (récord 2024)?",
-          image: "/images/q-surfing.jpg",
+          image: "/images/q-surfing.webp",
           answers: [
             { id: "a", text: "18 metros" },
             { id: "b", text: "22 metros" },
@@ -2226,7 +2226,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 2,
           question:
             "En wingsuit, ¿qué velocidad máxima se puede alcanzar?",
-          image: "/images/q-parachute.jpg",
+          image: "/images/q-parachute.webp",
           answers: [
             { id: "a", text: "150 km/h" },
             { id: "b", text: "250 km/h" },
@@ -2241,7 +2241,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "¿Cuáles son las distancias en un triatlón Ironman completo?",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "3,8 km natación + 180 km bici + 42 km carrera" },
             { id: "b", text: "1,5 km natación + 40 km bici + 10 km carrera" },
@@ -2256,7 +2256,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 4,
           question:
             "¿A qué altitud se realiza un salto en paracaídas estándar?",
-          image: "/images/q-parachute.jpg",
+          image: "/images/q-parachute.webp",
           answers: [
             { id: "a", text: "1.000 m" },
             { id: "b", text: "2.500 m" },
@@ -2298,7 +2298,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 7,
           question:
             "En escalada deportiva, ¿cuántas disciplinas hubo en los JJ.OO. 2024?",
-          image: "/images/q-climbing.jpg",
+          image: "/images/q-climbing.webp",
           answers: [
             { id: "a", text: "1" },
             { id: "b", text: "2" },
@@ -2313,7 +2313,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
           id: 8,
           question:
             "El free solo consiste en escalar sin ninguna...",
-          image: "/images/q-climbing.jpg",
+          image: "/images/q-climbing.webp",
           answers: [
             { id: "a", text: "Zapatilla especial" },
             { id: "b", text: "Protección ni cuerda" },
@@ -2334,7 +2334,7 @@ const nbaQuiz: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Sports US",
   difficulty: "hard",
-  coverImage: "/images/cover-basketball.jpg",
+  coverImage: "/images/cover-basketball.webp",
   timePerQuestion: 18,
   gameType: "qcm",
   playCount: 9870,
@@ -2348,7 +2348,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 1,
           question:
             "Combien de titres NBA Michael Jordan a-t-il remportés ?",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -2377,7 +2377,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "Quel est le meilleur scoreur de l'histoire de la NBA ?",
-          image: "/images/q-basketball-hoop.jpg",
+          image: "/images/q-basketball-hoop.webp",
           answers: [
             { id: "a", text: "Michael Jordan" },
             { id: "b", text: "Kareem Abdul-Jabbar" },
@@ -2392,7 +2392,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 4,
           question:
             "Combien de joueurs d'une équipe NBA sont sur le terrain en même temps ?",
-          image: "/images/q-basketball-hoop.jpg",
+          image: "/images/q-basketball-hoop.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -2420,7 +2420,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 6,
           question:
             "Quel joueur français a été nommé MVP de la NBA ?",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "Rudy Gobert" },
             { id: "b", text: "Tony Parker" },
@@ -2442,7 +2442,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 1,
           question:
             "How many NBA titles did Michael Jordan win?",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -2471,7 +2471,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "Who is the all-time leading scorer in NBA history?",
-          image: "/images/q-basketball-hoop.jpg",
+          image: "/images/q-basketball-hoop.webp",
           answers: [
             { id: "a", text: "Michael Jordan" },
             { id: "b", text: "Kareem Abdul-Jabbar" },
@@ -2486,7 +2486,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 4,
           question:
             "How many players from an NBA team are on the court at the same time?",
-          image: "/images/q-basketball-hoop.jpg",
+          image: "/images/q-basketball-hoop.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -2514,7 +2514,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 6,
           question:
             "Which French player has been named NBA MVP?",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "Rudy Gobert" },
             { id: "b", text: "Tony Parker" },
@@ -2536,7 +2536,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 1,
           question:
             "¿Cuántos títulos NBA ganó Michael Jordan?",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -2565,7 +2565,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "¿Quién es el máximo anotador de la historia de la NBA?",
-          image: "/images/q-basketball-hoop.jpg",
+          image: "/images/q-basketball-hoop.webp",
           answers: [
             { id: "a", text: "Michael Jordan" },
             { id: "b", text: "Kareem Abdul-Jabbar" },
@@ -2580,7 +2580,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 4,
           question:
             "¿Cuántos jugadores de un equipo NBA están en la cancha al mismo tiempo?",
-          image: "/images/q-basketball-hoop.jpg",
+          image: "/images/q-basketball-hoop.webp",
           answers: [
             { id: "a", text: "4" },
             { id: "b", text: "5" },
@@ -2608,7 +2608,7 @@ const nbaQuiz: TranslatedQuiz = {
           id: 6,
           question:
             "¿Qué jugador francés ha sido nombrado MVP de la NBA?",
-          image: "/images/q-basketball-court.jpg",
+          image: "/images/q-basketball-court.webp",
           answers: [
             { id: "a", text: "Rudy Gobert" },
             { id: "b", text: "Tony Parker" },
@@ -2629,7 +2629,7 @@ const chronoSportQuiz: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
-  coverImage: "/images/cover-chrono.jpg",
+  coverImage: "/images/cover-chrono.webp",
   timePerQuestion: 8,
   gameType: "chrono",
   playCount: 18200,
@@ -2642,7 +2642,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 1,
           question: "Combien de joueurs dans une équipe de volleyball ?",
-          image: "/images/q8-volleyball.jpg",
+          image: "/images/q8-volleyball.webp",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -2654,7 +2654,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 2,
           question: "Le Tour de France est une course de... ?",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "Vélo" },
             { id: "b", text: "Moto" },
@@ -2667,7 +2667,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "La surface d'un terrain de tennis s'appelle... ?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "Un pitch" },
             { id: "b", text: "Un court" },
@@ -2679,7 +2679,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 4,
           question: "Quel sport pratique Tiger Woods ?",
-          image: "/images/q-golf.jpg",
+          image: "/images/q-golf.webp",
           answers: [
             { id: "a", text: "Tennis" },
             { id: "b", text: "Cricket" },
@@ -2692,7 +2692,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 5,
           question:
             "En boxe, combien de rounds au maximum en professionnel ?",
-          image: "/images/q-boxing.jpg",
+          image: "/images/q-boxing.webp",
           answers: [
             { id: "a", text: "8" },
             { id: "b", text: "10" },
@@ -2727,7 +2727,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 8,
           question:
             "Combien de périodes dans un match de hockey sur glace ?",
-          image: "/images/q-hockey.jpg",
+          image: "/images/q-hockey.webp",
           answers: [
             { id: "a", text: "2" },
             { id: "b", text: "3" },
@@ -2746,7 +2746,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 1,
           question: "How many players are on a volleyball team?",
-          image: "/images/q8-volleyball.jpg",
+          image: "/images/q8-volleyball.webp",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -2758,7 +2758,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 2,
           question: "The Tour de France is a race of... ?",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "Cycling" },
             { id: "b", text: "Motorcycling" },
@@ -2771,7 +2771,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "The playing area of a tennis venue is called a... ?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "Pitch" },
             { id: "b", text: "Court" },
@@ -2783,7 +2783,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 4,
           question: "What sport does Tiger Woods play?",
-          image: "/images/q-golf.jpg",
+          image: "/images/q-golf.webp",
           answers: [
             { id: "a", text: "Tennis" },
             { id: "b", text: "Cricket" },
@@ -2796,7 +2796,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 5,
           question:
             "In professional boxing, what is the maximum number of rounds?",
-          image: "/images/q-boxing.jpg",
+          image: "/images/q-boxing.webp",
           answers: [
             { id: "a", text: "8" },
             { id: "b", text: "10" },
@@ -2831,7 +2831,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 8,
           question:
             "How many periods are there in an ice hockey game?",
-          image: "/images/q-hockey.jpg",
+          image: "/images/q-hockey.webp",
           answers: [
             { id: "a", text: "2" },
             { id: "b", text: "3" },
@@ -2850,7 +2850,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 1,
           question: "¿Cuántos jugadores hay en un equipo de voleibol?",
-          image: "/images/q8-volleyball.jpg",
+          image: "/images/q8-volleyball.webp",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -2862,7 +2862,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 2,
           question: "El Tour de Francia es una carrera de... ?",
-          image: "/images/q-cycling.jpg",
+          image: "/images/q-cycling.webp",
           answers: [
             { id: "a", text: "Ciclismo" },
             { id: "b", text: "Motos" },
@@ -2875,7 +2875,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 3,
           question:
             "La superficie donde se juega al tenis se llama... ?",
-          image: "/images/q-tennis-court.jpg",
+          image: "/images/q-tennis-court.webp",
           answers: [
             { id: "a", text: "Pitch" },
             { id: "b", text: "Pista" },
@@ -2887,7 +2887,7 @@ const chronoSportQuiz: TranslatedQuiz = {
         {
           id: 4,
           question: "¿Qué deporte practica Tiger Woods?",
-          image: "/images/q-golf.jpg",
+          image: "/images/q-golf.webp",
           answers: [
             { id: "a", text: "Tenis" },
             { id: "b", text: "Críquet" },
@@ -2900,7 +2900,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 5,
           question:
             "En boxeo profesional, ¿cuántos asaltos hay como máximo?",
-          image: "/images/q-boxing.jpg",
+          image: "/images/q-boxing.webp",
           answers: [
             { id: "a", text: "8" },
             { id: "b", text: "10" },
@@ -2935,7 +2935,7 @@ const chronoSportQuiz: TranslatedQuiz = {
           id: 8,
           question:
             "¿Cuántos períodos hay en un partido de hockey sobre hielo?",
-          image: "/images/q-hockey.jpg",
+          image: "/images/q-hockey.webp",
           answers: [
             { id: "a", text: "2" },
             { id: "b", text: "3" },
@@ -2954,7 +2954,7 @@ const blindTestSport: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "hard",
-  coverImage: "/images/cover-blindtest.jpg",
+  coverImage: "/images/cover-blindtest.webp",
   timePerQuestion: 15,
   gameType: "qcm",
   playCount: 7650,
@@ -2967,7 +2967,7 @@ const blindTestSport: TranslatedQuiz = {
         {
           id: 1,
           question: "Quel est le sport dont le ballon est ovale ?",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "Football" },
             { id: "b", text: "Rugby" },
@@ -2982,7 +2982,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 2,
           question:
             "Quel sport utilise un club et une petite balle blanche ?",
-          image: "/images/q-golf.jpg",
+          image: "/images/q-golf.webp",
           answers: [
             { id: "a", text: "Cricket" },
             { id: "b", text: "Baseball" },
@@ -3007,7 +3007,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 4,
           question:
             "Quel sport se pratique dans une piscine avec un bonnet ?",
-          image: "/images/q-swimming-pool.jpg",
+          image: "/images/q-swimming-pool.webp",
           answers: [
             { id: "a", text: "Plongeon" },
             { id: "b", text: "Water-polo" },
@@ -3020,7 +3020,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 5,
           question:
             "Quel équipement est nécessaire pour faire de l'escrime ?",
-          image: "/images/q-fencing.jpg",
+          image: "/images/q-fencing.webp",
           answers: [
             { id: "a", text: "Un arc" },
             { id: "b", text: "Un fleuret" },
@@ -3051,7 +3051,7 @@ const blindTestSport: TranslatedQuiz = {
         {
           id: 1,
           question: "Which sport uses an oval-shaped ball?",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "Football" },
             { id: "b", text: "Rugby" },
@@ -3066,7 +3066,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 2,
           question:
             "Which sport uses a club and a small white ball?",
-          image: "/images/q-golf.jpg",
+          image: "/images/q-golf.webp",
           answers: [
             { id: "a", text: "Cricket" },
             { id: "b", text: "Baseball" },
@@ -3091,7 +3091,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 4,
           question:
             "Which sport is practiced in a pool wearing a cap?",
-          image: "/images/q-swimming-pool.jpg",
+          image: "/images/q-swimming-pool.webp",
           answers: [
             { id: "a", text: "Diving" },
             { id: "b", text: "Water polo" },
@@ -3104,7 +3104,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 5,
           question:
             "What equipment is needed for fencing?",
-          image: "/images/q-fencing.jpg",
+          image: "/images/q-fencing.webp",
           answers: [
             { id: "a", text: "A bow" },
             { id: "b", text: "A foil" },
@@ -3135,7 +3135,7 @@ const blindTestSport: TranslatedQuiz = {
         {
           id: 1,
           question: "¿En qué deporte el balón es ovalado?",
-          image: "/images/q3-rugby.jpg",
+          image: "/images/q3-rugby.webp",
           answers: [
             { id: "a", text: "Fútbol" },
             { id: "b", text: "Rugby" },
@@ -3150,7 +3150,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 2,
           question:
             "¿Qué deporte usa un palo y una pequeña bola blanca?",
-          image: "/images/q-golf.jpg",
+          image: "/images/q-golf.webp",
           answers: [
             { id: "a", text: "Críquet" },
             { id: "b", text: "Béisbol" },
@@ -3175,7 +3175,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 4,
           question:
             "¿Qué deporte se practica en una piscina con gorro?",
-          image: "/images/q-swimming-pool.jpg",
+          image: "/images/q-swimming-pool.webp",
           answers: [
             { id: "a", text: "Salto" },
             { id: "b", text: "Waterpolo" },
@@ -3188,7 +3188,7 @@ const blindTestSport: TranslatedQuiz = {
           id: 5,
           question:
             "¿Qué equipamiento se necesita para la esgrima?",
-          image: "/images/q-fencing.jpg",
+          image: "/images/q-fencing.webp",
           answers: [
             { id: "a", text: "Un arco" },
             { id: "b", text: "Un florete" },
@@ -3219,7 +3219,7 @@ const estimationSport: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
-  coverImage: "/images/cover-sport.jpg",
+  coverImage: "/images/cover-sport.webp",
   timePerQuestion: 120,
   gameType: "estimation",
   playCount: 11350,
@@ -3233,7 +3233,7 @@ const estimationSport: TranslatedQuiz = {
           id: 1,
           question:
             "Combien de buts Cristiano Ronaldo a-t-il marqués en carrière professionnelle (clubs + sélection) ?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [],
           correctAnswer: "850",
           correctValue: 850,
@@ -3251,7 +3251,7 @@ const estimationSport: TranslatedQuiz = {
           id: 1,
           question:
             "How many goals has Cristiano Ronaldo scored in his professional career (clubs + national team)?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [],
           correctAnswer: "850",
           correctValue: 850,
@@ -3269,7 +3269,7 @@ const estimationSport: TranslatedQuiz = {
           id: 1,
           question:
             "¿Cuántos goles ha marcado Cristiano Ronaldo en su carrera profesional (clubes + selección)?",
-          image: "/images/q4-football.jpg",
+          image: "/images/q4-football.webp",
           answers: [],
           correctAnswer: "850",
           correctValue: 850,
@@ -3286,7 +3286,7 @@ const duelSport: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "hard",
-  coverImage: "/images/cover-football.jpg",
+  coverImage: "/images/cover-football.webp",
   timePerQuestion: 15,
   gameType: "duel",
   playCount: 14600,
@@ -3300,8 +3300,8 @@ const duelSport: TranslatedQuiz = {
           id: 1,
           question: "Qui a remporté le plus de Ballons d'Or ?",
           answers: [
-            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Messi : 8 Ballons d'Or. Ronaldo : 5 Ballons d'Or.",
@@ -3310,8 +3310,8 @@ const duelSport: TranslatedQuiz = {
           id: 2,
           question: "Qui a gagné le plus de tournois du Grand Chelem ?",
           answers: [
-            { id: "a", text: "Rafael Nadal", image: "/images/duel-tennis-a.jpg" },
-            { id: "b", text: "Novak Djokovic", image: "/images/duel-tennis-b.jpg" },
+            { id: "a", text: "Rafael Nadal", image: "/images/duel-tennis-a.webp" },
+            { id: "b", text: "Novak Djokovic", image: "/images/duel-tennis-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3321,8 +3321,8 @@ const duelSport: TranslatedQuiz = {
           id: 3,
           question: "Qui a marqué le plus de buts en Coupe du Monde ?",
           answers: [
-            { id: "a", text: "Miroslav Klose", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Ronaldo (R9)", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Miroslav Klose", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Ronaldo (R9)", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3333,8 +3333,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "Qui a le plus de médailles d'or olympiques (sprint) ?",
           answers: [
-            { id: "a", text: "Carl Lewis", image: "/images/duel-running-a.jpg" },
-            { id: "b", text: "Usain Bolt", image: "/images/duel-running-b.jpg" },
+            { id: "a", text: "Carl Lewis", image: "/images/duel-running-a.webp" },
+            { id: "b", text: "Usain Bolt", image: "/images/duel-running-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3344,8 +3344,8 @@ const duelSport: TranslatedQuiz = {
           id: 5,
           question: "Qui a remporté le plus de titres NBA ?",
           answers: [
-            { id: "a", text: "Michael Jordan", image: "/images/duel-basketball-a.jpg" },
-            { id: "b", text: "Bill Russell", image: "/images/duel-basketball-b.jpg" },
+            { id: "a", text: "Michael Jordan", image: "/images/duel-basketball-a.webp" },
+            { id: "b", text: "Bill Russell", image: "/images/duel-basketball-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3355,8 +3355,8 @@ const duelSport: TranslatedQuiz = {
           id: 6,
           question: "Qui a le plus de victoires en Formule 1 ?",
           answers: [
-            { id: "a", text: "Lewis Hamilton", image: "/images/duel-f1-a.jpg" },
-            { id: "b", text: "Michael Schumacher", image: "/images/duel-f1-b.jpg" },
+            { id: "a", text: "Lewis Hamilton", image: "/images/duel-f1-a.webp" },
+            { id: "b", text: "Michael Schumacher", image: "/images/duel-f1-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3367,8 +3367,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "Qui a marqué le plus de buts en une saison de Liga ?",
           answers: [
-            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3378,8 +3378,8 @@ const duelSport: TranslatedQuiz = {
           id: 8,
           question: "Qui a gagné le plus de Tours de France ?",
           answers: [
-            { id: "a", text: "Eddy Merckx", image: "/images/duel-cycling-a.jpg" },
-            { id: "b", text: "Jacques Anquetil", image: "/images/duel-cycling-b.jpg" },
+            { id: "a", text: "Eddy Merckx", image: "/images/duel-cycling-a.webp" },
+            { id: "b", text: "Jacques Anquetil", image: "/images/duel-cycling-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3389,8 +3389,8 @@ const duelSport: TranslatedQuiz = {
           id: 9,
           question: "Qui détient le record du 200m ?",
           answers: [
-            { id: "a", text: "Usain Bolt", image: "/images/duel-running-a.jpg" },
-            { id: "b", text: "Yohan Blake", image: "/images/duel-running-b.jpg" },
+            { id: "a", text: "Usain Bolt", image: "/images/duel-running-a.webp" },
+            { id: "b", text: "Yohan Blake", image: "/images/duel-running-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Bolt : 19,19s (Berlin 2009). Blake : 19,26s.",
@@ -3400,8 +3400,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "Qui a remporté le plus de Coupes du Monde (sélections) ?",
           answers: [
-            { id: "a", text: "Brésil", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Allemagne", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Brésil", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Allemagne", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Brésil : 5 titres. Allemagne : 4 titres.",
@@ -3417,8 +3417,8 @@ const duelSport: TranslatedQuiz = {
           id: 1,
           question: "Who has won the most Ballon d'Or awards?",
           answers: [
-            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Messi: 8 Ballon d'Or awards. Ronaldo: 5 Ballon d'Or awards.",
@@ -3427,8 +3427,8 @@ const duelSport: TranslatedQuiz = {
           id: 2,
           question: "Who has won the most Grand Slam tournaments?",
           answers: [
-            { id: "a", text: "Rafael Nadal", image: "/images/duel-tennis-a.jpg" },
-            { id: "b", text: "Novak Djokovic", image: "/images/duel-tennis-b.jpg" },
+            { id: "a", text: "Rafael Nadal", image: "/images/duel-tennis-a.webp" },
+            { id: "b", text: "Novak Djokovic", image: "/images/duel-tennis-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3438,8 +3438,8 @@ const duelSport: TranslatedQuiz = {
           id: 3,
           question: "Who has scored the most goals in the World Cup?",
           answers: [
-            { id: "a", text: "Miroslav Klose", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Ronaldo (R9)", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Miroslav Klose", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Ronaldo (R9)", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3450,8 +3450,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "Who has the most Olympic gold medals (sprinting)?",
           answers: [
-            { id: "a", text: "Carl Lewis", image: "/images/duel-running-a.jpg" },
-            { id: "b", text: "Usain Bolt", image: "/images/duel-running-b.jpg" },
+            { id: "a", text: "Carl Lewis", image: "/images/duel-running-a.webp" },
+            { id: "b", text: "Usain Bolt", image: "/images/duel-running-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3461,8 +3461,8 @@ const duelSport: TranslatedQuiz = {
           id: 5,
           question: "Who has won the most NBA titles?",
           answers: [
-            { id: "a", text: "Michael Jordan", image: "/images/duel-basketball-a.jpg" },
-            { id: "b", text: "Bill Russell", image: "/images/duel-basketball-b.jpg" },
+            { id: "a", text: "Michael Jordan", image: "/images/duel-basketball-a.webp" },
+            { id: "b", text: "Bill Russell", image: "/images/duel-basketball-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3472,8 +3472,8 @@ const duelSport: TranslatedQuiz = {
           id: 6,
           question: "Who has the most Formula 1 victories?",
           answers: [
-            { id: "a", text: "Lewis Hamilton", image: "/images/duel-f1-a.jpg" },
-            { id: "b", text: "Michael Schumacher", image: "/images/duel-f1-b.jpg" },
+            { id: "a", text: "Lewis Hamilton", image: "/images/duel-f1-a.webp" },
+            { id: "b", text: "Michael Schumacher", image: "/images/duel-f1-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3484,8 +3484,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "Who scored the most goals in a single La Liga season?",
           answers: [
-            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3495,8 +3495,8 @@ const duelSport: TranslatedQuiz = {
           id: 8,
           question: "Who has won the most Tours de France?",
           answers: [
-            { id: "a", text: "Eddy Merckx", image: "/images/duel-cycling-a.jpg" },
-            { id: "b", text: "Jacques Anquetil", image: "/images/duel-cycling-b.jpg" },
+            { id: "a", text: "Eddy Merckx", image: "/images/duel-cycling-a.webp" },
+            { id: "b", text: "Jacques Anquetil", image: "/images/duel-cycling-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3506,8 +3506,8 @@ const duelSport: TranslatedQuiz = {
           id: 9,
           question: "Who holds the 200m record?",
           answers: [
-            { id: "a", text: "Usain Bolt", image: "/images/duel-running-a.jpg" },
-            { id: "b", text: "Yohan Blake", image: "/images/duel-running-b.jpg" },
+            { id: "a", text: "Usain Bolt", image: "/images/duel-running-a.webp" },
+            { id: "b", text: "Yohan Blake", image: "/images/duel-running-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Bolt: 19.19s (Berlin 2009). Blake: 19.26s.",
@@ -3517,8 +3517,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "Who has won the most World Cups (national teams)?",
           answers: [
-            { id: "a", text: "Brazil", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Germany", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Brazil", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Germany", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Brazil: 5 titles. Germany: 4 titles.",
@@ -3534,8 +3534,8 @@ const duelSport: TranslatedQuiz = {
           id: 1,
           question: "¿Quién ha ganado más Balones de Oro?",
           answers: [
-            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Messi: 8 Balones de Oro. Ronaldo: 5 Balones de Oro.",
@@ -3544,8 +3544,8 @@ const duelSport: TranslatedQuiz = {
           id: 2,
           question: "¿Quién ha ganado más torneos de Grand Slam?",
           answers: [
-            { id: "a", text: "Rafael Nadal", image: "/images/duel-tennis-a.jpg" },
-            { id: "b", text: "Novak Djokovic", image: "/images/duel-tennis-b.jpg" },
+            { id: "a", text: "Rafael Nadal", image: "/images/duel-tennis-a.webp" },
+            { id: "b", text: "Novak Djokovic", image: "/images/duel-tennis-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3555,8 +3555,8 @@ const duelSport: TranslatedQuiz = {
           id: 3,
           question: "¿Quién ha marcado más goles en la Copa del Mundo?",
           answers: [
-            { id: "a", text: "Miroslav Klose", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Ronaldo (R9)", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Miroslav Klose", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Ronaldo (R9)", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3567,8 +3567,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "¿Quién tiene más medallas de oro olímpicas (sprint)?",
           answers: [
-            { id: "a", text: "Carl Lewis", image: "/images/duel-running-a.jpg" },
-            { id: "b", text: "Usain Bolt", image: "/images/duel-running-b.jpg" },
+            { id: "a", text: "Carl Lewis", image: "/images/duel-running-a.webp" },
+            { id: "b", text: "Usain Bolt", image: "/images/duel-running-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3578,8 +3578,8 @@ const duelSport: TranslatedQuiz = {
           id: 5,
           question: "¿Quién ha ganado más títulos NBA?",
           answers: [
-            { id: "a", text: "Michael Jordan", image: "/images/duel-basketball-a.jpg" },
-            { id: "b", text: "Bill Russell", image: "/images/duel-basketball-b.jpg" },
+            { id: "a", text: "Michael Jordan", image: "/images/duel-basketball-a.webp" },
+            { id: "b", text: "Bill Russell", image: "/images/duel-basketball-b.webp" },
           ],
           correctAnswer: "b",
           explanation:
@@ -3589,8 +3589,8 @@ const duelSport: TranslatedQuiz = {
           id: 6,
           question: "¿Quién tiene más victorias en Fórmula 1?",
           answers: [
-            { id: "a", text: "Lewis Hamilton", image: "/images/duel-f1-a.jpg" },
-            { id: "b", text: "Michael Schumacher", image: "/images/duel-f1-b.jpg" },
+            { id: "a", text: "Lewis Hamilton", image: "/images/duel-f1-a.webp" },
+            { id: "b", text: "Michael Schumacher", image: "/images/duel-f1-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3601,8 +3601,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "¿Quién marcó más goles en una temporada de La Liga?",
           answers: [
-            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Lionel Messi", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Cristiano Ronaldo", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3612,8 +3612,8 @@ const duelSport: TranslatedQuiz = {
           id: 8,
           question: "¿Quién ha ganado más Tours de Francia?",
           answers: [
-            { id: "a", text: "Eddy Merckx", image: "/images/duel-cycling-a.jpg" },
-            { id: "b", text: "Jacques Anquetil", image: "/images/duel-cycling-b.jpg" },
+            { id: "a", text: "Eddy Merckx", image: "/images/duel-cycling-a.webp" },
+            { id: "b", text: "Jacques Anquetil", image: "/images/duel-cycling-b.webp" },
           ],
           correctAnswer: "a",
           explanation:
@@ -3623,8 +3623,8 @@ const duelSport: TranslatedQuiz = {
           id: 9,
           question: "¿Quién tiene el récord de los 200m?",
           answers: [
-            { id: "a", text: "Usain Bolt", image: "/images/duel-running-a.jpg" },
-            { id: "b", text: "Yohan Blake", image: "/images/duel-running-b.jpg" },
+            { id: "a", text: "Usain Bolt", image: "/images/duel-running-a.webp" },
+            { id: "b", text: "Yohan Blake", image: "/images/duel-running-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Bolt: 19,19s (Berlín 2009). Blake: 19,26s.",
@@ -3634,8 +3634,8 @@ const duelSport: TranslatedQuiz = {
           question:
             "¿Quién ha ganado más Copas del Mundo (selecciones)?",
           answers: [
-            { id: "a", text: "Brasil", image: "/images/duel-football-a.jpg" },
-            { id: "b", text: "Alemania", image: "/images/duel-football-b.jpg" },
+            { id: "a", text: "Brasil", image: "/images/duel-football-a.webp" },
+            { id: "b", text: "Alemania", image: "/images/duel-football-b.webp" },
           ],
           correctAnswer: "a",
           explanation: "Brasil: 5 títulos. Alemania: 4 títulos.",
@@ -3650,7 +3650,7 @@ const ordreSport: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "JO & Athlétisme",
   difficulty: "hard",
-  coverImage: "/images/cover-olympics.jpg",
+  coverImage: "/images/cover-olympics.webp",
   timePerQuestion: 45,
   gameType: "ordre",
   playCount: 8900,

@@ -94,7 +94,7 @@ export function MiniQCM({ locale = "en" as Locale }: { locale?: Locale }) {
   return (
     <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm">
       <div className="relative h-36 overflow-hidden">
-        <img src={withBase("/images/cover-football.jpg")} alt="" className="w-full h-full object-cover" />
+        <img src={withBase("/images/cover-football.webp")} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
           <span className="text-[10px] font-bold bg-violet-500 text-white px-2 py-0.5 rounded">QCM</span>
@@ -150,7 +150,7 @@ export function MiniVraiFaux({ locale = "en" as Locale }: { locale?: Locale }) {
   return (
     <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm">
       <div className="relative h-36 overflow-hidden">
-        <img src={withBase("/images/cover-histoire.jpg")} alt="" className="w-full h-full object-cover" />
+        <img src={withBase("/images/cover-histoire.webp")} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
           <span className="text-[10px] font-bold bg-emerald-500 text-white px-2 py-0.5 rounded">{miniT.vraiFaux.tag[locale]}</span>
@@ -228,7 +228,7 @@ export function MiniEstimation({ locale = "en" as Locale }: { locale?: Locale })
   return (
     <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm">
       <div className="relative h-36 overflow-hidden">
-        <img src={withBase("/images/cover-geographie.jpg")} alt="" className="w-full h-full object-cover" />
+        <img src={withBase("/images/cover-geographie.webp")} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
           <span className="text-[10px] font-bold bg-cyan-500 text-white px-2 py-0.5 rounded">Estimation</span>

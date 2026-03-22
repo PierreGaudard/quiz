@@ -33,7 +33,7 @@ export const categoryDefs: CategoryDef[] = [
     slug: "sport",
     icon: "SP",
     color: "bg-emerald-500",
-    coverImage: "/images/cover-sport.jpg",
+    coverImage: "/images/cover-sport.webp",
     translations: {
       en: {
         name: "Sports",
@@ -62,7 +62,7 @@ export const categoryDefs: CategoryDef[] = [
     slug: "cinema",
     icon: "CI",
     color: "bg-red-500",
-    coverImage: "/images/cover-cinema.jpg",
+    coverImage: "/images/cover-cinema.webp",
     translations: {
       en: {
         name: "Cinema",
@@ -91,7 +91,7 @@ export const categoryDefs: CategoryDef[] = [
     slug: "histoire",
     icon: "HI",
     color: "bg-amber-600",
-    coverImage: "/images/cover-histoire.jpg",
+    coverImage: "/images/cover-histoire.webp",
     translations: {
       en: {
         name: "History",
@@ -120,7 +120,7 @@ export const categoryDefs: CategoryDef[] = [
     slug: "culture-generale",
     icon: "CU",
     color: "bg-yellow-500",
-    coverImage: "/images/cover-sciences.jpg",
+    coverImage: "/images/cover-sciences.webp",
     translations: {
       en: {
         name: "General Knowledge",
@@ -149,7 +149,7 @@ export const categoryDefs: CategoryDef[] = [
     slug: "geographie",
     icon: "GE",
     color: "bg-teal-500",
-    coverImage: "/images/cover-geographie.jpg",
+    coverImage: "/images/cover-geographie.webp",
     translations: {
       en: {
         name: "Geography",
