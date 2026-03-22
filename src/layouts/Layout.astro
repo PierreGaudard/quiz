@@ -147,6 +147,14 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
             if (container) { container.style.position = 'relative'; container.appendChild(popup); }
             setTimeout(function() { if (popup.parentNode) popup.parentNode.removeChild(popup); }, 1500);
           });
+
+          // Logout button handler
+          var logoutBtn = document.getElementById('header-logout-btn');
+          if (logoutBtn) {
+            logoutBtn.addEventListener('click', function() {
+              fetch('/api/auth/logout', { method: 'POST' }).then(function() { window.location.reload(); });
+            });
+          }
         }).catch(function() {});
       })();
     </script>

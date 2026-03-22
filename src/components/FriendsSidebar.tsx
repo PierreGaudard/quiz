@@ -142,8 +142,9 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
           <div className="space-y-1">
             {friends.sort((a, b) => (b.xp || 0) - (a.xp || 0)).map((f) => {
               const lv = getLevelFromXp(f.xp || 0);
+              const profileHref = locale === "fr" ? `/fr/profil/${f.username}/` : locale === "es" ? `/es/perfil/${f.username}/` : `/profile/${f.username}/`;
               return (
-                <div key={f.id} className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                <a key={f.id} href={profileHref} className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors block">
                   <div className="w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center text-violet-600 text-xs font-bold overflow-hidden">
                     {f.avatar ? <img src={f.avatar} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
                   </div>
@@ -154,7 +155,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
                   <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded text-white ${lv.color}`}>
                     {tt("level")}{lv.level}
                   </span>
-                </div>
+                </a>
               );
             })}
           </div>
