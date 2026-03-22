@@ -41,7 +41,7 @@ const subName = categoryInfo?.subcategories?.find(
 
 <Layout title={`${quiz.title} - Wizy`} description={quiz.description} ogImage={quiz.coverImage} locale={locale} hreflangPaths={hreflangPaths}>
   <div class="max-w-7xl mx-auto px-4 pt-4 pb-8">
-    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-4 overflow-hidden whitespace-nowrap" aria-label="Breadcrumb">
+    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-6 overflow-hidden whitespace-nowrap" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium shrink-0">{t(locale, "breadcrumb.home")}</a>
       <svg class="w-3 h-3 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       {categoryInfo && (

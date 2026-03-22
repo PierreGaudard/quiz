@@ -397,31 +397,50 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
       <div className="flex-1 min-w-0 space-y-4 md:space-y-6 pb-16 lg:pb-0">
 
         {/* ===== INTRO CARD ===== */}
-        <div className="relative rounded-2xl overflow-hidden shadow-lg">
+        <div className="rounded-2xl overflow-hidden shadow-lg">
           {quiz.coverImage && (
-            <>
+            <div className="relative">
               <img
                 src={withBase(quiz.coverImage)}
                 alt={quiz.title}
-                className="w-full aspect-[3/1] sm:aspect-[2.5/1] object-cover"
+                className="w-full aspect-[2/1] md:aspect-[2.5/1] object-cover"
                 loading="eager"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-            </>
-          )}
-          <div className={`${quiz.coverImage ? "absolute bottom-0 left-0 right-0 p-4 md:p-8" : "p-4 md:p-8 bg-gradient-to-br from-violet-600 to-indigo-700"}`}>
-            <div className="flex items-center gap-2 mb-2 md:mb-3">
-              <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${difficultyColor[quiz.difficulty] || "bg-gray-100 text-gray-700"}`}>
-                {quiz.difficulty}
-              </span>
-              <span className="text-white/70 text-xs font-medium">
-                {totalQuestions} questions
-              </span>
+              {/* Desktop: text overlay on image */}
+              <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+              <div className="hidden md:block absolute bottom-0 left-0 right-0 p-8">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${difficultyColor[quiz.difficulty] || "bg-gray-100 text-gray-700"}`}>{quiz.difficulty}</span>
+                  <span className="text-white/70 text-xs font-medium">{totalQuestions} {tt("questions")}</span>
+                </div>
+                <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">{quiz.category}</span>
+                <h1 className="font-display text-3xl lg:text-4xl font-bold text-white leading-tight">{quiz.title}</h1>
+                <p className="text-white/70 text-base mt-2 max-w-2xl">{quiz.description}</p>
+              </div>
             </div>
-            <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">{quiz.category}</span>
-            <h1 className="font-display text-lg md:text-3xl lg:text-4xl font-bold text-white leading-tight">{quiz.title}</h1>
-            <p className="text-white/70 text-xs md:text-base mt-1 md:mt-2 max-w-2xl line-clamp-2 md:line-clamp-none">{quiz.description}</p>
+          )}
+          {/* Mobile: text below image */}
+          <div className={`md:hidden p-4 bg-gradient-to-br from-violet-600 to-indigo-700 ${!quiz.coverImage ? "" : ""}`}>
+            <div className="flex items-center gap-2 mb-2">
+              <span className={`inline-block px-2.5 py-0.5 rounded-full text-[11px] font-semibold ${difficultyColor[quiz.difficulty] || "bg-gray-100 text-gray-700"}`}>{quiz.difficulty}</span>
+              <span className="text-white/70 text-[11px] font-medium">{totalQuestions} {tt("questions")}</span>
+            </div>
+            <span className="inline-block text-yellow-400 font-semibold text-[11px] tracking-wide uppercase mb-0.5">{quiz.category}</span>
+            <h1 className="font-display text-lg font-bold text-white leading-tight">{quiz.title}</h1>
+            <p className="text-white/70 text-xs mt-1 line-clamp-2">{quiz.description}</p>
           </div>
+          {/* No cover image: full colored block */}
+          {!quiz.coverImage && (
+            <div className="hidden md:block p-8 bg-gradient-to-br from-violet-600 to-indigo-700">
+              <div className="flex items-center gap-2 mb-3">
+                <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${difficultyColor[quiz.difficulty] || "bg-gray-100 text-gray-700"}`}>{quiz.difficulty}</span>
+                <span className="text-white/70 text-xs font-medium">{totalQuestions} {tt("questions")}</span>
+              </div>
+              <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">{quiz.category}</span>
+              <h1 className="font-display text-3xl lg:text-4xl font-bold text-white leading-tight">{quiz.title}</h1>
+              <p className="text-white/70 text-base mt-2 max-w-2xl">{quiz.description}</p>
+            </div>
+          )}
         </div>
 
         {/* ===== DESCRIPTION + CTA "Commencer le quiz" ===== */}
