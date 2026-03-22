@@ -186,7 +186,8 @@ export default function CategoryPage({
   const lp = (path: string) => {
     const prefix = locale && locale !== "en" ? `/${locale}` : "";
     const p = path.startsWith("/") ? path : `/${path}`;
-    return withBase(`${prefix}${p}`);
+    const result = withBase(`${prefix}${p}`);
+    return result.endsWith("/") || result.includes(".") ? result : `${result}/`;
   };
 
   /* state */
@@ -786,7 +787,8 @@ function QuizCard({
   const lp = (path: string) => {
     const prefix = locale && locale !== "en" ? `/${locale}` : "";
     const p = path.startsWith("/") ? path : `/${path}`;
-    return withBase(`${prefix}${p}`);
+    const result = withBase(`${prefix}${p}`);
+    return result.endsWith("/") || result.includes(".") ? result : `${result}/`;
   };
 
   const isCompleted = !!progress;
@@ -1081,7 +1083,8 @@ function SidebarContent({
   const lp = (path: string) => {
     const prefix = locale && locale !== "en" ? `/${locale}` : "";
     const p = path.startsWith("/") ? path : `/${path}`;
-    return withBase(`${prefix}${p}`);
+    const result = withBase(`${prefix}${p}`);
+    return result.endsWith("/") || result.includes(".") ? result : `${result}/`;
   };
 
   const totalQuizzes = quizzes.length;
