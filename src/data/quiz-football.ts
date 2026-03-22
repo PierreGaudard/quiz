@@ -2,6 +2,7 @@ import type { TranslatedQuiz } from "./types";
 
 export const quizFootball: TranslatedQuiz = {
   slug: "quiz-football",
+  slugs: { en: "football-quiz", fr: "quiz-football", es: "quiz-futbol" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",

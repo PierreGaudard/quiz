@@ -11,6 +11,7 @@ import { categoryIcons } from "../data/icons";
 import { localePath, withBase } from "../utils/base";
 import { t } from "../i18n/ui";
 import { getSlugPaths, resolveCategoryData, resolveQuizData } from "../lib/page-helpers";
+import { getHreflangQuizPaths } from "../lib/hreflang-helpers";
 import type { Locale } from "../i18n/config";
 
 const locale: Locale = "en";
@@ -97,7 +98,7 @@ const formatCount = (n: number) => {
     })} />
   </Layout>
 ) : (
-  <Layout title={`${quiz.title} - Wizy`} description={quiz.description} ogImage={quiz.coverImage} locale={locale}>
+  <Layout title={`${quiz.title} - Wizy`} description={quiz.description} ogImage={quiz.coverImage} locale={locale} hreflangPaths={getHreflangQuizPaths(quiz.slug, locale)}>
     <div class="max-w-7xl mx-auto px-4 py-8">
       <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-6 flex-wrap" aria-label="Breadcrumb">
         <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>

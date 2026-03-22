@@ -2,6 +2,7 @@ import type { TranslatedQuiz } from "./types";
 
 const sportCultureGenerale: TranslatedQuiz = {
   slug: "culture-generale-sport",
+  slugs: { en: "general-knowledge-sport", fr: "culture-generale-sport", es: "cultura-general-deporte" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
@@ -502,6 +503,7 @@ const sportCultureGenerale: TranslatedQuiz = {
 
 const footballLegendes: TranslatedQuiz = {
   slug: "football-legendes",
+  slugs: { en: "football-legends", fr: "football-legendes", es: "futbol-leyendas" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
@@ -966,6 +968,7 @@ const footballLegendes: TranslatedQuiz = {
 
 const joQuizFacile: TranslatedQuiz = {
   slug: "jeux-olympiques-facile",
+  slugs: { en: "easy-olympics-quiz", fr: "jeux-olympiques-facile", es: "juegos-olimpicos-facil" },
   categorySlug: "sport",
   subcategory: "JO & Athlétisme",
   difficulty: "easy",
@@ -1326,6 +1329,7 @@ const joQuizFacile: TranslatedQuiz = {
 
 const tennisQuiz: TranslatedQuiz = {
   slug: "tennis-grands-chelems",
+  slugs: { en: "tennis-grand-slams", fr: "tennis-grands-chelems", es: "tenis-grand-slam" },
   categorySlug: "sport",
   subcategory: "Tennis",
   difficulty: "medium",
@@ -1702,6 +1706,7 @@ const tennisQuiz: TranslatedQuiz = {
 
 const sportVraiFaux: TranslatedQuiz = {
   slug: "sport-vrai-ou-faux",
+  slugs: { en: "sports-true-or-false", fr: "sport-vrai-ou-faux", es: "deporte-verdadero-o-falso" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "easy",
@@ -1946,6 +1951,7 @@ const sportVraiFaux: TranslatedQuiz = {
 
 const sportsExtremesQuiz: TranslatedQuiz = {
   slug: "sports-extremes",
+  slugs: { en: "extreme-sports", fr: "sports-extremes", es: "deportes-extremos" },
   categorySlug: "sport",
   subcategory: "Sports de combat",
   difficulty: "hard",
@@ -2331,6 +2337,7 @@ const sportsExtremesQuiz: TranslatedQuiz = {
 
 const nbaQuiz: TranslatedQuiz = {
   slug: "nba-culture",
+  slugs: { en: "nba-culture", fr: "nba-culture", es: "nba-cultura" },
   categorySlug: "sport",
   subcategory: "Sports US",
   difficulty: "hard",
@@ -2626,6 +2633,7 @@ const nbaQuiz: TranslatedQuiz = {
 
 const chronoSportQuiz: TranslatedQuiz = {
   slug: "chrono-sport-general",
+  slugs: { en: "chrono-sport-general", fr: "chrono-sport-general", es: "crono-deporte-general" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
@@ -2951,6 +2959,7 @@ const chronoSportQuiz: TranslatedQuiz = {
 
 const blindTestSport: TranslatedQuiz = {
   slug: "blind-test-logos-sport",
+  slugs: { en: "blind-test-sports-logos", fr: "blind-test-logos-sport", es: "test-logos-deportivos" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "hard",
@@ -3216,6 +3225,7 @@ const blindTestSport: TranslatedQuiz = {
 
 const estimationSport: TranslatedQuiz = {
   slug: "estimation-records-sport",
+  slugs: { en: "estimation-sports-records", fr: "estimation-records-sport", es: "estimacion-records-deportivos" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
@@ -3283,6 +3293,7 @@ const estimationSport: TranslatedQuiz = {
 
 const duelSport: TranslatedQuiz = {
   slug: "duel-legendes-sport",
+  slugs: { en: "duel-sports-legends", fr: "duel-legendes-sport", es: "duelo-leyendas-deporte" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "hard",
@@ -3647,6 +3658,7 @@ const duelSport: TranslatedQuiz = {
 
 const ordreSport: TranslatedQuiz = {
   slug: "ordre-chronologique-sport",
+  slugs: { en: "chronological-order-sport", fr: "ordre-chronologique-sport", es: "orden-cronologico-deporte" },
   categorySlug: "sport",
   subcategory: "JO & Athlétisme",
   difficulty: "hard",

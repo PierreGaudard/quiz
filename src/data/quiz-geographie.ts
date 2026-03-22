@@ -2,6 +2,7 @@ import type { TranslatedQuiz } from "./types";
 
 export const quizDrapeaux: TranslatedQuiz = {
   slug: "quiz-drapeaux",
+  slugs: { en: "flags-quiz", fr: "quiz-drapeaux", es: "quiz-banderas" },
   categorySlug: "geographie",
   subcategory: "Drapeaux",
   difficulty: "medium",
@@ -784,6 +785,7 @@ export const quizDrapeaux: TranslatedQuiz = {
 
 export const quizDepartementsFrancais: TranslatedQuiz = {
   slug: "quiz-departements-francais",
+  slugs: { en: "french-departments-quiz", fr: "quiz-departements-francais", es: "quiz-departamentos-franceses" },
   categorySlug: "geographie",
   subcategory: "Europe",
   difficulty: "hard",
@@ -1497,6 +1499,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
 
 export const quizPaysEurope: TranslatedQuiz = {
   slug: "quiz-pays-europe",
+  slugs: { en: "european-countries-quiz", fr: "quiz-pays-europe", es: "quiz-paises-europa" },
   categorySlug: "geographie",
   subcategory: "Europe",
   difficulty: "medium",

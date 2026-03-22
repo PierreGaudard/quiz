@@ -2,6 +2,7 @@ import type { TranslatedQuiz } from "./types";
 
 export const quizDisney: TranslatedQuiz = {
   slug: "quiz-disney",
+  slugs: { en: "disney-quiz", fr: "quiz-disney", es: "quiz-disney" },
   categorySlug: "cinema",
   subcategory: "Animation",
   difficulty: "easy",
@@ -777,6 +778,7 @@ export const quizDisney: TranslatedQuiz = {
 
 export const quizHarryPotter: TranslatedQuiz = {
   slug: "quiz-harry-potter",
+  slugs: { en: "harry-potter-quiz", fr: "quiz-harry-potter", es: "quiz-harry-potter" },
   categorySlug: "cinema",
   subcategory: "Films cultes",
   difficulty: "medium",

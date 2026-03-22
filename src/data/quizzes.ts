@@ -16,7 +16,7 @@ export function resolveQuiz(quiz: TranslatedQuiz, locale: Locale): QuizData {
   const catName = getCategoryName(quiz.categorySlug, locale);
   const diffLabel = difficultyLabels[locale]?.[quiz.difficulty] || difficultyLabels.en[quiz.difficulty];
   return {
-    slug: quiz.slug,
+    slug: quiz.slugs?.[locale] || quiz.slug,
     title: content.title,
     description: content.description,
     category: catName,

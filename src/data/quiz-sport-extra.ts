@@ -2,6 +2,7 @@ import type { TranslatedQuiz } from "./types";
 
 const sport1: TranslatedQuiz = {
   slug: "rugby-melee-et-essais",
+  slugs: { en: "rugby-scrums-and-tries", fr: "rugby-melee-et-essais", es: "rugby-melees-y-ensayos" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
@@ -419,6 +420,7 @@ const sport1: TranslatedQuiz = {
 
 const sport2: TranslatedQuiz = {
   slug: "cyclisme-grands-tours",
+  slugs: { en: "cycling-grand-tours", fr: "cyclisme-grands-tours", es: "ciclismo-grandes-vueltas" },
   categorySlug: "sport",
   subcategory: "JO & Athlétisme",
   difficulty: "medium",
@@ -839,6 +841,7 @@ const sport2: TranslatedQuiz = {
 
 const sport3: TranslatedQuiz = {
   slug: "natation-records-et-champions",
+  slugs: { en: "swimming-records-and-champions", fr: "natation-records-et-champions", es: "natacion-records-y-campeones" },
   categorySlug: "sport",
   subcategory: "JO & Athlétisme",
   difficulty: "easy",
@@ -1259,6 +1262,7 @@ const sport3: TranslatedQuiz = {
 
 const sport4: TranslatedQuiz = {
   slug: "formule-1-grands-prix",
+  slugs: { en: "formula-1-grand-prix", fr: "formule-1-grands-prix", es: "formula-1-grandes-premios" },
   categorySlug: "sport",
   subcategory: "Sports US",
   difficulty: "medium",
@@ -1679,6 +1683,7 @@ const sport4: TranslatedQuiz = {
 
 const sport5: TranslatedQuiz = {
   slug: "handball-regles-et-champions",
+  slugs: { en: "handball-rules-and-champions", fr: "handball-regles-et-champions", es: "balonmano-reglas-y-campeones" },
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "easy",
@@ -2096,6 +2101,7 @@ const sport5: TranslatedQuiz = {
 
 const sport6: TranslatedQuiz = {
   slug: "boxe-rings-et-legendes",
+  slugs: { en: "boxing-rings-and-legends", fr: "boxe-rings-et-legendes", es: "boxeo-rings-y-leyendas" },
   categorySlug: "sport",
   subcategory: "Sports de combat",
   difficulty: "medium",
@@ -2519,6 +2525,7 @@ const sport6: TranslatedQuiz = {
 
 const sport7: TranslatedQuiz = {
   slug: "ski-alpin-descentes-legendaires",
+  slugs: { en: "alpine-skiing-legendary-descents", fr: "ski-alpin-descentes-legendaires", es: "esqui-alpino-descensos-legendarios" },
   categorySlug: "sport",
   subcategory: "Sports d'hiver",
   difficulty: "hard",

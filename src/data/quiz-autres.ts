@@ -2,6 +2,7 @@ import type { TranslatedQuiz } from "./types";
 
 export const quizIslam: TranslatedQuiz = {
   slug: "quiz-islam",
+  slugs: { en: "islam-quiz", fr: "quiz-islam", es: "quiz-islam" },
   categorySlug: "culture-generale",
   subcategory: "Religion",
   difficulty: "medium",
@@ -643,6 +644,7 @@ export const quizIslam: TranslatedQuiz = {
 
 export const quizAnglais: TranslatedQuiz = {
   slug: "quiz-anglais",
+  slugs: { en: "english-quiz", fr: "quiz-anglais", es: "quiz-ingles" },
   categorySlug: "culture-generale",
   subcategory: "Anglais",
   difficulty: "easy",
@@ -1284,6 +1286,7 @@ export const quizAnglais: TranslatedQuiz = {
 
 export const quizBrevetHistoire: TranslatedQuiz = {
   slug: "quiz-brevet-histoire",
+  slugs: { en: "history-exam-quiz", fr: "quiz-brevet-histoire", es: "quiz-examen-historia" },
   categorySlug: "histoire",
   subcategory: "Brevet",
   difficulty: "medium",

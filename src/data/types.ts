@@ -31,6 +31,8 @@ export interface QuizLocaleContent {
 /** Translated quiz stored in data files. */
 export interface TranslatedQuiz {
   slug: string;
+  /** Locale-specific slugs. If not provided, falls back to the root slug. */
+  slugs?: Partial<Record<Locale, string>>;
   categorySlug: string;
   subcategory?: string;
   difficulty: Difficulty;
