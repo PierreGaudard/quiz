@@ -1091,6 +1091,16 @@ function SidebarContent({
     return result.endsWith("/") || result.includes(".") ? result : `${result}/`;
   };
 
+  const [authUser, setAuthUser] = useState<any>(null);
+  const [friends, setFriends] = useState<any[]>([]);
+
+  useEffect(() => {
+    fetch("/api/auth/me").then(r => r.json()).then(d => { if (d.user) setAuthUser(d.user); }).catch(() => {});
+    fetch("/api/friends").then(r => r.json()).then(d => { if (d.friends) setFriends(d.friends); }).catch(() => {});
+  }, []);
+
+  const profileSlug = locale === "fr" ? "/profil" : locale === "es" ? "/perfil" : "/profile";
+
   const totalQuizzes = quizzes.length;
   const progressPercent = totalQuizzes > 0 ? Math.round((completedCount / totalQuizzes) * 100) : 0;
   const circumference = 2 * Math.PI * 40;
@@ -1113,23 +1123,66 @@ function SidebarContent({
 
   return (
     <>
-      {/* Devenez membre */}
-      <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl p-5 text-white shadow-lg">
-        <h3 className="font-display text-base font-bold mb-3">{tt("becomeMember")}</h3>
-        <ul className="space-y-2 mb-4">
-          {memberBenefits.map((item) => (
-            <li key={item} className="flex items-center gap-2 text-sm text-white/90">
-              <svg className="w-4 h-4 text-green-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
-              {item}
-            </li>
-          ))}
-        </ul>
-        <button className="w-full bg-white text-violet-700 font-semibold text-sm py-2.5 rounded-xl hover:bg-violet-50 transition-colors cursor-pointer">
-          {tt("createFreeAccount")}
-        </button>
-      </div>
+      {/* Logged in: profile card / Logged out: become member CTA */}
+      {authUser ? (
+        <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl p-5 text-white shadow-lg">
+          <a href={lp(profileSlug)} className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 rounded-full border-2 border-white/30 bg-white/10 flex items-center justify-center overflow-hidden">
+              {authUser.avatar ? (
+                <img src={authUser.avatar} alt={authUser.username} className="w-full h-full object-cover" />
+              ) : (
+                <span className="text-xl font-black text-white/60">{authUser.username[0].toUpperCase()}</span>
+              )}
+            </div>
+            <div>
+              <p className="font-display font-bold text-sm">{authUser.username}</p>
+              <p className="text-white/60 text-xs">{authUser.xp || 0} XP</p>
+            </div>
+          </a>
+          <div className="bg-white/10 rounded-xl p-3 mb-3">
+            <div className="flex items-center justify-between text-xs mb-1.5">
+              <span className="text-white/70">{category.name}</span>
+              <span className="font-bold">{completedCount}/{totalQuizzes}</span>
+            </div>
+            <div className="h-1.5 bg-white/20 rounded-full overflow-hidden">
+              <div className="h-full bg-yellow-400 rounded-full transition-all" style={{ width: `${progressPercent}%` }} />
+            </div>
+          </div>
+          {friends.length > 0 && (
+            <div>
+              <p className="text-[10px] font-bold text-white/50 uppercase tracking-wider mb-2">{tt("friends") || "Friends"}</p>
+              <div className="space-y-1">
+                {friends.slice(0, 5).map((f: any) => (
+                  <div key={f.id} className="flex items-center gap-2 text-xs">
+                    <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold overflow-hidden">
+                      {f.avatar ? <img src={f.avatar} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
+                    </div>
+                    <span className="flex-1 truncate text-white/80">{f.username}</span>
+                    <span className="text-white/50">{f.xp || 0} XP</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl p-5 text-white shadow-lg">
+          <h3 className="font-display text-base font-bold mb-3">{tt("becomeMember")}</h3>
+          <ul className="space-y-2 mb-4">
+            {memberBenefits.map((item) => (
+              <li key={item} className="flex items-center gap-2 text-sm text-white/90">
+                <svg className="w-4 h-4 text-green-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <button className="w-full bg-white text-violet-700 font-semibold text-sm py-2.5 rounded-xl hover:bg-violet-50 transition-colors cursor-pointer">
+            {tt("createFreeAccount")}
+          </button>
+        </div>
+      )}
 
       {/* Ta progression */}
       {completedCount > 0 && (
