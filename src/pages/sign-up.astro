@@ -25,7 +25,7 @@ const lp = (path: string) => localePath(path, locale);
 
       <!-- Card -->
       <div class="bg-white rounded-2xl shadow-2xl p-8">
-        <div id="auth-error" class="hidden mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700 font-medium"></div>
+        <div id="auth-error" style="display:none" class="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700 font-medium"></div>
         <form id="signup-form" class="space-y-5">
           <!-- Username -->
           <div>
@@ -101,49 +101,54 @@ const lp = (path: string) => localePath(path, locale);
       </div>
     </div>
   </main>
-  <script>
-    document.getElementById('signup-form')?.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const form = e.target as HTMLFormElement;
-      const errEl = document.getElementById('auth-error')!;
-      const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
-      errEl.classList.add('hidden');
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('signup-form');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var errEl = document.getElementById('auth-error');
+        var btn = form.querySelector('button[type="submit"]');
+        errEl.style.display = 'none';
 
-      const username = (form.querySelector('#username') as HTMLInputElement).value.trim();
-      const email = (form.querySelector('#email') as HTMLInputElement).value.trim();
-      const password = (form.querySelector('#password') as HTMLInputElement).value;
-      const confirm = (form.querySelector('#confirm-password') as HTMLInputElement).value;
+        var username = document.getElementById('username').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var password = document.getElementById('password').value;
+        var confirm = document.getElementById('confirm-password').value;
 
-      if (password !== confirm) {
-        errEl.textContent = 'Passwords do not match';
-        errEl.classList.remove('hidden');
-        return;
-      }
-
-      btn.disabled = true;
-      btn.textContent = '...';
-
-      try {
-        const res = await fetch('/api/auth/register', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username, email, password }),
-        });
-        const data = await res.json();
-        if (!res.ok) {
-          errEl.textContent = data.error || 'Registration failed';
-          errEl.classList.remove('hidden');
-          btn.disabled = false;
-          btn.textContent = form.dataset.cta || 'Sign up';
+        if (password !== confirm) {
+          errEl.textContent = 'Passwords do not match';
+          errEl.style.display = 'block';
           return;
         }
-        window.location.href = '/';
-      } catch {
-        errEl.textContent = 'Network error, please try again';
-        errEl.classList.remove('hidden');
-        btn.disabled = false;
-        btn.textContent = form.dataset.cta || 'Sign up';
-      }
+
+        btn.disabled = true;
+        var originalText = btn.textContent;
+        btn.textContent = '...';
+
+        fetch('/api/auth/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username: username, email: email, password: password }),
+        })
+        .then(function(res) { return res.json().then(function(data) { return { ok: res.ok, data: data }; }); })
+        .then(function(result) {
+          if (!result.ok) {
+            errEl.textContent = result.data.error || 'Registration failed';
+            errEl.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = originalText;
+            return;
+          }
+          window.location.href = '/';
+        })
+        .catch(function() {
+          errEl.textContent = 'Network error, please try again';
+          errEl.style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = originalText;
+        });
+      });
     });
   </script>
 </Layout>
