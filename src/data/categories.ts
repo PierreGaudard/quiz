@@ -90,7 +90,7 @@ export const categoryDefs: CategoryDef[] = [
     slugs: { en: "anime", fr: "anime", es: "anime" },
     icon: "AN",
     color: "bg-pink-500",
-    coverImage: "/images/cover-sport.webp",
+    coverImage: "/images/cover-anime.webp",
     translations: {
       en: {
         name: "Anime",
@@ -150,7 +150,7 @@ export const categoryDefs: CategoryDef[] = [
     slugs: { en: "video-games", fr: "jeux-video", es: "videojuegos" },
     icon: "JV",
     color: "bg-purple-500",
-    coverImage: "/images/cover-sport.webp",
+    coverImage: "/images/cover-jeux-video.webp",
     translations: {
       en: {
         name: "Video Games",

@@ -6,7 +6,7 @@ export const quizDragonBall: TranslatedQuiz = {
   categorySlug: "anime",
   subcategory: "Dragon Ball",
   difficulty: "medium",
-  coverImage: "/images/cover-sport.webp",
+  coverImage: "/images/cover-anime.webp",
   gameType: "qcm",
   playCount: 15200,
   translations: {

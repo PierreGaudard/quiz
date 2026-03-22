@@ -63,7 +63,7 @@ const megaCategories = cats.map((cat, i) => ({
     name: sub,
     slug: slugifySubcategory(sub),
     href: lp(`/${cat.slug}/${slugifySubcategory(sub)}`),
-    image: cat.coverImage,
+    image: `/images/sub-${slugifySubcategory(sub)}.webp`,
   })),
 }));
 
