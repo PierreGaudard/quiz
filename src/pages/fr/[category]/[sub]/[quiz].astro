@@ -169,24 +169,26 @@ const subName = categoryInfo?.subcategories?.find(
             </div>
           </div>
 
-          <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-3.5">
-            <h3 class="font-display font-bold text-gray-900 text-sm text-center mb-3">{t(locale, "home.member.title")}</h3>
-            <ul class="space-y-1.5 mb-3">
-              <li class="flex items-center gap-2 text-xs text-gray-700">
-                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                {t(locale, "home.member.scores")}
-              </li>
-              <li class="flex items-center gap-2 text-xs text-gray-700">
-                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                {t(locale, "home.member.xp")}
-              </li>
-              <li class="flex items-center gap-2 text-xs text-gray-700">
-                <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                {t(locale, "home.member.compare")}
-              </li>
-            </ul>
-            <a href={lp('/inscription')} class="block w-full text-center bg-violet-600 hover:bg-violet-700 text-white font-semibold text-xs py-2.5 rounded-xl transition-colors">{t(locale, "home.member.cta")}</a>
-            <p class="text-center text-[10px] text-gray-400 mt-2">{t(locale, "home.member.free")}</p>
+          <div id="sidebar-member-block">
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-3.5">
+              <h3 class="font-display font-bold text-gray-900 text-sm text-center mb-3">{t(locale, "home.member.title")}</h3>
+              <ul class="space-y-1.5 mb-3">
+                <li class="flex items-center gap-2 text-xs text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  {t(locale, "home.member.scores")}
+                </li>
+                <li class="flex items-center gap-2 text-xs text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  {t(locale, "home.member.xp")}
+                </li>
+                <li class="flex items-center gap-2 text-xs text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  {t(locale, "home.member.compare")}
+                </li>
+              </ul>
+              <a href={lp('/inscription')} class="block w-full text-center bg-violet-600 hover:bg-violet-700 text-white font-semibold text-xs py-2.5 rounded-xl transition-colors">{t(locale, "home.member.cta")}</a>
+              <p class="text-center text-[10px] text-gray-400 mt-2">{t(locale, "home.member.free")}</p>
+            </div>
           </div>
         </div>
       </aside>
@@ -216,4 +218,22 @@ const subName = categoryInfo?.subcategories?.find(
       { "@type": "ListItem", position: (categoryInfo ? 2 : 1) + (subName ? 1 : 0) + 1, name: quiz.title },
     ]
   })} />
+  <script is:inline>
+    (function() {
+      fetch('/api/auth/me').then(function(r){return r.json()}).then(function(d){
+        if (!d.user) return;
+        var u = d.user;
+        var block = document.getElementById('sidebar-member-block');
+        if (!block) return;
+        var avatarHtml = u.avatar ? '<img src="'+u.avatar+'" class="w-full h-full object-cover" />' : '<span class="text-lg font-black text-white/60">'+u.username[0].toUpperCase()+'</span>';
+        block.innerHTML = '<a href="/fr/profil/" class="block bg-gradient-to-br from-violet-600 to-indigo-700 rounded-xl p-4 text-white shadow-sm hover:shadow-md transition-shadow">'
+          + '<div class="flex items-center gap-3 mb-3">'
+          + '<div class="w-10 h-10 rounded-full border-2 border-white/30 bg-white/10 flex items-center justify-center overflow-hidden">'+avatarHtml+'</div>'
+          + '<div><p class="font-bold text-sm">'+u.username+'</p><p class="text-white/60 text-xs">'+(u.xp||0)+' XP</p></div>'
+          + '</div>'
+          + '<div class="bg-white/10 rounded-lg p-2 text-center text-xs font-medium text-white/80">Voir mon profil</div>'
+          + '</a>';
+      }).catch(function(){});
+    })();
+  </script>
 </Layout>
