@@ -55,17 +55,21 @@ export const GET: APIRoute = async ({ request, url }) => {
   if (!user) return new Response(JSON.stringify({ progress: [] }), { status: 200 });
 
   const quizSlug = url.searchParams.get("quiz");
+  const targetUserId = url.searchParams.get("user");
+
+  // If requesting another user's progress (public, for friend stats)
+  const queryUserId = targetUserId ? parseInt(targetUserId) : user.id;
 
   let results;
   if (quizSlug) {
     results = await db
       .prepare("SELECT quiz_slug, score, total_questions, xp_earned, completed_at FROM quiz_progress WHERE user_id = ? AND quiz_slug = ? ORDER BY completed_at DESC")
-      .bind(user.id, quizSlug)
+      .bind(queryUserId, quizSlug)
       .all();
   } else {
     results = await db
       .prepare("SELECT quiz_slug, score, total_questions, xp_earned, completed_at FROM quiz_progress WHERE user_id = ? ORDER BY completed_at DESC LIMIT 100")
-      .bind(user.id)
+      .bind(queryUserId)
       .all();
   }
 

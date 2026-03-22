@@ -1095,10 +1095,27 @@ function SidebarContent({
 
   const [authUser, setAuthUser] = useState<any>(null);
   const [friends, setFriends] = useState<any[]>([]);
+  const [userRank, setUserRank] = useState<{ rank: number; total: number } | null>(null);
+  const [friendsQuizCount, setFriendsQuizCount] = useState<Record<number, number>>({});
 
   useEffect(() => {
     fetch("/api/auth/me").then(r => r.json()).then(d => { if (d.user) setAuthUser(d.user); }).catch(() => {});
-    fetch("/api/friends").then(r => r.json()).then(d => { if (d.friends) setFriends(d.friends); }).catch(() => {});
+    fetch("/api/friends").then(r => r.json()).then(d => {
+      if (d.friends) {
+        setFriends(d.friends);
+        // Get quiz count per friend for this category
+        d.friends.forEach((f: any) => {
+          fetch(`/api/quiz/progress?user=${f.id}`).then(r => r.json()).then(pd => {
+            if (pd.progress) {
+              const catQuizSlugs = quizzes.map(q => q.slug);
+              const count = pd.progress.filter((p: any) => catQuizSlugs.includes(p.quiz_slug)).length;
+              setFriendsQuizCount(prev => ({ ...prev, [f.id]: count }));
+            }
+          }).catch(() => {});
+        });
+      }
+    }).catch(() => {});
+    fetch("/api/auth/rank").then(r => r.json()).then(d => { if (d.rank) setUserRank(d); }).catch(() => {});
   }, []);
 
   const profileSlug = locale === "fr" ? "/profil" : locale === "es" ? "/perfil" : "/profile";
@@ -1160,7 +1177,8 @@ function SidebarContent({
           {/* Ranking */}
           <a href={lp(locale === "fr" ? "/classement" : locale === "es" ? "/clasificacion" : "/leaderboard")} className="flex items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors mb-3">
             <svg className="w-5 h-5 text-yellow-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
-            <span className="text-xs font-medium text-white/80">{tt("ranking") || "Ranking"}</span>
+            <span className="text-xs font-medium text-white/80 flex-1">{tt("ranking")}</span>
+            {userRank && <span className="text-xs font-bold text-yellow-400">#{userRank.rank}/{userRank.total}</span>}
           </a>
           {/* Friends with level + quiz count */}
           {friends.length > 0 && (
@@ -1171,12 +1189,15 @@ function SidebarContent({
                   const fLv = (() => { const x = f.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(50*i*i - 50*i + 200)) lv = i; else break; } return lv; })();
                   const fProfileHref = locale === "fr" ? `/fr/profil/${f.username}/` : locale === "es" ? `/es/perfil/${f.username}/` : `/profile/${f.username}/`;
                   return (
-                    <a key={f.id} href={fProfileHref} className="flex items-center gap-2 text-xs hover:bg-white/10 rounded-lg p-1 -mx-1 transition-colors">
-                      <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold overflow-hidden">
+                    <a key={f.id} href={fProfileHref} className="flex items-center gap-2 text-xs hover:bg-white/10 rounded-lg p-1.5 -mx-1 transition-colors">
+                      <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold overflow-hidden shrink-0">
                         {f.avatar ? <img src={f.avatar} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
                       </div>
-                      <span className="flex-1 truncate text-white/80">{f.username}</span>
-                      <span className="text-[10px] font-bold text-yellow-400">Lv.{fLv}</span>
+                      <div className="flex-1 min-w-0">
+                        <span className="truncate text-white/80 block">{f.username}</span>
+                        <span className="text-[9px] text-white/40">{friendsQuizCount[f.id] || 0}/{totalQuizzes} quiz</span>
+                      </div>
+                      <span className="text-[10px] font-bold text-yellow-400 shrink-0">Lv.{fLv}</span>
                     </a>
                   );
                 })}
