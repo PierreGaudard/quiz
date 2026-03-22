@@ -131,6 +131,7 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
         fetch('/api/auth/me').then(function(r) { return r.json(); }).then(function(data) {
           if (!data.user) return;
           updateHeader(data.user);
+          var lv = getLevel(data.user.xp || 0);
 
           // Listen for XP gain events from quiz player
           window.addEventListener('wizy-xp-gain', function(e) {
