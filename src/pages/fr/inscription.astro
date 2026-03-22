@@ -1,0 +1,102 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { localePath } from "../../utils/base";
+import { t } from "../../i18n/ui";
+import type { Locale } from "../../i18n/config";
+
+const locale: Locale = "fr";
+const lp = (path: string) => localePath(path, locale);
+---
+
+<Layout title={t(locale, "auth.signupTitle")} description={t(locale, "auth.signupDescription")} locale={locale}>
+  <main class="min-h-[calc(100vh-160px)] bg-gradient-to-b from-[#1a0e42] via-[#2d1b69] to-[#1a0e42] flex items-center justify-center py-16 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 28px 28px;"></div>
+
+    <div class="relative w-full max-w-md">
+      <!-- Logo / Heading -->
+      <div class="text-center mb-8">
+        <a href={lp("/")} class="inline-block">
+          <span class="font-display text-3xl font-black text-white">Wi<span class="text-yellow-400">zy</span></span>
+        </a>
+        <h1 class="font-display text-2xl font-bold text-white mt-4">{t(locale, "auth.signup")}</h1>
+        <p class="text-white/50 text-sm mt-2">{t(locale, "auth.signupDescription")}</p>
+      </div>
+
+      <!-- Card -->
+      <div class="bg-white rounded-2xl shadow-2xl p-8">
+        <form class="space-y-5">
+          <!-- Username -->
+          <div>
+            <label for="username" class="block text-sm font-semibold text-gray-700 mb-1.5">{t(locale, "auth.username")}</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
+              placeholder="monpseudo"
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-semibold text-gray-700 mb-1.5">{t(locale, "auth.email")}</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
+              placeholder="vous@exemple.com"
+            />
+          </div>
+
+          <!-- Password -->
+          <div>
+            <label for="password" class="block text-sm font-semibold text-gray-700 mb-1.5">{t(locale, "auth.password")}</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
+              placeholder="********"
+            />
+          </div>
+
+          <!-- Confirm Password -->
+          <div>
+            <label for="confirm-password" class="block text-sm font-semibold text-gray-700 mb-1.5">{t(locale, "auth.confirmPassword")}</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+              class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
+              placeholder="********"
+            />
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="w-full h-11 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-sm rounded-lg transition-colors shadow-lg hover:shadow-xl"
+          >
+            {t(locale, "auth.signupCta")}
+          </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="my-6 border-t border-gray-100"></div>
+
+        <!-- Link to login -->
+        <p class="text-center text-sm text-gray-500">
+          {t(locale, "auth.hasAccount")}{" "}
+          <a href={lp("/connexion")} class="font-bold text-violet-600 hover:text-violet-800 transition-colors">
+            {t(locale, "auth.login")}
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>

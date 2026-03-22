@@ -1,0 +1,79 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { localePath } from "../../utils/base";
+import { t } from "../../i18n/ui";
+import type { Locale } from "../../i18n/config";
+
+const locale: Locale = "es";
+const lp = (path: string) => localePath(path, locale);
+---
+
+<Layout title="Aviso legal - Wizy" description="Aviso legal del sitio web Wizy." locale={locale}>
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
+      <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+      <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="text-gray-700 font-semibold">Aviso legal</span>
+    </nav>
+
+    <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Aviso legal</h1>
+
+    <div class="prose prose-gray max-w-none space-y-8 text-sm leading-relaxed text-gray-700">
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Editor del sitio</h2>
+        <p>El sitio web <strong>Wizy</strong> (accesible en <strong>https://pierregaudard.github.io/quiz</strong>) es publicado por:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li><strong>Nombre:</strong> Pierre Gaudard</li>
+          <li><strong>Condición:</strong> Persona física</li>
+          <li><strong>Dirección de email:</strong> pierretartare94440@gmail.com</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Proveedor de alojamiento</h2>
+        <p>El sitio está alojado por:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li><strong>Razón social:</strong> Cloudflare, Inc.</li>
+          <li><strong>Dirección:</strong> 101 Townsend Street, San Francisco, CA 94107, Estados Unidos</li>
+          <li><strong>Sitio web:</strong> cloudflare.com</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">3. Director de la publicación</h2>
+        <p>El director de la publicación es <strong>Pierre Gaudard</strong>.</p>
+        <p>Contacto: pierretartare94440@gmail.com</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. Propiedad intelectual</h2>
+        <p>Todo el contenido del sitio web Wizy (textos, gráficos, imágenes, logotipos, iconos, sonidos, software, quizzes, preguntas y respuestas) es propiedad exclusiva de Pierre Gaudard o de sus socios y está protegido por las leyes francesas e internacionales de propiedad intelectual.</p>
+        <p>Queda prohibida cualquier reproducción, representación, modificación, publicación, adaptación o explotación de todo o parte de los elementos del sitio, por cualquier medio o procedimiento, sin la autorización escrita previa de Pierre Gaudard.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">5. Datos personales</h2>
+        <p>El tratamiento de datos personales se detalla en nuestra <a href={lp("/confidentialite")} class="text-violet-600 hover:text-violet-800 font-medium">Política de privacidad</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Cookies</h2>
+        <p>El sitio web Wizy utiliza únicamente cookies técnicas estrictamente necesarias para el funcionamiento del sitio (guardado de progreso, preferencias del usuario). Estas cookies no recogen ningún dato personal con fines publicitarios o de perfilado.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Limitación de responsabilidad</h2>
+        <p>La información y contenidos del sitio web Wizy se proporcionan con carácter informativo y lúdico. Pierre Gaudard no puede ser considerado responsable de errores u omisiones en las preguntas y respuestas de los quizzes.</p>
+        <p>El uso del sitio se realiza bajo la responsabilidad del usuario. Pierre Gaudard no será responsable de ningún daño directo o indirecto derivado del uso del sitio.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">8. Legislación aplicable</h2>
+        <p>El presente aviso legal se rige por la legislación francesa. En caso de litigio, los tribunales franceses serán los únicos competentes.</p>
+      </section>
+
+      <p class="text-xs text-gray-400 pt-4 border-t border-gray-200">Última actualización: marzo de 2026</p>
+    </div>
+  </main>
+</Layout>

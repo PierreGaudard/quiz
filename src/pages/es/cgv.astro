@@ -1,0 +1,116 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { localePath } from "../../utils/base";
+import { t } from "../../i18n/ui";
+import type { Locale } from "../../i18n/config";
+
+const locale: Locale = "es";
+const lp = (path: string) => localePath(path, locale);
+---
+
+<Layout title="Condiciones de Uso - Wizy" description="Condiciones generales de uso del sitio web Wizy." locale={locale}>
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
+      <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+      <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="text-gray-700 font-semibold">Condiciones de uso</span>
+    </nav>
+
+    <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Condiciones de uso</h1>
+
+    <div class="prose prose-gray max-w-none space-y-8 text-sm leading-relaxed text-gray-700">
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Objeto</h2>
+        <p>Las presentes Condiciones de Uso (en adelante "CdU") tienen por objeto definir las normas de uso del sitio web <strong>Wizy</strong> (en adelante "el Sitio"), accesible en <strong>https://pierregaudard.github.io/quiz</strong>, publicado por Pierre Gaudard.</p>
+        <p>El acceso y uso del Sitio implican la aceptación plena e incondicional de las presentes CdU.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Descripción del servicio</h2>
+        <p>Wizy es una plataforma gratuita de quizzes en línea que permite a los usuarios:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>Jugar quizzes sobre temas variados (cultura general, deportes, cine, geografía, etc.)</li>
+          <li>Descubrir diferentes modos de juego (Opción Múltiple, Verdadero/Falso, Crono, Estimación, Duelo, Orden cronológico)</li>
+          <li>Crear y compartir sus propios quizzes</li>
+          <li>Seguir su progreso y ganar puntos de experiencia (XP)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">3. Acceso al servicio</h2>
+        <p>El Sitio es accesible de forma gratuita para cualquier usuario con acceso a Internet. Todos los costes relacionados con el acceso al Sitio (hardware, software, suscripción a Internet) corren a cargo del usuario.</p>
+        <p>Pierre Gaudard se reserva el derecho de suspender, modificar o interrumpir el acceso al Sitio en cualquier momento, sin previo aviso ni indemnización.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. Quizzes creados por los usuarios</h2>
+        <p>Los usuarios tienen la posibilidad de crear sus propios quizzes mediante la herramienta de creación integrada en el Sitio. Al enviar un quiz, el usuario se compromete a:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>No publicar contenido ilícito, difamatorio, injurioso, discriminatorio, violento o de carácter sexual</li>
+          <li>No infringir los derechos de propiedad intelectual de terceros</li>
+          <li>Proporcionar información precisa en la medida de lo posible</li>
+          <li>No utilizar el servicio con fines de spam, publicidad o promoción comercial</li>
+        </ul>
+        <p class="mt-2">Los quizzes creados por los usuarios están <strong>sujetos a aprobación</strong> antes de su publicación oficial en el Sitio. Pierre Gaudard se reserva el derecho de rechazar, modificar o eliminar cualquier quiz que no cumpla con las presentes CdU, sin notificación previa.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">5. Propiedad intelectual</h2>
+        <p>Todos los elementos del Sitio (diseño, textos, imágenes, logotipos, código fuente, quizzes editoriales) están protegidos por la legislación de propiedad intelectual y pertenecen a Pierre Gaudard, salvo indicación en contrario.</p>
+        <p>Al crear un quiz en el Sitio, el usuario concede a Pierre Gaudard una <strong>licencia no exclusiva, gratuita y mundial</strong> de uso, reproducción, modificación y distribución del contenido del quiz en el Sitio.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Datos personales</h2>
+        <p>El tratamiento de datos personales se describe en nuestra <a href={lp("/confidentialite")} class="text-violet-600 hover:text-violet-800 font-medium">Política de privacidad</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Responsabilidad</h2>
+        <p>Pierre Gaudard se esfuerza por garantizar la exactitud de la información publicada en el Sitio, pero no puede garantizar la exactitud, integridad o actualidad de todos los contenidos, en particular los quizzes y sus respuestas.</p>
+        <p>El usuario reconoce que utiliza el Sitio bajo su propia responsabilidad. Pierre Gaudard no será responsable de:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>Daños directos o indirectos derivados del uso del Sitio</li>
+          <li>Interrupciones temporales del servicio</li>
+          <li>Contenido de los quizzes creados por los usuarios</li>
+          <li>El uso de los resultados de los quizzes para cualquier fin</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">8. Conducta del usuario</h2>
+        <p>El usuario se compromete a no:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>Utilizar el Sitio de manera fraudulenta o contraria a su finalidad</li>
+          <li>Intentar perturbar el funcionamiento del Sitio (ataques, scraping excesivo, etc.)</li>
+          <li>Suplantar la identidad de un tercero</li>
+          <li>Publicar contenido contrario al orden público y las buenas costumbres</li>
+        </ul>
+        <p class="mt-2">En caso de incumplimiento, Pierre Gaudard se reserva el derecho de bloquear el acceso del usuario al Sitio.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">9. Enlaces</h2>
+        <p>El Sitio puede contener enlaces a sitios de terceros. Pierre Gaudard no ejerce ningún control sobre estos sitios y declina toda responsabilidad respecto a su contenido.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">10. Modificación de las CdU</h2>
+        <p>Pierre Gaudard se reserva el derecho de modificar las presentes CdU en cualquier momento. Las modificaciones entran en vigor desde su publicación en el Sitio. El uso continuado del Sitio después de la modificación implica la aceptación de las nuevas CdU.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">11. Legislación aplicable y jurisdicción</h2>
+        <p>Las presentes CdU se rigen por la legislación francesa. Cualquier litigio relativo al uso del Sitio será sometido a la jurisdicción exclusiva de los tribunales franceses.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">12. Contacto</h2>
+        <p>Para cualquier pregunta relativa a las presentes CdU, puede contactarnos en: <strong>pierretartare94440@gmail.com</strong></p>
+      </section>
+
+      <p class="text-xs text-gray-400 pt-4 border-t border-gray-200">Última actualización: marzo de 2026</p>
+    </div>
+  </main>
+</Layout>

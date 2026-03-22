@@ -1,0 +1,226 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyQuizzes from "../../components/MyQuizzes";
+import { localePath } from "../../utils/base";
+import { t } from "../../i18n/ui";
+import type { Locale } from "../../i18n/config";
+
+const locale: Locale = "en";
+const lp = (path: string) => localePath(path, locale);
+---
+
+<Layout title="Create a free quiz - Wizy" description="Create your own quiz in minutes and share it with your friends. Free, no sign-up required." locale={locale}>
+  <main>
+
+    {/* ===== HERO ===== */}
+    <section class="bg-gradient-to-b from-[#1a0e42] via-[#2d1b69] to-[#1a0e42] pt-16 pb-20 relative overflow-hidden">
+      {/* Dot grid overlay */}
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 28px 28px;"></div>
+      {/* Decorative gradient blobs */}
+      <div class="absolute top-10 left-1/4 w-72 h-72 bg-violet-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/10 mb-6">
+          <svg class="w-4 h-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
+          <span class="text-sm font-semibold text-white/70">Quiz creator</span>
+        </div>
+
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+          Create your own<br/><span class="text-yellow-400">quiz</span>
+        </h1>
+        <p class="text-white/50 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-8">
+          Come up with your questions, choose the answers, and share your quiz with the world. It's free, no sign-up required, and takes less than 5 minutes.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href={lp('/creer/nouveau')} class="inline-flex items-center gap-2.5 px-8 py-3.5 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-lg shadow-lg shadow-yellow-500/25 hover:shadow-yellow-400/30 transition-all hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
+            Create my quiz
+          </a>
+          <a href="#how-it-works" class="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-sm rounded-lg transition-all">
+            How does it work?
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+          </a>
+        </div>
+
+        {/* Stats row */}
+        <div class="flex items-center justify-center gap-8 mt-12">
+          <div class="text-center">
+            <p class="font-display text-2xl font-black text-white">100%</p>
+            <p class="text-xs text-white/40 font-medium">Free</p>
+          </div>
+          <div class="w-px h-8 bg-white/10"></div>
+          <div class="text-center">
+            <p class="font-display text-2xl font-black text-white">&lt;5 min</p>
+            <p class="text-xs text-white/40 font-medium">To create</p>
+          </div>
+          <div class="w-px h-8 bg-white/10"></div>
+          <div class="text-center">
+            <p class="font-display text-2xl font-black text-white">0</p>
+            <p class="text-xs text-white/40 font-medium">Sign-up required</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ===== HOW IT WORKS — 3 steps ===== */}
+    <section id="how-it-works" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <p class="text-sm font-bold text-violet-600 uppercase tracking-[0.15em] mb-2">Easy as pie</p>
+          <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900">How does it work?</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Step 1 */}
+          <div class="relative text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg shadow-violet-500/25">
+              <span class="font-display text-xl font-black text-white">1</span>
+            </div>
+            <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Choose your category</h3>
+            <p class="text-sm text-gray-500 leading-relaxed max-w-xs mx-auto">
+              Sports, cinema, general knowledge... Give your quiz a title and theme so it's easy to find.
+            </p>
+            {/* Connector line (hidden on mobile) */}
+            <div class="hidden md:block absolute top-7 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-gradient-to-r from-violet-300 to-transparent"></div>
+          </div>
+
+          {/* Step 2 */}
+          <div class="relative text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg shadow-violet-500/25">
+              <span class="font-display text-xl font-black text-white">2</span>
+            </div>
+            <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Add your questions</h3>
+            <p class="text-sm text-gray-500 leading-relaxed max-w-xs mx-auto">
+              Write your questions, offer 4 answers and select the correct one. Add an explanation if you like.
+            </p>
+            <div class="hidden md:block absolute top-7 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-gradient-to-r from-violet-300 to-transparent"></div>
+          </div>
+
+          {/* Step 3 */}
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg shadow-violet-500/25">
+              <span class="font-display text-xl font-black text-white">3</span>
+            </div>
+            <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Share your link</h3>
+            <p class="text-sm text-gray-500 leading-relaxed max-w-xs mx-auto">
+              Your quiz is ready! Copy the unique link and send it to your friends, family or colleagues.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ===== FEATURES GRID — 6 cards ===== */}
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <p class="text-sm font-bold text-violet-600 uppercase tracking-[0.15em] mb-2">Everything you need</p>
+          <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900">Features designed for you</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {/* Feature 1: MCQ Mode */}
+          <div class="group p-6 rounded-xl border border-gray-100 bg-white hover:border-violet-200 hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300">
+            <div class="w-11 h-11 rounded-lg bg-violet-100 flex items-center justify-center mb-4 group-hover:bg-violet-500 transition-colors">
+              <svg class="w-5 h-5 text-violet-600 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-display text-base font-bold text-gray-900 mb-1.5">Multiple Choice</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">Multiple choice questions with 4 answer options and a single correct answer.</p>
+          </div>
+
+          {/* Feature 2: Unique share link */}
+          <div class="group p-6 rounded-xl border border-gray-100 bg-white hover:border-violet-200 hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300">
+            <div class="w-11 h-11 rounded-lg bg-violet-100 flex items-center justify-center mb-4 group-hover:bg-violet-500 transition-colors">
+              <svg class="w-5 h-5 text-violet-600 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+              </svg>
+            </div>
+            <h3 class="font-display text-base font-bold text-gray-900 mb-1.5">Unique share link</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">Each quiz has its own link. Copy it and share it in one click on any platform.</p>
+          </div>
+
+          {/* Feature 3: Playable on mobile */}
+          <div class="group p-6 rounded-xl border border-gray-100 bg-white hover:border-violet-200 hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300">
+            <div class="w-11 h-11 rounded-lg bg-violet-100 flex items-center justify-center mb-4 group-hover:bg-violet-500 transition-colors">
+              <svg class="w-5 h-5 text-violet-600 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="font-display text-base font-bold text-gray-900 mb-1.5">Playable on mobile</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">Responsive interface optimised for smartphone, tablet and desktop. Play wherever, whenever.</p>
+          </div>
+
+          {/* Feature 4: Free and no sign-up */}
+          <div class="group p-6 rounded-xl border border-gray-100 bg-white hover:border-violet-200 hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300">
+            <div class="w-11 h-11 rounded-lg bg-violet-100 flex items-center justify-center mb-4 group-hover:bg-violet-500 transition-colors">
+              <svg class="w-5 h-5 text-violet-600 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-display text-base font-bold text-gray-900 mb-1.5">Free, no sign-up</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">No account required. Create and share your quizzes without giving your email or personal information.</p>
+          </div>
+
+          {/* Feature 5: Preview before publishing */}
+          <div class="group p-6 rounded-xl border border-gray-100 bg-white hover:border-violet-200 hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300">
+            <div class="w-11 h-11 rounded-lg bg-violet-100 flex items-center justify-center mb-4 group-hover:bg-violet-500 transition-colors">
+              <svg class="w-5 h-5 text-violet-600 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+            </div>
+            <h3 class="font-display text-base font-bold text-gray-900 mb-1.5">Preview before publishing</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">Check how your quiz looks before sharing it. Test it as if you were a player to make sure everything is perfect.</p>
+          </div>
+
+          {/* Feature 6: Unlimited quizzes */}
+          <div class="group p-6 rounded-xl border border-gray-100 bg-white hover:border-violet-200 hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300">
+            <div class="w-11 h-11 rounded-lg bg-violet-100 flex items-center justify-center mb-4 group-hover:bg-violet-500 transition-colors">
+              <svg class="w-5 h-5 text-violet-600 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="font-display text-base font-bold text-gray-900 mb-1.5">Unlimited quizzes</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">No limit on the number of quizzes you can create. Let your creativity run wild!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ===== MY QUIZZES (React island) ===== */}
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900 mb-2">My quizzes</h2>
+          <p class="text-sm text-gray-500">Find all the quizzes you've created on this device here.</p>
+        </div>
+        <MyQuizzes client:load />
+      </div>
+    </section>
+
+    {/* ===== FINAL CTA ===== */}
+    <section class="py-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-violet-600 via-purple-600 to-violet-700"></div>
+      <div class="absolute inset-0 opacity-[0.05]" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 28px 28px;"></div>
+      <div class="absolute top-0 left-1/3 w-80 h-80 bg-yellow-400/10 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 text-center">
+        <h2 class="font-display text-3xl md:text-4xl font-black text-white leading-tight mb-4">
+          Ready to create your quiz?
+        </h2>
+        <p class="text-white/60 text-base md:text-lg max-w-lg mx-auto mb-8 leading-relaxed">
+          Start now. It's free, fast, and your friends will love it.
+        </p>
+        <a href={lp('/creer/nouveau')} class="inline-flex items-center gap-2.5 px-8 py-3.5 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-lg shadow-lg shadow-black/20 hover:shadow-black/30 transition-all hover:-translate-y-0.5">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
+          Start now
+        </a>
+      </div>
+    </section>
+
+  </main>
+</Layout>

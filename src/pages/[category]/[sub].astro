@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CategoryPage from "../../components/CategoryPage";
+import { localePath } from "../../utils/base";
+import { t } from "../../i18n/ui";
+import { getSubPaths, resolveSubcategoryData } from "../../lib/page-helpers";
+import type { Locale } from "../../i18n/config";
+
+const locale: Locale = "en";
+
+export function getStaticPaths() {
+  return getSubPaths("en");
+}
+
+const { categorySlug, subSlug, subName } = Astro.props;
+const { category, subCategory, quizzes, featured, availableGameTypes, quizzesByType } = resolveSubcategoryData(categorySlug, subSlug, subName, locale);
+const lp = (path: string) => localePath(path, locale);
+---
+
+<Layout title={`${subName} Quiz - ${category.name} - Wizy`} description={subCategory.description} locale={locale}>
+  <div class="max-w-7xl mx-auto px-4 pt-6">
+    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-2" aria-label="Breadcrumb">
+      <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+      <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <a href={lp(`/${categorySlug}`)} class="hover:text-violet-600 transition-colors font-medium">{category.name}</a>
+      <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="text-gray-700 font-semibold">{subName}</span>
+    </nav>
+  </div>
+  <CategoryPage
+    client:load
+    category={subCategory}
+    quizzes={quizzes}
+    featured={featured}
+    gameTypes={availableGameTypes}
+    quizzesByType={quizzesByType}
+    locale={locale}
+  />
+</Layout>

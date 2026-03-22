@@ -1,38 +1,52 @@
 ---
+import { localePath } from "../utils/base";
+import { categoryIcons } from "../data/icons";
+import { getCategories } from "../data/categories";
+import { t } from "../i18n/ui";
+import { locales, defaultLocale } from "../i18n/config";
+import type { Locale } from "../i18n/config";
+
+interface Props { locale?: Locale; }
+const { locale = "en" } = Astro.props;
+const lp = (path: string) => localePath(path, locale);
 const currentPath = Astro.url.pathname;
+const cats = getCategories(locale);
 
-const megaCategories = [
-  { label: "Culture Générale", href: "/categorie/culture-generale", color: "bg-yellow-500", tags: ["Quiz culture G", "Facile", "Difficile", "Miss France", "Gratuit"], topVol: "37 400" },
-  { label: "Cinéma & Séries", href: "/categorie/cinema", color: "bg-pink-500", tags: ["Harry Potter", "Disney", "Marvel", "Star Wars", "One Piece"], topVol: "7 100" },
-  { label: "Géographie", href: "/categorie/geographie", color: "bg-blue-500", tags: ["Drapeaux", "Pays du monde", "Capitales", "Europe", "Villes"], topVol: "9 200" },
-  { label: "Musique", href: "/categorie/musique", color: "bg-purple-500", tags: ["Blind test", "Années 80", "Rap", "Classique", "Disney"], topVol: "5 100" },
-  { label: "Histoire", href: "/categorie/histoire", color: "bg-orange-500", tags: ["Brevet", "France", "Guerres", "Napoléon", "Moyen Âge"], topVol: "2 000" },
-  { label: "Sport & Football", href: "/categorie/sport", color: "bg-emerald-500", tags: ["Football", "JO", "NBA", "Boxe", "F1", "Tennis"], topVol: "3 600" },
-  { label: "Personnalité", href: "/categorie/personnalite", color: "bg-fuchsia-500", tags: ["Test perso", "Orientation", "Métier", "Animal totem"], topVol: "25 500" },
-  { label: "Amour & Amitié", href: "/categorie/amour", color: "bg-red-500", tags: ["Entre amis", "Couple", "BFF", "Meilleure amie"], topVol: "2 100" },
-  { label: "Animaux & Nature", href: "/categorie/animaux", color: "bg-teal-500", tags: ["Chiens", "Dinosaures", "Sauvages", "Marins"], topVol: "800" },
-  { label: "Logos & Marques", href: "/categorie/logos", color: "bg-sky-500", tags: ["Logo quiz", "Marques", "Voitures", "Sport"], topVol: "1 800" },
-  { label: "Scolaire", href: "/categorie/scolaire", color: "bg-amber-500", tags: ["Brevet", "Figure de style", "Orthographe", "Anglais"], topVol: "3 300" },
-  { label: "Jeux Vidéo", href: "/categorie/jeux-video", color: "bg-violet-500", tags: ["Pokémon", "Brawl Stars", "Fortnite", "Zelda", "Mario"], topVol: "1 600" },
-  { label: "Sciences & Tech", href: "/categorie/sciences", color: "bg-cyan-500", tags: ["Planètes", "Maths", "Corps humain", "Espace"], topVol: "1 900" },
-  { label: "Littérature", href: "/categorie/litterature", color: "bg-rose-600", tags: ["Mythologie", "Tintin", "Astérix", "BD", "Poésie"], topVol: "800" },
-  { label: "Fêtes & Cuisine", href: "/categorie/fetes", color: "bg-lime-600", tags: ["Noël", "Halloween", "Cuisine", "Baby Shower"], topVol: "880" },
-];
+// --- Language switcher URL helpers ---
+const pagePath = currentPath.replace(/^\/?/, "/");
+// Strip current locale prefix so we have a locale-neutral path
+const strippedPath =
+  locale !== defaultLocale && pagePath.startsWith(`/${locale}`)
+    ? pagePath.slice(`/${locale}`.length) || "/"
+    : pagePath;
 
-const trendingChips = [
-  "Quiz culture générale", "Quiz drapeaux", "Quiz Harry Potter",
-  "Blind test", "Quiz football", "Quiz Disney", "Quiz Pokémon",
-  "Test personnalité", "Quiz capitales",
-];
+const localeLabels: Record<Locale, string> = { en: "English", fr: "Français", es: "Español" };
+const localeShort: Record<Locale, string> = { en: "EN", fr: "FR", es: "ES" };
+const localeSwitchLinks = locales.map((l) => ({
+  locale: l,
+  href: localePath(strippedPath, l),
+  label: localeLabels[l],
+  short: localeShort[l],
+  active: l === locale,
+}));
+// SVG flags (4x3 ratio, US/FR/ES)
+const flags: Record<Locale, string> = {
+  en: `<svg viewBox="0 0 60 30" class="w-5 h-3.5 rounded-sm shrink-0"><rect width="60" height="30" fill="#fff"/><g fill="#B22234"><rect width="60" height="2.31"/><rect y="4.62" width="60" height="2.31"/><rect y="9.23" width="60" height="2.31"/><rect y="13.85" width="60" height="2.31"/><rect y="18.46" width="60" height="2.31"/><rect y="23.08" width="60" height="2.31"/><rect y="27.69" width="60" height="2.31"/></g><rect width="24" height="16.15" fill="#3C3B6E"/><g fill="#fff" font-size="2"><text x="2" y="2.5">★</text><text x="6" y="2.5">★</text><text x="10" y="2.5">★</text><text x="14" y="2.5">★</text><text x="18" y="2.5">★</text><text x="4" y="5.2">★</text><text x="8" y="5.2">★</text><text x="12" y="5.2">★</text><text x="16" y="5.2">★</text><text x="2" y="7.9">★</text><text x="6" y="7.9">★</text><text x="10" y="7.9">★</text><text x="14" y="7.9">★</text><text x="18" y="7.9">★</text><text x="4" y="10.6">★</text><text x="8" y="10.6">★</text><text x="12" y="10.6">★</text><text x="16" y="10.6">★</text><text x="2" y="13.3">★</text><text x="6" y="13.3">★</text><text x="10" y="13.3">★</text><text x="14" y="13.3">★</text><text x="18" y="13.3">★</text></g></svg>`,
+  fr: `<svg viewBox="0 0 3 2" class="w-5 h-3.5 rounded-sm shrink-0"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg>`,
+  es: `<svg viewBox="0 0 3 2" class="w-5 h-3.5 rounded-sm shrink-0"><rect width="3" height="2" fill="#AA151B"/><rect y="0.5" width="3" height="1" fill="#F1BF00"/></svg>`,
+};
+
+const megaCategories = cats.map((cat) => ({
+  label: cat.name, slug: cat.slug, href: lp(`/${cat.slug}`), color: cat.color,
+  tags: cat.subcategories.slice(0, 5), topVol: "1 000",
+}));
+
+const trendingChips = cats.map((c) => `Quiz ${c.name}`);
 
 const navLinks = [
-  { label: "Tous les Quiz", href: "/", megamenu: true },
-  { label: "Culture G", href: "/categorie/culture-generale" },
-  { label: "Sport", href: "/categorie/sport" },
-  { label: "Géographie", href: "/categorie/geographie" },
-  { label: "Personnalité", href: "/categorie/personnalite" },
-  { label: "Question du Jour", href: "/" },
-  { label: "Créer un Quiz", href: "/creer", highlight: true },
+  { label: t(locale, "nav.categories"), href: lp("/"), megamenu: true },
+  ...cats.slice(0, 3).map((c) => ({ label: c.name, href: lp(`/${c.slug}`) })),
+  { label: t(locale, "nav.create"), href: lp("/creer"), highlight: true },
 ];
 ---
 
@@ -40,7 +54,7 @@ const navLinks = [
   {/* ===== ROW 1: Logo + Search + Mon compte ===== */}
   <div class="bg-[#1a0e42]">
     <div class="max-w-7xl mx-auto px-4 flex items-center h-14 gap-4">
-      <a href="/" class="flex items-center gap-2 shrink-0 group">
+      <a href={lp('/')} class="flex items-center gap-2 shrink-0 group">
         <div class="w-10 h-10 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform border border-white/20">
           <span class="text-white font-display font-black text-xl leading-none">W</span>
         </div>
@@ -51,7 +65,7 @@ const navLinks = [
 
       <div class="flex-1 max-w-lg mx-auto hidden md:block">
         <div class="relative">
-          <input type="text" placeholder="Rechercher un quiz, une catégorie..." class="w-full h-9 pl-4 pr-12 rounded bg-white/10 border border-white/20 text-white placeholder-white/40 text-sm focus:outline-none focus:bg-white/15 focus:border-white/40 transition-all" />
+          <input type="text" placeholder={t(locale, "nav.search")} class="w-full h-9 pl-4 pr-12 rounded bg-white/10 border border-white/20 text-white placeholder-white/40 text-sm focus:outline-none focus:bg-white/15 focus:border-white/40 transition-all" />
           <button class="absolute right-0 top-0 h-9 w-10 rounded-r bg-yellow-500 hover:bg-yellow-400 flex items-center justify-center transition-colors">
             <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
           </button>
@@ -59,35 +73,66 @@ const navLinks = [
       </div>
 
       <div class="flex items-center gap-2 ml-auto shrink-0">
+        {/* Language switcher dropdown */}
+        <div class="relative group hidden sm:block mr-1">
+          <button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-medium transition-all">
+            <Fragment set:html={flags[locale]} />
+            <span class="text-xs font-bold">{localeShort[locale]}</span>
+            <svg class="w-3 h-3 text-white/60 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-2xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0 z-50">
+            <div class="p-1">
+              {localeSwitchLinks.map((l) => (
+                <a
+                  href={l.href}
+                  class={`flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors ${
+                    l.active
+                      ? "bg-violet-50 text-violet-700 font-semibold"
+                      : "text-gray-700 hover:bg-gray-50"
+                  }`}
+                >
+                  <Fragment set:html={flags[l.locale]} />
+                  <span>{l.label}</span>
+                  {l.active && (
+                    <svg class="w-4 h-4 ml-auto text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  )}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
         <div class="relative group hidden sm:block">
           <button class="flex items-center gap-2 px-4 py-1.5 rounded bg-white text-[#1a0e42] text-sm font-bold hover:bg-gray-100 transition-all shadow-sm">
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-            Mon compte
+            {t(locale, "nav.account")}
           </button>
           <div class="absolute top-full right-0 mt-1 w-52 bg-white rounded-lg shadow-2xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0 z-50">
             <div class="p-1.5">
-              <a href="/connexion" class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition-colors">
+              <a href={lp('/connexion')} class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition-colors">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" /></svg>
-                Se connecter
+                {t(locale, "auth.login")}
               </a>
-              <a href="/inscription" class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-bold text-violet-700 hover:bg-violet-50 transition-colors">
+              <a href={lp('/inscription')} class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-bold text-violet-700 hover:bg-violet-50 transition-colors">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" /></svg>
-                Créer un compte
+                {t(locale, "auth.signup")}
               </a>
               <div class="border-t border-gray-100 my-1"></div>
-              <a href="/creer" class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition-colors">
+              <a href={lp('/creer')} class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition-colors">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
-                Créer un quiz
+                {t(locale, "nav.create")}
               </a>
-              <a href="/classement" class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition-colors">
+              <a href={lp('/classement')} class="flex items-center gap-3 px-3 py-2.5 rounded text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition-colors">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
-                Classement
+                {t(locale, "ranking.title")}
               </a>
             </div>
           </div>
         </div>
-        <button class="lg:hidden flex items-center justify-center w-9 h-9 rounded text-white hover:bg-white/10 transition-colors" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        <a href={lp('/connexion')} class="sm:hidden flex items-center justify-center w-10 h-10 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-colors" aria-label={t(locale, "auth.login")}>
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+        </a>
+        <button class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-white hover:bg-white/10 transition-colors" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
         </button>
       </div>
     </div>
@@ -118,9 +163,9 @@ const navLinks = [
 
                 {/* Trending chips */}
                 <div class="bg-gray-50 border-b border-gray-100 px-4 py-2 flex items-center gap-2 flex-wrap">
-                  <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest shrink-0">Tendances</span>
+                  <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest shrink-0">{t(locale, "home.trending")}</span>
                   {trendingChips.map((chip) => (
-                    <a href="/" class="text-[11px] font-semibold text-gray-500 hover:text-violet-700 bg-white border border-gray-200 hover:border-violet-300 px-2 py-0.5 rounded transition-colors">{chip}</a>
+                    <a href={lp('/')} class="text-[11px] font-semibold text-gray-500 hover:text-violet-700 bg-white border border-gray-200 hover:border-violet-300 px-2 py-0.5 rounded transition-colors">{chip}</a>
                   ))}
                 </div>
 
@@ -128,7 +173,7 @@ const navLinks = [
                 <div class="p-3 grid grid-cols-3 gap-1.5">
                   {megaCategories.map((cat) => (
                     <a href={cat.href} class="group/card flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-violet-50 transition-colors">
-                      <span class={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white shrink-0 ${cat.color}`}>{cat.label.substring(0, 2)}</span>
+                      <span class={`w-8 h-8 rounded-lg flex items-center justify-center text-white shrink-0 p-1.5 ${cat.color}`} set:html={categoryIcons[cat.slug] || cat.label.substring(0, 2)}></span>
                       <div class="min-w-0 flex-1">
                         <div class="flex items-center gap-1.5">
                           <span class="text-[13px] font-bold text-gray-800 group-hover/card:text-violet-700 leading-none">{cat.label}</span>
@@ -146,8 +191,8 @@ const navLinks = [
 
                 {/* Footer */}
                 <div class="border-t border-gray-100 flex items-center justify-between px-4 py-2 bg-gray-50">
-                  <a href="/" class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">Voir tous les quiz →</a>
-                  <a href="/creer" class="text-xs font-bold text-yellow-600 hover:text-yellow-700 bg-yellow-50 hover:bg-yellow-100 px-3 py-1 rounded transition-colors">Créer mon quiz</a>
+                  <a href={lp('/')} class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">{t(locale, "home.seeAll")} →</a>
+                  <a href={lp('/creer')} class="text-xs font-bold text-yellow-600 hover:text-yellow-700 bg-yellow-50 hover:bg-yellow-100 px-3 py-1 rounded transition-colors">{t(locale, "nav.create")}</a>
                 </div>
               </div>
             )}
@@ -161,7 +206,7 @@ const navLinks = [
   <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-[#241558]">
     <div class="max-w-7xl mx-auto px-4 py-3 space-y-1">
       <div class="relative mb-3">
-        <input type="text" placeholder="Rechercher un quiz..." class="w-full h-10 pl-4 pr-12 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:bg-white/15 focus:border-white/40" />
+        <input type="text" placeholder={t(locale, "nav.search")} class="w-full h-10 pl-4 pr-12 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:bg-white/15 focus:border-white/40" />
         <button class="absolute right-0 top-0 h-10 w-11 rounded-r bg-yellow-500 flex items-center justify-center">
           <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
         </button>
@@ -170,8 +215,29 @@ const navLinks = [
         <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium transition-colors">{cat.label}</a>
       ))}
       <div class="border-t border-white/10 my-2"></div>
-      <a href="/creer" class="flex items-center gap-3 px-3 py-2.5 rounded bg-yellow-500 text-white text-sm font-bold">Créer un quiz</a>
-      <a href="/connexion" class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium">Mon compte</a>
+      <a href={lp('/creer')} class="flex items-center gap-3 px-3 py-2.5 rounded bg-yellow-500 text-white text-sm font-bold">{t(locale, "nav.create")}</a>
+      <a href={lp('/connexion')} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium">{t(locale, "auth.login")}</a>
+      <a href={lp('/classement')} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium">{t(locale, "ranking.title")}</a>
+      <div class="border-t border-white/10 my-2"></div>
+      <div class="px-3 py-1 space-y-0.5">
+        <p class="text-xs font-bold text-white/40 uppercase tracking-wider mb-1.5">{t(locale, "misc.language")}</p>
+        {localeSwitchLinks.map((l) => (
+          <a
+            href={l.href}
+            class={`flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm transition-colors ${
+              l.active
+                ? "bg-white/15 text-white font-semibold"
+                : "text-white/70 hover:text-white hover:bg-white/10"
+            }`}
+          >
+            <Fragment set:html={flags[l.locale]} />
+            <span>{l.label}</span>
+            {l.active && (
+              <svg class="w-4 h-4 ml-auto text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            )}
+          </a>
+        ))}
+      </div>
     </div>
   </div>
 </header>

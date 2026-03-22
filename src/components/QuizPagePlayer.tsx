@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
+import { withBase } from "../utils/base";
 
 interface Props {
   quiz: QuizData;
@@ -192,21 +193,27 @@ export default function QuizPagePlayer({ quiz }: Props) {
   }, [answeredCount, totalQuestions, score, quiz.slug]);
 
   const difficultyColor: Record<string, string> = {
-    Facile: "text-green-700 bg-green-100",
-    Moyen: "text-amber-700 bg-amber-100",
-    Difficile: "text-red-700 bg-red-100",
+    "Easy": "text-green-700 bg-green-100",
+    "Medium": "text-amber-700 bg-amber-100",
+    "Hard": "text-red-700 bg-red-100",
+    "Facile": "text-green-700 bg-green-100",
+    "Moyen": "text-amber-700 bg-amber-100",
+    "Difficile": "text-red-700 bg-red-100",
+    "Fácil": "text-green-700 bg-green-100",
+    "Medio": "text-amber-700 bg-amber-100",
+    "Difícil": "text-red-700 bg-red-100",
   };
 
   const rank =
     scorePercent >= 90
-      ? { label: "Legende", color: "bg-amber-500", icon: "S" }
+      ? { label: "Legend", color: "bg-amber-500", icon: "S" }
       : scorePercent >= 70
         ? { label: "Expert", color: "bg-violet-500", icon: "A" }
         : scorePercent >= 50
-          ? { label: "Confirme", color: "bg-blue-500", icon: "B" }
+          ? { label: "Skilled", color: "bg-blue-500", icon: "B" }
           : scorePercent >= 30
-            ? { label: "Apprenti", color: "bg-green-500", icon: "C" }
-            : { label: "Debutant", color: "bg-gray-500", icon: "D" };
+            ? { label: "Apprentice", color: "bg-green-500", icon: "C" }
+            : { label: "Beginner", color: "bg-gray-500", icon: "D" };
 
   const handleStartQuiz = useCallback(() => {
     setHasStarted(true);
@@ -221,59 +228,51 @@ export default function QuizPagePlayer({ quiz }: Props) {
     <div className="flex gap-6">
       {/* ===== LEFT SIDEBAR (sticky - desktop only) ===== */}
       <div className="hidden lg:block lg:w-48 flex-shrink-0">
-        <div className="sticky top-[130px] space-y-4">
+        <div className="sticky top-[130px] max-h-[calc(100vh-150px)] overflow-y-auto space-y-3 pr-1 scrollbar-thin">
 
           {/* Progress */}
-          <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
-            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Progression</div>
-            <div className="text-center mb-3">
-              <div className="text-3xl font-display font-black text-gray-900">
-                {answeredCount}<span className="text-lg text-gray-400">/{totalQuestions}</span>
+          <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
+            <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-2">Progress</div>
+            <div className="text-center mb-2">
+              <div className="text-2xl font-display font-black text-gray-900">
+                {answeredCount}<span className="text-sm text-gray-400">/{totalQuestions}</span>
               </div>
-              <div className="text-xs text-gray-500 mt-0.5">questions</div>
             </div>
-            <div className="h-2 bg-gray-100 rounded-full overflow-hidden mb-3">
+            <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden mb-2">
               <div
                 className="h-full rounded-full bg-gradient-to-r from-violet-500 to-purple-600 transition-all duration-700 ease-out"
                 style={{ width: `${(answeredCount / totalQuestions) * 100}%` }}
               />
             </div>
-            <div className="flex justify-between text-xs">
-              <span className="text-green-600 font-bold">{score} correcte{score > 1 ? "s" : ""}</span>
-              <span className="text-red-500 font-bold">{answeredCount - score} erreur{(answeredCount - score) > 1 ? "s" : ""}</span>
+            <div className="flex justify-between text-[10px]">
+              <span className="text-green-600 font-bold">{score} correct</span>
+              <span className="text-red-500 font-bold">{answeredCount - score} wrong</span>
             </div>
           </div>
 
           {/* Score + XP */}
           {hasStarted && (
-            <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Score</div>
-              <div className="flex items-center gap-3 mb-3">
-                <div className={`w-10 h-10 ${rank.color} rounded-xl flex items-center justify-center text-lg font-display font-black text-white`}>
+            <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className={`w-8 h-8 ${rank.color} rounded-lg flex items-center justify-center text-sm font-display font-black text-white`}>
                   {rank.icon}
                 </div>
                 <div>
-                  <div className="text-lg font-display font-bold text-gray-900">{scorePercent}%</div>
-                  <div className="text-[11px] text-gray-500">{rank.label}</div>
+                  <div className="text-sm font-display font-bold text-gray-900">{scorePercent}%</div>
+                  <div className="text-[10px] text-gray-500">{rank.label}</div>
                 </div>
-              </div>
-              <div className="bg-gradient-to-r from-violet-50 to-purple-50 rounded-lg p-2.5 border border-violet-100">
-                <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-semibold text-violet-600 uppercase">XP</span>
-                  <span className="text-base font-display font-bold text-violet-700">+{totalXp}</span>
+                <div className="ml-auto bg-violet-50 rounded-lg px-2 py-1 border border-violet-100">
+                  <span className="text-xs font-display font-bold text-violet-700">+{totalXp} XP</span>
                 </div>
-                {lastXpGain > 0 && (
-                  <div className="text-[10px] text-violet-500 text-right mt-0.5">+{lastXpGain} dernier gain</div>
-                )}
               </div>
             </div>
           )}
 
           {/* Question navigator */}
           {hasStarted && (
-            <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Questions</div>
-              <div className="grid grid-cols-5 gap-1">
+            <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
+              <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Questions</div>
+              <div className="grid grid-cols-5 gap-0.5">
                 {quiz.questions.map((q, i) => {
                   const qState = questionStates[i];
                   return (
@@ -298,81 +297,60 @@ export default function QuizPagePlayer({ quiz }: Props) {
             </div>
           )}
 
-          {/* Bonus buttons - flashy golden Roblox style */}
+          {/* Bonus buttons - compact */}
           {hasStarted && !showResults && (
-            <div className="relative rounded-xl">
-              {/* Animated golden border with glow */}
-              <div className="absolute -inset-[1px] rounded-xl bonus-shimmer" />
-              <div className="relative rounded-[10px] bg-gradient-to-b from-amber-50 via-white to-amber-50/50 p-4">
-                {/* Header with sparkle stars */}
-                <div className="flex items-center justify-center gap-1.5 mb-3">
-                  <svg className="w-3.5 h-3.5 text-amber-400 bonus-star" fill="currentColor" viewBox="0 0 24 24" style={{ animationDelay: "0s" }}>
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                  <svg className="w-4 h-4 text-amber-500 bonus-star" fill="currentColor" viewBox="0 0 24 24" style={{ animationDelay: "0.6s" }}>
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                  <span className="text-sm font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 uppercase tracking-wider">Bonus</span>
-                  <svg className="w-4 h-4 text-amber-500 bonus-star" fill="currentColor" viewBox="0 0 24 24" style={{ animationDelay: "1.2s" }}>
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                  <svg className="w-3.5 h-3.5 text-amber-400 bonus-star" fill="currentColor" viewBox="0 0 24 24" style={{ animationDelay: "1.8s" }}>
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                </div>
-                <div className="space-y-2.5">
-                  <button
-                    onClick={handleBonus5050}
-                    disabled={bonus5050 <= 0 || !canUseBonus}
-                    className={`w-full flex items-center gap-2.5 px-3 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      bonus5050 > 0 && canUseBonus
-                        ? "bonus-btn-active bg-gradient-to-r from-amber-100 via-yellow-50 to-amber-100 text-amber-900 border-2 border-amber-300 shadow-lg shadow-amber-200/40 hover:shadow-xl hover:shadow-amber-300/50 hover:-translate-y-1 hover:scale-[1.02] cursor-pointer"
-                        : "bg-gray-100 text-gray-400 border border-gray-200 cursor-default opacity-40"
-                    }`}
-                  >
-                    <span className={`w-9 h-9 rounded-xl flex items-center justify-center text-[11px] font-black text-white shadow-lg ${bonus5050 > 0 ? "bg-gradient-to-br from-amber-400 via-yellow-400 to-amber-500" : "bg-gray-300"}`}>
-                      50
-                    </span>
-                    <span className="flex-1 font-bold">50/50</span>
-                    <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${bonus5050 > 0 ? "bg-amber-300 text-amber-900" : "bg-gray-200 text-gray-400"}`}>{bonus5050}x</span>
-                  </button>
+            <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
+              <div className="flex items-center justify-center gap-1 mb-2">
+                <svg className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                <span className="text-[10px] font-black text-amber-600 uppercase tracking-wider">Bonus</span>
+                <svg className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+              </div>
+              <div className="space-y-1.5">
+                <button
+                  onClick={handleBonus5050}
+                  disabled={bonus5050 <= 0 || !canUseBonus}
+                  className={`w-full flex items-center gap-2 px-2 py-2 rounded-lg text-xs font-medium transition-all ${
+                    bonus5050 > 0 && canUseBonus
+                      ? "bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 cursor-pointer"
+                      : "bg-gray-50 text-gray-400 border border-gray-100 cursor-default opacity-40"
+                  }`}
+                >
+                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-[9px] font-black text-white ${bonus5050 > 0 ? "bg-gradient-to-br from-amber-400 to-amber-500" : "bg-gray-300"}`}>50</span>
+                  <span className="flex-1 font-bold">50/50</span>
+                  <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full ${bonus5050 > 0 ? "bg-amber-200 text-amber-800" : "bg-gray-200 text-gray-400"}`}>{bonus5050}x</span>
+                </button>
 
-                  <button
-                    onClick={handleBonusSecondChance}
-                    disabled={bonusSecondChance <= 0 || !canUseBonus}
-                    className={`w-full flex items-center gap-2.5 px-3 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      bonusSecondChance > 0 && canUseBonus
-                        ? "bonus-btn-active bg-gradient-to-r from-blue-100 via-sky-50 to-blue-100 text-blue-900 border-2 border-blue-300 shadow-lg shadow-blue-200/40 hover:shadow-xl hover:shadow-blue-300/50 hover:-translate-y-1 hover:scale-[1.02] cursor-pointer"
-                        : "bg-gray-100 text-gray-400 border border-gray-200 cursor-default opacity-40"
-                    }`}
-                  >
-                    <span className={`w-9 h-9 rounded-xl flex items-center justify-center text-white shadow-lg ${bonusSecondChance > 0 ? "bg-gradient-to-br from-blue-400 via-sky-400 to-blue-500" : "bg-gray-300"}`}>
-                      <svg className="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" />
-                      </svg>
-                    </span>
-                    <span className="flex-1 font-bold">2e chance</span>
-                    <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${bonusSecondChance > 0 ? "bg-blue-300 text-blue-900" : "bg-gray-200 text-gray-400"}`}>{bonusSecondChance}x</span>
-                  </button>
+                <button
+                  onClick={handleBonusSecondChance}
+                  disabled={bonusSecondChance <= 0 || !canUseBonus}
+                  className={`w-full flex items-center gap-2 px-2 py-2 rounded-lg text-xs font-medium transition-all ${
+                    bonusSecondChance > 0 && canUseBonus
+                      ? "bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 cursor-pointer"
+                      : "bg-gray-50 text-gray-400 border border-gray-100 cursor-default opacity-40"
+                  }`}
+                >
+                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusSecondChance > 0 ? "bg-gradient-to-br from-blue-400 to-blue-500" : "bg-gray-300"}`}>
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" /></svg>
+                  </span>
+                  <span className="flex-1 font-bold">2e chance</span>
+                  <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full ${bonusSecondChance > 0 ? "bg-blue-200 text-blue-800" : "bg-gray-200 text-gray-400"}`}>{bonusSecondChance}x</span>
+                </button>
 
-                  <button
-                    onClick={handleBonusIndice}
-                    disabled={bonusIndice <= 0 || !canUseBonus}
-                    className={`w-full flex items-center gap-2.5 px-3 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      bonusIndice > 0 && canUseBonus
-                        ? "bonus-btn-active bg-gradient-to-r from-violet-100 via-purple-50 to-violet-100 text-violet-900 border-2 border-violet-300 shadow-lg shadow-violet-200/40 hover:shadow-xl hover:shadow-violet-300/50 hover:-translate-y-1 hover:scale-[1.02] cursor-pointer"
-                        : "bg-gray-100 text-gray-400 border border-gray-200 cursor-default opacity-40"
-                    }`}
-                  >
-                    <span className={`w-9 h-9 rounded-xl flex items-center justify-center text-white shadow-lg ${bonusIndice > 0 ? "bg-gradient-to-br from-violet-400 via-purple-400 to-violet-500" : "bg-gray-300"}`}>
-                      <svg className="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                      </svg>
-                    </span>
-                    <span className="flex-1 font-bold">Indice</span>
-                    <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${bonusIndice > 0 ? "bg-violet-300 text-violet-900" : "bg-gray-200 text-gray-400"}`}>{bonusIndice}x</span>
-                  </button>
-                </div>
+                <button
+                  onClick={handleBonusIndice}
+                  disabled={bonusIndice <= 0 || !canUseBonus}
+                  className={`w-full flex items-center gap-2 px-2 py-2 rounded-lg text-xs font-medium transition-all ${
+                    bonusIndice > 0 && canUseBonus
+                      ? "bg-violet-50 text-violet-800 border border-violet-200 hover:bg-violet-100 cursor-pointer"
+                      : "bg-gray-50 text-gray-400 border border-gray-100 cursor-default opacity-40"
+                  }`}
+                >
+                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusIndice > 0 ? "bg-gradient-to-br from-violet-400 to-violet-500" : "bg-gray-300"}`}>
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                  </span>
+                  <span className="flex-1 font-bold">Indice</span>
+                  <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full ${bonusIndice > 0 ? "bg-violet-200 text-violet-800" : "bg-gray-200 text-gray-400"}`}>{bonusIndice}x</span>
+                </button>
               </div>
             </div>
           )}
@@ -387,7 +365,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
           {quiz.coverImage && (
             <>
               <img
-                src={quiz.coverImage}
+                src={withBase(quiz.coverImage)}
                 alt={quiz.title}
                 className="w-full aspect-[2.5/1] object-cover"
                 loading="eager"
@@ -414,18 +392,18 @@ export default function QuizPagePlayer({ quiz }: Props) {
         {!hasStarted && (
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 md:p-6 space-y-4">
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              {quiz.description} Reponds aux {totalQuestions} questions, decouvre les explications detaillees apres chaque reponse et compare ton score avec tes amis.
-              {quiz.difficulty === "Facile"
-                ? " Ce quiz est accessible a tous, ideal pour debuter !"
-                : quiz.difficulty === "Difficile"
-                  ? " Attention, seuls les experts s'en sortiront sans erreur."
-                  : " Un bon niveau de connaissances est recommande."}
+              {quiz.description} Answer all {totalQuestions} questions, discover detailed explanations after each answer and compare your score with friends.
+              {(quiz.difficulty === "Facile" || quiz.difficulty === "Easy" || quiz.difficulty === "Fácil")
+                ? " This quiz is accessible to everyone, great for beginners!"
+                : (quiz.difficulty === "Difficile" || quiz.difficulty === "Hard" || quiz.difficulty === "Difícil")
+                  ? " Warning, only experts will get through without mistakes."
+                  : " A good level of knowledge is recommended."}
             </p>
             <button
               onClick={handleStartQuiz}
               className="w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold text-base py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
             >
-              Commencer le quiz
+              Start quiz
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -551,7 +529,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                   {/* Second chance indicator */}
                   {state.hasSecondChance && !state.hasAnswered && (
                     <div className="mt-2 ml-12 text-xs text-blue-600 font-medium bg-blue-50 px-2.5 py-1 rounded-full inline-block">
-                      Seconde chance active
+                      Second chance active
                     </div>
                   )}
                 </div>
@@ -571,7 +549,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                   <div className="px-4 md:px-6 pb-3 md:pb-4">
                     <div className="rounded-xl overflow-hidden">
                       <img
-                        src={question.image}
+                        src={withBase(question.image)}
                         alt={question.question}
                         className="w-full max-h-40 md:max-h-64 object-cover"
                         loading="lazy"
@@ -660,7 +638,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                       }`}
                     >
                       <span className="font-bold">
-                        {state.isCorrect ? "Bonne reponse ! " : "Rate ! "}
+                        {state.isCorrect ? "Correct! " : "Wrong! "}
                       </span>
                       {question.explanation}
                     </div>
@@ -676,7 +654,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
           <div ref={resultsRef} className="scroll-mt-28">
             <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-lg overflow-hidden">
               <div className="bg-gradient-to-r from-violet-600 to-purple-700 p-6 md:p-8 text-center text-white">
-                <div className="text-sm font-medium text-white/70 mb-2">Ton resultat</div>
+                <div className="text-sm font-medium text-white/70 mb-2">Your result</div>
                 <div className="flex items-center justify-center gap-4 mb-3">
                   <div className={`w-16 h-16 ${rank.color} rounded-2xl flex items-center justify-center text-3xl font-display font-black text-white shadow-lg`}>
                     {rank.icon}
@@ -688,14 +666,14 @@ export default function QuizPagePlayer({ quiz }: Props) {
                 </div>
                 <p className="text-white/80 text-sm">
                   {scorePercent >= 80
-                    ? "Excellent ! Tu maitrises le sujet !"
+                    ? "Excellent! You've mastered this topic!"
                     : scorePercent >= 50
-                      ? "Pas mal ! Tu as de bonnes bases."
-                      : "Continue a t'entrainer, tu vas progresser !"}
+                      ? "Not bad! You have a solid foundation."
+                      : "Keep practicing, you'll improve!"}
                 </p>
                 {/* XP earned */}
                 <div className="mt-4 bg-white/15 backdrop-blur-sm rounded-xl p-3 inline-block">
-                  <div className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-0.5">Experience gagnee</div>
+                  <div className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-0.5">XP earned</div>
                   <div className="text-2xl font-display font-black animate-score-reveal">+{totalXp} XP</div>
                 </div>
               </div>
@@ -705,11 +683,11 @@ export default function QuizPagePlayer({ quiz }: Props) {
                 <div className="grid grid-cols-3 gap-3 mb-6">
                   <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
                     <div className="text-3xl font-display font-bold text-green-600">{score}</div>
-                    <div className="text-xs text-green-700 font-medium mt-1">Correctes</div>
+                    <div className="text-xs text-green-700 font-medium mt-1">Correct</div>
                   </div>
                   <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
                     <div className="text-3xl font-display font-bold text-red-500">{totalQuestions - score}</div>
-                    <div className="text-xs text-red-600 font-medium mt-1">Erreurs</div>
+                    <div className="text-xs text-red-600 font-medium mt-1">Wrong</div>
                   </div>
                   <div className="bg-violet-50 border border-violet-200 rounded-xl p-4 text-center">
                     <div className="text-3xl font-display font-bold text-violet-600">{totalXp}</div>
@@ -719,7 +697,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
 
                 {/* Question timeline */}
                 <div className="mb-6">
-                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Detail par question</div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Question details</div>
                   <div className="flex items-center gap-1 flex-wrap">
                     {quiz.questions.map((q, i) => {
                       const wasCorrect = questionStates[i].isCorrect;
@@ -732,7 +710,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                               ? "bg-green-100 text-green-600 hover:bg-green-200"
                               : "bg-red-100 text-red-500 hover:bg-red-200"
                           }`}
-                          title={`Question ${i + 1}: ${wasCorrect ? "Correcte" : "Erreur"}`}
+                          title={`Question ${i + 1}: ${wasCorrect ? "Correct" : "Wrong"}`}
                         >
                           {i + 1}
                         </button>
@@ -750,11 +728,11 @@ export default function QuizPagePlayer({ quiz }: Props) {
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
-                    Rejouer
+                    Play again
                   </button>
                   <button
                     onClick={() => {
-                      const text = `${rank.icon} ${rank.label} - ${score}/${totalQuestions} au quiz "${quiz.title}" !`;
+                      const text = `${rank.icon} ${rank.label} - ${score}/${totalQuestions} on quiz "${quiz.title}"!`;
                       if (navigator.share) {
                         navigator.share({ text, url: window.location.href });
                       } else {
@@ -766,7 +744,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
                     </svg>
-                    Partager
+                    Share
                   </button>
                 </div>
               </div>

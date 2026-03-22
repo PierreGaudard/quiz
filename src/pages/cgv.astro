@@ -1,0 +1,116 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { localePath } from "../utils/base";
+import { t } from "../i18n/ui";
+import type { Locale } from "../i18n/config";
+
+const locale: Locale = "en";
+const lp = (path: string) => localePath(path, locale);
+---
+
+<Layout title="Terms of Use - Wizy" description="Terms of use for the Wizy website." locale={locale}>
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
+      <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+      <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="text-gray-700 font-semibold">Terms of Use</span>
+    </nav>
+
+    <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Terms of Use</h1>
+
+    <div class="prose prose-gray max-w-none space-y-8 text-sm leading-relaxed text-gray-700">
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Purpose</h2>
+        <p>These Terms of Use (hereinafter "ToU") define the rules for using the website <strong>Wizy</strong> (hereinafter "the Site"), accessible at <strong>https://pierregaudard.github.io/quiz</strong>, published by Pierre Gaudard.</p>
+        <p>Access to and use of the Site implies full and complete acceptance of these ToU.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Description of the service</h2>
+        <p>Wizy is a free online quiz platform that allows users to:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>Play quizzes on various topics (general knowledge, sports, cinema, geography, etc.)</li>
+          <li>Discover different game modes (Multiple Choice, True/False, Chrono, Estimation, Duel, Chronological Order)</li>
+          <li>Create and share their own quizzes</li>
+          <li>Track their progress and earn experience points (XP)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">3. Access to the service</h2>
+        <p>The Site is freely accessible to any user with Internet access. All costs related to accessing the Site (hardware, software, Internet subscription) are borne by the user.</p>
+        <p>Pierre Gaudard reserves the right to suspend, modify or discontinue access to the Site at any time, without notice or compensation.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. User-created quizzes</h2>
+        <p>Users have the ability to create their own quizzes using the built-in creation tool. By submitting a quiz, the user agrees to:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>Not publish illegal, defamatory, insulting, discriminatory, violent or sexual content</li>
+          <li>Not infringe on the intellectual property rights of third parties</li>
+          <li>Provide accurate information to the best of their ability</li>
+          <li>Not use the service for spam, advertising or commercial promotion</li>
+        </ul>
+        <p class="mt-2">User-created quizzes are <strong>subject to approval</strong> before official publication on the Site. Pierre Gaudard reserves the right to refuse, modify or delete any quiz that does not comply with these ToU, without prior notification.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">5. Intellectual property</h2>
+        <p>All elements of the Site (design, texts, images, logos, source code, editorial quizzes) are protected by intellectual property law and belong to Pierre Gaudard, unless otherwise stated.</p>
+        <p>By creating a quiz on the Site, the user grants Pierre Gaudard a <strong>non-exclusive, free and worldwide licence</strong> to use, reproduce, modify and distribute the quiz content on the Site.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Personal data</h2>
+        <p>The processing of personal data is described in our <a href={lp("/confidentialite")} class="text-violet-600 hover:text-violet-800 font-medium">Privacy Policy</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Liability</h2>
+        <p>Pierre Gaudard endeavours to ensure the accuracy of information published on the Site, but cannot guarantee the accuracy, completeness or timeliness of all content, particularly quizzes and their answers.</p>
+        <p>The user acknowledges that they use the Site at their own risk. Pierre Gaudard shall not be held liable for:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>Direct or indirect damages resulting from the use of the Site</li>
+          <li>Temporary service interruptions</li>
+          <li>Content of user-created quizzes</li>
+          <li>The use of quiz results for any purpose</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">8. User conduct</h2>
+        <p>The user agrees not to:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>Use the Site fraudulently or contrary to its intended purpose</li>
+          <li>Attempt to disrupt the operation of the Site (attacks, excessive scraping, etc.)</li>
+          <li>Impersonate a third party</li>
+          <li>Publish content contrary to public order and good morals</li>
+        </ul>
+        <p class="mt-2">In case of breach, Pierre Gaudard reserves the right to block the user's access to the Site.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">9. Hyperlinks</h2>
+        <p>The Site may contain links to third-party websites. Pierre Gaudard has no control over these sites and disclaims all liability for their content.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">10. Changes to the ToU</h2>
+        <p>Pierre Gaudard reserves the right to modify these ToU at any time. Changes take effect as soon as they are published on the Site. Continued use of the Site after modification constitutes acceptance of the new ToU.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">11. Applicable law and jurisdiction</h2>
+        <p>These ToU are governed by French law. Any dispute relating to the use of the Site shall be subject to the exclusive jurisdiction of the French courts.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">12. Contact</h2>
+        <p>For any questions regarding these ToU, you can contact us at: <strong>pierretartare94440@gmail.com</strong></p>
+      </section>
+
+      <p class="text-xs text-gray-400 pt-4 border-t border-gray-200">Last updated: March 2026</p>
+    </div>
+  </main>
+</Layout>

@@ -1,28 +1,43 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { MiniQCM, MiniVraiFaux, MiniEstimation } from "../components/MiniQuizzes";
-import { allQuizzes } from "../data/quizzes";
-import { categories, gameTypes } from "../data/categories";
+import DailyQuestion from "../components/DailyQuestion";
+import { getAllQuizzes } from "../data/quizzes";
+import { getCategories, getGameTypes } from "../data/categories";
 import { categoryIcons, gameTypeIcons } from "../data/icons";
+import { localePath, withBase } from "../utils/base";
+import { t } from "../i18n/ui";
+import type { Locale } from "../i18n/config";
 
-const mainCategorySlugs = ["sport", "cinema", "geographie", "culture-generale", "jeux-video", "histoire"];
-const mainCategories = categories.filter(c => mainCategorySlugs.includes(c.slug));
+const locale: Locale = "en";
+const lp = (path: string) => localePath(path, locale);
+const categories = getCategories(locale);
+const gameTypesData = getGameTypes(locale);
+const allQuizzes = getAllQuizzes(locale);
+
+const mainCategories = categories;
+const homepageCategories = categories;
 
 const popularQuizzes = [...allQuizzes].sort((a, b) => (b.playCount || 0) - (a.playCount || 0));
 const newestQuizzes = [...allQuizzes].slice(-4).reverse();
 const totalPlays = allQuizzes.reduce((sum, q) => sum + (q.playCount || 0), 0);
 
-// Question du jour
 const qdj = allQuizzes[0]?.questions[0];
 
 const DIFFICULTY_STYLE: Record<string, string> = {
+  "Easy": "text-green-700 bg-green-100",
+  "Medium": "text-amber-700 bg-amber-100",
+  "Hard": "text-red-700 bg-red-100",
   "Facile": "text-green-700 bg-green-100",
   "Moyen": "text-amber-700 bg-amber-100",
   "Difficile": "text-red-700 bg-red-100",
+  "Fácil": "text-green-700 bg-green-100",
+  "Medio": "text-amber-700 bg-amber-100",
+  "Difícil": "text-red-700 bg-red-100",
 };
 const GAME_TYPE_LABELS: Record<string, string> = {
-  "qcm": "QCM", "vrai-faux": "Vrai/Faux", "chrono": "Chrono",
-  "estimation": "Estimation", "duel": "Duel", "ordre": "Ordre",
+  "qcm": "MCQ", "vrai-faux": "True/False", "chrono": "Chrono",
+  "estimation": "Estimation", "duel": "Duel", "ordre": "Order",
 };
 
 function formatCount(n: number): string {
@@ -31,7 +46,7 @@ function formatCount(n: number): string {
 }
 ---
 
-<Layout title="Wizy - Teste tes connaissances avec des quiz fun et gratuits">
+<Layout title="Wizy - Test your knowledge with fun and free quizzes" locale={locale}>
   <main>
 
     {/* ===== HERO — texte à gauche + Question du Jour à droite ===== */}
@@ -41,16 +56,16 @@ function formatCount(n: number): string {
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_370px] gap-5 items-center">
           {/* Left */}
           <div class="space-y-5">
-            <p class="text-yellow-400 font-bold text-sm uppercase tracking-[0.15em]">La plateforme de quiz n°1 en France</p>
+            <p class="text-yellow-400 font-bold text-sm uppercase tracking-[0.15em]">The #1 quiz platform</p>
             <h1 class="font-display text-4xl md:text-[3.5rem] font-black text-white leading-[1.1]">
-              Des quiz pour<br/><span class="text-yellow-400">chaque passion</span>
+              Quizzes for<br/><span class="text-yellow-400">every passion</span>
             </h1>
             <p class="text-white/60 text-base md:text-lg max-w-lg leading-relaxed">
-              {allQuizzes.length * 40}+ questions rédigées par des experts, des explications à chaque réponse, 6 modes de jeu. Gratuit, sans inscription.
+              {allQuizzes.length * 40}+ questions written by experts, explanations with every answer, 6 game modes. Free, no sign-up required.
             </p>
             <div class="max-w-sm">
               <div class="relative">
-                <input type="text" placeholder="Football, Harry Potter, Drapeaux..." class="w-full h-11 pl-4 pr-14 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/30 text-sm focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all" />
+                <input type="text" placeholder="Football, Harry Potter, Flags..." class="w-full h-11 pl-4 pr-14 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/30 text-sm focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all" />
                 <button class="absolute right-1 top-1 h-9 w-11 rounded-md bg-yellow-500 hover:bg-yellow-400 flex items-center justify-center transition-colors">
                   <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </button>
@@ -61,25 +76,25 @@ function formatCount(n: number): string {
           {/* Right: Question du Jour */}
           <div class="bg-white rounded-xl p-5 shadow-2xl border border-gray-100">
             <div class="flex items-center gap-2 mb-4">
-              <span class="w-8 h-8 bg-violet-100 rounded-lg flex items-center justify-center text-xs font-bold text-violet-600">QJ</span>
+              <span class="w-8 h-8 bg-violet-100 rounded-lg flex items-center justify-center text-violet-600 p-1.5">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+              </span>
               <div>
-                <h3 class="font-display font-bold text-sm text-gray-900">Question du Jour</h3>
-                <p class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">18 Mars 2026</p>
+                <h3 class="font-display font-bold text-sm text-gray-900">Question of the Day</h3>
+                <p class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">March 18, 2026</p>
               </div>
-              <span class="ml-auto text-[10px] font-bold bg-violet-100 text-violet-600 px-2 py-0.5 rounded">Quotidien</span>
+              <span class="ml-auto text-[10px] font-bold bg-violet-100 text-violet-600 px-2 py-0.5 rounded">Daily</span>
             </div>
             {qdj && (
-              <div class="space-y-3">
-                {qdj.image && <img src={qdj.image} alt="" class="w-full aspect-video object-cover rounded-lg" />}
-                <p class="font-display font-bold text-gray-900 text-sm leading-snug">{qdj.question}</p>
-                <div class="grid grid-cols-2 gap-2">
-                  {qdj.answers.map((a) => (
-                    <button class="text-left text-xs font-semibold px-3 py-2.5 rounded-lg border border-gray-200 hover:border-violet-400 hover:bg-violet-50 text-gray-700 hover:text-violet-700 transition-all cursor-pointer">
-                      {a.text}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              <DailyQuestion
+                client:load
+                question={qdj.question}
+                answers={qdj.answers}
+                correctAnswer={qdj.correctAnswer}
+                explanation={qdj.explanation}
+                image={qdj.image ? lp(qdj.image) : undefined}
+                locale="en"
+              />
             )}
           </div>
         </div>
@@ -89,14 +104,14 @@ function formatCount(n: number): string {
     {/* ===== QUIZ POPULAIRES — scroll ronds ===== */}
     <section class="bg-gradient-to-r from-[#2d1b69] to-[#1a0e42] py-5 border-t border-white/5">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="font-display text-sm font-bold text-yellow-400 italic mb-4">Quizz Populaires</h2>
+        <h2 class="font-display text-sm font-bold text-yellow-400 italic mb-4">Popular Quizzes</h2>
         <div class="flex gap-5 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
           {popularQuizzes.slice(0, 10).map((quiz, i) => (
-            <a href={`/quiz/${quiz.slug}`} class="group shrink-0 flex flex-col items-center gap-2 w-[90px]">
+            <a href={lp(`/${quiz.slug}`)} class="group shrink-0 flex flex-col items-center gap-2 w-[90px]">
               <div class="relative">
                 <div class="w-[72px] h-[72px] rounded-full overflow-hidden border-[3px] border-yellow-400 group-hover:border-yellow-300 transition-colors shadow-lg">
                   {quiz.coverImage ? (
-                    <img src={quiz.coverImage} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
+                    <img src={lp(quiz.coverImage)} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
                   ) : (
                     <div class="w-full h-full bg-violet-600 flex items-center justify-center text-white font-bold text-lg">Q</div>
                   )}
@@ -117,12 +132,12 @@ function formatCount(n: number): string {
       {(() => {
         const featured = popularQuizzes[0];
         return featured && (
-          <a href={`/quiz/${featured.slug}`} class="group block relative rounded-2xl overflow-hidden aspect-[21/8]">
-            {featured.coverImage && <img src={featured.coverImage} alt={featured.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />}
+          <a href={lp(`/${featured.slug}`)} class="group block relative rounded-2xl overflow-hidden aspect-[21/8]">
+            {featured.coverImage && <img src={lp(featured.coverImage)} alt={featured.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />}
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
             <div class="relative h-full flex flex-col justify-center p-8 md:p-12 max-w-lg">
               <div class="flex items-center gap-2 mb-3">
-                <span class="text-[10px] font-bold bg-orange-500 text-white px-2 py-0.5 rounded">Quiz le plus joué</span>
+                <span class="text-[10px] font-bold bg-orange-500 text-white px-2 py-0.5 rounded">Most played quiz</span>
                 <span class={`text-[10px] font-bold px-2 py-0.5 rounded ${DIFFICULTY_STYLE[featured.difficulty]}`}>{featured.difficulty}</span>
                 <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-sm">{GAME_TYPE_LABELS[featured.gameType] || "QCM"}</span>
               </div>
@@ -130,7 +145,7 @@ function formatCount(n: number): string {
               <p class="text-sm text-white/60 line-clamp-2 mb-4">{featured.description}</p>
               <div class="flex items-center gap-4 text-xs text-white/50">
                 <span>{featured.questions.length} questions</span>
-                {featured.playCount && <span class="font-bold text-yellow-400">{formatCount(featured.playCount)} parties</span>}
+                {featured.playCount && <span class="font-bold text-yellow-400">{formatCount(featured.playCount)} plays</span>}
               </div>
             </div>
           </a>
@@ -141,13 +156,13 @@ function formatCount(n: number): string {
     {/* ===== GRILLE DE QUIZ — 4 colonnes, grandes images ===== */}
     <section class="max-w-6xl mx-auto px-4 pb-12">
       <div class="flex items-center justify-between mb-6">
-        <h2 class="font-display text-xl font-bold text-gray-900">Quiz Incontournables</h2>
-        <a href="/" class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">Tout voir →</a>
+        <h2 class="font-display text-xl font-bold text-gray-900">Must-Play Quizzes</h2>
+        <a href={lp('/')} class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">See all →</a>
       </div>
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {popularQuizzes.slice(1, 9).map((quiz) => (
-          <a href={`/quiz/${quiz.slug}`} class="group relative rounded-xl overflow-hidden aspect-[3/4] cursor-pointer">
-            {quiz.coverImage && <img src={quiz.coverImage} alt={quiz.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />}
+          <a href={lp(`/${quiz.slug}`)} class="group relative rounded-xl overflow-hidden aspect-[3/4] cursor-pointer">
+            {quiz.coverImage && <img src={lp(quiz.coverImage)} alt={quiz.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />}
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             {/* Top badges */}
             <div class="absolute top-3 left-3 flex gap-1.5">
@@ -172,20 +187,20 @@ function formatCount(n: number): string {
     {/* ===== NOUVEAUX QUIZ — horizontal scroll ===== */}
     <section class="bg-gray-50 py-10">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="font-display text-xl font-bold text-gray-900 mb-6">Ajoutés récemment</h2>
+        <h2 class="font-display text-xl font-bold text-gray-900 mb-6">Recently Added</h2>
         <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
           {newestQuizzes.map((quiz, i) => (
-            <a href={`/quiz/${quiz.slug}`} class="group shrink-0 w-[240px] bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <a href={lp(`/${quiz.slug}`)} class="group shrink-0 w-[240px] bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
               <div class="relative aspect-video overflow-hidden">
-                {quiz.coverImage && <img src={quiz.coverImage} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />}
+                {quiz.coverImage && <img src={lp(quiz.coverImage)} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />}
                 <div class="absolute top-2 left-2">
-                  <span class="text-[9px] font-bold bg-green-500 text-white px-2 py-0.5 rounded">Nouveau</span>
+                  <span class="text-[9px] font-bold bg-green-500 text-white px-2 py-0.5 rounded">New</span>
                 </div>
               </div>
               <div class="p-3">
                 <p class="text-[10px] font-bold text-violet-500 uppercase tracking-wide mb-0.5">{quiz.category}</p>
                 <h3 class="text-sm font-bold text-gray-900 group-hover:text-violet-700 leading-tight line-clamp-2 transition-colors">{quiz.title}</h3>
-                <p class="text-[10px] text-gray-400 mt-1">{['18 Mars', '17 Mars', '16 Mars', '15 Mars'][i]} 2026 • {quiz.questions.length} questions</p>
+                <p class="text-[10px] text-gray-400 mt-1">{['Mar 18', 'Mar 17', 'Mar 16', 'Mar 15'][i]} 2026 • {quiz.questions.length} questions</p>
               </div>
             </a>
           ))}
@@ -197,19 +212,19 @@ function formatCount(n: number): string {
     <section class="max-w-6xl mx-auto px-4 py-10">
       <div class="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 items-start">
         <div>
-          <h2 class="font-display text-lg font-bold text-gray-900 mb-3">On a tous ce pote incollable en soirée...</h2>
+          <h2 class="font-display text-lg font-bold text-gray-900 mb-3">We all know that friend who knows everything...</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Tu sais, celui qui sort des anecdotes sur les JO de 1936 entre deux parts de pizza. Celui qui connaît la capitale du Bhoutan et le nombre exact de dents d'un escargot. Eh bien ce pote-là, il s'entraîne probablement sur des quiz en ligne, et honnêtement c'est comme ça qu'on a eu l'idée de créer <strong class="text-gray-700">Wizy</strong>.</p>
-            <p>L'objectif c'était simple : proposer des quiz qui donnent vraiment envie de jouer. Pas des questionnaires scolaires barbants, mais des <a href="/categorie/sport" class="text-violet-600 hover:underline">quiz sport</a> où tu découvres que Pelé a marqué plus de 1 000 buts, des <a href="/categorie/cinema" class="text-violet-600 hover:underline">quiz cinéma</a> qui te font réaliser que tu ne connais rien à Disney, ou des <a href="/categorie/geographie" class="text-violet-600 hover:underline">quiz géographie</a> où tu confonds encore le drapeau de Monaco et celui de l'Indonésie (on est passés par là aussi).</p>
-            <p>Et le meilleur ? Chaque question vient avec son explication. Tu te trompes, tu apprends. Tu as raison, tu apprends quand même. C'est le truc cool avec les quiz : on retient 10 fois mieux une info quand on a essayé de deviner la réponse.</p>
+            <p>You know, the one dropping fun facts about the 1936 Olympics between pizza slices. The one who knows the capital of Bhutan and how many teeth a snail has. Well, that friend probably trains on online quizzes, and honestly that's how we got the idea to create <strong class="text-gray-700">Wizy</strong>.</p>
+            <p>The goal was simple: offer quizzes that are genuinely fun to play. Not boring school questionnaires, but <a href={lp('/sport')} class="text-violet-600 hover:underline">sports quizzes</a> where you discover that Pele scored over 1,000 goals, <a href={lp('/cinema')} class="text-violet-600 hover:underline">movie quizzes</a> that make you realize you know nothing about Disney, or <a href={lp('/geographie')} class="text-violet-600 hover:underline">geography quizzes</a> where you still mix up the flags of Monaco and Indonesia (we've been there too).</p>
+            <p>And the best part? Every question comes with an explanation. Get it wrong, you learn. Get it right, you still learn. That's the cool thing about quizzes: you remember facts 10 times better when you've tried to guess the answer first.</p>
           </div>
         </div>
         <div class="bg-violet-50 rounded-xl p-4 border border-violet-100">
           <div class="flex items-center gap-2 mb-3">
             <span class="w-7 h-7 bg-violet-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">?</span>
-            <p class="text-xs font-bold text-violet-700">Teste-toi sur un QCM</p>
+            <p class="text-xs font-bold text-violet-700">Test yourself with a MCQ</p>
           </div>
-          <MiniQCM client:load />
+          <MiniQCM locale="en" client:idle />
         </div>
       </div>
     </section>
@@ -217,23 +232,23 @@ function formatCount(n: number): string {
     {/* ===== CATÉGORIES — grandes cartes portrait avec vraies images ===== */}
     <section class="max-w-6xl mx-auto px-4 py-12">
       <div class="flex items-center justify-between mb-6">
-        <h2 class="font-display text-xl font-bold text-gray-900">Explore par catégorie</h2>
-        <a href="/" class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">Toutes →</a>
+        <h2 class="font-display text-xl font-bold text-gray-900">Explore by Category</h2>
+        <a href={lp('/')} class="text-xs font-bold text-violet-600 hover:text-violet-800 transition-colors">All →</a>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-        {categories.map((cat) => {
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        {homepageCategories.map((cat) => {
           const catQuizzes = allQuizzes.filter(q => q.category.toLowerCase() === cat.name.toLowerCase());
           const coverImg = cat.coverImage || catQuizzes.find(q => q.coverImage)?.coverImage;
           return (
-            <a href={`/categorie/${cat.slug}`} class="group relative overflow-hidden rounded-xl aspect-[3/4]">
+            <a href={lp(`/${cat.slug}`)} class="group relative overflow-hidden rounded-xl aspect-[3/4]">
               {coverImg ? (
-                <img src={coverImg} alt={cat.name} class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                <img src={lp(coverImg)} alt={cat.name} class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
               ) : (
                 <div class={`absolute inset-0 ${cat.color}`}></div>
               )}
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10 group-hover:from-black/70 transition-colors"></div>
               <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                <span class="text-3xl mb-2 group-hover:scale-110 transition-transform origin-left">{cat.icon}</span>
+                <span class="w-8 h-8 mb-2 group-hover:scale-110 transition-transform origin-left text-white" set:html={categoryIcons[cat.slug] || cat.icon}></span>
                 <h3 class="font-display font-bold text-lg leading-tight">{cat.name}</h3>
                 <p class="text-xs text-white/60 mt-0.5">{catQuizzes.length} quiz</p>
                 <div class="flex flex-wrap gap-1 mt-2">
@@ -252,22 +267,22 @@ function formatCount(n: number): string {
     <section class="bg-[#1a0e42] py-10">
       <div class="max-w-6xl mx-auto px-4">
         <div class="text-center mb-8">
-          <h2 class="font-display text-xl font-bold text-white mb-1">6 façons de jouer</h2>
-          <p class="text-sm text-white/40">Pas juste du QCM, découvre des modes de jeu uniques</p>
+          <h2 class="font-display text-xl font-bold text-white mb-1">6 Ways to Play</h2>
+          <p class="text-sm text-white/40">Not just multiple choice: discover unique game modes</p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-          {gameTypes.map((gt) => {
+          {gameTypesData.map((gt) => {
             const sampleQuiz = allQuizzes.find(q => q.gameType === gt.id);
             return (
               <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
                 {sampleQuiz?.coverImage ? (
-                  <img src={sampleQuiz.coverImage} alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                  <img src={lp(sampleQuiz.coverImage)} alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
                 ) : (
                   <div class={`absolute inset-0 ${gt.color}`}></div>
                 )}
                 <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors"></div>
                 <div class="relative h-full flex flex-col items-center justify-center text-center p-4 text-white">
-                  <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">{gt.icon}</span>
+                  <span class="w-10 h-10 mb-3 group-hover:scale-110 transition-transform text-white" set:html={gameTypeIcons[gt.id] || gt.icon}></span>
                   <h3 class="font-display font-bold text-sm leading-tight mb-1">{gt.name}</h3>
                   <p class="text-[10px] text-white/50 leading-snug line-clamp-2">{gt.description.split('.')[0]}</p>
                 </div>
@@ -284,16 +299,16 @@ function formatCount(n: number): string {
         <div class="bg-emerald-50 rounded-xl p-4 border border-emerald-100">
           <div class="flex items-center gap-2 mb-3">
             <span class="w-7 h-7 bg-emerald-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">V/F</span>
-            <p class="text-xs font-bold text-emerald-700">Vrai ou Faux ? A toi de trancher</p>
+            <p class="text-xs font-bold text-emerald-700">True or False? You decide</p>
           </div>
-          <MiniVraiFaux client:load />
+          <MiniVraiFaux locale="en" client:idle />
         </div>
         <div>
-          <h2 class="font-display text-lg font-bold text-gray-900 mb-3">Les quiz qui cartonnent en ce moment</h2>
+          <h2 class="font-display text-lg font-bold text-gray-900 mb-3">The quizzes everyone's playing right now</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Si on devait te recommander un seul quiz pour commencer, ce serait le <strong class="text-gray-700">quiz culture générale</strong>. C'est notre bestseller et c'est pas un hasard : les questions vont de "facile, tout le monde sait ça" à "ok là j'ai clairement inventé la réponse". Parfait pour se jauger.</p>
-            <p>Après, chacun ses passions. Les <strong class="text-gray-700">quiz drapeaux</strong> rendent accro, tu vas voir après 3 parties tu sauras reconnaître le drapeau du Lesotho les yeux fermés. Le <a href="/categorie/cinema" class="text-violet-600 hover:underline">quiz Harry Potter</a> ? Un classique, et non, tout le monde n'est pas Gryffondor. Le <strong class="text-gray-700">blind test musique</strong> c'est le plus fun entre amis : on branche les enceintes et c'est parti.</p>
-            <p>Et si t'en as marre des QCM, essaie nos modes spéciaux. Le <strong class="text-gray-700">Chrono</strong> c'est l'adrénaline pure (30 secondes, bonne chance). Le <strong class="text-gray-700">Duel</strong> c'est vicieux : "Messi ou Ronaldo, qui a le plus de buts en Ligue des Champions ?", tu crois savoir mais tu sais pas.</p>
+            <p>If we had to recommend just one quiz to get started, it would be the <strong class="text-gray-700">general knowledge quiz</strong>. It's our bestseller and for good reason: the questions range from "easy, everyone knows that" to "ok I clearly made up the answer." Perfect for testing yourself.</p>
+            <p>After that, to each their own passion. The <strong class="text-gray-700">flags quizzes</strong> are addictive: after 3 rounds you'll be able to recognize Lesotho's flag with your eyes closed. The <a href={lp('/cinema')} class="text-violet-600 hover:underline">Harry Potter quiz</a>? A classic, and no, not everyone is a Gryffindor. The <strong class="text-gray-700">music blind test</strong> is the most fun with friends: plug in the speakers and let's go.</p>
+            <p>And if you're tired of multiple choice, try our special modes. <strong class="text-gray-700">Chrono</strong> is pure adrenaline (30 seconds, good luck). <strong class="text-gray-700">Duel</strong> is tricky: "Messi or Ronaldo, who has more Champions League goals?" You think you know, but you don't.</p>
           </div>
         </div>
       </div>
@@ -303,18 +318,18 @@ function formatCount(n: number): string {
     <section class="max-w-6xl mx-auto px-4 pb-8">
       <div class="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 items-start">
         <div>
-          <h2 class="font-display text-lg font-bold text-gray-900 mb-3">Un quiz, c'est pas juste 4 réponses au pif</h2>
+          <h2 class="font-display text-lg font-bold text-gray-900 mb-3">A quiz isn't just 4 random answers</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Le truc qu'on voulait absolument éviter, c'est le côté "tu cliques au hasard et tu passes à la suite". Sur Wizy, chaque mauvaise réponse est une occasion d'apprendre quelque chose. L'explication après chaque question, c'est notre marque de fabrique, et franchement c'est souvent la partie la plus intéressante.</p>
-            <p>On a aussi bossé sur les modes de jeu pour que ça reste frais. L'<strong class="text-gray-700">Estimation</strong> par exemple, c'est complètement différent : pas de choix multiples, juste toi et un chiffre à trouver. Tu proposes un nombre, on te dit "plus haut" ou "plus bas", et tu continues jusqu'à trouver. C'est addictif, essaie juste à côté.</p>
+            <p>The thing we absolutely wanted to avoid is the "click randomly and move on" approach. On Wizy, every wrong answer is a chance to learn something. The explanation after each question is our signature feature, and honestly it's often the most interesting part.</p>
+            <p>We also worked hard on game modes to keep things fresh. <strong class="text-gray-700">Estimation</strong> for example is completely different: no multiple choice, just you and a number to find. You suggest a number, we tell you "higher" or "lower", and you keep going until you find it. It's addictive, try it right here.</p>
           </div>
         </div>
         <div class="bg-cyan-50 rounded-xl p-4 border border-cyan-100">
           <div class="flex items-center gap-2 mb-3">
             <span class="w-7 h-7 bg-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">#</span>
-            <p class="text-xs font-bold text-cyan-700">Plus haut ou plus bas ?</p>
+            <p class="text-xs font-bold text-cyan-700">Higher or lower?</p>
           </div>
-          <MiniEstimation client:load />
+          <MiniEstimation locale="en" client:idle />
         </div>
       </div>
     </section>
@@ -325,9 +340,9 @@ function formatCount(n: number): string {
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 24px 24px;"></div>
         <div class="relative space-y-4">
           <span class="text-4xl font-display font-black text-yellow-400">+</span>
-          <h2 class="font-display text-2xl md:text-3xl font-black text-white">Tu as une idée de quiz ?</h2>
-          <p class="text-white/50 text-sm max-w-md mx-auto">Crée-le en 5 minutes et partage-le avec tes amis. C'est gratuit, rapide et fun.</p>
-          <a href="/creer" class="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-sm px-6 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl">Créer mon quiz →</a>
+          <h2 class="font-display text-2xl md:text-3xl font-black text-white">Got a quiz idea?</h2>
+          <p class="text-white/50 text-sm max-w-md mx-auto">Create it in 5 minutes and share it with your friends. It's free, fast and fun.</p>
+          <a href={lp('/creer')} class="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-sm px-6 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl">Create my quiz →</a>
         </div>
       </div>
     </section>
@@ -335,9 +350,9 @@ function formatCount(n: number): string {
     {/* ===== STATS INLINE — discret ===== */}
     <section class="max-w-6xl mx-auto px-4 py-6">
       <div class="flex items-center justify-center gap-6 text-center">
-        <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{allQuizzes.length * 40}+</span> quiz disponibles</p>
+        <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{allQuizzes.length * 40}+</span> quizzes available</p>
         <span class="text-gray-200">|</span>
-        <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{formatCount(totalPlays)}</span> parties jouées</p>
+        <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{formatCount(totalPlays)}</span> games played</p>
       </div>
     </section>
 
@@ -346,51 +361,51 @@ function formatCount(n: number): string {
       <div class="max-w-6xl mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8">
           <div class="lg:sticky lg:top-32">
-            <h2 class="font-display text-2xl font-black text-gray-900 mb-2">Questions fréquentes</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">Les réponses aux questions que vous nous posez le plus souvent sur Wizy.</p>
+            <h2 class="font-display text-2xl font-black text-gray-900 mb-2">Frequently Asked Questions</h2>
+            <p class="text-sm text-gray-400 leading-relaxed">Answers to the questions we get asked most about Wizy.</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Les quiz sont-ils vraiment gratuits et sans inscription ?
+                Are the quizzes really free and without registration?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Tous les quiz sur Wizy sont 100% gratuits. Vous pouvez jouer à n'importe quel quiz sans créer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">All quizzes on Wizy are 100% free. You can play any quiz without creating an account. Free registration is optional and allows you to save your scores, track your progress and compare with friends.</p>
             </details>
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Quels types de quiz de culture générale proposez-vous ?
+                What types of general knowledge quizzes do you offer?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Nos quiz couvrent la culture générale, la géographie (drapeaux, capitales, pays du monde), le cinéma (Disney, Harry Potter, Marvel), le sport, l'histoire, la musique, les sciences et bien d'autres thématiques. Chaque quiz existe en plusieurs niveaux de difficulté.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Our quizzes cover general knowledge, geography (flags, capitals, countries), cinema (classic films, animation), sports (football, tennis, Olympics) and history. Each quiz is available in multiple difficulty levels.</p>
             </details>
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Les quiz peuvent-ils aider à réviser le brevet ou des examens ?
+                Can quizzes help with studying for exams?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Oui, nous proposons des quiz adaptés aux révisions (brevet, culture générale, histoire-géo). Les études montrent qu'on retient mieux une information quand on la retrouve soi-même via un quiz plutôt qu'en relisant un cours. Chaque réponse est accompagnée d'une explication détaillée.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Yes, we offer quizzes suited for revision (general knowledge, history, geography). Studies show that you retain information better when you retrieve it yourself through a quiz rather than re-reading notes. Each answer comes with a detailed explanation.</p>
             </details>
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Quels sont les différents modes de jeu disponibles ?
+                What are the different game modes available?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizy propose 6 modes de jeu : le QCM classique à 4 réponses, le Vrai ou Faux, le Chrono Challenge (30 secondes pour un maximum de bonnes réponses), l'Estimation (devinez un nombre, on vous dit plus haut ou plus bas), le Duel (comparez deux options) et l'Ordre chronologique.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizy offers 6 game modes: classic multiple choice with 4 answers, True or False, Chrono Challenge (60 seconds to answer as many questions as possible), Estimation (guess a number, we tell you higher or lower), Duel (compare two options) and Chronological Order.</p>
             </details>
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Comment créer son propre quiz sur Wizy ?
+                How do I create my own quiz on Wizy?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">C'est simple et rapide : choisissez une catégorie, ajoutez vos questions avec les réponses et les explications, et votre quiz est en ligne en quelques minutes. Vous pouvez ensuite le partager avec un lien unique. C'est idéal pour animer une soirée entre amis ou tester vos collègues.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">It's simple and fast: choose a category, add your questions with answers and explanations, and your quiz is online in minutes. You can then share it with a unique link. It's perfect for livening up a party with friends or testing your coworkers.</p>
             </details>
             <details name="faq" class="bg-white rounded-xl border border-gray-100 overflow-hidden group hover:shadow-md transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Wizy fonctionne-t-il sur mobile et tablette ?
+                Does Wizy work on mobile and tablet?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizy est entièrement responsive et optimisé pour tous les écrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la même expérience. Aucune application à télécharger, tout fonctionne directement dans votre navigateur.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizy is fully responsive and optimized for all screens. You can play on smartphone, tablet or desktop with the same experience. No app to download, everything works directly in your browser.</p>
             </details>
           </div>
         </div>

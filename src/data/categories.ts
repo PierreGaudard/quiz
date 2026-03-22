@@ -1,350 +1,213 @@
-import type { CategoryData, GameTypeInfo } from "./types";
+import type { CategoryDef, CategoryData, GameTypeInfo, Difficulty } from "./types";
+import type { Locale } from "../i18n/config";
+import { t } from "../i18n/ui";
 
 export const gameTypes: GameTypeInfo[] = [
-  {
-    id: "qcm",
-    name: "QCM Classique",
-    description: "4 réponses possibles, une seule est correcte. Utilise tes bonus pour t'aider !",
-    icon: "?",
-    color: "bg-violet-500",
-  },
-  {
-    id: "vrai-faux",
-    name: "Vrai ou Faux",
-    description: "Une affirmation, une image. À toi de juger si c'est vrai ou faux !",
-    icon: "VF",
-    color: "bg-emerald-500",
-  },
-  {
-    id: "chrono",
-    name: "Chrono Challenge",
-    description: "60 secondes pour répondre à un maximum de questions. Le chrono tourne !",
-    icon: "CH",
-    color: "bg-amber-500",
-  },
-  {
-    id: "estimation",
-    name: "Estimation",
-    description: "Devine le bon chiffre ! Plus tu es proche de la réponse, plus tu marques de points.",
-    icon: "#",
-    color: "bg-cyan-500",
-  },
-  {
-    id: "duel",
-    name: "Duel : qui est le plus ?",
-    description: "Deux options, un seul choix. Qui a le plus de titres, buts, victoires... ?",
-    icon: "VS",
-    color: "bg-rose-500",
-  },
-  {
-    id: "ordre",
-    name: "Ordre chronologique",
-    description: "Replace les événements dans le bon ordre ! De la date la plus ancienne à la plus récente.",
-    icon: "OR",
-    color: "bg-indigo-500",
-  },
+  { id: "qcm", name: "QCM", description: "", icon: "?", color: "bg-violet-500" },
+  { id: "vrai-faux", name: "Vrai/Faux", description: "", icon: "VF", color: "bg-emerald-500" },
+  { id: "chrono", name: "Chrono", description: "", icon: "CH", color: "bg-amber-500" },
+  { id: "estimation", name: "Estimation", description: "", icon: "#", color: "bg-cyan-500" },
+  { id: "duel", name: "Duel", description: "", icon: "VS", color: "bg-rose-500" },
+  { id: "ordre", name: "Ordre", description: "", icon: "OR", color: "bg-indigo-500" },
 ];
 
-export const categories: CategoryData[] = [
+/** Get localized game types. */
+export function getGameTypes(locale: Locale): GameTypeInfo[] {
+  return gameTypes.map((gt) => ({
+    ...gt,
+    name: t(locale, `gameType.${gt.id}` as any),
+  }));
+}
+
+/** Difficulty label per locale. */
+export const difficultyLabels: Record<Locale, Record<Difficulty, string>> = {
+  en: { easy: "Easy", medium: "Medium", hard: "Hard" },
+  fr: { easy: "Facile", medium: "Moyen", hard: "Difficile" },
+  es: { easy: "Fácil", medium: "Medio", hard: "Difícil" },
+};
+
+/* ── Category definitions with translations ──────────────────────── */
+
+export const categoryDefs: CategoryDef[] = [
   {
     slug: "sport",
-    name: "Sport",
-    description: "Football, tennis, JO, sports extrêmes... Teste tes connaissances sportives !",
     icon: "SP",
     color: "bg-emerald-500",
     coverImage: "/images/cover-sport.jpg",
-    subcategories: ["Football", "Tennis", "JO & Athlétisme", "Sports US", "Sports d'hiver", "Sports de combat"],
-    seoIntro: "Envie de tester tes connaissances en sport ? Que tu sois fan de football, passionné de tennis ou incollable sur les Jeux Olympiques, nos quiz sportifs couvrent toutes les disciplines. Du débutant à l'expert, choisis ton niveau et défie tes amis. Chaque quiz est accompagné d'explications détaillées pour apprendre tout en s'amusant.",
-    seoFooter: "Nos quiz sport sont pensés pour tous les profils : que tu regardes un match de temps en temps ou que tu connaisses les stats de chaque joueur par coeur, tu trouveras des quiz adaptés à ton niveau. Les questions sont rédigées par des passionnés et mises à jour après chaque grande compétition. Tu peux créer un compte gratuit pour sauvegarder ta progression, comparer tes résultats avec tes amis et débloquer des badges exclusifs.",
+    translations: {
+      en: {
+        name: "Sports",
+        description: "Football, tennis, Olympics, extreme sports... Test your sports knowledge!",
+        subcategories: ["Football", "Tennis", "Olympics", "US Sports", "Winter Sports", "Combat Sports"],
+        seoIntro: "Want to test your sports knowledge? Whether you're a football fan, tennis enthusiast, or an Olympics expert, our sports quizzes cover every discipline. From beginner to expert, pick your level and challenge your friends.",
+        seoFooter: "Our sports quizzes are designed for all levels. Questions are written by passionate fans and updated after every major competition.",
+      },
+      fr: {
+        name: "Sport",
+        description: "Football, tennis, JO, sports extrêmes... Teste tes connaissances sportives !",
+        subcategories: ["Football", "Tennis", "JO & Athlétisme", "Sports US", "Sports d'hiver", "Sports de combat"],
+        seoIntro: "Envie de tester tes connaissances en sport ? Que tu sois fan de football, passionné de tennis ou incollable sur les Jeux Olympiques, nos quiz sportifs couvrent toutes les disciplines. Du débutant à l'expert, choisis ton niveau et défie tes amis.",
+        seoFooter: "Nos quiz sport sont pensés pour tous les profils : que tu regardes un match de temps en temps ou que tu connaisses les stats de chaque joueur par coeur, tu trouveras des quiz adaptés à ton niveau.",
+      },
+      es: {
+        name: "Deportes",
+        description: "Fútbol, tenis, Juegos Olímpicos, deportes extremos... ¡Pon a prueba tus conocimientos deportivos!",
+        subcategories: ["Fútbol", "Tenis", "Juegos Olímpicos", "Deportes US", "Deportes de invierno", "Deportes de combate"],
+        seoIntro: "¿Quieres poner a prueba tus conocimientos deportivos? Ya seas fan del fútbol, apasionado del tenis o experto en los Juegos Olímpicos, nuestros quizzes deportivos cubren todas las disciplinas.",
+        seoFooter: "Nuestros quizzes deportivos están diseñados para todos los niveles. Las preguntas están escritas por apasionados y se actualizan después de cada gran competición.",
+      },
+    },
   },
   {
     slug: "cinema",
-    name: "Cinéma",
-    description: "Blockbusters, films cultes, réalisateurs... Es-tu un vrai cinéphile ?",
     icon: "CI",
     color: "bg-red-500",
     coverImage: "/images/cover-cinema.jpg",
-    subcategories: ["Films cultes", "Réalisateurs", "Acteurs", "Séries TV", "Animation", "Oscars"],
+    translations: {
+      en: {
+        name: "Cinema",
+        description: "Blockbusters, cult classics, directors... Are you a true cinephile?",
+        subcategories: ["Cult Classics", "Directors", "Actors", "TV Series", "Animation", "Oscars"],
+        seoIntro: "Are you more of a blockbuster or art film person? Do you know all the iconic quotes by heart? Our cinema quizzes test your movie culture, from classics to the latest releases.",
+        seoFooter: "Our cinema quizzes cover the entire world of film: cult classics, legendary directors, iconic actors, TV series and the Oscars ceremony. Perfect for cinephiles of all levels.",
+      },
+      fr: {
+        name: "Cinéma",
+        description: "Blockbusters, films cultes, réalisateurs... Es-tu un vrai cinéphile ?",
+        subcategories: ["Films cultes", "Réalisateurs", "Acteurs", "Séries TV", "Animation", "Oscars"],
+        seoIntro: "Tu es plutôt blockbuster ou film d'auteur ? Tu connais les répliques cultes par coeur ? Nos quiz cinéma testent ta culture ciné, des classiques aux dernières sorties.",
+        seoFooter: "Nos quiz cinéma couvrent tout l'univers du 7e art : films cultes, réalisateurs légendaires, acteurs iconiques, séries TV et cérémonie des Oscars.",
+      },
+      es: {
+        name: "Cine",
+        description: "Éxitos de taquilla, clásicos de culto, directores... ¿Eres un verdadero cinéfilo?",
+        subcategories: ["Clásicos de culto", "Directores", "Actores", "Series de TV", "Animación", "Oscars"],
+        seoIntro: "¿Eres más de blockbusters o cine de autor? ¿Conoces las frases icónicas de memoria? Nuestros quizzes de cine ponen a prueba tu cultura cinematográfica.",
+        seoFooter: "Nuestros quizzes de cine cubren todo el universo del séptimo arte: clásicos de culto, directores legendarios, actores icónicos, series de TV y los Oscars.",
+      },
+    },
   },
   {
     slug: "histoire",
-    name: "Histoire",
-    description: "De l'Antiquité à nos jours, replonge dans les grands moments de l'Histoire.",
     icon: "HI",
     color: "bg-amber-600",
     coverImage: "/images/cover-histoire.jpg",
-    subcategories: ["Antiquité", "Moyen Âge", "Guerres mondiales", "Révolutions", "Rois de France", "Histoire moderne"],
-  },
-  {
-    slug: "sciences",
-    name: "Sciences",
-    description: "Physique, biologie, astronomie, techno... Explore l'univers des sciences !",
-    icon: "SC",
-    color: "bg-blue-500",
-    coverImage: "/images/cover-sciences.jpg",
-    subcategories: ["Physique", "Biologie", "Astronomie", "Chimie", "Technologie", "Mathématiques"],
-  },
-  {
-    slug: "musique",
-    name: "Musique",
-    description: "Pop, rap, classique, rock... Montre que tu as l'oreille musicale !",
-    icon: "MU",
-    color: "bg-pink-500",
-    coverImage: "/images/cover-musique.jpg",
-    subcategories: ["Pop", "Rap & Hip-hop", "Rock", "Classique", "Artistes français", "Albums cultes"],
-  },
-  {
-    slug: "geographie",
-    name: "Géographie",
-    description: "Capitales, drapeaux, continents... Le monde n'a plus de secrets pour toi ?",
-    icon: "GE",
-    color: "bg-teal-500",
-    coverImage: "/images/cover-geographie.jpg",
-    subcategories: ["Capitales", "Drapeaux", "Europe", "Asie", "Amérique", "Afrique"],
-    seoIntro: "Tu sais placer la Moldavie sur une carte ? Tu confonds encore le drapeau de Monaco et celui de l'Indonésie ? Nos quiz géographie vont te faire voyager à travers les continents, des capitales les plus obscures aux drapeaux les plus trompeurs. Chaque question est accompagnée d'une explication pour que tu retiennes vraiment.",
-    seoFooter: "Nos quiz géographie couvrent tous les niveaux : des capitales européennes faciles aux frontières africaines les plus piégeuses. Idéal pour réviser le brevet, préparer un voyage, ou juste briller en soirée quand quelqu'un sort une carte du monde.",
+    translations: {
+      en: {
+        name: "History",
+        description: "From Antiquity to the modern era, dive back into the great moments of History.",
+        subcategories: ["Antiquity", "Middle Ages", "World Wars", "Revolutions", "Kings of France", "Modern History"],
+        seoIntro: "Do you know the year of the storming of the Bastille? Our history quizzes take you through the great moments that shaped the world, from Antiquity to the present day.",
+        seoFooter: "Our history quizzes cover all eras: Antiquity, Middle Ages, Renaissance, Revolutions, World Wars and contemporary history. Perfect for exams or general knowledge.",
+      },
+      fr: {
+        name: "Histoire",
+        description: "De l'Antiquité à nos jours, replonge dans les grands moments de l'Histoire.",
+        subcategories: ["Antiquité", "Moyen Âge", "Guerres mondiales", "Révolutions", "Rois de France", "Histoire moderne"],
+        seoIntro: "Tu sais en quelle année a eu lieu la prise de la Bastille ? Nos quiz histoire te replongent dans les grands moments qui ont façonné le monde, de l'Antiquité à nos jours.",
+        seoFooter: "Nos quiz histoire couvrent toutes les époques : Antiquité, Moyen Âge, Renaissance, Révolutions, guerres mondiales et histoire contemporaine.",
+      },
+      es: {
+        name: "Historia",
+        description: "Desde la Antigüedad hasta nuestros días, revive los grandes momentos de la Historia.",
+        subcategories: ["Antigüedad", "Edad Media", "Guerras mundiales", "Revoluciones", "Reyes de Francia", "Historia moderna"],
+        seoIntro: "¿Sabes en qué año tuvo lugar la toma de la Bastilla? Nuestros quizzes de historia te llevan por los grandes momentos que moldearon el mundo.",
+        seoFooter: "Nuestros quizzes de historia cubren todas las épocas: Antigüedad, Edad Media, Renacimiento, Revoluciones, guerras mundiales e historia contemporánea.",
+      },
+    },
   },
   {
     slug: "culture-generale",
-    name: "Culture Générale",
-    description: "Un peu de tout : religion, société, traditions... Le quiz pour les curieux !",
     icon: "CU",
     color: "bg-yellow-500",
-    coverImage: "/images/cover-culture.jpg",
-    subcategories: ["Société", "Religion", "Traditions", "Actualité", "Personnalités", "Divers"],
-    seoIntro: "La culture générale, c'est ce qui te permet de briller partout : en soirée, en entretien, au brevet. Nos quiz couvrent des sujets variés, de la religion aux traditions en passant par l'actualité. Chaque question vient avec son explication pour apprendre en jouant.",
-    seoFooter: "Que tu prépares un concours, un examen ou que tu veuilles juste tester l'étendue de tes connaissances, nos quiz culture générale sont faits pour toi. Des centaines de questions rédigées par des passionnés, avec des explications détaillées après chaque réponse.",
+    coverImage: "/images/cover-sciences.jpg",
+    translations: {
+      en: {
+        name: "General Knowledge",
+        description: "A bit of everything: religion, society, traditions... The quiz for the curious!",
+        subcategories: ["Society", "Religion", "Traditions", "Current Events", "Celebrities", "Miscellaneous"],
+        seoIntro: "General knowledge is what helps you shine everywhere: at parties, in interviews, in exams. Our quizzes cover varied subjects, from religion to traditions to current events.",
+        seoFooter: "Whether you're preparing for a competition, an exam, or just want to test how much you know, our general knowledge quizzes are made for you.",
+      },
+      fr: {
+        name: "Culture Générale",
+        description: "Un peu de tout : religion, société, traditions... Le quiz pour les curieux !",
+        subcategories: ["Société", "Religion", "Traditions", "Actualité", "Personnalités", "Divers"],
+        seoIntro: "La culture générale, c'est ce qui te permet de briller partout : en soirée, en entretien, au brevet. Nos quiz couvrent des sujets variés, de la religion aux traditions en passant par l'actualité.",
+        seoFooter: "Que tu prépares un concours, un examen ou que tu veuilles juste tester l'étendue de tes connaissances, nos quiz culture générale sont faits pour toi.",
+      },
+      es: {
+        name: "Cultura General",
+        description: "Un poco de todo: religión, sociedad, tradiciones... ¡El quiz para los curiosos!",
+        subcategories: ["Sociedad", "Religión", "Tradiciones", "Actualidad", "Celebridades", "Varios"],
+        seoIntro: "La cultura general es lo que te permite brillar en todas partes: en fiestas, en entrevistas, en exámenes. Nuestros quizzes cubren temas variados.",
+        seoFooter: "Ya sea que estés preparando un concurso, un examen, o simplemente quieras poner a prueba tus conocimientos, nuestros quizzes de cultura general son para ti.",
+      },
+    },
   },
   {
-    slug: "jeux-video",
-    name: "Jeux Vidéo",
-    description: "Pokémon, Brawl Stars, Fortnite, Zelda... Prouve que tu es un vrai gamer !",
-    icon: "JE",
-    color: "bg-violet-500",
-    coverImage: "/images/cover-jeux-video.jpg",
-    subcategories: ["Pokémon", "Brawl Stars", "Fortnite", "Zelda", "Mario", "Rétro"],
-    seoIntro: "Tu passes tes soirées à farmer, tu connais tous les Pokémon par coeur et tu top 1 les yeux fermés ? Nos quiz jeux vidéo vont mettre tes connaissances gaming à l'épreuve. Du rétro au dernier Battle Royale, chaque question est pensée par des gamers, pour des gamers.",
-    seoFooter: "Nos quiz gaming couvrent toutes les plateformes et toutes les époques : de la NES aux derniers jeux mobile. Que tu sois fan de Pokémon, accro à Brawl Stars ou nostalgique de Mario, tu trouveras des quiz adaptés à ta passion.",
-  },
-  {
-    slug: "animaux",
-    name: "Animaux & Nature",
-    description: "Chiens, dinosaures, océans... Teste tes connaissances sur le monde animal !",
-    icon: "AN",
+    slug: "geographie",
+    icon: "GE",
     color: "bg-teal-500",
-    coverImage: "/images/cover-animaux.jpg",
-    subcategories: ["Chiens", "Chats", "Dinosaures", "Animaux marins", "Animaux sauvages", "Insectes"],
-    seoIntro: "Tu savais qu'un escargot a environ 20 000 dents ? Que le coeur d'une crevette est dans sa tête ? Nos quiz animaux sont remplis de faits incroyables sur le monde animal. De ton chat de salon aux créatures des abysses, teste tes connaissances et découvre des anecdotes folles.",
-    seoFooter: "Nos quiz animaux sont parfaits pour les petits et les grands amoureux de la nature. Chaque question est accompagnée d'une explication fascinante sur le monde animal.",
-  },
-  {
-    slug: "logos",
-    name: "Logos & Marques",
-    description: "Reconnais les logos les plus célèbres du monde entier !",
-    icon: "LO",
-    color: "bg-sky-500",
-    coverImage: "/images/cover-logos.jpg",
-    subcategories: ["Marques", "Voitures", "Sport", "Tech", "Mode", "Alimentaire"],
-    seoIntro: "Tu vois des logos partout, tous les jours, mais serais-tu capable de les reconnaître sans le nom de la marque ? Nos quiz logos testent ta mémoire visuelle sur les marques les plus iconiques du monde. Auto, tech, sport, mode... à toi de jouer.",
-    seoFooter: "Les quiz logos sont parmi les plus addictifs : on croit tous les connaître, et pourtant on se trompe plus souvent qu'on ne le pense. Parfait pour jouer entre amis ou tester sa culture pub.",
-  },
-  {
-    slug: "scolaire",
-    name: "Scolaire",
-    description: "Brevet, anglais, orthographe, figures de style... Révise en t'amusant !",
-    icon: "SC",
-    color: "bg-amber-500",
-    coverImage: "/images/cover-scolaire.jpg",
-    subcategories: ["Brevet", "Anglais", "Orthographe", "Figures de style", "Maths", "SVT"],
-    seoIntro: "Réviser pour le brevet ou un exam, ça peut être fun. Nos quiz scolaires transforment tes cours en jeu : anglais, histoire-géo, français, sciences... Tu apprends sans t'en rendre compte et tu retiens 10 fois mieux qu'en relisant tes fiches.",
-    seoFooter: "Les études montrent qu'on retient mieux une info quand on la retrouve soi-même via un quiz plutôt qu'en relisant un cours. Nos quiz scolaires sont conçus pour ça : apprendre en jouant, à son rythme.",
-  },
-  {
-    slug: "amour",
-    name: "Amour & Amitié",
-    description: "BFF, couple, entre amis... Des quiz pour mieux se connaître !",
-    icon: "AM",
-    color: "bg-red-500",
-    coverImage: "/images/cover-amour.jpg",
-    subcategories: ["Entre amis", "Couple", "BFF", "Meilleure amie", "Compatibilité", "Fun"],
-    seoIntro: "Tu penses connaître tes amis par coeur ? Tu veux savoir si ton pote est vraiment ton BFF ? Nos quiz amitié et amour sont faits pour passer un bon moment ensemble. Des questions fun, parfois surprenantes, toujours bienveillantes.",
-    seoFooter: "Nos quiz amitié sont parfaits pour animer une soirée, un trajet en voiture ou juste un moment entre potes. Partagez le lien, jouez chacun de votre côté et comparez vos résultats !",
-  },
-  // === Catégories spécifiques par keyword SEO ===
-  {
-    slug: "drapeaux",
-    name: "Drapeaux",
-    description: "Reconnais les drapeaux du monde entier ! Croix, étoiles, bandes de couleurs...",
-    icon: "DR",
-    color: "bg-blue-500",
     coverImage: "/images/cover-geographie.jpg",
-    subcategories: ["Europe", "Afrique", "Asie", "Amérique", "Océanie", "Drapeaux piège"],
-    seoIntro: "Tu confonds le drapeau de la Roumanie et celui du Tchad ? Celui de Monaco et de l'Indonésie ? T'inquiète, t'es pas le seul. Nos quiz drapeaux vont te faire voyager à travers le monde, un drapeau à la fois. À chaque question, tu découvres une anecdote sur le pays, son histoire ou la signification de ses couleurs.",
-    seoFooter: "Les quiz drapeaux sont parmi les plus joués sur Wizy. C'est simple : on croit tous les connaître, et puis on tombe sur le drapeau du Bhoutan et là, c'est le drame. Parfait pour réviser la géo, préparer un voyage ou juste se la raconter en soirée.",
-  },
-  {
-    slug: "disney",
-    name: "Disney",
-    description: "De Blanche-Neige à Encanto, teste tes connaissances sur l'univers Disney !",
-    icon: "DI",
-    color: "bg-pink-500",
-    coverImage: "/images/cover-cinema.jpg",
-    subcategories: ["Classiques", "Pixar", "Princesses", "Méchants", "Chansons", "Films récents"],
-    seoIntro: "T'es plutôt Roi Lion ou Reine des Neiges ? Tu connais le nom des 7 nains sans tricher ? Nos quiz Disney replongent dans la magie des classiques comme des dernières sorties. Chaque question est accompagnée d'une anecdote que même les plus grands fans ne connaissent pas forcément.",
-    seoFooter: "Nos quiz Disney couvrent tout l'univers : des classiques des années 40 aux derniers Pixar, en passant par les princesses, les méchants cultes et les chansons qu'on connaît tous par coeur. Idéal pour une soirée Disney entre amis.",
-  },
-  {
-    slug: "islam",
-    name: "Islam",
-    description: "Les piliers, l'histoire, les fêtes... Teste tes connaissances sur l'Islam.",
-    icon: "IS",
-    color: "bg-emerald-600",
-    coverImage: "/images/cover-culture.jpg",
-    subcategories: ["Piliers", "Histoire", "Fêtes", "Coran", "Prophètes", "Culture"],
-    seoIntro: "Que tu sois musulman ou simplement curieux, nos quiz sur l'Islam te permettent de tester tes connaissances de façon ludique et respectueuse. Les 5 piliers, les fêtes, l'histoire, les grandes figures... chaque question est accompagnée d'une explication claire et pédagogique.",
-    seoFooter: "Nos quiz Islam sont conçus pour être éducatifs et accessibles à tous. Les questions couvrent les fondamentaux de la religion, l'histoire islamique et les traditions culturelles. Parfait pour apprendre en s'amusant.",
-  },
-  {
-    slug: "departements-francais",
-    name: "Départements français",
-    description: "01 Ain, 75 Paris... Connais-tu les 101 départements de France ?",
-    icon: "DE",
-    color: "bg-blue-600",
-    coverImage: "/images/cover-geographie.jpg",
-    subcategories: ["Numéros", "Préfectures", "Régions", "DOM-TOM", "Superficie", "Population"],
-    seoIntro: "Le 29, c'est le Finistère ou les Bouches-du-Rhône ? La préfecture du Var, c'est Var-ville ? (non, c'est Toulon). Nos quiz départements français vont tester ta connaissance de la France, numéro par numéro, préfecture par préfecture. Tu vas voir, c'est plus dur qu'on ne le pense.",
-    seoFooter: "Avec 101 départements (96 en métropole + 5 outre-mer), la France a de quoi te donner du fil à retordre. Nos quiz couvrent les numéros, les préfectures, les régions et plein de pièges classiques. Idéal pour le brevet ou la culture G.",
-  },
-  {
-    slug: "one-piece",
-    name: "One Piece",
-    description: "Luffy, Zoro, Nami... Es-tu un vrai fan du manga le plus vendu au monde ?",
-    icon: "ON",
-    color: "bg-red-600",
-    coverImage: "/images/cover-cinema.jpg",
-    subcategories: ["Équipage", "Fruits du Démon", "Arcs", "Personnages", "Batailles", "Primes"],
-    seoIntro: "Tu suis One Piece depuis East Blue ou tu viens de commencer ? Peu importe, nos quiz One Piece vont tester tes connaissances sur l'univers de Luffy et son équipage. Fruits du Démon, primes, batailles épiques... chaque question te replonge dans le Grand Line.",
-    seoFooter: "One Piece est le manga le plus vendu de l'histoire avec plus de 500 millions d'exemplaires. Nos quiz couvrent tous les arcs, de Romance Dawn à Egghead, avec des questions pour les débutants comme pour les fans hardcore.",
-  },
-  {
-    slug: "harry-potter",
-    name: "Harry Potter",
-    description: "Poudlard, Quidditch, sorts... Montre que tu maîtrises le monde des sorciers !",
-    icon: "HA",
-    color: "bg-amber-700",
-    coverImage: "/images/cover-cinema.jpg",
-    subcategories: ["Maisons", "Sorts", "Personnages", "Films", "Objets magiques", "Quidditch"],
-    seoIntro: "Tu es plutôt Gryffondor ou Serpentard ? Tu connais la différence entre Expelliarmus et Expecto Patronum ? Nos quiz Harry Potter testent tes connaissances sur l'univers créé par J.K. Rowling, des livres aux films en passant par les moindres détails que seuls les vrais fans connaissent.",
-    seoFooter: "Avec 7 livres, 8 films et un univers étendu immense, Harry Potter offre des centaines de questions possibles. Nos quiz couvrent Poudlard, le Quidditch, les Horcruxes, les sorts et tous les personnages de la saga.",
-  },
-  {
-    slug: "football",
-    name: "Football",
-    description: "Coupes du Monde, Ligue des Champions, légendes... Le quiz ultime du foot !",
-    icon: "FO",
-    color: "bg-emerald-500",
-    coverImage: "/images/cover-football.jpg",
-    subcategories: ["Coupe du Monde", "Ligue des Champions", "Ballon d'Or", "Légendes", "Clubs", "Records"],
-    seoIntro: "Tu connais le nombre de Ballons d'Or de Messi ? Tu sais qui a marqué le but le plus rapide en Coupe du Monde ? Nos quiz football testent ta culture foot, des légendes du passé aux stars actuelles. Chaque question est accompagnée d'une stat ou d'une anecdote pour devenir incollable.",
-    seoFooter: "Le football est le sport le plus populaire au monde, et nos quiz le reflètent : Coupe du Monde, Ligue des Champions, championnats nationaux, records historiques... Il y en a pour tous les niveaux, du supporter du dimanche au passionné de stats.",
-  },
-  {
-    slug: "pokemon",
-    name: "Pokémon",
-    description: "De Pikachu à Arceus, teste tes connaissances sur l'univers Pokémon !",
-    icon: "PO",
-    color: "bg-yellow-500",
-    coverImage: "/images/cover-jeux-video.jpg",
-    subcategories: ["Génération 1", "Types", "Légendaires", "Anime", "Jeux", "Pokédex"],
-    seoIntro: "Tu connais les 151 Pokémon de la première génération par coeur ? Tu sais quel type bat quel type ? Nos quiz Pokémon testent tes connaissances sur toutes les générations, du Pokédex aux stratégies de combat en passant par l'anime et les jeux.",
-    seoFooter: "Pokémon, c'est plus de 1000 créatures, 9 générations de jeux et un anime légendaire. Nos quiz couvrent tout : les types, les évolutions, les légendaires et les anecdotes que seuls les vrais dresseurs connaissent.",
-  },
-  {
-    slug: "anglais",
-    name: "Anglais",
-    description: "Do you speak English? Teste ton niveau d'anglais avec nos quiz !",
-    icon: "AN",
-    color: "bg-red-500",
-    coverImage: "/images/cover-scolaire.jpg",
-    subcategories: ["Vocabulaire", "Grammaire", "Faux amis", "Expressions", "Conjugaison", "Traduction"],
-    seoIntro: "Library ça veut dire librairie ? (Non, bibliothèque.) Actually ça veut dire actuellement ? (Non, en fait.) L'anglais est plein de pièges, et nos quiz sont là pour t'aider à les éviter. Vocabulaire, grammaire, faux amis... apprends en jouant et progresse à ton rythme.",
-    seoFooter: "Nos quiz anglais sont parfaits pour réviser le brevet, préparer un examen ou juste améliorer ton niveau. Chaque question est accompagnée de l'explication et de la traduction pour que tu retiennes vraiment.",
-  },
-  {
-    slug: "naruto",
-    name: "Naruto",
-    description: "Jutsu, Akatsuki, bijuu... Connais-tu vraiment l'univers de Naruto ?",
-    icon: "NA",
-    color: "bg-orange-500",
-    coverImage: "/images/cover-cinema.jpg",
-    subcategories: ["Personnages", "Jutsu", "Akatsuki", "Bijuu", "Villages", "Shippuden"],
-    seoIntro: "Tu connais tous les membres de l'Akatsuki ? Tu sais quel bijuu est scellé en Naruto ? Nos quiz Naruto testent tes connaissances sur le ninja le plus célèbre de Konoha, de la série originale à Shippuden en passant par Boruto.",
-    seoFooter: "Naruto, c'est 720 épisodes, 72 tomes de manga et un univers immense. Nos quiz couvrent les personnages, les techniques ninja, les villages cachés et toutes les batailles épiques de la série.",
-  },
-  {
-    slug: "gamer",
-    name: "Gamer",
-    description: "De Mario à Fortnite, teste ta culture gaming !",
-    icon: "GA",
-    color: "bg-violet-600",
-    coverImage: "/images/cover-jeux-video.jpg",
-    subcategories: ["Rétro", "FPS", "RPG", "Battle Royale", "Consoles", "Records"],
-    seoIntro: "Tu sais quel est le jeu le plus vendu de tous les temps ? Tu connais le créateur de Mario ? Nos quiz gamer testent ta culture jeux vidéo au sens large : des classiques rétro aux derniers hits, en passant par les consoles, les studios et les records.",
-    seoFooter: "Que tu sois PC gamer, consoleux ou joueur mobile, nos quiz gaming couvrent toutes les plateformes et toutes les époques. Le quiz parfait pour prouver que tu es un vrai gamer.",
-  },
-  {
-    slug: "brevet-histoire",
-    name: "Brevet Histoire",
-    description: "Guerres mondiales, Révolution, République... Les incontournables du brevet !",
-    icon: "BR",
-    color: "bg-amber-600",
-    coverImage: "/images/cover-histoire.jpg",
-    subcategories: ["Révolution française", "Guerres mondiales", "Ve République", "Dates clés", "Personnages", "Traités"],
-    seoIntro: "Le brevet approche et tu galères en histoire ? Nos quiz brevet histoire sont faits pour toi. On a regroupé les questions incontournables du programme : Révolution française, guerres mondiales, construction européenne, droits de l'homme... Tu révises en jouant et tu retiens sans forcer.",
-    seoFooter: "Les questions de nos quiz brevet histoire suivent le programme officiel du collège. Chaque réponse est accompagnée d'une explication claire pour t'aider à comprendre et retenir les dates, les événements et les personnages clés.",
-  },
-  {
-    slug: "pays-europe",
-    name: "Pays d'Europe",
-    description: "De Lisbonne à Moscou, connais-tu vraiment les pays européens ?",
-    icon: "PA",
-    color: "bg-blue-500",
-    coverImage: "/images/cover-geographie.jpg",
-    subcategories: ["Capitales", "UE", "Frontières", "Drapeaux", "Langues", "Monnaies"],
-    seoIntro: "Tu sais combien de pays il y a en Europe ? Tu connais la capitale de la Slovénie ? Nos quiz pays d'Europe testent tes connaissances sur le vieux continent : capitales, frontières, monnaies, langues... De l'Islande à la Turquie, chaque question te fait voyager.",
-    seoFooter: "L'Europe compte environ 50 pays selon les définitions. Nos quiz couvrent les capitales, les drapeaux, les pays de l'UE, les frontières et plein d'anecdotes géographiques pour briller en culture G.",
-  },
-  {
-    slug: "brawl-stars",
-    name: "Brawl Stars",
-    description: "Shelly, Leon, Crow... Prouve que tu es un pro de Brawl Stars !",
-    icon: "BR",
-    color: "bg-purple-500",
-    coverImage: "/images/cover-jeux-video.jpg",
-    subcategories: ["Brawlers", "Modes de jeu", "Supercell", "Stratégie", "Légendaires", "Skins"],
-    seoIntro: "Tu top 1 sur Brawl Stars les yeux fermés ? Tu connais tous les brawlers légendaires ? Nos quiz Brawl Stars testent tes connaissances sur le jeu mobile le plus addictif de Supercell. Des brawlers aux modes de jeu, montre que tu es un vrai pro.",
-    seoFooter: "Brawl Stars, c'est des dizaines de brawlers, des modes de jeu variés et une communauté énorme. Nos quiz couvrent tous les aspects du jeu : personnages, pouvoirs, stratégies et anecdotes sur Supercell.",
-  },
-  {
-    slug: "anime",
-    name: "Anime & Manga",
-    description: "Dragon Ball, L'Attaque des Titans, Demon Slayer... Le quiz ultime pour les otakus !",
-    icon: "AN",
-    color: "bg-rose-500",
-    coverImage: "/images/cover-cinema.jpg",
-    subcategories: ["Shonen", "Studio Ghibli", "Seinen", "Classiques", "Nouveautés", "Mangakas"],
-    seoIntro: "Tu sais qui a créé Dragon Ball ? Tu connais le nom du titan d'Eren ? Nos quiz anime et manga testent ta culture otaku sur les plus grandes séries japonaises. De Dragon Ball Z à Demon Slayer, chaque question te replonge dans tes animes préférés.",
-    seoFooter: "L'anime et le manga, c'est une culture immense avec des centaines de séries cultes. Nos quiz couvrent les shonen, les seinen, les studios d'animation et les mangakas légendaires. Parfait pour les otakus de tous niveaux.",
-  },
-  {
-    slug: "amitie",
-    name: "Amitié",
-    description: "BFF, potes, souvenirs... Un quiz fun pour tester ta complicité !",
-    icon: "AM",
-    color: "bg-pink-400",
-    coverImage: "/images/cover-amour.jpg",
-    subcategories: ["BFF", "Entre potes", "Pop culture", "Fun", "Souvenirs", "Compatibilité"],
-    seoIntro: "Tu penses connaître tes amis par coeur ? Ce quiz amitié est fait pour passer un bon moment entre potes. Des questions fun sur la pop culture, les films d'amitié cultes et les petites choses qui font qu'un ami est un vrai ami.",
-    seoFooter: "Nos quiz amitié sont parfaits pour animer une soirée, un trajet ou juste un moment entre potes. Partagez le lien, jouez chacun de votre côté et comparez vos résultats !",
+    translations: {
+      en: {
+        name: "Geography",
+        description: "Capitals, flags, continents... Does the world hold no secrets for you?",
+        subcategories: ["Capitals", "Flags", "Europe", "Asia", "Americas", "Africa"],
+        seoIntro: "Can you place Moldova on a map? Do you still confuse the flags of Monaco and Indonesia? Our geography quizzes will take you around the world, from the most obscure capitals to the trickiest flags.",
+        seoFooter: "Our geography quizzes cover all levels: from easy European capitals to the trickiest African borders. Ideal for exam prep, travel planning, or just impressing your friends.",
+      },
+      fr: {
+        name: "Géographie",
+        description: "Capitales, drapeaux, continents... Le monde n'a plus de secrets pour toi ?",
+        subcategories: ["Capitales", "Drapeaux", "Europe", "Asie", "Amérique", "Afrique"],
+        seoIntro: "Tu sais placer la Moldavie sur une carte ? Tu confonds encore le drapeau de Monaco et celui de l'Indonésie ? Nos quiz géographie vont te faire voyager à travers les continents.",
+        seoFooter: "Nos quiz géographie couvrent tous les niveaux : des capitales européennes faciles aux frontières africaines les plus piégeuses. Idéal pour réviser le brevet, préparer un voyage, ou juste briller en soirée.",
+      },
+      es: {
+        name: "Geografía",
+        description: "Capitales, banderas, continentes... ¿El mundo ya no tiene secretos para ti?",
+        subcategories: ["Capitales", "Banderas", "Europa", "Asia", "América", "África"],
+        seoIntro: "¿Puedes ubicar Moldavia en un mapa? ¿Todavía confundes las banderas de Mónaco e Indonesia? Nuestros quizzes de geografía te harán viajar por los continentes.",
+        seoFooter: "Nuestros quizzes de geografía cubren todos los niveles: desde capitales europeas fáciles hasta las fronteras africanas más difíciles.",
+      },
+    },
   },
 ];
+
+/* ── Resolver functions ──────────────────────────────────────────── */
+
+/** Resolve categories for a given locale. */
+export function getCategories(locale: Locale): CategoryData[] {
+  return categoryDefs.map((def) => {
+    const content = def.translations[locale] || def.translations.en;
+    return {
+      slug: def.slug,
+      name: content.name,
+      description: content.description,
+      icon: def.icon,
+      color: def.color,
+      coverImage: def.coverImage,
+      subcategories: content.subcategories,
+      seoIntro: content.seoIntro,
+      seoFooter: content.seoFooter,
+    };
+  });
+}
+
+/** Get a single resolved category. */
+export function getCategory(slug: string, locale: Locale): CategoryData | undefined {
+  return getCategories(locale).find((c) => c.slug === slug);
+}
+
+/** Get category name for a given slug and locale. */
+export function getCategoryName(slug: string, locale: Locale): string {
+  const def = categoryDefs.find((c) => c.slug === slug);
+  if (!def) return slug;
+  const content = def.translations[locale] || def.translations.en;
+  return content.name;
+}
+
+// Legacy export for backward compatibility during migration
+export const categories = getCategories("fr");

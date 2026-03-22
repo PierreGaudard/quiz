@@ -6,9 +6,17 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://PierreGaudard.github.io',
-  base: '/quiz',
+  site: 'https://quiz.pierretartare94440.workers.dev',
+  base: '/',
   integrations: [react()],
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr', 'es'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 
   vite: {
     plugins: [tailwindcss()]

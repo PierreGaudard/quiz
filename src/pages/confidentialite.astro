@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { localePath } from "../utils/base";
+import { t } from "../i18n/ui";
+import type { Locale } from "../i18n/config";
+
+const locale: Locale = "en";
+const lp = (path: string) => localePath(path, locale);
+---
+
+<Layout title="Privacy Policy - Wizy" description="Privacy policy and data protection for the Wizy website." locale={locale}>
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
+      <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+      <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="text-gray-700 font-semibold">Privacy Policy</span>
+    </nav>
+
+    <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Privacy Policy</h1>
+
+    <div class="prose prose-gray max-w-none space-y-8 text-sm leading-relaxed text-gray-700">
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Data controller</h2>
+        <p>The data controller for personal data collected on the Wizy website is:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li><strong>Name:</strong> Pierre Gaudard</li>
+          <li><strong>Email:</strong> pierretartare94440@gmail.com</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Data collected</h2>
+        <p>The Wizy website collects the minimum data necessary for its operation:</p>
+        <ul class="list-disc pl-5 space-y-2 mt-2">
+          <li><strong>Browsing data:</strong> IP address, browser type, pages visited, visit duration. This data is automatically collected via server logs (Cloudflare).</li>
+          <li><strong>Locally stored data:</strong> quiz progress, scores, custom quizzes created by the user. This data is stored exclusively in the user's browser (localStorage) and is never transmitted to our servers.</li>
+          <li><strong>Contact data:</strong> if you contact us by email, we retain your email address and message content solely to respond to your request.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">3. Purpose of processing</h2>
+        <p>Personal data is processed for the following purposes:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>Ensuring the proper functioning and security of the site</li>
+          <li>Compiling anonymous traffic statistics</li>
+          <li>Responding to contact requests</li>
+          <li>Improving the user experience</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. Legal basis for processing</h2>
+        <p>Data processing is based on:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li><strong>Legitimate interest</strong> for browsing data (site security and operation)</li>
+          <li><strong>Consent</strong> for the use of non-essential cookies (where applicable)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">5. Data retention</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li><strong>Server logs:</strong> 30 days maximum (Cloudflare policy)</li>
+          <li><strong>localStorage data:</strong> as long as the user does not delete it</li>
+          <li><strong>Contact emails:</strong> 12 months after the last exchange</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Data sharing</h2>
+        <p>Your personal data is <strong>never sold, rented or shared</strong> with third parties for commercial purposes.</p>
+        <p>The only potential recipients are:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li><strong>Cloudflare, Inc.</strong> (hosting provider): for technical operation and site security</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Cookies</h2>
+        <p>The Wizy website only uses strictly necessary <strong>technical cookies</strong>:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li><strong>localStorage:</strong> saving quiz progress, scores and custom quizzes</li>
+          <li><strong>Cloudflare cookies:</strong> security and performance cookies (DDoS protection)</li>
+        </ul>
+        <p class="mt-2">No advertising or third-party tracking cookies are used.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">8. Your rights</h2>
+        <p>In accordance with the General Data Protection Regulation (GDPR) and the French Data Protection Act, you have the following rights:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li><strong>Right of access:</strong> obtain confirmation that your data is being processed</li>
+          <li><strong>Right of rectification:</strong> request correction of inaccurate data</li>
+          <li><strong>Right to erasure:</strong> request deletion of your data</li>
+          <li><strong>Right to portability:</strong> receive your data in a structured format</li>
+          <li><strong>Right to object:</strong> object to the processing of your data</li>
+        </ul>
+        <p class="mt-2">To exercise these rights, contact us at: <strong>pierretartare94440@gmail.com</strong></p>
+        <p>You may also file a complaint with the <strong>CNIL</strong> (French Data Protection Authority): <a href="https://www.cnil.fr" target="_blank" rel="noopener" class="text-violet-600 hover:text-violet-800 font-medium">www.cnil.fr</a></p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">9. Security</h2>
+        <p>We implement appropriate technical and organisational measures to protect your data, including:</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>HTTPS encryption across the entire site</li>
+          <li>Cloudflare protection against attacks (DDoS, injections)</li>
+          <li>User data stored exclusively on the client side (localStorage)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">10. Changes</h2>
+        <p>This privacy policy may be modified at any time. The date of the last update is indicated below. We encourage you to review it regularly.</p>
+      </section>
+
+      <p class="text-xs text-gray-400 pt-4 border-t border-gray-200">Last updated: March 2026</p>
+    </div>
+  </main>
+</Layout>

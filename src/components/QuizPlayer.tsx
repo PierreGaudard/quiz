@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import html2canvas from "html2canvas-pro";
+// html2canvas-pro is lazy-loaded in handleScreenshot() to avoid bundle bloat
 import type { QuizData, GameType, QuizQuestion } from "../data/types";
 
 interface Props {
@@ -447,6 +447,7 @@ export default function QuizPlayer({ quiz }: Props) {
         card.style.animation = "none";
         void card.offsetHeight;
         try {
+          const { default: html2canvas } = await import("html2canvas-pro");
           const canvas = await html2canvas(card, {
             backgroundColor: "#ffffff",
             scale: 2,

@@ -1,19 +1,32 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { locales, defaultLocale } from "../i18n/config";
+import type { Locale } from "../i18n/config";
 
 interface Props {
   title: string;
   description?: string;
   ogImage?: string;
   showHeader?: boolean;
+  locale?: Locale;
 }
 
-const { title, description = "Teste tes connaissances avec nos quiz fun et interactifs !", ogImage, showHeader = true } = Astro.props;
+const { title, description = "Test your knowledge with fun and interactive quizzes!", ogImage, showHeader = true, locale = "en" } = Astro.props;
+
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
+const currentPath = Astro.url.pathname;
+// Strip base and locale prefix to get the "page path"
+let pagePath = currentPath.startsWith(BASE) ? currentPath.slice(BASE.length) : currentPath;
+if (locale !== defaultLocale && pagePath.startsWith(`/${locale}`)) {
+  pagePath = pagePath.slice(locale.length + 1) || '/';
+}
+
+const langMap: Record<Locale, string> = { en: "en", fr: "fr", es: "es" };
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang={langMap[locale]}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +36,16 @@ const { title, description = "Teste tes connaissances avec nos quiz fun et inter
     {ogImage && <meta property="og:image" content={ogImage} />}
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    {/* hreflang tags for SEO */}
+    {locales.map((loc) => {
+      const prefix = loc === defaultLocale ? '' : `/${loc}`;
+      const href = `${BASE}${prefix}${pagePath}`;
+      return <link rel="alternate" hreflang={loc} href={href} />;
+    })}
+    <link rel="alternate" hreflang="x-default" href={`${BASE}${pagePath}`} />
+
+    <link rel="icon" type="image/svg+xml" href={`${BASE}/favicon.svg`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -33,8 +55,8 @@ const { title, description = "Teste tes connaissances avec nos quiz fun et inter
     </style>
   </head>
   <body class="min-h-screen bg-gray-50">
-    {showHeader && <Header />}
+    {showHeader && <Header locale={locale} />}
     <slot />
-    <Footer />
+    <Footer locale={locale} />
   </body>
 </html>
