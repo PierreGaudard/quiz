@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
 import type { Locale } from "../../i18n/config";
@@ -8,7 +9,7 @@ const locale: Locale = "fr";
 const lp = (path: string) => localePath(path, locale);
 ---
 
-<Layout title={t(locale, "auth.signupTitle")} description={t(locale, "auth.signupDescription")} locale={locale}>
+<Layout title={t(locale, "auth.signupTitle")} description={t(locale, "auth.signupDescription")} locale={locale} hreflangPaths={getHreflangStaticPaths("signup")}>
   <main class="min-h-[calc(100vh-160px)] bg-gradient-to-b from-[#1a0e42] via-[#2d1b69] to-[#1a0e42] flex items-center justify-center py-16 px-4 relative overflow-hidden">
     <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 28px 28px;"></div>
 

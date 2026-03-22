@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import MyQuizzes from "../../components/MyQuizzes";
 import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
@@ -9,7 +10,7 @@ const locale: Locale = "en";
 const lp = (path: string) => localePath(path, locale);
 ---
 
-<Layout title="Create a Free Quiz in Minutes | Wizy" description="Build your own quiz in minutes and share it with friends. Free, no sign-up required, with multiple game modes." locale={locale}>
+<Layout title="Create a Free Quiz in Minutes | Wizy" description="Build your own quiz in minutes and share it with friends. Free, no sign-up required, with multiple game modes." locale={locale} hreflangPaths={getHreflangStaticPaths("create")}>
   <main>
 
     {/* ===== HERO ===== */}

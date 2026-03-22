@@ -198,18 +198,13 @@ const subName = categoryInfo?.subcategories?.find(
     "@type": "Quiz",
     name: quiz.title,
     description: quiz.description,
-    url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${quiz.path}`,
+    url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${quiz.path}/`,
     inLanguage: "fr",
     educationalLevel: quiz.difficulty,
     about: { "@type": "Thing", name: quiz.category },
     provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
-    hasPart: quiz.questions.map((q: any, i: number) => ({
-      "@type": "Question",
-      position: i + 1,
-      text: q.question,
-      acceptedAnswer: { "@type": "Answer", text: q.answers.find((a: any) => a.id === q.correctAnswer)?.text },
-      suggestedAnswer: q.answers.filter((a: any) => a.id !== q.correctAnswer).map((a: any) => ({ "@type": "Answer", text: a.text })),
-    })),
+    numberOfQuestions: quiz.questions.length,
+    typicalAgeRange: "12-",
   })} />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",

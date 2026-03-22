@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
 import type { Locale } from "../../i18n/config";
@@ -8,7 +9,7 @@ const locale: Locale = "es";
 const lp = (path: string) => localePath(path, locale);
 ---
 
-<Layout title="Politica de privacidad | Wizy Quiz" description="Descubre como Wizy protege tus datos personales. Politica de privacidad, cookies, derechos RGPD y mas." locale={locale}>
+<Layout title="Politica de privacidad | Wizy Quiz" description="Descubre como Wizy protege tus datos personales. Politica de privacidad, cookies, derechos RGPD y mas." locale={locale} hreflangPaths={getHreflangStaticPaths("privacy")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>

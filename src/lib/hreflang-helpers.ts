@@ -3,6 +3,25 @@ import { locales } from "../i18n/config";
 import { categoryDefs } from "../data/categories";
 import { slugifySubcategory, allTranslatedQuizzes, resolveQuiz } from "../data/quizzes";
 
+/** Static page slug mapping per locale. */
+export const staticPageSlugs: Record<string, Record<Locale, string>> = {
+  login: { en: "/login/", fr: "/connexion/", es: "/iniciar-sesion/" },
+  signup: { en: "/sign-up/", fr: "/inscription/", es: "/registrarse/" },
+  create: { en: "/create/", fr: "/creer/", es: "/crear/" },
+  createNew: { en: "/create/new/", fr: "/creer/nouveau/", es: "/crear/nuevo/" },
+  createPlay: { en: "/create/play/", fr: "/creer/jouer/", es: "/crear/jugar/" },
+  leaderboard: { en: "/leaderboard/", fr: "/classement/", es: "/clasificacion/" },
+  sitemap: { en: "/sitemap/", fr: "/plan-du-site/", es: "/mapa-del-sitio/" },
+  legal: { en: "/legal-notices/", fr: "/mentions-legales/", es: "/aviso-legal/" },
+  privacy: { en: "/privacy-policy/", fr: "/confidentialite/", es: "/politica-privacidad/" },
+  terms: { en: "/terms-of-use/", fr: "/cgv/", es: "/condiciones-uso/" },
+};
+
+/** Get hreflang paths for a static page by key. */
+export function getHreflangStaticPaths(key: string): Partial<Record<Locale, string>> {
+  return staticPageSlugs[key] || {};
+}
+
 /**
  * Build hreflang paths for subcategory pages.
  * Since subcategory slugs differ per locale (e.g. "society" EN vs "societe" FR),

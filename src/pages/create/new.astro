@@ -1,9 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import QuizCreator from "../../components/QuizCreator";
 ---
 
-<Layout title="Create Your Own Quiz - Wizy" description="Build your own quiz in minutes. Choose a category, add your questions and share your unique link." locale="en">
+<Layout title="Create Your Own Quiz - Wizy" description="Build your own quiz in minutes. Choose a category, add your questions and share your unique link." locale="en" hreflangPaths={getHreflangStaticPaths("createNew")}>
   <div class="max-w-4xl mx-auto px-4 pt-8">
     <h1 class="font-display text-3xl font-bold text-gray-900 mb-6">New quiz: add your questions</h1>
   </div>

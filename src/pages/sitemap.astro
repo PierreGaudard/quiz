@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
 import { getCategories } from "../data/categories";
 import { getAllQuizzes, slugifySubcategory, getQuizzesByCategory, getQuizzesBySubcategory } from "../data/quizzes";
 import { localePath } from "../utils/base";
@@ -12,7 +13,7 @@ const categories = getCategories(locale);
 const allQuizzes = getAllQuizzes(locale);
 ---
 
-<Layout title="Sitemap: All Quizzes and Categories | Wizy" description="Browse the complete Wizy sitemap with all quiz categories, subcategories and individual quizzes in one place." locale={locale}>
+<Layout title="Sitemap: All Quizzes and Categories | Wizy" description="Browse the complete Wizy sitemap with all quiz categories, subcategories and individual quizzes in one place." locale={locale} hreflangPaths={getHreflangStaticPaths("sitemap")}>
   <main class="max-w-6xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>

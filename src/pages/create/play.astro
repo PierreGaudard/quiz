@@ -1,8 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import CustomQuizPlayer from "../../components/CustomQuizPlayer";
 ---
 
-<Layout title="Quiz personnalisé - Wizy" description="Joue à ce quiz créé par un utilisateur de Wizy.">
+<Layout title="Quiz personnalisé - Wizy" description="Joue à ce quiz créé par un utilisateur de Wizy." locale="en" hreflangPaths={getHreflangStaticPaths("createPlay")}>
   <CustomQuizPlayer client:load />
 </Layout>
