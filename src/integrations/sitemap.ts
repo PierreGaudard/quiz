@@ -3,7 +3,16 @@ import fs from "fs";
 import path from "path";
 
 const SITE = "https://quiz.pierretartare94440.workers.dev";
-const CATEGORY_SLUGS = ["sport", "cinema", "histoire", "culture-generale", "geographie"];
+
+// All category slugs across all locales
+const ALL_CATEGORY_SLUGS = new Set([
+  // Base (FR)
+  "sport", "cinema", "histoire", "culture-generale", "geographie",
+  // EN
+  "sports", "history", "general-knowledge", "geography",
+  // ES
+  "deportes", "cine", "historia", "cultura-general", "geografia",
+]);
 
 function getLocale(urlPath: string): string {
   const parts = urlPath.split("/").filter(Boolean);
@@ -16,8 +25,8 @@ function classify(urlPath: string): string {
   const parts = urlPath.split("/").filter(Boolean);
   let ep = parts;
   if (parts[0] === "fr" || parts[0] === "es") ep = parts.slice(1);
-  if (ep.length === 3 && CATEGORY_SLUGS.includes(ep[0])) return "quizzes";
-  if (ep.length >= 1 && ep.length <= 2 && CATEGORY_SLUGS.includes(ep[0])) return "categories";
+  if (ep.length === 3 && ALL_CATEGORY_SLUGS.has(ep[0])) return "quizzes";
+  if (ep.length >= 1 && ep.length <= 2 && ALL_CATEGORY_SLUGS.has(ep[0])) return "categories";
   return "pages";
 }
 
