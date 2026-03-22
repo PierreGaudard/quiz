@@ -3,12 +3,13 @@ import { defineConfig } from 'astro/config';
 
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
+import customSitemap from './src/integrations/sitemap.ts';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://quiz.pierretartare94440.workers.dev',
   base: '/',
-  integrations: [react()],
+  integrations: [react(), customSitemap()],
 
   i18n: {
     defaultLocale: 'en',
