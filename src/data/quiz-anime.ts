@@ -17,6 +17,7 @@ export const quizDragonBall: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-dragonball-01.webp",
           question: "Quel est le nom Saiyan de Goku ?",
           answers: [
             { id: "a", text: "Bardock" },
@@ -43,6 +44,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-dragonball-03.webp",
           question:
             "Quelle est la premiere transformation de Vegeta dans Dragon Ball Z ?",
           answers: [
@@ -71,6 +73,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-dragonball-05.webp",
           question: "Quelle technique Goku apprend-il aupres de Kaio ?",
           answers: [
             { id: "a", text: "Kamehameha" },
@@ -97,6 +100,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-dragonball-07.webp",
           question: "Quel mechant detruit la planete Vegeta ?",
           answers: [
             { id: "a", text: "Cell" },
@@ -123,6 +127,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-dragonball-09.webp",
           question: "Qui est le createur des Dragon Balls sur Terre ?",
           answers: [
             { id: "a", text: "Dende" },
@@ -157,6 +162,7 @@ export const quizDragonBall: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-dragonball-01.webp",
           question: "What is Goku's Saiyan name?",
           answers: [
             { id: "a", text: "Bardock" },
@@ -183,6 +189,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-dragonball-03.webp",
           question:
             "What is Vegeta's first transformation in Dragon Ball Z?",
           answers: [
@@ -210,6 +217,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-dragonball-05.webp",
           question: "What technique does Goku learn from King Kai?",
           answers: [
             { id: "a", text: "Kamehameha" },
@@ -236,6 +244,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-dragonball-07.webp",
           question: "Which villain destroys Planet Vegeta?",
           answers: [
             { id: "a", text: "Cell" },
@@ -262,6 +271,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-dragonball-09.webp",
           question: "Who is the creator of the Dragon Balls on Earth?",
           answers: [
             { id: "a", text: "Dende" },
@@ -296,6 +306,7 @@ export const quizDragonBall: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-dragonball-01.webp",
           question: "Cual es el nombre Saiyan de Goku?",
           answers: [
             { id: "a", text: "Bardock" },
@@ -323,6 +334,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-dragonball-03.webp",
           question:
             "Cual es la primera transformacion de Vegeta en Dragon Ball Z?",
           answers: [
@@ -351,6 +363,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-dragonball-05.webp",
           question: "Que tecnica aprende Goku de Kaio?",
           answers: [
             { id: "a", text: "Kamehameha" },
@@ -377,6 +390,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-dragonball-07.webp",
           question: "Que villano destruye el planeta Vegeta?",
           answers: [
             { id: "a", text: "Cell" },
@@ -403,6 +417,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-dragonball-09.webp",
           question: "Quien es el creador de las esferas del dragon en la Tierra?",
           answers: [
             { id: "a", text: "Dende" },

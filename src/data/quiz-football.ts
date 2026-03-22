@@ -17,6 +17,7 @@ export const quizFootball: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-football-01.webp",
           question: "Quel pays a gagné le plus de Coupes du Monde ?",
           answers: [
             { id: "a", text: "Allemagne" },
@@ -41,6 +42,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-football-03.webp",
           question: "En quelle année la France a-t-elle gagné sa première Coupe du Monde ?",
           answers: [
             { id: "a", text: "1994" },
@@ -65,6 +67,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-football-05.webp",
           question: "Quel joueur a le plus de sélections en équipe de France ?",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
@@ -89,6 +92,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-football-07.webp",
           question: "Quel stade accueille les matchs de l'équipe de France ?",
           answers: [
             { id: "a", text: "Parc des Princes" },
@@ -113,6 +117,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-football-09.webp",
           question: "Quel joueur a marqué le but le plus rapide en Coupe du Monde ?",
           answers: [
             { id: "a", text: "Clint Dempsey" },
@@ -215,6 +220,7 @@ export const quizFootball: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-football-01.webp",
           question: "Which country has won the most FIFA World Cups?",
           answers: [
             { id: "a", text: "Germany" },
@@ -239,6 +245,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-football-03.webp",
           question: "In what year did France win their first World Cup?",
           answers: [
             { id: "a", text: "1994" },
@@ -263,6 +270,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-football-05.webp",
           question: "Which player holds the record for the most caps for the French national team?",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
@@ -287,6 +295,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-football-07.webp",
           question: "Which stadium hosts the French national team's matches?",
           answers: [
             { id: "a", text: "Parc des Princes" },
@@ -311,6 +320,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-football-09.webp",
           question: "Which player scored the fastest goal in World Cup history?",
           answers: [
             { id: "a", text: "Clint Dempsey" },
@@ -413,6 +423,7 @@ export const quizFootball: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-football-01.webp",
           question: "¿Qué país ha ganado más Copas del Mundo?",
           answers: [
             { id: "a", text: "Alemania" },
@@ -437,6 +448,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-football-03.webp",
           question: "¿En qué año ganó Francia su primera Copa del Mundo?",
           answers: [
             { id: "a", text: "1994" },
@@ -461,6 +473,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-football-05.webp",
           question: "¿Qué jugador tiene más convocatorias con la selección francesa?",
           answers: [
             { id: "a", text: "Zinédine Zidane" },
@@ -485,6 +498,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-football-07.webp",
           question: "¿Qué estadio alberga los partidos de la selección francesa?",
           answers: [
             { id: "a", text: "Parc des Princes" },
@@ -509,6 +523,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-football-09.webp",
           question: "¿Qué jugador marcó el gol más rápido en la historia de la Copa del Mundo?",
           answers: [
             { id: "a", text: "Clint Dempsey" },

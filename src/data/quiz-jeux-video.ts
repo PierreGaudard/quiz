@@ -17,6 +17,7 @@ export const quizMinecraft: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-minecraft-01.webp",
           question: "Quel est le boss final de Minecraft ?",
           answers: [
             { id: "a", text: "Le Wither" },
@@ -44,6 +45,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-minecraft-03.webp",
           question:
             "Quelle est la hauteur maximale de construction dans Minecraft (depuis la version 1.18) ?",
           answers: [
@@ -72,6 +74,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-minecraft-05.webp",
           question:
             "Quel mob explose lorsqu'il s'approche du joueur ?",
           answers: [
@@ -100,6 +103,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-minecraft-07.webp",
           question: "Quel aliment est fabrique avec 3 bles ?",
           answers: [
             { id: "a", text: "Un gateau" },
@@ -126,6 +130,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-minecraft-09.webp",
           question:
             "Comment s'appelle l'autre dimension accessible en plus du Nether ?",
           answers: [
@@ -161,6 +166,7 @@ export const quizMinecraft: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-minecraft-01.webp",
           question: "What is the final boss in Minecraft?",
           answers: [
             { id: "a", text: "The Wither" },
@@ -188,6 +194,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-minecraft-03.webp",
           question:
             "What is the maximum build height in Minecraft (since version 1.18)?",
           answers: [
@@ -216,6 +223,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-minecraft-05.webp",
           question: "Which mob explodes when it gets near players?",
           answers: [
             { id: "a", text: "Zombie" },
@@ -243,6 +251,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-minecraft-07.webp",
           question: "What food item is crafted with 3 wheat?",
           answers: [
             { id: "a", text: "Cake" },
@@ -269,6 +278,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-minecraft-09.webp",
           question:
             "What is the name of the other dimension besides the Nether?",
           answers: [
@@ -304,6 +314,7 @@ export const quizMinecraft: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-minecraft-01.webp",
           question: "Cual es el jefe final de Minecraft?",
           answers: [
             { id: "a", text: "El Wither" },
@@ -331,6 +342,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-minecraft-03.webp",
           question:
             "Cual es la altura maxima de construccion en Minecraft (desde la version 1.18)?",
           answers: [
@@ -359,6 +371,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-minecraft-05.webp",
           question:
             "Que mob explota cuando se acerca al jugador?",
           answers: [
@@ -387,6 +400,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-minecraft-07.webp",
           question: "Que alimento se fabrica con 3 trigos?",
           answers: [
             { id: "a", text: "Un pastel" },
@@ -413,6 +427,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-minecraft-09.webp",
           question:
             "Como se llama la otra dimension ademas del Nether?",
           answers: [

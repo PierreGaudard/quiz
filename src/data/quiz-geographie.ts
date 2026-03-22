@@ -17,8 +17,8 @@ export const quizDrapeaux: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-drapeaux-01.webp",
           question: "Quel pays a un drapeau avec une feuille d'érable ?",
-          image: "https://flagcdn.com/w640/ca.png",
           answers: [
             { id: "a", text: "États-Unis" },
             { id: "b", text: "Canada" },
@@ -33,7 +33,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 2,
           question:
             "Quel drapeau est identique à celui de Monaco, à l'exception de ses proportions ?",
-          image: "https://flagcdn.com/w640/id.png",
           answers: [
             { id: "a", text: "Pologne" },
             { id: "b", text: "Indonésie" },
@@ -46,8 +45,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-drapeaux-03.webp",
           question: "Combien d'étoiles figurent sur le drapeau des États-Unis ?",
-          image: "https://flagcdn.com/w640/us.png",
           answers: [
             { id: "a", text: "48" },
             { id: "b", text: "50" },
@@ -62,7 +61,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 4,
           question:
             "Quel pays a un drapeau à croix blanche sur fond rouge ?",
-          image: "https://flagcdn.com/w640/ch.png",
           answers: [
             { id: "a", text: "Danemark" },
             { id: "b", text: "Suède" },
@@ -75,9 +73,9 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-drapeaux-05.webp",
           question:
             "Quel drapeau africain a les couleurs vert, jaune et rouge avec une étoile au centre ?",
-          image: "https://flagcdn.com/w640/sn.png",
           answers: [
             { id: "a", text: "Mali" },
             { id: "b", text: "Guinée" },
@@ -91,7 +89,6 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 6,
           question: "Quel pays a le seul drapeau national non rectangulaire ?",
-          image: "https://flagcdn.com/w640/np.png",
           answers: [
             { id: "a", text: "Bhoutan" },
             { id: "b", text: "Népal" },
@@ -104,8 +101,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-drapeaux-07.webp",
           question: "Quel drapeau européen a un dragon ?",
-          image: "https://flagcdn.com/w640/gb-wls.png",
           answers: [
             { id: "a", text: "Écosse" },
             { id: "b", text: "Irlande" },
@@ -120,7 +117,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 8,
           question:
             "Quel pays a un soleil à 32 rayons sur son drapeau ?",
-          image: "https://flagcdn.com/w640/uy.png",
           answers: [
             { id: "a", text: "Argentine" },
             { id: "b", text: "Uruguay" },
@@ -133,8 +129,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-drapeaux-09.webp",
           question: "Quel pays a un drapeau avec un cercle rouge sur fond blanc ?",
-          image: "https://flagcdn.com/w640/jp.png",
           answers: [
             { id: "a", text: "Chine" },
             { id: "b", text: "Corée du Sud" },
@@ -149,7 +145,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 10,
           question:
             "Quel drapeau comporte un losange jaune sur fond vert avec un globe bleu étoilé ?",
-          image: "https://flagcdn.com/w640/br.png",
           answers: [
             { id: "a", text: "Brésil" },
             { id: "b", text: "Colombie" },
@@ -164,7 +159,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 11,
           question:
             "Quel pays a un drapeau avec un symbole yin-yang (taegeuk) en son centre ?",
-          image: "https://flagcdn.com/w640/kr.png",
           answers: [
             { id: "a", text: "Japon" },
             { id: "b", text: "Mongolie" },
@@ -179,7 +173,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 12,
           question:
             "Quel pays a un drapeau rouge avec un croissant et une étoile blancs ?",
-          image: "https://flagcdn.com/w640/tr.png",
           answers: [
             { id: "a", text: "Tunisie" },
             { id: "b", text: "Turquie" },
@@ -194,7 +187,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 13,
           question:
             "Quel pays a un drapeau avec une roue (chakra) bleue au centre ?",
-          image: "https://flagcdn.com/w640/in.png",
           answers: [
             { id: "a", text: "Pakistan" },
             { id: "b", text: "Bangladesh" },
@@ -209,7 +201,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 14,
           question:
             "Quel pays a un drapeau avec le Union Jack dans le coin supérieur et des étoiles dont la Croix du Sud ?",
-          image: "https://flagcdn.com/w640/au.png",
           answers: [
             { id: "a", text: "Nouvelle-Zélande" },
             { id: "b", text: "Fidji" },
@@ -224,7 +215,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 15,
           question:
             "Quel pays a un drapeau vert, blanc et rouge avec un aigle posé sur un cactus au centre ?",
-          image: "https://flagcdn.com/w640/mx.png",
           answers: [
             { id: "a", text: "Italie" },
             { id: "b", text: "Mexique" },
@@ -239,7 +229,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 16,
           question:
             "Quel pays a un drapeau composé uniquement de bandes horizontales rouge et blanche ?",
-          image: "https://flagcdn.com/w640/at.png",
           answers: [
             { id: "a", text: "Autriche" },
             { id: "b", text: "Lettonie" },
@@ -254,7 +243,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 17,
           question:
             "Quel drapeau est entièrement vert avec un croissant et une étoile blancs ?",
-          image: "https://flagcdn.com/w640/pk.png",
           answers: [
             { id: "a", text: "Arabie saoudite" },
             { id: "b", text: "Mauritanie" },
@@ -274,8 +262,8 @@ export const quizDrapeaux: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-drapeaux-01.webp",
           question: "Which country has a flag with a maple leaf?",
-          image: "https://flagcdn.com/w640/ca.png",
           answers: [
             { id: "a", text: "United States" },
             { id: "b", text: "Canada" },
@@ -290,7 +278,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 2,
           question:
             "Which flag is identical to Monaco's, except for its proportions?",
-          image: "https://flagcdn.com/w640/id.png",
           answers: [
             { id: "a", text: "Poland" },
             { id: "b", text: "Indonesia" },
@@ -303,8 +290,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-drapeaux-03.webp",
           question: "How many stars are on the United States flag?",
-          image: "https://flagcdn.com/w640/us.png",
           answers: [
             { id: "a", text: "48" },
             { id: "b", text: "50" },
@@ -319,7 +306,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 4,
           question:
             "Which country has a flag with a white cross on a red background?",
-          image: "https://flagcdn.com/w640/ch.png",
           answers: [
             { id: "a", text: "Denmark" },
             { id: "b", text: "Sweden" },
@@ -332,9 +318,9 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-drapeaux-05.webp",
           question:
             "Which African flag has green, yellow, and red colors with a star in the center?",
-          image: "https://flagcdn.com/w640/sn.png",
           answers: [
             { id: "a", text: "Mali" },
             { id: "b", text: "Guinea" },
@@ -348,7 +334,6 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 6,
           question: "Which country has the only non-rectangular national flag?",
-          image: "https://flagcdn.com/w640/np.png",
           answers: [
             { id: "a", text: "Bhutan" },
             { id: "b", text: "Nepal" },
@@ -361,8 +346,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-drapeaux-07.webp",
           question: "Which European flag features a dragon?",
-          image: "https://flagcdn.com/w640/gb-wls.png",
           answers: [
             { id: "a", text: "Scotland" },
             { id: "b", text: "Ireland" },
@@ -377,7 +362,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 8,
           question:
             "Which country has a sun with 32 rays on its flag?",
-          image: "https://flagcdn.com/w640/uy.png",
           answers: [
             { id: "a", text: "Argentina" },
             { id: "b", text: "Uruguay" },
@@ -390,8 +374,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-drapeaux-09.webp",
           question: "Which country has a flag with a red circle on a white background?",
-          image: "https://flagcdn.com/w640/jp.png",
           answers: [
             { id: "a", text: "China" },
             { id: "b", text: "South Korea" },
@@ -406,7 +390,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 10,
           question:
             "Which flag features a yellow diamond on a green background with a starry blue globe?",
-          image: "https://flagcdn.com/w640/br.png",
           answers: [
             { id: "a", text: "Brazil" },
             { id: "b", text: "Colombia" },
@@ -421,7 +404,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 11,
           question:
             "Which country has a flag with a yin-yang symbol (taegeuk) at its center?",
-          image: "https://flagcdn.com/w640/kr.png",
           answers: [
             { id: "a", text: "Japan" },
             { id: "b", text: "Mongolia" },
@@ -436,7 +418,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 12,
           question:
             "Which country has a red flag with a white crescent and star?",
-          image: "https://flagcdn.com/w640/tr.png",
           answers: [
             { id: "a", text: "Tunisia" },
             { id: "b", text: "Turkey" },
@@ -451,7 +432,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 13,
           question:
             "Which country has a flag with a blue wheel (chakra) at the center?",
-          image: "https://flagcdn.com/w640/in.png",
           answers: [
             { id: "a", text: "Pakistan" },
             { id: "b", text: "Bangladesh" },
@@ -466,7 +446,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 14,
           question:
             "Which country has a flag with the Union Jack in the upper corner and stars including the Southern Cross?",
-          image: "https://flagcdn.com/w640/au.png",
           answers: [
             { id: "a", text: "New Zealand" },
             { id: "b", text: "Fiji" },
@@ -481,7 +460,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 15,
           question:
             "Which country has a green, white, and red flag with an eagle perched on a cactus at the center?",
-          image: "https://flagcdn.com/w640/mx.png",
           answers: [
             { id: "a", text: "Italy" },
             { id: "b", text: "Mexico" },
@@ -496,7 +474,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 16,
           question:
             "Which country has a flag made up solely of horizontal red and white stripes?",
-          image: "https://flagcdn.com/w640/at.png",
           answers: [
             { id: "a", text: "Austria" },
             { id: "b", text: "Latvia" },
@@ -511,7 +488,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 17,
           question:
             "Which flag is entirely green with a white crescent and star?",
-          image: "https://flagcdn.com/w640/pk.png",
           answers: [
             { id: "a", text: "Saudi Arabia" },
             { id: "b", text: "Mauritania" },
@@ -531,8 +507,8 @@ export const quizDrapeaux: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-drapeaux-01.webp",
           question: "\u00bfQué país tiene una bandera con una hoja de arce?",
-          image: "https://flagcdn.com/w640/ca.png",
           answers: [
             { id: "a", text: "Estados Unidos" },
             { id: "b", text: "Canadá" },
@@ -547,7 +523,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 2,
           question:
             "\u00bfQué bandera es idéntica a la de Mónaco, salvo por sus proporciones?",
-          image: "https://flagcdn.com/w640/id.png",
           answers: [
             { id: "a", text: "Polonia" },
             { id: "b", text: "Indonesia" },
@@ -560,8 +535,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-drapeaux-03.webp",
           question: "\u00bfCuántas estrellas hay en la bandera de Estados Unidos?",
-          image: "https://flagcdn.com/w640/us.png",
           answers: [
             { id: "a", text: "48" },
             { id: "b", text: "50" },
@@ -576,7 +551,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 4,
           question:
             "\u00bfQué país tiene una bandera con una cruz blanca sobre fondo rojo?",
-          image: "https://flagcdn.com/w640/ch.png",
           answers: [
             { id: "a", text: "Dinamarca" },
             { id: "b", text: "Suecia" },
@@ -589,9 +563,9 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-drapeaux-05.webp",
           question:
             "\u00bfQué bandera africana tiene los colores verde, amarillo y rojo con una estrella en el centro?",
-          image: "https://flagcdn.com/w640/sn.png",
           answers: [
             { id: "a", text: "Mali" },
             { id: "b", text: "Guinea" },
@@ -605,7 +579,6 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 6,
           question: "\u00bfQué país tiene la única bandera nacional no rectangular?",
-          image: "https://flagcdn.com/w640/np.png",
           answers: [
             { id: "a", text: "Bután" },
             { id: "b", text: "Nepal" },
@@ -618,8 +591,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-drapeaux-07.webp",
           question: "\u00bfQué bandera europea tiene un dragón?",
-          image: "https://flagcdn.com/w640/gb-wls.png",
           answers: [
             { id: "a", text: "Escocia" },
             { id: "b", text: "Irlanda" },
@@ -634,7 +607,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 8,
           question:
             "\u00bfQué país tiene un sol con 32 rayos en su bandera?",
-          image: "https://flagcdn.com/w640/uy.png",
           answers: [
             { id: "a", text: "Argentina" },
             { id: "b", text: "Uruguay" },
@@ -647,8 +619,8 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-drapeaux-09.webp",
           question: "\u00bfQué país tiene una bandera con un círculo rojo sobre fondo blanco?",
-          image: "https://flagcdn.com/w640/jp.png",
           answers: [
             { id: "a", text: "China" },
             { id: "b", text: "Corea del Sur" },
@@ -663,7 +635,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 10,
           question:
             "\u00bfQué bandera presenta un rombo amarillo sobre fondo verde con un globo azul estrellado?",
-          image: "https://flagcdn.com/w640/br.png",
           answers: [
             { id: "a", text: "Brasil" },
             { id: "b", text: "Colombia" },
@@ -678,7 +649,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 11,
           question:
             "\u00bfQué país tiene una bandera con un símbolo yin-yang (taegeuk) en su centro?",
-          image: "https://flagcdn.com/w640/kr.png",
           answers: [
             { id: "a", text: "Japón" },
             { id: "b", text: "Mongolia" },
@@ -693,7 +663,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 12,
           question:
             "\u00bfQué país tiene una bandera roja con una media luna y una estrella blancas?",
-          image: "https://flagcdn.com/w640/tr.png",
           answers: [
             { id: "a", text: "Túnez" },
             { id: "b", text: "Turquía" },
@@ -708,7 +677,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 13,
           question:
             "\u00bfQué país tiene una bandera con una rueda (chakra) azul en el centro?",
-          image: "https://flagcdn.com/w640/in.png",
           answers: [
             { id: "a", text: "Pakistán" },
             { id: "b", text: "Bangladés" },
@@ -723,7 +691,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 14,
           question:
             "\u00bfQué país tiene una bandera con la Union Jack en la esquina superior y estrellas incluida la Cruz del Sur?",
-          image: "https://flagcdn.com/w640/au.png",
           answers: [
             { id: "a", text: "Nueva Zelanda" },
             { id: "b", text: "Fiyi" },
@@ -738,7 +705,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 15,
           question:
             "\u00bfQué país tiene una bandera verde, blanca y roja con un águila posada sobre un cactus en el centro?",
-          image: "https://flagcdn.com/w640/mx.png",
           answers: [
             { id: "a", text: "Italia" },
             { id: "b", text: "México" },
@@ -753,7 +719,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 16,
           question:
             "\u00bfQué país tiene una bandera compuesta únicamente de franjas horizontales rojas y blancas?",
-          image: "https://flagcdn.com/w640/at.png",
           answers: [
             { id: "a", text: "Austria" },
             { id: "b", text: "Letonia" },
@@ -768,7 +733,6 @@ export const quizDrapeaux: TranslatedQuiz = {
           id: 17,
           question:
             "\u00bfQué bandera es enteramente verde con una media luna y una estrella blancas?",
-          image: "https://flagcdn.com/w640/pk.png",
           answers: [
             { id: "a", text: "Arabia Saudita" },
             { id: "b", text: "Mauritania" },
