@@ -27,6 +27,20 @@ const qpT: Record<string, Record<string, string>> = {
   descRecommended: { en: "A good level of knowledge is recommended.", fr: "Un bon niveau de connaissances est recommande.", es: "Se recomienda un buen nivel de conocimiento." },
   descExpert: { en: "Warning, only experts will get through without mistakes.", fr: "Attention, seuls les experts passeront sans erreur.", es: "Atencion, solo los expertos pasaran sin errores." },
   descIntro: { en: "Answer all {n} questions, discover detailed explanations after each answer and compare your score with friends.", fr: "Repondez aux {n} questions, decouvrez les explications detaillees apres chaque reponse et comparez votre score avec vos amis.", es: "Responde las {n} preguntas, descubre explicaciones detalladas tras cada respuesta y compara tu puntuacion con tus amigos." },
+  share: { en: "Share", fr: "Partager", es: "Compartir" },
+  xpEarned: { en: "XP earned", fr: "XP gagnes", es: "XP ganados" },
+  correctLabel: { en: "Correct", fr: "Correct", es: "Correcto" },
+  questionDetails: { en: "Question details", fr: "Detail des questions", es: "Detalle de preguntas" },
+  msgExcellent: { en: "Excellent! You've mastered this topic!", fr: "Excellent ! Vous maitrisez le sujet !", es: "Excelente! Dominas el tema!" },
+  msgNotBad: { en: "Not bad! You have a solid foundation.", fr: "Pas mal ! Vous avez de bonnes bases.", es: "Nada mal! Tienes buenas bases." },
+  msgKeepGoing: { en: "Keep practicing, you'll improve!", fr: "Continuez, vous allez progresser !", es: "Sigue practicando, vas a mejorar!" },
+  rankLegend: { en: "Legend", fr: "Legende", es: "Leyenda" },
+  rankExpert: { en: "Expert", fr: "Expert", es: "Experto" },
+  rankSkilled: { en: "Skilled", fr: "Confirme", es: "Habil" },
+  rankApprentice: { en: "Apprentice", fr: "Apprenti", es: "Aprendiz" },
+  rankBeginner: { en: "Beginner", fr: "Debutant", es: "Principiante" },
+  secondChanceActive: { en: "Second chance active", fr: "2e chance active", es: "2a oportunidad activa" },
+  hintLabel: { en: "Hint:", fr: "Indice :", es: "Pista:" },
 };
 
 const ANSWER_COLORS = [
@@ -228,14 +242,14 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Legend", color: "bg-amber-500", icon: "S" }
+      ? { label: tt("rankLegend"), color: "bg-amber-500", icon: "S" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-violet-500", icon: "A" }
+        ? { label: tt("rankExpert"), color: "bg-violet-500", icon: "A" }
         : scorePercent >= 50
-          ? { label: "Skilled", color: "bg-blue-500", icon: "B" }
+          ? { label: tt("rankSkilled"), color: "bg-blue-500", icon: "B" }
           : scorePercent >= 30
-            ? { label: "Apprentice", color: "bg-green-500", icon: "C" }
-            : { label: "Beginner", color: "bg-gray-500", icon: "D" };
+            ? { label: tt("rankApprentice"), color: "bg-green-500", icon: "C" }
+            : { label: tt("rankBeginner"), color: "bg-gray-500", icon: "D" };
 
   const handleStartQuiz = useCallback(() => {
     setHasStarted(true);
@@ -553,7 +567,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   {/* Second chance indicator */}
                   {state.hasSecondChance && !state.hasAnswered && (
                     <div className="mt-2 ml-12 text-xs text-blue-600 font-medium bg-blue-50 px-2.5 py-1 rounded-full inline-block">
-                      Second chance active
+                      {tt("secondChanceActive")}
                     </div>
                   )}
                 </div>
@@ -562,7 +576,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 {showIndice === qIndex && question.explanation && !state.hasAnswered && (
                   <div className="px-5 md:px-6 pb-3">
                     <div className="bg-violet-50 text-violet-800 text-sm p-3 rounded-xl border border-violet-200">
-                      <span className="font-bold">Indice : </span>
+                      <span className="font-bold">{tt("hintLabel")} </span>
                       {question.explanation.substring(0, Math.min(80, question.explanation.length))}...
                     </div>
                   </div>
@@ -690,14 +704,14 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 </div>
                 <p className="text-white/80 text-sm">
                   {scorePercent >= 80
-                    ? "Excellent! You've mastered this topic!"
+                    ? tt("msgExcellent")
                     : scorePercent >= 50
-                      ? "Not bad! You have a solid foundation."
-                      : "Keep practicing, you'll improve!"}
+                      ? tt("msgNotBad")
+                      : tt("msgKeepGoing")}
                 </p>
                 {/* XP earned */}
                 <div className="mt-4 bg-white/15 backdrop-blur-sm rounded-xl p-3 inline-block">
-                  <div className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-0.5">XP earned</div>
+                  <div className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-0.5">{tt("xpEarned")}</div>
                   <div className="text-2xl font-display font-black animate-score-reveal">+{totalXp} XP</div>
                 </div>
               </div>
@@ -707,7 +721,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 <div className="grid grid-cols-3 gap-3 mb-6">
                   <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
                     <div className="text-3xl font-display font-bold text-green-600">{score}</div>
-                    <div className="text-xs text-green-700 font-medium mt-1">Correct</div>
+                    <div className="text-xs text-green-700 font-medium mt-1">{tt("correctLabel")}</div>
                   </div>
                   <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
                     <div className="text-3xl font-display font-bold text-red-500">{totalQuestions - score}</div>
@@ -721,7 +735,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
 
                 {/* Question timeline */}
                 <div className="mb-6">
-                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Question details</div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">{tt("questionDetails")}</div>
                   <div className="flex items-center gap-1 flex-wrap">
                     {quiz.questions.map((q, i) => {
                       const wasCorrect = questionStates[i].isCorrect;
@@ -768,7 +782,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
                     </svg>
-                    Share
+                    {tt("share")}
                   </button>
                 </div>
               </div>
