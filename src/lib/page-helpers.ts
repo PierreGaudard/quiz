@@ -2,22 +2,23 @@ import type { Locale } from "../i18n/config";
 import { getCategories, getGameTypes, categoryDefs } from "../data/categories";
 import { getAllQuizzes, getQuizzesByCategory, getFeaturedQuiz, getAllSubcategoryPaths, getQuizzesBySubcategory, slugifySubcategory } from "../data/quizzes";
 
-/** Generate static paths for [slug].astro (categories + quizzes). */
+/** Generate static paths for [slug].astro (categories only). */
 export function getSlugPaths(locale: Locale) {
   const cats = getCategories(locale);
-  const quizzes = getAllQuizzes(locale);
 
-  const categoryPaths = cats.map((cat) => ({
+  return cats.map((cat) => ({
     params: { slug: cat.slug },
-    props: { type: "category" as const, categorySlug: cat.slug, locale },
+    props: { categorySlug: cat.slug, locale },
   }));
+}
 
-  const quizPaths = quizzes.map((quiz) => ({
-    params: { slug: quiz.slug },
-    props: { type: "quiz" as const, quizData: quiz, locale },
+/** Generate static paths for [category]/[sub]/[quiz].astro. */
+export function getQuizPaths(locale: Locale) {
+  const quizzes = getAllQuizzes(locale);
+  return quizzes.map((quiz) => ({
+    params: { category: quiz.categorySlug, sub: quiz.subcategorySlug || "general", quiz: quiz.slug },
+    props: { quizData: quiz, locale },
   }));
-
-  return [...categoryPaths, ...quizPaths];
 }
 
 /** Generate static paths for [category]/[sub].astro. */

@@ -10,17 +10,35 @@ export const allTranslatedQuizzes: TranslatedQuiz[] = Object.values(quizModules)
   (mod) => mod.default ?? []
 );
 
+/** Resolve the locale-specific subcategory slug for a quiz. */
+function resolveSubcategorySlug(quiz: TranslatedQuiz, locale: Locale): string {
+  if (!quiz.subcategory) return "";
+  const catDef = categoryDefs.find((c) => c.slug === quiz.categorySlug);
+  if (!catDef) return slugifySubcategory(quiz.subcategory);
+  // The subcategory field is stored in FR. Find its index in FR subs.
+  const frSubs = catDef.translations.fr?.subcategories || [];
+  const subIndex = frSubs.indexOf(quiz.subcategory);
+  if (subIndex === -1) return slugifySubcategory(quiz.subcategory);
+  const localeSubs = catDef.translations[locale]?.subcategories || catDef.translations.en?.subcategories || frSubs;
+  return slugifySubcategory(localeSubs[subIndex] || quiz.subcategory);
+}
+
 /** Resolve a TranslatedQuiz into a QuizData for a given locale. */
 export function resolveQuiz(quiz: TranslatedQuiz, locale: Locale): QuizData {
   const content = quiz.translations[locale] || quiz.translations.en || Object.values(quiz.translations)[0]!;
   const catName = getCategoryName(quiz.categorySlug, locale);
   const diffLabel = difficultyLabels[locale]?.[quiz.difficulty] || difficultyLabels.en[quiz.difficulty];
+  const quizSlug = quiz.slugs?.[locale] || quiz.slug;
+  const subSlug = resolveSubcategorySlug(quiz, locale);
   return {
-    slug: quiz.slugs?.[locale] || quiz.slug,
+    slug: quizSlug,
+    path: `${quiz.categorySlug}/${subSlug}/${quizSlug}`,
     title: content.title,
     description: content.description,
     category: catName,
+    categorySlug: quiz.categorySlug,
     subcategory: quiz.subcategory,
+    subcategorySlug: subSlug,
     difficulty: diffLabel,
     coverImage: quiz.coverImage,
     timePerQuestion: quiz.timePerQuestion,

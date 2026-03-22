@@ -47,10 +47,14 @@ export interface TranslatedQuiz {
 /** Resolved quiz data — what components receive. Same shape as before. */
 export interface QuizData {
   slug: string;
+  /** Full path segment: {categorySlug}/{subcategorySlug}/{quizSlug} */
+  path: string;
   title: string;
   description: string;
   category: string;
+  categorySlug: string;
   subcategory?: string;
+  subcategorySlug?: string;
   difficulty: string;
   coverImage?: string;
   timePerQuestion?: number;

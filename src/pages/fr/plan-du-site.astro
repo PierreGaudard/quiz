@@ -82,7 +82,7 @@ const allQuizzes = getAllQuizzes(locale);
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1">
                       {catQuizzes.map((q) => (
                         <a
-                          href={lp(`/${q.slug}`)}
+                          href={lp(`/${q.path}`)}
                           class="text-sm text-gray-600 hover:text-violet-600 transition-colors py-1 truncate"
                         >
                           {q.title}

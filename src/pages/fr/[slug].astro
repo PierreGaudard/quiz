@@ -1,17 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import QuizPagePlayer from "../../components/QuizPagePlayer";
-import VraiFauxPlayer from "../../components/VraiFauxPlayer";
-import ChronoPlayer from "../../components/ChronoPlayer";
-import EstimationPlayer from "../../components/EstimationPlayer";
-import DuelPlayer from "../../components/DuelPlayer";
-import OrdrePlayer from "../../components/OrdrePlayer";
 import CategoryPage from "../../components/CategoryPage";
-import { categoryIcons } from "../../data/icons";
-import { localePath, withBase } from "../../utils/base";
+import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
-import { getSlugPaths, resolveCategoryData, resolveQuizData } from "../../lib/page-helpers";
-import { getHreflangQuizPaths } from "../../lib/hreflang-helpers";
+import { getSlugPaths, resolveCategoryData } from "../../lib/page-helpers";
 import type { Locale } from "../../i18n/config";
 
 const locale: Locale = "fr";
@@ -20,254 +12,37 @@ export function getStaticPaths() {
   return getSlugPaths("fr");
 }
 
-const props = Astro.props;
-const isCategory = props.type === "category";
-
-let category: any = null;
-let catQuizzes: any[] = [];
-let featured: any = null;
-let availableGameTypes: any[] = [];
-let quizzesByType: any[] = [];
-
-if (isCategory) {
-  const data = resolveCategoryData(props.categorySlug, locale);
-  category = data.category;
-  catQuizzes = data.catQuizzes;
-  featured = data.featured;
-  availableGameTypes = data.availableGameTypes;
-  quizzesByType = data.quizzesByType;
-}
-
-let quiz: any = null;
-let sameCategory: any[] = [];
-let recommendedQuizzes: any[] = [];
-let categoryInfo: any = null;
-let sidebarCategories: any[] = [];
-
-if (!isCategory) {
-  const data = resolveQuizData(props.quizData, locale);
-  quiz = data.quiz;
-  sameCategory = data.sameCategory;
-  recommendedQuizzes = data.recommendedQuizzes;
-  categoryInfo = data.categoryInfo;
-  sidebarCategories = data.sidebarCategories;
-}
-
+const { categorySlug } = Astro.props;
+const { category, catQuizzes, featured, availableGameTypes, quizzesByType } = resolveCategoryData(categorySlug, locale);
 const lp = (path: string) => localePath(path, locale);
-const formatCount = (n: number) => {
-  if (n >= 1000) {
-    const val = (n / 1000).toFixed(1);
-    return val.endsWith('.0') ? val.slice(0, -2) + 'k' : val + 'k';
-  }
-  return n.toString();
-};
 ---
 
-{isCategory ? (
-  <Layout title={`${category.name} Quiz - Test your knowledge`} description={category.seoIntro || category.description} locale={locale}>
-    <CategoryPage
-      client:load
-      category={category}
-      quizzes={catQuizzes}
-      featured={featured}
-      gameTypes={availableGameTypes}
-      quizzesByType={quizzesByType}
-      locale={locale}
-    />
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: `${category.name} Quiz`,
-      description: category.seoIntro || category.description,
-      url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${category.slug}`,
-      inLanguage: "fr",
-      provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
-      numberOfItems: catQuizzes.length,
-    })} />
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Accueil", item: `${Astro.site?.toString().replace(/\/$/, '')}/fr/` },
-        { "@type": "ListItem", position: 2, name: category.name },
-      ]
-    })} />
-  </Layout>
-) : (
-  <Layout title={`${quiz.title} - Wizy`} description={quiz.description} ogImage={quiz.coverImage} locale={locale} hreflangPaths={getHreflangQuizPaths(quiz.slug, locale)}>
-    <div class="max-w-7xl mx-auto px-4 py-8">
-      <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-6 flex-wrap" aria-label="Breadcrumb">
-        <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
-        <svg class="w-3 h-3 text-gray-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-        {categoryInfo && (
-          <>
-            <a href={lp(`/${categoryInfo.slug}`)} class="hover:text-violet-600 transition-colors font-medium">{categoryInfo.name}</a>
-            <svg class="w-3 h-3 text-gray-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-          </>
-        )}
-        <span class="text-gray-700 font-semibold truncate max-w-[200px] sm:max-w-none">{quiz.title}</span>
-      </nav>
-
-      <div class="flex flex-col lg:flex-row gap-6">
-        <main class="flex-1 min-w-0">
-          <div id="quiz-app">
-            {quiz.gameType === "vrai-faux" ? (
-              <VraiFauxPlayer quiz={quiz} client:load />
-            ) : quiz.gameType === "chrono" ? (
-              <ChronoPlayer quiz={quiz} client:load />
-            ) : quiz.gameType === "estimation" ? (
-              <EstimationPlayer quiz={quiz} client:load />
-            ) : quiz.gameType === "duel" ? (
-              <DuelPlayer quiz={quiz} client:load />
-            ) : quiz.gameType === "ordre" ? (
-              <OrdrePlayer quiz={quiz} client:load />
-            ) : (
-              <QuizPagePlayer quiz={quiz} client:load />
-            )}
-          </div>
-
-          <noscript>
-            <section class="py-8 space-y-6">
-              <div class="text-center space-y-3 mb-8">
-                <span class="inline-block text-violet-600 font-semibold text-sm tracking-wide uppercase">{quiz.category}</span>
-                <h2 class="font-bold text-3xl md:text-4xl text-gray-900 leading-tight">{quiz.title}</h2>
-                <p class="text-gray-600 text-base max-w-xl mx-auto">{quiz.description}</p>
-              </div>
-              {quiz.questions.map((q: any, i: number) => (
-                <article class="bg-white rounded-2xl p-5 md:p-6 shadow-sm border border-gray-100">
-                  <h2 class="text-lg font-semibold text-gray-900 mb-3">
-                    <span class="text-violet-500 font-bold mr-2">Q{i + 1}.</span>
-                    {q.question}
-                  </h2>
-                  {q.image && (
-                    <img src={withBase(q.image)} alt={q.question} class="rounded-xl mb-4 w-full max-w-md object-cover aspect-video" loading="lazy" />
-                  )}
-                  <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-3">
-                    {q.answers.map((a: any, j: number) => (
-                      <li class={`p-3 rounded-xl text-sm font-medium ${a.id === q.correctAnswer ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-gray-50 text-gray-700 border border-gray-100'}`}>
-                        <span class="font-bold mr-1.5">{String.fromCharCode(65 + j)}.</span>
-                        {a.text}
-                      </li>
-                    ))}
-                  </ul>
-                  {q.explanation && (
-                    <p class="text-sm text-gray-500 italic">{q.explanation}</p>
-                  )}
-                </article>
-              ))}
-            </section>
-          </noscript>
-
-          {recommendedQuizzes.length > 0 && (
-            <section class="mt-16 pt-12 border-t border-gray-200">
-              <h2 class="font-display text-2xl font-bold text-gray-900 mb-6">{t(locale, "quiz.recommended")}</h2>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {recommendedQuizzes.map((rq) => (
-                  <a href={lp(`/${rq.slug}`)} class="group bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
-                    {rq.coverImage && (
-                      <div class="relative h-32 overflow-hidden">
-                        <img src={withBase(rq.coverImage)} alt={rq.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                      </div>
-                    )}
-                    <div class="p-3.5">
-                      <div class="text-[10px] font-semibold text-violet-600 uppercase tracking-wide mb-1">{rq.category}</div>
-                      <h3 class="font-display font-bold text-sm text-gray-900 leading-snug group-hover:text-violet-700 transition-colors">{rq.title}</h3>
-                      <div class="flex items-center gap-2 mt-2 text-[11px] text-gray-500">
-                        <span>{rq.questions.length} {t(locale, "quiz.questions")}</span>
-                        {rq.playCount && <span>&bull; {formatCount(rq.playCount)} {t(locale, "quiz.plays")}</span>}
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {categoryInfo && (
-            <section class="mt-12">
-              <a href={lp(`/${categoryInfo.slug}`)} class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all group">
-                <span class={`w-10 h-10 ${categoryInfo.color} rounded-xl flex items-center justify-center text-white p-2 flex-shrink-0`} set:html={categoryIcons[categoryInfo.slug] || categoryInfo.icon} />
-                <div class="flex-1 min-w-0">
-                  <div class="text-sm font-bold text-gray-900 group-hover:text-violet-700 transition-colors">{t(locale, "quiz.allInCategory", { category: categoryInfo.name })}</div>
-                  <div class="text-xs text-gray-500 mt-0.5">
-                    {sameCategory.length > 0
-                      ? t(locale, "quiz.otherInCategory", { count: sameCategory.length })
-                      : t(locale, "quiz.discoverCategory")}
-                  </div>
-                </div>
-                <svg class="w-4 h-4 text-gray-400 group-hover:text-violet-500 group-hover:translate-x-0.5 transition-all flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
-              </a>
-            </section>
-          )}
-        </main>
-
-        <aside class="lg:w-56 flex-shrink-0">
-          <div class="lg:sticky lg:top-[130px] space-y-4">
-            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-              <div class="bg-gradient-to-r from-violet-600 to-purple-700 px-3 py-2">
-                <h3 class="font-display font-bold text-white text-xs">{t(locale, "cat.explore")}</h3>
-              </div>
-              <div class="p-2 grid grid-cols-2 gap-1">
-                {sidebarCategories.map((cat) => (
-                  <a href={lp(`/${cat.slug}`)} class={`flex flex-col items-center gap-1 p-1.5 rounded-lg text-center transition-all hover:bg-gray-50 ${cat.name === quiz.category ? 'bg-violet-50 ring-1 ring-violet-200' : ''}`}>
-                    <span class={`w-7 h-7 ${cat.color} rounded-md flex items-center justify-center text-white p-1`} set:html={categoryIcons[cat.slug] || cat.icon} />
-                    <span class={`text-[10px] font-medium leading-tight ${cat.name === quiz.category ? 'text-violet-700 font-semibold' : 'text-gray-700'}`}>{cat.name}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-3.5">
-              <h3 class="font-display font-bold text-gray-900 text-sm text-center mb-3">{t(locale, "home.member.title")}</h3>
-              <ul class="space-y-1.5 mb-3">
-                <li class="flex items-center gap-2 text-xs text-gray-700">
-                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                  {t(locale, "home.member.scores")}
-                </li>
-                <li class="flex items-center gap-2 text-xs text-gray-700">
-                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                  {t(locale, "home.member.xp")}
-                </li>
-                <li class="flex items-center gap-2 text-xs text-gray-700">
-                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                  {t(locale, "home.member.compare")}
-                </li>
-              </ul>
-              <a href={lp('/inscription')} class="block w-full text-center bg-violet-600 hover:bg-violet-700 text-white font-semibold text-xs py-2.5 rounded-xl transition-colors">{t(locale, "home.member.cta")}</a>
-              <p class="text-center text-[10px] text-gray-400 mt-2">{t(locale, "home.member.free")}</p>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Quiz",
-      name: quiz.title,
-      description: quiz.description,
-      url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${quiz.slug}`,
-      inLanguage: "fr",
-      educationalLevel: quiz.difficulty,
-      about: { "@type": "Thing", name: quiz.category },
-      provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
-      hasPart: quiz.questions.map((q: any, i: number) => ({
-        "@type": "Question",
-        position: i + 1,
-        text: q.question,
-        acceptedAnswer: { "@type": "Answer", text: q.answers.find((a: any) => a.id === q.correctAnswer)?.text },
-        suggestedAnswer: q.answers.filter((a: any) => a.id !== q.correctAnswer).map((a: any) => ({ "@type": "Answer", text: a.text })),
-      })),
-    })} />
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Accueil", item: `${Astro.site?.toString().replace(/\/$/, '')}/fr/` },
-        ...(categoryInfo ? [{ "@type": "ListItem", position: 2, name: categoryInfo.name, item: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${categoryInfo.slug}` }] : []),
-        { "@type": "ListItem", position: categoryInfo ? 3 : 2, name: quiz.title },
-      ]
-    })} />
-  </Layout>
-)}
+<Layout title={`${category.name} Quiz - Test your knowledge`} description={category.seoIntro || category.description} locale={locale}>
+  <CategoryPage
+    client:load
+    category={category}
+    quizzes={catQuizzes}
+    featured={featured}
+    gameTypes={availableGameTypes}
+    quizzesByType={quizzesByType}
+    locale={locale}
+  />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${category.name} Quiz`,
+    description: category.seoIntro || category.description,
+    url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${category.slug}`,
+    inLanguage: "fr",
+    provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
+    numberOfItems: catQuizzes.length,
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: `${Astro.site?.toString().replace(/\/$/, '')}/fr/` },
+      { "@type": "ListItem", position: 2, name: category.name },
+    ]
+  })} />
+</Layout>

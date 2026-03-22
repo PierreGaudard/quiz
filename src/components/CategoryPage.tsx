@@ -541,7 +541,7 @@ export default function CategoryPage({
                   </span>
                 )}
                 <a
-                  href={lp(`/${miniQuiz.slug}`)}
+                  href={lp(`/${miniQuiz.path}`)}
                   className="ml-auto inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors shadow-sm"
                 >
                   {tt("playFullQuiz")}
@@ -625,7 +625,7 @@ export default function CategoryPage({
                   {diffQuizzes.slice(0, 6).map((q) => (
                     <a
                       key={q.slug}
-                      href={lp(`/${q.slug}`)}
+                      href={lp(`/${q.path}`)}
                       className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 p-3 hover:shadow-md transition-shadow group"
                     >
                       {q.coverImage && (
@@ -797,7 +797,7 @@ function QuizCard({
 
   return (
     <a
-      href={lp(`/${quiz.slug}`)}
+      href={lp(`/${quiz.path}`)}
       className={`group relative rounded-2xl overflow-hidden shadow-sm border transition-all duration-300 ${
         isCompleted
           ? "bg-gray-50 border-gray-200 opacity-80 hover:opacity-100 hover:shadow-md"
