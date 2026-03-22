@@ -3,6 +3,9 @@ Disallow: /
 Disallow: /profile/
 Disallow: /fr/profil/
 Disallow: /es/perfil/
+Disallow: /search/
+Disallow: /fr/recherche/
+Disallow: /es/buscar/
 Disallow: /api/
 
 User-agent: Screaming Frog SEO Spider
@@ -10,6 +13,9 @@ Allow: /
 Disallow: /profile/
 Disallow: /fr/profil/
 Disallow: /es/perfil/
+Disallow: /search/
+Disallow: /fr/recherche/
+Disallow: /es/buscar/
 Disallow: /api/
 
 Sitemap: https://wizyquiz.com/sitemap-index.xml

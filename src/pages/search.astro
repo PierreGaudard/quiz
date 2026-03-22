@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
+import SearchPage from "../components/SearchPage";
+import { getAllQuizzes } from "../data/quizzes";
+import { getCategories } from "../data/categories";
+import type { Locale } from "../i18n/config";
+
+const locale: Locale = "en";
+const allQuizzes = getAllQuizzes(locale);
+const categories = getCategories(locale);
+---
+
+<Layout title="Search quizzes | Wizy" description="Search among hundreds of quizzes on Wizy. Find quizzes about sports, cinema, anime, video games and more." locale={locale} hreflangPaths={getHreflangStaticPaths("search")} noindex={true}>
+  <SearchPage client:load quizzes={allQuizzes} categories={categories} locale={locale} />
+</Layout>

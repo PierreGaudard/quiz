@@ -23,6 +23,7 @@ const slugs: Record<string, Record<string, string>> = {
   create: { en: "/create", fr: "/creer", es: "/crear" },
   leaderboard: { en: "/leaderboard", fr: "/classement", es: "/clasificacion" },
   profile: { en: "/profile", fr: "/profil", es: "/perfil" },
+  search: { en: "/search", fr: "/recherche", es: "/buscar" },
 };
 const s = (key: string) => slugs[key]?.[locale] || slugs[key]?.en || key;
 
@@ -81,14 +82,14 @@ const navLinks = [
         </div>
       </a>
 
-      <div class="flex-1 max-w-lg mx-auto hidden md:block">
+      <form action={lp(s('search'))} method="GET" class="flex-1 max-w-lg mx-auto hidden md:block">
         <div class="relative">
-          <input type="text" placeholder={t(locale, "nav.search")} class="w-full h-9 pl-4 pr-12 rounded bg-white/10 border border-white/20 text-white placeholder-white/40 text-sm focus:outline-none focus:bg-white/15 focus:border-white/40 transition-all" />
-          <button class="absolute right-0 top-0 h-9 w-10 rounded-r bg-yellow-500 hover:bg-yellow-400 flex items-center justify-center transition-colors" aria-label="Search">
+          <input type="search" name="q" placeholder={t(locale, "nav.search")} class="w-full h-9 pl-4 pr-12 rounded bg-white/10 border border-white/20 text-white placeholder-white/40 text-sm focus:outline-none focus:bg-white/15 focus:border-white/40 transition-all" />
+          <button type="submit" class="absolute right-0 top-0 h-9 w-10 rounded-r bg-yellow-500 hover:bg-yellow-400 flex items-center justify-center transition-colors" aria-label="Search">
             <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
           </button>
         </div>
-      </div>
+      </form>
 
       <div class="flex items-center gap-2 ml-auto shrink-0">
         {/* Language switcher dropdown */}
@@ -262,12 +263,12 @@ const navLinks = [
   {/* Mobile menu */}
   <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-[#241558]">
     <div class="max-w-7xl mx-auto px-4 py-3 space-y-1">
-      <div class="relative mb-3">
-        <input type="text" placeholder={t(locale, "nav.search")} class="w-full h-10 pl-4 pr-12 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:bg-white/15 focus:border-white/40" />
-        <button class="absolute right-0 top-0 h-10 w-11 rounded-r bg-yellow-500 flex items-center justify-center" aria-label="Search">
+      <form action={lp(s('search'))} method="GET" class="relative mb-3">
+        <input type="search" name="q" placeholder={t(locale, "nav.search")} class="w-full h-10 pl-4 pr-12 rounded bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:bg-white/15 focus:border-white/40" />
+        <button type="submit" class="absolute right-0 top-0 h-10 w-11 rounded-r bg-yellow-500 flex items-center justify-center" aria-label="Search">
           <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
         </button>
-      </div>
+      </form>
       {megaCategories.map((cat) => (
         <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium transition-colors">{cat.label}</a>
       ))}
