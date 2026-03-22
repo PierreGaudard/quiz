@@ -79,7 +79,7 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
     </style>
   </head>
   <body class="min-h-screen bg-gray-50">
-    {showHeader && <Header locale={locale} />}
+    {showHeader && <Header locale={locale} langSwitchPaths={hreflangPaths} />}
     <slot />
     <Footer locale={locale} />
   </body>

@@ -6,8 +6,12 @@ import { t } from "../i18n/ui";
 import { locales, defaultLocale } from "../i18n/config";
 import type { Locale } from "../i18n/config";
 
-interface Props { locale?: Locale; }
-const { locale = "en" } = Astro.props;
+interface Props {
+  locale?: Locale;
+  /** Override lang switch paths per locale (for subcategory pages with locale-specific slugs). */
+  langSwitchPaths?: Partial<Record<Locale, string>>;
+}
+const { locale = "en", langSwitchPaths } = Astro.props;
 const lp = (path: string) => localePath(path, locale);
 const currentPath = Astro.url.pathname;
 const cats = getCategories(locale);
@@ -22,13 +26,17 @@ const strippedPath =
 
 const localeLabels: Record<Locale, string> = { en: "English", fr: "Français", es: "Español" };
 const localeShort: Record<Locale, string> = { en: "EN", fr: "FR", es: "ES" };
-const localeSwitchLinks = locales.map((l) => ({
-  locale: l,
-  href: localePath(strippedPath, l),
-  label: localeLabels[l],
-  short: localeShort[l],
-  active: l === locale,
-}));
+const localeSwitchLinks = locales.map((l) => {
+  // Use custom path if provided (for subcategory pages), otherwise default
+  const path = langSwitchPaths?.[l] ?? strippedPath;
+  return {
+    locale: l,
+    href: localePath(path, l),
+    label: localeLabels[l],
+    short: localeShort[l],
+    active: l === locale,
+  };
+});
 // SVG flags (4x3 ratio, US/FR/ES)
 const flags: Record<Locale, string> = {
   en: `<svg viewBox="0 0 60 30" class="w-5 h-3.5 rounded-sm shrink-0"><rect width="60" height="30" fill="#fff"/><g fill="#B22234"><rect width="60" height="2.31"/><rect y="4.62" width="60" height="2.31"/><rect y="9.23" width="60" height="2.31"/><rect y="13.85" width="60" height="2.31"/><rect y="18.46" width="60" height="2.31"/><rect y="23.08" width="60" height="2.31"/><rect y="27.69" width="60" height="2.31"/></g><rect width="24" height="16.15" fill="#3C3B6E"/><g fill="#fff" font-size="2"><text x="2" y="2.5">★</text><text x="6" y="2.5">★</text><text x="10" y="2.5">★</text><text x="14" y="2.5">★</text><text x="18" y="2.5">★</text><text x="4" y="5.2">★</text><text x="8" y="5.2">★</text><text x="12" y="5.2">★</text><text x="16" y="5.2">★</text><text x="2" y="7.9">★</text><text x="6" y="7.9">★</text><text x="10" y="7.9">★</text><text x="14" y="7.9">★</text><text x="18" y="7.9">★</text><text x="4" y="10.6">★</text><text x="8" y="10.6">★</text><text x="12" y="10.6">★</text><text x="16" y="10.6">★</text><text x="2" y="13.3">★</text><text x="6" y="13.3">★</text><text x="10" y="13.3">★</text><text x="14" y="13.3">★</text><text x="18" y="13.3">★</text></g></svg>`,

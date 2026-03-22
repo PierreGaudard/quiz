@@ -9,10 +9,16 @@ export function withBase(path: string): string {
   return BASE + (path.startsWith('/') ? path : '/' + path);
 }
 
-/** Prefix a local path with the site base AND locale. Default locale has no prefix. */
+/** Prefix a local path with the site base AND locale. Default locale has no prefix.
+ *  Always adds trailing slash to match Astro's output format and avoid 301 redirects. */
 export function localePath(path: string, locale: Locale): string {
   if (!path || path.startsWith('http') || path.startsWith('data:')) return path;
   const prefix = locale === defaultLocale ? '' : `/${locale}`;
   const p = path.startsWith('/') ? path : `/${path}`;
-  return `${BASE}${prefix}${p}`;
+  let result = `${BASE}${prefix}${p}`;
+  // Add trailing slash for page paths (not for files with extensions)
+  if (!result.endsWith('/') && !result.includes('.')) {
+    result += '/';
+  }
+  return result;
 }
