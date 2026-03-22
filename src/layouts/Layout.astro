@@ -148,6 +148,14 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
             setTimeout(function() { if (popup.parentNode) popup.parentNode.removeChild(popup); }, 1500);
           });
 
+          // Update mobile menu
+          var mobileAuth = document.getElementById('mobile-auth-links');
+          if (mobileAuth) {
+            var profilePath = window.location.pathname.startsWith('/fr/') ? '/fr/profil/' : window.location.pathname.startsWith('/es/') ? '/es/perfil/' : '/profile/';
+            var avatarMobileHtml = data.user.avatar ? '<img src="' + data.user.avatar + '" class="w-6 h-6 rounded-full object-cover" />' : '<span class="w-6 h-6 rounded-full bg-violet-500 flex items-center justify-center text-white text-[10px] font-bold">' + data.user.username[0].toUpperCase() + '</span>';
+            mobileAuth.innerHTML = '<a href="' + profilePath + '" class="flex items-center gap-3 px-3 py-2.5 rounded text-white hover:bg-white/10 text-sm font-medium">' + avatarMobileHtml + ' ' + data.user.username + ' <span class="text-[10px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color + ' ml-auto">Lv.' + lv.level + '</span></a>';
+          }
+
           // Logout button handler
           var logoutBtn = document.getElementById('header-logout-btn');
           if (logoutBtn) {

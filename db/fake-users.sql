@@ -1,0 +1,10 @@
+INSERT INTO users (username, email, password_hash, xp) VALUES ('QuizMaster', 'quizmaster@fake.com', 'fake:hash', 45200);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('BrainStorm', 'brainstorm@fake.com', 'fake:hash', 38700);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('LeGrandSavant', 'savant@fake.com', 'fake:hash', 27500);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('ClaraQuiz', 'clara@fake.com', 'fake:hash', 19800);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('ThomasLePro', 'thomas@fake.com', 'fake:hash', 14200);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('SophieCulture', 'sophie@fake.com', 'fake:hash', 9800);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('NicoQuiz42', 'nico@fake.com', 'fake:hash', 6500);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('CamilleGK', 'camille@fake.com', 'fake:hash', 4100);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('JulienSport', 'julien@fake.com', 'fake:hash', 2300);
+INSERT INTO users (username, email, password_hash, xp) VALUES ('EmmaTrivia', 'emma@fake.com', 'fake:hash', 1100);

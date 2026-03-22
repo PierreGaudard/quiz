@@ -273,7 +273,9 @@ const navLinks = [
       ))}
       <div class="border-t border-white/10 my-2"></div>
       <a href={lp(s('create'))} class="flex items-center gap-3 px-3 py-2.5 rounded bg-yellow-500 text-white text-sm font-bold">{t(locale, "nav.create")}</a>
-      <a href={lp(s('login'))} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium">{t(locale, "auth.login")}</a>
+      <div id="mobile-auth-links">
+        <a href={lp(s('login'))} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium">{t(locale, "auth.login")}</a>
+      </div>
       <a href={lp(s('leaderboard'))} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium">{t(locale, "ranking.title")}</a>
       <div class="border-t border-white/10 my-2"></div>
       <div class="px-3 py-1 space-y-0.5">

@@ -45,7 +45,7 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/leaderboard?limit=50")
+    fetch("/api/leaderboard?limit=100")
       .then((r) => r.json())
       .then((data) => { setPlayers(data.players || []); setLoading(false); })
       .catch(() => setLoading(false));

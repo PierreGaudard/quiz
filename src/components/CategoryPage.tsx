@@ -70,6 +70,8 @@ const catPageT: Record<string, Record<string, string>> = {
   yourProgress: { en: "Your progress", fr: "Votre progression", es: "Tu progreso" },
   quizzesCompleted: { en: "quizzes completed", fr: "quiz terminés", es: "quizzes completados" },
   exploreCategories: { en: "Explore categories", fr: "Explorer les catégories", es: "Explorar categorías" },
+  friendsLabel: { en: "Friends", fr: "Amis", es: "Amigos" },
+  ranking: { en: "General ranking", fr: "Classement general", es: "Clasificacion general" },
   catSports: { en: "Sports", fr: "Sport", es: "Deportes" },
   catCinema: { en: "Cinema", fr: "Cinéma", es: "Cine" },
   catHistory: { en: "History", fr: "Histoire", es: "Historia" },
@@ -1125,6 +1127,7 @@ function SidebarContent({
     <>
       {/* Logged in: profile card / Logged out: become member CTA */}
       {authUser ? (
+        <>
         <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl p-5 text-white shadow-lg">
           <a href={lp(profileSlug)} className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 rounded-full border-2 border-white/30 bg-white/10 flex items-center justify-center overflow-hidden">
@@ -1136,35 +1139,52 @@ function SidebarContent({
             </div>
             <div>
               <p className="font-display font-bold text-sm">{authUser.username}</p>
-              <p className="text-white/60 text-xs">{authUser.xp || 0} XP</p>
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded text-white ${(() => { const l = authUser.xp || 0; if (l >= 7000) return 'bg-amber-500'; if (l >= 3500) return 'bg-violet-500'; if (l >= 1500) return 'bg-blue-500'; if (l >= 500) return 'bg-green-500'; return 'bg-gray-400'; })()}`}>
+                  Lv.{(() => { const x = authUser.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(50*i*i - 50*i + 200)) lv = i; else break; } return lv; })()}
+                </span>
+                <span className="text-white/60 text-[10px]">{authUser.xp || 0} XP</span>
+              </div>
             </div>
           </a>
+          {/* Category progress */}
           <div className="bg-white/10 rounded-xl p-3 mb-3">
             <div className="flex items-center justify-between text-xs mb-1.5">
               <span className="text-white/70">{category.name}</span>
-              <span className="font-bold">{completedCount}/{totalQuizzes}</span>
+              <span className="font-bold">{completedCount}/{totalQuizzes} quiz</span>
             </div>
             <div className="h-1.5 bg-white/20 rounded-full overflow-hidden">
               <div className="h-full bg-yellow-400 rounded-full transition-all" style={{ width: `${progressPercent}%` }} />
             </div>
           </div>
+          {/* Ranking */}
+          <a href={lp(locale === "fr" ? "/classement" : locale === "es" ? "/clasificacion" : "/leaderboard")} className="flex items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors mb-3">
+            <svg className="w-5 h-5 text-yellow-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
+            <span className="text-xs font-medium text-white/80">{tt("ranking") || "Ranking"}</span>
+          </a>
+          {/* Friends with level + quiz count */}
           {friends.length > 0 && (
             <div>
-              <p className="text-[10px] font-bold text-white/50 uppercase tracking-wider mb-2">{tt("friends") || "Friends"}</p>
-              <div className="space-y-1">
-                {friends.slice(0, 5).map((f: any) => (
-                  <div key={f.id} className="flex items-center gap-2 text-xs">
-                    <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold overflow-hidden">
-                      {f.avatar ? <img src={f.avatar} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
-                    </div>
-                    <span className="flex-1 truncate text-white/80">{f.username}</span>
-                    <span className="text-white/50">{f.xp || 0} XP</span>
-                  </div>
-                ))}
+              <p className="text-[10px] font-bold text-white/50 uppercase tracking-wider mb-2">{tt("friendsLabel")}</p>
+              <div className="space-y-1.5">
+                {friends.slice(0, 5).map((f: any) => {
+                  const fLv = (() => { const x = f.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(50*i*i - 50*i + 200)) lv = i; else break; } return lv; })();
+                  const fProfileHref = locale === "fr" ? `/fr/profil/${f.username}/` : locale === "es" ? `/es/perfil/${f.username}/` : `/profile/${f.username}/`;
+                  return (
+                    <a key={f.id} href={fProfileHref} className="flex items-center gap-2 text-xs hover:bg-white/10 rounded-lg p-1 -mx-1 transition-colors">
+                      <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold overflow-hidden">
+                        {f.avatar ? <img src={f.avatar} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
+                      </div>
+                      <span className="flex-1 truncate text-white/80">{f.username}</span>
+                      <span className="text-[10px] font-bold text-yellow-400">Lv.{fLv}</span>
+                    </a>
+                  );
+                })}
               </div>
             </div>
           )}
         </div>
+        </>
       ) : (
         <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl p-5 text-white shadow-lg">
           <h3 className="font-display text-base font-bold mb-3">{tt("becomeMember")}</h3>
@@ -1184,27 +1204,7 @@ function SidebarContent({
         </div>
       )}
 
-      {/* Ta progression */}
-      {completedCount > 0 && (
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-          <h3 className="font-display text-sm font-bold text-gray-900 mb-3">{tt("yourProgress")}</h3>
-          <div className="flex items-center gap-3">
-            <div className="relative w-14 h-14 shrink-0">
-              <svg className="w-full h-full -rotate-90" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="40" fill="none" stroke="#f3f4f6" strokeWidth="8" />
-                <circle cx="50" cy="50" r="40" fill="none" stroke="#7c3aed" strokeWidth="8" strokeLinecap="round" strokeDasharray={circumference} strokeDashoffset={strokeDashoffset} className="transition-all duration-700" />
-              </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-xs font-black text-violet-600">{progressPercent}%</span>
-              </div>
-            </div>
-            <div>
-              <p className="text-sm font-bold text-gray-900">{completedCount}/{totalQuizzes}</p>
-              <p className="text-xs text-gray-400">{tt("quizzesCompleted")}</p>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Progress block removed - info is now in the profile card above */}
 
       {/* Catégories principales */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
