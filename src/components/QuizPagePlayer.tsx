@@ -4,9 +4,30 @@ import { withBase } from "../utils/base";
 
 interface Props {
   quiz: QuizData;
+  locale?: string;
 }
 
 const LETTER_LABELS = ["A", "B", "C", "D"];
+
+const qpT: Record<string, Record<string, string>> = {
+  correct: { en: "Correct!", fr: "Bonne reponse !", es: "Correcto!" },
+  wrong: { en: "Wrong!", fr: "Mauvaise reponse !", es: "Incorrecto!" },
+  wrongShort: { en: "Wrong", fr: "Faux", es: "Fallo" },
+  startQuiz: { en: "Start quiz", fr: "Commencer le quiz", es: "Empezar el quiz" },
+  bonus: { en: "Bonus", fr: "Bonus", es: "Bonus" },
+  retry: { en: "Retry", fr: "2e chance", es: "2a opcion" },
+  hint: { en: "Hint", fr: "Indice", es: "Pista" },
+  fiftyFifty: { en: "50/50", fr: "50/50", es: "50/50" },
+  questions: { en: "questions", fr: "questions", es: "preguntas" },
+  results: { en: "Your results", fr: "Vos resultats", es: "Tus resultados" },
+  score: { en: "Score", fr: "Score", es: "Puntuacion" },
+  replay: { en: "Replay", fr: "Rejouer", es: "Repetir" },
+  questionLabel: { en: "Question", fr: "Question", es: "Pregunta" },
+  descAccessible: { en: "This quiz is accessible to everyone, great for beginners!", fr: "Ce quiz est accessible a tous, ideal pour debuter !", es: "Este quiz es accesible para todos, ideal para principiantes!" },
+  descRecommended: { en: "A good level of knowledge is recommended.", fr: "Un bon niveau de connaissances est recommande.", es: "Se recomienda un buen nivel de conocimiento." },
+  descExpert: { en: "Warning, only experts will get through without mistakes.", fr: "Attention, seuls les experts passeront sans erreur.", es: "Atencion, solo los expertos pasaran sin errores." },
+  descIntro: { en: "Answer all {n} questions, discover detailed explanations after each answer and compare your score with friends.", fr: "Repondez aux {n} questions, decouvrez les explications detaillees apres chaque reponse et comparez votre score avec vos amis.", es: "Responde las {n} preguntas, descubre explicaciones detalladas tras cada respuesta y compara tu puntuacion con tus amigos." },
+};
 
 const ANSWER_COLORS = [
   { bg: "bg-violet-50 hover:bg-violet-100 border-violet-200", label: "bg-violet-500" },
@@ -23,7 +44,8 @@ interface QuestionState {
   hasSecondChance?: boolean;
 }
 
-export default function QuizPagePlayer({ quiz }: Props) {
+export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
+  const tt = (key: string) => qpT[key]?.[locale] || qpT[key]?.en || key;
   const [questionStates, setQuestionStates] = useState<QuestionState[]>(
     quiz.questions.map(() => ({ selectedAnswer: null, hasAnswered: false, isCorrect: false }))
   );
@@ -367,7 +389,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
               <img
                 src={withBase(quiz.coverImage)}
                 alt={quiz.title}
-                className="w-full aspect-[2.5/1] object-cover"
+                className="w-full aspect-[3/1] sm:aspect-[2.5/1] object-cover"
                 loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -392,18 +414,18 @@ export default function QuizPagePlayer({ quiz }: Props) {
         {!hasStarted && (
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 md:p-6 space-y-4">
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              {quiz.description} Answer all {totalQuestions} questions, discover detailed explanations after each answer and compare your score with friends.
+              {quiz.description} {tt("descIntro").replace("{n}", String(totalQuestions))}
               {(quiz.difficulty === "Facile" || quiz.difficulty === "Easy" || quiz.difficulty === "Fácil")
-                ? " This quiz is accessible to everyone, great for beginners!"
+                ? ` ${tt("descAccessible")}`
                 : (quiz.difficulty === "Difficile" || quiz.difficulty === "Hard" || quiz.difficulty === "Difícil")
-                  ? " Warning, only experts will get through without mistakes."
-                  : " A good level of knowledge is recommended."}
+                  ? ` ${tt("descExpert")}`
+                  : ` ${tt("descRecommended")}`}
             </p>
             <button
               onClick={handleStartQuiz}
               className="w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold text-base py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
             >
-              Start quiz
+              {tt("startQuiz")}
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -430,47 +452,49 @@ export default function QuizPagePlayer({ quiz }: Props) {
                 <span className="w-1 h-1 rounded-full bg-gray-300" />
                 <span className="text-[11px] font-bold text-violet-600">{totalXp} XP</span>
               </div>
-              {/* Bonus icons */}
-              <button
-                onClick={handleBonus5050}
-                disabled={bonus5050 <= 0 || !canUseBonus}
-                className={`relative w-10 h-10 rounded-xl flex items-center justify-center text-[9px] font-black transition-all ${
-                  bonus5050 > 0 && canUseBonus
-                    ? "bg-gradient-to-br from-amber-400 to-amber-600 text-white shadow-md shadow-amber-300/50 active:scale-90"
-                    : "bg-gray-200 text-gray-400"
-                }`}
-              >
-                50
-                {bonus5050 > 0 && <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[8px] font-bold rounded-full flex items-center justify-center">{bonus5050}</span>}
-              </button>
-              <button
-                onClick={handleBonusSecondChance}
-                disabled={bonusSecondChance <= 0 || !canUseBonus}
-                className={`relative w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
-                  bonusSecondChance > 0 && canUseBonus
-                    ? "bg-gradient-to-br from-blue-400 to-blue-600 text-white shadow-md shadow-blue-300/50 active:scale-90"
-                    : "bg-gray-200 text-gray-400"
-                }`}
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" />
-                </svg>
-                {bonusSecondChance > 0 && <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[8px] font-bold rounded-full flex items-center justify-center">{bonusSecondChance}</span>}
-              </button>
-              <button
-                onClick={handleBonusIndice}
-                disabled={bonusIndice <= 0 || !canUseBonus}
-                className={`relative w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
-                  bonusIndice > 0 && canUseBonus
-                    ? "bg-gradient-to-br from-violet-400 to-violet-600 text-white shadow-md shadow-violet-300/50 active:scale-90"
-                    : "bg-gray-200 text-gray-400"
-                }`}
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-                {bonusIndice > 0 && <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[8px] font-bold rounded-full flex items-center justify-center">{bonusIndice}</span>}
-              </button>
+              {/* Bonus buttons with labels */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-[9px] font-black text-gray-400 uppercase mr-0.5">{tt("bonus")}</span>
+                <button
+                  onClick={handleBonus5050}
+                  disabled={bonus5050 <= 0 || !canUseBonus}
+                  aria-label="50/50"
+                  className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-lg transition-all ${
+                    bonus5050 > 0 && canUseBonus
+                      ? "bg-amber-50 active:scale-90"
+                      : "opacity-40"
+                  }`}
+                >
+                  <svg className={`w-5 h-5 ${bonus5050 > 0 ? "text-amber-500" : "text-gray-400"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                  <span className={`text-[8px] font-bold ${bonus5050 > 0 ? "text-amber-700" : "text-gray-400"}`}>50/50</span>
+                </button>
+                <button
+                  onClick={handleBonusSecondChance}
+                  disabled={bonusSecondChance <= 0 || !canUseBonus}
+                  aria-label="Second chance"
+                  className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-lg transition-all ${
+                    bonusSecondChance > 0 && canUseBonus
+                      ? "bg-blue-50 active:scale-90"
+                      : "opacity-40"
+                  }`}
+                >
+                  <svg className={`w-5 h-5 ${bonusSecondChance > 0 ? "text-blue-500" : "text-gray-400"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" /></svg>
+                  <span className={`text-[8px] font-bold ${bonusSecondChance > 0 ? "text-blue-700" : "text-gray-400"}`}>{tt("retry")}</span>
+                </button>
+                <button
+                  onClick={handleBonusIndice}
+                  disabled={bonusIndice <= 0 || !canUseBonus}
+                  aria-label="Hint"
+                  className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-lg transition-all ${
+                    bonusIndice > 0 && canUseBonus
+                      ? "bg-violet-50 active:scale-90"
+                      : "opacity-40"
+                  }`}
+                >
+                  <svg className={`w-5 h-5 ${bonusIndice > 0 ? "text-violet-500" : "text-gray-400"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                  <span className={`text-[8px] font-bold ${bonusIndice > 0 ? "text-violet-700" : "text-gray-400"}`}>{tt("hint")}</span>
+                </button>
+              </div>
             </div>
           </div>
         )}
@@ -638,7 +662,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                       }`}
                     >
                       <span className="font-bold">
-                        {state.isCorrect ? "Correct! " : "Wrong! "}
+                        {state.isCorrect ? `${tt("correct")} ` : `${tt("wrong")} `}
                       </span>
                       {question.explanation}
                     </div>
@@ -654,7 +678,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
           <div ref={resultsRef} className="scroll-mt-28">
             <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-lg overflow-hidden">
               <div className="bg-gradient-to-r from-violet-600 to-purple-700 p-6 md:p-8 text-center text-white">
-                <div className="text-sm font-medium text-white/70 mb-2">Your result</div>
+                <div className="text-sm font-medium text-white/70 mb-2">{tt("results")}</div>
                 <div className="flex items-center justify-center gap-4 mb-3">
                   <div className={`w-16 h-16 ${rank.color} rounded-2xl flex items-center justify-center text-3xl font-display font-black text-white shadow-lg`}>
                     {rank.icon}
@@ -687,7 +711,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                   </div>
                   <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
                     <div className="text-3xl font-display font-bold text-red-500">{totalQuestions - score}</div>
-                    <div className="text-xs text-red-600 font-medium mt-1">Wrong</div>
+                    <div className="text-xs text-red-600 font-medium mt-1">{tt("wrongShort")}</div>
                   </div>
                   <div className="bg-violet-50 border border-violet-200 rounded-xl p-4 text-center">
                     <div className="text-3xl font-display font-bold text-violet-600">{totalXp}</div>
@@ -710,7 +734,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                               ? "bg-green-100 text-green-600 hover:bg-green-200"
                               : "bg-red-100 text-red-500 hover:bg-red-200"
                           }`}
-                          title={`Question ${i + 1}: ${wasCorrect ? "Correct" : "Wrong"}`}
+                          title={`${tt("questionLabel")} ${i + 1}: ${wasCorrect ? tt("correct") : tt("wrongShort")}`}
                         >
                           {i + 1}
                         </button>
@@ -728,7 +752,7 @@ export default function QuizPagePlayer({ quiz }: Props) {
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
-                    Play again
+                    {tt("replay")}
                   </button>
                   <button
                     onClick={() => {

@@ -73,7 +73,7 @@ const subName = categoryInfo?.subcategories?.find(
           ) : quiz.gameType === "ordre" ? (
             <OrdrePlayer quiz={quiz} client:load />
           ) : (
-            <QuizPagePlayer quiz={quiz} client:load />
+            <QuizPagePlayer quiz={quiz} locale={locale} client:load />
           )}
         </div>
 
