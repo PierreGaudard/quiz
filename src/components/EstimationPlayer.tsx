@@ -1,9 +1,11 @@
 import { useState, useCallback } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase } from "../utils/base";
+import QuizSocialBlock from "./QuizSocialBlock";
 
 interface Props {
   quiz: QuizData;
+  locale?: string;
 }
 
 type Phase = "intro" | "playing" | "results";
@@ -59,7 +61,7 @@ function formatNumber(n: number): string {
   return n.toLocaleString("en-US");
 }
 
-export default function EstimationPlayer({ quiz }: Props) {
+export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
   const [phase, setPhase] = useState<Phase>("intro");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
@@ -391,6 +393,7 @@ export default function EstimationPlayer({ quiz }: Props) {
                 Home
               </a>
             </div>
+            <QuizSocialBlock quizSlug={quiz.slug} userScore={correctCount} totalQuestions={totalQuestions} locale={locale} />
           </div>
         </div>
       </div>

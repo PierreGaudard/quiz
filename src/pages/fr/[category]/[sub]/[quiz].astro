@@ -63,15 +63,15 @@ const subName = categoryInfo?.subcategories?.find(
       <main class="flex-1 min-w-0">
         <div id="quiz-app">
           {quiz.gameType === "vrai-faux" ? (
-            <VraiFauxPlayer quiz={quiz} client:load />
+            <VraiFauxPlayer quiz={quiz} locale={locale} client:load />
           ) : quiz.gameType === "chrono" ? (
-            <ChronoPlayer quiz={quiz} client:load />
+            <ChronoPlayer quiz={quiz} locale={locale} client:load />
           ) : quiz.gameType === "estimation" ? (
-            <EstimationPlayer quiz={quiz} client:load />
+            <EstimationPlayer quiz={quiz} locale={locale} client:load />
           ) : quiz.gameType === "duel" ? (
-            <DuelPlayer quiz={quiz} client:load />
+            <DuelPlayer quiz={quiz} locale={locale} client:load />
           ) : quiz.gameType === "ordre" ? (
-            <OrdrePlayer quiz={quiz} client:load />
+            <OrdrePlayer quiz={quiz} locale={locale} client:load />
           ) : (
             <QuizPagePlayer quiz={quiz} locale={locale} client:load />
           )}
@@ -169,7 +169,7 @@ const subName = categoryInfo?.subcategories?.find(
             </div>
           </div>
 
-          <div id="sidebar-member-block">
+          <div id="sidebar-member-block" data-quiz-slug={quiz.slug}>
             <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-3.5">
               <h3 class="font-display font-bold text-gray-900 text-sm text-center mb-3">{t(locale, "home.member.title")}</h3>
               <ul class="space-y-1.5 mb-3">
@@ -220,11 +220,12 @@ const subName = categoryInfo?.subcategories?.find(
   })} />
   <script is:inline>
     (function() {
+      var block = document.getElementById('sidebar-member-block');
+      if (!block) return;
+      var quizSlug = block.getAttribute('data-quiz-slug');
       fetch('/api/auth/me').then(function(r){return r.json()}).then(function(d){
         if (!d.user) return;
         var u = d.user;
-        var block = document.getElementById('sidebar-member-block');
-        if (!block) return;
         var avatarHtml = u.avatar ? '<img src="'+u.avatar+'" class="w-full h-full object-cover" />' : '<span class="text-lg font-black text-white/60">'+u.username[0].toUpperCase()+'</span>';
         block.innerHTML = '<a href="/fr/profil/" class="block bg-gradient-to-br from-violet-600 to-indigo-700 rounded-xl p-4 text-white shadow-sm hover:shadow-md transition-shadow">'
           + '<div class="flex items-center gap-3 mb-3">'
@@ -232,7 +233,38 @@ const subName = categoryInfo?.subcategories?.find(
           + '<div><p class="font-bold text-sm">'+u.username+'</p><p class="text-white/60 text-xs">'+(u.xp||0)+' XP</p></div>'
           + '</div>'
           + '<div class="bg-white/10 rounded-lg p-2 text-center text-xs font-medium text-white/80">Voir mon profil</div>'
-          + '</a>';
+          + '</a>'
+          + '<div id="sidebar-rank-block"></div><div id="sidebar-friends-block"></div>';
+        fetch('/api/auth/rank').then(function(r){return r.json()}).then(function(rd){
+          if (!rd||!rd.rank) return;
+          var rb = document.getElementById('sidebar-rank-block');
+          if (rb) rb.innerHTML = '<a href="/fr/classement/" class="mt-3 flex items-center gap-3 p-3 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all">'
+            + '<div class="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg></div>'
+            + '<div class="flex-1"><p class="text-[10px] text-gray-500 font-medium">Classement general</p><p class="text-sm font-bold text-gray-900">#'+rd.rank+' <span class="text-gray-400 font-normal">/ '+rd.total+'</span></p></div>'
+            + '<svg class="w-4 h-4 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a>';
+        }).catch(function(){});
+        if (quizSlug) {
+          fetch('/api/friends').then(function(r){return r.json()}).then(function(fd){
+            var fl = (fd.friends||[]).slice(0,5);
+            if (!fl.length) return;
+            Promise.all(fl.map(function(f){
+              return fetch('/api/quiz/progress?quiz='+encodeURIComponent(quizSlug)+'&user='+f.id).then(function(r){return r.json()}).then(function(pd){
+                var best = (pd.progress||[]).reduce(function(b,c){return !b||c.score>b.score?c:b},null);
+                return {username:f.username,avatar:f.avatar,bestScore:best?best.score:null,total:best?best.total_questions:null};
+              }).catch(function(){return {username:f.username,avatar:f.avatar,bestScore:null,total:null}});
+            })).then(function(scores){
+              var fb = document.getElementById('sidebar-friends-block');
+              if (!fb) return;
+              var h = '<div class="mt-3 bg-white rounded-xl border border-gray-100 shadow-sm p-3"><p class="text-[10px] font-bold text-gray-400 uppercase tracking-wide mb-2">Scores des amis</p>';
+              scores.forEach(function(s){
+                var av = s.avatar ? '<img src="'+s.avatar+'" class="w-6 h-6 rounded-full object-cover" alt="" />' : '<span class="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center text-[10px] font-bold text-violet-600">'+s.username[0].toUpperCase()+'</span>';
+                var sc = s.bestScore!==null ? '<span class="text-xs font-bold text-gray-700">'+s.bestScore+'/'+s.total+'</span>' : '<span class="text-[10px] text-gray-400 italic">Non joue</span>';
+                h += '<div class="flex items-center gap-2 py-1"><div class="shrink-0">'+av+'</div><span class="flex-1 text-xs font-medium text-gray-700 truncate">'+s.username+'</span>'+sc+'</div>';
+              });
+              fb.innerHTML = h + '</div>';
+            });
+          }).catch(function(){});
+        }
       }).catch(function(){});
     })();
   </script>

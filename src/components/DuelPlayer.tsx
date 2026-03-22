@@ -1,12 +1,14 @@
 import { useState, useCallback } from "react";
 import type { QuizData } from "../data/types";
 import { withBase } from "../utils/base";
+import QuizSocialBlock from "./QuizSocialBlock";
 
 interface Props {
   quiz: QuizData;
+  locale?: string;
 }
 
-export default function DuelPlayer({ quiz }: Props) {
+export default function DuelPlayer({ quiz, locale = "en" }: Props) {
   const [hasStarted, setHasStarted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -303,6 +305,7 @@ export default function DuelPlayer({ quiz }: Props) {
             Home
           </a>
         </div>
+        <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} />
       </div>
     );
   }

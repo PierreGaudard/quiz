@@ -1,9 +1,11 @@
 import { useState, useCallback, useEffect } from "react";
 import type { QuizData } from "../data/types";
 import { withBase } from "../utils/base";
+import QuizSocialBlock from "./QuizSocialBlock";
 
 interface Props {
   quiz: QuizData;
+  locale?: string;
 }
 
 type Screen = "intro" | "playing" | "result";
@@ -15,7 +17,7 @@ interface AnswerRecord {
   isCorrect: boolean;
 }
 
-export default function VraiFauxPlayer({ quiz }: Props) {
+export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
   const [screen, setScreen] = useState<Screen>("intro");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hasAnswered, setHasAnswered] = useState(false);
@@ -465,6 +467,7 @@ export default function VraiFauxPlayer({ quiz }: Props) {
                 Share
               </button>
             </div>
+            <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} />
           </div>
         </div>
       </div>

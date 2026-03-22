@@ -1,9 +1,11 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import type { QuizData } from "../data/types";
 import { withBase } from "../utils/base";
+import QuizSocialBlock from "./QuizSocialBlock";
 
 interface Props {
   quiz: QuizData;
+  locale?: string;
 }
 
 const LETTER_LABELS = ["A", "B", "C", "D"];
@@ -26,7 +28,7 @@ interface AnswerFlash {
   correct: boolean;
 }
 
-export default function ChronoPlayer({ quiz }: Props) {
+export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
   const [phase, setPhase] = useState<GamePhase>("intro");
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -428,6 +430,7 @@ export default function ChronoPlayer({ quiz }: Props) {
               Share
             </button>
           </div>
+          <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalAnswered} locale={locale} />
         </div>
       </div>
     );

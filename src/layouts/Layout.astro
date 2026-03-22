@@ -88,7 +88,7 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
     <script is:inline>
       (function() {
         // Dynamic level calculation (matches levels.ts formula)
-        function xpForLevel(lv) { if (lv <= 1) return 0; return Math.floor(50 * lv * lv - 50 * lv + 200); }
+        function xpForLevel(lv) { if (lv <= 1) return 0; return Math.floor(10 * lv * lv - 10 * lv + 200); }
         function getLevelColor(lv) {
           if (lv >= 900) return 'bg-gradient-to-r from-red-500 to-yellow-500';
           if (lv >= 700) return 'bg-gradient-to-r from-amber-400 to-orange-500';

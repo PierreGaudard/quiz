@@ -10,9 +10,9 @@ export interface LevelInfo {
 /** Calculate XP needed for a given level (exponential curve). */
 function xpForLevel(level: number): number {
   if (level <= 1) return 0;
-  // Slow start, then accelerates
-  // Lv2=200, Lv5=1000, Lv10=3000, Lv20=10000, Lv50=50000, Lv100=180000
-  return Math.floor(50 * level * level - 50 * level + 200);
+  // Smooth curve: ~6 months non-stop to reach Lv1000
+  // Lv2=220, Lv5=400, Lv10=1100, Lv50=24700, Lv100=99200, Lv1000=9990200
+  return Math.floor(10 * level * level - 10 * level + 200);
 }
 
 /** Get the color class for a level tier. */

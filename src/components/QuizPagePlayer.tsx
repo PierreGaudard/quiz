@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase } from "../utils/base";
+import QuizSocialBlock from "./QuizSocialBlock";
 
 interface Props {
   quiz: QuizData;
@@ -823,6 +824,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                     {tt("share")}
                   </button>
                 </div>
+                <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} />
               </div>
             </div>
           </div>

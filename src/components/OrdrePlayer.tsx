@@ -1,9 +1,11 @@
 import { useState, useCallback } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase } from "../utils/base";
+import QuizSocialBlock from "./QuizSocialBlock";
 
 interface Props {
   quiz: QuizData;
+  locale?: string;
 }
 
 const POINTS_PER_CORRECT = 3;
@@ -24,7 +26,7 @@ interface QuestionResult {
   points: number;
 }
 
-export default function OrdrePlayer({ quiz }: Props) {
+export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
   const [hasStarted, setHasStarted] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [selectedOrder, setSelectedOrder] = useState<string[]>([]);
@@ -337,6 +339,7 @@ export default function OrdrePlayer({ quiz }: Props) {
                 Share
               </button>
             </div>
+            <QuizSocialBlock quizSlug={quiz.slug} userScore={totalPoints} totalQuestions={maxPossiblePoints} locale={locale} />
           </div>
         </div>
       </div>
