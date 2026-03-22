@@ -292,6 +292,11 @@ export default function CategoryPage({
         <span className="font-semibold text-gray-900">{category.name}</span>
       </nav>
 
+      {/* ─── TWO-COLUMN LAYOUT starts here ─── */}
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Main content column */}
+        <div className="flex-1 min-w-0">
+
       {/* ─── 2. HERO HEADER ─── */}
       <section className="mb-10">
         <div className="flex items-start gap-5 mb-5">
@@ -420,10 +425,8 @@ export default function CategoryPage({
         </div>
       </section>
 
-      {/* ─── 4. TWO-COLUMN LAYOUT: QUIZ GRID + SIDEBAR ─── */}
-      <div className="flex flex-col lg:flex-row gap-8 mb-12">
-        {/* Main content */}
-        <div className="flex-1 min-w-0" id="quiz-grid">
+      {/* ─── 4. QUIZ GRID ─── */}
+      <div className="mb-12" id="quiz-grid">
           {/* Grid heading */}
           <div className="flex items-center justify-between mb-5">
             <h2 className="font-display text-lg font-bold text-gray-900">
@@ -662,8 +665,9 @@ export default function CategoryPage({
           </p>
         </div>
       </section>
+      </div>{/* end quiz-grid */}
 
-        </div>{/* end main column */}
+        </div>{/* end main content column */}
 
         {/* Sidebar (sticky, spans full content height) */}
         <div className="hidden lg:block w-72 shrink-0">
