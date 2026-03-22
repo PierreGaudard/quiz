@@ -4,6 +4,7 @@ import CategoryPage from "../../../components/CategoryPage";
 import { localePath } from "../../../utils/base";
 import { t } from "../../../i18n/ui";
 import { getSubPaths, resolveSubcategoryData } from "../../../lib/page-helpers";
+import { getHreflangSubcategoryPaths } from "../../../lib/hreflang-helpers";
 import type { Locale } from "../../../i18n/config";
 
 const locale: Locale = "fr";
@@ -15,9 +16,10 @@ export function getStaticPaths() {
 const { categorySlug, subSlug, subName } = Astro.props;
 const { category, subCategory, quizzes, featured, availableGameTypes, quizzesByType } = resolveSubcategoryData(categorySlug, subSlug, subName, locale);
 const lp = (path: string) => localePath(path, locale);
+const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale);
 ---
 
-<Layout title={`${subName} Quiz - ${category.name} - Wizy`} description={subCategory.description} locale={locale}>
+<Layout title={`${subName} Quiz - ${category.name} - Wizy`} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths}>
   <div class="max-w-7xl mx-auto px-4 pt-6">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-2" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
