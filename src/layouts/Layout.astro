@@ -150,14 +150,19 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
             setTimeout(function() { if (popup.parentNode) popup.parentNode.removeChild(popup); }, 1500);
           });
 
-          // Update mobile user icon (top right)
+          // Update mobile user icon (top right) — show avatar + username + level
           var mobileIcon = document.getElementById('mobile-user-icon');
           if (mobileIcon) {
             var profileMobilePath = window.location.pathname.startsWith('/fr/') ? '/fr/profil/' : window.location.pathname.startsWith('/es/') ? '/es/perfil/' : '/profile/';
             mobileIcon.href = profileMobilePath;
-            if (data.user.avatar) {
-              mobileIcon.innerHTML = '<img src="' + data.user.avatar + '" class="w-7 h-7 rounded-full object-cover border-2 border-white/30" />';
-            }
+            var avatarMHtml = data.user.avatar
+              ? '<img src="' + data.user.avatar + '" class="w-7 h-7 rounded-full object-cover border-2 border-white/30 shrink-0" />'
+              : '<span class="w-7 h-7 rounded-full bg-violet-500 flex items-center justify-center text-white text-xs font-bold shrink-0">' + data.user.username[0].toUpperCase() + '</span>';
+            mobileIcon.innerHTML = avatarMHtml
+              + '<span class="max-w-[72px] truncate text-white text-xs font-bold leading-tight">' + data.user.username + '</span>'
+              + '<span class="text-[10px] font-bold px-1.5 py-0.5 rounded text-white shrink-0 ' + lv.color + '">Lv.' + lv.level + '</span>';
+            mobileIcon.className = 'sm:hidden flex items-center gap-1.5 px-2 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 transition-colors';
+            mobileIcon.setAttribute('aria-label', data.user.username);
           }
 
           // Update mobile menu
