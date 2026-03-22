@@ -182,6 +182,13 @@ export default function CategoryPage({
   const tt = (key: string) => catPageT[key]?.[locale || "en"] || catPageT[key]?.en || key;
   const gtLabel = (gt: GameType) => GAME_TYPE_LABELS_I18N[gt]?.[locale || "en"] || GAME_TYPE_LABELS_I18N[gt]?.en;
 
+  /** Locale-aware link helper: adds /fr/ or /es/ prefix for non-default locales */
+  const lp = (path: string) => {
+    const prefix = locale && locale !== "en" ? `/${locale}` : "";
+    const p = path.startsWith("/") ? path : `/${path}`;
+    return withBase(`${prefix}${p}`);
+  };
+
   /* state */
   const [progress, setProgress] = useState<Record<string, QuizProgress>>({});
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
@@ -267,7 +274,7 @@ export default function CategoryPage({
       {/* ─── 1. BREADCRUMB ─── */}
       <nav className="flex items-center gap-2 text-sm mb-6" aria-label="Breadcrumb">
         <a
-          href={withBase("/")}
+          href={lp("/")}
           className="text-gray-400 hover:text-violet-600 transition-colors"
         >
           {tt("home")}
@@ -533,7 +540,7 @@ export default function CategoryPage({
                   </span>
                 )}
                 <a
-                  href={withBase(`/${miniQuiz.slug}`)}
+                  href={lp(`/${miniQuiz.slug}`)}
                   className="ml-auto inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors shadow-sm"
                 >
                   {tt("playFullQuiz")}
@@ -557,7 +564,7 @@ export default function CategoryPage({
             {category.subcategories.map((sub) => (
               <a
                 key={sub}
-                href={withBase(`/${category.slug}/${slugify(sub)}`)}
+                href={lp(`/${category.slug}/${slugify(sub)}`)}
                 className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:border-violet-400 hover:text-violet-700 hover:bg-violet-50 transition-all shadow-sm cursor-pointer`}
               >
                 {sub}
@@ -617,7 +624,7 @@ export default function CategoryPage({
                   {diffQuizzes.slice(0, 6).map((q) => (
                     <a
                       key={q.slug}
-                      href={withBase(`/${q.slug}`)}
+                      href={lp(`/${q.slug}`)}
                       className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 p-3 hover:shadow-md transition-shadow group"
                     >
                       {q.coverImage && (
@@ -776,6 +783,11 @@ function QuizCard({
 }) {
   const tt = (key: string) => catPageT[key]?.[locale || "en"] || catPageT[key]?.en || key;
   const gtLabel = (gt: GameType) => GAME_TYPE_LABELS_I18N[gt]?.[locale || "en"] || GAME_TYPE_LABELS_I18N[gt]?.en;
+  const lp = (path: string) => {
+    const prefix = locale && locale !== "en" ? `/${locale}` : "";
+    const p = path.startsWith("/") ? path : `/${path}`;
+    return withBase(`${prefix}${p}`);
+  };
 
   const isCompleted = !!progress;
   const isPopular = (quiz.playCount || 0) >= 50000;
@@ -783,7 +795,7 @@ function QuizCard({
 
   return (
     <a
-      href={withBase(`/${quiz.slug}`)}
+      href={lp(`/${quiz.slug}`)}
       className={`group relative rounded-2xl overflow-hidden shadow-sm border transition-all duration-300 ${
         isCompleted
           ? "bg-gray-50 border-gray-200 opacity-80 hover:opacity-100 hover:shadow-md"
@@ -1066,6 +1078,11 @@ function SidebarContent({
   locale?: string;
 }) {
   const tt = (key: string) => catPageT[key]?.[locale || "en"] || catPageT[key]?.en || key;
+  const lp = (path: string) => {
+    const prefix = locale && locale !== "en" ? `/${locale}` : "";
+    const p = path.startsWith("/") ? path : `/${path}`;
+    return withBase(`${prefix}${p}`);
+  };
 
   const totalQuizzes = quizzes.length;
   const progressPercent = totalQuizzes > 0 ? Math.round((completedCount / totalQuizzes) * 100) : 0;
@@ -1138,7 +1155,7 @@ function SidebarContent({
           {sidebarCategories.filter((c) => c.slug !== category.slug).map((cat) => (
             <a
               key={cat.slug}
-              href={withBase(`/${cat.slug}`)}
+              href={lp(`/${cat.slug}`)}
               className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-gray-50 transition-colors group"
             >
               <span className={`w-7 h-7 ${cat.color} rounded-lg flex items-center justify-center text-white shrink-0 p-1`}
