@@ -25,7 +25,8 @@ const lp = (path: string) => localePath(path, locale);
 
       <!-- Card -->
       <div class="bg-white rounded-2xl shadow-2xl p-8">
-        <form class="space-y-5">
+        <div id="auth-error" class="hidden mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700 font-medium"></div>
+        <form id="signup-form" class="space-y-5">
           <!-- Username -->
           <div>
             <label for="username" class="block text-sm font-semibold text-gray-700 mb-1.5">{t(locale, "auth.username")}</label>
@@ -100,4 +101,49 @@ const lp = (path: string) => localePath(path, locale);
       </div>
     </div>
   </main>
+  <script>
+    document.getElementById('signup-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target as HTMLFormElement;
+      const errEl = document.getElementById('auth-error')!;
+      const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+      errEl.classList.add('hidden');
+
+      const username = (form.querySelector('#username') as HTMLInputElement).value.trim();
+      const email = (form.querySelector('#email') as HTMLInputElement).value.trim();
+      const password = (form.querySelector('#password') as HTMLInputElement).value;
+      const confirm = (form.querySelector('#confirm-password') as HTMLInputElement).value;
+
+      if (password !== confirm) {
+        errEl.textContent = 'Passwords do not match';
+        errEl.classList.remove('hidden');
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = '...';
+
+      try {
+        const res = await fetch('/api/auth/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, email, password }),
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          errEl.textContent = data.error || 'Registration failed';
+          errEl.classList.remove('hidden');
+          btn.disabled = false;
+          btn.textContent = form.dataset.cta || 'Sign up';
+          return;
+        }
+        window.location.href = '/';
+      } catch {
+        errEl.textContent = 'Network error, please try again';
+        errEl.classList.remove('hidden');
+        btn.disabled = false;
+        btn.textContent = form.dataset.cta || 'Sign up';
+      }
+    });
+  </script>
 </Layout>
