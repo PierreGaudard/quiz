@@ -10,7 +10,6 @@ import customSitemap from './src/integrations/sitemap.ts';
 export default defineConfig({
   site: 'https://wizyquiz.com',
   base: '/',
-  output: 'hybrid',
   adapter: cloudflare({
     platformProxy: { enabled: true },
   }),
