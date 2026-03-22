@@ -1,7 +1,15 @@
 User-agent: *
 Disallow: /
+Disallow: /profile/
+Disallow: /fr/profil/
+Disallow: /es/perfil/
+Disallow: /api/
 
 User-agent: Screaming Frog SEO Spider
 Allow: /
+Disallow: /profile/
+Disallow: /fr/profil/
+Disallow: /es/perfil/
+Disallow: /api/
 
 Sitemap: https://wizyquiz.com/sitemap-index.xml

@@ -7,6 +7,6 @@ export const prerender = false;
 const { username } = Astro.params;
 ---
 
-<Layout title={`${username} | Wizy`} description={`Perfil quiz de ${username}, estadisticas y nivel.`} locale="es">
+<Layout title={`${username} | Wizy`} description={`Perfil quiz de ${username}, estadisticas y nivel.`} locale="es" noindex={true}>
   <PublicProfilePage client:load username={username!} locale="es" />
 </Layout>

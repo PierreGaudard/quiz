@@ -12,9 +12,11 @@ interface Props {
   locale?: Locale;
   /** Override hreflang paths per locale when slugs differ (e.g. subcategories). */
   hreflangPaths?: Partial<Record<Locale, string>>;
+  /** Force noindex on this page (for user profiles, etc.). */
+  noindex?: boolean;
 }
 
-const { title, description = "Test your knowledge with fun and interactive quizzes!", ogImage, showHeader = true, locale = "en", hreflangPaths } = Astro.props;
+const { title, description = "Test your knowledge with fun and interactive quizzes!", ogImage, showHeader = true, locale = "en", hreflangPaths, noindex } = Astro.props;
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 const currentPath = Astro.url.pathname;
