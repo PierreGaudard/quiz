@@ -220,18 +220,33 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
           <p className="text-sm text-gray-400">{tt("noHistory")}</p>
         ) : (
           <div className="space-y-2">
-            {history.map((h, i) => (
-              <div key={i} className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
-                <div className={`w-10 h-10 rounded-lg flex items-center justify-center text-white text-xs font-bold ${h.score / h.total_questions >= 0.7 ? "bg-green-500" : h.score / h.total_questions >= 0.4 ? "bg-amber-500" : "bg-red-500"}`}>
-                  {h.score}/{h.total_questions}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-gray-900 truncate">{h.quiz_slug.replace(/-/g, " ")}</p>
-                  <p className="text-xs text-gray-400">{new Date(h.completed_at).toLocaleDateString()}</p>
-                </div>
-                <span className="text-xs font-bold text-violet-600">+{h.xp_earned} XP</span>
-              </div>
-            ))}
+            {history.map((h: any, i: number) => {
+              const quizHref = h.quiz_path ? (locale === "en" ? `/${h.quiz_path}/` : `/${locale}/${h.quiz_path}/`) : "#";
+              const title = h.quiz_title || h.quiz_slug.replace(/-/g, " ");
+              return (
+                <a key={i} href={quizHref} className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group">
+                  {h.quiz_image ? (
+                    <div className="w-12 h-12 rounded-lg overflow-hidden shrink-0">
+                      <img src={h.quiz_image} alt={title} className="w-full h-full object-cover" />
+                    </div>
+                  ) : (
+                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0 ${h.score / h.total_questions >= 0.7 ? "bg-green-500" : h.score / h.total_questions >= 0.4 ? "bg-amber-500" : "bg-red-500"}`}>
+                      {h.score}/{h.total_questions}
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium text-gray-900 truncate group-hover:text-violet-700 transition-colors">{title}</p>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${h.score / h.total_questions >= 0.7 ? "bg-green-100 text-green-700" : h.score / h.total_questions >= 0.4 ? "bg-amber-100 text-amber-700" : "bg-red-100 text-red-700"}`}>
+                        {h.score}/{h.total_questions}
+                      </span>
+                      <span className="text-[10px] text-gray-400">{new Date(h.completed_at).toLocaleDateString()}</span>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold text-violet-600 shrink-0">+{h.xp_earned} XP</span>
+                </a>
+              );
+            })}
           </div>
         )}
       </div>

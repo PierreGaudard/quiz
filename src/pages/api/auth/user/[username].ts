@@ -18,7 +18,7 @@ export const GET: APIRoute = async ({ params }) => {
   if (!user) return new Response(JSON.stringify({ user: null }), { status: 404 });
 
   const history = await db
-    .prepare("SELECT quiz_slug, score, total_questions, xp_earned, completed_at FROM quiz_progress WHERE user_id = ? ORDER BY completed_at DESC LIMIT 20")
+    .prepare("SELECT quiz_slug, quiz_title, quiz_image, quiz_path, score, total_questions, xp_earned, completed_at FROM quiz_progress WHERE user_id = ? ORDER BY completed_at DESC LIMIT 20")
     .bind(user.id)
     .all();
 

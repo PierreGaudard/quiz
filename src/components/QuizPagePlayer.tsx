@@ -161,7 +161,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
           fetch("/api/quiz/progress", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ quizSlug: quiz.slug, score: correctCount, totalQuestions, xpEarned: earnedXp }),
+            body: JSON.stringify({ quizSlug: quiz.slug, score: correctCount, totalQuestions, xpEarned: earnedXp, quizTitle: quiz.title, quizImage: quiz.coverImage || null, quizPath: quiz.path || null }),
           }).then(() => setSavedProgress(true)).catch(() => {});
         }
       }, 1200);

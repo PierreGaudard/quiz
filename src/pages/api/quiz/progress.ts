@@ -23,7 +23,7 @@ export const POST: APIRoute = async ({ request }) => {
   const user = await getUserFromSession(db, sessionId);
   if (!user) return new Response(JSON.stringify({ error: "Not authenticated" }), { status: 401 });
 
-  const { quizSlug, score, totalQuestions, xpEarned, answers } = await request.json();
+  const { quizSlug, score, totalQuestions, xpEarned, answers, quizTitle, quizImage, quizPath } = await request.json();
 
   if (!quizSlug || score === undefined || !totalQuestions) {
     return new Response(JSON.stringify({ error: "Missing fields" }), { status: 400 });
@@ -31,8 +31,8 @@ export const POST: APIRoute = async ({ request }) => {
 
   // Save progress
   await db
-    .prepare("INSERT INTO quiz_progress (user_id, quiz_slug, score, total_questions, xp_earned, answers) VALUES (?, ?, ?, ?, ?, ?)")
-    .bind(user.id, quizSlug, score, totalQuestions, xpEarned || 0, JSON.stringify(answers || []))
+    .prepare("INSERT INTO quiz_progress (user_id, quiz_slug, score, total_questions, xp_earned, answers, quiz_title, quiz_image, quiz_path) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)")
+    .bind(user.id, quizSlug, score, totalQuestions, xpEarned || 0, JSON.stringify(answers || []), quizTitle || null, quizImage || null, quizPath || null)
     .run();
 
   // Update user XP
