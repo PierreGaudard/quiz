@@ -36,4 +36,24 @@ const lp = (path: string) => localePath(path, locale);
     quizzesByType={quizzesByType}
     locale={locale}
   />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${subName} Quiz`,
+    description: subCategory.description,
+    url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${categorySlug}/${subSlug}`,
+    inLanguage: "fr",
+    provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
+    numberOfItems: quizzes.length,
+    isPartOf: { "@type": "CollectionPage", name: category.name, url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${categorySlug}` },
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: `${Astro.site?.toString().replace(/\/$/, '')}/fr/` },
+      { "@type": "ListItem", position: 2, name: category.name, item: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${categorySlug}` },
+      { "@type": "ListItem", position: 3, name: subName },
+    ]
+  })} />
 </Layout>

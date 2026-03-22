@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://quiz.pierretartare94440.workers.dev/sitemap-index.xml

@@ -413,4 +413,39 @@ function formatCount(n: number): string {
     </section>
 
   </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Wizy",
+    url: Astro.site?.toString(),
+    description: "Test your knowledge with fun and free quizzes",
+    inLanguage: ["en", "fr", "es"],
+    potentialAction: {
+      "@type": "SearchAction",
+      target: { "@type": "EntryPoint", urlTemplate: `${Astro.site?.toString().replace(/\/$/, '')}/?q={search_term_string}` },
+      "query-input": "required name=search_term_string"
+    }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Wizy",
+    url: Astro.site?.toString(),
+    logo: `${Astro.site?.toString().replace(/\/$/, '')}/favicon.svg`,
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      { "@type": "Question", name: "Are the quizzes really free and without registration?", acceptedAnswer: { "@type": "Answer", text: "All quizzes on Wizy are 100% free. You can play any quiz without creating an account. Free registration is optional and allows you to save your scores, track your progress and compare with friends." }},
+      { "@type": "Question", name: "What types of general knowledge quizzes do you offer?", acceptedAnswer: { "@type": "Answer", text: "Our quizzes cover general knowledge, geography (flags, capitals, countries), cinema (classic films, animation), sports (football, tennis, Olympics) and history. Each quiz is available in multiple difficulty levels." }},
+      { "@type": "Question", name: "Can quizzes help with studying for exams?", acceptedAnswer: { "@type": "Answer", text: "Yes, we offer quizzes suited for revision (general knowledge, history, geography). Studies show that you retain information better when you retrieve it yourself through a quiz rather than re-reading notes. Each answer comes with a detailed explanation." }},
+      { "@type": "Question", name: "What are the different game modes available?", acceptedAnswer: { "@type": "Answer", text: "Wizy offers 6 game modes: classic multiple choice with 4 answers, True or False, Chrono Challenge (60 seconds to answer as many questions as possible), Estimation (guess a number, we tell you higher or lower), Duel (compare two options) and Chronological Order." }},
+      { "@type": "Question", name: "How do I create my own quiz on Wizy?", acceptedAnswer: { "@type": "Answer", text: "It's simple and fast: choose a category, add your questions with answers and explanations, and your quiz is online in minutes. You can then share it with a unique link." }},
+      { "@type": "Question", name: "Does Wizy work on mobile and tablet?", acceptedAnswer: { "@type": "Answer", text: "Wizy is fully responsive and optimized for all screens. You can play on smartphone, tablet or desktop with the same experience. No app to download, everything works directly in your browser." }},
+    ]
+  })} />
 </Layout>

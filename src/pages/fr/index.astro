@@ -413,4 +413,34 @@ function formatCount(n: number): string {
     </section>
 
   </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Wizy",
+    url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/`,
+    description: "Testez vos connaissances avec des quiz fun et gratuits",
+    inLanguage: "fr",
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Wizy",
+    url: Astro.site?.toString(),
+    logo: `${Astro.site?.toString().replace(/\/$/, '')}/favicon.svg`,
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      { "@type": "Question", name: "Les quiz sont-ils vraiment gratuits et sans inscription ?", acceptedAnswer: { "@type": "Answer", text: "Tous les quiz sur Wizy sont 100% gratuits. Vous pouvez jouer a n'importe quel quiz sans creer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis." }},
+      { "@type": "Question", name: "Quels types de quiz de culture generale proposez-vous ?", acceptedAnswer: { "@type": "Answer", text: "Nos quiz couvrent la culture generale, la geographie (drapeaux, capitales, pays du monde), le cinema (films cultes, animation), le sport (football, tennis, JO) et l'histoire. Chaque quiz existe en plusieurs niveaux de difficulte." }},
+      { "@type": "Question", name: "Les quiz peuvent-ils aider a reviser le brevet ou des examens ?", acceptedAnswer: { "@type": "Answer", text: "Oui, nous proposons des quiz adaptes aux revisions (brevet, culture generale, histoire-geo). Les etudes montrent qu'on retient mieux une information quand on la retrouve soi-meme via un quiz plutot qu'en relisant un cours." }},
+      { "@type": "Question", name: "Quels sont les differents modes de jeu disponibles ?", acceptedAnswer: { "@type": "Answer", text: "Wizy propose 6 modes de jeu : le QCM classique a 4 reponses, le Vrai ou Faux, le Chrono Challenge, l'Estimation, le Duel et l'Ordre chronologique." }},
+      { "@type": "Question", name: "Comment creer son propre quiz sur Wizy ?", acceptedAnswer: { "@type": "Answer", text: "C'est simple et rapide : choisissez une categorie, ajoutez vos questions avec les reponses et les explications, et votre quiz est en ligne en quelques minutes." }},
+      { "@type": "Question", name: "Wizy fonctionne-t-il sur mobile et tablette ?", acceptedAnswer: { "@type": "Answer", text: "Wizy est entierement responsive et optimise pour tous les ecrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la meme experience. Aucune application a telecharger." }},
+    ]
+  })} />
 </Layout>
