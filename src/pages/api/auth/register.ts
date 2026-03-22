@@ -3,8 +3,14 @@ import { hashPassword, createSession, setSessionCookie } from "../../../lib/auth
 
 export const prerender = false;
 
-export const POST: APIRoute = async ({ request, locals }) => {
-  const db = (locals as any).runtime?.env?.DB;
+export const POST: APIRoute = async ({ request }) => {
+  let db: D1Database;
+  try {
+    const { env } = await import("cloudflare:workers");
+    db = (env as any).DB;
+  } catch {
+    return new Response(JSON.stringify({ error: "Database not available" }), { status: 500 });
+  }
   if (!db) return new Response(JSON.stringify({ error: "Database not available" }), { status: 500 });
 
   const { username, email, password } = await request.json();

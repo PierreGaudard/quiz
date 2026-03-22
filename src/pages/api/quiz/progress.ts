@@ -3,9 +3,18 @@ import { getSessionFromCookies, getUserFromSession } from "../../../lib/auth";
 
 export const prerender = false;
 
+async function getDB(): Promise<D1Database | null> {
+  try {
+    const { env } = await import("cloudflare:workers");
+    return (env as any).DB || null;
+  } catch {
+    return null;
+  }
+}
+
 /** Save quiz progress. */
-export const POST: APIRoute = async ({ request, locals }) => {
-  const db = (locals as any).runtime?.env?.DB;
+export const POST: APIRoute = async ({ request }) => {
+  const db = await getDB();
   if (!db) return new Response(JSON.stringify({ error: "Database not available" }), { status: 500 });
 
   const sessionId = getSessionFromCookies(request.headers.get("cookie"));
@@ -35,8 +44,8 @@ export const POST: APIRoute = async ({ request, locals }) => {
 };
 
 /** Get quiz progress for the authenticated user. */
-export const GET: APIRoute = async ({ request, locals, url }) => {
-  const db = (locals as any).runtime?.env?.DB;
+export const GET: APIRoute = async ({ request, url }) => {
+  const db = await getDB();
   if (!db) return new Response(JSON.stringify({ progress: [] }), { status: 200 });
 
   const sessionId = getSessionFromCookies(request.headers.get("cookie"));
