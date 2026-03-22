@@ -72,6 +72,8 @@ export function resolveSubcategoryData(categorySlug: string, subSlug: string, su
   const subCategory = {
     ...category,
     name: subName,
+    slug: subSlug,
+    coverImage: `/images/sub-${subSlug}.webp`,
     description: `All ${subName} quizzes in ${category.name}.`,
     subcategories: [] as string[],
   };

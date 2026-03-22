@@ -6,7 +6,7 @@ export const quizHarryPotter: TranslatedQuiz = {
   categorySlug: "cinema",
   subcategory: "Harry Potter",
   difficulty: "medium",
-  coverImage: "/images/cover-cinema.webp",
+  coverImage: "/images/cover-harry-potter.webp",
   gameType: "qcm",
   playCount: 28400,
   translations: {
@@ -17,6 +17,7 @@ export const quizHarryPotter: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-hp-02.webp",
           question:
             "Quel animal représente la maison Serdaigle (Ravenclaw) à Poudlard ?",
           answers: [
@@ -31,6 +32,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/q-hp-03.webp",
           question:
             "Comment s'appelle le sport pratiqué par les sorciers sur des balais volants ?",
           answers: [
@@ -45,6 +47,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-hp-04.webp",
           question: "Quelle forme prend le Patronus de Harry Potter ?",
           answers: [
             { id: "a", text: "Un phénix" },
@@ -58,6 +61,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/q-hp-05.webp",
           question:
             "Quel acteur a interprété Dumbledore dans la majorité des films Harry Potter (du 3e au 8e) ?",
           answers: [
@@ -72,6 +76,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-hp-06.webp",
           question:
             "Combien d'Horcruxes Voldemort a-t-il créé intentionnellement ?",
           answers: [
@@ -86,6 +91,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/q-hp-07.webp",
           question: "Quel sort permet de désarmer un adversaire ?",
           answers: [
             { id: "a", text: "Stupefix" },
@@ -99,6 +105,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-hp-08.webp",
           question: "Comment s'appelle le serpent de Voldemort ?",
           answers: [
             { id: "a", text: "Basilic" },
@@ -112,6 +119,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/q-hp-09.webp",
           question:
             "Quel objet magique permet à Harry de devenir invisible ?",
           answers: [
@@ -126,6 +134,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-hp-10.webp",
           question:
             "Quel bois compose la baguette magique de Harry Potter ?",
           answers: [
@@ -140,6 +149,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/q-hp-11.webp",
           question:
             "Quelle créature garde la Chambre des Secrets ?",
           answers: [
@@ -154,6 +164,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/q-hp-12.webp",
           question:
             "Quelle est la première épreuve du Tournoi des Trois Sorciers dans \u00ab La Coupe de Feu \u00bb ?",
           answers: [
@@ -168,6 +179,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/q-hp-13.webp",
           question: "Quel est le vrai nom de Voldemort ?",
           answers: [
             { id: "a", text: "Tom Elvis Jedusor" },
@@ -181,6 +193,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/q-hp-14.webp",
           question:
             "Qui est le professeur de potions durant les cinq premières années de Harry à Poudlard ?",
           answers: [
@@ -195,6 +208,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/q-hp-15.webp",
           question:
             "Quel Mangemort (Death Eater) a tué Sirius Black ?",
           answers: [
@@ -209,6 +223,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/q-hp-16.webp",
           question:
             "Quel sort impardonnable permet de contrôler l'esprit d'une personne ?",
           answers: [
@@ -223,6 +238,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/q-hp-17.webp",
           question: "Combien y a-t-il de Reliques de la Mort ?",
           answers: [
             { id: "a", text: "2" },
@@ -236,6 +252,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/q-hp-18.webp",
           question:
             "Quel type de créature est Buck (Buckbeak) ?",
           answers: [
@@ -250,6 +267,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/q-hp-19.webp",
           question:
             "Quel elfe de maison avertit Harry du danger et l'aide dans la Chambre des Secrets ?",
           answers: [
@@ -271,6 +289,7 @@ export const quizHarryPotter: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-hp-02.webp",
           question:
             "Which animal represents the Ravenclaw house at Hogwarts?",
           answers: [
@@ -285,6 +304,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/q-hp-03.webp",
           question:
             "What is the name of the sport played by wizards on flying broomsticks?",
           answers: [
@@ -299,6 +319,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-hp-04.webp",
           question: "What form does Harry Potter's Patronus take?",
           answers: [
             { id: "a", text: "A phoenix" },
@@ -312,6 +333,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/q-hp-05.webp",
           question:
             "Which actor played Dumbledore in most of the Harry Potter films (3rd to 8th)?",
           answers: [
@@ -326,6 +348,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-hp-06.webp",
           question:
             "How many Horcruxes did Voldemort intentionally create?",
           answers: [
@@ -340,6 +363,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/q-hp-07.webp",
           question: "Which spell disarms an opponent?",
           answers: [
             { id: "a", text: "Stupefy" },
@@ -353,6 +377,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-hp-08.webp",
           question: "What is the name of Voldemort's snake?",
           answers: [
             { id: "a", text: "Basilisk" },
@@ -366,6 +391,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/q-hp-09.webp",
           question:
             "Which magical object allows Harry to become invisible?",
           answers: [
@@ -380,6 +406,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-hp-10.webp",
           question:
             "What wood is Harry Potter's wand made of?",
           answers: [
@@ -394,6 +421,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/q-hp-11.webp",
           question:
             "Which creature guards the Chamber of Secrets?",
           answers: [
@@ -408,6 +436,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/q-hp-12.webp",
           question:
             "What is the first task of the Triwizard Tournament in 'The Goblet of Fire'?",
           answers: [
@@ -422,6 +451,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/q-hp-13.webp",
           question: "What is Voldemort's real name?",
           answers: [
             { id: "a", text: "Tom Marvolo Riddle" },
@@ -435,6 +465,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/q-hp-14.webp",
           question:
             "Who is the Potions professor during Harry's first five years at Hogwarts?",
           answers: [
@@ -449,6 +480,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/q-hp-15.webp",
           question:
             "Which Death Eater killed Sirius Black?",
           answers: [
@@ -463,6 +495,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/q-hp-16.webp",
           question:
             "Which Unforgivable Curse allows control over a person's mind?",
           answers: [
@@ -477,6 +510,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/q-hp-17.webp",
           question: "How many Deathly Hallows are there?",
           answers: [
             { id: "a", text: "2" },
@@ -490,6 +524,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/q-hp-18.webp",
           question:
             "What type of creature is Buckbeak?",
           answers: [
@@ -504,6 +539,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/q-hp-19.webp",
           question:
             "Which house-elf warns Harry of danger and helps him in the Chamber of Secrets?",
           answers: [
@@ -525,6 +561,7 @@ export const quizHarryPotter: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/q-hp-02.webp",
           question:
             "\u00bfQué animal representa a la casa Ravenclaw en Hogwarts?",
           answers: [
@@ -539,6 +576,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/q-hp-03.webp",
           question:
             "\u00bfCómo se llama el deporte que practican los magos sobre escobas voladoras?",
           answers: [
@@ -553,6 +591,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/q-hp-04.webp",
           question: "\u00bfQué forma toma el Patronus de Harry Potter?",
           answers: [
             { id: "a", text: "Un fénix" },
@@ -566,6 +605,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/q-hp-05.webp",
           question:
             "\u00bfQué actor interpretó a Dumbledore en la mayoría de las películas de Harry Potter (de la 3.a a la 8.a)?",
           answers: [
@@ -580,6 +620,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/q-hp-06.webp",
           question:
             "\u00bfCuántos Horrocruxes creó Voldemort intencionalmente?",
           answers: [
@@ -594,6 +635,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/q-hp-07.webp",
           question: "\u00bfQué hechizo permite desarmar a un adversario?",
           answers: [
             { id: "a", text: "Desmaius" },
@@ -607,6 +649,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/q-hp-08.webp",
           question: "\u00bfCómo se llama la serpiente de Voldemort?",
           answers: [
             { id: "a", text: "Basilisco" },
@@ -620,6 +663,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/q-hp-09.webp",
           question:
             "\u00bfQué objeto mágico permite a Harry hacerse invisible?",
           answers: [
@@ -634,6 +678,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/q-hp-10.webp",
           question:
             "\u00bfDe qué madera está hecha la varita mágica de Harry Potter?",
           answers: [
@@ -648,6 +693,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/q-hp-11.webp",
           question:
             "\u00bfQué criatura custodia la Cámara de los Secretos?",
           answers: [
@@ -662,6 +708,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/q-hp-12.webp",
           question:
             "\u00bfCuál es la primera prueba del Torneo de los Tres Magos en 'El cáliz de fuego'?",
           answers: [
@@ -676,6 +723,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/q-hp-13.webp",
           question: "\u00bfCuál es el verdadero nombre de Voldemort?",
           answers: [
             { id: "a", text: "Tom Marvolo Riddle" },
@@ -689,6 +737,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/q-hp-14.webp",
           question:
             "\u00bfQuién es el profesor de pociones durante los primeros cinco años de Harry en Hogwarts?",
           answers: [
@@ -703,6 +752,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/q-hp-15.webp",
           question:
             "\u00bfQué Mortífago mató a Sirius Black?",
           answers: [
@@ -717,6 +767,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/q-hp-16.webp",
           question:
             "\u00bfQué maldición imperdonable permite controlar la mente de una persona?",
           answers: [
@@ -731,6 +782,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/q-hp-17.webp",
           question: "\u00bfCuántas Reliquias de la Muerte existen?",
           answers: [
             { id: "a", text: "2" },
@@ -744,6 +796,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/q-hp-18.webp",
           question:
             "\u00bfQué tipo de criatura es Buckbeak?",
           answers: [
@@ -758,6 +811,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/q-hp-19.webp",
           question:
             "\u00bfQué elfo doméstico advierte a Harry del peligro y lo ayuda en la Cámara de los Secretos?",
           answers: [
