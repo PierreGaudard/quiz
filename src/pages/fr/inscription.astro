@@ -25,7 +25,8 @@ const lp = (path: string) => localePath(path, locale);
 
       <!-- Card -->
       <div class="bg-white rounded-2xl shadow-2xl p-8">
-        <form class="space-y-5">
+        <div id="auth-error" style="display:none" class="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700 font-medium"></div>
+        <form id="signup-form" class="space-y-5">
           <!-- Username -->
           <div>
             <label for="username" class="block text-sm font-semibold text-gray-700 mb-1.5">{t(locale, "auth.username")}</label>
@@ -100,4 +101,26 @@ const lp = (path: string) => localePath(path, locale);
       </div>
     </div>
   </main>
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('signup-form');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var errEl = document.getElementById('auth-error');
+        var btn = form.querySelector('button[type="submit"]');
+        errEl.style.display = 'none';
+        var username = document.getElementById('username').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var password = document.getElementById('password').value;
+        var confirm = document.getElementById('confirm-password').value;
+        if (password !== confirm) { errEl.textContent = 'Les mots de passe ne correspondent pas'; errEl.style.display = 'block'; return; }
+        btn.disabled = true; var orig = btn.textContent; btn.textContent = '...';
+        fetch('/api/auth/register', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: username, email: email, password: password }) })
+        .then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
+        .then(function(r) { if (!r.ok) { errEl.textContent = r.data.error || 'Erreur'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; return; } window.location.href = '/fr/'; })
+        .catch(function() { errEl.textContent = 'Erreur reseau'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; });
+      });
+    });
+  </script>
 </Layout>
