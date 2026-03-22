@@ -426,7 +426,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
               <span className="text-white/70 text-[11px] font-medium">{totalQuestions} {tt("questions")}</span>
             </div>
             <span className="inline-block text-yellow-400 font-semibold text-[11px] tracking-wide uppercase mb-0.5">{quiz.category}</span>
-            <h1 className="font-display text-lg font-bold text-white leading-tight">{quiz.title}</h1>
+            <div className="font-display text-lg font-bold text-white leading-tight">{quiz.title}</div>
             <p className="text-white/70 text-xs mt-1 line-clamp-2">{quiz.description}</p>
           </div>
           {/* No cover image: full colored block */}
@@ -437,7 +437,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 <span className="text-white/70 text-xs font-medium">{totalQuestions} {tt("questions")}</span>
               </div>
               <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">{quiz.category}</span>
-              <h1 className="font-display text-3xl lg:text-4xl font-bold text-white leading-tight">{quiz.title}</h1>
+              <div className="font-display text-3xl lg:text-4xl font-bold text-white leading-tight">{quiz.title}</div>
               <p className="text-white/70 text-base mt-2 max-w-2xl">{quiz.description}</p>
             </div>
           )}

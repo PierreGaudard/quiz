@@ -211,8 +211,8 @@ const subName = categoryInfo?.subcategories?.find(
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: Astro.site?.toString() },
-      ...(categoryInfo ? [{ "@type": "ListItem", position: 2, name: categoryInfo.name, item: `${Astro.site?.toString().replace(/\/$/, '')}/${categoryInfo.slug}` }] : []),
-      ...(subName && categoryInfo ? [{ "@type": "ListItem", position: 3, name: subName, item: `${Astro.site?.toString().replace(/\/$/, '')}/${categoryInfo.slug}/${quiz.subcategorySlug}` }] : []),
+      ...(categoryInfo ? [{ "@type": "ListItem", position: 2, name: categoryInfo.name, item: `${Astro.site?.toString().replace(/\/$/, '')}/${categoryInfo.slug}/` }] : []),
+      ...(subName && categoryInfo ? [{ "@type": "ListItem", position: 3, name: subName, item: `${Astro.site?.toString().replace(/\/$/, '')}/${categoryInfo.slug}/${quiz.subcategorySlug}/` }] : []),
       { "@type": "ListItem", position: (categoryInfo ? 2 : 1) + (subName ? 1 : 0) + 1, name: quiz.title },
     ]
   })} />
