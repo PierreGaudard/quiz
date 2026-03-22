@@ -1,0 +1,12 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PublicProfilePage from "../../components/PublicProfilePage";
+
+export const prerender = false;
+
+const { username } = Astro.params;
+---
+
+<Layout title={`${username} | Wizy`} description={`View ${username}'s quiz profile, stats and level.`} locale="en">
+  <PublicProfilePage client:load username={username!} locale="en" />
+</Layout>
