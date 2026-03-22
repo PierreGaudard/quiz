@@ -2,7 +2,7 @@ import type { AstroIntegration } from "astro";
 import fs from "fs";
 import path from "path";
 
-const SITE = "https://quiz.pierretartare94440.workers.dev";
+const SITE = "https://wizyquiz.com";
 
 // All category slugs across all locales
 const ALL_CATEGORY_SLUGS = new Set([

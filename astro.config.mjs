@@ -8,7 +8,7 @@ import customSitemap from './src/integrations/sitemap.ts';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://quiz.pierretartare94440.workers.dev',
+  site: 'https://wizyquiz.com',
   base: '/',
   output: 'hybrid',
   adapter: cloudflare({

@@ -3,7 +3,7 @@
 ## Project Overview
 Wizy is a multilingual quiz platform built with Astro 6 + React + TailwindCSS v4, deployed on Cloudflare Workers.
 
-- **Site URL (dev)**: https://quiz.pierretartare94440.workers.dev
+- **Site URL (dev)**: https://wizyquiz.com
 - **Base path**: `/` (configured in `astro.config.mjs`)
 - **Deployment**: Push to `main` → Cloudflare auto-builds and deploys (Node.js 22+)
 

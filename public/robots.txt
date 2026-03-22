@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://quiz.pierretartare94440.workers.dev/sitemap-index.xml
+Sitemap: https://wizyquiz.com/sitemap-index.xml
