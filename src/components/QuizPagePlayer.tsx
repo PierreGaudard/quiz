@@ -395,8 +395,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
             </>
           )}
-          <div className={`${quiz.coverImage ? "absolute bottom-0 left-0 right-0 p-6 md:p-8" : "p-6 md:p-8 bg-gradient-to-br from-violet-600 to-indigo-700"}`}>
-            <div className="flex items-center gap-3 mb-3">
+          <div className={`${quiz.coverImage ? "absolute bottom-0 left-0 right-0 p-4 md:p-8" : "p-4 md:p-8 bg-gradient-to-br from-violet-600 to-indigo-700"}`}>
+            <div className="flex items-center gap-2 mb-2 md:mb-3">
               <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${difficultyColor[quiz.difficulty] || "bg-gray-100 text-gray-700"}`}>
                 {quiz.difficulty}
               </span>
@@ -405,8 +405,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
               </span>
             </div>
             <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">{quiz.category}</span>
-            <h1 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">{quiz.title}</h1>
-            <p className="text-white/70 text-sm md:text-base mt-2 max-w-2xl">{quiz.description}</p>
+            <h1 className="font-display text-lg md:text-3xl lg:text-4xl font-bold text-white leading-tight">{quiz.title}</h1>
+            <p className="text-white/70 text-xs md:text-base mt-1 md:mt-2 max-w-2xl line-clamp-2 md:line-clamp-none">{quiz.description}</p>
           </div>
         </div>
 
@@ -525,7 +525,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 }`}
               >
                 {/* Question header */}
-                <div className={`px-4 md:px-6 pt-4 md:pt-6 pb-3 md:pb-4 ${
+                <div className={`px-3 md:px-6 pt-3 md:pt-6 pb-2 md:pb-4 ${
                   state.hasAnswered
                     ? state.isCorrect
                       ? "bg-green-50/50"
@@ -546,7 +546,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                     >
                       {state.hasAnswered ? (state.isCorrect ? "\u2713" : "\u2717") : qIndex + 1}
                     </span>
-                    <h2 className="font-display text-base md:text-xl font-bold text-gray-900 leading-snug flex-1 pt-0.5">
+                    <h2 className="font-display text-sm md:text-xl font-bold text-gray-900 leading-snug flex-1 pt-0.5">
                       {question.question}
                     </h2>
                   </div>
@@ -570,12 +570,12 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
 
                 {/* Question image */}
                 {question.image && (
-                  <div className="px-4 md:px-6 pb-3 md:pb-4">
+                  <div className="px-3 md:px-6 pb-2 md:pb-4">
                     <div className="rounded-xl overflow-hidden">
                       <img
                         src={withBase(question.image)}
                         alt={question.question}
-                        className="w-full max-h-40 md:max-h-64 object-cover"
+                        className="w-full max-h-28 md:max-h-64 object-cover"
                         loading="lazy"
                       />
                     </div>
@@ -583,8 +583,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 )}
 
                 {/* Answers grid */}
-                <div className="px-4 md:px-6 pb-4 md:pb-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5 md:gap-2.5">
+                <div className="px-3 md:px-6 pb-3 md:pb-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2.5">
                     {question.answers.map((answer, aIndex) => {
                       const color = ANSWER_COLORS[aIndex % ANSWER_COLORS.length];
                       const isSelected = state.selectedAnswer === answer.id;
@@ -623,10 +623,10 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                           key={answer.id}
                           onClick={() => !state.hasAnswered && isActive && handleAnswer(qIndex, answer.id)}
                           disabled={state.hasAnswered || !isActive}
-                          className={`w-full flex items-center gap-2.5 p-2.5 md:p-3.5 rounded-xl transition-all duration-200 text-left disabled:cursor-default ${stateClasses}`}
+                          className={`w-full flex items-center gap-2 p-2 md:p-3.5 rounded-xl transition-all duration-200 text-left disabled:cursor-default ${stateClasses}`}
                         >
                           <span
-                            className={`flex-shrink-0 w-7 h-7 md:w-8 md:h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-colors duration-200 ${
+                            className={`flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg flex items-center justify-center text-[10px] md:text-xs font-bold transition-colors duration-200 ${
                               state.hasAnswered && isCorrectAnswer
                                 ? "bg-green-500 text-white"
                                 : state.hasAnswered && isSelected && !isCorrectAnswer
@@ -655,7 +655,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   {/* Explanation after answer */}
                   {state.hasAnswered && question.explanation && (
                     <div
-                      className={`mt-4 p-4 rounded-xl text-sm leading-relaxed ${
+                      className={`mt-2 md:mt-4 p-3 md:p-4 rounded-xl text-xs md:text-sm leading-relaxed ${
                         state.isCorrect
                           ? "bg-green-50 text-green-800 border border-green-200"
                           : "bg-amber-50 text-amber-900 border border-amber-200"
