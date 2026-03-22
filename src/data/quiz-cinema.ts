@@ -6,6 +6,7 @@ export const quizDisney: TranslatedQuiz = {
   categorySlug: "cinema",
   subcategory: "Animation",
   difficulty: "easy",
+  coverImage: "/images/cover-cinema.webp",
   gameType: "qcm",
   playCount: 21300,
   translations: {
@@ -782,6 +783,7 @@ export const quizHarryPotter: TranslatedQuiz = {
   categorySlug: "cinema",
   subcategory: "Films cultes",
   difficulty: "medium",
+  coverImage: "/images/cover-cinema.webp",
   gameType: "qcm",
   playCount: 28400,
   translations: {

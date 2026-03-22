@@ -6,6 +6,7 @@ export const quizFootball: TranslatedQuiz = {
   categorySlug: "sport",
   subcategory: "Football",
   difficulty: "medium",
+  coverImage: "/images/cover-football.webp",
   timePerQuestion: 20,
   gameType: "qcm",
   playCount: 19800,

@@ -6,6 +6,7 @@ export const quizDrapeaux: TranslatedQuiz = {
   categorySlug: "geographie",
   subcategory: "Drapeaux",
   difficulty: "medium",
+  coverImage: "/images/cover-geographie.webp",
   gameType: "qcm",
   playCount: 18500,
   translations: {
@@ -789,6 +790,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
   categorySlug: "geographie",
   subcategory: "Europe",
   difficulty: "hard",
+  coverImage: "/images/cover-geographie.webp",
   gameType: "qcm",
   playCount: 7200,
   translations: {
@@ -1503,6 +1505,7 @@ export const quizPaysEurope: TranslatedQuiz = {
   categorySlug: "geographie",
   subcategory: "Europe",
   difficulty: "medium",
+  coverImage: "/images/cover-geographie.webp",
   gameType: "qcm",
   playCount: 8100,
   translations: {

@@ -6,6 +6,7 @@ export const quizIslam: TranslatedQuiz = {
   categorySlug: "culture-generale",
   subcategory: "Religion",
   difficulty: "medium",
+  coverImage: "/images/cover-sciences.webp",
   gameType: "qcm",
   playCount: 13200,
   translations: {
@@ -648,6 +649,7 @@ export const quizAnglais: TranslatedQuiz = {
   categorySlug: "culture-generale",
   subcategory: "Anglais",
   difficulty: "easy",
+  coverImage: "/images/cover-musique.webp",
   gameType: "qcm",
   playCount: 10200,
   translations: {
@@ -1290,6 +1292,7 @@ export const quizBrevetHistoire: TranslatedQuiz = {
   categorySlug: "histoire",
   subcategory: "Brevet",
   difficulty: "medium",
+  coverImage: "/images/cover-histoire.webp",
   gameType: "qcm",
   playCount: 9600,
   translations: {
