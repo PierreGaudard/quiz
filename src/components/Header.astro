@@ -257,7 +257,7 @@ const comingSoonLabel: Record<string, string> = { en: "Coming soon", fr: "Biento
                     {theme.categories[0].subs.map((sub) => (
                       <a href={sub.href} class="group/sub flex flex-col rounded-xl overflow-hidden border border-gray-100 hover:border-violet-200 hover:shadow-md transition-all">
                         <div class="relative h-16 overflow-hidden">
-                          <img src={withBase(sub.image)} alt={sub.name} class="w-full h-full object-cover group-hover/sub:scale-105 transition-transform duration-300" />
+                          <img src={withBase(sub.image)} alt={sub.name} width="800" height="450" class="w-full h-full object-cover group-hover/sub:scale-105 transition-transform duration-300" />
                           <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                         </div>
                         <div class="px-2.5 py-2 bg-white">
@@ -274,7 +274,7 @@ const comingSoonLabel: Record<string, string> = { en: "Coming soon", fr: "Biento
                 <div class="p-2 space-y-0.5">
                   {theme.categories.map((cat) => (
                     <a href={cat.href} class="group/card flex items-center gap-3 p-3 rounded-lg hover:bg-violet-50 transition-colors">
-                      <img src={withBase(cat.coverImage)} alt={cat.label} class="w-10 h-10 rounded-xl object-cover shrink-0 shadow-sm" />
+                      <img src={withBase(cat.coverImage)} alt={cat.label} width="800" height="450" class="w-10 h-10 rounded-xl object-cover shrink-0 shadow-sm" />
                       <div class="flex-1 min-w-0">
                         <span class="text-sm font-bold text-gray-800 group-hover/card:text-violet-700">{cat.label}</span>
                         <p class="text-[11px] text-gray-400 mt-0.5 line-clamp-1">{cat.subs.slice(0, 4).map((s) => s.name).join(", ")}</p>
@@ -323,7 +323,7 @@ const comingSoonLabel: Record<string, string> = { en: "Coming soon", fr: "Biento
             /* Sport: show subcategories */
             theme.categories[0].subs.map((sub) => (
               <a href={sub.href} class="flex items-center gap-3 px-3 py-2 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium transition-colors">
-                <img src={withBase(sub.image)} alt={sub.name} class="w-6 h-6 rounded object-cover" />
+                <img src={withBase(sub.image)} alt={sub.name} width="800" height="450" class="w-6 h-6 rounded object-cover" />
                 {sub.name}
               </a>
             ))
@@ -331,7 +331,7 @@ const comingSoonLabel: Record<string, string> = { en: "Coming soon", fr: "Biento
             /* Other themes: show category links */
             theme.categories.map((cat) => (
               <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded text-white/80 hover:text-white hover:bg-white/10 text-sm font-medium transition-colors">
-                <img src={withBase(cat.coverImage)} alt={cat.label} class="w-6 h-6 rounded-md object-cover" />
+                <img src={withBase(cat.coverImage)} alt={cat.label} width="800" height="450" class="w-6 h-6 rounded-md object-cover" />
                 {cat.label}
               </a>
             ))

@@ -247,6 +247,8 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
                   <img
                     src={withBase(quiz.coverImage)}
                     alt={quiz.title}
+                    width={800}
+                    height={450}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -355,6 +357,8 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
                   <img
                     src={withBase(cat.coverImage)}
                     alt={cat.name}
+                    width={800}
+                    height={450}
                     className="w-12 h-12 rounded-lg object-cover"
                     loading="lazy"
                   />

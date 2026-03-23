@@ -136,7 +136,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
           <div className="relative group">
             <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-4 border-white/30 bg-white/10 flex items-center justify-center">
               {user.avatar ? (
-                <img src={user.avatar} alt={user.username} className="w-full h-full object-cover" />
+                <img src={user.avatar} alt={user.username} width={80} height={80} className="w-full h-full object-cover" />
               ) : (
                 <span className="text-3xl md:text-4xl font-black text-white/60">{user.username[0].toUpperCase()}</span>
               )}
@@ -227,7 +227,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
                 <a key={i} href={quizHref} className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group">
                   {h.quiz_image ? (
                     <div className="w-12 h-12 rounded-lg overflow-hidden shrink-0">
-                      <img src={h.quiz_image} alt={title} className="w-full h-full object-cover" />
+                      <img src={h.quiz_image} alt={title} width={800} height={450} className="w-full h-full object-cover" />
                     </div>
                   ) : (
                     <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0 ${h.score / h.total_questions >= 0.7 ? "bg-green-500" : h.score / h.total_questions >= 0.4 ? "bg-amber-500" : "bg-red-500"}`}>

@@ -121,7 +121,7 @@ export default function QuizSocialBlock({ quizSlug, userScore, totalQuestions, l
               <div key={friend.id} className="flex items-center gap-2.5">
                 <div className="w-7 h-7 rounded-full bg-violet-100 flex items-center justify-center overflow-hidden shrink-0">
                   {friend.avatar ? (
-                    <img src={friend.avatar} className="w-full h-full object-cover" alt="" />
+                    <img src={friend.avatar} className="w-full h-full object-cover" alt={friend.username} width={40} height={40} />
                   ) : (
                     <span className="text-xs font-bold text-violet-600">{friend.username[0].toUpperCase()}</span>
                   )}

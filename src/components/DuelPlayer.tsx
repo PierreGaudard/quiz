@@ -100,6 +100,8 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
                 alt={quiz.title}
                 className="w-full aspect-[2.2/1] object-cover"
                 loading="eager"
+                width={800}
+                height={450}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
             </>

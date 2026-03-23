@@ -305,6 +305,8 @@ export default function CategoryPage({
           <img
             src={withBase(category.coverImage)}
             alt={category.name}
+            width={800}
+            height={450}
             className="w-14 h-14 rounded-2xl object-cover shadow-lg shrink-0"
           />
           <div className="flex-1">
@@ -1157,7 +1159,7 @@ function SidebarContent({
           <a href={lp(profileSlug)} className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 rounded-full border-2 border-white/30 bg-white/10 flex items-center justify-center overflow-hidden">
               {authUser.avatar ? (
-                <img src={authUser.avatar} alt={authUser.username} className="w-full h-full object-cover" />
+                <img src={authUser.avatar} alt={authUser.username} width={40} height={40} className="w-full h-full object-cover" />
               ) : (
                 <span className="text-xl font-black text-white/60">{authUser.username[0].toUpperCase()}</span>
               )}
@@ -1199,7 +1201,7 @@ function SidebarContent({
                   return (
                     <a key={f.id} href={fProfileHref} className="flex items-center gap-2 text-xs hover:bg-white/10 rounded-lg p-1.5 -mx-1 transition-colors">
                       <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold overflow-hidden shrink-0">
-                        {f.avatar ? <img src={f.avatar} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
+                        {f.avatar ? <img src={f.avatar} alt={f.username} width={40} height={40} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
                       </div>
                       <div className="flex-1 min-w-0">
                         <span className="truncate text-white/80 block">{f.username}</span>
@@ -1247,7 +1249,7 @@ function SidebarContent({
               href={lp(`/${cat.slug}`)}
               className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-gray-50 transition-colors group"
             >
-              <img src={withBase(cat.coverImage)} alt={cat.name} className="w-7 h-7 rounded-lg object-cover shrink-0" />
+              <img src={withBase(cat.coverImage)} alt={cat.name} width={800} height={450} className="w-7 h-7 rounded-lg object-cover shrink-0" />
               <span className="text-sm font-medium text-gray-700 group-hover:text-violet-600 transition-colors">{tt(cat.nameKey)}</span>
             </a>
           ))}

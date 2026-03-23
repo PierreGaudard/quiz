@@ -191,6 +191,8 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 src={withBase(quiz.coverImage)}
                 alt={quiz.title}
                 className="w-full h-full object-cover"
+                width={800}
+                height={450}
               />
             </div>
           )}
@@ -435,6 +437,8 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
               src={withBase(currentQuestion.image)}
               alt=""
               className="w-full h-full object-cover"
+              width={800}
+              height={450}
             />
           </div>
         )}

@@ -171,6 +171,8 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                 alt={quiz.title}
                 className="w-full aspect-[2.5/1] object-cover"
                 loading="eager"
+                width={800}
+                height={450}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
             </>
@@ -564,6 +566,8 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                 alt={currentQuestion.question}
                 className="w-full max-h-48 md:max-h-72 object-cover"
                 loading="lazy"
+                width={800}
+                height={450}
               />
             </div>
           </div>

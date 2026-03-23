@@ -423,6 +423,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
               <img
                 src={withBase(quiz.coverImage)}
                 alt={quiz.title}
+                width={800}
+                height={450}
                 className="w-full aspect-[2/1] md:aspect-[2.5/1] object-cover"
                 loading="eager"
               />
@@ -628,6 +630,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                       <img
                         src={withBase(question.image)}
                         alt={question.question}
+                        width={800}
+                        height={450}
                         className="w-full max-h-28 md:max-h-64 object-cover"
                         loading="lazy"
                       />

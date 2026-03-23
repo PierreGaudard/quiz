@@ -113,7 +113,7 @@ function formatCount(n: number): string {
               <div class="relative">
                 <div class="w-[72px] h-[72px] rounded-full overflow-hidden border-[3px] border-yellow-400 group-hover:border-yellow-300 transition-colors shadow-lg">
                   {quiz.coverImage ? (
-                    <img src={withBase(quiz.coverImage)} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
+                    <img src={withBase(quiz.coverImage)} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" width="800" height="450" loading="lazy" />
                   ) : (
                     <div class="w-full h-full bg-violet-600 flex items-center justify-center text-white font-bold text-lg">Q</div>
                   )}
@@ -135,7 +135,7 @@ function formatCount(n: number): string {
         const featured = popularQuizzes[0];
         return featured && (
           <a href={lp(`/${featured.path}`)} class="group block relative rounded-2xl overflow-hidden aspect-[21/8]">
-            {featured.coverImage && <img src={withBase(featured.coverImage)} alt={featured.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />}
+            {featured.coverImage && <img src={withBase(featured.coverImage)} alt={featured.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width="800" height="450" loading="lazy" />}
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
             <div class="relative h-full flex flex-col justify-center p-8 md:p-12 max-w-lg">
               <div class="flex items-center gap-2 mb-3">
@@ -164,7 +164,7 @@ function formatCount(n: number): string {
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {popularQuizzes.slice(1, 9).map((quiz) => (
           <a href={lp(`/${quiz.path}`)} class="group relative rounded-xl overflow-hidden aspect-[3/4] cursor-pointer">
-            {quiz.coverImage && <img src={withBase(quiz.coverImage)} alt={quiz.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />}
+            {quiz.coverImage && <img src={withBase(quiz.coverImage)} alt={quiz.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="450" loading="lazy" />}
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             {/* Top badges */}
             <div class="absolute top-3 left-3 flex gap-1.5">
@@ -194,7 +194,7 @@ function formatCount(n: number): string {
           {newestQuizzes.map((quiz, i) => (
             <a href={lp(`/${quiz.path}`)} class="group shrink-0 w-[240px] bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
               <div class="relative aspect-video overflow-hidden">
-                {quiz.coverImage && <img src={withBase(quiz.coverImage)} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />}
+                {quiz.coverImage && <img src={withBase(quiz.coverImage)} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="450" loading="lazy" />}
                 <div class="absolute top-2 left-2">
                   <span class="text-[9px] font-bold bg-green-700 text-white px-2 py-0.5 rounded">New</span>
                 </div>
@@ -244,7 +244,7 @@ function formatCount(n: number): string {
           return (
             <a href={lp(`/${cat.slug}`)} class="group relative overflow-hidden rounded-xl aspect-[3/4]">
               {coverImg ? (
-                <img src={withBase(coverImg)} alt={cat.name} class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                <img src={withBase(coverImg)} alt={cat.name} class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="800" height="450" loading="lazy" />
               ) : (
                 <div class={`absolute inset-0 ${cat.color}`}></div>
               )}
@@ -278,7 +278,7 @@ function formatCount(n: number): string {
             return (
               <div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
                 {sampleQuiz?.coverImage ? (
-                  <img src={withBase(sampleQuiz.coverImage)} alt={gt.name} class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                  <img src={withBase(sampleQuiz.coverImage)} alt={gt.name} class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" width="800" height="450" loading="lazy" />
                 ) : (
                   <div class={`absolute inset-0 ${gt.color}`}></div>
                 )}

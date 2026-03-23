@@ -90,7 +90,7 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
                     )}
                     <div className={`${isFirst ? "w-20 h-20" : "w-16 h-16"} mx-auto rounded-full overflow-hidden flex items-center justify-center mb-3 shadow-lg border-2 ${style.border} bg-violet-100`}>
                       {player.avatar ? (
-                        <img src={player.avatar} alt={player.username} className="w-full h-full object-cover" />
+                        <img src={player.avatar} alt={player.username} width={40} height={40} className="w-full h-full object-cover" />
                       ) : (
                         <span className={`${isFirst ? "text-3xl" : "text-2xl"} font-black text-violet-500`}>{player.username[0].toUpperCase()}</span>
                       )}
@@ -138,7 +138,7 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
                       <div className="flex items-center gap-2.5">
                         <div className="w-8 h-8 rounded-full overflow-hidden bg-violet-100 flex items-center justify-center shrink-0">
                           {player.avatar ? (
-                            <img src={player.avatar} alt={player.username} className="w-full h-full object-cover" />
+                            <img src={player.avatar} alt={player.username} width={40} height={40} className="w-full h-full object-cover" />
                           ) : (
                             <span className="text-sm font-bold text-violet-500">{player.username[0].toUpperCase()}</span>
                           )}

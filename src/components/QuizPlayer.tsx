@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 // html2canvas-pro is lazy-loaded in handleScreenshot() to avoid bundle bloat
 import type { QuizData, GameType, QuizQuestion } from "../data/types";
+import { withBase } from "../utils/base";
 
 interface Props {
   quiz: QuizData;
@@ -369,7 +370,7 @@ export default function QuizPlayer({ quiz }: Props) {
         <div className="max-w-lg w-full">
           {quiz.coverImage && (
             <div className="relative rounded-3xl overflow-hidden mb-6 shadow-xl aspect-[2/1]">
-              <img src={quiz.coverImage} alt={quiz.title} className="w-full h-full object-cover" loading="eager" />
+              <img src={withBase(quiz.coverImage)} alt={quiz.title} className="w-full h-full object-cover" loading="eager" width={800} height={450} />
               <div className="absolute inset-0 bg-black/30" />
               <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between">
                 <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${difficultyColor}`}>
@@ -753,7 +754,7 @@ export default function QuizPlayer({ quiz }: Props) {
             <div className="space-y-4 -mx-4 lg:mx-0">
               <div className="relative rounded-none lg:rounded-2xl overflow-hidden aspect-[16/9]">
                 {question.image ? (
-                  <img src={question.image} alt="" className="w-full h-full object-cover" />
+                  <img src={question.image} alt="" className="w-full h-full object-cover" width={800} height={600} />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-violet-500 to-indigo-600" />
                 )}
@@ -835,7 +836,7 @@ export default function QuizPlayer({ quiz }: Props) {
                     >
                       <div className="aspect-[3/4]">
                         {answerImage ? (
-                          <img src={answerImage} alt={answer.text} className="w-full h-full object-cover" />
+                          <img src={answerImage} alt={answer.text} className="w-full h-full object-cover" width={800} height={450} />
                         ) : (
                           <div className={`w-full h-full ${i === 0 ? "bg-gradient-to-br from-blue-400 to-blue-600" : "bg-gradient-to-br from-rose-400 to-rose-600"}`} />
                         )}
@@ -859,7 +860,7 @@ export default function QuizPlayer({ quiz }: Props) {
             <div className="space-y-4">
               {question.image && (
                 <div className="rounded-2xl overflow-hidden aspect-[16/9]">
-                  <img src={question.image} alt="" className="w-full h-full object-cover" />
+                  <img src={question.image} alt="" className="w-full h-full object-cover" width={800} height={600} />
                 </div>
               )}
 
@@ -1218,7 +1219,7 @@ export default function QuizPlayer({ quiz }: Props) {
           <div className="hidden lg:flex items-center justify-center lg:w-[40%] flex-shrink-0">
             <div className="w-full max-w-sm">
               <div className={`${imageShape.clip} overflow-hidden shadow-2xl transform ${imageShape.rotate} hover:rotate-0 transition-transform duration-500 border-4 border-white`}>
-                <img src={question.image} alt="" className={`w-full ${imageShape.aspect} object-cover`} loading="lazy" />
+                <img src={question.image} alt="" className={`w-full ${imageShape.aspect} object-cover`} loading="lazy" width={800} height={600} />
               </div>
             </div>
           </div>
@@ -1228,7 +1229,7 @@ export default function QuizPlayer({ quiz }: Props) {
         {question.image && (gameType === "qcm" || gameType === "chrono") && (
           <div className="lg:hidden -order-1 flex-shrink-0">
             <div className={`${imageShape.clip} overflow-hidden shadow-md h-32 transform ${imageShape.rotate} border-2 border-white`}>
-              <img src={question.image} alt="" className="w-full h-full object-cover" loading="lazy" />
+              <img src={question.image} alt="" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
             </div>
           </div>
         )}

@@ -235,6 +235,8 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
                 alt={quiz.title}
                 className="w-full aspect-[2.5/1] object-cover"
                 loading="eager"
+                width={800}
+                height={450}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
             </>
@@ -541,6 +543,8 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
                 alt=""
                 className="w-full h-full object-cover"
                 loading="eager"
+                width={800}
+                height={450}
               />
             </div>
           )}

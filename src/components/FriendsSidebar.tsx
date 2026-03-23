@@ -100,7 +100,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
               {searchResults.map((u) => (
                 <div key={u.id} className="flex items-center gap-2 p-2 rounded-lg bg-gray-50">
                   <div className="w-7 h-7 rounded-full bg-violet-100 flex items-center justify-center text-violet-600 text-xs font-bold overflow-hidden">
-                    {u.avatar ? <img src={u.avatar} className="w-full h-full object-cover" /> : u.username[0].toUpperCase()}
+                    {u.avatar ? <img src={u.avatar} alt={u.username} width={40} height={40} className="w-full h-full object-cover" /> : u.username[0].toUpperCase()}
                   </div>
                   <span className="text-xs font-medium text-gray-900 flex-1 truncate">{u.username}</span>
                   {sentTo.has(u.id) ? (
@@ -123,7 +123,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
             {requests.map((r) => (
               <div key={r.friendship_id} className="flex items-center gap-2 p-2 rounded-lg bg-amber-50 border border-amber-100">
                 <div className="w-7 h-7 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 text-xs font-bold overflow-hidden">
-                  {r.avatar ? <img src={r.avatar} className="w-full h-full object-cover" /> : r.username[0].toUpperCase()}
+                  {r.avatar ? <img src={r.avatar} alt={r.username} width={40} height={40} className="w-full h-full object-cover" /> : r.username[0].toUpperCase()}
                 </div>
                 <span className="text-xs font-medium text-gray-900 flex-1 truncate">{r.username}</span>
                 <button onClick={() => acceptRequest(r.friendship_id)} className="text-[10px] font-bold text-green-600 hover:text-green-800 cursor-pointer">{tt("accept")}</button>
@@ -146,7 +146,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
               return (
                 <a key={f.id} href={profileHref} className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors block">
                   <div className="w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center text-violet-600 text-xs font-bold overflow-hidden">
-                    {f.avatar ? <img src={f.avatar} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
+                    {f.avatar ? <img src={f.avatar} alt={f.username} width={40} height={40} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-semibold text-gray-900 truncate">{f.username}</p>
