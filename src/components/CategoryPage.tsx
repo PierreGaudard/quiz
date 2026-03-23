@@ -1131,12 +1131,21 @@ function SidebarContent({
     tt("createOwnQuizzes"),
   ];
 
+  const catSlugs: Record<string, Record<string, string>> = {
+    sport: { en: "sports", fr: "sport", es: "deportes" },
+    cinema: { en: "cinema", fr: "cinema", es: "cine" },
+    anime: { en: "anime", fr: "anime", es: "anime" },
+    "jeux-video": { en: "video-games", fr: "jeux-video", es: "videojuegos" },
+    geographie: { en: "geography", fr: "geographie", es: "geografia" },
+  };
+  const ls = (base: string) => catSlugs[base]?.[locale || "en"] || base;
+
   const sidebarCategories = [
-    { nameKey: "catSports", slug: "sport", color: "bg-emerald-500", coverImage: "/images/cover-sport.webp", name: "Sport" },
-    { nameKey: "catCinema", slug: "cinema", color: "bg-red-500", coverImage: "/images/cover-cinema.webp", name: "Cinema" },
-    { nameKey: "catAnime", slug: "anime", color: "bg-pink-500", coverImage: "/images/cover-anime.webp", name: "Anime" },
-    { nameKey: "catVideoGames", slug: "jeux-video", color: "bg-purple-500", coverImage: "/images/cover-jeux-video.webp", name: "Jeux Video" },
-    { nameKey: "catGeography", slug: "geographie", color: "bg-teal-500", coverImage: "/images/cover-geographie.webp", name: "Geographie" },
+    { nameKey: "catSports", slug: ls("sport"), color: "bg-emerald-500", coverImage: "/images/cover-sport.webp", name: "Sport" },
+    { nameKey: "catCinema", slug: ls("cinema"), color: "bg-red-500", coverImage: "/images/cover-cinema.webp", name: "Cinema" },
+    { nameKey: "catAnime", slug: ls("anime"), color: "bg-pink-500", coverImage: "/images/cover-anime.webp", name: "Anime" },
+    { nameKey: "catVideoGames", slug: ls("jeux-video"), color: "bg-purple-500", coverImage: "/images/cover-jeux-video.webp", name: "Jeux Video" },
+    { nameKey: "catGeography", slug: ls("geographie"), color: "bg-teal-500", coverImage: "/images/cover-geographie.webp", name: "Geographie" },
   ];
 
   return (

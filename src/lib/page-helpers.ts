@@ -1,5 +1,5 @@
 import type { Locale } from "../i18n/config";
-import { getCategories, getGameTypes, categoryDefs } from "../data/categories";
+import { getCategories, getGameTypes, categoryDefs, getSubcategoryImageSlug } from "../data/categories";
 import { getAllQuizzes, getQuizzesByCategory, getFeaturedQuiz, getAllSubcategoryPaths, getQuizzesBySubcategory, slugifySubcategory } from "../data/quizzes";
 
 /** Generate static paths for [slug].astro (categories only). */
@@ -73,7 +73,7 @@ export function resolveSubcategoryData(categorySlug: string, subSlug: string, su
     ...category,
     name: subName,
     slug: subSlug,
-    coverImage: `/images/sub-${subSlug}.webp`,
+    coverImage: `/images/sub-${getSubcategoryImageSlug(subName, locale)}.webp`,
     description: `All ${subName} quizzes in ${category.name}.`,
     subcategories: [] as string[],
   };

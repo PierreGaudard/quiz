@@ -1,7 +1,7 @@
 ---
 import { localePath, withBase } from "../utils/base";
 import { categoryIcons } from "../data/icons";
-import { getCategories, categoryDefs } from "../data/categories";
+import { getCategories, categoryDefs, getSubcategoryImageSlug } from "../data/categories";
 import { slugifySubcategory } from "../data/quizzes";
 import { t } from "../i18n/ui";
 import { locales, defaultLocale } from "../i18n/config";
@@ -63,7 +63,7 @@ const megaCategories = cats.map((cat, i) => ({
     name: sub,
     slug: slugifySubcategory(sub),
     href: lp(`/${cat.slug}/${slugifySubcategory(sub)}`),
-    image: `/images/sub-${slugifySubcategory(sub)}.webp`,
+    image: `/images/sub-${getSubcategoryImageSlug(sub, locale)}.webp`,
   })),
 }));
 

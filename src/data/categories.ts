@@ -213,4 +213,25 @@ export function getCategoryName(slug: string, locale: Locale): string {
   return content.name;
 }
 
+function slugify(name: string): string {
+  return name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+/**
+ * Get the image slug for a subcategory.
+ * Images are named with FR slugs, so we map any locale's subcategory name to its FR equivalent.
+ */
+export function getSubcategoryImageSlug(subName: string, locale: Locale): string {
+  if (locale === "fr") return slugify(subName);
+  for (const def of categoryDefs) {
+    const localeContent = def.translations[locale] || def.translations.en;
+    const idx = localeContent.subcategories.indexOf(subName);
+    if (idx !== -1) {
+      const frSub = def.translations.fr.subcategories[idx];
+      return slugify(frSub);
+    }
+  }
+  return slugify(subName);
+}
+
 export const categories = getCategories("fr");
