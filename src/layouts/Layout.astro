@@ -33,6 +33,13 @@ const ogLocaleMap: Record<Locale, string> = { en: "en_US", fr: "fr_FR", es: "es_
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || '';
 const trailingPath = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;
 const canonicalUrl = `${siteUrl}${trailingPath}`;
+
+// Social image: page-specific cover when provided, brand OG image otherwise.
+// Always absolute, social crawlers ignore relative og:image.
+const toAbsolute = (p: string) => (siteUrl && !/^https?:\/\//.test(p) ? `${siteUrl}${p.startsWith('/') ? '' : '/'}${p}` : p);
+const ogImageUrl = ogImage ? toAbsolute(ogImage) : `${siteUrl}/og-image.jpg`;
+const ogImageAlt = ogImage ? title : "Wizyquizz";
+const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
 ---
 
 <!doctype html>
@@ -52,14 +59,18 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content={ogLocaleMap[locale]} />
-    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    {ogImageSize && <meta property="og:image:width" content={String(ogImageSize.width)} />}
+    {ogImageSize && <meta property="og:image:height" content={String(ogImageSize.height)} />}
     <meta property="og:site_name" content="Wizy" />
 
     {/* Twitter */}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
 
     {/* hreflang tags for SEO (absolute URLs) */}
     {locales.map((loc) => {
@@ -70,7 +81,13 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
     })}
     <link rel="alternate" hreflang="x-default" href={`${siteUrl}${hreflangPaths?.en ?? pagePath}`} />
 
-    <link rel="icon" type="image/svg+xml" href={`${BASE}/favicon.svg`} />
+    {/* Favicons + PWA */}
+    <link rel="icon" href={`${BASE}/favicon.ico`} sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href={`${BASE}/favicon-32x32.png`} />
+    <link rel="icon" type="image/png" sizes="16x16" href={`${BASE}/favicon-16x16.png`} />
+    <link rel="apple-touch-icon" sizes="180x180" href={`${BASE}/apple-touch-icon.png`} />
+    <link rel="manifest" href={`${BASE}/site.webmanifest`} />
+    <meta name="theme-color" content="#1a0e42" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />

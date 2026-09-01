@@ -102,13 +102,9 @@ const comingSoonLabel: Record<string, string> = { en: "Coming soon", fr: "Biento
   {/* ===== ROW 1: Logo + Search + Mon compte ===== */}
   <div class="bg-[#1a0e42]">
     <div class="max-w-7xl mx-auto px-4 flex items-center h-14 gap-4">
-      <a href={lp('/')} class="flex items-center gap-2 shrink-0 group">
-        <div class="w-10 h-10 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform border border-white/20">
-          <span class="text-white font-display font-black text-xl leading-none">W</span>
-        </div>
-        <div class="hidden sm:flex flex-col leading-none">
-          <span class="font-display font-extrabold text-white text-lg tracking-tight">Wi<span class="text-yellow-400">zy</span></span>
-        </div>
+      <a href={lp('/')} class="flex items-center shrink-0 group" aria-label="Wizyquizz">
+        <img src={withBase('/logo-mark.png')} alt="Wizyquizz" width="130" height="120" class="h-10 w-auto sm:hidden group-hover:scale-105 transition-transform" />
+        <img src={withBase('/logo.png')} alt="Wizyquizz" width="365" height="120" class="h-10 w-auto hidden sm:block group-hover:scale-105 transition-transform" />
       </a>
 
       <form action={lp(s('search'))} method="GET" class="flex-1 max-w-lg mx-auto hidden md:block">

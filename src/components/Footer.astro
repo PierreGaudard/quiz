@@ -29,11 +29,8 @@ const sitemapCategories = getCategories(locale);
     <div class="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1fr] gap-10 text-center md:text-left">
       {/* Col 1: Brand + description + socials */}
       <div class="flex flex-col items-center md:items-start">
-        <a href={withBase('/')} class="flex items-center gap-2 mb-4">
-          <div class="w-9 h-9 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg flex items-center justify-center border border-white/20">
-            <span class="text-white font-display font-black text-lg leading-none">W</span>
-          </div>
-          <span class="font-display font-extrabold text-white text-lg tracking-tight">Wizy</span>
+        <a href={withBase('/')} class="flex items-center mb-4" aria-label="Wizyquizz">
+          <img src={withBase('/logo.png')} alt="Wizyquizz" width="365" height="120" class="h-10 w-auto" />
         </a>
         <p class="text-sm text-white/50 leading-relaxed mb-5 max-w-xs">
           {t(locale, "footer.description")}

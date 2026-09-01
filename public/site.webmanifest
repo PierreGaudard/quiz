@@ -1,0 +1,13 @@
+{
+  "name": "Wizyquizz",
+  "short_name": "Wizyquizz",
+  "description": "Test your knowledge with fun and interactive quizzes!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a0e42",
+  "theme_color": "#1a0e42",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
