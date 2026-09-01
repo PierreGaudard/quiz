@@ -16,8 +16,70 @@
   --color-text-secondary: #636e72;
   --color-text-muted: #b2bec3;
 
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-sans: 'Nunito', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+}
+
+/* ===== Landing visuals (matches the Wizyquizz logo: deep violet, yellow, rounded shapes) ===== */
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 60% 70% at 85% 20%, rgba(124, 58, 237, 0.55), transparent 60%),
+    radial-gradient(ellipse 50% 60% at 10% 90%, rgba(93, 45, 199, 0.5), transparent 60%),
+    linear-gradient(180deg, #1a0e42 0%, #2d1b69 55%, #1a0e42 100%);
+}
+.hero-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  pointer-events: none;
+}
+.hero-blob-yellow {
+  width: 380px; height: 380px;
+  right: -120px; top: -140px;
+  background: rgba(250, 204, 21, 0.22);
+  animation: blob-float 14s ease-in-out infinite;
+}
+.hero-blob-violet {
+  width: 420px; height: 420px;
+  left: -160px; bottom: -200px;
+  background: rgba(167, 139, 250, 0.35);
+  animation: blob-float 18s ease-in-out infinite reverse;
+}
+.cta-blob { right: -80px; top: -160px; width: 320px; height: 320px; }
+.hero-mark {
+  position: absolute;
+  width: 220px; height: auto;
+  right: 39%; top: 50%;
+  transform: translate(50%, -50%) rotate(-8deg);
+  opacity: 0.09;
+  pointer-events: none;
+}
+.cta-mark {
+  position: absolute;
+  width: 160px; height: auto;
+  left: 4%; bottom: -30px;
+  transform: rotate(-10deg);
+  opacity: 0.12;
+  pointer-events: none;
+}
+@keyframes blob-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 25px) scale(1.08); }
+}
+.card-lift {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -12px rgba(26, 14, 66, 0.35);
+}
+.qotd-card { animation: card-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-blob, .qotd-card { animation: none; }
 }
 
 @layer base {
