@@ -9,7 +9,7 @@ const locale: Locale = "es";
 const lp = (path: string) => localePath(path, locale);
 ---
 
-<Layout title="Politica de privacidad | Wizy Quiz" description="Descubre como Wizy protege tus datos personales. Politica de privacidad, cookies, derechos RGPD y mas." locale={locale} hreflangPaths={getHreflangStaticPaths("privacy")}>
+<Layout title="Politica de privacidad | Wizyquizz" description="Descubre como Wizyquizz protege tus datos personales. Politica de privacidad, cookies, derechos RGPD y mas." locale={locale} hreflangPaths={getHreflangStaticPaths("privacy")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -23,7 +23,7 @@ const lp = (path: string) => localePath(path, locale);
 
       <section>
         <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Responsable del tratamiento</h2>
-        <p>El responsable del tratamiento de los datos personales recogidos en el sitio web Wizy es:</p>
+        <p>El responsable del tratamiento de los datos personales recogidos en el sitio web Wizyquizz es:</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
           <li><strong>Nombre:</strong> Pierre Gaudard</li>
           <li><strong>Email:</strong> pierretartare94440@gmail.com</li>
@@ -32,7 +32,7 @@ const lp = (path: string) => localePath(path, locale);
 
       <section>
         <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Datos recogidos</h2>
-        <p>El sitio web Wizy recoge el mínimo de datos necesarios para su funcionamiento:</p>
+        <p>El sitio web Wizyquizz recoge el mínimo de datos necesarios para su funcionamiento:</p>
         <ul class="list-disc pl-5 space-y-2 mt-2">
           <li><strong>Datos de navegación:</strong> dirección IP, tipo de navegador, páginas visitadas, duración de la visita. Estos datos se recogen automáticamente a través de los registros del servidor (Cloudflare).</li>
           <li><strong>Datos almacenados localmente:</strong> progreso en los quizzes, puntuaciones, quizzes personalizados creados por el usuario. Estos datos se almacenan exclusivamente en el navegador del usuario (localStorage) y nunca se transmiten a nuestros servidores.</li>
@@ -80,7 +80,7 @@ const lp = (path: string) => localePath(path, locale);
 
       <section>
         <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Cookies</h2>
-        <p>El sitio web Wizy utiliza únicamente <strong>cookies técnicas</strong> estrictamente necesarias:</p>
+        <p>El sitio web Wizyquizz utiliza únicamente <strong>cookies técnicas</strong> estrictamente necesarias:</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
           <li><strong>localStorage:</strong> guardado del progreso en quizzes, puntuaciones y quizzes personalizados</li>
           <li><strong>Cookies de Cloudflare:</strong> cookies de seguridad y rendimiento (protección contra ataques DDoS)</li>

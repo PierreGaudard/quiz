@@ -49,7 +49,7 @@ const quizJsonLd = buildQuizStructuredData({
 });
 ---
 
-<Layout title={`${quiz.title} - Wizy`} description={quiz.description} ogImage={quiz.coverImage} locale={locale} hreflangPaths={hreflangPaths}>
+<Layout title={`${quiz.title} - Wizyquizz`} description={quiz.description} ogImage={quiz.coverImage} locale={locale} hreflangPaths={hreflangPaths}>
   <div class="max-w-7xl mx-auto px-4 pt-4 pb-8">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-6 overflow-hidden whitespace-nowrap" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium shrink-0">{t(locale, "breadcrumb.home")}</a>

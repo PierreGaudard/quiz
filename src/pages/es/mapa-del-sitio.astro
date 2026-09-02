@@ -13,7 +13,7 @@ const categories = getCategories(locale);
 const allQuizzes = getAllQuizzes(locale);
 ---
 
-<Layout title="Mapa del sitio: todos los quizzes | Wizy" description="Explora el mapa del sitio Wizy con todas las categorias, subcategorias y quizzes disponibles." locale={locale} hreflangPaths={getHreflangStaticPaths("sitemap")}>
+<Layout title="Mapa del sitio: todos los quizzes | Wizyquizz" description="Explora el mapa del sitio Wizyquizz con todas las categorias, subcategorias y quizzes disponibles." locale={locale} hreflangPaths={getHreflangStaticPaths("sitemap")}>
   <main class="max-w-6xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -22,7 +22,7 @@ const allQuizzes = getAllQuizzes(locale);
     </nav>
 
     <h1 class="font-display text-3xl font-black text-gray-900 mb-3">{t(locale, "sitemap.title")}</h1>
-    <p class="text-sm text-gray-500 mb-10">{allQuizzes.length} quizzes · {categories.length} categorías · Todas las páginas de Wizy</p>
+    <p class="text-sm text-gray-500 mb-10">{allQuizzes.length} quizzes · {categories.length} categorías · Todas las páginas de Wizyquizz</p>
 
     {/* Páginas principales */}
     <section class="mb-10">

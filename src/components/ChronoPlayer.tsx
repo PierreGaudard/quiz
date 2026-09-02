@@ -184,7 +184,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
   const handleShare = useCallback(() => {
     const accuracy = totalAnswered > 0 ? Math.round((score / totalAnswered) * 100) : 0;
     const elapsed = TOTAL_TIME - timeLeft;
-    const text = `Chrono Challenge - ${quiz.title}\n${score}/${totalAnswered} in ${elapsed}s | ${accuracy}% accuracy | ${bestStreak} streak\nPlay on Wizy!`;
+    const text = `Chrono Challenge - ${quiz.title}\n${score}/${totalAnswered} in ${elapsed}s | ${accuracy}% accuracy | ${bestStreak} streak\nPlay on Wizyquizz!`;
 
     if (navigator.share) {
       navigator.share({ title: `Chrono - ${quiz.title}`, text, url: window.location.href }).catch(() => {});

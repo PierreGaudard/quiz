@@ -19,7 +19,7 @@ const lp = (path: string) => localePath(path, locale);
 const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale);
 ---
 
-<Layout title={`${subName} Quiz - ${category.name} - Wizy`} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths}>
+<Layout title={`${subName} Quiz - ${category.name} - Wizyquizz`} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths}>
   <div class="max-w-7xl mx-auto px-4 pt-6">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-2" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>

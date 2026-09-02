@@ -11,6 +11,6 @@ const allQuizzes = getAllQuizzes(locale);
 const categories = getCategories(locale);
 ---
 
-<Layout title="Rechercher des quiz | Wizy" description="Recherche parmi des centaines de quiz sur Wizy. Trouve des quiz sur le sport, le cinema, les anime, les jeux video et plus encore." locale={locale} hreflangPaths={getHreflangStaticPaths("search")} noindex={true}>
+<Layout title="Rechercher des quiz | Wizyquizz" description="Recherche parmi des centaines de quiz sur Wizyquizz. Trouve des quiz sur le sport, le cinema, les anime, les jeux video et plus encore." locale={locale} hreflangPaths={getHreflangStaticPaths("search")} noindex={true}>
   <SearchPage client:load quizzes={allQuizzes} categories={categories} locale={locale} />
 </Layout>

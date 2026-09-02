@@ -9,7 +9,7 @@ const locale: Locale = "fr";
 const lp = (path: string) => localePath(path, locale);
 ---
 
-<Layout title="Mentions legales | Wizy Quiz" description="Mentions legales de la plateforme Wizy : editeur, hebergeur, propriete intellectuelle et droit applicable." locale={locale} hreflangPaths={getHreflangStaticPaths("legal")}>
+<Layout title="Mentions legales | Wizyquizz" description="Mentions legales de la plateforme Wizyquizz : editeur, hebergeur, propriete intellectuelle et droit applicable." locale={locale} hreflangPaths={getHreflangStaticPaths("legal")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -23,7 +23,7 @@ const lp = (path: string) => localePath(path, locale);
 
       <section>
         <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Éditeur du site</h2>
-        <p>Le site <strong>Wizy</strong> (accessible à l'adresse <strong>https://wizy.com</strong>) est édité par :</p>
+        <p>Le site <strong>Wizyquizz</strong> (accessible à l'adresse <strong>https://wizy.com</strong>) est édité par :</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
           <li><strong>Nom :</strong> Pierre Gaudard</li>
           <li><strong>Statut :</strong> Personne physique</li>
@@ -49,7 +49,7 @@ const lp = (path: string) => localePath(path, locale);
 
       <section>
         <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. Propriété intellectuelle</h2>
-        <p>L'ensemble du contenu du site Wizy (textes, graphismes, images, logos, icônes, sons, logiciels, quiz, questions et réponses) est la propriété exclusive de Pierre Gaudard ou de ses partenaires et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
+        <p>L'ensemble du contenu du site Wizyquizz (textes, graphismes, images, logos, icônes, sons, logiciels, quiz, questions et réponses) est la propriété exclusive de Pierre Gaudard ou de ses partenaires et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
         <p>Toute reproduction, représentation, modification, publication, adaptation ou exploitation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sauf autorisation écrite préalable de Pierre Gaudard.</p>
       </section>
 
@@ -60,12 +60,12 @@ const lp = (path: string) => localePath(path, locale);
 
       <section>
         <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Cookies</h2>
-        <p>Le site Wizy utilise des cookies techniques strictement nécessaires au fonctionnement du site (sauvegarde de progression, préférences utilisateur). Ces cookies ne collectent aucune donnée personnelle à des fins publicitaires ou de profilage.</p>
+        <p>Le site Wizyquizz utilise des cookies techniques strictement nécessaires au fonctionnement du site (sauvegarde de progression, préférences utilisateur). Ces cookies ne collectent aucune donnée personnelle à des fins publicitaires ou de profilage.</p>
       </section>
 
       <section>
         <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Limitation de responsabilité</h2>
-        <p>Les informations et contenus présents sur le site Wizy sont fournis à titre informatif et ludique. Pierre Gaudard ne saurait être tenu responsable des erreurs ou omissions dans les questions et réponses des quiz.</p>
+        <p>Les informations et contenus présents sur le site Wizyquizz sont fournis à titre informatif et ludique. Pierre Gaudard ne saurait être tenu responsable des erreurs ou omissions dans les questions et réponses des quiz.</p>
         <p>L'utilisation du site se fait aux risques et périls de l'utilisateur. Pierre Gaudard ne pourra être tenu responsable des dommages directs ou indirects résultant de l'utilisation du site.</p>
       </section>
 

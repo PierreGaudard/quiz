@@ -8,7 +8,7 @@ import type { Locale } from "../../i18n/config";
 const locale: Locale = "es";
 ---
 
-<Layout title="Mi Perfil | Wizy" description="Consulta tus estadisticas, nivel, XP e historial de quizzes." locale={locale} hreflangPaths={getHreflangStaticPaths("profile")}>
+<Layout title="Mi Perfil | Wizyquizz" description="Consulta tus estadisticas, nivel, XP e historial de quizzes." locale={locale} hreflangPaths={getHreflangStaticPaths("profile")}>
   <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col lg:flex-row gap-6">
     <div class="flex-1 min-w-0">
       <ProfilePage client:load locale={locale} />

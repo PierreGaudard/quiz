@@ -219,7 +219,7 @@ function formatCount(n: number): string {
         <div>
           <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 tracking-tight mb-3">On a tous ce pote incollable en soirée...</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Tu sais, celui qui sort des anecdotes sur les JO de 1936 entre deux parts de pizza. Celui qui connaît la capitale du Bhoutan et le nombre exact de dents d'un escargot. Eh bien ce pote-là, il s'entraîne probablement sur des quiz en ligne, et honnêtement c'est comme ça qu'on a eu l'idée de créer <strong class="text-gray-700">Wizy</strong>.</p>
+            <p>Tu sais, celui qui sort des anecdotes sur les JO de 1936 entre deux parts de pizza. Celui qui connaît la capitale du Bhoutan et le nombre exact de dents d'un escargot. Eh bien ce pote-là, il s'entraîne probablement sur des quiz en ligne, et honnêtement c'est comme ça qu'on a eu l'idée de créer <strong class="text-gray-700">Wizyquizz</strong>.</p>
             <p>L'objectif c'était simple : proposer des quiz qui donnent vraiment envie de jouer. Pas des questionnaires scolaires barbants, mais des <a href={lp('/sport')} class="text-violet-600 hover:underline">quiz sport</a> où tu découvres que Pelé a marqué plus de 1 000 buts, des <a href={lp('/cinema')} class="text-violet-600 hover:underline">quiz cinéma</a> qui te font réaliser que tu ne connais rien à Disney, ou des <a href={lp('/geographie')} class="text-violet-600 hover:underline">quiz géographie</a> où tu confonds encore le drapeau de Monaco et celui de l'Indonésie (on est passés par là aussi).</p>
             <p>Et le meilleur ? Chaque question vient avec son explication. Tu te trompes, tu apprends. Tu as raison, tu apprends quand même. C'est le truc cool avec les quiz : on retient 10 fois mieux une info quand on a essayé de deviner la réponse.</p>
           </div>
@@ -325,7 +325,7 @@ function formatCount(n: number): string {
         <div>
           <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 tracking-tight mb-3">Un quiz, c'est pas juste 4 réponses au pif</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Le truc qu'on voulait absolument éviter, c'est le côté "tu cliques au hasard et tu passes à la suite". Sur Wizy, chaque mauvaise réponse est une occasion d'apprendre quelque chose. L'explication après chaque question, c'est notre marque de fabrique, et franchement c'est souvent la partie la plus intéressante.</p>
+            <p>Le truc qu'on voulait absolument éviter, c'est le côté "tu cliques au hasard et tu passes à la suite". Sur Wizyquizz, chaque mauvaise réponse est une occasion d'apprendre quelque chose. L'explication après chaque question, c'est notre marque de fabrique, et franchement c'est souvent la partie la plus intéressante.</p>
             <p>On a aussi bossé sur les modes de jeu pour que ça reste frais. L'<strong class="text-gray-700">Estimation</strong> par exemple, c'est complètement différent : pas de choix multiples, juste toi et un chiffre à trouver. Tu proposes un nombre, on te dit "plus haut" ou "plus bas", et tu continues jusqu'à trouver. C'est addictif, essaie juste à côté.</p>
           </div>
         </div>
@@ -369,7 +369,7 @@ function formatCount(n: number): string {
         <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8">
           <div class="lg:sticky lg:top-32">
             <h2 class="font-display text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-2">Questions fréquentes</h2>
-            <p class="text-sm text-gray-400 leading-relaxed">Les réponses aux questions que vous nous posez le plus souvent sur Wizy.</p>
+            <p class="text-sm text-gray-400 leading-relaxed">Les réponses aux questions que vous nous posez le plus souvent sur Wizyquizz.</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
             <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
@@ -377,7 +377,7 @@ function formatCount(n: number): string {
                 Les quiz sont-ils vraiment gratuits et sans inscription ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Tous les quiz sur Wizy sont 100% gratuits. Vous pouvez jouer à n'importe quel quiz sans créer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Tous les quiz sur Wizyquizz sont 100% gratuits. Vous pouvez jouer à n'importe quel quiz sans créer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis.</p>
             </details>
             <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
@@ -398,21 +398,21 @@ function formatCount(n: number): string {
                 Quels sont les différents modes de jeu disponibles ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizy propose 6 modes de jeu : le QCM classique à 4 réponses, le Vrai ou Faux, le Chrono Challenge (30 secondes pour un maximum de bonnes réponses), l'Estimation (devinez un nombre, on vous dit plus haut ou plus bas), le Duel (comparez deux options) et l'Ordre chronologique.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizyquizz propose 6 modes de jeu : le QCM classique à 4 réponses, le Vrai ou Faux, le Chrono Challenge (30 secondes pour un maximum de bonnes réponses), l'Estimation (devinez un nombre, on vous dit plus haut ou plus bas), le Duel (comparez deux options) et l'Ordre chronologique.</p>
             </details>
             <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Comment créer son propre quiz sur Wizy ?
+                Comment créer son propre quiz sur Wizyquizz ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">C'est simple et rapide : choisissez une catégorie, ajoutez vos questions avec les réponses et les explications, et votre quiz est en ligne en quelques minutes. Vous pouvez ensuite le partager avec un lien unique. C'est idéal pour animer une soirée entre amis ou tester vos collègues.</p>
             </details>
             <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Wizy fonctionne-t-il sur mobile et tablette ?
+                Wizyquizz fonctionne-t-il sur mobile et tablette ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizy est entièrement responsive et optimisé pour tous les écrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la même expérience. Aucune application à télécharger, tout fonctionne directement dans votre navigateur.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizyquizz est entièrement responsive et optimisé pour tous les écrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la même expérience. Aucune application à télécharger, tout fonctionne directement dans votre navigateur.</p>
             </details>
           </div>
         </div>
@@ -442,12 +442,12 @@ function formatCount(n: number): string {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
-      { "@type": "Question", name: "Les quiz sont-ils vraiment gratuits et sans inscription ?", acceptedAnswer: { "@type": "Answer", text: "Tous les quiz sur Wizy sont 100% gratuits. Vous pouvez jouer a n'importe quel quiz sans creer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis." }},
+      { "@type": "Question", name: "Les quiz sont-ils vraiment gratuits et sans inscription ?", acceptedAnswer: { "@type": "Answer", text: "Tous les quiz sur Wizyquizz sont 100% gratuits. Vous pouvez jouer a n'importe quel quiz sans creer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis." }},
       { "@type": "Question", name: "Quels types de quiz de culture generale proposez-vous ?", acceptedAnswer: { "@type": "Answer", text: "Nos quiz couvrent la culture generale, la geographie (drapeaux, capitales, pays du monde), le cinema (films cultes, animation), le sport (football, tennis, JO) et l'histoire. Chaque quiz existe en plusieurs niveaux de difficulte." }},
       { "@type": "Question", name: "Les quiz peuvent-ils aider a reviser le brevet ou des examens ?", acceptedAnswer: { "@type": "Answer", text: "Oui, nous proposons des quiz adaptes aux revisions (brevet, culture generale, histoire-geo). Les etudes montrent qu'on retient mieux une information quand on la retrouve soi-meme via un quiz plutot qu'en relisant un cours." }},
-      { "@type": "Question", name: "Quels sont les differents modes de jeu disponibles ?", acceptedAnswer: { "@type": "Answer", text: "Wizy propose 6 modes de jeu : le QCM classique a 4 reponses, le Vrai ou Faux, le Chrono Challenge, l'Estimation, le Duel et l'Ordre chronologique." }},
-      { "@type": "Question", name: "Comment creer son propre quiz sur Wizy ?", acceptedAnswer: { "@type": "Answer", text: "C'est simple et rapide : choisissez une categorie, ajoutez vos questions avec les reponses et les explications, et votre quiz est en ligne en quelques minutes." }},
-      { "@type": "Question", name: "Wizy fonctionne-t-il sur mobile et tablette ?", acceptedAnswer: { "@type": "Answer", text: "Wizy est entierement responsive et optimise pour tous les ecrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la meme experience. Aucune application a telecharger." }},
+      { "@type": "Question", name: "Quels sont les differents modes de jeu disponibles ?", acceptedAnswer: { "@type": "Answer", text: "Wizyquizz propose 6 modes de jeu : le QCM classique a 4 reponses, le Vrai ou Faux, le Chrono Challenge, l'Estimation, le Duel et l'Ordre chronologique." }},
+      { "@type": "Question", name: "Comment creer son propre quiz sur Wizyquizz ?", acceptedAnswer: { "@type": "Answer", text: "C'est simple et rapide : choisissez une categorie, ajoutez vos questions avec les reponses et les explications, et votre quiz est en ligne en quelques minutes." }},
+      { "@type": "Question", name: "Wizyquizz fonctionne-t-il sur mobile et tablette ?", acceptedAnswer: { "@type": "Answer", text: "Wizyquizz est entierement responsive et optimise pour tous les ecrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la meme experience. Aucune application a telecharger." }},
     ]
   })} />
 </Layout>
