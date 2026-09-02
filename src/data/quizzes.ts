@@ -102,14 +102,32 @@ export function getQuizzesBySubcategory(categorySlug: string, subcategorySlug: s
   );
 }
 
+/**
+ * Sous-categories d'une categorie qui portent au moins un quiz.
+ *
+ * Les listes de `subcategories` dans categories.ts sont des intentions
+ * editoriales : elles annoncent les sujets prevus. Une sous-categorie sans
+ * quiz ne doit pas produire de page, sinon le site expose des pages a
+ * « 0 quiz » — il y en avait 114 sur 195. Cette fonction est la source unique
+ * pour la generation des pages, le menu et les sitemaps, de sorte qu'une
+ * sous-categorie apparait le jour ou son premier quiz arrive, et pas avant.
+ */
+export function getSubcategoriesWithQuizzes(categorySlug: string, locale: Locale): string[] {
+  const catDef = categoryDefs.find((c) => (c.slugs?.[locale] || c.slug) === categorySlug);
+  if (!catDef) return [];
+  const content = catDef.translations[locale] || catDef.translations.en;
+  return content.subcategories.filter(
+    (sub) => getQuizzesBySubcategory(categorySlug, slugifySubcategory(sub), locale).length > 0
+  );
+}
+
 /** Get all subcategory paths for static generation. */
 export function getAllSubcategoryPaths(locale: Locale) {
   const cats = categoryDefs;
   const paths: { category: string; sub: string; subName: string }[] = [];
   for (const cat of cats) {
     const catSlug = cat.slugs?.[locale] || cat.slug;
-    const content = cat.translations[locale] || cat.translations.en;
-    for (const sub of content.subcategories) {
+    for (const sub of getSubcategoriesWithQuizzes(catSlug, locale)) {
       paths.push({ category: catSlug, sub: slugifySubcategory(sub), subName: sub });
     }
   }

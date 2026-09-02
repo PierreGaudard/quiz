@@ -1,18 +1,23 @@
 import type { AstroIntegration } from "astro";
 import fs from "fs";
 import path from "path";
+import { categoryDefs } from "../data/categories";
 
 const SITE = "https://wizyquiz.com";
 
-// All category slugs across all locales
-const ALL_CATEGORY_SLUGS = new Set([
-  // Base (FR)
-  "sport", "cinema", "histoire", "culture-generale", "geographie",
-  // EN
-  "sports", "history", "general-knowledge", "geography",
-  // ES
-  "deportes", "cine", "historia", "cultura-general", "geografia",
-]);
+/**
+ * Slugs de categorie dans toutes les langues, deduits des donnees.
+ *
+ * Cette liste etait ecrite a la main et avait vieilli : elle contenait encore
+ * « histoire » et « culture-generale », qui n'existent plus, et il manquait
+ * « anime » et « jeux-video ». Les 28 URL de ces deux categories etaient donc
+ * rangees dans le sitemap des pages au lieu de celui des categories et des
+ * quiz. La deduire des donnees evite que ca se reproduise au prochain
+ * changement de categorie.
+ */
+const ALL_CATEGORY_SLUGS = new Set(
+  categoryDefs.flatMap((c) => [c.slug, ...Object.values(c.slugs || {})])
+);
 
 function getLocale(urlPath: string): string {
   const parts = urlPath.split("/").filter(Boolean);

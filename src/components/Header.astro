@@ -2,7 +2,7 @@
 import { localePath, withBase } from "../utils/base";
 import { categoryIcons } from "../data/icons";
 import { getCategories, categoryDefs, getSubcategoryImageSlug } from "../data/categories";
-import { slugifySubcategory } from "../data/quizzes";
+import { slugifySubcategory, getSubcategoriesWithQuizzes } from "../data/quizzes";
 import { t } from "../i18n/ui";
 import { locales, defaultLocale } from "../i18n/config";
 import type { Locale } from "../i18n/config";
@@ -58,10 +58,13 @@ const flags: Record<Locale, string> = {
   es: `<svg viewBox="0 0 3 2" class="w-5 h-3.5 rounded-sm shrink-0"><rect width="3" height="2" fill="#AA151B"/><rect y="0.5" width="3" height="1" fill="#F1BF00"/></svg>`,
 };
 
+// Le menu ne montre que les sous-categories qui portent un quiz : sinon il
+// envoie le visiteur sur une page a « 0 quiz », et ces pages ne sont plus
+// generees du tout depuis getSubcategoriesWithQuizzes.
 const megaCategories = cats.map((cat, i) => ({
   label: cat.name, slug: cat.slug, baseSlug: categoryDefs[i].slug, href: lp(`/${cat.slug}`), color: cat.color,
   coverImage: cat.coverImage,
-  subs: cat.subcategories.map((sub) => ({
+  subs: getSubcategoriesWithQuizzes(cat.slug, locale).map((sub) => ({
     name: sub,
     slug: slugifySubcategory(sub),
     href: lp(`/${cat.slug}/${slugifySubcategory(sub)}`),
