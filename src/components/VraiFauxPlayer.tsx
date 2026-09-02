@@ -17,7 +17,47 @@ interface AnswerRecord {
   isCorrect: boolean;
 }
 
+const vfT: Record<string, Record<string, string>> = {
+  trueFalse: { en: "True or False", fr: "Vrai ou Faux", es: "Verdadero o Falso" },
+  labelTrue: { en: "True", fr: "Vrai", es: "Verdadero" },
+  labelFalse: { en: "False", fr: "Faux", es: "Falso" },
+  startQuiz: { en: "Start quiz", fr: "Commencer le quiz", es: "Empezar el quiz" },
+  questions: { en: "questions", fr: "questions", es: "preguntas" },
+  yourResult: { en: "Your result", fr: "Ton résultat", es: "Tu resultado" },
+  correct: { en: "Correct", fr: "Correct", es: "Correcto" },
+  wrong: { en: "Wrong", fr: "Faux", es: "Fallos" },
+  score: { en: "Score", fr: "Score", es: "Puntuación" },
+  questionDetails: { en: "Question details", fr: "Détail des questions", es: "Detalle de preguntas" },
+  playAgain: { en: "Play again", fr: "Rejouer", es: "Jugar de nuevo" },
+  share: { en: "Share", fr: "Partager", es: "Compartir" },
+  correctBadge: { en: "Correct!", fr: "Bonne réponse !", es: "¡Correcto!" },
+  wrongBadge: { en: "Wrong answer", fr: "Mauvaise réponse", es: "Respuesta incorrecta" },
+  introBefore: { en: "For each statement, choose", fr: "Pour chaque affirmation, choisis", es: "Para cada afirmación, elige" },
+  introOr: { en: "or", fr: "ou", es: "o" },
+  introAfter: {
+    en: "Answer all {n} questions and discover detailed explanations after each answer.",
+    fr: "Réponds aux {n} questions, chaque réponse est expliquée juste après.",
+    es: "Responde las {n} preguntas, cada respuesta viene explicada justo después.",
+  },
+  descAccessible: {
+    en: " This quiz is accessible to everyone, great for beginners!",
+    fr: " Ce quiz est accessible à tous, idéal pour débuter !",
+    es: " Este quiz es accesible para todos, ideal para empezar.",
+  },
+  descExpert: {
+    en: " Warning, only experts will get through without mistakes.",
+    fr: " Attention, seuls les experts passeront sans erreur.",
+    es: " Atención, solo los expertos pasarán sin errores.",
+  },
+  descRecommended: {
+    en: " A good level of knowledge is recommended.",
+    fr: " Un bon niveau de connaissances est recommandé.",
+    es: " Se recomienda un buen nivel de conocimiento.",
+  },
+};
+
 export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
+  const tt = (key: string) => vfT[key]?.[locale] || vfT[key]?.en || key;
   const [screen, setScreen] = useState<Screen>("intro");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hasAnswered, setHasAnswered] = useState(false);
@@ -193,10 +233,10 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                 {quiz.difficulty}
               </span>
               <span className="text-white/70 text-xs font-medium">
-                {totalQuestions} questions
+                {totalQuestions} {tt("questions")}
               </span>
               <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-700">
-                True or False
+                {tt("trueFalse")}
               </span>
             </div>
             <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">
@@ -218,21 +258,20 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
               <LightningBolt />
             </div>
             <p>
-              For each statement, choose <strong>True</strong> or{" "}
-              <strong>False</strong>. Answer all {totalQuestions} questions and
-              discover detailed explanations after each answer.
+              {tt("introBefore")} <strong>{tt("labelTrue")}</strong> {tt("introOr")}{" "}
+              <strong>{tt("labelFalse")}</strong>. {tt("introAfter").replace("{n}", String(totalQuestions))}
               {(quiz.difficulty === "Facile" || quiz.difficulty === "Easy" || quiz.difficulty === "Fácil")
-                ? " This quiz is accessible to everyone, great for beginners!"
+                ? tt("descAccessible")
                 : (quiz.difficulty === "Difficile" || quiz.difficulty === "Hard" || quiz.difficulty === "Difícil")
-                  ? " Warning, only experts will get through without mistakes."
-                  : " A good level of knowledge is recommended."}
+                  ? tt("descExpert")
+                  : tt("descRecommended")}
             </p>
           </div>
           <button
             onClick={handleStart}
             className="w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold text-base py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
           >
-            Start quiz
+            {tt("startQuiz")}
             <svg
               className="w-5 h-5"
               fill="none"
@@ -262,7 +301,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
           {/* Header gradient */}
           <div className="bg-gradient-to-r from-violet-600 to-purple-700 p-6 md:p-10 text-center text-white">
             <div className="text-sm font-medium text-white/70 mb-4">
-              Your result
+              {tt("yourResult")}
             </div>
 
             {/* Score circle */}
@@ -346,7 +385,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                   {score}
                 </div>
                 <div className="text-xs text-green-700 font-medium mt-1">
-                  Correct
+                  {tt("correct")}
                 </div>
               </div>
               <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
@@ -354,7 +393,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                   {totalQuestions - score}
                 </div>
                 <div className="text-xs text-red-600 font-medium mt-1">
-                  Wrong
+                  {tt("wrong")}
                 </div>
               </div>
               <div className="bg-violet-50 border border-violet-200 rounded-xl p-4 text-center">
@@ -362,7 +401,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                   {scorePercent}%
                 </div>
                 <div className="text-xs text-violet-700 font-medium mt-1">
-                  Score
+                  {tt("score")}
                 </div>
               </div>
             </div>
@@ -370,7 +409,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
             {/* Recap of each question */}
             <div className="mb-6">
               <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
-                Question details
+                {tt("questionDetails")}
               </div>
               <div className="space-y-2">
                 {quiz.questions.map((q, i) => {
@@ -447,7 +486,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                   />
                 </svg>
-                Play again
+                {tt("playAgain")}
               </button>
               <button
                 onClick={handleShare}
@@ -466,7 +505,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                     d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
                   />
                 </svg>
-                Share
+                {tt("share")}
               </button>
             </div>
             <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} />
@@ -522,7 +561,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
               Question {currentIndex + 1}/{totalQuestions}
             </span>
             <span className="text-xs font-semibold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full">
-              True or False
+              {tt("trueFalse")}
             </span>
           </div>
           <div className="flex items-center gap-1.5">
@@ -598,16 +637,16 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                 </svg>
               </div>
               <span className="font-display text-2xl md:text-3xl font-black text-white tracking-wide uppercase">
-                Vrai
+                {tt("labelTrue")}
               </span>
               {hasAnswered && isVraiCorrect && (
                 <span className="text-xs font-bold text-white/90 bg-white/20 px-3 py-1 rounded-full">
-                  Correct!
+                  {tt("correctBadge")}
                 </span>
               )}
               {hasAnswered && selectedVrai && !isVraiCorrect && (
                 <span className="text-xs font-bold text-white/90 bg-red-500/50 px-3 py-1 rounded-full">
-                  Wrong answer
+                  {tt("wrongBadge")}
                 </span>
               )}
             </button>
@@ -650,16 +689,16 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                 </svg>
               </div>
               <span className="font-display text-2xl md:text-3xl font-black text-white tracking-wide uppercase">
-                Faux
+                {tt("labelFalse")}
               </span>
               {hasAnswered && isFauxCorrect && (
                 <span className="text-xs font-bold text-white/90 bg-white/20 px-3 py-1 rounded-full">
-                  Correct!
+                  {tt("correctBadge")}
                 </span>
               )}
               {hasAnswered && selectedFaux && !isFauxCorrect && (
                 <span className="text-xs font-bold text-white/90 bg-red-500/50 px-3 py-1 rounded-full">
-                  Wrong answer
+                  {tt("wrongBadge")}
                 </span>
               )}
             </button>
