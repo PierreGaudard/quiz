@@ -232,3 +232,274 @@ npm run preview  # Preview production build
 - `import.meta.env.BASE_URL` = `/` (root)
 - React components use `client:load` for hydration
 - Quiz data files are auto-discovered by glob pattern `./quiz-*.ts`
+
+## Tonalité de rédaction : écrire comme un humain
+
+Cette section est reprise de quiz-couple.com, où elle a été validée par
+Thomas, et transposée au sujet d'ici : la culture générale. Elle est écrite en
+français parce que les tics qu'elle traque sont des tournures précises, et
+qu'une liste de tournures ne se traduit pas mot à mot. On transpose
+l'intention dans les trois langues, on ne traduit pas la liste.
+
+Le contenu éditorial doit sonner comme une personne qui explique un sujet à un
+ami, pas comme un rédacteur qui cisèle ses phrases. Le style « bien écrit »
+(formules, rythme, chutes) est précisément ce que Google repère comme un
+marqueur IA. Le naturel bat le brillant, en anglais, en français et en
+espagnol.
+
+### L'exemple de référence
+
+Version bannie (marqueurs IA partout) :
+
+> Dragon Ball ne se résume pas à des combats. Ce qui fait la série, c'est ce
+> que chaque transformation raconte : la peur de perdre, la limite qu'on
+> dépasse, et le personnage qui n'est plus le même après. Pas de hasard, pas
+> de facilité.
+
+Version humaine (à imiter) :
+
+> Dragon Ball est un manga de Akira Toriyama, sorti en 1984, qui raconte
+> l'histoire de Son Goku. C'est une série très connue pour ses combats et
+> pour ses transformations, comme le Super Saiyan.
+>
+> Dans ce quiz, on vous pose des questions sur les personnages, sur les
+> techniques et sur l'histoire. Par exemple : « Quel est le nom Saiyan de
+> Goku ? ». Si vous répondez Kakarot, c'est la bonne réponse, et on vous
+> explique d'ailleurs pourquoi juste en dessous. C'est tout simple, et ça
+> permet de voir si vous connaissez la série aussi bien que vous le pensez !
+
+### Ce qui fait la différence
+
+- **Commencer par dire ce que c'est, platement :** « Dragon Ball est un manga
+  de Akira Toriyama, sorti en 1984. » Sujet, verbe, complément.
+- **Un exemple concret tout de suite :** « Par exemple : … », puis dérouler
+  l'évidence sans peur de la redondance : « Si vous répondez X, c'est que…
+  Si vous répondez Y, c'est que… ». On ne laisse rien à déduire au lecteur.
+- **Répondre d'abord :** une section « différence entre deux modes » commence
+  par « La principale différence est le temps. », pas par un effet de style.
+- **Les mots de l'oral :** « justement », « d'ailleurs », « du coup », « la
+  plupart du temps », « ou encore », « etc. », « ça ». Écrire « ça » plutôt
+  que « cela », « on » plutôt que des tournures impersonnelles.
+- **Annoncer ce qui vient :** « Voici comment marche le mode chrono
+  ci-dessus : ».
+- **Des exemples en série, entre guillemets,** reliés par « ou encore » et
+  fermés par « etc. » quand la liste pourrait continuer.
+- **Une pointe d'enthousiasme simple** est bienvenue : « …et ça fait un bon
+  défi à lancer à un ami ! »
+- **De la ponctuation vivante :** un ou deux « ! » par page, là où
+  l'enthousiasme est sincère, et quelques « … » quand une phrase reste en
+  suspens. À petite dose : une page qui en est tapissée redevient un tic. La
+  règle vaut dans les trois langues, avec la typographie de chacune (espace
+  avant le « ! » en français, « ¡…! » en espagnol).
+
+### Les mots interdits dans les titres
+
+JAMAIS, dans un title, un H1, un H2 ou un H3 : « vraiment »,
+« concrètement », « en bref », « au fait », ni leurs équivalents dans les
+autres langues (really, actually, in short ; realmente, de verdad,
+concretamente, en resumen). Ce sont des chevilles : un titre qui en a besoin
+est un titre mal posé. On reformule ou on retire le mot, dans la langue du
+titre.
+
+### Ce qu'une introduction ne fait jamais
+
+Une introduction entre dans le sujet. Elle ne fait ni l'un ni l'autre de ces
+deux détours, qui sont des marqueurs IA immédiats :
+
+- **Taper sur ce qui existe ailleurs :** « le problème des quiz qu'on trouve
+  partout », « la plupart des sites se contentent de… », « contrairement à ce
+  qu'on voit souvent ». Le lecteur n'est pas venu lire une critique de la
+  concurrence. On montre qu'on fait mieux en le faisant, pas en le disant.
+- **Expliquer comment la page est construite :** « il y a ici 10 questions,
+  rangées par difficulté croissante… », « voici comment lire ce qui suit ».
+  Le plan se voit dans les titres. Personne ne lit le mode d'emploi d'une
+  page.
+
+Une bonne introduction dit de quoi on parle, donne le contexte, puis annonce
+le contenu en une phrase simple. Et on attaque.
+
+### La fausse modestie et la vertu affichée
+
+Se mettre en scène en train de bien faire est un marqueur IA aussi net que
+les autres. Interdit :
+
+> « Chaque réponse est expliquée, parce qu'on trouve qu'un quiz sans
+> explication n'apprend rien. »
+
+> « On a vérifié chaque date, parce que la moitié des sites se trompent. »
+
+Le travail bien fait se constate, il ne se commente pas. Si une information
+mérite d'être donnée (une source, une nuance), on la donne platement, sans
+souligner le mérite qu'on a eu à la chercher.
+
+### Les phrases elliptiques qui ne veulent rien dire
+
+Une phrase courte et rythmée n'est pas une phrase claire. Interdit :
+
+> « Le Super Saiyan, lui, change tout. »
+
+Change quoi ? Personne ne parle comme ça. Chaque phrase doit pouvoir être lue
+à voix haute par quelqu'un qui ne connaît pas le sujet et être comprise du
+premier coup. Le verbe a un complément, le pronom a un référent, et l'incise
+de style (« lui, », « elle, ») disparaît.
+
+### Les marqueurs IA interdits
+
+- « tient en une phrase », « tient en un mot » et toute la famille, dans
+  toutes les langues.
+- Les fragments sans verbe enchaînés : « Pas de hasard, pas de facilité. »
+- Les triades rythmées : « la peur de perdre, la limite qu'on dépasse, et le
+  personnage qui n'est plus le même ».
+- Les renversements d'aphorisme : « Ce qui change, ce ne sont pas les
+  questions : c'est le temps. »
+- Les deux-points rhétoriques en cascade et les chutes de paragraphe
+  travaillées.
+
+La règle vaut pour tout nouveau contenu et pour toute réécriture, dans les
+trois langues : on transpose le ton, pas seulement les mots.
+
+### Varier les tournures : la réserve de formulations
+
+Un texte se repère comme écrit par une machine autant à ses tics qu'à ses
+fautes. Toujours ouvrir par le même connecteur, enchaîner des phrases de même
+longueur, conclure chaque paragraphe en reformulant le précédent : c'est ça
+qui sonne faux, avant même le vocabulaire.
+
+D'où cette réserve de formulations, à consulter avant et pendant la
+rédaction. **Ce n'est pas une liste à cocher.** On n'y pioche que lorsqu'une
+expression tombe juste dans la phrase qu'on est en train d'écrire. Reformuler
+une phrase correcte pour réussir à y caser un mot de la liste est pire que de
+ne pas l'utiliser : ça se voit, et ça abîme le texte.
+
+Elle sert surtout à éviter l'automatisme. Si « Il est important de noter que »
+revient dans trois pages, on change, et la liste dit par quoi.
+
+- avantageux, c'est une manière de, en l'occurrence, dans la plupart des cas,
+  quelque chose de
+- à vrai dire, à première vue, dans les faits, dans le fond, au passage, à ce
+  propos, de ce côté-là, dans une certaine mesure, à bien y réfléchir, en
+  quelque sorte, pour ainsi dire
+- à défaut de, faute de, quitte à, histoire de, question de, rien que pour, ne
+  serait-ce que, tout simplement, mine de rien, au bout du compte, au final
+- entre autres, de loin, de près, à ce niveau-là, sur ce point-là, de ce point
+  de vue, dans ce cas précis, à ce stade, pour le coup, à l'inverse, tant qu'à
+  faire
+- autant dire que, il faut dire que, il faut bien reconnaître que, force est
+  de constater que, encore faut-il que, reste à savoir si
+- tout dépend de, ça dépend surtout de, selon les cas, suivant les cas, dans
+  bien des cas, la plupart du temps
+- une bonne partie de, une petite partie de, pas mal de, un certain nombre de,
+  une poignée de, une multitude de
+- pas forcément, pas nécessairement, pas toujours, pas vraiment, plus ou
+  moins, plus d'une fois, à plusieurs reprises
+- ce qui est intéressant, c'est que… / le problème, c'est que… / le truc,
+  c'est que… / on pourrait penser que… / en réalité, c'est un peu plus
+  compliqué / ça paraît simple, mais… / c'est là que ça devient intéressant
+- le plus simple reste de…, pour faire simple…, pour prendre un exemple
+  concret…, disons que…, autrement dit…, en clair…, pour le dire autrement…
+- ça change pas mal de choses, ça peut faire une vraie différence, ça reste
+  quand même…, ce n'est pas rien, ça vaut le coup de…, à chacun de voir
+- c'est surtout une question de…, tout est une question de…, il y a quand même
+  un point à garder en tête, c'est justement là que…, c'est souvent à ce
+  moment-là que…
+
+Et on évite systématiquement la formulation la plus élégante ou la plus
+académique quand une tournure simple, voire un peu familière, colle mieux au
+ton de la page.
+
+### Varier aussi la construction
+
+Le vocabulaire ne suffit pas. Ce qui trahit une machine, c'est le moule. À
+proscrire :
+
+- les suites de phrases de longueur identique ;
+- les listes de trois éléments qui reviennent à chaque section ;
+- les paragraphes bâtis tous pareil, et les conclusions qui reformulent
+  mécaniquement ce qui précède ;
+- les oppositions en « ce n'est pas X, c'est Y » utilisées en boucle ;
+- les mêmes connecteurs en tête de phrase d'un bout à l'autre.
+
+Une phrase courte a le droit de suivre une phrase longue. Une transition a le
+droit d'être directe. Un paragraphe a le droit de commencer sans connecteur.
+
+## Maillage interne : les règles
+
+Les ancres contextuelles et descriptives sont les liens les plus puissants du
+site. Elles renforcent la sémantique de la page cible et ne sont pas du spam.
+Ce ne sont **pas** des ancres du type « notre quiz sur X », ni le titre exact
+de la page cible collé dans une phrase.
+
+### La méthode, dans cet ordre
+
+1. **Le contenu d'abord.** On écrit la page comme si aucun lien n'existait.
+2. **Ensuite seulement, on relit** en cherchant les endroits où une
+   formulation déjà présente mène naturellement vers une autre page.
+3. **Si vraiment aucun endroit ne s'y prête, on reformule** un passage pour
+   qu'un lien y ait sa place. Une page créée doit porter **au minimum 2 liens
+   internes sortants en plein texte**, en plus du bloc de quiz recommandés et
+   de la colonne latérale, qui ne comptent pas.
+
+### L'ancre se trouve dans le texte, elle ne s'invente pas
+
+On relit le paragraphe et on cherche la formulation qui est **déjà écrite** et
+qui mène vers la cible. On ne fabrique pas une formule vague à la fin de la
+phrase pour y accrocher le lien.
+
+```
+✗  …de quoi <a>tester vos connaissances sur le sujet</a>.        (inventé, vague)
+✓  …les <a>transformations de Super Saiyan</a> arrivent plus tard. (déjà là, précis)
+```
+
+### Ce qui fait une bonne ancre
+
+- Elle est **contextuelle** : la phrase autour du lien parle déjà du sujet de
+  la page cible.
+- Elle est **descriptive** : elle décrit ce qu'on va trouver, pas le nom du
+  quiz.
+- **Le terme exact de la page cible n'a pas à être employé.** C'est même mieux
+  quand il ne l'est pas : le lien reste naturel et apporte du vocabulaire
+  nouveau à la cible.
+- Elle est **naturelle** : on doit pouvoir lire la phrase à voix haute sans
+  deviner qu'un lien y a été posé.
+
+### À vérifier avant de dire que c'est fait
+
+- Chaque nouvelle page a au moins 2 sortants en plein texte **et** au moins
+  1 entrant éditorial venu d'une autre page.
+- Le maillage est répercuté **à l'identique dans les trois langues**, avec une
+  ancre écrite dans la langue de la page, jamais traduite mot à mot du
+  français.
+- Aucun lien mort : passer le contrôle sur `dist/` après construction.
+
+## Typographie des listes à puces
+
+Une puce qui commence par un intitulé en gras se termine par **deux points**,
+jamais par un point. La puce porte déjà la marque de la liste : mettre un
+point après l'intitulé donne une phrase coupée en deux, et le lecteur bute
+dessus.
+
+```
+✗  • <strong>Le mode chrono.</strong> 60 secondes pour répondre au maximum.
+✓  • <strong>Le mode chrono :</strong> 60 secondes pour répondre au maximum.
+```
+
+L'espace avant les deux points suit la langue : `« titre : »` en français,
+`"title:"` en anglais et en espagnol.
+
+La règle vaut pour tout intitulé en gras qui annonce ce qui suit, y compris
+quand il porte un lien : les deux points se posent **après** la balise de
+lien, à l'intérieur du gras. Elle ne vaut pas pour une phrase entière mise en
+gras au milieu d'un texte, qui garde sa ponctuation normale.
+
+## Avant de dire qu'un quiz est vérifié
+
+Vérifier les données en Node ne suffit pas. Chaque mode de jeu a son propre
+composant React (`QuizPagePlayer`, `VraiFauxPlayer`, `ChronoPlayer`,
+`EstimationPlayer`, `DuelPlayer`, `OrdrePlayer`), et c'est entre les données
+et le composant que les bugs passent.
+
+**Ouvrir chaque nouvelle page dans un navigateur et jouer une partie
+entière**, dans les trois langues et dans le mode concerné : la première
+question, une bonne réponse, une mauvaise, l'explication, l'écran de résultat.
+Vérifier au passage qu'aucune erreur ne sort dans la console et qu'aucun
+libellé n'est vide.

@@ -42,6 +42,9 @@ const qpT: Record<string, Record<string, string>> = {
   rankBeginner: { en: "Beginner", fr: "Debutant", es: "Principiante" },
   secondChanceActive: { en: "Second chance active", fr: "2e chance active", es: "2a oportunidad activa" },
   hintLabel: { en: "Hint:", fr: "Indice :", es: "Pista:" },
+  progressLabel: { en: "Progress", fr: "Progression", es: "Progreso" },
+  streakLabel: { en: "in a row", fr: "de suite", es: "seguidas" },
+  streakBest: { en: "Best streak", fr: "Meilleure serie", es: "Mejor serie" },
 };
 
 const ANSWER_COLORS = [
@@ -49,6 +52,26 @@ const ANSWER_COLORS = [
   { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-500" },
   { bg: "bg-amber-50 hover:bg-amber-100 border-amber-200", label: "bg-amber-500" },
   { bg: "bg-rose-50 hover:bg-rose-100 border-rose-200", label: "bg-rose-500" },
+];
+
+/**
+ * Confettis de l'ecran de resultat : positions figees et non tirees au sort.
+ * Le composant est rendu au build puis hydrate, donc un Math.random ici
+ * donnerait deux rendus differents et un avertissement d'hydratation.
+ */
+const CONFETTI = [
+  { left: 6, drift: 18, rotate: 320, delay: 0, color: "#FFD84D" },
+  { left: 14, drift: -22, rotate: -280, delay: 0.12, color: "#8B5CF6" },
+  { left: 23, drift: 10, rotate: 400, delay: 0.05, color: "#34D399" },
+  { left: 31, drift: -14, rotate: -360, delay: 0.22, color: "#FB7185" },
+  { left: 39, drift: 26, rotate: 300, delay: 0.08, color: "#FFD84D" },
+  { left: 47, drift: -8, rotate: -420, delay: 0.3, color: "#60A5FA" },
+  { left: 55, drift: 20, rotate: 340, delay: 0.16, color: "#F472B6" },
+  { left: 63, drift: -24, rotate: -300, delay: 0.02, color: "#34D399" },
+  { left: 71, drift: 12, rotate: 380, delay: 0.26, color: "#FFD84D" },
+  { left: 79, drift: -18, rotate: -340, delay: 0.1, color: "#8B5CF6" },
+  { left: 87, drift: 22, rotate: 360, delay: 0.19, color: "#60A5FA" },
+  { left: 94, drift: -12, rotate: -400, delay: 0.34, color: "#FB7185" },
 ];
 
 interface QuestionState {
@@ -73,6 +96,11 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
   const [showIndice, setShowIndice] = useState<number | null>(null);
   const [totalXp, setTotalXp] = useState(0);
   const [lastXpGain, setLastXpGain] = useState(0);
+  // Serie de bonnes reponses consecutives. C'est ce qui donne envie
+  // d'enchainer : le score final ne se voit qu'a la fin, la serie se voit
+  // a chaque question.
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
   const [xpPopup, setXpPopup] = useState<{ amount: number; key: number } | null>(null);
   const [savedProgress, setSavedProgress] = useState(false);
   const questionRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -138,10 +166,17 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
         const xp = currentState.hasSecondChance === false ? Math.round(BASE_XP * 0.5) : BASE_XP;
         setTotalXp((prev) => prev + xp);
         setLastXpGain(xp);
+        setXpPopup({ amount: xp, key: Date.now() });
+        setStreak((prev) => {
+          const next = prev + 1;
+          setBestStreak((best) => (next > best ? next : best));
+          return next;
+        });
         // Dispatch XP event to header
         window.dispatchEvent(new CustomEvent("wizy-xp-gain", { detail: { amount: xp } }));
       } else {
         setLastXpGain(0);
+        setStreak(0);
       }
 
       setTimeout(() => {
@@ -180,6 +215,9 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
     setShowIndice(null);
     setTotalXp(0);
     setLastXpGain(0);
+    setStreak(0);
+    setBestStreak(0);
+    setXpPopup(null);
     scrollToQuestion(0);
   }, [quiz.questions, scrollToQuestion]);
 
@@ -286,7 +324,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
 
           {/* Progress */}
           <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
-            <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-2">Progress</div>
+            <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-2">{tt("progressLabel")}</div>
             <div className="text-center mb-2">
               <div className="text-2xl font-display font-black text-gray-900">
                 {answeredCount}<span className="text-sm text-gray-400">/{totalQuestions}</span>
@@ -294,14 +332,27 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
             </div>
             <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden mb-2">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-violet-500 to-purple-600 transition-all duration-700 ease-out"
+                className="h-full rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-yellow-400 transition-all duration-700 ease-out"
                 style={{ width: `${(answeredCount / totalQuestions) * 100}%` }}
               />
             </div>
             <div className="flex justify-between text-[10px]">
-              <span className="text-green-600 font-bold">{score} correct</span>
-              <span className="text-red-500 font-bold">{answeredCount - score} wrong</span>
+              <span className="text-green-600 font-bold">{score} {tt("correctLabel").toLowerCase()}</span>
+              <span className="text-red-500 font-bold">{answeredCount - score} {tt("wrongShort").toLowerCase()}</span>
             </div>
+
+            {/* Serie en cours : ce qui donne envie d'enchainer la suivante */}
+            {streak >= 2 && (
+              <div
+                key={streak}
+                className="wq-streak-badge mt-2.5 flex items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-orange-500 to-amber-500 px-2 py-1.5 shadow-sm"
+              >
+                <span className="wq-flame text-sm" aria-hidden="true">&#128293;</span>
+                <span className="text-[11px] font-black text-white">
+                  {streak} {tt("streakLabel")}
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Score + XP */}
@@ -315,8 +366,19 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   <div className="text-sm font-display font-bold text-gray-900">{scorePercent}%</div>
                   <div className="text-[10px] text-gray-500">{rank.label}</div>
                 </div>
-                <div className="ml-auto bg-violet-50 rounded-lg px-2 py-1 border border-violet-100">
+                <div className="relative ml-auto bg-violet-50 rounded-lg px-2 py-1 border border-violet-100">
                   <span className="text-xs font-display font-bold text-violet-700">+{totalXp} XP</span>
+                  {/* Le gain de la question qui vient d'etre repondue s'envole :
+                      sans ca le total change sans que le joueur voie pourquoi. */}
+                  {xpPopup && (
+                    <span
+                      key={xpPopup.key}
+                      className="wq-xp-fly pointer-events-none absolute -top-1 right-1 text-[11px] font-black text-green-600"
+                      aria-hidden="true"
+                    >
+                      +{xpPopup.amount}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -325,7 +387,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
           {/* Question navigator */}
           {hasStarted && (
             <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
-              <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Questions</div>
+              <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-1.5">{tt("questions")}</div>
               <div className="grid grid-cols-5 gap-0.5">
                 {quiz.questions.map((q, i) => {
                   const qState = questionStates[i];
@@ -356,7 +418,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
             <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
               <div className="flex items-center justify-center gap-1 mb-2">
                 <svg className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
-                <span className="text-[10px] font-black text-amber-600 uppercase tracking-wider">Bonus</span>
+                <span className="text-[10px] font-black text-amber-600 uppercase tracking-wider">{tt("bonus")}</span>
                 <svg className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
               </div>
               <div className="space-y-1.5">
@@ -386,7 +448,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusSecondChance > 0 ? "bg-gradient-to-br from-blue-400 to-blue-500" : "bg-gray-300"}`}>
                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" /></svg>
                   </span>
-                  <span className="flex-1 font-bold">2e chance</span>
+                  <span className="flex-1 font-bold">{tt("retry")}</span>
                   <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full ${bonusSecondChance > 0 ? "bg-blue-200 text-blue-800" : "bg-gray-200 text-gray-400"}`}>{bonusSecondChance}x</span>
                 </button>
 
@@ -402,7 +464,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusIndice > 0 ? "bg-gradient-to-br from-violet-400 to-violet-500" : "bg-gray-300"}`}>
                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                   </span>
-                  <span className="flex-1 font-bold">Indice</span>
+                  <span className="flex-1 font-bold">{tt("hint")}</span>
                   <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full ${bonusIndice > 0 ? "bg-violet-200 text-violet-800" : "bg-gray-200 text-gray-400"}`}>{bonusIndice}x</span>
                 </button>
               </div>
@@ -666,11 +728,16 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
 
                       let stateClasses = "";
                       if (!state.hasAnswered) {
-                        stateClasses = `${color.bg} border cursor-pointer hover:-translate-y-0.5 hover:shadow-md`;
+                        // Relief au survol et enfoncement au clic : la carte
+                        // repond sous le doigt au lieu de rester inerte.
+                        stateClasses = `${color.bg} border cursor-pointer shadow-sm hover:-translate-y-1 hover:shadow-lg active:translate-y-0 active:shadow-sm`;
                       } else if (isCorrectAnswer) {
-                        stateClasses = "bg-green-50 border-green-400 border-2";
+                        // La bonne reponse ne fait le pop que si le joueur
+                        // vient de la choisir, pas quand elle est simplement
+                        // devoilee apres une erreur.
+                        stateClasses = `bg-green-50 border-green-400 border-2 shadow-sm${isSelected ? " wq-answer-correct" : ""}`;
                       } else if (isSelected && !isCorrectAnswer) {
-                        stateClasses = "bg-red-50 border-red-400 border-2";
+                        stateClasses = "bg-red-50 border-red-400 border-2 wq-answer-wrong";
                       } else {
                         stateClasses = "bg-gray-50 border-gray-100 border opacity-40";
                       }
@@ -734,8 +801,28 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
         {showResults && (
           <div ref={resultsRef} className="scroll-mt-28">
             <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-lg overflow-hidden">
-              <div className="bg-gradient-to-r from-violet-600 to-purple-700 p-6 md:p-8 text-center text-white">
-                <div className="text-sm font-medium text-white/70 mb-2">{tt("results")}</div>
+              <div className="relative bg-gradient-to-r from-violet-600 to-purple-700 p-6 md:p-8 text-center text-white">
+                {/* Confettis a partir de 70% : une bonne partie se fete, une
+                    partie moyenne non, sinon la recompense ne veut plus rien
+                    dire. */}
+                {scorePercent >= 70 && (
+                  <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+                    {CONFETTI.map((c, i) => (
+                      <span
+                        key={i}
+                        className="wq-confetti-piece"
+                        style={{
+                          left: `${c.left}%`,
+                          background: c.color,
+                          ["--wq-x" as string]: `${c.drift}px`,
+                          ["--wq-rot" as string]: `${c.rotate}deg`,
+                          ["--wq-delay" as string]: `${c.delay}s`,
+                        }}
+                      />
+                    ))}
+                  </div>
+                )}
+                <div className="relative text-sm font-medium text-white/70 mb-2">{tt("results")}</div>
                 <div className="flex items-center justify-center gap-4 mb-3">
                   <div className={`w-16 h-16 ${rank.color} rounded-2xl flex items-center justify-center text-3xl font-display font-black text-white shadow-lg`}>
                     {rank.icon}
@@ -775,6 +862,17 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                     <div className="text-xs text-violet-700 font-medium mt-1">XP</div>
                   </div>
                 </div>
+
+                {/* La meilleure serie donne une seconde raison de rejouer,
+                    au-dela du score : la battre. */}
+                {bestStreak >= 2 && (
+                  <div className="-mt-3 mb-6 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-50 to-amber-50 border border-amber-200 px-4 py-2.5">
+                    <span className="text-base" aria-hidden="true">&#128293;</span>
+                    <span className="text-sm font-bold text-amber-800">
+                      {tt("streakBest")} : {bestStreak}
+                    </span>
+                  </div>
+                )}
 
                 {/* Question timeline */}
                 <div className="mb-6">
