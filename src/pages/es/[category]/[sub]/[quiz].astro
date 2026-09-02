@@ -12,6 +12,7 @@ import { localePath, withBase } from "../../../../utils/base";
 import { t } from "../../../../i18n/ui";
 import { getQuizPaths, resolveQuizData } from "../../../../lib/page-helpers";
 import { getHreflangQuizPaths } from "../../../../lib/hreflang-helpers";
+import { buildQuizStructuredData } from "../../../../lib/structured-data";
 import type { Locale } from "../../../../i18n/config";
 
 const locale: Locale = "es";
@@ -37,6 +38,15 @@ const hreflangPaths = getHreflangQuizPaths(quiz.slug, locale);
 const subName = categoryInfo?.subcategories?.find(
   (s: string) => slugifySubcategory(s) === quiz.subcategorySlug
 ) || null;
+
+const siteRoot = Astro.site?.toString().replace(/\/$/, '') || '';
+const quizJsonLd = buildQuizStructuredData({
+  quiz,
+  locale,
+  siteUrl: Astro.site?.toString() || '',
+  pageUrl: `${siteRoot}/es/${quiz.path}/`,
+  categoryName: categoryInfo?.name,
+});
 ---
 
 <Layout title={`${quiz.title} - Wizy`} description={quiz.description} ogImage={quiz.coverImage} locale={locale} hreflangPaths={hreflangPaths}>
@@ -195,19 +205,9 @@ const subName = categoryInfo?.subcategories?.find(
     </div>
   </div>
 
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Quiz",
-    name: quiz.title,
-    description: quiz.description,
-    url: `${Astro.site?.toString().replace(/\/$/, '')}/es/${quiz.path}/`,
-    inLanguage: "es",
-    educationalLevel: quiz.difficulty,
-    about: { "@type": "Thing", name: quiz.category },
-    provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
-    numberOfQuestions: quiz.questions.length,
-    typicalAgeRange: "12-",
-  })} />
+  {quizJsonLd.map((node) => (
+    <script type="application/ld+json" set:html={JSON.stringify(node)} />
+  ))}
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

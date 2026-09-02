@@ -48,7 +48,7 @@ function formatCount(n: number): string {
 }
 ---
 
-<Layout title="Wizy - Teste tes connaissances avec des quiz fun et gratuits" locale={locale}>
+<Layout title="Wizyquizz - Testez votre culture avec des quiz gratuits" locale={locale}>
   <main>
 
     {/* ===== HERO — texte à gauche + Question du Jour à droite ===== */}
@@ -424,7 +424,7 @@ function formatCount(n: number): string {
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Wizy",
+    name: "Wizyquizz",
     url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/`,
     description: "Testez vos connaissances avec des quiz fun et gratuits",
     inLanguage: "fr",
@@ -433,7 +433,7 @@ function formatCount(n: number): string {
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Wizy",
+    name: "Wizyquizz",
     url: Astro.site?.toString(),
     logo: `${Astro.site?.toString().replace(/\/$/, '')}/favicon.svg`,
   })} />

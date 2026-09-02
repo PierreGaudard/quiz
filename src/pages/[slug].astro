@@ -34,7 +34,7 @@ const lp = (path: string) => localePath(path, locale);
     name: `${category.name} Quiz`,
     description: category.seoIntro || category.description,
     url: `${Astro.site?.toString().replace(/\/$/, '')}/${category.slug}`,
-    provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
+    provider: { "@type": "Organization", name: "Wizyquizz", url: Astro.site?.toString() },
     numberOfItems: catQuizzes.length,
     hasPart: catQuizzes.slice(0, 20).map((q: any) => ({
       "@type": "CreativeWork",

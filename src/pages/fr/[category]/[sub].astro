@@ -45,7 +45,7 @@ const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale)
     description: subCategory.description,
     url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${categorySlug}/${subSlug}`,
     inLanguage: "fr",
-    provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
+    provider: { "@type": "Organization", name: "Wizyquizz", url: Astro.site?.toString() },
     numberOfItems: quizzes.length,
     isPartOf: { "@type": "CollectionPage", name: category.name, url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${categorySlug}` },
   })} />

@@ -35,7 +35,7 @@ const lp = (path: string) => localePath(path, locale);
     description: category.seoIntro || category.description,
     url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${category.slug}`,
     inLanguage: "fr",
-    provider: { "@type": "Organization", name: "Wizy", url: Astro.site?.toString() },
+    provider: { "@type": "Organization", name: "Wizyquizz", url: Astro.site?.toString() },
     numberOfItems: catQuizzes.length,
   })} />
   <script type="application/ld+json" set:html={JSON.stringify({
