@@ -136,7 +136,7 @@ const quizJsonLd = buildQuizStructuredData({
                     <h3 class="font-display font-bold text-sm text-gray-900 leading-snug group-hover:text-violet-700 transition-colors">{rq.title}</h3>
                     <div class="flex items-center gap-2 mt-2 text-[11px] text-gray-500">
                       <span>{rq.questions.length} {t(locale, "quiz.questions")}</span>
-                      {rq.playCount && <span>&bull; {formatCount(rq.playCount)} {t(locale, "quiz.plays")}</span>}
+                      <span data-plays-wrap hidden>&bull; <span data-plays-for={rq.slug} hidden></span> {t(locale, "quiz.plays")}</span>
                     </div>
                   </div>
                 </a>

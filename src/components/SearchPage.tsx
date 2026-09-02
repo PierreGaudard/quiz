@@ -137,6 +137,15 @@ function scoreQuiz(quiz: QuizData, query: string): number {
 export default function SearchPage({ quizzes, categories, locale }: SearchPageProps) {
   const tt = (key: string) => searchT[key]?.[locale || "en"] || searchT[key]?.en || key;
 
+  // Compteurs reels : playCount ne sert plus qu'au tri, plus a l'affichage.
+  const [plays, setPlays] = useState<Record<string, number>>({});
+  useEffect(() => {
+    fetch("/api/quiz/plays")
+      .then((r) => r.json())
+      .then((d) => setPlays((d && d.plays) || {}))
+      .catch(() => {});
+  }, []);
+
   const lp = (path: string) => {
     const prefix = locale && locale !== "en" ? `/${locale}` : "";
     const p = path.startsWith("/") ? path : `/${path}`;
@@ -291,13 +300,13 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
                   {quiz.questions && (
                     <span>{quiz.questions.length} {tt("questions")}</span>
                   )}
-                  {quiz.playCount != null && quiz.playCount > 0 && (
+                  {(plays[quiz.slug] || 0) > 0 && (
                     <span className="flex items-center gap-1">
                       <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                         <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                       </svg>
-                      {formatPlayCount(quiz.playCount)} {tt("plays")}
+                      {formatPlayCount(plays[quiz.slug] || 0)} {tt("plays")}
                     </span>
                   )}
                 </div>

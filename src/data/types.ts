@@ -40,6 +40,14 @@ export interface TranslatedQuiz {
   timePerQuestion?: number;
   gameType?: GameType;
   featured?: boolean;
+  /**
+   * Poids de tri editorial, PAS un nombre de parties.
+   * Les parties reellement jouees sont comptees en base (table quiz_plays) et
+   * lues par /api/quiz/plays : c'est cette source qui alimente tous les
+   * compteurs affiches. Ce champ ne sert qu'a ordonner les listes
+   * (« populaires ») tant que le site n'a pas assez de parties reelles pour
+   * que l'ordre ait un sens.
+   */
   playCount?: number;
   translations: Partial<Record<Locale, QuizLocaleContent>>;
 }
@@ -61,6 +69,14 @@ export interface QuizData {
   questions: QuizQuestion[];
   gameType?: GameType;
   featured?: boolean;
+  /**
+   * Poids de tri editorial, PAS un nombre de parties.
+   * Les parties reellement jouees sont comptees en base (table quiz_plays) et
+   * lues par /api/quiz/plays : c'est cette source qui alimente tous les
+   * compteurs affiches. Ce champ ne sert qu'a ordonner les listes
+   * (« populaires ») tant que le site n'a pas assez de parties reelles pour
+   * que l'ordre ait un sens.
+   */
   playCount?: number;
 }
 

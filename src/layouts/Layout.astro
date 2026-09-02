@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import PlayCounts from "../components/PlayCounts.astro";
 import Footer from "../components/Footer.astro";
 import { locales, defaultLocale } from "../i18n/config";
 import type { Locale } from "../i18n/config";
@@ -214,5 +215,6 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
         }).catch(function() {});
       })();
     </script>
+    <PlayCounts />
   </body>
 </html>

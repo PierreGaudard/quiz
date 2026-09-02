@@ -204,10 +204,21 @@ export default function CategoryPage({
     setProgress(getProgress());
   }, []);
 
+  // Compteurs reels de parties. Les valeurs de playCount dans les donnees
+  // etaient ecrites en dur (15 200 a 28 400 par quiz) sur un site pas encore
+  // indexe : elles ne servent plus qu'a l'ordre de tri, plus a l'affichage.
+  const [plays, setPlays] = useState<Record<string, number>>({});
+  useEffect(() => {
+    fetch("/api/quiz/plays")
+      .then((r) => r.json())
+      .then((d) => setPlays((d && d.plays) || {}))
+      .catch(() => {});
+  }, []);
+
   /* derived data */
   const totalPlays = useMemo(
-    () => quizzes.reduce((s, q) => s + (q.playCount || 0), 0),
-    [quizzes],
+    () => quizzes.reduce((s, q) => s + (plays[q.slug] || 0), 0),
+    [quizzes, plays],
   );
 
   const filteredQuizzes = useMemo(() => {
@@ -316,7 +327,7 @@ export default function CategoryPage({
           </div>
         </div>
 
-        <p className="text-sm italic text-gray-400 mt-2">{quizzes.length} quiz &middot; {formatPlayCount(totalPlays)} {tt("plays")}</p>
+        <p className="text-sm italic text-gray-400 mt-2">{quizzes.length} quiz{totalPlays > 0 ? ` \u00b7 ${formatPlayCount(totalPlays)} ${tt("plays")}` : ""}</p>
       </section>
 
       {/* ─── seoIntro ─── */}
@@ -459,6 +470,7 @@ export default function CategoryPage({
                 progress={progress[quiz.slug]}
                 isNew={quizzes.slice(-3).some((q) => q.slug === quiz.slug)}
                 locale={locale}
+                plays={plays[quiz.slug] || 0}
               />
             ))}
           </div>
@@ -783,11 +795,14 @@ function QuizCard({
   progress,
   isNew,
   locale,
+  plays = 0,
 }: {
   quiz: QuizData;
   progress?: QuizProgress;
   isNew?: boolean;
   locale?: string;
+  /** Parties reellement jouees, lues depuis /api/quiz/plays. */
+  plays?: number;
 }) {
   const tt = (key: string) => catPageT[key]?.[locale || "en"] || catPageT[key]?.en || key;
   const gtLabel = (gt: GameType) => GAME_TYPE_LABELS_I18N[gt]?.[locale || "en"] || GAME_TYPE_LABELS_I18N[gt]?.en;
@@ -799,8 +814,10 @@ function QuizCard({
   };
 
   const isCompleted = !!progress;
-  const isPopular = (quiz.playCount || 0) >= 50000;
-  const isTrending = !isPopular && (quiz.playCount || 0) >= 20000;
+  // Seuils inchanges, mais sur le compteur reel : aucun badge ne s'affiche
+  // tant que le site n'a pas ete joue, ce qui est le cas au demarrage.
+  const isPopular = plays >= 50000;
+  const isTrending = !isPopular && plays >= 20000;
 
   return (
     <a
@@ -889,10 +906,10 @@ function QuizCard({
             )}
           </div>
 
-          {quiz.playCount != null && quiz.playCount > 0 && (
+          {plays > 0 && (
             <div className="absolute bottom-2.5 right-3">
               <span className="text-xs text-white/90 font-medium">
-                {formatPlayCount(quiz.playCount)} {tt("players")}
+                {formatPlayCount(plays)} {tt("players")}
               </span>
             </div>
           )}

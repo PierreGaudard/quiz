@@ -1,0 +1,52 @@
+---
+/**
+ * Hydratation des compteurs de parties.
+ *
+ * Les pages sont prerendues au build, donc un compteur reel ne peut pas y
+ * etre ecrit : il est lu au chargement depuis /api/quiz/plays et injecte
+ * dans les emplacements marques.
+ *
+ * Deux marqueurs :
+ *   <span data-plays-for="mon-quiz" hidden></span>  -> compteur d'un quiz
+ *   <span data-plays-total hidden></span>           -> total du site
+ *
+ * Les emplacements restent masques tant qu'ils valent zero. C'est voulu : un
+ * site qui vient d'ouvrir affiche des cartes sans compteur plutot que des
+ * cartes a « 0 partie », et surtout plutot que les 15 200 a 28 400 parties
+ * qui etaient ecrites en dur dans les donnees.
+ */
+---
+
+<script is:inline>
+  (function () {
+    var slots = document.querySelectorAll('[data-plays-for]');
+    var totals = document.querySelectorAll('[data-plays-total]');
+    if (!slots.length && !totals.length) return;
+
+    // Meme format que formatCount cote serveur : 1 234 -> 1.2k
+    function fmt(n) {
+      if (n >= 1000) {
+        var v = (n / 1000).toFixed(1);
+        return (v.endsWith('.0') ? v.slice(0, -2) : v) + 'k';
+      }
+      return String(n);
+    }
+
+    function fill(el, n) {
+      if (!n) return;
+      el.textContent = fmt(n);
+      el.hidden = false;
+      var wrap = el.closest('[data-plays-wrap]');
+      if (wrap) wrap.hidden = false;
+    }
+
+    fetch('/api/quiz/plays')
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        var plays = (d && d.plays) || {};
+        slots.forEach(function (el) { fill(el, plays[el.getAttribute('data-plays-for')] || 0); });
+        totals.forEach(function (el) { fill(el, (d && d.total) || 0); });
+      })
+      .catch(function () { /* compteurs indisponibles : on n'affiche rien */ });
+  })();
+</script>

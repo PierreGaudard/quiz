@@ -194,11 +194,30 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
             if (!q.isCorrect) return sum;
             return sum + (q.hasSecondChance === false ? Math.round(BASE_XP * 0.5) : BASE_XP);
           }, 0);
-          fetch("/api/quiz/progress", {
+          // Compteur de parties : tout le monde compte, connecte ou pas.
+          // C'est cette route qui alimente les compteurs affiches, a la place
+          // des valeurs qui etaient ecrites en dur dans les donnees.
+          fetch("/api/quiz/plays", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ quizSlug: quiz.slug, score: correctCount, totalQuestions, xpEarned: earnedXp, quizTitle: quiz.title, quizImage: quiz.coverImage || null, quizPath: quiz.path || null }),
-          }).then(() => setSavedProgress(true)).catch(() => {});
+            body: JSON.stringify({ quizSlug: quiz.slug }),
+          }).catch(() => {});
+
+          // La progression, elle, appartient a un compte. On ne tente
+          // l'enregistrement que si le joueur est connecte : l'appel
+          // inconditionnel renvoyait un 401 dans la console a chaque partie
+          // jouee anonymement, c'est-a-dire presque toutes.
+          fetch("/api/auth/me")
+            .then((r) => r.json())
+            .then((d) => {
+              if (!d?.user) return null;
+              return fetch("/api/quiz/progress", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ quizSlug: quiz.slug, score: correctCount, totalQuestions, xpEarned: earnedXp, quizTitle: quiz.title, quizImage: quiz.coverImage || null, quizPath: quiz.path || null }),
+              }).then(() => setSavedProgress(true));
+            })
+            .catch(() => {});
         }
       }, 1200);
     },

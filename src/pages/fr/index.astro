@@ -154,7 +154,7 @@ function formatCount(n: number): string {
               <p class="text-sm text-white/60 line-clamp-2 mb-4">{featured.description}</p>
               <div class="flex items-center gap-4 text-xs text-white/50">
                 <span>{featured.questions.length} questions</span>
-                {featured.playCount && <span class="font-bold text-yellow-400">{formatCount(featured.playCount)} parties</span>}
+                <span class="font-bold text-yellow-400" data-plays-wrap hidden><span data-plays-for={featured.slug} hidden></span> parties</span>
               </div>
             </div>
           </a>
@@ -185,7 +185,7 @@ function formatCount(n: number): string {
               <h3 class="font-display text-sm font-bold text-white leading-tight line-clamp-2 mb-1.5">{quiz.title}</h3>
               <div class="flex items-center justify-between text-[10px] text-white/50">
                 <span>{quiz.questions.length} questions</span>
-                {quiz.playCount && <span class="font-bold text-yellow-400">{formatCount(quiz.playCount)}</span>}
+                <span class="font-bold text-yellow-400" data-plays-for={quiz.slug} hidden></span>
               </div>
             </div>
           </a>
@@ -363,7 +363,7 @@ function formatCount(n: number): string {
       <div class="flex items-center justify-center gap-6 text-center">
         <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{allQuizzes.length}</span> quiz disponibles</p>
         <span class="text-gray-200">|</span>
-        <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{formatCount(totalPlays)}</span> parties jouées</p>
+        <p class="text-sm text-gray-400" data-plays-wrap hidden><span class="font-black text-violet-600" data-plays-total hidden></span> parties jouées</p>
       </div>
     </section>
 
