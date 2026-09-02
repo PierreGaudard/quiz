@@ -21,6 +21,10 @@ const homepageCategories = categories;
 const popularQuizzes = [...allQuizzes].sort((a, b) => (b.playCount || 0) - (a.playCount || 0));
 const newestQuizzes = [...allQuizzes].slice(-4).reverse();
 const totalPlays = allQuizzes.reduce((sum, q) => sum + (q.playCount || 0), 0);
+// Compte reel des questions. C'etait `allQuizzes.length * 40`, soit 200
+// questions annoncees pour 71 reelles, et le meme calcul servait a afficher
+// « 200+ quiz disponibles » alors qu'il y en a 5.
+const totalQuestions = allQuizzes.reduce((sum, q) => sum + q.questions.length, 0);
 
 const qdjQuiz = allQuizzes[0];
 const qdj = qdjQuiz?.questions[0];
@@ -61,12 +65,12 @@ function formatCount(n: number): string {
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_370px] gap-5 items-center">
           {/* Left */}
           <div class="space-y-5">
-            <p class="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/30 text-yellow-300 font-bold text-xs uppercase tracking-[0.15em] px-3 py-1.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>Gratuit &middot; Sans inscription &middot; 6 modes de jeu</p>
+            <p class="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/30 text-yellow-300 font-bold text-xs uppercase tracking-[0.15em] px-3 py-1.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>Gratuit &middot; Sans inscription &middot; Une explication à chaque réponse</p>
             <h1 class="font-display text-5xl md:text-[4rem] font-bold text-white leading-[1.05] tracking-tight">
               La plateforme de quiz<br/><span class="text-yellow-400">numéro 1</span>
             </h1>
             <p class="text-white/70 text-base md:text-lg max-w-lg leading-relaxed">
-              Testez votre culture, jouez sur tous les thèmes : {allQuizzes.length * 40}+ questions rédigées par des experts, une explication à chaque réponse, 6 modes de jeu. Gratuit, sans inscription.
+              Teste ta culture sur tous les thèmes : {totalQuestions} questions rédigées par des experts, et une explication à chaque réponse. Gratuit, sans inscription.
             </p>
             <div class="max-w-sm">
               <div class="relative">
@@ -219,9 +223,9 @@ function formatCount(n: number): string {
         <div>
           <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 tracking-tight mb-3">On a tous ce pote incollable en soirée...</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Tu sais, celui qui sort des anecdotes sur les JO de 1936 entre deux parts de pizza. Celui qui connaît la capitale du Bhoutan et le nombre exact de dents d'un escargot. Eh bien ce pote-là, il s'entraîne probablement sur des quiz en ligne, et honnêtement c'est comme ça qu'on a eu l'idée de créer <strong class="text-gray-700">Wizyquizz</strong>.</p>
-            <p>L'objectif c'était simple : proposer des quiz qui donnent vraiment envie de jouer. Pas des questionnaires scolaires barbants, mais des <a href={lp('/sport')} class="text-violet-600 hover:underline">quiz sport</a> où tu découvres que Pelé a marqué plus de 1 000 buts, des <a href={lp('/cinema')} class="text-violet-600 hover:underline">quiz cinéma</a> qui te font réaliser que tu ne connais rien à Disney, ou des <a href={lp('/geographie')} class="text-violet-600 hover:underline">quiz géographie</a> où tu confonds encore le drapeau de Monaco et celui de l'Indonésie (on est passés par là aussi).</p>
-            <p>Et le meilleur ? Chaque question vient avec son explication. Tu te trompes, tu apprends. Tu as raison, tu apprends quand même. C'est le truc cool avec les quiz : on retient 10 fois mieux une info quand on a essayé de deviner la réponse.</p>
+            <p>Tu sais, celui qui sort des anecdotes sur les JO de 1936 entre deux parts de pizza, celui qui connaît la capitale du Bhoutan. Ce pote-là joue sûrement beaucoup aux quiz, et c'est de là qu'est venue l'idée de Wizyquizz.</p>
+            <p>Ce qu'on voulait, c'est des quiz qui donnent envie de jouer. Une question de foot où tu apprends que <a href={lp('/sport')} class="text-violet-600 font-semibold hover:underline">Pelé a marqué plus de mille buts</a>, ou un drapeau que tu <a href={lp('/geographie')} class="text-violet-600 font-semibold hover:underline">confonds avec son voisin depuis des années</a>.</p>
+            <p>Chaque question vient avec son explication, du coup une question ratée est une question apprise. On retient mieux une réponse qu'on est allé chercher qu'une réponse qu'on a lue.</p>
           </div>
         </div>
         <div class="bg-violet-50 rounded-2xl p-5 border border-violet-100">
@@ -311,9 +315,9 @@ function formatCount(n: number): string {
         <div>
           <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 tracking-tight mb-3">Les quiz qui cartonnent en ce moment</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Si on devait te recommander un seul quiz pour commencer, ce serait le <strong class="text-gray-700">quiz culture générale</strong>. C'est notre bestseller et c'est pas un hasard : les questions vont de "facile, tout le monde sait ça" à "ok là j'ai clairement inventé la réponse". Parfait pour se jauger.</p>
-            <p>Après, chacun ses passions. Les <strong class="text-gray-700">quiz drapeaux</strong> rendent accro, tu vas voir après 3 parties tu sauras reconnaître le drapeau du Lesotho les yeux fermés. Le <a href={lp('/cinema')} class="text-violet-600 hover:underline">quiz Harry Potter</a> ? Un classique, et non, tout le monde n'est pas Gryffondor. Le <strong class="text-gray-700">blind test musique</strong> c'est le plus fun entre amis : on branche les enceintes et c'est parti.</p>
-            <p>Et si t'en as marre des QCM, essaie nos modes spéciaux. Le <strong class="text-gray-700">Chrono</strong> c'est l'adrénaline pure (30 secondes, bonne chance). Le <strong class="text-gray-700">Duel</strong> c'est vicieux : "Messi ou Ronaldo, qui a le plus de buts en Ligue des Champions ?", tu crois savoir mais tu sais pas.</p>
+            <p>Si tu veux en commencer un, prends le quiz drapeaux : 17 questions, et au bout de deux parties tu arrêtes de confondre ceux qui se ressemblent.</p>
+            <p>Les <a href={lp('/cinema')} class="text-violet-600 font-semibold hover:underline">huit films Harry Potter</a> forment le plus long quiz du site, avec 18 questions. Dragon Ball et Minecraft sont plus courts, dix questions chacun, et ce sont les deux où les fans se font le plus piéger.</p>
+            <p>Un avertissement sur <a href={lp('/anime')} class="text-violet-600 font-semibold hover:underline">les noms saiyans</a> : ceux qui paraissent évidents sont rarement la bonne réponse.</p>
           </div>
         </div>
       </div>
@@ -323,10 +327,10 @@ function formatCount(n: number): string {
     <section class="max-w-6xl mx-auto px-4 pb-8">
       <div class="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 items-start">
         <div>
-          <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 tracking-tight mb-3">Un quiz, c'est pas juste 4 réponses au pif</h2>
+          <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 tracking-tight mb-3">L'explication sous chaque réponse</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
-            <p>Le truc qu'on voulait absolument éviter, c'est le côté "tu cliques au hasard et tu passes à la suite". Sur Wizyquizz, chaque mauvaise réponse est une occasion d'apprendre quelque chose. L'explication après chaque question, c'est notre marque de fabrique, et franchement c'est souvent la partie la plus intéressante.</p>
-            <p>On a aussi bossé sur les modes de jeu pour que ça reste frais. L'<strong class="text-gray-700">Estimation</strong> par exemple, c'est complètement différent : pas de choix multiples, juste toi et un chiffre à trouver. Tu proposes un nombre, on te dit "plus haut" ou "plus bas", et tu continues jusqu'à trouver. C'est addictif, essaie juste à côté.</p>
+            <p>Chaque mauvaise réponse est accompagnée de la raison. C'est souvent la partie qu'on lit le plus longtemps.</p>
+            <p>L'estimation marche autrement : rien à choisir, juste un nombre à trouver. Tu proposes un nombre, on te dit plus haut ou plus bas, et tu resserres. Celle d'à côté est jouable, essaie. Même idée pour <a href={lp('/jeux-video')} class="text-violet-600 font-semibold hover:underline">les mobs les plus rares de Minecraft</a>.</p>
           </div>
         </div>
         <div class="bg-cyan-50 rounded-2xl p-5 border border-cyan-100">
@@ -348,7 +352,7 @@ function formatCount(n: number): string {
         <div class="relative space-y-4">
           
           <h2 class="font-display text-3xl md:text-4xl font-bold text-white tracking-tight">Tu as une idée de quiz ?</h2>
-          <p class="text-white/70 text-base max-w-md mx-auto">Crée-le en 5 minutes et partage-le avec tes amis. C'est gratuit, rapide et fun.</p>
+          <p class="text-white/70 text-base max-w-md mx-auto">Ajoute tes questions avec leurs explications, et partage-le avec un lien. C'est gratuit.</p>
           <a href={lp('/creer')} class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-[#1a0e42] font-bold text-sm px-7 py-3.5 rounded-full transition-all shadow-lg shadow-yellow-400/30 hover:shadow-yellow-300/40 hover:-translate-y-0.5">Créer mon quiz →</a>
         </div>
       </div>
@@ -357,7 +361,7 @@ function formatCount(n: number): string {
     {/* ===== STATS INLINE — discret ===== */}
     <section class="max-w-6xl mx-auto px-4 py-6">
       <div class="flex items-center justify-center gap-6 text-center">
-        <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{allQuizzes.length * 40}+</span> quiz disponibles</p>
+        <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{allQuizzes.length}</span> quiz disponibles</p>
         <span class="text-gray-200">|</span>
         <p class="text-sm text-gray-400"><span class="font-black text-violet-600">{formatCount(totalPlays)}</span> parties jouées</p>
       </div>
@@ -374,7 +378,7 @@ function formatCount(n: number): string {
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
             <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
-                Les quiz sont-ils vraiment gratuits et sans inscription ?
+                Les quiz sont-ils gratuits et sans inscription ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Tous les quiz sur Wizyquizz sont 100% gratuits. Vous pouvez jouer à n'importe quel quiz sans créer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis.</p>
@@ -398,7 +402,7 @@ function formatCount(n: number): string {
                 Quels sont les différents modes de jeu disponibles ?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
-              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Wizyquizz propose 6 modes de jeu : le QCM classique à 4 réponses, le Vrai ou Faux, le Chrono Challenge (30 secondes pour un maximum de bonnes réponses), l'Estimation (devinez un nombre, on vous dit plus haut ou plus bas), le Duel (comparez deux options) et l'Ordre chronologique.</p>
+              <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Le mode disponible aujourd'hui est le QCM à quatre réponses, avec trois bonus pour se sortir d'une question difficile. Cinq autres modes sont prêts et attendent des quiz : le vrai ou faux, le chrono, l'estimation, le duel et l'ordre chronologique.</p>
             </details>
             <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
@@ -442,12 +446,12 @@ function formatCount(n: number): string {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
-      { "@type": "Question", name: "Les quiz sont-ils vraiment gratuits et sans inscription ?", acceptedAnswer: { "@type": "Answer", text: "Tous les quiz sur Wizyquizz sont 100% gratuits. Vous pouvez jouer a n'importe quel quiz sans creer de compte. L'inscription gratuite est optionnelle et permet de sauvegarder vos scores, suivre votre progression et vous comparer avec vos amis." }},
-      { "@type": "Question", name: "Quels types de quiz de culture generale proposez-vous ?", acceptedAnswer: { "@type": "Answer", text: "Nos quiz couvrent la culture generale, la geographie (drapeaux, capitales, pays du monde), le cinema (films cultes, animation), le sport (football, tennis, JO) et l'histoire. Chaque quiz existe en plusieurs niveaux de difficulte." }},
-      { "@type": "Question", name: "Les quiz peuvent-ils aider a reviser le brevet ou des examens ?", acceptedAnswer: { "@type": "Answer", text: "Oui, nous proposons des quiz adaptes aux revisions (brevet, culture generale, histoire-geo). Les etudes montrent qu'on retient mieux une information quand on la retrouve soi-meme via un quiz plutot qu'en relisant un cours." }},
-      { "@type": "Question", name: "Quels sont les differents modes de jeu disponibles ?", acceptedAnswer: { "@type": "Answer", text: "Wizyquizz propose 6 modes de jeu : le QCM classique a 4 reponses, le Vrai ou Faux, le Chrono Challenge, l'Estimation, le Duel et l'Ordre chronologique." }},
-      { "@type": "Question", name: "Comment creer son propre quiz sur Wizyquizz ?", acceptedAnswer: { "@type": "Answer", text: "C'est simple et rapide : choisissez une categorie, ajoutez vos questions avec les reponses et les explications, et votre quiz est en ligne en quelques minutes." }},
-      { "@type": "Question", name: "Wizyquizz fonctionne-t-il sur mobile et tablette ?", acceptedAnswer: { "@type": "Answer", text: "Wizyquizz est entierement responsive et optimise pour tous les ecrans. Vous pouvez jouer sur smartphone, tablette ou ordinateur avec la meme experience. Aucune application a telecharger." }},
+      { "@type": "Question", name: "Les quiz sont-ils gratuits et sans inscription ?", acceptedAnswer: { "@type": "Answer", text: "Tous les quiz sont gratuits et se jouent sans compte. L'inscription est gratuite aussi, et sert seulement à garder tes scores et à te comparer à tes amis." }},
+      { "@type": "Question", name: "Quels types de quiz proposez-vous ?", acceptedAnswer: { "@type": "Answer", text: "Il y a cinq catégories pour l'instant, avec un quiz chacune : le sport avec le football, la géographie avec les drapeaux du monde, l'anime avec Dragon Ball, le cinéma avec Harry Potter et les jeux vidéo avec Minecraft. Ça fait 71 questions en tout, et d'autres arrivent." }},
+      { "@type": "Question", name: "Les quiz peuvent-ils aider à réviser ?", acceptedAnswer: { "@type": "Answer", text: "On retient mieux une information quand on va la rechercher soi-même que quand on relit un cours, et c'est ce que fait un quiz. Chaque réponse est expliquée. En revanche, les quiz ici portent sur la culture générale et les loisirs, pas sur un programme scolaire." }},
+      { "@type": "Question", name: "Quels sont les modes de jeu disponibles ?", acceptedAnswer: { "@type": "Answer", text: "Le mode disponible aujourd'hui est le QCM à quatre réponses, avec trois bonus pour se sortir d'une question difficile. Cinq autres modes sont prêts et attendent des quiz : le vrai ou faux, le chrono, l'estimation, le duel et l'ordre chronologique." }},
+      { "@type": "Question", name: "Comment créer son propre quiz sur Wizyquizz ?", acceptedAnswer: { "@type": "Answer", text: "Tu choisis une catégorie, tu ajoutes tes questions avec les réponses et les explications, et le quiz est en ligne. Tu récupères ensuite un lien pour le partager." }},
+      { "@type": "Question", name: "Wizyquizz fonctionne-t-il sur mobile et tablette ?", acceptedAnswer: { "@type": "Answer", text: "Oui, sur téléphone, tablette et ordinateur, et il n'y a aucune application à télécharger." }},
     ]
   })} />
 </Layout>
