@@ -54,6 +54,9 @@ const vfT: Record<string, Record<string, string>> = {
     fr: " Un bon niveau de connaissances est recommandé.",
     es: " Se recomienda un buen nivel de conocimiento.",
   },
+  msgExcellent: { en: "Excellent! You've mastered this topic!", fr: "Excellent ! Tu maîtrises le sujet !", es: "¡Excelente! Dominas el tema!" },
+  msgNotBad: { en: "Not bad! You have a solid foundation.", fr: "Pas mal ! Tu as de bonnes bases.", es: "Nada mal, tienes buenas bases." },
+  msgKeepGoing: { en: "Keep practicing, you'll improve!", fr: "Continue, tu vas progresser !", es: "Sigue practicando, vas a mejorar." },
 };
 
 export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
@@ -370,10 +373,10 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
 
             <p className="text-white/80 text-sm mt-3">
               {scorePercent >= 80
-                ? "Excellent! You've mastered this topic!"
+                ? tt("msgExcellent")
                 : scorePercent >= 50
-                  ? "Not bad! You have a solid foundation."
-                  : "Keep practicing, you'll improve!"}
+                  ? tt("msgNotBad")
+                  : tt("msgKeepGoing")}
             </p>
           </div>
 

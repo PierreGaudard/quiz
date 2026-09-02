@@ -36,6 +36,9 @@ const orT: Record<string, Record<string, string>> = {
   undoHint: { en: "tap to undo", fr: "clique pour retirer", es: "toca para quitar" },
   submit: { en: "Submit", fr: "Valider", es: "Validar" },
   perfectBang: { en: "Perfect!", fr: "Parfait !", es: "¡Perfecto!" },
+  verdictPerfect: { en: "Perfect! ", fr: "Parfait ! ", es: "¡Perfecto! " },
+  verdictNotBad: { en: "Not bad! ", fr: "Pas mal ! ", es: "¡No está mal! " },
+  verdictWrong: { en: "Wrong! ", fr: "Raté ! ", es: "¡Fallado! " },
   correctOrder: { en: "Correct order", fr: "Le bon ordre", es: "El orden correcto" },
   yourResult: { en: "Your result", fr: "Ton résultat", es: "Tu resultado" },
   pointsEarned: { en: "Points earned", fr: "Points gagnés", es: "Puntos ganados" },
@@ -45,6 +48,9 @@ const orT: Record<string, Record<string, string>> = {
   questionDetails: { en: "Question details", fr: "Détail des questions", es: "Detalle de preguntas" },
   playAgain: { en: "Play again", fr: "Rejouer", es: "Jugar de nuevo" },
   share: { en: "Share", fr: "Partager", es: "Compartir" },
+  msgExcellent: { en: "Excellent! You've mastered the chronological order!", fr: "Excellent ! Tu maîtrises l'ordre chronologique !", es: "¡Excelente! Dominas el orden cronológico!" },
+  msgNotBad: { en: "Not bad! You have good knowledge.", fr: "Pas mal ! Tu t'y connais.", es: "Nada mal, sabes del tema." },
+  msgKeepGoing: { en: "Keep practicing, you'll improve!", fr: "Continue, tu vas progresser !", es: "Sigue practicando, vas a mejorar." },
 };
 
 export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
@@ -229,10 +235,10 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             </div>
             <p className="text-white/80 text-sm">
               {scorePercent >= 80
-                ? "Excellent! You've mastered the chronological order!"
+                ? tt("msgExcellent")
                 : scorePercent >= 50
-                  ? "Not bad! You have good knowledge."
-                  : "Keep practicing, you'll improve!"}
+                  ? tt("msgNotBad")
+                  : tt("msgKeepGoing")}
             </p>
             <div className="mt-4 bg-white/15 backdrop-blur-sm rounded-xl p-3 inline-block">
               <div className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-0.5">
@@ -743,10 +749,10 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               >
                 <span className="font-bold">
                   {currentResult.points === MAX_POINTS_PER_QUESTION
-                    ? "Perfect! "
+                    ? tt("verdictPerfect")
                     : currentResult.points > 0
-                      ? "Not bad! "
-                      : "Wrong! "}
+                      ? tt("verdictNotBad")
+                      : tt("verdictWrong")}
                 </span>
                 {currentQuestion.explanation}
               </div>

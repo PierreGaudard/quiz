@@ -48,13 +48,25 @@ function closenessRatio(guess: number, target: number): number {
   return Math.max(0, 1 - diff);
 }
 
-function closenessLabel(ratio: number): { text: string; color: string } {
-  if (ratio >= 0.95) return { text: "Burning!", color: "text-red-500" };
-  if (ratio >= 0.8) return { text: "Very hot", color: "text-orange-500" };
-  if (ratio >= 0.6) return { text: "Hot", color: "text-amber-500" };
-  if (ratio >= 0.4) return { text: "Warm", color: "text-yellow-600" };
-  if (ratio >= 0.2) return { text: "Cold", color: "text-blue-400" };
-  return { text: "Freezing", color: "text-blue-600" };
+/** Indices de proximite. La fonction est hors du composant et n'a donc pas
+ *  acces a tt() : elle recoit la locale et lit la table directement. */
+const CLOSENESS: Record<string, Record<string, string>> = {
+  burning: { en: "Burning!", fr: "Brûlant !", es: "¡Ardiendo!" },
+  veryHot: { en: "Very hot", fr: "Très chaud", es: "Muy caliente" },
+  hot: { en: "Hot", fr: "Chaud", es: "Caliente" },
+  warm: { en: "Warm", fr: "Tiède", es: "Templado" },
+  cold: { en: "Cold", fr: "Froid", es: "Frío" },
+  freezing: { en: "Freezing", fr: "Glacé", es: "Helado" },
+};
+
+function closenessLabel(ratio: number, locale = "en"): { text: string; color: string } {
+  const cl = (k: string) => CLOSENESS[k]?.[locale] || CLOSENESS[k]?.en || k;
+  if (ratio >= 0.95) return { text: cl("burning"), color: "text-red-500" };
+  if (ratio >= 0.8) return { text: cl("veryHot"), color: "text-orange-500" };
+  if (ratio >= 0.6) return { text: cl("hot"), color: "text-amber-500" };
+  if (ratio >= 0.4) return { text: cl("warm"), color: "text-yellow-600" };
+  if (ratio >= 0.2) return { text: cl("cold"), color: "text-blue-400" };
+  return { text: cl("freezing"), color: "text-blue-600" };
 }
 
 function formatNumber(n: number): string {
@@ -65,6 +77,7 @@ const esT: Record<string, Record<string, string>> = {
   estimation: { en: "Estimation", fr: "Estimation", es: "Estimación" },
   questions: { en: "Questions", fr: "Questions", es: "Preguntas" },
   attempts: { en: "Attempts", fr: "Essais", es: "Intentos" },
+  attempt: { en: "Attempt", fr: "Essai", es: "Intento" },
   tolerance: { en: "Tolerance", fr: "Tolérance", es: "Tolerancia" },
   howToPlay: { en: "How to play", fr: "Comment jouer", es: "Cómo jugar" },
   step1: { en: "Guess the number being asked", fr: "Devine le nombre demandé", es: "Adivina el número que se pide" },
@@ -436,7 +449,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
   const attemptsLeft = MAX_ATTEMPTS - attemptCount;
   const lastGuess = guesses.length > 0 ? guesses[guesses.length - 1] : null;
   const closeness = lastGuess && !questionDone ? closenessRatio(lastGuess.value, correctVal) : null;
-  const closenessInfo = closeness !== null ? closenessLabel(closeness) : null;
+  const closenessInfo = closeness !== null ? closenessLabel(closeness, locale) : null;
 
   return (
     <div className="max-w-2xl mx-auto space-y-4">
@@ -497,7 +510,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 />
               ))}
               <span className="ml-2 text-sm font-medium text-gray-500">
-                Attempt {Math.min(attemptCount + 1, MAX_ATTEMPTS)}/{MAX_ATTEMPTS}
+                {tt("attempt")} {Math.min(attemptCount + 1, MAX_ATTEMPTS)}/{MAX_ATTEMPTS}
               </span>
             </div>
           </div>

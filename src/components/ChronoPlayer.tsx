@@ -51,6 +51,8 @@ const chT: Record<string, Record<string, string>> = {
   sec: { en: "sec", fr: "sec", es: "seg" },
   streak: { en: "Streak", fr: "Série", es: "Serie" },
   onFire: { en: "ON FIRE", fr: "EN FEU", es: "EN LLAMAS" },
+  allDone: { en: "All questions completed!", fr: "Toutes les questions y sont passées !", es: "¡Todas las preguntas respondidas!" },
+  timesUp: { en: "Time's up!", fr: "Temps écoulé !", es: "¡Se acabó el tiempo!" },
 };
 
 export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
@@ -370,7 +372,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <span className="text-red-400 font-display font-bold text-sm uppercase tracking-wider">
-                {allExhausted ? "All questions completed!" : "Time's up!"}
+                {allExhausted ? tt("allDone") : tt("timesUp")}
               </span>
             </div>
             <h2 className="font-display text-3xl md:text-4xl font-black text-white mb-2">
