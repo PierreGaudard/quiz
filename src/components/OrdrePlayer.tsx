@@ -26,7 +26,29 @@ interface QuestionResult {
   points: number;
 }
 
+const orT: Record<string, Record<string, string>> = {
+  rankingMode: { en: "Ranking mode", fr: "Mode Ordre", es: "Modo Orden" },
+  start: { en: "Start", fr: "C'est parti", es: "Empezar" },
+  order: { en: "Order", fr: "Ordre", es: "Orden" },
+  yourRanking: { en: "Your ranking", fr: "Ton classement", es: "Tu clasificación" },
+  clickInOrder: { en: "Click in order", fr: "Clique dans l'ordre", es: "Haz clic en orden" },
+  undo: { en: "Undo", fr: "Annuler", es: "Deshacer" },
+  undoHint: { en: "tap to undo", fr: "clique pour retirer", es: "toca para quitar" },
+  submit: { en: "Submit", fr: "Valider", es: "Validar" },
+  perfectBang: { en: "Perfect!", fr: "Parfait !", es: "¡Perfecto!" },
+  correctOrder: { en: "Correct order", fr: "Le bon ordre", es: "El orden correcto" },
+  yourResult: { en: "Your result", fr: "Ton résultat", es: "Tu resultado" },
+  pointsEarned: { en: "Points earned", fr: "Points gagnés", es: "Puntos ganados" },
+  perfect: { en: "Perfect", fr: "Parfait", es: "Perfecto" },
+  partial: { en: "Partial", fr: "Partiel", es: "Parcial" },
+  failed: { en: "Failed", fr: "Manqué", es: "Fallado" },
+  questionDetails: { en: "Question details", fr: "Détail des questions", es: "Detalle de preguntas" },
+  playAgain: { en: "Play again", fr: "Rejouer", es: "Jugar de nuevo" },
+  share: { en: "Share", fr: "Partager", es: "Compartir" },
+};
+
 export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
+  const tt = (key: string) => orT[key]?.[locale] || orT[key]?.en || key;
   const [hasStarted, setHasStarted] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [selectedOrder, setSelectedOrder] = useState<string[]>([]);
@@ -189,7 +211,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
         {/* Results card */}
         <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-lg overflow-hidden">
           <div className="bg-gradient-to-r from-violet-600 to-purple-700 p-6 md:p-8 text-center text-white">
-            <div className="text-sm font-medium text-white/70 mb-2">Your result</div>
+            <div className="text-sm font-medium text-white/70 mb-2">{tt("yourResult")}</div>
             <div className="flex items-center justify-center gap-4 mb-3">
               <div
                 className={`w-16 h-16 ${rank.color} rounded-2xl flex items-center justify-center text-3xl font-display font-black text-white shadow-lg`}
@@ -214,7 +236,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             </p>
             <div className="mt-4 bg-white/15 backdrop-blur-sm rounded-xl p-3 inline-block">
               <div className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-0.5">
-                Points earned
+                {tt("pointsEarned")}
               </div>
               <div className="text-2xl font-display font-black">
                 {totalPoints} pts
@@ -229,26 +251,26 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                 <div className="text-3xl font-display font-bold text-green-600">
                   {results.filter((r) => r.points === MAX_POINTS_PER_QUESTION).length}
                 </div>
-                <div className="text-xs text-green-700 font-medium mt-1">Perfect</div>
+                <div className="text-xs text-green-700 font-medium mt-1">{tt("perfect")}</div>
               </div>
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
                 <div className="text-3xl font-display font-bold text-amber-600">
                   {results.filter((r) => r.points > 0 && r.points < MAX_POINTS_PER_QUESTION).length}
                 </div>
-                <div className="text-xs text-amber-700 font-medium mt-1">Partial</div>
+                <div className="text-xs text-amber-700 font-medium mt-1">{tt("partial")}</div>
               </div>
               <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
                 <div className="text-3xl font-display font-bold text-red-500">
                   {results.filter((r) => r.points === 0).length}
                 </div>
-                <div className="text-xs text-red-600 font-medium mt-1">Failed</div>
+                <div className="text-xs text-red-600 font-medium mt-1">{tt("failed")}</div>
               </div>
             </div>
 
             {/* Detail per question */}
             <div className="mb-6">
               <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
-                Question details
+                {tt("questionDetails")}
               </div>
               <div className="space-y-2">
                 {quiz.questions.map((q, i) => {
@@ -312,7 +334,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                   />
                 </svg>
-                Play again
+                {tt("playAgain")}
               </button>
               <button
                 onClick={() => {
@@ -338,7 +360,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                     d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
                   />
                 </svg>
-                Share
+                {tt("share")}
               </button>
             </div>
             <QuizSocialBlock quizSlug={quiz.slug} userScore={totalPoints} totalQuestions={maxPossiblePoints} locale={locale} />
@@ -405,7 +427,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
               </svg>
-              Ranking mode
+              {tt("rankingMode")}
             </span>
           </div>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -417,7 +439,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             onClick={handleStart}
             className="w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold text-base py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
           >
-            Start
+            {tt("start")}
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
@@ -438,7 +460,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
               </svg>
-              Order
+              {tt("order")}
             </span>
             <span className="text-sm font-display font-bold text-gray-900">
               Question {activeIndex + 1}
@@ -492,7 +514,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
         {/* Selected order area */}
         <div className="px-4 md:px-6 pb-3">
           <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-            Your ranking
+            {tt("yourRanking")}
           </div>
           <div className="grid grid-cols-4 gap-2 min-h-[56px]">
             {[0, 1, 2, 3].map((slot) => {
@@ -544,7 +566,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                       </span>
                       {isLast && !hasValidated && (
                         <span className="text-[9px] text-violet-500 font-medium mt-0.5">
-                          undo
+                          {tt("undoHint")}
                         </span>
                       )}
                     </>
@@ -571,7 +593,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
         {!hasValidated && (
           <div className="px-4 md:px-6 pb-4">
             <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-              Click in order
+              {tt("clickInOrder")}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {currentShuffled.map((answer) => {
@@ -627,13 +649,13 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
                 </svg>
-                Undo
+                {tt("undo")}
               </button>
               <button
                 onClick={handleValidate}
                 className="flex-1 flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl cursor-pointer transition-all duration-200 hover:-translate-y-0.5"
               >
-                Submit
+                {tt("submit")}
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
@@ -661,7 +683,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               <span className="text-sm text-gray-400">/ {MAX_POINTS_PER_QUESTION}</span>
               {currentResult.points === MAX_POINTS_PER_QUESTION && (
                 <span className="text-xs font-bold text-green-600 bg-green-100 px-2 py-0.5 rounded-full">
-                  Perfect!
+                  {tt("perfectBang")}
                 </span>
               )}
             </div>
@@ -669,7 +691,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             {/* Correct order */}
             <div>
               <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-                Correct order
+                {tt("correctOrder")}
               </div>
               <div className="space-y-1.5">
                 {correctOrder.map((id, i) => {

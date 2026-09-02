@@ -61,7 +61,37 @@ function formatNumber(n: number): string {
   return n.toLocaleString("en-US");
 }
 
+const esT: Record<string, Record<string, string>> = {
+  estimation: { en: "Estimation", fr: "Estimation", es: "Estimación" },
+  questions: { en: "Questions", fr: "Questions", es: "Preguntas" },
+  attempts: { en: "Attempts", fr: "Essais", es: "Intentos" },
+  tolerance: { en: "Tolerance", fr: "Tolérance", es: "Tolerancia" },
+  howToPlay: { en: "How to play", fr: "Comment jouer", es: "Cómo jugar" },
+  step1: { en: "Guess the number being asked", fr: "Devine le nombre demandé", es: "Adivina el número que se pide" },
+  step2: { en: "Follow the clues: higher or lower", fr: "Suis les indices : plus haut ou plus bas", es: "Sigue las pistas: más alto o más bajo" },
+  start: { en: "Start", fr: "C'est parti", es: "Empezar" },
+  finished: { en: "Quiz finished!", fr: "Quiz terminé !", es: "¡Quiz terminado!" },
+  points: { en: "Points", fr: "Points", es: "Puntos" },
+  found: { en: "Found", fr: "Trouvés", es: "Acertados" },
+  accuracy: { en: "Accuracy", fr: "Précision", es: "Precisión" },
+  totalScore: { en: "Total score", fr: "Score total", es: "Puntuación total" },
+  questionDetails: { en: "Question details", fr: "Détail des questions", es: "Detalle de preguntas" },
+  answerLabel: { en: "Answer:", fr: "Réponse :", es: "Respuesta:" },
+  notFound: { en: "Not found", fr: "Pas trouvé", es: "No acertado" },
+  playAgain: { en: "Play again", fr: "Rejouer", es: "Jugar de nuevo" },
+  home: { en: "Home", fr: "Accueil", es: "Inicio" },
+  higher: { en: "HIGHER", fr: "PLUS HAUT", es: "MÁS ALTO" },
+  lower: { en: "LOWER", fr: "PLUS BAS", es: "MÁS BAJO" },
+  exact: { en: "EXACT!", fr: "EXACT !", es: "¡EXACTO!" },
+  submit: { en: "Submit", fr: "Valider", es: "Validar" },
+  wellDone: { en: "Well done!", fr: "Bien joué !", es: "¡Bien hecho!" },
+  tooBad: { en: "Too bad!", fr: "Dommage !", es: "¡Qué pena!" },
+  correctWas: { en: "The right answer was", fr: "La bonne réponse était", es: "La respuesta correcta era" },
+  pointsPerAttempt: { en: "Points per attempt", fr: "Points par essai", es: "Puntos por intento" },
+};
+
 export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
+  const tt = (key: string) => esT[key]?.[locale] || esT[key]?.en || key;
   const [phase, setPhase] = useState<Phase>("intro");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
@@ -199,7 +229,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
           <div className="p-8 text-center">
             <div className="inline-flex items-center gap-2 mb-4">
               <span className="px-3 py-1 rounded-full text-xs font-bold bg-violet-100 text-violet-700">
-                Estimation
+                {tt("estimation")}
               </span>
               <span
                 className={`px-3 py-1 rounded-full text-xs font-bold ${difficultyColor[quiz.difficulty] || "bg-gray-100 text-gray-700"}`}
@@ -217,32 +247,32 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 <div className="text-2xl font-display font-black text-violet-600">
                   {totalQuestions}
                 </div>
-                <div className="text-xs text-gray-500 font-medium">Questions</div>
+                <div className="text-xs text-gray-500 font-medium">{tt("questions")}</div>
               </div>
               <div className="bg-gray-50 rounded-xl p-3">
                 <div className="text-2xl font-display font-black text-violet-600">
                   {MAX_ATTEMPTS}
                 </div>
-                <div className="text-xs text-gray-500 font-medium">Attempts</div>
+                <div className="text-xs text-gray-500 font-medium">{tt("attempts")}</div>
               </div>
               <div className="bg-gray-50 rounded-xl p-3">
                 <div className="text-2xl font-display font-black text-violet-600">5%</div>
-                <div className="text-xs text-gray-500 font-medium">Tolerance</div>
+                <div className="text-xs text-gray-500 font-medium">{tt("tolerance")}</div>
               </div>
             </div>
 
             <div className="bg-violet-50 rounded-xl p-4 mb-8 text-left border border-violet-100">
               <h3 className="font-display font-bold text-violet-800 mb-2 text-sm">
-                How to play
+                {tt("howToPlay")}
               </h3>
               <ul className="text-sm text-violet-700 space-y-1.5">
                 <li className="flex items-start gap-2">
                   <span className="text-violet-400 mt-0.5">1.</span>
-                  Guess the numeric value asked
+                  {tt("step1")}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-violet-400 mt-0.5">2.</span>
-                  Follow the clues: Higher or Lower
+                  {tt("step2")}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-violet-400 mt-0.5">3.</span>
@@ -259,7 +289,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
               onClick={handleStart}
               className="px-10 py-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-display font-bold text-lg rounded-xl shadow-lg shadow-violet-200 hover:shadow-xl hover:shadow-violet-300 hover:-translate-y-0.5 transition-all cursor-pointer"
             >
-              Start
+              {tt("start")}
             </button>
           </div>
         </div>
@@ -290,7 +320,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
               {rank.icon}
             </div>
             <h2 className="text-2xl font-display font-black mb-1">{rank.label}</h2>
-            <p className="text-violet-200 text-sm">Quiz finished!</p>
+            <p className="text-violet-200 text-sm">{tt("finished")}</p>
           </div>
 
           <div className="p-8">
@@ -300,7 +330,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                   {formatNumber(totalPoints)}
                 </div>
                 <div className="text-xs text-violet-500 font-medium mt-1">
-                  Points
+                  {tt("points")}
                 </div>
                 <div className="text-[10px] text-gray-400 mt-0.5">
                   sur {formatNumber(maxPoints)}
@@ -311,7 +341,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                   {correctCount}/{totalQuestions}
                 </div>
                 <div className="text-xs text-green-500 font-medium mt-1">
-                  Found
+                  {tt("found")}
                 </div>
               </div>
               <div className="bg-amber-50 rounded-xl p-4 text-center border border-amber-100">
@@ -319,7 +349,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                   {accuracyPercent}%
                 </div>
                 <div className="text-xs text-amber-500 font-medium mt-1">
-                  Accuracy
+                  {tt("accuracy")}
                 </div>
               </div>
             </div>
@@ -327,7 +357,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
             {/* Points bar */}
             <div className="mb-8">
               <div className="flex justify-between text-xs text-gray-500 mb-1.5 font-medium">
-                <span>Total score</span>
+                <span>{tt("totalScore")}</span>
                 <span>{formatNumber(totalPoints)} / {formatNumber(maxPoints)}</span>
               </div>
               <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
@@ -339,7 +369,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
             </div>
 
             {/* Question breakdown */}
-            <h3 className="font-display font-bold text-gray-900 mb-4">Question details</h3>
+            <h3 className="font-display font-bold text-gray-900 mb-4">{tt("questionDetails")}</h3>
             <div className="space-y-3 mb-8">
               {results.map((r, i) => {
                 const q = quiz.questions[i];
@@ -355,14 +385,14 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                           {i + 1}. {q.question}
                         </div>
                         <div className="text-xs text-gray-500">
-                          Answer: <span className="font-bold text-gray-700">{formatNumber(cv)}</span>
+                          {tt("answerLabel")} <span className="font-bold text-gray-700">{formatNumber(cv)}</span>
                           {r.correct && (
                             <span className="ml-2 text-green-600">
                               Found in {r.attempts} attempt{r.attempts > 1 ? "s" : ""}
                             </span>
                           )}
                           {!r.correct && (
-                            <span className="ml-2 text-red-500">Not found</span>
+                            <span className="ml-2 text-red-500">{tt("notFound")}</span>
                           )}
                         </div>
                       </div>
@@ -386,13 +416,13 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 onClick={handleStart}
                 className="flex-1 px-6 py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-display font-bold rounded-xl shadow-lg shadow-violet-200 hover:shadow-xl hover:-translate-y-0.5 transition-all cursor-pointer"
               >
-                Play again
+                {tt("playAgain")}
               </button>
               <a
                 href={withBase("/")}
                 className="px-6 py-3.5 bg-gray-100 text-gray-700 font-display font-bold rounded-xl hover:bg-gray-200 transition-all text-center"
               >
-                Home
+                {tt("home")}
               </a>
             </div>
             <QuizSocialBlock quizSlug={quiz.slug} userScore={correctCount} totalQuestions={totalQuestions} locale={locale} />
@@ -487,14 +517,14 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
               >
                 {feedbackAnim === "higher" ? (
                   <span className="flex items-center gap-2">
-                    HIGHER
+                    {tt("higher")}
                     <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
                     </svg>
                   </span>
                 ) : (
                   <span className="flex items-center gap-2">
-                    LOWER
+                    {tt("lower")}
                     <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
@@ -514,7 +544,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 }}
               >
                 <span className="flex items-center gap-2">
-                  EXACT!
+                  {tt("exact")}
                   <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -616,7 +646,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                       : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
                 >
-                  Submit
+                  {tt("submit")}
                 </button>
               </div>
             </div>
@@ -635,7 +665,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 {questionCorrect ? (
                   <>
                     <div className="text-green-600 font-display font-black text-lg mb-1">
-                      Well done!
+                      {tt("wellDone")}
                     </div>
                     <div className="text-3xl font-display font-black text-green-700 mb-2">
                       {formatNumber(correctVal)}
@@ -647,9 +677,9 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 ) : (
                   <>
                     <div className="text-red-500 font-display font-black text-lg mb-1">
-                      Too bad!
+                      {tt("tooBad")}
                     </div>
-                    <div className="text-sm text-gray-500 mb-1">The correct answer was</div>
+                    <div className="text-sm text-gray-500 mb-1">{tt("correctWas")}</div>
                     <div className="text-3xl font-display font-black text-red-600 mb-2">
                       {formatNumber(correctVal)}
                     </div>
@@ -682,7 +712,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
       {/* Points legend (compact) */}
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
         <div className="text-[10px] font-semibold text-gray-400 uppercase tracking-wide mb-2 text-center">
-          Points per attempt
+          {tt("pointsPerAttempt")}
         </div>
         <div className="flex justify-center gap-3 flex-wrap">
           {POINTS_BY_ATTEMPT.map((pts, i) => (

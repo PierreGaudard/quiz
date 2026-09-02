@@ -8,7 +8,40 @@ interface Props {
   locale?: string;
 }
 
+const duT: Record<string, Record<string, string>> = {
+  duelMode: { en: "Duel Mode", fr: "Mode Duel", es: "Modo Duelo" },
+  howToPlay: { en: "How to play", fr: "Comment jouer", es: "Cómo jugar" },
+  howToSub: {
+    en: "Pick the right one in each duel",
+    fr: "Choisis le bon des deux à chaque duel",
+    es: "Elige el correcto en cada duelo",
+  },
+  step1: {
+    en: "Read the question and look at the two options",
+    fr: "Lis la question et regarde les deux propositions",
+    es: "Lee la pregunta y mira las dos opciones",
+  },
+  step2: {
+    en: "Click the one you think is the answer",
+    fr: "Clique sur celle que tu penses être la bonne",
+    es: "Haz clic en la que crees que es la correcta",
+  },
+  startDuel: { en: "Start the duel", fr: "Lancer le duel", es: "Empezar el duelo" },
+  duelFinished: { en: "Duel finished", fr: "Duel terminé", es: "Duelo terminado" },
+  duelRecap: { en: "Duel recap", fr: "Récapitulatif", es: "Resumen del duelo" },
+  playAgain: { en: "Play again", fr: "Rejouer", es: "Jugar de nuevo" },
+  home: { en: "Home", fr: "Accueil", es: "Inicio" },
+  score: { en: "Score:", fr: "Score :", es: "Puntuación:" },
+  wellPlayed: { en: "Well played!", fr: "Bien joué !", es: "¡Bien jugado!" },
+  wrongAnswer: { en: "Wrong answer", fr: "Mauvaise réponse", es: "Respuesta incorrecta" },
+  correctWas: { en: "The right answer was", fr: "La bonne réponse était", es: "La respuesta correcta era" },
+  explanation: { en: "Explanation", fr: "Explication", es: "Explicación" },
+  nextDuel: { en: "Next duel", fr: "Duel suivant", es: "Siguiente duelo" },
+  seeResults: { en: "See results", fr: "Voir les résultats", es: "Ver resultados" },
+};
+
 export default function DuelPlayer({ quiz, locale = "en" }: Props) {
+  const tt = (key: string) => duT[key]?.[locale] || duT[key]?.en || key;
   const [hasStarted, setHasStarted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -114,7 +147,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
                 <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M13.73 2.18a1 1 0 00-1.46 0L9.41 5.04 6.24 3.46a1 1 0 00-1.4.54L3.5 8.12 .85 9.97a1 1 0 00-.17 1.45l2 2.53-.42 3.21a1 1 0 00 .82 1.12l3.16.52 1.53 2.83a1 1 0 001.32.44L12 20.5l2.91 1.57a1 1 0 001.32-.44l1.53-2.83 3.16-.52a1 1 0 00.82-1.12l-.42-3.21 2-2.53a1 1 0 00-.17-1.45l-2.65-1.85-1.34-4.12a1 1 0 00-1.4-.54l-3.17 1.58-2.86-2.86z" />
                 </svg>
-                Mode Duel
+                {tt("duelMode")}
               </span>
               <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${difficultyColor[quiz.difficulty] || "bg-gray-100 text-gray-700"}`}>
                 {quiz.difficulty}
@@ -142,19 +175,19 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
               </svg>
             </div>
             <div>
-              <h2 className="font-display text-lg font-bold text-gray-900">How to play</h2>
-              <p className="text-sm text-gray-500">Choose the right candidate in each duel</p>
+              <h2 className="font-display text-lg font-bold text-gray-900">{tt("howToPlay")}</h2>
+              <p className="text-sm text-gray-500">{tt("howToSub")}</p>
             </div>
           </div>
 
           <div className="space-y-3">
             <div className="flex items-start gap-3 p-3 bg-indigo-50 rounded-xl">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">1</div>
-              <p className="text-sm text-gray-700">Read the question and observe the two candidates</p>
+              <p className="text-sm text-gray-700">{tt("step1")}</p>
             </div>
             <div className="flex items-start gap-3 p-3 bg-rose-50 rounded-xl">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-500 to-orange-500 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">2</div>
-              <p className="text-sm text-gray-700">Click on the candidate you think is the right answer</p>
+              <p className="text-sm text-gray-700">{tt("step2")}</p>
             </div>
             <div className="flex items-start gap-3 p-3 bg-green-50 rounded-xl">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">3</div>
@@ -169,7 +202,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
             </svg>
-            Start the duel
+            {tt("startDuel")}
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
@@ -196,7 +229,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
               </svg>
-              Duel finished
+              {tt("duelFinished")}
             </div>
 
             <div className="mb-4">
@@ -240,7 +273,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
 
         {/* Recap */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 md:p-6">
-          <h3 className="font-display text-lg font-bold text-gray-900 mb-4">Duel recap</h3>
+          <h3 className="font-display text-lg font-bold text-gray-900 mb-4">{tt("duelRecap")}</h3>
           <div className="space-y-3">
             {quiz.questions.map((q, i) => {
               const isCorrect = answers[i];
@@ -295,7 +328,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
-            Play again
+            {tt("playAgain")}
           </button>
           <a
             href={withBase("/")}
@@ -304,7 +337,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1" />
             </svg>
-            Home
+            {tt("home")}
           </a>
         </div>
         <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} />
@@ -378,7 +411,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
               Duel {currentIndex + 1}/{totalQuestions}
             </span>
             <span className="text-xs font-bold text-gray-500">
-              Score: <span className="text-rose-500">{score}</span>/{answers.length}
+              {tt("score")} <span className="text-rose-500">{score}</span>/{answers.length}
             </span>
           </div>
           <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
@@ -521,19 +554,19 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
                   <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="font-display font-bold text-green-700">Well played!</span>
+                  <span className="font-display font-bold text-green-700">{tt("wellPlayed")}</span>
                 </>
               ) : (
                 <>
                   <svg className="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="font-display font-bold text-red-700">Wrong answer</span>
+                  <span className="font-display font-bold text-red-700">{tt("wrongAnswer")}</span>
                 </>
               )}
             </div>
             <p className="text-sm text-gray-600">
-              The correct answer was <span className="font-bold text-gray-900">{currentQuestion.answers.find((a) => a.id === correctId)?.text}</span>
+              {tt("correctWas")} <span className="font-bold text-gray-900">{currentQuestion.answers.find((a) => a.id === correctId)?.text}</span>
             </p>
           </div>
 
@@ -544,7 +577,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
                 <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
-                <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">Explanation</span>
+                <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">{tt("explanation")}</span>
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">{currentQuestion.explanation}</p>
             </div>
@@ -557,14 +590,14 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
           >
             {currentIndex + 1 < totalQuestions ? (
               <>
-                Next duel
+                {tt("nextDuel")}
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </>
             ) : (
               <>
-                See results
+                {tt("seeResults")}
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
