@@ -36,6 +36,7 @@ const chT: Record<string, Record<string, string>> = {
     es: "Tienes 60 segundos para responder al máximo de preguntas. Sin explicaciones, sin pausas, va rápido.",
   },
   chrono: { en: "Chrono", fr: "Chrono", es: "Crono" },
+  sixtySeconds: { en: "60 seconds", fr: "60 secondes", es: "60 segundos" },
   questions: { en: "Questions", fr: "Questions", es: "Preguntas" },
   choices: { en: "Choices", fr: "Choix", es: "Opciones" },
   start: { en: "Start", fr: "C'est parti", es: "Empezar" },
@@ -290,7 +291,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                60 seconds
+                {tt("sixtySeconds")}
               </span>
             </div>
             <h1 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
