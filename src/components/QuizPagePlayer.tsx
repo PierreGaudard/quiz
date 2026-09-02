@@ -362,12 +362,14 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 <div className={`w-8 h-8 ${rank.color} rounded-lg flex items-center justify-center text-sm font-display font-black text-white`}>
                   {rank.icon}
                 </div>
-                <div>
+                {/* min-w-0 + truncate : un rang au nom long (Apprentice)
+                    poussait le badge XP jusqu'a le casser sur deux lignes. */}
+                <div className="min-w-0">
                   <div className="text-sm font-display font-bold text-gray-900">{scorePercent}%</div>
-                  <div className="text-[10px] text-gray-500">{rank.label}</div>
+                  <div className="text-[10px] text-gray-500 truncate">{rank.label}</div>
                 </div>
-                <div className="relative ml-auto bg-violet-50 rounded-lg px-2 py-1 border border-violet-100">
-                  <span className="text-xs font-display font-bold text-violet-700">+{totalXp} XP</span>
+                <div className="relative ml-auto shrink-0 bg-violet-50 rounded-lg px-2 py-1 border border-violet-100">
+                  <span className="whitespace-nowrap text-xs font-display font-bold text-violet-700">+{totalXp} XP</span>
                   {/* Le gain de la question qui vient d'etre repondue s'envole :
                       sans ca le total change sans que le joueur voie pourquoi. */}
                   {xpPopup && (
