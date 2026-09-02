@@ -61,16 +61,16 @@ function formatCount(n: number): string {
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_370px] gap-5 items-center">
           {/* Left */}
           <div class="space-y-5">
-            <p class="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/30 text-yellow-300 font-bold text-xs uppercase tracking-[0.15em] px-3 py-1.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>The #1 quiz platform</p>
+            <p class="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/30 text-yellow-300 font-bold text-xs uppercase tracking-[0.15em] px-3 py-1.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>Free &middot; No sign-up &middot; 6 game modes</p>
             <h1 class="font-display text-5xl md:text-[4rem] font-bold text-white leading-[1.05] tracking-tight">
-              Quizzes for<br/><span class="text-yellow-400">every passion</span>
+              The #1 platform<br/><span class="text-yellow-400">for trivia quizzes</span>
             </h1>
             <p class="text-white/70 text-base md:text-lg max-w-lg leading-relaxed">
-              {allQuizzes.length * 40}+ questions written by experts, explanations with every answer, 6 game modes. Free, no sign-up required.
+              Play trivia quizzes on every topic: {allQuizzes.length * 40}+ questions written by experts, an explanation with every answer, 6 game modes. Free, no sign-up required.
             </p>
             <div class="max-w-sm">
               <div class="relative">
-                <input type="text" placeholder="Football, Harry Potter, Flags..." class="w-full h-12 pl-5 pr-14 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/40 text-sm focus:outline-none focus:bg-white/15 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/20 transition-all" />
+                <input type="text" placeholder="NFL, Harry Potter, US States..." class="w-full h-12 pl-5 pr-14 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/40 text-sm focus:outline-none focus:bg-white/15 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/20 transition-all" />
                 <button class="absolute right-1.5 top-1.5 h-9 w-11 rounded-full bg-yellow-400 hover:bg-yellow-300 flex items-center justify-center transition-colors" aria-label="Search">
                   <svg class="w-4 h-4 text-[#1a0e42]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5}><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </button>

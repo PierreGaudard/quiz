@@ -36,8 +36,10 @@ const strippedPath =
     ? pagePath.slice(`/${locale}`.length) || "/"
     : pagePath;
 
-const localeLabels: Record<Locale, string> = { en: "English", fr: "Français", es: "Español" };
-const localeShort: Record<Locale, string> = { en: "EN", fr: "FR", es: "ES" };
+// L'anglais du site cible les Etats-Unis (drapeau US, og:locale en_US, hreflang en-US) :
+// le libelle court dit "US" et pas "EN" pour rester coherent avec le drapeau.
+const localeLabels: Record<Locale, string> = { en: "English (US)", fr: "Français", es: "Español" };
+const localeShort: Record<Locale, string> = { en: "US", fr: "FR", es: "ES" };
 const localeSwitchLinks = locales.map((l) => {
   // Use custom path if provided (for subcategory pages), otherwise default
   const path = langSwitchPaths?.[l] ?? strippedPath;

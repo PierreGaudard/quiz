@@ -26,8 +26,11 @@ if (locale !== defaultLocale && pagePath.startsWith(`/${locale}`)) {
   pagePath = pagePath.slice(locale.length + 1) || '/';
 }
 
-const langMap: Record<Locale, string> = { en: "en", fr: "fr", es: "es" };
+// L'anglais cible les Etats-Unis : en-US sur <html lang> et sur le hreflang.
+// fr et es restent generiques pour couvrir tous les pays francophones/hispanophones.
+const langMap: Record<Locale, string> = { en: "en-US", fr: "fr", es: "es" };
 const ogLocaleMap: Record<Locale, string> = { en: "en_US", fr: "fr_FR", es: "es_ES" };
+const hreflangMap: Record<Locale, string> = { en: "en-US", fr: "fr", es: "es" };
 
 // Build absolute URLs for SEO tags — always use trailing slash to match Astro output
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || '';
@@ -77,7 +80,7 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
       const prefix = loc === defaultLocale ? '' : `/${loc}`;
       const locPath = hreflangPaths?.[loc] ?? pagePath;
       const href = `${siteUrl}${prefix}${locPath}`;
-      return <link rel="alternate" hreflang={loc} href={href} />;
+      return <link rel="alternate" hreflang={hreflangMap[loc]} href={href} />;
     })}
     <link rel="alternate" hreflang="x-default" href={`${siteUrl}${hreflangPaths?.en ?? pagePath}`} />
 
