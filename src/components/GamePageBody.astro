@@ -9,13 +9,14 @@
  */
 import type { Locale } from "../i18n/config";
 import type { MiniGameData } from "../data/games";
-import { getGames, getGamesHubPath, getComparisonSets, getRatherPairs, getTrueFalseStatements } from "../data/games";
+import { getGames, getGamesHubPath, getComparisonSets, getRatherPairs, getTrueFalseStatements, getFlags } from "../data/games";
 import { t } from "../i18n/ui";
 import { localePath } from "../utils/base";
 import HigherLowerPlayer from "./HigherLowerPlayer";
 import PricePlayer from "./PricePlayer";
 import RatherPlayer from "./RatherPlayer";
 import TrueFalsePlayer from "./TrueFalsePlayer";
+import FlagPlayer from "./FlagPlayer";
 
 interface Props {
   game: MiniGameData;
@@ -30,6 +31,7 @@ const hubPath = getGamesHubPath(locale);
 const sets = getComparisonSets(locale);
 const rather = getRatherPairs(locale);
 const statements = getTrueFalseStatements(locale);
+const flags = getFlags(locale);
 const others = getGames(locale).filter((g) => g.id !== game.id);
 ---
 
@@ -58,6 +60,7 @@ const others = getGames(locale).filter((g) => g.id !== game.id);
       {game.engine === "price" && <PricePlayer client:load sets={sets} locale={locale} />}
       {game.engine === "rather" && <RatherPlayer client:load pairs={rather} locale={locale} />}
       {game.engine === "true-false" && <TrueFalsePlayer client:load statements={statements} locale={locale} />}
+      {game.engine === "flag-guess" && <FlagPlayer client:load flags={flags} locale={locale} />}
     </div>
   </section>
 

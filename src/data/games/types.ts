@@ -105,6 +105,14 @@ export interface MiniGameDef {
   slugs: Record<Locale, string>;
   /** Un accent Tailwind, comme pour les categories. */
   color: string;
+  /**
+   * Le trace de l'icone du jeu, contenu d'un <svg> stroke.
+   *
+   * Chaque jeu a la sienne. Le hub existe pour montrer du choix, et cinq
+   * cartes qui ne different que par leur couleur ne montrent pas de choix :
+   * elles se lisent comme cinq fois la meme chose.
+   */
+  icon: string;
   coverImage?: string;
   translations: Record<Locale, MiniGameLocaleContent>;
 }
@@ -117,5 +125,6 @@ export interface MiniGameData extends MiniGameLocaleContent {
   /** Le chemin complet, prefixe de langue compris. */
   path: string;
   color: string;
+  icon: string;
   coverImage?: string;
 }

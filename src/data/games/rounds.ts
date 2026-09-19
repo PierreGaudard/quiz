@@ -1,6 +1,7 @@
 import { comparisonSets } from "./higher-lower";
 import { ratherPairs } from "./rather";
 import { trueFalseStatements } from "./true-false";
+import { flagItems } from "./flags";
 
 /**
  * La validation des cles de manche, un validateur par jeu.
@@ -46,11 +47,17 @@ function validateTrueFalse(key: string): boolean {
   return trueFalseStatements.some((s) => s.id === key);
 }
 
+/** L'identifiant du drapeau pose, tel quel. */
+function validateFlags(key: string): boolean {
+  return flagItems.some((f) => f.id === key);
+}
+
 const VALIDATORS: Record<string, Validator> = {
   "higher-lower": validateHigherLower,
   price: validatePrice,
   rather: validateRather,
   "true-false": validateTrueFalse,
+  flags: validateFlags,
 };
 
 /** Le jeu est-il connu, et la cle est-elle une manche qu'il peut poser ? */

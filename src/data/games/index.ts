@@ -4,6 +4,7 @@ import type { MiniGameDef, MiniGameData, ComparisonSet } from "./types";
 import { comparisonSets } from "./higher-lower";
 import { ratherPairs } from "./rather";
 import { trueFalseStatements } from "./true-false";
+import { flagItems } from "./flags";
 
 export type { MiniGameDef, MiniGameData, ComparisonSet, GameItem, GameEngine } from "./types";
 export { comparisonSets } from "./higher-lower";
@@ -11,6 +12,8 @@ export { ratherPairs } from "./rather";
 export type { RatherPair } from "./rather";
 export { trueFalseStatements } from "./true-false";
 export type { TrueFalseStatement } from "./true-false";
+export { flagItems } from "./flags";
+export type { FlagItem } from "./flags";
 
 /** Le segment du hub des jeux, par langue. */
 export const gamesHubSlug: Record<Locale, string> = {
@@ -30,6 +33,7 @@ export const gamesHubSlug: Record<Locale, string> = {
 export const miniGameDefs: MiniGameDef[] = [
   {
     id: "higher-lower",
+    icon: "M7 11l5-5 5 5M7 17l5-5 5 5",
     engine: "higher-lower",
     slugs: {
       en: "higher-or-lower",
@@ -205,6 +209,7 @@ export const miniGameDefs: MiniGameDef[] = [
   },
   {
     id: "price",
+    icon: "M12 8v8m-3-5h6M12 3a9 9 0 110 18 9 9 0 010-18z",
     engine: "price",
     slugs: {
       en: "guess-the-number",
@@ -368,6 +373,7 @@ export const miniGameDefs: MiniGameDef[] = [
   },
   {
     id: "rather",
+    icon: "M6 4v6a4 4 0 004 4h4m0 0l-3-3m3 3l-3 3M6 20v-4",
     engine: "rather",
     slugs: {
       en: "would-you-rather",
@@ -531,6 +537,7 @@ export const miniGameDefs: MiniGameDef[] = [
   },
   {
     id: "true-false",
+    icon: "M4 8l2.5 2.5L11 6M4 17l2.5 2.5L11 13M15 7l6 6m0-6l-6 6",
     engine: "true-false",
     slugs: {
       en: "true-or-false",
@@ -692,6 +699,170 @@ export const miniGameDefs: MiniGameDef[] = [
       },
     },
   },
+  {
+    id: "flags",
+    icon: "M4 4v16M4 5h12l-2 4 2 4H4",
+    engine: "flag-guess",
+    slugs: {
+      en: "guess-the-flag",
+      fr: "drapeau-mystere",
+      es: "adivina-la-bandera",
+    },
+    color: "bg-blue-500",
+    coverImage: "/images/cover-drapeaux.webp",
+    translations: {
+      en: {
+        name: "Guess the Flag",
+        tagline: "A flag, four countries, and a streak that runs until you get one wrong.",
+        metaTitle: "Guess the Flag: the free flag quiz game | WizyQuiz",
+        metaDescription:
+          "A flag comes up, you name the country among four. Thirty-one flags, three lives, a streak to beat, and no account needed.",
+        heading: "Guess the Flag",
+        intro:
+          "A flag fills the screen and four countries sit under it. You pick one, the game tells you straight away, and the streak climbs. Some are settled in half a second, and then Bulgaria turns up next to Lithuania and half a second is not enough.",
+        steps: [
+          {
+            title: "Look at the flag",
+            text: "Colours, order, what sits in the middle. Three of the four answers are drawn at random from the rest of the set, never picked to look alike: the game tests what you recognise, not how well it can trick you.",
+          },
+          {
+            title: "Name the country",
+            text: "One tap. The right answer lights up green and yours goes red if you missed, so you see the pair you mixed up rather than just a cross.",
+          },
+          {
+            title: "Keep three lives",
+            text: "A mistake costs a heart, not the run. The third one ends it, and the game hands you your streak and your best.",
+          },
+          {
+            title: "Start again",
+            text: "Thirty-one flags, drawn in a different order every time, with the four answers reshuffled. Knowing the set does not mean knowing the round.",
+          },
+        ],
+        faq: [
+          {
+            q: "How many flags are in the game?",
+            a: "Thirty-one, from Europe, Asia and Africa. They are the ones whose design is pure geometry, stripes, Nordic crosses, discs and stars.",
+          },
+          {
+            q: "Why is Spain not in it?",
+            a: "Because its flag carries a coat of arms, and so do Portugal, Brazil and Mexico. Drawing one of those approximately, in a game that asks you to recognise a flag, is a mistake you spot at first glance. Better a smaller set that is right.",
+          },
+          {
+            q: "Are the flags in their real proportions?",
+            a: "No, and that is on purpose. They are all shown in the same 3:2 box, apart from the Swiss one which is square. Left in their official ratios, the shape of the frame would become a clue of its own.",
+          },
+          {
+            q: "How are the wrong answers chosen?",
+            a: "At random among the other countries in the set. Systematically offering neighbours or flags in the same colours would stop testing recognition and start testing cunning.",
+          },
+          {
+            q: "Do I need an account?",
+            a: "No. Your best streak stays on your phone and nothing is asked of you.",
+          },
+        ],
+      },
+      fr: {
+        name: "Drapeau mystère",
+        tagline: "Un drapeau, quatre pays, et une série qui court tant que vous ne vous trompez pas.",
+        metaTitle: "Drapeau mystère : le quiz des drapeaux gratuit | WizyQuiz",
+        metaDescription:
+          "Un drapeau s'affiche, vous nommez le pays parmi quatre. Trente-et-un drapeaux, trois vies, une série à battre, et aucun compte.",
+        heading: "Drapeau mystère",
+        intro:
+          "Un drapeau remplit l'écran et quatre pays s'affichent en dessous. Vous choisissez, le jeu répond tout de suite, et la série monte. Certains se règlent en une demi-seconde, et puis la Bulgarie tombe à côté de la Lituanie et la demi-seconde ne suffit plus.",
+        steps: [
+          {
+            title: "Regardez le drapeau",
+            text: "Les couleurs, leur ordre, ce qu'il y a au milieu. Trois des quatre réponses sont tirées au hasard dans le reste du lot, jamais choisies pour se ressembler : le jeu teste ce que vous reconnaissez, pas sa capacité à vous piéger.",
+          },
+          {
+            title: "Nommez le pays",
+            text: "Un clic. La bonne réponse passe au vert et la vôtre au rouge si vous vous êtes trompé, du coup vous voyez la paire que vous avez confondue au lieu d'une simple croix.",
+          },
+          {
+            title: "Gardez vos trois vies",
+            text: "Une erreur coûte un cœur, pas la partie. La troisième y met fin, et le jeu vous donne votre série et votre record.",
+          },
+          {
+            title: "Relancez",
+            text: "Trente-et-un drapeaux, tirés dans un ordre différent à chaque fois, avec les quatre réponses remélangées. Connaître le lot ne veut pas dire connaître la manche.",
+          },
+        ],
+        faq: [
+          {
+            q: "Combien y a-t-il de drapeaux ?",
+            a: "Trente-et-un, d'Europe, d'Asie et d'Afrique. Ce sont ceux dont le dessin est de la géométrie pure : des bandes, des croix nordiques, des disques et des étoiles.",
+          },
+          {
+            q: "Pourquoi l'Espagne n'y est pas ?",
+            a: "Parce que son drapeau porte des armoiries, comme ceux du Portugal, du Brésil et du Mexique. En dessiner un approximativement, dans un jeu qui demande justement de reconnaître un drapeau, est une faute qu'on voit au premier coup d'œil. Mieux vaut un lot plus petit et juste.",
+          },
+          {
+            q: "Les drapeaux sont-ils à leurs vraies proportions ?",
+            a: "Non, et c'est volontaire. Ils sont tous montrés dans le même format 3:2, sauf le suisse qui est carré. Laissés à leurs proportions officielles, la forme du cadre deviendrait un indice à elle seule.",
+          },
+          {
+            q: "Comment sont choisies les mauvaises réponses ?",
+            a: "Au hasard parmi les autres pays du lot. Proposer systématiquement les voisins ou les drapeaux de même couleur cesserait de tester la reconnaissance pour tester la ruse.",
+          },
+          {
+            q: "Faut-il créer un compte ?",
+            a: "Non. Votre record reste sur votre téléphone et on ne vous demande rien.",
+          },
+        ],
+      },
+      es: {
+        name: "Adivina la bandera",
+        tagline: "Una bandera, cuatro países, y una racha que corre mientras no falles.",
+        metaTitle: "Adivina la bandera: quiz de banderas gratis | WizyQuiz",
+        metaDescription:
+          "Sale una bandera, nombras el país entre cuatro. Treinta y una banderas, tres vidas, una racha que batir, y ninguna cuenta.",
+        heading: "Adivina la bandera",
+        intro:
+          "Una bandera llena la pantalla y cuatro países salen debajo. Eliges, el juego responde al momento, y la racha sube. Algunas se resuelven en medio segundo, y luego cae Bulgaria al lado de Lituania y el medio segundo ya no basta.",
+        steps: [
+          {
+            title: "Mira la bandera",
+            text: "Los colores, su orden, lo que hay en medio. Tres de las cuatro respuestas salen al azar del resto del grupo, nunca elegidas para parecerse: el juego mira lo que reconoces, no su habilidad para engañarte.",
+          },
+          {
+            title: "Nombra el país",
+            text: "Un toque. La respuesta buena se pone verde y la tuya roja si has fallado, así que ves la pareja que has confundido en vez de una simple cruz.",
+          },
+          {
+            title: "Cuida tus tres vidas",
+            text: "Un fallo cuesta un corazón, no la partida. El tercero la acaba, y el juego te da tu racha y tu récord.",
+          },
+          {
+            title: "Vuelve a empezar",
+            text: "Treinta y una banderas, sacadas en un orden distinto cada vez, con las cuatro respuestas rebarajadas. Saberse el grupo no es saberse la ronda.",
+          },
+        ],
+        faq: [
+          {
+            q: "¿Cuántas banderas hay?",
+            a: "Treinta y una, de Europa, Asia y África. Son aquellas cuyo diseño es geometría pura: franjas, cruces nórdicas, discos y estrellas.",
+          },
+          {
+            q: "¿Por qué no está España?",
+            a: "Porque su bandera lleva un escudo, igual que las de Portugal, Brasil y México. Dibujar uno de forma aproximada, en un juego que pide justamente reconocer una bandera, es un fallo que se ve a la primera. Mejor un grupo más pequeño y correcto.",
+          },
+          {
+            q: "¿Las banderas están en sus proporciones reales?",
+            a: "No, y es a propósito. Se enseñan todas en el mismo formato 3:2, salvo la suiza que es cuadrada. Dejadas en sus proporciones oficiales, la forma del marco sería una pista por sí sola.",
+          },
+          {
+            q: "¿Cómo se eligen las respuestas falsas?",
+            a: "Al azar entre los otros países del grupo. Ofrecer siempre los vecinos o las banderas del mismo color dejaría de mirar el reconocimiento para mirar la astucia.",
+          },
+          {
+            q: "¿Hace falta crear una cuenta?",
+            a: "No. Tu récord se queda en tu móvil y no se te pide nada.",
+          },
+        ],
+      },
+    },
+  },
 ];
 
 /**
@@ -722,6 +893,7 @@ export function resolveGame(def: MiniGameDef, locale: Locale): MiniGameData {
     slug,
     path: `${getGamesHubPath(locale)}${slug}/`,
     color: def.color,
+    icon: def.icon,
     coverImage: def.coverImage,
   };
 }
@@ -790,5 +962,14 @@ export function getTrueFalseStatements(locale: Locale) {
     answer: s.answer,
     text: s.text[locale] || s.text.en,
     explanation: s.explanation[locale] || s.explanation.en,
+  }));
+}
+
+/** Les drapeaux, resolus dans une langue. */
+export function getFlags(locale: Locale) {
+  return flagItems.map((f) => ({
+    id: f.id,
+    svg: f.svg,
+    label: f.labels[locale] || f.labels.en,
   }));
 }
