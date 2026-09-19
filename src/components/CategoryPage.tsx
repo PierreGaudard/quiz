@@ -49,7 +49,7 @@ const catPageT: Record<string, Record<string, string>> = {
   exploreByTheme: { en: "Explore by theme", fr: "Explorer par thème", es: "Explorar por tema" },
   quizzesPlayAndLearn: { en: "Quizzes: play and learn for free", fr: "Quiz : jouez et apprenez gratuitement", es: "Quizzes: juega y aprende gratis" },
   seoIntroText: {
-    en: "Every answer comes with <strong>an explanation</strong>, so a question you get wrong is one you learn from. You can play <strong>on your own or pass the phone around</strong> — nothing here needs an account.",
+    en: "Every answer comes with <strong>an explanation</strong>, so a question you get wrong is one you learn from. You can play <strong>on your own or pass the phone around</strong>, and nothing here needs an account.",
     fr: "Chaque réponse est accompagnée d'<strong>une explication</strong>, du coup une question ratée est une question apprise. Tu peux jouer <strong>seul ou faire tourner le téléphone</strong>, et rien ici ne demande de compte.",
     es: "Cada respuesta viene con <strong>una explicación</strong>, así que una pregunta fallada es una pregunta aprendida. Puedes jugar <strong>solo o ir pasando el móvil</strong>, y nada de esto pide una cuenta.",
   },

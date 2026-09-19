@@ -172,7 +172,7 @@ const comingSoonLabel: Record<string, string> = { en: "Coming soon", fr: "Biento
           </div>
           {/* Logged in state (hidden by default, shown by JS) */}
           <div id="logged-in-menu" style="display:none" class="relative group">
-            <button class="flex items-center gap-2 px-3 py-1 rounded bg-white text-[#1a0e42] text-sm font-bold hover:bg-gray-100 transition-all shadow-sm cursor-pointer">
+            <button aria-label={t(locale, "nav.account")} class="flex items-center gap-2 px-3 py-1 rounded bg-white text-[#1a0e42] text-sm font-bold hover:bg-gray-100 transition-all shadow-sm cursor-pointer">
               <div id="header-avatar" class="w-7 h-7 rounded-full bg-violet-500 flex items-center justify-center text-white text-xs font-bold overflow-hidden"></div>
               <span id="header-username" class="max-w-[80px] truncate"></span>
               <span id="header-level" class="text-[10px] font-bold px-1.5 py-0.5 rounded text-white bg-gray-400"></span>

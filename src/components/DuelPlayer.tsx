@@ -307,7 +307,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
                     <div className="text-sm font-semibold text-gray-800 truncate">{q.question}</div>
                     <div className="text-xs text-gray-500 mt-0.5">
                       {leftAnswer?.text} vs {rightAnswer?.text}
-                      {" — "}
+                      {" · "}
                       <span className="font-semibold text-gray-700">
                         {q.answers.find((a) => a.id === q.correctAnswer)?.text}
                       </span>

@@ -435,7 +435,7 @@ export default function QuizPlayer({ quiz }: Props) {
       : scorePercent >= 30 ? { label: "Apprenti", color: "bg-green-500", icon: "C" }
       : { label: "Debutant", color: "bg-gray-500", icon: "D" };
 
-    const shareText = `${rank.icon} ${rank.label} — ${score}/${totalQuestions} (${totalXp} XP) au quiz "${quiz.title}" !`;
+    const shareText = `${rank.icon} ${rank.label} · ${score}/${totalQuestions} (${totalXp} XP) au quiz "${quiz.title}" !`;
     const shareUrl = typeof window !== "undefined" ? window.location.href : "";
 
     const captureCard = (): Promise<Blob | null> => {

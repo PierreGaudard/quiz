@@ -35,12 +35,26 @@ function classify(urlPath: string): string {
   return "pages";
 }
 
+/**
+ * Pages a lister, c'est a dire celles qui s'autorisent l'indexation.
+ *
+ * Une page en noindex qui figure quand meme au sitemap est une contradiction :
+ * le sitemap la presente comme a indexer, la page refuse. Search Console la
+ * remonte en « Exclue par la balise noindex » et le sitemap perd en credit.
+ * On lit donc la balise robots du HTML produit plutot que de tenir une liste
+ * a part, qui aurait vieilli comme l'ancienne liste de slugs juste au-dessus.
+ */
+const NOINDEX = /<meta[^>]+name=["']robots["'][^>]*content=["'][^"']*noindex/i;
+
 function getAllPages(dir: string): string[] {
   const pages: string[] = [];
   function scan(d: string, prefix = "") {
     for (const entry of fs.readdirSync(d, { withFileTypes: true })) {
       if (entry.isDirectory()) scan(path.join(d, entry.name), `${prefix}/${entry.name}`);
-      else if (entry.name === "index.html") pages.push(`${prefix}/`);
+      else if (entry.name === "index.html") {
+        const html = fs.readFileSync(path.join(d, entry.name), "utf-8");
+        if (!NOINDEX.test(html)) pages.push(`${prefix}/`);
+      }
     }
   }
   scan(dir);

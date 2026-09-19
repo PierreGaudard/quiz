@@ -80,7 +80,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
       {/* Header */}
       <div className="bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-3 flex items-center justify-between">
         <h3 className="font-display font-bold text-white text-sm">{tt("friends")} ({friends.length})</h3>
-        <button onClick={() => setShowAdd(!showAdd)} className="w-6 h-6 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white transition-colors cursor-pointer">
+        <button onClick={() => setShowAdd(!showAdd)} aria-label={tt("addFriend")} className="w-6 h-6 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white transition-colors cursor-pointer">
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" /></svg>
         </button>
       </div>
