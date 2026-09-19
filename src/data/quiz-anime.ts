@@ -27,11 +27,11 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "Le vrai nom Saiyan de Goku est Kakarot. Il a recu le nom Son Goku en arrivant sur Terre, adopte par Son Gohan.",
+            "Le vrai nom Saiyan de Goku est Kakarot. Il a reçu le nom Son Goku en arrivant sur Terre, adopté par Son Gohan.",
         },
         {
           id: 2,
-          question: "Combien de Dragon Balls faut-il reunir pour invoquer Shenron ?",
+          question: "Combien de Dragon Balls faut-il réunir pour invoquer Shenron ?",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -40,50 +40,50 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Il faut reunir les 7 boules de cristal pour invoquer le dragon Shenron et exaucer un voeu.",
+            "Il faut réunir les 7 boules de cristal pour invoquer le dragon Shenron et exaucer un vœu.",
         },
         {
           id: 3,
           image: "/images/q-dragonball-03.webp",
           question:
-            "Quelle est la premiere transformation de Vegeta dans Dragon Ball Z ?",
+            "Quelle est la première transformation de Vegeta dans Dragon Ball Z ?",
           answers: [
             { id: "a", text: "Super Saiyan" },
-            { id: "b", text: "Oozaru (singe geant)" },
+            { id: "b", text: "Oozaru (singe géant)" },
             { id: "c", text: "Super Saiyan 2" },
             { id: "d", text: "Ultra Instinct" },
           ],
           correctAnswer: "b",
           explanation:
-            "La premiere transformation de Vegeta dans DBZ est celle en Oozaru (singe geant). Il se transforme lors de son combat contre Goku sur Terre en regardant une lune artificielle.",
+            "La première transformation de Vegeta dans DBZ est celle en Oozaru (singe géant). Il se transforme lors de son combat contre Goku sur Terre en regardant une lune artificielle.",
         },
         {
           id: 4,
           question:
-            "Qui entraine Goku sur la route vers Namek ?",
+            "Qui entraîne Goku sur la route vers Namek ?",
           answers: [
-            { id: "a", text: "Maitre Roshi" },
+            { id: "a", text: "Maître Roshi" },
             { id: "b", text: "Piccolo" },
             { id: "c", text: "Kaio (Roi Kaio)" },
             { id: "d", text: "Whis" },
           ],
           correctAnswer: "c",
           explanation:
-            "Goku s'entraine chez Kaio (le Roi Kaio du Nord) avant de se rendre sur Namek. C'est la que Goku apprend le Kaio-ken et le Genki Dama.",
+            "Goku s'entraîne chez Kaio (le Roi Kaio du Nord) avant de se rendre sur Namek. C'est là que Goku apprend le Kaio-ken et le Genki Dama.",
         },
         {
           id: 5,
           image: "/images/q-dragonball-05.webp",
-          question: "Quelle technique Goku apprend-il aupres de Kaio ?",
+          question: "Quelle technique Goku apprend-il auprès de Kaio ?",
           answers: [
             { id: "a", text: "Kamehameha" },
             { id: "b", text: "Genki Dama (Boule de ki universelle)" },
-            { id: "c", text: "Teleportation instantanee" },
+            { id: "c", text: "Téléportation instantanée" },
             { id: "d", text: "Final Flash" },
           ],
           correctAnswer: "b",
           explanation:
-            "Goku apprend le Genki Dama (Spirit Bomb) aupres de Kaio. Cette technique consiste a concentrer l'energie de tous les etres vivants en une sphere d'energie.",
+            "Goku apprend le Genki Dama (Spirit Bomb) auprès de Kaio. Cette technique consiste à concentrer l'énergie de tous les êtres vivants en une sphère d'énergie.",
         },
         {
           id: 6,
@@ -96,12 +96,12 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Le premier fils de Goku est Son Gohan, nomme en hommage a son grand-pere adoptif. Goten est son deuxieme fils.",
+            "Le premier fils de Goku est Son Gohan, nommé en hommage à son grand-père adoptif. Goten est son deuxième fils.",
         },
         {
           id: 7,
           image: "/images/q-dragonball-07.webp",
-          question: "Quel mechant detruit la planete Vegeta ?",
+          question: "Quel méchant détruit la planète Vegeta ?",
           answers: [
             { id: "a", text: "Cell" },
             { id: "b", text: "Majin Buu" },
@@ -110,7 +110,7 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Freezer a detruit la planete Vegeta car il craignait la legende du Super Saiyan. Il a anéanti la quasi-totalite du peuple Saiyan.",
+            "Freezer a détruit la planète Vegeta car il craignait la légende du Super Saiyan. Il a anéanti la quasi-totalité du peuple Saiyan.",
         },
         {
           id: 8,
@@ -123,12 +123,12 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Le Kamehameha est l'attaque signature de Goku. Il l'a apprise en observant Maitre Roshi, qui avait mis 50 ans a developper cette technique.",
+            "Le Kamehameha est l'attaque signature de Goku. Il l'a apprise en observant Maître Roshi, qui avait mis 50 ans à développer cette technique.",
         },
         {
           id: 9,
           image: "/images/q-dragonball-09.webp",
-          question: "Qui est le createur des Dragon Balls sur Terre ?",
+          question: "Qui est le créateur des Dragon Balls sur Terre ?",
           answers: [
             { id: "a", text: "Dende" },
             { id: "b", text: "Piccolo" },
@@ -137,12 +137,12 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Le Tout-Puissant (Kami-sama), gardien de la Terre, est le createur originel des Dragon Balls terrestres. Dende les recree plus tard apres la fusion de Kami avec Piccolo.",
+            "Le Tout-Puissant (Kami-sama), gardien de la Terre, est le créateur originel des Dragon Balls terrestres. Dende les recrée plus tard après la fusion de Kami avec Piccolo.",
         },
         {
           id: 10,
           question:
-            "Quelle forme Goku atteint-il pour la premiere fois face a Freezer ?",
+            "Quelle forme Goku atteint-il pour la première fois face à Freezer ?",
           answers: [
             { id: "a", text: "Kaio-ken x20" },
             { id: "b", text: "Super Saiyan" },
@@ -151,7 +151,7 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "Goku se transforme en Super Saiyan pour la premiere fois sur Namek, apres la mort de Krillin aux mains de Freezer. Ce moment est l'un des plus emblematiques de la serie.",
+            "Goku se transforme en Super Saiyan pour la première fois sur Namek, après la mort de Krillin aux mains de Freezer. Ce moment est l'un des plus emblématiques de la série.",
         },
       ],
     },

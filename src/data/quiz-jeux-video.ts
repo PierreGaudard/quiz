@@ -11,7 +11,7 @@ export const quizMinecraft: TranslatedQuiz = {
   playCount: 22100,
   translations: {
     fr: {
-      title: "Quiz Minecraft : maitrises-tu le monde des blocs ?",
+      title: "Quiz Minecraft : maîtrises-tu le monde des blocs ?",
       description:
         "Creepers, Ender Dragon, diamants... Teste tes connaissances sur Minecraft avec ce quiz de 10 questions !",
       questions: [
@@ -27,12 +27,12 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "L'Ender Dragon est le boss final de Minecraft. Il se trouve dans la dimension de l'End et doit etre vaincu pour voir les credits du jeu.",
+            "L'Ender Dragon est le boss final de Minecraft. Il se trouve dans la dimension de l'End et doit être vaincu pour voir les crédits du jeu.",
         },
         {
           id: 2,
           question:
-            "Quel materiau minimal faut-il pour miner du diamant ?",
+            "Quel matériau minimal faut-il pour miner du diamant ?",
           answers: [
             { id: "a", text: "Une pioche en pierre" },
             { id: "b", text: "Une pioche en fer" },
@@ -41,7 +41,7 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "Il faut au minimum une pioche en fer pour miner du diamant. Les pioches en bois, en pierre et en or ne permettent pas de recuperer le minerai.",
+            "Il faut au minimum une pioche en fer pour miner du diamant. Les pioches en bois, en pierre et en or ne permettent pas de récupérer le minerai.",
         },
         {
           id: 3,
@@ -56,12 +56,12 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "Depuis la version 1.18, la limite de construction est de 320 blocs (de Y = -64 a Y = 320), soit 384 blocs au total mais la hauteur max est Y = 320.",
+            "Depuis la version 1.18, la limite de construction est de 320 blocs (de Y = -64 à Y = 320), soit 384 blocs au total mais la hauteur max est Y = 320.",
         },
         {
           id: 4,
           question:
-            "Quel materiau est necessaire pour creer un portail du Nether ?",
+            "Quel matériau est nécessaire pour créer un portail du Nether ?",
           answers: [
             { id: "a", text: "Bedrock" },
             { id: "b", text: "Obsidienne" },
@@ -70,7 +70,7 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "Le portail du Nether se construit avec de l'obsidienne. Il faut au minimum 10 blocs d'obsidienne pour creer un portail fonctionnel (cadre de 4x5).",
+            "Le portail du Nether se construit avec de l'obsidienne. Il faut au minimum 10 blocs d'obsidienne pour créer un portail fonctionnel (cadre de 4x5).",
         },
         {
           id: 5,
@@ -85,7 +85,7 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Le Creeper est celebre pour s'approcher silencieusement des joueurs et exploser. Il est devenu la mascotte non officielle de Minecraft.",
+            "Le Creeper est célèbre pour s'approcher silencieusement des joueurs et exploser. Il est devenu la mascotte non officielle de Minecraft.",
         },
         {
           id: 6,
@@ -94,30 +94,30 @@ export const quizMinecraft: TranslatedQuiz = {
           answers: [
             { id: "a", text: "Le diamant" },
             { id: "b", text: "Le lapis-lazuli" },
-            { id: "c", text: "L'emeraude" },
+            { id: "c", text: "L'émeraude" },
             { id: "d", text: "L'or" },
           ],
           correctAnswer: "c",
           explanation:
-            "L'emeraude est le minerai le plus rare de l'Overworld. Il ne se genere naturellement que dans les biomes de montagnes, ce qui le rend encore plus difficile a trouver que le diamant.",
+            "L'émeraude est le minerai le plus rare de l'Overworld. Il ne se génère naturellement que dans les biomes de montagnes, ce qui le rend encore plus difficile à trouver que le diamant.",
         },
         {
           id: 7,
           image: "/images/q-minecraft-07.webp",
-          question: "Quel aliment est fabrique avec 3 bles ?",
+          question: "Quel aliment est fabriqué avec 3 blés ?",
           answers: [
-            { id: "a", text: "Un gateau" },
+            { id: "a", text: "Un gâteau" },
             { id: "b", text: "Un cookie" },
             { id: "c", text: "Du pain" },
-            { id: "d", text: "Une tarte a la citrouille" },
+            { id: "d", text: "Une tarte à la citrouille" },
           ],
           correctAnswer: "c",
           explanation:
-            "Le pain se fabrique en placant 3 bles en ligne horizontale dans la table de craft. C'est l'un des aliments les plus simples a produire.",
+            "Le pain se fabrique en plaçant 3 blés en ligne horizontale dans la table de craft. C'est l'un des aliments les plus simples à produire.",
         },
         {
           id: 8,
-          question: "Que faut-il donner a un loup pour l'apprivoiser ?",
+          question: "Que faut-il donner à un loup pour l'apprivoiser ?",
           answers: [
             { id: "a", text: "De la viande crue" },
             { id: "b", text: "Du poisson" },
@@ -126,7 +126,7 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Pour apprivoiser un loup dans Minecraft, il faut lui donner des os. Une fois apprivoise, il porte un collier rouge et suit le joueur.",
+            "Pour apprivoiser un loup dans Minecraft, il faut lui donner des os. Une fois apprivoisé, il porte un collier rouge et suit le joueur.",
         },
         {
           id: 9,
@@ -141,7 +141,7 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "L'End est la troisieme dimension de Minecraft, accessible via un portail de l'End. C'est la que se trouve l'Ender Dragon ainsi que les villes de l'End.",
+            "L'End est la troisième dimension de Minecraft, accessible via un portail de l'End. C'est là que se trouve l'Ender Dragon ainsi que les villes de l'End.",
         },
         {
           id: 10,
@@ -155,7 +155,7 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "La table d'enchantement est indispensable pour enchanter des objets. Elle se fabrique avec des diamants, de l'obsidienne et un livre. Du lapis-lazuli est ensuite necessaire pour chaque enchantement.",
+            "La table d'enchantement est indispensable pour enchanter des objets. Elle se fabrique avec des diamants, de l'obsidienne et un livre. Du lapis-lazuli est ensuite nécessaire pour chaque enchantement.",
         },
       ],
     },
