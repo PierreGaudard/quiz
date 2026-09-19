@@ -1,7 +1,7 @@
-# Wizy - Multilingual Quiz Platform
+# WizyQuiz - Multilingual Quiz Platform
 
 ## Project Overview
-Wizy is a multilingual quiz platform built with Astro 6 + React + TailwindCSS v4, deployed on Cloudflare Workers.
+WizyQuiz is a multilingual quiz platform built with Astro 6 + React + TailwindCSS v4, deployed on Cloudflare Workers.
 
 - **Site URL (dev)**: https://wizyquiz.com
 - **Base path**: `/` (configured in `astro.config.mjs`)
@@ -46,6 +46,15 @@ When creating a new page, quiz, category, or any content: always create the EN, 
 Subcategory names differ per locale (e.g. EN "Olympics" → FR "JO & Athletisme" → ES "Juegos Olimpicos"). Their slugs are generated from the locale-specific name via `slugifySubcategory()`. When generating links to subcategories, always use the current locale's subcategory names.
 
 For hreflang on subcategory pages, use `getHreflangSubcategoryPaths()` from `src/lib/hreflang-helpers.ts` to compute the correct paths for each locale, and pass them as `hreflangPaths` prop to Layout.
+
+### Le nom de la marque s'ecrit WizyQuiz
+
+**WizyQuiz**, un seul z, un W et un Q majuscules. Jamais « Wizyquizz »,
+jamais « Wizy Quiz », jamais « Wizy » tout seul. C'est l'orthographe du
+domaine wizyquiz.com, et un nom de marque qui s'ecrit de deux facons ne se
+cite pas : ni par un lecteur, ni par un moteur, ni par un modele. La regle
+vaut dans les trois langues, dans les titles, les H1, les JSON-LD, les Open
+Graph et le texte courant.
 
 ### No Em Dashes
 Never use -- or em dashes in any content. Rephrase naturally instead.

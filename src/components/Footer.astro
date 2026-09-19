@@ -29,8 +29,8 @@ const sitemapCategories = getCategories(locale);
     <div class="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1fr] gap-10 text-center md:text-left">
       {/* Col 1: Brand + description + socials */}
       <div class="flex flex-col items-center md:items-start">
-        <a href={withBase('/')} class="flex items-center mb-4" aria-label="Wizyquizz">
-          <img src={withBase('/logo.png')} alt="Wizyquizz" width="365" height="120" class="h-10 w-auto" />
+        <a href={withBase('/')} class="flex items-center mb-4" aria-label="WizyQuiz">
+          <img src={withBase('/logo.png')} alt="WizyQuiz" width="365" height="120" class="h-10 w-auto" />
         </a>
         <p class="text-sm text-white/50 leading-relaxed mb-5 max-w-xs">
           {t(locale, "footer.description")}
@@ -85,7 +85,7 @@ const sitemapCategories = getCategories(locale);
         <a href={withBase(s('terms'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.terms")}</a>
       </div>
       <p class="text-xs text-white/30">
-        &copy; {currentYear} <span class="font-semibold text-white/50">Wizyquizz</span> — {t(locale, "footer.allRightsReserved")}
+        &copy; {currentYear} <span class="font-semibold text-white/50">WizyQuiz</span> — {t(locale, "footer.allRightsReserved")}
       </p>
     </div>
   </div>

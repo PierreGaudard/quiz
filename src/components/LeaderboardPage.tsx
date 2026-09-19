@@ -11,7 +11,7 @@ interface Player {
 
 const t: Record<string, Record<string, string>> = {
   title: { en: "Leaderboard", fr: "Classement", es: "Clasificacion" },
-  subtitle: { en: "The best quizzers on Wizyquizz", fr: "Les meilleurs quizzeurs sur Wizyquizz", es: "Los mejores quizzeros en Wizyquizz" },
+  subtitle: { en: "The best quizzers on WizyQuiz", fr: "Les meilleurs quizzeurs sur WizyQuiz", es: "Los mejores quizzeros en WizyQuiz" },
   rank: { en: "Rank", fr: "Rang", es: "Rango" },
   player: { en: "Player", fr: "Joueur", es: "Jugador" },
   level: { en: "Level", fr: "Niveau", es: "Nivel" },

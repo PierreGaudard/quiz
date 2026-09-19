@@ -19,7 +19,7 @@ const lp = (path: string) => localePath(path, locale);
 const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale);
 ---
 
-<Layout title={`${subName} Quiz - ${category.name} - Wizyquizz`} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths}>
+<Layout title={`${subName} Quiz - ${category.name} - WizyQuiz`} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths}>
   <div class="max-w-7xl mx-auto px-4 pt-6">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-2" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -45,7 +45,7 @@ const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale)
     description: subCategory.description,
     url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${categorySlug}/${subSlug}`,
     inLanguage: "fr",
-    provider: { "@type": "Organization", name: "Wizyquizz", url: Astro.site?.toString() },
+    provider: { "@type": "Organization", name: "WizyQuiz", url: Astro.site?.toString() },
     numberOfItems: quizzes.length,
     isPartOf: { "@type": "CollectionPage", name: category.name, url: `${Astro.site?.toString().replace(/\/$/, '')}/fr/${categorySlug}` },
   })} />

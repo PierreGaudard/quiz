@@ -42,7 +42,7 @@ const canonicalUrl = `${siteUrl}${trailingPath}`;
 // Always absolute, social crawlers ignore relative og:image.
 const toAbsolute = (p: string) => (siteUrl && !/^https?:\/\//.test(p) ? `${siteUrl}${p.startsWith('/') ? '' : '/'}${p}` : p);
 const ogImageUrl = ogImage ? toAbsolute(ogImage) : `${siteUrl}/og-image.jpg`;
-const ogImageAlt = ogImage ? title : "Wizyquizz";
+const ogImageAlt = ogImage ? title : "WizyQuiz";
 const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
 ---
 
@@ -67,7 +67,7 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
     <meta property="og:image:alt" content={ogImageAlt} />
     {ogImageSize && <meta property="og:image:width" content={String(ogImageSize.width)} />}
     {ogImageSize && <meta property="og:image:height" content={String(ogImageSize.height)} />}
-    <meta property="og:site_name" content="Wizyquizz" />
+    <meta property="og:site_name" content="WizyQuiz" />
 
     {/* Twitter */}
     <meta name="twitter:card" content="summary_large_image" />

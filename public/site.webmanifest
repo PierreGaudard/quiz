@@ -1,6 +1,6 @@
 {
-  "name": "Wizyquizz",
-  "short_name": "Wizyquizz",
+  "name": "WizyQuiz",
+  "short_name": "WizyQuiz",
   "description": "Test your knowledge with fun and interactive quizzes!",
   "start_url": "/",
   "display": "standalone",

@@ -117,10 +117,10 @@ const ui = {
     "auth.signupCta": "Create my account",
     "auth.noAccount": "No account yet?",
     "auth.hasAccount": "Already have an account?",
-    "auth.loginTitle": "Log In to Your Wizyquizz Account | Free Quiz Platform",
-    "auth.signupTitle": "Sign Up for Free | Wizyquizz",
-    "auth.loginDescription": "Log in to your Wizyquizz account to save your scores, track your progress and challenge your friends.",
-    "auth.signupDescription": "Create your free Wizyquizz account and start tracking your quiz scores, earning XP and competing with friends.",
+    "auth.loginTitle": "Log In to Your WizyQuiz Account | Free Quiz Platform",
+    "auth.signupTitle": "Sign Up for Free | WizyQuiz",
+    "auth.loginDescription": "Log in to your WizyQuiz account to save your scores, track your progress and challenge your friends.",
+    "auth.signupDescription": "Create your free WizyQuiz account and start tracking your quiz scores, earning XP and competing with friends.",
 
     // Ranking
     "ranking.title": "Leaderboard",
@@ -133,8 +133,8 @@ const ui = {
     "ranking.allTime": "All time",
     "ranking.thisWeek": "This week",
     "ranking.thisMonth": "This month",
-    "ranking.metaTitle": "Leaderboard and Rankings | Wizyquizz",
-    "ranking.metaDescription": "Check the Wizyquizz leaderboard. Compete with other players, earn XP by completing quizzes and climb the ranks.",
+    "ranking.metaTitle": "Leaderboard and Rankings | WizyQuiz",
+    "ranking.metaDescription": "Check the WizyQuiz leaderboard. Compete with other players, earn XP by completing quizzes and climb the ranks.",
 
     // Misc
     "misc.free": "Free",
@@ -249,10 +249,10 @@ const ui = {
     "auth.signupCta": "Créer mon compte",
     "auth.noAccount": "Pas encore de compte ?",
     "auth.hasAccount": "Déjà un compte ?",
-    "auth.loginTitle": "Se connecter a Wizyquizz | Quiz gratuits en ligne",
-    "auth.signupTitle": "Inscription gratuite | Wizyquizz",
-    "auth.loginDescription": "Connectez-vous à votre compte Wizyquizz pour sauvegarder vos scores, suivre votre progression et défier vos amis.",
-    "auth.signupDescription": "Créez votre compte Wizyquizz gratuitement et commencez à suivre vos scores, gagner des XP et vous mesurer à vos amis.",
+    "auth.loginTitle": "Se connecter a WizyQuiz | Quiz gratuits en ligne",
+    "auth.signupTitle": "Inscription gratuite | WizyQuiz",
+    "auth.loginDescription": "Connectez-vous à votre compte WizyQuiz pour sauvegarder vos scores, suivre votre progression et défier vos amis.",
+    "auth.signupDescription": "Créez votre compte WizyQuiz gratuitement et commencez à suivre vos scores, gagner des XP et vous mesurer à vos amis.",
 
     // Ranking
     "ranking.title": "Classement",
@@ -265,8 +265,8 @@ const ui = {
     "ranking.allTime": "Depuis toujours",
     "ranking.thisWeek": "Cette semaine",
     "ranking.thisMonth": "Ce mois-ci",
-    "ranking.metaTitle": "Classement des meilleurs joueurs | Wizyquizz",
-    "ranking.metaDescription": "Consultez le classement Wizyquizz. Affrontez les autres joueurs, gagnez des XP en completant des quiz et grimpez dans le classement.",
+    "ranking.metaTitle": "Classement des meilleurs joueurs | WizyQuiz",
+    "ranking.metaDescription": "Consultez le classement WizyQuiz. Affrontez les autres joueurs, gagnez des XP en completant des quiz et grimpez dans le classement.",
 
     "misc.free": "Gratuit",
     "misc.seeMore": "Voir plus",
@@ -380,10 +380,10 @@ const ui = {
     "auth.signupCta": "Crear mi cuenta",
     "auth.noAccount": "¿Aún no tienes cuenta?",
     "auth.hasAccount": "¿Ya tienes una cuenta?",
-    "auth.loginTitle": "Iniciar sesion en Wizyquizz | Quizzes gratuitos",
-    "auth.signupTitle": "Registrate gratis | Wizyquizz",
-    "auth.loginDescription": "Inicia sesión en tu cuenta Wizyquizz para guardar tus puntuaciones, seguir tu progreso y desafiar a tus amigos.",
-    "auth.signupDescription": "Crea tu cuenta Wizyquizz gratis y empieza a seguir tus puntuaciones, ganar XP y competir con tus amigos.",
+    "auth.loginTitle": "Iniciar sesion en WizyQuiz | Quizzes gratuitos",
+    "auth.signupTitle": "Registrate gratis | WizyQuiz",
+    "auth.loginDescription": "Inicia sesión en tu cuenta WizyQuiz para guardar tus puntuaciones, seguir tu progreso y desafiar a tus amigos.",
+    "auth.signupDescription": "Crea tu cuenta WizyQuiz gratis y empieza a seguir tus puntuaciones, ganar XP y competir con tus amigos.",
 
     // Ranking
     "ranking.title": "Clasificacion",
@@ -396,8 +396,8 @@ const ui = {
     "ranking.allTime": "Desde siempre",
     "ranking.thisWeek": "Esta semana",
     "ranking.thisMonth": "Este mes",
-    "ranking.metaTitle": "Clasificacion de los mejores jugadores | Wizyquizz",
-    "ranking.metaDescription": "Consulta la clasificacion de Wizyquizz. Compite con otros jugadores, gana XP completando quizzes y sube en el ranking.",
+    "ranking.metaTitle": "Clasificacion de los mejores jugadores | WizyQuiz",
+    "ranking.metaDescription": "Consulta la clasificacion de WizyQuiz. Compite con otros jugadores, gana XP completando quizzes y sube en el ranking.",
 
     "misc.free": "Gratis",
     "misc.seeMore": "Ver más",

@@ -20,7 +20,7 @@
   --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
 }
 
-/* ===== Landing visuals (matches the Wizyquizz logo: deep violet, yellow, rounded shapes) ===== */
+/* ===== Landing visuals (matches the WizyQuiz logo: deep violet, yellow, rounded shapes) ===== */
 .hero-gradient {
   background:
     radial-gradient(ellipse 60% 70% at 85% 20%, rgba(124, 58, 237, 0.55), transparent 60%),

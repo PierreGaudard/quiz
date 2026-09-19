@@ -14,7 +14,7 @@
 import type { QuizData, QuizQuestion } from "../data/types";
 import type { Locale } from "../i18n/config";
 
-const ORG_NAME = "Wizyquizz";
+const ORG_NAME = "WizyQuiz";
 
 /** Types de jeu dont les questions se balisent en QCM. */
 const MULTIPLE_CHOICE_GAME_TYPES = new Set(["qcm", "vrai-faux", "chrono", "duel"]);
