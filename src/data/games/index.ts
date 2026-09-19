@@ -3,7 +3,7 @@ import { locales } from "../../i18n/config";
 import type { MiniGameDef, MiniGameData, ComparisonSet } from "./types";
 import { comparisonSets } from "./higher-lower";
 
-export type { MiniGameDef, MiniGameData, ComparisonSet, GameItem } from "./types";
+export type { MiniGameDef, MiniGameData, ComparisonSet, GameItem, GameEngine } from "./types";
 export { comparisonSets } from "./higher-lower";
 
 /** Le segment du hub des jeux, par langue. */
@@ -24,6 +24,7 @@ export const gamesHubSlug: Record<Locale, string> = {
 export const miniGameDefs: MiniGameDef[] = [
   {
     id: "higher-lower",
+    engine: "higher-lower",
     slugs: {
       en: "higher-or-lower",
       fr: "plus-haut-plus-bas",
@@ -196,6 +197,169 @@ export const miniGameDefs: MiniGameDef[] = [
       },
     },
   },
+  {
+    id: "price",
+    engine: "price",
+    slugs: {
+      en: "guess-the-number",
+      fr: "le-juste-prix",
+      es: "adivina-la-cifra",
+    },
+    color: "bg-amber-500",
+    coverImage: "/images/cover-chrono.webp",
+    translations: {
+      en: {
+        name: "Guess the Number",
+        tagline: "One figure to find, six tries, and the game only tells you higher or lower.",
+        metaTitle: "Guess the Number: the free number game | WizyQuiz",
+        metaDescription:
+          "A figure to find in six tries. The game only says higher or lower. Areas, populations, heights, lengths and release years.",
+        heading: "Guess the Number",
+        intro:
+          "You get one question with a number for an answer, such as the height of Mont Blanc in metres. You type a figure, and the game tells you one thing only: higher, or lower. Six tries. Halving the range each time is what gets you there, and it works better than it sounds.",
+        steps: [
+          {
+            title: "Pick a theme",
+            text: "The same five as the other games: the area of countries, how many people live there, the height of summits, the length of rivers, and the year films came out.",
+          },
+          {
+            title: "Type a figure",
+            text: "Any number does, and you can write it the way you normally would, with spaces or a comma. Spelling is not what the game is testing.",
+          },
+          {
+            title: "Read the arrow",
+            text: "Higher means the answer is above what you typed, lower means below. Your previous tries stay on screen so you can see the range closing.",
+          },
+          {
+            title: "Land inside the margin",
+            text: "Nobody knows an area to the square kilometre, so anything within 5% counts. A release year is the exception: there, the exact year is needed, because a year has no margin worth having.",
+          },
+        ],
+        faq: [
+          {
+            q: "How many tries do I get?",
+            a: "Six. It sounds tight and it is not: each answer halves what is left, so six tries cover a very wide range if you use them to cut the field rather than to guess twice in the same place.",
+          },
+          {
+            q: "Do I have to be exact?",
+            a: "On areas, populations, heights and lengths, anything within 5% counts. On release years, the exact year is needed. The margin is shown on each theme before you start.",
+          },
+          {
+            q: "How should I write big numbers?",
+            a: "However you like. Spaces, full stops and commas are all accepted, so 9 596 960 and 9596960 are the same answer. The game is about the figure, not about typing it a particular way.",
+          },
+          {
+            q: "Where do the numbers come from?",
+            a: "They are the same reference figures the other games use. The ones that move over time, like populations, show their year, so you know which edition you are being asked about.",
+          },
+          {
+            q: "Do I need an account?",
+            a: "No. Nothing is asked of you, and you can start a new one as often as you want.",
+          },
+        ],
+      },
+      fr: {
+        name: "Le juste prix",
+        tagline: "Un chiffre à trouver, six essais, et le jeu ne dit que plus haut ou plus bas.",
+        metaTitle: "Le juste prix : le jeu de chiffres gratuit | WizyQuiz",
+        metaDescription:
+          "Un chiffre à trouver en six essais. Le jeu dit seulement plus haut ou plus bas. Superficies, populations, altitudes, longueurs et années.",
+        heading: "Le juste prix",
+        intro:
+          "On vous pose une question dont la réponse est un nombre, par exemple l'altitude du Mont Blanc en mètres. Vous tapez un chiffre, et le jeu vous dit une seule chose : c'est plus haut, ou c'est plus bas. Six essais. Couper la fourchette en deux à chaque coup, c'est ce qui vous y amène, et ça marche mieux qu'on ne croit.",
+        steps: [
+          {
+            title: "Choisissez un thème",
+            text: "Les mêmes cinq que les autres jeux : la superficie des pays, leur population, l'altitude des sommets, la longueur des fleuves et l'année de sortie des films.",
+          },
+          {
+            title: "Tapez un chiffre",
+            text: "N'importe quel nombre fait l'affaire, et vous pouvez l'écrire comme vous l'écririez normalement, avec des espaces ou une virgule. Ce n'est pas l'orthographe du nombre que le jeu teste.",
+          },
+          {
+            title: "Lisez la flèche",
+            text: "Plus haut veut dire que la réponse est au-dessus de ce que vous avez tapé, plus bas qu'elle est en dessous. Vos essais précédents restent affichés, du coup vous voyez la fourchette se refermer.",
+          },
+          {
+            title: "Tombez dans la marge",
+            text: "Personne ne connaît une superficie au km² près, alors on accepte 5 % d'écart. L'année de sortie est l'exception : là, il faut l'année exacte, parce qu'une année n'a pas de marge qui vaille.",
+          },
+        ],
+        faq: [
+          {
+            q: "Combien d'essais on a ?",
+            a: "Six. Ça paraît juste et ça ne l'est pas : chaque réponse coupe en deux ce qui reste, donc six essais couvrent une très large fourchette, à condition de s'en servir pour réduire le terrain et pas pour deviner deux fois au même endroit.",
+          },
+          {
+            q: "Faut-il tomber pile ?",
+            a: "Sur les superficies, les populations, les altitudes et les longueurs, on accepte 5 % d'écart. Sur les années de sortie, il faut l'année exacte. La marge est affichée sur chaque thème avant de commencer.",
+          },
+          {
+            q: "Comment écrire les grands nombres ?",
+            a: "Comme vous voulez. Les espaces, les points et les virgules passent tous, du coup 9 596 960 et 9596960 sont la même réponse. Le jeu porte sur le chiffre, pas sur la façon de le taper.",
+          },
+          {
+            q: "Les chiffres viennent d'où ?",
+            a: "Ce sont les mêmes données de référence que les autres jeux. Celles qui bougent avec le temps, comme les populations, affichent leur année, pour que vous sachiez de quelle édition on parle.",
+          },
+          {
+            q: "Faut-il créer un compte ?",
+            a: "Non. On ne vous demande rien, et vous pouvez en relancer un autant de fois que vous voulez.",
+          },
+        ],
+      },
+      es: {
+        name: "Adivina la cifra",
+        tagline: "Una cifra que encontrar, seis intentos, y el juego solo dice mayor o menor.",
+        metaTitle: "Adivina la cifra: juego de números gratis | WizyQuiz",
+        metaDescription:
+          "Una cifra que encontrar en seis intentos. El juego solo dice mayor o menor. Superficies, poblaciones, alturas, longitudes y años.",
+        heading: "Adivina la cifra",
+        intro:
+          "Te hacemos una pregunta cuya respuesta es un número, por ejemplo la altura del Mont Blanc en metros. Escribes una cifra, y el juego te dice una sola cosa: es mayor, o es menor. Seis intentos. Partir la horquilla en dos cada vez es lo que te lleva hasta ahí, y funciona mejor de lo que parece.",
+        steps: [
+          {
+            title: "Elige un tema",
+            text: "Los mismos cinco que los otros juegos: la superficie de los países, su población, la altura de las cumbres, la longitud de los ríos y el año de estreno de las películas.",
+          },
+          {
+            title: "Escribe una cifra",
+            text: "Vale cualquier número, y puedes escribirlo como lo escribirías normalmente, con espacios o con coma. No es la ortografía del número lo que el juego mira.",
+          },
+          {
+            title: "Lee la flecha",
+            text: "Mayor quiere decir que la respuesta está por encima de lo que escribiste, menor que está por debajo. Tus intentos anteriores se quedan en pantalla, así que ves cómo se cierra la horquilla.",
+          },
+          {
+            title: "Cae dentro del margen",
+            text: "Nadie se sabe una superficie al kilómetro cuadrado, así que se acepta un 5 % de margen. El año de estreno es la excepción: ahí hace falta el año exacto, porque un año no tiene margen que valga.",
+          },
+        ],
+        faq: [
+          {
+            q: "¿Cuántos intentos hay?",
+            a: "Seis. Parece justo y no lo es: cada respuesta parte en dos lo que queda, así que seis intentos cubren una horquilla muy amplia, siempre que los uses para recortar el terreno y no para adivinar dos veces en el mismo sitio.",
+          },
+          {
+            q: "¿Hay que acertar exacto?",
+            a: "En superficies, poblaciones, alturas y longitudes se acepta un 5 % de margen. En años de estreno hace falta el año exacto. El margen se enseña en cada tema antes de empezar.",
+          },
+          {
+            q: "¿Cómo escribo los números grandes?",
+            a: "Como quieras. Los espacios, los puntos y las comas valen todos, así que 9 596 960 y 9596960 son la misma respuesta. El juego va de la cifra, no de cómo se teclea.",
+          },
+          {
+            q: "¿De dónde salen las cifras?",
+            a: "Son los mismos datos de referencia que usan los otros juegos. Los que cambian con el tiempo, como las poblaciones, enseñan su año, para que sepas de qué edición se habla.",
+          },
+          {
+            q: "¿Hace falta crear una cuenta?",
+            a: "No. No se te pide nada, y puedes empezar otra todas las veces que quieras.",
+          },
+        ],
+      },
+    },
+  },
 ];
 
 /**
@@ -222,6 +386,7 @@ export function resolveGame(def: MiniGameDef, locale: Locale): MiniGameData {
   return {
     ...content,
     id: def.id,
+    engine: def.engine,
     slug,
     path: `${getGamesHubPath(locale)}${slug}/`,
     color: def.color,
@@ -266,6 +431,8 @@ export function getComparisonSets(locale: Locale) {
     higherLabel: set.higherLabel[locale] || set.higherLabel.en,
     lowerLabel: set.lowerLabel[locale] || set.lowerLabel.en,
     asOf: set.asOf,
+    askValue: set.askValue?.[locale] || set.askValue?.en,
+    tolerancePct: set.tolerancePct,
     items: set.items.map((it) => ({
       id: it.id,
       value: it.value,

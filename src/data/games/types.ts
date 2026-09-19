@@ -49,6 +49,24 @@ export interface ComparisonSet {
    * de le croire : c'est la source qui manque, pas lui.
    */
   asOf?: string;
+  /**
+   * La question du « juste prix », avec {name} a remplacer par l'element.
+   *
+   * Elle est formulee en deux-points plutot qu'en phrase pour eviter les
+   * articles : « du Mont Blanc », « de l'Everest », « du K2 » n'ont pas la
+   * meme forme, et une phrase a trous les aurait tous faux dans au moins une
+   * langue. Elle porte l'unite, sans laquelle on ne peut pas repondre par un
+   * nombre.
+   */
+  askValue?: Record<Locale, string>;
+  /**
+   * L'ecart tolere au « juste prix », en pourcentage de la valeur.
+   *
+   * Zero veut dire exact, ce qui n'a de sens que pour une annee : personne ne
+   * trouve une superficie au km² pres, et demander l'exactitude la rendrait
+   * injouable.
+   */
+  tolerancePct: number;
   items: GameItem[];
 }
 
@@ -70,9 +88,19 @@ export interface MiniGameLocaleContent {
   faq: { q: string; a: string }[];
 }
 
+/**
+ * Le moteur qu'un jeu utilise.
+ *
+ * Deux jeux peuvent partager un moteur avec des donnees differentes, et c'est
+ * ce qui rend l'ajout d'un jeu bon marche. La page choisit le composant sur
+ * cette valeur, pas sur l'identifiant du jeu.
+ */
+export type GameEngine = "higher-lower" | "flag-guess" | "true-false" | "price" | "rather";
+
 /** Un mini-jeu du catalogue. */
 export interface MiniGameDef {
   id: string;
+  engine: GameEngine;
   /** Le slug de la page, different par langue. */
   slugs: Record<Locale, string>;
   /** Un accent Tailwind, comme pour les categories. */
@@ -84,6 +112,7 @@ export interface MiniGameDef {
 /** Un mini-jeu resolu dans une langue, ce que les pages recoivent. */
 export interface MiniGameData extends MiniGameLocaleContent {
   id: string;
+  engine: GameEngine;
   slug: string;
   /** Le chemin complet, prefixe de langue compris. */
   path: string;

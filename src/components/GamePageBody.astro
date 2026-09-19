@@ -13,6 +13,7 @@ import { getGames, getGamesHubPath, getComparisonSets } from "../data/games";
 import { t } from "../i18n/ui";
 import { localePath } from "../utils/base";
 import HigherLowerPlayer from "./HigherLowerPlayer";
+import PricePlayer from "./PricePlayer";
 
 interface Props {
   game: MiniGameData;
@@ -44,7 +45,13 @@ const others = getGames(locale).filter((g) => g.id !== game.id);
     <div class="max-w-5xl mx-auto px-4">
       <h1 class="font-display text-3xl md:text-4xl font-black text-gray-900 text-center mb-3">{game.heading}</h1>
       <p class="text-gray-500 text-center max-w-2xl mx-auto mb-8 leading-relaxed">{game.tagline}</p>
-      <HigherLowerPlayer client:load sets={sets} locale={locale} />
+      {/*
+        Le moteur est choisi sur game.engine, pas sur game.id : deux jeux
+        peuvent partager un moteur avec des donnees differentes, et c'est ce
+        qui rend l'ajout d'un jeu bon marche.
+      */}
+      {game.engine === "higher-lower" && <HigherLowerPlayer client:load sets={sets} locale={locale} />}
+      {game.engine === "price" && <PricePlayer client:load sets={sets} locale={locale} />}
     </div>
   </section>
 

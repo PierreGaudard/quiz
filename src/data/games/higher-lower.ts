@@ -20,6 +20,8 @@ export const comparisonSets: ComparisonSet[] = [
     unit: { en: "km²", fr: "km²", es: "km²" },
     higherLabel: { en: "More", fr: "Plus", es: "Más" },
     lowerLabel: { en: "Less", fr: "Moins", es: "Menos" },
+    askValue: { en: "{name}: total area in km²?", fr: "{name} : superficie en km² ?", es: "{name}: ¿superficie en km²?" },
+    tolerancePct: 5,
     items: [
       { id: "russia", value: 17098246, labels: { en: "Russia", fr: "Russie", es: "Rusia" } },
       { id: "canada", value: 9984670, labels: { en: "Canada", fr: "Canada", es: "Canadá" } },
@@ -64,6 +66,8 @@ export const comparisonSets: ComparisonSet[] = [
     unit: { en: "inhabitants", fr: "habitants", es: "habitantes" },
     higherLabel: { en: "More", fr: "Plus", es: "Más" },
     lowerLabel: { en: "Less", fr: "Moins", es: "Menos" },
+    askValue: { en: "{name}: how many inhabitants?", fr: "{name} : combien d'habitants ?", es: "{name}: ¿cuántos habitantes?" },
+    tolerancePct: 5,
     asOf: "2024",
     items: [
       { id: "india", value: 1441000000, labels: { en: "India", fr: "Inde", es: "India" } },
@@ -112,6 +116,8 @@ export const comparisonSets: ComparisonSet[] = [
     unit: { en: "m", fr: "m", es: "m" },
     higherLabel: { en: "More", fr: "Plus", es: "Más" },
     lowerLabel: { en: "Less", fr: "Moins", es: "Menos" },
+    askValue: { en: "{name}: height in metres?", fr: "{name} : altitude en mètres ?", es: "{name}: ¿altura en metros?" },
+    tolerancePct: 5,
     items: [
       { id: "everest", value: 8849, labels: { en: "Everest", fr: "Everest", es: "Everest" } },
       { id: "k2", value: 8611, labels: { en: "K2", fr: "K2", es: "K2" } },
@@ -147,6 +153,8 @@ export const comparisonSets: ComparisonSet[] = [
     unit: { en: "km", fr: "km", es: "km" },
     higherLabel: { en: "More", fr: "Plus", es: "Más" },
     lowerLabel: { en: "Less", fr: "Moins", es: "Menos" },
+    askValue: { en: "{name}: length in km?", fr: "{name} : longueur en km ?", es: "{name}: ¿longitud en km?" },
+    tolerancePct: 5,
     items: [
       { id: "nile", value: 6650, labels: { en: "Nile", fr: "Nil", es: "Nilo" } },
       { id: "amazon", value: 6400, labels: { en: "Amazon", fr: "Amazone", es: "Amazonas" } },
@@ -181,6 +189,8 @@ export const comparisonSets: ComparisonSet[] = [
     unit: { en: "", fr: "", es: "" },
     higherLabel: { en: "Later", fr: "Plus tard", es: "Después" },
     lowerLabel: { en: "Earlier", fr: "Plus tôt", es: "Antes" },
+    askValue: { en: "{name}: what year did it come out?", fr: "{name} : sorti en quelle année ?", es: "{name}: ¿en qué año se estrenó?" },
+    tolerancePct: 0,
     items: [
       { id: "godfather", value: 1972, labels: { en: "The Godfather", fr: "Le Parrain", es: "El Padrino" } },
       { id: "jaws", value: 1975, labels: { en: "Jaws", fr: "Les Dents de la mer", es: "Tiburón" } },

@@ -30,6 +30,10 @@ export interface PlaySet {
   higherLabel: string;
   lowerLabel: string;
   asOf?: string;
+  /** La question du « juste prix », {name} a remplacer. Inutilisee ici. */
+  askValue?: string;
+  /** L'ecart tolere au « juste prix », en %. Inutilise ici. */
+  tolerancePct: number;
   items: PlayItem[];
 }
 
@@ -187,11 +191,11 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
       fetch("/api/game/rounds", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ key, correct: ok }),
+        body: JSON.stringify({ game: "higher-lower", key, hit: ok }),
       })
         .then((r) => r.json())
         .then((d) => {
-          if (d?.stats?.total) setCrowd(Math.round((d.stats.correct / d.stats.total) * 100));
+          if (d?.stats?.total) setCrowd(Math.round((d.stats.hits / d.stats.total) * 100));
         })
         .catch(() => {
           // Le compteur est un bonus : son echec ne doit pas gener la partie.
