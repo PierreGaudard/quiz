@@ -62,6 +62,31 @@ export function resolveQuizData(quizData: any, locale: Locale) {
   return { quiz, sameCategory, recommendedQuizzes, categoryInfo, sidebarCategories };
 }
 
+/**
+ * Meta description d'une page de sous-categorie.
+ *
+ * Elle etait ecrite en dur, en anglais, et servie telle quelle aux trois
+ * langues : « All Naruto quizzes in Anime. » s'affichait sur la page francaise
+ * comme sur l'espagnole. Les trois versions d'une meme sous-categorie
+ * portaient donc la meme description, ce qui les rend indistinguables pour un
+ * moteur au moment de choisir laquelle servir, et 30 caracteres ne remplissent
+ * aucun extrait de resultat. Le compte de quiz entre dans la phrase pour que
+ * deux sous-categories d'une meme categorie ne se ressemblent pas non plus.
+ */
+function subcategoryDescription(subName: string, categoryName: string, count: number, locale: Locale): string {
+  const n = count;
+  if (locale === "fr") {
+    const q = n > 1 ? `${n} quiz gratuits` : "1 quiz gratuit";
+    return `Jouez à nos quiz ${subName}, dans la catégorie ${categoryName}. ${q}, chaque réponse est expliquée, et rien ici ne demande de compte.`;
+  }
+  if (locale === "es") {
+    const q = n > 1 ? `${n} quizzes gratis` : "1 quiz gratis";
+    return `Juega a nuestros quizzes de ${subName}, en la categoría ${categoryName}. ${q}, cada respuesta viene explicada, y nada de esto pide una cuenta.`;
+  }
+  const q = n > 1 ? `${n} free quizzes` : "1 free quiz";
+  return `Play our ${subName} quizzes, in the ${categoryName} category. ${q}, every answer comes explained, and nothing here needs an account.`;
+}
+
 /** Resolve subcategory page data. */
 export function resolveSubcategoryData(categorySlug: string, subSlug: string, subName: string, locale: Locale) {
   const categories = getCategories(locale);
@@ -74,7 +99,7 @@ export function resolveSubcategoryData(categorySlug: string, subSlug: string, su
     name: subName,
     slug: subSlug,
     coverImage: `/images/sub-${getSubcategoryImageSlug(subName, locale)}.webp`,
-    description: `All ${subName} quizzes in ${category.name}.`,
+    description: subcategoryDescription(subName, category.name, quizzes.length, locale),
     subcategories: [] as string[],
   };
 
