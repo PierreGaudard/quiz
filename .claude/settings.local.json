@@ -59,7 +59,12 @@
       "Bash(grep:*)",
       "Bash(git add:*)",
       "Bash(echo \"=== EN pages \\(should be English slugs\\) ===\" ls C:/Users/pierr/Quiz/src/pages/*.astro)",
-      "Bash(xargs -I{} basename {} .astro)"
+      "Bash(xargs -I{} basename {} .astro)",
+      "Bash(gh pr:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(git rm:*)",
+      "Bash(sips:*)"
     ]
   }
 }

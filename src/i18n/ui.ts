@@ -105,6 +105,20 @@ const ui = {
 
     // Breadcrumb
     "breadcrumb.home": "Home",
+    "games.hubName": "Games",
+    "games.hubHeading": "Mini games to play right now",
+    "games.hubIntro": "Short games you can start in one tap, with no account and no setup. They draw their rounds at random, so you can come back to the same one and not play the same thing twice.",
+    "games.hubMetaTitle": "Free Mini Games to Play Online | WizyQuiz",
+    "games.hubMetaDescription": "Short trivia games you start in one tap, with no account. Higher or lower on countries, summits, rivers and films, with a streak to beat.",
+    "games.howToPlay": "How to play",
+    "games.faq": "Frequently asked questions",
+    "games.moreTitle": "The other games",
+    "games.moreIntro": "Every game here starts in one tap and asks nothing of you.",
+    "games.seeAll": "See all the games",
+    "games.vsQuizTitle": "Games and quizzes are not the same thing",
+    "games.vsQuizP1": "A quiz has ten questions, a score and an end: you play it, you get your result, and that is that. A game draws its rounds at random and stops only when you get one wrong, so the same game gives you something different every time.",
+    "games.vsQuizP2": "The two go together. A quiz is the one you send to a friend to compare scores on a subject you both know. A game is the one you open while you wait for the bus.",
+    "games.seeQuizzes": "See the quizzes",
 
     // Auth
     "auth.login": "Log in",
@@ -237,6 +251,20 @@ const ui = {
     "footer.allRightsReserved": "Tous droits réservés.",
 
     "breadcrumb.home": "Accueil",
+    "games.hubName": "Jeux",
+    "games.hubHeading": "Des minis-jeux à lancer tout de suite",
+    "games.hubIntro": "Des jeux courts qui démarrent en un clic, sans compte et sans rien à préparer. Ils tirent leurs manches au hasard, du coup on peut revenir sur le même et ne pas rejouer la même chose.",
+    "games.hubMetaTitle": "Minis-jeux gratuits à jouer en ligne | WizyQuiz",
+    "games.hubMetaDescription": "Des jeux de culture générale qui démarrent en un clic, sans compte. Plus haut ou plus bas sur les pays, les sommets, les fleuves et les films.",
+    "games.howToPlay": "Comment on joue",
+    "games.faq": "Questions fréquentes",
+    "games.moreTitle": "Les autres jeux",
+    "games.moreIntro": "Tous les jeux d'ici démarrent en un clic et ne vous demandent rien.",
+    "games.seeAll": "Voir tous les jeux",
+    "games.vsQuizTitle": "Un jeu et un quiz, ce n'est pas la même chose",
+    "games.vsQuizP1": "Un quiz a dix questions, un score et une fin : on le joue, on a son résultat, et voilà. Un jeu tire ses manches au hasard et ne s'arrête que quand on se trompe, du coup le même jeu donne autre chose à chaque fois.",
+    "games.vsQuizP2": "Les deux vont ensemble. Le quiz, c'est celui qu'on envoie à un ami pour comparer les scores sur un sujet qu'on connaît tous les deux. Le jeu, c'est celui qu'on ouvre en attendant le bus.",
+    "games.seeQuizzes": "Voir les quiz",
 
     // Auth
     "auth.login": "Se connecter",
@@ -368,6 +396,20 @@ const ui = {
     "footer.allRightsReserved": "Todos los derechos reservados.",
 
     "breadcrumb.home": "Inicio",
+    "games.hubName": "Juegos",
+    "games.hubHeading": "Minijuegos para empezar ahora mismo",
+    "games.hubIntro": "Juegos cortos que arrancan con un toque, sin cuenta y sin nada que preparar. Sacan sus rondas al azar, así que puedes volver al mismo y no jugar lo mismo dos veces.",
+    "games.hubMetaTitle": "Minijuegos gratis para jugar online | WizyQuiz",
+    "games.hubMetaDescription": "Juegos de cultura general que arrancan con un toque, sin cuenta. Mayor o menor sobre países, cumbres, ríos y películas, con racha que batir.",
+    "games.howToPlay": "Cómo se juega",
+    "games.faq": "Preguntas frecuentes",
+    "games.moreTitle": "Los otros juegos",
+    "games.moreIntro": "Todos los juegos de aquí arrancan con un toque y no te piden nada.",
+    "games.seeAll": "Ver todos los juegos",
+    "games.vsQuizTitle": "Un juego y un quiz no son lo mismo",
+    "games.vsQuizP1": "Un quiz tiene diez preguntas, una puntuación y un final: lo juegas, tienes tu resultado, y ya está. Un juego saca sus rondas al azar y solo se para cuando fallas, así que el mismo juego te da otra cosa cada vez.",
+    "games.vsQuizP2": "Los dos van juntos. El quiz es el que le mandas a un amigo para comparar puntuaciones sobre un tema que os sabéis los dos. El juego es el que abres esperando el autobús.",
+    "games.seeQuizzes": "Ver los quizzes",
 
     // Auth
     "auth.login": "Iniciar sesión",

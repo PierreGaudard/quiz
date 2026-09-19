@@ -113,3 +113,121 @@ export function buildQuizStructuredData(opts: {
 
   return [quizNode, appNode];
 }
+
+/**
+ * Donnees structurees d'une page de mini-jeu.
+ *
+ * Un mini-jeu n'est pas un quiz : il n'a pas de liste de questions fixe, donc
+ * rien a mettre en `hasPart`, et le balisage « Education Q&A » ne s'applique
+ * pas. Ce qu'il a, en revanche, c'est une page de regles et une FAQ, et c'est
+ * la FAQ qui peut ressortir en resultat enrichi.
+ *
+ * Le fil d'Ariane est emis ici plutot que dans les trois pages de langue,
+ * pour la meme raison que le reste du fichier : recopie trois fois, il
+ * divergerait.
+ */
+export function buildGameStructuredData(opts: {
+  name: string;
+  description: string;
+  locale: Locale;
+  siteUrl: string;
+  pageUrl: string;
+  hubUrl: string;
+  hubName: string;
+  faq: { q: string; a: string }[];
+}): Record<string, unknown>[] {
+  const { name, description, locale, siteUrl, pageUrl, hubUrl, hubName, faq } = opts;
+
+  const gameNode: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Game",
+    name,
+    description,
+    url: pageUrl,
+    inLanguage: locale,
+    genre: "Trivia",
+    isAccessibleForFree: true,
+    numberOfPlayers: { "@type": "QuantitativeValue", minValue: 1 },
+    publisher: { "@type": "Organization", name: ORG_NAME, url: siteUrl },
+  };
+
+  const appNode: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "@id": `${pageUrl}#application`,
+    name,
+    url: pageUrl,
+    inLanguage: locale,
+    applicationCategory: "GameApplication",
+    operatingSystem: "Web",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: CURRENCY_BY_LOCALE[locale] ?? "USD" },
+  };
+
+  const breadcrumb: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: ORG_NAME, item: `${siteUrl}/` },
+      { "@type": "ListItem", position: 2, name: hubName, item: hubUrl },
+      { "@type": "ListItem", position: 3, name, item: pageUrl },
+    ],
+  };
+
+  const nodes: Record<string, unknown>[] = [gameNode, appNode, breadcrumb];
+
+  if (faq.length > 0) {
+    nodes.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
+  return nodes;
+}
+
+/** Donnees structurees du hub des minis-jeux. */
+export function buildGamesHubStructuredData(opts: {
+  name: string;
+  description: string;
+  locale: Locale;
+  siteUrl: string;
+  pageUrl: string;
+  games: { name: string; url: string }[];
+}): Record<string, unknown>[] {
+  const { name, description, locale, siteUrl, pageUrl, games } = opts;
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name,
+      description,
+      url: pageUrl,
+      inLanguage: locale,
+      isPartOf: { "@type": "WebSite", name: ORG_NAME, url: `${siteUrl}/` },
+      mainEntity: {
+        "@type": "ItemList",
+        numberOfItems: games.length,
+        itemListElement: games.map((g, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: g.name,
+          url: g.url,
+        })),
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: ORG_NAME, item: `${siteUrl}/` },
+        { "@type": "ListItem", position: 2, name, item: pageUrl },
+      ],
+    },
+  ];
+}

@@ -1,0 +1,40 @@
+---
+/**
+ * Le hub des minis-jeux (en).
+ *
+ * Volontairement mince : tout le gabarit est dans GamesHubBody, partage par
+ * les trois langues, et le catalogue vient de src/data/games. Ajouter un jeu
+ * ne demande de toucher ni a cette page ni a ses deux soeurs.
+ */
+import Layout from "../../layouts/Layout.astro";
+import GamesHubBody from "../../components/GamesHubBody.astro";
+import { getGames, getGamesHubPath, getHreflangGamesHubPaths } from "../../data/games";
+import { buildGamesHubStructuredData } from "../../lib/structured-data";
+import { t } from "../../i18n/ui";
+import type { Locale } from "../../i18n/config";
+
+const locale: Locale = "en";
+const siteRoot = Astro.site?.toString().replace(/\/$/, "") || "";
+const pageUrl = `${siteRoot}${getGamesHubPath(locale)}`;
+
+const jsonLd = buildGamesHubStructuredData({
+  name: t(locale, "games.hubHeading"),
+  description: t(locale, "games.hubIntro"),
+  locale,
+  siteUrl: siteRoot,
+  pageUrl,
+  games: getGames(locale).map((g) => ({ name: g.name, url: `${siteRoot}${g.path}` })),
+});
+---
+
+<Layout
+  title={t(locale, "games.hubMetaTitle")}
+  description={t(locale, "games.hubMetaDescription")}
+  locale={locale}
+  hreflangPaths={getHreflangGamesHubPaths()}
+>
+  <GamesHubBody locale={locale} />
+  {jsonLd.map((node) => (
+    <script type="application/ld+json" set:html={JSON.stringify(node)} />
+  ))}
+</Layout>

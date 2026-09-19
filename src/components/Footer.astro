@@ -1,5 +1,6 @@
 ---
-import { localePath } from "../utils/base";
+import { localePath, withBase } from "../utils/base";
+import { getGamesHubPath } from "../data/games";
 import { getCategories } from "../data/categories";
 import { t } from "../i18n/ui";
 import type { Locale } from "../i18n/config";
@@ -7,7 +8,15 @@ import type { Locale } from "../i18n/config";
 interface Props { locale?: Locale; }
 const { locale = "en" } = Astro.props;
 const lp = (path: string) => localePath(path, locale);
-const withBase = lp; // alias for template compatibility
+/*
+ * Pas d'alias `withBase = lp` ici.
+ *
+ * Il y en avait un, et il faisait passer le src du logo par localePath : le
+ * pied de page demandait /fr/logo.png et /es/logo.png, qui n'existent pas.
+ * Le fichier est servi a la racine, sans langue. L'appel avait l'air juste,
+ * c'est ce qui l'a rendu invisible pendant tout ce temps. Un lien prend lp(),
+ * une image prend withBase(), et les deux noms veulent dire ce qu'ils disent.
+ */
 const currentYear = new Date().getFullYear();
 
 // Locale-aware slug mapping for static pages
@@ -29,7 +38,7 @@ const sitemapCategories = getCategories(locale);
     <div class="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1fr] gap-10 text-center md:text-left">
       {/* Col 1: Brand + description + socials */}
       <div class="flex flex-col items-center md:items-start">
-        <a href={withBase('/')} class="flex items-center mb-4" aria-label="WizyQuiz">
+        <a href={lp('/')} class="flex items-center mb-4" aria-label="WizyQuiz">
           <img src={withBase('/logo.png')} alt="WizyQuiz" width="359" height="120" class="h-10 w-auto" />
         </a>
         <p class="text-sm text-white/50 leading-relaxed mb-5 max-w-xs">
@@ -55,8 +64,9 @@ const sitemapCategories = getCategories(locale);
       <div>
         <h3 class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.quizzesAndGames")}</h3>
         <ul class="space-y-2.5">
-          <li><a href={withBase('/')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.allQuizzes")}</a></li>
-          <li><a href={withBase(s('create'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.createQuiz")}</a></li>
+          <li><a href={lp('/')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.allQuizzes")}</a></li>
+          <li><a href={lp(s('create'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.createQuiz")}</a></li>
+          <li><a href={getGamesHubPath(locale)} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "games.hubName")}</a></li>
         </ul>
       </div>
 
@@ -64,11 +74,11 @@ const sitemapCategories = getCategories(locale);
       <div>
         <h3 class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.information")}</h3>
         <ul class="space-y-2.5">
-          <li><a href={withBase(s('legal'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.legal")}</a></li>
-          <li><a href={withBase(s('privacy'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.privacy")}</a></li>
-          <li><a href={withBase(s('terms'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.terms")}</a></li>
+          <li><a href={lp(s('legal'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.legal")}</a></li>
+          <li><a href={lp(s('privacy'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.privacy")}</a></li>
+          <li><a href={lp(s('terms'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.terms")}</a></li>
           <li><a href="mailto:pierretartare94440@gmail.com" class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.contactUs")}</a></li>
-          <li><a href={withBase(s('sitemap'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.sitemap")}</a></li>
+          <li><a href={lp(s('sitemap'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.sitemap")}</a></li>
         </ul>
       </div>
     </div>
@@ -78,11 +88,11 @@ const sitemapCategories = getCategories(locale);
   <div class="border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col items-center gap-2 text-center">
       <div class="flex items-center gap-4 text-xs text-white/30">
-        <a href={withBase(s('legal'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.legal")}</a>
+        <a href={lp(s('legal'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.legal")}</a>
         <span class="text-white/10">|</span>
-        <a href={withBase(s('privacy'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.privacy")}</a>
+        <a href={lp(s('privacy'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.privacy")}</a>
         <span class="text-white/10">|</span>
-        <a href={withBase(s('terms'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.terms")}</a>
+        <a href={lp(s('terms'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.terms")}</a>
       </div>
       <p class="text-xs text-white/30">
         &copy; {currentYear} <span class="font-semibold text-white/50">WizyQuiz</span>. {t(locale, "footer.allRightsReserved")}

@@ -25,3 +25,9 @@ pnpm-debug.log*
 
 # base D1 locale de wrangler dev
 .wrangler/state/
+
+# worktrees Claude Code : des clones du depot, jamais a versionner
+.claude/worktrees/
+
+# captures et snapshots playwright-cli : des artefacts de debug
+.playwright-cli/

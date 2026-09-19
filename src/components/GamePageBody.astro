@@ -1,0 +1,121 @@
+---
+/**
+ * Le corps d'une page de mini-jeu, partage par les trois langues.
+ *
+ * Les pages `[game].astro` de en, fr et es ne font que resoudre le jeu et
+ * appeler ce composant. C'est la lecon des blocs JSON-LD recopies dans les
+ * trois `[quiz].astro`, qui avaient divergé : un gabarit ecrit trois fois
+ * finit par exister en trois versions.
+ */
+import type { Locale } from "../i18n/config";
+import type { MiniGameData } from "../data/games";
+import { getGames, getGamesHubPath, getComparisonSets } from "../data/games";
+import { t } from "../i18n/ui";
+import { localePath } from "../utils/base";
+import HigherLowerPlayer from "./HigherLowerPlayer";
+
+interface Props {
+  game: MiniGameData;
+  locale: Locale;
+  hubName: string;
+}
+
+const { game, locale, hubName } = Astro.props;
+const lp = (path: string) => localePath(path, locale);
+
+const hubPath = getGamesHubPath(locale);
+const sets = getComparisonSets(locale);
+const others = getGames(locale).filter((g) => g.id !== game.id);
+---
+
+<div class="max-w-5xl mx-auto px-4 pt-4">
+  <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-6" aria-label="Breadcrumb">
+    <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+    <svg class="w-3 h-3 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+    <a href={hubPath} class="hover:text-violet-600 transition-colors font-medium">{hubName}</a>
+    <svg class="w-3 h-3 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+    <span class="text-gray-700 font-semibold">{game.name}</span>
+  </nav>
+</div>
+
+<main>
+  {/* ===== LE JEU D'ABORD ===== */}
+  <section class="pb-10">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="font-display text-3xl md:text-4xl font-black text-gray-900 text-center mb-3">{game.heading}</h1>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-8 leading-relaxed">{game.tagline}</p>
+      <HigherLowerPlayer client:load sets={sets} locale={locale} />
+    </div>
+  </section>
+
+  {/* ===== INTRO ===== */}
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <p class="text-gray-700 leading-relaxed">{game.intro}</p>
+    </div>
+  </section>
+
+  {/* ===== LES REGLES, EN ETAPES ===== */}
+  <section class="py-14 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900 text-center mb-10">
+        {t(locale, "games.howToPlay")}
+      </h2>
+      <div class="space-y-6">
+        {game.steps.map((step, i) => (
+          <div class="flex gap-5">
+            <div class="shrink-0 w-11 h-11 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg shadow-violet-500/25">
+              <span class="font-display text-lg font-black text-white">{i + 1}</span>
+            </div>
+            <div>
+              <h3 class="font-display text-lg font-bold text-gray-900 mb-1.5">{step.title}</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">{step.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== FAQ ===== */}
+  <section class="py-14 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900 text-center mb-8">
+        {t(locale, "games.faq")}
+      </h2>
+      <div class="space-y-3">
+        {game.faq.map((item) => (
+          <details class="group rounded-xl border border-gray-200 bg-white overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none">
+              <span class="font-semibold text-gray-900 text-sm">{item.q}</span>
+              <svg class="w-4 h-4 text-gray-400 shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-4 text-sm text-gray-600 leading-relaxed">{item.a}</div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== LES AUTRES JEUX ===== */}
+  <section class="py-14 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display text-2xl font-black text-gray-900 mb-3">{t(locale, "games.moreTitle")}</h2>
+      <p class="text-sm text-gray-500 mb-8 max-w-xl mx-auto">{t(locale, "games.moreIntro")}</p>
+      {others.length > 0 && (
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-left">
+          {others.map((other) => (
+            <a href={other.path} class="group p-5 rounded-xl border border-gray-200 bg-white hover:border-violet-400 hover:shadow-lg hover:shadow-violet-500/5 transition-all">
+              <p class="font-display text-base font-bold text-gray-900 group-hover:text-violet-700 transition-colors mb-1">{other.name}</p>
+              <p class="text-sm text-gray-500 leading-relaxed">{other.tagline}</p>
+            </a>
+          ))}
+        </div>
+      )}
+      <a href={hubPath} class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm transition-colors">
+        {t(locale, "games.seeAll")}
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+</main>

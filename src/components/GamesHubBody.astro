@@ -1,0 +1,74 @@
+---
+/**
+ * Le corps du hub des minis-jeux, partage par les trois langues.
+ *
+ * Le hub est ce qui transforme une liste de pages en une famille : sans lui,
+ * chaque jeu vit seul, et le visiteur qui en termine un n'a nulle part ou
+ * aller. C'est la page que les jeux se donnent en lien les uns aux autres.
+ */
+import type { Locale } from "../i18n/config";
+import { getGames } from "../data/games";
+import { t } from "../i18n/ui";
+import { localePath } from "../utils/base";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const lp = (path: string) => localePath(path, locale);
+const games = getGames(locale);
+---
+
+<main>
+  {/* ===== HERO ===== */}
+  <section class="bg-gradient-to-b from-[#1a0e42] via-[#2d1b69] to-[#1a0e42] pt-14 pb-16 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 28px 28px;"></div>
+    <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 text-center">
+      <nav class="flex items-center justify-center gap-1.5 text-xs text-white/40 mb-6" aria-label="Breadcrumb">
+        <a href={lp("/")} class="hover:text-white/70 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+        <svg class="w-3 h-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        <span class="text-white/70 font-semibold">{t(locale, "games.hubName")}</span>
+      </nav>
+
+      <h1 class="font-display text-4xl md:text-5xl font-black text-white leading-[1.1] mb-5">
+        {t(locale, "games.hubHeading")}
+      </h1>
+      <p class="text-white/50 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+        {t(locale, "games.hubIntro")}
+      </p>
+    </div>
+  </section>
+
+  {/* ===== LES JEUX ===== */}
+  <section class="py-14 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {games.map((game) => (
+          <a href={game.path} class="group flex flex-col p-6 rounded-xl border border-gray-200 bg-white hover:border-violet-400 hover:shadow-lg hover:shadow-violet-500/5 transition-all">
+            <span class={`inline-flex w-11 h-11 rounded-lg ${game.color} items-center justify-center mb-4 shrink-0`}>
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+            </span>
+            <h2 class="font-display text-lg font-bold text-gray-900 mb-1.5 group-hover:text-violet-700 transition-colors">{game.name}</h2>
+            <p class="text-sm text-gray-500 leading-relaxed">{game.tagline}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== LA DIFFERENCE AVEC LES QUIZ ===== */}
+  <section class="py-14 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900 mb-4">{t(locale, "games.vsQuizTitle")}</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">{t(locale, "games.vsQuizP1")}</p>
+      <p class="text-gray-700 leading-relaxed mb-6">{t(locale, "games.vsQuizP2")}</p>
+      <a href={lp("/")} class="inline-flex items-center gap-2 text-sm font-bold text-violet-700 hover:text-violet-900 transition-colors">
+        {t(locale, "games.seeQuizzes")}
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
