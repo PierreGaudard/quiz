@@ -36,15 +36,20 @@ function classify(urlPath: string): string {
 }
 
 /**
- * Pages a lister, c'est a dire celles qui s'autorisent l'indexation.
+ * Pages a lister, c'est a dire celles qui ont vocation a etre indexees.
  *
- * Une page en noindex qui figure quand meme au sitemap est une contradiction :
- * le sitemap la presente comme a indexer, la page refuse. Search Console la
- * remonte en « Exclue par la balise noindex » et le sitemap perd en credit.
- * On lit donc la balise robots du HTML produit plutot que de tenir une liste
- * a part, qui aurait vieilli comme l'ancienne liste de slugs juste au-dessus.
+ * Le critere n'est pas la balise robots : tant que le site n'est pas ouvert,
+ * PRELAUNCH met tout en noindex, et filtrer la-dessus produirait des sitemaps
+ * vides aujourd'hui, puis faux le jour de l'ouverture. On filtre sur le marqueur
+ * que le Layout pose uniquement pour les pages exclues en propre, celles qui
+ * resteront hors index apres la mise en ligne : la recherche, les profils et
+ * le player de quiz personnalise.
+ *
+ * Une page en noindex definitif qui figure quand meme au sitemap est une
+ * contradiction : le sitemap la presente comme a indexer, la page refuse, et
+ * Search Console la remonte en « Exclue par la balise noindex ».
  */
-const NOINDEX = /<meta[^>]+name=["']robots["'][^>]*content=["'][^"']*noindex/i;
+const NO_SITEMAP = /<meta[^>]+name=["']wizyquiz:sitemap["'][^>]*content=["']exclude["']/i;
 
 function getAllPages(dir: string): string[] {
   const pages: string[] = [];
@@ -53,7 +58,7 @@ function getAllPages(dir: string): string[] {
       if (entry.isDirectory()) scan(path.join(d, entry.name), `${prefix}/${entry.name}`);
       else if (entry.name === "index.html") {
         const html = fs.readFileSync(path.join(d, entry.name), "utf-8");
-        if (!NOINDEX.test(html)) pages.push(`${prefix}/`);
+        if (!NO_SITEMAP.test(html)) pages.push(`${prefix}/`);
       }
     }
   }

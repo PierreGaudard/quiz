@@ -1,4 +1,5 @@
 ---
+import { PRELAUNCH } from "../config/launch";
 import Header from "../components/Header.astro";
 import PlayCounts from "../components/PlayCounts.astro";
 import Footer from "../components/Footer.astro";
@@ -53,14 +54,16 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     {/*
-      Le noindex suit la prop, il n'est plus pose sur tout le site. Il avait ete
-      mis en dur pour laisser Screaming Frog crawler la preprod, et il y est
-      reste : les 114 pages, homepage comprise, interdisaient leur propre
-      indexation pendant que les sitemaps les declaraient. Seules les pages qui
-      demandent noindex={true} le portent : la recherche et les profils
-      publics.
+      Deux raisons de sortir en noindex, et il faut les distinguer.
+
+      PRELAUNCH couvre tout le site tant qu'il n'est pas ouvert : c'est
+      temporaire, et ces pages rejoindront l'index le jour de la mise en ligne.
+      La prop `noindex` couvre les pages qui resteront hors index apres
+      l'ouverture. Seules ces dernieres sont retirees des sitemaps, sans quoi
+      les sitemaps seraient vides aujourd'hui et faux le jour de l'ouverture.
     */}
-    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
+    <meta name="robots" content={noindex || PRELAUNCH ? "noindex, follow" : "index, follow"} />
+    {noindex && <meta name="wizyquiz:sitemap" content="exclude" />}
 
     {/* Self-referencing canonical */}
     <link rel="canonical" href={canonicalUrl} />
