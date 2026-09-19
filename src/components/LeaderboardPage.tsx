@@ -51,8 +51,6 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
       .catch(() => setLoading(false));
   }, []);
 
-  if (loading) return <div className="text-center py-20 text-gray-400">{tt("loading")}</div>;
-
   return (
     <main>
       {/* Hero */}
@@ -68,7 +66,16 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
         </div>
       </section>
 
-      {players.length === 0 ? (
+      {/*
+        Le garde de chargement enveloppait toute la page, hero compris. Le
+        rendu serveur ne contenait donc que le mot « Chargement », sans titre
+        et sans texte : rien pour un moteur, et un ecran qui saute au moment ou
+        le classement arrive. Le hero ne depend d'aucune donnee, il sort tout
+        de suite ; seul le classement attend son fetch.
+      */}
+      {loading ? (
+        <div className="text-center py-20 text-gray-400">{tt("loading")}</div>
+      ) : players.length === 0 ? (
         <div className="text-center py-16 text-gray-400">{tt("noPlayers")}</div>
       ) : (
         <>

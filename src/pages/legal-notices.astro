@@ -9,7 +9,7 @@ const locale: Locale = "en";
 const lp = (path: string) => localePath(path, locale);
 ---
 
-<Layout title="Legal Notices | WizyQuiz" description="Legal notices for the WizyQuiz, including publisher information, hosting details and intellectual property." locale={locale} hreflangPaths={getHreflangStaticPaths("legal")}>
+<Layout title="Legal Notices | WizyQuiz Free Quiz Platform" description="Legal notices for the WizyQuiz, including publisher information, hosting details and intellectual property." locale={locale} hreflangPaths={getHreflangStaticPaths("legal")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>

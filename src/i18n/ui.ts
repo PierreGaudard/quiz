@@ -118,7 +118,7 @@ const ui = {
     "auth.noAccount": "No account yet?",
     "auth.hasAccount": "Already have an account?",
     "auth.loginTitle": "Log In to Your WizyQuiz Account | Free Quiz Platform",
-    "auth.signupTitle": "Sign Up for Free | WizyQuiz",
+    "auth.signupTitle": "Sign Up for Free | WizyQuiz Quiz Platform",
     "auth.loginDescription": "Log in to your WizyQuiz account to save your scores, track your progress and challenge your friends.",
     "auth.signupDescription": "Create your free WizyQuiz account and start tracking your quiz scores, earning XP and competing with friends.",
 
@@ -381,7 +381,7 @@ const ui = {
     "auth.noAccount": "¿Aún no tienes cuenta?",
     "auth.hasAccount": "¿Ya tienes una cuenta?",
     "auth.loginTitle": "Iniciar sesion en WizyQuiz | Quizzes gratuitos",
-    "auth.signupTitle": "Registrate gratis | WizyQuiz",
+    "auth.signupTitle": "Regístrate gratis | WizyQuiz, quizzes online",
     "auth.loginDescription": "Inicia sesión en tu cuenta WizyQuiz para guardar tus puntuaciones, seguir tu progreso y desafiar a tus amigos.",
     "auth.signupDescription": "Crea tu cuenta WizyQuiz gratis y empieza a seguir tus puntuaciones, ganar XP y competir con tus amigos.",
 
