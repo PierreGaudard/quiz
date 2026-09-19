@@ -94,12 +94,22 @@ export function slugifySubcategory(name: string): string {
     .replace(/(^-|-$)/g, "");
 }
 
-/** Get quizzes by category + subcategory slug. */
+/**
+ * Quiz d'une sous-categorie, pour un slug de sous-categorie de la locale.
+ *
+ * Le champ `subcategory` d'un quiz est stocke en francais, mais le slug recu
+ * ici vient de la locale courante (« Drapeaux » en fr, « Flags » en en,
+ * « Banderas » en es). Comparer le slug du nom francais au slug attendu ne
+ * matchait donc que quand les deux langues ecrivaient la sous-categorie de la
+ * meme facon, et la sous-categorie disparaissait partout ailleurs : plus de
+ * page, plus d'entree de menu, plus de ligne de sitemap, alors que les pages
+ * de quiz situees dessous, elles, continuaient d'etre generees. C'est
+ * `subcategorySlug`, deja resolu dans la bonne locale par resolveQuiz, qui
+ * fait foi.
+ */
 export function getQuizzesBySubcategory(categorySlug: string, subcategorySlug: string, locale: Locale): QuizData[] {
   const catQuizzes = getQuizzesByCategory(categorySlug, locale);
-  return catQuizzes.filter(
-    (q) => q.subcategory && slugifySubcategory(q.subcategory) === subcategorySlug
-  );
+  return catQuizzes.filter((q) => q.subcategorySlug === subcategorySlug);
 }
 
 /**
