@@ -2,9 +2,15 @@ import type { Locale } from "../../i18n/config";
 import { locales } from "../../i18n/config";
 import type { MiniGameDef, MiniGameData, ComparisonSet } from "./types";
 import { comparisonSets } from "./higher-lower";
+import { ratherPairs } from "./rather";
+import { trueFalseStatements } from "./true-false";
 
 export type { MiniGameDef, MiniGameData, ComparisonSet, GameItem, GameEngine } from "./types";
 export { comparisonSets } from "./higher-lower";
+export { ratherPairs } from "./rather";
+export type { RatherPair } from "./rather";
+export { trueFalseStatements } from "./true-false";
+export type { TrueFalseStatement } from "./true-false";
 
 /** Le segment du hub des jeux, par langue. */
 export const gamesHubSlug: Record<Locale, string> = {
@@ -360,6 +366,332 @@ export const miniGameDefs: MiniGameDef[] = [
       },
     },
   },
+  {
+    id: "rather",
+    engine: "rather",
+    slugs: {
+      en: "would-you-rather",
+      fr: "tu-preferes",
+      es: "que-prefieres",
+    },
+    color: "bg-rose-500",
+    coverImage: "/images/cover-vraifaux.webp",
+    translations: {
+      en: {
+        name: "Would You Rather",
+        tagline: "Two options, no right answer, and the share of players who picked the same as you.",
+        metaTitle: "Would You Rather: the free choice game | WizyQuiz",
+        metaDescription:
+          "Two options, you pick one, and you see what everyone else picked. Thirty-two dilemmas, no account, and no right answer anywhere.",
+        heading: "Would You Rather",
+        intro:
+          "Would you rather fly, or be invisible? You pick one, and the game shows you how the other players split on the same question. There is nothing to get right here: the point is the gap between what you were sure of and what everyone else chose.",
+        steps: [
+          {
+            title: "Read the two options",
+            text: "They are written to be defendable both ways. A dilemma where one side wins nine times out of ten is not a dilemma, it is a question, and those are not in here.",
+          },
+          {
+            title: "Pick your side",
+            text: "One tap, nothing to confirm. There is no going back on a question, which is what makes you actually think about it.",
+          },
+          {
+            title: "See the split",
+            text: "The bar fills each card with the share of players who chose it. Until a dilemma has been played enough times, nothing is shown rather than a figure standing on three votes.",
+          },
+          {
+            title: "Carry on",
+            text: "Thirty-two dilemmas, in a different order every time. It works on your own, and it works better out loud with someone who disagrees.",
+          },
+        ],
+        faq: [
+          {
+            q: "Is there a right answer?",
+            a: "No, and that is the only game here where there is not. Nothing is scored and nothing is corrected. What you get back is where you stand next to everyone else.",
+          },
+          {
+            q: "Are the percentages real?",
+            a: "Yes. They count the choices of the players who came before you on that exact dilemma. A dilemma played fewer than eight times shows nothing at all.",
+          },
+          {
+            q: "How many dilemmas are there?",
+            a: "Thirty-two, drawn in a different order each time you start. Once you have been through them all, the game offers to go again.",
+          },
+          {
+            q: "Can I play it with someone else?",
+            a: "That is when it is at its best. Read the two options out loud, both answer before anyone taps, and the disagreement is the game.",
+          },
+          {
+            q: "Do I need an account?",
+            a: "No. Nothing is asked of you, and your choices are not attached to anything.",
+          },
+        ],
+      },
+      fr: {
+        name: "Tu préfères",
+        tagline: "Deux options, aucune bonne réponse, et la part de joueurs qui ont choisi comme vous.",
+        metaTitle: "Tu préfères : le jeu de dilemmes gratuit | WizyQuiz",
+        metaDescription:
+          "Deux options, vous en choisissez une, et vous voyez ce qu'ont choisi les autres. Trente-deux dilemmes, sans compte et sans bonne réponse.",
+        heading: "Tu préfères",
+        intro:
+          "Tu préfères voler, ou être invisible ? Vous choisissez, et le jeu vous montre comment les autres joueurs se sont partagés sur la même question. Il n'y a rien à trouver ici : ce qui fait le jeu, c'est l'écart entre ce dont vous étiez sûr et ce qu'ont répondu les autres.",
+        steps: [
+          {
+            title: "Lisez les deux options",
+            text: "Elles sont écrites pour qu'on puisse défendre les deux. Un dilemme où un côté gagne neuf fois sur dix n'est pas un dilemme, c'est une question, et il n'y en a pas ici.",
+          },
+          {
+            title: "Choisissez votre camp",
+            text: "Un clic, rien à confirmer. On ne revient pas en arrière sur une question, et c'est justement ce qui fait qu'on y réfléchit vraiment.",
+          },
+          {
+            title: "Regardez le partage",
+            text: "La barre remplit chaque carte avec la part de joueurs qui l'ont choisie. Tant qu'un dilemme n'a pas été assez joué, rien ne s'affiche, plutôt qu'un chiffre posé sur trois votes.",
+          },
+          {
+            title: "Enchaînez",
+            text: "Trente-deux dilemmes, dans un ordre différent à chaque fois. Ça marche tout seul, et ça marche mieux à voix haute avec quelqu'un qui n'est pas d'accord.",
+          },
+        ],
+        faq: [
+          {
+            q: "Est-ce qu'il y a une bonne réponse ?",
+            a: "Non, et c'est le seul jeu d'ici où il n'y en a pas. Rien n'est compté, rien n'est corrigé. Ce que vous récupérez, c'est votre place par rapport aux autres.",
+          },
+          {
+            q: "Les pourcentages sont réels ?",
+            a: "Oui. Ils comptent les choix des joueurs passés avant vous sur ce dilemme précis. Un dilemme joué moins de huit fois n'affiche rien du tout.",
+          },
+          {
+            q: "Combien y a-t-il de dilemmes ?",
+            a: "Trente-deux, tirés dans un ordre différent à chaque partie. Une fois que vous les avez tous faits, le jeu propose de recommencer.",
+          },
+          {
+            q: "On peut y jouer à plusieurs ?",
+            a: "C'est là qu'il est le meilleur. Lisez les deux options à voix haute, répondez tous les deux avant que quelqu'un clique, et le désaccord fait le jeu.",
+          },
+          {
+            q: "Faut-il créer un compte ?",
+            a: "Non. On ne vous demande rien, et vos choix ne sont rattachés à rien.",
+          },
+        ],
+      },
+      es: {
+        name: "Qué prefieres",
+        tagline: "Dos opciones, ninguna respuesta correcta, y el porcentaje de jugadores que eligió como tú.",
+        metaTitle: "Qué prefieres: el juego de dilemas gratis | WizyQuiz",
+        metaDescription:
+          "Dos opciones, eliges una, y ves qué han elegido los demás. Treinta y dos dilemas, sin cuenta y sin respuesta correcta.",
+        heading: "Qué prefieres",
+        intro:
+          "¿Prefieres volar, o ser invisible? Eliges, y el juego te enseña cómo se han repartido los demás jugadores en la misma pregunta. Aquí no hay nada que acertar: lo que hace el juego es la distancia entre lo que dabas por seguro y lo que ha respondido todo el mundo.",
+        steps: [
+          {
+            title: "Lee las dos opciones",
+            text: "Están escritas para que se puedan defender las dos. Un dilema en el que un lado gana nueve de cada diez veces no es un dilema, es una pregunta, y aquí no hay de esas.",
+          },
+          {
+            title: "Elige tu bando",
+            text: "Un toque, nada que confirmar. No se vuelve atrás en una pregunta, y es justo eso lo que hace que te lo pienses de verdad.",
+          },
+          {
+            title: "Mira el reparto",
+            text: "La barra llena cada carta con el porcentaje de jugadores que la eligieron. Mientras un dilema no se haya jugado bastante, no se enseña nada, antes que una cifra apoyada en tres votos.",
+          },
+          {
+            title: "Sigue",
+            text: "Treinta y dos dilemas, en un orden distinto cada vez. Funciona solo, y funciona mejor en voz alta con alguien que no esté de acuerdo.",
+          },
+        ],
+        faq: [
+          {
+            q: "¿Hay respuesta correcta?",
+            a: "No, y es el único juego de aquí donde no la hay. No se cuenta nada y no se corrige nada. Lo que te llevas es tu sitio respecto a los demás.",
+          },
+          {
+            q: "¿Los porcentajes son reales?",
+            a: "Sí. Cuentan las elecciones de los jugadores que pasaron antes que tú por ese dilema concreto. Un dilema jugado menos de ocho veces no enseña nada.",
+          },
+          {
+            q: "¿Cuántos dilemas hay?",
+            a: "Treinta y dos, sacados en un orden distinto en cada partida. Cuando los has hecho todos, el juego propone volver a empezar.",
+          },
+          {
+            q: "¿Se puede jugar entre varios?",
+            a: "Ahí es donde mejor está. Leed las dos opciones en voz alta, responded los dos antes de que nadie pulse, y el desacuerdo es el juego.",
+          },
+          {
+            q: "¿Hace falta crear una cuenta?",
+            a: "No. No se te pide nada, y tus elecciones no van atadas a nada.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    id: "true-false",
+    engine: "true-false",
+    slugs: {
+      en: "true-or-false",
+      fr: "vrai-ou-faux",
+      es: "verdadero-o-falso",
+    },
+    color: "bg-emerald-500",
+    coverImage: "/images/cover-vraifaux.webp",
+    translations: {
+      en: {
+        name: "True or False",
+        tagline: "Statements one after another, three lives, and an explanation under every answer.",
+        metaTitle: "True or False: the free endless quiz | WizyQuiz",
+        metaDescription:
+          "Statements to sort, three lives, and the reason under every answer. Geography, cinema, sport and general knowledge, with no account.",
+        heading: "True or False",
+        intro:
+          "A statement comes up, you say true or false, and the game tells you straight away, with the reason underneath. The Great Wall of China is not visible from the Moon, and a tomato really is a fruit. Three lives, and the streak runs until the third mistake.",
+        steps: [
+          {
+            title: "Read the statement",
+            text: "They are written plainly, with no traps in the wording. What makes them hard is the fact, not the sentence.",
+          },
+          {
+            title: "Say true or false",
+            text: "One tap. The answer shows straight away, with the explanation under it, which is the part worth reading even when you got it right.",
+          },
+          {
+            title: "Watch your lives",
+            text: "Three of them. One mistake does not end the run, which is what lets you carry on after a statement you could not have known.",
+          },
+          {
+            title: "Beat your streak",
+            text: "The counter climbs with every right answer and your best is kept on your phone. The draw alternates true and false, so always saying the same thing gets you nowhere.",
+          },
+        ],
+        faq: [
+          {
+            q: "Can I just say true every time?",
+            a: "It gets you nothing. The draw alternates between a true statement and a false one, so answering the same thing every round lands exactly where random would. That is the point of alternating.",
+          },
+          {
+            q: "How many lives do I get?",
+            a: "Three. A single life ends a knowledge game in ten seconds and nobody comes back to it, so a mistake costs a heart rather than the run.",
+          },
+          {
+            q: "Why is there an explanation every time?",
+            a: "A false statement corrected without a reason leaves you with one belief removed and nothing to put in its place. The explanation is where the game is actually worth playing.",
+          },
+          {
+            q: "Where do the false ones come from?",
+            a: "They are the things people really do believe, such as the Great Wall from the Moon or blind bats, not statements invented to catch you out. A false one you could not have guessed teaches nothing either.",
+          },
+          {
+            q: "Do I need an account?",
+            a: "No. Your best streak stays on your phone and nothing is asked of you.",
+          },
+        ],
+      },
+      fr: {
+        name: "Vrai ou faux",
+        tagline: "Des affirmations qui s'enchaînent, trois vies, et une explication sous chaque réponse.",
+        metaTitle: "Vrai ou faux : le quiz sans fin gratuit | WizyQuiz",
+        metaDescription:
+          "Des affirmations à trancher, trois vies, et la raison sous chaque réponse. Géographie, cinéma, sport et culture générale, sans compte.",
+        heading: "Vrai ou faux",
+        intro:
+          "Une affirmation s'affiche, vous dites vrai ou faux, et le jeu répond tout de suite, avec la raison en dessous. La Grande Muraille de Chine n'est pas visible depuis la Lune, et la tomate est bien un fruit. Trois vies, et la série court jusqu'à la troisième erreur.",
+        steps: [
+          {
+            title: "Lisez l'affirmation",
+            text: "Elles sont écrites simplement, sans piège dans la formulation. Ce qui les rend difficiles, c'est le fait, pas la phrase.",
+          },
+          {
+            title: "Dites vrai ou faux",
+            text: "Un clic. La réponse s'affiche tout de suite, avec l'explication en dessous, et c'est la partie qui vaut le coup d'être lue même quand on a bon.",
+          },
+          {
+            title: "Surveillez vos vies",
+            text: "Vous en avez trois. Une erreur ne termine pas la partie, et c'est ce qui permet de continuer après une affirmation qu'on ne pouvait pas connaître.",
+          },
+          {
+            title: "Battez votre série",
+            text: "Le compteur monte à chaque bonne réponse et votre record est gardé sur votre téléphone. Le tirage alterne le vrai et le faux, du coup répondre toujours pareil ne mène nulle part.",
+          },
+        ],
+        faq: [
+          {
+            q: "Je peux répondre vrai à tous les coups ?",
+            a: "Ça ne rapporte rien. Le tirage alterne une affirmation vraie et une fausse, donc répondre toujours la même chose tombe exactement au niveau du hasard. C'est justement à ça que sert l'alternance.",
+          },
+          {
+            q: "Combien de vies on a ?",
+            a: "Trois. Une seule vie termine un jeu de connaissance en dix secondes et on n'y revient pas, alors une erreur coûte un cœur plutôt que la partie.",
+          },
+          {
+            q: "Pourquoi une explication à chaque fois ?",
+            a: "Une affirmation fausse corrigée sans raison laisse le joueur avec une croyance en moins et rien pour la remplacer. L'explication, c'est là que le jeu sert vraiment à quelque chose.",
+          },
+          {
+            q: "D'où viennent les fausses ?",
+            a: "Ce sont des idées reçues qu'on entend vraiment, comme la Grande Muraille depuis la Lune ou les chauves-souris aveugles, pas des affirmations inventées pour piéger. Un faux qu'on ne pouvait pas deviner n'apprend rien non plus.",
+          },
+          {
+            q: "Faut-il créer un compte ?",
+            a: "Non. Votre record reste sur votre téléphone et on ne vous demande rien.",
+          },
+        ],
+      },
+      es: {
+        name: "Verdadero o falso",
+        tagline: "Afirmaciones que se encadenan, tres vidas, y una explicación bajo cada respuesta.",
+        metaTitle: "Verdadero o falso: el quiz sin fin gratis | WizyQuiz",
+        metaDescription:
+          "Afirmaciones que decidir, tres vidas, y el motivo bajo cada respuesta. Geografía, cine, deporte y cultura general, sin cuenta.",
+        heading: "Verdadero o falso",
+        intro:
+          "Sale una afirmación, dices verdadero o falso, y el juego responde al momento, con el motivo debajo. La Gran Muralla China no se ve desde la Luna, y el tomate sí que es una fruta. Tres vidas, y la racha corre hasta el tercer fallo.",
+        steps: [
+          {
+            title: "Lee la afirmación",
+            text: "Están escritas de forma sencilla, sin trampa en la formulación. Lo que las hace difíciles es el hecho, no la frase.",
+          },
+          {
+            title: "Di verdadero o falso",
+            text: "Un toque. La respuesta sale al momento, con la explicación debajo, que es la parte que vale la pena leer incluso cuando has acertado.",
+          },
+          {
+            title: "Vigila tus vidas",
+            text: "Tienes tres. Un fallo no acaba la partida, y eso es lo que te deja seguir después de una afirmación que no podías saber.",
+          },
+          {
+            title: "Bate tu racha",
+            text: "El contador sube con cada acierto y tu récord se guarda en tu móvil. El sorteo alterna verdadero y falso, así que responder siempre lo mismo no lleva a ninguna parte.",
+          },
+        ],
+        faq: [
+          {
+            q: "¿Puedo responder verdadero siempre?",
+            a: "No sirve de nada. El sorteo alterna una afirmación verdadera y una falsa, así que responder siempre lo mismo cae justo al nivel del azar. Para eso está la alternancia.",
+          },
+          {
+            q: "¿Cuántas vidas hay?",
+            a: "Tres. Una sola vida acaba un juego de conocimiento en diez segundos y nadie vuelve, así que un fallo cuesta un corazón y no la partida.",
+          },
+          {
+            q: "¿Por qué hay explicación cada vez?",
+            a: "Una afirmación falsa corregida sin motivo deja al jugador con una creencia menos y nada con que sustituirla. La explicación es donde el juego sirve de verdad para algo.",
+          },
+          {
+            q: "¿De dónde salen las falsas?",
+            a: "Son ideas que la gente se cree de verdad, como la Gran Muralla desde la Luna o los murciélagos ciegos, no afirmaciones inventadas para engañar. Un falso que no podías adivinar tampoco enseña nada.",
+          },
+          {
+            q: "¿Hace falta crear una cuenta?",
+            a: "No. Tu récord se queda en tu móvil y no se te pide nada.",
+          },
+        ],
+      },
+    },
+  },
 ];
 
 /**
@@ -439,5 +771,24 @@ export function getComparisonSets(locale: Locale) {
       image: it.image,
       label: it.labels[locale] || it.labels.en,
     })),
+  }));
+}
+
+/** Les duos du « tu preferes », resolus dans une langue. */
+export function getRatherPairs(locale: Locale) {
+  return ratherPairs.map((p) => ({
+    id: p.id,
+    a: p.a[locale] || p.a.en,
+    b: p.b[locale] || p.b.en,
+  }));
+}
+
+/** Les affirmations du « vrai ou faux », resolues dans une langue. */
+export function getTrueFalseStatements(locale: Locale) {
+  return trueFalseStatements.map((s) => ({
+    id: s.id,
+    answer: s.answer,
+    text: s.text[locale] || s.text.en,
+    explanation: s.explanation[locale] || s.explanation.en,
   }));
 }

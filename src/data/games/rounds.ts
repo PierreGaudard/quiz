@@ -1,4 +1,6 @@
 import { comparisonSets } from "./higher-lower";
+import { ratherPairs } from "./rather";
+import { trueFalseStatements } from "./true-false";
 
 /**
  * La validation des cles de manche, un validateur par jeu.
@@ -34,9 +36,21 @@ function validatePrice(key: string): boolean {
   return !!set && set.items.some((i) => i.id === itemId);
 }
 
+/** L'identifiant du duo, tel quel : il n'y a rien d'autre a identifier. */
+function validateRather(key: string): boolean {
+  return ratherPairs.some((p) => p.id === key);
+}
+
+/** L'identifiant de l'affirmation, tel quel. */
+function validateTrueFalse(key: string): boolean {
+  return trueFalseStatements.some((s) => s.id === key);
+}
+
 const VALIDATORS: Record<string, Validator> = {
   "higher-lower": validateHigherLower,
   price: validatePrice,
+  rather: validateRather,
+  "true-false": validateTrueFalse,
 };
 
 /** Le jeu est-il connu, et la cle est-elle une manche qu'il peut poser ? */
