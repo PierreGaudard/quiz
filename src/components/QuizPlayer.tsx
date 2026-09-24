@@ -10,10 +10,10 @@ interface Props {
 const LETTER_LABELS = ["A", "B", "C", "D"];
 
 const ANSWER_COLORS = [
-  { bg: "bg-violet-50 hover:bg-violet-100 border-violet-200", label: "bg-violet-500" },
-  { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-500" },
-  { bg: "bg-amber-50 hover:bg-amber-100 border-amber-200", label: "bg-amber-500" },
-  { bg: "bg-rose-50 hover:bg-rose-100 border-rose-200", label: "bg-rose-500" },
+  { bg: "bg-brand-50 hover:bg-brand-100 border-brand-200", label: "bg-brand-600" },
+  { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-600" },
+  { bg: "bg-amber-50 hover:bg-amber-100 border-amber-200", label: "bg-amber-700" },
+  { bg: "bg-rose-50 hover:bg-rose-100 border-rose-200", label: "bg-rose-600" },
 ];
 
 // Vary card shapes per question index
@@ -404,9 +404,9 @@ export default function QuizPlayer({ quiz }: Props) {
               )}
             </div>
             <div className="flex items-center justify-center gap-2 pt-1">
-              <span className="px-3 py-1.5 bg-emerald-500 rounded-xl text-xs font-bold text-white shadow-sm">50/50</span>
-              <span className="px-3 py-1.5 bg-fuchsia-500 rounded-xl text-xs font-bold text-white shadow-sm">2e chance</span>
-              <span className="px-3 py-1.5 bg-cyan-500 rounded-xl text-xs font-bold text-white shadow-sm">Indice</span>
+              <span className="px-3 py-1.5 bg-emerald-700 rounded-xl text-xs font-bold text-white shadow-sm">50/50</span>
+              <span className="px-3 py-1.5 bg-brand-500 rounded-xl text-xs font-bold text-white shadow-sm">2e chance</span>
+              <span className="px-3 py-1.5 bg-cyan-700 rounded-xl text-xs font-bold text-white shadow-sm">Indice</span>
             </div>
             <button
               onClick={handleStart}
@@ -429,10 +429,10 @@ export default function QuizPlayer({ quiz }: Props) {
     const wrongCount = resultTotal - correctCount;
     const xpPerQuestion = totalQuestions > 0 ? Math.round(totalXp / Math.max(correctCount, 1)) : 0;
 
-    const rank = scorePercent >= 90 ? { label: "Legende", color: "bg-amber-500", icon: "S" }
-      : scorePercent >= 70 ? { label: "Expert", color: "bg-violet-500", icon: "A" }
-      : scorePercent >= 50 ? { label: "Confirme", color: "bg-blue-500", icon: "B" }
-      : scorePercent >= 30 ? { label: "Apprenti", color: "bg-green-500", icon: "C" }
+    const rank = scorePercent >= 90 ? { label: "Legende", color: "bg-amber-700", icon: "S" }
+      : scorePercent >= 70 ? { label: "Expert", color: "bg-brand-600", icon: "A" }
+      : scorePercent >= 50 ? { label: "Confirme", color: "bg-blue-600", icon: "B" }
+      : scorePercent >= 30 ? { label: "Apprenti", color: "bg-green-700", icon: "C" }
       : { label: "Debutant", color: "bg-gray-500", icon: "D" };
 
     const shareText = `${rank.icon} ${rank.label} · ${score}/${totalQuestions} (${totalXp} XP) au quiz "${quiz.title}" !`;
@@ -533,7 +533,7 @@ export default function QuizPlayer({ quiz }: Props) {
             </div>
 
             {/* XP earned */}
-            <div className="bg-amber-500 rounded-2xl p-4 shadow-sm text-center text-white">
+            <div className="bg-amber-700 rounded-2xl p-4 shadow-sm text-center text-white">
               <div className="first-letter:uppercase text-xs font-semibold opacity-80 mb-1">Expérience gagnée</div>
               <div className="text-4xl font-display font-bold animate-score-reveal">+{totalXp} XP</div>
               <div className="text-xs opacity-80 mt-1">
@@ -593,10 +593,10 @@ export default function QuizPlayer({ quiz }: Props) {
 
             {/* Chrono result summary */}
             {isChrono && (
-              <div className="bg-violet-50 border border-violet-200 rounded-2xl p-4 text-center">
-                <div className="text-3xl font-display font-bold text-violet-700">{score}</div>
-                <div className="text-sm text-violet-600 font-medium">bonnes réponses en {CHRONO_DURATION}s</div>
-                <div className="text-xs text-violet-500 mt-1">{chronoQuestionIndex + (hasAnswered ? 1 : 0)} questions tentées</div>
+              <div className="bg-brand-50 border border-brand-200 rounded-2xl p-4 text-center">
+                <div className="text-3xl font-display font-bold text-brand-700">{score}</div>
+                <div className="text-sm text-brand-600 font-medium">bonnes réponses en {CHRONO_DURATION}s</div>
+                <div className="text-xs text-brand-500 mt-1">{chronoQuestionIndex + (hasAnswered ? 1 : 0)} questions tentées</div>
               </div>
             )}
 
@@ -623,7 +623,7 @@ export default function QuizPlayer({ quiz }: Props) {
             {/* Quiz name + URL watermark for sharing */}
             <div className="text-center pt-2 border-t border-gray-100">
               <p className="text-xs font-semibold text-primary">{quiz.title}</p>
-              <p className="text-[10px] text-text-muted">{shareUrl}</p>
+              <p className="text-[11px] text-text-muted">{shareUrl}</p>
             </div>
           </div>
 
@@ -778,7 +778,7 @@ export default function QuizPlayer({ quiz }: Props) {
                   } else if (isSelected) {
                     classes = `bg-red-100 border-red-500 border-2 text-red-800 ${shakeWrong ? "animate-shake" : ""}`;
                   } else {
-                    classes = "bg-gray-50 border-gray-200 text-gray-400 opacity-50";
+                    classes = "bg-gray-50 border-gray-200 text-gray-500 opacity-50";
                   }
                   return (
                     <button
@@ -876,9 +876,9 @@ export default function QuizPlayer({ quiz }: Props) {
                       <div className="text-xl font-bold text-cyan-700">{((estimationFinishTime - estimationStartTime) / 1000).toFixed(1)}s</div>
                       <div className="text-xs text-cyan-600">Temps</div>
                     </div>
-                    <div className="bg-violet-50 border border-violet-200 rounded-xl px-4 py-2">
-                      <div className="text-xl font-bold text-violet-700">{estimationAttempts}</div>
-                      <div className="text-xs text-violet-600">Essai{estimationAttempts > 1 ? "s" : ""}</div>
+                    <div className="bg-brand-50 border border-brand-200 rounded-xl px-4 py-2">
+                      <div className="text-xl font-bold text-brand-700">{estimationAttempts}</div>
+                      <div className="text-xs text-brand-600">Essai{estimationAttempts > 1 ? "s" : ""}</div>
                     </div>
                   </div>
                   <button
@@ -974,14 +974,14 @@ export default function QuizPlayer({ quiz }: Props) {
                       onDragStart={() => setOrdreDragIndex(i)}
                       onDragOver={(e) => {
                         e.preventDefault();
-                        e.currentTarget.classList.add("ring-2", "ring-indigo-400");
+                        e.currentTarget.classList.add("ring-2", "ring-brand-400");
                       }}
                       onDragLeave={(e) => {
-                        e.currentTarget.classList.remove("ring-2", "ring-indigo-400");
+                        e.currentTarget.classList.remove("ring-2", "ring-brand-400");
                       }}
                       onDrop={(e) => {
                         e.preventDefault();
-                        e.currentTarget.classList.remove("ring-2", "ring-indigo-400");
+                        e.currentTarget.classList.remove("ring-2", "ring-brand-400");
                         if (ordreDragIndex === null || ordreSubmitted) return;
                         const newItems = [...ordreItems];
                         const [dragged] = newItems.splice(ordreDragIndex, 1);
@@ -994,13 +994,13 @@ export default function QuizPlayer({ quiz }: Props) {
                           ? isInCorrectPosition
                             ? "bg-green-50 border-green-400"
                             : "bg-red-50 border-red-400"
-                          : "bg-white border-gray-200 hover:border-indigo-300 cursor-grab active:cursor-grabbing"
+                          : "bg-white border-gray-200 hover:border-brand-300 cursor-grab active:cursor-grabbing"
                       }`}
                     >
                       <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white ${
                         ordreSubmitted
-                          ? isInCorrectPosition ? "bg-green-500" : "bg-red-500"
-                          : "bg-indigo-500"
+                          ? isInCorrectPosition ? "bg-green-700" : "bg-red-600"
+                          : "bg-brand-500"
                       }`}>
                         {i + 1}
                       </span>
@@ -1008,7 +1008,7 @@ export default function QuizPlayer({ quiz }: Props) {
                       {ordreSubmitted && isInCorrectPosition && <span className="text-green-500">✓</span>}
                       {ordreSubmitted && isWrongPosition && <span className="text-red-500">✗</span>}
                       {!ordreSubmitted && (
-                        <svg className="w-5 h-5 text-gray-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <svg className="w-5 h-5 text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />
                         </svg>
                       )}
@@ -1040,7 +1040,7 @@ export default function QuizPlayer({ quiz }: Props) {
                       setLastXpGain(xp);
                     }
                   }}
-                  className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-sm cursor-pointer transition-all"
+                  className="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl shadow-sm cursor-pointer transition-all"
                 >
                   Valider l'ordre
                 </button>
@@ -1101,7 +1101,7 @@ export default function QuizPlayer({ quiz }: Props) {
               if (isHidden && !hasAnswered) {
                 return (
                   <div key={answer.id} className={`flex items-center gap-3 p-3 ${cardShape} border border-dashed border-gray-200 bg-gray-50/50 opacity-40`}>
-                    <span className={`flex-shrink-0 w-8 h-8 ${badgeShape} bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-400`}>{LETTER_LABELS[i]}</span>
+                    <span className={`flex-shrink-0 w-8 h-8 ${badgeShape} bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-500`}>{LETTER_LABELS[i]}</span>
                     <span className="font-medium text-sm text-gray-300 line-through">{answer.text}</span>
                   </div>
                 );
@@ -1136,8 +1136,8 @@ export default function QuizPlayer({ quiz }: Props) {
                   style={{ animationDelay: `${i * 60}ms` }}
                 >
                   <span className={`flex-shrink-0 w-8 h-8 ${badgeShape} flex items-center justify-center text-xs font-bold transition-colors duration-200 ${
-                    hasAnswered && isCorrectAnswer ? "bg-green-500 text-white"
-                    : hasAnswered && isSelected && !isCorrectAnswer ? "bg-red-500 text-white"
+                    hasAnswered && isCorrectAnswer ? "bg-green-700 text-white"
+                    : hasAnswered && isSelected && !isCorrectAnswer ? "bg-red-600 text-white"
                     : hasAnswered ? "bg-gray-200 text-gray-400"
                     : `${color.label} text-white`
                   }`}>
@@ -1157,7 +1157,7 @@ export default function QuizPlayer({ quiz }: Props) {
                 className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer ${
                   bonusUsed["fifty-fifty"]
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                    : "bg-emerald-500 hover:bg-emerald-600 text-white shadow-md"
+                    : "bg-emerald-700 hover:bg-emerald-600 text-white shadow-md"
                 }`}>
                 50/50
               </button>
@@ -1166,8 +1166,8 @@ export default function QuizPlayer({ quiz }: Props) {
                   bonusUsed["second-chance"]
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                     : secondChanceActive
-                      ? "bg-fuchsia-600 text-white shadow-sm ring-2 ring-fuchsia-300"
-                      : "bg-fuchsia-500 hover:bg-fuchsia-600 text-white shadow-md"
+                      ? "bg-brand-600 text-white shadow-sm ring-2 ring-brand-300"
+                      : "bg-brand-500 hover:bg-brand-600 text-white shadow-md"
                 }`}>
                 2e chance
               </button>
@@ -1175,7 +1175,7 @@ export default function QuizPlayer({ quiz }: Props) {
                 className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer ${
                   bonusUsed.hint
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                    : "bg-cyan-500 hover:bg-cyan-600 text-white shadow-md"
+                    : "bg-cyan-700 hover:bg-cyan-600 text-white shadow-md"
                 }`}>
                 Indice
               </button>

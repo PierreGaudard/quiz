@@ -83,13 +83,13 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Legend", color: "bg-amber-500", icon: "S", emoji: "🏆" }
+      ? { label: "Legend", color: "bg-amber-700", icon: "S", emoji: "🏆" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-violet-500", icon: "A", emoji: "🌟" }
+        ? { label: "Expert", color: "bg-brand-600", icon: "A", emoji: "🌟" }
         : scorePercent >= 50
-          ? { label: "Skilled", color: "bg-blue-500", icon: "B", emoji: "👍" }
+          ? { label: "Skilled", color: "bg-blue-600", icon: "B", emoji: "👍" }
           : scorePercent >= 30
-            ? { label: "Apprentice", color: "bg-green-500", icon: "C", emoji: "📚" }
+            ? { label: "Apprentice", color: "bg-green-700", icon: "C", emoji: "📚" }
             : { label: "Beginner", color: "bg-gray-500", icon: "D", emoji: "💪" };
 
   const difficultyColor: Record<string, string> = {
@@ -297,7 +297,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
   if (screen === "result") {
     return (
       <div className="space-y-6">
-        <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
+        <div className="bg-white rounded-2xl border-2 border-brand-200 shadow-sm overflow-hidden">
           {/* Header gradient */}
           <div className="bg-brand p-6 md:p-10 text-center text-white">
             <div className="text-sm font-medium text-white/70 mb-4">
@@ -396,11 +396,11 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                   {tt("wrong")}
                 </div>
               </div>
-              <div className="bg-violet-50 border border-violet-200 rounded-xl p-4 text-center">
-                <div className="text-3xl font-display font-bold text-violet-600">
+              <div className="bg-brand-50 border border-brand-200 rounded-xl p-4 text-center">
+                <div className="text-3xl font-display font-bold text-brand-600">
                   {scorePercent}%
                 </div>
-                <div className="text-xs text-violet-700 font-medium mt-1">
+                <div className="text-xs text-brand-700 font-medium mt-1">
                   {tt("score")}
                 </div>
               </div>
@@ -432,7 +432,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                     >
                       <span
                         className={`flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold text-white ${
-                          wasCorrect ? "bg-green-500" : "bg-red-500"
+                          wasCorrect ? "bg-green-700" : "bg-red-600"
                         }`}
                       >
                         {wasCorrect ? "\u2713" : "\u2717"}
@@ -557,7 +557,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 md:p-5">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-violet-600 bg-violet-50 px-2.5 py-1 rounded-full">
+            <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
               Question {currentIndex + 1}/{totalQuestions}
             </span>
             <span className="text-xs font-semibold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full">
@@ -566,8 +566,8 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
           </div>
           <div className="flex items-center gap-1.5">
             <span className="text-xs font-bold text-green-600">{score}</span>
-            <span className="text-[10px] text-gray-400">/</span>
-            <span className="text-xs font-bold text-gray-400">
+            <span className="text-[11px] text-gray-500">/</span>
+            <span className="text-xs font-bold text-gray-500">
               {currentIndex + (hasAnswered ? 1 : 0)}
             </span>
           </div>
@@ -583,11 +583,11 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
       </div>
 
       {/* Question card */}
-      <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border-2 border-brand-200 shadow-sm overflow-hidden">
         {/* Question number badge + question text */}
         <div className="px-5 md:px-8 pt-6 md:pt-8 pb-4 md:pb-5">
           <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-xl bg-violet-500 flex items-center justify-center text-sm md:text-base font-bold text-white shadow-md">
+            <span className="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-xl bg-brand-500 flex items-center justify-center text-sm md:text-base font-bold text-white shadow-md">
               {currentIndex + 1}
             </span>
             <h2 className="font-display text-lg md:text-2xl font-bold text-gray-900 leading-snug flex-1 pt-1">
@@ -662,7 +662,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
               >
                 <LightningBolt />
               </div>
-              <span className="first-letter:uppercase text-[10px] font-bold text-gray-400 hidden md:block">
+              <span className="first-letter:uppercase text-[11px] font-bold text-gray-500 hidden md:block">
                 or
               </span>
             </div>
@@ -732,7 +732,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
             return (
               <div
                 key={i}
-                className="w-3 h-3 rounded-full bg-violet-400 ring-2 ring-violet-200 animate-pulse"
+                className="w-3 h-3 rounded-full bg-brand-400 ring-2 ring-brand-200 animate-pulse"
               />
             );
           }

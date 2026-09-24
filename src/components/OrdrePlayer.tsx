@@ -87,13 +87,13 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Legend", color: "bg-amber-500", icon: "S" }
+      ? { label: "Legend", color: "bg-amber-700", icon: "S" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-violet-500", icon: "A" }
+        ? { label: "Expert", color: "bg-brand-600", icon: "A" }
         : scorePercent >= 50
-          ? { label: "Skilled", color: "bg-blue-500", icon: "B" }
+          ? { label: "Skilled", color: "bg-blue-600", icon: "B" }
           : scorePercent >= 30
-            ? { label: "Apprentice", color: "bg-green-500", icon: "C" }
+            ? { label: "Apprentice", color: "bg-green-700", icon: "C" }
             : { label: "Beginner", color: "bg-gray-500", icon: "D" };
 
   const difficultyColor: Record<string, string> = {
@@ -226,7 +226,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
         </div>
 
         {/* Results card */}
-        <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
+        <div className="bg-white rounded-2xl border-2 border-brand-200 shadow-sm overflow-hidden">
           <div className="bg-brand p-6 md:p-8 text-center text-white">
             <div className="text-sm font-medium text-white/70 mb-2">{tt("yourResult")}</div>
             <div className="flex items-center justify-center gap-4 mb-3">
@@ -307,7 +307,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                     >
                       <span
                         className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white ${
-                          isPerfect ? "bg-green-500" : r.points > 0 ? "bg-amber-500" : "bg-red-500"
+                          isPerfect ? "bg-green-700" : r.points > 0 ? "bg-amber-700" : "bg-red-600"
                         }`}
                       >
                         {i + 1}
@@ -440,7 +440,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
         {/* Start card */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 md:p-6 space-y-4">
           <div className="flex items-center gap-2 mb-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-violet-100 text-violet-700 border border-violet-200">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-brand-100 text-brand-700 border border-brand-200">
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
               </svg>
@@ -448,7 +448,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             </span>
           </div>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            {tt("introBefore")} <strong className="text-violet-700">{POINTS_PER_CORRECT} {tt("pointsWord")}</strong>{" "}
+            {tt("introBefore")} <strong className="text-brand-700">{POINTS_PER_CORRECT} {tt("pointsWord")}</strong>{" "}
             {tt("introAfter").replace("{max}", String(MAX_POINTS_PER_QUESTION))}
           </p>
           <button
@@ -472,7 +472,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
-            <span className="first-letter:uppercase inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-violet-100 text-violet-700 border border-violet-200">
+            <span className="first-letter:uppercase inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-brand-100 text-brand-700 border border-brand-200">
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
               </svg>
@@ -480,11 +480,11 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             </span>
             <span className="text-sm font-display font-bold text-gray-900">
               Question {activeIndex + 1}
-              <span className="text-gray-400">/{totalQuestions}</span>
+              <span className="text-gray-500">/{totalQuestions}</span>
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-sm font-display font-bold text-violet-600">
+            <span className="text-sm font-display font-bold text-brand-600">
               {totalPoints} pts
             </span>
           </div>
@@ -498,7 +498,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
       </div>
 
       {/* Question card */}
-      <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border-2 border-brand-200 shadow-sm overflow-hidden">
         {/* Question header */}
         <div className="px-4 md:px-6 pt-5 md:pt-6 pb-4">
           <div className="flex items-start gap-3">
@@ -558,18 +558,18 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                       ? hasValidated
                         ? `border-solid ${validationClass} cursor-default`
                         : isLast
-                          ? "border-solid border-violet-400 bg-violet-50 cursor-pointer hover:bg-violet-100 hover:border-violet-500"
-                          : "border-solid border-violet-300 bg-violet-50/50 cursor-default"
+                          ? "border-solid border-brand-400 bg-brand-50 cursor-pointer hover:bg-brand-100 hover:border-brand-500"
+                          : "border-solid border-brand-300 bg-brand-50/50 cursor-default"
                       : "border-gray-200 bg-gray-50/50 cursor-default"
                   }`}
                 >
                   {/* Number badge */}
                   <span
-                    className={`absolute -top-2.5 -left-1.5 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-black text-white shadow-sm ${
+                    className={`absolute -top-2.5 -left-1.5 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-black text-white shadow-sm ${
                       hasValidated && currentResult
                         ? currentResult.correctPositions[slot]
-                          ? "bg-green-500"
-                          : "bg-red-500"
+                          ? "bg-green-700"
+                          : "bg-red-600"
                         : "bg-brand hover:bg-brand-dark"
                     }`}
                   >
@@ -581,19 +581,19 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                         {answer.text}
                       </span>
                       {isLast && !hasValidated && (
-                        <span className="text-[9px] text-violet-500 font-medium mt-0.5">
+                        <span className="text-[11px] text-brand-500 font-medium mt-0.5">
                           {tt("undoHint")}
                         </span>
                       )}
                     </>
                   ) : (
-                    <span className="text-[10px] text-gray-400 font-medium">...</span>
+                    <span className="text-[11px] text-gray-500 font-medium">...</span>
                   )}
                   {/* Validation icon overlay */}
                   {hasValidated && currentResult && answerId && (
                     <span
-                      className={`absolute -top-1 -right-1 w-4 h-4 rounded-full flex items-center justify-center text-[9px] text-white ${
-                        currentResult.correctPositions[slot] ? "bg-green-500" : "bg-red-500"
+                      className={`absolute -top-1 -right-1 w-4 h-4 rounded-full flex items-center justify-center text-[11px] text-white ${
+                        currentResult.correctPositions[slot] ? "bg-green-700" : "bg-red-600"
                       }`}
                     >
                       {currentResult.correctPositions[slot] ? "\u2713" : "\u2717"}
@@ -623,10 +623,10 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                     disabled={isSelected || selectedOrder.length >= 4}
                     className={`relative flex items-center gap-3 p-3 md:p-3.5 rounded-xl border-2 transition-all duration-300 text-left ${
                       isSelected
-                        ? "border-violet-300 bg-violet-50/40 opacity-40 cursor-default scale-95"
+                        ? "border-brand-300 bg-brand-50/40 opacity-40 cursor-default scale-95"
                         : selectedOrder.length >= 4
                           ? "border-gray-200 bg-gray-50 opacity-40 cursor-default"
-                          : "border-gray-200 bg-white hover:border-violet-400 hover:bg-violet-50 cursor-pointer"
+                          : "border-gray-200 bg-white hover:border-brand-400 hover:bg-brand-50 cursor-pointer"
                     }`}
                   >
                     {isSelected ? (
@@ -635,14 +635,14 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                       </span>
                     ) : (
                       <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center">
-                        <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <svg className="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                         </svg>
                       </span>
                     )}
                     <span
                       className={`font-medium text-sm flex-1 ${
-                        isSelected ? "text-gray-400 line-through" : "text-gray-800"
+                        isSelected ? "text-gray-500 line-through" : "text-gray-800"
                       }`}
                     >
                       {answer.text}
@@ -696,7 +696,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               >
                 +{currentResult.points} point{currentResult.points !== 1 ? "s" : ""}
               </span>
-              <span className="text-sm text-gray-400">/ {MAX_POINTS_PER_QUESTION}</span>
+              <span className="text-sm text-gray-500">/ {MAX_POINTS_PER_QUESTION}</span>
               {currentResult.points === MAX_POINTS_PER_QUESTION && (
                 <span className="text-xs font-bold text-green-600 bg-green-100 px-2 py-0.5 rounded-full">
                   {tt("perfectBang")}
@@ -724,7 +724,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                     >
                       <span
                         className={`flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold text-white ${
-                          isCorrectPosition ? "bg-green-500" : "bg-red-500"
+                          isCorrectPosition ? "bg-green-700" : "bg-red-600"
                         }`}
                       >
                         {i + 1}
@@ -733,7 +733,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                         {getAnswerText(currentQuestion, id)}
                       </span>
                       {!isCorrectPosition && (
-                        <span className="text-[10px] font-semibold text-red-500 bg-red-100 px-1.5 py-0.5 rounded-full">
+                        <span className="text-[11px] font-semibold text-red-500 bg-red-100 px-1.5 py-0.5 rounded-full">
                           You placed #{playerIndex + 1}
                         </span>
                       )}
@@ -791,7 +791,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               key={i}
               className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                 i === activeIndex
-                  ? "w-6 bg-violet-500"
+                  ? "w-6 bg-brand-500"
                   : r
                     ? r.points === MAX_POINTS_PER_QUESTION
                       ? "bg-green-400"

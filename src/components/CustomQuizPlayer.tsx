@@ -15,10 +15,10 @@ function getCreatePath(): string {
 const LETTER_LABELS = ["A", "B", "C", "D"];
 
 const ANSWER_COLORS = [
-  { bg: "bg-violet-50 hover:bg-violet-100 border-violet-200", label: "bg-violet-500", selected: "bg-violet-100 border-violet-400" },
-  { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-500", selected: "bg-blue-100 border-blue-400" },
-  { bg: "bg-amber-50 hover:bg-amber-100 border-amber-200", label: "bg-amber-500", selected: "bg-amber-100 border-amber-400" },
-  { bg: "bg-rose-50 hover:bg-rose-100 border-rose-200", label: "bg-rose-500", selected: "bg-rose-100 border-rose-400" },
+  { bg: "bg-brand-50 hover:bg-brand-100 border-brand-200", label: "bg-brand-600", selected: "bg-brand-100 border-brand-400" },
+  { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-600", selected: "bg-blue-100 border-blue-400" },
+  { bg: "bg-amber-50 hover:bg-amber-100 border-amber-200", label: "bg-amber-700", selected: "bg-amber-100 border-amber-400" },
+  { bg: "bg-rose-50 hover:bg-rose-100 border-rose-200", label: "bg-rose-600", selected: "bg-rose-100 border-rose-400" },
 ];
 
 type Screen = "loading" | "error" | "intro" | "playing" | "result";
@@ -121,7 +121,7 @@ export default function CustomQuizPlayer() {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
         <div className="text-center space-y-3">
-          <div className="w-10 h-10 border-4 border-violet-200 border-t-violet-600 rounded-full animate-spin mx-auto" />
+          <div className="w-10 h-10 border-4 border-brand-200 border-t-brand-600 rounded-full animate-spin mx-auto" />
           <p className="text-gray-500 text-sm">Loading quiz...</p>
         </div>
       </div>
@@ -144,7 +144,7 @@ export default function CustomQuizPlayer() {
           </p>
           <a
             href={getCreatePath()}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl hover:bg-violet-700 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl hover:bg-brand-700 transition-colors"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
@@ -177,7 +177,7 @@ export default function CustomQuizPlayer() {
     scorePercent >= 90
       ? { label: "Légende", color: "bg-amber-600", text: "text-amber-700" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-brand", text: "text-violet-700" }
+        ? { label: "Expert", color: "bg-brand", text: "text-brand-700" }
         : scorePercent >= 50
           ? { label: "Confirmé", color: "bg-blue-600", text: "text-blue-700" }
           : scorePercent >= 30
@@ -210,7 +210,7 @@ export default function CustomQuizPlayer() {
         <div className="max-w-lg w-full">
           {banner}
           <div className="text-center space-y-4">
-            <span className="first-letter:uppercase inline-block text-violet-600 font-semibold text-sm">
+            <span className="first-letter:uppercase inline-block text-brand-600 font-semibold text-sm">
               {quiz.category}
             </span>
             <h1 className="font-display text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
@@ -332,7 +332,7 @@ export default function CustomQuizPlayer() {
               </button>
               <button
                 onClick={handleShare}
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl hover:bg-violet-700 transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl hover:bg-brand-700 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -372,7 +372,7 @@ export default function CustomQuizPlayer() {
             <span className="text-xs font-semibold text-gray-500">
               Question {currentIndex + 1} / {totalQuestions}
             </span>
-            <span className="text-xs font-bold text-violet-600">
+            <span className="text-xs font-bold text-brand-600">
               {score} correct
             </span>
           </div>
@@ -422,10 +422,10 @@ export default function CustomQuizPlayer() {
                     className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm ${
                       hasAnswered
                         ? isCorrectAnswer
-                          ? "bg-green-500"
+                          ? "bg-green-700"
                           : isSelected
-                            ? "bg-red-500"
-                            : "bg-gray-300"
+                            ? "bg-red-600"
+                            : "bg-gray-500"
                         : color.label
                     }`}
                   >
@@ -439,7 +439,7 @@ export default function CustomQuizPlayer() {
                         ? "text-green-800"
                         : isSelected
                           ? "text-red-800"
-                          : "text-gray-400"
+                          : "text-gray-500"
                       : "text-gray-800"
                   }`}>
                     {answer.text}

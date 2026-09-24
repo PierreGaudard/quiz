@@ -258,7 +258,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
   if (phase === "choose" || !set || !left || !right) {
     return (
       <div className="max-w-3xl mx-auto">
-        <p className="first-letter:uppercase text-center text-sm font-bold text-violet-600 mb-5">
+        <p className="first-letter:uppercase text-center text-sm font-bold text-brand-600 mb-5">
           {tt("chooseTheme", locale)}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -266,9 +266,9 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
             <button
               key={s.id}
               onClick={() => start(s)}
-              className="group text-left p-5 rounded-xl border border-gray-200 bg-white hover:border-violet-400 transition-all cursor-pointer"
+              className="group text-left p-5 rounded-xl border border-gray-200 bg-white hover:border-brand-400 transition-all cursor-pointer"
             >
-              <p className="font-display text-base font-bold text-gray-900 mb-1 group-hover:text-violet-700 transition-colors">
+              <p className="font-display text-base font-bold text-gray-900 mb-1 group-hover:text-brand-700 transition-colors">
                 {s.question}
               </p>
               <p className="text-xs text-gray-500">
@@ -292,13 +292,13 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
     return (
       <div className="max-w-md mx-auto text-center">
         <div className="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm">
-          <p className="first-letter:uppercase text-sm font-bold text-gray-400 mb-3">{tt("gameOver", locale)}</p>
+          <p className="first-letter:uppercase text-sm font-bold text-gray-500 mb-3">{tt("gameOver", locale)}</p>
           <p className="text-sm text-gray-500 mb-1">{tt("youGot", locale)}</p>
-          <p className="font-display text-6xl font-black text-violet-600 mb-2">{streak}</p>
+          <p className="font-display text-6xl font-black text-brand-600 mb-2">{streak}</p>
           {record && streak > 0 && (
             <p className="text-sm font-bold text-amber-600 mb-2 animate-confetti-pop">{tt("newBest", locale)}</p>
           )}
-          <p className="text-xs text-gray-400 mb-6">
+          <p className="text-xs text-gray-500 mb-6">
             {tt("best", locale)} : {best}
           </p>
 
@@ -310,7 +310,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
             envie de relancer.
           */}
           <div className="mb-6 p-4 rounded-xl bg-gray-50 border border-gray-100 text-left">
-            <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mb-2 text-center">
+            <p className="first-letter:uppercase text-[11px] font-bold text-gray-500 mb-2 text-center">
               {tt("missed", locale)}
             </p>
             <div className="flex items-center justify-between gap-3 text-sm">
@@ -359,13 +359,13 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
       {/* Bandeau serie / record */}
       <div className="flex items-center justify-center gap-6 mb-5">
         <div className="text-center">
-          <p className="font-display text-3xl font-black text-violet-600 leading-none">{streak}</p>
-          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("streak", locale)}</p>
+          <p className="font-display text-3xl font-black text-brand-600 leading-none">{streak}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-500 mt-1">{tt("streak", locale)}</p>
         </div>
         <div className="w-px h-8 bg-gray-200"></div>
         <div className="text-center">
           <p className="font-display text-3xl font-black text-gray-300 leading-none">{best}</p>
-          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("best", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-500 mt-1">{tt("best", locale)}</p>
         </div>
       </div>
 
@@ -377,7 +377,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
           <p className="font-display text-lg font-bold text-gray-900 mb-2 min-h-[3.5rem] flex items-center justify-center">
             {left.label}
           </p>
-          <p className="font-display text-2xl font-black text-violet-600">
+          <p className="font-display text-2xl font-black text-brand-600">
             {formatValue(left.value, set.unit, locale)}
           </p>
         </div>
@@ -424,7 +424,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
           <p className="text-sm font-semibold text-gray-600">{tt("foundIt", locale, { p: crowd })}</p>
         )}
         {set.asOf && (
-          <p className="text-xs text-gray-400 mt-1">
+          <p className="text-xs text-gray-500 mt-1">
             {tt("asOf", locale)} {set.asOf}
           </p>
         )}

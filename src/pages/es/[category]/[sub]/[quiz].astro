@@ -62,17 +62,17 @@ const quizJsonLd = buildQuizStructuredData({
 <Layout title={`${quiz.title} - WizyQuiz`} description={quiz.description} ogImage={quiz.coverImage} locale={locale} hreflangPaths={hreflangPaths}>
   <div class="max-w-7xl mx-auto px-4 pt-4 pb-8">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-6 overflow-hidden whitespace-nowrap" aria-label="Breadcrumb">
-      <a href={lp("/")} class="hover:text-violet-600 transition-colors font-medium shrink-0">{t(locale, "breadcrumb.home")}</a>
+      <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium shrink-0">{t(locale, "breadcrumb.home")}</a>
       <svg class="w-3 h-3 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       {categoryInfo && (
         <>
-          <a href={lp(`/${categoryInfo.slug}`)} class="hover:text-violet-600 transition-colors font-medium shrink-0">{categoryInfo.name}</a>
+          <a href={lp(`/${categoryInfo.slug}`)} class="hover:text-brand-600 transition-colors font-medium shrink-0">{categoryInfo.name}</a>
           <svg class="w-3 h-3 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
         </>
       )}
       {subName && categoryInfo && (
         <>
-          <a href={lp(`/${categoryInfo.slug}/${quiz.subcategorySlug}`)} class="hover:text-violet-600 transition-colors font-medium shrink-0">{subName}</a>
+          <a href={lp(`/${categoryInfo.slug}/${quiz.subcategorySlug}`)} class="hover:text-brand-600 transition-colors font-medium shrink-0">{subName}</a>
           <svg class="w-3 h-3 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
         </>
       )}
@@ -100,14 +100,14 @@ const quizJsonLd = buildQuizStructuredData({
         <noscript>
           <section class="py-8 space-y-6">
             <div class="text-center space-y-3 mb-8">
-              <span class="first-letter:uppercase inline-block text-violet-600 font-semibold text-sm">{quiz.category}</span>
+              <span class="first-letter:uppercase inline-block text-brand-600 font-semibold text-sm">{quiz.category}</span>
               <h2 class="font-bold text-3xl md:text-4xl text-gray-900 leading-tight">{quiz.title}</h2>
               <p class="text-gray-600 text-base max-w-xl mx-auto">{quiz.description}</p>
             </div>
             {quiz.questions.map((q: any, i: number) => (
               <article class="bg-white rounded-2xl p-5 md:p-6 shadow-sm border border-gray-100">
                 <h2 class="text-lg font-semibold text-gray-900 mb-3">
-                  <span class="text-violet-500 font-bold mr-2">Q{i + 1}.</span>
+                  <span class="text-brand-500 font-bold mr-2">Q{i + 1}.</span>
                   {q.question}
                 </h2>
                 {q.image && (
@@ -147,13 +147,13 @@ const quizJsonLd = buildQuizStructuredData({
                 <a href={lp(`/${rq.path}`)} class="group bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm transition-all">
                   {rq.coverImage && (
                     <div class="relative h-32 overflow-hidden">
-                      <img src={withBase(rq.coverImage)} alt={rq.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                      <img src={withBase(rq.coverImage)} alt={rq.title} class="w-full h-full object-cover transition-transform duration-300" loading="lazy" />
                       <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     </div>
                   )}
                   <div class="p-3.5">
-                    <div class="first-letter:uppercase text-[10px] font-semibold text-violet-600 mb-1">{rq.category}</div>
-                    <h3 class="font-display font-bold text-sm text-gray-900 leading-snug group-hover:text-violet-700 transition-colors">{rq.title}</h3>
+                    <div class="first-letter:uppercase text-[11px] font-semibold text-brand-600 mb-1">{rq.category}</div>
+                    <h3 class="font-display font-bold text-sm text-gray-900 leading-snug group-hover:text-brand-700 transition-colors">{rq.title}</h3>
                     <div class="flex items-center gap-2 mt-2 text-[11px] text-gray-500">
                       <span>{rq.questions.length} {t(locale, "quiz.questions")}</span>
                       <span data-plays-wrap hidden>&bull; <span data-plays-for={rq.slug} hidden></span> {t(locale, "quiz.plays")}</span>
@@ -170,14 +170,14 @@ const quizJsonLd = buildQuizStructuredData({
             <a href={lp(`/${categoryInfo.slug}`)} class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 shadow-sm transition-all group">
               <span class={`w-10 h-10 ${categoryInfo.color} rounded-xl flex items-center justify-center text-white p-2 flex-shrink-0`} set:html={categoryIcons[categoryInfo.slug] || categoryInfo.icon} />
               <div class="flex-1 min-w-0">
-                <div class="text-sm font-bold text-gray-900 group-hover:text-violet-700 transition-colors">{t(locale, "quiz.allInCategory", { category: categoryInfo.name })}</div>
+                <div class="text-sm font-bold text-gray-900 group-hover:text-brand-700 transition-colors">{t(locale, "quiz.allInCategory", { category: categoryInfo.name })}</div>
                 <div class="text-xs text-gray-500 mt-0.5">
                   {sameCategory.length > 0
                     ? t(locale, "quiz.otherInCategory", { count: sameCategory.length })
                     : t(locale, "quiz.discoverCategory")}
                 </div>
               </div>
-              <svg class="w-4 h-4 text-gray-400 group-hover:text-violet-500 group-hover:translate-x-0.5 transition-all flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              <svg class="w-4 h-4 text-gray-500 group-hover:text-brand-500 group-hover:translate-x-0.5 transition-all flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
             </a>
           </section>
         )}
@@ -191,9 +191,9 @@ const quizJsonLd = buildQuizStructuredData({
             </div>
             <div class="p-2 grid grid-cols-2 gap-1">
               {sidebarCategories.map((cat) => (
-                <a href={lp(`/${cat.slug}`)} class={`flex flex-col items-center gap-1 p-1.5 rounded-lg text-center transition-all hover:bg-gray-50 ${cat.name === quiz.category ? 'bg-violet-50 ring-1 ring-violet-200' : ''}`}>
+                <a href={lp(`/${cat.slug}`)} class={`flex flex-col items-center gap-1 p-1.5 rounded-lg text-center transition-all hover:bg-gray-50 ${cat.name === quiz.category ? 'bg-brand-50 ring-1 ring-brand-200' : ''}`}>
                   <span class={`w-7 h-7 ${cat.color} rounded-md flex items-center justify-center text-white p-1`} set:html={categoryIcons[cat.slug] || cat.icon} />
-                  <span class={`text-[10px] font-medium leading-tight ${cat.name === quiz.category ? 'text-violet-700 font-semibold' : 'text-gray-700'}`}>{cat.name}</span>
+                  <span class={`text-[11px] font-medium leading-tight ${cat.name === quiz.category ? 'text-brand-700 font-semibold' : 'text-gray-700'}`}>{cat.name}</span>
                 </a>
               ))}
             </div>
@@ -246,7 +246,7 @@ const quizJsonLd = buildQuizStructuredData({
           var rb = document.getElementById('sidebar-rank-block');
           if (rb) rb.innerHTML = '<a href="/es/clasificacion/" class="mt-3 flex items-center gap-3 p-3 bg-white rounded-xl border border-gray-100 shadow-sm transition-all">'
             + '<div class="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg></div>'
-            + '<div class="flex-1"><p class="text-[10px] text-gray-500 font-medium">Clasificacion general</p><p class="text-sm font-bold text-gray-900">#'+rd.rank+' <span class="text-gray-400 font-normal">/ '+rd.total+'</span></p></div>'
+            + '<div class="flex-1"><p class="text-[11px] text-gray-500 font-medium">Clasificacion general</p><p class="text-sm font-bold text-gray-900">#'+rd.rank+' <span class="text-gray-500 font-normal">/ '+rd.total+'</span></p></div>'
             + '<svg class="w-4 h-4 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a>';
         }).catch(function(){});
         if (quizSlug) {
@@ -261,10 +261,10 @@ const quizJsonLd = buildQuizStructuredData({
             })).then(function(scores){
               var fb = document.getElementById('sidebar-friends-block');
               if (!fb) return;
-              var h = '<div class="first-letter:uppercase mt-3 bg-white rounded-xl border border-gray-100 shadow-sm p-3"><p class="text-[10px] font-bold text-gray-400 mb-2">Puntuaciones de amigos</p>';
+              var h = '<div class="first-letter:uppercase mt-3 bg-white rounded-xl border border-gray-100 shadow-sm p-3"><p class="text-[11px] font-bold text-gray-500 mb-2">Puntuaciones de amigos</p>';
               scores.forEach(function(s){
-                var av = s.avatar ? '<img src="'+s.avatar+'" class="w-6 h-6 rounded-full object-cover" alt="" />' : '<span class="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center text-[10px] font-bold text-violet-600">'+s.username[0].toUpperCase()+'</span>';
-                var sc = s.bestScore!==null ? '<span class="text-xs font-bold text-gray-700">'+s.bestScore+'/'+s.total+'</span>' : '<span class="text-[10px] text-gray-400 italic">No jugado</span>';
+                var av = s.avatar ? '<img src="'+s.avatar+'" class="w-6 h-6 rounded-full object-cover" alt="" />' : '<span class="w-6 h-6 rounded-full bg-brand-100 flex items-center justify-center text-[11px] font-bold text-brand-600">'+s.username[0].toUpperCase()+'</span>';
+                var sc = s.bestScore!==null ? '<span class="text-xs font-bold text-gray-700">'+s.bestScore+'/'+s.total+'</span>' : '<span class="text-[11px] text-gray-500 italic">No jugado</span>';
                 h += '<div class="flex items-center gap-2 py-1"><div class="shrink-0">'+av+'</div><span class="flex-1 text-xs font-medium text-gray-700 truncate">'+s.username+'</span>'+sc+'</div>';
               });
               fb.innerHTML = h + '</div>';

@@ -97,7 +97,7 @@ export function MiniQCM({ locale = "en" as Locale }: { locale?: Locale }) {
         <img src={withBase("/images/cover-football.webp")} alt="Football quiz" width={800} height={450} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
-          <span className="text-[10px] font-bold bg-violet-500 text-white px-2 py-0.5 rounded">QCM</span>
+          <span className="text-[11px] font-bold bg-brand-500 text-white px-2 py-0.5 rounded">QCM</span>
         </div>
         <div className="absolute bottom-3 left-3 right-3">
           <p className="text-white font-bold text-sm leading-tight drop-shadow">{miniT.qcm.question[locale]}</p>
@@ -116,8 +116,8 @@ export function MiniQCM({ locale = "en" as Locale }: { locale?: Locale }) {
                     ? "bg-green-50 border-green-400 text-green-700"
                     : i === selected
                       ? "bg-red-50 border-red-400 text-red-700"
-                      : "bg-gray-50 border-gray-100 text-gray-400"
-                  : "border-gray-200 text-gray-700 hover:border-violet-400 hover:bg-violet-50"
+                      : "bg-gray-50 border-gray-100 text-gray-500"
+                  : "border-gray-200 text-gray-700 hover:border-brand-400 hover:bg-brand-50"
               }`}
             >
               {a}
@@ -131,7 +131,7 @@ export function MiniQCM({ locale = "en" as Locale }: { locale?: Locale }) {
           </div>
         )}
         {answered && (
-          <a href={withBase("/football-legendes")} className="block text-center text-xs font-bold text-violet-600 hover:text-violet-800 py-1 transition-colors">
+          <a href={withBase("/football-legendes")} className="block text-center text-xs font-bold text-brand-600 hover:text-brand-800 py-1 transition-colors">
             {miniT.qcm.cta[locale]}
           </a>
         )}
@@ -153,7 +153,7 @@ export function MiniVraiFaux({ locale = "en" as Locale }: { locale?: Locale }) {
         <img src={withBase("/images/cover-histoire.webp")} alt="History quiz" width={800} height={450} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
-          <span className="text-[10px] font-bold bg-emerald-500 text-white px-2 py-0.5 rounded">{miniT.vraiFaux.tag[locale]}</span>
+          <span className="text-[11px] font-bold bg-emerald-700 text-white px-2 py-0.5 rounded">{miniT.vraiFaux.tag[locale]}</span>
         </div>
         <div className="absolute bottom-3 left-3 right-3">
           <p className="text-white font-bold text-sm leading-tight drop-shadow">{miniT.vraiFaux.question[locale]}</p>
@@ -169,9 +169,9 @@ export function MiniVraiFaux({ locale = "en" as Locale }: { locale?: Locale }) {
               className={`text-sm font-bold py-3.5 rounded-lg border-2 transition-all cursor-pointer ${
                 answered
                   ? i === correct
-                    ? "bg-green-500 border-green-500 text-white"
+                    ? "bg-green-700 border-green-500 text-white"
                     : i === selected
-                      ? "bg-red-500 border-red-500 text-white"
+                      ? "bg-red-600 border-red-500 text-white"
                       : "bg-gray-100 border-gray-100 text-gray-400"
                   : i === 0
                     ? "border-emerald-300 text-emerald-600 hover:bg-emerald-50"
@@ -189,7 +189,7 @@ export function MiniVraiFaux({ locale = "en" as Locale }: { locale?: Locale }) {
           </div>
         )}
         {answered && (
-          <a href={withBase("/sport-vrai-ou-faux")} className="block text-center text-xs font-bold text-violet-600 hover:text-violet-800 py-1 transition-colors">
+          <a href={withBase("/sport-vrai-ou-faux")} className="block text-center text-xs font-bold text-brand-600 hover:text-brand-800 py-1 transition-colors">
             {miniT.vraiFaux.cta[locale]}
           </a>
         )}
@@ -231,7 +231,7 @@ export function MiniEstimation({ locale = "en" as Locale }: { locale?: Locale })
         <img src={withBase("/images/cover-geographie.webp")} alt="Geography quiz" width={800} height={450} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute top-3 left-3">
-          <span className="text-[10px] font-bold bg-cyan-500 text-white px-2 py-0.5 rounded">Estimation</span>
+          <span className="text-[11px] font-bold bg-cyan-700 text-white px-2 py-0.5 rounded">Estimation</span>
         </div>
         <div className="absolute bottom-3 left-3 right-3">
           <p className="text-white font-bold text-sm leading-tight drop-shadow">{miniT.estimation.question[locale]}</p>
@@ -258,7 +258,7 @@ export function MiniEstimation({ locale = "en" as Locale }: { locale?: Locale })
             <button
               onClick={handleGuess}
               disabled={!guess}
-              className="px-5 h-11 bg-cyan-500 hover:bg-cyan-400 disabled:bg-gray-200 text-white font-bold text-xs rounded-lg transition-colors cursor-pointer"
+              className="px-5 h-11 bg-cyan-700 hover:bg-cyan-400 disabled:bg-gray-200 text-white font-bold text-xs rounded-lg transition-colors cursor-pointer"
             >
               OK
             </button>
@@ -269,7 +269,7 @@ export function MiniEstimation({ locale = "en" as Locale }: { locale?: Locale })
               <span className="font-bold">{bravoText}</span>{" "}
               {miniT.estimation.correct[locale]}
             </div>
-            <a href={withBase("/estimation-records-sport")} className="block text-center text-xs font-bold text-violet-600 hover:text-violet-800 py-1 transition-colors">
+            <a href={withBase("/estimation-records-sport")} className="block text-center text-xs font-bold text-brand-600 hover:text-brand-800 py-1 transition-colors">
               {miniT.estimation.cta[locale]}
             </a>
           </div>

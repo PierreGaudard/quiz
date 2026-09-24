@@ -89,6 +89,34 @@ par le CSS global, rien a ajouter. Les couleurs A-B-C-D des reponses et les
 couleurs propres a chaque mode (rouge du chrono, rose du duel) restent : ce
 sont des reperes de jeu.
 
+Le violet s'ecrit toujours avec la gamme `brand-50` a `brand-900`, calee sur
+le logo, jamais avec `violet-*`, `purple-*`, `indigo-*` ou `fuchsia-*` de
+Tailwind : c'est la palette par defaut des interfaces generees. Et aussi :
+pas de texte sous 11 px, pas de zoom ni de rotation d'image au survol, pas
+d'animation a rebond (`animate-bounce`, courbes elastiques), pas de carte
+dans une carte, pas de filet de couleur sur un seul cote d'une carte arrondie.
+Les paragraphes sont limites a ~75 caracteres par ligne par le CSS global.
+
+### Le controle : impeccable
+
+Le detecteur d'[impeccable](https://github.com/pbakaus/impeccable) verifie
+ces regles sans IA, de facon deterministe :
+
+```bash
+npx impeccable detect src                     # sources : doit sortir a 0
+npx impeccable detect http://localhost:4321/fr/                   # page rendue
+npx impeccable detect --viewport 390x844 http://localhost:4321/fr/ # mobile
+```
+
+`npx impeccable detect src` doit sortir sans aucune alerte avant un commit
+qui touche a l'interface. Sur les pages rendues, les alertes `low-contrast`
+« #ffffff on #f9fafb » ou « on #ffffff » sont des faux positifs : du texte
+blanc pose sur une photo, que le detecteur mesure contre le fond de la page.
+
+Pour avoir aussi le skill et le hook qui lance le detecteur apres chaque
+modification : `npx impeccable install --yes --project --providers=claude`.
+Le skill n'est pas versionne (binaire de 14 Mo, cf. `.gitignore`).
+
 ## Accessibility Rules
 
 ### Every Interactive Element Must Be Accessible

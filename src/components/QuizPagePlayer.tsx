@@ -48,10 +48,10 @@ const qpT: Record<string, Record<string, string>> = {
 };
 
 const ANSWER_COLORS = [
-  { bg: "bg-violet-50 hover:bg-violet-100 border-violet-200", label: "bg-violet-500" },
-  { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-500" },
-  { bg: "bg-amber-50 hover:bg-amber-100 border-amber-200", label: "bg-amber-500" },
-  { bg: "bg-rose-50 hover:bg-rose-100 border-rose-200", label: "bg-rose-500" },
+  { bg: "bg-brand-50 hover:bg-brand-100 border-brand-200", label: "bg-brand-600" },
+  { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-600" },
+  { bg: "bg-amber-50 hover:bg-amber-100 border-amber-200", label: "bg-amber-700" },
+  { bg: "bg-rose-50 hover:bg-rose-100 border-rose-200", label: "bg-rose-600" },
 ];
 
 /**
@@ -313,13 +313,13 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     scorePercent >= 90
-      ? { label: tt("rankLegend"), color: "bg-amber-500", icon: "S" }
+      ? { label: tt("rankLegend"), color: "bg-amber-700", icon: "S" }
       : scorePercent >= 70
-        ? { label: tt("rankExpert"), color: "bg-violet-500", icon: "A" }
+        ? { label: tt("rankExpert"), color: "bg-brand-600", icon: "A" }
         : scorePercent >= 50
-          ? { label: tt("rankSkilled"), color: "bg-blue-500", icon: "B" }
+          ? { label: tt("rankSkilled"), color: "bg-blue-600", icon: "B" }
           : scorePercent >= 30
-            ? { label: tt("rankApprentice"), color: "bg-green-500", icon: "C" }
+            ? { label: tt("rankApprentice"), color: "bg-green-700", icon: "C" }
             : { label: tt("rankBeginner"), color: "bg-gray-500", icon: "D" };
 
   const handleStartQuiz = useCallback(() => {
@@ -339,10 +339,10 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
 
           {/* Progress */}
           <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
-            <div className="first-letter:uppercase text-[10px] font-semibold text-gray-500 mb-2">{tt("progressLabel")}</div>
+            <div className="first-letter:uppercase text-[11px] font-semibold text-gray-500 mb-2">{tt("progressLabel")}</div>
             <div className="text-center mb-2">
               <div className="text-2xl font-display font-black text-gray-900">
-                {answeredCount}<span className="text-sm text-gray-400">/{totalQuestions}</span>
+                {answeredCount}<span className="text-sm text-gray-500">/{totalQuestions}</span>
               </div>
             </div>
             <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden mb-2">
@@ -351,7 +351,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 style={{ width: `${(answeredCount / totalQuestions) * 100}%` }}
               />
             </div>
-            <div className="flex justify-between text-[10px]">
+            <div className="flex justify-between text-[11px]">
               <span className="text-green-600 font-bold">{score} {tt("correctLabel").toLowerCase()}</span>
               <span className="text-red-500 font-bold">{answeredCount - score} {tt("wrongShort").toLowerCase()}</span>
             </div>
@@ -381,10 +381,10 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                     poussait le badge XP jusqu'a le casser sur deux lignes. */}
                 <div className="min-w-0">
                   <div className="text-sm font-display font-bold text-gray-900">{scorePercent}%</div>
-                  <div className="text-[10px] text-gray-500 truncate">{rank.label}</div>
+                  <div className="text-[11px] text-gray-500 truncate">{rank.label}</div>
                 </div>
-                <div className="relative ml-auto shrink-0 bg-violet-50 rounded-lg px-2 py-1 border border-violet-100">
-                  <span className="whitespace-nowrap text-xs font-display font-bold text-violet-700">+{totalXp} XP</span>
+                <div className="relative ml-auto shrink-0 bg-brand-50 rounded-lg px-2 py-1 border border-brand-100">
+                  <span className="whitespace-nowrap text-xs font-display font-bold text-brand-700">+{totalXp} XP</span>
                   {/* Le gain de la question qui vient d'etre repondue s'envole :
                       sans ca le total change sans que le joueur voie pourquoi. */}
                   {xpPopup && (
@@ -404,7 +404,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
           {/* Question navigator */}
           {hasStarted && (
             <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
-              <div className="first-letter:uppercase text-[10px] font-semibold text-gray-500 mb-1.5">{tt("questions")}</div>
+              <div className="first-letter:uppercase text-[11px] font-semibold text-gray-500 mb-1.5">{tt("questions")}</div>
               <div className="grid grid-cols-5 gap-0.5">
                 {quiz.questions.map((q, i) => {
                   const qState = questionStates[i];
@@ -412,14 +412,14 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                     <button
                       key={q.id}
                       onClick={() => scrollToQuestion(i)}
-                      className={`w-full aspect-square rounded-lg flex items-center justify-center text-[10px] font-bold cursor-pointer transition-all ${
+                      className={`w-full aspect-square rounded-lg flex items-center justify-center text-[11px] font-bold cursor-pointer transition-all ${
                         qState.hasAnswered
                           ? qState.isCorrect
                             ? "bg-green-100 text-green-600"
                             : "bg-red-100 text-red-500"
                           : i === activeIndex
-                            ? "bg-violet-100 text-violet-600 ring-1 ring-violet-300"
-                            : "bg-gray-50 text-gray-400"
+                            ? "bg-brand-100 text-brand-600 ring-1 ring-brand-300"
+                            : "bg-gray-50 text-gray-500"
                       }`}
                     >
                       {i + 1}
@@ -435,7 +435,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
             <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3">
               <div className="flex items-center justify-center gap-1 mb-2">
                 <svg className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
-                <span className="first-letter:uppercase text-[10px] font-black text-amber-600">{tt("bonus")}</span>
+                <span className="first-letter:uppercase text-[11px] font-black text-amber-600">{tt("bonus")}</span>
                 <svg className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
               </div>
               <div className="space-y-1.5">
@@ -445,12 +445,12 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   className={`w-full flex items-center gap-2 px-2 py-2 rounded-lg text-xs font-medium transition-all ${
                     bonus5050 > 0 && canUseBonus
                       ? "bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 cursor-pointer"
-                      : "bg-gray-50 text-gray-400 border border-gray-100 cursor-default opacity-40"
+                      : "bg-gray-50 text-gray-500 border border-gray-100 cursor-default opacity-40"
                   }`}
                 >
-                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-[9px] font-black text-white ${bonus5050 > 0 ? "bg-sun hover:bg-sun-dark" : "bg-gray-300"}`}>50</span>
+                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-[11px] font-black text-white ${bonus5050 > 0 ? "bg-sun hover:bg-sun-dark" : "bg-gray-500"}`}>50</span>
                   <span className="flex-1 font-bold">50/50</span>
-                  <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full ${bonus5050 > 0 ? "bg-amber-200 text-amber-800" : "bg-gray-200 text-gray-400"}`}>{bonus5050}x</span>
+                  <span className={`text-[11px] font-black px-1.5 py-0.5 rounded-full ${bonus5050 > 0 ? "bg-amber-200 text-amber-800" : "bg-gray-200 text-gray-500"}`}>{bonus5050}x</span>
                 </button>
 
                 <button
@@ -459,14 +459,14 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   className={`w-full flex items-center gap-2 px-2 py-2 rounded-lg text-xs font-medium transition-all ${
                     bonusSecondChance > 0 && canUseBonus
                       ? "bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 cursor-pointer"
-                      : "bg-gray-50 text-gray-400 border border-gray-100 cursor-default opacity-40"
+                      : "bg-gray-50 text-gray-500 border border-gray-100 cursor-default opacity-40"
                   }`}
                 >
-                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusSecondChance > 0 ? "bg-blue-500" : "bg-gray-300"}`}>
+                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusSecondChance > 0 ? "bg-blue-600" : "bg-gray-500"}`}>
                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" /></svg>
                   </span>
                   <span className="flex-1 font-bold">{tt("retry")}</span>
-                  <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full ${bonusSecondChance > 0 ? "bg-blue-200 text-blue-800" : "bg-gray-200 text-gray-400"}`}>{bonusSecondChance}x</span>
+                  <span className={`text-[11px] font-black px-1.5 py-0.5 rounded-full ${bonusSecondChance > 0 ? "bg-blue-200 text-blue-800" : "bg-gray-200 text-gray-500"}`}>{bonusSecondChance}x</span>
                 </button>
 
                 <button
@@ -474,15 +474,15 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   disabled={bonusIndice <= 0 || !canUseBonus}
                   className={`w-full flex items-center gap-2 px-2 py-2 rounded-lg text-xs font-medium transition-all ${
                     bonusIndice > 0 && canUseBonus
-                      ? "bg-violet-50 text-violet-800 border border-violet-200 hover:bg-violet-100 cursor-pointer"
-                      : "bg-gray-50 text-gray-400 border border-gray-100 cursor-default opacity-40"
+                      ? "bg-brand-50 text-brand-800 border border-brand-200 hover:bg-brand-100 cursor-pointer"
+                      : "bg-gray-50 text-gray-500 border border-gray-100 cursor-default opacity-40"
                   }`}
                 >
-                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusIndice > 0 ? "bg-brand" : "bg-gray-300"}`}>
+                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusIndice > 0 ? "bg-brand" : "bg-gray-500"}`}>
                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                   </span>
                   <span className="flex-1 font-bold">{tt("hint")}</span>
-                  <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full ${bonusIndice > 0 ? "bg-violet-200 text-violet-800" : "bg-gray-200 text-gray-400"}`}>{bonusIndice}x</span>
+                  <span className={`text-[11px] font-black px-1.5 py-0.5 rounded-full ${bonusIndice > 0 ? "bg-brand-200 text-brand-800" : "bg-gray-200 text-gray-500"}`}>{bonusIndice}x</span>
                 </button>
               </div>
             </div>
@@ -584,11 +584,11 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 <span className="w-1 h-1 rounded-full bg-gray-300" />
                 <span className="text-[11px] font-bold text-green-600">{score}</span>
                 <span className="w-1 h-1 rounded-full bg-gray-300" />
-                <span className="text-[11px] font-bold text-violet-600">{totalXp} XP</span>
+                <span className="text-[11px] font-bold text-brand-600">{totalXp} XP</span>
               </div>
               {/* Bonus buttons with labels */}
               <div className="flex items-center gap-1.5">
-                <span className="first-letter:uppercase text-[9px] font-black text-gray-400 mr-0.5">{tt("bonus")}</span>
+                <span className="first-letter:uppercase text-[11px] font-black text-gray-500 mr-0.5">{tt("bonus")}</span>
                 <button
                   onClick={handleBonus5050}
                   disabled={bonus5050 <= 0 || !canUseBonus}
@@ -599,8 +599,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                       : "opacity-40"
                   }`}
                 >
-                  <svg className={`w-5 h-5 ${bonus5050 > 0 ? "text-amber-500" : "text-gray-400"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
-                  <span className={`text-[8px] font-bold ${bonus5050 > 0 ? "text-amber-700" : "text-gray-400"}`}>50/50</span>
+                  <svg className={`w-5 h-5 ${bonus5050 > 0 ? "text-amber-500" : "text-gray-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                  <span className={`text-[11px] font-bold ${bonus5050 > 0 ? "text-amber-700" : "text-gray-500"}`}>50/50</span>
                 </button>
                 <button
                   onClick={handleBonusSecondChance}
@@ -612,8 +612,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                       : "opacity-40"
                   }`}
                 >
-                  <svg className={`w-5 h-5 ${bonusSecondChance > 0 ? "text-blue-500" : "text-gray-400"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" /></svg>
-                  <span className={`text-[8px] font-bold ${bonusSecondChance > 0 ? "text-blue-700" : "text-gray-400"}`}>{tt("retry")}</span>
+                  <svg className={`w-5 h-5 ${bonusSecondChance > 0 ? "text-blue-500" : "text-gray-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" /></svg>
+                  <span className={`text-[11px] font-bold ${bonusSecondChance > 0 ? "text-blue-700" : "text-gray-500"}`}>{tt("retry")}</span>
                 </button>
                 <button
                   onClick={handleBonusIndice}
@@ -621,12 +621,12 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   aria-label="Hint"
                   className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-lg transition-all ${
                     bonusIndice > 0 && canUseBonus
-                      ? "bg-violet-50 active:scale-90"
+                      ? "bg-brand-50 active:scale-90"
                       : "opacity-40"
                   }`}
                 >
-                  <svg className={`w-5 h-5 ${bonusIndice > 0 ? "text-violet-500" : "text-gray-400"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                  <span className={`text-[8px] font-bold ${bonusIndice > 0 ? "text-violet-700" : "text-gray-400"}`}>{tt("hint")}</span>
+                  <svg className={`w-5 h-5 ${bonusIndice > 0 ? "text-brand-500" : "text-gray-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                  <span className={`text-[11px] font-bold ${bonusIndice > 0 ? "text-brand-700" : "text-gray-500"}`}>{tt("hint")}</span>
                 </button>
               </div>
             </div>
@@ -650,7 +650,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
               <article
                 className={`bg-white rounded-2xl overflow-hidden border-2 transition-all duration-300 ${
                   isCurrent
-                    ? "border-violet-400 shadow-sm ring-1 ring-violet-200"
+                    ? "border-brand-400 shadow-sm ring-1 ring-brand-200"
                     : state.hasAnswered
                       ? state.isCorrect
                         ? "border-green-200 shadow-sm"
@@ -671,11 +671,11 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                       className={`flex-shrink-0 w-8 h-8 md:w-9 md:h-9 rounded-xl flex items-center justify-center text-xs md:text-sm font-bold text-white ${
                         state.hasAnswered
                           ? state.isCorrect
-                            ? "bg-green-500"
-                            : "bg-red-500"
+                            ? "bg-green-700"
+                            : "bg-red-600"
                           : isCurrent
-                            ? "bg-violet-500"
-                            : "bg-gray-300"
+                            ? "bg-brand-500"
+                            : "bg-gray-500"
                       }`}
                     >
                       {state.hasAnswered ? (state.isCorrect ? "\u2713" : "\u2717") : qIndex + 1}
@@ -695,7 +695,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                 {/* Indice */}
                 {showIndice === qIndex && question.explanation && !state.hasAnswered && (
                   <div className="px-5 md:px-6 pb-3">
-                    <div className="bg-violet-50 text-violet-800 text-sm p-3 rounded-xl border border-violet-200">
+                    <div className="bg-brand-50 text-brand-800 text-sm p-3 rounded-xl border border-brand-200">
                       <span className="font-bold">{tt("hintLabel")} </span>
                       {question.explanation.substring(0, Math.min(80, question.explanation.length))}...
                     </div>
@@ -734,10 +734,10 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                             className="p-3.5 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 opacity-30"
                           >
                             <div className="flex items-center gap-3">
-                              <span className="w-8 h-8 rounded-lg bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-400">
+                              <span className="w-8 h-8 rounded-lg bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-500">
                                 {LETTER_LABELS[aIndex]}
                               </span>
-                              <span className="text-sm text-gray-400 line-through">{answer.text}</span>
+                              <span className="text-sm text-gray-500 line-through">{answer.text}</span>
                             </div>
                           </div>
                         );
@@ -767,11 +767,11 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                           className={`w-full flex items-center gap-2 p-2 md:p-3.5 rounded-xl transition-all duration-200 text-left disabled:cursor-default ${stateClasses}`}
                         >
                           <span
-                            className={`flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg flex items-center justify-center text-[10px] md:text-xs font-bold transition-colors duration-200 ${
+                            className={`flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg flex items-center justify-center text-[11px] md:text-xs font-bold transition-colors duration-200 ${
                               state.hasAnswered && isCorrectAnswer
-                                ? "bg-green-500 text-white"
+                                ? "bg-green-700 text-white"
                                 : state.hasAnswered && isSelected && !isCorrectAnswer
-                                  ? "bg-red-500 text-white"
+                                  ? "bg-red-600 text-white"
                                   : state.hasAnswered
                                     ? "bg-gray-200 text-gray-400"
                                     : `${color.label} text-white`
@@ -784,7 +784,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                                 : LETTER_LABELS[aIndex]}
                           </span>
                           <span className={`font-medium text-[13px] md:text-sm flex-1 ${
-                            state.hasAnswered && !isCorrectAnswer && !isSelected ? "text-gray-400" : "text-gray-800"
+                            state.hasAnswered && !isCorrectAnswer && !isSelected ? "text-gray-500" : "text-gray-800"
                           }`}>
                             {answer.text}
                           </span>
@@ -817,7 +817,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
         {/* ===== RESULTS CARD ===== */}
         {showResults && (
           <div ref={resultsRef} className="scroll-mt-28">
-            <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
+            <div className="bg-white rounded-2xl border-2 border-brand-200 shadow-sm overflow-hidden">
               <div className="relative bg-brand p-6 md:p-8 text-center text-white">
                 {/* Confettis a partir de 70% : une bonne partie se fete, une
                     partie moyenne non, sinon la recompense ne veut plus rien
@@ -874,9 +874,9 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                     <div className="text-3xl font-display font-bold text-red-500">{totalQuestions - score}</div>
                     <div className="text-xs text-red-600 font-medium mt-1">{tt("wrongShort")}</div>
                   </div>
-                  <div className="bg-violet-50 border border-violet-200 rounded-xl p-4 text-center">
-                    <div className="text-3xl font-display font-bold text-violet-600">{totalXp}</div>
-                    <div className="text-xs text-violet-700 font-medium mt-1">XP</div>
+                  <div className="bg-brand-50 border border-brand-200 rounded-xl p-4 text-center">
+                    <div className="text-3xl font-display font-bold text-brand-600">{totalXp}</div>
+                    <div className="text-xs text-brand-700 font-medium mt-1">XP</div>
                   </div>
                 </div>
 

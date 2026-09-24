@@ -62,7 +62,7 @@ const sitemapCategories = getCategories(locale);
 
       {/* Col 2: Quiz & Games */}
       <div>
-        <h3 class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.quizzesAndGames")}</h3>
+        <p class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.quizzesAndGames")}</p>
         <ul class="space-y-2.5">
           <li><a href={lp('/')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.allQuizzes")}</a></li>
           <li><a href={lp(s('create'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.createQuiz")}</a></li>
@@ -72,7 +72,7 @@ const sitemapCategories = getCategories(locale);
 
       {/* Col 3: Information */}
       <div>
-        <h3 class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.information")}</h3>
+        <p class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.information")}</p>
         <ul class="space-y-2.5">
           <li><a href={lp(s('legal'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.legal")}</a></li>
           <li><a href={lp(s('privacy'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.privacy")}</a></li>

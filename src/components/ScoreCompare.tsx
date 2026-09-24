@@ -129,9 +129,9 @@ export default function ScoreCompare({ quizSlug, score, outOf, locale = "en" }: 
           const mine = b.score === score;
           return (
             <div key={b.score} className="flex-1 flex flex-col items-center justify-end h-full min-w-0">
-              {mine && <span className="text-[10px] font-bold text-violet-700 mb-0.5 whitespace-nowrap">{tt("you")}</span>}
+              {mine && <span className="text-[11px] font-bold text-brand-700 mb-0.5 whitespace-nowrap">{tt("you")}</span>}
               <div
-                className={`w-full rounded-t ${mine ? "bg-violet-600" : "bg-gray-200"}`}
+                className={`w-full rounded-t ${mine ? "bg-brand-600" : "bg-gray-200"}`}
                 style={{ height: `${Math.max((b.plays / maxPlays) * 100, b.plays > 0 ? 6 : 2)}%` }}
                 title={`${b.score} : ${nf(b.plays)}`}
               />
@@ -141,7 +141,7 @@ export default function ScoreCompare({ quizSlug, score, outOf, locale = "en" }: 
       </div>
       <div className="flex gap-1 mt-1">
         {bins.map((b) => (
-          <span key={b.score} className={`flex-1 text-center text-[10px] min-w-0 ${b.score === score ? "text-violet-700 font-bold" : "text-gray-500"}`}>
+          <span key={b.score} className={`flex-1 text-center text-[11px] min-w-0 ${b.score === score ? "text-brand-700 font-bold" : "text-gray-500"}`}>
             {bins.length <= 16 || b.score % 5 === 0 ? b.score : ""}
           </span>
         ))}

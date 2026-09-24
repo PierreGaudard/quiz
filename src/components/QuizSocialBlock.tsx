@@ -113,8 +113,8 @@ function FriendsBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: Qu
   return (
     <div className="mt-6 bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
       {playedFriends.length > 0 && (
-        <div className="flex items-center gap-3 px-4 py-3 bg-violet-50 border-b border-gray-100">
-          <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${friendRank === 1 ? "bg-yellow-400" : "bg-violet-400"}`}>
+        <div className="flex items-center gap-3 px-4 py-3 bg-brand-50 border-b border-gray-100">
+          <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${friendRank === 1 ? "bg-yellow-400" : "bg-brand-400"}`}>
             <span className="text-white text-sm font-black">#{friendRank}</span>
           </div>
           <div className="flex-1">
@@ -125,7 +125,7 @@ function FriendsBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: Qu
               ) : (
                 <span>#{friendRank}</span>
               )}
-              {" "}<span className="text-gray-400 font-normal">{tt("outOf")} {totalPlayers}</span>
+              {" "}<span className="text-gray-500 font-normal">{tt("outOf")} {totalPlayers}</span>
             </p>
           </div>
           {friendRank === 1 && (
@@ -142,11 +142,11 @@ function FriendsBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: Qu
           <div className="space-y-2">
             {friends.map((friend) => (
               <div key={friend.id} className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-full bg-violet-100 flex items-center justify-center overflow-hidden shrink-0">
+                <div className="w-7 h-7 rounded-full bg-brand-100 flex items-center justify-center overflow-hidden shrink-0">
                   {friend.avatar ? (
                     <img src={friend.avatar} className="w-full h-full object-cover" alt={friend.username} width={40} height={40} />
                   ) : (
-                    <span className="text-xs font-bold text-violet-600">{friend.username[0].toUpperCase()}</span>
+                    <span className="text-xs font-bold text-brand-600">{friend.username[0].toUpperCase()}</span>
                   )}
                 </div>
                 <span className="flex-1 text-sm font-medium text-gray-700 truncate">{friend.username}</span>
@@ -163,7 +163,7 @@ function FriendsBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: Qu
                     {friend.bestScore}/{friend.totalQuestions}
                   </span>
                 ) : (
-                  <span className="text-xs text-gray-400 italic">{tt("notPlayed")}</span>
+                  <span className="text-xs text-gray-500 italic">{tt("notPlayed")}</span>
                 )}
               </div>
             ))}
@@ -171,7 +171,7 @@ function FriendsBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: Qu
         </div>
       ) : (
         <div className="px-4 py-3 text-center">
-          <p className="text-xs text-gray-400">{tt("noFriends")}</p>
+          <p className="text-xs text-gray-500">{tt("noFriends")}</p>
         </div>
       )}
     </div>

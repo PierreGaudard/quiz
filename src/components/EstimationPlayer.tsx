@@ -241,7 +241,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
           )}
           <div className="p-8 text-center">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="px-3 py-1 rounded-full text-xs font-bold bg-violet-100 text-violet-700">
+              <span className="px-3 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-700">
                 {tt("estimation")}
               </span>
               <span
@@ -257,42 +257,42 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
 
             <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="bg-gray-50 rounded-xl p-3">
-                <div className="text-2xl font-display font-black text-violet-600">
+                <div className="text-2xl font-display font-black text-brand-600">
                   {totalQuestions}
                 </div>
                 <div className="text-xs text-gray-500 font-medium">{tt("questions")}</div>
               </div>
               <div className="bg-gray-50 rounded-xl p-3">
-                <div className="text-2xl font-display font-black text-violet-600">
+                <div className="text-2xl font-display font-black text-brand-600">
                   {MAX_ATTEMPTS}
                 </div>
                 <div className="text-xs text-gray-500 font-medium">{tt("attempts")}</div>
               </div>
               <div className="bg-gray-50 rounded-xl p-3">
-                <div className="text-2xl font-display font-black text-violet-600">5%</div>
+                <div className="text-2xl font-display font-black text-brand-600">5%</div>
                 <div className="text-xs text-gray-500 font-medium">{tt("tolerance")}</div>
               </div>
             </div>
 
-            <div className="bg-violet-50 rounded-xl p-4 mb-8 text-left border border-violet-100">
-              <h3 className="font-display font-bold text-violet-800 mb-2 text-sm">
+            <div className="bg-brand-50 rounded-xl p-4 mb-8 text-left border border-brand-100">
+              <h3 className="font-display font-bold text-brand-800 mb-2 text-sm">
                 {tt("howToPlay")}
               </h3>
-              <ul className="text-sm text-violet-700 space-y-1.5">
+              <ul className="text-sm text-brand-700 space-y-1.5">
                 <li className="flex items-start gap-2">
-                  <span className="text-violet-400 mt-0.5">1.</span>
+                  <span className="text-brand-400 mt-0.5">1.</span>
                   {tt("step1")}
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-violet-400 mt-0.5">2.</span>
+                  <span className="text-brand-400 mt-0.5">2.</span>
                   {tt("step2")}
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-violet-400 mt-0.5">3.</span>
+                  <span className="text-brand-400 mt-0.5">3.</span>
                   Find the right answer in {MAX_ATTEMPTS} attempts max
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-violet-400 mt-0.5">4.</span>
+                  <span className="text-brand-400 mt-0.5">4.</span>
                   Fewer attempts = more points!
                 </li>
               </ul>
@@ -314,13 +314,13 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
   if (phase === "results") {
     const rank =
       accuracyPercent >= 90
-        ? { label: "Legend", color: "bg-amber-500", icon: "S" }
+        ? { label: "Legend", color: "bg-amber-700", icon: "S" }
         : accuracyPercent >= 70
-          ? { label: "Expert", color: "bg-violet-500", icon: "A" }
+          ? { label: "Expert", color: "bg-brand-600", icon: "A" }
           : accuracyPercent >= 50
-            ? { label: "Skilled", color: "bg-blue-500", icon: "B" }
+            ? { label: "Skilled", color: "bg-blue-600", icon: "B" }
             : accuracyPercent >= 30
-              ? { label: "Apprentice", color: "bg-green-500", icon: "C" }
+              ? { label: "Apprentice", color: "bg-green-700", icon: "C" }
               : { label: "Beginner", color: "bg-gray-500", icon: "D" };
 
     return (
@@ -333,19 +333,19 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
               {rank.icon}
             </div>
             <h2 className="text-2xl font-display font-black mb-1">{rank.label}</h2>
-            <p className="text-violet-200 text-sm">{tt("finished")}</p>
+            <p className="text-brand-200 text-sm">{tt("finished")}</p>
           </div>
 
           <div className="p-8">
             <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="bg-violet-50 rounded-xl p-4 text-center border border-violet-100">
-                <div className="text-3xl font-display font-black text-violet-600">
+              <div className="bg-brand-50 rounded-xl p-4 text-center border border-brand-100">
+                <div className="text-3xl font-display font-black text-brand-600">
                   {formatNumber(totalPoints)}
                 </div>
-                <div className="text-xs text-violet-500 font-medium mt-1">
+                <div className="text-xs text-brand-500 font-medium mt-1">
                   {tt("points")}
                 </div>
-                <div className="text-[10px] text-gray-400 mt-0.5">
+                <div className="text-[11px] text-gray-500 mt-0.5">
                   sur {formatNumber(maxPoints)}
                 </div>
               </div>
@@ -459,7 +459,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
           <span className="text-sm font-display font-bold text-gray-700">
             Question {currentIndex + 1}/{totalQuestions}
           </span>
-          <span className="text-sm font-display font-bold text-violet-600">
+          <span className="text-sm font-display font-bold text-brand-600">
             {formatNumber(totalPoints)} pts
           </span>
         </div>
@@ -504,7 +504,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                         ? "bg-green-500 scale-110"
                         : "bg-gray-300"
                       : i === attemptCount && !questionDone
-                        ? "bg-violet-500 ring-2 ring-violet-200 scale-110"
+                        ? "bg-brand-500 ring-2 ring-brand-200 scale-110"
                         : "bg-gray-200"
                   }`}
                 />
@@ -519,7 +519,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
           {feedbackAnim && feedbackAnim !== "correct" && (
             <div className="flex justify-center mb-4">
               <div
-                className={`px-8 py-4 rounded-2xl font-display font-black text-2xl sm:text-3xl animate-bounce ${
+                className={`px-8 py-4 rounded-2xl font-display font-black text-2xl sm:text-3xl ${
                   feedbackAnim === "higher"
                     ? "bg-blue-100 text-blue-600 border-2 border-blue-200"
                     : "bg-red-100 text-red-500 border-2 border-red-200"
@@ -646,7 +646,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                   }}
                   placeholder="Your estimate..."
                   autoFocus
-                  className="w-full max-w-xs text-center text-3xl font-display font-black text-gray-900 py-4 px-6 rounded-xl border-2 border-violet-200 bg-violet-50/50 placeholder:text-gray-300 placeholder:text-lg placeholder:font-normal focus:outline-none focus:border-violet-400 focus:ring-4 focus:ring-violet-100 transition-all"
+                  className="w-full max-w-xs text-center text-3xl font-display font-black text-gray-900 py-4 px-6 rounded-xl border-2 border-brand-200 bg-brand-50/50 placeholder:text-gray-300 placeholder:text-lg placeholder:font-normal focus:outline-none focus:border-brand-400 focus:ring-4 focus:ring-brand-100 transition-all"
                 />
               </div>
               <div className="flex justify-center">
@@ -724,13 +724,13 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
 
       {/* Points legend (compact) */}
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
-        <div className="first-letter:uppercase text-[10px] font-semibold text-gray-400 mb-2 text-center">
+        <div className="first-letter:uppercase text-[11px] font-semibold text-gray-500 mb-2 text-center">
           {tt("pointsPerAttempt")}
         </div>
         <div className="flex justify-center gap-3 flex-wrap">
           {POINTS_BY_ATTEMPT.map((pts, i) => (
             <div key={i} className="flex items-center gap-1.5">
-              <span className="w-5 h-5 rounded-full bg-violet-100 text-violet-600 text-[10px] font-bold flex items-center justify-center">
+              <span className="w-5 h-5 rounded-full bg-brand-100 text-brand-600 text-[11px] font-bold flex items-center justify-center">
                 {i + 1}
               </span>
               <span className="text-xs font-display font-bold text-gray-600">

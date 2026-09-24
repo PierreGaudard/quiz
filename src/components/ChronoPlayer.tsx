@@ -11,10 +11,10 @@ interface Props {
 const LETTER_LABELS = ["A", "B", "C", "D"];
 
 const ANSWER_COLORS = [
-  { bg: "bg-violet-50 border-violet-200", hover: "hover:bg-violet-100", label: "bg-violet-500", ring: "ring-violet-300" },
-  { bg: "bg-blue-50 border-blue-200", hover: "hover:bg-blue-100", label: "bg-blue-500", ring: "ring-blue-300" },
-  { bg: "bg-amber-50 border-amber-200", hover: "hover:bg-amber-100", label: "bg-amber-500", ring: "ring-amber-300" },
-  { bg: "bg-rose-50 border-rose-200", hover: "hover:bg-rose-100", label: "bg-rose-500", ring: "ring-rose-300" },
+  { bg: "bg-brand-50 border-brand-200", hover: "hover:bg-brand-100", label: "bg-brand-600", ring: "ring-brand-300" },
+  { bg: "bg-blue-50 border-blue-200", hover: "hover:bg-blue-100", label: "bg-blue-600", ring: "ring-blue-300" },
+  { bg: "bg-amber-50 border-amber-200", hover: "hover:bg-amber-100", label: "bg-amber-700", ring: "ring-amber-300" },
+  { bg: "bg-rose-50 border-rose-200", hover: "hover:bg-rose-100", label: "bg-rose-600", ring: "ring-rose-300" },
 ];
 
 const TOTAL_TIME = 60;
@@ -82,7 +82,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
   const strokeOffset = CIRCLE_CIRCUMFERENCE * (1 - progress);
 
   const timerColor =
-    timeLeft <= 5 ? "text-red-500" : timeLeft <= 15 ? "text-orange-400" : "text-violet-400";
+    timeLeft <= 5 ? "text-red-500" : timeLeft <= 15 ? "text-orange-400" : "text-brand-400";
   const timerStroke =
     timeLeft <= 5 ? "#ef4444" : timeLeft <= 15 ? "#fb923c" : "#a78bfa";
   const timerTrack =
@@ -227,13 +227,13 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     accuracy >= 90 && score >= 10
-      ? { label: "Legend", color: "bg-amber-500", icon: "S" }
+      ? { label: "Legend", color: "bg-amber-700", icon: "S" }
       : accuracy >= 75 && score >= 7
-        ? { label: "Expert", color: "bg-violet-500", icon: "A" }
+        ? { label: "Expert", color: "bg-brand-600", icon: "A" }
         : accuracy >= 60 && score >= 5
-          ? { label: "Skilled", color: "bg-blue-500", icon: "B" }
+          ? { label: "Skilled", color: "bg-blue-600", icon: "B" }
           : accuracy >= 40
-            ? { label: "Apprentice", color: "bg-green-500", icon: "C" }
+            ? { label: "Apprentice", color: "bg-green-700", icon: "C" }
             : { label: "Beginner", color: "bg-gray-500", icon: "D" };
 
   const difficultyColor: Record<string, string> = {
@@ -320,7 +320,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
 
           <button
             onClick={handleStart}
-            className="w-full flex items-center justify-center gap-2 bg-red-500 text-white font-display font-bold text-lg py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-display font-bold text-lg py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -355,7 +355,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             <h2 className="font-display text-3xl md:text-4xl font-black text-white mb-2">
               {tt("finished")}
             </h2>
-            <p className="text-gray-400 text-sm">{quiz.title}</p>
+            <p className="text-gray-500 text-sm">{quiz.title}</p>
           </div>
         </div>
 
@@ -380,7 +380,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
           <div className="text-center mb-6">
             <div className="font-display text-5xl md:text-6xl font-black text-gray-900">
               {score}
-              <span className="text-2xl text-gray-400">/{totalAnswered}</span>
+              <span className="text-2xl text-gray-500">/{totalAnswered}</span>
             </div>
             <div className="text-gray-500 text-sm mt-1 font-medium">
               correct answer{score > 1 ? "s" : ""}
@@ -389,27 +389,27 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
 
           {/* Stats grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-            <div className="text-center p-3 bg-violet-50 rounded-xl border border-violet-100">
-              <div className="text-2xl font-display font-black text-violet-600">{elapsed}s</div>
-              <div className="first-letter:uppercase text-[10px] text-violet-500 font-semibold mt-1">
+            <div className="text-center p-3 bg-brand-50 rounded-xl border border-brand-100">
+              <div className="text-2xl font-display font-black text-brand-600">{elapsed}s</div>
+              <div className="first-letter:uppercase text-[11px] text-brand-500 font-semibold mt-1">
                 {tt("time")}
               </div>
             </div>
             <div className="text-center p-3 bg-blue-50 rounded-xl border border-blue-100">
               <div className="text-2xl font-display font-black text-blue-600">{accuracy}%</div>
-              <div className="first-letter:uppercase text-[10px] text-blue-500 font-semibold mt-1">
+              <div className="first-letter:uppercase text-[11px] text-blue-500 font-semibold mt-1">
                 {tt("accuracy")}
               </div>
             </div>
             <div className="text-center p-3 bg-amber-50 rounded-xl border border-amber-100">
               <div className="text-2xl font-display font-black text-amber-600">{bestStreak}</div>
-              <div className="first-letter:uppercase text-[10px] text-amber-500 font-semibold mt-1">
+              <div className="first-letter:uppercase text-[11px] text-amber-500 font-semibold mt-1">
                 {tt("bestStreak")}
               </div>
             </div>
             <div className="text-center p-3 bg-green-50 rounded-xl border border-green-100">
               <div className="text-2xl font-display font-black text-green-600">{totalAnswered}</div>
-              <div className="first-letter:uppercase text-[10px] text-green-500 font-semibold mt-1">
+              <div className="first-letter:uppercase text-[11px] text-green-500 font-semibold mt-1">
                 {tt("questions")}
               </div>
             </div>
@@ -419,7 +419,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
           <div className="flex flex-col sm:flex-row gap-3">
             <button
               onClick={handleRestart}
-              className="flex-1 flex items-center justify-center gap-2 bg-red-500 text-white font-display font-bold text-base py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
+              className="flex-1 flex items-center justify-center gap-2 bg-red-600 text-white font-display font-bold text-base py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -428,7 +428,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             </button>
             <button
               onClick={handleShare}
-              className="flex-1 flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-violet-300 hover:bg-violet-50 text-gray-700 font-display font-bold text-base py-3.5 rounded-xl transition-all duration-200 cursor-pointer"
+              className="flex-1 flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-brand-300 hover:bg-brand-50 text-gray-700 font-display font-bold text-base py-3.5 rounded-xl transition-all duration-200 cursor-pointer"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -457,7 +457,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             <div className="text-3xl md:text-4xl font-display font-black text-white leading-none">
               {score}
             </div>
-            <div className="first-letter:uppercase text-[10px] text-gray-400 font-semibold mt-1">
+            <div className="first-letter:uppercase text-[11px] text-gray-500 font-semibold mt-1">
               {tt("correct")}
             </div>
             <div className="text-xs text-gray-500 font-medium mt-0.5">
@@ -496,7 +496,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
               <span className={`text-3xl md:text-4xl font-display font-black ${timerColor} leading-none`}>
                 {timeLeft}
               </span>
-              <span className="first-letter:uppercase text-[9px] text-gray-500 font-bold mt-0.5">
+              <span className="first-letter:uppercase text-[11px] text-gray-500 font-bold mt-0.5">
                 {tt("sec")}
               </span>
             </div>
@@ -507,7 +507,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             <div className={`text-3xl md:text-4xl font-display font-black leading-none ${streak >= 3 ? "text-amber-400" : "text-white"}`}>
               {streak}
             </div>
-            <div className="first-letter:uppercase text-[10px] text-gray-400 font-semibold mt-1">
+            <div className="first-letter:uppercase text-[11px] text-gray-500 font-semibold mt-1">
               {tt("streak")}
             </div>
             {streak >= 3 && (
@@ -515,7 +515,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
                 <svg className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
-                <span className="text-[9px] font-black text-amber-400">{tt("onFire")}</span>
+                <span className="text-[11px] font-black text-amber-400">{tt("onFire")}</span>
               </div>
             )}
           </div>
@@ -529,7 +529,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
               style={{ width: `${(questionIndex / totalQuestions) * 100}%` }}
             />
           </div>
-          <span className="text-[10px] text-gray-500 font-bold tabular-nums">
+          <span className="text-[11px] text-gray-500 font-bold tabular-nums">
             {questionIndex + 1}/{totalQuestions}
           </span>
         </div>
@@ -590,9 +590,9 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
                     <span
                       className={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-black text-white flex-shrink-0 ${
                         isFlashed && flash?.correct
-                          ? "bg-green-500"
+                          ? "bg-green-700"
                           : isFlashed && !flash?.correct
-                            ? "bg-red-500"
+                            ? "bg-red-600"
                             : colorSet.label
                       }`}
                     >

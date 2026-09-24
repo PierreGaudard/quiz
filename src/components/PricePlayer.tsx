@@ -145,7 +145,7 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
   if (phase === "choose" || !set || !item) {
     return (
       <div className="max-w-3xl mx-auto">
-        <p className="first-letter:uppercase text-center text-sm font-bold text-violet-600 mb-5">
+        <p className="first-letter:uppercase text-center text-sm font-bold text-brand-600 mb-5">
           {tt("chooseTheme", locale)}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -153,9 +153,9 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
             <button
               key={s.id}
               onClick={() => start(s)}
-              className="group text-left p-5 rounded-xl border border-gray-200 bg-white hover:border-violet-400 transition-all cursor-pointer"
+              className="group text-left p-5 rounded-xl border border-gray-200 bg-white hover:border-brand-400 transition-all cursor-pointer"
             >
-              <p className="font-display text-base font-bold text-gray-900 mb-1 group-hover:text-violet-700 transition-colors">
+              <p className="font-display text-base font-bold text-gray-900 mb-1 group-hover:text-brand-700 transition-colors">
                 {s.question}
               </p>
               <p className="text-xs text-gray-500">
@@ -178,13 +178,13 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
       {/* Trouves / joues */}
       <div className="flex items-center justify-center gap-6 mb-5">
         <div className="text-center">
-          <p className="font-display text-3xl font-black text-violet-600 leading-none">{solved}</p>
-          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("solved", locale)}</p>
+          <p className="font-display text-3xl font-black text-brand-600 leading-none">{solved}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-500 mt-1">{tt("solved", locale)}</p>
         </div>
         <div className="w-px h-8 bg-gray-200"></div>
         <div className="text-center">
           <p className="font-display text-3xl font-black text-gray-300 leading-none">{played}</p>
-          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("played", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-500 mt-1">{tt("played", locale)}</p>
         </div>
       </div>
 
@@ -205,7 +205,7 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && submit()}
               placeholder={tt("yourGuess", locale)}
-              className="flex-1 min-w-0 px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-violet-500 focus:outline-none font-display text-lg font-bold text-gray-900"
+              className="flex-1 min-w-0 px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-brand-500 focus:outline-none font-display text-lg font-bold text-gray-900"
             />
             <button
               onClick={submit}
@@ -236,7 +236,7 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
         )}
 
         {!over && (
-          <p className="text-center text-xs text-gray-400">
+          <p className="text-center text-xs text-gray-500">
             {left === 1 ? tt("oneTryLeft", locale) : tt("triesLeft", locale, { n: left })}
           </p>
         )}
@@ -274,7 +274,7 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
       </div>
 
       {set.asOf && (
-        <p className="text-xs text-gray-400 text-center mt-3">
+        <p className="text-xs text-gray-500 text-center mt-3">
           {tt("asOf", locale)} {set.asOf}
         </p>
       )}

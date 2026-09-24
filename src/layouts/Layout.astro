@@ -126,7 +126,7 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
           if (lv >= 700) return 'bg-sun hover:bg-sun-dark';
           if (lv >= 500) return 'bg-brand hover:bg-brand-dark';
           if (lv >= 300) return 'bg-blue-500';
-          if (lv >= 200) return 'bg-violet-500';
+          if (lv >= 200) return 'bg-brand-500';
           if (lv >= 100) return 'bg-amber-500';
           if (lv >= 50) return 'bg-blue-500';
           if (lv >= 20) return 'bg-teal-500';
@@ -157,7 +157,7 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
             else { avatar.textContent = u.username[0].toUpperCase(); }
           }
           if (username) username.textContent = u.username;
-          if (levelBadge) { levelBadge.textContent = 'Lv.' + lv.level; levelBadge.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color; }
+          if (levelBadge) { levelBadge.textContent = 'Lv.' + lv.level; levelBadge.className = 'text-[11px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color; }
         }
 
         fetch('/api/auth/me').then(function(r) { return r.json(); }).then(function(data) {
@@ -171,7 +171,7 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
             currentXp += amount;
             var lv = getLevel(currentXp);
             var levelBadge = document.getElementById('header-level');
-            if (levelBadge) { levelBadge.textContent = 'Lv.' + lv.level; levelBadge.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color; }
+            if (levelBadge) { levelBadge.textContent = 'Lv.' + lv.level; levelBadge.className = 'text-[11px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color; }
 
             // Update mobile level badge in real-time
             var mobileIcon = document.getElementById('mobile-user-icon');
@@ -179,14 +179,14 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
               var mobileLvSpan = mobileIcon.querySelector('span:last-child');
               if (mobileLvSpan && mobileLvSpan.textContent.indexOf('Lv.') !== -1) {
                 mobileLvSpan.textContent = 'Lv.' + lv.level;
-                mobileLvSpan.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded text-white shrink-0 ' + lv.color;
+                mobileLvSpan.className = 'text-[11px] font-bold px-1.5 py-0.5 rounded text-white shrink-0 ' + lv.color;
               }
             }
 
             // Show XP popup next to level badge
             var popup = document.createElement('span');
             popup.textContent = '+' + amount + ' XP';
-            popup.className = 'absolute -top-6 right-0 text-xs font-black text-yellow-400 whitespace-nowrap animate-bounce';
+            popup.className = 'absolute -top-6 right-0 text-xs font-black text-yellow-400 whitespace-nowrap';
             popup.style.textShadow = '0 1px 3px rgba(0,0,0,0.3)';
             var container = document.getElementById('logged-in-menu');
             if (container) { container.style.position = 'relative'; container.appendChild(popup); }
@@ -200,10 +200,10 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
             mobileIcon.href = profileMobilePath;
             var avatarMHtml = data.user.avatar
               ? '<img src="' + data.user.avatar + '" class="w-7 h-7 rounded-full object-cover border-2 border-white/30 shrink-0" />'
-              : '<span class="w-7 h-7 rounded-full bg-violet-500 flex items-center justify-center text-white text-xs font-bold shrink-0">' + data.user.username[0].toUpperCase() + '</span>';
+              : '<span class="w-7 h-7 rounded-full bg-brand-500 flex items-center justify-center text-white text-xs font-bold shrink-0">' + data.user.username[0].toUpperCase() + '</span>';
             mobileIcon.innerHTML = avatarMHtml
               + '<span class="max-w-[72px] truncate text-white text-xs font-bold leading-tight">' + data.user.username + '</span>'
-              + '<span class="text-[10px] font-bold px-1.5 py-0.5 rounded text-white shrink-0 ' + lv.color + '">Lv.' + lv.level + '</span>';
+              + '<span class="text-[11px] font-bold px-1.5 py-0.5 rounded text-white shrink-0 ' + lv.color + '">Lv.' + lv.level + '</span>';
             mobileIcon.className = 'sm:hidden flex items-center gap-1.5 px-2 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 transition-colors';
             mobileIcon.setAttribute('aria-label', data.user.username);
           }
@@ -212,8 +212,8 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
           var mobileAuth = document.getElementById('mobile-auth-links');
           if (mobileAuth) {
             var profilePath = window.location.pathname.startsWith('/fr/') ? '/fr/profil/' : window.location.pathname.startsWith('/es/') ? '/es/perfil/' : '/profile/';
-            var avatarMobileHtml = data.user.avatar ? '<img src="' + data.user.avatar + '" class="w-6 h-6 rounded-full object-cover" />' : '<span class="w-6 h-6 rounded-full bg-violet-500 flex items-center justify-center text-white text-[10px] font-bold">' + data.user.username[0].toUpperCase() + '</span>';
-            mobileAuth.innerHTML = '<a href="' + profilePath + '" class="flex items-center gap-3 px-3 py-2.5 rounded text-white hover:bg-white/10 text-sm font-medium">' + avatarMobileHtml + ' ' + data.user.username + ' <span class="text-[10px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color + ' ml-auto">Lv.' + lv.level + '</span></a>';
+            var avatarMobileHtml = data.user.avatar ? '<img src="' + data.user.avatar + '" class="w-6 h-6 rounded-full object-cover" />' : '<span class="w-6 h-6 rounded-full bg-brand-500 flex items-center justify-center text-white text-[11px] font-bold">' + data.user.username[0].toUpperCase() + '</span>';
+            mobileAuth.innerHTML = '<a href="' + profilePath + '" class="flex items-center gap-3 px-3 py-2.5 rounded text-white hover:bg-white/10 text-sm font-medium">' + avatarMobileHtml + ' ' + data.user.username + ' <span class="text-[11px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color + ' ml-auto">Lv.' + lv.level + '</span></a>';
           }
 
           // Logout button handler

@@ -141,7 +141,7 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
     <div className="max-w-3xl mx-auto">
       <div className="text-center mb-5">
         <p className="font-display text-xl md:text-2xl font-bold text-gray-900">{tt("pick", locale)}</p>
-        <p className="first-letter:uppercase text-xs font-bold text-gray-400 mt-2">
+        <p className="first-letter:uppercase text-xs font-bold text-gray-500 mt-2">
           {tt("answered", locale)} : {answered}
         </p>
       </div>
@@ -158,9 +158,9 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
               disabled={picked !== null}
               className={`relative overflow-hidden p-6 rounded-2xl border-2 text-center transition-all ${
                 picked === null
-                  ? "bg-white border-gray-200 hover:border-violet-400 cursor-pointer"
+                  ? "bg-white border-gray-200 hover:border-brand-400 cursor-pointer"
                   : chosen
-                    ? "bg-violet-50 border-violet-500"
+                    ? "bg-brand-50 border-brand-500"
                     : "bg-white border-gray-200 opacity-70"
               }`}
             >
@@ -168,7 +168,7 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
               {pct !== null && (
                 <span
                   aria-hidden="true"
-                  className="absolute inset-x-0 bottom-0 bg-violet-100/70 transition-[height] duration-700"
+                  className="absolute inset-x-0 bottom-0 bg-brand-100/70 transition-[height] duration-700"
                   style={{ height: `${pct}%` }}
                 ></span>
               )}
@@ -176,10 +176,10 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
                 {label}
               </span>
               {pct !== null && (
-                <span className="relative block font-display text-2xl font-black text-violet-700 mt-2">{pct} %</span>
+                <span className="relative block font-display text-2xl font-black text-brand-700 mt-2">{pct} %</span>
               )}
               {chosen && pct === null && (
-                <span className="relative block text-xs font-bold text-violet-700 mt-2">
+                <span className="relative block text-xs font-bold text-brand-700 mt-2">
                   {tt("youPicked", locale)}
                 </span>
               )}
@@ -189,7 +189,7 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
       </div>
 
       <div className="min-h-[3.5rem] mt-5 text-center">
-        {picked && share === null && <p className="text-sm text-gray-400 mb-3">{tt("waiting", locale)}</p>}
+        {picked && share === null && <p className="text-sm text-gray-500 mb-3">{tt("waiting", locale)}</p>}
         {picked && (
           <button
             onClick={next}

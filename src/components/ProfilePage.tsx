@@ -109,7 +109,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
   };
 
   if (loading) {
-    return <div className="text-center py-20 text-gray-400">{tt("loading")}</div>;
+    return <div className="text-center py-20 text-gray-500">{tt("loading")}</div>;
   }
 
   if (!user) {
@@ -175,7 +175,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
       {/* Stats */}
       <div className="grid grid-cols-3 gap-3">
         <div className="bg-white rounded-xl border border-gray-100 p-4 text-center shadow-sm">
-          <div className="text-2xl font-display font-bold text-violet-600">{user.xp}</div>
+          <div className="text-2xl font-display font-bold text-brand-600">{user.xp}</div>
           <div className="text-xs text-gray-500 font-medium mt-1">{tt("xp")}</div>
         </div>
         <div className="bg-white rounded-xl border border-gray-100 p-4 text-center shadow-sm">
@@ -190,7 +190,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
 
       {/* Edit Profile */}
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5">
-        <button onClick={() => setEditing(!editing)} className="flex items-center gap-2 text-sm font-bold text-violet-600 hover:text-violet-800 cursor-pointer">
+        <button onClick={() => setEditing(!editing)} className="flex items-center gap-2 text-sm font-bold text-brand-600 hover:text-brand-800 cursor-pointer">
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
           {tt("editProfile")}
         </button>
@@ -199,11 +199,11 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
           <div className="mt-4 space-y-4">
             <div>
               <label className="block text-xs font-semibold text-gray-600 mb-1">{tt("username")}</label>
-              <input type="text" value={editUsername} onChange={(e) => setEditUsername(e.target.value)} className="w-full h-10 px-3 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400" />
+              <input type="text" value={editUsername} onChange={(e) => setEditUsername(e.target.value)} className="w-full h-10 px-3 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400" />
             </div>
             <div>
               <label className="block text-xs font-semibold text-gray-600 mb-1">{tt("newPassword")}</label>
-              <input type="password" value={editPassword} onChange={(e) => setEditPassword(e.target.value)} placeholder="••••••" className="w-full h-10 px-3 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400" />
+              <input type="password" value={editPassword} onChange={(e) => setEditPassword(e.target.value)} placeholder="••••••" className="w-full h-10 px-3 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400" />
             </div>
             <div className="flex items-center gap-3">
               <button onClick={handleSave} className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-5 py-2.5 rounded-lg cursor-pointer transition-colors">{tt("save")}</button>
@@ -217,7 +217,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5">
         <h2 className="font-display font-bold text-gray-900 mb-4">{tt("history")}</h2>
         {history.length === 0 ? (
-          <p className="text-sm text-gray-400">{tt("noHistory")}</p>
+          <p className="text-sm text-gray-500">{tt("noHistory")}</p>
         ) : (
           <div className="space-y-2">
             {history.map((h: any, i: number) => {
@@ -230,20 +230,20 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
                       <img src={h.quiz_image} alt={title} width={800} height={450} className="w-full h-full object-cover" />
                     </div>
                   ) : (
-                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0 ${h.score / h.total_questions >= 0.7 ? "bg-green-500" : h.score / h.total_questions >= 0.4 ? "bg-amber-500" : "bg-red-500"}`}>
+                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0 ${h.score / h.total_questions >= 0.7 ? "bg-green-700" : h.score / h.total_questions >= 0.4 ? "bg-amber-700" : "bg-red-600"}`}>
                       {h.score}/{h.total_questions}
                     </div>
                   )}
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-gray-900 truncate group-hover:text-violet-700 transition-colors">{title}</p>
+                    <p className="text-sm font-medium text-gray-900 truncate group-hover:text-brand-700 transition-colors">{title}</p>
                     <div className="flex items-center gap-2 mt-0.5">
-                      <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${h.score / h.total_questions >= 0.7 ? "bg-green-100 text-green-700" : h.score / h.total_questions >= 0.4 ? "bg-amber-100 text-amber-700" : "bg-red-100 text-red-700"}`}>
+                      <span className={`text-[11px] font-bold px-1.5 py-0.5 rounded ${h.score / h.total_questions >= 0.7 ? "bg-green-100 text-green-700" : h.score / h.total_questions >= 0.4 ? "bg-amber-100 text-amber-700" : "bg-red-100 text-red-700"}`}>
                         {h.score}/{h.total_questions}
                       </span>
-                      <span className="text-[10px] text-gray-400">{new Date(h.completed_at).toLocaleDateString()}</span>
+                      <span className="text-[11px] text-gray-500">{new Date(h.completed_at).toLocaleDateString()}</span>
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-violet-600 shrink-0">+{h.xp_earned} XP</span>
+                  <span className="text-xs font-bold text-brand-600 shrink-0">+{h.xp_earned} XP</span>
                 </a>
               );
             })}

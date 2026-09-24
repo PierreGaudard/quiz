@@ -3,12 +3,12 @@ import type { Locale } from "../i18n/config";
 import { t } from "../i18n/ui";
 
 export const gameTypes: GameTypeInfo[] = [
-  { id: "qcm", name: "QCM", description: "", icon: "?", color: "bg-violet-500" },
+  { id: "qcm", name: "QCM", description: "", icon: "?", color: "bg-brand-500" },
   { id: "vrai-faux", name: "Vrai/Faux", description: "", icon: "VF", color: "bg-emerald-500" },
   { id: "chrono", name: "Chrono", description: "", icon: "CH", color: "bg-amber-500" },
   { id: "estimation", name: "Estimation", description: "", icon: "#", color: "bg-cyan-500" },
   { id: "duel", name: "Duel", description: "", icon: "VS", color: "bg-rose-500" },
-  { id: "ordre", name: "Ordre", description: "", icon: "OR", color: "bg-indigo-500" },
+  { id: "ordre", name: "Ordre", description: "", icon: "OR", color: "bg-brand-500" },
 ];
 
 export function getGameTypes(locale: Locale): GameTypeInfo[] {
@@ -149,7 +149,7 @@ export const categoryDefs: CategoryDef[] = [
     slug: "jeux-video",
     slugs: { en: "video-games", fr: "jeux-video", es: "videojuegos" },
     icon: "JV",
-    color: "bg-purple-500",
+    color: "bg-brand-500",
     coverImage: "/images/cover-jeux-video.webp",
     translations: {
       en: {

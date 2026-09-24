@@ -211,9 +211,9 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
             onChange={(e) => setQuery(e.target.value)}
             placeholder={tt("placeholder")}
             aria-label={tt("placeholder")}
-            className="w-full px-5 py-4 pl-12 text-lg rounded-2xl border-2 border-violet-200 bg-white shadow-sm focus:outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-200 transition-all"
+            className="w-full px-5 py-4 pl-12 text-lg rounded-2xl border-2 border-brand-200 bg-white shadow-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-200 transition-all"
           />
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-violet-400 pointer-events-none">
+          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-brand-400 pointer-events-none">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -222,7 +222,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
             <button
               onClick={() => setQuery("")}
               aria-label="Clear search"
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-600 transition-colors"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -235,7 +235,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
       {/* Results count */}
       {hasQuery && (
         <p className="text-gray-600 mb-6 text-center">
-          <span className="font-semibold text-violet-700">{resultCount}</span>{" "}
+          <span className="font-semibold text-brand-700">{resultCount}</span>{" "}
           {resultCount === 1 ? tt("result") : tt("results")}{" "}
           <span className="font-medium">&laquo;{query.trim()}&raquo;</span>
         </p>
@@ -258,14 +258,14 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
                     alt={quiz.title}
                     width={800}
                     height={450}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
                 </div>
               ) : (
-                <div className="aspect-[5/2] bg-violet-50 flex items-center justify-center">
-                  <svg className="w-10 h-10 text-violet-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                <div className="aspect-[5/2] bg-brand-50 flex items-center justify-center">
+                  <svg className="w-10 h-10 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                   </svg>
                 </div>
@@ -273,23 +273,23 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
 
               {/* Card body */}
               <div className="p-4">
-                <h2 className="font-bold text-gray-900 text-sm leading-snug mb-2 line-clamp-2 group-hover:text-violet-700 transition-colors">
+                <h2 className="font-bold text-gray-900 text-sm leading-snug mb-2 line-clamp-2 group-hover:text-brand-700 transition-colors">
                   {quiz.title}
                 </h2>
                 <div className="flex items-center flex-wrap gap-2 mb-2">
                   {/* Category badge */}
-                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-violet-100 text-violet-700">
+                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-brand-100 text-brand-700">
                     {quiz.category}
                   </span>
                   {/* Subcategory */}
                   {quiz.subcategory && (
-                    <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-gray-100 text-gray-600">
+                    <span className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-gray-100 text-gray-600">
                       {quiz.subcategory}
                     </span>
                   )}
                   {/* Difficulty */}
                   <span
-                    className={`text-[10px] font-semibold px-2 py-0.5 rounded-md ${
+                    className={`text-[11px] font-semibold px-2 py-0.5 rounded-md ${
                       DIFFICULTY_STYLE[quiz.difficulty] || "text-gray-600 bg-gray-100"
                     }`}
                   >
@@ -320,7 +320,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
       {hasQuery && resultCount === 0 && (
         <div className="text-center py-16">
           <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
-            <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+            <svg className="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </div>
@@ -340,7 +340,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
               <button
                 key={term}
                 onClick={() => handlePopularClick(term)}
-                className="px-4 py-2 rounded-full bg-violet-50 text-violet-700 font-medium text-sm hover:bg-violet-100 border border-violet-200 hover:border-violet-300 transition-all"
+                className="px-4 py-2 rounded-full bg-brand-50 text-brand-700 font-medium text-sm hover:bg-brand-100 border border-brand-200 hover:border-brand-300 transition-all"
               >
                 {term}
               </button>
@@ -372,11 +372,11 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
                     loading="lazy"
                   />
                 ) : (
-                  <div className="w-12 h-12 rounded-lg bg-violet-100 flex items-center justify-center text-violet-600 font-bold text-sm">
+                  <div className="w-12 h-12 rounded-lg bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-sm">
                     {cat.icon}
                   </div>
                 )}
-                <span className="text-sm font-semibold text-gray-700 group-hover:text-violet-700 transition-colors text-center">
+                <span className="text-sm font-semibold text-gray-700 group-hover:text-brand-700 transition-colors text-center">
                   {cat.name}
                 </span>
               </a>

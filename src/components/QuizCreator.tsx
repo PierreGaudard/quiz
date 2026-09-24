@@ -60,10 +60,10 @@ function createInitialQuestions(): QuizQuestion[] {
 }
 
 const answerColors = [
-  { dot: "bg-violet-500", label: "A" },
-  { dot: "bg-blue-500", label: "B" },
-  { dot: "bg-amber-500", label: "C" },
-  { dot: "bg-rose-500", label: "D" },
+  { dot: "bg-brand-600", label: "A" },
+  { dot: "bg-blue-600", label: "B" },
+  { dot: "bg-amber-700", label: "C" },
+  { dot: "bg-rose-600", label: "D" },
 ];
 
 const difficultyOptions: {
@@ -267,9 +267,9 @@ export default function QuizCreator() {
                 <div
                   className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all ${
                     isCompleted
-                      ? "bg-green-500 text-white"
+                      ? "bg-green-700 text-white"
                       : isActive
-                      ? "bg-violet-600 text-white"
+                      ? "bg-brand-600 text-white"
                       : "bg-gray-200 text-gray-500"
                   }`}
                 >
@@ -283,7 +283,7 @@ export default function QuizCreator() {
                 </div>
                 <span
                   className={`text-xs mt-1 ${
-                    isActive ? "text-violet-600 font-semibold" : isCompleted ? "text-green-600" : "text-gray-400"
+                    isActive ? "text-brand-600 font-semibold" : isCompleted ? "text-green-600" : "text-gray-500"
                   }`}
                 >
                   {label}
@@ -320,7 +320,7 @@ export default function QuizCreator() {
                 onClick={() => handleSelectCategory(cat.slug)}
                 className={`cursor-pointer bg-white rounded-2xl border p-4 flex flex-col items-center gap-2 transition-all ${
                   isSelected
-                    ? "border-violet-500 ring-2 ring-offset-2 ring-violet-500 shadow-md"
+                    ? "border-brand-500 ring-2 ring-offset-2 ring-brand-500 shadow-md"
                     : "border-gray-100 shadow-sm hover:border-gray-200"
                 }`}
               >
@@ -349,8 +349,8 @@ export default function QuizCreator() {
                     onClick={() => setSelectedSubcategory(sub)}
                     className={`cursor-pointer px-4 py-2 rounded-full text-sm font-medium transition-all ${
                       isSubSelected
-                        ? "bg-violet-600 text-white shadow-md"
-                        : "bg-white border border-gray-200 text-gray-700 hover:border-violet-300 hover:text-violet-700"
+                        ? "bg-brand-600 text-white shadow-md"
+                        : "bg-white border border-gray-200 text-gray-700 hover:border-brand-300 hover:text-brand-700"
                     }`}
                   >
                     {sub}
@@ -376,7 +376,7 @@ export default function QuizCreator() {
               <label className="block text-sm font-medium text-gray-700">Titre</label>
               <span
                 className={`text-xs ${
-                  title.length > 90 ? "text-red-500 font-medium" : "text-gray-400"
+                  title.length > 90 ? "text-red-500 font-medium" : "text-gray-500"
                 }`}
               >
                 {title.length}/100
@@ -389,7 +389,7 @@ export default function QuizCreator() {
                 if (e.target.value.length <= 100) setTitle(e.target.value);
               }}
               placeholder="Ex: Quiz culture générale niveau expert"
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
               maxLength={100}
               required
             />
@@ -399,7 +399,7 @@ export default function QuizCreator() {
               <label className="block text-sm font-medium text-gray-700">Description</label>
               <span
                 className={`text-xs ${
-                  description.length > 270 ? "text-red-500 font-medium" : "text-gray-400"
+                  description.length > 270 ? "text-red-500 font-medium" : "text-gray-500"
                 }`}
               >
                 {description.length}/300
@@ -413,7 +413,7 @@ export default function QuizCreator() {
               placeholder="Décris ton quiz en quelques mots..."
               rows={3}
               maxLength={300}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100 resize-none"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 resize-none"
               required
             />
           </div>
@@ -450,7 +450,7 @@ export default function QuizCreator() {
         <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">Tes questions</h2>
         <p className="text-gray-500 mb-6">
           Ajoute au moins {MIN_QUESTIONS} questions (max {MAX_QUESTIONS}). Questions complètes :{" "}
-          <span className={validCount >= MIN_QUESTIONS ? "text-green-600 font-semibold" : "text-violet-600 font-semibold"}>
+          <span className={validCount >= MIN_QUESTIONS ? "text-green-600 font-semibold" : "text-brand-600 font-semibold"}>
             {validCount}
           </span>
           /{questions.length}
@@ -465,7 +465,7 @@ export default function QuizCreator() {
                   <button
                     type="button"
                     onClick={() => deleteQuestion(qIndex)}
-                    className="cursor-pointer text-gray-400 hover:text-red-500 transition-colors p-1"
+                    className="cursor-pointer text-gray-500 hover:text-red-500 transition-colors p-1"
                     title="Supprimer cette question"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -485,7 +485,7 @@ export default function QuizCreator() {
                 value={q.question}
                 onChange={(e) => updateQuestion(qIndex, "question", e.target.value)}
                 placeholder={`Question ${qIndex + 1}...`}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100 mb-3"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 mb-3"
               />
 
               {/* Image upload */}
@@ -509,8 +509,8 @@ export default function QuizCreator() {
                     </button>
                   </div>
                 ) : (
-                  <label className="cursor-pointer flex items-center gap-2 px-4 py-2.5 rounded-xl border border-dashed border-gray-300 hover:border-violet-400 hover:bg-violet-50/50 transition-all">
-                    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <label className="cursor-pointer flex items-center gap-2 px-4 py-2.5 rounded-xl border border-dashed border-gray-300 hover:border-brand-400 hover:bg-brand-50/50 transition-all">
+                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                     <span className="text-sm text-gray-500">Ajouter une image (optionnel)</span>
@@ -542,7 +542,7 @@ export default function QuizCreator() {
                       name={`correct-${qIndex}`}
                       checked={q.correctAnswer === a.id}
                       onChange={() => setCorrectAnswer(qIndex, a.id)}
-                      className="cursor-pointer accent-violet-600 w-4 h-4 flex-shrink-0"
+                      className="cursor-pointer accent-brand-600 w-4 h-4 flex-shrink-0"
                     />
                     <span
                       className={`w-6 h-6 rounded-full ${answerColors[aIndex].dot} text-white text-xs font-bold flex items-center justify-center flex-shrink-0`}
@@ -554,7 +554,7 @@ export default function QuizCreator() {
                       value={a.text}
                       onChange={(e) => updateAnswer(qIndex, aIndex, e.target.value)}
                       placeholder={`Réponse ${answerColors[aIndex].label}`}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
                     />
                   </div>
                 ))}
@@ -563,7 +563,7 @@ export default function QuizCreator() {
               <button
                 type="button"
                 onClick={() => toggleExplanation(q.id)}
-                className="cursor-pointer text-sm text-violet-600 hover:text-violet-700 font-medium flex items-center gap-1"
+                className="cursor-pointer text-sm text-brand-600 hover:text-brand-700 font-medium flex items-center gap-1"
               >
                 <svg
                   className={`w-4 h-4 transition-transform ${expandedExplanations.has(q.id) ? "rotate-90" : ""}`}
@@ -582,7 +582,7 @@ export default function QuizCreator() {
                   onChange={(e) => updateQuestion(qIndex, "explanation", e.target.value)}
                   placeholder="Explique pourquoi cette réponse est correcte..."
                   rows={2}
-                  className="w-full mt-3 px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100 resize-none"
+                  className="w-full mt-3 px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 resize-none"
                 />
               )}
             </div>
@@ -593,7 +593,7 @@ export default function QuizCreator() {
           <button
             type="button"
             onClick={addQuestion}
-            className="cursor-pointer mt-6 w-full border-2 border-dashed border-gray-300 rounded-2xl py-4 text-gray-500 hover:border-violet-400 hover:text-violet-600 transition-colors font-medium flex items-center justify-center gap-2"
+            className="cursor-pointer mt-6 w-full border-2 border-dashed border-gray-300 rounded-2xl py-4 text-gray-500 hover:border-brand-400 hover:text-brand-600 transition-colors font-medium flex items-center justify-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -630,7 +630,7 @@ export default function QuizCreator() {
               </span>
             )}
             {selectedSubcategory && (
-              <span className="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-violet-100 text-violet-700">
+              <span className="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-700">
                 {selectedSubcategory}
               </span>
             )}
@@ -655,7 +655,7 @@ export default function QuizCreator() {
           {validQuestions.map((q, i) => (
             <div key={i} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
               <p className="font-semibold text-gray-900 mb-3">
-                <span className="text-violet-600 mr-2">{i + 1}.</span>
+                <span className="text-brand-600 mr-2">{i + 1}.</span>
                 {q.question}
               </p>
 
@@ -733,8 +733,8 @@ export default function QuizCreator() {
           <p className="text-gray-500 max-w-md mx-auto">
             Ton quiz sera examiné et s'il est approuvé, il sera publié avec l'URL permanente :
           </p>
-          <div className="mt-4 inline-flex items-center gap-2 bg-violet-50 border border-violet-200 rounded-xl px-5 py-3">
-            <svg className="w-4 h-4 text-violet-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="mt-4 inline-flex items-center gap-2 bg-brand-50 border border-brand-200 rounded-xl px-5 py-3">
+            <svg className="w-4 h-4 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -742,7 +742,7 @@ export default function QuizCreator() {
                 d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
               />
             </svg>
-            <span className="text-violet-700 font-semibold text-sm">
+            <span className="text-brand-700 font-semibold text-sm">
               wizy.fr/quiz/{submittedSlug}
             </span>
           </div>

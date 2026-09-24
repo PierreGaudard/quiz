@@ -40,8 +40,8 @@ export default function DailyQuestion({ question, answers, correctAnswer, explan
                   ? "bg-green-50 border-green-400 text-green-700"
                   : a.id === selected
                     ? "bg-red-50 border-red-400 text-red-700"
-                    : "bg-gray-50 border-gray-100 text-gray-400"
-                : "border-gray-200 text-gray-700 hover:border-violet-400 hover:bg-violet-50"
+                    : "bg-gray-50 border-gray-100 text-gray-500"
+                : "border-gray-200 text-gray-700 hover:border-brand-400 hover:bg-brand-50"
             }`}
           >
             {a.text}

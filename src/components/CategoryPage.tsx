@@ -8,12 +8,12 @@ import { categoryIcons } from "../data/icons";
 const QUIZZES_PER_PAGE = 30;
 
 const GAME_TYPE_LABELS_I18N: Record<GameType, Record<string, { name: string; icon: string; color: string }>> = {
-  qcm: { en: { name: "MCQ", icon: "?", color: "bg-violet-500" }, fr: { name: "QCM", icon: "?", color: "bg-violet-500" }, es: { name: "Test", icon: "?", color: "bg-violet-500" } },
-  "vrai-faux": { en: { name: "True/False", icon: "TF", color: "bg-emerald-500" }, fr: { name: "Vrai/Faux", icon: "VF", color: "bg-emerald-500" }, es: { name: "V/F", icon: "VF", color: "bg-emerald-500" } },
-  chrono: { en: { name: "Chrono", icon: "CH", color: "bg-amber-500" }, fr: { name: "Chrono", icon: "CH", color: "bg-amber-500" }, es: { name: "Crono", icon: "CH", color: "bg-amber-500" } },
-  estimation: { en: { name: "Estimation", icon: "#", color: "bg-cyan-500" }, fr: { name: "Estimation", icon: "#", color: "bg-cyan-500" }, es: { name: "Estimación", icon: "#", color: "bg-cyan-500" } },
-  duel: { en: { name: "Duel", icon: "VS", color: "bg-rose-500" }, fr: { name: "Duel", icon: "VS", color: "bg-rose-500" }, es: { name: "Duelo", icon: "VS", color: "bg-rose-500" } },
-  ordre: { en: { name: "Order", icon: "OR", color: "bg-indigo-500" }, fr: { name: "Ordre", icon: "OR", color: "bg-indigo-500" }, es: { name: "Orden", icon: "OR", color: "bg-indigo-500" } },
+  qcm: { en: { name: "MCQ", icon: "?", color: "bg-brand-600" }, fr: { name: "QCM", icon: "?", color: "bg-brand-600" }, es: { name: "Test", icon: "?", color: "bg-brand-600" } },
+  "vrai-faux": { en: { name: "True/False", icon: "TF", color: "bg-emerald-700" }, fr: { name: "Vrai/Faux", icon: "VF", color: "bg-emerald-700" }, es: { name: "V/F", icon: "VF", color: "bg-emerald-700" } },
+  chrono: { en: { name: "Chrono", icon: "CH", color: "bg-amber-700" }, fr: { name: "Chrono", icon: "CH", color: "bg-amber-700" }, es: { name: "Crono", icon: "CH", color: "bg-amber-700" } },
+  estimation: { en: { name: "Estimation", icon: "#", color: "bg-cyan-700" }, fr: { name: "Estimation", icon: "#", color: "bg-cyan-700" }, es: { name: "Estimación", icon: "#", color: "bg-cyan-700" } },
+  duel: { en: { name: "Duel", icon: "VS", color: "bg-rose-600" }, fr: { name: "Duel", icon: "VS", color: "bg-rose-600" }, es: { name: "Duelo", icon: "VS", color: "bg-rose-600" } },
+  ordre: { en: { name: "Order", icon: "OR", color: "bg-brand-600" }, fr: { name: "Ordre", icon: "OR", color: "bg-brand-600" }, es: { name: "Orden", icon: "OR", color: "bg-brand-600" } },
 };
 
 const catPageT: Record<string, Record<string, string>> = {
@@ -294,12 +294,12 @@ export default function CategoryPage({
       <nav className="flex items-center gap-2 text-sm mb-6" aria-label="Breadcrumb">
         <a
           href={lp("/")}
-          className="text-gray-400 hover:text-violet-600 transition-colors"
+          className="text-gray-500 hover:text-brand-600 transition-colors"
         >
           {tt("home")}
         </a>
         <svg
-          className="w-3.5 h-3.5 text-gray-400"
+          className="w-3.5 h-3.5 text-gray-500"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -332,7 +332,7 @@ export default function CategoryPage({
           </div>
         </div>
 
-        <p className="text-sm italic text-gray-400 mt-2">{quizzes.length} quiz{totalPlays > 0 ? ` \u00b7 ${formatPlayCount(totalPlays)} ${tt("plays")}` : ""}</p>
+        <p className="text-sm italic text-gray-500 mt-2">{quizzes.length} quiz{totalPlays > 0 ? ` \u00b7 ${formatPlayCount(totalPlays)} ${tt("plays")}` : ""}</p>
       </section>
 
       {/* ─── seoIntro ─── */}
@@ -346,7 +346,7 @@ export default function CategoryPage({
       <section className="mb-6">
         <div className="flex gap-2 max-w-xl">
           <div className="relative flex-1">
-            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             <input
@@ -354,7 +354,7 @@ export default function CategoryPage({
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
               placeholder={tt("searchPlaceholder")}
-              className="w-full pl-12 pr-10 py-3 rounded-xl border border-gray-200 bg-white text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100 shadow-sm"
+              className="w-full pl-12 pr-10 py-3 rounded-xl border border-gray-200 bg-white text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 shadow-sm"
             />
             {searchQuery && (
               <button
@@ -392,13 +392,13 @@ export default function CategoryPage({
             <select
               value={sortBy}
               onChange={(e) => { setSortBy(e.target.value as any); setCurrentPage(1); }}
-              className="appearance-none bg-white border border-gray-200 rounded-xl pl-4 pr-10 py-2.5 text-sm font-medium text-gray-700 cursor-pointer hover:border-violet-300 focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100 shadow-sm"
+              className="appearance-none bg-white border border-gray-200 rounded-xl pl-4 pr-10 py-2.5 text-sm font-medium text-gray-700 cursor-pointer hover:border-brand-300 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 shadow-sm"
             >
               <option value="all">{tt("allQuizzes")}</option>
               <option value="popular">{tt("mostPopular")}</option>
               <option value="new">{tt("newest")}</option>
             </select>
-            <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </div>
@@ -409,7 +409,7 @@ export default function CategoryPage({
               <select
                 value={activeFilter || ""}
                 onChange={(e) => handleFilterChange(e.target.value || null)}
-                className="appearance-none bg-white border border-gray-200 rounded-xl pl-4 pr-10 py-2.5 text-sm font-medium text-gray-700 cursor-pointer hover:border-violet-300 focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100 shadow-sm"
+                className="appearance-none bg-white border border-gray-200 rounded-xl pl-4 pr-10 py-2.5 text-sm font-medium text-gray-700 cursor-pointer hover:border-brand-300 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 shadow-sm"
               >
                 <option value="">{tt("allGameTypes")}</option>
                 {gameTypes.map((gt) => {
@@ -423,7 +423,7 @@ export default function CategoryPage({
                   );
                 })}
               </select>
-              <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </div>
@@ -452,14 +452,14 @@ export default function CategoryPage({
               {activeFilter
                 ? (() => { const label = gtLabel(activeFilter as GameType); return label?.name || gameTypes.find((g) => g.id === activeFilter)?.name || "Quiz"; })()
                 : tt("allQuizzes")}
-              <span className="text-gray-400 font-normal ml-2">
+              <span className="text-gray-500 font-normal ml-2">
                 ({filteredQuizzes.length})
               </span>
             </h2>
             {activeFilter && (
               <button
                 onClick={() => handleFilterChange(null)}
-                className="text-sm text-violet-600 font-semibold hover:underline cursor-pointer"
+                className="text-sm text-brand-600 font-semibold hover:underline cursor-pointer"
               >
                 {tt("seeAll")}
               </button>
@@ -483,7 +483,7 @@ export default function CategoryPage({
           {/* Empty state */}
           {pagedQuizzes.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-gray-400 text-sm">{tt("noQuizzesFound")}</p>
+              <p className="text-gray-500 text-sm">{tt("noQuizzesFound")}</p>
             </div>
           )}
 
@@ -500,14 +500,11 @@ export default function CategoryPage({
       {/* ─── 5. MINI QUIZ (inside main column) ─── */}
       {miniQuiz && miniQuestion && (
         <section className="mt-10 mb-12">
-          <div className="bg-violet-50 rounded-2xl border border-violet-100 p-6 md:p-8 shadow-sm">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="w-8 h-8 bg-violet-600 rounded-lg flex items-center justify-center text-white text-sm font-bold">
-                ?
-              </span>
-              <span className="text-sm font-semibold text-violet-600">{tt("miniQuiz")}</span>
-              <span className="text-xs text-gray-400 ml-1">
-                | {miniQuiz.title}
+          <div className="bg-white rounded-2xl border border-line p-6 md:p-8">
+            <div className="flex items-baseline gap-2 mb-4">
+              <span className="font-display text-sm font-bold text-gray-900">{tt("miniQuiz")}</span>
+              <span className="text-xs text-gray-500">
+                · {miniQuiz.title}
               </span>
             </div>
             <h2 className="font-display text-lg md:text-xl font-bold text-gray-900 mb-5 leading-snug">
@@ -523,13 +520,13 @@ export default function CategoryPage({
                   "w-full text-left px-4 py-3 rounded-xl border text-sm font-medium transition-all duration-200 cursor-pointer ";
                 if (!hasAnswered) {
                   btnClass +=
-                    "bg-white border-gray-200 hover:border-violet-400 hover:shadow-sm text-gray-900";
+                    "bg-white border-gray-200 hover:border-brand-400 hover:shadow-sm text-gray-900";
                 } else if (isCorrect) {
                   btnClass += "bg-green-100 border-green-400 text-green-800";
                 } else if (isSelected && !isCorrect) {
                   btnClass += "bg-red-100 border-red-400 text-red-800";
                 } else {
-                  btnClass += "bg-white border-gray-200 text-gray-400 opacity-60";
+                  btnClass += "bg-white border-gray-200 text-gray-500 opacity-60";
                 }
 
                 return (
@@ -589,7 +586,7 @@ export default function CategoryPage({
               <a
                 key={sub}
                 href={lp(`/${category.slug}/${slugify(sub)}`)}
-                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:border-violet-400 hover:text-violet-700 hover:bg-violet-50 transition-all shadow-sm cursor-pointer`}
+                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:border-brand-400 hover:text-brand-700 hover:bg-brand-50 transition-all shadow-sm cursor-pointer`}
               >
                 {sub}
               </a>
@@ -660,10 +657,10 @@ export default function CategoryPage({
                         />
                       )}
                       <div className="min-w-0 flex-1">
-                        <p className="text-sm font-semibold text-gray-900 truncate group-hover:text-violet-600 transition-colors">
+                        <p className="text-sm font-semibold text-gray-900 truncate group-hover:text-brand-600 transition-colors">
                           {q.title}
                         </p>
-                        <p className="text-xs text-gray-400">
+                        <p className="text-xs text-gray-500">
                           {q.questions.length} {tt("questions")}
                         </p>
                       </div>
@@ -739,7 +736,7 @@ function StatCell({
   return (
     <div className="flex flex-col items-center px-5 py-3 min-w-[90px]">
       <span className={`text-2xl font-black leading-none ${color}`}>{value}</span>
-      <span className="first-letter:uppercase text-xs font-semibold text-gray-400 mt-0.5">
+      <span className="first-letter:uppercase text-xs font-semibold text-gray-500 mt-0.5">
         {label}
       </span>
     </div>
@@ -768,12 +765,12 @@ function FilterPill({
       onClick={onClick}
       className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold border transition-all cursor-pointer ${
         active
-          ? "bg-violet-600 text-white border-violet-600 shadow-md"
-          : "bg-white text-gray-900 border-gray-200 hover:border-violet-300 hover:shadow-sm"
+          ? "bg-brand-600 text-white border-brand-600 shadow-md"
+          : "bg-white text-gray-900 border-gray-200 hover:border-brand-300 hover:shadow-sm"
       }`}
     >
       <span
-        className={`w-6 h-6 rounded-md flex items-center justify-center text-[10px] font-bold shrink-0 ${
+        className={`w-6 h-6 rounded-md flex items-center justify-center text-[11px] font-bold shrink-0 ${
           active
             ? "bg-white/20 text-white"
             : colorClass
@@ -839,7 +836,7 @@ function QuizCard({
           <img
             src={withBase(quiz.coverImage)}
             alt={quiz.title}
-            className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${
+            className={`w-full h-full object-cover ${
               isCompleted ? "grayscale-[40%] opacity-70" : ""
             }`}
             loading="lazy"
@@ -850,7 +847,7 @@ function QuizCard({
           {/* stickers */}
           <div className="absolute top-2.5 left-2.5 flex flex-col gap-1.5">
             {isPopular && (
-              <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-md bg-orange-500 text-white shadow">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-700 text-white shadow">
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" />
                 </svg>
@@ -858,7 +855,7 @@ function QuizCard({
               </span>
             )}
             {isTrending && (
-              <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-md bg-purple-500 text-white shadow">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-brand-500 text-white shadow">
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clipRule="evenodd" />
                 </svg>
@@ -866,7 +863,7 @@ function QuizCard({
               </span>
             )}
             {isNew && (
-              <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-md bg-green-500 text-white shadow">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-green-700 text-white shadow">
                 {tt("new")}
               </span>
             )}
@@ -903,7 +900,7 @@ function QuizCard({
             </span>
             {quiz.gameType && gtLabel(quiz.gameType) && (
               <span
-                className={`text-[10px] font-semibold px-1.5 py-0.5 rounded-md ${gtLabel(quiz.gameType)!.color} text-white`}
+                className={`text-[11px] font-semibold px-1.5 py-0.5 rounded-md ${gtLabel(quiz.gameType)!.color} text-white`}
               >
                 {gtLabel(quiz.gameType)!.icon}{" "}
                 {gtLabel(quiz.gameType)!.name}
@@ -923,17 +920,17 @@ function QuizCard({
         /* no cover image fallback */
         <div className="relative px-4 pt-4 flex flex-wrap gap-1.5">
           {isPopular && (
-            <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-md bg-orange-500 text-white">
+            <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-700 text-white">
               {tt("popular")}
             </span>
           )}
           {isTrending && (
-            <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-md bg-purple-500 text-white">
+            <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-brand-500 text-white">
               {tt("trending")}
             </span>
           )}
           {isNew && (
-            <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-md bg-green-500 text-white">
+            <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-green-700 text-white">
               {tt("new")}
             </span>
           )}
@@ -944,7 +941,7 @@ function QuizCard({
           </span>
           {quiz.gameType && gtLabel(quiz.gameType) && (
             <span
-              className={`text-[10px] font-semibold px-1.5 py-0.5 rounded-md ${gtLabel(quiz.gameType)!.color} text-white`}
+              className={`text-[11px] font-semibold px-1.5 py-0.5 rounded-md ${gtLabel(quiz.gameType)!.color} text-white`}
             >
               {gtLabel(quiz.gameType)!.icon}{" "}
               {gtLabel(quiz.gameType)!.name}
@@ -959,15 +956,15 @@ function QuizCard({
           <h3
             className={`font-display text-[13px] font-bold transition-colors line-clamp-1 flex-1 min-w-0 ${
               isCompleted
-                ? "text-gray-400 group-hover:text-violet-600"
-                : "text-gray-900 group-hover:text-violet-600"
+                ? "text-gray-500 group-hover:text-brand-600"
+                : "text-gray-900 group-hover:text-brand-600"
             }`}
           >
             {quiz.title}
           </h3>
-          <span className="text-[10px] text-gray-400 shrink-0">{quiz.questions.length} {tt("questions")}</span>
+          <span className="text-[11px] text-gray-500 shrink-0">{quiz.questions.length} {tt("questions")}</span>
         </div>
-        <p className="text-[11px] text-gray-400 line-clamp-2 mt-0.5 leading-relaxed">{quiz.description}</p>
+        <p className="text-[11px] text-gray-500 line-clamp-2 mt-0.5 leading-relaxed">{quiz.description}</p>
       </div>
     </a>
   );
@@ -1047,14 +1044,14 @@ function Pagination({
           scrollUp();
         }}
         disabled={currentPage <= 1}
-        className="px-3 py-2 text-sm font-semibold rounded-lg border border-gray-200 bg-white text-gray-900 disabled:opacity-40 disabled:cursor-not-allowed hover:border-violet-300 transition-colors cursor-pointer"
+        className="px-3 py-2 text-sm font-semibold rounded-lg border border-gray-200 bg-white text-gray-900 disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand-300 transition-colors cursor-pointer"
       >
         {tt("previous")}
       </button>
 
       {pages.map((p, i) =>
         p === "ellipsis" ? (
-          <span key={`e${i}`} className="px-2 text-gray-400 select-none">
+          <span key={`e${i}`} className="px-2 text-gray-500 select-none">
             ...
           </span>
         ) : (
@@ -1066,8 +1063,8 @@ function Pagination({
             }}
             className={`w-9 h-9 flex items-center justify-center text-sm font-semibold rounded-lg border transition-colors cursor-pointer ${
               p === currentPage
-                ? "bg-violet-600 text-white border-violet-600 shadow-md"
-                : "bg-white text-gray-900 border-gray-200 hover:border-violet-300"
+                ? "bg-brand-600 text-white border-brand-600 shadow-md"
+                : "bg-white text-gray-900 border-gray-200 hover:border-brand-300"
             }`}
           >
             {p}
@@ -1081,7 +1078,7 @@ function Pagination({
           scrollUp();
         }}
         disabled={currentPage >= totalPages}
-        className="px-3 py-2 text-sm font-semibold rounded-lg border border-gray-200 bg-white text-gray-900 disabled:opacity-40 disabled:cursor-not-allowed hover:border-violet-300 transition-colors cursor-pointer"
+        className="px-3 py-2 text-sm font-semibold rounded-lg border border-gray-200 bg-white text-gray-900 disabled:opacity-40 disabled:cursor-not-allowed hover:border-brand-300 transition-colors cursor-pointer"
       >
         {tt("next")}
       </button>
@@ -1159,11 +1156,11 @@ function SidebarContent({
   const ls = (base: string) => catSlugs[base]?.[locale || "en"] || base;
 
   const sidebarCategories = [
-    { nameKey: "catSports", slug: ls("sport"), color: "bg-emerald-500", coverImage: "/images/cover-sport.webp", name: "Sport" },
-    { nameKey: "catCinema", slug: ls("cinema"), color: "bg-red-500", coverImage: "/images/cover-cinema.webp", name: "Cinema" },
-    { nameKey: "catAnime", slug: ls("anime"), color: "bg-pink-500", coverImage: "/images/cover-anime.webp", name: "Anime" },
-    { nameKey: "catVideoGames", slug: ls("jeux-video"), color: "bg-purple-500", coverImage: "/images/cover-jeux-video.webp", name: "Jeux Video" },
-    { nameKey: "catGeography", slug: ls("geographie"), color: "bg-teal-500", coverImage: "/images/cover-geographie.webp", name: "Geographie" },
+    { nameKey: "catSports", slug: ls("sport"), color: "bg-emerald-700", coverImage: "/images/cover-sport.webp", name: "Sport" },
+    { nameKey: "catCinema", slug: ls("cinema"), color: "bg-red-600", coverImage: "/images/cover-cinema.webp", name: "Cinema" },
+    { nameKey: "catAnime", slug: ls("anime"), color: "bg-pink-600", coverImage: "/images/cover-anime.webp", name: "Anime" },
+    { nameKey: "catVideoGames", slug: ls("jeux-video"), color: "bg-brand-600", coverImage: "/images/cover-jeux-video.webp", name: "Jeux Video" },
+    { nameKey: "catGeography", slug: ls("geographie"), color: "bg-cyan-700", coverImage: "/images/cover-geographie.webp", name: "Geographie" },
   ];
 
   return (
@@ -1183,10 +1180,10 @@ function SidebarContent({
             <div>
               <p className="font-display font-bold text-sm">{authUser.username}</p>
               <div className="flex items-center gap-1.5 mt-0.5">
-                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded text-white ${(() => { const l = authUser.xp || 0; if (l >= 7000) return 'bg-amber-500'; if (l >= 3500) return 'bg-violet-500'; if (l >= 1500) return 'bg-blue-500'; if (l >= 500) return 'bg-green-500'; return 'bg-gray-400'; })()}`}>
+                <span className={`text-[11px] font-bold px-1.5 py-0.5 rounded text-white ${(() => { const l = authUser.xp || 0; if (l >= 7000) return 'bg-amber-700'; if (l >= 3500) return 'bg-brand-500'; if (l >= 1500) return 'bg-blue-600'; if (l >= 500) return 'bg-green-700'; return 'bg-gray-400'; })()}`}>
                   Lv.{(() => { const x = authUser.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(10*i*i - 10*i + 200)) lv = i; else break; } return lv; })()}
                 </span>
-                <span className="text-white/60 text-[10px]">{authUser.xp || 0} XP</span>
+                <span className="text-white/60 text-[11px]">{authUser.xp || 0} XP</span>
               </div>
             </div>
           </a>
@@ -1209,21 +1206,21 @@ function SidebarContent({
           {/* Friends with level + quiz count */}
           {friends.length > 0 && (
             <div>
-              <p className="first-letter:uppercase text-[10px] font-bold text-white/50 mb-2">{tt("friendsLabel")}</p>
+              <p className="first-letter:uppercase text-[11px] font-bold text-white/50 mb-2">{tt("friendsLabel")}</p>
               <div className="space-y-1.5">
                 {friends.slice(0, 5).map((f: any) => {
                   const fLv = (() => { const x = f.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(10*i*i - 10*i + 200)) lv = i; else break; } return lv; })();
                   const fProfileHref = locale === "fr" ? `/fr/profil/${f.username}/` : locale === "es" ? `/es/perfil/${f.username}/` : `/profile/${f.username}/`;
                   return (
                     <a key={f.id} href={fProfileHref} className="flex items-center gap-2 text-xs hover:bg-white/10 rounded-lg p-1.5 -mx-1 transition-colors">
-                      <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold overflow-hidden shrink-0">
+                      <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[11px] font-bold overflow-hidden shrink-0">
                         {f.avatar ? <img src={f.avatar} alt={f.username} width={40} height={40} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
                       </div>
                       <div className="flex-1 min-w-0">
                         <span className="truncate text-white/80 block">{f.username}</span>
-                        <span className="text-[9px] text-white/40">{friendsQuizCount[f.id] || 0}/{totalQuizzes} quiz</span>
+                        <span className="text-[11px] text-white/40">{friendsQuizCount[f.id] || 0}/{totalQuizzes} quiz</span>
                       </div>
-                      <span className="text-[10px] font-bold text-yellow-400 shrink-0">Lv.{fLv}</span>
+                      <span className="text-[11px] font-bold text-yellow-400 shrink-0">Lv.{fLv}</span>
                     </a>
                   );
                 })}
@@ -1257,7 +1254,7 @@ function SidebarContent({
               className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-gray-50 transition-colors group"
             >
               <img src={withBase(cat.coverImage)} alt={cat.name} width={800} height={450} className="w-7 h-7 rounded-lg object-cover shrink-0" />
-              <span className="text-sm font-medium text-gray-700 group-hover:text-violet-600 transition-colors">{tt(cat.nameKey)}</span>
+              <span className="text-sm font-medium text-gray-700 group-hover:text-brand-600 transition-colors">{tt(cat.nameKey)}</span>
             </a>
           ))}
         </div>

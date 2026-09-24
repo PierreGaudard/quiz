@@ -65,7 +65,7 @@ export default function MyQuizzes() {
     return (
       <section className="py-6">
         <h2 className="font-display text-lg font-bold text-gray-900 mb-3">Mes quiz créés</h2>
-        <p className="text-gray-400 text-sm">Tu n'as pas encore créé de quiz.</p>
+        <p className="text-gray-500 text-sm">Tu n'as pas encore créé de quiz.</p>
       </section>
     );
   }
@@ -76,7 +76,7 @@ export default function MyQuizzes() {
     <section className="py-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="font-display text-lg font-bold text-gray-900">Mes quiz créés</h2>
-        <span className="text-xs text-gray-400 font-medium">{quizzes.length} quiz</span>
+        <span className="text-xs text-gray-500 font-medium">{quizzes.length} quiz</span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -93,7 +93,7 @@ export default function MyQuizzes() {
             {/* Meta */}
             <div className="flex items-center gap-2 text-xs text-gray-500">
               <span className="inline-flex items-center gap-1">
-                <svg className="w-3.5 h-3.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-3.5 h-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                 </svg>
                 {entry.quiz.category}
@@ -104,7 +104,7 @@ export default function MyQuizzes() {
 
             {/* Status + Date */}
             <div className="flex items-center gap-2">
-              <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold ${
+              <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold ${
                 entry.status === "approved"
                   ? "bg-green-100 text-green-700"
                   : entry.status === "rejected"
@@ -116,14 +116,14 @@ export default function MyQuizzes() {
                 }`} />
                 {entry.status === "approved" ? "Publié" : entry.status === "rejected" ? "Refusé" : "En attente"}
               </span>
-              <span className="text-xs text-gray-400">{formatFrenchDate(entry.createdAt)}</span>
+              <span className="text-xs text-gray-500">{formatFrenchDate(entry.createdAt)}</span>
             </div>
 
             {/* Actions */}
             <div className="flex items-center gap-2 mt-auto pt-1">
               <button
                 onClick={() => handleShare(entry)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-violet-50 text-violet-700 text-xs font-semibold rounded-lg hover:bg-violet-100 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-brand-50 text-brand-700 text-xs font-semibold rounded-lg hover:bg-brand-100 transition-colors"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -149,7 +149,7 @@ export default function MyQuizzes() {
         <div className="flex justify-center mt-4">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="text-xs text-violet-600 font-semibold hover:text-violet-700 transition-colors"
+            className="text-xs text-brand-600 font-semibold hover:text-brand-700 transition-colors"
           >
             {showAll ? "Voir moins" : `Voir tout (${quizzes.length})`}
           </button>

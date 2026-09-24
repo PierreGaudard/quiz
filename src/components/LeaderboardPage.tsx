@@ -33,7 +33,7 @@ function formatXp(n: number): string {
 
 const RANK_STYLES: Record<number, { border: string; bg: string; badge: string; text: string }> = {
   1: { border: "border-yellow-400", bg: "bg-yellow-500/10", badge: "bg-yellow-400 text-yellow-900", text: "text-yellow-500" },
-  2: { border: "border-gray-300", bg: "bg-gray-800/20", badge: "bg-gray-300 text-gray-700", text: "text-gray-400" },
+  2: { border: "border-gray-300", bg: "bg-gray-800/20", badge: "bg-gray-300 text-gray-700", text: "text-gray-500" },
   3: { border: "border-amber-600", bg: "bg-amber-600/10", badge: "bg-amber-600 text-white", text: "text-amber-600" },
 };
 
@@ -73,9 +73,9 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
         de suite ; seul le classement attend son fetch.
       */}
       {loading ? (
-        <div className="text-center py-20 text-gray-400">{tt("loading")}</div>
+        <div className="text-center py-20 text-gray-500">{tt("loading")}</div>
       ) : players.length === 0 ? (
-        <div className="text-center py-16 text-gray-400">{tt("noPlayers")}</div>
+        <div className="text-center py-16 text-gray-500">{tt("noPlayers")}</div>
       ) : (
         <>
           {/* Top 3 podium */}
@@ -94,27 +94,27 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
                         <svg className="w-8 h-8 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
                       </div>
                     )}
-                    <div className={`${isFirst ? "w-20 h-20" : "w-16 h-16"} mx-auto rounded-full overflow-hidden flex items-center justify-center mb-3 shadow-sm border-2 ${style.border} bg-violet-100`}>
+                    <div className={`${isFirst ? "w-20 h-20" : "w-16 h-16"} mx-auto rounded-full overflow-hidden flex items-center justify-center mb-3 shadow-sm border-2 ${style.border} bg-brand-100`}>
                       {player.avatar ? (
                         <img src={player.avatar} alt={player.username} width={40} height={40} className="w-full h-full object-cover" />
                       ) : (
-                        <span className={`${isFirst ? "text-3xl" : "text-2xl"} font-black text-violet-500`}>{player.username[0].toUpperCase()}</span>
+                        <span className={`${isFirst ? "text-3xl" : "text-2xl"} font-black text-brand-500`}>{player.username[0].toUpperCase()}</span>
                       )}
                     </div>
                     <span className={`inline-block text-xs font-black ${style.badge} px-3 py-1 rounded-full mb-2`}>#{rank}</span>
                     <h3 className="font-display font-bold text-gray-900 text-base mb-1">{player.username}</h3>
                     <div className="flex items-center justify-center gap-1 mb-3">
-                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded text-white ${lv.color}`}>Lv.{lv.level}</span>
+                      <span className={`text-[11px] font-bold px-2 py-0.5 rounded text-white ${lv.color}`}>Lv.{lv.level}</span>
                     </div>
                     <div className="flex items-center justify-center gap-4 text-sm">
                       <div>
                         <p className={`font-black text-lg ${style.text}`}>{formatXp(player.xp)}</p>
-                        <p className="first-letter:uppercase text-[10px] text-gray-400 font-semibold">{tt("xp")}</p>
+                        <p className="first-letter:uppercase text-[11px] text-gray-500 font-semibold">{tt("xp")}</p>
                       </div>
                       <div className="w-px h-8 bg-gray-200"></div>
                       <div>
                         <p className="font-black text-lg text-gray-700">{player.quiz_count}</p>
-                        <p className="first-letter:uppercase text-[10px] text-gray-400 font-semibold">{tt("quizzes")}</p>
+                        <p className="first-letter:uppercase text-[11px] text-gray-500 font-semibold">{tt("quizzes")}</p>
                       </div>
                     </div>
                   </a>
@@ -127,7 +127,7 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
           {players.length > 3 && (
             <section className="max-w-4xl mx-auto px-4 pb-16">
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                <div className="first-letter:uppercase grid grid-cols-[50px_1fr_80px_80px_80px] md:grid-cols-[80px_1fr_120px_120px_120px] items-center px-4 md:px-6 py-3 bg-gray-50 border-b border-gray-100 text-[10px] font-bold text-gray-400">
+                <div className="first-letter:uppercase grid grid-cols-[50px_1fr_80px_80px_80px] md:grid-cols-[80px_1fr_120px_120px_120px] items-center px-4 md:px-6 py-3 bg-gray-50 border-b border-gray-100 text-[11px] font-bold text-gray-500">
                   <span>{tt("rank")}</span>
                   <span>{tt("player")}</span>
                   <span className="text-center">{tt("level")}</span>
@@ -139,20 +139,20 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
                   const lv = getLevelFromXp(player.xp || 0);
                   return (
                     <a key={player.id} href={`${profileBase}/${player.username}/`}
-                      className={`grid grid-cols-[50px_1fr_80px_80px_80px] md:grid-cols-[80px_1fr_120px_120px_120px] items-center px-4 md:px-6 py-3.5 border-b border-gray-50 hover:bg-violet-50/50 transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/30"}`}>
+                      className={`grid grid-cols-[50px_1fr_80px_80px_80px] md:grid-cols-[80px_1fr_120px_120px_120px] items-center px-4 md:px-6 py-3.5 border-b border-gray-50 hover:bg-brand-50/50 transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/30"}`}>
                       <span className="text-sm font-black text-gray-300">#{rank}</span>
                       <div className="flex items-center gap-2.5">
-                        <div className="w-8 h-8 rounded-full overflow-hidden bg-violet-100 flex items-center justify-center shrink-0">
+                        <div className="w-8 h-8 rounded-full overflow-hidden bg-brand-100 flex items-center justify-center shrink-0">
                           {player.avatar ? (
                             <img src={player.avatar} alt={player.username} width={40} height={40} className="w-full h-full object-cover" />
                           ) : (
-                            <span className="text-sm font-bold text-violet-500">{player.username[0].toUpperCase()}</span>
+                            <span className="text-sm font-bold text-brand-500">{player.username[0].toUpperCase()}</span>
                           )}
                         </div>
                         <span className="text-sm font-bold text-gray-900 truncate">{player.username}</span>
                       </div>
                       <div className="text-center">
-                        <span className={`text-[10px] font-bold px-2 py-0.5 rounded text-white ${lv.color}`}>Lv.{lv.level}</span>
+                        <span className={`text-[11px] font-bold px-2 py-0.5 rounded text-white ${lv.color}`}>Lv.{lv.level}</span>
                       </div>
                       <div className="text-center">
                         <span className="text-sm font-black text-gray-700">{formatXp(player.xp)}</span>

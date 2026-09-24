@@ -373,7 +373,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
   const btnPrimary =
     "w-full px-6 py-3.5 bg-brand hover:bg-brand-dark text-white font-display font-bold rounded-xl transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed";
   const input =
-    "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none text-gray-900";
+    "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none text-gray-900";
 
   const errorBox = error && (
     <p role="alert" className="text-sm text-red-700 bg-red-50 border border-red-100 rounded-xl px-4 py-3">
@@ -402,7 +402,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
                   <label
                     key={q.slug}
                     className={`flex items-center gap-3 p-2 rounded-xl border cursor-pointer transition-colors ${
-                      selectedQuiz === q.slug ? "border-violet-500 bg-violet-50" : "border-gray-100 hover:bg-gray-50"
+                      selectedQuiz === q.slug ? "border-brand-500 bg-brand-50" : "border-gray-100 hover:bg-gray-50"
                     }`}
                   >
                     <input
@@ -416,7 +416,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
                     {q.coverImage ? (
                       <img src={withBase(q.coverImage)} alt="" className="w-14 h-10 rounded-lg object-cover shrink-0" loading="lazy" width={56} height={40} />
                     ) : (
-                      <span className="w-14 h-10 rounded-lg bg-violet-100 shrink-0" />
+                      <span className="w-14 h-10 rounded-lg bg-brand-100 shrink-0" />
                     )}
                     <span className="flex-1 min-w-0">
                       <span className="block text-sm font-semibold text-gray-900 truncate">{q.title}</span>
@@ -476,17 +476,17 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
       <h2 className="first-letter:uppercase text-xs font-bold text-gray-500 mb-3">{title}</h2>
       <ol className="space-y-2">
         {ranked.map((p, i) => (
-          <li key={p.id} className={`flex items-center gap-3 rounded-xl px-3 py-2 ${p.id === me.id ? "bg-violet-50" : ""}`}>
-            <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-sm font-black shrink-0 ${i === 0 ? "bg-yellow-400 text-gray-900" : "bg-gray-100 text-gray-700"}`}>
+          <li key={p.id} className={`flex items-center gap-3 rounded-xl px-3 py-2 ${p.id === me.id ? "bg-brand-50" : ""}`}>
+            <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-sm font-black shrink-0 ${i === 0 ? "bg-sun text-ink" : "bg-gray-100 text-gray-700"}`}>
               {i + 1}
             </span>
             <span className="flex-1 min-w-0">
               <span className="block text-sm font-semibold text-gray-900 truncate">
                 {p.name}
-                {p.id === me.id && <span className="text-violet-700 font-normal"> ({tt("you")})</span>}
+                {p.id === me.id && <span className="text-brand-700 font-normal"> ({tt("you")})</span>}
               </span>
               <span className="block h-1 mt-1 bg-gray-100 rounded-full overflow-hidden">
-                <span className="block h-full bg-violet-500 transition-all duration-500" style={{ width: `${(p.answered / room.quiz.total) * 100}%` }} />
+                <span className="block h-full bg-brand-500 transition-all duration-500" style={{ width: `${(p.answered / room.quiz.total) * 100}%` }} />
               </span>
             </span>
             <span className="text-sm font-bold text-gray-900 tabular-nums">
@@ -508,7 +508,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
           <p className="text-sm text-gray-700 font-semibold">{room.quiz.title}</p>
           <div>
             <p className="first-letter:uppercase text-xs font-semibold text-gray-500">{tt("code")}</p>
-            <p className="font-mono font-black text-5xl tracking-[0.25em] text-violet-700 mt-1">{room.code}</p>
+            <p className="font-mono font-black text-5xl tracking-[0.25em] text-brand-700 mt-1">{room.code}</p>
           </div>
           <p className="text-sm text-gray-600 max-w-sm mx-auto">{tt("shareHint")}</p>
           <div className="flex flex-wrap gap-2 justify-center">
@@ -529,7 +529,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
               {room.players.length < 2 && <p className="text-xs text-gray-500">{tt("startAlone")}</p>}
             </div>
           ) : (
-            <p className="text-sm font-semibold text-violet-700 animate-pulse">{tt("waitHost")}</p>
+            <p className="text-sm font-semibold text-brand-700 animate-pulse">{tt("waitHost")}</p>
           )}
           {errorBox}
         </section>
@@ -540,13 +540,13 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
           <ul className="space-y-2">
             {room.players.map((p) => (
               <li key={p.id} className="flex items-center gap-2.5">
-                <span className="w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center text-sm font-bold text-violet-700 shrink-0">
+                <span className="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center text-sm font-bold text-brand-700 shrink-0">
                   {p.name[0]?.toUpperCase()}
                 </span>
                 <span className="text-sm font-medium text-gray-800 truncate">
                   {p.name}
                   {p.id === room.hostId && <span className="text-gray-500"> · {tt("host")}</span>}
-                  {p.id === me.id && <span className="text-violet-700"> ({tt("you")})</span>}
+                  {p.id === me.id && <span className="text-brand-700"> ({tt("you")})</span>}
                 </span>
               </li>
             ))}
@@ -575,7 +575,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
             <span>
               {tt("question")} {index + 1}/{total}
             </span>
-            <span className="text-violet-700">{room.quiz.title}</span>
+            <span className="text-brand-700">{room.quiz.title}</span>
           </div>
           <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
             <div className="h-full bg-brand transition-all duration-500" style={{ width: `${((index + (reveal ? 1 : 0)) / total) * 100}%` }} />
@@ -586,7 +586,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
           )}
           <div className="grid gap-2 sm:grid-cols-2">
             {question.answers.map((a) => {
-              let cls = "border-gray-200 bg-gray-50 hover:bg-violet-50 hover:border-violet-300";
+              let cls = "border-gray-200 bg-gray-50 hover:bg-brand-50 hover:border-brand-300";
               if (reveal) {
                 if (a.id === reveal.correctAnswer) cls = "border-green-500 bg-green-50 text-green-900";
                 else if (a.id === reveal.picked) cls = "border-red-400 bg-red-50 text-red-900";

@@ -31,3 +31,10 @@ pnpm-debug.log*
 
 # captures et snapshots playwright-cli : des artefacts de debug
 .playwright-cli/
+
+# Impeccable (detecteur de motifs d'interface generee) : installe en local
+# par `npx impeccable install --yes --project --providers=claude`, binaire
+# de 14 Mo qui n'a rien a faire dans le depot. Le hook dans
+# .claude/settings.local.json ne fait rien tant qu'il est absent.
+.claude/skills/impeccable/
+.claude/agents/impeccable-*.md

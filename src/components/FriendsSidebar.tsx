@@ -93,20 +93,20 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
             value={searchQuery}
             onChange={(e) => handleSearch(e.target.value)}
             placeholder={tt("search")}
-            className="w-full h-9 px-3 rounded-lg border border-gray-200 text-xs focus:outline-none focus:ring-2 focus:ring-violet-400"
+            className="w-full h-9 px-3 rounded-lg border border-gray-200 text-xs focus:outline-none focus:ring-2 focus:ring-brand-400"
           />
           {searchResults.length > 0 && (
             <div className="space-y-1">
               {searchResults.map((u) => (
                 <div key={u.id} className="flex items-center gap-2 p-2 rounded-lg bg-gray-50">
-                  <div className="w-7 h-7 rounded-full bg-violet-100 flex items-center justify-center text-violet-600 text-xs font-bold overflow-hidden">
+                  <div className="w-7 h-7 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 text-xs font-bold overflow-hidden">
                     {u.avatar ? <img src={u.avatar} alt={u.username} width={40} height={40} className="w-full h-full object-cover" /> : u.username[0].toUpperCase()}
                   </div>
                   <span className="text-xs font-medium text-gray-900 flex-1 truncate">{u.username}</span>
                   {sentTo.has(u.id) ? (
-                    <span className="text-[10px] text-green-600 font-bold">{tt("sent")}</span>
+                    <span className="text-[11px] text-green-600 font-bold">{tt("sent")}</span>
                   ) : (
-                    <button onClick={() => sendRequest(u.username, u.id)} className="text-[10px] font-bold text-violet-600 hover:text-violet-800 cursor-pointer">{tt("send")}</button>
+                    <button onClick={() => sendRequest(u.username, u.id)} className="text-[11px] font-bold text-brand-600 hover:text-brand-800 cursor-pointer">{tt("send")}</button>
                   )}
                 </div>
               ))}
@@ -118,7 +118,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
       {/* Pending requests */}
       {requests.length > 0 && (
         <div className="p-3 border-b border-gray-100">
-          <p className="first-letter:uppercase text-[10px] font-bold text-amber-600 mb-2">{tt("requests")} ({requests.length})</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-amber-600 mb-2">{tt("requests")} ({requests.length})</p>
           <div className="space-y-1.5">
             {requests.map((r) => (
               <div key={r.friendship_id} className="flex items-center gap-2 p-2 rounded-lg bg-amber-50 border border-amber-100">
@@ -126,8 +126,8 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
                   {r.avatar ? <img src={r.avatar} alt={r.username} width={40} height={40} className="w-full h-full object-cover" /> : r.username[0].toUpperCase()}
                 </div>
                 <span className="text-xs font-medium text-gray-900 flex-1 truncate">{r.username}</span>
-                <button onClick={() => acceptRequest(r.friendship_id)} className="text-[10px] font-bold text-green-600 hover:text-green-800 cursor-pointer">{tt("accept")}</button>
-                <button onClick={() => declineRequest(r.friendship_id)} className="text-[10px] font-bold text-red-500 hover:text-red-700 cursor-pointer">{tt("decline")}</button>
+                <button onClick={() => acceptRequest(r.friendship_id)} className="text-[11px] font-bold text-green-600 hover:text-green-800 cursor-pointer">{tt("accept")}</button>
+                <button onClick={() => declineRequest(r.friendship_id)} className="text-[11px] font-bold text-red-500 hover:text-red-700 cursor-pointer">{tt("decline")}</button>
               </div>
             ))}
           </div>
@@ -137,7 +137,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
       {/* Friends list */}
       <div className="p-3">
         {friends.length === 0 ? (
-          <p className="text-xs text-gray-400 text-center py-3">{tt("noFriends")}</p>
+          <p className="text-xs text-gray-500 text-center py-3">{tt("noFriends")}</p>
         ) : (
           <div className="space-y-1">
             {friends.sort((a, b) => (b.xp || 0) - (a.xp || 0)).map((f) => {
@@ -145,14 +145,14 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
               const profileHref = locale === "fr" ? `/fr/profil/${f.username}/` : locale === "es" ? `/es/perfil/${f.username}/` : `/profile/${f.username}/`;
               return (
                 <a key={f.id} href={profileHref} className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors block">
-                  <div className="w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center text-violet-600 text-xs font-bold overflow-hidden">
+                  <div className="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 text-xs font-bold overflow-hidden">
                     {f.avatar ? <img src={f.avatar} alt={f.username} width={40} height={40} className="w-full h-full object-cover" /> : f.username[0].toUpperCase()}
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-semibold text-gray-900 truncate">{f.username}</p>
-                    <p className="text-[10px] text-gray-400">{f.xp || 0} XP</p>
+                    <p className="text-[11px] text-gray-500">{f.xp || 0} XP</p>
                   </div>
-                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded text-white ${lv.color}`}>
+                  <span className={`text-[11px] font-bold px-1.5 py-0.5 rounded text-white ${lv.color}`}>
                     {tt("level")}{lv.level}
                   </span>
                 </a>
