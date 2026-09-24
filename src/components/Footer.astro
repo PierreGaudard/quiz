@@ -90,14 +90,14 @@ const socials = Object.entries(SOCIAL_LINKS).filter(([n, h]) => h && SOCIAL_ICON
   {/* Bottom bar */}
   <div class="border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col items-center gap-2 text-center">
-      <div class="flex items-center gap-4 text-xs text-white/30">
-        <a href={lp(s('legal'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.legal")}</a>
+      <div class="flex items-center gap-4 text-xs text-white/70">
+        <a href={lp(s('legal'))} class="hover:text-white transition-colors">{t(locale, "footer.legal")}</a>
         <span class="text-white/10">|</span>
-        <a href={lp(s('privacy'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.privacy")}</a>
+        <a href={lp(s('privacy'))} class="hover:text-white transition-colors">{t(locale, "footer.privacy")}</a>
         <span class="text-white/10">|</span>
-        <a href={lp(s('terms'))} class="hover:text-white/60 transition-colors">{t(locale, "footer.terms")}</a>
+        <a href={lp(s('terms'))} class="hover:text-white transition-colors">{t(locale, "footer.terms")}</a>
       </div>
-      <p class="text-xs text-white/30">
+      <p class="text-xs text-white/70">
         &copy; {currentYear} <span class="font-semibold text-white/50">WizyQuiz</span>. {t(locale, "footer.allRightsReserved")}
       </p>
     </div>

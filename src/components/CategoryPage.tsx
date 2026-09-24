@@ -38,6 +38,8 @@ const catPageT: Record<string, Record<string, string>> = {
   noResults: { en: "No quiz matches your search.", fr: "Aucun quiz ne correspond à votre recherche.", es: "Ningún quiz coincide con tu búsqueda." },
   tryAgain: { en: "Try different keywords or remove filters.", fr: "Essayez d'autres mots-clés ou retirez les filtres.", es: "Prueba con otras palabras clave o quita los filtros." },
   reset: { en: "Reset", fr: "Réinitialiser", es: "Restablecer" },
+  sortLabel: { en: "Sort the quizzes", fr: "Trier les quiz", es: "Ordenar los quizzes" },
+  modeLabel: { en: "Filter by game mode", fr: "Filtrer par mode de jeu", es: "Filtrar por modo de juego" },
   seeAll: { en: "See all", fr: "Voir tout", es: "Ver todo" },
   popular: { en: "Popular", fr: "Populaire", es: "Popular" },
   trending: { en: "Trending", fr: "Tendance", es: "Tendencia" },
@@ -387,6 +389,7 @@ export default function CategoryPage({
           </div>
           <button
             onClick={() => setCurrentPage(1)}
+            aria-label={tt("search")}
             className="py-3 px-3 sm:px-5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl shadow-sm transition-colors cursor-pointer flex items-center gap-2 shrink-0"
           >
             <svg className="w-5 h-5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -408,6 +411,7 @@ export default function CategoryPage({
           {/* Tri */}
           <div className="relative">
             <select
+              aria-label={tt("sortLabel")}
               value={sortBy}
               onChange={(e) => { setSortBy(e.target.value as any); setCurrentPage(1); }}
               className="appearance-none bg-white border border-gray-200 rounded-xl pl-4 pr-10 py-2.5 text-sm font-medium text-gray-700 cursor-pointer hover:border-brand-300 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 shadow-sm"
@@ -425,6 +429,7 @@ export default function CategoryPage({
           {gameTypes.length > 1 && (
             <div className="relative">
               <select
+                aria-label={tt("modeLabel")}
                 value={activeFilter || ""}
                 onChange={(e) => handleFilterChange(e.target.value || null)}
                 className="appearance-none bg-white border border-gray-200 rounded-xl pl-4 pr-10 py-2.5 text-sm font-medium text-gray-700 cursor-pointer hover:border-brand-300 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 shadow-sm"

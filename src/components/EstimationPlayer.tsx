@@ -236,7 +236,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
           {quiz.coverImage && (
             <div className="h-48 overflow-hidden">
-              <img
+              <img fetchPriority="high" loading="eager"
                 src={withBase(quiz.coverImage)} srcSet={imageSrcset(quiz.coverImage)} sizes="(max-width: 1024px) 100vw, 800px"
                 alt={quiz.title}
                 className="w-full h-full object-cover"

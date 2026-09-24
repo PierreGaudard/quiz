@@ -499,7 +499,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
         <div className="rounded-2xl overflow-hidden shadow-sm">
           {quiz.coverImage && (
             <div className="relative">
-              <img
+              <img fetchPriority="high"
                 src={withBase(quiz.coverImage)} srcSet={imageSrcset(quiz.coverImage)} sizes="(max-width: 1024px) 100vw, 800px"
                 alt={quiz.title}
                 width={800}

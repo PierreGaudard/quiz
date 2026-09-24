@@ -272,7 +272,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
         <div className="relative rounded-2xl overflow-hidden shadow-sm">
           {quiz.coverImage && (
             <>
-              <img
+              <img fetchPriority="high"
                 src={withBase(quiz.coverImage)} srcSet={imageSrcset(quiz.coverImage)} sizes="(max-width: 1024px) 100vw, 800px"
                 alt={quiz.title}
                 className="w-full aspect-[2.5/1] object-cover"
