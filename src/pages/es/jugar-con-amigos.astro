@@ -1,0 +1,14 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import RoomPageBody from "../../components/RoomPageBody.astro";
+import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
+import type { Locale } from "../../i18n/config";
+
+// Hors index meme apres l'ouverture : l'URL porte un code de salle
+// ephemere, il n'y a rien a y trouver depuis un moteur.
+const locale: Locale = "es";
+---
+
+<Layout title="Jugar a un quiz con amigos, en directo | WizyQuiz" description="Crea una sala en un quiz de WizyQuiz, manda el código a tus amigos y jugad las mismas preguntas a la vez, con una clasificación en directo." locale={locale} hreflangPaths={getHreflangStaticPaths("room")} noindex={true}>
+  <RoomPageBody locale={locale} />
+</Layout>

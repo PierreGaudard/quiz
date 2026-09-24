@@ -1,0 +1,41 @@
+---
+/**
+ * Le gabarit des parties entre amis, partage par les trois langues. Les pages
+ * /play-with-friends/, /fr/jouer-entre-amis/ et /es/jugar-con-amigos/ ne font
+ * que poser la locale. Le jeu lui-meme est dans RoomPage.
+ */
+import RoomPage from "./RoomPage";
+import { getAllQuizzes } from "../data/quizzes";
+import { isRoomEligible } from "../lib/rooms";
+import type { Locale } from "../i18n/config";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+const quizzes = getAllQuizzes(locale)
+  .filter(isRoomEligible)
+  .map((q) => ({ slug: q.slug, title: q.title, coverImage: q.coverImage, count: q.questions.length }));
+
+const copy = {
+  en: {
+    h1: "Play a quiz with friends",
+    intro: "Pick a quiz, create a room and send the code to your friends. Everyone plays the same questions on their own phone, and the ranking updates live as answers come in. No account needed: a nickname is enough!",
+  },
+  fr: {
+    h1: "Jouer à un quiz entre amis",
+    intro: "Choisissez un quiz, créez une salle et envoyez le code à vos amis. Chacun joue les mêmes questions sur son téléphone, et le classement bouge en direct au fil des réponses. Pas besoin de compte, un pseudo suffit !",
+  },
+  es: {
+    h1: "Jugar a un quiz con amigos",
+    intro: "Elige un quiz, crea una sala y manda el código a tus amigos. Cada uno juega las mismas preguntas en su móvil, y la clasificación se actualiza en directo con cada respuesta. No hace falta cuenta: ¡basta con un apodo!",
+  },
+}[locale];
+---
+
+<div class="max-w-5xl mx-auto px-4 pt-6 pb-16">
+  <h1 class="font-display font-black text-3xl md:text-4xl text-gray-900">{copy.h1}</h1>
+  <p class="text-gray-600 mt-2 mb-6 max-w-2xl">{copy.intro}</p>
+  <RoomPage client:load locale={locale} quizzes={quizzes} />
+</div>

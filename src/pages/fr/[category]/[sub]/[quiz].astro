@@ -14,6 +14,8 @@ import { getQuizPaths, resolveQuizData } from "../../../../lib/page-helpers";
 import { getHreflangQuizPaths } from "../../../../lib/hreflang-helpers";
 import { buildQuizStructuredData } from "../../../../lib/structured-data";
 import type { Locale } from "../../../../i18n/config";
+import { isRoomEligible } from "../../../../lib/rooms";
+import { staticPageSlugs } from "../../../../lib/hreflang-helpers";
 
 const locale: Locale = "fr";
 
@@ -33,6 +35,14 @@ const formatCount = (n: number) => {
 };
 
 const hreflangPaths = getHreflangQuizPaths(quiz.slug, locale);
+
+// Le lien vers une partie entre amis, sur les quiz qui s'y pretent.
+const roomCopy = {
+  en: { title: "Challenge your friends on this quiz", text: "Create a room, send the code, and everyone plays the same questions at the same time with a live ranking.", cta: "Play with friends" },
+  fr: { title: "Défiez vos amis sur ce quiz", text: "Créez une salle, envoyez le code, et tout le monde joue les mêmes questions en même temps avec un classement en direct.", cta: "Jouer entre amis" },
+  es: { title: "Reta a tus amigos con este quiz", text: "Crea una sala, manda el código y todos juegan las mismas preguntas a la vez con una clasificación en directo.", cta: "Jugar con amigos" },
+}[locale];
+const roomHref = isRoomEligible(quiz) ? `${lp(staticPageSlugs.room[locale])}?quiz=${encodeURIComponent(quiz.slug)}` : null;
 
 // Resolve subcategory name for breadcrumb
 const subName = categoryInfo?.subcategories?.find(
@@ -118,6 +128,16 @@ const quizJsonLd = buildQuizStructuredData({
             ))}
           </section>
         </noscript>
+
+        {roomHref && (
+          <aside class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4 bg-gradient-to-r from-violet-50 to-purple-50 border border-violet-100 rounded-2xl p-5">
+            <div class="flex-1">
+              <p class="font-display font-bold text-lg text-gray-900">{roomCopy.title}</p>
+              <p class="text-sm text-gray-600 mt-1">{roomCopy.text}</p>
+            </div>
+            <a href={roomHref} class="shrink-0 text-center px-5 py-3 bg-violet-700 hover:bg-violet-800 text-white font-display font-bold rounded-xl transition-colors">{roomCopy.cta}</a>
+          </aside>
+        )}
 
         {recommendedQuizzes.length > 0 && (
           <section class="mt-16 pt-12 border-t border-gray-200">

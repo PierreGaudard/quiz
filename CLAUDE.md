@@ -108,8 +108,8 @@ les pages sortent en `noindex` : le site n'est pas en ligne, et c'est voulu.
 Le jour de la mise en ligne, passer la constante a `false`, et rien d'autre.
 
 Les pages qui doivent rester hors index **apres** l'ouverture le demandent une
-par une avec la prop `noindex` du Layout : la recherche, les profils et le
-player de quiz personnalise. Ce sont les seules que les sitemaps excluent, via
+par une avec la prop `noindex` du Layout : la recherche, les profils, le
+player de quiz personnalise et la page des parties entre amis. Ce sont les seules que les sitemaps excluent, via
 la balise `wizyquiz:sitemap` que le Layout pose pour elles. Les sitemaps
 listent donc les 105 pages qui seront indexables a l'ouverture, aujourd'hui
 comme apres, et ne se vident pas pendant le prelancement.
@@ -127,6 +127,30 @@ et elle rendait la prop `noindex` inoperante sans rien signaler.
 - **HTML sitemap**: `/plan-du-site` (and `/fr/plan-du-site`, `/es/plan-du-site`) must list ALL categories, subcategories, and quizzes
   - When adding a new quiz or category, update the HTML sitemap pages manually
 - Referenced in `public/robots.txt`
+
+## Base de donnees (D1 `wizy-db`)
+
+La base est sur le compte Cloudflare perso, pas sur les comptes datashake :
+wrangler ne l'atteint qu'une fois connecte a ce compte. Les migrations vivent
+dans `db/migrations/`, numerotees, et **ne passent pas toutes seules au
+deploiement** : chaque nouvelle migration s'applique a la main sur la base
+distante (`npx wrangler d1 execute wizy-db --remote --file=db/migrations/xxx.sql`).
+
+Les routes de statistiques et de parties entre amis degradent en silence si
+leur table n'existe pas encore : le jeu reste jouable entre le deploiement du
+code et l'application de la migration, seul le bloc concerne disparait.
+
+- `quiz_plays` (001) : parties terminees par slug de page, tous modes.
+- `game_rounds` (002) : taux de reussite des minis-jeux.
+- `quiz_scores` (003) : histogramme des scores par slug de **base**, commun
+  aux trois langues. Alimente « vous faites mieux que x % des joueurs » sous
+  chaque ecran de resultat, via `ScoreCompare` dans `QuizSocialBlock`. C'est
+  aussi cette route qui incremente `quiz_plays` : ne pas rajouter d'appel a
+  `/api/quiz/plays` dans un player, la partie serait comptee deux fois.
+- `rooms` et `room_players` (004) : parties entre amis avec un code, page
+  `/play-with-friends/` (`/fr/jouer-entre-amis/`, `/es/jugar-con-amigos/`).
+  Seuls les quiz a choix (qcm, vrai-faux, chrono, duel) s'y jouent, cf.
+  `isRoomEligible()` dans `src/lib/rooms.ts`.
 
 ## Security Headers
 Configured in `public/_headers` (Cloudflare format):
