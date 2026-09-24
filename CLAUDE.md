@@ -229,6 +229,33 @@ code et l'application de la migration, seul le bloc concerne disparait.
   Seuls les quiz a choix (qcm, vrai-faux, chrono, duel) s'y jouent, cf.
   `isRoomEligible()` dans `src/lib/rooms.ts`.
 
+### Comptes : mot de passe oublié
+
+`/api/auth/forgot` envoie un lien (jeton aléatoire, seule son empreinte
+SHA-256 est en base, table `password_resets`, migration 005, une heure, usage
+unique) et répond pareil que l'adresse existe ou non. `/api/auth/reset` change
+le mot de passe et ferme toutes les sessions du compte. L'envoi passe par
+Cloudflare Email Service (`src/lib/mail.ts`, binding `EMAIL`) : il faut
+l'offre Workers Paid, puis déclarer `wizyquiz.com` comme domaine d'envoi dans
+Compute > Email Service, puis ajouter à `wrangler.toml` :
+
+```toml
+[[send_email]]
+name = "EMAIL"
+remote = true
+```
+
+Tant que ce n'est pas fait, la demande de lien répond normalement mais aucun
+e-mail ne part.
+
+### Quiz créés par les joueurs
+
+Un joueur connecté enregistre son quiz dans `user_quizzes`
+(`/api/quiz/custom`) et reçoit un lien permanent `/creer/jouer/?q=<slug>`
+(`/create/play/`, `/es/crear/jugar/`). Ce lien est hors index et hors
+catalogue : personne ne relit encore ces quiz. Sans compte, le quiz tient
+entier dans le hash du lien de partage.
+
 ## Security Headers
 Configured in `public/_headers` (Cloudflare format):
 - X-Frame-Options: SAMEORIGIN
@@ -340,6 +367,26 @@ npm run preview  # Preview production build
 4. Add translations for all 3 locales (en, fr, es)
 5. Use `.webp` for coverImage and question images
 6. The quiz is auto-discovered via `import.meta.glob`
+
+### Contrôler un quiz avant de l'ajouter
+
+`npx tsx scripts/check-quiz-file.mts src/data/quiz-xxx.ts` doit afficher `OK` :
+langues complètes, 10 questions au moins, réponses cohérentes avec le mode,
+title de page 30-60 et description 70-155, images présentes en WebP, marqueurs
+IA et tirets cadratins interdits, accents et « ¿ » présents, sous-catégorie
+existante, slug unique. Il ne remplace pas la partie jouée dans un navigateur.
+
+### Images : vraies photos, source toujours notée
+
+Les images viennent de Bing Images, même non libres de droit : Pierre achète
+les droits après coup. On les télécharge uniquement avec
+`python3 scripts/fetch-bing-image.py "<requête>" public/images/<nom>.webp docs/image-sources/<lot>.tsv --session=<nom>`,
+qui convertit en WebP ≤ 800 px, refuse les banques d'images à filigrane et les
+formats portrait, et inscrit la source dans `docs/image-sources/` (hors de
+`public/`, jamais publié ; cf. son README). Ouvrir chaque image produite : un
+filigrane ou une image hors sujet se remplace avec `--skip=N`. Bing sert des
+résultats sans rapport en mode invisible, le script ouvre donc son navigateur
+en mode visible.
 
 ### Adding an Image
 1. Convert to WebP (max 800px wide, quality 80)

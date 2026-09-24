@@ -51,6 +51,7 @@ const lp = (path: string) => localePath(path, locale);
               class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all"
               placeholder="********"
             />
+            <p class="mt-2 text-right"><a href="/fr/mot-de-passe-oublie/" class="text-xs font-semibold text-brand-700 hover:underline">Mot de passe oublié ?</a></p>
           </div>
 
           <!-- Submit -->
@@ -76,7 +77,8 @@ const lp = (path: string) => localePath(path, locale);
     </div>
   </main>
   <script is:inline>
-    document.addEventListener('DOMContentLoaded', function() {
+          var ERR_MSG = {"An account already exists with this email": "Un compte existe déjà avec cette adresse e-mail.", "Database not available": "Le service est indisponible pour le moment. Réessayez dans un instant.", "Invalid credentials": "Adresse e-mail ou mot de passe incorrect.", "Missing fields": "Remplissez tous les champs.", "Password must be at least 6 characters": "Le mot de passe doit faire au moins 6 caractères.", "This username is already taken": "Ce nom d'utilisateur est déjà pris.", "Username can only contain letters, numbers and underscores": "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des tirets bas.", "Username must be 3-30 characters": "Le nom d'utilisateur doit faire entre 3 et 30 caractères."};
+document.addEventListener('DOMContentLoaded', function() {
       var form = document.getElementById('login-form');
       if (!form) return;
       form.addEventListener('submit', function(e) {
@@ -89,7 +91,7 @@ const lp = (path: string) => localePath(path, locale);
         btn.disabled = true; var orig = btn.textContent; btn.textContent = '...';
         fetch('/api/auth/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, password: password }) })
         .then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
-        .then(function(r) { if (!r.ok) { errEl.textContent = r.data.error || 'Identifiants incorrects'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; return; } window.location.href = '/fr/'; })
+        .then(function(r) { if (!r.ok) { errEl.textContent = (ERR_MSG[r.data.error] || r.data.error) || 'Identifiants incorrects'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; return; } window.location.href = '/fr/'; })
         .catch(function() { errEl.textContent = 'Erreur reseau'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; });
       });
     });

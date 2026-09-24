@@ -10,6 +10,11 @@ interface Props {
 }
 
 const duT: Record<string, Record<string, string>> = {
+  msg90: { en: "Incredible! You won almost every duel.", fr: "Incroyable ! Tu as gagné presque tous les duels.", es: "¡Increíble! Has ganado casi todos los duelos." },
+  msg70: { en: "Well played! You won most of the duels.", fr: "Bien joué ! Tu as gagné la plupart des duels.", es: "¡Bien jugado! Has ganado la mayoría de los duelos." },
+  msg50: { en: "Not bad! You won more than half the duels.", fr: "Pas mal ! Tu as gagné plus de la moitié des duels.", es: "¡Nada mal! Has ganado más de la mitad de los duelos." },
+  msg30: { en: "You can do better. Try again!", fr: "Tu peux faire mieux. Retente ta chance !", es: "Puedes hacerlo mejor. ¡Vuelve a intentarlo!" },
+  msg0: { en: "The duels were tough this time. Try again!", fr: "Les duels étaient coriaces cette fois… Retente ta chance !", es: "Los duelos eran duros esta vez. ¡Vuelve a intentarlo!" },
   pctCorrect: { en: "{p}% correct answers", fr: "{p} % de bonnes réponses", es: "{p} % de respuestas correctas" },
   step3: {
     en: "Discover the answer and its explanation before moving on to the next duel",
@@ -251,15 +256,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
 
             {/* Message */}
             <p className="text-white/60 text-sm max-w-md mx-auto">
-              {scorePercent >= 90
-                ? "Incredible! You dominated all duels like a champion!"
-                : scorePercent >= 70
-                  ? "Well played! You have excellent competitive instincts."
-                  : scorePercent >= 50
-                    ? "Not bad! You won more than half the duels."
-                    : scorePercent >= 30
-                      ? "You can do better. Try again to improve!"
-                      : "The duels were tough! Try again to progress."}
+              {tt(scorePercent >= 90 ? "msg90" : scorePercent >= 70 ? "msg70" : scorePercent >= 50 ? "msg50" : scorePercent >= 30 ? "msg30" : "msg0")}
             </p>
           </div>
         </div>

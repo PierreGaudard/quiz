@@ -18,6 +18,8 @@ export const staticPageSlugs: Record<string, Record<Locale, string>> = {
   profile: { en: "/profile/", fr: "/profil/", es: "/perfil/" },
   search: { en: "/search/", fr: "/recherche/", es: "/buscar/" },
   room: { en: "/play-with-friends/", fr: "/jouer-entre-amis/", es: "/jugar-con-amigos/" },
+  forgotPassword: { en: "/forgot-password/", fr: "/mot-de-passe-oublie/", es: "/contrasena-olvidada/" },
+  resetPassword: { en: "/reset-password/", fr: "/nouveau-mot-de-passe/", es: "/nueva-contrasena/" },
 };
 
 /** Get hreflang paths for a static page by key. */

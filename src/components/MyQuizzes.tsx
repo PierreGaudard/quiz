@@ -2,31 +2,46 @@ import { useState, useEffect } from "react";
 import { getCustomQuizzes, deleteCustomQuiz, encodeQuizToURL } from "../utils/custom-quiz";
 import { withBase } from "../utils/base";
 
+/**
+ * Les quiz crees sur cet appareil (localStorage), sur la page « Creer un quiz ».
+ *
+ * Le composant affichait un statut « En attente / Publie / Refuse » : aucune
+ * relecture n'existe, ce statut ne correspondait a rien. Il etait aussi ecrit
+ * en francais sur les trois langues.
+ */
+
+type Locale = "en" | "fr" | "es";
+
 interface StoredQuizEntry {
   id: string;
-  quiz: {
-    slug: string;
-    title: string;
-    description: string;
-    category: string;
-    difficulty: string;
-    questions: any[];
-    gameType?: string;
-  };
+  quiz: { slug: string; title: string; description: string; category: string; difficulty: string; questions: any[]; gameType?: string };
   createdAt: string;
-  status: string;
 }
 
-function formatFrenchDate(dateStr: string): string {
-  const months = [
-    "janvier", "février", "mars", "avril", "mai", "juin",
-    "juillet", "août", "septembre", "octobre", "novembre", "décembre",
-  ];
-  const d = new Date(dateStr);
-  return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
-}
+const T: Record<string, Record<Locale, string>> = {
+  title: { en: "My quizzes", fr: "Mes quiz créés", es: "Mis quiz creados" },
+  empty: { en: "You haven't created a quiz yet.", fr: "Tu n'as pas encore créé de quiz.", es: "Todavía no has creado ningún quiz." },
+  count: { en: "{n} quiz", fr: "{n} quiz", es: "{n} quiz" },
+  questions: { en: "{n} questions", fr: "{n} questions", es: "{n} preguntas" },
+  play: { en: "Play", fr: "Jouer", es: "Jugar" },
+  share: { en: "Copy the link", fr: "Copier le lien", es: "Copiar el enlace" },
+  copied: { en: "Copied!", fr: "Copié !", es: "¡Copiado!" },
+  del: { en: "Delete", fr: "Supprimer", es: "Eliminar" },
+  confirm: {
+    en: 'Delete the quiz "{t}" from this device? This can\'t be undone.',
+    fr: "Supprimer le quiz « {t} » de cet appareil ? C'est définitif.",
+    es: "¿Eliminar el quiz «{t}» de este dispositivo? No se puede deshacer.",
+  },
+  more: { en: "Show all ({n})", fr: "Voir tout ({n})", es: "Ver todos ({n})" },
+  less: { en: "Show less", fr: "Voir moins", es: "Ver menos" },
+};
 
-export default function MyQuizzes() {
+const PLAY_PATH: Record<Locale, string> = { en: "/create/play/", fr: "/fr/creer/jouer/", es: "/es/crear/jugar/" };
+const DATE_LOCALE: Record<Locale, string> = { en: "en-US", fr: "fr-FR", es: "es-ES" };
+
+export default function MyQuizzes({ locale = "en" }: { locale?: Locale }) {
+  const tt = (k: string, vars: Record<string, string | number> = {}) =>
+    Object.entries(vars).reduce((s, [a, b]) => s.replace(`{${a}}`, String(b)), T[k]?.[locale] ?? T[k]?.en ?? k);
   const [quizzes, setQuizzes] = useState<StoredQuizEntry[]>([]);
   const [loaded, setLoaded] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -37,23 +52,17 @@ export default function MyQuizzes() {
     setLoaded(true);
   }, []);
 
-  const handleDelete = (id: string, title: string) => {
-    const confirmed = window.confirm(`Supprimer le quiz "${title}" ? Cette action est irréversible.`);
-    if (!confirmed) return;
-    deleteCustomQuiz(id);
+  const linkFor = (entry: StoredQuizEntry) =>
+    window.location.origin + withBase(PLAY_PATH[locale]) + "#data=" + encodeQuizToURL(entry.quiz as any);
+
+  const handleDelete = (entry: StoredQuizEntry) => {
+    if (!window.confirm(tt("confirm", { t: entry.quiz.title }))) return;
+    deleteCustomQuiz(entry.id);
     setQuizzes(getCustomQuizzes());
   };
 
   const handleShare = (entry: StoredQuizEntry) => {
-    const encoded = encodeQuizToURL(entry.quiz as any);
-    // Detect locale from current URL and use locale-aware play page path
-    const path = window.location.pathname;
-    const playPath = path.startsWith("/fr/") ? "/fr/creer/jouer"
-      : path.startsWith("/es/") ? "/es/crear/jugar"
-      : "/create/play";
-    const baseUrl = window.location.origin + withBase(playPath);
-    const url = `${baseUrl}#data=${encoded}`;
-    navigator.clipboard.writeText(url).then(() => {
+    navigator.clipboard.writeText(linkFor(entry)).then(() => {
       setCopiedId(entry.id);
       setTimeout(() => setCopiedId(null), 2000);
     }).catch(() => {});
@@ -63,97 +72,47 @@ export default function MyQuizzes() {
 
   if (quizzes.length === 0) {
     return (
-      <section className="py-6">
-        <h2 className="font-display text-lg font-bold text-gray-900 mb-3">Mes quiz créés</h2>
-        <p className="text-gray-500 text-sm">Tu n'as pas encore créé de quiz.</p>
+      <section className="py-2">
+        <h2 className="font-display text-xl font-bold text-gray-900 mb-2">{tt("title")}</h2>
+        <p className="text-gray-600 text-sm">{tt("empty")}</p>
       </section>
     );
   }
 
-  const visibleQuizzes = showAll ? quizzes : quizzes.slice(0, 4);
-
+  const visible = showAll ? quizzes : quizzes.slice(0, 4);
   return (
-    <section className="py-6">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="font-display text-lg font-bold text-gray-900">Mes quiz créés</h2>
-        <span className="text-xs text-gray-500 font-medium">{quizzes.length} quiz</span>
+    <section className="py-2">
+      <div className="flex items-baseline justify-between mb-4">
+        <h2 className="font-display text-xl font-bold text-gray-900">{tt("title")}</h2>
+        <span className="text-xs text-gray-600">{tt("count", { n: quizzes.length })}</span>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {visibleQuizzes.map((entry) => (
-          <div
-            key={entry.id}
-            className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 flex flex-col gap-2.5 transition-shadow"
-          >
-            {/* Title */}
-            <h3 className="font-semibold text-gray-900 text-sm leading-snug line-clamp-2">
-              {entry.quiz.title}
-            </h3>
-
-            {/* Meta */}
-            <div className="flex items-center gap-2 text-xs text-gray-500">
-              <span className="inline-flex items-center gap-1">
-                <svg className="w-3.5 h-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                </svg>
-                {entry.quiz.category}
-              </span>
-              <span className="text-gray-300">|</span>
-              <span>{entry.quiz.questions.length} question{entry.quiz.questions.length > 1 ? "s" : ""}</span>
-            </div>
-
-            {/* Status + Date */}
-            <div className="flex items-center gap-2">
-              <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold ${
-                entry.status === "approved"
-                  ? "bg-green-100 text-green-700"
-                  : entry.status === "rejected"
-                    ? "bg-red-100 text-red-600"
-                    : "bg-amber-100 text-amber-700"
-              }`}>
-                <span className={`w-1.5 h-1.5 rounded-full ${
-                  entry.status === "approved" ? "bg-green-500" : entry.status === "rejected" ? "bg-red-500" : "bg-amber-500"
-                }`} />
-                {entry.status === "approved" ? "Publié" : entry.status === "rejected" ? "Refusé" : "En attente"}
-              </span>
-              <span className="text-xs text-gray-500">{formatFrenchDate(entry.createdAt)}</span>
-            </div>
-
-            {/* Actions */}
-            <div className="flex items-center gap-2 mt-auto pt-1">
-              <button
-                onClick={() => handleShare(entry)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-brand-50 text-brand-700 text-xs font-semibold rounded-lg hover:bg-brand-100 transition-colors"
-              >
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                </svg>
-                {copiedId === entry.id ? "Copié !" : "Partager"}
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {visible.map((entry) => (
+          <li key={entry.id} className="bg-white rounded-xl border border-line p-4 flex flex-col gap-2">
+            <h3 className="font-semibold text-gray-900 text-sm leading-snug line-clamp-2">{entry.quiz.title}</h3>
+            <p className="text-xs text-gray-600">
+              {[entry.quiz.category, tt("questions", { n: entry.quiz.questions.length }), new Date(entry.createdAt).toLocaleDateString(DATE_LOCALE[locale], { day: "numeric", month: "long", year: "numeric" })]
+                .filter(Boolean)
+                .join(" · ")}
+            </p>
+            <div className="flex flex-wrap gap-2 mt-1">
+              <a href={linkFor(entry)} className="px-3 py-1.5 rounded-lg bg-brand hover:bg-brand-dark text-white text-xs font-bold">
+                {tt("play")}
+              </a>
+              <button type="button" onClick={() => handleShare(entry)} className="px-3 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-800 text-xs font-semibold cursor-pointer">
+                {copiedId === entry.id ? tt("copied") : tt("share")}
               </button>
-              <button
-                onClick={() => handleDelete(entry.id, entry.quiz.title)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-50 text-red-600 text-xs font-semibold rounded-lg hover:bg-red-100 transition-colors"
-              >
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                </svg>
-                Supprimer
+              <button type="button" onClick={() => handleDelete(entry)} className="px-3 py-1.5 rounded-lg text-red-700 hover:bg-red-50 text-xs font-semibold cursor-pointer">
+                {tt("del")}
               </button>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
-
-      {/* Show more / less toggle */}
+      </ul>
       {quizzes.length > 4 && (
-        <div className="flex justify-center mt-4">
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="text-xs text-brand-600 font-semibold hover:text-brand-700 transition-colors"
-          >
-            {showAll ? "Voir moins" : `Voir tout (${quizzes.length})`}
-          </button>
-        </div>
+        <button type="button" onClick={() => setShowAll((v) => !v)} className="mt-4 text-sm font-semibold text-brand-700 hover:underline cursor-pointer">
+          {showAll ? tt("less") : tt("more", { n: quizzes.length })}
+        </button>
       )}
     </section>
   );

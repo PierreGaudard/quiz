@@ -29,6 +29,7 @@ function getLocale(): "en" | "fr" | "es" {
  * au milieu. Tout passe par ce dictionnaire.
  */
 const T: Record<string, Record<string, string>> = {
+  questionWord: { en: "Question", fr: "Question", es: "Pregunta" },
   loading: { en: "Loading quiz...", fr: "Chargement du quiz…", es: "Cargando el quiz…" },
   notFound: { en: "Quiz not found", fr: "Quiz introuvable", es: "Quiz no encontrado" },
   invalid: {
@@ -38,6 +39,7 @@ const T: Record<string, Record<string, string>> = {
   },
   createQuiz: { en: "Create a quiz", fr: "Créer un quiz", es: "Crear un quiz" },
   userCreated: { en: "User-created quiz", fr: "Quiz créé par un joueur", es: "Quiz creado por un jugador" },
+  by: { en: "by", fr: "par", es: "por" },
   start: { en: "Start", fr: "Commencer", es: "Empezar" },
   question: { en: "question", fr: "question", es: "pregunta" },
   questions: { en: "questions", fr: "questions", es: "preguntas" },
@@ -84,9 +86,25 @@ export default function CustomQuizPlayer() {
   const [score, setScore] = useState(0);
   const [answers, setAnswers] = useState<(string | null)[]>([]);
   const [copied, setCopied] = useState(false);
+  const [author, setAuthor] = useState<string | null>(null);
 
   useEffect(() => {
     try {
+      // Lien permanent : ?q=<slug>, le quiz est lu en base. Sinon, lien de
+      // partage : le quiz entier est encode dans le hash de l'URL.
+      const slug = new URLSearchParams(window.location.search).get("q");
+      if (slug) {
+        fetch(`/api/quiz/custom/${encodeURIComponent(slug)}`)
+          .then((r) => (r.ok ? r.json() : null))
+          .then((d) => {
+            if (!d?.quiz?.questions?.length) { setScreen("error"); return; }
+            setQuiz({ ...d.quiz, path: "", category: d.quiz.category || "" } as QuizData);
+            setAuthor(d.author || null);
+            setScreen("intro");
+          })
+          .catch(() => setScreen("error"));
+        return;
+      }
       const hash = window.location.hash;
       const prefix = "#data=";
       if (!hash.startsWith(prefix)) {
@@ -242,7 +260,10 @@ export default function CustomQuizPlayer() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
         </svg>
       </div>
-      <p className="text-amber-800 text-sm font-medium">{tt("userCreated")}</p>
+      <p className="text-amber-800 text-sm font-medium">
+        {tt("userCreated")}
+        {author && <span className="font-normal"> · {tt("by")} {author}</span>}
+      </p>
     </div>
   );
 
@@ -407,7 +428,7 @@ export default function CustomQuizPlayer() {
         <div className="mb-6">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-semibold text-gray-500">
-              Question {currentIndex + 1} / {totalQuestions}
+              {tt("questionWord")} {currentIndex + 1} / {totalQuestions}
             </span>
             <span className="text-xs font-bold text-brand-600">
               {score} correct

@@ -387,15 +387,15 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
   if (!code || !token || (room && !room.me)) {
     const joining = !!code;
     return (
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {!joining && (
-          <section className={`${card} p-5 md:p-6 space-y-4`}>
+          <section className={`${card} p-5 md:p-6 space-y-4 min-w-0`}>
             <h2 className="font-display font-bold text-xl text-gray-900">{tt("createTitle")}</h2>
             <label className="block">
               <span className="block text-sm font-semibold text-gray-700 mb-1">{tt("nickname")}</span>
               <input id="room-create-name" className={input} value={name} maxLength={20} placeholder={tt("nicknamePh")} onChange={(e) => setName(e.target.value)} />
             </label>
-            <fieldset className="space-y-2">
+            <fieldset className="space-y-2 min-w-0">
               <legend className="text-sm font-semibold text-gray-700 mb-2">{tt("pickQuiz")}</legend>
               <div className="grid gap-2 max-h-80 overflow-y-auto pr-1">
                 {quizzes.map((q) => (
@@ -432,7 +432,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
           </section>
         )}
 
-        <section className={`${card} p-5 md:p-6 space-y-4 ${joining ? "md:col-span-2 max-w-md w-full mx-auto" : ""}`}>
+        <section className={`${card} p-5 md:p-6 space-y-4 min-w-0 ${joining ? "md:col-span-2 max-w-md w-full mx-auto" : ""}`}>
           <h2 className="font-display font-bold text-xl text-gray-900">{tt("joinTitle")}</h2>
           {!joining && <p className="text-sm text-gray-600">{tt("haveCode")}</p>}
           {room && (
@@ -570,7 +570,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
     const isLast = index + 1 >= total;
     return (
       <div ref={topRef} className="grid gap-6 md:grid-cols-[1fr_300px] scroll-mt-28">
-        <section className={`${card} p-5 md:p-6 space-y-4`}>
+        <section className={`${card} p-5 md:p-6 space-y-4 min-w-0`}>
           <div className="flex items-center justify-between text-xs font-semibold text-gray-500">
             <span>
               {tt("question")} {index + 1}/{total}

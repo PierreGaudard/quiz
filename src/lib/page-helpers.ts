@@ -81,7 +81,7 @@ function subcategoryDescription(subName: string, categoryName: string, count: nu
   }
   if (locale === "es") {
     const q = n > 1 ? `${n} quizzes gratis` : "1 quiz gratis";
-    return `Juega a nuestros quizzes de ${subName}, en la categoría ${categoryName}. ${q}, cada respuesta viene explicada, y nada de esto pide una cuenta.`;
+    return `Quizzes de ${subName}, en la categoría ${categoryName}. ${q}, cada respuesta viene explicada y no hace falta cuenta.`;
   }
   const q = n > 1 ? `${n} free quizzes` : "1 free quiz";
   return `Play our ${subName} quizzes, in the ${categoryName} category. ${q}, every answer comes explained, and nothing here needs an account.`;
@@ -100,6 +100,11 @@ export function resolveSubcategoryData(categorySlug: string, subSlug: string, su
     slug: subSlug,
     coverImage: `/images/sub-${getSubcategoryImageSlug(subName, locale)}.webp`,
     description: subcategoryDescription(subName, category.name, quizzes.length, locale),
+    // Les textes de la categorie parlaient de toute la categorie (« Football,
+    // basket, tennis... ») : sur la page d'un sous-theme, on montre plutot
+    // la description de son quiz, et pas de texte de pied de categorie.
+    seoIntro: quizzes[0]?.description || category.seoIntro,
+    seoFooter: undefined,
     subcategories: [] as string[],
   };
 
@@ -111,4 +116,30 @@ export function resolveSubcategoryData(categorySlug: string, subSlug: string, su
   }));
 
   return { category, subCategory, quizzes, featured, availableGameTypes, quizzesByType };
+}
+
+/*
+ * Titles des pages de categorie et de sous-categorie.
+ *
+ * Ils etaient en anglais dans les trois langues (« Sport Quiz - Test your
+ * knowledge » sur /fr/sport/, sans la marque) ou a moitie (« Football Quiz -
+ * Sport - WizyQuiz » en francais). Le title de page doit rester entre 30 et 60
+ * caracteres : les formules sont calibrees pour le plus court (« Boxe ») et
+ * le plus long (« Départements français ») des noms actuels.
+ */
+export function categoryTitle(name: string, locale: Locale): string {
+  const lower = name.toLowerCase();
+  if (locale === "fr") return `Quiz ${lower} : teste tes connaissances | WizyQuiz`;
+  if (locale === "es") return `Quizzes de ${lower}: pon a prueba tu cultura | WizyQuiz`;
+  return `${name} quizzes: test your knowledge | WizyQuiz`;
+}
+
+export function subcategoryTitle(sub: string, category: string, locale: Locale): string {
+  const t =
+    locale === "fr" ? `Quiz ${sub} gratuit | ${category} | WizyQuiz`
+    : locale === "es" ? `Quiz de ${sub} gratis | ${category} | WizyQuiz`
+    : `Free ${sub} quiz | ${category} | WizyQuiz`;
+  // Garde-fou : sans la categorie si le nom est tres long.
+  if (t.length <= 60) return t;
+  return locale === "fr" ? `Quiz ${sub} gratuit | WizyQuiz` : locale === "es" ? `Quiz de ${sub} gratis | WizyQuiz` : `Free ${sub} quiz | WizyQuiz`;
 }

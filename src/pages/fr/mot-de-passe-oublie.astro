@@ -1,0 +1,23 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PasswordResetForm from "../../components/PasswordResetForm";
+import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
+import type { Locale } from "../../i18n/config";
+
+// Hors index meme apres l'ouverture : page de service, sans contenu.
+const locale: Locale = "fr";
+---
+
+<Layout title={'Mot de passe oublié ? | WizyQuiz'} description={"Saisissez l'adresse e-mail de votre compte WizyQuiz, on vous envoie un lien pour choisir un nouveau mot de passe."} locale={locale} hreflangPaths={getHreflangStaticPaths("forgotPassword")} noindex={true}>
+  <main class="min-h-[calc(100vh-160px)] bg-ink flex items-center justify-center py-16 px-4">
+    <div class="w-full max-w-md">
+      <div class="text-center mb-8">
+        <h1 class="font-display text-2xl font-bold text-white">Mot de passe oublié ?</h1>
+        <p class="text-white/75 text-sm mt-2">Saisissez l'adresse e-mail de votre compte, on vous envoie un lien pour en choisir un nouveau.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-8">
+        <PasswordResetForm client:load mode="request" locale={locale} />
+      </div>
+    </div>
+  </main>
+</Layout>

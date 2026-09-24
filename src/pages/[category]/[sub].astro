@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import CategoryPage from "../../components/CategoryPage";
 import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
-import { getSubPaths, resolveSubcategoryData } from "../../lib/page-helpers";
+import { getSubPaths, resolveSubcategoryData, subcategoryTitle } from "../../lib/page-helpers";
 import { getHreflangSubcategoryPaths } from "../../lib/hreflang-helpers";
 import type { Locale } from "../../i18n/config";
 
@@ -19,7 +19,7 @@ const lp = (path: string) => localePath(path, locale);
 const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale);
 ---
 
-<Layout title={`${subName} Quiz - ${category.name} - WizyQuiz`} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths}>
+<Layout title={subcategoryTitle(subName, category.name, locale)} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths}>
   <div class="max-w-7xl mx-auto px-4 pt-6">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-2" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -37,6 +37,7 @@ const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale)
     gameTypes={availableGameTypes}
     quizzesByType={quizzesByType}
     locale={locale}
+    hideBreadcrumb
   />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",

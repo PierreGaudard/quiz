@@ -75,6 +75,9 @@ function formatNumber(n: number): string {
 }
 
 const esT: Record<string, Record<string, string>> = {
+  nextQ: { en: "Next question", fr: "Question suivante", es: "Siguiente pregunta" },
+  seeResults: { en: "See results", fr: "Voir le résultat", es: "Ver el resultado" },
+  questionWord: { en: "Question", fr: "Question", es: "Pregunta" },
   estimation: { en: "Estimation", fr: "Estimation", es: "Estimación" },
   questions: { en: "Questions", fr: "Questions", es: "Preguntas" },
   attempts: { en: "Attempts", fr: "Essais", es: "Intentos" },
@@ -460,7 +463,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
         <div className="flex items-center justify-between mb-2">
           <span className="text-sm font-display font-bold text-gray-700">
-            Question {currentIndex + 1}/{totalQuestions}
+            {tt("questionWord")} {currentIndex + 1}/{totalQuestions}
           </span>
           <span className="text-sm font-display font-bold text-brand-600">
             {formatNumber(totalPoints)} pts
@@ -717,7 +720,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                   onClick={handleNextQuestion}
                   className="px-8 py-3.5 bg-brand hover:bg-brand-dark text-white font-display font-bold text-lg rounded-xl transition-all cursor-pointer"
                 >
-                  {currentIndex + 1 < totalQuestions ? "Next question" : "See results"}
+                  {currentIndex + 1 < totalQuestions ? tt("nextQ") : tt("seeResults")}
                 </button>
               </div>
             </div>

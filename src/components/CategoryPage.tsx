@@ -47,15 +47,20 @@ const catPageT: Record<string, Record<string, string>> = {
   wrongAnswer: { en: "Wrong answer", fr: "Mauvaise réponse", es: "Respuesta incorrecta" },
   playFullQuiz: { en: "Play the full quiz!", fr: "Jouer le quiz complet !", es: "¡Jugar el quiz completo!" },
   exploreByTheme: { en: "Explore by theme", fr: "Explorer par thème", es: "Explorar por tema" },
-  quizzesPlayAndLearn: { en: "Quizzes: play and learn for free", fr: "Quiz : jouez et apprenez gratuitement", es: "Quizzes: juega y aprende gratis" },
+  quizzesPlayAndLearn: {
+    en: "{cat} quizzes with an explanation for every answer",
+    fr: "{cat} : des quiz avec une explication à chaque réponse",
+    es: "{cat}: quizzes con una explicación en cada respuesta",
+  },
+  difficultyLevel: { en: "{d} level", fr: "Niveau {d}", es: "Nivel {d}" },
   seoIntroText: {
     en: "Every answer comes with <strong>an explanation</strong>, so a question you get wrong is one you learn from. You can play <strong>on your own or pass the phone around</strong>, and nothing here needs an account.",
     fr: "Chaque réponse est accompagnée d'<strong>une explication</strong>, du coup une question ratée est une question apprise. Tu peux jouer <strong>seul ou faire tourner le téléphone</strong>, et rien ici ne demande de compte.",
     es: "Cada respuesta viene con <strong>una explicación</strong>, así que una pregunta fallada es una pregunta aprendida. Puedes jugar <strong>solo o ir pasando el móvil</strong>, y nada de esto pide una cuenta.",
   },
-  ourQuizzesByDifficulty: { en: "Our {cat} quizzes by difficulty level", fr: "Nos quiz {cat} par niveau de difficulté", es: "Nuestros quizzes de {cat} por nivel de dificultad" },
+  ourQuizzesByDifficulty: { en: "The quizzes by difficulty", fr: "Les quiz par niveau de difficulté", es: "Los quizzes por nivel de dificultad" },
   quizzes: { en: "quizzes", fr: "quiz", es: "quizzes" },
-  whyPlayOur: { en: "Why play our {cat} quizzes?", fr: "Pourquoi jouer à nos quiz {cat} ?", es: "¿Por qué jugar nuestros quizzes de {cat}?" },
+  whyPlayOur: { en: "How the quizzes work", fr: "Comment se jouent les quiz", es: "Cómo se juegan los quizzes" },
   whyPlayText: {
     en: "A {cat} quiz is a good way to find out what stuck. When a question stumps you, there are three bonuses. 50/50 drops two wrong answers. Second chance forgives a mistake, and a hint points you the right way. An account is free and keeps your scores, if you want to watch your rank climb.",
     fr: "Un quiz {cat}, c'est une bonne façon de voir ce qu'on a retenu. Quand une question bloque, il y a trois bonus. Le 50/50 enlève deux mauvaises réponses. La seconde chance pardonne une erreur, et l'indice met sur la piste. Le compte est gratuit et garde tes scores, si tu veux voir ton rang monter.",
@@ -98,21 +103,29 @@ const DIFFICULTY_STYLE: Record<string, string> = {
   "Difícil": "text-red-700 bg-red-100",
 };
 
+/*
+ * Un paragraphe par niveau, sous « Les quiz par niveau de difficulte ».
+ * Reecrit selon la charte du CLAUDE.md : l'ancien texte enchainait les
+ * formules (« concus pour divertir sans stress », « l'equilibre ideal pour
+ * progresser en s'amusant », « reserves aux vrais experts ») et une triade
+ * « questions pieges, details historiques, stats precises ». Le nom de la
+ * categorie n'y figure plus : « du jeux video » ne se dit pas.
+ */
 const DIFFICULTY_DESC_I18N: Record<string, Record<string, (catLower: string) => React.ReactNode>> = {
   en: {
-    Easy: (catLower) => <>Just starting out or looking to relax? Our <strong className="text-gray-700">easy {catLower} quizzes</strong> are designed to entertain without stress. <strong className="text-gray-700">Accessible</strong> questions, perfect for learning the basics and building confidence before moving to the next level.</>,
-    Medium: (catLower) => <>Got a good foundation and want to go further? The <strong className="text-gray-700">medium {catLower} quizzes</strong> offer a mix of classic questions and <strong className="text-gray-700">subtle tricks</strong>. The sweet spot for progressing while having fun.</>,
-    Hard: (catLower) => <>Think you know everything about {catLower}? Our <strong className="text-gray-700">hard quizzes</strong> are reserved for <strong className="text-gray-700">true experts</strong>. Tricky questions, historical details, precise stats: only the best score perfectly.</>,
+    Easy: () => <>The easy quizzes are about what most people already know, like the big names of the topic. It's a good place to start if you're new to it.</>,
+    Medium: () => <>At medium level, you need a little more than the big names. Some questions are about details, and the wrong answers look more like the right one.</>,
+    Hard: () => <>The hard quizzes go after details, like an exact score or a side character. Even people who know the topic well get caught out.</>,
   },
   fr: {
-    Facile: (catLower) => <>Vous débutez ou cherchez à vous détendre ? Nos <strong className="text-gray-700">quiz {catLower} faciles</strong> sont conçus pour divertir sans stress. Des questions <strong className="text-gray-700">accessibles</strong>, parfaites pour apprendre les bases et gagner en confiance avant de passer au niveau suivant.</>,
-    Moyen: (catLower) => <>Vous avez de bonnes bases et voulez aller plus loin ? Les <strong className="text-gray-700">quiz {catLower} de niveau moyen</strong> offrent un mélange de questions classiques et de <strong className="text-gray-700">pièges subtils</strong>. L'équilibre idéal pour progresser en s'amusant.</>,
-    Difficile: (catLower) => <>Vous pensez tout savoir sur {catLower} ? Nos <strong className="text-gray-700">quiz difficiles</strong> sont réservés aux <strong className="text-gray-700">vrais experts</strong>. Questions pièges, détails historiques, stats précises : seuls les meilleurs obtiennent un score parfait.</>,
+    Facile: () => <>Les quiz faciles portent sur ce que la plupart des gens connaissent déjà, comme les grands noms du sujet. C'est un bon point de départ si tu le découvres.</>,
+    Moyen: () => <>Au niveau moyen, il faut connaître un peu plus que les grands noms. Certaines questions portent sur des détails, et les mauvaises réponses ressemblent davantage à la bonne.</>,
+    Difficile: () => <>Les quiz difficiles vont chercher des détails, comme un score exact ou un personnage secondaire. Même quand on connaît bien le sujet, on s'y fait prendre.</>,
   },
   es: {
-    "Fácil": (catLower) => <>¿Empezando o buscando relajarte? Nuestros <strong className="text-gray-700">quizzes fáciles de {catLower}</strong> están diseñados para entretener sin estrés. Preguntas <strong className="text-gray-700">accesibles</strong>, perfectas para aprender lo básico y ganar confianza.</>,
-    "Medio": (catLower) => <>¿Tienes buenas bases? Los <strong className="text-gray-700">quizzes de {catLower} de nivel medio</strong> ofrecen una mezcla de preguntas clásicas y <strong className="text-gray-700">trampas sutiles</strong>. El punto perfecto para progresar divirtiéndote.</>,
-    "Difícil": (catLower) => <>¿Crees que lo sabes todo sobre {catLower}? Nuestros <strong className="text-gray-700">quizzes difíciles</strong> están reservados para <strong className="text-gray-700">verdaderos expertos</strong>. Preguntas trampa, detalles históricos, estadísticas precisas: solo los mejores obtienen un puntaje perfecto.</>,
+    "Fácil": () => <>Los quizzes fáciles tratan de lo que casi todo el mundo ya sabe, como los grandes nombres del tema. Es un buen punto de partida si lo estás descubriendo.</>,
+    "Medio": () => <>En el nivel medio hace falta algo más que los grandes nombres. Algunas preguntas van a los detalles, y las respuestas falsas se parecen más a la buena.</>,
+    "Difícil": () => <>Los quizzes difíciles buscan detalles, como un resultado exacto o un personaje secundario. Incluso quien conoce bien el tema cae alguna vez.</>,
   },
 };
 
@@ -131,6 +144,8 @@ interface CategoryPageProps {
   gameTypes: GameTypeInfo[];
   quizzesByType: (GameTypeInfo & { quizzes: QuizData[] })[];
   locale?: string;
+  /** Les pages de sous-theme ont deja leur fil d'Ariane complet (Accueil > Categorie > Sous-theme). */
+  hideBreadcrumb?: boolean;
 }
 
 /* ───────────────────────────── helpers ───────────────────────────── */
@@ -185,6 +200,7 @@ export default function CategoryPage({
   gameTypes,
   quizzesByType,
   locale,
+  hideBreadcrumb,
 }: CategoryPageProps) {
   const tt = (key: string) => catPageT[key]?.[locale || "en"] || catPageT[key]?.en || key;
   const gtLabel = (gt: GameType) => GAME_TYPE_LABELS_I18N[gt]?.[locale || "en"] || GAME_TYPE_LABELS_I18N[gt]?.en;
@@ -291,6 +307,7 @@ export default function CategoryPage({
   return (
     <main className="max-w-7xl mx-auto px-4 py-6">
       {/* ─── 1. BREADCRUMB ─── */}
+      {!hideBreadcrumb && (
       <nav className="flex items-center gap-2 text-sm mb-6" aria-label="Breadcrumb">
         <a
           href={lp("/")}
@@ -309,6 +326,7 @@ export default function CategoryPage({
         </svg>
         <span className="font-semibold text-gray-900">{category.name}</span>
       </nav>
+      )}
 
       {/* ─── TWO-COLUMN LAYOUT starts here ─── */}
       <div className="flex flex-col lg:flex-row gap-8">
@@ -600,7 +618,7 @@ export default function CategoryPage({
         {/* intro */}
         <div>
           <h2 className="font-display text-2xl font-bold text-gray-900 mb-3">
-            {category.name} {tt("quizzesPlayAndLearn")}
+            {tt("quizzesPlayAndLearn").replace("{cat}", category.name)}
           </h2>
           {category.seoFooter && (
             <p className="text-sm text-gray-500 leading-relaxed mb-4">
@@ -618,7 +636,7 @@ export default function CategoryPage({
         {/* by difficulty */}
         <div>
           <h2 className="font-display text-2xl font-bold text-gray-900 mb-6">
-            {tt("ourQuizzesByDifficulty").replace("{cat}", category.name.toLowerCase())}
+            {tt("ourQuizzesByDifficulty")}
           </h2>
           {(["Easy", "Medium", "Hard", "Facile", "Moyen", "Difficile", "Fácil", "Medio", "Difícil"] as const).map((diff) => {
             const diffQuizzes = quizzes.filter((q) => q.difficulty === diff);
@@ -630,13 +648,8 @@ export default function CategoryPage({
             if (!descJsx) return null;
             return (
               <div key={diff} className="mb-8">
-                <h3 className="font-display text-lg font-bold text-gray-900 flex items-center gap-2 mb-2">
-                  <span
-                    className={`text-xs font-semibold px-2.5 py-1 rounded-full ${DIFFICULTY_STYLE[diff]}`}
-                  >
-                    {diff}
-                  </span>
-                  {diff.toLowerCase()} {catLower} {tt("quizzes")}
+                <h3 className="font-display text-lg font-bold text-gray-900 mb-2">
+                  {tt("difficultyLevel").replace("{d}", loc === "en" ? diff : diff.toLowerCase())}
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed mb-4">
                   {descJsx}
@@ -675,7 +688,7 @@ export default function CategoryPage({
         {/* closing paragraph */}
         <div>
           <h2 className="font-display text-xl font-bold text-gray-900 mb-3">
-            {tt("whyPlayOur").replace("{cat}", category.name.toLowerCase())}
+            {tt("whyPlayOur")}
           </h2>
           <p className="text-sm text-gray-500 leading-relaxed">
             {tt("whyPlayText").replace("{cat}", category.name.toLowerCase())}

@@ -19,6 +19,9 @@ interface AnswerRecord {
 }
 
 const vfT: Record<string, Record<string, string>> = {
+  feedbackRight: { en: "Correct!", fr: "Bonne réponse !", es: "¡Correcto!" },
+  feedbackWrong: { en: "Wrong!", fr: "Mauvaise réponse !", es: "¡Incorrecto!" },
+  questionWord: { en: "Question", fr: "Question", es: "Pregunta" },
   pctCorrect: { en: "{p}% correct answers", fr: "{p} % de bonnes réponses", es: "{p} % de respuestas correctas" },
   trueFalse: { en: "True or False", fr: "Vrai ou Faux", es: "Verdadero o Falso" },
   labelTrue: { en: "True", fr: "Vrai", es: "Verdadero" },
@@ -560,7 +563,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
             <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
-              Question {currentIndex + 1}/{totalQuestions}
+              {tt("questionWord")} {currentIndex + 1}/{totalQuestions}
             </span>
             <span className="text-xs font-semibold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full">
               {tt("trueFalse")}
@@ -716,9 +719,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
               }`}
             >
               <span className="font-bold">
-                {selectedAnswer === correctAnswerId
-                  ? "Correct! "
-                  : "Wrong! "}
+                {selectedAnswer === correctAnswerId ? tt("feedbackRight") : tt("feedbackWrong")}{" "}
               </span>
               {currentQuestion.explanation}
             </div>

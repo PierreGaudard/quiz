@@ -4,6 +4,6 @@ import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import CustomQuizPlayer from "../../components/CustomQuizPlayer";
 ---
 
-<Layout title="Quiz personnalisé - WizyQuiz" description="Joue à ce quiz créé par un utilisateur de WizyQuiz." locale="en" hreflangPaths={getHreflangStaticPaths("createPlay")} noindex={true}>
+<Layout title="A quiz made by a player | WizyQuiz" description="Play this quiz made by a WizyQuiz player, with the explanation of each answer when the author wrote one." locale="en" hreflangPaths={getHreflangStaticPaths("createPlay")} noindex={true}>
   <CustomQuizPlayer client:load />
 </Layout>

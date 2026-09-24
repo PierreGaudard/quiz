@@ -51,6 +51,7 @@ const lp = (path: string) => localePath(path, locale);
               class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all"
               placeholder="********"
             />
+            <p class="mt-2 text-right"><a href="/es/contrasena-olvidada/" class="text-xs font-semibold text-brand-700 hover:underline">¿Olvidaste tu contraseña?</a></p>
           </div>
 
           <!-- Submit -->
@@ -76,7 +77,8 @@ const lp = (path: string) => localePath(path, locale);
     </div>
   </main>
   <script is:inline>
-    document.addEventListener('DOMContentLoaded', function() {
+          var ERR_MSG = {"An account already exists with this email": "Ya existe una cuenta con este correo.", "Database not available": "El servicio no está disponible ahora mismo. Inténtalo de nuevo en un momento.", "Invalid credentials": "Correo o contraseña incorrectos.", "Missing fields": "Rellena todos los campos.", "Password must be at least 6 characters": "La contraseña debe tener al menos 6 caracteres.", "This username is already taken": "Este nombre de usuario ya está cogido.", "Username can only contain letters, numbers and underscores": "El nombre de usuario solo puede tener letras, números y guiones bajos.", "Username must be 3-30 characters": "El nombre de usuario debe tener entre 3 y 30 caracteres."};
+document.addEventListener('DOMContentLoaded', function() {
       var form = document.getElementById('login-form');
       if (!form) return;
       form.addEventListener('submit', function(e) {
@@ -89,7 +91,7 @@ const lp = (path: string) => localePath(path, locale);
         btn.disabled = true; var orig = btn.textContent; btn.textContent = '...';
         fetch('/api/auth/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, password: password }) })
         .then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
-        .then(function(r) { if (!r.ok) { errEl.textContent = r.data.error || 'Credenciales incorrectas'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; return; } window.location.href = '/es/'; })
+        .then(function(r) { if (!r.ok) { errEl.textContent = (ERR_MSG[r.data.error] || r.data.error) || 'Credenciales incorrectas'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; return; } window.location.href = '/es/'; })
         .catch(function() { errEl.textContent = 'Error de red'; errEl.style.display = 'block'; btn.disabled = false; btn.textContent = orig; });
       });
     });

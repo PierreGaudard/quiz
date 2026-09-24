@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { categories } from "../data/categories";
+import { getCategories, categoryDefs, difficultyLabels } from "../data/categories";
 import { categoryIcons } from "../data/icons";
 import { withBase } from "../utils/base";
 import { saveCustomQuiz, generateSlug, encodeQuizToURL } from "../utils/custom-quiz";
@@ -34,7 +34,138 @@ function compressImage(file: File): Promise<string> {
   });
 }
 
-const STEPS = ["Catégorie", "Détails", "Questions", "Aperçu", "Soumettre"];
+type CreatorLocale = "en" | "fr" | "es";
+
+/*
+ * L'assistant etait ecrit en francais en dur alors qu'il est monte sur les
+ * pages en, fr et es. Tous les textes visibles passent par ce dictionnaire.
+ */
+const T: Record<string, Record<string, string>> = {
+  stepCategory: { en: "Category", fr: "Catégorie", es: "Categoría" },
+  stepDetails: { en: "Details", fr: "Détails", es: "Detalles" },
+  stepQuestions: { en: "Questions", fr: "Questions", es: "Preguntas" },
+  stepPreview: { en: "Preview", fr: "Aperçu", es: "Vista previa" },
+  stepSubmit: { en: "Submit", fr: "Soumettre", es: "Enviar" },
+  step1Title: { en: "Pick a category", fr: "Choisis une catégorie", es: "Elige una categoría" },
+  step1Intro: {
+    en: "Choose the category and subcategory that fit your quiz.",
+    fr: "Sélectionne la catégorie et la sous-catégorie qui correspondent à ton quiz.",
+    es: "Elige la categoría y la subcategoría que mejor encajan con tu quiz.",
+  },
+  subcategoryOf: { en: "{cat} subcategory", fr: "Sous-catégorie de {cat}", es: "Subcategoría de {cat}" },
+  step2Title: { en: "Quiz details", fr: "Détails du quiz", es: "Detalles del quiz" },
+  step2Intro: {
+    en: "Give it a title, a short description and a difficulty level.",
+    fr: "Donne un titre, une description et un niveau de difficulté.",
+    es: "Ponle un título, una descripción corta y un nivel de dificultad.",
+  },
+  titleLabel: { en: "Title", fr: "Titre", es: "Título" },
+  titlePlaceholder: {
+    en: "e.g. Expert-level general knowledge quiz",
+    fr: "Ex. : Quiz de culture générale niveau expert",
+    es: "Ej.: Quiz de cultura general nivel experto",
+  },
+  descriptionLabel: { en: "Description", fr: "Description", es: "Descripción" },
+  descriptionPlaceholder: {
+    en: "Tell players what your quiz is about...",
+    fr: "Décris ton quiz en quelques mots…",
+    es: "Cuenta en pocas palabras de qué va tu quiz…",
+  },
+  difficultyLabel: { en: "Difficulty", fr: "Difficulté", es: "Dificultad" },
+  step3Title: { en: "Your questions", fr: "Tes questions", es: "Tus preguntas" },
+  step3Intro: {
+    en: "Add at least {min} questions (up to {max}). Complete questions:",
+    fr: "Ajoute au moins {min} questions (max {max}). Questions complètes :",
+    es: "Añade al menos {min} preguntas (máximo {max}). Preguntas completas:",
+  },
+  questionN: { en: "Question {n}", fr: "Question {n}", es: "Pregunta {n}" },
+  questionPlaceholder: { en: "Question {n}...", fr: "Question {n}…", es: "Pregunta {n}…" },
+  deleteQuestion: { en: "Delete this question", fr: "Supprimer cette question", es: "Eliminar esta pregunta" },
+  imageAlt: { en: "Image for question {n}", fr: "Image de la question {n}", es: "Imagen de la pregunta {n}" },
+  removeImage: { en: "Remove image", fr: "Supprimer l'image", es: "Quitar la imagen" },
+  addImage: { en: "Add an image (optional)", fr: "Ajouter une image (facultatif)", es: "Añadir una imagen (opcional)" },
+  addImageAria: { en: "Add an image to question {n}", fr: "Ajouter une image à la question {n}", es: "Añadir una imagen a la pregunta {n}" },
+  correctAnswerAria: {
+    en: "Mark answer {x} as correct for question {n}",
+    fr: "Marquer la réponse {x} comme bonne réponse de la question {n}",
+    es: "Marcar la respuesta {x} como correcta en la pregunta {n}",
+  },
+  answerX: { en: "Answer {x}", fr: "Réponse {x}", es: "Respuesta {x}" },
+  explanationToggle: { en: "Explanation (optional)", fr: "Explication (facultatif)", es: "Explicación (opcional)" },
+  explanationPlaceholder: {
+    en: "Explain why this is the right answer...",
+    fr: "Explique pourquoi c'est la bonne réponse…",
+    es: "Explica por qué es la respuesta correcta…",
+  },
+  addQuestion: { en: "Add a question", fr: "Ajouter une question", es: "Añadir una pregunta" },
+  step4Title: { en: "Preview your quiz", fr: "Aperçu de ton quiz", es: "Vista previa de tu quiz" },
+  step4Intro: {
+    en: "Check that everything looks right before you submit it.",
+    fr: "Vérifie que tout est correct avant de soumettre.",
+    es: "Comprueba que todo está bien antes de enviarlo.",
+  },
+  questionOne: { en: "1 question", fr: "1 question", es: "1 pregunta" },
+  questionMany: { en: "{n} questions", fr: "{n} questions", es: "{n} preguntas" },
+  explanationPrefix: { en: "Explanation:", fr: "Explication :", es: "Explicación:" },
+  step5TitleSaved: { en: "Your quiz is online!", fr: "Ton quiz est en ligne !", es: "¡Tu quiz está en línea!" },
+  step5IntroSaved: {
+    en: "It has its own permanent link, which you can send to whoever you want:",
+    fr: "Il a son propre lien permanent, que tu peux envoyer à qui tu veux :",
+    es: "Tiene su propio enlace permanente, que puedes mandar a quien quieras:",
+  },
+  step5NoteSaved: {
+    en: "Only people who have the link can play it: it is not listed on the site or in search engines.",
+    fr: "Seules les personnes qui ont le lien peuvent y jouer : il n'est ni affiché sur le site ni référencé dans les moteurs de recherche.",
+    es: "Solo quien tenga el enlace puede jugarlo: no aparece en el sitio ni en los buscadores.",
+  },
+  step5TitleLocal: { en: "Your quiz is ready!", fr: "Ton quiz est prêt !", es: "¡Tu quiz está listo!" },
+  step5IntroLocal: {
+    en: "Share it with this link. The whole quiz is stored in the link itself, so keep it somewhere.",
+    fr: "Partage-le avec ce lien. Le quiz entier est enregistré dans le lien lui-même, garde-le quelque part.",
+    es: "Compártelo con este enlace. El quiz entero va dentro del propio enlace, guárdalo en algún sitio.",
+  },
+  step5NoteLocal: {
+    en: "With a free account, your quizzes get a short permanent link and stay saved on every device.",
+    fr: "Avec un compte gratuit, tes quiz ont un lien permanent court et restent enregistrés sur tous tes appareils.",
+    es: "Con una cuenta gratuita, tus quiz tienen un enlace permanente corto y se guardan en todos tus dispositivos.",
+  },
+  createAccount: { en: "Create an account", fr: "Créer un compte", es: "Crear una cuenta" },
+  copyLink: { en: "Copy the link", fr: "Copier le lien", es: "Copiar el enlace" },
+  copied: { en: "Link copied!", fr: "Lien copié !", es: "¡Enlace copiado!" },
+  saving: { en: "Saving…", fr: "Enregistrement…", es: "Guardando…" },
+  saveFailed: {
+    en: "We couldn't save your quiz on the server. Here is a share link instead.",
+    fr: "Ton quiz n'a pas pu être enregistré sur le serveur. Voici un lien de partage à la place.",
+    es: "No se ha podido guardar tu quiz en el servidor. Aquí tienes un enlace para compartirlo.",
+  },
+  previewMine: { en: "Preview my quiz", fr: "Prévisualiser mon quiz", es: "Ver mi quiz" },
+  createAnother: { en: "Create another quiz", fr: "Créer un autre quiz", es: "Crear otro quiz" },
+  back: { en: "Back", fr: "Précédent", es: "Anterior" },
+  next: { en: "Next", fr: "Suivant", es: "Siguiente" },
+  submitMine: { en: "Publish my quiz", fr: "Publier mon quiz", es: "Publicar mi quiz" },
+  errCategory: {
+    en: "Pick a category to continue.",
+    fr: "Sélectionne une catégorie pour continuer.",
+    es: "Elige una categoría para continuar.",
+  },
+  errSubcategory: {
+    en: "Pick a subcategory to continue.",
+    fr: "Sélectionne une sous-catégorie pour continuer.",
+    es: "Elige una subcategoría para continuar.",
+  },
+  errDetails: {
+    en: "Fill in every field and pick a difficulty.",
+    fr: "Remplis tous les champs et choisis une difficulté.",
+    es: "Rellena todos los campos y elige una dificultad.",
+  },
+  errQuestions: {
+    en: "You need at least {min} complete questions (the question, 4 answers and the right answer checked).",
+    fr: "Il faut au moins {min} questions complètes (le texte, 4 réponses et la bonne réponse cochée).",
+    es: "Necesitas al menos {min} preguntas completas (el texto, 4 respuestas y la respuesta correcta marcada).",
+  },
+};
+
+const STEP_KEYS = ["stepCategory", "stepDetails", "stepQuestions", "stepPreview", "stepSubmit"];
 
 const MIN_QUESTIONS = 8;
 const MAX_QUESTIONS = 30;
@@ -66,32 +197,54 @@ const answerColors = [
   { dot: "bg-rose-600", label: "D" },
 ];
 
-const difficultyOptions: {
-  value: "Facile" | "Moyen" | "Difficile";
+type DifficultyLevel = "easy" | "medium" | "hard";
+
+const difficultyStyles: {
+  level: DifficultyLevel;
   color: string;
   bgHover: string;
   ring: string;
   bg: string;
 }[] = [
-  { value: "Facile", color: "text-green-700", bgHover: "hover:bg-green-50", ring: "ring-green-500", bg: "bg-green-50" },
-  { value: "Moyen", color: "text-amber-700", bgHover: "hover:bg-amber-50", ring: "ring-amber-500", bg: "bg-amber-50" },
-  { value: "Difficile", color: "text-red-700", bgHover: "hover:bg-red-50", ring: "ring-red-500", bg: "bg-red-50" },
+  { level: "easy", color: "text-green-700", bgHover: "hover:bg-green-50", ring: "ring-green-500", bg: "bg-green-50" },
+  { level: "medium", color: "text-amber-700", bgHover: "hover:bg-amber-50", ring: "ring-amber-500", bg: "bg-amber-50" },
+  { level: "hard", color: "text-red-700", bgHover: "hover:bg-red-50", ring: "ring-red-500", bg: "bg-red-50" },
 ];
 
-export default function QuizCreator() {
+export default function QuizCreator({ locale = "en" }: { locale?: CreatorLocale }) {
+  const tt = (key: string, vars?: Record<string, string | number>) => {
+    let s = T[key]?.[locale] || T[key]?.en || key;
+    if (vars) for (const [k, v] of Object.entries(vars)) s = s.split(`{${k}}`).join(String(v));
+    return s;
+  };
+  const STEPS = STEP_KEYS.map((k) => tt(k));
+  // Libelles de difficulte dans la langue de la page : c'est la valeur qui
+  // est stockee dans le quiz produit, et que le lecteur affiche.
+  const labels = difficultyLabels[locale] || difficultyLabels.en;
+  const difficultyOptions = difficultyStyles.map((d) => ({ ...d, value: labels[d.level] }));
+  const levelOf = (value: string): DifficultyLevel | undefined =>
+    difficultyStyles.find((d) => labels[d.level] === value)?.level;
+
   const [step, setStep] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedSubcategory, setSelectedSubcategory] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [difficulty, setDifficulty] = useState<"Facile" | "Moyen" | "Difficile" | "">("");
+  const [difficulty, setDifficulty] = useState<string>("");
   const [questions, setQuestions] = useState<QuizQuestion[]>(createInitialQuestions);
   const [expandedExplanations, setExpandedExplanations] = useState<Set<number>>(new Set());
   const [submitted, setSubmitted] = useState(false);
   const [submittedSlug, setSubmittedSlug] = useState("");
   const [previewLink, setPreviewLink] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [saveMode, setSaveMode] = useState<"saved" | "local">("local");
+  const [saveFailed, setSaveFailed] = useState(false);
+  const [linkCopied, setLinkCopied] = useState(false);
   const [validationMsg, setValidationMsg] = useState("");
 
+  // Categories resolues dans la langue de la page. Les icones restent indexees
+  // par le slug de base (FR) de categoryDefs, dans le meme ordre.
+  const categories = getCategories(locale).map((c, i) => ({ ...c, iconKey: categoryDefs[i]?.slug || c.slug }));
   const displayedCategories = categories.slice(0, 12);
   const selectedCat = categories.find((c) => c.slug === selectedCategory);
 
@@ -172,16 +325,14 @@ export default function QuizCreator() {
     if (!canProceed()) {
       if (step === 1) {
         if (selectedCategory === "") {
-          setValidationMsg("Sélectionne une catégorie pour continuer.");
+          setValidationMsg(tt("errCategory"));
         } else {
-          setValidationMsg("Sélectionne une sous-catégorie pour continuer.");
+          setValidationMsg(tt("errSubcategory"));
         }
       }
-      if (step === 2) setValidationMsg("Remplis tous les champs et choisis une difficulté.");
+      if (step === 2) setValidationMsg(tt("errDetails"));
       if (step === 3)
-        setValidationMsg(
-          `Il faut au moins ${MIN_QUESTIONS} questions complètes (texte, 4 réponses et bonne réponse sélectionnée).`
-        );
+        setValidationMsg(tt("errQuestions", { min: MIN_QUESTIONS }));
       return;
     }
     if (step === 4) {
@@ -196,35 +347,56 @@ export default function QuizCreator() {
     setStep((s) => Math.max(s - 1, 1));
   }
 
-  function submitQuiz() {
+  async function submitQuiz() {
+    if (saving) return;
     const validQuestions = getValidQuestions();
-
     const slug = generateSlug(title);
-
     const quiz: QuizData = {
       slug,
       title: title.trim(),
       description: description.trim(),
-      category: selectedCat?.name || "Culture Générale",
-      difficulty: difficulty as "Facile" | "Moyen" | "Difficile",
+      category: selectedCat?.name || "",
+      difficulty,
       gameType: "qcm",
       questions: validQuestions.map((q, i) => ({
         ...q,
         id: i + 1,
         image: q.image && q.image.trim() !== "" ? q.image.trim() : undefined,
       })),
-    };
+    } as QuizData;
 
     saveCustomQuiz(quiz);
+    const playPath = locale === "fr" ? "/fr/creer/jouer/" : locale === "es" ? "/es/crear/jugar/" : "/create/play/";
+    const shareLink = window.location.origin + withBase(playPath) + "#data=" + encodeQuizToURL(quiz);
 
-    const encoded = encodeQuizToURL(quiz);
-    // Detect locale from current URL and use locale-aware play page path
-    const path = window.location.pathname;
-    const playPath = path.startsWith("/fr/") ? "/fr/creer/jouer"
-      : path.startsWith("/es/") ? "/es/crear/jugar"
-      : "/create/play";
-    const link = window.location.origin + withBase(playPath) + "#data=" + encoded;
-
+    // Connecte : le quiz part en base et recoit un lien permanent court.
+    // Sinon, ou si l'enregistrement echoue, on garde le lien par hash.
+    setSaving(true);
+    let mode: "saved" | "local" = "local";
+    let link = shareLink;
+    let failed = false;
+    try {
+      const me = await fetch("/api/auth/me").then((r) => r.json()).catch(() => null);
+      if (me?.user) {
+        const res = await fetch("/api/quiz/custom", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(quiz),
+        });
+        const data = await res.json().catch(() => null);
+        if (res.ok && data?.slug) {
+          mode = "saved";
+          link = window.location.origin + withBase(playPath) + "?q=" + encodeURIComponent(data.slug);
+        } else {
+          failed = true;
+        }
+      }
+    } catch {
+      failed = true;
+    }
+    setSaving(false);
+    setSaveMode(mode);
+    setSaveFailed(failed);
     setSubmittedSlug(slug);
     setPreviewLink(link);
     setSubmitted(true);
@@ -281,8 +453,10 @@ export default function QuizCreator() {
                     stepNum
                   )}
                 </div>
+                {/* Sur telephone, seul le nom de l'etape en cours s'affiche : les
+                    cinq ensemble faisaient deborder la page. */}
                 <span
-                  className={`text-xs mt-1 ${
+                  className={`text-xs mt-1 whitespace-nowrap ${isActive ? "block" : "hidden sm:block"} ${
                     isActive ? "text-brand-600 font-semibold" : isCompleted ? "text-green-600" : "text-gray-500"
                   }`}
                 >
@@ -291,7 +465,7 @@ export default function QuizCreator() {
               </div>
               {i < STEPS.length - 1 && (
                 <div
-                  className={`w-12 h-0.5 mx-1 mt-[-16px] ${
+                  className={`w-5 sm:w-12 h-0.5 mx-1 mt-[-16px] ${
                     stepNum < step ? "bg-green-500" : "bg-gray-200"
                   }`}
                 />
@@ -307,8 +481,8 @@ export default function QuizCreator() {
   function renderStep1() {
     return (
       <div>
-        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">Choisis une catégorie</h2>
-        <p className="text-gray-500 mb-6">Sélectionne la catégorie et la sous-catégorie qui correspondent à ton quiz.</p>
+        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">{tt("step1Title")}</h2>
+        <p className="text-gray-500 mb-6">{tt("step1Intro")}</p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {displayedCategories.map((cat) => {
@@ -326,7 +500,7 @@ export default function QuizCreator() {
               >
                 <div
                   className={`w-10 h-10 rounded-xl ${cat.color} text-white p-2 flex items-center justify-center`}
-                  dangerouslySetInnerHTML={{ __html: categoryIcons[cat.slug] || "" }}
+                  dangerouslySetInnerHTML={{ __html: categoryIcons[cat.iconKey] || "" }}
                 />
                 <span className="text-sm font-medium text-gray-800 text-center">{cat.name}</span>
               </button>
@@ -337,7 +511,7 @@ export default function QuizCreator() {
         {selectedCat && selectedCat.subcategories.length > 0 && (
           <div className="mt-8">
             <h3 className="font-display text-lg font-semibold text-gray-800 mb-3">
-              Sous-catégorie de {selectedCat.name}
+              {tt("subcategoryOf", { cat: selectedCat.name })}
             </h3>
             <div className="flex flex-wrap gap-2">
               {selectedCat.subcategories.map((sub) => {
@@ -368,12 +542,12 @@ export default function QuizCreator() {
   function renderStep2() {
     return (
       <div>
-        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">Détails du quiz</h2>
-        <p className="text-gray-500 mb-6">Donne un titre, une description et un niveau de difficulté.</p>
+        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">{tt("step2Title")}</h2>
+        <p className="text-gray-500 mb-6">{tt("step2Intro")}</p>
         <div className="space-y-5">
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label className="block text-sm font-medium text-gray-700">Titre</label>
+              <label htmlFor="qc-title" className="block text-sm font-medium text-gray-700">{tt("titleLabel")}</label>
               <span
                 className={`text-xs ${
                   title.length > 90 ? "text-red-500 font-medium" : "text-gray-500"
@@ -383,12 +557,13 @@ export default function QuizCreator() {
               </span>
             </div>
             <input
+              id="qc-title"
               type="text"
               value={title}
               onChange={(e) => {
                 if (e.target.value.length <= 100) setTitle(e.target.value);
               }}
-              placeholder="Ex: Quiz culture générale niveau expert"
+              placeholder={tt("titlePlaceholder")}
               className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
               maxLength={100}
               required
@@ -396,7 +571,7 @@ export default function QuizCreator() {
           </div>
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label className="block text-sm font-medium text-gray-700">Description</label>
+              <label htmlFor="qc-description" className="block text-sm font-medium text-gray-700">{tt("descriptionLabel")}</label>
               <span
                 className={`text-xs ${
                   description.length > 270 ? "text-red-500 font-medium" : "text-gray-500"
@@ -406,11 +581,12 @@ export default function QuizCreator() {
               </span>
             </div>
             <textarea
+              id="qc-description"
               value={description}
               onChange={(e) => {
                 if (e.target.value.length <= 300) setDescription(e.target.value);
               }}
-              placeholder="Décris ton quiz en quelques mots..."
+              placeholder={tt("descriptionPlaceholder")}
               rows={3}
               maxLength={300}
               className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 resize-none"
@@ -418,7 +594,7 @@ export default function QuizCreator() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-3">Difficulté</label>
+            <p className="block text-sm font-medium text-gray-700 mb-3">{tt("difficultyLabel")}</p>
             <div className="flex gap-3">
               {difficultyOptions.map((opt) => (
                 <button
@@ -447,9 +623,9 @@ export default function QuizCreator() {
 
     return (
       <div>
-        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">Tes questions</h2>
+        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">{tt("step3Title")}</h2>
         <p className="text-gray-500 mb-6">
-          Ajoute au moins {MIN_QUESTIONS} questions (max {MAX_QUESTIONS}). Questions complètes :{" "}
+          {tt("step3Intro", { min: MIN_QUESTIONS, max: MAX_QUESTIONS })}{" "}
           <span className={validCount >= MIN_QUESTIONS ? "text-green-600 font-semibold" : "text-brand-600 font-semibold"}>
             {validCount}
           </span>
@@ -460,13 +636,14 @@ export default function QuizCreator() {
           {questions.map((q, qIndex) => (
             <div key={qIndex} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-sm font-bold text-gray-700">Question {qIndex + 1}</h3>
+                <h3 className="text-sm font-bold text-gray-700">{tt("questionN", { n: qIndex + 1 })}</h3>
                 {questions.length > 1 && (
                   <button
                     type="button"
                     onClick={() => deleteQuestion(qIndex)}
                     className="cursor-pointer text-gray-500 hover:text-red-500 transition-colors p-1"
-                    title="Supprimer cette question"
+                    title={tt("deleteQuestion")}
+                    aria-label={tt("deleteQuestion")}
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
@@ -484,7 +661,8 @@ export default function QuizCreator() {
                 type="text"
                 value={q.question}
                 onChange={(e) => updateQuestion(qIndex, "question", e.target.value)}
-                placeholder={`Question ${qIndex + 1}...`}
+                placeholder={tt("questionPlaceholder", { n: qIndex + 1 })}
+                aria-label={tt("questionN", { n: qIndex + 1 })}
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 mb-3"
               />
 
@@ -494,7 +672,7 @@ export default function QuizCreator() {
                   <div className="flex items-center gap-3">
                     <img
                       src={q.image}
-                      alt={`Image question ${qIndex + 1}`}
+                      alt={tt("imageAlt", { n: qIndex + 1 })}
                       className="w-20 h-20 object-cover rounded-xl border border-gray-200"
                     />
                     <button
@@ -505,7 +683,7 @@ export default function QuizCreator() {
                       <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                       </svg>
-                      Supprimer l'image
+                      {tt("removeImage")}
                     </button>
                   </div>
                 ) : (
@@ -513,11 +691,12 @@ export default function QuizCreator() {
                     <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    <span className="text-sm text-gray-500">Ajouter une image (optionnel)</span>
+                    <span className="text-sm text-gray-500">{tt("addImage")}</span>
                     <input
                       type="file"
                       accept="image/*"
                       className="hidden"
+                      aria-label={tt("addImageAria", { n: qIndex + 1 })}
                       onChange={async (e) => {
                         const file = e.target.files?.[0];
                         if (!file) return;
@@ -542,6 +721,7 @@ export default function QuizCreator() {
                       name={`correct-${qIndex}`}
                       checked={q.correctAnswer === a.id}
                       onChange={() => setCorrectAnswer(qIndex, a.id)}
+                      aria-label={tt("correctAnswerAria", { x: answerColors[aIndex].label, n: qIndex + 1 })}
                       className="cursor-pointer accent-brand-600 w-4 h-4 flex-shrink-0"
                     />
                     <span
@@ -553,7 +733,8 @@ export default function QuizCreator() {
                       type="text"
                       value={a.text}
                       onChange={(e) => updateAnswer(qIndex, aIndex, e.target.value)}
-                      placeholder={`Réponse ${answerColors[aIndex].label}`}
+                      placeholder={tt("answerX", { x: answerColors[aIndex].label })}
+                      aria-label={tt("answerX", { x: answerColors[aIndex].label })}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
                     />
                   </div>
@@ -573,14 +754,15 @@ export default function QuizCreator() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-                Explication (optionnel)
+                {tt("explanationToggle")}
               </button>
 
               {expandedExplanations.has(q.id) && (
                 <textarea
                   value={q.explanation || ""}
                   onChange={(e) => updateQuestion(qIndex, "explanation", e.target.value)}
-                  placeholder="Explique pourquoi cette réponse est correcte..."
+                  placeholder={tt("explanationPlaceholder")}
+                  aria-label={tt("explanationToggle")}
                   rows={2}
                   className="w-full mt-3 px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100 resize-none"
                 />
@@ -598,7 +780,7 @@ export default function QuizCreator() {
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
             </svg>
-            Ajouter une question
+            {tt("addQuestion")}
           </button>
         )}
       </div>
@@ -611,8 +793,8 @@ export default function QuizCreator() {
 
     return (
       <div>
-        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">Aperçu de ton quiz</h2>
-        <p className="text-gray-500 mb-6">Vérifie que tout est correct avant de soumettre.</p>
+        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">{tt("step4Title")}</h2>
+        <p className="text-gray-500 mb-6">{tt("step4Intro")}</p>
 
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-6">
           <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
@@ -624,7 +806,7 @@ export default function QuizCreator() {
               >
                 <span
                   className="w-3.5 h-3.5"
-                  dangerouslySetInnerHTML={{ __html: categoryIcons[selectedCat.slug] || "" }}
+                  dangerouslySetInnerHTML={{ __html: categoryIcons[selectedCat.iconKey] || "" }}
                 />
                 {selectedCat.name}
               </span>
@@ -636,9 +818,9 @@ export default function QuizCreator() {
             )}
             <span
               className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${
-                difficulty === "Facile"
+                levelOf(difficulty) === "easy"
                   ? "bg-green-100 text-green-700"
-                  : difficulty === "Moyen"
+                  : levelOf(difficulty) === "medium"
                   ? "bg-amber-100 text-amber-700"
                   : "bg-red-100 text-red-700"
               }`}
@@ -646,7 +828,7 @@ export default function QuizCreator() {
               {difficulty}
             </span>
             <span className="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700">
-              {validQuestions.length} question{validQuestions.length > 1 ? "s" : ""}
+              {validQuestions.length > 1 ? tt("questionMany", { n: validQuestions.length }) : tt("questionOne")}
             </span>
           </div>
         </div>
@@ -663,7 +845,7 @@ export default function QuizCreator() {
                 <div className="mb-3">
                   <img
                     src={q.image}
-                    alt={`Image question ${i + 1}`}
+                    alt={tt("imageAlt", { n: i + 1 })}
                     className="w-full max-w-xs h-40 object-cover rounded-xl border border-gray-200"
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = "none";
@@ -709,7 +891,7 @@ export default function QuizCreator() {
               </div>
               {q.explanation && (
                 <p className="mt-3 text-xs text-gray-500 bg-gray-50 rounded-lg px-3 py-2">
-                  <span className="font-medium text-gray-600">Explication :</span> {q.explanation}
+                  <span className="font-medium text-gray-600">{tt("explanationPrefix")}</span> {q.explanation}
                 </p>
               )}
             </div>
@@ -721,52 +903,33 @@ export default function QuizCreator() {
 
   // --- Step 5: Submission success ---
   function renderStep5() {
+    const saved = saveMode === "saved";
+    const signupPath = locale === "fr" ? "/fr/inscription/" : locale === "es" ? "/es/registrarse/" : "/sign-up/";
+    const copy = () => {
+      navigator.clipboard?.writeText(previewLink).then(() => {
+        setLinkCopied(true);
+        setTimeout(() => setLinkCopied(false), 2000);
+      }).catch(() => {});
+    };
     return (
       <div className="text-center">
         <div className="mb-8">
-          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5">
-            <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
+          <h2 className="font-display text-2xl font-bold text-gray-900 mb-3">{tt(saved ? "step5TitleSaved" : "step5TitleLocal")}</h2>
+          {saveFailed && <p className="text-sm text-red-700 mb-3">{tt("saveFailed")}</p>}
+          <p className="text-gray-600 max-w-md mx-auto">{tt(saved ? "step5IntroSaved" : "step5IntroLocal")}</p>
+          <div className="mt-4 max-w-lg mx-auto flex items-stretch gap-2">
+            <input
+              readOnly
+              value={previewLink}
+              aria-label={tt(saved ? "step5IntroSaved" : "step5IntroLocal")}
+              onFocus={(e) => e.currentTarget.select()}
+              className="flex-1 min-w-0 px-3 py-2.5 rounded-xl border border-line bg-white text-sm text-gray-700"
+            />
+            <button type="button" onClick={copy} className="shrink-0 px-4 rounded-xl bg-gray-100 hover:bg-gray-200 text-sm font-semibold text-gray-800 cursor-pointer">
+              {linkCopied ? tt("copied") : tt("copyLink")}
+            </button>
           </div>
-          <h2 className="font-display text-2xl font-bold text-gray-900 mb-3">Quiz soumis pour validation !</h2>
-          <p className="text-gray-500 max-w-md mx-auto">
-            Ton quiz sera examiné et s'il est approuvé, il sera publié avec l'URL permanente :
-          </p>
-          <div className="mt-4 inline-flex items-center gap-2 bg-brand-50 border border-brand-200 rounded-xl px-5 py-3">
-            <svg className="w-4 h-4 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-              />
-            </svg>
-            <span className="text-brand-700 font-semibold text-sm">
-              wizyquiz.com/quiz/{submittedSlug}
-            </span>
-          </div>
-        </div>
-
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-5 mb-8 max-w-lg mx-auto">
-          <div className="flex items-start gap-3">
-            <svg
-              className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            <p className="text-sm text-blue-700 text-left">
-              Tu peux quand même le prévisualiser et le partager avec un lien temporaire en attendant.
-            </p>
-          </div>
+          <p className="text-sm text-gray-600 max-w-md mx-auto mt-4">{tt(saved ? "step5NoteSaved" : "step5NoteLocal")}</p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -774,31 +937,19 @@ export default function QuizCreator() {
             href={previewLink}
             className="cursor-pointer bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl text-center inline-flex items-center justify-center gap-2 transition-colors"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            Prévisualiser mon quiz
+            {tt("previewMine")}
           </a>
+          {!saved && (
+            <a href={withBase(signupPath)} className="border border-line text-gray-800 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition-colors inline-flex items-center justify-center">
+              {tt("createAccount")}
+            </a>
+          )}
           <button
             type="button"
             onClick={resetWizard}
-            className="cursor-pointer border border-gray-200 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition-colors inline-flex items-center justify-center gap-2"
+            className="cursor-pointer border border-line text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition-colors inline-flex items-center justify-center gap-2"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-            </svg>
-            Créer un autre quiz
+            {tt("createAnother")}
           </button>
         </div>
       </div>
@@ -843,7 +994,7 @@ export default function QuizCreator() {
               onClick={handleBack}
               className="cursor-pointer border border-gray-200 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition-colors"
             >
-              Précédent
+              {tt("back")}
             </button>
           ) : (
             <div />
@@ -851,9 +1002,10 @@ export default function QuizCreator() {
           <button
             type="button"
             onClick={handleNext}
-            className="cursor-pointer bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+            disabled={saving}
+            className="cursor-pointer bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors disabled:opacity-60"
           >
-            {step === 4 ? "Soumettre mon quiz" : "Suivant"}
+            {step === 4 ? (saving ? tt("saving") : tt("submitMine")) : tt("next")}
           </button>
         </div>
       )}

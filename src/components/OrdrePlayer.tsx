@@ -28,6 +28,9 @@ interface QuestionResult {
 }
 
 const orT: Record<string, Record<string, string>> = {
+  nextQ: { en: "Next question", fr: "Question suivante", es: "Siguiente pregunta" },
+  seeResults: { en: "See results", fr: "Voir le résultat", es: "Ver el resultado" },
+  questionWord: { en: "Question", fr: "Question", es: "Pregunta" },
   introBefore: {
     en: "Put the items in the right order! For each question, click on the items in the order you think is correct. You earn",
     fr: "Remets les éléments dans le bon ordre ! Pour chaque question, clique sur les éléments dans l'ordre qui te paraît juste. Tu gagnés",
@@ -480,7 +483,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               {tt("order")}
             </span>
             <span className="text-sm font-display font-bold text-gray-900">
-              Question {activeIndex + 1}
+              {tt("questionWord")} {activeIndex + 1}
               <span className="text-gray-500">/{totalQuestions}</span>
             </span>
           </div>
@@ -774,7 +777,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               onClick={handleNext}
               className="w-full flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold py-3.5 rounded-xl shadow-sm cursor-pointer transition-all duration-200"
             >
-              {activeIndex + 1 < totalQuestions ? "Next" : "See results"}
+              {activeIndex + 1 < totalQuestions ? tt("nextQ") : tt("seeResults")}
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
