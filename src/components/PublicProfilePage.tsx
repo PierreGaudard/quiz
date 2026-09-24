@@ -55,7 +55,7 @@ export default function PublicProfilePage({ username, locale = "en" }: { usernam
   return (
     <div className="max-w-2xl mx-auto px-4 py-8 space-y-6">
       {/* Header */}
-      <div className="bg-gradient-to-br from-violet-600 to-purple-700 rounded-2xl p-6 md:p-8 text-white">
+      <div className="bg-brand rounded-2xl p-6 md:p-8 text-white">
         <div className="flex items-center gap-5">
           <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-4 border-white/30 bg-white/10 flex items-center justify-center">
             {user.avatar ? (

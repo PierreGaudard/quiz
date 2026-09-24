@@ -116,7 +116,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
     return (
       <div className="text-center py-20">
         <p className="text-gray-500 mb-4">{tt("notLoggedIn")}</p>
-        <a href={locale === "en" ? "/login/" : `/${locale}/${locale === "fr" ? "connexion" : "iniciar-sesion"}/`} className="bg-violet-600 text-white px-6 py-2.5 rounded-lg font-semibold">
+        <a href={locale === "en" ? "/login/" : `/${locale}/${locale === "fr" ? "connexion" : "iniciar-sesion"}/`} className="bg-brand hover:bg-brand-dark text-white px-6 py-2.5 rounded-lg font-semibold">
           {tt("profile")}
         </a>
       </div>
@@ -130,7 +130,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 space-y-8">
       {/* Profile Header */}
-      <div className="bg-gradient-to-br from-violet-600 to-purple-700 rounded-2xl p-6 md:p-8 text-white">
+      <div className="bg-brand rounded-2xl p-6 md:p-8 text-white">
         <div className="flex items-center gap-5">
           {/* Avatar */}
           <div className="relative group">
@@ -206,7 +206,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
               <input type="password" value={editPassword} onChange={(e) => setEditPassword(e.target.value)} placeholder="••••••" className="w-full h-10 px-3 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400" />
             </div>
             <div className="flex items-center gap-3">
-              <button onClick={handleSave} className="bg-violet-600 hover:bg-violet-700 text-white font-semibold text-sm px-5 py-2.5 rounded-lg cursor-pointer transition-colors">{tt("save")}</button>
+              <button onClick={handleSave} className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-5 py-2.5 rounded-lg cursor-pointer transition-colors">{tt("save")}</button>
               {saveMsg && <span className="text-sm text-green-600 font-medium">{saveMsg}</span>}
             </div>
           </div>

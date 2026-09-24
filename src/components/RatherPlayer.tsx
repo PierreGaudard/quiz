@@ -126,7 +126,7 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
         <p className="text-sm text-gray-500 mb-6">{tt("doneText", locale, { n: order.length })}</p>
         <button
           onClick={restart}
-          className="px-6 py-3 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm transition-colors cursor-pointer"
+          className="px-6 py-3 rounded-lg bg-brand hover:bg-brand-dark text-white font-bold text-sm transition-colors cursor-pointer"
         >
           {tt("restart", locale)}
         </button>
@@ -141,7 +141,7 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
     <div className="max-w-3xl mx-auto">
       <div className="text-center mb-5">
         <p className="font-display text-xl md:text-2xl font-bold text-gray-900">{tt("pick", locale)}</p>
-        <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mt-2">
+        <p className="first-letter:uppercase text-xs font-bold text-gray-400 mt-2">
           {tt("answered", locale)} : {answered}
         </p>
       </div>
@@ -158,7 +158,7 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
               disabled={picked !== null}
               className={`relative overflow-hidden p-6 rounded-2xl border-2 text-center transition-all ${
                 picked === null
-                  ? "bg-white border-gray-200 hover:border-violet-400 hover:shadow-lg hover:shadow-violet-500/5 cursor-pointer"
+                  ? "bg-white border-gray-200 hover:border-violet-400 cursor-pointer"
                   : chosen
                     ? "bg-violet-50 border-violet-500"
                     : "bg-white border-gray-200 opacity-70"
@@ -193,7 +193,7 @@ export default function RatherPlayer({ pairs, locale = "en" }: Props) {
         {picked && (
           <button
             onClick={next}
-            className="px-6 py-3 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm transition-colors cursor-pointer"
+            className="px-6 py-3 rounded-lg bg-brand hover:bg-brand-dark text-white font-bold text-sm transition-colors cursor-pointer"
           >
             {tt("next", locale)}
           </button>

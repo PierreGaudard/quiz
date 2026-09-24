@@ -83,7 +83,7 @@ export default function MyQuizzes() {
         {visibleQuizzes.map((entry) => (
           <div
             key={entry.id}
-            className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 flex flex-col gap-2.5 hover:shadow-md transition-shadow"
+            className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 flex flex-col gap-2.5 transition-shadow"
           >
             {/* Title */}
             <h3 className="font-semibold text-gray-900 text-sm leading-snug line-clamp-2">

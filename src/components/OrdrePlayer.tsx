@@ -27,6 +27,17 @@ interface QuestionResult {
 }
 
 const orT: Record<string, Record<string, string>> = {
+  introBefore: {
+    en: "Put the items in the right order! For each question, click on the items in the order you think is correct. You earn",
+    fr: "Remets les éléments dans le bon ordre ! Pour chaque question, clique sur les éléments dans l'ordre qui te paraît juste. Tu gagnes",
+    es: "¡Pon los elementos en el orden correcto! En cada pregunta, haz clic en los elementos en el orden que te parezca bueno. Ganas",
+  },
+  pointsWord: { en: "points", fr: "points", es: "puntos" },
+  introAfter: {
+    en: "for each item placed in the right position (up to {max} points per question).",
+    fr: "pour chaque élément bien placé (jusqu'à {max} points par question).",
+    es: "por cada elemento bien colocado (hasta {max} puntos por pregunta).",
+  },
   rankingMode: { en: "Ranking mode", fr: "Mode Ordre", es: "Modo Orden" },
   start: { en: "Start", fr: "C'est parti", es: "Empezar" },
   order: { en: "Order", fr: "Ordre", es: "Orden" },
@@ -184,7 +195,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
     return (
       <div className="space-y-4 md:space-y-6 pb-16">
         {/* Cover */}
-        <div className="relative rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative rounded-2xl overflow-hidden shadow-sm">
           {quiz.coverImage && (
             <>
               <img
@@ -202,10 +213,10 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             className={`${
               quiz.coverImage
                 ? "absolute bottom-0 left-0 right-0 p-6 md:p-8"
-                : "p-6 md:p-8 bg-gradient-to-br from-violet-600 to-indigo-700"
+                : "p-6 md:p-8 bg-brand hover:bg-brand-dark"
             }`}
           >
-            <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">
+            <span className="first-letter:uppercase inline-block text-yellow-400 font-semibold text-sm mb-1">
               {quiz.category}
             </span>
             <div className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
@@ -215,12 +226,12 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
         </div>
 
         {/* Results card */}
-        <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-violet-600 to-purple-700 p-6 md:p-8 text-center text-white">
+        <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
+          <div className="bg-brand p-6 md:p-8 text-center text-white">
             <div className="text-sm font-medium text-white/70 mb-2">{tt("yourResult")}</div>
             <div className="flex items-center justify-center gap-4 mb-3">
               <div
-                className={`w-16 h-16 ${rank.color} rounded-2xl flex items-center justify-center text-3xl font-display font-black text-white shadow-lg`}
+                className={`w-16 h-16 ${rank.color} rounded-2xl flex items-center justify-center text-3xl font-display font-black text-white shadow-sm`}
               >
                 {rank.icon}
               </div>
@@ -240,8 +251,8 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                   ? tt("msgNotBad")
                   : tt("msgKeepGoing")}
             </p>
-            <div className="mt-4 bg-white/15 backdrop-blur-sm rounded-xl p-3 inline-block">
-              <div className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-0.5">
+            <div className="mt-4 bg-white/15 rounded-xl p-3 inline-block">
+              <div className="first-letter:uppercase text-xs font-semibold text-white/60 mb-0.5">
                 {tt("pointsEarned")}
               </div>
               <div className="text-2xl font-display font-black">
@@ -275,7 +286,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
 
             {/* Detail per question */}
             <div className="mb-6">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
+              <div className="first-letter:uppercase text-xs font-semibold text-gray-500 mb-3">
                 {tt("questionDetails")}
               </div>
               <div className="space-y-2">
@@ -325,7 +336,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             <div className="flex gap-3">
               <button
                 onClick={handleRestart}
-                className="flex-1 flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3.5 rounded-xl shadow-lg cursor-pointer transition-all hover:-translate-y-0.5"
+                className="flex-1 flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold py-3.5 rounded-xl shadow-sm cursor-pointer transition-all"
               >
                 <svg
                   className="w-4 h-4"
@@ -381,7 +392,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
     return (
       <div className="space-y-4 md:space-y-6 pb-16">
         {/* Cover */}
-        <div className="relative rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative rounded-2xl overflow-hidden shadow-sm">
           {quiz.coverImage && (
             <>
               <img
@@ -399,7 +410,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             className={`${
               quiz.coverImage
                 ? "absolute bottom-0 left-0 right-0 p-6 md:p-8"
-                : "p-6 md:p-8 bg-gradient-to-br from-violet-600 to-indigo-700"
+                : "p-6 md:p-8 bg-brand hover:bg-brand-dark"
             }`}
           >
             <div className="flex items-center gap-3 mb-3">
@@ -414,7 +425,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                 {totalQuestions} questions
               </span>
             </div>
-            <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">
+            <span className="first-letter:uppercase inline-block text-yellow-400 font-semibold text-sm mb-1">
               {quiz.category}
             </span>
             <h1 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
@@ -437,13 +448,12 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             </span>
           </div>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Put the items in the right order! For each question, click on the items in the order
-            you think is correct. You earn <strong className="text-violet-700">{POINTS_PER_CORRECT} points</strong> for
-            each item placed in the right position (maximum {MAX_POINTS_PER_QUESTION} points per question).
+            {tt("introBefore")} <strong className="text-violet-700">{POINTS_PER_CORRECT} {tt("pointsWord")}</strong>{" "}
+            {tt("introAfter").replace("{max}", String(MAX_POINTS_PER_QUESTION))}
           </p>
           <button
             onClick={handleStart}
-            className="w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold text-base py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
           >
             {tt("start")}
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -462,7 +472,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-violet-100 text-violet-700 border border-violet-200 uppercase tracking-wider">
+            <span className="first-letter:uppercase inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-violet-100 text-violet-700 border border-violet-200">
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
               </svg>
@@ -481,18 +491,18 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
         </div>
         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-violet-500 to-purple-600 transition-all duration-700 ease-out"
+            className="h-full rounded-full bg-brand hover:bg-brand-dark transition-all duration-700 ease-out"
             style={{ width: `${((activeIndex + (hasValidated ? 1 : 0)) / totalQuestions) * 100}%` }}
           />
         </div>
       </div>
 
       {/* Question card */}
-      <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-lg overflow-hidden">
+      <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
         {/* Question header */}
         <div className="px-4 md:px-6 pt-5 md:pt-6 pb-4">
           <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-9 h-9 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center text-sm font-bold text-white shadow-md">
+            <span className="flex-shrink-0 w-9 h-9 rounded-xl bg-brand flex items-center justify-center text-sm font-bold text-white">
               {activeIndex + 1}
             </span>
             <h2 className="font-display text-base md:text-xl font-bold text-gray-900 leading-snug flex-1 pt-1">
@@ -519,7 +529,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
 
         {/* Selected order area */}
         <div className="px-4 md:px-6 pb-3">
-          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+          <div className="first-letter:uppercase text-xs font-semibold text-gray-500 mb-2">
             {tt("yourRanking")}
           </div>
           <div className="grid grid-cols-4 gap-2 min-h-[56px]">
@@ -560,7 +570,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                         ? currentResult.correctPositions[slot]
                           ? "bg-green-500"
                           : "bg-red-500"
-                        : "bg-gradient-to-br from-violet-500 to-purple-600"
+                        : "bg-brand hover:bg-brand-dark"
                     }`}
                   >
                     {slot + 1}
@@ -598,7 +608,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
         {/* Available items to select */}
         {!hasValidated && (
           <div className="px-4 md:px-6 pb-4">
-            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+            <div className="first-letter:uppercase text-xs font-semibold text-gray-500 mb-2">
               {tt("clickInOrder")}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -616,11 +626,11 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                         ? "border-violet-300 bg-violet-50/40 opacity-40 cursor-default scale-95"
                         : selectedOrder.length >= 4
                           ? "border-gray-200 bg-gray-50 opacity-40 cursor-default"
-                          : "border-gray-200 bg-white hover:border-violet-400 hover:bg-violet-50 hover:shadow-md hover:-translate-y-0.5 cursor-pointer"
+                          : "border-gray-200 bg-white hover:border-violet-400 hover:bg-violet-50 cursor-pointer"
                     }`}
                   >
                     {isSelected ? (
-                      <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center text-xs font-black text-white">
+                      <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-brand flex items-center justify-center text-xs font-black text-white">
                         {selectionIndex + 1}
                       </span>
                     ) : (
@@ -659,7 +669,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
               </button>
               <button
                 onClick={handleValidate}
-                className="flex-1 flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl cursor-pointer transition-all duration-200 hover:-translate-y-0.5"
+                className="flex-1 flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold py-3 rounded-xl shadow-sm cursor-pointer transition-all duration-200"
               >
                 {tt("submit")}
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -696,7 +706,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
 
             {/* Correct order */}
             <div>
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+              <div className="first-letter:uppercase text-xs font-semibold text-gray-500 mb-2">
                 {tt("correctOrder")}
               </div>
               <div className="space-y-1.5">
@@ -761,7 +771,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
             {/* Next button */}
             <button
               onClick={handleNext}
-              className="w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3.5 rounded-xl shadow-lg hover:shadow-xl cursor-pointer transition-all duration-200 hover:-translate-y-0.5"
+              className="w-full flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold py-3.5 rounded-xl shadow-sm cursor-pointer transition-all duration-200"
             >
               {activeIndex + 1 < totalQuestions ? "Next" : "See results"}
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

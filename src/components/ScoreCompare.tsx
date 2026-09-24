@@ -96,7 +96,7 @@ export default function ScoreCompare({ quizSlug, score, outOf, locale = "en" }: 
   if (!stats.enough || stats.others <= 0) {
     return (
       <div className="mt-6 bg-white rounded-2xl border border-gray-100 shadow-sm px-4 py-4">
-        <p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1">{tt("title")}</p>
+        <p className="first-letter:uppercase text-xs font-bold text-gray-500 mb-1">{tt("title")}</p>
         <p className="text-sm text-gray-600">{tt("early")}</p>
       </div>
     );
@@ -118,7 +118,7 @@ export default function ScoreCompare({ quizSlug, score, outOf, locale = "en" }: 
 
   return (
     <div className="mt-6 bg-white rounded-2xl border border-gray-100 shadow-sm px-4 py-4">
-      <p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1">{tt("title")}</p>
+      <p className="first-letter:uppercase text-xs font-bold text-gray-500 mb-1">{tt("title")}</p>
       <p className="text-base font-bold text-gray-900">{headline}</p>
       <p className="text-xs text-gray-500 mt-0.5">
         {tt("average")}{locale === "fr" ? " : " : ": "}{nf(stats.average, 1)}{outOf ? ` / ${outOf}` : ""} · {nf(stats.sample)} {tt("games")}

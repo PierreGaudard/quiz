@@ -1,4 +1,5 @@
 ---
+import { withBase } from "../utils/base";
 import Layout from "../layouts/Layout.astro";
 import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
 import { localePath } from "../utils/base";
@@ -10,21 +11,20 @@ const lp = (path: string) => localePath(path, locale);
 ---
 
 <Layout title={t(locale, "auth.loginTitle")} description={t(locale, "auth.loginDescription")} locale={locale} hreflangPaths={getHreflangStaticPaths("login")}>
-  <main class="min-h-[calc(100vh-160px)] bg-gradient-to-b from-[#1a0e42] via-[#2d1b69] to-[#1a0e42] flex items-center justify-center py-16 px-4 relative overflow-hidden">
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 28px 28px;"></div>
+  <main class="min-h-[calc(100vh-160px)] bg-ink flex items-center justify-center py-16 px-4 relative overflow-hidden">
 
     <div class="relative w-full max-w-md">
       <!-- Logo / Heading -->
       <div class="text-center mb-8">
         <a href={lp("/")} class="inline-block">
-          <span class="font-display text-3xl font-black text-white">Wi<span class="text-yellow-400">zy</span></span>
+          <img src={withBase("/logo.png")} alt="WizyQuiz" width="359" height="120" class="h-12 w-auto mx-auto" />
         </a>
         <h1 class="font-display text-2xl font-bold text-white mt-4">{t(locale, "auth.login")}</h1>
         <p class="text-white/50 text-sm mt-2">{t(locale, "auth.loginDescription")}</p>
       </div>
 
       <!-- Card -->
-      <div class="bg-white rounded-2xl shadow-2xl p-8">
+      <div class="bg-white rounded-2xl shadow-md p-8">
         <div id="auth-error" style="display:none" class="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700 font-medium"></div>
         <form id="login-form" class="space-y-5">
           <!-- Email -->
@@ -56,7 +56,7 @@ const lp = (path: string) => localePath(path, locale);
           <!-- Submit -->
           <button
             type="submit"
-            class="w-full h-11 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-sm rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            class="w-full h-11 bg-sun hover:bg-sun-dark text-ink font-bold text-sm rounded-lg transition-colors"
           >
             {t(locale, "auth.loginCta")}
           </button>

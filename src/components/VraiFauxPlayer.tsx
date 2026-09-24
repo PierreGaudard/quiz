@@ -206,7 +206,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
     return (
       <div className="space-y-6">
         {/* Cover */}
-        <div className="relative rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative rounded-2xl overflow-hidden shadow-sm">
           {quiz.coverImage && (
             <>
               <img
@@ -224,7 +224,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
             className={`${
               quiz.coverImage
                 ? "absolute bottom-0 left-0 right-0 p-6 md:p-8"
-                : "p-6 md:p-8 bg-gradient-to-br from-violet-600 to-indigo-700"
+                : "p-6 md:p-8 bg-brand hover:bg-brand-dark"
             }`}
           >
             <div className="flex items-center gap-3 mb-3">
@@ -242,7 +242,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                 {tt("trueFalse")}
               </span>
             </div>
-            <span className="inline-block text-yellow-400 font-semibold text-sm tracking-wide uppercase mb-1">
+            <span className="first-letter:uppercase inline-block text-yellow-400 font-semibold text-sm mb-1">
               {quiz.category}
             </span>
             <h1 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
@@ -257,9 +257,6 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
         {/* Start CTA */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 md:p-6 space-y-4">
           <div className="flex items-center gap-3 text-gray-600 text-sm md:text-base leading-relaxed">
-            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-amber-500 flex items-center justify-center">
-              <LightningBolt />
-            </div>
             <p>
               {tt("introBefore")} <strong>{tt("labelTrue")}</strong> {tt("introOr")}{" "}
               <strong>{tt("labelFalse")}</strong>. {tt("introAfter").replace("{n}", String(totalQuestions))}
@@ -272,7 +269,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
           </div>
           <button
             onClick={handleStart}
-            className="w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold text-base py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
           >
             {tt("startQuiz")}
             <svg
@@ -300,9 +297,9 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
   if (screen === "result") {
     return (
       <div className="space-y-6">
-        <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-lg overflow-hidden">
+        <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
           {/* Header gradient */}
-          <div className="bg-gradient-to-r from-violet-600 to-purple-700 p-6 md:p-10 text-center text-white">
+          <div className="bg-brand p-6 md:p-10 text-center text-white">
             <div className="text-sm font-medium text-white/70 mb-4">
               {tt("yourResult")}
             </div>
@@ -357,7 +354,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
             {/* Rank badge */}
             <div className="flex items-center justify-center gap-3 mb-3">
               <div
-                className={`w-14 h-14 ${rank.color} rounded-2xl flex items-center justify-center text-2xl font-display font-black text-white shadow-lg`}
+                className={`w-14 h-14 ${rank.color} rounded-2xl flex items-center justify-center text-2xl font-display font-black text-white shadow-sm`}
               >
                 {rank.icon}
               </div>
@@ -411,7 +408,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
 
             {/* Recap of each question */}
             <div className="mb-6">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
+              <div className="first-letter:uppercase text-xs font-semibold text-gray-500 mb-3">
                 {tt("questionDetails")}
               </div>
               <div className="space-y-2">
@@ -474,7 +471,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
             <div className="flex gap-3">
               <button
                 onClick={handleRestart}
-                className="flex-1 flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3.5 rounded-xl shadow-lg cursor-pointer transition-all hover:-translate-y-0.5"
+                className="flex-1 flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold py-3.5 rounded-xl shadow-sm cursor-pointer transition-all"
               >
                 <svg
                   className="w-4 h-4"
@@ -529,29 +526,29 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
   // Card state classes
   const getVraiClasses = () => {
     if (!hasAnswered) {
-      return "bg-gradient-to-br from-emerald-400 to-green-600 border-emerald-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30 cursor-pointer active:scale-95";
+      return "bg-emerald-500 border-emerald-300 hover:scale-105 cursor-pointer active:scale-95";
     }
     if (isVraiCorrect) {
-      return "bg-gradient-to-br from-emerald-400 to-green-600 border-emerald-300 scale-105 shadow-2xl shadow-green-500/40 ring-4 ring-green-300/60";
+      return "bg-emerald-500 border-emerald-300 scale-105 shadow-md ring-4 ring-green-300/60";
     }
     if (selectedVrai && !isVraiCorrect) {
-      return "bg-gradient-to-br from-emerald-400/40 to-green-600/40 border-red-400 ring-4 ring-red-400/50 scale-95 opacity-60";
+      return "bg-emerald-500/40 border-red-400 ring-4 ring-red-400/50 scale-95 opacity-60";
     }
     // Not selected, not correct => fade
-    return "bg-gradient-to-br from-emerald-400/30 to-green-600/30 border-emerald-200 scale-95 opacity-40";
+    return "bg-emerald-500/30 border-emerald-200 scale-95 opacity-40";
   };
 
   const getFauxClasses = () => {
     if (!hasAnswered) {
-      return "bg-gradient-to-br from-rose-400 to-red-600 border-rose-300 hover:scale-105 hover:shadow-2xl hover:shadow-red-500/30 cursor-pointer active:scale-95";
+      return "bg-rose-500 border-rose-300 hover:scale-105 cursor-pointer active:scale-95";
     }
     if (isFauxCorrect) {
-      return "bg-gradient-to-br from-rose-400 to-red-600 border-rose-300 scale-105 shadow-2xl shadow-red-500/40 ring-4 ring-red-300/60";
+      return "bg-rose-500 border-rose-300 scale-105 shadow-md ring-4 ring-red-300/60";
     }
     if (selectedFaux && !isFauxCorrect) {
-      return "bg-gradient-to-br from-rose-400/40 to-red-600/40 border-red-400 ring-4 ring-red-400/50 scale-95 opacity-60";
+      return "bg-rose-500/40 border-red-400 ring-4 ring-red-400/50 scale-95 opacity-60";
     }
-    return "bg-gradient-to-br from-rose-400/30 to-red-600/30 border-rose-200 scale-95 opacity-40";
+    return "bg-rose-500/30 border-rose-200 scale-95 opacity-40";
   };
 
   return (
@@ -577,7 +574,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
         </div>
         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-violet-500 to-purple-600 transition-all duration-700 ease-out"
+            className="h-full rounded-full bg-brand hover:bg-brand-dark transition-all duration-700 ease-out"
             style={{
               width: `${((currentIndex + (hasAnswered ? 1 : 0)) / totalQuestions) * 100}%`,
             }}
@@ -586,7 +583,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
       </div>
 
       {/* Question card */}
-      <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-lg overflow-hidden">
+      <div className="bg-white rounded-2xl border-2 border-violet-200 shadow-sm overflow-hidden">
         {/* Question number badge + question text */}
         <div className="px-5 md:px-8 pt-6 md:pt-8 pb-4 md:pb-5">
           <div className="flex items-start gap-3">
@@ -624,7 +621,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
               disabled={hasAnswered}
               className={`flex-1 max-w-[220px] md:max-w-[260px] aspect-[3/4] rounded-2xl border-2 flex flex-col items-center justify-center gap-3 md:gap-4 transition-all duration-500 ease-out select-none disabled:cursor-default ${getVraiClasses()}`}
             >
-              <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-white/20 flex items-center justify-center">
                 <svg
                   className="w-8 h-8 md:w-12 md:h-12 text-white"
                   fill="none"
@@ -639,7 +636,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                   />
                 </svg>
               </div>
-              <span className="font-display text-2xl md:text-3xl font-black text-white tracking-wide uppercase">
+              <span className="first-letter:uppercase font-display text-2xl md:text-3xl font-black text-white">
                 {tt("labelTrue")}
               </span>
               {hasAnswered && isVraiCorrect && (
@@ -660,12 +657,12 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                 className={`w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-500 ${
                   hasAnswered
                     ? "bg-gray-100"
-                    : "bg-amber-50 shadow-lg shadow-amber-200/50"
+                    : "bg-amber-50 shadow-sm"
                 }`}
               >
                 <LightningBolt />
               </div>
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider hidden md:block">
+              <span className="first-letter:uppercase text-[10px] font-bold text-gray-400 hidden md:block">
                 or
               </span>
             </div>
@@ -676,7 +673,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
               disabled={hasAnswered}
               className={`flex-1 max-w-[220px] md:max-w-[260px] aspect-[3/4] rounded-2xl border-2 flex flex-col items-center justify-center gap-3 md:gap-4 transition-all duration-500 ease-out select-none disabled:cursor-default ${getFauxClasses()}`}
             >
-              <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-white/20 flex items-center justify-center">
                 <svg
                   className="w-8 h-8 md:w-12 md:h-12 text-white"
                   fill="none"
@@ -691,7 +688,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                   />
                 </svg>
               </div>
-              <span className="font-display text-2xl md:text-3xl font-black text-white tracking-wide uppercase">
+              <span className="first-letter:uppercase font-display text-2xl md:text-3xl font-black text-white">
                 {tt("labelFalse")}
               </span>
               {hasAnswered && isFauxCorrect && (
@@ -762,13 +759,13 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40">
         <div className="h-1 bg-gray-200">
           <div
-            className="h-full bg-gradient-to-r from-violet-500 to-purple-600 transition-all duration-700 ease-out"
+            className="h-full bg-brand hover:bg-brand-dark transition-all duration-700 ease-out"
             style={{
               width: `${((currentIndex + (hasAnswered ? 1 : 0)) / totalQuestions) * 100}%`,
             }}
           />
         </div>
-        <div className="bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 py-2.5 flex items-center justify-between">
+        <div className="bg-white/95 border-t border-gray-200 px-4 py-2.5 flex items-center justify-between">
           <span className="text-xs font-bold text-gray-700">
             {currentIndex + 1}/{totalQuestions}
           </span>

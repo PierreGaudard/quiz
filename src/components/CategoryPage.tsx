@@ -62,6 +62,11 @@ const catPageT: Record<string, Record<string, string>> = {
     es: "Un quiz de {cat} es una buena manera de ver qué se te quedó. Cuando una pregunta se atasca, tienes tres bonificaciones. El 50/50 quita dos respuestas falsas. La segunda oportunidad perdona un fallo, y la pista te orienta. La cuenta es gratis y guarda tus puntuaciones, si quieres ver subir tu rango.",
   },
   becomeMember: { en: "Become a member", fr: "Devenez membre", es: "Hazte miembro" },
+  memberText: {
+    en: "An account keeps your progress, gives you access to the leaderboards and lets you create your own quizzes.",
+    fr: "Un compte garde votre progression, vous ouvre les classements et vous permet de créer vos propres quiz.",
+    es: "Una cuenta guarda tu progreso, te abre las clasificaciones y te permite crear tus propios quiz.",
+  },
   saveProgress: { en: "Save your progress", fr: "Sauvegardez votre progression", es: "Guarda tu progreso" },
   accessLeaderboards: { en: "Access leaderboards", fr: "Accédez aux classements", es: "Accede a las clasificaciones" },
   unlockAchievements: { en: "Unlock achievements", fr: "Débloquez des succès", es: "Desbloquea logros" },
@@ -318,7 +323,7 @@ export default function CategoryPage({
             alt={category.name}
             width={800}
             height={450}
-            className="w-14 h-14 rounded-2xl object-cover shadow-lg shrink-0"
+            className="w-14 h-14 rounded-2xl object-cover shadow-sm shrink-0"
           />
           <div className="flex-1">
             <h1 className="font-display text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -364,7 +369,7 @@ export default function CategoryPage({
           </div>
           <button
             onClick={() => setCurrentPage(1)}
-            className="py-3 px-3 sm:px-5 bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold rounded-xl shadow-sm transition-colors cursor-pointer flex items-center gap-2 shrink-0"
+            className="py-3 px-3 sm:px-5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl shadow-sm transition-colors cursor-pointer flex items-center gap-2 shrink-0"
           >
             <svg className="w-5 h-5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -495,7 +500,7 @@ export default function CategoryPage({
       {/* ─── 5. MINI QUIZ (inside main column) ─── */}
       {miniQuiz && miniQuestion && (
         <section className="mt-10 mb-12">
-          <div className="bg-gradient-to-br from-violet-50 via-white to-indigo-50 rounded-2xl border border-violet-100 p-6 md:p-8 shadow-sm">
+          <div className="bg-violet-50 rounded-2xl border border-violet-100 p-6 md:p-8 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
               <span className="w-8 h-8 bg-violet-600 rounded-lg flex items-center justify-center text-white text-sm font-bold">
                 ?
@@ -560,7 +565,7 @@ export default function CategoryPage({
                 )}
                 <a
                   href={lp(`/${miniQuiz.path}`)}
-                  className="ml-auto inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors shadow-sm"
+                  className="ml-auto inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors shadow-sm"
                 >
                   {tt("playFullQuiz")}
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -644,7 +649,7 @@ export default function CategoryPage({
                     <a
                       key={q.slug}
                       href={lp(`/${q.path}`)}
-                      className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 p-3 hover:shadow-md transition-shadow group"
+                      className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 p-3 transition-shadow group"
                     >
                       {q.coverImage && (
                         <img
@@ -734,7 +739,7 @@ function StatCell({
   return (
     <div className="flex flex-col items-center px-5 py-3 min-w-[90px]">
       <span className={`text-2xl font-black leading-none ${color}`}>{value}</span>
-      <span className="text-xs font-semibold text-gray-400 mt-0.5 uppercase tracking-wide">
+      <span className="first-letter:uppercase text-xs font-semibold text-gray-400 mt-0.5">
         {label}
       </span>
     </div>
@@ -763,7 +768,7 @@ function FilterPill({
       onClick={onClick}
       className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold border transition-all cursor-pointer ${
         active
-          ? "bg-violet-600 text-white border-violet-600 shadow-md shadow-violet-200"
+          ? "bg-violet-600 text-white border-violet-600 shadow-md"
           : "bg-white text-gray-900 border-gray-200 hover:border-violet-300 hover:shadow-sm"
       }`}
     >
@@ -824,8 +829,8 @@ function QuizCard({
       href={lp(`/${quiz.path}`)}
       className={`group relative rounded-2xl overflow-hidden shadow-sm border transition-all duration-300 ${
         isCompleted
-          ? "bg-gray-50 border-gray-200 opacity-80 hover:opacity-100 hover:shadow-md"
-          : "bg-white border-gray-100 hover:shadow-lg hover:-translate-y-1"
+          ? "bg-gray-50 border-gray-200 opacity-80 hover:opacity-100"
+          : "bg-white border-gray-100"
       }`}
     >
       {/* cover image area */}
@@ -1061,7 +1066,7 @@ function Pagination({
             }}
             className={`w-9 h-9 flex items-center justify-center text-sm font-semibold rounded-lg border transition-colors cursor-pointer ${
               p === currentPage
-                ? "bg-violet-600 text-white border-violet-600 shadow-md shadow-violet-200"
+                ? "bg-violet-600 text-white border-violet-600 shadow-md"
                 : "bg-white text-gray-900 border-gray-200 hover:border-violet-300"
             }`}
           >
@@ -1143,12 +1148,6 @@ function SidebarContent({
   const circumference = 2 * Math.PI * 40;
   const strokeDashoffset = circumference - (progressPercent / 100) * circumference;
 
-  const memberBenefits = [
-    tt("saveProgress"),
-    tt("accessLeaderboards"),
-    tt("unlockAchievements"),
-    tt("createOwnQuizzes"),
-  ];
 
   const catSlugs: Record<string, Record<string, string>> = {
     sport: { en: "sports", fr: "sport", es: "deportes" },
@@ -1172,7 +1171,7 @@ function SidebarContent({
       {/* Logged in: profile card / Logged out: become member CTA */}
       {authUser ? (
         <>
-        <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl p-5 text-white shadow-lg">
+        <div className="bg-brand rounded-2xl p-5 text-white">
           <a href={lp(profileSlug)} className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 rounded-full border-2 border-white/30 bg-white/10 flex items-center justify-center overflow-hidden">
               {authUser.avatar ? (
@@ -1210,7 +1209,7 @@ function SidebarContent({
           {/* Friends with level + quiz count */}
           {friends.length > 0 && (
             <div>
-              <p className="text-[10px] font-bold text-white/50 uppercase tracking-wider mb-2">{tt("friendsLabel")}</p>
+              <p className="first-letter:uppercase text-[10px] font-bold text-white/50 mb-2">{tt("friendsLabel")}</p>
               <div className="space-y-1.5">
                 {friends.slice(0, 5).map((f: any) => {
                   const fLv = (() => { const x = f.xp || 0; let lv = 1; for (let i = 2; i <= 1000; i++) { if (x >= Math.floor(10*i*i - 10*i + 200)) lv = i; else break; } return lv; })();
@@ -1234,19 +1233,10 @@ function SidebarContent({
         </div>
         </>
       ) : (
-        <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl p-5 text-white shadow-lg">
-          <h3 className="font-display text-base font-bold mb-3">{tt("becomeMember")}</h3>
-          <ul className="space-y-2 mb-4">
-            {memberBenefits.map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm text-white/90">
-                <svg className="w-4 h-4 text-green-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                {item}
-              </li>
-            ))}
-          </ul>
-          <button className="w-full bg-white text-violet-700 font-semibold text-sm py-2.5 rounded-xl hover:bg-violet-50 transition-colors cursor-pointer">
+        <div className="bg-white rounded-2xl border border-line p-5">
+          <h3 className="font-display text-base font-bold text-gray-900 mb-1.5">{tt("becomeMember")}</h3>
+          <p className="text-sm text-gray-600 leading-relaxed mb-4">{tt("memberText")}</p>
+          <button className="w-full bg-brand hover:bg-brand-dark text-white font-display font-bold text-sm py-2.5 rounded-xl transition-colors cursor-pointer">
             {tt("createFreeAccount")}
           </button>
         </div>
@@ -1256,7 +1246,7 @@ function SidebarContent({
 
       {/* Catégories principales */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-        <div className="bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-2.5">
+        <div className="bg-brand px-4 py-2.5">
           <h3 className="font-display font-bold text-white text-xs">{tt("exploreCategories")}</h3>
         </div>
         <div className="p-3 space-y-1">

@@ -1,0 +1,97 @@
+---
+/**
+ * La page « Creer un quiz », partagee par les trois langues.
+ *
+ * Elle reprenait le gabarit type d'une landing SaaS : pastille de sur-titre,
+ * titre en deux couleurs, rangee de chiffres, trois etapes dans des cercles
+ * relies par un trait, grille de six cartes « icone + titre + phrase » et
+ * bandeau final. Ici, un titre, un paragraphe, un bouton, puis les trois
+ * etapes dites simplement.
+ */
+import MyQuizzes from "./MyQuizzes";
+import { localePath } from "../utils/base";
+import type { Locale } from "../i18n/config";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const lp = (path: string) => localePath(path, locale);
+
+const copy = {
+  en: {
+    newPath: "/create/new",
+    h1: "Create your own quiz",
+    intro: "Pick a topic, write your questions with four answers each, and tick the right one. Your quiz then gets its own link, which you send to whoever you want. It's free and you don't need an account.",
+    cta: "Create my quiz",
+    howTitle: "How does it work?",
+    steps: [
+      { title: "Pick a topic", text: "Sports, movies, general knowledge, etc. The title and the topic are what you'll use to find the quiz again later." },
+      { title: "Write your questions", text: "Four answers per question, only one of them right. You can add an explanation: players see it right after they answer." },
+      { title: "Send the link", text: "Before sharing, you can play your own quiz to check that everything works. Then you copy the link and send it to your friends, your family or your colleagues." },
+    ],
+    note: "The quiz plays just as well on a phone as on a computer, and you can create as many as you like.",
+  },
+  fr: {
+    newPath: "/creer/nouveau",
+    h1: "Crée ton propre quiz",
+    intro: "Tu choisis un thème, tu écris tes questions avec quatre réponses, et tu coches la bonne. Le quiz a ensuite son propre lien, que tu envoies à qui tu veux. C'est gratuit et il n'y a pas besoin de compte.",
+    cta: "Créer mon quiz",
+    howTitle: "Comment ça marche ?",
+    steps: [
+      { title: "Choisis un thème", text: "Sport, cinéma, culture générale, etc. Le titre et le thème servent à retrouver le quiz plus tard." },
+      { title: "Écris tes questions", text: "Quatre réponses par question, une seule bonne. Tu peux ajouter une explication : elle s'affiche juste après la réponse du joueur." },
+      { title: "Envoie le lien", text: "Avant de partager, tu peux jouer ton quiz pour vérifier que tout marche. Ensuite tu copies le lien et tu l'envoies à tes amis, ta famille ou tes collègues." },
+    ],
+    note: "Le quiz se joue aussi bien sur téléphone que sur ordinateur, et tu peux en créer autant que tu veux.",
+  },
+  es: {
+    newPath: "/crear/nuevo",
+    h1: "Crea tu propio quiz",
+    intro: "Eliges un tema, escribes tus preguntas con cuatro respuestas y marcas la correcta. El quiz tiene luego su propio enlace, que mandas a quien quieras. Es gratis y no hace falta cuenta.",
+    cta: "Crear mi quiz",
+    howTitle: "¿Cómo funciona?",
+    steps: [
+      { title: "Elige un tema", text: "Deportes, cine, cultura general, etc. El título y el tema sirven para encontrar el quiz más adelante." },
+      { title: "Escribe tus preguntas", text: "Cuatro respuestas por pregunta, solo una correcta. Puedes añadir una explicación: aparece justo después de que el jugador responda." },
+      { title: "Manda el enlace", text: "Antes de compartirlo, puedes jugar tu quiz para comprobar que todo funciona. Luego copias el enlace y se lo mandas a tus amigos, a tu familia o a tus compañeros." },
+    ],
+    note: "El quiz se juega igual de bien en el móvil que en el ordenador, y puedes crear todos los que quieras.",
+  },
+}[locale];
+---
+
+<main>
+  <section class="bg-ink">
+    <div class="max-w-4xl mx-auto px-4 pt-14 pb-16">
+      <h1 class="font-display text-4xl md:text-5xl font-black text-white leading-tight mb-4">{copy.h1}</h1>
+      <p class="text-white/75 text-base md:text-lg max-w-2xl leading-relaxed mb-8">{copy.intro}</p>
+      <a href={lp(copy.newPath)} class="inline-flex items-center gap-2 px-7 py-3.5 bg-sun hover:bg-sun-dark text-ink font-display font-bold text-base rounded-xl transition-colors">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2.5} aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" /></svg>
+        {copy.cta}
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-white border-b border-line">
+    <div class="max-w-4xl mx-auto px-4 py-14">
+      <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900 mb-8">{copy.howTitle}</h2>
+      <ol class="grid gap-8 md:grid-cols-3">
+        {copy.steps.map((step, i) => (
+          <li>
+            <p class="font-display text-4xl font-black text-brand leading-none mb-3" aria-hidden="true">{i + 1}</p>
+            <h3 class="font-display text-lg font-bold text-gray-900 mb-1.5">{step.title}</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">{step.text}</p>
+          </li>
+        ))}
+      </ol>
+      <p class="text-sm text-gray-600 mt-10">{copy.note}</p>
+    </div>
+  </section>
+
+  <section class="bg-paper">
+    <div class="max-w-4xl mx-auto px-4 py-14">
+      <MyQuizzes client:load />
+    </div>
+  </section>
+</main>

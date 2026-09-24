@@ -9,6 +9,11 @@ interface Props {
 }
 
 const duT: Record<string, Record<string, string>> = {
+  step3: {
+    en: "Discover the answer and its explanation before moving on to the next duel",
+    fr: "Découvre la réponse et son explication avant de passer au duel suivant",
+    es: "Descubre la respuesta y su explicación antes de pasar al siguiente duelo",
+  },
   duelMode: { en: "Duel Mode", fr: "Mode Duel", es: "Modo Duelo" },
   howToPlay: { en: "How to play", fr: "Comment jouer", es: "Cómo jugar" },
   howToSub: {
@@ -57,14 +62,14 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Legend", color: "bg-amber-500", icon: "S", gradient: "from-amber-400 to-yellow-500" }
+      ? { label: "Legend", color: "bg-amber-500", icon: "S" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-violet-500", icon: "A", gradient: "from-violet-400 to-purple-500" }
+        ? { label: "Expert", color: "bg-violet-500", icon: "A" }
         : scorePercent >= 50
-          ? { label: "Skilled", color: "bg-blue-500", icon: "B", gradient: "from-blue-400 to-cyan-500" }
+          ? { label: "Skilled", color: "bg-blue-500", icon: "B" }
           : scorePercent >= 30
-            ? { label: "Apprentice", color: "bg-green-500", icon: "C", gradient: "from-green-400 to-emerald-500" }
-            : { label: "Beginner", color: "bg-gray-500", icon: "D", gradient: "from-gray-400 to-gray-500" };
+            ? { label: "Apprentice", color: "bg-green-500", icon: "C" }
+            : { label: "Beginner", color: "bg-gray-500", icon: "D" };
 
   const difficultyColor: Record<string, string> = {
     "Easy": "text-green-700 bg-green-100",
@@ -125,7 +130,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
     return (
       <div className="max-w-2xl mx-auto">
         {/* Cover */}
-        <div className="relative rounded-2xl overflow-hidden shadow-xl mb-6">
+        <div className="relative rounded-2xl overflow-hidden shadow-md mb-6">
           {quiz.coverImage ? (
             <>
               <img
@@ -139,11 +144,11 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
             </>
           ) : (
-            <div className="w-full aspect-[2.2/1] bg-gradient-to-br from-indigo-600 via-purple-600 to-rose-500" />
+            <div className="w-full aspect-[2.2/1] bg-brand" />
           )}
           <div className={`${quiz.coverImage ? "absolute bottom-0 left-0 right-0" : "absolute inset-0 flex flex-col justify-end"} p-6 md:p-8`}>
             <div className="flex items-center gap-3 mb-3 flex-wrap">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-rose-500 to-orange-500 text-white shadow-lg shadow-rose-500/30">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-500 text-white shadow-sm">
                 <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M13.73 2.18a1 1 0 00-1.46 0L9.41 5.04 6.24 3.46a1 1 0 00-1.4.54L3.5 8.12 .85 9.97a1 1 0 00-.17 1.45l2 2.53-.42 3.21a1 1 0 00 .82 1.12l3.16.52 1.53 2.83a1 1 0 001.32.44L12 20.5l2.91 1.57a1 1 0 001.32-.44l1.53-2.83 3.16-.52a1 1 0 00.82-1.12l-.42-3.21 2-2.53a1 1 0 00-.17-1.45l-2.65-1.85-1.34-4.12a1 1 0 00-1.4-.54l-3.17 1.58-2.86-2.86z" />
                 </svg>
@@ -168,36 +173,24 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
         {/* Start card */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8 space-y-5">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-500 to-orange-500 flex items-center justify-center shadow-lg shadow-rose-500/20">
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-              </svg>
-            </div>
             <div>
               <h2 className="font-display text-lg font-bold text-gray-900">{tt("howToPlay")}</h2>
               <p className="text-sm text-gray-500">{tt("howToSub")}</p>
             </div>
           </div>
 
-          <div className="space-y-3">
-            <div className="flex items-start gap-3 p-3 bg-indigo-50 rounded-xl">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">1</div>
-              <p className="text-sm text-gray-700">{tt("step1")}</p>
-            </div>
-            <div className="flex items-start gap-3 p-3 bg-rose-50 rounded-xl">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-500 to-orange-500 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">2</div>
-              <p className="text-sm text-gray-700">{tt("step2")}</p>
-            </div>
-            <div className="flex items-start gap-3 p-3 bg-green-50 rounded-xl">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">3</div>
-              <p className="text-sm text-gray-700">Discover the answer and explanation before moving to the next duel</p>
-            </div>
-          </div>
+          <ol className="space-y-2.5">
+            {["step1", "step2", "step3"].map((k, i) => (
+              <li key={k} className="flex items-baseline gap-3 text-sm text-gray-700">
+                <span className="font-display font-black text-rose-600 w-4 shrink-0">{i + 1}</span>
+                {tt(k)}
+              </li>
+            ))}
+          </ol>
 
           <button
             onClick={handleStart}
-            className="w-full flex items-center justify-center gap-2.5 bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600 text-white font-bold text-base py-4 rounded-xl shadow-lg shadow-rose-500/25 hover:shadow-xl hover:shadow-rose-500/30 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2.5 bg-rose-500 text-white font-bold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
@@ -217,15 +210,13 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
     return (
       <div className="max-w-2xl mx-auto space-y-6">
         {/* Score hero */}
-        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 md:p-10 text-center shadow-2xl">
+        <div className="relative rounded-2xl overflow-hidden bg-gray-900 p-8 md:p-10 text-center shadow-md">
           {/* Decorative background elements */}
           <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute -top-20 -left-20 w-60 h-60 bg-indigo-500/10 rounded-full blur-3xl" />
-            <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-rose-500/10 rounded-full blur-3xl" />
           </div>
 
           <div className="relative z-10">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-rose-500 to-orange-500 text-white mb-4">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-500 text-white mb-4">
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
               </svg>
@@ -233,7 +224,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             </div>
 
             <div className="mb-4">
-              <div className={`inline-flex w-20 h-20 rounded-2xl bg-gradient-to-br ${rank.gradient} items-center justify-center text-3xl font-display font-black text-white shadow-lg mb-3`}>
+              <div className={`inline-flex w-20 h-20 rounded-2xl ${rank.color} items-center justify-center text-3xl font-display font-black text-white shadow-sm mb-3`}>
                 {rank.icon}
               </div>
               <div className="font-display text-lg font-bold text-white/70">{rank.label}</div>
@@ -250,7 +241,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             <div className="max-w-xs mx-auto mb-6">
               <div className="h-3 bg-white/10 rounded-full overflow-hidden">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-rose-500 to-orange-500 transition-all duration-1000 ease-out"
+                  className="h-full rounded-full bg-rose-500 transition-all duration-1000 ease-out"
                   style={{ width: `${scorePercent}%` }}
                 />
               </div>
@@ -323,7 +314,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
         <div className="flex flex-col sm:flex-row gap-3">
           <button
             onClick={handleRestart}
-            className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-rose-500/25 hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+            className="flex-1 flex items-center justify-center gap-2 bg-rose-500 text-white font-bold py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -373,9 +364,9 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
         border: "border-green-400 ring-2 ring-green-400/50",
         scale: "scale-[1.02]",
         opacity: "",
-        glow: "shadow-green-500/20 shadow-xl",
+        glow: "shadow-md",
         icon: (
-          <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-green-500 flex items-center justify-center shadow-lg shadow-green-500/40 animate-bounce">
+          <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-green-500 flex items-center justify-center shadow-sm animate-bounce">
             <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
@@ -389,7 +380,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
       opacity: "opacity-60",
       glow: "",
       icon: wasSelected ? (
-        <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-red-500 flex items-center justify-center shadow-lg">
+        <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-red-500 flex items-center justify-center shadow-sm">
           <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -407,7 +398,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
       <div className="flex items-center gap-4">
         <div className="flex-1">
           <div className="flex items-center justify-between mb-1.5">
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">
+            <span className="first-letter:uppercase text-xs font-bold text-gray-500">
               Duel {currentIndex + 1}/{totalQuestions}
             </span>
             <span className="text-xs font-bold text-gray-500">
@@ -416,7 +407,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
           </div>
           <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
             <div
-              className="h-full rounded-full bg-gradient-to-r from-rose-500 to-orange-500 transition-all duration-500 ease-out"
+              className="h-full rounded-full bg-rose-500 transition-all duration-500 ease-out"
               style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }}
             />
           </div>
@@ -443,24 +434,24 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             relative flex-1 rounded-2xl border-2 overflow-hidden cursor-pointer
             transition-all duration-500 ease-out
             ${leftState.border} ${leftState.scale} ${leftState.opacity} ${leftState.glow}
-            ${!revealed && !animating ? "hover:scale-[1.03] hover:shadow-xl hover:shadow-indigo-500/15 active:scale-[0.98]" : ""}
+            ${!revealed && !animating ? "hover:scale-[1.03] active:scale-[0.98]" : ""}
             ${revealed || animating ? "cursor-default" : ""}
             group
           `}
         >
           {/* Background gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-600 to-indigo-800 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-blue-600 transition-opacity duration-300" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
 
           {/* Hover shimmer */}
           {!revealed && !animating && (
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white/10" />
           )}
 
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center justify-center p-6 md:p-8 min-h-[180px] md:min-h-[240px]">
             {leftAnswer?.image && (
-              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden mb-4 border-2 border-white/20 shadow-lg">
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden mb-4 border-2 border-white/20 shadow-sm">
                 <img
                   src={withBase(leftAnswer.image)}
                   alt={leftAnswer.text}
@@ -481,9 +472,8 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 md:static md:translate-x-0 md:translate-y-0 md:flex md:items-center md:justify-center md:flex-shrink-0">
           <div className={`
             w-14 h-14 md:w-16 md:h-16 rounded-full
-            bg-gradient-to-br from-amber-400 via-orange-500 to-red-500
+            bg-sun hover:bg-sun-dark
             flex items-center justify-center
-            shadow-xl shadow-orange-500/40
             border-4 border-white
             ${!revealed ? "animate-pulse" : ""}
             transition-all duration-300
@@ -502,24 +492,24 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             relative flex-1 rounded-2xl border-2 overflow-hidden cursor-pointer
             transition-all duration-500 ease-out
             ${rightState.border} ${rightState.scale} ${rightState.opacity} ${rightState.glow}
-            ${!revealed && !animating ? "hover:scale-[1.03] hover:shadow-xl hover:shadow-orange-500/15 active:scale-[0.98]" : ""}
+            ${!revealed && !animating ? "hover:scale-[1.03] active:scale-[0.98]" : ""}
             ${revealed || animating ? "cursor-default" : ""}
             group
           `}
         >
           {/* Background gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-500 via-rose-500 to-red-700 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-orange-500 transition-opacity duration-300" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
 
           {/* Hover shimmer */}
           {!revealed && !animating && (
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white/10" />
           )}
 
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center justify-center p-6 md:p-8 min-h-[180px] md:min-h-[240px]">
             {rightAnswer?.image && (
-              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden mb-4 border-2 border-white/20 shadow-lg">
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden mb-4 border-2 border-white/20 shadow-sm">
                 <img
                   src={withBase(rightAnswer.image)}
                   alt={rightAnswer.text}
@@ -577,7 +567,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
                 <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
-                <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">{tt("explanation")}</span>
+                <span className="first-letter:uppercase text-xs font-bold text-amber-600">{tt("explanation")}</span>
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">{currentQuestion.explanation}</p>
             </div>
@@ -586,7 +576,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
           {/* Next button */}
           <button
             onClick={handleNext}
-            className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-rose-500/25 hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 bg-rose-500 text-white font-bold py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
           >
             {currentIndex + 1 < totalQuestions ? (
               <>

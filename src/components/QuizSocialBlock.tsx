@@ -113,7 +113,7 @@ function FriendsBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: Qu
   return (
     <div className="mt-6 bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
       {playedFriends.length > 0 && (
-        <div className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-violet-50 to-purple-50 border-b border-gray-100">
+        <div className="flex items-center gap-3 px-4 py-3 bg-violet-50 border-b border-gray-100">
           <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${friendRank === 1 ? "bg-yellow-400" : "bg-violet-400"}`}>
             <span className="text-white text-sm font-black">#{friendRank}</span>
           </div>
@@ -138,7 +138,7 @@ function FriendsBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: Qu
 
       {friends.length > 0 ? (
         <div className="px-4 py-3">
-          <p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">{tt("friendsScores")}</p>
+          <p className="first-letter:uppercase text-xs font-bold text-gray-500 mb-2">{tt("friendsScores")}</p>
           <div className="space-y-2">
             {friends.map((friend) => (
               <div key={friend.id} className="flex items-center gap-2.5">

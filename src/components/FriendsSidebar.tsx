@@ -78,7 +78,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
   return (
     <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
       {/* Header */}
-      <div className="bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-3 flex items-center justify-between">
+      <div className="bg-brand px-4 py-3 flex items-center justify-between">
         <h3 className="font-display font-bold text-white text-sm">{tt("friends")} ({friends.length})</h3>
         <button onClick={() => setShowAdd(!showAdd)} aria-label={tt("addFriend")} className="w-6 h-6 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white transition-colors cursor-pointer">
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" /></svg>
@@ -118,7 +118,7 @@ export default function FriendsSidebar({ locale = "en" }: { locale?: string }) {
       {/* Pending requests */}
       {requests.length > 0 && (
         <div className="p-3 border-b border-gray-100">
-          <p className="text-[10px] font-bold text-amber-600 uppercase tracking-wider mb-2">{tt("requests")} ({requests.length})</p>
+          <p className="first-letter:uppercase text-[10px] font-bold text-amber-600 mb-2">{tt("requests")} ({requests.length})</p>
           <div className="space-y-1.5">
             {requests.map((r) => (
               <div key={r.friendship_id} className="flex items-center gap-2 p-2 rounded-lg bg-amber-50 border border-amber-100">

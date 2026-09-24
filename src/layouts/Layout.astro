@@ -122,10 +122,10 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
         // Dynamic level calculation (matches levels.ts formula)
         function xpForLevel(lv) { if (lv <= 1) return 0; return Math.floor(10 * lv * lv - 10 * lv + 200); }
         function getLevelColor(lv) {
-          if (lv >= 900) return 'bg-gradient-to-r from-red-500 to-yellow-500';
-          if (lv >= 700) return 'bg-gradient-to-r from-amber-400 to-orange-500';
-          if (lv >= 500) return 'bg-gradient-to-r from-violet-500 to-pink-500';
-          if (lv >= 300) return 'bg-gradient-to-r from-blue-500 to-cyan-400';
+          if (lv >= 900) return 'bg-red-500';
+          if (lv >= 700) return 'bg-sun hover:bg-sun-dark';
+          if (lv >= 500) return 'bg-brand hover:bg-brand-dark';
+          if (lv >= 300) return 'bg-blue-500';
           if (lv >= 200) return 'bg-violet-500';
           if (lv >= 100) return 'bg-amber-500';
           if (lv >= 50) return 'bg-blue-500';

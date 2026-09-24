@@ -17,10 +17,10 @@ function xpForLevel(level: number): number {
 
 /** Get the color class for a level tier. */
 function getLevelColor(level: number): string {
-  if (level >= 900) return "bg-gradient-to-r from-red-500 to-yellow-500"; // Mythic
-  if (level >= 700) return "bg-gradient-to-r from-amber-400 to-orange-500"; // Legendary
-  if (level >= 500) return "bg-gradient-to-r from-violet-500 to-pink-500"; // Epic
-  if (level >= 300) return "bg-gradient-to-r from-blue-500 to-cyan-400"; // Diamond
+  if (level >= 900) return "bg-red-500"; // Mythic
+  if (level >= 700) return "bg-sun hover:bg-sun-dark"; // Legendary
+  if (level >= 500) return "bg-brand hover:bg-brand-dark"; // Epic
+  if (level >= 300) return "bg-blue-500"; // Diamond
   if (level >= 200) return "bg-violet-500"; // Platinum
   if (level >= 100) return "bg-amber-500"; // Gold
   if (level >= 50) return "bg-blue-500"; // Silver

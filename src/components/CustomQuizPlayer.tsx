@@ -144,7 +144,7 @@ export default function CustomQuizPlayer() {
           </p>
           <a
             href={getCreatePath()}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-violet-600 text-white text-sm font-semibold rounded-xl hover:bg-violet-700 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl hover:bg-violet-700 transition-colors"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
@@ -175,14 +175,14 @@ export default function CustomQuizPlayer() {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Légende", color: "from-amber-400 to-yellow-500", text: "text-amber-700" }
+      ? { label: "Légende", color: "bg-amber-600", text: "text-amber-700" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "from-violet-500 to-purple-600", text: "text-violet-700" }
+        ? { label: "Expert", color: "bg-brand", text: "text-violet-700" }
         : scorePercent >= 50
-          ? { label: "Confirmé", color: "from-blue-500 to-cyan-500", text: "text-blue-700" }
+          ? { label: "Confirmé", color: "bg-blue-600", text: "text-blue-700" }
           : scorePercent >= 30
-            ? { label: "Apprenti", color: "from-green-500 to-emerald-500", text: "text-green-700" }
-            : { label: "Débutant", color: "from-gray-400 to-gray-500", text: "text-gray-600" };
+            ? { label: "Apprenti", color: "bg-green-700", text: "text-green-700" }
+            : { label: "Débutant", color: "bg-gray-600", text: "text-gray-600" };
 
   const scoreMessage =
     scorePercent >= 80
@@ -210,7 +210,7 @@ export default function CustomQuizPlayer() {
         <div className="max-w-lg w-full">
           {banner}
           <div className="text-center space-y-4">
-            <span className="inline-block text-violet-600 font-semibold text-sm tracking-wide uppercase">
+            <span className="first-letter:uppercase inline-block text-violet-600 font-semibold text-sm">
               {quiz.category}
             </span>
             <h1 className="font-display text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
@@ -235,7 +235,7 @@ export default function CustomQuizPlayer() {
             <div className="pt-4">
               <button
                 onClick={handleStart}
-                className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-bold rounded-2xl shadow-lg shadow-violet-200 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all text-base"
+                className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand hover:bg-brand-dark text-white font-bold rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all text-base"
               >
                 Start
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -255,7 +255,7 @@ export default function CustomQuizPlayer() {
       <div className="min-h-[70vh] flex items-center justify-center p-4">
         <div className="max-w-lg w-full">
           {banner}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-lg p-6 md:p-8 text-center space-y-6">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8 text-center space-y-6">
             {/* Score circle */}
             <div className="relative w-32 h-32 mx-auto">
               <svg className="w-32 h-32 -rotate-90" viewBox="0 0 120 120">
@@ -284,7 +284,7 @@ export default function CustomQuizPlayer() {
 
             {/* Rank */}
             <div>
-              <span className={`inline-block px-4 py-1.5 rounded-full text-white text-sm font-bold bg-gradient-to-r ${rank.color}`}>
+              <span className={`inline-block px-4 py-1.5 rounded-full text-white text-sm font-bold ${rank.color}`}>
                 {rank.label}
               </span>
             </div>
@@ -332,7 +332,7 @@ export default function CustomQuizPlayer() {
               </button>
               <button
                 onClick={handleShare}
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-violet-600 text-white text-sm font-semibold rounded-xl hover:bg-violet-700 transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl hover:bg-violet-700 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -341,7 +341,7 @@ export default function CustomQuizPlayer() {
               </button>
               <a
                 href={getCreatePath()}
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white text-sm font-semibold rounded-xl hover:shadow-lg transition-all"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-xl transition-all"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
@@ -378,7 +378,7 @@ export default function CustomQuizPlayer() {
           </div>
           <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
             <div
-              className="h-full rounded-full bg-gradient-to-r from-violet-500 to-purple-600 transition-all duration-500 ease-out"
+              className="h-full rounded-full bg-brand hover:bg-brand-dark transition-all duration-500 ease-out"
               style={{ width: `${hasAnswered ? progressAfterAnswer : progress}%` }}
             />
           </div>
@@ -486,7 +486,7 @@ export default function CustomQuizPlayer() {
           <div className="flex justify-center">
             <button
               onClick={goToNext}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-bold rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all text-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-brand hover:bg-brand-dark text-white font-bold rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all text-sm"
             >
               {currentIndex + 1 >= totalQuestions ? "See results" : "Next question"}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

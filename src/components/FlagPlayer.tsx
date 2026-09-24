@@ -181,7 +181,7 @@ export default function FlagPlayer({ flags, locale = "en" }: Props) {
     const record = streak > 0 && streak >= best;
     return (
       <div className="max-w-md mx-auto text-center p-8 rounded-2xl bg-white border border-gray-200">
-        <p className="text-sm font-bold text-gray-400 uppercase tracking-[0.15em] mb-3">{tt("over", locale)}</p>
+        <p className="first-letter:uppercase text-sm font-bold text-gray-400 mb-3">{tt("over", locale)}</p>
         <p className="text-sm text-gray-500 mb-1">{tt("youGot", locale)}</p>
         <p className="font-display text-6xl font-black text-violet-600 mb-2">{streak}</p>
         {record && <p className="text-sm font-bold text-amber-600 mb-2 animate-confetti-pop">{tt("newBest", locale)}</p>}
@@ -190,7 +190,7 @@ export default function FlagPlayer({ flags, locale = "en" }: Props) {
         </p>
         <button
           onClick={restart}
-          className="px-6 py-3 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm transition-colors cursor-pointer"
+          className="px-6 py-3 rounded-lg bg-brand hover:bg-brand-dark text-white font-bold text-sm transition-colors cursor-pointer"
         >
           {tt("playAgain", locale)}
         </button>
@@ -204,12 +204,12 @@ export default function FlagPlayer({ flags, locale = "en" }: Props) {
       <div className="flex items-center justify-center gap-6 mb-5">
         <div className="text-center">
           <p className="font-display text-3xl font-black text-violet-600 leading-none">{streak}</p>
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mt-1">{tt("streak", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("streak", locale)}</p>
         </div>
         <div className="w-px h-8 bg-gray-200"></div>
         <div className="text-center">
           <p className="font-display text-3xl font-black text-gray-300 leading-none">{best}</p>
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mt-1">{tt("best", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("best", locale)}</p>
         </div>
         <div className="w-px h-8 bg-gray-200"></div>
         <div className="text-center">
@@ -219,7 +219,7 @@ export default function FlagPlayer({ flags, locale = "en" }: Props) {
               {"♥".repeat(LIVES - lives)}
             </span>
           </p>
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mt-1">{tt("lives", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("lives", locale)}</p>
         </div>
       </div>
 
@@ -270,7 +270,7 @@ export default function FlagPlayer({ flags, locale = "en" }: Props) {
             {crowd !== null && <p className="text-xs text-gray-500 mb-3">{tt("crowd", locale, { p: crowd })}</p>}
             <button
               onClick={next}
-              className="px-6 py-3 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm transition-colors cursor-pointer"
+              className="px-6 py-3 rounded-lg bg-brand hover:bg-brand-dark text-white font-bold text-sm transition-colors cursor-pointer"
             >
               {tt("next", locale)}
             </button>

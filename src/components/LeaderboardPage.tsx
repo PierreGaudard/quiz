@@ -32,9 +32,9 @@ function formatXp(n: number): string {
 }
 
 const RANK_STYLES: Record<number, { border: string; bg: string; badge: string; text: string }> = {
-  1: { border: "border-yellow-400", bg: "bg-gradient-to-r from-yellow-400/10 to-yellow-500/5", badge: "bg-yellow-400 text-yellow-900", text: "text-yellow-500" },
-  2: { border: "border-gray-300", bg: "bg-gradient-to-r from-gray-200/20 to-gray-300/10", badge: "bg-gray-300 text-gray-700", text: "text-gray-400" },
-  3: { border: "border-amber-600", bg: "bg-gradient-to-r from-amber-600/10 to-amber-700/5", badge: "bg-amber-600 text-white", text: "text-amber-600" },
+  1: { border: "border-yellow-400", bg: "bg-yellow-500/10", badge: "bg-yellow-400 text-yellow-900", text: "text-yellow-500" },
+  2: { border: "border-gray-300", bg: "bg-gray-800/20", badge: "bg-gray-300 text-gray-700", text: "text-gray-400" },
+  3: { border: "border-amber-600", bg: "bg-amber-600/10", badge: "bg-amber-600 text-white", text: "text-amber-600" },
 };
 
 export default function LeaderboardPage({ locale = "en" }: { locale?: string }) {
@@ -54,12 +54,11 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
   return (
     <main>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#1a0e42] via-[#2d1b69] to-[#1a0e42] pt-12 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "28px 28px" }}></div>
+      <section className="bg-ink pt-12 pb-16 relative overflow-hidden">
         <div className="relative max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-6">
             <svg className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
-            <span className="text-yellow-400 font-bold text-xs uppercase tracking-widest">{tt("title")}</span>
+            <span className="first-letter:uppercase text-yellow-400 font-bold text-xs">{tt("title")}</span>
           </div>
           <h1 className="font-display text-4xl md:text-5xl font-black text-white leading-tight mb-4">{tt("title")}</h1>
           <p className="text-white/50 text-base md:text-lg max-w-xl mx-auto">{tt("subtitle")}</p>
@@ -89,13 +88,13 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
                 const lv = getLevelFromXp(player.xp || 0);
                 return (
                   <a key={player.id} href={`${profileBase}/${player.username}/`}
-                    className={`relative rounded-2xl border-2 ${style.border} ${style.bg} p-6 text-center ${isFirst ? "md:-mt-4 md:pb-8" : ""} transition-all hover:shadow-lg hover:-translate-y-1 block`}>
+                    className={`relative rounded-2xl border-2 ${style.border} ${style.bg} p-6 text-center ${isFirst ? "md:-mt-4 md:pb-8" : ""} transition-all block`}>
                     {isFirst && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                         <svg className="w-8 h-8 text-yellow-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
                       </div>
                     )}
-                    <div className={`${isFirst ? "w-20 h-20" : "w-16 h-16"} mx-auto rounded-full overflow-hidden flex items-center justify-center mb-3 shadow-lg border-2 ${style.border} bg-violet-100`}>
+                    <div className={`${isFirst ? "w-20 h-20" : "w-16 h-16"} mx-auto rounded-full overflow-hidden flex items-center justify-center mb-3 shadow-sm border-2 ${style.border} bg-violet-100`}>
                       {player.avatar ? (
                         <img src={player.avatar} alt={player.username} width={40} height={40} className="w-full h-full object-cover" />
                       ) : (
@@ -110,12 +109,12 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
                     <div className="flex items-center justify-center gap-4 text-sm">
                       <div>
                         <p className={`font-black text-lg ${style.text}`}>{formatXp(player.xp)}</p>
-                        <p className="text-[10px] text-gray-400 font-semibold uppercase">{tt("xp")}</p>
+                        <p className="first-letter:uppercase text-[10px] text-gray-400 font-semibold">{tt("xp")}</p>
                       </div>
                       <div className="w-px h-8 bg-gray-200"></div>
                       <div>
                         <p className="font-black text-lg text-gray-700">{player.quiz_count}</p>
-                        <p className="text-[10px] text-gray-400 font-semibold uppercase">{tt("quizzes")}</p>
+                        <p className="first-letter:uppercase text-[10px] text-gray-400 font-semibold">{tt("quizzes")}</p>
                       </div>
                     </div>
                   </a>
@@ -128,7 +127,7 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
           {players.length > 3 && (
             <section className="max-w-4xl mx-auto px-4 pb-16">
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                <div className="grid grid-cols-[50px_1fr_80px_80px_80px] md:grid-cols-[80px_1fr_120px_120px_120px] items-center px-4 md:px-6 py-3 bg-gray-50 border-b border-gray-100 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                <div className="first-letter:uppercase grid grid-cols-[50px_1fr_80px_80px_80px] md:grid-cols-[80px_1fr_120px_120px_120px] items-center px-4 md:px-6 py-3 bg-gray-50 border-b border-gray-100 text-[10px] font-bold text-gray-400">
                   <span>{tt("rank")}</span>
                   <span>{tt("player")}</span>
                   <span className="text-center">{tt("level")}</span>
@@ -172,13 +171,12 @@ export default function LeaderboardPage({ locale = "en" }: { locale?: string }) 
 
       {/* CTA */}
       <section className="max-w-4xl mx-auto px-4 pb-16">
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#1a0e42] to-[#5D2DC7] p-8 md:p-12 text-center">
-          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "24px 24px" }}></div>
+        <div className="relative overflow-hidden rounded-2xl bg-ink p-8 md:p-12 text-center">
           <div className="relative space-y-4">
             <svg className="w-10 h-10 text-yellow-400 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
             <h2 className="font-display text-2xl md:text-3xl font-black text-white">{tt("joinCta")}</h2>
             <p className="text-white/50 text-sm max-w-md mx-auto">{tt("joinDesc")}</p>
-            <a href={locale === "en" ? "/" : `/${locale}/`} className="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-sm px-6 py-3 rounded-lg transition-colors shadow-lg">{tt("startPlaying")}</a>
+            <a href={locale === "en" ? "/" : `/${locale}/`} className="inline-flex items-center gap-2 bg-sun hover:bg-sun-dark text-ink font-bold text-sm px-6 py-3 rounded-lg transition-colors">{tt("startPlaying")}</a>
           </div>
         </div>
       </section>

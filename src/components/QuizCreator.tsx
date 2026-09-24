@@ -321,7 +321,7 @@ export default function QuizCreator() {
                 className={`cursor-pointer bg-white rounded-2xl border p-4 flex flex-col items-center gap-2 transition-all ${
                   isSelected
                     ? "border-violet-500 ring-2 ring-offset-2 ring-violet-500 shadow-md"
-                    : "border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200"
+                    : "border-gray-100 shadow-sm hover:border-gray-200"
                 }`}
               >
                 <div
@@ -772,7 +772,7 @@ export default function QuizCreator() {
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a
             href={previewLink}
-            className="cursor-pointer bg-violet-600 hover:bg-violet-700 text-white font-semibold px-6 py-3 rounded-xl text-center inline-flex items-center justify-center gap-2 transition-colors"
+            className="cursor-pointer bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl text-center inline-flex items-center justify-center gap-2 transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -851,7 +851,7 @@ export default function QuizCreator() {
           <button
             type="button"
             onClick={handleNext}
-            className="cursor-pointer bg-violet-600 hover:bg-violet-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+            className="cursor-pointer bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
             {step === 4 ? "Soumettre mon quiz" : "Suivant"}
           </button>

@@ -255,7 +255,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
     return (
       <div className="max-w-2xl mx-auto space-y-6">
         {/* Cover */}
-        <div className="relative rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative rounded-2xl overflow-hidden shadow-sm">
           {quiz.coverImage && (
             <>
               <img
@@ -273,7 +273,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             className={`${
               quiz.coverImage
                 ? "absolute bottom-0 left-0 right-0 p-6 md:p-8"
-                : "p-6 md:p-8 bg-gradient-to-br from-violet-600 to-indigo-700"
+                : "p-6 md:p-8 bg-brand hover:bg-brand-dark"
             }`}
           >
             <div className="flex items-center gap-3 mb-3">
@@ -289,7 +289,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
               </span>
             </div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="inline-flex items-center gap-1.5 bg-red-500/90 text-white text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full">
+              <span className="first-letter:uppercase inline-flex items-center gap-1.5 bg-red-500/90 text-white text-xs font-black px-3 py-1 rounded-full">
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -306,11 +306,6 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
         {/* Rules + CTA */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 md:p-6 space-y-5">
           <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center flex-shrink-0">
-              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
             <div>
               <h2 className="font-display font-bold text-gray-900 text-lg">{tt("chronoMode")}</h2>
               <p className="text-gray-500 text-sm mt-1">
@@ -319,30 +314,13 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-3">
-            <div className="text-center p-3 bg-violet-50 rounded-xl border border-violet-100">
-              <div className="text-2xl font-display font-black text-violet-600">60s</div>
-              <div className="text-[10px] text-violet-500 font-semibold uppercase tracking-wide mt-1">
-                {tt("chrono")}
-              </div>
-            </div>
-            <div className="text-center p-3 bg-blue-50 rounded-xl border border-blue-100">
-              <div className="text-2xl font-display font-black text-blue-600">{totalQuestions}</div>
-              <div className="text-[10px] text-blue-500 font-semibold uppercase tracking-wide mt-1">
-                {tt("questions")}
-              </div>
-            </div>
-            <div className="text-center p-3 bg-amber-50 rounded-xl border border-amber-100">
-              <div className="text-2xl font-display font-black text-amber-600">4</div>
-              <div className="text-[10px] text-amber-500 font-semibold uppercase tracking-wide mt-1">
-                {tt("choices")}
-              </div>
-            </div>
-          </div>
+          <p className="text-sm text-gray-700 font-semibold">
+            60 s · {totalQuestions} {tt("questions").toLowerCase()} · 4 {tt("choices").toLowerCase()}
+          </p>
 
           <button
             onClick={handleStart}
-            className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-display font-bold text-lg py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 bg-red-500 text-white font-display font-bold text-lg py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -362,16 +340,15 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
     return (
       <div className="max-w-2xl mx-auto space-y-6">
         {/* Header */}
-        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-6 md:p-8 text-center">
+        <div className="relative rounded-2xl overflow-hidden bg-gray-900 p-6 md:p-8 text-center">
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(168,85,247,0.4),_transparent_70%)]" />
           </div>
           <div className="relative">
             <div className="flex items-center justify-center gap-2 mb-4">
               <svg className="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <span className="text-red-400 font-display font-bold text-sm uppercase tracking-wider">
+              <span className="first-letter:uppercase text-red-400 font-display font-bold text-sm">
                 {allExhausted ? tt("allDone") : tt("timesUp")}
               </span>
             </div>
@@ -388,7 +365,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
           <div className="flex justify-center mb-6">
             <div className="flex items-center gap-3 bg-gray-50 rounded-2xl px-6 py-4 border border-gray-100">
               <div
-                className={`w-14 h-14 ${rank.color} rounded-xl flex items-center justify-center text-2xl font-display font-black text-white shadow-lg`}
+                className={`w-14 h-14 ${rank.color} rounded-xl flex items-center justify-center text-2xl font-display font-black text-white shadow-sm`}
               >
                 {rank.icon}
               </div>
@@ -414,25 +391,25 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
             <div className="text-center p-3 bg-violet-50 rounded-xl border border-violet-100">
               <div className="text-2xl font-display font-black text-violet-600">{elapsed}s</div>
-              <div className="text-[10px] text-violet-500 font-semibold uppercase tracking-wide mt-1">
+              <div className="first-letter:uppercase text-[10px] text-violet-500 font-semibold mt-1">
                 {tt("time")}
               </div>
             </div>
             <div className="text-center p-3 bg-blue-50 rounded-xl border border-blue-100">
               <div className="text-2xl font-display font-black text-blue-600">{accuracy}%</div>
-              <div className="text-[10px] text-blue-500 font-semibold uppercase tracking-wide mt-1">
+              <div className="first-letter:uppercase text-[10px] text-blue-500 font-semibold mt-1">
                 {tt("accuracy")}
               </div>
             </div>
             <div className="text-center p-3 bg-amber-50 rounded-xl border border-amber-100">
               <div className="text-2xl font-display font-black text-amber-600">{bestStreak}</div>
-              <div className="text-[10px] text-amber-500 font-semibold uppercase tracking-wide mt-1">
+              <div className="first-letter:uppercase text-[10px] text-amber-500 font-semibold mt-1">
                 {tt("bestStreak")}
               </div>
             </div>
             <div className="text-center p-3 bg-green-50 rounded-xl border border-green-100">
               <div className="text-2xl font-display font-black text-green-600">{totalAnswered}</div>
-              <div className="text-[10px] text-green-500 font-semibold uppercase tracking-wide mt-1">
+              <div className="first-letter:uppercase text-[10px] text-green-500 font-semibold mt-1">
                 {tt("questions")}
               </div>
             </div>
@@ -442,7 +419,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
           <div className="flex flex-col sm:flex-row gap-3">
             <button
               onClick={handleRestart}
-              className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-display font-bold text-base py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+              className="flex-1 flex items-center justify-center gap-2 bg-red-500 text-white font-display font-bold text-base py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -451,7 +428,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             </button>
             <button
               onClick={handleShare}
-              className="flex-1 flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-violet-300 hover:bg-violet-50 text-gray-700 font-display font-bold text-base py-3.5 rounded-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+              className="flex-1 flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-violet-300 hover:bg-violet-50 text-gray-700 font-display font-bold text-base py-3.5 rounded-xl transition-all duration-200 cursor-pointer"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -471,9 +448,8 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
   return (
     <div className="max-w-2xl mx-auto space-y-4">
       {/* Timer + score header */}
-      <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-4 md:p-6 shadow-lg">
+      <div className="rounded-2xl overflow-hidden bg-gray-900 p-4 md:p-6 shadow-sm">
         <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,_rgba(168,85,247,0.5),_transparent_60%)]" />
         </div>
         <div className="relative flex items-center justify-between gap-4">
           {/* Score */}
@@ -481,7 +457,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             <div className="text-3xl md:text-4xl font-display font-black text-white leading-none">
               {score}
             </div>
-            <div className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mt-1">
+            <div className="first-letter:uppercase text-[10px] text-gray-400 font-semibold mt-1">
               {tt("correct")}
             </div>
             <div className="text-xs text-gray-500 font-medium mt-0.5">
@@ -520,7 +496,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
               <span className={`text-3xl md:text-4xl font-display font-black ${timerColor} leading-none`}>
                 {timeLeft}
               </span>
-              <span className="text-[9px] text-gray-500 font-bold uppercase tracking-wider mt-0.5">
+              <span className="first-letter:uppercase text-[9px] text-gray-500 font-bold mt-0.5">
                 {tt("sec")}
               </span>
             </div>
@@ -531,7 +507,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             <div className={`text-3xl md:text-4xl font-display font-black leading-none ${streak >= 3 ? "text-amber-400" : "text-white"}`}>
               {streak}
             </div>
-            <div className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mt-1">
+            <div className="first-letter:uppercase text-[10px] text-gray-400 font-semibold mt-1">
               {tt("streak")}
             </div>
             {streak >= 3 && (
@@ -549,7 +525,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
         <div className="mt-4 flex items-center gap-2">
           <div className="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
             <div
-              className="h-full rounded-full bg-gradient-to-r from-violet-400 to-purple-500 transition-all duration-200 ease-out"
+              className="h-full rounded-full bg-brand hover:bg-brand-dark transition-all duration-200 ease-out"
               style={{ width: `${(questionIndex / totalQuestions) * 100}%` }}
             />
           </div>

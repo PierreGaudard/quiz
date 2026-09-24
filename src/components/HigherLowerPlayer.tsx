@@ -258,7 +258,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
   if (phase === "choose" || !set || !left || !right) {
     return (
       <div className="max-w-3xl mx-auto">
-        <p className="text-center text-sm font-bold text-violet-600 uppercase tracking-[0.15em] mb-5">
+        <p className="first-letter:uppercase text-center text-sm font-bold text-violet-600 mb-5">
           {tt("chooseTheme", locale)}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -266,7 +266,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
             <button
               key={s.id}
               onClick={() => start(s)}
-              className="group text-left p-5 rounded-xl border border-gray-200 bg-white hover:border-violet-400 hover:shadow-lg hover:shadow-violet-500/5 transition-all cursor-pointer"
+              className="group text-left p-5 rounded-xl border border-gray-200 bg-white hover:border-violet-400 transition-all cursor-pointer"
             >
               <p className="font-display text-base font-bold text-gray-900 mb-1 group-hover:text-violet-700 transition-colors">
                 {s.question}
@@ -292,7 +292,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
     return (
       <div className="max-w-md mx-auto text-center">
         <div className="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm">
-          <p className="text-sm font-bold text-gray-400 uppercase tracking-[0.15em] mb-3">{tt("gameOver", locale)}</p>
+          <p className="first-letter:uppercase text-sm font-bold text-gray-400 mb-3">{tt("gameOver", locale)}</p>
           <p className="text-sm text-gray-500 mb-1">{tt("youGot", locale)}</p>
           <p className="font-display text-6xl font-black text-violet-600 mb-2">{streak}</p>
           {record && streak > 0 && (
@@ -310,7 +310,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
             envie de relancer.
           */}
           <div className="mb-6 p-4 rounded-xl bg-gray-50 border border-gray-100 text-left">
-            <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2 text-center">
+            <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mb-2 text-center">
               {tt("missed", locale)}
             </p>
             <div className="flex items-center justify-between gap-3 text-sm">
@@ -331,7 +331,7 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button
               onClick={() => start(set)}
-              className="px-6 py-3 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm transition-colors cursor-pointer"
+              className="px-6 py-3 rounded-lg bg-brand hover:bg-brand-dark text-white font-bold text-sm transition-colors cursor-pointer"
             >
               {tt("playAgain", locale)}
             </button>
@@ -360,12 +360,12 @@ export default function HigherLowerPlayer({ sets, locale = "en" }: Props) {
       <div className="flex items-center justify-center gap-6 mb-5">
         <div className="text-center">
           <p className="font-display text-3xl font-black text-violet-600 leading-none">{streak}</p>
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mt-1">{tt("streak", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("streak", locale)}</p>
         </div>
         <div className="w-px h-8 bg-gray-200"></div>
         <div className="text-center">
           <p className="font-display text-3xl font-black text-gray-300 leading-none">{best}</p>
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mt-1">{tt("best", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("best", locale)}</p>
         </div>
       </div>
 

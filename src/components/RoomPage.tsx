@@ -371,7 +371,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
 
   const card = "bg-white rounded-2xl border border-gray-100 shadow-sm";
   const btnPrimary =
-    "w-full px-6 py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-display font-bold rounded-xl shadow-lg shadow-violet-200 hover:shadow-xl transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed";
+    "w-full px-6 py-3.5 bg-brand hover:bg-brand-dark text-white font-display font-bold rounded-xl transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed";
   const input =
     "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 outline-none text-gray-900";
 
@@ -473,7 +473,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
 
   const scoreboard = (title: string) => (
     <section className={`${card} p-4`} aria-live="polite">
-      <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">{title}</h2>
+      <h2 className="first-letter:uppercase text-xs font-bold text-gray-500 mb-3">{title}</h2>
       <ol className="space-y-2">
         {ranked.map((p, i) => (
           <li key={p.id} className={`flex items-center gap-3 rounded-xl px-3 py-2 ${p.id === me.id ? "bg-violet-50" : ""}`}>
@@ -507,7 +507,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
           <h2 className="font-display font-bold text-xl text-gray-900">{tt("lobbyTitle")}</h2>
           <p className="text-sm text-gray-700 font-semibold">{room.quiz.title}</p>
           <div>
-            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">{tt("code")}</p>
+            <p className="first-letter:uppercase text-xs font-semibold text-gray-500">{tt("code")}</p>
             <p className="font-mono font-black text-5xl tracking-[0.25em] text-violet-700 mt-1">{room.code}</p>
           </div>
           <p className="text-sm text-gray-600 max-w-sm mx-auto">{tt("shareHint")}</p>
@@ -534,7 +534,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
           {errorBox}
         </section>
         <section className={`${card} p-4`}>
-          <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">
+          <h2 className="first-letter:uppercase text-xs font-bold text-gray-500 mb-3">
             {tt("players")} ({room.players.length})
           </h2>
           <ul className="space-y-2">
@@ -578,7 +578,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
             <span className="text-violet-700">{room.quiz.title}</span>
           </div>
           <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-            <div className="h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-500" style={{ width: `${((index + (reveal ? 1 : 0)) / total) * 100}%` }} />
+            <div className="h-full bg-brand transition-all duration-500" style={{ width: `${((index + (reveal ? 1 : 0)) / total) * 100}%` }} />
           </div>
           <h2 className="font-display font-bold text-xl md:text-2xl text-gray-900">{question.question}</h2>
           {question.image && (
@@ -648,7 +648,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
       <div className="flex flex-col sm:flex-row gap-3">
         <a
           href={`${window.location.pathname}?quiz=${encodeURIComponent(room.quiz.slug)}`}
-          className="flex-1 text-center px-6 py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-display font-bold rounded-xl shadow-lg shadow-violet-200"
+          className="flex-1 text-center px-6 py-3.5 bg-brand hover:bg-brand-dark text-white font-display font-bold rounded-xl"
         >
           {tt("playAgain")}
         </a>

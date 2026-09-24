@@ -369,7 +369,7 @@ export default function QuizPlayer({ quiz }: Props) {
       <div className="h-[100dvh] flex items-center justify-center p-4">
         <div className="max-w-lg w-full">
           {quiz.coverImage && (
-            <div className="relative rounded-3xl overflow-hidden mb-6 shadow-xl aspect-[2/1]">
+            <div className="relative rounded-3xl overflow-hidden mb-6 shadow-md aspect-[2/1]">
               <img src={withBase(quiz.coverImage)} alt={quiz.title} className="w-full h-full object-cover" loading="eager" width={800} height={450} />
               <div className="absolute inset-0 bg-black/30" />
               <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between">
@@ -386,7 +386,7 @@ export default function QuizPlayer({ quiz }: Props) {
             </div>
           )}
           <div className="text-center space-y-3">
-            <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase">{quiz.category}</span>
+            <span className="first-letter:uppercase inline-block text-primary font-semibold text-sm">{quiz.category}</span>
             <h1 className="font-display text-2xl md:text-3xl font-bold text-text-primary leading-tight">{quiz.title}</h1>
             <p className="text-text-secondary text-sm leading-relaxed">{quiz.description}</p>
             <div className="flex items-center justify-center gap-5 text-xs text-text-secondary pt-1">
@@ -410,7 +410,7 @@ export default function QuizPlayer({ quiz }: Props) {
             </div>
             <button
               onClick={handleStart}
-              className="mt-4 inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold text-base px-8 py-3.5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+              className="mt-4 inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold text-base px-8 py-3.5 rounded-2xl shadow-sm transition-all duration-200 cursor-pointer"
             >
               Commencer le quiz
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -505,10 +505,10 @@ export default function QuizPlayer({ quiz }: Props) {
       <div className="min-h-[100dvh] flex items-center justify-center p-4">
         <div className="max-w-md w-full space-y-5">
           {/* Shareable result card */}
-          <div id="result-card" className="space-y-4 bg-white rounded-3xl p-6 shadow-lg border border-gray-100">
+          <div id="result-card" className="space-y-4 bg-white rounded-3xl p-6 shadow-sm border border-gray-100">
             {/* Rank badge */}
             <div className="text-center animate-score-reveal">
-              <div className={`inline-flex items-center gap-3 ${rank.color} text-white px-6 py-3 rounded-2xl shadow-xl`}>
+              <div className={`inline-flex items-center gap-3 ${rank.color} text-white px-6 py-3 rounded-2xl shadow-md`}>
                 <span className="text-3xl">{rank.icon}</span>
                 <div className="text-left">
                   <div className="text-xs font-medium opacity-80">Ton rang</div>
@@ -533,8 +533,8 @@ export default function QuizPlayer({ quiz }: Props) {
             </div>
 
             {/* XP earned */}
-            <div className="bg-amber-500 rounded-2xl p-4 shadow-lg text-center text-white">
-              <div className="text-xs font-semibold uppercase tracking-wider opacity-80 mb-1">Expérience gagnée</div>
+            <div className="bg-amber-500 rounded-2xl p-4 shadow-sm text-center text-white">
+              <div className="first-letter:uppercase text-xs font-semibold opacity-80 mb-1">Expérience gagnée</div>
               <div className="text-4xl font-display font-bold animate-score-reveal">+{totalXp} XP</div>
               <div className="text-xs opacity-80 mt-1">
                 {correctCount > 0 ? `~${xpPerQuestion} XP/bonne réponse` : "Retente ta chance !"}
@@ -544,7 +544,7 @@ export default function QuizPlayer({ quiz }: Props) {
             {/* Question-by-question timeline - clickable (skip for chrono/estimation) */}
             {!isChrono && !isEstimation && (
             <div>
-              <div className="text-xs font-semibold text-text-secondary uppercase tracking-wide mb-3">Détail par question</div>
+              <div className="first-letter:uppercase text-xs font-semibold text-text-secondary mb-3">Détail par question</div>
               <div className="flex items-center gap-1">
                 {quiz.questions.map((q, i) => {
                   const wasCorrect = answers[i] === q.correctAnswer;
@@ -552,7 +552,7 @@ export default function QuizPlayer({ quiz }: Props) {
                     <button
                       key={q.id}
                       onClick={() => setExpandedQuestion(expandedQuestion === i ? null : i)}
-                      className={`flex-1 relative cursor-pointer transition-all hover:-translate-y-0.5 ${expandedQuestion === i ? "scale-110 z-10" : ""}`}
+                      className={`flex-1 relative cursor-pointer transition-all ${expandedQuestion === i ? "scale-110 z-10" : ""}`}
                     >
                       <div className={`h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-all ${
                         wasCorrect ? "bg-green-100 text-green-600" : "bg-red-100 text-red-500"
@@ -633,7 +633,7 @@ export default function QuizPlayer({ quiz }: Props) {
               {/* Share (native Web Share API with image) */}
               <button
                 onClick={handleShareNative}
-                className="flex items-center justify-center gap-2 h-11 px-5 rounded-xl bg-primary text-white hover:bg-primary-dark transition-all hover:-translate-y-0.5 shadow-sm cursor-pointer font-semibold text-sm"
+                className="flex items-center justify-center gap-2 h-11 px-5 rounded-xl bg-primary text-white hover:bg-primary-dark transition-all shadow-sm cursor-pointer font-semibold text-sm"
                 title="Partager"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
@@ -642,7 +642,7 @@ export default function QuizPlayer({ quiz }: Props) {
               {/* Download image */}
               <button
                 onClick={handleDownloadCard}
-                className="flex items-center justify-center gap-2 h-11 px-5 rounded-xl bg-gray-700 text-white hover:bg-gray-800 transition-all hover:-translate-y-0.5 shadow-sm cursor-pointer font-semibold text-sm"
+                className="flex items-center justify-center gap-2 h-11 px-5 rounded-xl bg-gray-700 text-white hover:bg-gray-800 transition-all shadow-sm cursor-pointer font-semibold text-sm"
                 title="Télécharger l'image"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
@@ -651,7 +651,7 @@ export default function QuizPlayer({ quiz }: Props) {
               {/* Copy image */}
               <button
                 onClick={handleCopyCard}
-                className="flex items-center justify-center gap-2 h-11 px-5 rounded-xl bg-gray-500 text-white hover:bg-gray-600 transition-all hover:-translate-y-0.5 shadow-sm cursor-pointer font-semibold text-sm"
+                className="flex items-center justify-center gap-2 h-11 px-5 rounded-xl bg-gray-500 text-white hover:bg-gray-600 transition-all shadow-sm cursor-pointer font-semibold text-sm"
                 title="Copier l'image"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" /></svg>
@@ -661,7 +661,7 @@ export default function QuizPlayer({ quiz }: Props) {
 
             {/* Main actions */}
             <div className="flex gap-3 justify-center">
-              <button onClick={handleStart} className="flex-1 inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-2xl shadow-lg cursor-pointer transition-all hover:-translate-y-0.5">
+              <button onClick={handleStart} className="flex-1 inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-2xl shadow-sm cursor-pointer transition-all">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
                 Rejouer
               </button>
@@ -756,7 +756,7 @@ export default function QuizPlayer({ quiz }: Props) {
                 {question.image ? (
                   <img src={question.image} alt="" className="w-full h-full object-cover" width={800} height={600} />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-violet-500 to-indigo-600" />
+                  <div className="w-full h-full bg-brand" />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -771,8 +771,8 @@ export default function QuizPlayer({ quiz }: Props) {
                   let classes = "";
                   if (!hasAnswered) {
                     classes = isVrai
-                      ? "bg-emerald-50 border-emerald-300 hover:bg-emerald-100 text-emerald-700 cursor-pointer hover:-translate-y-1 hover:shadow-lg"
-                      : "bg-red-50 border-red-300 hover:bg-red-100 text-red-700 cursor-pointer hover:-translate-y-1 hover:shadow-lg";
+                      ? "bg-emerald-50 border-emerald-300 hover:bg-emerald-100 text-emerald-700 cursor-pointer"
+                      : "bg-red-50 border-red-300 hover:bg-red-100 text-red-700 cursor-pointer";
                   } else if (isCorrectAnswer) {
                     classes = "bg-green-100 border-green-500 border-2 text-green-800 animate-confetti-pop";
                   } else if (isSelected) {
@@ -802,7 +802,7 @@ export default function QuizPlayer({ quiz }: Props) {
               <div className="grid grid-cols-2 gap-2 relative">
                 {/* VS lightning badge */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                  <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-orange-500 text-white rounded-full flex items-center justify-center font-display font-black text-base shadow-xl border-3 border-white">
+                  <div className="w-14 h-14 bg-sun hover:bg-sun-dark text-white rounded-full flex items-center justify-center font-display font-black text-base border-3 border-white">
                     <span className="drop-shadow-lg">VS</span>
                   </div>
                 </div>
@@ -832,13 +832,13 @@ export default function QuizPlayer({ quiz }: Props) {
                       key={answer.id}
                       onClick={() => handleAnswer(answer.id)}
                       disabled={hasAnswered}
-                      className={`relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-200 hover:-translate-y-1 hover:shadow-xl ${borderClass}`}
+                      className={`relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-200 ${borderClass}`}
                     >
                       <div className="aspect-[3/4]">
                         {answerImage ? (
                           <img src={answerImage} alt={answer.text} className="w-full h-full object-cover" width={800} height={450} />
                         ) : (
-                          <div className={`w-full h-full ${i === 0 ? "bg-gradient-to-br from-blue-400 to-blue-600" : "bg-gradient-to-br from-rose-400 to-rose-600"}`} />
+                          <div className={`w-full h-full ${i === 0 ? "bg-blue-500" : "bg-rose-500"}`} />
                         )}
                         <div className={`absolute inset-0 bg-gradient-to-t ${overlayClass || "from-black/70"} via-transparent to-transparent`} />
                         <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
@@ -883,7 +883,7 @@ export default function QuizPlayer({ quiz }: Props) {
                   </div>
                   <button
                     onClick={() => setScreen("result")}
-                    className="mt-2 inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-xl shadow-lg cursor-pointer transition-all"
+                    className="mt-2 inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-xl shadow-sm cursor-pointer transition-all"
                   >
                     Voir le résultat
                   </button>
@@ -944,7 +944,7 @@ export default function QuizPlayer({ quiz }: Props) {
                         }
                         setEstimationGuess("");
                       }}
-                      className="px-6 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl shadow-lg cursor-pointer transition-all"
+                      className="px-6 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl shadow-sm cursor-pointer transition-all"
                     >
                       Valider
                     </button>
@@ -994,7 +994,7 @@ export default function QuizPlayer({ quiz }: Props) {
                           ? isInCorrectPosition
                             ? "bg-green-50 border-green-400"
                             : "bg-red-50 border-red-400"
-                          : "bg-white border-gray-200 hover:border-indigo-300 hover:shadow-md cursor-grab active:cursor-grabbing"
+                          : "bg-white border-gray-200 hover:border-indigo-300 cursor-grab active:cursor-grabbing"
                       }`}
                     >
                       <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white ${
@@ -1040,7 +1040,7 @@ export default function QuizPlayer({ quiz }: Props) {
                       setLastXpGain(xp);
                     }
                   }}
-                  className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-lg cursor-pointer transition-all"
+                  className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-sm cursor-pointer transition-all"
                 >
                   Valider l'ordre
                 </button>
@@ -1078,7 +1078,7 @@ export default function QuizPlayer({ quiz }: Props) {
                         setTimerActive(true);
                       }
                     }}
-                    className="w-full py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl shadow-lg cursor-pointer transition-all"
+                    className="w-full py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl shadow-sm cursor-pointer transition-all"
                   >
                     {currentIndex + 1 >= quiz.questions.length ? "Voir mes résultats" : "Question suivante →"}
                   </button>
@@ -1118,7 +1118,7 @@ export default function QuizPlayer({ quiz }: Props) {
 
               let stateClasses = "";
               if (!hasAnswered) {
-                stateClasses = `${color.bg} border cursor-pointer hover:-translate-y-0.5 hover:shadow-md`;
+                stateClasses = `${color.bg} border cursor-pointer`;
               } else if (isCorrectAnswer) {
                 stateClasses = "bg-green-50 border-green-400 border-2 animate-confetti-pop";
               } else if (isSelected && !isCorrectAnswer) {
@@ -1154,28 +1154,28 @@ export default function QuizPlayer({ quiz }: Props) {
           {!hasAnswered && (gameType === "qcm" || !gameType) && (
             <div className="flex items-center justify-center gap-2.5 mt-4">
               <button onClick={handleFiftyFifty} disabled={bonusUsed["fifty-fifty"]}
-                className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer hover:-translate-y-0.5 ${
+                className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer ${
                   bonusUsed["fifty-fifty"]
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                    : "bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-200 hover:shadow-lg"
+                    : "bg-emerald-500 hover:bg-emerald-600 text-white shadow-md"
                 }`}>
                 50/50
               </button>
               <button onClick={handleSecondChance} disabled={bonusUsed["second-chance"]}
-                className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer hover:-translate-y-0.5 ${
+                className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer ${
                   bonusUsed["second-chance"]
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                     : secondChanceActive
-                      ? "bg-fuchsia-600 text-white shadow-lg shadow-fuchsia-300 ring-2 ring-fuchsia-300"
-                      : "bg-fuchsia-500 hover:bg-fuchsia-600 text-white shadow-md shadow-fuchsia-200 hover:shadow-lg"
+                      ? "bg-fuchsia-600 text-white shadow-sm ring-2 ring-fuchsia-300"
+                      : "bg-fuchsia-500 hover:bg-fuchsia-600 text-white shadow-md"
                 }`}>
                 2e chance
               </button>
               <button onClick={handleHint} disabled={bonusUsed.hint}
-                className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer hover:-translate-y-0.5 ${
+                className={`group flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold transition-all cursor-pointer ${
                   bonusUsed.hint
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                    : "bg-cyan-500 hover:bg-cyan-600 text-white shadow-md shadow-cyan-200 hover:shadow-lg"
+                    : "bg-cyan-500 hover:bg-cyan-600 text-white shadow-md"
                 }`}>
                 Indice
               </button>
@@ -1203,7 +1203,7 @@ export default function QuizPlayer({ quiz }: Props) {
               )}
               <button
                 onClick={goToNext}
-                className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold py-3 rounded-xl shadow-lg transition-all duration-200 hover:-translate-y-0.5 cursor-pointer text-sm"
+                className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold py-3 rounded-xl shadow-sm transition-all duration-200 cursor-pointer text-sm"
               >
                 {currentIndex + 1 >= totalQuestions ? "Voir mes résultats" : "Question suivante"}
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -1218,7 +1218,7 @@ export default function QuizPlayer({ quiz }: Props) {
         {question.image && (gameType === "qcm" || gameType === "chrono") && (
           <div className="hidden lg:flex items-center justify-center lg:w-[40%] flex-shrink-0">
             <div className="w-full max-w-sm">
-              <div className={`${imageShape.clip} overflow-hidden shadow-2xl transform ${imageShape.rotate} hover:rotate-0 transition-transform duration-500 border-4 border-white`}>
+              <div className={`${imageShape.clip} overflow-hidden shadow-md transform ${imageShape.rotate} hover:rotate-0 transition-transform duration-500 border-4 border-white`}>
                 <img src={question.image} alt="" className={`w-full ${imageShape.aspect} object-cover`} loading="lazy" width={800} height={600} />
               </div>
             </div>

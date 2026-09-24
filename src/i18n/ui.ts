@@ -36,6 +36,7 @@ const ui = {
     "home.member.scores": "Save your scores",
     "home.member.xp": "Earn XP points",
     "home.member.compare": "Compare with others",
+    "home.member.text": "An account keeps your scores and your XP, and lets you compare yourself with your friends.",
 
     // Quiz
     "quiz.questions": "questions",
@@ -189,6 +190,7 @@ const ui = {
     "home.member.scores": "Enregistrez vos scores",
     "home.member.xp": "Gagnez des points XP",
     "home.member.compare": "Comparez-vous aux autres",
+    "home.member.text": "Un compte garde vos scores et vos XP, et vous permet de vous comparer à vos amis.",
 
     "quiz.questions": "questions",
     "quiz.question": "Question",
@@ -334,6 +336,7 @@ const ui = {
     "home.member.scores": "Guarda tus puntuaciones",
     "home.member.xp": "Gana puntos XP",
     "home.member.compare": "Compárate con otros",
+    "home.member.text": "Una cuenta guarda tus puntuaciones y tu XP, y te permite compararte con tus amigos.",
 
     "quiz.questions": "preguntas",
     "quiz.question": "Pregunta",

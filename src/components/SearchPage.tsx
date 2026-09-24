@@ -248,7 +248,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
             <a
               key={quiz.slug}
               href={lp(`/${quiz.path}`)}
-              className="group relative rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              className="group relative rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-white transition-all duration-300"
             >
               {/* Cover image */}
               {quiz.coverImage ? (
@@ -264,7 +264,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
                 </div>
               ) : (
-                <div className="aspect-[5/2] bg-gradient-to-br from-violet-100 to-violet-50 flex items-center justify-center">
+                <div className="aspect-[5/2] bg-violet-50 flex items-center justify-center">
                   <svg className="w-10 h-10 text-violet-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                   </svg>
@@ -360,7 +360,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
               <a
                 key={cat.slug}
                 href={lp(`/${cat.slug}`)}
-                className="group flex flex-col items-center gap-2 p-4 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
+                className="group flex flex-col items-center gap-2 p-4 rounded-xl bg-white border border-gray-100 shadow-sm transition-all"
               >
                 {cat.coverImage ? (
                   <img

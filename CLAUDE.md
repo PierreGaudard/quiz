@@ -59,6 +59,36 @@ Graph et le texte courant.
 ### No Em Dashes
 Never use -- or em dashes in any content. Rephrase naturally instead.
 
+## Design : pas de motifs d'interface generee
+
+Le site a ete nettoye le 24/09/2026 des motifs qui font « interface generee par
+une IA ». Ils ne reviennent pas, ni dans un nouveau composant ni dans une
+retouche :
+
+- **Aucun degrade decoratif.** Pas de `bg-gradient-*` sur un bouton, une carte,
+  un fond ou un texte. Seule exception : le voile noir (`from-black/...`) pose
+  sur une photo pour que le texte reste lisible.
+- **Pas d'ombre coloree** (`shadow-violet-*` et cie), pas de bouton qui
+  brille, pas de halo radial, pas de blob flou, pas de motif de points, pas de
+  logo en filigrane.
+- **Pas de sur-titre en capitales espacees** (`uppercase tracking-wide`) ni de
+  pastille « Gratuit · Sans inscription » au-dessus d'un titre.
+- **Pas de titre en deux couleurs**, pas de rangee de chiffres « 100 % /
+  < 5 min / 0 », pas de grille de six cartes « icone dans un carre teinte +
+  titre + phrase », pas d'etapes 1-2-3 dans des cercles relies par un trait,
+  pas de liste a coches pour vendre un compte.
+- **Pas d'affirmation inventee** : « numero 1 », « redige par des experts »,
+  dates figees presentees comme du jour.
+
+On construit en aplats des couleurs de marque, definies dans
+`src/styles/global.css` : `ink` (#1a0e42, le header), `ink-2`, `brand`
+(#5b35d5, les actions), `sun` (#ffd84d, la couronne du logo, texte `ink`
+dessus), `paper` et `line`. Un bouton plein est `bg-brand` ou `bg-sun` : le
+relief de bouton de jeu (filet sombre en bas, qui s'ecrase au clic) est pose
+par le CSS global, rien a ajouter. Les couleurs A-B-C-D des reponses et les
+couleurs propres a chaque mode (rouge du chrono, rose du duel) restent : ce
+sont des reperes de jeu.
+
 ## Accessibility Rules
 
 ### Every Interactive Element Must Be Accessible

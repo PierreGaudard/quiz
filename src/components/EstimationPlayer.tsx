@@ -227,7 +227,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
   if (phase === "intro") {
     return (
       <div className="max-w-2xl mx-auto">
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
           {quiz.coverImage && (
             <div className="h-48 overflow-hidden">
               <img
@@ -300,7 +300,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
 
             <button
               onClick={handleStart}
-              className="px-10 py-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-display font-bold text-lg rounded-xl shadow-lg shadow-violet-200 hover:shadow-xl hover:shadow-violet-300 hover:-translate-y-0.5 transition-all cursor-pointer"
+              className="px-10 py-4 bg-brand hover:bg-brand-dark text-white font-display font-bold text-lg rounded-xl transition-all cursor-pointer"
             >
               {tt("start")}
             </button>
@@ -325,10 +325,10 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
 
     return (
       <div className="max-w-2xl mx-auto">
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
-          <div className="bg-gradient-to-br from-violet-600 to-purple-700 p-8 text-center text-white">
+        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+          <div className="bg-brand p-8 text-center text-white">
             <div
-              className={`w-20 h-20 ${rank.color} rounded-2xl flex items-center justify-center text-3xl font-display font-black text-white mx-auto mb-4 shadow-lg`}
+              className={`w-20 h-20 ${rank.color} rounded-2xl flex items-center justify-center text-3xl font-display font-black text-white mx-auto mb-4 shadow-sm`}
             >
               {rank.icon}
             </div>
@@ -375,7 +375,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
               </div>
               <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-violet-500 to-purple-600 transition-all duration-1000 ease-out"
+                  className="h-full rounded-full bg-brand hover:bg-brand-dark transition-all duration-1000 ease-out"
                   style={{ width: `${maxPoints > 0 ? (totalPoints / maxPoints) * 100 : 0}%` }}
                 />
               </div>
@@ -427,7 +427,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
             <div className="flex gap-3">
               <button
                 onClick={handleStart}
-                className="flex-1 px-6 py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-display font-bold rounded-xl shadow-lg shadow-violet-200 hover:shadow-xl hover:-translate-y-0.5 transition-all cursor-pointer"
+                className="flex-1 px-6 py-3.5 bg-brand hover:bg-brand-dark text-white font-display font-bold rounded-xl transition-all cursor-pointer"
               >
                 {tt("playAgain")}
               </button>
@@ -465,14 +465,14 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
         </div>
         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-violet-500 to-purple-600 transition-all duration-500 ease-out"
+            className="h-full rounded-full bg-brand hover:bg-brand-dark transition-all duration-500 ease-out"
             style={{ width: `${((currentIndex + (questionDone ? 1 : 0)) / totalQuestions) * 100}%` }}
           />
         </div>
       </div>
 
       {/* Question card */}
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
         {/* Question image */}
         {currentQuestion.image && (
           <div className="h-48 overflow-hidden">
@@ -655,7 +655,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                   disabled={!inputValue.trim()}
                   className={`px-8 py-3 rounded-xl font-display font-bold text-lg transition-all cursor-pointer ${
                     inputValue.trim()
-                      ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-200 hover:shadow-xl hover:-translate-y-0.5"
+                      ? "bg-brand hover:bg-brand-dark text-white"
                       : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
                 >
@@ -712,7 +712,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
               <div className="flex justify-center">
                 <button
                   onClick={handleNextQuestion}
-                  className="px-8 py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-display font-bold text-lg rounded-xl shadow-lg shadow-violet-200 hover:shadow-xl hover:-translate-y-0.5 transition-all cursor-pointer"
+                  className="px-8 py-3.5 bg-brand hover:bg-brand-dark text-white font-display font-bold text-lg rounded-xl transition-all cursor-pointer"
                 >
                   {currentIndex + 1 < totalQuestions ? "Next question" : "See results"}
                 </button>
@@ -724,7 +724,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
 
       {/* Points legend (compact) */}
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
-        <div className="text-[10px] font-semibold text-gray-400 uppercase tracking-wide mb-2 text-center">
+        <div className="first-letter:uppercase text-[10px] font-semibold text-gray-400 mb-2 text-center">
           {tt("pointsPerAttempt")}
         </div>
         <div className="flex justify-center gap-3 flex-wrap">

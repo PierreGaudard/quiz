@@ -145,7 +145,7 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
   if (phase === "choose" || !set || !item) {
     return (
       <div className="max-w-3xl mx-auto">
-        <p className="text-center text-sm font-bold text-violet-600 uppercase tracking-[0.15em] mb-5">
+        <p className="first-letter:uppercase text-center text-sm font-bold text-violet-600 mb-5">
           {tt("chooseTheme", locale)}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -153,7 +153,7 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
             <button
               key={s.id}
               onClick={() => start(s)}
-              className="group text-left p-5 rounded-xl border border-gray-200 bg-white hover:border-violet-400 hover:shadow-lg hover:shadow-violet-500/5 transition-all cursor-pointer"
+              className="group text-left p-5 rounded-xl border border-gray-200 bg-white hover:border-violet-400 transition-all cursor-pointer"
             >
               <p className="font-display text-base font-bold text-gray-900 mb-1 group-hover:text-violet-700 transition-colors">
                 {s.question}
@@ -179,12 +179,12 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
       <div className="flex items-center justify-center gap-6 mb-5">
         <div className="text-center">
           <p className="font-display text-3xl font-black text-violet-600 leading-none">{solved}</p>
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mt-1">{tt("solved", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("solved", locale)}</p>
         </div>
         <div className="w-px h-8 bg-gray-200"></div>
         <div className="text-center">
           <p className="font-display text-3xl font-black text-gray-300 leading-none">{played}</p>
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mt-1">{tt("played", locale)}</p>
+          <p className="first-letter:uppercase text-[11px] font-bold text-gray-400 mt-1">{tt("played", locale)}</p>
         </div>
       </div>
 
@@ -209,7 +209,7 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
             />
             <button
               onClick={submit}
-              className="px-5 py-3 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm transition-colors cursor-pointer shrink-0"
+              className="px-5 py-3 rounded-lg bg-brand hover:bg-brand-dark text-white font-bold text-sm transition-colors cursor-pointer shrink-0"
             >
               {tt("submit", locale)}
             </button>
@@ -258,7 +258,7 @@ export default function PricePlayer({ sets, locale = "en" }: Props) {
             <div className="flex gap-3 justify-center mt-4">
               <button
                 onClick={() => draw(set)}
-                className="px-6 py-3 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-sm transition-colors cursor-pointer"
+                className="px-6 py-3 rounded-lg bg-brand hover:bg-brand-dark text-white font-bold text-sm transition-colors cursor-pointer"
               >
                 {tt("next", locale)}
               </button>

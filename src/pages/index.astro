@@ -56,21 +56,16 @@ function formatCount(n: number): string {
   <main>
 
     {/* ===== HERO — texte à gauche + Question du Jour à droite ===== */}
-    <section class="hero-gradient pt-10 pb-16 relative overflow-hidden">
-      <div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 28px 28px;"></div>
-      <div aria-hidden="true" class="hero-blob hero-blob-yellow"></div>
-      <div aria-hidden="true" class="hero-blob hero-blob-violet"></div>
-      <img aria-hidden="true" src={withBase('/logo-mark.png')} alt="" width="130" height="120" class="hero-mark hidden lg:block" loading="lazy" />
+    <section class="bg-ink pt-10 pb-16 relative overflow-hidden">
       <div class="relative max-w-5xl mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_370px] gap-5 items-center">
           {/* Left */}
           <div class="space-y-5">
-            <p class="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/30 text-yellow-300 font-bold text-xs uppercase tracking-[0.15em] px-3 py-1.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>Free &middot; No sign-up &middot; An explanation every time</p>
-            <h1 class="font-display text-5xl md:text-[4rem] font-bold text-white leading-[1.05] tracking-tight">
-              The #1 platform<br/><span class="text-yellow-400">for trivia quizzes</span>
+            <h1 class="first-letter:uppercase font-display text-4xl md:text-6xl font-bold text-white leading-[1.05]">
+              Test your knowledge with free quizzes
             </h1>
             <p class="text-white/70 text-base md:text-lg max-w-lg leading-relaxed">
-              Play trivia quizzes on every topic: {totalQuestions} questions written by experts, and an explanation with every answer. Free, no sign-up required.
+              Sports, movies, anime, geography, etc.: {totalQuestions} questions, and under each one the explanation of the right answer. It's free and you play without an account.
             </p>
             <div class="max-w-sm">
               <div class="relative">
@@ -83,16 +78,12 @@ function formatCount(n: number): string {
           </div>
 
           {/* Right: Question du Jour */}
-          <div class="bg-white rounded-3xl p-5 shadow-2xl shadow-black/30 ring-1 ring-white/10 qotd-card">
+          <div class="bg-white rounded-3xl p-5 qotd-card">
             <div class="flex items-center gap-2 mb-4">
-              <span class="w-8 h-8 bg-violet-100 rounded-lg flex items-center justify-center text-violet-600 p-1.5">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
-              </span>
               <div>
-                <p class="font-display font-bold text-sm text-gray-900">Question of the Day</p>
-                <p class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">March 18, 2026</p>
+                <p class="font-display font-bold text-sm text-gray-900">Question of the day</p>
+                <p class="first-letter:uppercase text-[10px] text-gray-400 font-semibold">March 18, 2026</p>
               </div>
-              <span class="ml-auto text-[10px] font-bold bg-violet-100 text-violet-600 px-2 py-0.5 rounded-full">Daily</span>
             </div>
             {qdj && (
               <DailyQuestion
@@ -111,14 +102,14 @@ function formatCount(n: number): string {
     </section>
 
     {/* ===== QUIZ POPULAIRES — scroll ronds ===== */}
-    <section class="bg-gradient-to-r from-[#2d1b69] to-[#1a0e42] py-5 border-t border-white/5">
+    <section class="bg-ink-2 py-5 border-t border-white/5">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="font-display text-base font-bold text-yellow-400 mb-4">Popular Quizzes</h2>
+        <h2 class="font-display text-base font-bold text-yellow-400 mb-4">Popular quizzes</h2>
         <div class="flex gap-5 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
           {popularQuizzes.slice(0, 10).map((quiz, i) => (
             <a href={lp(`/${quiz.path}`)} class="group shrink-0 flex flex-col items-center gap-2 w-[90px]">
               <div class="relative">
-                <div class="w-[76px] h-[76px] rounded-full overflow-hidden border-[3px] border-yellow-400 group-hover:border-yellow-300 group-hover:shadow-yellow-400/40 transition-all shadow-lg">
+                <div class="w-[76px] h-[76px] rounded-full overflow-hidden border-[3px] border-yellow-400 group-hover:border-yellow-300 group-hover: transition-all shadow-sm">
                   {quiz.coverImage ? (
                     <img src={withBase(quiz.coverImage)} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" width="800" height="450" loading="lazy" />
                   ) : (
@@ -141,14 +132,14 @@ function formatCount(n: number): string {
       {(() => {
         const featured = popularQuizzes[0];
         return featured && (
-          <a href={lp(`/${featured.path}`)} class="group block relative rounded-3xl overflow-hidden aspect-[21/8] shadow-xl shadow-violet-900/10">
+          <a href={lp(`/${featured.path}`)} class="group block relative rounded-3xl overflow-hidden aspect-[21/8] shadow-md">
             {featured.coverImage && <img src={withBase(featured.coverImage)} alt={featured.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width="800" height="450" loading="lazy" />}
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
             <div class="relative h-full flex flex-col justify-center p-8 md:p-12 max-w-lg">
               <div class="flex items-center gap-2 mb-3">
                 <span class="text-[10px] font-bold bg-orange-700 text-white px-2 py-0.5 rounded-full">Most played quiz</span>
                 <span class={`text-[10px] font-bold px-2 py-0.5 rounded-full ${DIFFICULTY_STYLE[featured.difficulty]}`}>{featured.difficulty}</span>
-                <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded-full backdrop-blur-sm">{GAME_TYPE_LABELS[featured.gameType] || "QCM"}</span>
+                <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded-full">{GAME_TYPE_LABELS[featured.gameType] || "QCM"}</span>
               </div>
               <h2 class="font-display text-2xl md:text-3xl font-black text-white leading-tight mb-2">{featured.title}</h2>
               <p class="text-sm text-white/60 line-clamp-2 mb-4">{featured.description}</p>
@@ -166,7 +157,7 @@ function formatCount(n: number): string {
     <section class="max-w-6xl mx-auto px-4 pb-12">
       <div class="flex items-center justify-between mb-6">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">Must-Play Quizzes</h2>
-        <a href={lp('/')} class="text-xs font-bold text-violet-600 hover:text-violet-800 bg-violet-50 hover:bg-violet-100 px-3 py-1.5 rounded-full transition-colors">See all →</a>
+        <a href={lp('/')} class="text-sm font-bold text-violet-700 hover:text-violet-900 underline-offset-4 hover:underline">See all →</a>
       </div>
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {popularQuizzes.slice(1, 9).map((quiz) => (
@@ -178,7 +169,7 @@ function formatCount(n: number): string {
               <span class={`text-[10px] font-bold px-2 py-0.5 rounded-full ${DIFFICULTY_STYLE[quiz.difficulty]}`}>{quiz.difficulty}</span>
             </div>
             <div class="absolute top-3 right-3">
-              <span class="text-[10px] font-bold bg-black/40 text-white px-2 py-0.5 rounded-full backdrop-blur-sm">{GAME_TYPE_LABELS[quiz.gameType] || "QCM"}</span>
+              <span class="text-[10px] font-bold bg-black/40 text-white px-2 py-0.5 rounded-full">{GAME_TYPE_LABELS[quiz.gameType] || "QCM"}</span>
             </div>
             {/* Bottom content */}
             <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -199,7 +190,7 @@ function formatCount(n: number): string {
         <h2 class="font-display text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-6">Recently Added</h2>
         <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
           {newestQuizzes.map((quiz, i) => (
-            <a href={lp(`/${quiz.path}`)} class="group shrink-0 w-[240px] bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-violet-500/10 hover:-translate-y-1 transition-all duration-300">
+            <a href={lp(`/${quiz.path}`)} class="group shrink-0 w-[240px] bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-300">
               <div class="relative aspect-video overflow-hidden">
                 {quiz.coverImage && <img src={withBase(quiz.coverImage)} alt={quiz.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="450" loading="lazy" />}
                 <div class="absolute top-2 left-2">
@@ -207,7 +198,7 @@ function formatCount(n: number): string {
                 </div>
               </div>
               <div class="p-3">
-                <p class="text-[10px] font-bold text-violet-700 uppercase tracking-wide mb-0.5">{quiz.category}</p>
+                <p class="first-letter:uppercase text-[10px] font-bold text-violet-700 mb-0.5">{quiz.category}</p>
                 <h3 class="text-sm font-bold text-gray-900 group-hover:text-violet-700 leading-tight line-clamp-2 transition-colors">{quiz.title}</h3>
                 <p class="text-[10px] text-gray-400 mt-1">{['Mar 18', 'Mar 17', 'Mar 16', 'Mar 15'][i]} 2026 • {quiz.questions.length} questions</p>
               </div>
@@ -228,10 +219,9 @@ function formatCount(n: number): string {
             <p>Every question comes with an explanation, so a question you get wrong is a question you learn from. You remember an answer you had to dig for better than one you read.</p>
           </div>
         </div>
-        <div class="bg-violet-50 rounded-2xl p-5 border border-violet-100">
+        <div class="bg-white rounded-2xl p-5 border border-line">
           <div class="flex items-center gap-2 mb-3">
-            <span class="w-7 h-7 bg-violet-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">?</span>
-            <p class="text-xs font-bold text-violet-700">Test yourself with a MCQ</p>
+            <p class="font-display text-sm font-bold text-gray-900">Test yourself with a MCQ</p>
           </div>
           <MiniQCM locale="en" client:idle />
         </div>
@@ -242,7 +232,7 @@ function formatCount(n: number): string {
     <section class="max-w-6xl mx-auto px-4 py-12">
       <div class="flex items-center justify-between mb-6">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">Explore by Category</h2>
-        <a href={lp('/')} class="text-xs font-bold text-violet-600 hover:text-violet-800 bg-violet-50 hover:bg-violet-100 px-3 py-1.5 rounded-full transition-colors">All →</a>
+        <a href={lp('/')} class="text-sm font-bold text-violet-700 hover:text-violet-900 underline-offset-4 hover:underline">All →</a>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {homepageCategories.map((cat) => {
@@ -262,7 +252,7 @@ function formatCount(n: number): string {
                 <p class="text-xs text-white/60 mt-0.5">{catQuizzes.length} quiz</p>
                 <div class="flex flex-wrap gap-1 mt-2">
                   {cat.subcategories.slice(0, 2).map((sub) => (
-                    <span class="text-[9px] bg-white/15 backdrop-blur-sm px-1.5 py-0.5 rounded-full">{sub}</span>
+                    <span class="text-[9px] bg-white/15 px-1.5 py-0.5 rounded-full">{sub}</span>
                   ))}
                 </div>
               </div>
@@ -277,7 +267,7 @@ function formatCount(n: number): string {
       <div class="max-w-6xl mx-auto px-4">
         <div class="text-center mb-8">
           <h2 class="font-display text-2xl md:text-3xl font-bold text-white tracking-tight mb-1">6 Ways to Play</h2>
-          <p class="text-sm text-white/40">Not just multiple choice: discover unique game modes</p>
+          <p class="text-sm text-white/70">Every quiz has its own game mode. Here are the six of them.</p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
           {gameTypesData.map((gt) => {
@@ -305,10 +295,9 @@ function formatCount(n: number): string {
     {/* ===== SEO + VRAI/FAUX côte à côte (inversé) ===== */}
     <section class="max-w-6xl mx-auto px-4 py-10">
       <div class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 items-start">
-        <div class="bg-emerald-50 rounded-2xl p-5 border border-emerald-100">
+        <div class="bg-white rounded-2xl p-5 border border-line">
           <div class="flex items-center gap-2 mb-3">
-            <span class="w-7 h-7 bg-emerald-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">V/F</span>
-            <p class="text-xs font-bold text-emerald-700">True or False? You decide</p>
+            <p class="font-display text-sm font-bold text-gray-900">True or False? You decide</p>
           </div>
           <MiniVraiFaux locale="en" client:idle />
         </div>
@@ -333,10 +322,9 @@ function formatCount(n: number): string {
             <p>Estimation works differently: nothing to pick from, just a number to find. You give a number, we say higher or lower, and you narrow it down. The one on the right is playable, have a go. Same idea for <a href={lp('/video-games')} class="text-violet-600 font-semibold hover:underline">the rarer Minecraft mobs</a>.</p>
           </div>
         </div>
-        <div class="bg-cyan-50 rounded-2xl p-5 border border-cyan-100">
+        <div class="bg-white rounded-2xl p-5 border border-line">
           <div class="flex items-center gap-2 mb-3">
-            <span class="w-7 h-7 bg-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">#</span>
-            <p class="text-xs font-bold text-cyan-700">Higher or lower?</p>
+            <p class="font-display text-sm font-bold text-gray-900">Higher or lower?</p>
           </div>
           <MiniEstimation locale="en" client:idle />
         </div>
@@ -345,15 +333,12 @@ function formatCount(n: number): string {
 
     {/* ===== CTA CRÉER ===== */}
     <section class="max-w-6xl mx-auto px-4 py-12">
-      <div class="relative overflow-hidden rounded-3xl hero-gradient p-8 md:p-14 text-center shadow-2xl shadow-violet-900/20">
-        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 24px 24px;"></div>
-        <div aria-hidden="true" class="hero-blob hero-blob-yellow cta-blob"></div>
-        <img aria-hidden="true" src={withBase('/logo-mark.png')} alt="" width="130" height="120" class="cta-mark" loading="lazy" />
+      <div class="relative overflow-hidden rounded-3xl bg-ink p-8 md:p-14 text-center">
         <div class="relative space-y-4">
           
           <h2 class="font-display text-3xl md:text-4xl font-bold text-white tracking-tight">Got a quiz idea?</h2>
           <p class="text-white/70 text-base max-w-md mx-auto">Add your questions with their explanations, and share it with a link. It is free.</p>
-          <a href={lp('/create')} class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-[#1a0e42] font-bold text-sm px-7 py-3.5 rounded-full transition-all shadow-lg shadow-yellow-400/30 hover:shadow-yellow-300/40 hover:-translate-y-0.5">Create my quiz →</a>
+          <a href={lp('/create')} class="inline-flex items-center gap-2 bg-sun hover:bg-sun-dark text-ink font-display font-bold text-sm px-7 py-3.5 rounded-xl transition-colors">Create my quiz →</a>
         </div>
       </div>
     </section>
@@ -376,42 +361,42 @@ function formatCount(n: number): string {
             <p class="text-sm text-gray-400 leading-relaxed">Answers to the questions we get asked most about WizyQuiz.</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
+            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
                 Are the quizzes free and without registration?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">Every quiz is free and plays without an account. Signing up is free too, and only serves to keep your scores and compare them with friends.</p>
             </details>
-            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
+            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
                 What types of quizzes do you offer?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">There are five categories so far, one quiz each: sports with football, geography with world flags, anime with Dragon Ball, cinema with Harry Potter and video games with Minecraft. That is 71 questions in total, and more are on the way.</p>
             </details>
-            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
+            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
                 Can quizzes help with revision?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">You remember something better when you have to retrieve it yourself than when you reread a page, and that is what a quiz does. Every answer is explained. That said, the quizzes here are about general knowledge and hobbies, not about a school syllabus.</p>
             </details>
-            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
+            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
                 What are the different game modes available?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">The mode available today is the four-answer multiple choice, with three bonuses to get you out of a hard question. Five more modes are built and waiting on quizzes: true or false, chrono, estimation, duel and chronological order.</p>
             </details>
-            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
+            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
                 How do I create my own quiz on WizyQuiz?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </summary>
               <p class="px-5 pb-4 text-xs text-gray-500 leading-relaxed">You pick a category, add your questions with their answers and explanations, and the quiz goes online. You then get a link to share it.</p>
             </details>
-            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group hover:shadow-md open:shadow-md open:border-violet-200 transition-all">
+            <details name="faq" class="bg-white rounded-2xl border border-gray-100 overflow-hidden group open:shadow-md open:border-violet-200 transition-all">
               <summary class="px-5 py-4 cursor-pointer text-sm font-bold text-gray-900 flex items-center justify-between">
                 Does WizyQuiz work on mobile and tablet?
                 <svg class="w-4 h-4 text-gray-300 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>

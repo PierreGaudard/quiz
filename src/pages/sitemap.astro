@@ -57,7 +57,7 @@ const allQuizzes = getAllQuizzes(locale);
                 {/* Subcategories */}
                 {cat.subcategories.length > 0 && (
                   <div class="mb-4">
-                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">{t(locale, "cat.subcategories")}</p>
+                    <p class="first-letter:uppercase text-xs font-semibold text-gray-400 mb-2">{t(locale, "cat.subcategories")}</p>
                     <div class="flex flex-wrap gap-1.5">
                       {cat.subcategories.map((sub) => {
                         const subSlug = slugifySubcategory(sub);
@@ -79,7 +79,7 @@ const allQuizzes = getAllQuizzes(locale);
                 {/* Quizzes in this category */}
                 {catQuizzes.length > 0 && (
                   <div>
-                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Quiz</p>
+                    <p class="first-letter:uppercase text-xs font-semibold text-gray-400 mb-2">Quiz</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1">
                       {catQuizzes.map((q) => (
                         <a
