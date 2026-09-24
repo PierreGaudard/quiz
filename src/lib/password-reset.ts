@@ -50,6 +50,7 @@ export function resetEmail(locale: Locale, name: string, link: string) {
   const c = COPY[locale];
   const hello = c.hello.replace("{name}", name);
   const text = `${hello}\n\n${c.body}\n\n${link}\n\n${c.ignore}\n\nWizyQuiz`;
+  // impeccable-disable-next-line overused-font: un e-mail n'a que les polices systeme, Arial est la plus sure
   const html = `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#1a0e42;max-width:520px">
 <p>${esc(hello)}</p><p>${esc(c.body)}</p>
 <p><a href="${esc(link)}" style="display:inline-block;background:#5b35d5;color:#fff;text-decoration:none;font-weight:bold;padding:12px 20px;border-radius:10px">${esc(c.cta)}</a></p>
