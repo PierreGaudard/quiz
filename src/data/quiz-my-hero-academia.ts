@@ -22,7 +22,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
     fr: {
       title: "Chrono My Hero Academia : 60 secondes",
       description:
-        "Dix questions sur My Hero Academia en une minute : Deku, All Might, Bakugo, les Quirks et les méchants.",
+        "Vingt questions sur My Hero Academia en une minute : Deku, All Might, Bakugo, les Alters et les méchants.",
       questions: [
         {
           id: 1,
@@ -54,7 +54,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         {
           id: 3,
           image: "/images/q-my-hero-academia-03.webp",
-          question: "Quel Quirk All Might transmet-il à Deku ?",
+          question: "Quel Alter All Might transmet-il à Deku ?",
           answers: [
             { id: "a", text: "All For One" },
             { id: "b", text: "Explosion" },
@@ -81,7 +81,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         {
           id: 5,
           image: "/images/q-my-hero-academia-05.webp",
-          question: "Quel est le Quirk de Bakugo ?",
+          question: "Quel est l'Alter de Bakugo ?",
           answers: [
             { id: "a", text: "Explosion" },
             { id: "b", text: "Engine" },
@@ -131,11 +131,11 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
           ],
           correctAnswer: "d",
           explanation:
-            "Tomura Shigaraki, avec son Quirk Decay. Il dirige l'Alliance des vilains.",
+            "Tomura Shigaraki, avec son Alter Decay. Il dirige l'Alliance des vilains.",
         },
         {
           id: 9,
-          question: "Que fait le Quirk d'Ochaco Uraraka ?",
+          question: "Que fait l'Alter d'Ochaco Uraraka ?",
           answers: [
             { id: "a", text: "Il rend invisible" },
             { id: "b", text: "Il produit de l'acide" },
@@ -144,11 +144,11 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Son Quirk s'appelle Zero Gravity : tout ce qu'elle touche du bout des doigts se met à flotter.",
+            "Son Alter s'appelle Zero Gravity : tout ce qu'elle touche du bout des doigts se met à flotter.",
         },
         {
           id: 10,
-          question: "Quelle part de la population a un Quirk dans la série ?",
+          question: "Quelle part de la population a un Alter dans la série ?",
           answers: [
             { id: "a", text: "Environ 20 %" },
             { id: "b", text: "Environ 50 %" },
@@ -157,14 +157,144 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Environ 80 % des gens ont un Quirk. Deku fait partie des 20 % qui naissent sans pouvoir, jusqu'à ce qu'All Might lui transmette le sien.",
+            "Environ 80 % des gens ont un Alter. Deku fait partie des 20 % qui naissent sans pouvoir, jusqu'à ce qu'All Might lui transmette le sien.",
+        },
+        {
+          id: 11,
+          question: "Quel élève de la 1-A peut durcir son corps ?",
+          answers: [
+            { id: "a", text: "Tenya Iida" },
+            { id: "b", text: "Eijiro Kirishima" },
+            { id: "c", text: "Minoru Mineta" },
+            { id: "d", text: "Mashirao Ojiro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Eijiro Kirishima, avec son Alter Hardening. Sa peau devient dure comme de la pierre.",
+        },
+        {
+          id: 12,
+          question: "Que peut faire Momo Yaoyorozu ?",
+          answers: [
+            { id: "a", text: "Créer des objets" },
+            { id: "b", text: "Voler" },
+            { id: "c", text: "Lire les pensées" },
+            { id: "d", text: "Devenir géante" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Créer des objets à partir de son propre corps. Son Alter s'appelle Creation.",
+        },
+        {
+          id: 13,
+          question: "Quel élève a des moteurs dans les jambes ?",
+          answers: [
+            { id: "a", text: "Denki Kaminari" },
+            { id: "b", text: "Eijiro Kirishima" },
+            { id: "c", text: "Tenya Iida" },
+            { id: "d", text: "Minoru Mineta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Tenya Iida. Son Alter, Engine, lui permet de courir très vite, grâce aux moteurs de ses mollets.",
+        },
+        {
+          id: 14,
+          question: "Qui est le grand ennemi d'All Might ?",
+          answers: [
+            { id: "a", text: "Stain" },
+            { id: "b", text: "All For One" },
+            { id: "c", text: "Dabi" },
+            { id: "d", text: "Overhaul" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "All For One, qui vole les Alters des autres. C'est aussi lui qui a formé Tomura Shigaraki.",
+        },
+        {
+          id: 15,
+          question: "Quel méchant est surnommé le « tueur de héros » ?",
+          answers: [
+            { id: "a", text: "Stain" },
+            { id: "b", text: "Dabi" },
+            { id: "c", text: "Muscular" },
+            { id: "d", text: "Twice" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Stain. Il s'en prend aux héros qui, selon lui, ne le font que pour l'argent ou la gloire.",
+        },
+        {
+          id: 16,
+          question: "Que boit Himiko Toga pour se transformer ?",
+          answers: [
+            { id: "a", text: "De l'eau" },
+            { id: "b", text: "Du lait" },
+            { id: "c", text: "Du thé" },
+            { id: "d", text: "Du sang" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Du sang. Son Alter, Transform, lui donne l'apparence de la personne dont elle a bu le sang.",
+        },
+        {
+          id: 17,
+          question: "L'Alter de Tsuyu Asui imite quel animal ?",
+          answers: [
+            { id: "a", text: "Le chat" },
+            { id: "b", text: "La grenouille" },
+            { id: "c", text: "Le serpent" },
+            { id: "d", text: "L'oiseau" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La grenouille. Elle a une langue très longue, elle saute loin et elle peut s'accrocher aux murs.",
+        },
+        {
+          id: 18,
+          question: "Quel élève de la 1-A produit de l'électricité ?",
+          answers: [
+            { id: "a", text: "Fumikage Tokoyami" },
+            { id: "b", text: "Minoru Mineta" },
+            { id: "c", text: "Denki Kaminari" },
+            { id: "d", text: "Mashirao Ojiro" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Denki Kaminari. Quand il en libère trop, son cerveau grille et il reste un moment complètement à l'ouest.",
+        },
+        {
+          id: 19,
+          question: "Quel studio a fait l'anime ?",
+          answers: [
+            { id: "a", text: "MAPPA" },
+            { id: "b", text: "Toei Animation" },
+            { id: "c", text: "Bones" },
+            { id: "d", text: "Pierrot" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bones, le studio à qui on doit aussi Fullmetal Alchemist et Mob Psycho 100.",
+        },
+        {
+          id: 20,
+          question: "Quelle est la devise de Yuei ?",
+          answers: [
+            { id: "a", text: "Plus Ultra" },
+            { id: "b", text: "Carpe diem" },
+            { id: "c", text: "Semper fidelis" },
+            { id: "d", text: "Veni, vidi, vici" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "« Plus Ultra », du latin « plus loin encore ». C'est d'ailleurs aussi la devise de l'Espagne.",
         },
       ],
     },
     en: {
       title: "My Hero Academia timed quiz: 60 seconds",
       description:
-        "Ten My Hero Academia questions in one minute: Deku, All Might, Bakugo, Quirks and the villains.",
+        "Twenty My Hero Academia questions in one minute: Deku, All Might, Bakugo, Quirks and the villains.",
       questions: [
         {
           id: 1,
@@ -301,12 +431,142 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
           explanation:
             "About 80% of people have one. Deku is born in the other 20%, with no power at all, until All Might gives him his.",
         },
+        {
+          id: 11,
+          question: "Which Class 1-A student can harden his body?",
+          answers: [
+            { id: "a", text: "Tenya Iida" },
+            { id: "b", text: "Eijiro Kirishima" },
+            { id: "c", text: "Minoru Mineta" },
+            { id: "d", text: "Mashirao Ojiro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Eijiro Kirishima, with his Hardening Quirk. His skin gets as hard as rock.",
+        },
+        {
+          id: 12,
+          question: "What can Momo Yaoyorozu do?",
+          answers: [
+            { id: "a", text: "Create objects" },
+            { id: "b", text: "Fly" },
+            { id: "c", text: "Read minds" },
+            { id: "d", text: "Grow giant" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Create objects out of her own body. Her Quirk is called Creation.",
+        },
+        {
+          id: 13,
+          question: "Which student has engines in his legs?",
+          answers: [
+            { id: "a", text: "Denki Kaminari" },
+            { id: "b", text: "Eijiro Kirishima" },
+            { id: "c", text: "Tenya Iida" },
+            { id: "d", text: "Minoru Mineta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Tenya Iida. His Engine Quirk lets him run very fast, thanks to the engines in his calves.",
+        },
+        {
+          id: 14,
+          question: "Who is All Might's archenemy?",
+          answers: [
+            { id: "a", text: "Stain" },
+            { id: "b", text: "All For One" },
+            { id: "c", text: "Dabi" },
+            { id: "d", text: "Overhaul" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "All For One, who steals other people's Quirks. He is also the one who raised Tomura Shigaraki.",
+        },
+        {
+          id: 15,
+          question: "Which villain is known as the Hero Killer?",
+          answers: [
+            { id: "a", text: "Stain" },
+            { id: "b", text: "Dabi" },
+            { id: "c", text: "Muscular" },
+            { id: "d", text: "Twice" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Stain. He goes after heroes he thinks are only in it for money or fame.",
+        },
+        {
+          id: 16,
+          question: "What does Himiko Toga drink to transform?",
+          answers: [
+            { id: "a", text: "Water" },
+            { id: "b", text: "Milk" },
+            { id: "c", text: "Tea" },
+            { id: "d", text: "Blood" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Blood. Her Transform Quirk lets her take on the look of whoever's blood she has drunk.",
+        },
+        {
+          id: 17,
+          question: "Which animal is Tsuyu Asui's Quirk based on?",
+          answers: [
+            { id: "a", text: "Cat" },
+            { id: "b", text: "Frog" },
+            { id: "c", text: "Snake" },
+            { id: "d", text: "Bird" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A frog. She has a very long tongue, she can jump far and she can cling to walls.",
+        },
+        {
+          id: 18,
+          question: "Which Class 1-A student gives off electricity?",
+          answers: [
+            { id: "a", text: "Fumikage Tokoyami" },
+            { id: "b", text: "Minoru Mineta" },
+            { id: "c", text: "Denki Kaminari" },
+            { id: "d", text: "Mashirao Ojiro" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Denki Kaminari. If he lets out too much, his brain short-circuits and he goes dopey for a while.",
+        },
+        {
+          id: 19,
+          question: "Which studio made the anime?",
+          answers: [
+            { id: "a", text: "MAPPA" },
+            { id: "b", text: "Toei Animation" },
+            { id: "c", text: "Bones" },
+            { id: "d", text: "Pierrot" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bones, the studio that also made Fullmetal Alchemist and Mob Psycho 100.",
+        },
+        {
+          id: 20,
+          question: "What is U.A.'s motto?",
+          answers: [
+            { id: "a", text: "Plus Ultra" },
+            { id: "b", text: "Carpe diem" },
+            { id: "c", text: "Semper fidelis" },
+            { id: "d", text: "Veni, vidi, vici" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "\"Plus Ultra\", Latin for \"further beyond\". It also happens to be Spain's national motto.",
+        },
       ],
     },
     es: {
       title: "Contrarreloj My Hero Academia: 60 segundos",
       description:
-        "Diez preguntas sobre My Hero Academia en un minuto: Deku, All Might, Bakugo, los Quirks y los villanos.",
+        "Veinte preguntas sobre My Hero Academia en un minuto: Deku, All Might, Bakugo, los Dones y los villanos.",
       questions: [
         {
           id: 1,
@@ -338,7 +598,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         {
           id: 3,
           image: "/images/q-my-hero-academia-03.webp",
-          question: "¿Qué Quirk le pasa All Might a Deku?",
+          question: "¿Qué Don le pasa All Might a Deku?",
           answers: [
             { id: "a", text: "All For One" },
             { id: "b", text: "Explosion" },
@@ -365,7 +625,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         {
           id: 5,
           image: "/images/q-my-hero-academia-05.webp",
-          question: "¿Cuál es el Quirk de Bakugo?",
+          question: "¿Cuál es el Don de Bakugo?",
           answers: [
             { id: "a", text: "Explosion" },
             { id: "b", text: "Engine" },
@@ -415,11 +675,11 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
           ],
           correctAnswer: "d",
           explanation:
-            "Tomura Shigaraki, con su Quirk Decay. Es el líder de la Liga de Villanos.",
+            "Tomura Shigaraki, con su Don Decay. Es el líder de la Liga de Villanos.",
         },
         {
           id: 9,
-          question: "¿Qué hace el Quirk de Ochaco Uraraka?",
+          question: "¿Qué hace el Don de Ochaco Uraraka?",
           answers: [
             { id: "a", text: "La vuelve invisible" },
             { id: "b", text: "Produce ácido" },
@@ -428,11 +688,11 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Su Quirk se llama Zero Gravity: todo lo que toca con la punta de los dedos se pone a flotar.",
+            "Su Don se llama Zero Gravity: todo lo que toca con la punta de los dedos se pone a flotar.",
         },
         {
           id: 10,
-          question: "¿Qué parte de la población tiene un Quirk en la serie?",
+          question: "¿Qué parte de la población tiene un Don en la serie?",
           answers: [
             { id: "a", text: "Alrededor del 20 %" },
             { id: "b", text: "Alrededor del 50 %" },
@@ -442,6 +702,136 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "Alrededor del 80 %. Deku nace en el otro 20 %, sin ningún poder, hasta que All Might le da el suyo.",
+        },
+        {
+          id: 11,
+          question: "¿Qué alumno de la 1-A puede endurecer su cuerpo?",
+          answers: [
+            { id: "a", text: "Tenya Iida" },
+            { id: "b", text: "Eijiro Kirishima" },
+            { id: "c", text: "Minoru Mineta" },
+            { id: "d", text: "Mashirao Ojiro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Eijiro Kirishima, con su Don Hardening. Su piel se vuelve dura como la piedra.",
+        },
+        {
+          id: 12,
+          question: "¿Qué puede hacer Momo Yaoyorozu?",
+          answers: [
+            { id: "a", text: "Crear objetos" },
+            { id: "b", text: "Volar" },
+            { id: "c", text: "Leer mentes" },
+            { id: "d", text: "Hacerse gigante" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Crear objetos a partir de su propio cuerpo. Su Don se llama Creation.",
+        },
+        {
+          id: 13,
+          question: "¿Qué alumno tiene motores en las piernas?",
+          answers: [
+            { id: "a", text: "Denki Kaminari" },
+            { id: "b", text: "Eijiro Kirishima" },
+            { id: "c", text: "Tenya Iida" },
+            { id: "d", text: "Minoru Mineta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Tenya Iida. Su Don, Engine, le permite correr muy rápido gracias a los motores de sus pantorrillas.",
+        },
+        {
+          id: 14,
+          question: "¿Quién es el gran enemigo de All Might?",
+          answers: [
+            { id: "a", text: "Stain" },
+            { id: "b", text: "All For One" },
+            { id: "c", text: "Dabi" },
+            { id: "d", text: "Overhaul" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "All For One, que roba los Dones de los demás. También es quien crió a Tomura Shigaraki.",
+        },
+        {
+          id: 15,
+          question: "¿Qué villano es conocido como el «asesino de héroes»?",
+          answers: [
+            { id: "a", text: "Stain" },
+            { id: "b", text: "Dabi" },
+            { id: "c", text: "Muscular" },
+            { id: "d", text: "Twice" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Stain. Va a por los héroes que, según él, solo lo son por dinero o por fama.",
+        },
+        {
+          id: 16,
+          question: "¿Qué bebe Himiko Toga para transformarse?",
+          answers: [
+            { id: "a", text: "Agua" },
+            { id: "b", text: "Leche" },
+            { id: "c", text: "Té" },
+            { id: "d", text: "Sangre" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Sangre. Su Don, Transform, le da el aspecto de la persona cuya sangre ha bebido.",
+        },
+        {
+          id: 17,
+          question: "¿En qué animal se basa el Don de Tsuyu Asui?",
+          answers: [
+            { id: "a", text: "El gato" },
+            { id: "b", text: "La rana" },
+            { id: "c", text: "La serpiente" },
+            { id: "d", text: "El pájaro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En la rana. Tiene una lengua muy larga, salta lejos y puede pegarse a las paredes.",
+        },
+        {
+          id: 18,
+          question: "¿Qué alumno de la 1-A suelta electricidad?",
+          answers: [
+            { id: "a", text: "Fumikage Tokoyami" },
+            { id: "b", text: "Minoru Mineta" },
+            { id: "c", text: "Denki Kaminari" },
+            { id: "d", text: "Mashirao Ojiro" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Denki Kaminari. Si suelta demasiada, se le funde el cerebro y se queda atontado un rato.",
+        },
+        {
+          id: 19,
+          question: "¿Qué estudio hizo el anime?",
+          answers: [
+            { id: "a", text: "MAPPA" },
+            { id: "b", text: "Toei Animation" },
+            { id: "c", text: "Bones" },
+            { id: "d", text: "Pierrot" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bones, el estudio que también hizo Fullmetal Alchemist y Mob Psycho 100.",
+        },
+        {
+          id: 20,
+          question: "¿Cuál es el lema de la U.A.?",
+          answers: [
+            { id: "a", text: "Plus Ultra" },
+            { id: "b", text: "Carpe diem" },
+            { id: "c", text: "Semper fidelis" },
+            { id: "d", text: "Veni, vidi, vici" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "«Plus Ultra», que en latín significa «más allá». Es también el lema de España.",
         },
       ],
     },

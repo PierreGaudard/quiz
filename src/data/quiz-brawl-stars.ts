@@ -22,7 +22,7 @@ export const quizBrawlStars: TranslatedQuiz = {
     fr: {
       title: "Chrono Brawl Stars : 60 secondes",
       description:
-        "Dix questions sur Brawl Stars, ses brawlers et ses modes de jeu, avec une minute au total. Il faut répondre vite !",
+        "Vingt questions sur Brawl Stars, ses brawlers et ses modes de jeu, avec une minute au total. Il faut répondre vite !",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizBrawlStars: TranslatedQuiz = {
           explanation:
             "De la dynamite, d'où son nom. C'est un vieux mineur qui lance ses bâtons par-dessus les murs.",
         },
+        {
+          id: 11,
+          question: "Que fait le Super de Leon ?",
+          answers: [
+            { id: "a", text: "Il le rend invisible" },
+            { id: "b", text: "Il le fait voler" },
+            { id: "c", text: "Il le soigne" },
+            { id: "d", text: "Il pose une tourelle" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Il le rend invisible pendant quelques secondes, de quoi surprendre ses adversaires.",
+        },
+        {
+          id: 12,
+          question: "De quel instrument joue Poco ?",
+          answers: [
+            { id: "a", text: "Du violon" },
+            { id: "b", text: "De la trompette" },
+            { id: "c", text: "De la guitare" },
+            { id: "d", text: "De la batterie" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "D'une grosse guitare mexicaine, un guitarrón. Sa musique blesse les ennemis et soigne ses alliés.",
+        },
+        {
+          id: 13,
+          question: "Quel animal Nita fait-elle apparaître ?",
+          answers: [
+            { id: "a", text: "Un loup" },
+            { id: "b", text: "Un ours" },
+            { id: "c", text: "Un aigle" },
+            { id: "d", text: "Un tigre" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Un ours, avec son Super. Elle porte d'ailleurs un ours en peluche sur la tête.",
+        },
+        {
+          id: 14,
+          question: "Que pose Jessie avec son Super ?",
+          answers: [
+            { id: "a", text: "Un mur" },
+            { id: "b", text: "Un piège" },
+            { id: "c", text: "Une tourelle" },
+            { id: "d", text: "Une bombe" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Une tourelle, Scrappy, qui tire toute seule sur les ennemis proches.",
+        },
+        {
+          id: 15,
+          question: "Avec quoi Mortis attaque-t-il ?",
+          answers: [
+            { id: "a", text: "Une faux" },
+            { id: "b", text: "Une pelle" },
+            { id: "c", text: "Une épée" },
+            { id: "d", text: "Un marteau" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Une pelle. À chaque attaque, il se jette en avant en donnant un coup avec.",
+        },
+        {
+          id: 16,
+          question: "Que lance Barley ?",
+          answers: [
+            { id: "a", text: "Des bouteilles" },
+            { id: "b", text: "Des grenades" },
+            { id: "c", text: "Des tartes" },
+            { id: "d", text: "Des cailloux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Des bouteilles, qui laissent au sol une flaque qui continue de faire des dégâts.",
+        },
+        {
+          id: 17,
+          question: "Avec quoi Crow empoisonne-t-il ses ennemis ?",
+          answers: [
+            { id: "a", text: "Des flèches" },
+            { id: "b", text: "Des fléchettes" },
+            { id: "c", text: "Des griffes" },
+            { id: "d", text: "Des dagues" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Des dagues. Il en lance trois à la fois, et le poison continue de faire des dégâts après.",
+        },
+        {
+          id: 18,
+          question: "En Razzia de gemmes, combien de joueurs compte chaque équipe ?",
+          answers: [
+            { id: "a", text: "2" },
+            { id: "b", text: "3" },
+            { id: "c", text: "4" },
+            { id: "d", text: "5" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "3 joueurs. La Razzia de gemmes se joue en 3 contre 3.",
+        },
+        {
+          id: 19,
+          question: "Que gagne-t-on en cas de victoire et perd-on en cas de défaite ?",
+          answers: [
+            { id: "a", text: "Des gemmes" },
+            { id: "b", text: "Des pièces" },
+            { id: "c", text: "Des trophées" },
+            { id: "d", text: "Des étoiles" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Des trophées. Chaque brawler a son propre compteur, et le total donne le nombre de trophées du joueur.",
+        },
+        {
+          id: 20,
+          question: "Qui est la petite sœur de Leon ?",
+          answers: [
+            { id: "a", text: "Shelly" },
+            { id: "b", text: "Nita" },
+            { id: "c", text: "Piper" },
+            { id: "d", text: "Jessie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Nita. Leon est plutôt solitaire, et sa petite sœur est la seule qui arrive à l'approcher.",
+        },
       ],
     },
     en: {
       title: "Brawl Stars Chrono: 60 seconds",
       description:
-        "Ten questions on Brawl Stars, its brawlers and its game modes, with one minute on the clock. Answer fast!",
+        "Twenty questions on Brawl Stars, its brawlers and its game modes, with one minute on the clock. Answer fast!",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizBrawlStars: TranslatedQuiz = {
           explanation:
             "Dynamite, hence the name. He is an old miner who lobs his sticks over walls.",
         },
+        {
+          id: 11,
+          question: "What does Leon's Super do?",
+          answers: [
+            { id: "a", text: "Turns him invisible" },
+            { id: "b", text: "Makes him fly" },
+            { id: "c", text: "Heals him" },
+            { id: "d", text: "Places a turret" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "It turns him invisible for a few seconds, which is perfect for sneaking up on enemies.",
+        },
+        {
+          id: 12,
+          question: "What instrument does Poco play?",
+          answers: [
+            { id: "a", text: "Violin" },
+            { id: "b", text: "Trumpet" },
+            { id: "c", text: "Guitar" },
+            { id: "d", text: "Drums" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "A big Mexican guitar called a guitarrón. His music hurts enemies and heals teammates.",
+        },
+        {
+          id: 13,
+          question: "Which animal does Nita summon?",
+          answers: [
+            { id: "a", text: "A wolf" },
+            { id: "b", text: "A bear" },
+            { id: "c", text: "An eagle" },
+            { id: "d", text: "A tiger" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A bear, with her Super. She even wears a teddy bear on her head.",
+        },
+        {
+          id: 14,
+          question: "What does Jessie place with her Super?",
+          answers: [
+            { id: "a", text: "A wall" },
+            { id: "b", text: "A trap" },
+            { id: "c", text: "A turret" },
+            { id: "d", text: "A bomb" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "A turret called Scrappy, which shoots nearby enemies on its own.",
+        },
+        {
+          id: 15,
+          question: "What does Mortis attack with?",
+          answers: [
+            { id: "a", text: "A scythe" },
+            { id: "b", text: "A shovel" },
+            { id: "c", text: "A sword" },
+            { id: "d", text: "A hammer" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A shovel. Every attack makes him dash forward and swing it.",
+        },
+        {
+          id: 16,
+          question: "What does Barley throw?",
+          answers: [
+            { id: "a", text: "Bottles" },
+            { id: "b", text: "Grenades" },
+            { id: "c", text: "Pies" },
+            { id: "d", text: "Rocks" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Bottles, which leave a puddle on the ground that keeps dealing damage.",
+        },
+        {
+          id: 17,
+          question: "What does Crow poison his enemies with?",
+          answers: [
+            { id: "a", text: "Arrows" },
+            { id: "b", text: "Darts" },
+            { id: "c", text: "Claws" },
+            { id: "d", text: "Daggers" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Daggers. He throws three at a time, and the poison keeps hurting afterwards.",
+        },
+        {
+          id: 18,
+          question: "In Gem Grab, how many players are on each team?",
+          answers: [
+            { id: "a", text: "2" },
+            { id: "b", text: "3" },
+            { id: "c", text: "4" },
+            { id: "d", text: "5" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "3 players. Gem Grab is a 3v3 mode.",
+        },
+        {
+          id: 19,
+          question: "What do you win when you win a match and lose when you lose?",
+          answers: [
+            { id: "a", text: "Gems" },
+            { id: "b", text: "Coins" },
+            { id: "c", text: "Trophies" },
+            { id: "d", text: "Stars" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Trophies. Each brawler has their own count, and the total is the player's trophy count.",
+        },
+        {
+          id: 20,
+          question: "Who is Leon's little sister?",
+          answers: [
+            { id: "a", text: "Shelly" },
+            { id: "b", text: "Nita" },
+            { id: "c", text: "Piper" },
+            { id: "d", text: "Jessie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Nita. Leon is a bit of a loner, and his little sister is the only one who gets through to him.",
+        },
       ],
     },
     es: {
       title: "Crono Brawl Stars: 60 segundos",
       description:
-        "Diez preguntas sobre Brawl Stars, sus brawlers y sus modos de juego, con un minuto en total. ¡Hay que responder rápido!",
+        "Veinte preguntas sobre Brawl Stars, sus brawlers y sus modos de juego, con un minuto en total. ¡Hay que responder rápido!",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizBrawlStars: TranslatedQuiz = {
           correctAnswer: "d",
           explanation:
             "Dinamita, de ahí su nombre. Es un viejo minero que tira sus cartuchos por encima de los muros.",
+        },
+        {
+          id: 11,
+          question: "¿Qué hace el súper de Leon?",
+          answers: [
+            { id: "a", text: "Lo vuelve invisible" },
+            { id: "b", text: "Lo hace volar" },
+            { id: "c", text: "Lo cura" },
+            { id: "d", text: "Coloca una torreta" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Lo vuelve invisible durante unos segundos, ideal para pillar por sorpresa a los rivales.",
+        },
+        {
+          id: 12,
+          question: "¿Qué instrumento toca Poco?",
+          answers: [
+            { id: "a", text: "El violín" },
+            { id: "b", text: "La trompeta" },
+            { id: "c", text: "La guitarra" },
+            { id: "d", text: "La batería" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Un guitarrón, una guitarra mexicana grande. Su música daña a los enemigos y cura a los aliados.",
+        },
+        {
+          id: 13,
+          question: "¿Qué animal invoca Nita?",
+          answers: [
+            { id: "a", text: "Un lobo" },
+            { id: "b", text: "Un oso" },
+            { id: "c", text: "Un águila" },
+            { id: "d", text: "Un tigre" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Un oso, con su súper. De hecho, lleva un oso de peluche en la cabeza.",
+        },
+        {
+          id: 14,
+          question: "¿Qué coloca Jessie con su súper?",
+          answers: [
+            { id: "a", text: "Un muro" },
+            { id: "b", text: "Una trampa" },
+            { id: "c", text: "Una torreta" },
+            { id: "d", text: "Una bomba" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Una torreta, Scrappy, que dispara sola a los enemigos cercanos.",
+        },
+        {
+          id: 15,
+          question: "¿Con qué ataca Mortis?",
+          answers: [
+            { id: "a", text: "Una guadaña" },
+            { id: "b", text: "Una pala" },
+            { id: "c", text: "Una espada" },
+            { id: "d", text: "Un martillo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Con una pala. En cada ataque se lanza hacia delante y da un golpe con ella.",
+        },
+        {
+          id: 16,
+          question: "¿Qué lanza Barley?",
+          answers: [
+            { id: "a", text: "Botellas" },
+            { id: "b", text: "Granadas" },
+            { id: "c", text: "Tartas" },
+            { id: "d", text: "Piedras" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Botellas, que dejan un charco en el suelo que sigue haciendo daño.",
+        },
+        {
+          id: 17,
+          question: "¿Con qué envenena Crow a sus enemigos?",
+          answers: [
+            { id: "a", text: "Flechas" },
+            { id: "b", text: "Dardos" },
+            { id: "c", text: "Garras" },
+            { id: "d", text: "Dagas" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Con dagas. Lanza tres a la vez, y el veneno sigue haciendo daño después.",
+        },
+        {
+          id: 18,
+          question: "En Atrapagemas, ¿cuántos jugadores tiene cada equipo?",
+          answers: [
+            { id: "a", text: "2" },
+            { id: "b", text: "3" },
+            { id: "c", text: "4" },
+            { id: "d", text: "5" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "3 jugadores. Atrapagemas se juega en 3 contra 3.",
+        },
+        {
+          id: 19,
+          question: "¿Qué se gana al ganar una partida y se pierde al perderla?",
+          answers: [
+            { id: "a", text: "Gemas" },
+            { id: "b", text: "Monedas" },
+            { id: "c", text: "Trofeos" },
+            { id: "d", text: "Estrellas" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Trofeos. Cada brawler tiene su propio contador, y el total da los trofeos del jugador.",
+        },
+        {
+          id: 20,
+          question: "¿Quién es la hermana pequeña de Leon?",
+          answers: [
+            { id: "a", text: "Shelly" },
+            { id: "b", text: "Nita" },
+            { id: "c", text: "Piper" },
+            { id: "d", text: "Jessie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Nita. Leon es bastante solitario, y su hermana pequeña es la única que consigue acercarse a él.",
         },
       ],
     },

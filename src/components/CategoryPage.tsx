@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import type { CategoryData, QuizData, GameTypeInfo, GameType } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import { categoryIcons } from "../data/icons";
+import { getCategories } from "../data/categories";
 
 /* ───────────────────────────── constants ───────────────────────────── */
 
@@ -1164,22 +1165,14 @@ function SidebarContent({
   const strokeDashoffset = circumference - (progressPercent / 100) * circumference;
 
 
-  const catSlugs: Record<string, Record<string, string>> = {
-    sport: { en: "sports", fr: "sport", es: "deportes" },
-    cinema: { en: "cinema", fr: "cinema", es: "cine" },
-    anime: { en: "anime", fr: "anime", es: "anime" },
-    "jeux-video": { en: "video-games", fr: "jeux-video", es: "videojuegos" },
-    geographie: { en: "geography", fr: "geographie", es: "geografia" },
-  };
-  const ls = (base: string) => catSlugs[base]?.[locale || "en"] || base;
-
-  const sidebarCategories = [
-    { nameKey: "catSports", slug: ls("sport"), color: "bg-emerald-700", coverImage: "/images/cover-sport.webp", name: "Sport" },
-    { nameKey: "catCinema", slug: ls("cinema"), color: "bg-red-600", coverImage: "/images/cover-cinema.webp", name: "Cinema" },
-    { nameKey: "catAnime", slug: ls("anime"), color: "bg-pink-600", coverImage: "/images/cover-anime.webp", name: "Anime" },
-    { nameKey: "catVideoGames", slug: ls("jeux-video"), color: "bg-brand-600", coverImage: "/images/cover-jeux-video.webp", name: "Jeux Video" },
-    { nameKey: "catGeography", slug: ls("geographie"), color: "bg-cyan-700", coverImage: "/images/cover-geographie.webp", name: "Geographie" },
-  ];
+  // Toutes les categories, lues dans les donnees : la liste etait figee a
+  // cinq, et une categorie ajoutee n'apparaissait jamais ici.
+  const sidebarCategories = getCategories((locale || "en") as "en" | "fr" | "es").map((c) => ({
+    slug: c.slug,
+    color: c.color,
+    coverImage: c.coverImage,
+    name: c.name,
+  }));
 
   return (
     <>
@@ -1272,7 +1265,7 @@ function SidebarContent({
               className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-gray-50 transition-colors group"
             >
               <img src={withBase(cat.coverImage)} srcSet={imageSrcset(cat.coverImage)} sizes="(max-width: 640px) 50vw, 320px" alt={cat.name} width={800} height={450} className="w-7 h-7 rounded-lg object-cover shrink-0" />
-              <span className="text-sm font-medium text-gray-700 group-hover:text-brand-600 transition-colors">{tt(cat.nameKey)}</span>
+              <span className="text-sm font-medium text-gray-700 group-hover:text-brand-600 transition-colors">{cat.name}</span>
             </a>
           ))}
         </div>

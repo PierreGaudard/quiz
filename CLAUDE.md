@@ -191,6 +191,11 @@ la balise `wizyquiz:sitemap` que le Layout pose pour elles. Les sitemaps
 listent donc les 105 pages qui seront indexables a l'ouverture, aujourd'hui
 comme apres, et ne se vident pas pendant le prelancement.
 
+Les pages de sous-theme qui portent moins de `MIN_QUIZZES_TO_INDEX_SUBCATEGORY`
+quiz (2, dans `src/config/launch.ts`) sont aussi en noindex et hors sitemap :
+avec un seul quiz, elles doublonnent la page du quiz et leur texte sort d'un
+modele commun. Elles s'indexent d'elles-memes quand un deuxieme quiz arrive.
+
 Ne jamais reecrire la balise robots en dur dans `Layout.astro` : elle y etait,
 et elle rendait la prop `noindex` inoperante sans rien signaler.
 
@@ -235,18 +240,13 @@ code et l'application de la migration, seul le bloc concerne disparait.
 SHA-256 est en base, table `password_resets`, migration 005, une heure, usage
 unique) et répond pareil que l'adresse existe ou non. `/api/auth/reset` change
 le mot de passe et ferme toutes les sessions du compte. L'envoi passe par
-Cloudflare Email Service (`src/lib/mail.ts`, binding `EMAIL`) : il faut
-l'offre Workers Paid, puis déclarer `wizyquiz.com` comme domaine d'envoi dans
-Compute > Email Service, puis ajouter à `wrangler.toml` :
-
-```toml
-[[send_email]]
-name = "EMAIL"
-remote = true
-```
-
-Tant que ce n'est pas fait, la demande de lien répond normalement mais aucun
-e-mail ne part.
+Resend (`src/lib/mail.ts`, API HTTP, offre gratuite : 3 000 e-mails par mois,
+100 par jour), sur le compte Resend ouvert avec le Google pierretartare le
+24/09/2026. Le domaine `wizyquiz.com` y est vérifié par quatre enregistrements
+DNS de la zone Cloudflare (`resend._domainkey`, `send`, `rsend`, `_dmarc`),
+à ne pas supprimer. La clé (droit d'envoi seul) est le secret
+`RESEND_API_KEY` du Worker `quiz`, jamais dans le repo. Sans clé, la demande
+de lien répond normalement mais aucun e-mail ne part.
 
 ### Quiz créés par les joueurs
 
@@ -315,12 +315,17 @@ Each locale page sets `const locale: Locale = "xx"` and calls shared helpers fro
 - **React components**: Use the `lp()` helper (see Critical Rules above) for links, `withBase()` for images
 - **Never hardcode** base path prefix — always use helpers
 
-## Categories (5 active)
-1. **Sports** (`sport`) — Football, Tennis, Olympics, US Sports, Winter Sports, Combat Sports
-2. **Cinema** (`cinema`) — Cult Classics, Directors, Actors, TV Series, Animation, Oscars
-3. **History** (`histoire`) — Antiquity, Middle Ages, World Wars, Revolutions, Kings of France, Modern History
-4. **General Knowledge** (`culture-generale`) — Society, Religion, Traditions, Current Events, Celebrities, Misc
-5. **Geography** (`geographie`) — Capitals, Flags, Europe, Asia, Americas, Africa
+## Categories (7)
+La liste qui fait foi est `src/data/categories.ts` : le menu du header, la
+colonne « Explorer les categories » et les pages sont construits a partir
+d'elle. Chaque sous-theme a au moins un quiz.
+1. **Culture generale** (`culture-generale`) : Sciences, Corps humain, Espace, Art et peinture, Musique, Litterature
+2. **Histoire** (`histoire`) : Antiquite, Moyen Age, Rois de France, Revolution francaise, les deux guerres mondiales
+3. **Geographie** (`geographie`) : Departements francais, Europe, Capitales, Drapeaux, Etats-Unis
+4. **Sport** (`sport`) : 9 sous-themes
+5. **Cinema** (`cinema`) : Harry Potter, Marvel, Star Wars, Seigneur des Anneaux
+6. **Anime** (`anime`) : 11 sous-themes
+7. **Jeux video** (`jeux-video`) : 13 sous-themes
 
 ## Data Types
 
@@ -371,7 +376,7 @@ npm run preview  # Preview production build
 ### Contrôler un quiz avant de l'ajouter
 
 `npx tsx scripts/check-quiz-file.mts src/data/quiz-xxx.ts` doit afficher `OK` :
-langues complètes, 10 questions au moins, réponses cohérentes avec le mode,
+langues complètes, 10 questions au moins (20 pour un chrono, qui s'arrête quand toutes les questions sont jouées), réponses cohérentes avec le mode,
 title de page 30-60 et description 70-155, images présentes en WebP, marqueurs
 IA et tirets cadratins interdits, accents et « ¿ » présents, sous-catégorie
 existante, slug unique. Il ne remplace pas la partie jouée dans un navigateur.

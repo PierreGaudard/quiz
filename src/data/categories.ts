@@ -26,6 +26,66 @@ export const difficultyLabels: Record<Locale, Record<Difficulty, string>> = {
 
 export const categoryDefs: CategoryDef[] = [
   {
+    slug: "culture-generale",
+    slugs: { en: "general-knowledge", fr: "culture-generale", es: "cultura-general" },
+    icon: "CG",
+    color: "bg-amber-700",
+    coverImage: "/images/cover-culture-generale.webp",
+    translations: {
+      en: {
+        name: "General Knowledge",
+        description: "Science, the human body, space, art, music and literature. Test your general knowledge!",
+        subcategories: ["Science", "Human Body", "Space", "Art and Painting", "Music", "Literature"],
+        seoIntro: "Science, the human body, space, painting, music and literature: free general knowledge quizzes with an explanation under every answer.",
+        seoFooter: "These are the questions that come up at dinner or in pub quizzes: which planet is the biggest, who painted the Mona Lisa, how many bones in the body, etc. Every answer is explained, so what you get wrong this time you'll get right next time.",
+      },
+      fr: {
+        name: "Culture générale",
+        description: "Sciences, corps humain, espace, art, musique et littérature. Teste ta culture générale !",
+        subcategories: ["Sciences", "Corps humain", "Espace", "Art et peinture", "Musique", "Littérature"],
+        seoIntro: "Sciences, corps humain, espace, peinture, musique et littérature : des quiz de culture générale gratuits, avec une explication à chaque réponse.",
+        seoFooter: "Ce sont les questions qui tombent au dîner ou dans les jeux télé : la plus grosse planète, l'auteur de La Joconde, le nombre d'os du corps humain, etc. Chaque réponse est expliquée, du coup ce qu'on rate cette fois, on le retient pour la suivante.",
+      },
+      es: {
+        name: "Cultura general",
+        description: "Ciencia, cuerpo humano, espacio, arte, música y literatura. ¡Pon a prueba tu cultura general!",
+        subcategories: ["Ciencia", "Cuerpo humano", "Espacio", "Arte y pintura", "Música", "Literatura"],
+        seoIntro: "Ciencia, cuerpo humano, espacio, pintura, música y literatura: quizzes de cultura general gratis, con una explicación en cada respuesta.",
+        seoFooter: "Son las preguntas que salen en una cena o en los concursos de la tele: el planeta más grande, quién pintó La Gioconda, cuántos huesos tiene el cuerpo, etc. Cada respuesta viene explicada, así que lo que fallas hoy lo aciertas la próxima vez.",
+      },
+    },
+  },
+  {
+    slug: "histoire",
+    slugs: { en: "history", fr: "histoire", es: "historia" },
+    icon: "HI",
+    color: "bg-orange-700",
+    coverImage: "/images/cover-histoire.webp",
+    translations: {
+      en: {
+        name: "History",
+        description: "Antiquity, the Middle Ages, the kings of France, the Revolution and the two world wars. Test your history!",
+        subcategories: ["Antiquity", "Middle Ages", "Kings of France", "French Revolution", "World War I", "World War II"],
+        seoIntro: "Antiquity, the Middle Ages, the kings of France, the French Revolution and the world wars: free history quizzes, every answer explained.",
+        seoFooter: "The questions go from the pharaohs to the Normandy landings, with the dates, names and events that school taught you and that tend to get mixed up later. The explanation under each answer puts them back in order.",
+      },
+      fr: {
+        name: "Histoire",
+        description: "Antiquité, Moyen Âge, rois de France, Révolution et guerres mondiales. Teste tes connaissances en histoire !",
+        subcategories: ["Antiquité", "Moyen Âge", "Rois de France", "Révolution française", "Première Guerre mondiale", "Seconde Guerre mondiale"],
+        seoIntro: "Antiquité, Moyen Âge, rois de France, Révolution française et guerres mondiales : des quiz d'histoire gratuits, chaque réponse expliquée.",
+        seoFooter: "Les questions vont des pharaons au Débarquement, avec les dates, les noms et les événements qu'on apprend à l'école et qu'on finit par mélanger. L'explication sous chaque réponse remet les choses dans l'ordre.",
+      },
+      es: {
+        name: "Historia",
+        description: "Antigüedad, Edad Media, reyes de Francia, Revolución y guerras mundiales. ¡Pon a prueba tu historia!",
+        subcategories: ["Antigüedad", "Edad Media", "Reyes de Francia", "Revolución francesa", "Primera Guerra Mundial", "Segunda Guerra Mundial"],
+        seoIntro: "Antigüedad, Edad Media, reyes de Francia, Revolución francesa y guerras mundiales: quizzes de historia gratis, cada respuesta explicada.",
+        seoFooter: "Las preguntas van de los faraones al desembarco de Normandía, con las fechas, los nombres y los hechos que se aprenden en el colegio y que luego se mezclan. La explicación de cada respuesta vuelve a ponerlos en orden.",
+      },
+    },
+  },
+  {
     slug: "sport",
     slugs: { en: "sports", fr: "sport", es: "deportes" },
     icon: "SP",

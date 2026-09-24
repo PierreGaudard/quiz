@@ -17,3 +17,15 @@
  * donc parties a l'index avec les autres.
  */
 export const PRELAUNCH = true;
+
+/**
+ * Nombre de quiz a partir duquel une page de sous-theme est indexable.
+ *
+ * Une page de sous-theme qui ne porte qu'un quiz doublonne la page de ce quiz,
+ * et son texte sort d'un modele commun ou seul le nom change : quarante pages
+ * de ce genre publiees d'un coup ressemblent a du contenu produit en serie.
+ * En dessous du seuil, la page reste en ligne et navigable, mais en noindex
+ * et hors sitemap. Elle entre a l'index d'elle-meme quand un deuxieme quiz
+ * arrive.
+ */
+export const MIN_QUIZZES_TO_INDEX_SUBCATEGORY = 2;

@@ -23,7 +23,7 @@ export const quizBoxe: TranslatedQuiz = {
     fr: {
       title: "Chrono boxe : 60 secondes sur le ring",
       description:
-        "Dix questions sur la boxe, d'Ali à Tyson, et une minute au total pour y répondre. Il faut aller vite !",
+        "Vingt questions sur la boxe, d'Ali à Tyson, et une minute au total pour y répondre. Il faut aller vite !",
       questions: [
         {
           id: 1,
@@ -159,12 +159,142 @@ export const quizBoxe: TranslatedQuiz = {
           explanation:
             "Du Mexique, de la région de Guadalajara. Son surnom, Canelo, veut dire « cannelle » en espagnol, à cause de ses cheveux roux.",
         },
+        {
+          id: 11,
+          question: "Combien de rounds dure un championnat du monde ?",
+          answers: [
+            { id: "a", text: "10" },
+            { id: "b", text: "12" },
+            { id: "c", text: "15" },
+            { id: "d", text: "20" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "12 rounds. C'était 15 jusqu'aux années 1980, puis les fédérations ont baissé la limite après la mort du boxeur Kim Duk-koo.",
+        },
+        {
+          id: 12,
+          question: "Qui Ali affronte-t-il au « Thrilla in Manila » en 1975 ?",
+          answers: [
+            { id: "a", text: "George Foreman" },
+            { id: "b", text: "Ken Norton" },
+            { id: "c", text: "Joe Frazier" },
+            { id: "d", text: "Sonny Liston" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Joe Frazier. Ali gagne quand le coin de Frazier arrête le combat après le 14e round.",
+        },
+        {
+          id: 13,
+          question: "Qui a battu Tyson Fury en 2024 ?",
+          answers: [
+            { id: "a", text: "Anthony Joshua" },
+            { id: "b", text: "Deontay Wilder" },
+            { id: "c", text: "Francis Ngannou" },
+            { id: "d", text: "Oleksandr Usyk" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "L'Ukrainien Oleksandr Usyk, le 18 mai 2024 à Riyad, pour toutes les ceintures des lourds. Il a aussi gagné la revanche en décembre.",
+        },
+        {
+          id: 14,
+          question: "Quel boxeur est surnommé « Money » ?",
+          answers: [
+            { id: "a", text: "Floyd Mayweather" },
+            { id: "b", text: "Manny Pacquiao" },
+            { id: "c", text: "Oscar De La Hoya" },
+            { id: "d", text: "Canelo Álvarez" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Floyd Mayweather Jr. Plus jeune, on l'appelait aussi « Pretty Boy ».",
+        },
+        {
+          id: 15,
+          question: "Quelle Française est championne olympique de boxe en 2016 ?",
+          answers: [
+            { id: "a", text: "Sarah Ourahmoune" },
+            { id: "b", text: "Estelle Mossely" },
+            { id: "c", text: "Maïva Hamadouche" },
+            { id: "d", text: "Amina Zidani" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Estelle Mossely, chez les poids légers. C'est la première Française championne olympique de boxe, et son compagnon Tony Yoka a été sacré aux mêmes Jeux.",
+        },
+        {
+          id: 16,
+          question: "Quelle forme a un ring de boxe ?",
+          answers: [
+            { id: "a", text: "Rond" },
+            { id: "b", text: "Carré" },
+            { id: "c", text: "Octogonal" },
+            { id: "d", text: "Hexagonal" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Carré, malgré son nom. Autrefois on se battait dans un cercle tracé au sol, et le mot « ring » est resté.",
+        },
+        {
+          id: 17,
+          question: "Quel boxeur De Niro joue-t-il dans Raging Bull ?",
+          answers: [
+            { id: "a", text: "Primo Carnera" },
+            { id: "b", text: "Joe Louis" },
+            { id: "c", text: "Jake LaMotta" },
+            { id: "d", text: "Sugar Ray Robinson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Jake LaMotta, champion du monde des poids moyens. Le rôle a valu à Robert De Niro l'Oscar du meilleur acteur.",
+        },
+        {
+          id: 18,
+          question: "Quel champion des lourds a pris sa retraite invaincu ?",
+          answers: [
+            { id: "a", text: "Rocky Marciano" },
+            { id: "b", text: "Joe Louis" },
+            { id: "c", text: "Muhammad Ali" },
+            { id: "d", text: "Larry Holmes" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Rocky Marciano, en 1956, avec 49 victoires en 49 combats, dont 43 par K.-O.",
+        },
+        {
+          id: 19,
+          question: "Combien de juges notent un combat pro ?",
+          answers: [
+            { id: "a", text: "1" },
+            { id: "b", text: "2" },
+            { id: "c", text: "3" },
+            { id: "d", text: "5" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Trois juges. Chacun note tous les rounds, en général 10 points pour celui qui gagne le round et 9 ou moins pour l'autre.",
+        },
+        {
+          id: 20,
+          question: "De quel pays viennent les frères Klitschko ?",
+          answers: [
+            { id: "a", text: "De Russie" },
+            { id: "b", text: "D'Ukraine" },
+            { id: "c", text: "De Pologne" },
+            { id: "d", text: "De Biélorussie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "D'Ukraine. Vitali et Wladimir ont dominé les poids lourds pendant les années 2000 et le début des années 2010.",
+        },
       ],
     },
     en: {
       title: "Boxing chrono: 60 seconds in the ring",
       description:
-        "Ten questions on boxing, from Ali to Tyson, and one minute in total to answer them. You have to be quick!",
+        "Twenty questions on boxing, from Ali to Tyson, and one minute in total to answer them. You have to be quick!",
       questions: [
         {
           id: 1,
@@ -300,12 +430,142 @@ export const quizBoxe: TranslatedQuiz = {
           explanation:
             "Mexico, from the Guadalajara area. His nickname Canelo means cinnamon in Spanish, because of his red hair.",
         },
+        {
+          id: 11,
+          question: "How many rounds is a world title fight?",
+          answers: [
+            { id: "a", text: "10" },
+            { id: "b", text: "12" },
+            { id: "c", text: "15" },
+            { id: "d", text: "20" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "12 rounds. It used to be 15 until the 1980s, when the governing bodies cut it after the death of boxer Kim Duk-koo.",
+        },
+        {
+          id: 12,
+          question: "Who does Ali fight in the 1975 Thrilla in Manila?",
+          answers: [
+            { id: "a", text: "George Foreman" },
+            { id: "b", text: "Ken Norton" },
+            { id: "c", text: "Joe Frazier" },
+            { id: "d", text: "Sonny Liston" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Joe Frazier. Ali wins when Frazier's corner stops the fight after the 14th round.",
+        },
+        {
+          id: 13,
+          question: "Who beat Tyson Fury in 2024?",
+          answers: [
+            { id: "a", text: "Anthony Joshua" },
+            { id: "b", text: "Deontay Wilder" },
+            { id: "c", text: "Francis Ngannou" },
+            { id: "d", text: "Oleksandr Usyk" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Ukraine's Oleksandr Usyk, on May 18, 2024 in Riyadh, with every heavyweight belt on the line. He won the December rematch too.",
+        },
+        {
+          id: 14,
+          question: "Which boxer goes by the nickname \"Money\"?",
+          answers: [
+            { id: "a", text: "Floyd Mayweather" },
+            { id: "b", text: "Manny Pacquiao" },
+            { id: "c", text: "Oscar De La Hoya" },
+            { id: "d", text: "Canelo Álvarez" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Floyd Mayweather Jr. Earlier in his career he was also known as \"Pretty Boy\".",
+        },
+        {
+          id: 15,
+          question: "Which Frenchwoman won Olympic boxing gold in 2016?",
+          answers: [
+            { id: "a", text: "Sarah Ourahmoune" },
+            { id: "b", text: "Estelle Mossely" },
+            { id: "c", text: "Maïva Hamadouche" },
+            { id: "d", text: "Amina Zidani" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Estelle Mossely, at lightweight. She was the first French woman to win Olympic boxing gold, and her partner Tony Yoka won gold at the same Games.",
+        },
+        {
+          id: 16,
+          question: "What shape is a boxing ring?",
+          answers: [
+            { id: "a", text: "Round" },
+            { id: "b", text: "Square" },
+            { id: "c", text: "Octagonal" },
+            { id: "d", text: "Hexagonal" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Square, despite the name. Fights used to take place in a circle drawn on the ground, and the word \"ring\" stuck.",
+        },
+        {
+          id: 17,
+          question: "Which boxer does De Niro play in Raging Bull?",
+          answers: [
+            { id: "a", text: "Primo Carnera" },
+            { id: "b", text: "Joe Louis" },
+            { id: "c", text: "Jake LaMotta" },
+            { id: "d", text: "Sugar Ray Robinson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Jake LaMotta, the former middleweight world champion. The role won Robert De Niro the Oscar for Best Actor.",
+        },
+        {
+          id: 18,
+          question: "Which heavyweight champion retired unbeaten?",
+          answers: [
+            { id: "a", text: "Rocky Marciano" },
+            { id: "b", text: "Joe Louis" },
+            { id: "c", text: "Muhammad Ali" },
+            { id: "d", text: "Larry Holmes" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Rocky Marciano, in 1956, with 49 wins from 49 fights, 43 of them by knockout.",
+        },
+        {
+          id: 19,
+          question: "How many judges score a pro fight?",
+          answers: [
+            { id: "a", text: "1" },
+            { id: "b", text: "2" },
+            { id: "c", text: "3" },
+            { id: "d", text: "5" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Three judges. Each one scores every round, usually 10 points for the boxer who wins it and 9 or fewer for the other.",
+        },
+        {
+          id: 20,
+          question: "Which country are the Klitschko brothers from?",
+          answers: [
+            { id: "a", text: "Russia" },
+            { id: "b", text: "Ukraine" },
+            { id: "c", text: "Poland" },
+            { id: "d", text: "Belarus" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ukraine. Vitali and Wladimir ruled the heavyweight division through the 2000s and the early 2010s.",
+        },
       ],
     },
     es: {
       title: "Crono boxeo: 60 segundos en el ring",
       description:
-        "Diez preguntas sobre boxeo, de Ali a Tyson, y un minuto en total para responder. ¡Hay que ir rápido!",
+        "Veinte preguntas sobre boxeo, de Ali a Tyson, y un minuto en total para responder. ¡Hay que ir rápido!",
       questions: [
         {
           id: 1,
@@ -440,6 +700,136 @@ export const quizBoxe: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "De México, de la zona de Guadalajara. Lo llaman Canelo por su pelo pelirrojo, del color de la canela.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos asaltos tiene un combate por el título mundial?",
+          answers: [
+            { id: "a", text: "10" },
+            { id: "b", text: "12" },
+            { id: "c", text: "15" },
+            { id: "d", text: "20" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "12 asaltos. Eran 15 hasta los años 80, cuando las federaciones bajaron el límite tras la muerte del boxeador Kim Duk-koo.",
+        },
+        {
+          id: 12,
+          question: "¿Contra quién pelea Ali en el «Thrilla in Manila» de 1975?",
+          answers: [
+            { id: "a", text: "George Foreman" },
+            { id: "b", text: "Ken Norton" },
+            { id: "c", text: "Joe Frazier" },
+            { id: "d", text: "Sonny Liston" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Contra Joe Frazier. Ali gana cuando el rincón de Frazier detiene el combate tras el asalto 14.",
+        },
+        {
+          id: 13,
+          question: "¿Quién venció a Tyson Fury en 2024?",
+          answers: [
+            { id: "a", text: "Anthony Joshua" },
+            { id: "b", text: "Deontay Wilder" },
+            { id: "c", text: "Francis Ngannou" },
+            { id: "d", text: "Oleksandr Usyk" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "El ucraniano Oleksandr Usyk, el 18 de mayo de 2024 en Riad, con todos los cinturones del peso pesado en juego. También ganó la revancha en diciembre.",
+        },
+        {
+          id: 14,
+          question: "¿A qué boxeador apodan «Money»?",
+          answers: [
+            { id: "a", text: "Floyd Mayweather" },
+            { id: "b", text: "Manny Pacquiao" },
+            { id: "c", text: "Oscar De La Hoya" },
+            { id: "d", text: "Canelo Álvarez" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A Floyd Mayweather Jr. De joven también lo llamaban «Pretty Boy».",
+        },
+        {
+          id: 15,
+          question: "¿Qué francesa fue campeona olímpica de boxeo en 2016?",
+          answers: [
+            { id: "a", text: "Sarah Ourahmoune" },
+            { id: "b", text: "Estelle Mossely" },
+            { id: "c", text: "Maïva Hamadouche" },
+            { id: "d", text: "Amina Zidani" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Estelle Mossely, en peso ligero. Fue la primera francesa campeona olímpica de boxeo, y su pareja, Tony Yoka, también ganó el oro en esos Juegos.",
+        },
+        {
+          id: 16,
+          question: "¿Qué forma tiene un ring de boxeo?",
+          answers: [
+            { id: "a", text: "Redondo" },
+            { id: "b", text: "Cuadrado" },
+            { id: "c", text: "Octogonal" },
+            { id: "d", text: "Hexagonal" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Cuadrado, aunque se llame ring. Antes se peleaba dentro de un círculo marcado en el suelo, y la palabra se quedó.",
+        },
+        {
+          id: 17,
+          question: "¿A qué boxeador interpreta De Niro en Toro salvaje?",
+          answers: [
+            { id: "a", text: "Primo Carnera" },
+            { id: "b", text: "Joe Louis" },
+            { id: "c", text: "Jake LaMotta" },
+            { id: "d", text: "Sugar Ray Robinson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "A Jake LaMotta, campeón del mundo del peso medio. El papel le dio a Robert De Niro el Óscar al mejor actor.",
+        },
+        {
+          id: 18,
+          question: "¿Qué campeón del peso pesado se retiró invicto?",
+          answers: [
+            { id: "a", text: "Rocky Marciano" },
+            { id: "b", text: "Joe Louis" },
+            { id: "c", text: "Muhammad Ali" },
+            { id: "d", text: "Larry Holmes" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Rocky Marciano, en 1956, con 49 victorias en 49 combates, 43 de ellas por K.O.",
+        },
+        {
+          id: 19,
+          question: "¿Cuántos jueces puntúan un combate profesional?",
+          answers: [
+            { id: "a", text: "1" },
+            { id: "b", text: "2" },
+            { id: "c", text: "3" },
+            { id: "d", text: "5" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Tres jueces. Cada uno puntúa todos los asaltos, normalmente con 10 puntos para el que gana el asalto y 9 o menos para el otro.",
+        },
+        {
+          id: 20,
+          question: "¿De qué país son los hermanos Klitschko?",
+          answers: [
+            { id: "a", text: "De Rusia" },
+            { id: "b", text: "De Ucrania" },
+            { id: "c", text: "De Polonia" },
+            { id: "d", text: "De Bielorrusia" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "De Ucrania. Vitali y Wladimir dominaron el peso pesado durante los años 2000 y el principio de los 2010.",
         },
       ],
     },

@@ -129,9 +129,12 @@ export function resolveSubcategoryData(categorySlug: string, subSlug: string, su
  */
 export function categoryTitle(name: string, locale: Locale): string {
   const lower = name.toLowerCase();
-  if (locale === "fr") return `Quiz ${lower} : teste tes connaissances | WizyQuiz`;
-  if (locale === "es") return `Quizzes de ${lower}: pon a prueba tu cultura | WizyQuiz`;
-  return `${name} quizzes: test your knowledge | WizyQuiz`;
+  const t =
+    locale === "fr" ? `Quiz ${lower} : teste tes connaissances | WizyQuiz`
+    : locale === "es" ? `Quizzes de ${lower}: pon a prueba tu cultura | WizyQuiz`
+    : `${name} quizzes: test your knowledge | WizyQuiz`;
+  if (t.length <= 60) return t;
+  return locale === "fr" ? `Quiz ${lower} gratuits | WizyQuiz` : locale === "es" ? `Quizzes de ${lower} gratis | WizyQuiz` : `Free ${lower} quizzes | WizyQuiz`;
 }
 
 export function subcategoryTitle(sub: string, category: string, locale: Locale): string {

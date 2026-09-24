@@ -1,4 +1,5 @@
 ---
+import { MIN_QUIZZES_TO_INDEX_SUBCATEGORY } from "../../../config/launch";
 import Layout from "../../../layouts/Layout.astro";
 import CategoryPage from "../../../components/CategoryPage";
 import { localePath } from "../../../utils/base";
@@ -19,7 +20,7 @@ const lp = (path: string) => localePath(path, locale);
 const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale);
 ---
 
-<Layout title={subcategoryTitle(subName, category.name, locale)} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths}>
+<Layout title={subcategoryTitle(subName, category.name, locale)} description={subCategory.description} locale={locale} hreflangPaths={hreflangPaths} noindex={quizzes.length < MIN_QUIZZES_TO_INDEX_SUBCATEGORY}>
   <div class="max-w-7xl mx-auto px-4 pt-6">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-2" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>

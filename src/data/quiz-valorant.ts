@@ -22,7 +22,7 @@ export const quizValorant: TranslatedQuiz = {
     fr: {
       title: "Chrono Valorant : 60 secondes",
       description:
-        "Dix questions sur Valorant, ses agents, ses cartes et ses règles, avec une minute au total. Pas le temps d'hésiter !",
+        "Vingt questions sur Valorant, ses agents, ses cartes et ses règles, avec une minute au total. Pas le temps d'hésiter !",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizValorant: TranslatedQuiz = {
           explanation:
             "Le Classic. Tout le monde commence chaque manche avec, les autres pistolets s'achètent.",
         },
+        {
+          id: 11,
+          question: "Avec quoi achète-t-on ses armes en partie ?",
+          answers: [
+            { id: "a", text: "Des Valorant Points" },
+            { id: "b", text: "Des crédits" },
+            { id: "c", text: "De la radianite" },
+            { id: "d", text: "Des gemmes" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Des crédits, gagnés à chaque manche selon les éliminations et le résultat. Les Valorant Points servent à la boutique.",
+        },
+        {
+          id: 12,
+          question: "Quel type d'arme est l'Operator ?",
+          answers: [
+            { id: "a", text: "Un fusil à pompe" },
+            { id: "b", text: "Une mitraillette" },
+            { id: "c", text: "Un fusil de précision" },
+            { id: "d", text: "Un pistolet" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Un fusil de précision, l'arme la plus chère du jeu. Une balle dans le corps suffit à tuer.",
+        },
+        {
+          id: 13,
+          question: "Après combien de manches change-t-on de camp ?",
+          answers: [
+            { id: "a", text: "10" },
+            { id: "b", text: "12" },
+            { id: "c", text: "13" },
+            { id: "d", text: "15" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Après 12 manches. Les attaquants passent en défense, et les défenseurs en attaque.",
+        },
+        {
+          id: 14,
+          question: "Combien de temps avant que le Spike explose ?",
+          answers: [
+            { id: "a", text: "30 secondes" },
+            { id: "b", text: "45 secondes" },
+            { id: "c", text: "60 secondes" },
+            { id: "d", text: "90 secondes" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "45 secondes après la pose. Pour le désamorcer, il faut 7 secondes.",
+        },
+        {
+          id: 15,
+          question: "Quelle carte a trois sites ?",
+          answers: [
+            { id: "a", text: "Bind" },
+            { id: "b", text: "Ascent" },
+            { id: "c", text: "Split" },
+            { id: "d", text: "Haven" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Haven, avec ses sites A, B et C. La plupart des cartes n'en ont que deux.",
+        },
+        {
+          id: 16,
+          question: "Quelle carte a des téléporteurs ?",
+          answers: [
+            { id: "a", text: "Haven" },
+            { id: "b", text: "Ascent" },
+            { id: "c", text: "Bind" },
+            { id: "d", text: "Icebox" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bind. Elle n'a pas de milieu, mais deux téléporteurs à sens unique.",
+        },
+        {
+          id: 17,
+          question: "Comment s'appelle le championnat du monde de Valorant ?",
+          answers: [
+            { id: "a", text: "Worlds" },
+            { id: "b", text: "The International" },
+            { id: "c", text: "Valorant Champions" },
+            { id: "d", text: "Le Major" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Valorant Champions. Les Worlds, c'est League of Legends, et The International, c'est Dota 2.",
+        },
+        {
+          id: 18,
+          question: "De quel pays vient Raze ?",
+          answers: [
+            { id: "a", text: "Du Mexique" },
+            { id: "b", text: "Du Brésil" },
+            { id: "c", text: "D'Argentine" },
+            { id: "d", text: "Du Portugal" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Du Brésil, de Salvador de Bahia. C'est la spécialiste des explosifs.",
+        },
+        {
+          id: 19,
+          question: "De quel pays vient Sova ?",
+          answers: [
+            { id: "a", text: "De Russie" },
+            { id: "b", text: "D'Ukraine" },
+            { id: "c", text: "De Suède" },
+            { id: "d", text: "De Norvège" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "De Russie. C'est l'archer du jeu, et ses flèches servent à repérer les ennemis.",
+        },
+        {
+          id: 20,
+          question: "Quel est le rôle de Viper ?",
+          answers: [
+            { id: "a", text: "Duelliste" },
+            { id: "b", text: "Initiateur" },
+            { id: "c", text: "Contrôleur" },
+            { id: "d", text: "Sentinelle" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Contrôleur. Viper bloque la vue des ennemis avec ses nuages et ses murs de gaz toxique.",
+        },
       ],
     },
     en: {
       title: "Valorant Chrono: 60 seconds",
       description:
-        "Ten questions on Valorant, its agents, its maps and its rules, with one minute on the clock. No time to hesitate!",
+        "Twenty questions on Valorant, its agents, its maps and its rules, with one minute on the clock. No time to hesitate!",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizValorant: TranslatedQuiz = {
           explanation:
             "The Classic. Everyone starts each round with it, and the other pistols have to be bought.",
         },
+        {
+          id: 11,
+          question: "What do you buy weapons with during a match?",
+          answers: [
+            { id: "a", text: "Valorant Points" },
+            { id: "b", text: "Credits" },
+            { id: "c", text: "Radianite" },
+            { id: "d", text: "Gems" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Credits, earned every round from kills and the round result. Valorant Points are for the store.",
+        },
+        {
+          id: 12,
+          question: "What kind of weapon is the Operator?",
+          answers: [
+            { id: "a", text: "A shotgun" },
+            { id: "b", text: "An SMG" },
+            { id: "c", text: "A sniper rifle" },
+            { id: "d", text: "A pistol" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "A sniper rifle, and the most expensive gun in the game. One body shot is enough to kill.",
+        },
+        {
+          id: 13,
+          question: "After how many rounds do teams swap sides?",
+          answers: [
+            { id: "a", text: "10" },
+            { id: "b", text: "12" },
+            { id: "c", text: "13" },
+            { id: "d", text: "15" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "After 12 rounds. Attackers move to defence, and defenders move to attack.",
+        },
+        {
+          id: 14,
+          question: "How long until a planted Spike explodes?",
+          answers: [
+            { id: "a", text: "30 seconds" },
+            { id: "b", text: "45 seconds" },
+            { id: "c", text: "60 seconds" },
+            { id: "d", text: "90 seconds" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "45 seconds after the plant. Defusing it takes 7 seconds.",
+        },
+        {
+          id: 15,
+          question: "Which map has three sites?",
+          answers: [
+            { id: "a", text: "Bind" },
+            { id: "b", text: "Ascent" },
+            { id: "c", text: "Split" },
+            { id: "d", text: "Haven" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Haven, with its A, B and C sites. Most maps only have two.",
+        },
+        {
+          id: 16,
+          question: "Which map has teleporters?",
+          answers: [
+            { id: "a", text: "Haven" },
+            { id: "b", text: "Ascent" },
+            { id: "c", text: "Bind" },
+            { id: "d", text: "Icebox" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bind. It has no mid, but it has two one-way teleporters.",
+        },
+        {
+          id: 17,
+          question: "What is the Valorant world championship called?",
+          answers: [
+            { id: "a", text: "Worlds" },
+            { id: "b", text: "The International" },
+            { id: "c", text: "Valorant Champions" },
+            { id: "d", text: "The Major" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Valorant Champions. Worlds is League of Legends, and The International is Dota 2.",
+        },
+        {
+          id: 18,
+          question: "Which country is Raze from?",
+          answers: [
+            { id: "a", text: "Mexico" },
+            { id: "b", text: "Brazil" },
+            { id: "c", text: "Argentina" },
+            { id: "d", text: "Portugal" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Brazil, from Salvador in Bahia. She is the explosives expert.",
+        },
+        {
+          id: 19,
+          question: "Which country is Sova from?",
+          answers: [
+            { id: "a", text: "Russia" },
+            { id: "b", text: "Ukraine" },
+            { id: "c", text: "Sweden" },
+            { id: "d", text: "Norway" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Russia. He is the game's archer, and he uses his arrows to spot enemies.",
+        },
+        {
+          id: 20,
+          question: "What is Viper's role?",
+          answers: [
+            { id: "a", text: "Duelist" },
+            { id: "b", text: "Initiator" },
+            { id: "c", text: "Controller" },
+            { id: "d", text: "Sentinel" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Controller. Viper blocks the enemy's vision with her clouds and walls of toxic gas.",
+        },
       ],
     },
     es: {
       title: "Crono Valorant: 60 segundos",
       description:
-        "Diez preguntas sobre Valorant, sus agentes, sus mapas y sus reglas, con un minuto en total. ¡No hay tiempo para dudar!",
+        "Veinte preguntas sobre Valorant, sus agentes, sus mapas y sus reglas, con un minuto en total. ¡No hay tiempo para dudar!",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizValorant: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "La Classic. Todo el mundo empieza cada ronda con ella, y las demás pistolas hay que comprarlas.",
+        },
+        {
+          id: 11,
+          question: "¿Con qué se compran las armas durante la partida?",
+          answers: [
+            { id: "a", text: "Valorant Points" },
+            { id: "b", text: "Créditos" },
+            { id: "c", text: "Radianita" },
+            { id: "d", text: "Gemas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Con créditos, que se ganan cada ronda según las bajas y el resultado. Los Valorant Points son para la tienda.",
+        },
+        {
+          id: 12,
+          question: "¿Qué tipo de arma es el Operator?",
+          answers: [
+            { id: "a", text: "Una escopeta" },
+            { id: "b", text: "Un subfusil" },
+            { id: "c", text: "Un rifle de francotirador" },
+            { id: "d", text: "Una pistola" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Un rifle de francotirador, el arma más cara del juego. Un disparo en el cuerpo basta para matar.",
+        },
+        {
+          id: 13,
+          question: "¿Tras cuántas rondas se cambia de bando?",
+          answers: [
+            { id: "a", text: "10" },
+            { id: "b", text: "12" },
+            { id: "c", text: "13" },
+            { id: "d", text: "15" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Tras 12 rondas. Los atacantes pasan a defender, y los defensores a atacar.",
+        },
+        {
+          id: 14,
+          question: "¿Cuánto tarda en explotar la Spike?",
+          answers: [
+            { id: "a", text: "30 segundos" },
+            { id: "b", text: "45 segundos" },
+            { id: "c", text: "60 segundos" },
+            { id: "d", text: "90 segundos" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "45 segundos desde que se planta. Desactivarla lleva 7 segundos.",
+        },
+        {
+          id: 15,
+          question: "¿Qué mapa tiene tres sitios?",
+          answers: [
+            { id: "a", text: "Bind" },
+            { id: "b", text: "Ascent" },
+            { id: "c", text: "Split" },
+            { id: "d", text: "Haven" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Haven, con sus sitios A, B y C. La mayoría de los mapas solo tienen dos.",
+        },
+        {
+          id: 16,
+          question: "¿Qué mapa tiene teletransportadores?",
+          answers: [
+            { id: "a", text: "Haven" },
+            { id: "b", text: "Ascent" },
+            { id: "c", text: "Bind" },
+            { id: "d", text: "Icebox" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bind. No tiene zona central, pero sí dos teletransportadores de un solo sentido.",
+        },
+        {
+          id: 17,
+          question: "¿Cómo se llama el campeonato mundial de Valorant?",
+          answers: [
+            { id: "a", text: "Worlds" },
+            { id: "b", text: "The International" },
+            { id: "c", text: "Valorant Champions" },
+            { id: "d", text: "El Major" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Valorant Champions. Worlds es el de League of Legends, y The International, el de Dota 2.",
+        },
+        {
+          id: 18,
+          question: "¿De qué país es Raze?",
+          answers: [
+            { id: "a", text: "De México" },
+            { id: "b", text: "De Brasil" },
+            { id: "c", text: "De Argentina" },
+            { id: "d", text: "De Portugal" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "De Brasil, de Salvador de Bahía. Es la experta en explosivos.",
+        },
+        {
+          id: 19,
+          question: "¿De qué país es Sova?",
+          answers: [
+            { id: "a", text: "De Rusia" },
+            { id: "b", text: "De Ucrania" },
+            { id: "c", text: "De Suecia" },
+            { id: "d", text: "De Noruega" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "De Rusia. Es el arquero del juego y usa sus flechas para localizar a los enemigos.",
+        },
+        {
+          id: 20,
+          question: "¿Qué rol tiene Viper?",
+          answers: [
+            { id: "a", text: "Duelista" },
+            { id: "b", text: "Iniciador" },
+            { id: "c", text: "Controlador" },
+            { id: "d", text: "Centinela" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Controlador. Viper tapa la visión de los enemigos con sus nubes y sus muros de gas tóxico.",
         },
       ],
     },

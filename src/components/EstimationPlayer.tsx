@@ -3,6 +3,7 @@ import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
+import { trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -81,6 +82,8 @@ const esT: Record<string, Record<string, string>> = {
   estimation: { en: "Estimation", fr: "Estimation", es: "Estimación" },
   questions: { en: "Questions", fr: "Questions", es: "Preguntas" },
   attempts: { en: "Attempts", fr: "Essais", es: "Intentos" },
+  foundInOne: { en: "Found in {n} attempt", fr: "Trouvé en {n} essai", es: "Encontrado en {n} intento" },
+  foundInMany: { en: "Found in {n} attempts", fr: "Trouvé en {n} essais", es: "Encontrado en {n} intentos" },
   attempt: { en: "Attempt", fr: "Essai", es: "Intento" },
   tolerance: { en: "Tolerance", fr: "Tolérance", es: "Tolerancia" },
   howToPlay: { en: "How to play", fr: "Comment jouer", es: "Cómo jugar" },
@@ -126,6 +129,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
   const correctVal = currentQuestion ? getCorrectValue(currentQuestion) : 0;
 
   const handleStart = useCallback(() => {
+    trackQuizStart(quiz.slug);
     setPhase("playing");
     setCurrentIndex(0);
     setGuesses([]);
@@ -407,7 +411,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                           {tt("answerLabel")} <span className="font-bold text-gray-700">{formatNumber(cv)}</span>
                           {r.correct && (
                             <span className="ml-2 text-green-600">
-                              Found in {r.attempts} attempt{r.attempts > 1 ? "s" : ""}
+                              {tt(r.attempts > 1 ? "foundInMany" : "foundInOne").replace("{n}", String(r.attempts))}
                             </span>
                           )}
                           {!r.correct && (

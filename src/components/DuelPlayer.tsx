@@ -3,6 +3,7 @@ import type { QuizData } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
+import { trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -91,6 +92,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
   };
 
   const handleStart = useCallback(() => {
+    trackQuizStart(quiz.slug);
     setHasStarted(true);
   }, []);
 

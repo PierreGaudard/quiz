@@ -3,6 +3,7 @@ import type { QuizData } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
+import { trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -98,6 +99,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
 
   // ---- Start the game ----
   const handleStart = useCallback(() => {
+    trackQuizStart(quiz.slug);
     setPhase("playing");
     setTimeLeft(TOTAL_TIME);
     timeLeftRef.current = TOTAL_TIME;

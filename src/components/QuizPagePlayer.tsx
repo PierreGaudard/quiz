@@ -2,6 +2,7 @@ import { useState, useRef, useCallback, useEffect } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
+import { trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -104,6 +105,9 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
   const [xpPopup, setXpPopup] = useState<{ amount: number; key: number } | null>(null);
   const [savedProgress, setSavedProgress] = useState(false);
   const questionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  // Une partie commencee est comptee une fois, au premier clic (bouton ou
+  // premiere reponse), puis a chaque « rejouer ».
+  const startTracked = useRef(false);
   const resultsRef = useRef<HTMLDivElement | null>(null);
 
   const BASE_XP = 100;
@@ -159,6 +163,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
       });
 
       if (!hasStarted) setHasStarted(true);
+      if (!startTracked.current) { startTracked.current = true; trackQuizStart(quiz.slug); }
       setShowIndice(null);
 
       // XP gain
@@ -221,6 +226,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
   );
 
   const handleRestart = useCallback(() => {
+    startTracked.current = true;
+    trackQuizStart(quiz.slug);
     setQuestionStates(quiz.questions.map(() => ({ selectedAnswer: null, hasAnswered: false, isCorrect: false })));
     setActiveIndex(0);
     setShowResults(false);
@@ -323,6 +330,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
             : { label: tt("rankBeginner"), color: "bg-gray-500", icon: "D" };
 
   const handleStartQuiz = useCallback(() => {
+    if (!startTracked.current) { startTracked.current = true; trackQuizStart(quiz.slug); }
     setHasStarted(true);
     // Small delay to let React render the question cards before scrolling
     setTimeout(() => scrollToQuestion(0), 150);

@@ -3,6 +3,7 @@ import type { QuizData } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
+import { trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -127,6 +128,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
   }, [screen, score, totalQuestions, quiz.slug]);
 
   const handleStart = useCallback(() => {
+    trackQuizStart(quiz.slug);
     setScreen("playing");
     setCurrentIndex(0);
     setHasAnswered(false);

@@ -3,6 +3,7 @@ import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
+import { trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -113,6 +114,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
   };
 
   const handleStart = useCallback(() => {
+    trackQuizStart(quiz.slug);
     setHasStarted(true);
     setShuffledAnswers(quiz.questions.map((q) => shuffleArray(q.answers)));
   }, [quiz.questions]);

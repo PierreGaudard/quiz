@@ -18,6 +18,8 @@ const allQuizzes = getAllQuizzes(locale);
 const mainCategories = categories;
 const homepageCategories = categories;
 
+// Libelle court sous les ronds : le sujet, sans « Quiz » ni la question.
+const shortTitle = (t: string) => { const x = t.replace(/^(Quiz(zes)?( de)?)\s*/i, '').split(/\s*:/)[0]; return x.charAt(0).toUpperCase() + x.slice(1); };
 const popularQuizzes = [...allQuizzes].sort((a, b) => (b.playCount || 0) - (a.playCount || 0));
 const newestQuizzes = [...allQuizzes].slice(-4).reverse();
 const totalPlays = allQuizzes.reduce((sum, q) => sum + (q.playCount || 0), 0);
@@ -118,7 +120,7 @@ function formatCount(n: number): string {
                 </div>
                 {i < 3 && <span class="absolute -top-1 -right-1 w-5 h-5 bg-orange-700 rounded-full text-white text-[11px] font-black flex items-center justify-center border-2 border-[#2d1b69]">#{i+1}</span>}
               </div>
-              <p class="text-[11px] text-white/60 group-hover:text-white font-semibold text-center leading-tight line-clamp-2 transition-colors">{quiz.title.replace(/^Quiz\s*/i, '').substring(0, 25)}</p>
+              <p class="text-[11px] text-white/60 group-hover:text-white font-semibold text-center leading-tight line-clamp-2 transition-colors">{shortTitle(quiz.title)}</p>
             </a>
           ))}
         </div>

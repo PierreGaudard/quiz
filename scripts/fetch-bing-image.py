@@ -15,7 +15,8 @@ Il ecarte d'office les banques d'images qui filigranent.
 import json, subprocess, sys, os, io, urllib.parse, urllib.request, datetime
 
 BLOCKED = ("shutterstock", "gettyimages", "istockphoto", "alamy", "dreamstime", "123rf",
-           "depositphotos", "stock.adobe", "adobestock", "bigstockphoto", "vectorstock", "freepik")
+           "depositphotos", "stock.adobe", "adobestock", "bigstockphoto", "vectorstock", "freepik",
+           "vecteezy", "fineartamerica", "pixers", "canstockphoto", "pond5", "agefotostock")
 
 def pw(session, *args):
     return subprocess.run(["playwright-cli", f"-s={session}", *args], capture_output=True, text=True, timeout=120).stdout

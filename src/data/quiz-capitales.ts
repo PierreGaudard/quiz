@@ -24,7 +24,7 @@ export const quizCapitales: TranslatedQuiz = {
     fr: {
       title: "Chrono capitales : 60 secondes",
       description:
-        "Dix capitales à trouver en une minute, dans des pays où la plus grande ville n'est pas celle qu'on croit.",
+        "Vingt capitales à trouver en une minute, dans des pays où la plus grande ville n'est pas celle qu'on croit.",
       questions: [
         {
           id: 1,
@@ -161,12 +161,142 @@ export const quizCapitales: TranslatedQuiz = {
           explanation:
             "C'est Islamabad, une ville construite dans les années 1960 et capitale depuis 1967. Karachi, la plus grande ville du pays, a été la première capitale jusqu'en 1959.",
         },
+        {
+          id: 11,
+          question: "Quelle est la capitale de la Turquie ?",
+          answers: [
+            { id: "a", text: "Istanbul" },
+            { id: "b", text: "Ankara" },
+            { id: "c", text: "Izmir" },
+            { id: "d", text: "Antalya" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ankara, depuis 1923. Istanbul est bien plus peuplée, mais ce n'est pas la capitale.",
+        },
+        {
+          id: 12,
+          question: "Quelle est la capitale des États-Unis ?",
+          answers: [
+            { id: "a", text: "New York" },
+            { id: "b", text: "Los Angeles" },
+            { id: "c", text: "Washington" },
+            { id: "d", text: "Chicago" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Washington, D.C. New York est la plus grande ville du pays, mais le gouvernement siège à Washington.",
+        },
+        {
+          id: 13,
+          question: "Quelle est la capitale de l'Inde ?",
+          answers: [
+            { id: "a", text: "New Delhi" },
+            { id: "b", text: "Mumbai" },
+            { id: "c", text: "Calcutta" },
+            { id: "d", text: "Bangalore" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "New Delhi. Mumbai est la ville la plus peuplée si on compte la ville seule, sans son agglomération.",
+        },
+        {
+          id: 14,
+          question: "Quelle est la capitale de la Chine ?",
+          answers: [
+            { id: "a", text: "Shanghai" },
+            { id: "b", text: "Hong Kong" },
+            { id: "c", text: "Canton" },
+            { id: "d", text: "Pékin" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Pékin. Shanghai est la plus grande agglomération du pays, mais la capitale est Pékin.",
+        },
+        {
+          id: 15,
+          question: "Quelle est la capitale des Émirats arabes unis ?",
+          answers: [
+            { id: "a", text: "Dubaï" },
+            { id: "b", text: "Abou Dabi" },
+            { id: "c", text: "Charjah" },
+            { id: "d", text: "Doha" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Abou Dabi. Dubaï est la plus grande ville du pays, et Doha est la capitale du Qatar voisin.",
+        },
+        {
+          id: 16,
+          question: "Quelle est la capitale du Cameroun ?",
+          answers: [
+            { id: "a", text: "Yaoundé" },
+            { id: "b", text: "Douala" },
+            { id: "c", text: "Garoua" },
+            { id: "d", text: "Bafoussam" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Yaoundé. Douala, le grand port du pays, est la plus grande ville.",
+        },
+        {
+          id: 17,
+          question: "Quelle est la capitale de l'Équateur ?",
+          answers: [
+            { id: "a", text: "Guayaquil" },
+            { id: "b", text: "Cuenca" },
+            { id: "c", text: "Quito" },
+            { id: "d", text: "Manta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Quito, perchée dans les Andes. Guayaquil, sur la côte, est la plus grande ville du pays.",
+        },
+        {
+          id: 18,
+          question: "Quelle est la capitale du Belize ?",
+          answers: [
+            { id: "a", text: "Belize City" },
+            { id: "b", text: "Belmopan" },
+            { id: "c", text: "San Ignacio" },
+            { id: "d", text: "Orange Walk" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Belmopan. On a déplacé la capitale à l'intérieur des terres après l'ouragan Hattie, qui avait ravagé Belize City en 1961.",
+        },
+        {
+          id: 19,
+          question: "Quelle est la capitale de l'Écosse ?",
+          answers: [
+            { id: "a", text: "Glasgow" },
+            { id: "b", text: "Aberdeen" },
+            { id: "c", text: "Dundee" },
+            { id: "d", text: "Édimbourg" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Édimbourg, où siège le Parlement écossais. Glasgow est plus grande.",
+        },
+        {
+          id: 20,
+          question: "Quelle est la capitale des Philippines ?",
+          answers: [
+            { id: "a", text: "Quezon City" },
+            { id: "b", text: "Cebu" },
+            { id: "c", text: "Manille" },
+            { id: "d", text: "Davao" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Manille. Sa voisine Quezon City, dans la même agglomération, est la ville la plus peuplée du pays.",
+        },
       ],
     },
     en: {
       title: "Capitals Chrono: 60 seconds",
       description:
-        "Ten capital cities to name in one minute, in countries where the biggest city is not the one you think.",
+        "Twenty capital cities to name in one minute, in countries where the biggest city is not the one you think.",
       questions: [
         {
           id: 1,
@@ -303,12 +433,142 @@ export const quizCapitales: TranslatedQuiz = {
           explanation:
             "Islamabad, a city built in the 1960s that became the capital in 1967. Karachi, the biggest city in the country, was the first capital until 1959.",
         },
+        {
+          id: 11,
+          question: "What is the capital of Turkey?",
+          answers: [
+            { id: "a", text: "Istanbul" },
+            { id: "b", text: "Ankara" },
+            { id: "c", text: "Izmir" },
+            { id: "d", text: "Antalya" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ankara, since 1923. Istanbul is far bigger, but it is not the capital.",
+        },
+        {
+          id: 12,
+          question: "What is the capital of the United States?",
+          answers: [
+            { id: "a", text: "New York" },
+            { id: "b", text: "Los Angeles" },
+            { id: "c", text: "Washington" },
+            { id: "d", text: "Chicago" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Washington, D.C. New York is the biggest city in the country, but the government sits in Washington.",
+        },
+        {
+          id: 13,
+          question: "What is the capital of India?",
+          answers: [
+            { id: "a", text: "New Delhi" },
+            { id: "b", text: "Mumbai" },
+            { id: "c", text: "Kolkata" },
+            { id: "d", text: "Bangalore" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "New Delhi. Mumbai has more people if you count the city proper, without its suburbs.",
+        },
+        {
+          id: 14,
+          question: "What is the capital of China?",
+          answers: [
+            { id: "a", text: "Shanghai" },
+            { id: "b", text: "Hong Kong" },
+            { id: "c", text: "Guangzhou" },
+            { id: "d", text: "Beijing" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Beijing. Shanghai is the country's largest urban area, but Beijing is the capital.",
+        },
+        {
+          id: 15,
+          question: "What is the capital of the United Arab Emirates?",
+          answers: [
+            { id: "a", text: "Dubai" },
+            { id: "b", text: "Abu Dhabi" },
+            { id: "c", text: "Sharjah" },
+            { id: "d", text: "Doha" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Abu Dhabi. Dubai is the biggest city in the country, and Doha is the capital of neighbouring Qatar.",
+        },
+        {
+          id: 16,
+          question: "What is the capital of Cameroon?",
+          answers: [
+            { id: "a", text: "Yaoundé" },
+            { id: "b", text: "Douala" },
+            { id: "c", text: "Garoua" },
+            { id: "d", text: "Bafoussam" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Yaoundé. Douala, the country's main port, is the largest city.",
+        },
+        {
+          id: 17,
+          question: "What is the capital of Ecuador?",
+          answers: [
+            { id: "a", text: "Guayaquil" },
+            { id: "b", text: "Cuenca" },
+            { id: "c", text: "Quito" },
+            { id: "d", text: "Manta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Quito, high up in the Andes. Guayaquil, on the coast, is the country's largest city.",
+        },
+        {
+          id: 18,
+          question: "What is the capital of Belize?",
+          answers: [
+            { id: "a", text: "Belize City" },
+            { id: "b", text: "Belmopan" },
+            { id: "c", text: "San Ignacio" },
+            { id: "d", text: "Orange Walk" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Belmopan. The capital was moved inland after Hurricane Hattie wrecked Belize City in 1961.",
+        },
+        {
+          id: 19,
+          question: "What is the capital of Scotland?",
+          answers: [
+            { id: "a", text: "Glasgow" },
+            { id: "b", text: "Aberdeen" },
+            { id: "c", text: "Dundee" },
+            { id: "d", text: "Edinburgh" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Edinburgh, home of the Scottish Parliament. Glasgow is bigger.",
+        },
+        {
+          id: 20,
+          question: "What is the capital of the Philippines?",
+          answers: [
+            { id: "a", text: "Quezon City" },
+            { id: "b", text: "Cebu" },
+            { id: "c", text: "Manila" },
+            { id: "d", text: "Davao" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Manila. Its neighbour Quezon City, in the same metro area, is the most populated city in the country.",
+        },
       ],
     },
     es: {
       title: "Crono capitales: 60 segundos",
       description:
-        "Diez capitales que adivinar en un minuto, en países donde la ciudad más grande no es la que uno cree.",
+        "Veinte capitales que adivinar en un minuto, en países donde la ciudad más grande no es la que uno cree.",
       questions: [
         {
           id: 1,
@@ -444,6 +704,136 @@ export const quizCapitales: TranslatedQuiz = {
           correctAnswer: "d",
           explanation:
             "Es Islamabad, una ciudad construida en los años sesenta y capital desde 1967. Karachi, la ciudad más grande del país, fue la primera capital hasta 1959.",
+        },
+        {
+          id: 11,
+          question: "¿Cuál es la capital de Turquía?",
+          answers: [
+            { id: "a", text: "Estambul" },
+            { id: "b", text: "Ankara" },
+            { id: "c", text: "Esmirna" },
+            { id: "d", text: "Antalya" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ankara, desde 1923. Estambul es mucho más grande, pero no es la capital.",
+        },
+        {
+          id: 12,
+          question: "¿Cuál es la capital de Estados Unidos?",
+          answers: [
+            { id: "a", text: "Nueva York" },
+            { id: "b", text: "Los Ángeles" },
+            { id: "c", text: "Washington" },
+            { id: "d", text: "Chicago" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Washington D. C. Nueva York es la ciudad más grande del país, pero el Gobierno está en Washington.",
+        },
+        {
+          id: 13,
+          question: "¿Cuál es la capital de la India?",
+          answers: [
+            { id: "a", text: "Nueva Delhi" },
+            { id: "b", text: "Bombay" },
+            { id: "c", text: "Calcuta" },
+            { id: "d", text: "Bangalore" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Nueva Delhi. Bombay tiene más habitantes si se cuenta solo la ciudad, sin su área metropolitana.",
+        },
+        {
+          id: 14,
+          question: "¿Cuál es la capital de China?",
+          answers: [
+            { id: "a", text: "Shanghái" },
+            { id: "b", text: "Hong Kong" },
+            { id: "c", text: "Cantón" },
+            { id: "d", text: "Pekín" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Pekín. Shanghái es la mayor aglomeración del país, pero la capital es Pekín.",
+        },
+        {
+          id: 15,
+          question: "¿Cuál es la capital de los Emiratos Árabes Unidos?",
+          answers: [
+            { id: "a", text: "Dubái" },
+            { id: "b", text: "Abu Dabi" },
+            { id: "c", text: "Sharjah" },
+            { id: "d", text: "Doha" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Abu Dabi. Dubái es la ciudad más grande del país, y Doha es la capital del vecino Catar.",
+        },
+        {
+          id: 16,
+          question: "¿Cuál es la capital de Camerún?",
+          answers: [
+            { id: "a", text: "Yaundé" },
+            { id: "b", text: "Duala" },
+            { id: "c", text: "Garoua" },
+            { id: "d", text: "Bafoussam" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Yaundé. Duala, el gran puerto del país, es la ciudad más grande.",
+        },
+        {
+          id: 17,
+          question: "¿Cuál es la capital de Ecuador?",
+          answers: [
+            { id: "a", text: "Guayaquil" },
+            { id: "b", text: "Cuenca" },
+            { id: "c", text: "Quito" },
+            { id: "d", text: "Manta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Quito, en plena cordillera de los Andes. Guayaquil, en la costa, es la ciudad más grande del país.",
+        },
+        {
+          id: 18,
+          question: "¿Cuál es la capital de Belice?",
+          answers: [
+            { id: "a", text: "Ciudad de Belice" },
+            { id: "b", text: "Belmopán" },
+            { id: "c", text: "San Ignacio" },
+            { id: "d", text: "Orange Walk" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Belmopán. La capital se trasladó al interior después de que el huracán Hattie arrasara la ciudad de Belice en 1961.",
+        },
+        {
+          id: 19,
+          question: "¿Cuál es la capital de Escocia?",
+          answers: [
+            { id: "a", text: "Glasgow" },
+            { id: "b", text: "Aberdeen" },
+            { id: "c", text: "Dundee" },
+            { id: "d", text: "Edimburgo" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Edimburgo, donde está el Parlamento escocés. Glasgow es más grande.",
+        },
+        {
+          id: 20,
+          question: "¿Cuál es la capital de Filipinas?",
+          answers: [
+            { id: "a", text: "Quezon City" },
+            { id: "b", text: "Cebú" },
+            { id: "c", text: "Manila" },
+            { id: "d", text: "Dávao" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Manila. Su vecina Quezon City, en la misma área metropolitana, es la ciudad más poblada del país.",
         },
       ],
     },
