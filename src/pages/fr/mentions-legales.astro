@@ -9,7 +9,7 @@ const locale: Locale = "fr";
 const lp = (path: string) => localePath(path, locale);
 ---
 
-<Layout title="Mentions légales | WizyQuiz, quiz gratuits en ligne" description="Mentions legales de la plateforme WizyQuiz : editeur, hebergeur, propriete intellectuelle et droit applicable." locale={locale} hreflangPaths={getHreflangStaticPaths("legal")}>
+<Layout title="Mentions légales | WizyQuiz, quiz gratuits en ligne" description="Mentions légales de la plateforme WizyQuiz : éditeur, hébergeur, propriété intellectuelle et droit applicable." locale={locale} hreflangPaths={getHreflangStaticPaths("legal")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -23,7 +23,7 @@ const lp = (path: string) => localePath(path, locale);
 
       <section>
         <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Éditeur du site</h2>
-        <p>Le site <strong>WizyQuiz</strong> (accessible à l'adresse <strong>https://wizy.com</strong>) est édité par :</p>
+        <p>Le site <strong>WizyQuiz</strong> (accessible à l'adresse <strong>https://wizyquiz.com</strong>) est édité par :</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
           <li><strong>Nom :</strong> Pierre Gaudard</li>
           <li><strong>Statut :</strong> Personne physique</li>

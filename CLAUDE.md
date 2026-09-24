@@ -56,6 +56,25 @@ cite pas : ni par un lecteur, ni par un moteur, ni par un modele. La regle
 vaut dans les trois langues, dans les titles, les H1, les JSON-LD, les Open
 Graph et le texte courant.
 
+### Accents : toujours dans les textes, jamais dans les slugs
+
+Tout texte affiche en francais ou en espagnol porte ses accents et sa
+ponctuation (« ¿ », « ¡ » en espagnol, espace avant « ? ! : » en francais) :
+titres, meta, boutons, rangs, messages, contenu des quiz. Le site en a eu des
+centaines sans accents (« Bonne reponse », « Debutant », « Cual es… ») et des
+composants entiers restes en anglais sur les pages FR et ES.
+
+Les slugs, eux, ne prennent **jamais** d'accent : `slugs: { fr: "geographie" }`
+dans `categories.ts`, la table `catSlugs` de `CategoryPage.tsx`, les chemins
+de `hreflang-helpers.ts`. Le libelle s'ecrit « Géographie », l'URL reste
+`/fr/geographie/`. Un correctif d'accents automatique a deja accentue ces
+slugs et change trois URL : apres toute passe sur les textes, comparer la
+liste des pages construites avant et apres (`find dist/client -name
+index.html`), elle doit etre identique.
+
+Les sous-categories FR servent de cle entre `categories.ts` et le champ
+`subcategory` des quiz : les deux s'ecrivent a l'identique, accents compris.
+
 ### No Em Dashes
 Never use -- or em dashes in any content. Rephrase naturally instead.
 

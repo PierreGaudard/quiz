@@ -42,7 +42,7 @@ function getTierName(level: number): Record<string, string> {
   if (level >= 20) return { en: "Bronze", fr: "Bronze", es: "Bronce" };
   if (level >= 10) return { en: "Iron", fr: "Fer", es: "Hierro" };
   if (level >= 5) return { en: "Copper", fr: "Cuivre", es: "Cobre" };
-  return { en: "Beginner", fr: "Debutant", es: "Principiante" };
+  return { en: "Beginner", fr: "Débutant", es: "Principiante" };
 }
 
 /** Get level info from XP. */

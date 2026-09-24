@@ -14,6 +14,53 @@ function getCreatePath(): string {
 
 const LETTER_LABELS = ["A", "B", "C", "D"];
 
+/** Langue de la page, lue dans l'URL comme pour le lien de retour. */
+function getLocale(): "en" | "fr" | "es" {
+  if (typeof window === "undefined") return "en";
+  const path = window.location.pathname;
+  if (path.startsWith("/fr/")) return "fr";
+  if (path.startsWith("/es/")) return "es";
+  return "en";
+}
+
+/*
+ * Le lecteur des quiz crees par les joueurs etait ecrit en anglais en dur, y
+ * compris sur les pages francaises et espagnoles, avec des rangs en francais
+ * au milieu. Tout passe par ce dictionnaire.
+ */
+const T: Record<string, Record<string, string>> = {
+  loading: { en: "Loading quiz...", fr: "Chargement du quiz…", es: "Cargando el quiz…" },
+  notFound: { en: "Quiz not found", fr: "Quiz introuvable", es: "Quiz no encontrado" },
+  invalid: {
+    en: "This quiz link is invalid or has expired. Please check the link is complete.",
+    fr: "Ce lien de quiz est invalide ou a expiré. Vérifiez que le lien est complet.",
+    es: "Este enlace de quiz no es válido o ha caducado. Comprueba que el enlace esté completo.",
+  },
+  createQuiz: { en: "Create a quiz", fr: "Créer un quiz", es: "Crear un quiz" },
+  userCreated: { en: "User-created quiz", fr: "Quiz créé par un joueur", es: "Quiz creado por un jugador" },
+  start: { en: "Start", fr: "Commencer", es: "Empezar" },
+  question: { en: "question", fr: "question", es: "pregunta" },
+  questions: { en: "questions", fr: "questions", es: "preguntas" },
+  summary: { en: "Summary", fr: "Récapitulatif", es: "Resumen" },
+  restart: { en: "Restart", fr: "Rejouer", es: "Repetir" },
+  copied: { en: "Link copied!", fr: "Lien copié !", es: "¡Enlace copiado!" },
+  share: { en: "Share", fr: "Partager", es: "Compartir" },
+  createMine: { en: "Create my quiz", fr: "Créer mon quiz", es: "Crear mi quiz" },
+  correct: { en: "Correct!", fr: "Bonne réponse !", es: "¡Correcto!" },
+  wrong: { en: "Wrong answer. The correct answer was {x}.", fr: "Mauvaise réponse. La bonne réponse était la {x}.", es: "Respuesta incorrecta. La correcta era la {x}." },
+  seeResults: { en: "See results", fr: "Voir le résultat", es: "Ver el resultado" },
+  next: { en: "Next question", fr: "Question suivante", es: "Siguiente pregunta" },
+  msgHigh: { en: "Excellent! You've mastered this topic!", fr: "Excellent ! Vous maîtrisez le sujet !", es: "¡Excelente! ¡Dominas el tema!" },
+  msgMid: { en: "Not bad! You have a solid foundation.", fr: "Pas mal ! Vous avez de bonnes bases.", es: "¡Nada mal! Tienes buenas bases." },
+  msgLow: { en: "Keep practicing, you'll improve!", fr: "Continuez, vous allez progresser !", es: "¡Sigue practicando, vas a mejorar!" },
+  rankLegend: { en: "Legend", fr: "Légende", es: "Leyenda" },
+  rankExpert: { en: "Expert", fr: "Expert", es: "Experto" },
+  rankSkilled: { en: "Skilled", fr: "Confirmé", es: "Hábil" },
+  rankApprentice: { en: "Apprentice", fr: "Apprenti", es: "Aprendiz" },
+  rankBeginner: { en: "Beginner", fr: "Débutant", es: "Principiante" },
+};
+const tt = (key: string) => T[key]?.[getLocale()] || T[key]?.en || key;
+
 const ANSWER_COLORS = [
   { bg: "bg-brand-50 hover:bg-brand-100 border-brand-200", label: "bg-brand-600", selected: "bg-brand-100 border-brand-400" },
   { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-600", selected: "bg-blue-100 border-blue-400" },
@@ -24,12 +71,8 @@ const ANSWER_COLORS = [
 type Screen = "loading" | "error" | "intro" | "playing" | "result";
 
 function formatDate(dateStr: string): string {
-  const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-  ];
-  const d = new Date(dateStr);
-  return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  const tag = { en: "en-US", fr: "fr-FR", es: "es-ES" }[getLocale()];
+  return new Date(dateStr).toLocaleDateString(tag, { day: "numeric", month: "long", year: "numeric" });
 }
 
 export default function CustomQuizPlayer() {
@@ -122,7 +165,7 @@ export default function CustomQuizPlayer() {
       <div className="min-h-[60vh] flex items-center justify-center">
         <div className="text-center space-y-3">
           <div className="w-10 h-10 border-4 border-brand-200 border-t-brand-600 rounded-full animate-spin mx-auto" />
-          <p className="text-gray-500 text-sm">Loading quiz...</p>
+          <p className="text-gray-500 text-sm">{tt("loading")}</p>
         </div>
       </div>
     );
@@ -138,9 +181,9 @@ export default function CustomQuizPlayer() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
             </svg>
           </div>
-          <h2 className="font-display text-xl font-bold text-gray-900">Quiz not found</h2>
+          <h2 className="font-display text-xl font-bold text-gray-900">{tt("notFound")}</h2>
           <p className="text-gray-500 text-sm">
-            This quiz link is invalid or has expired. Please check the link is complete.
+            {tt("invalid")}
           </p>
           <a
             href={getCreatePath()}
@@ -149,7 +192,7 @@ export default function CustomQuizPlayer() {
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
             </svg>
-            Create a quiz
+            {tt("createQuiz")}
           </a>
         </div>
       </div>
@@ -175,21 +218,21 @@ export default function CustomQuizPlayer() {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Légende", color: "bg-amber-600", text: "text-amber-700" }
+      ? { label: tt("rankLegend"), color: "bg-amber-600", text: "text-amber-700" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-brand", text: "text-brand-700" }
+        ? { label: tt("rankExpert"), color: "bg-brand", text: "text-brand-700" }
         : scorePercent >= 50
-          ? { label: "Confirmé", color: "bg-blue-600", text: "text-blue-700" }
+          ? { label: tt("rankSkilled"), color: "bg-blue-600", text: "text-blue-700" }
           : scorePercent >= 30
-            ? { label: "Apprenti", color: "bg-green-700", text: "text-green-700" }
-            : { label: "Débutant", color: "bg-gray-600", text: "text-gray-600" };
+            ? { label: tt("rankApprentice"), color: "bg-green-700", text: "text-green-700" }
+            : { label: tt("rankBeginner"), color: "bg-gray-600", text: "text-gray-600" };
 
   const scoreMessage =
     scorePercent >= 80
-      ? "Excellent! You've mastered this topic!"
+      ? tt("msgHigh")
       : scorePercent >= 50
-        ? "Not bad! You have a solid foundation."
-        : "Keep practicing, you'll improve!";
+        ? tt("msgMid")
+        : tt("msgLow");
 
   // --- USER QUIZ BANNER ---
   const banner = (
@@ -199,7 +242,7 @@ export default function CustomQuizPlayer() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
         </svg>
       </div>
-      <p className="text-amber-800 text-sm font-medium">User-created quiz</p>
+      <p className="text-amber-800 text-sm font-medium">{tt("userCreated")}</p>
     </div>
   );
 
@@ -229,7 +272,7 @@ export default function CustomQuizPlayer() {
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                {totalQuestions} question{totalQuestions > 1 ? "s" : ""}
+                {totalQuestions} {totalQuestions > 1 ? tt("questions") : tt("question")}
               </span>
             </div>
             <div className="pt-4">
@@ -237,7 +280,7 @@ export default function CustomQuizPlayer() {
                 onClick={handleStart}
                 className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand hover:bg-brand-dark text-white font-bold rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all text-base"
               >
-                Start
+                {tt("start")}
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -262,19 +305,13 @@ export default function CustomQuizPlayer() {
                 <circle cx="60" cy="60" r="52" fill="none" stroke="#f3f4f6" strokeWidth="8" />
                 <circle
                   cx="60" cy="60" r="52" fill="none"
-                  stroke="url(#scoreGrad)"
+                  stroke="var(--color-brand)"
                   strokeWidth="8"
                   strokeLinecap="round"
                   strokeDasharray={2 * Math.PI * 52}
                   strokeDashoffset={2 * Math.PI * 52 * (1 - scorePercent / 100)}
                   style={{ transition: "stroke-dashoffset 1s ease-out" }}
                 />
-                <defs>
-                  <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#8b5cf6" />
-                    <stop offset="100%" stopColor="#a855f7" />
-                  </linearGradient>
-                </defs>
               </svg>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 <span className="font-display text-3xl font-black text-gray-900">{scorePercent}%</span>
@@ -294,7 +331,7 @@ export default function CustomQuizPlayer() {
 
             {/* Question review */}
             <div className="text-left space-y-2 pt-2">
-              <h3 className="font-semibold text-gray-700 text-sm mb-3">Summary</h3>
+              <h3 className="font-semibold text-gray-700 text-sm mb-3">{tt("summary")}</h3>
               {quiz.questions.map((q, i) => {
                 const userAnswer = answers[i];
                 const isCorrect = userAnswer === q.correctAnswer;
@@ -328,7 +365,7 @@ export default function CustomQuizPlayer() {
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
-                Restart
+                {tt("restart")}
               </button>
               <button
                 onClick={handleShare}
@@ -337,7 +374,7 @@ export default function CustomQuizPlayer() {
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
                 </svg>
-                {copied ? "Link copied!" : "Share"}
+                {copied ? tt("copied") : tt("share")}
               </button>
               <a
                 href={getCreatePath()}
@@ -346,7 +383,7 @@ export default function CustomQuizPlayer() {
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
                 </svg>
-                Create my quiz
+                {tt("createMine")}
               </a>
             </div>
           </div>
@@ -476,7 +513,7 @@ export default function CustomQuizPlayer() {
           {/* Feedback banner when no explanation */}
           {hasAnswered && !question.explanation && (
             <div className={`mt-4 p-3 rounded-xl text-sm font-medium text-center ${isCorrect ? "bg-green-50 text-green-700 border border-green-200" : "bg-red-50 text-red-700 border border-red-200"}`}>
-              {isCorrect ? "Correct!" : `Wrong answer. The correct answer was ${LETTER_LABELS[question.answers.findIndex((a) => a.id === question.correctAnswer)]}.`}
+              {isCorrect ? tt("correct") : tt("wrong").replace("{x}", LETTER_LABELS[question.answers.findIndex((a) => a.id === question.correctAnswer)])}
             </div>
           )}
         </div>
@@ -488,7 +525,7 @@ export default function CustomQuizPlayer() {
               onClick={goToNext}
               className="inline-flex items-center gap-2 px-6 py-3 bg-brand hover:bg-brand-dark text-white font-bold rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all text-sm"
             >
-              {currentIndex + 1 >= totalQuestions ? "See results" : "Next question"}
+              {currentIndex + 1 >= totalQuestions ? tt("seeResults") : tt("next")}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>

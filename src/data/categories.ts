@@ -42,14 +42,14 @@ export const categoryDefs: CategoryDef[] = [
       fr: {
         name: "Sport",
         description: "Le football, des joueurs aux grandes compétitions. Teste tes connaissances !",
-        subcategories: ["Basketball", "Cyclisme", "Football", "Formule 1", "Jeux olympiques", "Rugby", "Tennis", "Equitation", "Boxe"],
+        subcategories: ["Basketball", "Cyclisme", "Football", "Formule 1", "Jeux olympiques", "Rugby", "Tennis", "Équitation", "Boxe"],
         seoIntro: "Pour l'instant, le sport ici c'est du football, avec 16 questions qui vont des joueurs aux grandes compétitions. Les autres disciplines viendront s'ajouter.",
         seoFooter: "Le quiz est en difficulté moyenne. Si tu regardes un match de temps en temps tu t'en sortiras, et si tu connais les stats par coeur ça devrait aller vite.",
       },
       es: {
         name: "Deportes",
         description: "Fútbol, de los jugadores a las grandes competiciones. Pon a prueba tus conocimientos!",
-        subcategories: ["Baloncesto", "Ciclismo", "Futbol", "Formula 1", "Juegos Olimpicos", "Rugby", "Tenis", "Equitacion", "Boxeo"],
+        subcategories: ["Baloncesto", "Ciclismo", "Futbol", "Formula 1", "Juegos Olímpicos", "Rugby", "Tenis", "Equitación", "Boxeo"],
         seoIntro: "Por ahora, el deporte aquí es fútbol, con 16 preguntas que van desde los jugadores hasta las grandes competiciones. Las demás disciplinas llegarán después.",
         seoFooter: "El quiz está en dificultad media. Si ves algún partido de vez en cuando te irá bien, y si te sabes las estadísticas de memoria irá rápido.",
       },
@@ -70,14 +70,14 @@ export const categoryDefs: CategoryDef[] = [
         seoFooter: "Every answer comes with an explanation, so the flag sticks next time. Capitals and countries will fill out the category later.",
       },
       fr: {
-        name: "Geographie",
+        name: "Géographie",
         description: "Les drapeaux du monde, les évidents et ceux que tout le monde confond.",
-        subcategories: ["Departements francais", "Europe", "Capitales", "Drapeaux", "Etats-Unis"],
+        subcategories: ["Départements français", "Europe", "Capitales", "Drapeaux", "Etats-Unis"],
         seoIntro: "Il y a les drapeaux qu'on reconnaît du premier coup, et ceux qu'on confond toujours avec le voisin. Le quiz géographie compte 17 questions et joue là-dessus.",
         seoFooter: "Chaque réponse est expliquée, du coup on retient le drapeau la fois suivante. Les capitales et les pays compléteront la catégorie plus tard.",
       },
       es: {
-        name: "Geografia",
+        name: "Geografía",
         description: "Las banderas del mundo, las evidentes y las que todos confunden.",
         subcategories: ["Departamentos franceses", "Europa", "Capitales", "Banderas", "Estados Unidos"],
         seoIntro: "Hay banderas que reconoces al instante y otras que confundes siempre con la del país vecino. El quiz de geografía tiene 17 preguntas y juega con eso.",
@@ -130,7 +130,7 @@ export const categoryDefs: CategoryDef[] = [
         seoFooter: "If you have rewatched the saga a few times you will be fine. If not, the explanation under each answer covers for you.",
       },
       fr: {
-        name: "Cinema",
+        name: "Cinéma",
         description: "Harry Potter, les huit films. Es-tu un vrai cinéphile ?",
         subcategories: ["Harry Potter", "Marvel", "Star Wars", "Seigneur des Anneaux"],
         seoIntro: "Harry Potter ouvre la catégorie cinéma avec 18 questions sur les huit films. C'est le plus gros quiz du site pour le moment.",
@@ -160,7 +160,7 @@ export const categoryDefs: CategoryDef[] = [
         seoFooter: "You do not need 500 hours in the game, but you do need to have played it. More titles are coming.",
       },
       fr: {
-        name: "Jeux Video",
+        name: "Jeux Vidéo",
         description: "Minecraft, des blocs aux mobs les plus rares. Es-tu le gamer ultime ?",
         subcategories: ["Minecraft", "GTA", "Fortnite", "Call of Duty", "Pokemon", "League of Legends", "World of Warcraft", "Counter Strike", "Brawl Stars", "FIFA", "Zelda", "Roblox", "Valorant"],
         seoIntro: "Les jeux vidéo commencent par Minecraft, 10 questions sur le jeu de Mojang, des blocs aux mobs les plus rares.",

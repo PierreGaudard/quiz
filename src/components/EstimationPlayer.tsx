@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
+import { rankLabel } from "../i18n/ranks";
 
 interface Props {
   quiz: QuizData;
@@ -82,6 +83,8 @@ const esT: Record<string, Record<string, string>> = {
   howToPlay: { en: "How to play", fr: "Comment jouer", es: "Cómo jugar" },
   step1: { en: "Guess the number being asked", fr: "Devine le nombre demandé", es: "Adivina el número que se pide" },
   step2: { en: "Follow the clues: higher or lower", fr: "Suis les indices : plus haut ou plus bas", es: "Sigue las pistas: más alto o más bajo" },
+  step3: { en: "Find the right answer in {n} attempts max", fr: "Trouve la bonne réponse en {n} essais maximum", es: "Encuentra la respuesta correcta en {n} intentos como máximo" },
+  step4: { en: "Fewer attempts = more points!", fr: "Moins d'essais, plus de points !", es: "¡Menos intentos, más puntos!" },
   start: { en: "Start", fr: "C'est parti", es: "Empezar" },
   finished: { en: "Quiz finished!", fr: "Quiz terminé !", es: "¡Quiz terminado!" },
   points: { en: "Points", fr: "Points", es: "Puntos" },
@@ -289,11 +292,11 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-brand-400 mt-0.5">3.</span>
-                  Find the right answer in {MAX_ATTEMPTS} attempts max
+                  {tt("step3").replace("{n}", String(MAX_ATTEMPTS))}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-brand-400 mt-0.5">4.</span>
-                  Fewer attempts = more points!
+                  {tt("step4")}
                 </li>
               </ul>
             </div>
@@ -314,14 +317,14 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
   if (phase === "results") {
     const rank =
       accuracyPercent >= 90
-        ? { label: "Legend", color: "bg-amber-700", icon: "S" }
+        ? { label: rankLabel("legend", locale), color: "bg-amber-700", icon: "S" }
         : accuracyPercent >= 70
-          ? { label: "Expert", color: "bg-brand-600", icon: "A" }
+          ? { label: rankLabel("expert", locale), color: "bg-brand-600", icon: "A" }
           : accuracyPercent >= 50
-            ? { label: "Skilled", color: "bg-blue-600", icon: "B" }
+            ? { label: rankLabel("skilled", locale), color: "bg-blue-600", icon: "B" }
             : accuracyPercent >= 30
-              ? { label: "Apprentice", color: "bg-green-700", icon: "C" }
-              : { label: "Beginner", color: "bg-gray-500", icon: "D" };
+              ? { label: rankLabel("apprentice", locale), color: "bg-green-700", icon: "C" }
+              : { label: rankLabel("beginner", locale), color: "bg-gray-500", icon: "D" };
 
     return (
       <div className="max-w-2xl mx-auto">

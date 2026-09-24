@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect } from "react";
 import type { QuizData } from "../data/types";
 import { withBase } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
+import { rankLabel } from "../i18n/ranks";
 
 interface Props {
   quiz: QuizData;
@@ -18,6 +19,7 @@ interface AnswerRecord {
 }
 
 const vfT: Record<string, Record<string, string>> = {
+  pctCorrect: { en: "{p}% correct answers", fr: "{p} % de bonnes réponses", es: "{p} % de respuestas correctas" },
   trueFalse: { en: "True or False", fr: "Vrai ou Faux", es: "Verdadero o Falso" },
   labelTrue: { en: "True", fr: "Vrai", es: "Verdadero" },
   labelFalse: { en: "False", fr: "Faux", es: "Falso" },
@@ -83,14 +85,14 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Legend", color: "bg-amber-700", icon: "S", emoji: "🏆" }
+      ? { label: rankLabel("legend", locale), color: "bg-amber-700", icon: "S", emoji: "🏆" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-brand-600", icon: "A", emoji: "🌟" }
+        ? { label: rankLabel("expert", locale), color: "bg-brand-600", icon: "A", emoji: "🌟" }
         : scorePercent >= 50
-          ? { label: "Skilled", color: "bg-blue-600", icon: "B", emoji: "👍" }
+          ? { label: rankLabel("skilled", locale), color: "bg-blue-600", icon: "B", emoji: "👍" }
           : scorePercent >= 30
-            ? { label: "Apprentice", color: "bg-green-700", icon: "C", emoji: "📚" }
-            : { label: "Beginner", color: "bg-gray-500", icon: "D", emoji: "💪" };
+            ? { label: rankLabel("apprentice", locale), color: "bg-green-700", icon: "C", emoji: "📚" }
+            : { label: rankLabel("beginner", locale), color: "bg-gray-500", icon: "D", emoji: "💪" };
 
   const difficultyColor: Record<string, string> = {
     "Easy": "text-green-700 bg-green-100",
@@ -363,7 +365,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                   {rank.label}
                 </div>
                 <div className="text-white/70 text-sm font-medium">
-                  {scorePercent}% correct answers
+                  {tt("pctCorrect").replace("{p}", String(scorePercent))}
                 </div>
               </div>
             </div>

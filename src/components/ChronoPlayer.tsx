@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import type { QuizData } from "../data/types";
 import { withBase } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
+import { rankLabel } from "../i18n/ranks";
 
 interface Props {
   quiz: QuizData;
@@ -29,6 +30,13 @@ interface AnswerFlash {
 }
 
 const chT: Record<string, Record<string, string>> = {
+  correctOne: { en: "correct answer", fr: "bonne réponse", es: "respuesta correcta" },
+  correctMany: { en: "correct answers", fr: "bonnes réponses", es: "respuestas correctas" },
+  shareText: {
+    en: "Chrono Challenge - {title}\n{score}/{total} in {s}s | {acc}% accuracy | {streak} streak\nPlay on WizyQuiz!",
+    fr: "Défi Chrono - {title}\n{score}/{total} en {s} s | {acc} % de réussite | série de {streak}\nJoue sur WizyQuiz !",
+    es: "Reto Crono - {title}\n{score}/{total} en {s} s | {acc} % de acierto | racha de {streak}\n¡Juega en WizyQuiz!",
+  },
   chronoMode: { en: "Chrono Mode", fr: "Mode Chrono", es: "Modo Crono" },
   chronoIntro: {
     en: "You have 60 seconds to answer as many questions as possible. No explanations, no pauses, just speed.",
@@ -212,7 +220,13 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
   const handleShare = useCallback(() => {
     const accuracy = totalAnswered > 0 ? Math.round((score / totalAnswered) * 100) : 0;
     const elapsed = TOTAL_TIME - timeLeft;
-    const text = `Chrono Challenge - ${quiz.title}\n${score}/${totalAnswered} in ${elapsed}s | ${accuracy}% accuracy | ${bestStreak} streak\nPlay on WizyQuiz!`;
+    const text = tt("shareText")
+      .replace("{title}", quiz.title)
+      .replace("{score}", String(score))
+      .replace("{total}", String(totalAnswered))
+      .replace("{s}", String(elapsed))
+      .replace("{acc}", String(accuracy))
+      .replace("{streak}", String(bestStreak));
 
     if (navigator.share) {
       navigator.share({ title: `Chrono - ${quiz.title}`, text, url: window.location.href }).catch(() => {});
@@ -227,14 +241,14 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     accuracy >= 90 && score >= 10
-      ? { label: "Legend", color: "bg-amber-700", icon: "S" }
+      ? { label: rankLabel("legend", locale), color: "bg-amber-700", icon: "S" }
       : accuracy >= 75 && score >= 7
-        ? { label: "Expert", color: "bg-brand-600", icon: "A" }
+        ? { label: rankLabel("expert", locale), color: "bg-brand-600", icon: "A" }
         : accuracy >= 60 && score >= 5
-          ? { label: "Skilled", color: "bg-blue-600", icon: "B" }
+          ? { label: rankLabel("skilled", locale), color: "bg-blue-600", icon: "B" }
           : accuracy >= 40
-            ? { label: "Apprentice", color: "bg-green-700", icon: "C" }
-            : { label: "Beginner", color: "bg-gray-500", icon: "D" };
+            ? { label: rankLabel("apprentice", locale), color: "bg-green-700", icon: "C" }
+            : { label: rankLabel("beginner", locale), color: "bg-gray-500", icon: "D" };
 
   const difficultyColor: Record<string, string> = {
     "Easy": "text-green-700 bg-green-100",
@@ -383,7 +397,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
               <span className="text-2xl text-gray-500">/{totalAnswered}</span>
             </div>
             <div className="text-gray-500 text-sm mt-1 font-medium">
-              correct answer{score > 1 ? "s" : ""}
+              {score > 1 ? tt("correctMany") : tt("correctOne")}
             </div>
           </div>
 

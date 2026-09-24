@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import type { QuizData } from "../data/types";
 import { withBase } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
+import { rankLabel } from "../i18n/ranks";
 
 interface Props {
   quiz: QuizData;
@@ -9,6 +10,7 @@ interface Props {
 }
 
 const duT: Record<string, Record<string, string>> = {
+  pctCorrect: { en: "{p}% correct answers", fr: "{p} % de bonnes réponses", es: "{p} % de respuestas correctas" },
   step3: {
     en: "Discover the answer and its explanation before moving on to the next duel",
     fr: "Découvre la réponse et son explication avant de passer au duel suivant",
@@ -62,14 +64,14 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Legend", color: "bg-amber-700", icon: "S" }
+      ? { label: rankLabel("legend", locale), color: "bg-amber-700", icon: "S" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-brand-600", icon: "A" }
+        ? { label: rankLabel("expert", locale), color: "bg-brand-600", icon: "A" }
         : scorePercent >= 50
-          ? { label: "Skilled", color: "bg-blue-600", icon: "B" }
+          ? { label: rankLabel("skilled", locale), color: "bg-blue-600", icon: "B" }
           : scorePercent >= 30
-            ? { label: "Apprentice", color: "bg-green-700", icon: "C" }
-            : { label: "Beginner", color: "bg-gray-500", icon: "D" };
+            ? { label: rankLabel("apprentice", locale), color: "bg-green-700", icon: "C" }
+            : { label: rankLabel("beginner", locale), color: "bg-gray-500", icon: "D" };
 
   const difficultyColor: Record<string, string> = {
     "Easy": "text-green-700 bg-green-100",
@@ -234,7 +236,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
               {score}<span className="text-2xl text-white/40">/{totalQuestions}</span>
             </div>
             <div className="text-white/50 text-sm font-medium mb-6">
-              {scorePercent}% correct answers
+              {tt("pctCorrect").replace("{p}", String(scorePercent))}
             </div>
 
             {/* Score bar */}

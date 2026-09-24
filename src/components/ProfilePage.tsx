@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getLevelFromXp, getXpProgress, LEVELS } from "../lib/levels";
+import { getLevelFromXp, getXpProgress } from "../lib/levels";
 
 interface User {
   id: number;
@@ -22,20 +22,20 @@ const t: Record<string, Record<string, string>> = {
   profile: { en: "My Profile", fr: "Mon Profil", es: "Mi Perfil" },
   level: { en: "Level", fr: "Niveau", es: "Nivel" },
   xp: { en: "XP", fr: "XP", es: "XP" },
-  quizzesPlayed: { en: "Quizzes Played", fr: "Quiz joues", es: "Quizzes jugados" },
+  quizzesPlayed: { en: "Quizzes Played", fr: "Quiz joués", es: "Quizzes jugados" },
   memberSince: { en: "Member since", fr: "Membre depuis", es: "Miembro desde" },
   editProfile: { en: "Edit Profile", fr: "Modifier le profil", es: "Editar perfil" },
   changeAvatar: { en: "Change avatar", fr: "Changer l'avatar", es: "Cambiar avatar" },
   username: { en: "Username", fr: "Nom d'utilisateur", es: "Nombre de usuario" },
-  newPassword: { en: "New password", fr: "Nouveau mot de passe", es: "Nueva contrasena" },
+  newPassword: { en: "New password", fr: "Nouveau mot de passe", es: "Nueva contraseña" },
   save: { en: "Save", fr: "Enregistrer", es: "Guardar" },
-  saved: { en: "Saved!", fr: "Enregistre !", es: "Guardado!" },
+  saved: { en: "Saved!", fr: "Enregistré !", es: "Guardado!" },
   history: { en: "Quiz History", fr: "Historique des quiz", es: "Historial de quizzes" },
-  noHistory: { en: "No quizzes played yet", fr: "Aucun quiz joue pour le moment", es: "Ningun quiz jugado todavia" },
-  score: { en: "Score", fr: "Score", es: "Puntuacion" },
-  logout: { en: "Log out", fr: "Se deconnecter", es: "Cerrar sesion" },
+  noHistory: { en: "No quizzes played yet", fr: "Aucun quiz joué pour le moment", es: "Ningun quiz jugado todavia" },
+  score: { en: "Score", fr: "Score", es: "Puntuación" },
+  logout: { en: "Log out", fr: "Se déconnecter", es: "Cerrar sesión" },
   loading: { en: "Loading...", fr: "Chargement...", es: "Cargando..." },
-  notLoggedIn: { en: "You are not logged in", fr: "Vous n'etes pas connecte", es: "No has iniciado sesion" },
+  notLoggedIn: { en: "You are not logged in", fr: "Vous n'êtes pas connecté", es: "No has iniciado sesión" },
   nextLevel: { en: "Next level", fr: "Prochain niveau", es: "Siguiente nivel" },
 };
 

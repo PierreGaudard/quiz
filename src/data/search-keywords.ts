@@ -14,7 +14,7 @@ export const keywordMappings: KeywordMapping[] = [
   { keywords: ["xv de france", "six nations", "all blacks", "coupe du monde rugby", "essai", "melee"], categorySlug: "sport", subcategory: "Rugby" },
   { keywords: ["usain bolt", "100m", "marathon", "athletisme", "medaille", "paris 2024"], categorySlug: "sport", subcategory: "Jeux olympiques" },
   { keywords: ["tyson", "ali", "mayweather", "ufc", "mma", "knockout", "ko"], categorySlug: "sport", subcategory: "Boxe" },
-  { keywords: ["equitation", "cheval", "galop", "dressage", "saut d'obstacles"], categorySlug: "sport", subcategory: "Equitation" },
+  { keywords: ["equitation", "cheval", "galop", "dressage", "saut d'obstacles"], categorySlug: "sport", subcategory: "Équitation" },
 
   // Cinema
   { keywords: ["voldemort", "dumbledore", "poudlard", "hogwarts", "gryffondor", "gryffindor", "quidditch", "hermione", "ron", "rogue", "snape", "sorcier", "baguette magique", "patronus"], categorySlug: "cinema", subcategory: "Harry Potter" },
@@ -52,7 +52,7 @@ export const keywordMappings: KeywordMapping[] = [
   // Geographie
   { keywords: ["drapeau", "flag", "bandera", "couleurs", "etoile", "croix"], categorySlug: "geographie", subcategory: "Drapeaux" },
   { keywords: ["capitale", "capital", "ville", "city", "paris", "washington", "tokyo", "londres", "london"], categorySlug: "geographie", subcategory: "Capitales" },
-  { keywords: ["departement", "prefecture", "region", "france", "ile de france", "bretagne", "alsace"], categorySlug: "geographie", subcategory: "Departements francais" },
+  { keywords: ["departement", "prefecture", "region", "france", "ile de france", "bretagne", "alsace"], categorySlug: "geographie", subcategory: "Départements français" },
   { keywords: ["europe", "union europeenne", "ue", "eu", "bruxelles", "schengen"], categorySlug: "geographie", subcategory: "Europe" },
   { keywords: ["etats-unis", "usa", "amerique", "america", "new york", "california", "texas", "washington"], categorySlug: "geographie", subcategory: "Etats-Unis" },
 ];

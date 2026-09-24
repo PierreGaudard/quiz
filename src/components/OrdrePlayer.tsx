@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
+import { rankLabel } from "../i18n/ranks";
 
 interface Props {
   quiz: QuizData;
@@ -29,7 +30,7 @@ interface QuestionResult {
 const orT: Record<string, Record<string, string>> = {
   introBefore: {
     en: "Put the items in the right order! For each question, click on the items in the order you think is correct. You earn",
-    fr: "Remets les éléments dans le bon ordre ! Pour chaque question, clique sur les éléments dans l'ordre qui te paraît juste. Tu gagnes",
+    fr: "Remets les éléments dans le bon ordre ! Pour chaque question, clique sur les éléments dans l'ordre qui te paraît juste. Tu gagnés",
     es: "¡Pon los elementos en el orden correcto! En cada pregunta, haz clic en los elementos en el orden que te parezca bueno. Ganas",
   },
   pointsWord: { en: "points", fr: "points", es: "puntos" },
@@ -87,14 +88,14 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
 
   const rank =
     scorePercent >= 90
-      ? { label: "Legend", color: "bg-amber-700", icon: "S" }
+      ? { label: rankLabel("legend", locale), color: "bg-amber-700", icon: "S" }
       : scorePercent >= 70
-        ? { label: "Expert", color: "bg-brand-600", icon: "A" }
+        ? { label: rankLabel("expert", locale), color: "bg-brand-600", icon: "A" }
         : scorePercent >= 50
-          ? { label: "Skilled", color: "bg-blue-600", icon: "B" }
+          ? { label: rankLabel("skilled", locale), color: "bg-blue-600", icon: "B" }
           : scorePercent >= 30
-            ? { label: "Apprentice", color: "bg-green-700", icon: "C" }
-            : { label: "Beginner", color: "bg-gray-500", icon: "D" };
+            ? { label: rankLabel("apprentice", locale), color: "bg-green-700", icon: "C" }
+            : { label: rankLabel("beginner", locale), color: "bg-gray-500", icon: "D" };
 
   const difficultyColor: Record<string, string> = {
     "Easy": "text-green-700 bg-green-100",

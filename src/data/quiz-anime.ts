@@ -300,14 +300,14 @@ export const quizDragonBall: TranslatedQuiz = {
       ],
     },
     es: {
-      title: "Quiz Dragon Ball: Eres un verdadero Saiyan?",
+      title: "Quiz Dragon Ball: ¿eres un verdadero Saiyan?",
       description:
-        "Goku, Vegeta, las esferas del dragon... Pon a prueba tus conocimientos de Dragon Ball!",
+        "Goku, Vegeta, las esferas del dragón... ¡Pon a prueba tus conocimientos de Dragon Ball!",
       questions: [
         {
           id: 1,
           image: "/images/q-dragonball-01.webp",
-          question: "Cual es el nombre Saiyan de Goku?",
+          question: "¿Cuál es el nombre Saiyan de Goku?",
           answers: [
             { id: "a", text: "Bardock" },
             { id: "b", text: "Kakarot" },
@@ -316,12 +316,12 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "El verdadero nombre Saiyan de Goku es Kakarot. Recibio el nombre Son Goku al llegar a la Tierra, adoptado por el abuelo Gohan.",
+            "El verdadero nombre Saiyan de Goku es Kakarot. Recibió el nombre Son Goku al llegar a la Tierra, adoptado por el abuelo Gohan.",
         },
         {
           id: 2,
           question:
-            "Cuantas esferas del dragon se necesitan para invocar a Shenron?",
+            "¿Cuántas esferas del dragón se necesitan para invocar a Shenron?",
           answers: [
             { id: "a", text: "5" },
             { id: "b", text: "6" },
@@ -330,13 +330,13 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Se necesitan reunir las 7 esferas del dragon para invocar al dragon Shenron y pedir un deseo.",
+            "Se necesitan reunir las 7 esferas del dragón para invocar al dragón Shenron y pedir un deseo.",
         },
         {
           id: 3,
           image: "/images/q-dragonball-03.webp",
           question:
-            "Cual es la primera transformacion de Vegeta en Dragon Ball Z?",
+            "¿Cuál es la primera transformación de Vegeta en Dragon Ball Z?",
           answers: [
             { id: "a", text: "Super Saiyan" },
             { id: "b", text: "Oozaru (mono gigante)" },
@@ -345,12 +345,12 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "La primera transformacion de Vegeta en DBZ es la de Oozaru (mono gigante). Se transforma durante su combate contra Goku en la Tierra al crear una luna artificial.",
+            "La primera transformación de Vegeta en DBZ es la de Oozaru (mono gigante). Se transforma durante su combate contra Goku en la Tierra al crear una luna artificial.",
         },
         {
           id: 4,
           question:
-            "Quien entrena a Goku en su camino hacia Namek?",
+            "¿Quién entrena a Goku en su camino hacia Namek?",
           answers: [
             { id: "a", text: "Maestro Roshi" },
             { id: "b", text: "Piccolo" },
@@ -359,25 +359,25 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Goku entrena con Kaio (el Rey Kaio del Norte) antes de ir a Namek. Alli es donde Goku aprende el Kaio-ken y la Genki Dama.",
+            "Goku entrena con Kaio (el Rey Kaio del Norte) antes de ir a Namek. Allí es donde Goku aprende el Kaio-ken y la Genki Dama.",
         },
         {
           id: 5,
           image: "/images/q-dragonball-05.webp",
-          question: "Que tecnica aprende Goku de Kaio?",
+          question: "¿Qué técnica aprende Goku de Kaio?",
           answers: [
             { id: "a", text: "Kamehameha" },
-            { id: "b", text: "Genki Dama (Bola de energia vital)" },
-            { id: "c", text: "Teletransportacion" },
+            { id: "b", text: "Genki Dama (Bola de energía vital)" },
+            { id: "c", text: "Teletransportación" },
             { id: "d", text: "Final Flash" },
           ],
           correctAnswer: "b",
           explanation:
-            "Goku aprende la Genki Dama (Spirit Bomb) de Kaio. Esta tecnica consiste en reunir la energia de todos los seres vivos y concentrarla en una esfera de energia.",
+            "Goku aprende la Genki Dama (Spirit Bomb) de Kaio. Esta técnica consiste en reunir la energía de todos los seres vivos y concentrarla en una esfera de energía.",
         },
         {
           id: 6,
-          question: "Como se llama el primer hijo de Goku?",
+          question: "¿Cómo se llama el primer hijo de Goku?",
           answers: [
             { id: "a", text: "Goten" },
             { id: "b", text: "Trunks" },
@@ -391,7 +391,7 @@ export const quizDragonBall: TranslatedQuiz = {
         {
           id: 7,
           image: "/images/q-dragonball-07.webp",
-          question: "Que villano destruye el planeta Vegeta?",
+          question: "¿Qué villano destruye el planeta Vegeta?",
           answers: [
             { id: "a", text: "Cell" },
             { id: "b", text: "Majin Buu" },
@@ -400,11 +400,11 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Freezer destruyo el planeta Vegeta porque temia la leyenda del Super Saiyan. Acabo con casi toda la raza Saiyan.",
+            "Freezer destruyó el planeta Vegeta porque temía la leyenda del Super Saiyan. Acabó con casi toda la raza Saiyan.",
         },
         {
           id: 8,
-          question: "Cual es el ataque emblematico de Goku?",
+          question: "¿Cuál es el ataque emblemático de Goku?",
           answers: [
             { id: "a", text: "Final Flash" },
             { id: "b", text: "Makankosappo" },
@@ -413,12 +413,12 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "El Kamehameha es el ataque emblematico de Goku. Lo aprendio observando al Maestro Roshi, quien habia tardado 50 anos en desarrollar la tecnica.",
+            "El Kamehameha es el ataque emblemático de Goku. Lo aprendió observando al Maestro Roshi, quien había tardado 50 años en desarrollar la técnica.",
         },
         {
           id: 9,
           image: "/images/q-dragonball-09.webp",
-          question: "Quien es el creador de las esferas del dragon en la Tierra?",
+          question: "¿Quién es el creador de las esferas del dragón en la Tierra?",
           answers: [
             { id: "a", text: "Dende" },
             { id: "b", text: "Piccolo" },
@@ -427,12 +427,12 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Kami, el guardian de la Tierra, es el creador original de las esferas del dragon terrestres. Dende las recrea mas tarde tras la fusion de Kami con Piccolo.",
+            "Kami, el guardián de la Tierra, es el creador original de las esferas del dragón terrestres. Dende las recrea más tarde tras la fusión de Kami con Piccolo.",
         },
         {
           id: 10,
           question:
-            "Que forma alcanza Goku por primera vez en su pelea contra Freezer?",
+            "¿Qué forma alcanza Goku por primera vez en su pelea contra Freezer?",
           answers: [
             { id: "a", text: "Kaio-ken x20" },
             { id: "b", text: "Super Saiyan" },
@@ -441,7 +441,7 @@ export const quizDragonBall: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "Goku se transforma en Super Saiyan por primera vez en Namek, tras la muerte de Krillin a manos de Freezer. Este momento es uno de los mas iconicos de toda la serie.",
+            "Goku se transforma en Super Saiyan por primera vez en Namek, tras la muerte de Krillin a manos de Freezer. Este momento es uno de los más icónicos de toda la serie.",
         },
       ],
     },

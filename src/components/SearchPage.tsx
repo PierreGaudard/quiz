@@ -7,15 +7,15 @@ import { withBase } from "../utils/base";
 
 const searchT: Record<string, Record<string, string>> = {
   title: { en: "Search", fr: "Recherche", es: "Buscar" },
-  placeholder: { en: "Search a quiz, a theme...", fr: "Rechercher un quiz, un theme...", es: "Buscar un quiz, un tema..." },
-  results: { en: "results for", fr: "resultats pour", es: "resultados para" },
-  result: { en: "result for", fr: "resultat pour", es: "resultado para" },
-  noResults: { en: "No results found", fr: "Aucun resultat trouve", es: "No se encontraron resultados" },
-  tryOther: { en: "Try different keywords or browse our categories.", fr: "Essaie d'autres mots-cles ou parcours nos categories.", es: "Prueba otras palabras clave o explora nuestras categorias." },
+  placeholder: { en: "Search a quiz, a theme...", fr: "Rechercher un quiz, un thème...", es: "Buscar un quiz, un tema..." },
+  results: { en: "results for", fr: "résultats pour", es: "resultados para" },
+  result: { en: "result for", fr: "résultat pour", es: "resultado para" },
+  noResults: { en: "No results found", fr: "Aucun résultat trouve", es: "No se encontraron resultados" },
+  tryOther: { en: "Try different keywords or browse our categories.", fr: "Essaie d'autres mots-cles ou parcours nos catégories.", es: "Prueba otras palabras clave o explora nuestras categorías." },
   popular: { en: "Popular searches", fr: "Recherches populaires", es: "Busquedas populares" },
   questions: { en: "questions", fr: "questions", es: "preguntas" },
   plays: { en: "plays", fr: "parties", es: "partidas" },
-  exploreCategories: { en: "Explore categories", fr: "Explorer les categories", es: "Explorar categorias" },
+  exploreCategories: { en: "Explore categories", fr: "Explorer les catégories", es: "Explorar categorías" },
 };
 
 const DIFFICULTY_STYLE: Record<string, string> = {

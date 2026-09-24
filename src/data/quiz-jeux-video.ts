@@ -308,14 +308,14 @@ export const quizMinecraft: TranslatedQuiz = {
       ],
     },
     es: {
-      title: "Quiz Minecraft: dominas el mundo de bloques?",
+      title: "Quiz Minecraft: ¿dominas el mundo de bloques?",
       description:
-        "Creepers, Ender Dragon, diamantes... Pon a prueba tus conocimientos de Minecraft con este quiz de 10 preguntas!",
+        "Creepers, Ender Dragon, diamantes... ¡Pon a prueba tus conocimientos de Minecraft con este quiz de 10 preguntas!",
       questions: [
         {
           id: 1,
           image: "/images/q-minecraft-01.webp",
-          question: "Cual es el jefe final de Minecraft?",
+          question: "¿Cuál es el jefe final de Minecraft?",
           answers: [
             { id: "a", text: "El Wither" },
             { id: "b", text: "El Ender Dragon" },
@@ -324,12 +324,12 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "El Ender Dragon es el jefe final de Minecraft. Se encuentra en la dimension del End y hay que derrotarlo para ver los creditos del juego.",
+            "El Ender Dragon es el jefe final de Minecraft. Se encuentra en la dimensión del End y hay que derrotarlo para ver los créditos del juego.",
         },
         {
           id: 2,
           question:
-            "Cual es el material minimo necesario para minar diamante?",
+            "¿Cuál es el material mínimo necesario para minar diamante?",
           answers: [
             { id: "a", text: "Un pico de piedra" },
             { id: "b", text: "Un pico de hierro" },
@@ -344,7 +344,7 @@ export const quizMinecraft: TranslatedQuiz = {
           id: 3,
           image: "/images/q-minecraft-03.webp",
           question:
-            "Cual es la altura maxima de construccion en Minecraft (desde la version 1.18)?",
+            "¿Cuál es la altura máxima de construcción en Minecraft (desde la versión 1.18)?",
           answers: [
             { id: "a", text: "256 bloques" },
             { id: "b", text: "320 bloques" },
@@ -353,12 +353,12 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "b",
           explanation:
-            "Desde la version 1.18, el limite de construccion es de 320 bloques (de Y = -64 a Y = 320), con una altura total del mundo de 384 bloques y la altura maxima de construccion en Y = 320.",
+            "Desde la versión 1.18, el límite de construcción es de 320 bloques (de Y = -64 a Y = 320), con una altura total del mundo de 384 bloques y la altura máxima de construcción en Y = 320.",
         },
         {
           id: 4,
           question:
-            "Que material se necesita para crear un portal del Nether?",
+            "¿Qué material se necesita para crear un portal del Nether?",
           answers: [
             { id: "a", text: "Bedrock" },
             { id: "b", text: "Obsidiana" },
@@ -373,7 +373,7 @@ export const quizMinecraft: TranslatedQuiz = {
           id: 5,
           image: "/images/q-minecraft-05.webp",
           question:
-            "Que mob explota cuando se acerca al jugador?",
+            "¿Qué mob explota cuando se acerca al jugador?",
           answers: [
             { id: "a", text: "Zombie" },
             { id: "b", text: "Esqueleto" },
@@ -387,21 +387,21 @@ export const quizMinecraft: TranslatedQuiz = {
         {
           id: 6,
           question:
-            "Cual es el mineral mas raro del Overworld en Minecraft?",
+            "¿Cuál es el mineral más raro del Overworld en Minecraft?",
           answers: [
             { id: "a", text: "Diamante" },
-            { id: "b", text: "Lapislazuli" },
+            { id: "b", text: "Lapislázuli" },
             { id: "c", text: "Esmeralda" },
             { id: "d", text: "Oro" },
           ],
           correctAnswer: "c",
           explanation:
-            "La esmeralda es el mineral mas raro del Overworld. Solo se genera naturalmente en biomas de montanas, lo que lo hace aun mas dificil de encontrar que el diamante.",
+            "La esmeralda es el mineral más raro del Overworld. Solo se genera naturalmente en biomas de montañas, lo que la hace aún más difícil de encontrar que el diamante.",
         },
         {
           id: 7,
           image: "/images/q-minecraft-07.webp",
-          question: "Que alimento se fabrica con 3 trigos?",
+          question: "¿Qué alimento se fabrica con 3 trigos?",
           answers: [
             { id: "a", text: "Un pastel" },
             { id: "b", text: "Una galleta" },
@@ -410,11 +410,11 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "El pan se fabrica colocando 3 trigos en linea horizontal en la mesa de crafteo. Es uno de los alimentos mas sencillos de producir.",
+            "El pan se fabrica colocando 3 trigos en línea horizontal en la mesa de crafteo. Es uno de los alimentos más sencillos de producir.",
         },
         {
           id: 8,
-          question: "Que hay que darle a un lobo para domesticarlo?",
+          question: "¿Qué hay que darle a un lobo para domesticarlo?",
           answers: [
             { id: "a", text: "Carne cruda" },
             { id: "b", text: "Pescado" },
@@ -429,7 +429,7 @@ export const quizMinecraft: TranslatedQuiz = {
           id: 9,
           image: "/images/q-minecraft-09.webp",
           question:
-            "Como se llama la otra dimension ademas del Nether?",
+            "¿Cómo se llama la otra dimensión además del Nether?",
           answers: [
             { id: "a", text: "El Void" },
             { id: "b", text: "El Aether" },
@@ -438,12 +438,12 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "El End es la tercera dimension de Minecraft, accesible a traves de un portal del End. Alli se encuentra el Ender Dragon y las ciudades del End.",
+            "El End es la tercera dimensión de Minecraft, accesible a través de un portal del End. Allí se encuentran el Ender Dragon y las ciudades del End.",
         },
         {
           id: 10,
           question:
-            "Que objeto es indispensable para encantar objetos?",
+            "¿Qué objeto es indispensable para encantar objetos?",
           answers: [
             { id: "a", text: "Un horno" },
             { id: "b", text: "Un yunque" },
@@ -452,7 +452,7 @@ export const quizMinecraft: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "La mesa de encantamientos es indispensable para encantar objetos. Se fabrica con diamantes, obsidiana y un libro. Luego se necesita lapislazuli para cada encantamiento.",
+            "La mesa de encantamientos es indispensable para encantar objetos. Se fabrica con diamantes, obsidiana y un libro. Luego se necesita lapislázuli para cada encantamiento.",
         },
       ],
     },

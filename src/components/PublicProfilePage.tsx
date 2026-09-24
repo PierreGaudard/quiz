@@ -4,14 +4,14 @@ import { getLevelFromXp, getXpProgress } from "../lib/levels";
 const t: Record<string, Record<string, string>> = {
   level: { en: "Level", fr: "Niveau", es: "Nivel" },
   xp: { en: "XP", fr: "XP", es: "XP" },
-  quizzesPlayed: { en: "Quizzes Played", fr: "Quiz joues", es: "Quizzes jugados" },
+  quizzesPlayed: { en: "Quizzes Played", fr: "Quiz joués", es: "Quizzes jugados" },
   memberSince: { en: "Member since", fr: "Membre depuis", es: "Miembro desde" },
-  history: { en: "Recent Quizzes", fr: "Quiz recents", es: "Quizzes recientes" },
-  noHistory: { en: "No quizzes played yet", fr: "Aucun quiz joue", es: "Ningun quiz jugado" },
+  history: { en: "Recent Quizzes", fr: "Quiz récents", es: "Quizzes recientes" },
+  noHistory: { en: "No quizzes played yet", fr: "Aucun quiz joué", es: "Ningun quiz jugado" },
   loading: { en: "Loading...", fr: "Chargement...", es: "Cargando..." },
   notFound: { en: "User not found", fr: "Utilisateur introuvable", es: "Usuario no encontrado" },
   addFriend: { en: "Add friend", fr: "Ajouter en ami", es: "Agregar amigo" },
-  requestSent: { en: "Request sent!", fr: "Demande envoyee !", es: "Solicitud enviada!" },
+  requestSent: { en: "Request sent!", fr: "Demande envoyée !", es: "Solicitud enviada!" },
 };
 
 export default function PublicProfilePage({ username, locale = "en" }: { username: string; locale?: string }) {

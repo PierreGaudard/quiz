@@ -743,7 +743,7 @@ export default function QuizCreator() {
               />
             </svg>
             <span className="text-brand-700 font-semibold text-sm">
-              wizy.fr/quiz/{submittedSlug}
+              wizyquiz.com/quiz/{submittedSlug}
             </span>
           </div>
         </div>

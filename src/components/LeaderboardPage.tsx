@@ -10,7 +10,7 @@ interface Player {
 }
 
 const t: Record<string, Record<string, string>> = {
-  title: { en: "Leaderboard", fr: "Classement", es: "Clasificacion" },
+  title: { en: "Leaderboard", fr: "Classement", es: "Clasificación" },
   subtitle: { en: "The best quizzers on WizyQuiz", fr: "Les meilleurs quizzeurs sur WizyQuiz", es: "Los mejores quizzeros en WizyQuiz" },
   rank: { en: "Rank", fr: "Rang", es: "Rango" },
   player: { en: "Player", fr: "Joueur", es: "Jugador" },
@@ -22,7 +22,7 @@ const t: Record<string, Record<string, string>> = {
   viewProfile: { en: "View profile", fr: "Voir le profil", es: "Ver perfil" },
   joinCta: { en: "Want to join the leaderboard?", fr: "Tu veux rejoindre le classement ?", es: "Quieres unirte al ranking?" },
   joinDesc: { en: "Play quizzes, earn XP and compete with other players. It's free.", fr: "Joue aux quiz, gagne des XP et affronte d'autres joueurs. C'est gratuit.", es: "Juega quizzes, gana XP y compite con otros jugadores. Es gratis." },
-  startPlaying: { en: "Start playing now", fr: "Commencer a jouer", es: "Empezar a jugar" },
+  startPlaying: { en: "Start playing now", fr: "Commencer à jouer", es: "Empezar a jugar" },
 };
 
 function formatXp(n: number): string {
