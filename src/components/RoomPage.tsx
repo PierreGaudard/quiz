@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { withBase } from "../utils/base";
+import { withBase, imageSrcset } from "../utils/base";
 
 /**
  * Les parties entre amis avec un code, de bout en bout : creer la salle,
@@ -414,7 +414,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
                       className="sr-only"
                     />
                     {q.coverImage ? (
-                      <img src={withBase(q.coverImage)} alt="" className="w-14 h-10 rounded-lg object-cover shrink-0" loading="lazy" width={56} height={40} />
+                      <img src={withBase(q.coverImage)} srcSet={imageSrcset(q.coverImage)} sizes="(max-width: 640px) 50vw, 320px" alt="" className="w-14 h-10 rounded-lg object-cover shrink-0" loading="lazy" width={56} height={40} />
                     ) : (
                       <span className="w-14 h-10 rounded-lg bg-brand-100 shrink-0" />
                     )}
@@ -582,7 +582,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
           </div>
           <h2 className="font-display font-bold text-xl md:text-2xl text-gray-900">{question.question}</h2>
           {question.image && (
-            <img src={withBase(question.image)} alt={question.question} className="rounded-xl w-full max-w-md object-cover aspect-video" loading="lazy" />
+            <img src={withBase(question.image)} srcSet={imageSrcset(question.image)} sizes="(max-width: 640px) 50vw, 320px" alt={question.question} className="rounded-xl w-full max-w-md object-cover aspect-video" loading="lazy" />
           )}
           <div className="grid gap-2 sm:grid-cols-2">
             {question.answers.map((a) => {

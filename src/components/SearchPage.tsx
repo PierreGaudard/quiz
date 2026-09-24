@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import type { QuizData, CategoryData } from "../data/types";
 import { keywordMappings } from "../data/search-keywords";
-import { withBase } from "../utils/base";
+import { withBase, imageSrcset } from "../utils/base";
 
 /* ───────────────────────────── translations ───────────────────────────── */
 
@@ -254,7 +254,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
               {quiz.coverImage ? (
                 <div className="aspect-[5/2] overflow-hidden relative">
                   <img
-                    src={withBase(quiz.coverImage)}
+                    src={withBase(quiz.coverImage)} srcSet={imageSrcset(quiz.coverImage)} sizes="(max-width: 640px) 50vw, 320px"
                     alt={quiz.title}
                     width={800}
                     height={450}
@@ -364,7 +364,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
               >
                 {cat.coverImage ? (
                   <img
-                    src={withBase(cat.coverImage)}
+                    src={withBase(cat.coverImage)} srcSet={imageSrcset(cat.coverImage)} sizes="(max-width: 640px) 50vw, 320px"
                     alt={cat.name}
                     width={800}
                     height={450}

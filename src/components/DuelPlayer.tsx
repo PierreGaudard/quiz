@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import type { QuizData } from "../data/types";
-import { withBase } from "../utils/base";
+import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
 
@@ -141,7 +141,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
           {quiz.coverImage ? (
             <>
               <img
-                src={withBase(quiz.coverImage)}
+                src={withBase(quiz.coverImage)} srcSet={imageSrcset(quiz.coverImage)} sizes="(max-width: 1024px) 100vw, 800px"
                 alt={quiz.title}
                 className="w-full aspect-[2.2/1] object-cover"
                 loading="eager"
@@ -452,7 +452,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             {leftAnswer?.image && (
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden mb-4 border-2 border-white/20 shadow-sm">
                 <img
-                  src={withBase(leftAnswer.image)}
+                  src={withBase(leftAnswer.image)} srcSet={imageSrcset(leftAnswer.image)} sizes="(max-width: 1024px) 100vw, 800px"
                   alt={leftAnswer.text}
                   className="w-full h-full object-cover"
                 />
@@ -510,7 +510,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             {rightAnswer?.image && (
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden mb-4 border-2 border-white/20 shadow-sm">
                 <img
-                  src={withBase(rightAnswer.image)}
+                  src={withBase(rightAnswer.image)} srcSet={imageSrcset(rightAnswer.image)} sizes="(max-width: 1024px) 100vw, 800px"
                   alt={rightAnswer.text}
                   className="w-full h-full object-cover"
                 />

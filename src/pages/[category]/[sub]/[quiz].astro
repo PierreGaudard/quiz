@@ -8,7 +8,7 @@ import DuelPlayer from "../../../components/DuelPlayer";
 import OrdrePlayer from "../../../components/OrdrePlayer";
 import { categoryIcons } from "../../../data/icons";
 import { slugifySubcategory } from "../../../data/quizzes";
-import { localePath, withBase } from "../../../utils/base";
+import { localePath, withBase, imageSrcset } from "../../../utils/base";
 import { t } from "../../../i18n/ui";
 import { getQuizPaths, resolveQuizData } from "../../../lib/page-helpers";
 import { getHreflangQuizPaths } from "../../../lib/hreflang-helpers";
@@ -111,7 +111,7 @@ const quizJsonLd = buildQuizStructuredData({
                   {q.question}
                 </h2>
                 {q.image && (
-                  <img src={withBase(q.image)} alt={q.question} class="rounded-xl mb-4 w-full max-w-md object-cover aspect-video" loading="lazy" />
+                  <img src={withBase(q.image)} srcset={imageSrcset(q.image)} sizes="(max-width: 1024px) 100vw, 800px" alt={q.question} class="rounded-xl mb-4 w-full max-w-md object-cover aspect-video" loading="lazy" />
                 )}
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-3">
                   {q.answers.map((a: any, j: number) => (
@@ -147,7 +147,7 @@ const quizJsonLd = buildQuizStructuredData({
                 <a href={lp(`/${rq.path}`)} class="group bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm transition-all">
                   {rq.coverImage && (
                     <div class="relative h-32 overflow-hidden">
-                      <img src={withBase(rq.coverImage)} alt={rq.title} class="w-full h-full object-cover transition-transform duration-300" loading="lazy" />
+                      <img src={withBase(rq.coverImage)} srcset={imageSrcset(rq.coverImage)} sizes="(max-width: 1024px) 100vw, 800px" alt={rq.title} class="w-full h-full object-cover transition-transform duration-300" loading="lazy" />
                       <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     </div>
                   )}

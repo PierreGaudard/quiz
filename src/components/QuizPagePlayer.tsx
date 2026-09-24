@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
-import { withBase } from "../utils/base";
+import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 
 interface Props {
@@ -500,7 +500,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
           {quiz.coverImage && (
             <div className="relative">
               <img
-                src={withBase(quiz.coverImage)}
+                src={withBase(quiz.coverImage)} srcSet={imageSrcset(quiz.coverImage)} sizes="(max-width: 1024px) 100vw, 800px"
                 alt={quiz.title}
                 width={800}
                 height={450}
@@ -707,7 +707,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   <div className="px-3 md:px-6 pb-2 md:pb-4">
                     <div className="rounded-xl overflow-hidden">
                       <img
-                        src={withBase(question.image)}
+                        src={withBase(question.image)} srcSet={imageSrcset(question.image)} sizes="(max-width: 1024px) 100vw, 800px"
                         alt={question.question}
                         width={800}
                         height={450}

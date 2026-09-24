@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
-import { withBase } from "../utils/base";
+import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
 
@@ -237,7 +237,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
           {quiz.coverImage && (
             <div className="h-48 overflow-hidden">
               <img
-                src={withBase(quiz.coverImage)}
+                src={withBase(quiz.coverImage)} srcSet={imageSrcset(quiz.coverImage)} sizes="(max-width: 1024px) 100vw, 800px"
                 alt={quiz.title}
                 className="w-full h-full object-cover"
                 width={800}
@@ -483,7 +483,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
         {currentQuestion.image && (
           <div className="h-48 overflow-hidden">
             <img
-              src={withBase(currentQuestion.image)}
+              src={withBase(currentQuestion.image)} srcSet={imageSrcset(currentQuestion.image)} sizes="(max-width: 1024px) 100vw, 800px"
               alt=""
               className="w-full h-full object-cover"
               width={800}

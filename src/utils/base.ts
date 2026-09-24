@@ -22,3 +22,15 @@ export function localePath(path: string, locale: Locale): string {
   }
   return result;
 }
+
+/**
+ * `srcset` d'une image de public/images : la variante 400 px (fichier
+ * `.w400.webp`, generee a cote de chaque image) et l'originale en 800 px.
+ * Les vignettes (cartes, menus, listes) chargeaient les 800 px pour les
+ * afficher en 76 a 300 px : c'etait l'essentiel du poids des pages.
+ * Renvoie undefined pour une image hors de /images/ ou pas en .webp.
+ */
+export function imageSrcset(path?: string | null): string | undefined {
+  if (!path || !path.startsWith('/images/') || !path.endsWith('.webp') || path.endsWith('.w400.webp')) return undefined;
+  return `${withBase(path.replace(/\.webp$/, '.w400.webp'))} 400w, ${withBase(path)} 800w`;
+}

@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import type { CategoryData, QuizData, GameTypeInfo, GameType } from "../data/types";
-import { withBase } from "../utils/base";
+import { withBase, imageSrcset } from "../utils/base";
 import { categoryIcons } from "../data/icons";
 
 /* ───────────────────────────── constants ───────────────────────────── */
@@ -337,7 +337,7 @@ export default function CategoryPage({
       <section className="mb-10">
         <div className="flex items-start gap-5 mb-5">
           <img
-            src={withBase(category.coverImage)}
+            src={withBase(category.coverImage)} srcSet={imageSrcset(category.coverImage)} sizes="(max-width: 640px) 50vw, 320px"
             alt={category.name}
             width={800}
             height={450}
@@ -663,7 +663,7 @@ export default function CategoryPage({
                     >
                       {q.coverImage && (
                         <img
-                          src={withBase(q.coverImage)}
+                          src={withBase(q.coverImage)} srcSet={imageSrcset(q.coverImage)} sizes="(max-width: 640px) 50vw, 320px"
                           alt={q.title}
                           className="w-12 h-12 rounded-lg object-cover shrink-0"
                           loading="lazy"
@@ -847,7 +847,7 @@ function QuizCard({
       {quiz.coverImage ? (
         <div className="aspect-[5/2] sm:aspect-[2/1] overflow-hidden relative">
           <img
-            src={withBase(quiz.coverImage)}
+            src={withBase(quiz.coverImage)} srcSet={imageSrcset(quiz.coverImage)} sizes="(max-width: 640px) 50vw, 320px"
             alt={quiz.title}
             className={`w-full h-full object-cover ${
               isCompleted ? "grayscale-[40%] opacity-70" : ""
@@ -1266,7 +1266,7 @@ function SidebarContent({
               href={lp(`/${cat.slug}`)}
               className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-gray-50 transition-colors group"
             >
-              <img src={withBase(cat.coverImage)} alt={cat.name} width={800} height={450} className="w-7 h-7 rounded-lg object-cover shrink-0" />
+              <img src={withBase(cat.coverImage)} srcSet={imageSrcset(cat.coverImage)} sizes="(max-width: 640px) 50vw, 320px" alt={cat.name} width={800} height={450} className="w-7 h-7 rounded-lg object-cover shrink-0" />
               <span className="text-sm font-medium text-gray-700 group-hover:text-brand-600 transition-colors">{tt(cat.nameKey)}</span>
             </a>
           ))}
