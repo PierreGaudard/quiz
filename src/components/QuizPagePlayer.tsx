@@ -194,14 +194,10 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
             if (!q.isCorrect) return sum;
             return sum + (q.hasSecondChance === false ? Math.round(BASE_XP * 0.5) : BASE_XP);
           }, 0);
-          // Compteur de parties : tout le monde compte, connecte ou pas.
-          // C'est cette route qui alimente les compteurs affiches, a la place
-          // des valeurs qui etaient ecrites en dur dans les donnees.
-          fetch("/api/quiz/plays", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ quizSlug: quiz.slug }),
-          }).catch(() => {});
+          // Le compteur de parties n'est plus incremente ici : c'est
+          // ScoreCompare, dans l'ecran de resultat, qui envoie la partie a
+          // /api/quiz/scores, et cette route compte aussi dans quiz_plays.
+          // Ca vaut pour les six modes, et plus seulement pour celui-ci.
 
           // La progression, elle, appartient a un compte. On ne tente
           // l'enregistrement que si le joueur est connecte : l'appel

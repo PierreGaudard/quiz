@@ -459,7 +459,7 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
               {tt("share")}
             </button>
           </div>
-          <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalAnswered} locale={locale} />
+          <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalAnswered} scoreOutOf={null} locale={locale} />
         </div>
       </div>
     );

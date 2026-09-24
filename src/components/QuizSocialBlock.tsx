@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ScoreCompare from "./ScoreCompare";
 
 interface FriendScore {
   id: number;
@@ -12,6 +13,11 @@ interface QuizSocialBlockProps {
   quizSlug: string;
   userScore: number;
   totalQuestions: number;
+  /**
+   * Le score maximum du quiz, pour la comparaison avec les autres joueurs.
+   * Par defaut totalQuestions ; null pour le chrono, qui n'a pas de plafond.
+   */
+  scoreOutOf?: number | null;
   locale?: string;
 }
 
@@ -24,7 +30,24 @@ const socialT: Record<string, Record<string, string>> = {
   outOf: { en: "out of", fr: "sur", es: "de" },
 };
 
-export default function QuizSocialBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: QuizSocialBlockProps) {
+export default function QuizSocialBlock(props: QuizSocialBlockProps) {
+  const { quizSlug, userScore, totalQuestions, scoreOutOf, locale = "en" } = props;
+  // La comparaison avec tous les joueurs s'affiche pour tout le monde,
+  // connecte ou pas. Le bloc amis, lui, n'existe que pour un compte.
+  return (
+    <>
+      <ScoreCompare
+        quizSlug={quizSlug}
+        score={userScore}
+        outOf={scoreOutOf === undefined ? totalQuestions : scoreOutOf}
+        locale={locale}
+      />
+      <FriendsBlock {...props} />
+    </>
+  );
+}
+
+function FriendsBlock({ quizSlug, userScore, totalQuestions, locale = "en" }: QuizSocialBlockProps) {
   const [friends, setFriends] = useState<FriendScore[]>([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loading, setLoading] = useState(true);
