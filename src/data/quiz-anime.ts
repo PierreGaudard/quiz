@@ -158,7 +158,7 @@ export const quizDragonBall: TranslatedQuiz = {
     en: {
       title: "Dragon Ball Quiz: Are You a True Saiyan?",
       description:
-        "Goku, Vegeta, the Dragon Balls... Test your Dragon Ball knowledge!",
+        "Goku, Vegeta, the Dragon Balls... Test how well you know Dragon Ball, from the Saiyans to the techniques!",
       questions: [
         {
           id: 1,

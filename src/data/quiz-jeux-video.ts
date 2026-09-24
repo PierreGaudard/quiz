@@ -11,7 +11,7 @@ export const quizMinecraft: TranslatedQuiz = {
   playCount: 22100,
   translations: {
     fr: {
-      title: "Quiz Minecraft : maîtrises-tu le monde des blocs ?",
+      title: "Quiz Minecraft : connais-tu le monde des blocs ?",
       description:
         "Creepers, Ender Dragon, diamants... Teste tes connaissances sur Minecraft avec ce quiz de 10 questions !",
       questions: [

@@ -170,7 +170,7 @@ export const quizStarWars: TranslatedQuiz = {
       ],
     },
     en: {
-      title: "Star Wars in order",
+      title: "Star Wars in the right order",
       description:
         "Ten sequences to put back in order. Sometimes release order, sometimes story order: read the question.",
       questions: [
@@ -317,7 +317,7 @@ export const quizStarWars: TranslatedQuiz = {
       ],
     },
     es: {
-      title: "Star Wars en orden",
+      title: "Star Wars en el orden correcto",
       description:
         "Diez secuencias que ordenar. A veces el orden de estreno, a veces el de la historia: lee bien la pregunta.",
       questions: [

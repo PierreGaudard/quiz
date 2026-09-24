@@ -26,7 +26,7 @@ export const quizMarvel: TranslatedQuiz = {
     fr: {
       title: "Duel Marvel : lequel des deux ?",
       description:
-        "Dix duels, deux propositions à chaque fois. Une seule est la bonne.",
+        "Dix duels sur l'univers Marvel, avec deux propositions à chaque fois. Une seule est la bonne.",
       questions: [
         {
           id: 1,
@@ -143,7 +143,7 @@ export const quizMarvel: TranslatedQuiz = {
     en: {
       title: "Marvel Duel: which of the two?",
       description:
-        "Ten duels, two options each time. Only one of them is right.",
+        "Ten duels on the Marvel universe, with two options each time. Only one of them is right.",
       questions: [
         {
           id: 1,
@@ -260,7 +260,7 @@ export const quizMarvel: TranslatedQuiz = {
     es: {
       title: "Duelo Marvel: ¿cuál de los dos?",
       description:
-        "Diez duelos, dos opciones cada vez. Solo una es la correcta.",
+        "Diez duelos sobre el universo Marvel, con dos opciones cada vez. Solo una es la correcta.",
       questions: [
         {
           id: 1,

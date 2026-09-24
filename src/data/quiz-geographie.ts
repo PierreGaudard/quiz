@@ -258,7 +258,7 @@ export const quizDrapeaux: TranslatedQuiz = {
     en: {
       title: "Flag Quiz: Recognize the Countries",
       description:
-        "Crosses, stars, stripes... Can you match each flag to its country?",
+        "Crosses, stars, stripes... Can you match each flag of the world to its country?",
       questions: [
         {
           id: 1,
@@ -503,7 +503,7 @@ export const quizDrapeaux: TranslatedQuiz = {
     es: {
       title: "Quiz de banderas: reconoce los países",
       description:
-        "\u00a1Cruces, estrellas, franjas... \u00bfPodrás asociar cada bandera con su país?",
+        "Cruces, estrellas, franjas... ¿Podrás asociar cada bandera con su país?",
       questions: [
         {
           id: 1,
