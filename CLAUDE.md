@@ -202,9 +202,10 @@ et elle rendait la prop `noindex` inoperante sans rien signaler.
 ### H1 : la requête principale d'abord
 
 Le H1 de l'accueil et ceux des catégories sont écrits à la main pour la
-requête la plus cherchée de chaque langue : « Le meilleur site de quiz
-gratuit », « The Best Free Online Trivia Quiz Site », « La mejor web de
-quizzes gratis » pour l'accueil (le superlatif est une demande de Pierre du
+requête la plus cherchée de chaque langue, précédée de la marque sur
+l'accueil (demande de Pierre du 25/09/2026) : « WizyQuiz, le meilleur site
+de quiz gratuit », « WizyQuiz: The Best Free Online Trivia Quiz Site »,
+« WizyQuiz, la mejor web de quizzes gratis » (le superlatif est une demande de Pierre du
 25/09/2026 : « meilleur site de quiz » est une requête, c'est la seule
 exception à la règle des affirmations invérifiables), puis par
 catégorie dans `CATEGORY_H1` (`src/lib/page-helpers.ts`), par exemple
