@@ -42,13 +42,16 @@ const td = "p-2 align-top border-b border-gray-100";
 
       <section>
         <h2 class={h2}>2. El almacenamiento local del navegador</h2>
-        <p>Estos datos se quedan en tu dispositivo y no se envían a ningún sitio:</p>
+        <p>Estos datos se quedan en tu dispositivo. Solo el identificador de la partida con amigos se envía al sitio, mientras dura la partida, para reconocerte:</p>
         <div class="overflow-x-auto mt-2">
           <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
             <thead class="bg-gray-50"><tr><th class={th}>Nombre</th><th class={th}>Para qué sirve</th></tr></thead>
             <tbody>
               <tr><td class={td}><code>quiz-progress</code></td><td class={td}>Recordar los quizzes que ya has jugado y tus mejores puntuaciones, incluso sin cuenta</td></tr>
               <tr><td class={td}><code>wizy-room-name</code></td><td class={td}>Rellenar de antemano el apodo que elegiste para las partidas con amigos</td></tr>
+              <tr><td class={td}><code>wizy-custom-quizzes</code></td><td class={td}>Guardar los quizzes que creas sin cuenta</td></tr>
+              <tr><td class={td}><code>wq-tf-best, wq-flags-best, wq-hl-best-…</code></td><td class={td}>Tu mejor puntuación en los minijuegos</td></tr>
+              <tr><td class={td}><code>wizy-room-&lt;code&gt;</code></td><td class={td}>Reconocerte como jugador de una partida con amigos si recargas la página</td></tr>
             </tbody>
           </table>
         </div>

@@ -42,13 +42,16 @@ const td = "p-2 align-top border-b border-gray-100";
 
       <section>
         <h2 class={h2}>2. The browser's local storage</h2>
-        <p>This data stays on your device and is not sent anywhere:</p>
+        <p>This data stays on your device. Only the game-with-friends identifier is sent back to the site, for the length of the game, to recognise you:</p>
         <div class="overflow-x-auto mt-2">
           <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
             <thead class="bg-gray-50"><tr><th class={th}>Name</th><th class={th}>What it is for</th></tr></thead>
             <tbody>
               <tr><td class={td}><code>quiz-progress</code></td><td class={td}>Remembering the quizzes you've already played and your best scores, even without an account</td></tr>
               <tr><td class={td}><code>wizy-room-name</code></td><td class={td}>Pre-filling the nickname you chose for games with friends</td></tr>
+              <tr><td class={td}><code>wizy-custom-quizzes</code></td><td class={td}>Keeping the quizzes you create without an account</td></tr>
+              <tr><td class={td}><code>wq-tf-best, wq-flags-best, wq-hl-best-…</code></td><td class={td}>Your best score in the mini-games</td></tr>
+              <tr><td class={td}><code>wizy-room-&lt;code&gt;</code></td><td class={td}>Recognising you as a player in a game with friends if you reload the page</td></tr>
             </tbody>
           </table>
         </div>
