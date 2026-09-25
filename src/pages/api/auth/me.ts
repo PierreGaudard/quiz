@@ -1,5 +1,6 @@
 import type { APIRoute } from "astro";
 import { getSessionFromCookies, getUserFromSession } from "../../../lib/auth";
+import { localeFromPath, touchUser } from "../../../lib/accounts";
 
 export const prerender = false;
 
@@ -19,6 +20,7 @@ export const GET: APIRoute = async ({ request }) => {
   }
 
   const user = await getUserFromSession(db, sessionId);
+  if (user) await touchUser(db, user.id, localeFromPath(request.headers.get("referer")));
   return new Response(JSON.stringify({ user }), {
     status: 200,
     headers: { "Content-Type": "application/json" },

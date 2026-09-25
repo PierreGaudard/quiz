@@ -29,7 +29,7 @@ const td = "p-2 align-top border-b border-gray-100";
 
       <section>
         <h2 class={h2}>1. Data controller</h2>
-        <p>{EDITOR.name}, publisher of the site{EDITOR.address ? `, ${EDITOR.address}` : ""}. For any question about your data, write to <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a>.</p>
+        <p>The site's publisher, a private individual (see the legal notices). For any question about your data, write to <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a>.</p>
       </section>
 
       <section>
@@ -38,8 +38,8 @@ const td = "p-2 align-top border-b border-gray-100";
           <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
             <thead class="bg-gray-50"><tr><th class={th}>Data</th><th class={th}>What it is used for</th><th class={th}>Legal basis</th><th class={th}>Retention</th></tr></thead>
             <tbody>
-              <tr><td class={td}><strong>Account:</strong> email address, username, password (never stored in plain text, only a salted hash is kept), avatar if you pick one, sign-up date</td><td class={td}>Logging you in and showing your profile</td><td class={td}>Performance of the service you ask for (art. 6.1.b)</td><td class={td}>As long as the account exists</td></tr>
-              <tr><td class={td}><strong>Account activity:</strong> quizzes played, scores, XP, quizzes you create, friends list</td><td class={td}>History, level, ranking among friends, links to your quizzes</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>As long as the account exists</td></tr>
+              <tr><td class={td}><strong>Account:</strong> email address, username, password (never stored in plain text, only a salted hash is kept), avatar if you pick one, sign-up date</td><td class={td}>Logging you in and showing your profile</td><td class={td}>Performance of the service you ask for (art. 6.1.b)</td><td class={td}>As long as the account is used: it is deleted after 3 years without logging in, with a warning email a month before</td></tr>
+              <tr><td class={td}><strong>Account activity:</strong> quizzes played, scores, XP, quizzes you create, friends list</td><td class={td}>History, level, ranking among friends, links to your quizzes</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>As long as the account is used: it is deleted after 3 years without logging in, with a warning email a month before</td></tr>
               <tr><td class={td}><strong>Session:</strong> random login identifier</td><td class={td}>Keeping you logged in from one page to the next</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>30 days, or until you log out</td></tr>
               <tr><td class={td}><strong>Forgotten password:</strong> hash of the link sent by email</td><td class={td}>Checking the reset link</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>1 hour, single use</td></tr>
               <tr><td class={td}><strong>Games with friends:</strong> the nickname you choose, your answers and score in the game</td><td class={td}>Running the room and showing the live leaderboard</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>6 hours, then deleted automatically</td></tr>
@@ -54,7 +54,7 @@ const td = "p-2 align-top border-b border-gray-100";
 
       <section>
         <h2 class={h2}>3. Who can access your data</h2>
-        <p>{EDITOR.name}, alone, plus the two technical providers the site needs to run:</p>
+        <p>The site's publisher, alone, plus the two technical providers the site needs to run:</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
           <li><strong>Cloudflare, Inc.</strong> (United States): hosting for the site and the database.</li>
           <li><strong>Resend, Inc.</strong> (United States): sending password reset emails. Only your email address and the content of the message are passed on to it.</li>

@@ -29,7 +29,7 @@ const td = "p-2 align-top border-b border-gray-100";
 
       <section>
         <h2 class={h2}>1. Responsable del tratamiento</h2>
-        <p>{EDITOR.name}, editor del sitio{EDITOR.address ? `, ${EDITOR.address}` : ""}. Para cualquier pregunta sobre tus datos, escribe a <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a>.</p>
+        <p>El editor del sitio, un particular (ver el aviso legal). Para cualquier pregunta sobre tus datos, escribe a <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a>.</p>
       </section>
 
       <section>
@@ -38,8 +38,8 @@ const td = "p-2 align-top border-b border-gray-100";
           <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
             <thead class="bg-gray-50"><tr><th class={th}>Datos</th><th class={th}>Para qué sirven</th><th class={th}>Base jurídica</th><th class={th}>Plazo</th></tr></thead>
             <tbody>
-              <tr><td class={td}><strong>Cuenta:</strong> correo electrónico, nombre de usuario, contraseña (nunca en claro: solo se guarda un hash con sal), avatar si eliges uno, fecha de registro</td><td class={td}>Iniciar sesión y mostrar tu perfil</td><td class={td}>Ejecución del servicio que solicitas (art. 6.1.b)</td><td class={td}>Mientras exista la cuenta</td></tr>
-              <tr><td class={td}><strong>Actividad de la cuenta:</strong> quizzes jugados, puntuaciones, XP, quizzes que creas, lista de amigos</td><td class={td}>Historial, nivel, clasificación entre amigos, enlaces a tus quizzes</td><td class={td}>Ejecución del servicio (art. 6.1.b)</td><td class={td}>Mientras exista la cuenta</td></tr>
+              <tr><td class={td}><strong>Cuenta:</strong> correo electrónico, nombre de usuario, contraseña (nunca en claro: solo se guarda un hash con sal), avatar si eliges uno, fecha de registro</td><td class={td}>Iniciar sesión y mostrar tu perfil</td><td class={td}>Ejecución del servicio que solicitas (art. 6.1.b)</td><td class={td}>Mientras se use la cuenta: se elimina tras 3 años sin iniciar sesión, con un correo de aviso un mes antes</td></tr>
+              <tr><td class={td}><strong>Actividad de la cuenta:</strong> quizzes jugados, puntuaciones, XP, quizzes que creas, lista de amigos</td><td class={td}>Historial, nivel, clasificación entre amigos, enlaces a tus quizzes</td><td class={td}>Ejecución del servicio (art. 6.1.b)</td><td class={td}>Mientras se use la cuenta: se elimina tras 3 años sin iniciar sesión, con un correo de aviso un mes antes</td></tr>
               <tr><td class={td}><strong>Sesión:</strong> identificador aleatorio de conexión</td><td class={td}>Mantener la sesión abierta de una página a otra</td><td class={td}>Ejecución del servicio (art. 6.1.b)</td><td class={td}>30 días, o hasta que cierres sesión</td></tr>
               <tr><td class={td}><strong>Contraseña olvidada:</strong> hash del enlace enviado por correo</td><td class={td}>Comprobar el enlace de restablecimiento</td><td class={td}>Ejecución del servicio (art. 6.1.b)</td><td class={td}>1 hora, de un solo uso</td></tr>
               <tr><td class={td}><strong>Partidas con amigos:</strong> apodo elegido, respuestas y puntuación de la partida</td><td class={td}>Hacer funcionar la sala y mostrar la clasificación en directo</td><td class={td}>Ejecución del servicio (art. 6.1.b)</td><td class={td}>6 horas, después se borran automáticamente</td></tr>
@@ -54,7 +54,7 @@ const td = "p-2 align-top border-b border-gray-100";
 
       <section>
         <h2 class={h2}>3. Quién accede a tus datos</h2>
-        <p>Solo {EDITOR.name}, además de los dos proveedores técnicos que el sitio necesita para funcionar:</p>
+        <p>Solo el editor del sitio, además de los dos proveedores técnicos que el sitio necesita para funcionar:</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
           <li><strong>Cloudflare, Inc.</strong> (Estados Unidos): alojamiento del sitio y de la base de datos.</li>
           <li><strong>Resend, Inc.</strong> (Estados Unidos): envío de los correos para restablecer la contraseña. Solo recibe tu dirección de correo y el contenido del mensaje.</li>

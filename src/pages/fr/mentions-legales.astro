@@ -27,18 +27,13 @@ const link = "text-brand-600 hover:text-brand-800 font-medium";
 
       <section>
         <h2 class={h2}>1. Éditeur du site</h2>
-        <p>Le site <strong>WizyQuiz</strong>, accessible à l'adresse https://wizyquiz.com, est édité à titre personnel par :</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Nom :</strong> {EDITOR.name}, personne physique</li>
-          {EDITOR.address && <li><strong>Adresse :</strong> {EDITOR.address}</li>}
-          <li><strong>E-mail :</strong> <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a></li>
-          {EDITOR.phone && <li><strong>Téléphone :</strong> {EDITOR.phone}</li>}
-        </ul>
+        <p>Le site <strong>WizyQuiz</strong>, accessible à l'adresse https://wizyquiz.com, est édité par un particulier, à titre non professionnel. Comme le permet l'article 6-III-2 de la LCEN, il a choisi de ne pas publier son identité : ses coordonnées sont connues de l'hébergeur, indiqué ci-dessous.</p>
+        <p class="mt-2">Pour le joindre : <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a>.</p>
       </section>
 
       <section>
         <h2 class={h2}>2. Directeur de la publication</h2>
-        <p>Le directeur de la publication est {EDITOR.name}, joignable à l'adresse {EDITOR.email}.</p>
+        <p>La publication est dirigée par l'éditeur du site, joignable à l'adresse {EDITOR.email}.</p>
       </section>
 
       <section>
@@ -54,7 +49,7 @@ const link = "text-brand-600 hover:text-brand-800 font-medium";
 
       <section>
         <h2 class={h2}>4. Propriété intellectuelle</h2>
-        <p>Les textes du site, les questions, les réponses et leurs explications, le logo et le nom WizyQuiz, la charte graphique et le code appartiennent à {EDITOR.name}. Leur reproduction, en tout ou partie, sans autorisation écrite est interdite.</p>
+        <p>Les textes du site, les questions, les réponses et leurs explications, le logo et le nom WizyQuiz, la charte graphique et le code appartiennent à l'éditeur du site. Leur reproduction, en tout ou partie, sans autorisation écrite est interdite.</p>
         <p class="mt-2">Les photos et visuels qui illustrent les quiz (affiches, captures, photos de presse, etc.) restent la propriété de leurs auteurs et ayants droit. Les noms de films, de séries, de jeux et de marques cités appartiennent à leurs titulaires ; WizyQuiz n'est affilié à aucun d'eux. Si vous êtes titulaire de droits sur une image et souhaitez qu'elle soit créditée ou retirée, écrivez à {EDITOR.email} : la demande est traitée dans les meilleurs délais.</p>
       </section>
 

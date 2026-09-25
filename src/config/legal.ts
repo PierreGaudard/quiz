@@ -3,13 +3,14 @@
  * politique de confidentialité, la page cookies et les CGU dans les trois
  * langues. Une seule source : si une coordonnée change, c'est ici.
  */
+/**
+ * L'éditeur est un particulier qui reste anonyme, comme le permet l'article
+ * 6-III-2 de la LCEN à une personne physique agissant à titre non
+ * professionnel : les pages ne donnent que l'hébergeur, à qui l'identité de
+ * l'éditeur est connue. Ne jamais écrire ici un nom ou une adresse.
+ */
 export const EDITOR = {
-  name: "Pierre Gaudard",
-  /** Adresse postale (obligatoire pour un éditeur personne physique, LCEN art. 6-III). */
-  address: "",
-  email: "pierretartare94440@gmail.com",
-  /** Facultatif : laissé vide, la ligne n'est pas affichée. */
-  phone: "",
+  email: "contact@wizyquiz.com",
 };
 
 /** Hébergeur (LCEN art. 6-III : nom, adresse, téléphone). */

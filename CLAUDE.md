@@ -289,6 +289,27 @@ consentement n'est nécessaire ; un outil de mesure d'audience ou de
 publicité en rendrait un obligatoire. Chaque compte se supprime depuis le
 profil (`/api/auth/delete`, mot de passe redemandé).
 
+L'éditeur reste **anonyme** (LCEN art. 6-III-2, particulier à titre non
+professionnel) : aucune page, aucun JSON-LD, aucun e-mail ne porte son nom ni
+son adresse, seulement l'hébergeur et `contact@wizyquiz.com` (`EDITOR.email`).
+Le dépôt étant public, rien de ce qui l'identifie n'y est ajouté non plus :
+le registre des traitements (RGPD art. 30) est tenu hors du dépôt.
+
+### Comptes inactifs
+
+Un compte sans activité depuis 3 ans reçoit un e-mail d'avertissement, puis
+est supprimé 30 jours plus tard s'il ne revient pas (`src/lib/accounts.ts`,
+`INACTIVE_YEARS`, `WARN_DAYS`). L'activité (`users.last_seen_at`, migration
+007) se note au plus une fois par jour, à la connexion et à chaque page
+chargée avec une session (`/api/auth/me`), avec la langue de la page. La
+purge tourne dans la tâche planifiée du Worker : `src/worker.ts` est le
+`main` de `wrangler.toml`, il reprend le `fetch` d'Astro et ajoute
+`scheduled` (cron `17 4 * * *`), qui efface aussi les salles entre amis
+expirées. `deleteAccount()` est le seul code qui efface un compte, partagé
+avec `/api/auth/delete`. En local, `wrangler dev --test-scheduled` plante
+sur « Could not serialize ScheduledController » : c'est wrangler, pas le
+code ; tester `purgeInactiveAccounts()` par `getPlatformProxy`.
+
 ## Security Headers
 Configured in `public/_headers` (Cloudflare format):
 - X-Frame-Options: SAMEORIGIN

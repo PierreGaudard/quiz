@@ -27,18 +27,13 @@ const link = "text-brand-600 hover:text-brand-800 font-medium";
 
       <section>
         <h2 class={h2}>1. Site publisher</h2>
-        <p>The <strong>WizyQuiz</strong> website, available at https://wizyquiz.com, is published in a personal capacity by:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Name:</strong> {EDITOR.name}, private individual</li>
-          {EDITOR.address && <li><strong>Address:</strong> {EDITOR.address}</li>}
-          <li><strong>Email:</strong> <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a></li>
-          {EDITOR.phone && <li><strong>Phone:</strong> {EDITOR.phone}</li>}
-        </ul>
+        <p>The <strong>WizyQuiz</strong> website, available at https://wizyquiz.com, is published by a private individual, on a non-professional basis. As allowed by article 6-III-2 of the LCEN, the publisher has chosen not to publish their identity: their contact details are known to the host named below.</p>
+        <p class="mt-2">To reach the publisher: <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a>.</p>
       </section>
 
       <section>
         <h2 class={h2}>2. Publication director</h2>
-        <p>The publication director is {EDITOR.name}, who can be reached at {EDITOR.email}.</p>
+        <p>Publication is directed by the site's publisher, who can be reached at {EDITOR.email}.</p>
       </section>
 
       <section>
@@ -54,7 +49,7 @@ const link = "text-brand-600 hover:text-brand-800 font-medium";
 
       <section>
         <h2 class={h2}>4. Intellectual property</h2>
-        <p>The site's texts, the questions, answers and their explanations, the WizyQuiz name and logo, the visual design and the code belong to {EDITOR.name}. Copying them, in whole or in part, without written permission is not allowed.</p>
+        <p>The site's texts, the questions, answers and their explanations, the WizyQuiz name and logo, the visual design and the code belong to the site's publisher. Copying them, in whole or in part, without written permission is not allowed.</p>
         <p class="mt-2">The photos and visuals used in the quizzes (posters, screenshots, press photos, etc.) remain the property of their authors and rights holders. The names of films, series, games and brands mentioned belong to their owners, and WizyQuiz is not affiliated with any of them. If you hold the rights to an image and would like it credited or removed, write to {EDITOR.email} and the request will be handled as quickly as possible.</p>
       </section>
 
