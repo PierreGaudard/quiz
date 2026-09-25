@@ -37,6 +37,16 @@ const t: Record<string, Record<string, string>> = {
   loading: { en: "Loading...", fr: "Chargement...", es: "Cargando..." },
   notLoggedIn: { en: "You are not logged in", fr: "Vous n'êtes pas connecté", es: "No has iniciado sesión" },
   nextLevel: { en: "Next level", fr: "Prochain niveau", es: "Siguiente nivel" },
+  deleteAccount: { en: "Delete my account", fr: "Supprimer mon compte", es: "Eliminar mi cuenta" },
+  deleteIntro: {
+    en: "Your account, your quiz history, the quizzes you created and your friends list are erased for good. Enter your password to confirm.",
+    fr: "Ton compte, ton historique, les quiz que tu as créés et ta liste d'amis sont effacés pour de bon. Saisis ton mot de passe pour confirmer.",
+    es: "Tu cuenta, tu historial, los quizzes que creaste y tu lista de amigos se borran para siempre. Escribe tu contraseña para confirmar.",
+  },
+  deleteConfirm: { en: "Delete for good", fr: "Supprimer définitivement", es: "Eliminar para siempre" },
+  cancel: { en: "Cancel", fr: "Annuler", es: "Cancelar" },
+  password: { en: "Password", fr: "Mot de passe", es: "Contraseña" },
+  wrongPassword: { en: "Wrong password.", fr: "Mot de passe incorrect.", es: "Contraseña incorrecta." },
 };
 
 export default function ProfilePage({ locale = "en" }: { locale?: string }) {
@@ -100,6 +110,19 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
           setSaveMsg(data.error || "Error");
         }
       });
+  };
+
+  const [showDelete, setShowDelete] = useState(false);
+  const [deletePassword, setDeletePassword] = useState("");
+  const [deleteError, setDeleteError] = useState("");
+  const handleDelete = () => {
+    setDeleteError("");
+    fetch("/api/auth/delete", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password: deletePassword }) })
+      .then((r) => {
+        if (r.ok) window.location.href = locale === "en" ? "/" : `/${locale}/`;
+        else setDeleteError(tt("wrongPassword"));
+      })
+      .catch(() => setDeleteError("Error"));
   };
 
   const handleLogout = () => {
@@ -256,6 +279,36 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" /></svg>
         {tt("logout")}
       </button>
+
+      {/* Suppression du compte (RGPD, droit a l'effacement) */}
+      <div className="mt-4 text-center">
+        {!showDelete ? (
+          <button onClick={() => setShowDelete(true)} className="text-xs text-gray-500 hover:text-red-600 underline cursor-pointer">
+            {tt("deleteAccount")}
+          </button>
+        ) : (
+          <div className="bg-white border border-red-200 rounded-xl p-4 text-left">
+            <p className="text-sm text-gray-700 mb-3">{tt("deleteIntro")}</p>
+            <input
+              type="password"
+              aria-label={tt("password")}
+              placeholder={tt("password")}
+              value={deletePassword}
+              onChange={(e) => setDeletePassword(e.target.value)}
+              className="w-full h-10 px-3 rounded-lg border border-gray-300 text-sm mb-2"
+            />
+            {deleteError && <p className="text-sm text-red-600 mb-2">{deleteError}</p>}
+            <div className="flex gap-2">
+              <button onClick={handleDelete} disabled={!deletePassword} className="flex-1 bg-red-600 hover:bg-red-700 disabled:opacity-40 text-white font-semibold text-sm py-2.5 rounded-lg cursor-pointer">
+                {tt("deleteConfirm")}
+              </button>
+              <button onClick={() => { setShowDelete(false); setDeletePassword(""); setDeleteError(""); }} className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold text-sm py-2.5 rounded-lg cursor-pointer">
+                {tt("cancel")}
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

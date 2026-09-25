@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
+import { localePath } from "../utils/base";
+import { t } from "../i18n/ui";
+import { EDITOR, LEGAL_UPDATED } from "../config/legal";
+import type { Locale } from "../i18n/config";
+
+const locale: Locale = "en";
+const lp = (path: string) => localePath(path, locale);
+const h2 = "font-display text-lg font-bold text-gray-900 mb-3";
+const link = "text-brand-600 hover:text-brand-800 font-medium";
+const th = "text-left font-semibold text-gray-900 p-2 border-b border-gray-200";
+const td = "p-2 align-top border-b border-gray-100";
+---
+
+<Layout title="Cookies and Local Storage | WizyQuiz" description="WizyQuiz's only cookie keeps you logged in. No ads, no analytics, no tracking: here is what is kept in your browser and why." locale={locale} hreflangPaths={getHreflangStaticPaths("cookies")}>
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
+      <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+      <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="text-gray-700 font-semibold">Cookies</span>
+    </nav>
+
+    <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Cookies and Local Storage</h1>
+
+    <div class="space-y-8 text-sm leading-relaxed text-gray-700">
+      <p>WizyQuiz has no ads, no audience measurement tool and no social media button that tracks you. So the site only sets one cookie, the one that keeps you logged in, plus a few settings in your browser. All of this is needed for the site to work, which is why the law (article 82 of the French Data Protection Act) exempts it from consent, and why no banner asks you for it.</p>
+
+      <section>
+        <h2 class={h2}>1. The cookie</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
+            <thead class="bg-gray-50"><tr><th class={th}>Name</th><th class={th}>What it is for</th><th class={th}>Duration</th></tr></thead>
+            <tbody>
+              <tr><td class={td}><code>session</code></td><td class={td}>Keeping you logged in to your account from one page to the next. It is only set if you log in, and no script can read it.</td><td class={td}>30 days, or until you log out</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-2">Cloudflare, the hosting provider, may set a security cookie (<code>__cf_bm</code>, 30 minutes) when it needs to tell a visitor apart from a malicious bot. That is its only use.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>2. The browser's local storage</h2>
+        <p>This data stays on your device and is not sent anywhere:</p>
+        <div class="overflow-x-auto mt-2">
+          <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
+            <thead class="bg-gray-50"><tr><th class={th}>Name</th><th class={th}>What it is for</th></tr></thead>
+            <tbody>
+              <tr><td class={td}><code>quiz-progress</code></td><td class={td}>Remembering the quizzes you've already played and your best scores, even without an account</td></tr>
+              <tr><td class={td}><code>wizy-room-name</code></td><td class={td}>Pre-filling the nickname you chose for games with friends</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 class={h2}>3. No third-party services</h2>
+        <p>Fonts and images are served by the site itself. Loading a WizyQuiz page does not contact Google, Facebook or any other outside service.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>4. Clearing everything</h2>
+        <p>You can delete the cookie and the local storage from your browser settings (under "Cookies and site data"). You will simply be logged out, and the list of quizzes you played without an account will start again from zero. For the full list of data and your rights, see the <a href={lp("/privacy-policy")} class={link}>privacy policy</a>. Any question: {EDITOR.email}.</p>
+      </section>
+
+      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Last updated: {LEGAL_UPDATED.en}</p>
+    </div>
+  </main>
+</Layout>

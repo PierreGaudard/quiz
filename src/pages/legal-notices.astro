@@ -3,13 +3,16 @@ import Layout from "../layouts/Layout.astro";
 import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
 import { localePath } from "../utils/base";
 import { t } from "../i18n/ui";
+import { EDITOR, HOST, LEGAL_UPDATED } from "../config/legal";
 import type { Locale } from "../i18n/config";
 
 const locale: Locale = "en";
 const lp = (path: string) => localePath(path, locale);
+const h2 = "font-display text-lg font-bold text-gray-900 mb-3";
+const link = "text-brand-600 hover:text-brand-800 font-medium";
 ---
 
-<Layout title="Legal Notices | WizyQuiz Free Quiz Platform" description="Legal notices for the WizyQuiz, including publisher information, hosting details and intellectual property." locale={locale} hreflangPaths={getHreflangStaticPaths("legal")}>
+<Layout title="Legal Notices | WizyQuiz, Free Online Quizzes" description="WizyQuiz legal notices: site publisher, hosting provider, publication director, intellectual property and governing law." locale={locale} hreflangPaths={getHreflangStaticPaths("legal")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -19,62 +22,63 @@ const lp = (path: string) => localePath(path, locale);
 
     <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Legal Notices</h1>
 
-    <div class="prose prose-gray max-w-none space-y-8 text-sm leading-relaxed text-gray-700">
+    <div class="space-y-8 text-sm leading-relaxed text-gray-700">
+      <p>These notices are published under article 6-III of French law no. 2004-575 of June 21, 2004 on confidence in the digital economy (known as the LCEN).</p>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Site publisher</h2>
-        <p>The website <strong>WizyQuiz</strong> (accessible at <strong>https://wizyquiz.com</strong>) is published by:</p>
+        <h2 class={h2}>1. Site publisher</h2>
+        <p>The <strong>WizyQuiz</strong> website, available at https://wizyquiz.com, is published in a personal capacity by:</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Name:</strong> Pierre Gaudard</li>
-          <li><strong>Status:</strong> Individual</li>
-          <li><strong>Email address:</strong> pierretartare94440@gmail.com</li>
+          <li><strong>Name:</strong> {EDITOR.name}, private individual</li>
+          {EDITOR.address && <li><strong>Address:</strong> {EDITOR.address}</li>}
+          <li><strong>Email:</strong> <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a></li>
+          {EDITOR.phone && <li><strong>Phone:</strong> {EDITOR.phone}</li>}
         </ul>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Hosting provider</h2>
-        <p>The site is hosted by:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Company name:</strong> Cloudflare, Inc.</li>
-          <li><strong>Address:</strong> 101 Townsend Street, San Francisco, CA 94107, United States</li>
-          <li><strong>Website:</strong> cloudflare.com</li>
+        <h2 class={h2}>2. Publication director</h2>
+        <p>The publication director is {EDITOR.name}, who can be reached at {EDITOR.email}.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>3. Hosting provider</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li><strong>Company name:</strong> {HOST.name}</li>
+          <li><strong>Address:</strong> {HOST.addressEn}</li>
+          <li><strong>Phone:</strong> {HOST.phone}</li>
+          <li><strong>Website:</strong> <a href={HOST.site} class={link} rel="noopener">cloudflare.com</a></li>
         </ul>
+        <p class="mt-2">The site and its database run on Cloudflare's servers (Workers and D1).</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">3. Publication director</h2>
-        <p>The publication director is <strong>Pierre Gaudard</strong>.</p>
-        <p>Contact: pierretartare94440@gmail.com</p>
+        <h2 class={h2}>4. Intellectual property</h2>
+        <p>The site's texts, the questions, answers and their explanations, the WizyQuiz name and logo, the visual design and the code belong to {EDITOR.name}. Copying them, in whole or in part, without written permission is not allowed.</p>
+        <p class="mt-2">The photos and visuals used in the quizzes (posters, screenshots, press photos, etc.) remain the property of their authors and rights holders. The names of films, series, games and brands mentioned belong to their owners, and WizyQuiz is not affiliated with any of them. If you hold the rights to an image and would like it credited or removed, write to {EDITOR.email} and the request will be handled as quickly as possible.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. Intellectual property</h2>
-        <p>All content on the WizyQuiz website (texts, graphics, images, logos, icons, sounds, software, quizzes, questions and answers) is the exclusive property of Pierre Gaudard or its partners and is protected by French and international intellectual property laws.</p>
-        <p>Any reproduction, representation, modification, publication, adaptation or exploitation of all or part of the site elements, by any means or process, is prohibited without prior written authorisation from Pierre Gaudard.</p>
+        <h2 class={h2}>5. Content published by players</h2>
+        <p>Quizzes created by players are published under their own responsibility. They are not shown in the site's catalog and are not indexed by search engines. Illegal content can be reported to {EDITOR.email}, with the address of the page. It is removed as soon as it is reported, as provided for by article 6-I-2 of the LCEN.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">5. Personal data</h2>
-        <p>Personal data processing is detailed in our <a href={lp("/privacy-policy")} class="text-brand-600 hover:text-brand-800 font-medium">Privacy Policy</a>.</p>
+        <h2 class={h2}>6. Personal data and cookies</h2>
+        <p>The data collected and your rights are set out in the <a href={lp("/privacy-policy")} class={link}>privacy policy</a>. The only cookie the site sets is described on the <a href={lp("/cookies")} class={link}>cookies</a> page.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Cookies</h2>
-        <p>The WizyQuiz website only uses strictly necessary technical cookies (progress saving, user preferences). These cookies do not collect any personal data for advertising or profiling purposes.</p>
+        <h2 class={h2}>7. Liability</h2>
+        <p>The quizzes are there to play and to learn. A mistake can slip into a question or an explanation: if you spot one, write to {EDITOR.email} and it will be corrected.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Limitation of liability</h2>
-        <p>The information and content on the WizyQuiz website are provided for informational and entertainment purposes. Pierre Gaudard cannot be held responsible for errors or omissions in quiz questions and answers.</p>
-        <p>Use of the site is at the user's own risk. Pierre Gaudard shall not be held liable for any direct or indirect damages resulting from the use of the site.</p>
+        <h2 class={h2}>8. Governing law</h2>
+        <p>These notices are governed by French law. In the event of a dispute, and after an attempt to settle it amicably, the French courts have jurisdiction.</p>
       </section>
 
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">8. Applicable law</h2>
-        <p>These legal notices are governed by French law. In the event of a dispute, French courts shall have sole jurisdiction.</p>
-      </section>
-
-      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Last updated: March 2026</p>
+      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Last updated: {LEGAL_UPDATED.en}</p>
     </div>
   </main>
 </Layout>

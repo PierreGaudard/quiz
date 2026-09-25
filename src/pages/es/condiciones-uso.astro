@@ -3,13 +3,16 @@ import Layout from "../../layouts/Layout.astro";
 import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
+import { EDITOR, LEGAL_UPDATED } from "../../config/legal";
 import type { Locale } from "../../i18n/config";
 
 const locale: Locale = "es";
 const lp = (path: string) => localePath(path, locale);
+const h2 = "font-display text-lg font-bold text-gray-900 mb-3";
+const link = "text-brand-600 hover:text-brand-800 font-medium";
 ---
 
-<Layout title="Condiciones de uso | WizyQuiz, quizzes gratis" description="Consulta las condiciones de uso de WizyQuiz, la plataforma de quizzes gratuita en linea." locale={locale} hreflangPaths={getHreflangStaticPaths("terms")}>
+<Layout title="Condiciones de uso | WizyQuiz, quizzes gratis" description="Las normas de uso de WizyQuiz: acceso gratuito a los quizzes, cuenta de jugador, quizzes creados por los jugadores, partidas con amigos y responsabilidad." locale={locale} hreflangPaths={getHreflangStaticPaths("terms")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -19,99 +22,76 @@ const lp = (path: string) => localePath(path, locale);
 
     <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Condiciones de uso</h1>
 
-    <div class="prose prose-gray max-w-none space-y-8 text-sm leading-relaxed text-gray-700">
-
+    <div class="space-y-8 text-sm leading-relaxed text-gray-700">
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Objeto</h2>
-        <p>Las presentes Condiciones de Uso (en adelante "CdU") tienen por objeto definir las normas de uso del sitio web <strong>WizyQuiz</strong> (en adelante "el Sitio"), accesible en <strong>https://wizyquiz.com</strong>, publicado por Pierre Gaudard.</p>
-        <p>El acceso y uso del Sitio implican la aceptación plena e incondicional de las presentes CdU.</p>
+        <h2 class={h2}>1. Objeto</h2>
+        <p>Estas condiciones fijan las normas de uso de WizyQuiz (https://wizyquiz.com), editado por {EDITOR.name}. Usar el sitio supone aceptarlas. No le cuestan nada a nadie: el sitio es gratuito, sin suscripción ni compras.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Descripción del servicio</h2>
-        <p>WizyQuiz es una plataforma gratuita de quizzes en línea que permite a los usuarios:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li>Jugar quizzes sobre temas variados (cultura general, deportes, cine, geografía, etc.)</li>
-          <li>Descubrir diferentes modos de juego (Opción Múltiple, Verdadero/Falso, Crono, Estimación, Duelo, Orden cronológico)</li>
-          <li>Crear y compartir sus propios quizzes</li>
-          <li>Seguir su progreso y ganar puntos de experiencia (XP)</li>
+        <h2 class={h2}>2. El servicio</h2>
+        <p>WizyQuiz ofrece quizzes de cultura general en seis modos de juego (opción múltiple, verdadero o falso, desafío crono, estimación, duelo, orden cronológico), minijuegos, partidas con amigos con un código y una herramienta para crear tus propios quizzes. Todos los quizzes se juegan sin cuenta. Con una cuenta gratuita, además, puedes guardar tu historial, ganar XP, añadir amigos y guardar los quizzes que crees.</p>
+        <p class="mt-2">El sitio puede cambiar, interrumpirse por mantenimiento o cerrar sin que eso dé derecho a ninguna indemnización, ya que el servicio es gratuito.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>3. La cuenta de jugador</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Para crear una cuenta hay que tener 15 años o contar con el consentimiento de un padre, una madre o un tutor.</li>
+          <li>La dirección de correo que indiques tiene que ser tuya. La contraseña es personal: no la compartas.</li>
+          <li>Los demás jugadores ven tu nombre de usuario. No puede ser ofensivo ni suplantar la identidad de otra persona.</li>
+          <li>Puedes eliminar tu cuenta en cualquier momento desde tu perfil («Eliminar mi cuenta»). La cuenta y todo lo vinculado a ella se borran entonces.</li>
         </ul>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">3. Acceso al servicio</h2>
-        <p>El Sitio es accesible de forma gratuita para cualquier usuario con acceso a Internet. Todos los costes relacionados con el acceso al Sitio (hardware, software, suscripción a Internet) corren a cargo del usuario.</p>
-        <p>Pierre Gaudard se reserva el derecho de suspender, modificar o interrumpir el acceso al Sitio en cualquier momento, sin previo aviso ni indemnización.</p>
-      </section>
-
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. Quizzes creados por los usuarios</h2>
-        <p>Los usuarios tienen la posibilidad de crear sus propios quizzes mediante la herramienta de creación integrada en el Sitio. Al enviar un quiz, el usuario se compromete a:</p>
+        <h2 class={h2}>4. Los quizzes creados por los jugadores</h2>
+        <p>Cada quiz creado recibe un enlace que su autor comparte con quien quiera. No se revisa, no aparece en el catálogo y no se indexa en los buscadores. Su autor es responsable de él y se compromete a no publicar nada:</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li>No publicar contenido ilícito, difamatorio, injurioso, discriminatorio, violento o de carácter sexual</li>
-          <li>No infringir los derechos de propiedad intelectual de terceros</li>
-          <li>Proporcionar información precisa en la medida de lo posible</li>
-          <li>No utilizar el servicio con fines de spam, publicidad o promoción comercial</li>
+          <li>ilícito, difamatorio, ofensivo, de odio o discriminatorio;</li>
+          <li>pornográfico o violento;</li>
+          <li>que reproduzca sin derecho el trabajo de otra persona (textos, imágenes);</li>
+          <li>que sirva para hacer publicidad o spam.</li>
         </ul>
-        <p class="mt-2">Los quizzes creados por los usuarios están <strong>sujetos a aprobación</strong> antes de su publicación oficial en el Sitio. Pierre Gaudard se reserva el derecho de rechazar, modificar o eliminar cualquier quiz que no cumpla con las presentes CdU, sin notificación previa.</p>
+        <p class="mt-2">Al publicar un quiz, el autor autoriza a WizyQuiz a alojarlo y a mostrarlo a quien tenga el enlace, de forma gratuita y mientras el quiz exista. Puede eliminarlo en cualquier momento desde « Mis quiz creados ». Un quiz que incumpla estas normas se puede eliminar sin previo aviso. Para denunciar uno, escribe a {EDITOR.email} con su enlace.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">5. Propiedad intelectual</h2>
-        <p>Todos los elementos del Sitio (diseño, textos, imágenes, logotipos, código fuente, quizzes editoriales) están protegidos por la legislación de propiedad intelectual y pertenecen a Pierre Gaudard, salvo indicación en contrario.</p>
-        <p>Al crear un quiz en el Sitio, el usuario concede a Pierre Gaudard una <strong>licencia no exclusiva, gratuita y mundial</strong> de uso, reproducción, modificación y distribución del contenido del quiz en el Sitio.</p>
+        <h2 class={h2}>5. Partidas con amigos</h2>
+        <p>Una sala se crea sin cuenta, solo con un apodo, y desaparece a las seis horas. Todos los jugadores de la sala ven el apodo, así que se aplican las mismas normas que para un nombre de usuario.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Datos personales</h2>
-        <p>El tratamiento de datos personales se describe en nuestra <a href={lp("/politica-privacidad")} class="text-brand-600 hover:text-brand-800 font-medium">Política de privacidad</a>.</p>
+        <h2 class={h2}>6. Buen uso del sitio</h2>
+        <p>Está prohibido intentar perturbar el sitio (ataques, envío masivo de peticiones, extracción automatizada del contenido), eludir sus protecciones o falsear las clasificaciones. En caso de abuso, se puede bloquear el acceso y eliminar la cuenta.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Responsabilidad</h2>
-        <p>Pierre Gaudard se esfuerza por garantizar la exactitud de la información publicada en el Sitio, pero no puede garantizar la exactitud, integridad o actualidad de todos los contenidos, en particular los quizzes y sus respuestas.</p>
-        <p>El usuario reconoce que utiliza el Sitio bajo su propia responsabilidad. Pierre Gaudard no será responsable de:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li>Daños directos o indirectos derivados del uso del Sitio</li>
-          <li>Interrupciones temporales del servicio</li>
-          <li>Contenido de los quizzes creados por los usuarios</li>
-          <li>El uso de los resultados de los quizzes para cualquier fin</li>
-        </ul>
+        <h2 class={h2}>7. Propiedad intelectual</h2>
+        <p>Los quizzes, los textos, el logotipo y el código del sitio pertenecen a {EDITOR.name}, como se explica en el <a href={lp("/aviso-legal")} class={link}>aviso legal</a>. Puedes compartir libremente el enlace de un quiz, pero copiar las preguntas en otro sitio requiere autorización.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">8. Conducta del usuario</h2>
-        <p>El usuario se compromete a no:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li>Utilizar el Sitio de manera fraudulenta o contraria a su finalidad</li>
-          <li>Intentar perturbar el funcionamiento del Sitio (ataques, scraping excesivo, etc.)</li>
-          <li>Suplantar la identidad de un tercero</li>
-          <li>Publicar contenido contrario al orden público y las buenas costumbres</li>
-        </ul>
-        <p class="mt-2">En caso de incumplimiento, Pierre Gaudard se reserva el derecho de bloquear el acceso del usuario al Sitio.</p>
+        <h2 class={h2}>8. Responsabilidad</h2>
+        <p>Los quizzes están pensados para jugar y aprender. Puede colarse algún error en una pregunta: avisa a {EDITOR.email} y se corregirá. WizyQuiz no es responsable del contenido de los quizzes creados por los jugadores ni de los sitios a los que lleven posibles enlaces externos.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">9. Enlaces</h2>
-        <p>El Sitio puede contener enlaces a sitios de terceros. Pierre Gaudard no ejerce ningún control sobre estos sitios y declina toda responsabilidad respecto a su contenido.</p>
+        <h2 class={h2}>9. Datos personales</h2>
+        <p>Lo que se recoge y tus derechos se describen en la <a href={lp("/politica-privacidad")} class={link}>política de privacidad</a> y en la página de <a href={lp("/cookies")} class={link}>cookies</a>.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">10. Modificación de las CdU</h2>
-        <p>Pierre Gaudard se reserva el derecho de modificar las presentes CdU en cualquier momento. Las modificaciones entran en vigor desde su publicación en el Sitio. El uso continuado del Sitio después de la modificación implica la aceptación de las nuevas CdU.</p>
+        <h2 class={h2}>10. Cambios</h2>
+        <p>Estas condiciones pueden actualizarse, y en ese caso cambia la fecha que aparece al final de la página.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">11. Legislación aplicable y jurisdicción</h2>
-        <p>Las presentes CdU se rigen por la legislación francesa. Cualquier litigio relativo al uso del Sitio será sometido a la jurisdicción exclusiva de los tribunales franceses.</p>
+        <h2 class={h2}>11. Ley aplicable y litigios</h2>
+        <p>Estas condiciones se rigen por la ley francesa. Si hay algún desacuerdo, escribe primero a {EDITOR.email} para buscar una solución amistosa. Si no se llega a ninguna, se puede acudir al tribunal competente, incluido el de tu domicilio si eres consumidor.</p>
       </section>
 
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">12. Contacto</h2>
-        <p>Para cualquier pregunta relativa a las presentes CdU, puede contactarnos en: <strong>pierretartare94440@gmail.com</strong></p>
-      </section>
-
-      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Última actualización: marzo de 2026</p>
+      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Última actualización: {LEGAL_UPDATED.es}</p>
     </div>
   </main>
 </Layout>

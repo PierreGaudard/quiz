@@ -24,8 +24,9 @@ const slugs: Record<string, Record<string, string>> = {
   create: { en: "/create", fr: "/creer", es: "/crear" },
   legal: { en: "/legal-notices", fr: "/mentions-legales", es: "/aviso-legal" },
   privacy: { en: "/privacy-policy", fr: "/confidentialite", es: "/politica-privacidad" },
-  terms: { en: "/terms-of-use", fr: "/cgv", es: "/condiciones-uso" },
+  terms: { en: "/terms-of-use", fr: "/cgu", es: "/condiciones-uso" },
   sitemap: { en: "/sitemap", fr: "/plan-du-site", es: "/mapa-del-sitio" },
+  cookies: { en: "/cookies", fr: "/cookies", es: "/cookies" },
 };
 const s = (key: string) => slugs[key]?.[locale] || slugs[key]?.en || key;
 
@@ -91,6 +92,7 @@ const socials = Object.entries(SOCIAL_LINKS).filter(([n, h]) => h && SOCIAL_ICON
           <li><a href={lp(s('legal'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.legal")}</a></li>
           <li><a href={lp(s('privacy'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.privacy")}</a></li>
           <li><a href={lp(s('terms'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.terms")}</a></li>
+          <li><a href={lp(s('cookies'))} class="text-sm text-white/50 hover:text-white transition-colors">Cookies</a></li>
           <li><a href="mailto:pierretartare94440@gmail.com" class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.contactUs")}</a></li>
           <li><a href={lp(s('sitemap'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.sitemap")}</a></li>
         </ul>

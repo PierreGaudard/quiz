@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
+import { localePath } from "../../utils/base";
+import { t } from "../../i18n/ui";
+import { EDITOR, LEGAL_UPDATED } from "../../config/legal";
+import type { Locale } from "../../i18n/config";
+
+const locale: Locale = "fr";
+const lp = (path: string) => localePath(path, locale);
+const h2 = "font-display text-lg font-bold text-gray-900 mb-3";
+const link = "text-brand-600 hover:text-brand-800 font-medium";
+const th = "text-left font-semibold text-gray-900 p-2 border-b border-gray-200";
+const td = "p-2 align-top border-b border-gray-100";
+---
+
+<Layout title="Cookies et stockage local | WizyQuiz" description="Le seul cookie de WizyQuiz sert à rester connecté. Pas de publicité, pas de mesure d'audience, pas de pistage : voici ce qui est gardé dans votre navigateur." locale={locale} hreflangPaths={getHreflangStaticPaths("cookies")}>
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
+      <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
+      <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="text-gray-700 font-semibold">Cookies</span>
+    </nav>
+
+    <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Cookies et stockage local</h1>
+
+    <div class="space-y-8 text-sm leading-relaxed text-gray-700">
+      <p>WizyQuiz n'a ni publicité, ni outil de mesure d'audience, ni bouton de réseau social qui piste. Le site ne dépose donc qu'un seul cookie, celui qui vous garde connecté, et quelques réglages dans votre navigateur. Tout ça est nécessaire au fonctionnement du site : la loi (article 82 de la loi Informatique et Libertés) le dispense de consentement, c'est pour ça qu'aucun bandeau ne vous le demande.</p>
+
+      <section>
+        <h2 class={h2}>1. Le cookie</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
+            <thead class="bg-gray-50"><tr><th class={th}>Nom</th><th class={th}>À quoi il sert</th><th class={th}>Durée</th></tr></thead>
+            <tbody>
+              <tr><td class={td}><code>session</code></td><td class={td}>Vous garder connecté à votre compte d'une page à l'autre. Il n'est déposé que si vous vous connectez, et n'est lisible par aucun script.</td><td class={td}>30 jours, ou jusqu'à la déconnexion</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-2">Cloudflare, l'hébergeur, peut déposer un cookie de sécurité (<code>__cf_bm</code>, 30 minutes) quand il doit distinguer un visiteur d'un robot malveillant. Il ne sert qu'à ça.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>2. Le stockage local du navigateur</h2>
+        <p>Ces données restent sur votre appareil et ne sont envoyées nulle part :</p>
+        <div class="overflow-x-auto mt-2">
+          <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
+            <thead class="bg-gray-50"><tr><th class={th}>Nom</th><th class={th}>À quoi il sert</th></tr></thead>
+            <tbody>
+              <tr><td class={td}><code>quiz-progress</code></td><td class={td}>Se souvenir des quiz déjà joués et de vos meilleurs scores, même sans compte</td></tr>
+              <tr><td class={td}><code>wizy-room-name</code></td><td class={td}>Pré-remplir le pseudo que vous avez choisi pour les parties entre amis</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 class={h2}>3. Aucun service tiers</h2>
+        <p>Les polices de caractères et les images sont servies par le site lui-même. Afficher une page de WizyQuiz ne contacte ni Google, ni Facebook, ni aucun autre service extérieur.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>4. Tout effacer</h2>
+        <p>Vous pouvez supprimer le cookie et le stockage local depuis les réglages de votre navigateur (rubrique « Cookies et données de site »). Vous serez simplement déconnecté, et la liste de vos quiz joués sans compte repartira de zéro. Pour la liste complète des données et vos droits, voir la <a href={lp("/confidentialite")} class={link}>politique de confidentialité</a>. Une question : {EDITOR.email}.</p>
+      </section>
+
+      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Dernière mise à jour : {LEGAL_UPDATED.fr}</p>
+    </div>
+  </main>
+</Layout>

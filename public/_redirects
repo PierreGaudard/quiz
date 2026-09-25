@@ -1,3 +1,5 @@
 # La version anglaise est a la racine : /en/ n existe pas, on y renvoie.
 /en /  301
 /en/* /:splat 301
+/fr/cgv /fr/cgu/ 301
+/fr/cgv/ /fr/cgu/ 301

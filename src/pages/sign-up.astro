@@ -85,6 +85,8 @@ const lp = (path: string) => localePath(path, locale);
             <input type="text" id="captcha" name="captcha" required class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all" placeholder="?" />
           </div>
 
+          <p class="text-xs text-gray-500 leading-relaxed">By creating an account, you accept the <a href={lp("/terms-of-use")} class="text-brand-600 hover:underline">terms of use</a> and confirm you are 15 or older, or have a parent's permission. What we keep and why is explained in the <a href={lp("/privacy-policy")} class="text-brand-600 hover:underline">privacy policy</a>.</p>
+
           <!-- Submit -->
           <button
             type="submit"

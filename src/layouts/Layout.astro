@@ -103,13 +103,11 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
     <link rel="apple-touch-icon" sizes="180x180" href={`${BASE}/apple-touch-icon.png`} />
     <link rel="manifest" href={`${BASE}/site.webmanifest`} />
     <meta name="theme-color" content="#1a0e42" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka:wght@500;600;700&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
+    <link rel="preload" as="font" type="font/woff2" href={`${BASE}/fonts/nunito-latin-3.woff2`} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={`${BASE}/fonts/fredoka-latin-1.woff2`} crossorigin />
     <title>{title}</title>
     <style is:global>
+      @import "../styles/fonts.css";
       @import "../styles/global.css";
     </style>
   </head>

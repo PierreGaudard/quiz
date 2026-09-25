@@ -3,13 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
 import { localePath } from "../utils/base";
 import { t } from "../i18n/ui";
+import { EDITOR, LEGAL_UPDATED } from "../config/legal";
 import type { Locale } from "../i18n/config";
 
 const locale: Locale = "en";
 const lp = (path: string) => localePath(path, locale);
+const h2 = "font-display text-lg font-bold text-gray-900 mb-3";
+const link = "text-brand-600 hover:text-brand-800 font-medium";
+const th = "text-left font-semibold text-gray-900 p-2 border-b border-gray-200";
+const td = "p-2 align-top border-b border-gray-100";
 ---
 
-<Layout title="Privacy Policy | WizyQuiz Free Quiz Platform" description="Learn how WizyQuiz protects your personal data. Our privacy policy covers data collection, cookies, your rights and more." locale={locale} hreflangPaths={getHreflangStaticPaths("privacy")}>
+<Layout title="Privacy Policy | WizyQuiz, Free Online Quizzes" description="What data WizyQuiz collects, why, for how long, who can access it, and how to use your GDPR rights: access, erasure, portability." locale={locale} hreflangPaths={getHreflangStaticPaths("privacy")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -19,105 +24,80 @@ const lp = (path: string) => localePath(path, locale);
 
     <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Privacy Policy</h1>
 
-    <div class="prose prose-gray max-w-none space-y-8 text-sm leading-relaxed text-gray-700">
+    <div class="space-y-8 text-sm leading-relaxed text-gray-700">
+      <p>You can play every quiz on WizyQuiz without an account and without giving any information at all. This page explains what is collected when you create an account, play with friends or ask for a new password, and what you can do about it. It follows the General Data Protection Regulation (GDPR) and the French Data Protection Act (loi Informatique et Libertés).</p>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Data controller</h2>
-        <p>The data controller for personal data collected on the WizyQuiz website is:</p>
+        <h2 class={h2}>1. Data controller</h2>
+        <p>{EDITOR.name}, publisher of the site{EDITOR.address ? `, ${EDITOR.address}` : ""}. For any question about your data, write to <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a>.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>2. What is collected, why, and for how long</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
+            <thead class="bg-gray-50"><tr><th class={th}>Data</th><th class={th}>What it is used for</th><th class={th}>Legal basis</th><th class={th}>Retention</th></tr></thead>
+            <tbody>
+              <tr><td class={td}><strong>Account:</strong> email address, username, password (never stored in plain text, only a salted hash is kept), avatar if you pick one, sign-up date</td><td class={td}>Logging you in and showing your profile</td><td class={td}>Performance of the service you ask for (art. 6.1.b)</td><td class={td}>As long as the account exists</td></tr>
+              <tr><td class={td}><strong>Account activity:</strong> quizzes played, scores, XP, quizzes you create, friends list</td><td class={td}>History, level, ranking among friends, links to your quizzes</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>As long as the account exists</td></tr>
+              <tr><td class={td}><strong>Session:</strong> random login identifier</td><td class={td}>Keeping you logged in from one page to the next</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>30 days, or until you log out</td></tr>
+              <tr><td class={td}><strong>Forgotten password:</strong> hash of the link sent by email</td><td class={td}>Checking the reset link</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>1 hour, single use</td></tr>
+              <tr><td class={td}><strong>Games with friends:</strong> the nickname you choose, your answers and score in the game</td><td class={td}>Running the room and showing the live leaderboard</td><td class={td}>Performance of the service (art. 6.1.b)</td><td class={td}>6 hours, then deleted automatically</td></tr>
+              <tr><td class={td}><strong>Anonymous game statistics:</strong> the score of a game, with no link to an account, an IP address or a device</td><td class={td}>Showing "you did better than x% of players" and counting games</td><td class={td}>Legitimate interest (art. 6.1.f)</td><td class={td}>No limit (this is not personal data)</td></tr>
+              <tr><td class={td}><strong>Host's technical logs:</strong> IP address, browser, page requested</td><td class={td}>Site security, protection against attacks</td><td class={td}>Legitimate interest (art. 6.1.f)</td><td class={td}>According to Cloudflare's policy, usually a few days</td></tr>
+              <tr><td class={td}><strong>Emails you send:</strong> address and content of the message</td><td class={td}>Replying to you</td><td class={td}>Legitimate interest (art. 6.1.f)</td><td class={td}>12 months after the last exchange</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3">No data is sold, rented out or used for advertising. The site has no ads, no third-party analytics tool and no social media button that tracks you.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>3. Who can access your data</h2>
+        <p>{EDITOR.name}, alone, plus the two technical providers the site needs to run:</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Name:</strong> Pierre Gaudard</li>
-          <li><strong>Email:</strong> pierretartare94440@gmail.com</li>
+          <li><strong>Cloudflare, Inc.</strong> (United States): hosting for the site and the database.</li>
+          <li><strong>Resend, Inc.</strong> (United States): sending password reset emails. Only your email address and the content of the message are passed on to it.</li>
         </ul>
+        <p class="mt-2">Both providers process the data on behalf of WizyQuiz and following its instructions. The transfer to the United States is covered by the EU-U.S. Data Privacy Framework and by the European Commission's standard contractual clauses.</p>
+        <p class="mt-2">Your username, level and scores are visible to the players you add as friends. Your email address is never shown.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Data collected</h2>
-        <p>The WizyQuiz website collects the minimum data necessary for its operation:</p>
-        <ul class="list-disc pl-5 space-y-2 mt-2">
-          <li><strong>Browsing data:</strong> IP address, browser type, pages visited, visit duration. This data is automatically collected via server logs (Cloudflare).</li>
-          <li><strong>Locally stored data:</strong> quiz progress, scores, custom quizzes created by the user. This data is stored exclusively in the user's browser (localStorage) and is never transmitted to our servers.</li>
-          <li><strong>Contact data:</strong> if you contact us by email, we retain your email address and message content solely to respond to your request.</li>
-        </ul>
+        <h2 class={h2}>4. In your browser</h2>
+        <p>The site sets a single cookie, the one that keeps you logged in, and keeps a few settings in your browser's local storage. Everything is listed on the <a href={lp("/cookies")} class={link}>cookies</a> page. None of it is used to follow you on other sites.</p>
+        <p class="mt-2">Fonts and images are served by the site itself, so loading a page does not send your IP address to any other service.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">3. Purpose of processing</h2>
-        <p>Personal data is processed for the following purposes:</p>
+        <h2 class={h2}>5. Your rights</h2>
+        <p>At any time, you can:</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li>Ensuring the proper functioning and security of the site</li>
-          <li>Compiling anonymous traffic statistics</li>
-          <li>Responding to contact requests</li>
-          <li>Improving the user experience</li>
+          <li><strong>access</strong> your data and get a copy of it;</li>
+          <li><strong>correct</strong> it: your username and password can be changed directly from your profile;</li>
+          <li><strong>erase</strong> it: the "Delete my account" button, at the bottom of your profile, deletes the account and everything linked to it, immediately and for good;</li>
+          <li>get it back in a machine-readable format (<strong>portability</strong>);</li>
+          <li><strong>object</strong> to processing based on legitimate interest, or ask for it to be <strong>restricted</strong>.</li>
         </ul>
+        <p class="mt-2">For anything that can't be done from your profile, write to <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a> from your account's email address. You will get an answer within one month at most. If you believe your rights are not being respected, you can file a complaint with the CNIL, the French data protection authority (<a href="https://www.cnil.fr/fr/plaintes" class={link} rel="noopener">cnil.fr/fr/plaintes</a>).</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. Legal basis for processing</h2>
-        <p>Data processing is based on:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Legitimate interest</strong> for browsing data (site security and operation)</li>
-          <li><strong>Consent</strong> for the use of non-essential cookies (where applicable)</li>
-        </ul>
+        <h2 class={h2}>6. Minors</h2>
+        <p>The quizzes are open to everyone. Creating an account is reserved for people aged 15 and over. Below that age, it requires a parent's consent, as provided for by article 45 of the French Data Protection Act. A parent can ask for a child's account to be deleted by writing to {EDITOR.email}.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">5. Data retention</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li><strong>Server logs:</strong> 30 days maximum (Cloudflare policy)</li>
-          <li><strong>localStorage data:</strong> as long as the user does not delete it</li>
-          <li><strong>Contact emails:</strong> 12 months after the last exchange</li>
-        </ul>
+        <h2 class={h2}>7. Security</h2>
+        <p>The whole site runs over HTTPS. Passwords are never stored in plain text: the database only keeps a salted hash (PBKDF2, 100,000 iterations). The reset link is only stored as a hash, so that a database leak would not give access to any account. The session cookie cannot be read by the page's scripts.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Data sharing</h2>
-        <p>Your personal data is <strong>never sold, rented or shared</strong> with third parties for commercial purposes.</p>
-        <p>The only potential recipients are:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Cloudflare, Inc.</strong> (hosting provider): for technical operation and site security</li>
-        </ul>
+        <h2 class={h2}>8. Changes</h2>
+        <p>If what is collected changes, this page is updated and so is the date below.</p>
       </section>
 
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Cookies</h2>
-        <p>The WizyQuiz website only uses strictly necessary <strong>technical cookies</strong>:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>localStorage:</strong> saving quiz progress, scores and custom quizzes</li>
-          <li><strong>Cloudflare cookies:</strong> security and performance cookies (DDoS protection)</li>
-        </ul>
-        <p class="mt-2">No advertising or third-party tracking cookies are used.</p>
-      </section>
-
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">8. Your rights</h2>
-        <p>In accordance with the General Data Protection Regulation (GDPR) and the French Data Protection Act, you have the following rights:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Right of access:</strong> obtain confirmation that your data is being processed</li>
-          <li><strong>Right of rectification:</strong> request correction of inaccurate data</li>
-          <li><strong>Right to erasure:</strong> request deletion of your data</li>
-          <li><strong>Right to portability:</strong> receive your data in a structured format</li>
-          <li><strong>Right to object:</strong> object to the processing of your data</li>
-        </ul>
-        <p class="mt-2">To exercise these rights, contact us at: <strong>pierretartare94440@gmail.com</strong></p>
-        <p>You may also file a complaint with the <strong>CNIL</strong> (French Data Protection Authority): <a href="https://www.cnil.fr" target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-800 font-medium">www.cnil.fr</a></p>
-      </section>
-
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">9. Security</h2>
-        <p>We implement appropriate technical and organisational measures to protect your data, including:</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li>HTTPS encryption across the entire site</li>
-          <li>Cloudflare protection against attacks (DDoS, injections)</li>
-          <li>User data stored exclusively on the client side (localStorage)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">10. Changes</h2>
-        <p>This privacy policy may be modified at any time. The date of the last update is indicated below. We encourage you to review it regularly.</p>
-      </section>
-
-      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Last updated: March 2026</p>
+      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Last updated: {LEGAL_UPDATED.en}</p>
     </div>
   </main>
 </Layout>

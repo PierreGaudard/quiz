@@ -3,13 +3,18 @@ import Layout from "../../layouts/Layout.astro";
 import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
+import { EDITOR, LEGAL_UPDATED } from "../../config/legal";
 import type { Locale } from "../../i18n/config";
 
 const locale: Locale = "fr";
 const lp = (path: string) => localePath(path, locale);
+const h2 = "font-display text-lg font-bold text-gray-900 mb-3";
+const link = "text-brand-600 hover:text-brand-800 font-medium";
+const th = "text-left font-semibold text-gray-900 p-2 border-b border-gray-200";
+const td = "p-2 align-top border-b border-gray-100";
 ---
 
-<Layout title="Politique de confidentialité | WizyQuiz" description="Découvrez comment WizyQuiz protège vos données personnelles. Politique de confidentialité, cookies, droits RGPD et plus." locale={locale} hreflangPaths={getHreflangStaticPaths("privacy")}>
+<Layout title="Politique de confidentialité | WizyQuiz" description="Données collectées par WizyQuiz, pourquoi, combien de temps, qui y a accès, et comment exercer vos droits RGPD : accès, effacement, portabilité." locale={locale} hreflangPaths={getHreflangStaticPaths("privacy")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -19,105 +24,80 @@ const lp = (path: string) => localePath(path, locale);
 
     <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Politique de confidentialité</h1>
 
-    <div class="prose prose-gray max-w-none space-y-8 text-sm leading-relaxed text-gray-700">
+    <div class="space-y-8 text-sm leading-relaxed text-gray-700">
+      <p>On peut jouer à tous les quiz de WizyQuiz sans compte et sans donner la moindre information. Cette page explique ce qui est collecté quand vous créez un compte, quand vous jouez entre amis ou quand vous demandez un nouveau mot de passe, et ce que vous pouvez en faire. Elle suit le Règlement général sur la protection des données (RGPD) et la loi Informatique et Libertés.</p>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">1. Responsable du traitement</h2>
-        <p>Le responsable du traitement des données personnelles collectées sur le site WizyQuiz est :</p>
+        <h2 class={h2}>1. Responsable du traitement</h2>
+        <p>{EDITOR.name}, éditeur du site{EDITOR.address ? `, ${EDITOR.address}` : ""}. Contact pour toute question sur vos données : <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a>.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>2. Ce qui est collecté, pourquoi, et combien de temps</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs md:text-sm border border-gray-200 rounded-lg">
+            <thead class="bg-gray-50"><tr><th class={th}>Données</th><th class={th}>À quoi elles servent</th><th class={th}>Base légale</th><th class={th}>Durée</th></tr></thead>
+            <tbody>
+              <tr><td class={td}><strong>Compte :</strong> adresse e-mail, nom d'utilisateur, mot de passe (jamais en clair : seule une empreinte salée est gardée), avatar si vous en choisissez un, date d'inscription</td><td class={td}>Vous connecter, afficher votre profil</td><td class={td}>Exécution du service que vous demandez (art. 6.1.b)</td><td class={td}>Tant que le compte existe</td></tr>
+              <tr><td class={td}><strong>Activité du compte :</strong> quiz joués, scores, XP, quiz que vous créez, liste d'amis</td><td class={td}>Historique, niveau, classement entre amis, liens vers vos quiz</td><td class={td}>Exécution du service (art. 6.1.b)</td><td class={td}>Tant que le compte existe</td></tr>
+              <tr><td class={td}><strong>Session :</strong> identifiant aléatoire de connexion</td><td class={td}>Rester connecté d'une page à l'autre</td><td class={td}>Exécution du service (art. 6.1.b)</td><td class={td}>30 jours, ou jusqu'à la déconnexion</td></tr>
+              <tr><td class={td}><strong>Mot de passe oublié :</strong> empreinte du lien envoyé par e-mail</td><td class={td}>Vérifier le lien de réinitialisation</td><td class={td}>Exécution du service (art. 6.1.b)</td><td class={td}>1 heure, utilisable une fois</td></tr>
+              <tr><td class={td}><strong>Parties entre amis :</strong> pseudo choisi, réponses et score de la partie</td><td class={td}>Faire jouer la salle et afficher le classement en direct</td><td class={td}>Exécution du service (art. 6.1.b)</td><td class={td}>6 heures, puis effacement automatique</td></tr>
+              <tr><td class={td}><strong>Statistiques de jeu anonymes :</strong> score d'une partie, sans lien avec un compte, une adresse IP ou un appareil</td><td class={td}>Afficher « vous faites mieux que x % des joueurs » et compter les parties</td><td class={td}>Intérêt légitime (art. 6.1.f)</td><td class={td}>Sans limite (ce ne sont pas des données personnelles)</td></tr>
+              <tr><td class={td}><strong>Journaux techniques de l'hébergeur :</strong> adresse IP, navigateur, page demandée</td><td class={td}>Sécurité du site, protection contre les attaques</td><td class={td}>Intérêt légitime (art. 6.1.f)</td><td class={td}>Selon la politique de Cloudflare, quelques jours en général</td></tr>
+              <tr><td class={td}><strong>E-mails que vous envoyez :</strong> adresse et contenu du message</td><td class={td}>Vous répondre</td><td class={td}>Intérêt légitime (art. 6.1.f)</td><td class={td}>12 mois après le dernier échange</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3">Aucune donnée n'est vendue, louée ou utilisée pour de la publicité. Le site n'a ni publicité, ni outil de mesure d'audience tiers, ni bouton de réseau social qui piste.</p>
+      </section>
+
+      <section>
+        <h2 class={h2}>3. Qui a accès à vos données</h2>
+        <p>{EDITOR.name}, seul, et les deux prestataires techniques dont le site a besoin pour tourner :</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Nom :</strong> Pierre Gaudard</li>
-          <li><strong>E-mail :</strong> pierretartare94440@gmail.com</li>
+          <li><strong>Cloudflare, Inc.</strong> (États-Unis) : hébergement du site et de la base de données.</li>
+          <li><strong>Resend, Inc.</strong> (États-Unis) : envoi des e-mails de réinitialisation du mot de passe. Seules votre adresse e-mail et le contenu du message lui sont transmis.</li>
         </ul>
+        <p class="mt-2">Ces deux prestataires traitent les données pour le compte de WizyQuiz et selon ses instructions. Le transfert vers les États-Unis est encadré par le cadre de protection des données UE-États-Unis (Data Privacy Framework) et par les clauses contractuelles types de la Commission européenne.</p>
+        <p class="mt-2">Votre nom d'utilisateur, votre niveau et vos scores sont visibles par les joueurs que vous ajoutez en amis. Votre adresse e-mail n'est jamais affichée.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">2. Données collectées</h2>
-        <p>Le site WizyQuiz collecte le minimum de données nécessaires à son fonctionnement :</p>
-        <ul class="list-disc pl-5 space-y-2 mt-2">
-          <li><strong>Données de navigation :</strong> adresse IP, type de navigateur, pages visitées, durée de visite. Ces données sont collectées automatiquement via les journaux du serveur (Cloudflare).</li>
-          <li><strong>Données stockées localement :</strong> progression des quiz, scores, quiz personnalisés créés par l'utilisateur. Ces données sont stockées exclusivement dans le navigateur de l'utilisateur (localStorage) et ne sont jamais transmises à nos serveurs.</li>
-          <li><strong>Données de contact :</strong> si vous nous contactez par e-mail, nous conservons votre adresse e-mail et le contenu de votre message uniquement pour répondre à votre demande.</li>
-        </ul>
+        <h2 class={h2}>4. Dans votre navigateur</h2>
+        <p>Le site dépose un seul cookie, celui qui vous garde connecté, et garde quelques réglages dans le stockage local de votre navigateur. Tout est détaillé sur la page <a href={lp("/cookies")} class={link}>cookies</a>. Rien de tout ça ne sert à vous suivre sur d'autres sites.</p>
+        <p class="mt-2">Les polices de caractères et les images sont servies par le site lui-même : afficher une page n'envoie votre adresse IP à aucun autre service.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">3. Finalités du traitement</h2>
-        <p>Les données personnelles sont traitées pour les finalités suivantes :</p>
+        <h2 class={h2}>5. Vos droits</h2>
+        <p>Vous pouvez à tout moment :</p>
         <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li>Assurer le bon fonctionnement et la sécurité du site</li>
-          <li>Établir des statistiques anonymes de fréquentation</li>
-          <li>Répondre aux demandes de contact</li>
-          <li>Améliorer l'expérience utilisateur</li>
+          <li><strong>accéder</strong> à vos données et en recevoir une copie ;</li>
+          <li>les <strong>rectifier</strong> : le nom d'utilisateur et le mot de passe se changent directement depuis votre profil ;</li>
+          <li>les <strong>effacer</strong> : le bouton « Supprimer mon compte », en bas de votre profil, efface le compte et tout ce qui y est lié, immédiatement et pour de bon ;</li>
+          <li>les récupérer dans un format lisible par une machine (<strong>portabilité</strong>) ;</li>
+          <li>vous <strong>opposer</strong> à un traitement fondé sur l'intérêt légitime, ou en demander la <strong>limitation</strong>.</li>
         </ul>
+        <p class="mt-2">Pour tout ce qui ne se fait pas depuis le profil, écrivez à <a href={`mailto:${EDITOR.email}`} class={link}>{EDITOR.email}</a> depuis l'adresse de votre compte. La réponse arrive sous un mois au plus. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la CNIL (<a href="https://www.cnil.fr/fr/plaintes" class={link} rel="noopener">cnil.fr/fr/plaintes</a>).</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">4. Base légale du traitement</h2>
-        <p>Le traitement des données repose sur :</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>L'intérêt légitime</strong> pour les données de navigation (sécurité et fonctionnement du site)</li>
-          <li><strong>Le consentement</strong> pour l'utilisation de cookies non essentiels (le cas échéant)</li>
-        </ul>
+        <h2 class={h2}>6. Mineurs</h2>
+        <p>Les quiz sont ouverts à tous. La création d'un compte est réservée aux personnes de 15 ans et plus ; en dessous, elle demande l'accord d'un parent, comme le prévoit l'article 45 de la loi Informatique et Libertés. Un parent peut demander la suppression du compte d'un enfant à {EDITOR.email}.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">5. Durée de conservation</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li><strong>Journaux serveur :</strong> 30 jours maximum (politique Cloudflare)</li>
-          <li><strong>Données localStorage :</strong> aussi longtemps que l'utilisateur ne les supprime pas</li>
-          <li><strong>E-mails de contact :</strong> 12 mois après le dernier échange</li>
-        </ul>
+        <h2 class={h2}>7. Sécurité</h2>
+        <p>Tout le site passe en HTTPS. Les mots de passe ne sont jamais enregistrés en clair : la base ne garde qu'une empreinte salée (PBKDF2, 100 000 itérations). Le lien de réinitialisation n'est gardé en base que sous forme d'empreinte, pour qu'une fuite de la base ne donne accès à aucun compte. Le cookie de session n'est pas lisible par les scripts de la page.</p>
       </section>
 
       <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">6. Partage des données</h2>
-        <p>Vos données personnelles ne sont <strong>jamais vendues, louées ou partagées</strong> avec des tiers à des fins commerciales.</p>
-        <p>Les seuls destinataires potentiels sont :</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Cloudflare, Inc.</strong> (hébergeur) : pour le fonctionnement technique et la sécurité du site</li>
-        </ul>
+        <h2 class={h2}>8. Modifications</h2>
+        <p>Si ce qui est collecté change, cette page est mise à jour et la date ci-dessous aussi.</p>
       </section>
 
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">7. Cookies</h2>
-        <p>Le site WizyQuiz utilise uniquement des <strong>cookies techniques</strong> strictement nécessaires :</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>localStorage :</strong> sauvegarde de la progression des quiz, des scores et des quiz personnalisés</li>
-          <li><strong>Cookies Cloudflare :</strong> cookies de sécurité et de performance (protection contre les attaques DDoS)</li>
-        </ul>
-        <p class="mt-2">Aucun cookie publicitaire ou de pistage tiers n'est utilisé.</p>
-      </section>
-
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">8. Vos droits</h2>
-        <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants :</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li><strong>Droit d'accès :</strong> obtenir la confirmation que des données vous concernant sont traitées</li>
-          <li><strong>Droit de rectification :</strong> demander la correction de données inexactes</li>
-          <li><strong>Droit à l'effacement :</strong> demander la suppression de vos données</li>
-          <li><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré</li>
-          <li><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données</li>
-        </ul>
-        <p class="mt-2">Pour exercer ces droits, contactez-nous à : <strong>pierretartare94440@gmail.com</strong></p>
-        <p>Vous pouvez également introduire une réclamation auprès de la <strong>CNIL</strong> (Commission Nationale de l'Informatique et des Libertés) : <a href="https://www.cnil.fr" target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-800 font-medium">www.cnil.fr</a></p>
-      </section>
-
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">9. Sécurité</h2>
-        <p>Nous mettons en oeuvre des mesures techniques et organisationnelles appropriées pour protéger vos données, notamment :</p>
-        <ul class="list-disc pl-5 space-y-1 mt-2">
-          <li>Chiffrement HTTPS sur l'ensemble du site</li>
-          <li>Protection Cloudflare contre les attaques (DDoS, injections)</li>
-          <li>Stockage des données utilisateur exclusivement côté client (localStorage)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 class="font-display text-lg font-bold text-gray-900 mb-3">10. Modifications</h2>
-        <p>Cette politique de confidentialité peut être modifiée à tout moment. La date de dernière mise à jour est indiquée ci-dessous. Nous vous invitons à la consulter régulièrement.</p>
-      </section>
-
-      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Dernière mise à jour : mars 2026</p>
+      <p class="text-xs text-gray-500 pt-4 border-t border-gray-200">Dernière mise à jour : {LEGAL_UPDATED.fr}</p>
     </div>
   </main>
 </Layout>

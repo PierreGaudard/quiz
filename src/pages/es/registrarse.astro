@@ -85,6 +85,8 @@ const lp = (path: string) => localePath(path, locale);
             <input type="text" id="captcha" name="captcha" required class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all" placeholder="?" />
           </div>
 
+          <p class="text-xs text-gray-500 leading-relaxed">Al crear una cuenta, aceptas las <a href={lp("/condiciones-uso")} class="text-brand-600 hover:underline">condiciones de uso</a> y confirmas que tienes 15 años o el permiso de tus padres. Lo que guardamos de tus datos se explica en la <a href={lp("/politica-privacidad")} class="text-brand-600 hover:underline">política de privacidad</a>.</p>
+
           <!-- Submit -->
           <button
             type="submit"
