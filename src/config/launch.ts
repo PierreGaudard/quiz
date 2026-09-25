@@ -8,7 +8,8 @@
  * Le jour de la mise en ligne, passer cette constante a false suffit : les
  * pages qui doivent rester hors index le demandent deja une par une, avec la
  * prop `noindex` du Layout (la recherche, les profils, le player de quiz
- * personnalise). Rien d'autre n'est a toucher.
+ * personnalise), et le robots.txt (src/pages/robots.txt.ts) se regenere
+ * ouvert. Rien d'autre n'est a toucher.
  *
  * La balise robots etait auparavant ecrite en dur dans Layout.astro, ce qui
  * produisait le bon resultat mais rendait la prop `noindex` inoperante : les
