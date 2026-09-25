@@ -61,9 +61,12 @@ const lp = (path: string) => localePath(path, locale);
               id="password"
               name="password"
               required
+              minlength="8"
+              aria-describedby="password-hint"
               class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all"
               placeholder="********"
             />
+            <p id="password-hint" class="text-xs text-gray-500 mt-1.5">At least 8 characters, mixing 3 kinds: lowercase, uppercase, digits or symbols.</p>
           </div>
 
           <!-- Confirm Password -->

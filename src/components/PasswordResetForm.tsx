@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { isStrongPassword } from "../lib/password-policy";
 
 /**
  * Les deux ecrans de la reinitialisation du mot de passe.
@@ -30,7 +31,7 @@ const T: Record<string, Record<Locale, string>> = {
     es: "Tu contraseña se ha cambiado. Ya puedes iniciar sesión con ella.",
   },
   login: { en: "Log in", fr: "Se connecter", es: "Iniciar sesión" },
-  errShort: { en: "The password needs at least 6 characters.", fr: "Le mot de passe doit faire au moins 6 caractères.", es: "La contraseña debe tener al menos 6 caracteres." },
+  errShort: { en: "The password needs at least 8 characters, mixing 3 kinds: lowercase, uppercase, digits or symbols.", fr: "Le mot de passe doit faire au moins 8 caractères et mêler 3 types : minuscules, majuscules, chiffres ou symboles.", es: "La contraseña debe tener al menos 8 caracteres y mezclar 3 tipos: minúsculas, mayúsculas, números o símbolos." },
   errMatch: { en: "The two passwords don't match.", fr: "Les deux mots de passe ne sont pas identiques.", es: "Las dos contraseñas no coinciden." },
   errToken: {
     en: "This link is invalid, already used or expired. Ask for a new one.",
@@ -118,7 +119,7 @@ export default function PasswordResetForm({ mode, locale = "en" }: { mode: "requ
       className="space-y-5"
       onSubmit={async (e) => {
         e.preventDefault();
-        if (pw.length < 6) { setError("errShort"); return; }
+        if (!isStrongPassword(pw)) { setError("errShort"); return; }
         if (pw !== pw2) { setError("errMatch"); return; }
         setBusy(true);
         setError(null);
@@ -137,11 +138,11 @@ export default function PasswordResetForm({ mode, locale = "en" }: { mode: "requ
       {error && box("bg-red-50 border border-red-200 text-red-700", tt(error))}
       <div>
         <label htmlFor="reset-pw" className="block text-sm font-semibold text-gray-700 mb-1.5">{tt("newPw")}</label>
-        <input id="reset-pw" type="password" required minLength={6} autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} className={input} />
+        <input id="reset-pw" type="password" required minLength={8} autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} className={input} />
       </div>
       <div>
         <label htmlFor="reset-pw2" className="block text-sm font-semibold text-gray-700 mb-1.5">{tt("confirmPw")}</label>
-        <input id="reset-pw2" type="password" required minLength={6} autoComplete="new-password" value={pw2} onChange={(e) => setPw2(e.target.value)} className={input} />
+        <input id="reset-pw2" type="password" required minLength={8} autoComplete="new-password" value={pw2} onChange={(e) => setPw2(e.target.value)} className={input} />
       </div>
       <button type="submit" disabled={busy} className={btn}>{busy ? tt("saving") : tt("save")}</button>
     </form>

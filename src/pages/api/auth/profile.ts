@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { WEAK_PASSWORD_ERROR, isStrongPassword } from "../../../lib/password-policy";
 import { getSessionFromCookies, getUserFromSession, hashPassword } from "../../../lib/auth";
 
 export const prerender = false;
@@ -55,7 +56,7 @@ export const PUT: APIRoute = async ({ request }) => {
 
   // Update password
   if (body.newPassword) {
-    if (body.newPassword.length < 6) return new Response(JSON.stringify({ error: "Password must be at least 6 characters" }), { status: 400 });
+    if (!isStrongPassword(body.newPassword)) return new Response(JSON.stringify({ error: WEAK_PASSWORD_ERROR }), { status: 400 });
     const hash = await hashPassword(body.newPassword);
     await db.prepare("UPDATE users SET password_hash = ?, updated_at = datetime('now') WHERE id = ?").bind(hash, user.id).run();
   }

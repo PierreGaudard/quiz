@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { WEAK_PASSWORD_ERROR } from "../lib/password-policy";
 import { getLevelFromXp, getXpProgress } from "../lib/levels";
 
 interface User {
@@ -29,7 +30,9 @@ const t: Record<string, Record<string, string>> = {
   username: { en: "Username", fr: "Nom d'utilisateur", es: "Nombre de usuario" },
   newPassword: { en: "New password", fr: "Nouveau mot de passe", es: "Nueva contraseña" },
   save: { en: "Save", fr: "Enregistrer", es: "Guardar" },
-  saved: { en: "Saved!", fr: "Enregistré !", es: "Guardado!" },
+  saved: { en: "Saved!", fr: "Enregistré !", es: "¡Guardado!" },
+  weakPassword: { en: "At least 8 characters, mixing 3 kinds: lowercase, uppercase, digits or symbols.", fr: "Au moins 8 caractères, en mêlant 3 types : minuscules, majuscules, chiffres ou symboles.", es: "Al menos 8 caracteres, mezclando 3 tipos: minúsculas, mayúsculas, números o símbolos." },
+  usernameTaken: { en: "This username is already taken.", fr: "Ce nom d'utilisateur est déjà pris.", es: "Este nombre de usuario ya está en uso." },
   history: { en: "Quiz History", fr: "Historique des quiz", es: "Historial de quizzes" },
   noHistory: { en: "No quizzes played yet", fr: "Aucun quiz joué pour le moment", es: "Ningun quiz jugado todavia" },
   score: { en: "Score", fr: "Score", es: "Puntuación" },
@@ -107,7 +110,8 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
           setEditPassword("");
           setTimeout(() => setSaveMsg(""), 2000);
         } else {
-          setSaveMsg(data.error || "Error");
+          const known: Record<string, string> = { [WEAK_PASSWORD_ERROR]: "weakPassword", "Username already taken": "usernameTaken" };
+          setSaveMsg(known[data.error] ? tt(known[data.error]) : data.error || "Error");
         }
       });
   };
@@ -227,6 +231,7 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
             <div>
               <label className="block text-xs font-semibold text-gray-600 mb-1">{tt("newPassword")}</label>
               <input type="password" value={editPassword} onChange={(e) => setEditPassword(e.target.value)} placeholder="••••••" className="w-full h-10 px-3 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400" />
+              <p className="text-xs text-gray-500 mt-1">{tt("weakPassword")}</p>
             </div>
             <div className="flex items-center gap-3">
               <button onClick={handleSave} className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-5 py-2.5 rounded-lg cursor-pointer transition-colors">{tt("save")}</button>

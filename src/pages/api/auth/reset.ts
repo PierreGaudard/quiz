@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { isStrongPassword } from "../../../lib/password-policy";
 import { hashPassword } from "../../../lib/auth";
 import { sha256 } from "../../../lib/password-reset";
 
@@ -16,7 +17,7 @@ export const POST: APIRoute = async ({ request }) => {
   const token = typeof body?.token === "string" ? body.token : "";
   const password = typeof body?.password === "string" ? body.password : "";
   if (!/^[a-f0-9]{64}$/.test(token)) return json({ error: "invalid_token" }, 400);
-  if (password.length < 6 || password.length > 200) return json({ error: "weak_password" }, 400);
+  if (!isStrongPassword(password)) return json({ error: "weak_password" }, 400);
 
   try {
     const { env } = await import("cloudflare:workers");

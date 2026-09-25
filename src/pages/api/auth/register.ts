@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
 import { hashPassword, createSession, setSessionCookie } from "../../../lib/auth";
 import { localeFromPath, touchUser } from "../../../lib/accounts";
+import { WEAK_PASSWORD_ERROR, isStrongPassword } from "../../../lib/password-policy";
 
 export const prerender = false;
 
@@ -19,8 +20,8 @@ export const POST: APIRoute = async ({ request }) => {
   if (!username || !email || !password) {
     return new Response(JSON.stringify({ error: "Missing fields" }), { status: 400 });
   }
-  if (password.length < 6) {
-    return new Response(JSON.stringify({ error: "Password must be at least 6 characters" }), { status: 400 });
+  if (!isStrongPassword(password)) {
+    return new Response(JSON.stringify({ error: WEAK_PASSWORD_ERROR }), { status: 400 });
   }
   if (username.length < 3 || username.length > 30) {
     return new Response(JSON.stringify({ error: "Username must be 3-30 characters" }), { status: 400 });

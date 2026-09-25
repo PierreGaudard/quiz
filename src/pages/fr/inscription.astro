@@ -61,9 +61,12 @@ const lp = (path: string) => localePath(path, locale);
               id="password"
               name="password"
               required
+              minlength="8"
+              aria-describedby="password-hint"
               class="w-full h-11 px-4 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all"
               placeholder="********"
             />
+            <p id="password-hint" class="text-xs text-gray-500 mt-1.5">Au moins 8 caractères, en mêlant 3 types : minuscules, majuscules, chiffres ou symboles.</p>
           </div>
 
           <!-- Confirm Password -->
@@ -110,7 +113,7 @@ const lp = (path: string) => localePath(path, locale);
     </div>
   </main>
   <script is:inline>
-          var ERR_MSG = {"An account already exists with this email": "Un compte existe déjà avec cette adresse e-mail.", "Database not available": "Le service est indisponible pour le moment. Réessayez dans un instant.", "Invalid credentials": "Adresse e-mail ou mot de passe incorrect.", "Missing fields": "Remplissez tous les champs.", "Password must be at least 6 characters": "Le mot de passe doit faire au moins 6 caractères.", "This username is already taken": "Ce nom d'utilisateur est déjà pris.", "Username can only contain letters, numbers and underscores": "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des tirets bas.", "Username must be 3-30 characters": "Le nom d'utilisateur doit faire entre 3 et 30 caractères."};
+          var ERR_MSG = {"An account already exists with this email": "Un compte existe déjà avec cette adresse e-mail.", "Database not available": "Le service est indisponible pour le moment. Réessayez dans un instant.", "Invalid credentials": "Adresse e-mail ou mot de passe incorrect.", "Missing fields": "Remplissez tous les champs.", "Password must be at least 8 characters and mix 3 kinds of characters": "Le mot de passe doit faire au moins 8 caractères et mêler 3 types : minuscules, majuscules, chiffres ou symboles.", "Too many attempts, try again in 15 minutes": "Trop de tentatives. Réessayez dans 15 minutes.", "This username is already taken": "Ce nom d'utilisateur est déjà pris.", "Username can only contain letters, numbers and underscores": "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des tirets bas.", "Username must be 3-30 characters": "Le nom d'utilisateur doit faire entre 3 et 30 caractères."};
 document.addEventListener('DOMContentLoaded', function() {
       var a = Math.floor(Math.random() * 10) + 1;
       var b = Math.floor(Math.random() * 10) + 1;

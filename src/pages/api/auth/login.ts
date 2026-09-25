@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
 import { verifyPassword, createSession, setSessionCookie } from "../../../lib/auth";
 import { localeFromPath, touchUser } from "../../../lib/accounts";
+import { TOO_MANY_ATTEMPTS_ERROR, clearLoginFailures, isLoginLocked, recordLoginFailure } from "../../../lib/password-policy";
 
 export const prerender = false;
 
@@ -20,16 +21,23 @@ export const POST: APIRoute = async ({ request }) => {
     return new Response(JSON.stringify({ error: "Missing fields" }), { status: 400 });
   }
 
+  if (await isLoginLocked(db, String(email))) {
+    return new Response(JSON.stringify({ error: TOO_MANY_ATTEMPTS_ERROR }), { status: 429 });
+  }
+
   // Accept email OR username
   const user = await db.prepare("SELECT id, username, email, password_hash, xp FROM users WHERE email = ? OR username = ?").bind(email, email).first() as any;
   if (!user) {
+    await recordLoginFailure(db, String(email));
     return new Response(JSON.stringify({ error: "Invalid credentials" }), { status: 401 });
   }
 
   const valid = await verifyPassword(password, user.password_hash);
   if (!valid) {
+    await recordLoginFailure(db, String(email));
     return new Response(JSON.stringify({ error: "Invalid credentials" }), { status: 401 });
   }
+  await clearLoginFailures(db, String(email));
 
   const sessionId = await createSession(db, user.id);
   await touchUser(db, user.id, localeFromPath(request.headers.get("referer")));
