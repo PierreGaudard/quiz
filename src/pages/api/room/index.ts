@@ -1,5 +1,6 @@
 import type { APIRoute } from "astro";
 import { ROOM_TTL_HOURS, addPlayer, cleanName, findQuiz, getDB, isLocale, json, randomCode } from "../../../lib/rooms";
+import { purgeExpiredInvites } from "../../../lib/room-invites";
 
 export const prerender = false;
 
@@ -27,6 +28,7 @@ export const POST: APIRoute = async ({ request }) => {
     // Purge au fil de l'eau : pas de tache planifiee a maintenir pour ca.
     await db.prepare("DELETE FROM room_players WHERE room_code IN (SELECT code FROM rooms WHERE expires_at <= datetime('now'))").run();
     await db.prepare("DELETE FROM rooms WHERE expires_at <= datetime('now')").run();
+    await purgeExpiredInvites(db);
 
     for (let attempt = 0; attempt < 5; attempt++) {
       const code = randomCode();

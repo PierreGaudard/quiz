@@ -10,7 +10,7 @@ const searchT: Record<string, Record<string, string>> = {
   placeholder: { en: "Search a quiz, a theme...", fr: "Rechercher un quiz, un thème...", es: "Buscar un quiz, un tema..." },
   results: { en: "results for", fr: "résultats pour", es: "resultados para" },
   result: { en: "result for", fr: "résultat pour", es: "resultado para" },
-  noResults: { en: "No results found", fr: "Aucun résultat trouve", es: "No se encontraron resultados" },
+  noResults: { en: "No results found", fr: "Aucun résultat trouvé", es: "No se encontraron resultados" },
   tryOther: { en: "Try different keywords or browse our categories.", fr: "Essaie d'autres mots-cles ou parcours nos catégories.", es: "Prueba otras palabras clave o explora nuestras categorías." },
   popular: { en: "Popular searches", fr: "Recherches populaires", es: "Busquedas populares" },
   questions: { en: "questions", fr: "questions", es: "preguntas" },
@@ -237,7 +237,7 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
         <p className="text-gray-600 mb-6 text-center">
           <span className="font-semibold text-brand-700">{resultCount}</span>{" "}
           {resultCount === 1 ? tt("result") : tt("results")}{" "}
-          <span className="font-medium">&laquo;{query.trim()}&raquo;</span>
+          <span className="font-medium">{locale === "fr" ? `«\u00a0${query.trim()}\u00a0»` : locale === "es" ? `«${query.trim()}»` : `"${query.trim()}"`}</span>
         </p>
       )}
 

@@ -83,17 +83,17 @@ const quizJsonLd = buildQuizStructuredData({
       <main class="flex-1 min-w-0">
         <div id="quiz-app">
           {quiz.gameType === "vrai-faux" ? (
-            <VraiFauxPlayer quiz={quiz} locale={locale} client:load />
+            <VraiFauxPlayer quiz={quiz} locale={locale} roomHref={roomHref} client:load />
           ) : quiz.gameType === "chrono" ? (
-            <ChronoPlayer quiz={quiz} locale={locale} client:load />
+            <ChronoPlayer quiz={quiz} locale={locale} roomHref={roomHref} client:load />
           ) : quiz.gameType === "estimation" ? (
             <EstimationPlayer quiz={quiz} locale={locale} client:load />
           ) : quiz.gameType === "duel" ? (
-            <DuelPlayer quiz={quiz} locale={locale} client:load />
+            <DuelPlayer quiz={quiz} locale={locale} roomHref={roomHref} client:load />
           ) : quiz.gameType === "ordre" ? (
             <OrdrePlayer quiz={quiz} locale={locale} client:load />
           ) : (
-            <QuizPagePlayer quiz={quiz} locale={locale} client:load />
+            <QuizPagePlayer quiz={quiz} locale={locale} roomHref={roomHref} client:load />
           )}
         </div>
 

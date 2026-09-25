@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
+import RoomButton from "./RoomButton";
 import type { QuizData } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
@@ -8,6 +9,8 @@ import { trackQuizStart } from "../utils/track";
 interface Props {
   quiz: QuizData;
   locale?: string;
+  /** Lien vers une partie entre amis sur ce quiz, null si le mode ne s'y prête pas. */
+  roomHref?: string | null;
 }
 
 type Screen = "intro" | "playing" | "result";
@@ -65,7 +68,7 @@ const vfT: Record<string, Record<string, string>> = {
   msgKeepGoing: { en: "Keep practicing, you'll improve!", fr: "Continue, tu vas progresser !", es: "Sigue practicando, vas a mejorar." },
 };
 
-export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
+export default function VraiFauxPlayer({ quiz, locale = "en", roomHref = null }: Props) {
   const tt = (key: string) => vfT[key]?.[locale] || vfT[key]?.en || key;
   const [screen, setScreen] = useState<Screen>("intro");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -274,25 +277,28 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                   : tt("descRecommended")}
             </p>
           </div>
-          <button
-            onClick={handleStart}
-            className="w-full flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
-          >
-            {tt("startQuiz")}
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.5}
+          <div className="flex flex-col sm:flex-row gap-3">
+            <button
+              onClick={handleStart}
+              className="w-full sm:flex-1 flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              />
-            </svg>
-          </button>
+              {tt("startQuiz")}
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </button>
+            <RoomButton href={roomHref} locale={locale} />
+          </div>
         </div>
       </div>
     );

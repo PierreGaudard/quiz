@@ -183,16 +183,17 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
-          question: "Remets dans l'ordre les adversaires de Goku en finale des trois premiers Tenkaichi Budokai.",
+          question: "Remets dans l'ordre ces adversaires de Goku au Tenkaichi Budokai, du premier tournoi au dernier.",
           answers: [
             { id: "a", text: "Jackie Chun" },
             { id: "b", text: "Tenshinhan" },
             { id: "c", text: "Piccolo" },
+            { id: "d", text: "Oob" },
           ],
-          correctOrder: ["a", "b", "c"],
+          correctOrder: ["a", "b", "c", "d"],
           correctAnswer: "a",
           explanation:
-            "Goku perd la finale du 21e tournoi contre Jackie Chun, qui est en fait Tortue Géniale déguisé, puis celle du 22e contre Tenshinhan. Il gagne enfin le 23e, en battant Piccolo.",
+            "Goku perd la finale du 21e tournoi contre Jackie Chun, qui est en fait Tortue Géniale déguisé, puis celle du 22e contre Tenshinhan. Il gagne enfin le 23e, en battant Piccolo. Bien plus tard, au 28e tournoi, il affronte Oob, la réincarnation de Majin Buu.",
         },
         {
           id: 13,
@@ -473,16 +474,17 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
-          question: "Put Goku's opponents in the finals of the first three World Martial Arts Tournaments in order.",
+          question: "Put these opponents Goku faces at the World Martial Arts Tournament in order, from the first tournament to the last.",
           answers: [
             { id: "a", text: "Jackie Chun" },
             { id: "b", text: "Tien" },
             { id: "c", text: "Piccolo" },
+            { id: "d", text: "Uub" },
           ],
-          correctOrder: ["a", "b", "c"],
+          correctOrder: ["a", "b", "c", "d"],
           correctAnswer: "a",
           explanation:
-            "Goku loses the 21st tournament final to Jackie Chun, who is really Master Roshi in disguise, then the 22nd to Tien. He finally wins the 23rd by beating Piccolo.",
+            "Goku loses the 21st tournament final to Jackie Chun, who is really Master Roshi in disguise, then the 22nd to Tien. He finally wins the 23rd by beating Piccolo. Much later, at the 28th tournament, he faces Uub, the reincarnation of Majin Buu.",
         },
         {
           id: 13,
@@ -763,16 +765,17 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
-          question: "Ordena a los rivales de Goku en la final de los tres primeros Torneos de Artes Marciales.",
+          question: "Ordena a estos rivales de Goku en el Torneo de Artes Marciales, del primer torneo al último.",
           answers: [
             { id: "a", text: "Jackie Chun" },
             { id: "b", text: "Ten Shin Han" },
             { id: "c", text: "Piccolo" },
+            { id: "d", text: "Oob" },
           ],
-          correctOrder: ["a", "b", "c"],
+          correctOrder: ["a", "b", "c", "d"],
           correctAnswer: "a",
           explanation:
-            "Goku pierde la final del 21.º torneo contra Jackie Chun, que en realidad es el Maestro Roshi disfrazado, y luego la del 22.º contra Ten Shin Han. Por fin gana el 23.º al vencer a Piccolo.",
+            "Goku pierde la final del 21.º torneo contra Jackie Chun, que en realidad es el Maestro Roshi disfrazado, y luego la del 22.º contra Ten Shin Han. Por fin gana el 23.º al vencer a Piccolo. Mucho después, en el 28.º torneo, se enfrenta a Oob, la reencarnación de Majin Buu.",
         },
         {
           id: 13,

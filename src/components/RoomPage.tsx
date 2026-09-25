@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import RoomInvitePanel from "./RoomInvitePanel";
 import { withBase, imageSrcset } from "../utils/base";
 
 /**
@@ -551,6 +552,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
               </li>
             ))}
           </ul>
+          <RoomInvitePanel code={room.code} token={token} locale={locale} />
           <button onClick={handleLeave} className="mt-4 text-xs text-gray-500 hover:text-gray-700 underline cursor-pointer">
             {tt("leave")}
           </button>

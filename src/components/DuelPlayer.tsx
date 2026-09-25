@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import RoomButton from "./RoomButton";
 import type { QuizData } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
@@ -8,6 +9,8 @@ import { trackQuizStart } from "../utils/track";
 interface Props {
   quiz: QuizData;
   locale?: string;
+  /** Lien vers une partie entre amis sur ce quiz, null si le mode ne s'y prête pas. */
+  roomHref?: string | null;
 }
 
 const duT: Record<string, Record<string, string>> = {
@@ -53,7 +56,7 @@ const duT: Record<string, Record<string, string>> = {
   seeResults: { en: "See results", fr: "Voir les résultats", es: "Ver resultados" },
 };
 
-export default function DuelPlayer({ quiz, locale = "en" }: Props) {
+export default function DuelPlayer({ quiz, locale = "en", roomHref = null }: Props) {
   const tt = (key: string) => duT[key]?.[locale] || duT[key]?.en || key;
   const [hasStarted, setHasStarted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -197,18 +200,21 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             ))}
           </ol>
 
-          <button
-            onClick={handleStart}
-            className="w-full flex items-center justify-center gap-2.5 bg-rose-600 text-white font-bold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-            </svg>
-            {tt("startDuel")}
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </button>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <button
+              onClick={handleStart}
+              className="w-full sm:flex-1 flex items-center justify-center gap-2.5 bg-rose-600 text-white font-bold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+              </svg>
+              {tt("startDuel")}
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+            <RoomButton href={roomHref} locale={locale} />
+          </div>
         </div>
       </div>
     );

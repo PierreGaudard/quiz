@@ -71,11 +71,9 @@ function closenessLabel(ratio: number, locale = "en"): { text: string; color: st
   return { text: cl("freezing"), color: "text-blue-600" };
 }
 
-function formatNumber(n: number): string {
-  return n.toLocaleString("en-US");
-}
-
 const esT: Record<string, Record<string, string>> = {
+  estimatePh: { en: "Your estimate...", fr: "Votre estimation...", es: "Tu estimación..." },
+  outOf: { en: "out of", fr: "sur", es: "de" },
   nextQ: { en: "Next question", fr: "Question suivante", es: "Siguiente pregunta" },
   seeResults: { en: "See results", fr: "Voir le résultat", es: "Ver el resultado" },
   questionWord: { en: "Question", fr: "Question", es: "Pregunta" },
@@ -114,6 +112,7 @@ const esT: Record<string, Record<string, string>> = {
 
 export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
   const tt = (key: string) => esT[key]?.[locale] || esT[key]?.en || key;
+  const formatNumber = (n: number) => n.toLocaleString(locale === "fr" ? "fr-FR" : locale === "es" ? "es-ES" : "en-US");
   const [phase, setPhase] = useState<Phase>("intro");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
@@ -356,7 +355,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                   {tt("points")}
                 </div>
                 <div className="text-[11px] text-gray-500 mt-0.5">
-                  sur {formatNumber(maxPoints)}
+                  {tt("outOf")} {formatNumber(maxPoints)}
                 </div>
               </div>
               <div className="bg-green-50 rounded-xl p-4 text-center border border-green-100">
@@ -654,7 +653,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                   onKeyDown={(e) => {
                     if (e.key === "Enter") handleGuess();
                   }}
-                  placeholder="Your estimate..."
+                  placeholder={tt("estimatePh")}
                   autoFocus
                   className="w-full max-w-xs text-center text-3xl font-display font-black text-gray-900 py-4 px-6 rounded-xl border-2 border-brand-200 bg-brand-50/50 placeholder:text-gray-300 placeholder:text-lg placeholder:font-normal focus:outline-none focus:border-brand-400 focus:ring-4 focus:ring-brand-100 transition-all"
                 />

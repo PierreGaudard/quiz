@@ -254,6 +254,13 @@ code et l'application de la migration, seul le bloc concerne disparait.
   `/play-with-friends/` (`/fr/jouer-entre-amis/`, `/es/jugar-con-amigos/`).
   Seuls les quiz a choix (qcm, vrai-faux, chrono, duel) s'y jouent, cf.
   `isRoomEligible()` dans `src/lib/rooms.ts`.
+  Chaque page de quiz de ces modes porte un lien « Jouer entre amis » à côté
+  du bouton de départ (`RoomButton`, prop `roomHref` des players).
+- `room_invites` (009) : un joueur connecté invite un ami accepté depuis la
+  salle d'attente (`RoomInvitePanel`, `/api/room/[code]/invite`). L'invité
+  voit un bandeau sur n'importe quelle page (`InviteBanner`, monté dans le
+  Layout, qui interroge `/api/room/invites` toutes les 45 s). L'invitation
+  meurt avec la salle. La table se crée d'elle-même à la première invitation.
 
 ### Comptes : mot de passe oublié
 
@@ -432,7 +439,7 @@ npm run preview  # Preview production build
 
 `npx tsx scripts/check-quiz-file.mts src/data/quiz-xxx.ts` doit afficher `OK` :
 langues complètes, 20 questions dans tous les modes (sur le modèle de quiz-couple, décision du 25/09/2026), réponses cohérentes avec le mode,
-title de page 30-60 et description 70-155, images présentes en WebP, marqueurs
+title de page 30-60 et description 70-155, exactement 4 éléments par question en mode ordre (le player bloque sinon), images présentes en WebP, marqueurs
 IA et tirets cadratins interdits, accents et « ¿ » présents, sous-catégorie
 existante, slug unique. Il ne remplace pas la partie jouée dans un navigateur.
 

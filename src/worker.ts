@@ -4,6 +4,7 @@
  */
 import astro from "@astrojs/cloudflare/entrypoints/server";
 import { purgeInactiveAccounts } from "./lib/accounts";
+import { purgeExpiredInvites } from "./lib/room-invites";
 
 export default {
   ...astro,
@@ -19,7 +20,7 @@ export default {
       env.DB.batch([
         env.DB.prepare("DELETE FROM room_players WHERE room_code IN (SELECT code FROM rooms WHERE expires_at <= datetime('now'))"),
         env.DB.prepare("DELETE FROM rooms WHERE expires_at <= datetime('now')"),
-      ]).catch((e) => console.error("purgeRooms", e)),
+      ]).then(() => purgeExpiredInvites(env.DB)).catch((e) => console.error("purgeRooms", e)),
     );
   },
 };

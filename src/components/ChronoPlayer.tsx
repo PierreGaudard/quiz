@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
+import RoomButton from "./RoomButton";
 import type { QuizData } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
@@ -8,6 +9,8 @@ import { trackQuizStart } from "../utils/track";
 interface Props {
   quiz: QuizData;
   locale?: string;
+  /** Lien vers une partie entre amis sur ce quiz, null si le mode ne s'y prête pas. */
+  roomHref?: string | null;
 }
 
 const LETTER_LABELS = ["A", "B", "C", "D"];
@@ -64,7 +67,7 @@ const chT: Record<string, Record<string, string>> = {
   timesUp: { en: "Time's up!", fr: "Temps écoulé !", es: "¡Se acabó el tiempo!" },
 };
 
-export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
+export default function ChronoPlayer({ quiz, locale = "en", roomHref = null }: Props) {
   const tt = (key: string) => chT[key]?.[locale] || chT[key]?.en || key;
   const [phase, setPhase] = useState<GamePhase>("intro");
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
@@ -334,16 +337,19 @@ export default function ChronoPlayer({ quiz, locale = "en" }: Props) {
             60 s · {totalQuestions} {tt("questions").toLowerCase()} · 4 {tt("choices").toLowerCase()}
           </p>
 
-          <button
-            onClick={handleStart}
-            className="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-display font-bold text-lg py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
-          >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            {tt("start")}
-          </button>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <button
+              onClick={handleStart}
+              className="w-full sm:flex-1 flex items-center justify-center gap-2 bg-red-600 text-white font-display font-bold text-lg py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              {tt("start")}
+            </button>
+            <RoomButton href={roomHref} locale={locale} />
+          </div>
         </div>
       </div>
     );

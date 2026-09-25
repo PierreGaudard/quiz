@@ -68,7 +68,8 @@ for (const q of quizzes ?? []) {
       if (gt === "estimation") {
         if (typeof qq.correctValue !== "number") err(`${where}: correctValue numerique obligatoire en estimation`);
       } else if (gt === "ordre") {
-        if (!Array.isArray(qq.correctOrder) || qq.correctOrder.length < 3) err(`${where}: correctOrder (3 elements ou plus) obligatoire en ordre`);
+        // OrdrePlayer ne valide qu'a 4 elements places : une question a 3 bloque le joueur (vu le 25/09/2026).
+        if (qq.answers.length !== 4 || !Array.isArray(qq.correctOrder) || qq.correctOrder.length !== 4) err(`${where}: une question ordre a exactement 4 elements (answers et correctOrder)`);
         else if (qq.correctOrder.some((x: string) => !qq.answers.some((a: any) => a.id === x))) err(`${where}: correctOrder cite un id absent des answers`);
       } else {
         const need = gt === "duel" || gt === "vrai-faux" ? 2 : 4;

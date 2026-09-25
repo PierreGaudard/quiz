@@ -1,4 +1,5 @@
 import { Icon5050, IconSecondChance, IconHint } from "./BonusIcons";
+import RoomButton from "./RoomButton";
 import { useState, useRef, useCallback, useEffect } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
@@ -8,6 +9,8 @@ import { trackQuizStart } from "../utils/track";
 interface Props {
   quiz: QuizData;
   locale?: string;
+  /** Lien vers une partie entre amis sur ce quiz, null si le mode ne s'y prête pas. */
+  roomHref?: string | null;
 }
 
 const LETTER_LABELS = ["A", "B", "C", "D"];
@@ -84,7 +87,7 @@ interface QuestionState {
   hasSecondChance?: boolean;
 }
 
-export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
+export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }: Props) {
   const tt = (key: string) => qpT[key]?.[locale] || qpT[key]?.en || key;
   const [questionStates, setQuestionStates] = useState<QuestionState[]>(
     quiz.questions.map(() => ({ selectedAnswer: null, hasAnswered: false, isCorrect: false }))
@@ -564,15 +567,18 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                   ? ` ${tt("descExpert")}`
                   : ` ${tt("descRecommended")}`}
             </p>
-            <button
-              onClick={handleStartQuiz}
-              className="w-full flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
-            >
-              {tt("startQuiz")}
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </button>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button
+                onClick={handleStartQuiz}
+                className="w-full sm:flex-1 flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold text-base py-4 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
+              >
+                {tt("startQuiz")}
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </button>
+              <RoomButton href={roomHref} locale={locale} />
+            </div>
           </div>
         )}
 
