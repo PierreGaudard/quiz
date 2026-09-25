@@ -448,7 +448,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 {tt("home")}
               </a>
             </div>
-            <QuizSocialBlock quizSlug={quiz.slug} userScore={correctCount} totalQuestions={totalQuestions} locale={locale} />
+            <QuizSocialBlock quizSlug={quiz.slug} userScore={correctCount} totalQuestions={totalQuestions} locale={locale} progress={{ correct: correctCount, total: totalQuestions, title: quiz.title, image: quiz.coverImage || null, path: quiz.path || null }} />
           </div>
         </div>
       </div>

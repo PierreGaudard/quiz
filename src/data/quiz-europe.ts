@@ -21,7 +21,7 @@ export const quizEurope: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : l'Europe",
       description:
-        "Dix affirmations sur l'Europe, ses pays et ses capitales. À toi de dire lesquelles sont vraies.",
+        "Vingt affirmations sur l'Europe, ses pays et ses capitales. À toi de dire lesquelles sont vraies.",
       questions: [
         {
           id: 1,
@@ -137,12 +137,122 @@ export const quizEurope: TranslatedQuiz = {
           explanation:
             "Son siège officiel est à Strasbourg, où se tiennent les sessions plénières. Une partie du travail se fait à Bruxelles, et le secrétariat est à Luxembourg. Amsterdam n'a rien à voir là-dedans.",
         },
+        {
+          id: 11,
+          question: "Le Luxembourg est le plus petit pays de l'Union européenne.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, le plus petit pays de l'UE est Malte, avec environ 316 km². Le Luxembourg fait un peu plus de 2 500 km².",
+        },
+        {
+          id: 12,
+          question: "Le Royaume-Uni fait toujours partie de l'Union européenne.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Le Royaume-Uni a quitté l'Union européenne le 31 janvier 2020, après le référendum sur le Brexit de 2016.",
+        },
+        {
+          id: 13,
+          question: "La Hongrie n'a aucun accès à la mer.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. La Hongrie est entourée de sept pays, et son grand lac, le Balaton, est ce qui s'en rapproche le plus.",
+        },
+        {
+          id: 14,
+          question: "La Belgique a trois langues officielles.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai : le néerlandais, le français et l'allemand. L'allemand est parlé dans une petite région de l'est du pays, près de la frontière.",
+        },
+        {
+          id: 15,
+          question: "Le Danemark utilise l'euro.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Le Danemark est dans l'Union européenne, mais il a gardé sa monnaie, la couronne danoise.",
+        },
+        {
+          id: 16,
+          question: "L'Andorre a deux chefs d'État, dont le président de la République française.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. L'Andorre a deux coprinces : le président français et l'évêque d'Urgell, en Espagne.",
+        },
+        {
+          id: 17,
+          question: "La Russie est le plus grand pays d'Europe.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai, même en ne comptant que sa partie européenne, à l'ouest de l'Oural. Elle est bien plus grande que l'Ukraine, qui arrive deuxième.",
+        },
+        {
+          id: 18,
+          question: "Le Portugal a une frontière avec la France.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Le Portugal n'a qu'un seul voisin, l'Espagne, qui le sépare de la France.",
+        },
+        {
+          id: 19,
+          question: "Saint-Pétersbourg a été la capitale de la Russie.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Pierre le Grand y a installé la capitale au début du XVIIIe siècle, et elle y est restée jusqu'en 1918, quand les bolcheviks l'ont ramenée à Moscou.",
+        },
+        {
+          id: 20,
+          question: "L'Irlande fait partie du Royaume-Uni.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. L'Irlande est un pays indépendant, membre de l'Union européenne. Seule l'Irlande du Nord, au nord-est de l'île, fait partie du Royaume-Uni.",
+        },
       ],
     },
     en: {
       title: "True or False: Europe",
       description:
-        "Ten statements about Europe, its countries and its capitals. Your job is to say which ones hold up.",
+        "Twenty statements about Europe, its countries and its capitals. Your job is to say which ones hold up.",
       questions: [
         {
           id: 1,
@@ -258,12 +368,122 @@ export const quizEurope: TranslatedQuiz = {
           explanation:
             "Its official seat is Strasbourg, where the plenary sessions are held. Part of the work happens in Brussels and the secretariat is in Luxembourg. Amsterdam has nothing to do with it.",
         },
+        {
+          id: 11,
+          question: "Luxembourg is the smallest country in the European Union.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, the smallest EU country is Malta, at about 316 km². Luxembourg covers a little over 2,500 km².",
+        },
+        {
+          id: 12,
+          question: "The United Kingdom is still part of the European Union.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The UK left the European Union on 31 January 2020, after the 2016 Brexit referendum.",
+        },
+        {
+          id: 13,
+          question: "Hungary has no access to the sea.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Hungary is surrounded by seven countries, and its big lake, Balaton, is the closest thing it has to a coast.",
+        },
+        {
+          id: 14,
+          question: "Belgium has three official languages.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True: Dutch, French and German. German is spoken in a small area in the east of the country, near the border.",
+        },
+        {
+          id: 15,
+          question: "Denmark uses the euro.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Denmark is in the European Union, but it kept its own currency, the Danish krone.",
+        },
+        {
+          id: 16,
+          question: "Andorra has two heads of state, one of them being the President of France.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Andorra has two co-princes: the French president and the Bishop of Urgell, in Spain.",
+        },
+        {
+          id: 17,
+          question: "Russia is the largest country in Europe.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True, even counting only its European part, west of the Urals. It's much bigger than Ukraine, which comes second.",
+        },
+        {
+          id: 18,
+          question: "Portugal shares a border with France.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Portugal has only one neighbour, Spain, which sits between it and France.",
+        },
+        {
+          id: 19,
+          question: "Saint Petersburg was once the capital of Russia.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Peter the Great moved the capital there in the early 18th century, and it stayed until 1918, when the Bolsheviks moved it back to Moscow.",
+        },
+        {
+          id: 20,
+          question: "Ireland is part of the United Kingdom.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Ireland is an independent country and an EU member. Only Northern Ireland, in the north-east of the island, is part of the UK.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: Europa",
       description:
-        "Diez afirmaciones sobre Europa, sus países y sus capitales. Te toca decir cuáles se sostienen.",
+        "Veinte afirmaciones sobre Europa, sus países y sus capitales. Te toca decir cuáles se sostienen.",
       questions: [
         {
           id: 1,
@@ -378,6 +598,116 @@ export const quizEurope: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Su sede oficial es Estrasburgo, donde se celebran los plenos. Parte del trabajo se hace en Bruselas y la secretaría está en Luxemburgo. Ámsterdam no tiene nada que ver.",
+        },
+        {
+          id: 11,
+          question: "Luxemburgo es el país más pequeño de la Unión Europea.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, el país más pequeño de la UE es Malta, con unos 316 km². Luxemburgo tiene algo más de 2500 km².",
+        },
+        {
+          id: 12,
+          question: "Reino Unido sigue formando parte de la Unión Europea.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Reino Unido salió de la Unión Europea el 31 de enero de 2020, tras el referéndum del Brexit de 2016.",
+        },
+        {
+          id: 13,
+          question: "Hungría no tiene salida al mar.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Hungría está rodeada por siete países, y su gran lago, el Balaton, es lo más parecido a una costa que tiene.",
+        },
+        {
+          id: 14,
+          question: "Bélgica tiene tres lenguas oficiales.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero: el neerlandés, el francés y el alemán. El alemán se habla en una pequeña zona del este del país, cerca de la frontera.",
+        },
+        {
+          id: 15,
+          question: "Dinamarca usa el euro.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Dinamarca está en la Unión Europea, pero ha mantenido su moneda, la corona danesa.",
+        },
+        {
+          id: 16,
+          question: "Andorra tiene dos jefes de Estado, y uno de ellos es el presidente de Francia.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Andorra tiene dos copríncipes: el presidente francés y el obispo de Urgel, en España.",
+        },
+        {
+          id: 17,
+          question: "Rusia es el país más grande de Europa.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero, incluso contando solo su parte europea, al oeste de los Urales. Es mucho más grande que Ucrania, que va segunda.",
+        },
+        {
+          id: 18,
+          question: "Portugal tiene frontera con Francia.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Portugal solo tiene un vecino, España, que lo separa de Francia.",
+        },
+        {
+          id: 19,
+          question: "San Petersburgo fue la capital de Rusia.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Pedro el Grande trasladó allí la capital a principios del siglo XVIII, y siguió allí hasta 1918, cuando los bolcheviques la devolvieron a Moscú.",
+        },
+        {
+          id: 20,
+          question: "Irlanda forma parte del Reino Unido.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Irlanda es un país independiente y miembro de la Unión Europea. Solo Irlanda del Norte, en el noreste de la isla, forma parte del Reino Unido.",
         },
       ],
     },

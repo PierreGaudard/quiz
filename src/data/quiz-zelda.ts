@@ -22,7 +22,7 @@ export const quizZelda: TranslatedQuiz = {
     fr: {
       title: "Quiz Zelda : connais-tu Hyrule ?",
       description:
-        "Dix questions sur The Legend of Zelda : Link, Hyrule, la Triforce, l'Épée de légende et les grands jeux de la série.",
+        "Vingt questions sur The Legend of Zelda : Link, Hyrule, la Triforce, l'Épée de légende et les grands jeux de la série.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizZelda: TranslatedQuiz = {
           explanation:
             "En 2023, sur Switch. C'est la suite de Breath of the Wild, sorti lui en 2017.",
         },
+        {
+          id: 11,
+          question: "Comment s'appelle l'argent que Link ramasse dans les jeux Zelda ?",
+          answers: [
+            { id: "a", text: "Les pièces d'or" },
+            { id: "b", text: "Les gils" },
+            { id: "c", text: "Les rubis" },
+            { id: "d", text: "Les écus" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Les rubis, des pierres précieuses de couleurs différentes selon leur valeur. Les gils sont la monnaie de Final Fantasy.",
+        },
+        {
+          id: 12,
+          question: "Combien de sanctuaires compte Breath of the Wild, sans les contenus additionnels ?",
+          answers: [
+            { id: "a", text: "76" },
+            { id: "b", text: "120" },
+            { id: "c", text: "152" },
+            { id: "d", text: "200" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "120. Les contenus additionnels en ajoutent 16, et les 152 sanctuaires sont ceux de Tears of the Kingdom.",
+        },
+        {
+          id: 13,
+          question: "Dans Majora's Mask, combien de jours Link a-t-il avant que la lune tombe sur Termina ?",
+          answers: [
+            { id: "a", text: "3" },
+            { id: "b", text: "5" },
+            { id: "c", text: "7" },
+            { id: "d", text: "10" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Trois jours. Pour ne pas perdre, Link joue le Chant du Temps et revient à l'aube du premier jour, en gardant ses objets les plus importants.",
+        },
+        {
+          id: 14,
+          question: "Sur quelle île Link fait-il naufrage dans Link's Awakening ?",
+          answers: [
+            { id: "a", text: "Termina" },
+            { id: "b", text: "Lorule" },
+            { id: "c", text: "Labrynna" },
+            { id: "d", text: "L'île Cocolint" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "L'île Cocolint. Pour en repartir, Link doit réveiller le Poisson-Rêve, qui dort dans un œuf géant en haut de la montagne.",
+        },
+        {
+          id: 15,
+          question: "Dans Tears of the Kingdom, quel pouvoir permet d'attraper des objets et de les coller entre eux ?",
+          answers: [
+            { id: "a", text: "Emprise" },
+            { id: "b", text: "Amalgame" },
+            { id: "c", text: "Infiltration" },
+            { id: "d", text: "Rétrospective" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Emprise, qui sert à construire des ponts, des radeaux ou encore des voitures. Amalgame fixe un objet sur une arme, et Rétrospective fait remonter le temps à un objet.",
+        },
+        {
+          id: 16,
+          question: "Quel compositeur a écrit le thème principal de Zelda ?",
+          answers: [
+            { id: "a", text: "Nobuo Uematsu" },
+            { id: "b", text: "Koji Kondo" },
+            { id: "c", text: "Yoko Shimomura" },
+            { id: "d", text: "Koichi Sugiyama" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Koji Kondo, qui a aussi composé la musique de Super Mario Bros. Nobuo Uematsu est connu pour les musiques de Final Fantasy.",
+        },
+        {
+          id: 17,
+          question: "Qui est aujourd'hui le producteur de la série Zelda ?",
+          answers: [
+            { id: "a", text: "Masahiro Sakurai" },
+            { id: "b", text: "Yoshio Sakamoto" },
+            { id: "c", text: "Eiji Aonuma" },
+            { id: "d", text: "Hidemaro Fujibayashi" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Eiji Aonuma, qui avait réalisé The Wind Waker avant de prendre en main toute la série. Hidemaro Fujibayashi a réalisé Breath of the Wild et Tears of the Kingdom.",
+        },
+        {
+          id: 18,
+          question: "Dans Ocarina of Time, dans quel ranch vivent Malon et ses chevaux ?",
+          answers: [
+            { id: "a", text: "Le Ranch Lon Lon" },
+            { id: "b", text: "Le Ranch Romani" },
+            { id: "c", text: "Le Ranch Cocorico" },
+            { id: "d", text: "Le Ranch Hylia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le Ranch Lon Lon, au milieu de la plaine d'Hyrule. C'est là que Link rencontre Epona. Le Ranch Romani est son équivalent dans Majora's Mask.",
+        },
+        {
+          id: 19,
+          question: "Qui réalise le film Zelda en prises de vues réelles ?",
+          answers: [
+            { id: "a", text: "Denis Villeneuve" },
+            { id: "b", text: "Chris Columbus" },
+            { id: "c", text: "Wes Ball" },
+            { id: "d", text: "Peter Jackson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Wes Ball, le réalisateur de la trilogie Le Labyrinthe. Link y est joué par Benjamin Evan Ainsworth et Zelda par Bo Bragason, et la sortie est prévue en 2027.",
+        },
+        {
+          id: 20,
+          question: "De quelle couleur est la tunique classique de Link ?",
+          answers: [
+            { id: "a", text: "Bleue" },
+            { id: "b", text: "Rouge" },
+            { id: "c", text: "Violette" },
+            { id: "d", text: "Verte" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Verte, avec le bonnet pointu assorti, depuis le tout premier jeu. Dans Breath of the Wild, sa tenue la plus connue est par contre une tunique bleue.",
+        },
       ],
     },
     en: {
       title: "Zelda Quiz: how well do you know Hyrule?",
       description:
-        "Ten questions on The Legend of Zelda: Link, Hyrule, the Triforce, the Master Sword and the big games of the series.",
+        "Twenty questions on The Legend of Zelda: Link, Hyrule, the Triforce, the Master Sword and the big games of the series.",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizZelda: TranslatedQuiz = {
           explanation:
             "In 2023, on the Switch. It is the sequel to Breath of the Wild, which came out in 2017.",
         },
+        {
+          id: 11,
+          question: "What is the money Link picks up in the Zelda games called?",
+          answers: [
+            { id: "a", text: "Gold coins" },
+            { id: "b", text: "Gil" },
+            { id: "c", text: "Rupees" },
+            { id: "d", text: "Crowns" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Rupees, gems whose color changes with their value. Gil is the money in Final Fantasy.",
+        },
+        {
+          id: 12,
+          question: "How many shrines are there in Breath of the Wild, not counting the DLC?",
+          answers: [
+            { id: "a", text: "76" },
+            { id: "b", text: "120" },
+            { id: "c", text: "152" },
+            { id: "d", text: "200" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "120. The DLC adds 16 more, and the 152 shrines are the ones in Tears of the Kingdom.",
+        },
+        {
+          id: 13,
+          question: "In Majora's Mask, how many days does Link have before the moon falls on Termina?",
+          answers: [
+            { id: "a", text: "3" },
+            { id: "b", text: "5" },
+            { id: "c", text: "7" },
+            { id: "d", text: "10" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Three days. To avoid losing, Link plays the Song of Time and goes back to the dawn of the first day, keeping his most important items.",
+        },
+        {
+          id: 14,
+          question: "On which island is Link shipwrecked in Link's Awakening?",
+          answers: [
+            { id: "a", text: "Termina" },
+            { id: "b", text: "Lorule" },
+            { id: "c", text: "Labrynna" },
+            { id: "d", text: "Koholint Island" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Koholint Island. To leave, Link has to wake the Wind Fish, which sleeps inside a giant egg at the top of the mountain.",
+        },
+        {
+          id: 15,
+          question: "In Tears of the Kingdom, which power lets you grab objects and stick them together?",
+          answers: [
+            { id: "a", text: "Ultrahand" },
+            { id: "b", text: "Fuse" },
+            { id: "c", text: "Ascend" },
+            { id: "d", text: "Recall" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Ultrahand, which you use to build bridges, rafts, cars and so on. Fuse attaches an object to a weapon, and Recall rewinds an object's movement.",
+        },
+        {
+          id: 16,
+          question: "Which composer wrote the main Zelda theme?",
+          answers: [
+            { id: "a", text: "Nobuo Uematsu" },
+            { id: "b", text: "Koji Kondo" },
+            { id: "c", text: "Yoko Shimomura" },
+            { id: "d", text: "Koichi Sugiyama" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Koji Kondo, who also wrote the music for Super Mario Bros. Nobuo Uematsu is known for the Final Fantasy soundtracks.",
+        },
+        {
+          id: 17,
+          question: "Who is the producer of the Zelda series today?",
+          answers: [
+            { id: "a", text: "Masahiro Sakurai" },
+            { id: "b", text: "Yoshio Sakamoto" },
+            { id: "c", text: "Eiji Aonuma" },
+            { id: "d", text: "Hidemaro Fujibayashi" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Eiji Aonuma, who directed The Wind Waker before taking charge of the whole series. Hidemaro Fujibayashi directed Breath of the Wild and Tears of the Kingdom.",
+        },
+        {
+          id: 18,
+          question: "In Ocarina of Time, which ranch is home to Malon and her horses?",
+          answers: [
+            { id: "a", text: "Lon Lon Ranch" },
+            { id: "b", text: "Romani Ranch" },
+            { id: "c", text: "Kakariko Ranch" },
+            { id: "d", text: "Hylia Ranch" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Lon Lon Ranch, in the middle of Hyrule Field. That's where Link meets Epona. Romani Ranch is its counterpart in Majora's Mask.",
+        },
+        {
+          id: 19,
+          question: "Who is directing the live-action Zelda movie?",
+          answers: [
+            { id: "a", text: "Denis Villeneuve" },
+            { id: "b", text: "Chris Columbus" },
+            { id: "c", text: "Wes Ball" },
+            { id: "d", text: "Peter Jackson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Wes Ball, the director of the Maze Runner trilogy. Benjamin Evan Ainsworth plays Link and Bo Bragason plays Zelda, and the release is planned for 2027.",
+        },
+        {
+          id: 20,
+          question: "What color is Link's classic tunic?",
+          answers: [
+            { id: "a", text: "Blue" },
+            { id: "b", text: "Red" },
+            { id: "c", text: "Purple" },
+            { id: "d", text: "Green" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Green, with the matching pointy cap, ever since the very first game. In Breath of the Wild, though, his best-known outfit is a blue tunic.",
+        },
       ],
     },
     es: {
       title: "Quiz de Zelda: ¿conoces Hyrule?",
       description:
-        "Diez preguntas sobre The Legend of Zelda: Link, Hyrule, la Trifuerza, la Espada Maestra y los grandes juegos de la saga.",
+        "Veinte preguntas sobre The Legend of Zelda: Link, Hyrule, la Trifuerza, la Espada Maestra y los grandes juegos de la saga.",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizZelda: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "En 2023, en Switch. Es la secuela de Breath of the Wild, que salió en 2017.",
+        },
+        {
+          id: 11,
+          question: "¿Cómo se llama el dinero que recoge Link en los juegos de Zelda?",
+          answers: [
+            { id: "a", text: "Monedas de oro" },
+            { id: "b", text: "Guiles" },
+            { id: "c", text: "Rupias" },
+            { id: "d", text: "Escudos" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Rupias, unas gemas que cambian de color según su valor. Los guiles son el dinero de Final Fantasy.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántos santuarios tiene Breath of the Wild, sin contar el contenido descargable?",
+          answers: [
+            { id: "a", text: "76" },
+            { id: "b", text: "120" },
+            { id: "c", text: "152" },
+            { id: "d", text: "200" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "120. El contenido descargable suma 16 más, y los 152 santuarios son los de Tears of the Kingdom.",
+        },
+        {
+          id: 13,
+          question: "En Majora's Mask, ¿cuántos días tiene Link antes de que la luna caiga sobre Termina?",
+          answers: [
+            { id: "a", text: "3" },
+            { id: "b", text: "5" },
+            { id: "c", text: "7" },
+            { id: "d", text: "10" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tres días. Para no perder, Link toca la Canción del Tiempo y vuelve al amanecer del primer día, conservando sus objetos más importantes.",
+        },
+        {
+          id: 14,
+          question: "¿En qué isla naufraga Link en Link's Awakening?",
+          answers: [
+            { id: "a", text: "Termina" },
+            { id: "b", text: "Lorule" },
+            { id: "c", text: "Labrynna" },
+            { id: "d", text: "La isla Koholint" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "En la isla Koholint. Para salir de allí, Link tiene que despertar al Pez del Viento, que duerme dentro de un huevo gigante en lo alto de la montaña.",
+        },
+        {
+          id: 15,
+          question: "En Tears of the Kingdom, ¿qué poder permite agarrar objetos y pegarlos entre sí?",
+          answers: [
+            { id: "a", text: "Ultramano" },
+            { id: "b", text: "Combinación" },
+            { id: "c", text: "Infiltración" },
+            { id: "d", text: "Retroceso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Ultramano, con la que se construyen puentes, balsas o incluso coches. Combinación une un objeto a un arma, y Retroceso hace que un objeto repita su movimiento hacia atrás.",
+        },
+        {
+          id: 16,
+          question: "¿Qué compositor escribió el tema principal de Zelda?",
+          answers: [
+            { id: "a", text: "Nobuo Uematsu" },
+            { id: "b", text: "Koji Kondo" },
+            { id: "c", text: "Yoko Shimomura" },
+            { id: "d", text: "Koichi Sugiyama" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Koji Kondo, que también compuso la música de Super Mario Bros. Nobuo Uematsu es conocido por las bandas sonoras de Final Fantasy.",
+        },
+        {
+          id: 17,
+          question: "¿Quién es hoy el productor de la saga Zelda?",
+          answers: [
+            { id: "a", text: "Masahiro Sakurai" },
+            { id: "b", text: "Yoshio Sakamoto" },
+            { id: "c", text: "Eiji Aonuma" },
+            { id: "d", text: "Hidemaro Fujibayashi" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Eiji Aonuma, que dirigió The Wind Waker antes de ponerse al frente de toda la saga. Hidemaro Fujibayashi dirigió Breath of the Wild y Tears of the Kingdom.",
+        },
+        {
+          id: 18,
+          question: "En Ocarina of Time, ¿en qué rancho viven Malon y sus caballos?",
+          answers: [
+            { id: "a", text: "El Rancho Lon Lon" },
+            { id: "b", text: "El Rancho Romani" },
+            { id: "c", text: "El Rancho Kakariko" },
+            { id: "d", text: "El Rancho Hylia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Rancho Lon Lon, en medio de la pradera de Hyrule. Allí es donde Link conoce a Epona. El Rancho Romani es su equivalente en Majora's Mask.",
+        },
+        {
+          id: 19,
+          question: "¿Quién dirige la película de Zelda de imagen real?",
+          answers: [
+            { id: "a", text: "Denis Villeneuve" },
+            { id: "b", text: "Chris Columbus" },
+            { id: "c", text: "Wes Ball" },
+            { id: "d", text: "Peter Jackson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Wes Ball, el director de la trilogía El corredor del laberinto. Benjamin Evan Ainsworth hace de Link y Bo Bragason de Zelda, y el estreno está previsto para 2027.",
+        },
+        {
+          id: 20,
+          question: "¿De qué color es la túnica clásica de Link?",
+          answers: [
+            { id: "a", text: "Azul" },
+            { id: "b", text: "Roja" },
+            { id: "c", text: "Morada" },
+            { id: "d", text: "Verde" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Verde, con el gorro puntiagudo a juego, desde el primer juego. En Breath of the Wild, en cambio, su ropa más conocida es una túnica azul.",
         },
       ],
     },

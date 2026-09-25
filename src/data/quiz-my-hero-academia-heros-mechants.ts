@@ -5,7 +5,7 @@ import type { TranslatedQuiz } from "./types";
  * My Hero Academia.
  *
  * VraiFauxPlayer repère « vrai » par l'id « a » et « faux » par l'id « b »,
- * dans les trois langues. Douze affirmations, six vraies et six fausses.
+ * dans les trois langues. Vingt affirmations, dix vraies et dix fausses.
  * Le vrai nom d'All Might et le père de Todoroki sont déjà dans le quiz
  * chrono : on ne les reprend pas.
  */
@@ -26,7 +26,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
     fr: {
       title: "Vrai-faux My Hero Academia : héros et méchants",
       description:
-        "Douze affirmations sur les héros pros et les méchants de My Hero Academia, d'All Might à Stain. À toi de trier le vrai du faux.",
+        "Vingt affirmations sur les héros pros et les méchants de My Hero Academia, d'All Might à Stain. À toi de trier le vrai du faux.",
       questions: [
         {
           id: 1,
@@ -165,12 +165,100 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
           explanation:
             "Faux. Eraser Head s'appelle Shota Aizawa. Hizashi Yamada, c'est Present Mic, son ancien camarade de classe à Yuei.",
         },
+        {
+          id: 13,
+          question: "L'Alter de Present Mic amplifie sa voix.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Son Alter s'appelle Voice, et il porte au cou un collier qui ressemble à une enceinte. À Yuei, c'est le professeur d'anglais.",
+        },
+        {
+          id: 14,
+          question: "Best Jeanist se bat en contrôlant le feu.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Best Jeanist contrôle les fibres des vêtements, c'est l'Alter Fiber Master. Il doit son nom au prix Best Jeanist, qu'il a gagné huit années de suite.",
+        },
+        {
+          id: 15,
+          question: "Gran Torino a été le mentor d'All Might quand il était jeune.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Gran Torino a formé All Might, puis il entraîne aussi Deku. Son Alter, Jet, lui fait souffler de l'air sous les pieds pour filer à toute vitesse.",
+        },
+        {
+          id: 16,
+          question: "L'Alter de Mirko lui donne les capacités d'un chat.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Mirko a l'Alter Rabbit : elle a des oreilles de lapin et des jambes d'une force énorme, dont elle se sert pour frapper.",
+        },
+        {
+          id: 17,
+          question: "Le méchant Muscular peut se rendre invisible.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Son Alter, Muscle Augmentation, fait gonfler les muscles sous sa peau pour lui donner une force énorme. Deku l'affronte pendant le camp d'entraînement dans la forêt.",
+        },
+        {
+          id: 18,
+          question: "Twice peut créer des copies de ce qu'il touche, et même de lui-même.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Son Alter s'appelle Double. Il en a tellement abusé sur lui-même qu'il finit par ne plus savoir s'il est l'original ou une copie.",
+        },
+        {
+          id: 19,
+          question: "Mt. Lady peut rétrécir jusqu'à la taille d'une fourmi.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. C'est l'inverse : son Alter, Gigantification, la rend géante. On la voit dès le premier épisode, quand elle arrête un méchant devenu géant lui aussi.",
+        },
+        {
+          id: 20,
+          question: "Sir Nighteye peut voir l'avenir d'une personne.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Son Alter s'appelle Foresight. Il a été l'acolyte d'All Might, et au début il n'accepte pas qu'All Might ait choisi Deku comme successeur.",
+        },
       ],
     },
     en: {
       title: "My Hero Academia Heroes & Villains: True or False",
       description:
-        "Twelve statements on the pro heroes and villains of My Hero Academia, from All Might to Stain. Can you tell which ones are true?",
+        "Twenty statements on the pro heroes and villains of My Hero Academia, from All Might to Stain. Can you tell which ones are true?",
       questions: [
         {
           id: 1,
@@ -309,12 +397,100 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
           explanation:
             "False. Eraser Head is Shota Aizawa. Hizashi Yamada is Present Mic, his old classmate from U.A.",
         },
+        {
+          id: 13,
+          question: "Present Mic's Quirk makes his voice louder.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. His Quirk is called Voice, and he wears a collar around his neck that looks like a speaker. At U.A. he's the English teacher.",
+        },
+        {
+          id: 14,
+          question: "Best Jeanist fights by controlling fire.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Best Jeanist controls the fibers in clothes, with a Quirk called Fiber Master. His name comes from the Best Jeanist award, which he won eight years in a row.",
+        },
+        {
+          id: 15,
+          question: "Gran Torino trained All Might when he was young.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Gran Torino trained All Might, and later he trains Deku too. His Quirk, Jet, lets him blast air from the soles of his feet to move at full speed.",
+        },
+        {
+          id: 16,
+          question: "Mirko's Quirk gives her the abilities of a cat.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Mirko has the Rabbit Quirk: rabbit ears and incredibly strong legs, which she uses to kick.",
+        },
+        {
+          id: 17,
+          question: "The villain Muscular can turn invisible.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. His Quirk, Muscle Augmentation, bulks up the muscles under his skin and gives him huge strength. Deku fights him during the training camp in the forest.",
+        },
+        {
+          id: 18,
+          question: "Twice can make copies of what he touches, even of himself.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. His Quirk is called Double. He used it on himself so much that he ends up not knowing if he's the original or a copy.",
+        },
+        {
+          id: 19,
+          question: "Mt. Lady can shrink down to the size of an ant.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. It's the other way round: her Quirk, Gigantification, makes her giant. She shows up in the very first episode, stopping a villain who had turned giant too.",
+        },
+        {
+          id: 20,
+          question: "Sir Nighteye can see a person's future.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. His Quirk is called Foresight. He used to be All Might's sidekick, and at first he doesn't accept that All Might picked Deku as his successor.",
+        },
       ],
     },
     es: {
       title: "Héroes y villanos de My Hero Academia",
       description:
-        "Doce afirmaciones sobre los héroes profesionales y los villanos de My Hero Academia, de All Might a Stain. ¿Cuáles son verdad?",
+        "Veinte afirmaciones sobre los héroes profesionales y los villanos de My Hero Academia, de All Might a Stain. ¿Cuáles son verdad?",
       questions: [
         {
           id: 1,
@@ -452,6 +628,94 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso. Eraser Head es Shota Aizawa. Hizashi Yamada es Present Mic, su antiguo compañero de clase en la U.A.",
+        },
+        {
+          id: 13,
+          question: "El Don de Present Mic amplifica su voz.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Su Don se llama Voice y lleva al cuello un collar que parece un altavoz. En la U.A. es el profesor de inglés.",
+        },
+        {
+          id: 14,
+          question: "Best Jeanist pelea controlando el fuego.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Best Jeanist controla las fibras de la ropa, con el Don Fiber Master. Su nombre viene del premio Best Jeanist, que ganó ocho años seguidos.",
+        },
+        {
+          id: 15,
+          question: "Gran Torino fue el mentor de All Might cuando era joven.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Gran Torino entrenó a All Might y más tarde también entrena a Deku. Su Don, Jet, le hace soltar aire por las plantas de los pies para ir a toda velocidad.",
+        },
+        {
+          id: 16,
+          question: "El Don de Mirko le da las habilidades de un gato.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Mirko tiene el Don Rabbit: orejas de conejo y unas piernas fortísimas, que usa para dar patadas.",
+        },
+        {
+          id: 17,
+          question: "El villano Muscular puede volverse invisible.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Su Don, Muscle Augmentation, le hincha los músculos bajo la piel y le da una fuerza enorme. Deku se enfrenta a él en el campamento de entrenamiento del bosque.",
+        },
+        {
+          id: 18,
+          question: "Twice puede crear copias de lo que toca, incluso de sí mismo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Su Don se llama Double. Lo usó tanto consigo mismo que acaba sin saber si él es el original o una copia.",
+        },
+        {
+          id: 19,
+          question: "Mt. Lady puede encogerse hasta el tamaño de una hormiga.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Es justo al revés: su Don, Gigantification, la vuelve gigante. Sale ya en el primer episodio, cuando detiene a un villano que también se había vuelto gigante.",
+        },
+        {
+          id: 20,
+          question: "Sir Nighteye puede ver el futuro de una persona.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Su Don se llama Foresight. Fue el ayudante de All Might y, al principio, no acepta que All Might eligiera a Deku como sucesor.",
         },
       ],
     },

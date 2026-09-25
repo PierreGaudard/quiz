@@ -4,7 +4,7 @@ import type { TranslatedQuiz } from "./types";
  * Quiz vrai-faux sur les méchants de Dragon Ball, de Raditz à Goku Black.
  *
  * VraiFauxPlayer repère « vrai » par l'id « a » et « faux » par l'id « b ».
- * Douze affirmations, six vraies et six fausses. La destruction de la
+ * Vingt affirmations, dix vraies et dix fausses. La destruction de la
  * planète Vegeta par Freezer est déjà dans le quiz qcm Dragon Ball, elle
  * n'est pas reprise.
  */
@@ -21,7 +21,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les méchants de Dragon Ball",
       description:
-        "Douze affirmations sur les méchants de Dragon Ball, de Raditz à Goku Black. À toi de dire lesquelles sont vraies.",
+        "Vingt affirmations sur les méchants de Dragon Ball, de Raditz à Goku Black. À toi de dire lesquelles sont vraies.",
       questions: [
         {
           id: 1,
@@ -160,12 +160,100 @@ export const quizDragonBallMechants: TranslatedQuiz = {
           explanation:
             "Faux. Goku Black, c'est Zamasu, un apprenti Kaioshin, qui a volé le corps de Goku. C'est pour ça qu'il lui ressemble trait pour trait.",
         },
+        {
+          id: 13,
+          question: "Goku, encore enfant, tue Piccolo Daimaô, le roi des démons.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Goku le transperce d'un coup de poing. Juste avant de mourir, Piccolo Daimaô crache un œuf d'où sort son fils, le Piccolo qu'on connaît dans Dragon Ball Z.",
+        },
+        {
+          id: 14,
+          question: "Zarbon et Dodoria, les hommes de main de Freezer, sont des Saiyans.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Ce sont deux soldats de Freezer, pas des Saiyans. Vegeta les tue tous les deux sur Namek.",
+        },
+        {
+          id: 15,
+          question: "Le tueur Tao Pai Pai est le frère de l'Ermite de la Grue.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. C'est son petit frère. L'Ermite de la Grue est le maître de Tenshinhan et Chaozu, les deux adversaires de Goku au 22e Tenkaichi Budokai.",
+        },
+        {
+          id: 16,
+          question: "Cell a été créé à partir des cellules de Goku uniquement.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le Docteur Gero a mélangé les cellules de plusieurs combattants, dont Goku, Vegeta, Piccolo et Freezer. C'est pour ça que Cell connaît le Kamehameha comme les techniques des autres.",
+        },
+        {
+          id: 17,
+          question: "Broly est le fils du roi Vegeta.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Broly est le fils de Paragus. C'est Vegeta qui est le fils du roi Vegeta, et le roi avait jugé le bébé Broly trop dangereux.",
+        },
+        {
+          id: 18,
+          question: "Le commando Ginyu compte cinq membres, capitaine compris.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Ginyu, Recoome, Jeice, Burter et Guldo. Freezer les fait venir sur Namek quand Vegeta commence à lui tenir tête.",
+        },
+        {
+          id: 19,
+          question: "Hit, le tueur à gages qui arrête le temps, vient de l'univers 7.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Hit vient de l'univers 6. Il affronte Goku pendant le tournoi organisé entre l'univers 6 et l'univers 7.",
+        },
+        {
+          id: 20,
+          question: "Le gros Majin Buu devient ami avec Mister Satan.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Mister Satan gagne sa confiance, et Buu arrête de tuer. On le voit ensuite vivre avec lui et son petit chien Bee.",
+        },
       ],
     },
     en: {
       title: "True or False: Dragon Ball Villains",
       description:
-        "Twelve statements on the villains of Dragon Ball, from Raditz to Goku Black. Can you tell which ones are true?",
+        "Twenty statements on the villains of Dragon Ball, from Raditz to Goku Black. Can you tell which ones are true?",
       questions: [
         {
           id: 1,
@@ -304,12 +392,100 @@ export const quizDragonBallMechants: TranslatedQuiz = {
           explanation:
             "False. Goku Black is Zamasu, a Supreme Kai apprentice who stole Goku's body. That's why he looks exactly like him.",
         },
+        {
+          id: 13,
+          question: "As a kid, Goku kills King Piccolo, the demon king.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Goku punches right through him. Just before he dies, King Piccolo spits out an egg, and his son hatches from it: the Piccolo we know in Dragon Ball Z.",
+        },
+        {
+          id: 14,
+          question: "Zarbon and Dodoria, Frieza's henchmen, are Saiyans.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. They're two of Frieza's soldiers, not Saiyans. Vegeta kills both of them on Namek.",
+        },
+        {
+          id: 15,
+          question: "The assassin Mercenary Tao is the brother of Master Shen, the Crane Hermit.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. He's his younger brother. The Crane Hermit is the master of Tien and Chiaotzu, Goku's opponents at the 22nd World Martial Arts Tournament.",
+        },
+        {
+          id: 16,
+          question: "Cell was made from Goku's cells only.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Dr. Gero mixed the cells of several fighters, including Goku, Vegeta, Piccolo and Frieza. That's why Cell can use the Kamehameha along with other people's moves.",
+        },
+        {
+          id: 17,
+          question: "Broly is King Vegeta's son.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Broly is Paragus' son. Vegeta is King Vegeta's son, and the king had judged baby Broly too dangerous.",
+        },
+        {
+          id: 18,
+          question: "The Ginyu Force has five members, the captain included.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Ginyu, Recoome, Jeice, Burter and Guldo. Frieza calls them to Namek when Vegeta starts standing up to him.",
+        },
+        {
+          id: 19,
+          question: "Hit, the hitman who can stop time, comes from Universe 7.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Hit is from Universe 6. He fights Goku during the tournament between Universe 6 and Universe 7.",
+        },
+        {
+          id: 20,
+          question: "Fat Majin Buu becomes friends with Mr. Satan.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Mr. Satan wins his trust and Buu stops killing. Later on he lives with him and his little dog Bee.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: los villanos de Dragon Ball",
       description:
-        "Doce afirmaciones sobre los villanos de Dragon Ball, de Raditz a Goku Black. ¿Sabes cuáles son verdad?",
+        "Veinte afirmaciones sobre los villanos de Dragon Ball, de Raditz a Goku Black. ¿Sabes cuáles son verdad?",
       questions: [
         {
           id: 1,
@@ -447,6 +623,94 @@ export const quizDragonBallMechants: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso. Goku Black es Zamasu, un aprendiz de Kaioshin que le robó el cuerpo a Goku. Por eso es idéntico a él.",
+        },
+        {
+          id: 13,
+          question: "Goku, todavía niño, mata al Rey Piccolo, el rey de los demonios.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Goku lo atraviesa de un puñetazo. Justo antes de morir, el Rey Piccolo escupe un huevo del que sale su hijo, el Piccolo que conocemos en Dragon Ball Z.",
+        },
+        {
+          id: 14,
+          question: "Zarbon y Dodoria, los secuaces de Freezer, son Saiyans.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Son dos soldados de Freezer, no Saiyans. Vegeta acaba con los dos en Namek.",
+        },
+        {
+          id: 15,
+          question: "El asesino Tao Pai Pai es hermano del Ermitaño Grulla.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Es su hermano pequeño. El Ermitaño Grulla es el maestro de Ten Shin Han y Chaoz, los rivales de Goku en el 22.º Torneo de Artes Marciales.",
+        },
+        {
+          id: 16,
+          question: "Cell se creó solo con células de Goku.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El Doctor Gero mezcló células de varios luchadores, entre ellos Goku, Vegeta, Piccolo y Freezer. Por eso Cell sabe hacer el Kamehameha y las técnicas de los demás.",
+        },
+        {
+          id: 17,
+          question: "Broly es hijo del rey Vegeta.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Broly es hijo de Paragus. El hijo del rey Vegeta es Vegeta, y el rey había considerado al bebé Broly demasiado peligroso.",
+        },
+        {
+          id: 18,
+          question: "Las Fuerzas Especiales Ginyu tienen cinco miembros, contando al capitán.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Ginyu, Recoome, Jeice, Burter y Guldo. Freezer los llama a Namek cuando Vegeta empieza a plantarle cara.",
+        },
+        {
+          id: 19,
+          question: "Hit, el asesino a sueldo que detiene el tiempo, viene del universo 7.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Hit es del universo 6. Se enfrenta a Goku en el torneo entre el universo 6 y el universo 7.",
+        },
+        {
+          id: 20,
+          question: "El Majin Buu gordo se hace amigo de Mr. Satán.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Mr. Satán se gana su confianza y Buu deja de matar. Después se le ve viviendo con él y con su perrito Bee.",
         },
       ],
     },

@@ -6,7 +6,8 @@ import type { TranslatedQuiz } from "./types";
  * Tolérance de 5 % et cinq essais : les petits nombres (taille d'une pile,
  * nombre d'yeux de l'Ender) se jouent au chiffre exact, les années laissent
  * un peu de marge. Les valeurs de jeu sont celles de l'édition Java, qui
- * sont aussi celles de Bedrock pour ces dix questions.
+ * sont aussi celles de Bedrock, sauf la durabilité de la pioche en diamant
+ * (1561 en Java, 1562 en Bedrock), que la question date dans l'édition Java.
  */
 export const quizMinecraftChiffres: TranslatedQuiz = {
   slug: "quiz-minecraft-chiffres",
@@ -21,7 +22,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
     fr: {
       title: "Quiz Minecraft : les chiffres du jeu",
       description:
-        "Dix nombres à trouver sur Minecraft : piles d'objets, durée d'une journée, enchantements ou encore date de sortie. Tu proposes, on te guide.",
+        "Vingt nombres à trouver sur Minecraft : piles d'objets, durée d'une journée, enchantements, boss ou date de sortie. Tu proposes, on te guide.",
       questions: [
         {
           id: 1,
@@ -117,12 +118,102 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
           explanation:
             "10 cœurs, soit 20 points de vie, puisque chaque cœur vaut deux points.",
         },
+        {
+          id: 11,
+          question: "Un chunk fait combien de blocs de côté ?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "16. Un chunk est un carré de 16 blocs sur 16, et c'est par morceaux de cette taille que le monde se charge autour du joueur.",
+        },
+        {
+          id: 12,
+          question: "Combien de parts compte un gâteau posé par terre ?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "7 parts. On en mange une à chaque clic, et le gâteau disparaît à la dernière.",
+        },
+        {
+          id: 13,
+          question: "Combien de fragments de netherite faut-il pour fabriquer un lingot de netherite ?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "4 fragments, avec 4 lingots d'or en plus. Les fragments viennent des débris antiques, qu'on trouve dans le Nether.",
+        },
+        {
+          id: 14,
+          question: "Un bloc parcouru dans le Nether équivaut à combien de blocs dans le monde normal ?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8. C'est pour ça qu'on passe par le Nether pour voyager vite : 100 blocs là-bas font 800 blocs à la surface.",
+        },
+        {
+          id: 15,
+          question: "En quelle année sort au cinéma le film Minecraft avec Jack Black ?",
+          answers: [],
+          correctAnswer: "2025",
+          correctValue: 2025,
+          explanation:
+            "En 2025. Le film, réalisé par Jared Hess, sort en avril et dépasse les 950 millions de dollars de recettes dans le monde.",
+        },
+        {
+          id: 16,
+          question: "Combien de ticks le jeu calcule-t-il chaque seconde ?",
+          answers: [],
+          correctAnswer: "20",
+          correctValue: 20,
+          explanation:
+            "20 ticks par seconde. Un tick dure donc 0,05 seconde, et presque tout dans le jeu, de la pousse des plantes au redstone, se compte en ticks.",
+        },
+        {
+          id: 17,
+          question: "Combien de points de vie a l'Ender Dragon ?",
+          answers: [],
+          correctAnswer: "200",
+          correctValue: 200,
+          explanation:
+            "200 points de vie, soit 100 cœurs. Les cristaux de l'End le soignent pendant le combat, d'où l'intérêt de les casser en premier.",
+        },
+        {
+          id: 18,
+          question: "Dans l'édition Java, quelle est la durabilité d'une pioche en diamant ?",
+          answers: [],
+          correctAnswer: "1561",
+          correctValue: 1561,
+          explanation:
+            "1561 utilisations. Dans l'édition Bedrock, c'est 1562, et une pioche en netherite tient encore plus longtemps.",
+        },
+        {
+          id: 19,
+          question: "Combien de métiers différents un villageois peut-il exercer ?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13, du bibliothécaire au forgeron d'armes en passant par le fermier. Chaque métier dépend d'un bloc de travail, comme le pupitre pour le bibliothécaire.",
+        },
+        {
+          id: 20,
+          question: "Combien de blocs de minerai faut-il pour construire une pyramide complète de balise, à quatre étages ?",
+          answers: [],
+          correctAnswer: "164",
+          correctValue: 164,
+          explanation:
+            "164 blocs : 81 pour la base de 9 sur 9, puis 49, 25 et 9. On peut mélanger du fer, de l'or, du diamant, de l'émeraude ou de la netherite.",
+        },
       ],
     },
     en: {
       title: "Minecraft Quiz: The Numbers of the Game",
       description:
-        "Ten numbers to find about Minecraft, from stack sizes and day length to enchanting and release dates. Guess, and we'll guide you.",
+        "Twenty numbers to find about Minecraft, from stack sizes and day length to enchanting, bosses and release dates. Guess, and we'll guide you.",
       questions: [
         {
           id: 1,
@@ -218,12 +309,102 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
           explanation:
             "10 hearts, which is 20 health points, since each heart is worth two points.",
         },
+        {
+          id: 11,
+          question: "How many blocks wide is a chunk?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "16. A chunk is a square of 16 by 16 blocks, and the world loads around the player in pieces of that size.",
+        },
+        {
+          id: 12,
+          question: "How many slices does a placed cake have?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "7 slices. You eat one with each click, and the cake disappears after the last one.",
+        },
+        {
+          id: 13,
+          question: "How many netherite scraps does it take to make one netherite ingot?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "4 scraps, plus 4 gold ingots. The scraps come from ancient debris, which you find in the Nether.",
+        },
+        {
+          id: 14,
+          question: "One block traveled in the Nether equals how many blocks in the Overworld?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8. That's why players use the Nether to travel fast: 100 blocks there are 800 blocks on the surface.",
+        },
+        {
+          id: 15,
+          question: "In what year did the Minecraft movie starring Jack Black hit theaters?",
+          answers: [],
+          correctAnswer: "2025",
+          correctValue: 2025,
+          explanation:
+            "In 2025. The film, directed by Jared Hess, came out in April and made more than 950 million dollars worldwide.",
+        },
+        {
+          id: 16,
+          question: "How many ticks does the game process every second?",
+          answers: [],
+          correctAnswer: "20",
+          correctValue: 20,
+          explanation:
+            "20 ticks per second. So one tick lasts 0.05 seconds, and almost everything in the game, from crop growth to redstone, is counted in ticks.",
+        },
+        {
+          id: 17,
+          question: "How much health does the Ender Dragon have?",
+          answers: [],
+          correctAnswer: "200",
+          correctValue: 200,
+          explanation:
+            "200 health points, or 100 hearts. The End crystals heal it during the fight, so it's worth breaking them first.",
+        },
+        {
+          id: 18,
+          question: "In Java Edition, what's the durability of a diamond pickaxe?",
+          answers: [],
+          correctAnswer: "1561",
+          correctValue: 1561,
+          explanation:
+            "1561 uses. In Bedrock Edition it's 1562, and a netherite pickaxe lasts even longer.",
+        },
+        {
+          id: 19,
+          question: "How many different jobs can a villager have?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13, from librarian to weaponsmith, with farmer and plenty of others in between. Each job depends on a workstation block, like the lectern for the librarian.",
+        },
+        {
+          id: 20,
+          question: "How many mineral blocks do you need for a full four-level beacon pyramid?",
+          answers: [],
+          correctAnswer: "164",
+          correctValue: 164,
+          explanation:
+            "164 blocks: 81 for the 9 by 9 base, then 49, 25 and 9. You can mix iron, gold, diamond, emerald or netherite blocks.",
+        },
       ],
     },
     es: {
       title: "Quiz Minecraft: las cifras del juego",
       description:
-        "Diez números sobre Minecraft: pilas de objetos, duración del día, encantamientos o fecha de lanzamiento. Tú propones y te guiamos.",
+        "Veinte números sobre Minecraft: pilas de objetos, duración del día, encantamientos, jefes o fecha de lanzamiento. Tú propones y te guiamos.",
       questions: [
         {
           id: 1,
@@ -318,6 +499,96 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
           correctValue: 10,
           explanation:
             "10 corazones, o sea, 20 puntos de vida, porque cada corazón vale dos puntos.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos bloques de lado tiene un chunk?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "16. Un chunk es un cuadrado de 16 por 16 bloques, y el mundo se carga alrededor del jugador en trozos de ese tamaño.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántas porciones tiene una tarta colocada en el suelo?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "7 porciones. Te comes una con cada clic, y la tarta desaparece con la última.",
+        },
+        {
+          id: 13,
+          question: "¿Cuántos fragmentos de netherita hacen falta para fabricar un lingote de netherita?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "4 fragmentos, más 4 lingotes de oro. Los fragmentos salen de los escombros ancestrales, que se encuentran en el Nether.",
+        },
+        {
+          id: 14,
+          question: "Un bloque recorrido en el Nether, ¿a cuántos bloques equivale en el mundo normal?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8. Por eso se usa el Nether para viajar rápido: 100 bloques allí son 800 en la superficie.",
+        },
+        {
+          id: 15,
+          question: "¿En qué año se estrena en cines la película de Minecraft con Jack Black?",
+          answers: [],
+          correctAnswer: "2025",
+          correctValue: 2025,
+          explanation:
+            "En 2025. La película, dirigida por Jared Hess, se estrena en abril y supera los 950 millones de dólares de taquilla en todo el mundo.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántos ticks calcula el juego cada segundo?",
+          answers: [],
+          correctAnswer: "20",
+          correctValue: 20,
+          explanation:
+            "20 ticks por segundo. Un tick dura entonces 0,05 segundos, y casi todo en el juego, desde el crecimiento de los cultivos hasta la redstone, se mide en ticks.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántos puntos de vida tiene el Ender Dragon?",
+          answers: [],
+          correctAnswer: "200",
+          correctValue: 200,
+          explanation:
+            "200 puntos de vida, o sea, 100 corazones. Los cristales del End lo curan durante el combate, así que conviene romperlos primero.",
+        },
+        {
+          id: 18,
+          question: "En la edición Java, ¿cuál es la durabilidad de un pico de diamante?",
+          answers: [],
+          correctAnswer: "1561",
+          correctValue: 1561,
+          explanation:
+            "1561 usos. En la edición Bedrock son 1562, y un pico de netherita aguanta todavía más.",
+        },
+        {
+          id: 19,
+          question: "¿Cuántas profesiones distintas puede tener un aldeano?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13, del bibliotecario al herrero de armas, pasando por el granjero y muchos más. Cada profesión depende de un bloque de trabajo, como el atril para el bibliotecario.",
+        },
+        {
+          id: 20,
+          question: "¿Cuántos bloques de mineral hacen falta para una pirámide completa de faro, de cuatro pisos?",
+          answers: [],
+          correctAnswer: "164",
+          correctValue: 164,
+          explanation:
+            "164 bloques: 81 para la base de 9 por 9, y luego 49, 25 y 9. Se pueden mezclar bloques de hierro, oro, diamante, esmeralda o netherita.",
         },
       ],
     },

@@ -21,7 +21,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
     fr: {
       title: "Quiz Brawl Stars : les brawlers",
       description:
-        "Poco, Leon, Crow, Nita, Piper ou encore Mortis : dix questions sur les brawlers de Brawl Stars, leurs armes et leur Super.",
+        "Poco, Leon, Crow, Nita, Piper ou encore Mortis : vingt questions sur les brawlers de Brawl Stars, leurs armes et leur Super.",
       questions: [
         {
           id: 1,
@@ -157,12 +157,142 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
           explanation:
             "Colt, qui tire des rafales de balles en ligne droite. Brock a un lance-roquettes et Bo un arc, Bull se bat avec un fusil à pompe.",
         },
+        {
+          id: 11,
+          question: "Que lance Tara quand elle attaque ?",
+          answers: [
+            { id: "a", text: "Des boules de feu" },
+            { id: "b", text: "Des cartes de tarot" },
+            { id: "c", text: "Des couteaux" },
+            { id: "d", text: "Des pièces d'or" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Des cartes de tarot, trois à la fois. Tara est une voyante, et son Super crée une sorte de trou noir qui attire les ennemis au même endroit.",
+        },
+        {
+          id: 12,
+          question: "D'où sort Gene, le génie du jeu ?",
+          answers: [
+            { id: "a", text: "D'un coffre" },
+            { id: "b", text: "D'une bouteille" },
+            { id: "c", text: "D'un chapeau" },
+            { id: "d", text: "D'une lampe magique" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "D'une lampe magique, comme le génie d'Aladdin. Avec son Super, il envoie une main géante qui attrape un ennemi et le tire vers lui.",
+        },
+        {
+          id: 13,
+          question: "Que pose Penny, la pirate, avec son Super ?",
+          answers: [
+            { id: "a", text: "Un canon" },
+            { id: "b", text: "Un coffre au trésor" },
+            { id: "c", text: "Une ancre" },
+            { id: "d", text: "Un tonneau de poudre" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un canon, qui tire tout seul des boulets par-dessus les murs. Penny, elle, attaque en lançant des sacs de pièces qui éclatent derrière la cible.",
+        },
+        {
+          id: 14,
+          question: "À quoi sert la tourelle que pose Pam avec son Super ?",
+          answers: [
+            { id: "a", text: "À ralentir les ennemis" },
+            { id: "b", text: "À tirer des roquettes" },
+            { id: "c", text: "À soigner les alliés" },
+            { id: "d", text: "À cacher l'équipe" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "À soigner les alliés qui restent à côté, et Pam elle-même. Pam est une grande mécanicienne qui tire une rafale de ferraille.",
+        },
+        {
+          id: 15,
+          question: "Que fait apparaître le Super de Sprout, le robot jardinier ?",
+          answers: [
+            { id: "a", text: "Une fleur géante" },
+            { id: "b", text: "Une haie" },
+            { id: "c", text: "Un nuage de pollen" },
+            { id: "d", text: "Un arbre qui soigne" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Une haie, qui sert de mur et bloque le passage des ennemis. Sprout lance aussi des graines qui rebondissent sur les murs avant d'exploser.",
+        },
+        {
+          id: 16,
+          question: "Qu'est-ce que 8-Bit ?",
+          answers: [
+            { id: "a", text: "Une borne d'arcade" },
+            { id: "b", text: "Un téléphone" },
+            { id: "c", text: "Une console portable" },
+            { id: "d", text: "Un robot aspirateur" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Une borne d'arcade sur pattes. Il est lent, mais il tire de loin, et son Super pose un amplificateur qui augmente les dégâts de l'équipe autour.",
+        },
+        {
+          id: 17,
+          question: "Qu'a de particulier la pioche que lance Carl ?",
+          answers: [
+            { id: "a", text: "Elle explose" },
+            { id: "b", text: "Elle se plante dans le sol" },
+            { id: "c", text: "Elle empoisonne" },
+            { id: "d", text: "Elle revient vers lui" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Elle revient vers lui, comme un boomerang, et touche les ennemis à l'aller comme au retour. Carl ne peut pas relancer tant qu'il ne l'a pas récupérée.",
+        },
+        {
+          id: 18,
+          question: "Avec quoi Emz attaque-t-elle ?",
+          answers: [
+            { id: "a", text: "Un sèche-cheveux" },
+            { id: "b", text: "Un téléphone" },
+            { id: "c", text: "Une bombe de laque" },
+            { id: "d", text: "Un parfum" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Une bombe de laque pour les cheveux. Le nuage fait des dégâts à chaque instant où l'ennemi reste dedans. Emz est une zombie qui passe son temps sur les réseaux sociaux.",
+        },
+        {
+          id: 19,
+          question: "Que lance Mr. P, le pingouin groom ?",
+          answers: [
+            { id: "a", text: "Des poissons" },
+            { id: "b", text: "Des valises" },
+            { id: "c", text: "Des boules de neige" },
+            { id: "d", text: "Des clés d'hôtel" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Des valises, qui rebondissent par-dessus les obstacles. Avec son Super, il pose une petite base qui fait sortir de petits porteurs robots qui attaquent.",
+        },
+        {
+          id: 20,
+          question: "Avec quoi Bibi frappe-t-elle ses ennemis ?",
+          answers: [
+            { id: "a", text: "Une batte de base-ball" },
+            { id: "b", text: "Une raquette" },
+            { id: "c", text: "Une crosse de hockey" },
+            { id: "d", text: "Un parapluie" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Une batte de base-ball. Son Super envoie une grosse bulle de chewing-gum qui rebondit sur les murs et touche les ennemis au passage.",
+        },
       ],
     },
     en: {
       title: "Brawl Stars quiz: the brawlers",
       description:
-        "Poco, Leon, Crow, Nita, Piper, Mortis and more: ten questions on the Brawl Stars brawlers, their weapons and their Supers.",
+        "Poco, Leon, Crow, Nita, Piper, Mortis and more: twenty questions on the Brawl Stars brawlers, their weapons and their Supers.",
       questions: [
         {
           id: 1,
@@ -298,12 +428,142 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
           explanation:
             "Colt, who fires bursts of bullets in a straight line. Brock has a rocket launcher, Bo has a bow and Bull fights with a shotgun.",
         },
+        {
+          id: 11,
+          question: "What does Tara throw when she attacks?",
+          answers: [
+            { id: "a", text: "Fireballs" },
+            { id: "b", text: "Tarot cards" },
+            { id: "c", text: "Knives" },
+            { id: "d", text: "Gold coins" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Tarot cards, three at a time. Tara is a fortune teller, and her Super creates a kind of black hole that pulls enemies into one spot.",
+        },
+        {
+          id: 12,
+          question: "What does Gene, the game's genie, come out of?",
+          answers: [
+            { id: "a", text: "A chest" },
+            { id: "b", text: "A bottle" },
+            { id: "c", text: "A hat" },
+            { id: "d", text: "A magic lamp" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "A magic lamp, like Aladdin's genie. His Super sends out a giant hand that grabs an enemy and pulls them back to him.",
+        },
+        {
+          id: 13,
+          question: "What does Penny the pirate set down with her Super?",
+          answers: [
+            { id: "a", text: "A cannon" },
+            { id: "b", text: "A treasure chest" },
+            { id: "c", text: "An anchor" },
+            { id: "d", text: "A powder keg" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A cannon, which fires cannonballs over walls on its own. Penny herself attacks by throwing bags of coins that burst behind the target.",
+        },
+        {
+          id: 14,
+          question: "What is the turret that Pam sets down with her Super for?",
+          answers: [
+            { id: "a", text: "Slowing enemies down" },
+            { id: "b", text: "Firing rockets" },
+            { id: "c", text: "Healing allies" },
+            { id: "d", text: "Hiding the team" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Healing the allies who stay close to it, Pam included. Pam is a big mechanic who fires a spray of scrap metal.",
+        },
+        {
+          id: 15,
+          question: "What does the Super of Sprout, the gardening robot, create?",
+          answers: [
+            { id: "a", text: "A giant flower" },
+            { id: "b", text: "A hedge" },
+            { id: "c", text: "A pollen cloud" },
+            { id: "d", text: "A healing tree" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A hedge, which works as a wall and blocks the enemies' path. Sprout also throws seeds that bounce off walls before exploding.",
+        },
+        {
+          id: 16,
+          question: "What is 8-Bit?",
+          answers: [
+            { id: "a", text: "An arcade machine" },
+            { id: "b", text: "A phone" },
+            { id: "c", text: "A handheld console" },
+            { id: "d", text: "A robot vacuum" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "An arcade machine on legs. He's slow but shoots from far away, and his Super sets down a booster that raises the damage of teammates around it.",
+        },
+        {
+          id: 17,
+          question: "What's special about the pickaxe that Carl throws?",
+          answers: [
+            { id: "a", text: "It explodes" },
+            { id: "b", text: "It sticks in the ground" },
+            { id: "c", text: "It poisons" },
+            { id: "d", text: "It comes back to him" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "It comes back to him like a boomerang and hits enemies on the way out and on the way back. Carl can't throw again until he catches it.",
+        },
+        {
+          id: 18,
+          question: "What does Emz attack with?",
+          answers: [
+            { id: "a", text: "A hair dryer" },
+            { id: "b", text: "A phone" },
+            { id: "c", text: "A can of hairspray" },
+            { id: "d", text: "A perfume bottle" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "A can of hairspray. The cloud deals damage for as long as an enemy stays in it. Emz is a zombie who spends her time on social media.",
+        },
+        {
+          id: 19,
+          question: "What does Mr. P, the penguin porter, throw?",
+          answers: [
+            { id: "a", text: "Fish" },
+            { id: "b", text: "Suitcases" },
+            { id: "c", text: "Snowballs" },
+            { id: "d", text: "Hotel keys" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Suitcases, which bounce over obstacles. His Super sets down a small base that sends out little robot porters to attack.",
+        },
+        {
+          id: 20,
+          question: "What does Bibi hit her enemies with?",
+          answers: [
+            { id: "a", text: "A baseball bat" },
+            { id: "b", text: "A racket" },
+            { id: "c", text: "A hockey stick" },
+            { id: "d", text: "An umbrella" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A baseball bat. Her Super sends out a big bubblegum bubble that bounces off walls and hits enemies along the way.",
+        },
       ],
     },
     es: {
       title: "Quiz de Brawl Stars: los brawlers",
       description:
-        "Poco, Leon, Crow, Nita, Piper, Mortis y más: diez preguntas sobre los brawlers de Brawl Stars, sus armas y sus súper.",
+        "Poco, Leon, Crow, Nita, Piper, Mortis y más: veinte preguntas sobre los brawlers de Brawl Stars, sus armas y sus súper.",
       questions: [
         {
           id: 1,
@@ -438,6 +698,136 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "Colt, que dispara ráfagas de balas en línea recta. Brock lleva un lanzacohetes, Bo un arco y Bull pelea con una escopeta.",
+        },
+        {
+          id: 11,
+          question: "¿Qué lanza Tara cuando ataca?",
+          answers: [
+            { id: "a", text: "Bolas de fuego" },
+            { id: "b", text: "Cartas de tarot" },
+            { id: "c", text: "Cuchillos" },
+            { id: "d", text: "Monedas de oro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Cartas de tarot, tres a la vez. Tara es una vidente, y su súper crea una especie de agujero negro que atrae a los enemigos a un mismo punto.",
+        },
+        {
+          id: 12,
+          question: "¿De dónde sale Gene, el genio del juego?",
+          answers: [
+            { id: "a", text: "De un cofre" },
+            { id: "b", text: "De una botella" },
+            { id: "c", text: "De un sombrero" },
+            { id: "d", text: "De una lámpara mágica" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "De una lámpara mágica, como el genio de Aladino. Con su súper lanza una mano gigante que atrapa a un enemigo y lo arrastra hacia él.",
+        },
+        {
+          id: 13,
+          question: "¿Qué coloca Penny, la pirata, con su súper?",
+          answers: [
+            { id: "a", text: "Un cañón" },
+            { id: "b", text: "Un cofre del tesoro" },
+            { id: "c", text: "Un ancla" },
+            { id: "d", text: "Un barril de pólvora" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un cañón, que dispara solo balas por encima de los muros. Penny ataca lanzando bolsas de monedas que revientan detrás del objetivo.",
+        },
+        {
+          id: 14,
+          question: "¿Para qué sirve la torreta que coloca Pam con su súper?",
+          answers: [
+            { id: "a", text: "Para frenar a los enemigos" },
+            { id: "b", text: "Para lanzar cohetes" },
+            { id: "c", text: "Para curar a los aliados" },
+            { id: "d", text: "Para esconder al equipo" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Para curar a los aliados que se quedan cerca, y a la propia Pam. Pam es una mecánica grandota que dispara una ráfaga de chatarra.",
+        },
+        {
+          id: 15,
+          question: "¿Qué hace aparecer el súper de Sprout, el robot jardinero?",
+          answers: [
+            { id: "a", text: "Una flor gigante" },
+            { id: "b", text: "Un seto" },
+            { id: "c", text: "Una nube de polen" },
+            { id: "d", text: "Un árbol que cura" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Un seto, que sirve de muro y corta el paso a los enemigos. Sprout también lanza semillas que rebotan en las paredes antes de explotar.",
+        },
+        {
+          id: 16,
+          question: "¿Qué es 8-Bit?",
+          answers: [
+            { id: "a", text: "Una máquina recreativa" },
+            { id: "b", text: "Un teléfono" },
+            { id: "c", text: "Una consola portátil" },
+            { id: "d", text: "Un robot aspirador" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Una máquina recreativa con patas. Es lento pero dispara de lejos, y su súper coloca un potenciador que sube el daño del equipo a su alrededor.",
+        },
+        {
+          id: 17,
+          question: "¿Qué tiene de especial el pico que lanza Carl?",
+          answers: [
+            { id: "a", text: "Explota" },
+            { id: "b", text: "Se clava en el suelo" },
+            { id: "c", text: "Envenena" },
+            { id: "d", text: "Vuelve hacia él" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Vuelve hacia él como un bumerán, y golpea a los enemigos a la ida y a la vuelta. Carl no puede lanzarlo otra vez hasta que lo recupera.",
+        },
+        {
+          id: 18,
+          question: "¿Con qué ataca Emz?",
+          answers: [
+            { id: "a", text: "Un secador de pelo" },
+            { id: "b", text: "Un teléfono" },
+            { id: "c", text: "Un bote de laca" },
+            { id: "d", text: "Un perfume" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Un bote de laca para el pelo. La nube hace daño mientras el enemigo se queda dentro. Emz es una zombi que se pasa el día en las redes sociales.",
+        },
+        {
+          id: 19,
+          question: "¿Qué lanza Mr. P, el pingüino botones?",
+          answers: [
+            { id: "a", text: "Peces" },
+            { id: "b", text: "Maletas" },
+            { id: "c", text: "Bolas de nieve" },
+            { id: "d", text: "Llaves de hotel" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Maletas, que rebotan por encima de los obstáculos. Con su súper coloca una pequeña base de la que salen pequeños botones robot que atacan.",
+        },
+        {
+          id: 20,
+          question: "¿Con qué golpea Bibi a sus enemigos?",
+          answers: [
+            { id: "a", text: "Un bate de béisbol" },
+            { id: "b", text: "Una raqueta" },
+            { id: "c", text: "Un palo de hockey" },
+            { id: "d", text: "Un paraguas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un bate de béisbol. Su súper lanza una gran burbuja de chicle que rebota en las paredes y golpea a los enemigos a su paso.",
         },
       ],
     },

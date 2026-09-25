@@ -1,7 +1,7 @@
 import type { TranslatedQuiz } from "./types";
 
 /**
- * Quiz League of Legends en mode duel : dix questions à deux propositions.
+ * Quiz League of Legends en mode duel : vingt questions à deux propositions.
  *
  * Le moteur n'affiche que answers[0] et answers[1] (DuelPlayer), donc
  * exactement deux réponses par question. La bonne réponse alterne entre la
@@ -22,7 +22,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
     fr: {
       title: "Duel League of Legends : lequel des deux ?",
       description:
-        "Dix duels sur League of Legends : la Faille, les Worlds, Faker, Arcane... Deux propositions à chaque fois, une seule est la bonne.",
+        "Vingt duels sur League of Legends : la Faille, les Worlds, Faker, Arcane... Deux propositions à chaque fois, une seule est la bonne.",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
           explanation:
             "Paris, à l'AccorHotels Arena de Bercy. FunPlus Phoenix y a battu G2 Esports 3 à 0.",
         },
+        {
+          id: 11,
+          question: "Quel studio français a animé la série Arcane ?",
+          answers: [
+            { id: "a", text: "Fortiche" },
+            { id: "b", text: "Ubisoft" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Fortiche, un studio basé à Paris. Il travaille avec Riot Games depuis 2013, d'abord sur des clips pour League of Legends.",
+        },
+        {
+          id: 12,
+          question: "Comment s'appelle le monde où se passent les histoires de League of Legends ?",
+          answers: [
+            { id: "a", text: "Azeroth" },
+            { id: "b", text: "Runeterra" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Runeterra, avec ses régions comme Demacia, Ionia ou encore Freljord. Azeroth, c'est le monde de World of Warcraft.",
+        },
+        {
+          id: 13,
+          question: "Quelle entreprise chinoise possède Riot Games ?",
+          answers: [
+            { id: "a", text: "Tencent" },
+            { id: "b", text: "Alibaba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tencent. Le groupe a acheté 93 % de Riot en 2011, puis le reste en 2015.",
+        },
+        {
+          id: 14,
+          question: "Combien de saisons compte la série Arcane ?",
+          answers: [
+            { id: "a", text: "4" },
+            { id: "b", text: "2" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Deux. La première est sortie sur Netflix en novembre 2021, la seconde en novembre 2024, et l'histoire de Vi et Jinx s'arrête là.",
+        },
+        {
+          id: 15,
+          question: "Quel groupe virtuel de League of Legends chante « Pop/Stars » ?",
+          answers: [
+            { id: "a", text: "K/DA" },
+            { id: "b", text: "True Damage" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "K/DA, avec Ahri, Akali, Evelynn et Kai'Sa. La chanson a été jouée pour la première fois à la cérémonie d'ouverture des Worlds 2018, en Corée du Sud.",
+        },
+        {
+          id: 16,
+          question: "Quelle actrice prête sa voix à Jinx dans Arcane, en version originale ?",
+          answers: [
+            { id: "a", text: "Hailee Steinfeld" },
+            { id: "b", text: "Ella Purnell" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ella Purnell. Hailee Steinfeld, elle aussi au casting, fait la voix de Vi.",
+        },
+        {
+          id: 17,
+          question: "Combien de dragons élémentaires faut-il tuer pour obtenir l'âme du dragon ?",
+          answers: [
+            { id: "a", text: "4" },
+            { id: "b", text: "6" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Quatre. La première équipe qui en tue quatre gagne l'âme, un bonus qui dépend de l'élément qui domine la carte.",
+        },
+        {
+          id: 18,
+          question: "Quel jeu adapte League of Legends sur téléphone, avec des parties plus courtes ?",
+          answers: [
+            { id: "a", text: "Legends of Runeterra" },
+            { id: "b", text: "Wild Rift" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Wild Rift, sorti en 2020 sur Android et iOS. Legends of Runeterra, c'est un jeu de cartes dans le même univers.",
+        },
+        {
+          id: 19,
+          question: "Quel sort d'invocateur téléporte le champion à courte distance ?",
+          answers: [
+            { id: "a", text: "Saut éclair" },
+            { id: "b", text: "Soins" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Saut éclair, Flash en anglais. Il se recharge en 5 minutes, et presque tous les joueurs le prennent. Soins, lui, redonne de la vie.",
+        },
+        {
+          id: 20,
+          question: "Quel mode de Riot, sorti en 2019, consiste à placer des champions sur un plateau ?",
+          answers: [
+            { id: "a", text: "Arena" },
+            { id: "b", text: "Teamfight Tactics" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Teamfight Tactics, qu'on appelle souvent TFT. Les combats se jouent tout seuls, le joueur choisit les champions et leur place sur le plateau.",
+        },
       ],
     },
     en: {
       title: "League of Legends duel: which one is it?",
       description:
-        "Ten League of Legends duels: the Rift, Worlds, Faker, Arcane and more. Two options each time, and only one is right.",
+        "Twenty League of Legends duels: the Rift, Worlds, Faker, Arcane and more. Two options each time, and only one is right.",
       questions: [
         {
           id: 1,
@@ -259,12 +369,122 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
           explanation:
             "Paris, at the AccorHotels Arena. FunPlus Phoenix beat G2 Esports 3-0 there.",
         },
+        {
+          id: 11,
+          question: "Which French studio animated the series Arcane?",
+          answers: [
+            { id: "a", text: "Fortiche" },
+            { id: "b", text: "Ubisoft" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Fortiche, a studio based in Paris. It has worked with Riot Games since 2013, starting with music videos for League of Legends.",
+        },
+        {
+          id: 12,
+          question: "What's the name of the world where League of Legends stories take place?",
+          answers: [
+            { id: "a", text: "Azeroth" },
+            { id: "b", text: "Runeterra" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Runeterra, with regions like Demacia, Ionia and the Freljord. Azeroth is the world of World of Warcraft.",
+        },
+        {
+          id: 13,
+          question: "Which Chinese company owns Riot Games?",
+          answers: [
+            { id: "a", text: "Tencent" },
+            { id: "b", text: "Alibaba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tencent. It bought 93% of Riot in 2011, then the rest in 2015.",
+        },
+        {
+          id: 14,
+          question: "How many seasons does Arcane have?",
+          answers: [
+            { id: "a", text: "4" },
+            { id: "b", text: "2" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Two. The first came out on Netflix in November 2021, the second in November 2024, and that's where Vi and Jinx's story ends.",
+        },
+        {
+          id: 15,
+          question: "Which League of Legends virtual group sings \"Pop/Stars\"?",
+          answers: [
+            { id: "a", text: "K/DA" },
+            { id: "b", text: "True Damage" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "K/DA, made up of Ahri, Akali, Evelynn and Kai'Sa. The song was first performed at the Worlds 2018 opening ceremony, in South Korea.",
+        },
+        {
+          id: 16,
+          question: "Which actress voices Jinx in the original version of Arcane?",
+          answers: [
+            { id: "a", text: "Hailee Steinfeld" },
+            { id: "b", text: "Ella Purnell" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ella Purnell. Hailee Steinfeld is also in the cast, as the voice of Vi.",
+        },
+        {
+          id: 17,
+          question: "How many elemental dragons do you need to kill to get the Dragon Soul?",
+          answers: [
+            { id: "a", text: "4" },
+            { id: "b", text: "6" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Four. The first team to kill four gets the soul, a bonus that depends on the element ruling the map.",
+        },
+        {
+          id: 18,
+          question: "Which game brings League of Legends to phones, with shorter matches?",
+          answers: [
+            { id: "a", text: "Legends of Runeterra" },
+            { id: "b", text: "Wild Rift" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Wild Rift, released in 2020 on Android and iOS. Legends of Runeterra is a card game set in the same universe.",
+        },
+        {
+          id: 19,
+          question: "Which summoner spell teleports your champion a short distance?",
+          answers: [
+            { id: "a", text: "Flash" },
+            { id: "b", text: "Heal" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Flash. It has a 5-minute cooldown and almost every player takes it. Heal gives back some health.",
+        },
+        {
+          id: 20,
+          question: "Which Riot mode, released in 2019, has you place champions on a board?",
+          answers: [
+            { id: "a", text: "Arena" },
+            { id: "b", text: "Teamfight Tactics" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Teamfight Tactics, often called TFT. The fights play out on their own: the player picks the champions and where they stand on the board.",
+        },
       ],
     },
     es: {
       title: "Duelo League of Legends: ¿cuál de los dos?",
       description:
-        "Diez duelos sobre League of Legends: la Grieta, los Worlds, Faker, Arcane... Dos opciones cada vez y solo una es la buena.",
+        "Veinte duelos sobre League of Legends: la Grieta, los Worlds, Faker, Arcane... Dos opciones cada vez y solo una es la buena.",
       questions: [
         {
           id: 1,
@@ -379,6 +599,116 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "En París, en el AccorHotels Arena. FunPlus Phoenix ganó allí a G2 Esports por 3 a 0.",
+        },
+        {
+          id: 11,
+          question: "¿Qué estudio francés animó la serie Arcane?",
+          answers: [
+            { id: "a", text: "Fortiche" },
+            { id: "b", text: "Ubisoft" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Fortiche, un estudio con sede en París. Trabaja con Riot Games desde 2013, primero con videoclips de League of Legends.",
+        },
+        {
+          id: 12,
+          question: "¿Cómo se llama el mundo donde pasan las historias de League of Legends?",
+          answers: [
+            { id: "a", text: "Azeroth" },
+            { id: "b", text: "Runeterra" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Runeterra, con regiones como Demacia, Jonia o Freljord. Azeroth es el mundo de World of Warcraft.",
+        },
+        {
+          id: 13,
+          question: "¿Qué empresa china es dueña de Riot Games?",
+          answers: [
+            { id: "a", text: "Tencent" },
+            { id: "b", text: "Alibaba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tencent. Compró el 93 % de Riot en 2011 y el resto en 2015.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántas temporadas tiene la serie Arcane?",
+          answers: [
+            { id: "a", text: "4" },
+            { id: "b", text: "2" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Dos. La primera salió en Netflix en noviembre de 2021, la segunda en noviembre de 2024, y ahí termina la historia de Vi y Jinx.",
+        },
+        {
+          id: 15,
+          question: "¿Qué grupo virtual de League of Legends canta «Pop/Stars»?",
+          answers: [
+            { id: "a", text: "K/DA" },
+            { id: "b", text: "True Damage" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "K/DA, formado por Ahri, Akali, Evelynn y Kai'Sa. La canción se estrenó en la ceremonia de apertura del Mundial 2018, en Corea del Sur.",
+        },
+        {
+          id: 16,
+          question: "¿Qué actriz pone la voz de Jinx en la versión original de Arcane?",
+          answers: [
+            { id: "a", text: "Hailee Steinfeld" },
+            { id: "b", text: "Ella Purnell" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ella Purnell. Hailee Steinfeld también está en el reparto: es la voz de Vi.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántos dragones elementales hay que matar para conseguir el alma del dragón?",
+          answers: [
+            { id: "a", text: "4" },
+            { id: "b", text: "6" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Cuatro. El primer equipo que mata cuatro se lleva el alma, una mejora que depende del elemento que domina el mapa.",
+        },
+        {
+          id: 18,
+          question: "¿Qué juego lleva League of Legends al móvil, con partidas más cortas?",
+          answers: [
+            { id: "a", text: "Legends of Runeterra" },
+            { id: "b", text: "Wild Rift" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Wild Rift, que salió en 2020 para Android e iOS. Legends of Runeterra es un juego de cartas del mismo universo.",
+        },
+        {
+          id: 19,
+          question: "¿Qué hechizo de invocador teletransporta al campeón a poca distancia?",
+          answers: [
+            { id: "a", text: "Destello" },
+            { id: "b", text: "Curar" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Destello, Flash en inglés. Tarda 5 minutos en recargarse y casi todos los jugadores lo llevan. Curar devuelve algo de vida.",
+        },
+        {
+          id: 20,
+          question: "¿Qué modo de Riot, lanzado en 2019, consiste en colocar campeones en un tablero?",
+          answers: [
+            { id: "a", text: "Arena" },
+            { id: "b", text: "Teamfight Tactics" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Teamfight Tactics, al que muchos llaman TFT. Los combates se juegan solos: el jugador elige los campeones y dónde colocarlos.",
         },
       ],
     },

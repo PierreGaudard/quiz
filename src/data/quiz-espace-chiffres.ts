@@ -22,7 +22,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
     fr: {
       title: "Estimation : l'espace en chiffres",
       description:
-        "Dix nombres à trouver sur l'espace : la distance de la Lune, la vitesse de l'ISS, la chaleur du Soleil… Tu proposes, on te dit plus ou moins.",
+        "Vingt nombres à trouver sur l'espace : la distance de la Lune, la vitesse de l'ISS, la chaleur du Soleil… Tu proposes, on te dit plus ou moins.",
       questions: [
         {
           id: 1,
@@ -119,12 +119,102 @@ export const quizEspaceChiffres: TranslatedQuiz = {
           explanation:
             "À peu près 10 heures. Jupiter est la plus grosse planète, et c'est aussi celle qui tourne le plus vite sur elle-même.",
         },
+        {
+          id: 11,
+          question: "Combien de jours met Mercure pour faire le tour du Soleil ?",
+          answers: [],
+          correctAnswer: "88",
+          correctValue: 88,
+          explanation:
+            "88 jours. C'est la planète la plus proche du Soleil, du coup c'est aussi celle qui a l'année la plus courte.",
+        },
+        {
+          id: 12,
+          question: "Combien d'années terrestres dure une année sur Jupiter, arrondi à l'année ?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "Environ 12 ans (11,9 pour être précis). Jupiter est cinq fois plus loin du Soleil que la Terre.",
+        },
+        {
+          id: 13,
+          question: "Combien d'années terrestres met Neptune pour faire un tour complet du Soleil ?",
+          answers: [],
+          correctAnswer: "165",
+          correctValue: 165,
+          explanation:
+            "Environ 165 ans. Depuis sa découverte en 1846, Neptune n'a bouclé qu'un seul tour, terminé en 2011.",
+        },
+        {
+          id: 14,
+          question: "En quelle année la planète Neptune a-t-elle été découverte ?",
+          answers: [],
+          correctAnswer: "1846",
+          correctValue: 1846,
+          explanation:
+            "En 1846. Le Français Urbain Le Verrier avait calculé sa position grâce aux perturbations de l'orbite d'Uranus, et l'Allemand Johann Galle l'a vue au télescope à l'endroit prévu.",
+        },
+        {
+          id: 15,
+          question: "À quelle altitude, en kilomètres, place-t-on d'habitude la limite de l'espace ?",
+          answers: [],
+          correctAnswer: "100",
+          correctValue: 100,
+          explanation:
+            "À 100 km. C'est la ligne de Kármán, retenue par la Fédération aéronautique internationale. L'armée et la NASA, aux États-Unis, comptent plutôt à partir de 80 km.",
+        },
+        {
+          id: 16,
+          question: "Quel est le diamètre de la Lune, en kilomètres ?",
+          answers: [],
+          correctAnswer: "3 474",
+          correctValue: 3474,
+          explanation:
+            "Environ 3 474 km, un peu plus d'un quart du diamètre de la Terre.",
+        },
+        {
+          id: 17,
+          question: "Combien de fois pèse-t-on moins lourd sur la Lune que sur Terre ?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Environ 6 fois. La gravité de la Lune vaut à peu près un sixième de celle de la Terre, d'où les grands bonds des astronautes d'Apollo.",
+        },
+        {
+          id: 18,
+          question: "Quelle vitesse faut-il atteindre pour échapper à l'attraction de la Terre, en km/h ?",
+          answers: [],
+          correctAnswer: "40 000",
+          correctValue: 40000,
+          explanation:
+            "Environ 40 000 km/h, soit 11,2 km par seconde. C'est ce qu'on appelle la vitesse de libération.",
+        },
+        {
+          id: 19,
+          question: "Combien de planètes naines l'Union astronomique internationale reconnaît-elle officiellement ?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Cinq : Cérès, Pluton, Éris, Hauméa et Makémaké. D'autres objets pourraient en être, mais ils n'ont pas été classés officiellement.",
+        },
+        {
+          id: 20,
+          question: "Quel âge a l'Univers, en millions d'années ?",
+          answers: [],
+          correctAnswer: "13 800",
+          correctValue: 13800,
+          explanation:
+            "Environ 13 800 millions d'années, donc 13,8 milliards. Ce chiffre vient surtout des mesures du satellite européen Planck.",
+        },
       ],
     },
     en: {
       title: "Estimation: space by the numbers",
       description:
-        "Ten numbers to find about space: the distance to the Moon, the speed of the ISS, how hot the Sun is... You guess, we say higher or lower.",
+        "Twenty numbers to find about space: the distance to the Moon, the speed of the ISS, how hot the Sun is... You guess, we say higher or lower.",
       questions: [
         {
           id: 1,
@@ -221,12 +311,102 @@ export const quizEspaceChiffres: TranslatedQuiz = {
           explanation:
             "About 10 hours. Jupiter is the biggest planet, and it's also the one that spins the fastest.",
         },
+        {
+          id: 11,
+          question: "How many days does Mercury take to go around the Sun?",
+          answers: [],
+          correctAnswer: "88",
+          correctValue: 88,
+          explanation:
+            "88 days. It's the closest planet to the Sun, so it also has the shortest year.",
+        },
+        {
+          id: 12,
+          question: "How many Earth years does one year on Jupiter last, to the nearest year?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "About 12 years (11.9 to be exact). Jupiter is five times farther from the Sun than Earth is.",
+        },
+        {
+          id: 13,
+          question: "How many Earth years does Neptune take to complete one orbit of the Sun?",
+          answers: [],
+          correctAnswer: "165",
+          correctValue: 165,
+          explanation:
+            "About 165 years. Since it was discovered in 1846, Neptune has only finished one lap, completed in 2011.",
+        },
+        {
+          id: 14,
+          question: "In what year was the planet Neptune discovered?",
+          answers: [],
+          correctAnswer: "1846",
+          correctValue: 1846,
+          explanation:
+            "In 1846. The French mathematician Urbain Le Verrier worked out where it should be from the way Uranus's orbit was disturbed, and the German astronomer Johann Galle spotted it right there.",
+        },
+        {
+          id: 15,
+          question: "At what altitude, in kilometres, is the edge of space usually placed?",
+          answers: [],
+          correctAnswer: "100",
+          correctValue: 100,
+          explanation:
+            "At 100 km. That's the Kármán line, used by the World Air Sports Federation (FAI). In the United States, the military and NASA tend to count from 80 km instead.",
+        },
+        {
+          id: 16,
+          question: "What is the diameter of the Moon, in kilometres?",
+          answers: [],
+          correctAnswer: "3,474",
+          correctValue: 3474,
+          explanation:
+            "About 3,474 km, a little over a quarter of Earth's diameter.",
+        },
+        {
+          id: 17,
+          question: "How many times lighter do you weigh on the Moon than on Earth?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "About 6 times. The Moon's gravity is roughly one sixth of Earth's, which is why the Apollo astronauts bounced around like that.",
+        },
+        {
+          id: 18,
+          question: "What speed do you need to escape Earth's gravity, in km/h?",
+          answers: [],
+          correctAnswer: "40,000",
+          correctValue: 40000,
+          explanation:
+            "About 40,000 km/h, or 11.2 km per second. This is called escape velocity.",
+        },
+        {
+          id: 19,
+          question: "How many dwarf planets does the International Astronomical Union officially recognise?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Five: Ceres, Pluto, Eris, Haumea and Makemake. Other objects probably qualify, but they haven't been officially classified.",
+        },
+        {
+          id: 20,
+          question: "How old is the universe, in millions of years?",
+          answers: [],
+          correctAnswer: "13,800",
+          correctValue: 13800,
+          explanation:
+            "About 13,800 million years, so 13.8 billion. The figure mostly comes from measurements made by the European Planck satellite.",
+        },
       ],
     },
     es: {
       title: "Estimación: el espacio en cifras",
       description:
-        "Diez números sobre el espacio: la distancia a la Luna, la velocidad de la ISS, el calor del Sol... Tú propones y te decimos si es más o menos.",
+        "Veinte números sobre el espacio: la distancia a la Luna, la velocidad de la ISS, el calor del Sol... Tú propones y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -322,6 +502,96 @@ export const quizEspaceChiffres: TranslatedQuiz = {
           correctValue: 10,
           explanation:
             "Unas 10 horas. Júpiter es el planeta más grande y también el que gira más rápido sobre sí mismo.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos días tarda Mercurio en dar la vuelta al Sol?",
+          answers: [],
+          correctAnswer: "88",
+          correctValue: 88,
+          explanation:
+            "88 días. Es el planeta más cercano al Sol, así que también es el que tiene el año más corto.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántos años terrestres dura un año en Júpiter, redondeando?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "Unos 12 años (11,9 para ser exactos). Júpiter está cinco veces más lejos del Sol que la Tierra.",
+        },
+        {
+          id: 13,
+          question: "¿Cuántos años terrestres tarda Neptuno en dar una vuelta completa al Sol?",
+          answers: [],
+          correctAnswer: "165",
+          correctValue: 165,
+          explanation:
+            "Unos 165 años. Desde que se descubrió en 1846, Neptuno solo ha completado una vuelta, que terminó en 2011.",
+        },
+        {
+          id: 14,
+          question: "¿En qué año se descubrió el planeta Neptuno?",
+          answers: [],
+          correctAnswer: "1846",
+          correctValue: 1846,
+          explanation:
+            "En 1846. El francés Urbain Le Verrier calculó su posición a partir de las perturbaciones de la órbita de Urano, y el alemán Johann Galle lo vio con el telescopio justo donde había dicho.",
+        },
+        {
+          id: 15,
+          question: "¿A qué altitud, en kilómetros, se suele situar el límite del espacio?",
+          answers: [],
+          correctAnswer: "100",
+          correctValue: 100,
+          explanation:
+            "A 100 km. Es la línea de Kármán, la que usa la Federación Aeronáutica Internacional. En Estados Unidos, el ejército y la NASA suelen contar a partir de 80 km.",
+        },
+        {
+          id: 16,
+          question: "¿Cuál es el diámetro de la Luna, en kilómetros?",
+          answers: [],
+          correctAnswer: "3474",
+          correctValue: 3474,
+          explanation:
+            "Unos 3474 km, algo más de la cuarta parte del diámetro de la Tierra.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántas veces menos se pesa en la Luna que en la Tierra?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Unas 6 veces. La gravedad de la Luna es más o menos la sexta parte de la terrestre, de ahí los saltos de los astronautas del Apolo.",
+        },
+        {
+          id: 18,
+          question: "¿Qué velocidad hay que alcanzar para escapar de la gravedad de la Tierra, en km/h?",
+          answers: [],
+          correctAnswer: "40 000",
+          correctValue: 40000,
+          explanation:
+            "Unos 40 000 km/h, es decir, 11,2 km por segundo. Es lo que se llama velocidad de escape.",
+        },
+        {
+          id: 19,
+          question: "¿Cuántos planetas enanos reconoce oficialmente la Unión Astronómica Internacional?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Cinco: Ceres, Plutón, Eris, Haumea y Makemake. Hay otros objetos que podrían serlo, pero no se han clasificado oficialmente.",
+        },
+        {
+          id: 20,
+          question: "¿Qué edad tiene el universo, en millones de años?",
+          answers: [],
+          correctAnswer: "13 800",
+          correctValue: 13800,
+          explanation:
+            "Unos 13 800 millones de años. La cifra sale sobre todo de las mediciones del satélite europeo Planck.",
         },
       ],
     },

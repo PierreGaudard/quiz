@@ -22,7 +22,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
     fr: {
       title: "Quiz Demon Slayer : connais-tu Tanjiro ?",
       description:
-        "Dix questions sur Demon Slayer : Tanjiro, Nezuko, les Piliers, les respirations et le film Le Train de l'infini.",
+        "Vingt questions sur Demon Slayer : Tanjiro, Nezuko, les Piliers, les respirations et le film Le Train de l'infini.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizDemonSlayer: TranslatedQuiz = {
           explanation:
             "Il y a neuf Piliers, les meilleurs épéistes du corps, comme Rengoku pour la Flamme ou Giyu Tomioka pour l'Eau. Le chiffre douze, c'est celui des lunes chez les démons.",
         },
+        {
+          id: 11,
+          question: "Quel est le titre japonais de Demon Slayer ?",
+          answers: [
+            { id: "a", text: "Boku no Hero Academia" },
+            { id: "b", text: "Shingeki no Kyojin" },
+            { id: "c", text: "Kimetsu no Yaiba" },
+            { id: "d", text: "Jujutsu Kaisen" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Kimetsu no Yaiba, qu'on peut traduire par « la lame qui pourfend les démons ». Shingeki no Kyojin, c'est L'Attaque des Titans.",
+        },
+        {
+          id: 12,
+          question: "Qu'est-ce que Nezuko porte dans la bouche ?",
+          answers: [
+            { id: "a", text: "Une fleur" },
+            { id: "b", text: "Un ruban" },
+            { id: "c", text: "Un masque" },
+            { id: "d", text: "Un morceau de bambou" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Un morceau de bambou. Il l'empêche de mordre quelqu'un, et c'est devenu un des signes les plus connus du personnage.",
+        },
+        {
+          id: 13,
+          question: "Comment Tanjiro transporte-t-il Nezuko pendant la journée ?",
+          answers: [
+            { id: "a", text: "Dans un chariot" },
+            { id: "b", text: "Dans ses bras" },
+            { id: "c", text: "Sur le dos d'un cheval" },
+            { id: "d", text: "Dans une boîte en bois sur son dos" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Dans une boîte en bois qu'il porte sur son dos. Nezuko rapetisse pour tenir dedans, ce qui la protège de la lumière du soleil.",
+        },
+        {
+          id: 14,
+          question: "En plus d'un sabre spécial, qu'est-ce qui peut tuer un démon ?",
+          answers: [
+            { id: "a", text: "Le froid" },
+            { id: "b", text: "L'eau" },
+            { id: "c", text: "Le feu" },
+            { id: "d", text: "La lumière du soleil" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "La lumière du soleil. C'est pour ça que les démons ne sortent que la nuit, et que Nezuko doit rester à l'abri pendant la journée.",
+        },
+        {
+          id: 15,
+          question: "Quel sens Tanjiro a-t-il particulièrement développé ?",
+          answers: [
+            { id: "a", text: "L'ouïe" },
+            { id: "b", text: "La vue" },
+            { id: "c", text: "L'odorat" },
+            { id: "d", text: "Le goût" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "L'odorat. Il sent les démons, et même les émotions des gens. Zenitsu, lui, a une ouïe très fine, et Inosuke un toucher très sensible.",
+        },
+        {
+          id: 16,
+          question: "Quel masque porte Sakonji Urokodaki, le maître de Tanjiro ?",
+          answers: [
+            { id: "a", text: "Un masque de tengu rouge" },
+            { id: "b", text: "Un masque de sanglier" },
+            { id: "c", text: "Un masque de renard blanc" },
+            { id: "d", text: "Un masque de chat noir" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un masque de tengu rouge, une créature du folklore japonais. Il dit le porter parce que son visage est trop gentil pour faire peur aux démons. Les masques de renard, ce sont ceux qu'il fabrique pour ses élèves.",
+        },
+        {
+          id: 17,
+          question: "Quel motif a le haori, la veste, de Tanjiro ?",
+          answers: [
+            { id: "a", text: "Des papillons" },
+            { id: "b", text: "Un damier vert et noir" },
+            { id: "c", text: "Des vagues bleues" },
+            { id: "d", text: "Des flammes" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Un damier vert et noir. Le haori à papillons est celui de Shinobu, et celui à flammes appartient à Rengoku.",
+        },
+        {
+          id: 18,
+          question: "Quel animal transmet les missions aux pourfendeurs de démons ?",
+          answers: [
+            { id: "a", text: "Un corbeau" },
+            { id: "b", text: "Un chat" },
+            { id: "c", text: "Un renard" },
+            { id: "d", text: "Un hibou" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un corbeau qui parle. Chaque pourfendeur a le sien. Zenitsu, lui, reçoit un moineau, ce qui fait souvent rire dans la série !",
+        },
+        {
+          id: 19,
+          question: "Comment Nezuko reprend-elle des forces, puisqu'elle ne mange pas d'humains ?",
+          answers: [
+            { id: "a", text: "En buvant de l'eau" },
+            { id: "b", text: "En restant au soleil" },
+            { id: "c", text: "En mangeant du riz" },
+            { id: "d", text: "En dormant" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "En dormant. Elle peut dormir très longtemps, et c'est comme ça qu'elle récupère au lieu de dévorer des gens comme les autres démons.",
+        },
+        {
+          id: 20,
+          question: "Quelle danse, apprise de son père, Tanjiro utilise-t-il au combat ?",
+          answers: [
+            { id: "a", text: "La danse de la lune" },
+            { id: "b", text: "La danse du dragon" },
+            { id: "c", text: "La danse des lucioles" },
+            { id: "d", text: "La danse du dieu du Feu" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "La danse du dieu du Feu, Hinokami Kagura en japonais. Son père la dansait chaque année pour le Nouvel An, et Tanjiro s'en souvient en plein combat contre Rui.",
+        },
       ],
     },
     en: {
       title: "Demon Slayer quiz: how well do you know it?",
       description:
-        "Ten questions on Demon Slayer: Tanjiro, Nezuko, the Hashira, the breathing styles and the Mugen Train movie.",
+        "Twenty questions on Demon Slayer: Tanjiro, Nezuko, the Hashira, the breathing styles and the Mugen Train movie.",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizDemonSlayer: TranslatedQuiz = {
           explanation:
             "There are nine Hashira, the Corps' best swordsmen, like Rengoku for Flame or Giyu Tomioka for Water. Twelve is the number of Moons on the demon side.",
         },
+        {
+          id: 11,
+          question: "What is Demon Slayer's Japanese title?",
+          answers: [
+            { id: "a", text: "Boku no Hero Academia" },
+            { id: "b", text: "Shingeki no Kyojin" },
+            { id: "c", text: "Kimetsu no Yaiba" },
+            { id: "d", text: "Jujutsu Kaisen" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Kimetsu no Yaiba, roughly 'the blade that slays demons'. Shingeki no Kyojin is Attack on Titan.",
+        },
+        {
+          id: 12,
+          question: "What does Nezuko have in her mouth?",
+          answers: [
+            { id: "a", text: "A flower" },
+            { id: "b", text: "A ribbon" },
+            { id: "c", text: "A mask" },
+            { id: "d", text: "A piece of bamboo" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "A piece of bamboo. It stops her from biting anyone, and it's become one of the best-known things about her.",
+        },
+        {
+          id: 13,
+          question: "How does Tanjiro carry Nezuko during the day?",
+          answers: [
+            { id: "a", text: "In a cart" },
+            { id: "b", text: "In his arms" },
+            { id: "c", text: "On horseback" },
+            { id: "d", text: "In a wooden box on his back" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "In a wooden box he carries on his back. Nezuko shrinks to fit inside, which keeps her out of the sunlight.",
+        },
+        {
+          id: 14,
+          question: "Apart from a special sword, what can kill a demon?",
+          answers: [
+            { id: "a", text: "Cold" },
+            { id: "b", text: "Water" },
+            { id: "c", text: "Fire" },
+            { id: "d", text: "Sunlight" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Sunlight. That's why demons only come out at night, and why Nezuko has to stay sheltered during the day.",
+        },
+        {
+          id: 15,
+          question: "Which sense is especially sharp in Tanjiro?",
+          answers: [
+            { id: "a", text: "Hearing" },
+            { id: "b", text: "Sight" },
+            { id: "c", text: "Smell" },
+            { id: "d", text: "Taste" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Smell. He can sniff out demons and even people's emotions. Zenitsu has super sharp hearing, and Inosuke a very sensitive sense of touch.",
+        },
+        {
+          id: 16,
+          question: "What mask does Sakonji Urokodaki, Tanjiro's master, wear?",
+          answers: [
+            { id: "a", text: "A red tengu mask" },
+            { id: "b", text: "A boar mask" },
+            { id: "c", text: "A white fox mask" },
+            { id: "d", text: "A black cat mask" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A red tengu mask, a creature from Japanese folklore. He says he wears it because his face is too kind to scare demons. The fox masks are the ones he makes for his students.",
+        },
+        {
+          id: 17,
+          question: "What pattern is on Tanjiro's haori, his jacket?",
+          answers: [
+            { id: "a", text: "Butterflies" },
+            { id: "b", text: "A green and black checkerboard" },
+            { id: "c", text: "Blue waves" },
+            { id: "d", text: "Flames" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A green and black checkerboard. The butterfly haori belongs to Shinobu, and the flame one to Rengoku.",
+        },
+        {
+          id: 18,
+          question: "Which animal passes missions on to the demon slayers?",
+          answers: [
+            { id: "a", text: "A crow" },
+            { id: "b", text: "A cat" },
+            { id: "c", text: "A fox" },
+            { id: "d", text: "An owl" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A talking crow. Every slayer gets one. Zenitsu gets a sparrow instead, which makes for some funny moments!",
+        },
+        {
+          id: 19,
+          question: "How does Nezuko get her strength back, since she doesn't eat humans?",
+          answers: [
+            { id: "a", text: "By drinking water" },
+            { id: "b", text: "By sitting in the sun" },
+            { id: "c", text: "By eating rice" },
+            { id: "d", text: "By sleeping" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "By sleeping. She can sleep for a very long time, and that's how she recovers instead of eating people like other demons do.",
+        },
+        {
+          id: 20,
+          question: "Which dance, learned from his father, does Tanjiro use in battle?",
+          answers: [
+            { id: "a", text: "The Moon Dance" },
+            { id: "b", text: "The Dragon Dance" },
+            { id: "c", text: "The Firefly Dance" },
+            { id: "d", text: "The Dance of the Fire God" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "The Dance of the Fire God, Hinokami Kagura in Japanese. His father danced it every New Year, and Tanjiro remembers it in the middle of his fight with Rui.",
+        },
       ],
     },
     es: {
       title: "Quiz de Demon Slayer: ¿conoces a Tanjiro?",
       description:
-        "Diez preguntas sobre Demon Slayer: Tanjiro, Nezuko, los Pilares, las respiraciones y la película Tren Infinito.",
+        "Veinte preguntas sobre Demon Slayer: Tanjiro, Nezuko, los Pilares, las respiraciones y la película Tren Infinito.",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizDemonSlayer: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Hay nueve Pilares, los mejores espadachines del Cuerpo, como Rengoku para la Llama o Giyu Tomioka para el Agua. El doce es el número de Lunas del lado de los demonios.",
+        },
+        {
+          id: 11,
+          question: "¿Cuál es el título japonés de Demon Slayer?",
+          answers: [
+            { id: "a", text: "Boku no Hero Academia" },
+            { id: "b", text: "Shingeki no Kyojin" },
+            { id: "c", text: "Kimetsu no Yaiba" },
+            { id: "d", text: "Jujutsu Kaisen" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Kimetsu no Yaiba, algo así como «la espada que mata demonios». Shingeki no Kyojin es Ataque a los Titanes.",
+        },
+        {
+          id: 12,
+          question: "¿Qué lleva Nezuko en la boca?",
+          answers: [
+            { id: "a", text: "Una flor" },
+            { id: "b", text: "Una cinta" },
+            { id: "c", text: "Una máscara" },
+            { id: "d", text: "Un trozo de bambú" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Un trozo de bambú. Le impide morder a nadie, y se ha convertido en una de las señas del personaje.",
+        },
+        {
+          id: 13,
+          question: "¿Cómo lleva Tanjiro a Nezuko durante el día?",
+          answers: [
+            { id: "a", text: "En un carro" },
+            { id: "b", text: "En brazos" },
+            { id: "c", text: "A caballo" },
+            { id: "d", text: "En una caja de madera a la espalda" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "En una caja de madera que carga a la espalda. Nezuko se encoge para caber dentro, y así no le da la luz del sol.",
+        },
+        {
+          id: 14,
+          question: "Además de una espada especial, ¿qué puede matar a un demonio?",
+          answers: [
+            { id: "a", text: "El frío" },
+            { id: "b", text: "El agua" },
+            { id: "c", text: "El fuego" },
+            { id: "d", text: "La luz del sol" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "La luz del sol. Por eso los demonios solo salen de noche, y Nezuko tiene que ponerse a cubierto durante el día.",
+        },
+        {
+          id: 15,
+          question: "¿Qué sentido tiene Tanjiro especialmente desarrollado?",
+          answers: [
+            { id: "a", text: "El oído" },
+            { id: "b", text: "La vista" },
+            { id: "c", text: "El olfato" },
+            { id: "d", text: "El gusto" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El olfato. Huele a los demonios e incluso las emociones de la gente. Zenitsu tiene un oído finísimo, e Inosuke un tacto muy sensible.",
+        },
+        {
+          id: 16,
+          question: "¿Qué máscara lleva Sakonji Urokodaki, el maestro de Tanjiro?",
+          answers: [
+            { id: "a", text: "Una máscara de tengu roja" },
+            { id: "b", text: "Una máscara de jabalí" },
+            { id: "c", text: "Una máscara de zorro blanco" },
+            { id: "d", text: "Una máscara de gato negro" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Una máscara roja de tengu, una criatura del folclore japonés. Dice que la lleva porque su cara es demasiado amable para asustar a los demonios. Las máscaras de zorro son las que hace para sus alumnos.",
+        },
+        {
+          id: 17,
+          question: "¿Qué dibujo tiene el haori, la chaqueta, de Tanjiro?",
+          answers: [
+            { id: "a", text: "Mariposas" },
+            { id: "b", text: "Cuadros verdes y negros" },
+            { id: "c", text: "Olas azules" },
+            { id: "d", text: "Llamas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Cuadros verdes y negros, como un tablero de ajedrez. El haori de mariposas es el de Shinobu, y el de llamas, el de Rengoku.",
+        },
+        {
+          id: 18,
+          question: "¿Qué animal les transmite las misiones a los cazadores de demonios?",
+          answers: [
+            { id: "a", text: "Un cuervo" },
+            { id: "b", text: "Un gato" },
+            { id: "c", text: "Un zorro" },
+            { id: "d", text: "Un búho" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un cuervo que habla. Cada cazador tiene el suyo. A Zenitsu, en cambio, le toca un gorrión, y eso da para más de una escena graciosa.",
+        },
+        {
+          id: 19,
+          question: "¿Cómo recupera fuerzas Nezuko, si no come humanos?",
+          answers: [
+            { id: "a", text: "Bebiendo agua" },
+            { id: "b", text: "Tomando el sol" },
+            { id: "c", text: "Comiendo arroz" },
+            { id: "d", text: "Durmiendo" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Durmiendo. Puede dormir muchísimo tiempo, y así se recupera en lugar de comerse a la gente como los demás demonios.",
+        },
+        {
+          id: 20,
+          question: "¿Qué danza, aprendida de su padre, usa Tanjiro en combate?",
+          answers: [
+            { id: "a", text: "La danza de la luna" },
+            { id: "b", text: "La danza del dragón" },
+            { id: "c", text: "La danza de las luciérnagas" },
+            { id: "d", text: "La danza del dios del fuego" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "La danza del dios del fuego, Hinokami Kagura en japonés. Su padre la bailaba cada Año Nuevo, y Tanjiro la recuerda en plena pelea contra Rui.",
         },
       ],
     },

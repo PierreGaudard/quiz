@@ -23,7 +23,7 @@ export const quizRoblox: TranslatedQuiz = {
     fr: {
       title: "Duel Roblox : lequel des deux ?",
       description:
-        "Dix duels sur Roblox, son histoire, ses Robux et ses jeux les plus connus. Deux propositions à chaque fois, une seule est la bonne.",
+        "Vingt duels sur Roblox, son histoire, ses Robux et ses jeux les plus connus. Deux propositions à chaque fois, une seule est la bonne.",
       questions: [
         {
           id: 1,
@@ -139,12 +139,122 @@ export const quizRoblox: TranslatedQuiz = {
           explanation:
             "San Mateo, au sud de San Francisco, en plein dans la Silicon Valley.",
         },
+        {
+          id: 11,
+          question: "Dans quel pays est né David Baszucki, le cofondateur de Roblox ?",
+          answers: [
+            { id: "a", text: "Au Royaume-Uni" },
+            { id: "b", text: "Au Canada" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Au Canada, à Winnipeg, en 1963. Il a ensuite grandi aux États-Unis, dans le Minnesota.",
+        },
+        {
+          id: 12,
+          question: "Avec quelle entreprise Roblox a-t-il lancé une version chinoise en 2021 ?",
+          answers: [
+            { id: "a", text: "Tencent" },
+            { id: "b", text: "Alibaba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Avec Tencent. Cette version chinoise, appelée LuoBuLeSi, a été fermée la même année.",
+        },
+        {
+          id: 13,
+          question: "Quel jeu Roblox a été le premier à dépasser les 25 millions de joueurs connectés en même temps, en octobre 2025 ?",
+          answers: [
+            { id: "a", text: "Adopt Me!" },
+            { id: "b", text: "Steal a Brainrot" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Steal a Brainrot, avec un pic à 25,4 millions. Le jeu avait déjà battu en septembre le record de Grow a Garden. On y achète des personnages appelés Brainrots, et on vole ceux des autres joueurs.",
+        },
+        {
+          id: 14,
+          question: "Lequel de ces deux groupes a donné un concert virtuel sur Roblox ?",
+          answers: [
+            { id: "a", text: "Twenty One Pilots" },
+            { id: "b", text: "Les Beatles" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Twenty One Pilots. La chanteuse suédoise Zara Larsson y a aussi donné un concert. Les Beatles se sont séparés en 1970, bien avant l'arrivée de Roblox.",
+        },
+        {
+          id: 15,
+          question: "Quel pays a bloqué l'accès à Roblox en août 2024 ?",
+          answers: [
+            { id: "a", text: "L'Espagne" },
+            { id: "b", text: "La Turquie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La Turquie, le 7 août 2024. Le gouvernement a mis en avant la protection des enfants, et le blocage était toujours en place à l'été 2026.",
+        },
+        {
+          id: 16,
+          question: "Comment s'appelle l'abonnement payant de Roblox depuis mai 2026 ?",
+          answers: [
+            { id: "a", text: "Roblox Plus" },
+            { id: "b", text: "Roblox Gold" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Roblox Plus, qui a remplacé Roblox Premium en mai 2026.",
+        },
+        {
+          id: 17,
+          question: "Dans quel jeu Roblox des abeilles récoltent-elles du pollen pour en faire du miel ?",
+          answers: [
+            { id: "a", text: "Jailbreak" },
+            { id: "b", text: "Bee Swarm Simulator" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Bee Swarm Simulator, du studio Onett. Les abeilles suivent le joueur, ramassent le pollen des fleurs, et le pollen est ensuite changé en miel.",
+        },
+        {
+          id: 18,
+          question: "Dans quel jeu Roblox faut-il protéger son lit tout en détruisant celui des autres équipes ?",
+          answers: [
+            { id: "a", text: "BedWars" },
+            { id: "b", text: "Blox Fruits" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "BedWars, qui reprend un mini-jeu très connu créé par des fans de Minecraft. La version Roblox propose d'ailleurs plus d'armes.",
+        },
+        {
+          id: 19,
+          question: "Lequel de ces deux jeux Roblox est le plus ancien ?",
+          answers: [
+            { id: "a", text: "Grow a Garden" },
+            { id: "b", text: "Jailbreak" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jailbreak, sorti en avril 2017. Grow a Garden n'est arrivé que le 26 mars 2025.",
+        },
+        {
+          id: 20,
+          question: "Dans quelle université David Baszucki a-t-il fait ses études ?",
+          answers: [
+            { id: "a", text: "Stanford" },
+            { id: "b", text: "Harvard" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Stanford, en Californie, où il a obtenu un diplôme d'ingénieur en électricité en 1985.",
+        },
       ],
     },
     en: {
       title: "Roblox Duel: which of the two?",
       description:
-        "Ten duels on Roblox, its history, its Robux and its best known games. Two options every time, and only one is right.",
+        "Twenty duels on Roblox, its history, its Robux and its best known games. Two options every time, and only one is right.",
       questions: [
         {
           id: 1,
@@ -260,12 +370,122 @@ export const quizRoblox: TranslatedQuiz = {
           explanation:
             "San Mateo, just south of San Francisco, right in Silicon Valley.",
         },
+        {
+          id: 11,
+          question: "Which country was David Baszucki, the co-founder of Roblox, born in?",
+          answers: [
+            { id: "a", text: "The United Kingdom" },
+            { id: "b", text: "Canada" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Canada, in Winnipeg, in 1963. He then grew up in the United States, in Minnesota.",
+        },
+        {
+          id: 12,
+          question: "Which company did Roblox launch a Chinese version with in 2021?",
+          answers: [
+            { id: "a", text: "Tencent" },
+            { id: "b", text: "Alibaba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tencent. The Chinese version, called LuoBuLeSi, was shut down the same year.",
+        },
+        {
+          id: 13,
+          question: "Which Roblox game was the first to pass 25 million players online at the same time, in October 2025?",
+          answers: [
+            { id: "a", text: "Adopt Me!" },
+            { id: "b", text: "Steal a Brainrot" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Steal a Brainrot, with a peak of 25.4 million. It had already broken the Grow a Garden record in September. In the game you buy characters called Brainrots and steal other players' ones.",
+        },
+        {
+          id: 14,
+          question: "Which of these two bands played a virtual concert on Roblox?",
+          answers: [
+            { id: "a", text: "Twenty One Pilots" },
+            { id: "b", text: "The Beatles" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Twenty One Pilots. Swedish singer Zara Larsson also played a concert there. The Beatles split up in 1970, long before Roblox existed.",
+        },
+        {
+          id: 15,
+          question: "Which country blocked access to Roblox in August 2024?",
+          answers: [
+            { id: "a", text: "Spain" },
+            { id: "b", text: "Turkey" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Turkey, on 7 August 2024. The government pointed to child protection, and the block was still in place in the summer of 2026.",
+        },
+        {
+          id: 16,
+          question: "What has Roblox's paid subscription been called since May 2026?",
+          answers: [
+            { id: "a", text: "Roblox Plus" },
+            { id: "b", text: "Roblox Gold" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Roblox Plus, which replaced Roblox Premium in May 2026.",
+        },
+        {
+          id: 17,
+          question: "In which Roblox game do bees collect pollen to turn it into honey?",
+          answers: [
+            { id: "a", text: "Jailbreak" },
+            { id: "b", text: "Bee Swarm Simulator" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Bee Swarm Simulator, by the studio Onett. The bees follow the player around and pick up pollen from flowers, and the pollen is then turned into honey.",
+        },
+        {
+          id: 18,
+          question: "In which Roblox game do you protect your bed while destroying the other teams' beds?",
+          answers: [
+            { id: "a", text: "BedWars" },
+            { id: "b", text: "Blox Fruits" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "BedWars, based on a well-known minigame that Minecraft fans came up with. The Roblox version also has more weapons.",
+        },
+        {
+          id: 19,
+          question: "Which of these two Roblox games is older?",
+          answers: [
+            { id: "a", text: "Grow a Garden" },
+            { id: "b", text: "Jailbreak" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jailbreak, released in April 2017. Grow a Garden only came out on 26 March 2025.",
+        },
+        {
+          id: 20,
+          question: "Which university did David Baszucki go to?",
+          answers: [
+            { id: "a", text: "Stanford" },
+            { id: "b", text: "Harvard" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Stanford, in California, where he got an electrical engineering degree in 1985.",
+        },
       ],
     },
     es: {
       title: "Duelo Roblox: ¿cuál de los dos?",
       description:
-        "Diez duelos sobre Roblox, su historia, sus Robux y sus juegos más conocidos. Dos opciones cada vez y solo una es la buena.",
+        "Veinte duelos sobre Roblox, su historia, sus Robux y sus juegos más conocidos. Dos opciones cada vez y solo una es la buena.",
       questions: [
         {
           id: 1,
@@ -380,6 +600,116 @@ export const quizRoblox: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "San Mateo, al sur de San Francisco, en pleno Silicon Valley.",
+        },
+        {
+          id: 11,
+          question: "¿En qué país nació David Baszucki, el cofundador de Roblox?",
+          answers: [
+            { id: "a", text: "En el Reino Unido" },
+            { id: "b", text: "En Canadá" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Canadá, en Winnipeg, en 1963. Luego creció en Estados Unidos, en Minnesota.",
+        },
+        {
+          id: 12,
+          question: "¿Con qué empresa lanzó Roblox una versión china en 2021?",
+          answers: [
+            { id: "a", text: "Tencent" },
+            { id: "b", text: "Alibaba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Con Tencent. Esa versión china, llamada LuoBuLeSi, cerró ese mismo año.",
+        },
+        {
+          id: 13,
+          question: "¿Qué juego de Roblox fue el primero en superar los 25 millones de jugadores conectados a la vez, en octubre de 2025?",
+          answers: [
+            { id: "a", text: "Adopt Me!" },
+            { id: "b", text: "Steal a Brainrot" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Steal a Brainrot, con un pico de 25,4 millones. Ya había batido en septiembre el récord de Grow a Garden. En el juego se compran personajes llamados Brainrots y se roban los de otros jugadores.",
+        },
+        {
+          id: 14,
+          question: "¿Cuál de estos dos grupos dio un concierto virtual en Roblox?",
+          answers: [
+            { id: "a", text: "Twenty One Pilots" },
+            { id: "b", text: "The Beatles" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Twenty One Pilots. La cantante sueca Zara Larsson también dio un concierto allí. The Beatles se separaron en 1970, mucho antes de que existiera Roblox.",
+        },
+        {
+          id: 15,
+          question: "¿Qué país bloqueó el acceso a Roblox en agosto de 2024?",
+          answers: [
+            { id: "a", text: "España" },
+            { id: "b", text: "Turquía" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Turquía, el 7 de agosto de 2024. El gobierno alegó la protección de los niños, y el bloqueo seguía en pie en el verano de 2026.",
+        },
+        {
+          id: 16,
+          question: "¿Cómo se llama la suscripción de pago de Roblox desde mayo de 2026?",
+          answers: [
+            { id: "a", text: "Roblox Plus" },
+            { id: "b", text: "Roblox Gold" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Roblox Plus, que sustituyó a Roblox Premium en mayo de 2026.",
+        },
+        {
+          id: 17,
+          question: "¿En qué juego de Roblox las abejas recogen polen para convertirlo en miel?",
+          answers: [
+            { id: "a", text: "Jailbreak" },
+            { id: "b", text: "Bee Swarm Simulator" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Bee Swarm Simulator, del estudio Onett. Las abejas siguen al jugador y recogen el polen de las flores, que después se convierte en miel.",
+        },
+        {
+          id: 18,
+          question: "¿En qué juego de Roblox hay que proteger tu cama mientras destruyes la de los otros equipos?",
+          answers: [
+            { id: "a", text: "BedWars" },
+            { id: "b", text: "Blox Fruits" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "BedWars, basado en un minijuego muy conocido que crearon fans de Minecraft. La versión de Roblox tiene además más armas.",
+        },
+        {
+          id: 19,
+          question: "¿Cuál de estos dos juegos de Roblox es más antiguo?",
+          answers: [
+            { id: "a", text: "Grow a Garden" },
+            { id: "b", text: "Jailbreak" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jailbreak, que salió en abril de 2017. Grow a Garden no llegó hasta el 26 de marzo de 2025.",
+        },
+        {
+          id: 20,
+          question: "¿En qué universidad estudió David Baszucki?",
+          answers: [
+            { id: "a", text: "Stanford" },
+            { id: "b", text: "Harvard" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En Stanford, en California, donde se graduó en ingeniería eléctrica en 1985.",
         },
       ],
     },

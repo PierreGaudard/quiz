@@ -29,7 +29,8 @@ const slugs: Record<string, Record<string, string>> = {
 };
 const s = (key: string) => slugs[key]?.[locale] || slugs[key]?.en || key;
 
-const sitemapCategories = getCategories(locale);
+const sitemapCategories = getCategories(locale).filter((c) => c.subcategories.length > 0);
+const categoriesLabel: Record<string, string> = { en: "Categories", fr: "Catégories", es: "Categorías" };
 
 import { SOCIAL_LINKS } from "../config/social";
 const SOCIAL_LABELS: Record<string, string> = { facebook: "Facebook", x: "X", instagram: "Instagram", youtube: "YouTube" };
@@ -45,11 +46,11 @@ const socials = Object.entries(SOCIAL_LINKS).filter(([n, h]) => h && SOCIAL_ICON
 <footer class="bg-[#1a0e42] border-t border-white/5">
   {/* Main footer */}
   <div class="max-w-6xl mx-auto px-4 py-10">
-    <div class="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1fr] gap-10 text-center md:text-left">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.3fr_1fr_1fr_1fr] gap-10 text-center md:text-left">
       {/* Col 1: Brand + description + socials */}
       <div class="flex flex-col items-center md:items-start">
         <a href={lp('/')} class="flex items-center mb-4" aria-label="WizyQuiz">
-          <img src={withBase('/logo.webp')} alt="WizyQuiz" width="359" height="120" class="h-10 w-auto" />
+          <img src={withBase('/logo.webp')} alt="WizyQuiz" width="359" height="120" class="h-16 w-auto" />
         </a>
         <p class="text-sm text-white/50 leading-relaxed mb-5 max-w-xs">
           {t(locale, "footer.description")}
@@ -63,7 +64,17 @@ const socials = Object.entries(SOCIAL_LINKS).filter(([n, h]) => h && SOCIAL_ICON
         )}
       </div>
 
-      {/* Col 2: Quiz & Games */}
+      {/* Col 2: Categories */}
+      <div>
+        <p class="font-display font-bold text-white text-sm mb-4">{categoriesLabel[locale] || categoriesLabel.en}</p>
+        <ul class="space-y-2.5">
+          {sitemapCategories.map((cat) => (
+            <li><a href={lp(`/${cat.slug}`)} class="text-sm text-white/50 hover:text-white transition-colors">{cat.name}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Col 3: Quiz & Games */}
       <div>
         <p class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.quizzesAndGames")}</p>
         <ul class="space-y-2.5">
@@ -73,7 +84,7 @@ const socials = Object.entries(SOCIAL_LINKS).filter(([n, h]) => h && SOCIAL_ICON
         </ul>
       </div>
 
-      {/* Col 3: Information */}
+      {/* Col 4: Information */}
       <div>
         <p class="font-display font-bold text-white text-sm mb-4">{t(locale, "footer.information")}</p>
         <ul class="space-y-2.5">

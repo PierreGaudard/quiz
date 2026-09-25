@@ -21,7 +21,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
     fr: {
       title: "Quiz Roblox : les jeux les plus connus",
       description:
-        "Brookhaven, Blox Fruits, Grow a Garden, Doors, Piggy ou encore Jailbreak : dix questions sur les jeux Roblox les plus joués.",
+        "Brookhaven, Blox Fruits, Grow a Garden, Doors, Piggy ou encore Jailbreak : vingt questions sur les jeux Roblox les plus joués.",
       questions: [
         {
           id: 1,
@@ -157,12 +157,142 @@ export const quizRobloxJeux: TranslatedQuiz = {
           explanation:
             "Un parcours d'obstacles. Le mot vient de l'anglais « obstacle course ». C'est un des genres les plus courants sur Roblox, et Tower of Hell en est un.",
         },
+        {
+          id: 11,
+          question: "Dans Natural Disaster Survival, à quoi faut-il survivre ?",
+          answers: [
+            { id: "a", text: "À des vagues de zombies" },
+            { id: "b", text: "À des catastrophes naturelles" },
+            { id: "c", text: "À une chute dans l'espace" },
+            { id: "d", text: "À une invasion de robots" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "À des catastrophes naturelles : tremblements de terre, tornades, tsunamis, etc. À chaque manche, une catastrophe s'abat sur la carte, et il faut être encore en vie quand elle s'arrête.",
+        },
+        {
+          id: 12,
+          question: "Que font les joueurs dans Work at a Pizza Place ?",
+          answers: [
+            { id: "a", text: "Ils livrent des colis en camion" },
+            { id: "b", text: "Ils travaillent ensemble dans une pizzeria" },
+            { id: "c", text: "Ils cuisinent dans un concours télé" },
+            { id: "d", text: "Ils tiennent un stand de glaces" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ils travaillent ensemble dans une pizzeria. L'un prend les commandes, un autre prépare les pizzas, un autre les livre, et l'argent gagné sert à personnaliser son avatar et sa maison.",
+        },
+        {
+          id: 13,
+          question: "Dans Pet Simulator, d'où sortent les animaux qu'on collectionne ?",
+          answers: [
+            { id: "a", text: "D'œufs qu'on achète" },
+            { id: "b", text: "De cartes à gratter" },
+            { id: "c", text: "De coffres au fond de la mer" },
+            { id: "d", text: "De cadeaux de Noël" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "D'œufs, qu'on achète avec la monnaie du jeu. Il y a plus de 1 000 animaux à collectionner, et on peut les échanger avec les autres joueurs.",
+        },
+        {
+          id: 14,
+          question: "Dans 99 Nights in the Forest, que faut-il garder allumé pour survivre ?",
+          answers: [
+            { id: "a", text: "Une lampe torche" },
+            { id: "b", text: "Un feu de camp" },
+            { id: "c", text: "Un phare" },
+            { id: "d", text: "Les phares d'une voiture" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Un feu de camp, qu'on alimente avec du bois. Il faut le défendre contre le Cerf, une créature de la forêt, et contre des adeptes d'une secte.",
+        },
+        {
+          id: 15,
+          question: "Dans le jeu d'horreur Rainbow Friends, comment s'appellent les monstres ?",
+          answers: [
+            { id: "a", text: "Par des chiffres" },
+            { id: "b", text: "Par des couleurs" },
+            { id: "c", text: "Par des noms de fruits" },
+            { id: "d", text: "Par des jours de la semaine" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Par des couleurs : Blue, Green, Orange, Purple, etc. Les joueurs arrivent en sortie scolaire dans un parc d'attractions et doivent ramasser des objets sans se faire attraper.",
+        },
+        {
+          id: 16,
+          question: "Que construit-on dans Theme Park Tycoon 2 ?",
+          answers: [
+            { id: "a", text: "Un zoo" },
+            { id: "b", text: "Un parc d'attractions" },
+            { id: "c", text: "Un aéroport" },
+            { id: "d", text: "Une ville entière" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Un parc d'attractions, avec un budget à respecter. On y pose des manèges, des montagnes russes ou encore des boutiques.",
+        },
+        {
+          id: 17,
+          question: "Dans Welcome to Bloxburg, à quoi sert surtout l'argent gagné en travaillant ?",
+          answers: [
+            { id: "a", text: "À construire et décorer sa maison" },
+            { id: "b", text: "À acheter des armes" },
+            { id: "c", text: "À payer une rançon" },
+            { id: "d", text: "À recruter une équipe de foot" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "À construire et décorer sa maison. On enchaîne des petits boulots pour gagner de l'argent. Le jeu a été créé en 2014 par un développeur appelé Coeptus.",
+        },
+        {
+          id: 18,
+          question: "Dans Royale High, qui sont les joueurs ?",
+          answers: [
+            { id: "a", text: "Des pilotes de course" },
+            { id: "b", text: "Des soldats en mission" },
+            { id: "c", text: "Des élèves d'une école magique habillés comme des princes et des princesses" },
+            { id: "d", text: "Des chercheurs de trésor" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Des élèves d'une école magique, qui s'habillent comme des princes et des princesses. Le jeu a été créé en 2017 par callmehbob.",
+        },
+        {
+          id: 19,
+          question: "Dans MeepCity, comment s'appellent les petits animaux qu'on adopte et qu'on personnalise ?",
+          answers: [
+            { id: "a", text: "Les Meeps" },
+            { id: "b", text: "Les Blobs" },
+            { id: "c", text: "Les Pips" },
+            { id: "d", text: "Les Moogles" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Les Meeps. MeepCity a d'ailleurs été le premier jeu Roblox à dépasser le milliard de visites.",
+        },
+        {
+          id: 20,
+          question: "Dans le jeu de tir Arsenal, que se passe-t-il à chaque élimination ?",
+          answers: [
+            { id: "a", text: "On perd une vie" },
+            { id: "b", text: "On reçoit une nouvelle arme" },
+            { id: "c", text: "On gagne une voiture" },
+            { id: "d", text: "On monte d'un étage" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "On reçoit une nouvelle arme. Le but est de faire le plus d'éliminations possible pour passer toutes les armes. Arsenal a été créé en 2015 par le studio ROLVe.",
+        },
       ],
     },
     en: {
       title: "Roblox quiz: the most famous games",
       description:
-        "Brookhaven, Blox Fruits, Grow a Garden, Doors, Piggy, Jailbreak and more: ten questions on the most played games on Roblox.",
+        "Brookhaven, Blox Fruits, Grow a Garden, Doors, Piggy, Jailbreak and more: twenty questions on the most played games on Roblox.",
       questions: [
         {
           id: 1,
@@ -298,12 +428,142 @@ export const quizRobloxJeux: TranslatedQuiz = {
           explanation:
             "An obstacle course, from the English \"obstacle\". It's one of the most common genres on Roblox, and Tower of Hell is one of them.",
         },
+        {
+          id: 11,
+          question: "In Natural Disaster Survival, what do you have to survive?",
+          answers: [
+            { id: "a", text: "Waves of zombies" },
+            { id: "b", text: "Natural disasters" },
+            { id: "c", text: "A fall through space" },
+            { id: "d", text: "A robot invasion" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Natural disasters: earthquakes, tornadoes, tsunamis and so on. Each round, a disaster hits the map, and you have to still be alive when it stops.",
+        },
+        {
+          id: 12,
+          question: "What do players do in Work at a Pizza Place?",
+          answers: [
+            { id: "a", text: "They deliver parcels by truck" },
+            { id: "b", text: "They work together in a pizza place" },
+            { id: "c", text: "They cook on a TV contest" },
+            { id: "d", text: "They run an ice cream stand" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "They work together in a pizza place. One player takes orders, another makes the pizzas, another delivers them, and the money you earn goes into customizing your avatar and your house.",
+        },
+        {
+          id: 13,
+          question: "In Pet Simulator, where do the pets you collect come from?",
+          answers: [
+            { id: "a", text: "Eggs you buy" },
+            { id: "b", text: "Scratch cards" },
+            { id: "c", text: "Chests at the bottom of the sea" },
+            { id: "d", text: "Christmas presents" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Eggs, which you buy with the game's currency. There are over 1,000 pets to collect, and you can trade them with other players.",
+        },
+        {
+          id: 14,
+          question: "In 99 Nights in the Forest, what do you have to keep burning to survive?",
+          answers: [
+            { id: "a", text: "A flashlight" },
+            { id: "b", text: "A campfire" },
+            { id: "c", text: "A lighthouse" },
+            { id: "d", text: "A car's headlights" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A campfire, which you feed with wood. You have to defend it from the Deer, a creature of the forest, and from members of a cult.",
+        },
+        {
+          id: 15,
+          question: "In the horror game Rainbow Friends, what are the monsters named after?",
+          answers: [
+            { id: "a", text: "Numbers" },
+            { id: "b", text: "Colors" },
+            { id: "c", text: "Fruits" },
+            { id: "d", text: "Days of the week" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Colors: Blue, Green, Orange, Purple and so on. The players arrive on a school field trip to a theme park and have to pick up items without getting caught.",
+        },
+        {
+          id: 16,
+          question: "What do you build in Theme Park Tycoon 2?",
+          answers: [
+            { id: "a", text: "A zoo" },
+            { id: "b", text: "A theme park" },
+            { id: "c", text: "An airport" },
+            { id: "d", text: "A whole city" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A theme park, on a budget. You put in rides, roller coasters, shops and so on.",
+        },
+        {
+          id: 17,
+          question: "In Welcome to Bloxburg, what is the money you earn from jobs mostly for?",
+          answers: [
+            { id: "a", text: "Building and decorating your house" },
+            { id: "b", text: "Buying weapons" },
+            { id: "c", text: "Paying a ransom" },
+            { id: "d", text: "Hiring a soccer team" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Building and decorating your house. You take small jobs to earn money. The game was made in 2014 by a developer called Coeptus.",
+        },
+        {
+          id: 18,
+          question: "In Royale High, who are the players?",
+          answers: [
+            { id: "a", text: "Race car drivers" },
+            { id: "b", text: "Soldiers on a mission" },
+            { id: "c", text: "Students at a magic school who dress up as princes and princesses" },
+            { id: "d", text: "Treasure hunters" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Students at a magic school, who dress up as princes and princesses. The game was made in 2017 by callmehbob.",
+        },
+        {
+          id: 19,
+          question: "In MeepCity, what are the little pets you adopt and customize called?",
+          answers: [
+            { id: "a", text: "Meeps" },
+            { id: "b", text: "Blobs" },
+            { id: "c", text: "Pips" },
+            { id: "d", text: "Moogles" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Meeps. MeepCity was also the first Roblox game to pass one billion visits.",
+        },
+        {
+          id: 20,
+          question: "In the shooter Arsenal, what happens every time you get a kill?",
+          answers: [
+            { id: "a", text: "You lose a life" },
+            { id: "b", text: "You get a new weapon" },
+            { id: "c", text: "You win a car" },
+            { id: "d", text: "You go up a floor" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "You get a new weapon. The goal is to rack up as many kills as you can to go through all the guns. Arsenal was made in 2015 by the studio ROLVe.",
+        },
       ],
     },
     es: {
       title: "Quiz de Roblox: los juegos más famosos",
       description:
-        "Brookhaven, Blox Fruits, Grow a Garden, Doors, Piggy, Jailbreak y más: diez preguntas sobre los juegos más jugados de Roblox.",
+        "Brookhaven, Blox Fruits, Grow a Garden, Doors, Piggy, Jailbreak y más: veinte preguntas sobre los juegos más jugados de Roblox.",
       questions: [
         {
           id: 1,
@@ -438,6 +698,136 @@ export const quizRobloxJeux: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Una carrera de obstáculos. La palabra viene del inglés «obstacle course». Es uno de los géneros más comunes de Roblox, y Tower of Hell es uno de ellos.",
+        },
+        {
+          id: 11,
+          question: "En Natural Disaster Survival, ¿a qué hay que sobrevivir?",
+          answers: [
+            { id: "a", text: "A oleadas de zombis" },
+            { id: "b", text: "A desastres naturales" },
+            { id: "c", text: "A una caída al espacio" },
+            { id: "d", text: "A una invasión de robots" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A desastres naturales: terremotos, tornados, tsunamis, etc. En cada ronda cae un desastre sobre el mapa, y hay que seguir vivo cuando termina.",
+        },
+        {
+          id: 12,
+          question: "¿Qué hacen los jugadores en Work at a Pizza Place?",
+          answers: [
+            { id: "a", text: "Reparten paquetes en camión" },
+            { id: "b", text: "Trabajan juntos en una pizzería" },
+            { id: "c", text: "Cocinan en un concurso de la tele" },
+            { id: "d", text: "Llevan un puesto de helados" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Trabajan juntos en una pizzería. Uno toma los pedidos, otro prepara las pizzas, otro las reparte, y el dinero que se gana sirve para personalizar el avatar y la casa.",
+        },
+        {
+          id: 13,
+          question: "En Pet Simulator, ¿de dónde salen las mascotas que se coleccionan?",
+          answers: [
+            { id: "a", text: "De huevos que se compran" },
+            { id: "b", text: "De rascas" },
+            { id: "c", text: "De cofres en el fondo del mar" },
+            { id: "d", text: "De regalos de Navidad" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "De huevos, que se compran con la moneda del juego. Hay más de 1000 mascotas para coleccionar, y se pueden intercambiar con otros jugadores.",
+        },
+        {
+          id: 14,
+          question: "En 99 Nights in the Forest, ¿qué hay que mantener encendido para sobrevivir?",
+          answers: [
+            { id: "a", text: "Una linterna" },
+            { id: "b", text: "Una hoguera" },
+            { id: "c", text: "Un faro" },
+            { id: "d", text: "Los faros de un coche" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Una hoguera, que se alimenta con leña. Hay que defenderla del Ciervo, una criatura del bosque, y de los miembros de una secta.",
+        },
+        {
+          id: 15,
+          question: "En el juego de terror Rainbow Friends, ¿cómo se llaman los monstruos?",
+          answers: [
+            { id: "a", text: "Con números" },
+            { id: "b", text: "Con colores" },
+            { id: "c", text: "Con nombres de frutas" },
+            { id: "d", text: "Con días de la semana" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Con colores: Blue, Green, Orange, Purple, etc. Los jugadores llegan de excursión escolar a un parque de atracciones y tienen que recoger objetos sin que los pillen.",
+        },
+        {
+          id: 16,
+          question: "¿Qué se construye en Theme Park Tycoon 2?",
+          answers: [
+            { id: "a", text: "Un zoo" },
+            { id: "b", text: "Un parque de atracciones" },
+            { id: "c", text: "Un aeropuerto" },
+            { id: "d", text: "Una ciudad entera" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Un parque de atracciones, con un presupuesto que hay que respetar. Se ponen atracciones, montañas rusas o tiendas, entre otras cosas.",
+        },
+        {
+          id: 17,
+          question: "En Welcome to Bloxburg, ¿para qué sirve sobre todo el dinero que se gana trabajando?",
+          answers: [
+            { id: "a", text: "Para construir y decorar tu casa" },
+            { id: "b", text: "Para comprar armas" },
+            { id: "c", text: "Para pagar un rescate" },
+            { id: "d", text: "Para fichar a un equipo de fútbol" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Para construir y decorar tu casa. Se hacen pequeños trabajos para ganar dinero. El juego lo creó en 2014 un desarrollador llamado Coeptus.",
+        },
+        {
+          id: 18,
+          question: "En Royale High, ¿quiénes son los jugadores?",
+          answers: [
+            { id: "a", text: "Pilotos de carreras" },
+            { id: "b", text: "Soldados en una misión" },
+            { id: "c", text: "Alumnos de una escuela mágica que se visten de príncipes y princesas" },
+            { id: "d", text: "Buscadores de tesoros" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Alumnos de una escuela mágica, que se visten de príncipes y princesas. El juego lo creó en 2017 callmehbob.",
+        },
+        {
+          id: 19,
+          question: "En MeepCity, ¿cómo se llaman las mascotitas que se adoptan y se personalizan?",
+          answers: [
+            { id: "a", text: "Los Meeps" },
+            { id: "b", text: "Los Blobs" },
+            { id: "c", text: "Los Pips" },
+            { id: "d", text: "Los Moogles" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Los Meeps. MeepCity fue además el primer juego de Roblox en superar los mil millones de visitas.",
+        },
+        {
+          id: 20,
+          question: "En el juego de disparos Arsenal, ¿qué pasa cada vez que eliminas a alguien?",
+          answers: [
+            { id: "a", text: "Pierdes una vida" },
+            { id: "b", text: "Recibes un arma nueva" },
+            { id: "c", text: "Ganas un coche" },
+            { id: "d", text: "Subes un piso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Recibes un arma nueva. El objetivo es hacer el máximo de eliminaciones para pasar por todas las armas. Arsenal lo creó en 2015 el estudio ROLVe.",
         },
       ],
     },

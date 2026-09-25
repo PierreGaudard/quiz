@@ -168,6 +168,146 @@ export const quizOnePieceArcs: TranslatedQuiz = {
           explanation:
             "Le manga démarre en 1997 dans le Weekly Shōnen Jump, l'anime en 1999, le 1000e épisode passe à la télévision japonaise en 2021 et la série Netflix sort en 2023.",
         },
+        {
+          id: 11,
+          question: "Remets ces transformations de Luffy dans l'ordre de leur première apparition.",
+          answers: [
+            { id: "a", text: "Gear 2" },
+            { id: "b", text: "Gear 3" },
+            { id: "c", text: "Gear 4" },
+            { id: "d", text: "Gear 5" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le Gear 2 et le Gear 3 apparaissent tous les deux à Enies Lobby, contre Blueno, le Gear 2 en premier. Le Gear 4 arrive à Dressrosa contre Doflamingo, et le Gear 5 à Wano, pendant le combat contre Kaido.",
+        },
+        {
+          id: 12,
+          question: "Remets ces étapes de la saga de Marineford dans l'ordre.",
+          answers: [
+            { id: "a", text: "L'archipel Sabaody" },
+            { id: "b", text: "Amazon Lily" },
+            { id: "c", text: "Impel Down" },
+            { id: "d", text: "Marineford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "À Sabaody, Kuma disperse l'équipage. Luffy atterrit sur Amazon Lily, l'île de Boa Hancock, puis s'infiltre dans la prison d'Impel Down pour sauver Ace, avant la guerre au sommet de Marineford.",
+        },
+        {
+          id: 13,
+          question: "Encore des adversaires : dans quel ordre Luffy les bat-il ?",
+          answers: [
+            { id: "a", text: "Wapol" },
+            { id: "b", text: "Enel" },
+            { id: "c", text: "Foxy" },
+            { id: "d", text: "Gecko Moria" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Wapol sur l'île de Drum, Enel à Skypiea, Foxy pendant le Davy Back Fight qui suit juste après, puis Gecko Moria à Thriller Bark.",
+        },
+        {
+          id: 14,
+          question: "Et après l'ellipse, dans quel ordre Luffy bat-il ces adversaires ?",
+          answers: [
+            { id: "a", text: "Hody Jones" },
+            { id: "b", text: "Caesar Clown" },
+            { id: "c", text: "Charlotte Katakuri" },
+            { id: "d", text: "Kaido" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Hody Jones sur l'île des Hommes-Poissons, Caesar Clown à Punk Hazard, Katakuri à Whole Cake Island et enfin Kaido à Wano.",
+        },
+        {
+          id: 15,
+          question: "Remets ces sabres dans l'ordre où Zoro les obtient.",
+          answers: [
+            { id: "a", text: "Wado Ichimonji" },
+            { id: "b", text: "Sandai Kitetsu" },
+            { id: "c", text: "Shusui" },
+            { id: "d", text: "Enma" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le Wado Ichimonji appartenait à Kuina, son amie d'enfance. Zoro obtient le Sandai Kitetsu à Loguetown, récupère Shusui, le sabre de Ryuma, à Thriller Bark, puis reçoit Enma, le sabre d'Oden, à Wano.",
+        },
+        {
+          id: 16,
+          question: "Remets ces moments de l'enfance de Luffy dans l'ordre.",
+          answers: [
+            { id: "a", text: "Luffy mange le Gomu Gomu no Mi" },
+            { id: "b", text: "Shanks lui laisse son chapeau et quitte le village" },
+            { id: "c", text: "Luffy rencontre Ace" },
+            { id: "d", text: "Luffy prend la mer" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Luffy mange le fruit par accident, pendant que l'équipage de Shanks est au village. Shanks repart en lui laissant son chapeau, puis Garp confie Luffy à Dadan, chez qui vit Ace. Luffy prend la mer à 17 ans.",
+        },
+        {
+          id: 17,
+          question: "Remets ces moments de la vie du Vogue Merry dans l'ordre.",
+          answers: [
+            { id: "a", text: "Kaya offre le navire à l'équipage" },
+            { id: "b", text: "À Water Seven, on apprend qu'il ne peut plus être réparé" },
+            { id: "c", text: "Les adieux au Merry après Enies Lobby" },
+            { id: "d", text: "Le premier départ du Thousand Sunny" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Kaya donne le Vogue Merry à l'équipage au village de Sirop. À Water Seven, on découvre que sa quille est trop abîmée, et l'équipage lui fait ses adieux en le brûlant après Enies Lobby. Le Thousand Sunny prend ensuite la relève.",
+        },
+        {
+          id: 18,
+          question: "Remets ces moments de l'histoire d'Ace dans l'ordre.",
+          answers: [
+            { id: "a", text: "Ace retrouve Luffy à Alabasta" },
+            { id: "b", text: "Barbe Noire bat Ace" },
+            { id: "c", text: "Luffy s'infiltre à Impel Down" },
+            { id: "d", text: "Ace meurt à Marineford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Ace croise Luffy à Alabasta alors qu'il traque Barbe Noire. Barbe Noire finit par le battre et le livre à la Marine. Luffy entre alors à Impel Down pour le sauver, mais Ace meurt à Marineford.",
+        },
+        {
+          id: 19,
+          question: "Remets ces événements du passé dans l'ordre chronologique.",
+          answers: [
+            { id: "a", text: "L'incident de God Valley" },
+            { id: "b", text: "Roger atteint Laugh Tale" },
+            { id: "c", text: "L'exécution de Roger" },
+            { id: "d", text: "La naissance de Luffy" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "L'incident de God Valley a lieu 38 ans avant le début de l'histoire. Roger atteint Laugh Tale peu de temps avant son exécution à Loguetown, qui a lieu 24 ans avant le début de l'histoire. Luffy naît quelques années plus tard.",
+        },
+        {
+          id: 20,
+          question: "Remets ces films One Piece dans l'ordre de sortie.",
+          answers: [
+            { id: "a", text: "Strong World" },
+            { id: "b", text: "One Piece Z" },
+            { id: "c", text: "One Piece Gold" },
+            { id: "d", text: "One Piece Red" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Strong World sort en 2009, One Piece Z en 2012, Gold en 2016 et Red en 2022. Red est d'ailleurs le film de la série qui a rapporté le plus d'argent.",
+        },
       ],
     },
     en: {
@@ -320,6 +460,146 @@ export const quizOnePieceArcs: TranslatedQuiz = {
           explanation:
             "The manga started in 1997 in Weekly Shōnen Jump, the anime in 1999, episode 1,000 aired on Japanese TV in 2021 and the Netflix series came out in 2023.",
         },
+        {
+          id: 11,
+          question: "Put Luffy's transformations in the order they first appear.",
+          answers: [
+            { id: "a", text: "Gear 2" },
+            { id: "b", text: "Gear 3" },
+            { id: "c", text: "Gear 4" },
+            { id: "d", text: "Gear 5" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Gear 2 and Gear 3 both show up at Enies Lobby against Blueno, with Gear 2 coming first. Gear 4 comes in Dressrosa against Doflamingo, and Gear 5 in Wano, during the fight against Kaido.",
+        },
+        {
+          id: 12,
+          question: "Put these steps of the Marineford saga in order.",
+          answers: [
+            { id: "a", text: "Sabaody Archipelago" },
+            { id: "b", text: "Amazon Lily" },
+            { id: "c", text: "Impel Down" },
+            { id: "d", text: "Marineford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "On Sabaody, Kuma scatters the crew. Luffy lands on Amazon Lily, Boa Hancock's island, then breaks into Impel Down prison to save Ace, before the Summit War at Marineford.",
+        },
+        {
+          id: 13,
+          question: "More enemies: in what order does Luffy beat them?",
+          answers: [
+            { id: "a", text: "Wapol" },
+            { id: "b", text: "Enel" },
+            { id: "c", text: "Foxy" },
+            { id: "d", text: "Gecko Moria" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Wapol on Drum Island, Enel on Skypiea, Foxy in the Davy Back Fight right after that, then Gecko Moria on Thriller Bark.",
+        },
+        {
+          id: 14,
+          question: "And after the timeskip, in what order does Luffy beat these enemies?",
+          answers: [
+            { id: "a", text: "Hody Jones" },
+            { id: "b", text: "Caesar Clown" },
+            { id: "c", text: "Charlotte Katakuri" },
+            { id: "d", text: "Kaido" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Hody Jones on Fish-Man Island, Caesar Clown on Punk Hazard, Katakuri on Whole Cake Island and finally Kaido in Wano.",
+        },
+        {
+          id: 15,
+          question: "Put these swords in the order Zoro gets them.",
+          answers: [
+            { id: "a", text: "Wado Ichimonji" },
+            { id: "b", text: "Sandai Kitetsu" },
+            { id: "c", text: "Shusui" },
+            { id: "d", text: "Enma" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Wado Ichimonji belonged to Kuina, his childhood friend. Zoro gets the Sandai Kitetsu in Loguetown, takes Shusui, Ryuma's sword, on Thriller Bark, and receives Enma, Oden's sword, in Wano.",
+        },
+        {
+          id: 16,
+          question: "Put these moments from Luffy's childhood in order.",
+          answers: [
+            { id: "a", text: "Luffy eats the Gum-Gum Fruit" },
+            { id: "b", text: "Shanks leaves him his hat and sails away" },
+            { id: "c", text: "Luffy meets Ace" },
+            { id: "d", text: "Luffy sets sail" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Luffy eats the fruit by accident while Shanks' crew is staying in his village. Shanks leaves and gives him his hat, then Garp drops Luffy off with Dadan, where Ace lives. Luffy sets sail at 17.",
+        },
+        {
+          id: 17,
+          question: "Put these moments in the life of the Going Merry in order.",
+          answers: [
+            { id: "a", text: "Kaya gives the ship to the crew" },
+            { id: "b", text: "In Water 7, they learn it can't be repaired" },
+            { id: "c", text: "The crew says goodbye to the Merry after Enies Lobby" },
+            { id: "d", text: "The Thousand Sunny sets sail for the first time" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Kaya gives the Going Merry to the crew in Syrup Village. In Water 7 they find out its keel is too damaged, and after Enies Lobby the crew says goodbye by burning it at sea. The Thousand Sunny takes over after that.",
+        },
+        {
+          id: 18,
+          question: "Put these moments in Ace's story in order.",
+          answers: [
+            { id: "a", text: "Ace meets Luffy in Alabasta" },
+            { id: "b", text: "Blackbeard beats Ace" },
+            { id: "c", text: "Luffy breaks into Impel Down" },
+            { id: "d", text: "Ace dies at Marineford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Ace runs into Luffy in Alabasta while he's hunting Blackbeard. Blackbeard ends up beating him and hands him over to the Marines. Luffy then goes into Impel Down to save him, but Ace dies at Marineford.",
+        },
+        {
+          id: 19,
+          question: "Put these past events in chronological order.",
+          answers: [
+            { id: "a", text: "The God Valley Incident" },
+            { id: "b", text: "Roger reaches Laugh Tale" },
+            { id: "c", text: "Roger's execution" },
+            { id: "d", text: "Luffy is born" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The God Valley Incident happens 38 years before the story starts. Roger reaches Laugh Tale not long before his execution in Loguetown, which takes place 24 years before the story. Luffy is born a few years later.",
+        },
+        {
+          id: 20,
+          question: "Put these One Piece movies in release order.",
+          answers: [
+            { id: "a", text: "Strong World" },
+            { id: "b", text: "One Piece Film: Z" },
+            { id: "c", text: "One Piece Film: Gold" },
+            { id: "d", text: "One Piece Film: Red" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Strong World came out in 2009, Z in 2012, Gold in 2016 and Red in 2022. Red is also the highest grossing movie of the series.",
+        },
       ],
     },
     es: {
@@ -471,6 +751,146 @@ export const quizOnePieceArcs: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "El manga empieza en 1997 en la Weekly Shōnen Jump, el anime en 1999, el episodio 1000 se emite en la tele japonesa en 2021 y la serie de Netflix se estrena en 2023.",
+        },
+        {
+          id: 11,
+          question: "Ordena estas transformaciones de Luffy según su primera aparición.",
+          answers: [
+            { id: "a", text: "Gear 2" },
+            { id: "b", text: "Gear 3" },
+            { id: "c", text: "Gear 4" },
+            { id: "d", text: "Gear 5" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El Gear 2 y el Gear 3 aparecen los dos en Enies Lobby, contra Blueno, primero el Gear 2. El Gear 4 llega en Dressrosa contra Doflamingo, y el Gear 5 en Wano, durante la pelea contra Kaido.",
+        },
+        {
+          id: 12,
+          question: "Ordena estas etapas de la saga de Marineford.",
+          answers: [
+            { id: "a", text: "El archipiélago Sabaody" },
+            { id: "b", text: "Amazon Lily" },
+            { id: "c", text: "Impel Down" },
+            { id: "d", text: "Marineford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "En Sabaody, Kuma dispersa a la tripulación. Luffy cae en Amazon Lily, la isla de Boa Hancock, y luego se cuela en la prisión de Impel Down para salvar a Ace, antes de la guerra en la cumbre de Marineford.",
+        },
+        {
+          id: 13,
+          question: "Más enemigos: ¿en qué orden los derrota Luffy?",
+          answers: [
+            { id: "a", text: "Wapol" },
+            { id: "b", text: "Enel" },
+            { id: "c", text: "Foxy" },
+            { id: "d", text: "Gecko Moria" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Wapol en la isla de Drum, Enel en Skypiea, Foxy en el Davy Back Fight que viene justo después y Gecko Moria en Thriller Bark.",
+        },
+        {
+          id: 14,
+          question: "Y después del salto temporal, ¿en qué orden derrota Luffy a estos enemigos?",
+          answers: [
+            { id: "a", text: "Hody Jones" },
+            { id: "b", text: "Caesar Clown" },
+            { id: "c", text: "Charlotte Katakuri" },
+            { id: "d", text: "Kaido" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Hody Jones en la isla Gyojin, Caesar Clown en Punk Hazard, Katakuri en Whole Cake Island y, por último, Kaido en Wano.",
+        },
+        {
+          id: 15,
+          question: "Ordena estas espadas según cuándo las consigue Zoro.",
+          answers: [
+            { id: "a", text: "Wado Ichimonji" },
+            { id: "b", text: "Sandai Kitetsu" },
+            { id: "c", text: "Shusui" },
+            { id: "d", text: "Enma" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Wado Ichimonji era de Kuina, su amiga de la infancia. Zoro consigue la Sandai Kitetsu en Loguetown, se queda con Shusui, la espada de Ryuma, en Thriller Bark, y recibe Enma, la espada de Oden, en Wano.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos momentos de la infancia de Luffy.",
+          answers: [
+            { id: "a", text: "Luffy se come la Gomu Gomu no Mi" },
+            { id: "b", text: "Shanks le deja su sombrero y se va del pueblo" },
+            { id: "c", text: "Luffy conoce a Ace" },
+            { id: "d", text: "Luffy se hace a la mar" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Luffy se come la fruta sin querer mientras la tripulación de Shanks está en su pueblo. Shanks se marcha y le deja el sombrero, y luego Garp lleva a Luffy con Dadan, donde vive Ace. Luffy se hace a la mar a los 17 años.",
+        },
+        {
+          id: 17,
+          question: "Ordena estos momentos de la vida del Going Merry.",
+          answers: [
+            { id: "a", text: "Kaya le regala el barco a la tripulación" },
+            { id: "b", text: "En Water Seven se enteran de que ya no tiene arreglo" },
+            { id: "c", text: "La despedida del Merry después de Enies Lobby" },
+            { id: "d", text: "El primer viaje del Thousand Sunny" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Kaya le regala el Going Merry a la tripulación en Villa Syrup. En Water Seven descubren que la quilla está demasiado dañada, y después de Enies Lobby la tripulación se despide de él quemándolo en el mar. Luego el Thousand Sunny toma el relevo.",
+        },
+        {
+          id: 18,
+          question: "Ordena estos momentos de la historia de Ace.",
+          answers: [
+            { id: "a", text: "Ace se encuentra con Luffy en Alabasta" },
+            { id: "b", text: "Barbanegra derrota a Ace" },
+            { id: "c", text: "Luffy se cuela en Impel Down" },
+            { id: "d", text: "Ace muere en Marineford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Ace se cruza con Luffy en Alabasta mientras persigue a Barbanegra. Barbanegra acaba venciéndolo y se lo entrega a la Marina. Luffy entra entonces en Impel Down para salvarlo, pero Ace muere en Marineford.",
+        },
+        {
+          id: 19,
+          question: "Ordena estos hechos del pasado de forma cronológica.",
+          answers: [
+            { id: "a", text: "El incidente de God Valley" },
+            { id: "b", text: "Roger llega a Laugh Tale" },
+            { id: "c", text: "La ejecución de Roger" },
+            { id: "d", text: "El nacimiento de Luffy" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El incidente de God Valley ocurre 38 años antes del inicio de la historia. Roger llega a Laugh Tale poco antes de su ejecución en Loguetown, que tiene lugar 24 años antes del inicio de la historia. Luffy nace unos años después.",
+        },
+        {
+          id: 20,
+          question: "Ordena estas películas de One Piece por fecha de estreno.",
+          answers: [
+            { id: "a", text: "Strong World" },
+            { id: "b", text: "One Piece Z" },
+            { id: "c", text: "One Piece Gold" },
+            { id: "d", text: "One Piece Red" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Strong World se estrena en 2009, Z en 2012, Gold en 2016 y Red en 2022. Red es, además, la película de la serie que más ha recaudado.",
         },
       ],
     },

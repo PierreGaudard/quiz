@@ -12,7 +12,7 @@ export const quizCounterStrike: TranslatedQuiz = {
   slug: "quiz-counter-strike",
   slugs: { en: "counter-strike-quiz", fr: "quiz-counter-strike", es: "quiz-counter-strike" },
   categorySlug: "jeux-video",
-  subcategory: "Counter Strike",
+  subcategory: "Counter-Strike",
   difficulty: "medium",
   coverImage: "/images/sub-counter-strike.webp",
   gameType: "vrai-faux",
@@ -21,7 +21,7 @@ export const quizCounterStrike: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : Counter-Strike",
       description:
-        "Dix affirmations sur Counter-Strike, de CS 1.6 à CS2 : cartes, armes, règles et tournois. À toi de dire lesquelles sont vraies.",
+        "Vingt affirmations sur Counter-Strike, de CS 1.6 à CS2 : cartes, armes, règles et tournois. À toi de dire lesquelles sont vraies.",
       questions: [
         {
           id: 1,
@@ -137,12 +137,122 @@ export const quizCounterStrike: TranslatedQuiz = {
           explanation:
             "C'est vrai. Sans kit, il faut 10 secondes. Le kit coûte 400 $ et divise ce temps par deux, ce qui change souvent la fin d'une manche.",
         },
+        {
+          id: 11,
+          question: "Counter-Strike: Global Offensive est sorti en 2012.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai, le 21 août 2012, sur PC, Xbox 360 et PlayStation 3. CS:GO est resté le Counter-Strike principal pendant onze ans, jusqu'à l'arrivée de CS2.",
+        },
+        {
+          id: 12,
+          question: "Counter-Strike: Source utilise le même moteur que Half-Life 2.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Les deux jeux sont sortis en 2004 sur le moteur Source de Valve, d'où le nom de cette version de Counter-Strike.",
+        },
+        {
+          id: 13,
+          question: "Counter-Strike 2 tourne sur le moteur Source 2.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. C'est le moteur de Half-Life: Alyx et de Dota 2. Le passage à Source 2 a changé les graphismes, les fumigènes et le son du jeu.",
+        },
+        {
+          id: 14,
+          question: "Dans CS2, la bombe explose 40 secondes après avoir été posée.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Les contre-terroristes ont 40 secondes pour la trouver et la désamorcer, et le désamorçage prend déjà 10 secondes sans kit.",
+        },
+        {
+          id: 15,
+          question: "En match compétitif, chaque joueur a trois vies par manche.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. On n'a qu'une vie par manche : un joueur éliminé regarde ses coéquipiers jusqu'à la manche suivante. C'est ce qui rend chaque duel aussi important.",
+        },
+        {
+          id: 16,
+          question: "Au début d'un match compétitif de CS2, chaque joueur a 800 $ pour acheter son équipement.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Avec 800 $, on achète en général un meilleur pistolet, un gilet pare-balles ou quelques grenades. C'est pour ça qu'on parle de « manche au pistolet ».",
+        },
+        {
+          id: 17,
+          question: "Les terroristes peuvent acheter un kit de désamorçage.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Le kit n'est vendu qu'aux contre-terroristes, les seuls à désamorcer la bombe. Les terroristes, eux, la posent.",
+        },
+        {
+          id: 18,
+          question: "Le Desert Eagle est un fusil de précision.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Le Desert Eagle est un pistolet, l'un des plus puissants du jeu. Bien placé, un seul tir dans la tête peut suffire à éliminer un adversaire.",
+        },
+        {
+          id: 19,
+          question: "Le Zeus x27 est un taser.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Il ne tire qu'une fois et de très près, mais il élimine l'adversaire d'un coup.",
+        },
+        {
+          id: 20,
+          question: "Les skins d'armes sont arrivés dans la série avec Counter-Strike 2.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Ils sont arrivés dans CS:GO en août 2013, avec la mise à jour Arms Deal. Les skins achetés sur CS:GO ont d'ailleurs été gardés dans CS2.",
+        },
       ],
     },
     en: {
       title: "True or False: Counter-Strike",
       description:
-        "Ten statements about Counter-Strike, from CS 1.6 to CS2: maps, guns, rules and tournaments. You decide which ones are true.",
+        "Twenty statements about Counter-Strike, from CS 1.6 to CS2: maps, guns, rules and tournaments. You decide which ones are true.",
       questions: [
         {
           id: 1,
@@ -258,12 +368,122 @@ export const quizCounterStrike: TranslatedQuiz = {
           explanation:
             "True. Without a kit it takes 10 seconds. The kit costs $400 and cuts that time in half, which often decides how a round ends.",
         },
+        {
+          id: 11,
+          question: "Counter-Strike: Global Offensive came out in 2012.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True, on August 21, 2012, on PC, Xbox 360 and PlayStation 3. CS:GO stayed the main Counter-Strike for eleven years, until CS2 arrived.",
+        },
+        {
+          id: 12,
+          question: "Counter-Strike: Source runs on the same engine as Half-Life 2.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Both games came out in 2004 on Valve's Source engine, which is where this version of Counter-Strike gets its name.",
+        },
+        {
+          id: 13,
+          question: "Counter-Strike 2 runs on the Source 2 engine.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. It's the engine behind Half-Life: Alyx and Dota 2. The switch to Source 2 changed the game's graphics, smoke grenades and sound.",
+        },
+        {
+          id: 14,
+          question: "In CS2, the bomb goes off 40 seconds after it's planted.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Counter-terrorists have 40 seconds to find it and defuse it, and defusing already takes 10 seconds without a kit.",
+        },
+        {
+          id: 15,
+          question: "In a competitive match, each player gets three lives per round.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. You only get one life per round: a player who dies watches their teammates until the next round. That's what makes every duel matter so much.",
+        },
+        {
+          id: 16,
+          question: "At the start of a CS2 competitive match, each player has $800 to buy gear.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. With $800 you usually buy a better pistol, some body armor or a few grenades. That's why the first round is called the \"pistol round\".",
+        },
+        {
+          id: 17,
+          question: "Terrorists can buy a defuse kit.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The kit is only sold to counter-terrorists, since they're the only ones who defuse the bomb. Terrorists are the ones who plant it.",
+        },
+        {
+          id: 18,
+          question: "The Desert Eagle is a sniper rifle.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The Desert Eagle is a pistol, one of the most powerful in the game. Aimed well, a single headshot can be enough to take out an opponent.",
+        },
+        {
+          id: 19,
+          question: "The Zeus x27 is a taser.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. It only fires once and at very close range, but it takes an opponent out in one hit.",
+        },
+        {
+          id: 20,
+          question: "Weapon skins came into the series with Counter-Strike 2.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. They arrived in CS:GO in August 2013, with the Arms Deal update. The skins bought in CS:GO were also carried over into CS2.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: Counter-Strike",
       description:
-        "Diez afirmaciones sobre Counter-Strike, de CS 1.6 a CS2: mapas, armas, reglas y torneos. Te toca decir cuáles son verdad.",
+        "Veinte afirmaciones sobre Counter-Strike, de CS 1.6 a CS2: mapas, armas, reglas y torneos. Te toca decir cuáles son verdad.",
       questions: [
         {
           id: 1,
@@ -378,6 +598,116 @@ export const quizCounterStrike: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero. Sin kit hacen falta 10 segundos. El kit cuesta 400 $ y reduce ese tiempo a la mitad, algo que a menudo decide el final de una ronda.",
+        },
+        {
+          id: 11,
+          question: "Counter-Strike: Global Offensive salió en 2012.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero, el 21 de agosto de 2012, en PC, Xbox 360 y PlayStation 3. CS:GO fue el Counter-Strike principal durante once años, hasta la llegada de CS2.",
+        },
+        {
+          id: 12,
+          question: "Counter-Strike: Source usa el mismo motor que Half-Life 2.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Los dos juegos salieron en 2004 con el motor Source de Valve, de ahí el nombre de esta versión de Counter-Strike.",
+        },
+        {
+          id: 13,
+          question: "Counter-Strike 2 funciona con el motor Source 2.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Es el motor de Half-Life: Alyx y de Dota 2. El paso a Source 2 cambió los gráficos, las granadas de humo y el sonido del juego.",
+        },
+        {
+          id: 14,
+          question: "En CS2, la bomba explota 40 segundos después de ser colocada.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Los antiterroristas tienen 40 segundos para encontrarla y desactivarla, y desactivarla ya lleva 10 segundos sin kit.",
+        },
+        {
+          id: 15,
+          question: "En una partida competitiva, cada jugador tiene tres vidas por ronda.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Solo hay una vida por ronda: un jugador eliminado mira a sus compañeros hasta la ronda siguiente. Por eso cada duelo cuenta tanto.",
+        },
+        {
+          id: 16,
+          question: "Al empezar una partida competitiva de CS2, cada jugador tiene 800 $ para comprar su equipo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Con 800 $ se suele comprar una pistola mejor, un chaleco o algunas granadas. Por eso se habla de \"ronda de pistolas\".",
+        },
+        {
+          id: 17,
+          question: "Los terroristas pueden comprar un kit de desactivación.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El kit solo se vende a los antiterroristas, que son los únicos que desactivan la bomba. Los terroristas son los que la colocan.",
+        },
+        {
+          id: 18,
+          question: "La Desert Eagle es un rifle de francotirador.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. La Desert Eagle es una pistola, una de las más potentes del juego. Bien apuntado, un solo tiro en la cabeza puede bastar para eliminar a un rival.",
+        },
+        {
+          id: 19,
+          question: "La Zeus x27 es una táser.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Solo dispara una vez y a muy poca distancia, pero elimina al rival de un golpe.",
+        },
+        {
+          id: 20,
+          question: "Las skins de armas llegaron a la saga con Counter-Strike 2.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Llegaron a CS:GO en agosto de 2013, con la actualización Arms Deal. Además, las skins compradas en CS:GO se conservaron en CS2.",
         },
       ],
     },

@@ -29,7 +29,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
     fr: {
       title: "14-18 : remets la guerre dans l'ordre",
       description:
-        "Dix suites d'événements de la Première Guerre mondiale à remettre dans l'ordre, de la mobilisation de 1914 aux mémoriaux.",
+        "Vingt suites d'événements de la Première Guerre mondiale à remettre dans l'ordre, de la mobilisation de 1914 aux mémoriaux.",
       questions: [
         {
           id: 1,
@@ -175,12 +175,152 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
           explanation:
             "L'armée allemande emploie le gaz de chlore à Ypres le 22 avril 1915. Les Britanniques engagent les premiers chars le 15 septembre 1916, les Français le 16 avril 1917, et la grande attaque de chars de Cambrai commence le 20 novembre 1917.",
         },
+        {
+          id: 11,
+          question: "Remets ces offensives du front de l'Est dans l'ordre.",
+          answers: [
+            { id: "a", text: "La bataille de Tannenberg" },
+            { id: "b", text: "L'offensive austro-allemande de Gorlice-Tarnów" },
+            { id: "c", text: "L'offensive russe de Broussilov" },
+            { id: "d", text: "L'offensive russe de Kerenski" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La bataille de Tannenberg a lieu fin août 1914. L'offensive de Gorlice-Tarnów commence le 2 mai 1915, celle de Broussilov le 4 juin 1916, et la dernière grande offensive russe, lancée par Kerenski, le 1er juillet 1917.",
+        },
+        {
+          id: 12,
+          question: "Remets ces événements de la guerre sur mer dans l'ordre.",
+          answers: [
+            { id: "a", text: "La bataille de Coronel, au large du Chili" },
+            { id: "b", text: "La bataille des Falkland" },
+            { id: "c", text: "Le début de la guerre sous-marine à outrance" },
+            { id: "d", text: "Le sabordage de la flotte allemande à Scapa Flow" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La flotte allemande gagne à Coronel le 1er novembre 1914, puis perd aux Falkland le 8 décembre 1914. L'Allemagne lance la guerre sous-marine à outrance le 1er février 1917. Enfin, ses marins sabordent leur flotte, internée à Scapa Flow, en Écosse, le 21 juin 1919.",
+        },
+        {
+          id: 13,
+          question: "Remets ces moments de la guerre aérienne dans l'ordre.",
+          answers: [
+            { id: "a", text: "Le premier avion abattu en combat aérien" },
+            { id: "b", text: "Roland Garros tire à travers son hélice" },
+            { id: "c", text: "Les débuts de l'escadrille La Fayette, faite de pilotes américains" },
+            { id: "d", text: "La mort du Baron rouge" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Les Français Frantz et Quénault abattent un avion allemand le 5 octobre 1914. Roland Garros remporte sa première victoire en tirant à travers son hélice le 1er avril 1915. L'escadrille La Fayette entre en service le 20 avril 1916, et Manfred von Richthofen est tué le 21 avril 1918.",
+        },
+        {
+          id: 14,
+          question: "Remets ces événements de 1917 dans l'ordre.",
+          answers: [
+            { id: "a", text: "Les Canadiens prennent la crête de Vimy" },
+            { id: "b", text: "Les mutineries dans l'armée française" },
+            { id: "c", text: "Le début de la bataille de Passchendaele" },
+            { id: "d", text: "L'armistice entre la Russie et l'Allemagne" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Les Canadiens prennent la crête de Vimy le 9 avril 1917. Les mutineries touchent l'armée française surtout fin mai et en juin. La bataille de Passchendaele, en Belgique, commence le 31 juillet, et la Russie des bolcheviks signe un armistice avec l'Allemagne le 15 décembre.",
+        },
+        {
+          id: 15,
+          question: "Remets ces événements du Proche-Orient dans l'ordre.",
+          answers: [
+            { id: "a", text: "Le début de la révolte arabe contre les Ottomans" },
+            { id: "b", text: "Les Britanniques entrent dans Bagdad" },
+            { id: "c", text: "Les Britanniques entrent dans Jérusalem" },
+            { id: "d", text: "Les Britanniques et les Arabes entrent dans Damas" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La révolte arabe éclate en juin 1916. Les Britanniques entrent dans Bagdad le 11 mars 1917 et dans Jérusalem en décembre 1917. Les troupes arabes et britanniques entrent dans Damas le 1er octobre 1918.",
+        },
+        {
+          id: 16,
+          question: "Remets ces événements des Balkans dans l'ordre.",
+          answers: [
+            { id: "a", text: "L'ultimatum de l'Autriche-Hongrie à la Serbie" },
+            { id: "b", text: "L'entrée en guerre de la Bulgarie" },
+            { id: "c", text: "L'entrée en guerre de la Grèce aux côtés des Alliés" },
+            { id: "d", text: "La percée alliée sur le front de Salonique" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "L'Autriche-Hongrie envoie son ultimatum à la Serbie le 23 juillet 1914. La Bulgarie entre en guerre aux côtés de l'Allemagne en octobre 1915, et la Grèce rejoint les Alliés en juin 1917. La percée alliée du front de Salonique commence le 15 septembre 1918.",
+        },
+        {
+          id: 17,
+          question: "Remets ces offensives alliées de 1915 dans l'ordre.",
+          answers: [
+            { id: "a", text: "La bataille de Neuve-Chapelle" },
+            { id: "b", text: "La deuxième bataille d'Artois" },
+            { id: "c", text: "La première bataille de l'Isonzo, en Italie" },
+            { id: "d", text: "La deuxième bataille de Champagne" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Les Britanniques attaquent à Neuve-Chapelle le 10 mars 1915, et les Français lancent la deuxième bataille d'Artois le 9 mai. L'armée italienne ouvre la première bataille de l'Isonzo le 23 juin, et l'offensive de Champagne commence le 25 septembre.",
+        },
+        {
+          id: 18,
+          question: "Remets ces moments de la vie politique française dans l'ordre.",
+          answers: [
+            { id: "a", text: "Le gouvernement quitte Paris pour Bordeaux" },
+            { id: "b", text: "Le gouvernement revient à Paris" },
+            { id: "c", text: "Clemenceau devient président du Conseil" },
+            { id: "d", text: "Paul Deschanel est élu président de la République" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Face à l'avancée allemande, le gouvernement part pour Bordeaux début septembre 1914, puis il revient à Paris en décembre 1914. Clemenceau arrive à la tête du gouvernement en novembre 1917, et Paul Deschanel succède à Raymond Poincaré après son élection de janvier 1920.",
+        },
+        {
+          id: 19,
+          question: "Remets ces événements de 1916 dans l'ordre.",
+          answers: [
+            { id: "a", text: "Le début de la bataille de Verdun" },
+            { id: "b", text: "L'insurrection de Pâques à Dublin" },
+            { id: "c", text: "Hindenburg prend la tête de l'armée allemande" },
+            { id: "d", text: "Les Français reprennent le fort de Douaumont" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "L'offensive allemande sur Verdun commence le 21 février 1916. L'insurrection de Pâques éclate à Dublin le 24 avril. Hindenburg devient chef d'état-major le 29 août, et les Français reprennent le fort de Douaumont le 24 octobre.",
+        },
+        {
+          id: 20,
+          question: "Remets ces accords et conférences dans l'ordre.",
+          answers: [
+            { id: "a", text: "Le pacte de Londres, qui fait entrer l'Italie dans la guerre" },
+            { id: "b", text: "Les accords Sykes-Picot sur le partage du Proche-Orient" },
+            { id: "c", text: "La déclaration Balfour" },
+            { id: "d", text: "L'ouverture de la conférence de la paix de Paris" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le pacte secret de Londres est signé avec l'Italie le 26 avril 1915. Les accords Sykes-Picot entre la France et le Royaume-Uni datent de mai 1916, et la déclaration Balfour du 2 novembre 1917. La conférence de la paix s'ouvre à Paris le 18 janvier 1919.",
+        },
       ],
     },
     en: {
       title: "WWI timeline: put it in order",
       description:
-        "Ten sets of First World War events to put in order, from the mobilisation of 1914 to the memorials that followed.",
+        "Twenty sets of First World War events to put in order, from the mobilisation of 1914 to the memorials that followed.",
       questions: [
         {
           id: 1,
@@ -326,12 +466,152 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
           explanation:
             "The German army used chlorine gas at Ypres on 22 April 1915. The British sent in the first tanks on 15 September 1916, the French on 16 April 1917, and the big tank attack at Cambrai began on 20 November 1917.",
         },
+        {
+          id: 11,
+          question: "Put these Eastern Front offensives in order.",
+          answers: [
+            { id: "a", text: "The battle of Tannenberg" },
+            { id: "b", text: "The Austro-German Gorlice-Tarnów offensive" },
+            { id: "c", text: "The Russian Brusilov offensive" },
+            { id: "d", text: "The Russian Kerensky offensive" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The battle of Tannenberg was fought at the end of August 1914. The Gorlice-Tarnów offensive began on 2 May 1915, the Brusilov offensive on 4 June 1916, and the last big Russian offensive, launched by Kerensky, on 1 July 1917.",
+        },
+        {
+          id: 12,
+          question: "Put these events of the war at sea in order.",
+          answers: [
+            { id: "a", text: "The battle of Coronel, off Chile" },
+            { id: "b", text: "The battle of the Falkland Islands" },
+            { id: "c", text: "The start of unrestricted submarine warfare" },
+            { id: "d", text: "The scuttling of the German fleet at Scapa Flow" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The German squadron won at Coronel on 1 November 1914, then lost at the Falklands on 8 December 1914. Germany began unrestricted submarine warfare on 1 February 1917. Finally, its sailors scuttled their fleet, interned at Scapa Flow in Scotland, on 21 June 1919.",
+        },
+        {
+          id: 13,
+          question: "Put these moments of the air war in order.",
+          answers: [
+            { id: "a", text: "The first plane shot down in air combat" },
+            { id: "b", text: "Roland Garros fires through his propeller" },
+            { id: "c", text: "The first days of the Lafayette Escadrille, made up of American pilots" },
+            { id: "d", text: "The death of the Red Baron" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Frenchmen Frantz and Quénault shot down a German plane on 5 October 1914. Roland Garros won his first victory by firing through his propeller on 1 April 1915. The Lafayette Escadrille went into service on 20 April 1916, and Manfred von Richthofen was killed on 21 April 1918.",
+        },
+        {
+          id: 14,
+          question: "Put these events of 1917 in order.",
+          answers: [
+            { id: "a", text: "The Canadians take Vimy Ridge" },
+            { id: "b", text: "The mutinies in the French army" },
+            { id: "c", text: "The start of the battle of Passchendaele" },
+            { id: "d", text: "The armistice between Russia and Germany" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Canadians took Vimy Ridge on 9 April 1917. The mutinies hit the French army mostly in late May and June. The battle of Passchendaele, in Belgium, began on 31 July, and Bolshevik Russia signed an armistice with Germany on 15 December.",
+        },
+        {
+          id: 15,
+          question: "Put these events in the Middle East in order.",
+          answers: [
+            { id: "a", text: "The start of the Arab revolt against the Ottomans" },
+            { id: "b", text: "The British enter Baghdad" },
+            { id: "c", text: "The British enter Jerusalem" },
+            { id: "d", text: "British and Arab forces enter Damascus" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Arab revolt broke out in June 1916. The British entered Baghdad on 11 March 1917 and Jerusalem in December 1917. Arab and British troops entered Damascus on 1 October 1918.",
+        },
+        {
+          id: 16,
+          question: "Put these events in the Balkans in order.",
+          answers: [
+            { id: "a", text: "Austria-Hungary's ultimatum to Serbia" },
+            { id: "b", text: "Bulgaria enters the war" },
+            { id: "c", text: "Greece enters the war on the Allied side" },
+            { id: "d", text: "The Allied breakthrough on the Salonika front" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Austria-Hungary sent its ultimatum to Serbia on 23 July 1914. Bulgaria joined the war on Germany's side in October 1915, and Greece joined the Allies in June 1917. The Allied breakthrough on the Salonika front began on 15 September 1918.",
+        },
+        {
+          id: 17,
+          question: "Put these Allied offensives of 1915 in order.",
+          answers: [
+            { id: "a", text: "The battle of Neuve-Chapelle" },
+            { id: "b", text: "The second battle of Artois" },
+            { id: "c", text: "The first battle of the Isonzo, in Italy" },
+            { id: "d", text: "The second battle of Champagne" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The British attacked at Neuve-Chapelle on 10 March 1915, and the French launched the second battle of Artois on 9 May. The Italian army opened the first battle of the Isonzo on 23 June, and the Champagne offensive began on 25 September.",
+        },
+        {
+          id: 18,
+          question: "Put these moments of French political life in order.",
+          answers: [
+            { id: "a", text: "The government leaves Paris for Bordeaux" },
+            { id: "b", text: "The government returns to Paris" },
+            { id: "c", text: "Clemenceau becomes Prime Minister" },
+            { id: "d", text: "Paul Deschanel is elected President of France" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "With the German army advancing, the government left for Bordeaux at the start of September 1914 and came back to Paris in December 1914. Clemenceau took over the government in November 1917, and Paul Deschanel succeeded Raymond Poincaré after being elected in January 1920.",
+        },
+        {
+          id: 19,
+          question: "Put these events of 1916 in order.",
+          answers: [
+            { id: "a", text: "The start of the battle of Verdun" },
+            { id: "b", text: "The Easter Rising in Dublin" },
+            { id: "c", text: "Hindenburg takes charge of the German army" },
+            { id: "d", text: "The French retake Fort Douaumont" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The German attack on Verdun began on 21 February 1916. The Easter Rising broke out in Dublin on 24 April. Hindenburg became chief of the general staff on 29 August, and the French retook Fort Douaumont on 24 October.",
+        },
+        {
+          id: 20,
+          question: "Put these agreements and conferences in order.",
+          answers: [
+            { id: "a", text: "The Treaty of London, which brings Italy into the war" },
+            { id: "b", text: "The Sykes-Picot agreement on dividing up the Middle East" },
+            { id: "c", text: "The Balfour Declaration" },
+            { id: "d", text: "The opening of the Paris Peace Conference" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The secret Treaty of London was signed with Italy on 26 April 1915. The Sykes-Picot agreement between France and Britain dates from May 1916, and the Balfour Declaration from 2 November 1917. The Peace Conference opened in Paris on 18 January 1919.",
+        },
       ],
     },
     es: {
       title: "Primera Guerra Mundial: ordena los hechos",
       description:
-        "Diez series de hechos de la Primera Guerra Mundial que hay que ordenar, de la movilización de 1914 a los memoriales.",
+        "Veinte series de hechos de la Primera Guerra Mundial que hay que ordenar, de la movilización de 1914 a los memoriales.",
       questions: [
         {
           id: 1,
@@ -476,6 +756,146 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "El ejército alemán usó gas de cloro en Ypres el 22 de abril de 1915. Los británicos sacaron los primeros tanques el 15 de septiembre de 1916, los franceses el 16 de abril de 1917, y el gran ataque de tanques de Cambrai empezó el 20 de noviembre de 1917.",
+        },
+        {
+          id: 11,
+          question: "Ordena estas ofensivas del frente oriental.",
+          answers: [
+            { id: "a", text: "La batalla de Tannenberg" },
+            { id: "b", text: "La ofensiva austroalemana de Gorlice-Tarnów" },
+            { id: "c", text: "La ofensiva rusa de Brusílov" },
+            { id: "d", text: "La ofensiva rusa de Kérenski" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La batalla de Tannenberg tiene lugar a finales de agosto de 1914. La ofensiva de Gorlice-Tarnów empieza el 2 de mayo de 1915, la de Brusílov el 4 de junio de 1916, y la última gran ofensiva rusa, lanzada por Kérenski, el 1 de julio de 1917.",
+        },
+        {
+          id: 12,
+          question: "Ordena estos hechos de la guerra en el mar.",
+          answers: [
+            { id: "a", text: "La batalla de Coronel, frente a Chile" },
+            { id: "b", text: "La batalla de las Malvinas" },
+            { id: "c", text: "El inicio de la guerra submarina sin restricciones" },
+            { id: "d", text: "El hundimiento voluntario de la flota alemana en Scapa Flow" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La escuadra alemana gana en Coronel el 1 de noviembre de 1914 y pierde en las Malvinas el 8 de diciembre de 1914. Alemania lanza la guerra submarina sin restricciones el 1 de febrero de 1917. Por último, sus marinos hunden su propia flota, internada en Scapa Flow, en Escocia, el 21 de junio de 1919.",
+        },
+        {
+          id: 13,
+          question: "Ordena estos momentos de la guerra aérea.",
+          answers: [
+            { id: "a", text: "El primer avión derribado en combate aéreo" },
+            { id: "b", text: "Roland Garros dispara a través de su hélice" },
+            { id: "c", text: "Los inicios de la escuadrilla La Fayette, formada por pilotos estadounidenses" },
+            { id: "d", text: "La muerte del Barón Rojo" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Los franceses Frantz y Quénault derriban un avión alemán el 5 de octubre de 1914. Roland Garros logra su primera victoria disparando a través de la hélice el 1 de abril de 1915. La escuadrilla La Fayette entra en servicio el 20 de abril de 1916, y Manfred von Richthofen muere el 21 de abril de 1918.",
+        },
+        {
+          id: 14,
+          question: "Ordena estos hechos de 1917.",
+          answers: [
+            { id: "a", text: "Los canadienses toman la cresta de Vimy" },
+            { id: "b", text: "Los motines en el ejército francés" },
+            { id: "c", text: "El inicio de la batalla de Passchendaele" },
+            { id: "d", text: "El armisticio entre Rusia y Alemania" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Los canadienses toman la cresta de Vimy el 9 de abril de 1917. Los motines afectan al ejército francés sobre todo a finales de mayo y en junio. La batalla de Passchendaele, en Bélgica, empieza el 31 de julio, y la Rusia bolchevique firma un armisticio con Alemania el 15 de diciembre.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos hechos de Oriente Próximo.",
+          answers: [
+            { id: "a", text: "El inicio de la revuelta árabe contra los otomanos" },
+            { id: "b", text: "Los británicos entran en Bagdad" },
+            { id: "c", text: "Los británicos entran en Jerusalén" },
+            { id: "d", text: "Británicos y árabes entran en Damasco" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La revuelta árabe estalla en junio de 1916. Los británicos entran en Bagdad el 11 de marzo de 1917 y en Jerusalén en diciembre de 1917. Las tropas árabes y británicas entran en Damasco el 1 de octubre de 1918.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos hechos de los Balcanes.",
+          answers: [
+            { id: "a", text: "El ultimátum de Austria-Hungría a Serbia" },
+            { id: "b", text: "La entrada en guerra de Bulgaria" },
+            { id: "c", text: "La entrada en guerra de Grecia del lado aliado" },
+            { id: "d", text: "La ruptura aliada en el frente de Salónica" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Austria-Hungría envía su ultimátum a Serbia el 23 de julio de 1914. Bulgaria entra en guerra del lado de Alemania en octubre de 1915, y Grecia se une a los Aliados en junio de 1917. La ruptura aliada del frente de Salónica empieza el 15 de septiembre de 1918.",
+        },
+        {
+          id: 17,
+          question: "Ordena estas ofensivas aliadas de 1915.",
+          answers: [
+            { id: "a", text: "La batalla de Neuve-Chapelle" },
+            { id: "b", text: "La segunda batalla de Artois" },
+            { id: "c", text: "La primera batalla del Isonzo, en Italia" },
+            { id: "d", text: "La segunda batalla de Champaña" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Los británicos atacan en Neuve-Chapelle el 10 de marzo de 1915, y los franceses lanzan la segunda batalla de Artois el 9 de mayo. El ejército italiano abre la primera batalla del Isonzo el 23 de junio, y la ofensiva de Champaña empieza el 25 de septiembre.",
+        },
+        {
+          id: 18,
+          question: "Ordena estos momentos de la vida política francesa.",
+          answers: [
+            { id: "a", text: "El Gobierno deja París y se instala en Burdeos" },
+            { id: "b", text: "El Gobierno vuelve a París" },
+            { id: "c", text: "Clemenceau pasa a presidir el Gobierno" },
+            { id: "d", text: "Paul Deschanel es elegido presidente de la República" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Ante el avance alemán, el Gobierno se marcha a Burdeos a principios de septiembre de 1914 y vuelve a París en diciembre de 1914. Clemenceau asume el Gobierno en noviembre de 1917, y Paul Deschanel sucede a Raymond Poincaré tras ser elegido en enero de 1920.",
+        },
+        {
+          id: 19,
+          question: "Ordena estos hechos de 1916.",
+          answers: [
+            { id: "a", text: "El inicio de la batalla de Verdún" },
+            { id: "b", text: "El Alzamiento de Pascua en Dublín" },
+            { id: "c", text: "Hindenburg se pone al frente del ejército alemán" },
+            { id: "d", text: "Los franceses recuperan el fuerte de Douaumont" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La ofensiva alemana sobre Verdún empieza el 21 de febrero de 1916. El Alzamiento de Pascua estalla en Dublín el 24 de abril. Hindenburg pasa a ser jefe del Estado Mayor el 29 de agosto, y los franceses recuperan el fuerte de Douaumont el 24 de octubre.",
+        },
+        {
+          id: 20,
+          question: "Ordena estos acuerdos y conferencias.",
+          answers: [
+            { id: "a", text: "El pacto de Londres, que hace entrar a Italia en la guerra" },
+            { id: "b", text: "Los acuerdos Sykes-Picot sobre el reparto de Oriente Próximo" },
+            { id: "c", text: "La declaración Balfour" },
+            { id: "d", text: "La apertura de la conferencia de paz de París" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El pacto secreto de Londres se firma con Italia el 26 de abril de 1915. Los acuerdos Sykes-Picot entre Francia y el Reino Unido son de mayo de 1916, y la declaración Balfour del 2 de noviembre de 1917. La conferencia de paz se abre en París el 18 de enero de 1919.",
         },
       ],
     },

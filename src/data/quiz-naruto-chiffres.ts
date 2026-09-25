@@ -20,7 +20,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
     fr: {
       title: "Quiz Naruto : les chiffres de la série",
       description:
-        "Dix nombres à trouver sur Naruto : tomes, épisodes, années de sortie ou encore bijû. Tu proposes, on te dit plus haut ou plus bas.",
+        "Vingt nombres à trouver sur Naruto : tomes, épisodes, années de sortie ou encore bijû. Tu proposes, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -116,12 +116,102 @@ export const quizNarutoChiffres: TranslatedQuiz = {
           explanation:
             "Huit. Il ouvre la huitième, la Porte de la Mort, face à Madara pendant la Quatrième Grande Guerre ninja. En principe, celui qui l'ouvre n'y survit pas.",
         },
+        {
+          id: 11,
+          question: "Combien d'épisodes compte l'anime Boruto: Naruto Next Generations ?",
+          answers: [],
+          correctAnswer: "293",
+          correctValue: 293,
+          explanation:
+            "293 épisodes, diffusés sur TV Tokyo d'avril 2017 à mars 2023. L'histoire continue ensuite dans le manga.",
+        },
+        {
+          id: 12,
+          question: "Naruto est né un jour d'octobre. Lequel ?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "Le 10 octobre. C'est le jour où Kurama attaque Konoha et où Minato le scelle dans son fils qui vient de naître.",
+        },
+        {
+          id: 13,
+          question: "En quelle année Masashi Kishimoto, l'auteur de Naruto, est-il né ?",
+          answers: [],
+          correctAnswer: "1974",
+          correctValue: 1974,
+          explanation:
+            "En 1974, le 8 novembre, dans la préfecture d'Okayama. Il a un frère jumeau, Seishi Kishimoto, qui est aussi mangaka.",
+        },
+        {
+          id: 14,
+          question: "Combien de sabreurs compte le groupe des sabreurs de la Brume, dont faisaient partie Zabuza et Kisame ?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "Sept. On les appelle d'ailleurs les Sept Sabreurs de la Brume, et chacun a son épée légendaire.",
+        },
+        {
+          id: 15,
+          question: "Combien de natures de chakra de base existe-t-il ?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Cinq : le feu, le vent, la foudre, la terre et l'eau. Naruto a une affinité avec le vent, Sasuke avec le feu et la foudre.",
+        },
+        {
+          id: 16,
+          question: "Combien de queues a Gyûki, le bijû scellé en Killer Bee ?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Huit. Gyûki est le démon à huit queues, un mélange de taureau et de pieuvre, et Killer Bee s'entend très bien avec lui.",
+        },
+        {
+          id: 17,
+          question: "Combien de tomoe, ces petites virgules noires, a un Sharingan pleinement éveillé ?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Trois. Le Sharingan commence avec un ou deux tomoe, puis en gagne jusqu'à trois quand il est complètement développé.",
+        },
+        {
+          id: 18,
+          question: "En quelle année le manga Boruto commence-t-il dans le Weekly Shōnen Jump ?",
+          answers: [],
+          correctAnswer: "2016",
+          correctValue: 2016,
+          explanation:
+            "En 2016, le 9 mai. Le manga suit Boruto, le fils de Naruto, alors que son père est devenu Hokage.",
+        },
+        {
+          id: 19,
+          question: "Dans Naruto Shippuden, l'alliance des ninjas affronte Obito et Madara. C'est la combientième Grande Guerre ninja ?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "La quatrième. Les cinq grands villages s'y battent ensemble pour la première fois, dans une seule armée.",
+        },
+        {
+          id: 20,
+          question: "En quelle année sort au cinéma The Last: Naruto the Movie, où Naruto et Hinata se rapprochent ?",
+          answers: [],
+          correctAnswer: "2014",
+          correctValue: 2014,
+          explanation:
+            "En 2014, en décembre au Japon. Le film se passe deux ans après la guerre et raconte comment Naruto et Hinata finissent ensemble.",
+        },
       ],
     },
     en: {
       title: "Naruto Quiz: The Numbers Behind the Series",
       description:
-        "Ten numbers to find about Naruto, from volumes and episodes to release years and tailed beasts. Guess, and we say higher or lower.",
+        "Twenty numbers to find about Naruto, from volumes and episodes to release years and tailed beasts. Guess, and we say higher or lower.",
       questions: [
         {
           id: 1,
@@ -217,12 +307,102 @@ export const quizNarutoChiffres: TranslatedQuiz = {
           explanation:
             "All eight. He opens the eighth one, the Gate of Death, against Madara in the Fourth Great Ninja War. Normally whoever opens it doesn't survive.",
         },
+        {
+          id: 11,
+          question: "How many episodes does the Boruto: Naruto Next Generations anime have?",
+          answers: [],
+          correctAnswer: "293",
+          correctValue: 293,
+          explanation:
+            "293 episodes, aired on TV Tokyo from April 2017 to March 2023. The story then carries on in the manga.",
+        },
+        {
+          id: 12,
+          question: "Naruto was born in October. On which day?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "October 10. That's the day Kurama attacks Konoha and Minato seals it inside his newborn son.",
+        },
+        {
+          id: 13,
+          question: "In what year was Masashi Kishimoto, the creator of Naruto, born?",
+          answers: [],
+          correctAnswer: "1974",
+          correctValue: 1974,
+          explanation:
+            "In 1974, on November 8, in Okayama Prefecture. He has a twin brother, Seishi Kishimoto, who is a manga artist too.",
+        },
+        {
+          id: 14,
+          question: "How many swordsmen are there in the Mist group that Zabuza and Kisame belonged to?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "Seven. That's why they're called the Seven Ninja Swordsmen of the Mist, and each one carries a legendary sword.",
+        },
+        {
+          id: 15,
+          question: "How many basic chakra natures are there?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Five: fire, wind, lightning, earth and water. Naruto's affinity is wind, while Sasuke has fire and lightning.",
+        },
+        {
+          id: 16,
+          question: "How many tails does Gyuki, the tailed beast sealed inside Killer Bee, have?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Eight. Gyuki is the Eight-Tails, part bull and part octopus, and Killer Bee gets along with it really well.",
+        },
+        {
+          id: 17,
+          question: "How many tomoe, the little black commas, does a fully awakened Sharingan have?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Three. The Sharingan starts with one or two tomoe and gets up to three once it's fully developed.",
+        },
+        {
+          id: 18,
+          question: "In what year does the Boruto manga start in Weekly Shōnen Jump?",
+          answers: [],
+          correctAnswer: "2016",
+          correctValue: 2016,
+          explanation:
+            "In 2016, on May 9. It follows Boruto, Naruto's son, at a time when his father is Hokage.",
+        },
+        {
+          id: 19,
+          question: "In Naruto Shippuden, the allied ninja fight Obito and Madara. Which Great Ninja War is it?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "The fourth one. It's the first time the five great villages fight side by side in a single army.",
+        },
+        {
+          id: 20,
+          question: "In what year was The Last: Naruto the Movie, where Naruto and Hinata get together, released?",
+          answers: [],
+          correctAnswer: "2014",
+          correctValue: 2014,
+          explanation:
+            "In 2014, in December in Japan. The film is set two years after the war and shows how Naruto and Hinata end up together.",
+        },
       ],
     },
     es: {
       title: "Quiz Naruto: las cifras de la serie",
       description:
-        "Diez números sobre Naruto: tomos, episodios, años de estreno o bijū. Tú propones una cifra y te decimos si es más o menos.",
+        "Veinte números sobre Naruto: tomos, episodios, años de estreno o bijū. Tú propones una cifra y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -317,6 +497,96 @@ export const quizNarutoChiffres: TranslatedQuiz = {
           correctValue: 8,
           explanation:
             "Las ocho. Abre la octava, la Puerta de la Muerte, contra Madara en la Cuarta Gran Guerra Ninja. En principio, quien la abre no sobrevive.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos episodios tiene el anime Boruto: Naruto Next Generations?",
+          answers: [],
+          correctAnswer: "293",
+          correctValue: 293,
+          explanation:
+            "293 episodios, emitidos en TV Tokyo de abril de 2017 a marzo de 2023. La historia sigue después en el manga.",
+        },
+        {
+          id: 12,
+          question: "Naruto nació en octubre. ¿Qué día?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "El 10 de octubre. Es el día en que Kurama ataca Konoha y Minato lo sella en su hijo recién nacido.",
+        },
+        {
+          id: 13,
+          question: "¿En qué año nació Masashi Kishimoto, el autor de Naruto?",
+          answers: [],
+          correctAnswer: "1974",
+          correctValue: 1974,
+          explanation:
+            "En 1974, el 8 de noviembre, en la prefectura de Okayama. Tiene un hermano gemelo, Seishi Kishimoto, que también es mangaka.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántos espadachines forman el grupo de la Niebla al que pertenecían Zabuza y Kisame?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "Siete. Por eso se les llama los Siete Espadachines de la Niebla, y cada uno lleva una espada legendaria.",
+        },
+        {
+          id: 15,
+          question: "¿Cuántas naturalezas básicas de chakra existen?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Cinco: fuego, viento, rayo, tierra y agua. Naruto tiene afinidad con el viento, y Sasuke con el fuego y el rayo.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántas colas tiene Gyūki, la bestia sellada en Killer Bee?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Ocho. Gyūki es el Hachibi, mitad toro y mitad pulpo, y Killer Bee se lleva muy bien con él.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántos tomoe, esas pequeñas comas negras, tiene un Sharingan completamente despierto?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Tres. El Sharingan empieza con uno o dos tomoe y llega a tres cuando está totalmente desarrollado.",
+        },
+        {
+          id: 18,
+          question: "¿En qué año empieza el manga de Boruto en la Weekly Shōnen Jump?",
+          answers: [],
+          correctAnswer: "2016",
+          correctValue: 2016,
+          explanation:
+            "En 2016, el 9 de mayo. Sigue a Boruto, el hijo de Naruto, cuando su padre ya es Hokage.",
+        },
+        {
+          id: 19,
+          question: "En Naruto Shippuden, la alianza ninja se enfrenta a Obito y Madara. ¿Qué número de Gran Guerra Ninja es?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "La cuarta. Es la primera vez que las cinco grandes aldeas luchan juntas en un solo ejército.",
+        },
+        {
+          id: 20,
+          question: "¿En qué año se estrena The Last: Naruto the Movie, donde Naruto y Hinata acaban juntos?",
+          answers: [],
+          correctAnswer: "2014",
+          correctValue: 2014,
+          explanation:
+            "En 2014, en diciembre en Japón. La película transcurre dos años después de la guerra y cuenta cómo Naruto y Hinata terminan juntos.",
         },
       ],
     },

@@ -21,7 +21,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : l'Égypte des pharaons",
       description:
-        "Douze affirmations sur l'Égypte ancienne, des pyramides de Gizeh à Toutânkhamon. À toi de dire si c'est vrai ou si c'est faux.",
+        "Vingt affirmations sur l'Égypte ancienne, des pyramides de Gizeh à Toutânkhamon. À toi de dire si c'est vrai ou si c'est faux.",
       questions: [
         {
           id: 1,
@@ -161,12 +161,100 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
           explanation:
             "C'est faux. Ils ont été construits pour Ramsès II. Dans les années 1960, ils ont été découpés en blocs et remontés plus haut pour ne pas être noyés par le lac Nasser.",
         },
+        {
+          id: 13,
+          question: "Les anciens Égyptiens écrivaient sur du papyrus, fabriqué avec une plante qui pousse au bord du Nil.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. On coupait la tige du papyrus en fines lamelles, qu'on posait en couches croisées puis qu'on pressait pour obtenir une feuille. Le mot « papier » vient d'ailleurs de « papyrus ».",
+        },
+        {
+          id: 14,
+          question: "Osiris est le dieu du soleil.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Osiris est le dieu des morts, qui juge les âmes dans l'au-delà. Le grand dieu du soleil, c'est Râ.",
+        },
+        {
+          id: 15,
+          question: "Néfertiti était l'épouse de Ramsès II.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Néfertiti était l'épouse d'Akhenaton. La grande épouse de Ramsès II s'appelle Néfertari, un nom proche qui prête souvent à confusion.",
+        },
+        {
+          id: 16,
+          question: "Cléopâtre VII a vécu plus près de notre époque que de la construction de la pyramide de Khéops.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. La pyramide date d'environ 2560 av. J.-C., et Cléopâtre meurt en 30 av. J.-C., soit environ 2 500 ans plus tard. Entre sa mort et aujourd'hui, il s'est passé un peu plus de 2 000 ans.",
+        },
+        {
+          id: 17,
+          question: "Les chats étaient associés à la déesse Bastet.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Bastet était représentée avec une tête de chat, et on a retrouvé des milliers de chats momifiés dans son sanctuaire de Bubastis, dans le delta du Nil.",
+        },
+        {
+          id: 18,
+          question: "Toutânkhamon a régné plus de trente ans.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Il devient pharaon vers 9 ans et meurt vers 19 ans, après une dizaine d'années de règne. Il est surtout célèbre parce que son tombeau a été retrouvé presque intact.",
+        },
+        {
+          id: 19,
+          question: "La Vallée des Rois se trouve près de Louxor, sur la rive ouest du Nil.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Les Égyptiens plaçaient leurs tombes du côté où le soleil se couche, la rive ouest, associée au monde des morts. On y a trouvé plus de soixante tombes.",
+        },
+        {
+          id: 20,
+          question: "Les pyramides de Gizeh ont été construites sous le règne de Ramsès II.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Elles datent de l'Ancien Empire, vers 2600 à 2500 av. J.-C. Ramsès II règne bien plus tard, au XIIIe siècle av. J.-C., soit plus de mille ans après.",
+        },
       ],
     },
     en: {
       title: "Ancient Egypt: true or false?",
       description:
-        "Twelve statements about ancient Egypt, from the pyramids of Giza to Tutankhamun. You decide which ones are true and which are false.",
+        "Twenty statements about ancient Egypt, from the pyramids of Giza to Tutankhamun. You decide which ones are true and which are false.",
       questions: [
         {
           id: 1,
@@ -306,12 +394,100 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
           explanation:
             "False. They were built for Ramesses II. In the 1960s they were cut into blocks and rebuilt higher up so that Lake Nasser wouldn't flood them.",
         },
+        {
+          id: 13,
+          question: "The ancient Egyptians wrote on papyrus, made from a plant that grows along the Nile.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The stem of the papyrus plant was cut into thin strips, laid in crossed layers and pressed into a sheet. The word \"paper\" comes from \"papyrus\".",
+        },
+        {
+          id: 14,
+          question: "Osiris is the sun god.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Osiris is the god of the dead, who judges souls in the afterlife. The great sun god is Ra.",
+        },
+        {
+          id: 15,
+          question: "Nefertiti was the wife of Ramesses II.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Nefertiti was married to Akhenaten. The chief wife of Ramesses II was Nefertari, a similar name that often causes mix-ups.",
+        },
+        {
+          id: 16,
+          question: "Cleopatra VII lived closer to our time than to the building of the Great Pyramid of Khufu.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The pyramid dates from around 2560 BC and Cleopatra died in 30 BC, about 2,500 years later. A little over 2,000 years separate her death from today.",
+        },
+        {
+          id: 17,
+          question: "Cats were linked to the goddess Bastet.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Bastet was shown with the head of a cat, and thousands of mummified cats have been found at her sanctuary in Bubastis, in the Nile Delta.",
+        },
+        {
+          id: 18,
+          question: "Tutankhamun reigned for more than thirty years.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. He became pharaoh at around 9 and died at around 19, after roughly ten years on the throne. He is famous mostly because his tomb was found almost intact.",
+        },
+        {
+          id: 19,
+          question: "The Valley of the Kings is near Luxor, on the west bank of the Nile.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The Egyptians put their tombs on the side where the sun sets, the west bank, which they linked to the world of the dead. More than sixty tombs have been found there.",
+        },
+        {
+          id: 20,
+          question: "The pyramids of Giza were built during the reign of Ramesses II.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. They date from the Old Kingdom, around 2600 to 2500 BC. Ramesses II ruled much later, in the 13th century BC, more than a thousand years afterwards.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: el Egipto faraónico",
       description:
-        "Doce afirmaciones sobre el antiguo Egipto, de las pirámides de Guiza a Tutankamón. Tú decides cuáles son verdaderas y cuáles no.",
+        "Veinte afirmaciones sobre el antiguo Egipto, de las pirámides de Guiza a Tutankamón. Tú decides cuáles son verdaderas y cuáles no.",
       questions: [
         {
           id: 1,
@@ -450,6 +626,94 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso. Se construyeron para Ramsés II. En los años sesenta se cortaron en bloques y se volvieron a montar más arriba para que no los inundara el lago Nasser.",
+        },
+        {
+          id: 13,
+          question: "Los antiguos egipcios escribían sobre papiro, hecho con una planta que crece a orillas del Nilo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El tallo del papiro se cortaba en tiras finas, que se colocaban en capas cruzadas y se prensaban para formar una hoja. La palabra «papel» viene de «papiro».",
+        },
+        {
+          id: 14,
+          question: "Osiris es el dios del sol.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Osiris es el dios de los muertos, que juzga las almas en el más allá. El gran dios del sol es Ra.",
+        },
+        {
+          id: 15,
+          question: "Nefertiti era la esposa de Ramsés II.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Nefertiti era la esposa de Akenatón. La gran esposa de Ramsés II se llamaba Nefertari, un nombre parecido que suele confundir.",
+        },
+        {
+          id: 16,
+          question: "Cleopatra VII vivió más cerca de nuestra época que de la construcción de la pirámide de Keops.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. La pirámide data de hacia el 2560 a. C., y Cleopatra murió en el 30 a. C., unos 2500 años después. Entre su muerte y hoy han pasado algo más de 2000 años.",
+        },
+        {
+          id: 17,
+          question: "Los gatos estaban asociados a la diosa Bastet.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Bastet se representaba con cabeza de gato, y en su santuario de Bubastis, en el delta del Nilo, se han encontrado miles de gatos momificados.",
+        },
+        {
+          id: 18,
+          question: "Tutankamón reinó más de treinta años.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Llegó a faraón hacia los 9 años y murió hacia los 19, tras unos diez años de reinado. Es famoso sobre todo porque su tumba se encontró casi intacta.",
+        },
+        {
+          id: 19,
+          question: "El Valle de los Reyes está cerca de Luxor, en la orilla oeste del Nilo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Los egipcios ponían sus tumbas en el lado donde se pone el sol, la orilla oeste, que asociaban al mundo de los muertos. Allí se han hallado más de sesenta tumbas.",
+        },
+        {
+          id: 20,
+          question: "Las pirámides de Guiza se construyeron durante el reinado de Ramsés II.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Son del Imperio Antiguo, hacia el 2600-2500 a. C. Ramsés II reinó mucho después, en el siglo XIII a. C., más de mil años más tarde.",
         },
       ],
     },

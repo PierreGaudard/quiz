@@ -3,7 +3,7 @@ import type { TranslatedQuiz } from "./types";
 /**
  * Quiz sur le corps humain en mode vrai-faux : les idées reçues.
  *
- * Treize affirmations qu'on entend souvent (les 10 % du cerveau, le sang
+ * Vingt affirmations qu'on entend souvent (les 10 % du cerveau, le sang
  * bleu, la carte de la langue, etc.), mêlées à quelques faits vrais qui
  * ont l'air faux, pour que « faux » ne soit pas la réponse à chaque coup.
  * Le mode identifie « vrai » par l'id a et « faux » par l'id b
@@ -22,7 +22,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les idées reçues sur le corps",
       description:
-        "Treize affirmations sur le corps humain, entre idées reçues et faits surprenants. Le sang bleu, les 10 % du cerveau… vrai ou faux ?",
+        "Vingt affirmations sur le corps humain, entre idées reçues et faits surprenants. Le sang bleu, les 10 % du cerveau… vrai ou faux ?",
       questions: [
         {
           id: 1,
@@ -171,12 +171,89 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
           explanation:
             "Vrai. C'est le muscle des fesses, et il sert à se redresser, à monter les escaliers ou encore à courir. Le muscle le plus long est un autre, le sartorius, qui traverse la cuisse.",
         },
+        {
+          id: 14,
+          question: "Un chewing-gum avalé reste sept ans dans l'estomac.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le corps ne digère pas la gomme, mais il l'évacue comme le reste, en quelques jours.",
+        },
+        {
+          id: 15,
+          question: "L'être humain a autant de vertèbres dans le cou qu'une girafe.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Tous les deux en ont sept. Chez la girafe, chaque vertèbre est simplement beaucoup plus longue.",
+        },
+        {
+          id: 16,
+          question: "Le sucre rend les enfants surexcités.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Les études faites en double aveugle ne trouvent pas d'effet. L'excitation vient plutôt du contexte, comme une fête d'anniversaire, et de ce que les parents s'attendent à voir.",
+        },
+        {
+          id: 17,
+          question: "L'émail des dents est la matière la plus dure du corps humain.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Il est plus dur que les os. Par contre, il ne se répare pas tout seul une fois abîmé.",
+        },
+        {
+          id: 18,
+          question: "Manger des carottes permet de mieux voir la nuit.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. La carotte apporte de la vitamine A, utile aux yeux, mais elle n'améliore pas la vue d'une personne qui n'en manque pas. L'idée a été lancée par les Britanniques pendant la Seconde Guerre mondiale pour cacher qu'ils utilisaient le radar.",
+        },
+        {
+          id: 19,
+          question: "Se raser fait repousser les poils plus épais.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le rasoir coupe le poil au ras de la peau sans toucher la racine. Le poil qui repousse a juste un bout plus net, du coup il paraît plus dur au toucher.",
+        },
+        {
+          id: 20,
+          question: "L'estomac fabrique de l'acide chlorhydrique.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Il en produit pour digérer les aliments et tuer une partie des microbes. Une couche de mucus protège la paroi de l'estomac contre cet acide.",
+        },
       ],
     },
     en: {
       title: "True or false: myths about the human body",
       description:
-        "Thirteen statements about the human body, mixing myths and surprising facts. Blue blood, using 10% of your brain... true or false?",
+        "Twenty statements about the human body, mixing myths and surprising facts. Blue blood, using 10% of your brain... true or false?",
       questions: [
         {
           id: 1,
@@ -325,12 +402,89 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
           explanation:
             "True. It's the main buttock muscle, and it helps you stand up, climb stairs or run. The longest muscle is a different one, the sartorius, which runs across the thigh.",
         },
+        {
+          id: 14,
+          question: "Swallowed gum stays in your stomach for seven years.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Your body can't digest the gum base, but it passes through and comes out within a few days like everything else.",
+        },
+        {
+          id: 15,
+          question: "Humans have as many neck bones as a giraffe.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Both have seven neck vertebrae. A giraffe's are just much longer.",
+        },
+        {
+          id: 16,
+          question: "Sugar makes kids hyperactive.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Double-blind studies haven't found any effect. The excitement tends to come from the setting, like a birthday party, and from what parents expect to see.",
+        },
+        {
+          id: 17,
+          question: "Tooth enamel is the hardest substance in the human body.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. It's harder than bone. The catch is that it can't repair itself once it's damaged.",
+        },
+        {
+          id: 18,
+          question: "Eating carrots helps you see in the dark.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Carrots contain vitamin A, which the eyes need, but they won't improve the eyesight of someone who already gets enough. The British spread the idea during World War II to hide that their pilots used radar.",
+        },
+        {
+          id: 19,
+          question: "Shaving makes hair grow back thicker.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. A razor cuts the hair at skin level and never touches the root. The regrowth has a blunt tip, which is why it feels coarser.",
+        },
+        {
+          id: 20,
+          question: "Your stomach makes hydrochloric acid.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. It produces it to break down food and kill off some germs. A layer of mucus protects the stomach wall from the acid.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: los mitos del cuerpo humano",
       description:
-        "Trece afirmaciones sobre el cuerpo humano, entre mitos y datos sorprendentes. La sangre azul, el 10 % del cerebro... ¿verdadero o falso?",
+        "Veinte afirmaciones sobre el cuerpo humano, entre mitos y datos sorprendentes. La sangre azul, el 10 % del cerebro... ¿verdadero o falso?",
       questions: [
         {
           id: 1,
@@ -478,6 +632,83 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero. Es el músculo del trasero y sirve para levantarse, subir escaleras o correr. El más largo es otro, el sartorio, que cruza el muslo.",
+        },
+        {
+          id: 14,
+          question: "Un chicle tragado se queda siete años en el estómago.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El cuerpo no digiere la goma, pero la expulsa en pocos días, igual que el resto.",
+        },
+        {
+          id: 15,
+          question: "El ser humano tiene tantas vértebras en el cuello como una jirafa.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Los dos tienen siete vértebras cervicales. Las de la jirafa son mucho más largas, nada más.",
+        },
+        {
+          id: 16,
+          question: "El azúcar pone a los niños hiperactivos.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Los estudios a doble ciego no encuentran ningún efecto. La agitación viene más bien del contexto, como una fiesta de cumpleaños, y de lo que esperan ver los padres.",
+        },
+        {
+          id: 17,
+          question: "El esmalte de los dientes es la sustancia más dura del cuerpo humano.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Es más duro que los huesos. Eso sí, una vez dañado no se regenera.",
+        },
+        {
+          id: 18,
+          question: "Comer zanahorias ayuda a ver mejor de noche.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. La zanahoria aporta vitamina A, que los ojos necesitan, pero no mejora la vista de quien ya tiene suficiente. La idea la difundieron los británicos en la Segunda Guerra Mundial para ocultar que usaban el radar.",
+        },
+        {
+          id: 19,
+          question: "Afeitarse hace que el vello vuelva a salir más grueso.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. La cuchilla corta el vello a ras de piel sin tocar la raíz. El que vuelve a salir tiene la punta roma, por eso se nota más áspero.",
+        },
+        {
+          id: 20,
+          question: "El estómago fabrica ácido clorhídrico.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Lo produce para digerir los alimentos y matar parte de los microbios. Una capa de moco protege la pared del estómago frente a ese ácido.",
         },
       ],
     },

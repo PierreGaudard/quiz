@@ -64,10 +64,11 @@ function formatCount(n: number): string {
           {/* Left */}
           <div class="space-y-5">
             <h1 class="first-letter:uppercase font-display text-4xl md:text-6xl font-bold text-white leading-[1.05]">
-              Pon a prueba tu cultura con quizzes gratis
+              Quizzes online gratis
+              <span class="block mt-3 font-sans text-xl md:text-2xl font-semibold text-white/80 leading-snug">Cultura general, historia, deportes, anime y videojuegos</span>
             </h1>
             <p class="text-white/70 text-base md:text-lg max-w-lg leading-relaxed">
-              Deportes, cine, anime, geografía, etc.: {totalQuestions} preguntas y, debajo de cada una, la explicación de la respuesta correcta. Es gratis y se juega sin cuenta.
+              {totalQuestions} preguntas en total y, debajo de cada una, la explicación de la respuesta correcta. Es gratis y se juega sin cuenta.
             </p>
             <div class="max-w-sm">
               <div class="relative">
@@ -306,7 +307,7 @@ function formatCount(n: number): string {
           <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 tracking-tight mb-3">Los quizzes más populares ahora mismo</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
             <p>Si quieres empezar por uno, coge el de banderas: 17 preguntas, y después de dos partidas dejas de confundir las que se parecen.</p>
-            <p>Las <a href={lp('/cine')} class="text-brand-600 font-semibold hover:underline">ocho películas de Harry Potter</a> forman el quiz más largo de la web, con 18 preguntas. Dragon Ball y Minecraft son más cortos, diez preguntas cada uno, y son los dos donde más se pillan los fans.</p>
+            <p>Las <a href={lp('/cine')} class="text-brand-600 font-semibold hover:underline">ocho películas de Harry Potter</a> tienen su quiz, igual que Dragon Ball o Minecraft, y cada uno trae 20 preguntas. En esos dos últimos es donde más se pillan los fans.</p>
             <p>Un aviso sobre <a href={lp('/anime')} class="text-brand-600 font-semibold hover:underline">los nombres saiyan</a>: los que parecen evidentes rara vez son la respuesta correcta.</p>
           </div>
         </div>

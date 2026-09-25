@@ -22,7 +22,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
     fr: {
       title: "Quiz F1 : les circuits de légende",
       description:
-        "Dix questions sur les circuits de Formule 1 : Spa, Monza, Suzuka, Monaco, Silverstone, Interlagos ou encore le nouveau circuit de Madrid.",
+        "Vingt questions sur les circuits de Formule 1 : Spa, Monza, Suzuka, Monaco, Silverstone, Interlagos ou encore le nouveau circuit de Madrid.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizFormule1Circuits: TranslatedQuiz = {
           explanation:
             "À Madrid, autour du parc des expositions IFEMA. Kimi Antonelli a gagné la première course sur ce circuit, le 13 septembre 2026.",
         },
+        {
+          id: 11,
+          question: "Dans quel pays se trouve le circuit de Zandvoort ?",
+          answers: [
+            { id: "a", text: "La Belgique" },
+            { id: "b", text: "L'Allemagne" },
+            { id: "c", text: "Les Pays-Bas" },
+            { id: "d", text: "Le Danemark" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Aux Pays-Bas, au bord de la mer du Nord, au milieu des dunes. Il a retrouvé le calendrier en 2021, après 36 ans d'absence, avec des virages relevés.",
+        },
+        {
+          id: 12,
+          question: "Quel Grand Prix se court sur le circuit de Yas Marina ?",
+          answers: [
+            { id: "a", text: "Bahreïn" },
+            { id: "b", text: "Qatar" },
+            { id: "c", text: "Arabie saoudite" },
+            { id: "d", text: "Abu Dhabi" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Le Grand Prix d'Abu Dhabi, depuis 2009. La course commence en fin d'après-midi et finit de nuit, et c'est souvent la dernière de la saison.",
+        },
+        {
+          id: 13,
+          question: "Près de quelle capitale se trouve le Hungaroring ?",
+          answers: [
+            { id: "a", text: "Budapest" },
+            { id: "b", text: "Prague" },
+            { id: "c", text: "Vienne" },
+            { id: "d", text: "Bratislava" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Budapest. Le Grand Prix de Hongrie existe depuis 1986 : c'était le premier Grand Prix organisé derrière le rideau de fer.",
+        },
+        {
+          id: 14,
+          question: "Dans quel pays se trouve le Red Bull Ring ?",
+          answers: [
+            { id: "a", text: "L'Allemagne" },
+            { id: "b", text: "L'Autriche" },
+            { id: "c", text: "La Suisse" },
+            { id: "d", text: "L'Italie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Autriche, à Spielberg, en Styrie. Le circuit s'appelait autrefois l'Österreichring, puis l'A1-Ring, avant d'être racheté par Red Bull.",
+        },
+        {
+          id: 15,
+          question: "Dans quelle ville se trouve le Circuit des Amériques ?",
+          answers: [
+            { id: "a", text: "Austin" },
+            { id: "b", text: "Miami" },
+            { id: "c", text: "Indianapolis" },
+            { id: "d", text: "Las Vegas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "À Austin, au Texas. Il accueille le Grand Prix des États-Unis depuis 2012, et son premier virage monte en côte, très raide.",
+        },
+        {
+          id: 16,
+          question: "Dans quelle ville se court le Grand Prix d'Australie, autour du lac d'Albert Park ?",
+          answers: [
+            { id: "a", text: "Sydney" },
+            { id: "b", text: "Melbourne" },
+            { id: "c", text: "Adélaïde" },
+            { id: "d", text: "Perth" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "À Melbourne, depuis 1996. Avant, le Grand Prix d'Australie se courait dans les rues d'Adélaïde.",
+        },
+        {
+          id: 17,
+          question: "Quel circuit italien porte le nom d'Enzo Ferrari et de son fils Dino ?",
+          answers: [
+            { id: "a", text: "Monza" },
+            { id: "b", text: "Mugello" },
+            { id: "c", text: "Imola" },
+            { id: "d", text: "Misano" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Imola, dont le nom complet est Autodromo Enzo e Dino Ferrari. Il a accueilli le Grand Prix de Saint-Marin puis celui d'Émilie-Romagne.",
+        },
+        {
+          id: 18,
+          question: "Dans quelle ville se court le Grand Prix d'Azerbaïdjan, en partie dans la vieille ville ?",
+          answers: [
+            { id: "a", text: "Bakou" },
+            { id: "b", text: "Tbilissi" },
+            { id: "c", text: "Erevan" },
+            { id: "d", text: "Astana" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "À Bakou, depuis 2016. Le tracé passe dans une portion très étroite le long des remparts de la vieille ville, et sa ligne droite fait plus de 2 km.",
+        },
+        {
+          id: 19,
+          question: "Quel Grand Prix se court de nuit, le samedi, sur une piste qui longe les casinos du Strip ?",
+          answers: [
+            { id: "a", text: "Miami" },
+            { id: "b", text: "Singapour" },
+            { id: "c", text: "Las Vegas" },
+            { id: "d", text: "Macao" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Las Vegas, depuis 2023. Les F1 passent devant les grands hôtels-casinos du Strip, et la course a lieu le samedi soir, heure locale.",
+        },
+        {
+          id: 20,
+          question: "Près de quelle grande ville se trouve le circuit de Monza ?",
+          answers: [
+            { id: "a", text: "Turin" },
+            { id: "b", text: "Rome" },
+            { id: "c", text: "Bologne" },
+            { id: "d", text: "Milan" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Milan. Le circuit est construit dans le parc de Monza, à une quinzaine de kilomètres au nord de la ville, et il date de 1922.",
+        },
       ],
     },
     en: {
       title: "F1 quiz: legendary circuits",
       description:
-        "Ten questions on Formula 1 circuits: Spa, Monza, Suzuka, Monaco, Silverstone, Interlagos and the new track in Madrid.",
+        "Twenty questions on Formula 1 circuits: Spa, Monza, Suzuka, Monaco, Silverstone, Interlagos and the new track in Madrid.",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizFormule1Circuits: TranslatedQuiz = {
           explanation:
             "Madrid, around the IFEMA exhibition centre. Kimi Antonelli won the first race there on September 13, 2026.",
         },
+        {
+          id: 11,
+          question: "Which country is the Zandvoort circuit in?",
+          answers: [
+            { id: "a", text: "Belgium" },
+            { id: "b", text: "Germany" },
+            { id: "c", text: "The Netherlands" },
+            { id: "d", text: "Denmark" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The Netherlands, among the dunes by the North Sea. It returned to the calendar in 2021, after 36 years away, with banked corners.",
+        },
+        {
+          id: 12,
+          question: "Which Grand Prix is held at the Yas Marina circuit?",
+          answers: [
+            { id: "a", text: "Bahrain" },
+            { id: "b", text: "Qatar" },
+            { id: "c", text: "Saudi Arabia" },
+            { id: "d", text: "Abu Dhabi" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "The Abu Dhabi Grand Prix, since 2009. The race starts late in the afternoon and ends under the lights, and it is often the last one of the season.",
+        },
+        {
+          id: 13,
+          question: "Which capital city is the Hungaroring close to?",
+          answers: [
+            { id: "a", text: "Budapest" },
+            { id: "b", text: "Prague" },
+            { id: "c", text: "Vienna" },
+            { id: "d", text: "Bratislava" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Budapest. The Hungarian Grand Prix started in 1986, the first Grand Prix held behind the Iron Curtain.",
+        },
+        {
+          id: 14,
+          question: "Which country is the Red Bull Ring in?",
+          answers: [
+            { id: "a", text: "Germany" },
+            { id: "b", text: "Austria" },
+            { id: "c", text: "Switzerland" },
+            { id: "d", text: "Italy" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Austria, at Spielberg in Styria. It used to be called the Österreichring, then the A1-Ring, before Red Bull bought it.",
+        },
+        {
+          id: 15,
+          question: "Which city is the Circuit of the Americas in?",
+          answers: [
+            { id: "a", text: "Austin" },
+            { id: "b", text: "Miami" },
+            { id: "c", text: "Indianapolis" },
+            { id: "d", text: "Las Vegas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Austin, Texas. It has hosted the United States Grand Prix since 2012, and its first corner sits at the top of a steep climb.",
+        },
+        {
+          id: 16,
+          question: "Which city hosts the Australian Grand Prix, around the lake at Albert Park?",
+          answers: [
+            { id: "a", text: "Sydney" },
+            { id: "b", text: "Melbourne" },
+            { id: "c", text: "Adelaide" },
+            { id: "d", text: "Perth" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Melbourne, since 1996. Before that, the Australian Grand Prix was held on the streets of Adelaide.",
+        },
+        {
+          id: 17,
+          question: "Which Italian circuit is named after Enzo Ferrari and his son Dino?",
+          answers: [
+            { id: "a", text: "Monza" },
+            { id: "b", text: "Mugello" },
+            { id: "c", text: "Imola" },
+            { id: "d", text: "Misano" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Imola, whose full name is Autodromo Enzo e Dino Ferrari. It hosted the San Marino Grand Prix and later the Emilia-Romagna Grand Prix.",
+        },
+        {
+          id: 18,
+          question: "Which city hosts the Azerbaijan Grand Prix, partly through its old town?",
+          answers: [
+            { id: "a", text: "Baku" },
+            { id: "b", text: "Tbilisi" },
+            { id: "c", text: "Yerevan" },
+            { id: "d", text: "Astana" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Baku, since 2016. The track squeezes through a very narrow section along the old city walls, and its main straight is over 2 km long.",
+        },
+        {
+          id: 19,
+          question: "Which Grand Prix runs at night on a Saturday, on a track that goes past the casinos of the Strip?",
+          answers: [
+            { id: "a", text: "Miami" },
+            { id: "b", text: "Singapore" },
+            { id: "c", text: "Las Vegas" },
+            { id: "d", text: "Macau" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Las Vegas, since 2023. The cars race past the big casino hotels on the Strip, and the race takes place on Saturday night, local time.",
+        },
+        {
+          id: 20,
+          question: "Which big city is the Monza circuit close to?",
+          answers: [
+            { id: "a", text: "Turin" },
+            { id: "b", text: "Rome" },
+            { id: "c", text: "Bologna" },
+            { id: "d", text: "Milan" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Milan. The track was built in 1922 inside the park of Monza, about fifteen kilometres north of the city.",
+        },
       ],
     },
     es: {
       title: "Quiz de F1: circuitos de leyenda",
       description:
-        "Diez preguntas sobre los circuitos de Fórmula 1: Spa, Monza, Suzuka, Mónaco, Silverstone, Interlagos o el nuevo trazado de Madrid.",
+        "Veinte preguntas sobre los circuitos de Fórmula 1: Spa, Monza, Suzuka, Mónaco, Silverstone, Interlagos o el nuevo trazado de Madrid.",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizFormule1Circuits: TranslatedQuiz = {
           correctAnswer: "d",
           explanation:
             "En Madrid, alrededor del recinto ferial de IFEMA. Kimi Antonelli ganó la primera carrera en este circuito, el 13 de septiembre de 2026.",
+        },
+        {
+          id: 11,
+          question: "¿En qué país está el circuito de Zandvoort?",
+          answers: [
+            { id: "a", text: "Bélgica" },
+            { id: "b", text: "Alemania" },
+            { id: "c", text: "Países Bajos" },
+            { id: "d", text: "Dinamarca" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "En los Países Bajos, entre dunas junto al mar del Norte. Volvió al calendario en 2021, tras 36 años de ausencia, con curvas peraltadas.",
+        },
+        {
+          id: 12,
+          question: "¿Qué Gran Premio se corre en el circuito de Yas Marina?",
+          answers: [
+            { id: "a", text: "Baréin" },
+            { id: "b", text: "Catar" },
+            { id: "c", text: "Arabia Saudí" },
+            { id: "d", text: "Abu Dabi" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "El Gran Premio de Abu Dabi, desde 2009. Empieza al final de la tarde, acaba de noche y muchas veces cierra la temporada.",
+        },
+        {
+          id: 13,
+          question: "¿Cerca de qué capital está el Hungaroring?",
+          answers: [
+            { id: "a", text: "Budapest" },
+            { id: "b", text: "Praga" },
+            { id: "c", text: "Viena" },
+            { id: "d", text: "Bratislava" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "De Budapest. El Gran Premio de Hungría se corre desde 1986 y fue el primero organizado al otro lado del telón de acero.",
+        },
+        {
+          id: 14,
+          question: "¿En qué país está el Red Bull Ring?",
+          answers: [
+            { id: "a", text: "Alemania" },
+            { id: "b", text: "Austria" },
+            { id: "c", text: "Suiza" },
+            { id: "d", text: "Italia" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Austria, en Spielberg, en la región de Estiria. Antes se llamaba Österreichring y luego A1-Ring, hasta que lo compró Red Bull.",
+        },
+        {
+          id: 15,
+          question: "¿En qué ciudad está el Circuito de las Américas?",
+          answers: [
+            { id: "a", text: "Austin" },
+            { id: "b", text: "Miami" },
+            { id: "c", text: "Indianápolis" },
+            { id: "d", text: "Las Vegas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En Austin, Texas. Recibe el Gran Premio de Estados Unidos desde 2012 y su primera curva está en lo alto de una subida muy empinada.",
+        },
+        {
+          id: 16,
+          question: "¿En qué ciudad se corre el Gran Premio de Australia, alrededor del lago de Albert Park?",
+          answers: [
+            { id: "a", text: "Sídney" },
+            { id: "b", text: "Melbourne" },
+            { id: "c", text: "Adelaida" },
+            { id: "d", text: "Perth" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Melbourne, desde 1996. Antes, el Gran Premio de Australia se disputaba en las calles de Adelaida.",
+        },
+        {
+          id: 17,
+          question: "¿Qué circuito italiano lleva el nombre de Enzo Ferrari y de su hijo Dino?",
+          answers: [
+            { id: "a", text: "Monza" },
+            { id: "b", text: "Mugello" },
+            { id: "c", text: "Imola" },
+            { id: "d", text: "Misano" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Imola, cuyo nombre completo es Autodromo Enzo e Dino Ferrari. Acogió el Gran Premio de San Marino y después el de Emilia-Romaña.",
+        },
+        {
+          id: 18,
+          question: "¿En qué ciudad se corre el Gran Premio de Azerbaiyán, en parte por el casco antiguo?",
+          answers: [
+            { id: "a", text: "Bakú" },
+            { id: "b", text: "Tiflis" },
+            { id: "c", text: "Ereván" },
+            { id: "d", text: "Astaná" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En Bakú, desde 2016. El trazado pasa por un tramo muy estrecho junto a las murallas del casco antiguo, y su recta mide más de 2 km.",
+        },
+        {
+          id: 19,
+          question: "¿Qué Gran Premio se corre de noche, un sábado, por un trazado que pasa junto a los casinos del Strip?",
+          answers: [
+            { id: "a", text: "Miami" },
+            { id: "b", text: "Singapur" },
+            { id: "c", text: "Las Vegas" },
+            { id: "d", text: "Macao" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Las Vegas, desde 2023. Los coches pasan delante de los grandes hoteles casino del Strip y la carrera es el sábado por la noche, hora local.",
+        },
+        {
+          id: 20,
+          question: "¿Cerca de qué gran ciudad está el circuito de Monza?",
+          answers: [
+            { id: "a", text: "Turín" },
+            { id: "b", text: "Roma" },
+            { id: "c", text: "Bolonia" },
+            { id: "d", text: "Milán" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "De Milán. El circuito se construyó en 1922 dentro del parque de Monza, a unos quince kilómetros al norte de la ciudad.",
         },
       ],
     },

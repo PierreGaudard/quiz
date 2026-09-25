@@ -23,7 +23,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
     fr: {
       title: "Estimation : les numéros des départements",
       description:
-        "Dix nombres à trouver sur les départements français, surtout leurs numéros. Tu proposes un chiffre, on te dit plus haut ou plus bas.",
+        "Vingt nombres à trouver sur les départements français, surtout leurs numéros. Tu proposes un chiffre, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -120,12 +120,102 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
           explanation:
             "Le 974. Les départements d'outre-mer ont un code à trois chiffres qui commence par 97 : 971 pour la Guadeloupe, 972 pour la Martinique, etc.",
         },
+        {
+          id: 11,
+          question: "Quel est le numéro de l'Ain ?",
+          answers: [],
+          correctAnswer: "1",
+          correctValue: 1,
+          explanation:
+            "Le 01. L'Ain arrive en premier dans l'ordre alphabétique, c'est pour ça qu'il ouvre la liste.",
+        },
+        {
+          id: 12,
+          question: "Quel est le numéro du Finistère, à la pointe de la Bretagne ?",
+          answers: [],
+          correctAnswer: "29",
+          correctValue: 29,
+          explanation:
+            "Le 29. Le nom vient du latin finis terrae, « le bout de la terre ».",
+        },
+        {
+          id: 13,
+          question: "Quel est le numéro de la Haute-Savoie, le département d'Annecy ?",
+          answers: [],
+          correctAnswer: "74",
+          correctValue: 74,
+          explanation:
+            "Le 74. La Savoie a le 73 : les deux départements ont été créés en 1860, quand la Savoie est devenue française.",
+        },
+        {
+          id: 14,
+          question: "Quel est le numéro des Alpes-Maritimes, le département de Nice ?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Le 06. Il est rangé à la lettre A, juste après les Basses-Alpes (04) et les Hautes-Alpes (05). Le département actuel date de 1860, l'année où Nice est devenue française.",
+        },
+        {
+          id: 15,
+          question: "Quel est le numéro de la Seine-Saint-Denis ?",
+          answers: [],
+          correctAnswer: "93",
+          correctValue: 93,
+          explanation:
+            "Le 93, qu'on appelle souvent le « 9-3 ». Il fait partie des départements de la petite couronne, créés en 1968 autour de Paris.",
+        },
+        {
+          id: 16,
+          question: "Quel est le numéro de la Seine-Maritime, le département de Rouen ?",
+          answers: [],
+          correctAnswer: "76",
+          correctValue: 76,
+          explanation:
+            "Le 76. Jusqu'en 1955, il s'appelait la Seine-Inférieure, ce qui explique sa place dans l'ordre alphabétique.",
+        },
+        {
+          id: 17,
+          question: "Quel est le numéro de l'Ille-et-Vilaine, le département de Rennes ?",
+          answers: [],
+          correctAnswer: "35",
+          correctValue: 35,
+          explanation:
+            "Le 35. Le département porte le nom de deux rivières, l'Ille et la Vilaine, qui se rejoignent justement à Rennes.",
+        },
+        {
+          id: 18,
+          question: "Quel est le numéro du Pas-de-Calais ?",
+          answers: [],
+          correctAnswer: "62",
+          correctValue: 62,
+          explanation:
+            "Le 62. La préfecture est Arras, et pas Calais ni Boulogne, comme on le croit souvent.",
+        },
+        {
+          id: 19,
+          question: "Quel est le numéro de la Guadeloupe ?",
+          answers: [],
+          correctAnswer: "971",
+          correctValue: 971,
+          explanation:
+            "Le 971. Les départements d'outre-mer ont des numéros à trois chiffres qui commencent par 97 : la Guadeloupe ouvre la série.",
+        },
+        {
+          id: 20,
+          question: "Combien de départements compte la région Île-de-France ?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8 : Paris, la Seine-et-Marne, les Yvelines, l'Essonne, les Hauts-de-Seine, la Seine-Saint-Denis, le Val-de-Marne et le Val-d'Oise.",
+        },
       ],
     },
     en: {
       title: "Guess the number: French departments",
       description:
-        "Ten numbers to find about France's departments, mostly their official numbers. Make a guess and we'll tell you higher or lower.",
+        "Twenty numbers to find about France's departments, mostly their official numbers. Make a guess and we'll tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -222,12 +312,102 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
           explanation:
             "974. Overseas departments have three-digit codes starting with 97: 971 for Guadeloupe, 972 for Martinique and so on.",
         },
+        {
+          id: 11,
+          question: "What is the number of the Ain department?",
+          answers: [],
+          correctAnswer: "1",
+          correctValue: 1,
+          explanation:
+            "01. Ain comes first in alphabetical order, which is why it opens the list.",
+        },
+        {
+          id: 12,
+          question: "What is the number of Finistère, at the tip of Brittany?",
+          answers: [],
+          correctAnswer: "29",
+          correctValue: 29,
+          explanation:
+            "29. The name comes from the Latin finis terrae, meaning the end of the earth.",
+        },
+        {
+          id: 13,
+          question: "What is the number of Haute-Savoie, the department of Annecy?",
+          answers: [],
+          correctAnswer: "74",
+          correctValue: 74,
+          explanation:
+            "74. Savoie has 73: both departments were created in 1860, when Savoy became French.",
+        },
+        {
+          id: 14,
+          question: "What is the number of Alpes-Maritimes, the department of Nice?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "06. It's filed under A, right after the old Basses-Alpes (04) and Hautes-Alpes (05). The current department dates from 1860, the year Nice became French.",
+        },
+        {
+          id: 15,
+          question: "What is the number of Seine-Saint-Denis?",
+          answers: [],
+          correctAnswer: "93",
+          correctValue: 93,
+          explanation:
+            "93, often called the \"9-3\" in French. It's one of the departments created around Paris in 1968.",
+        },
+        {
+          id: 16,
+          question: "What is the number of Seine-Maritime, the department of Rouen?",
+          answers: [],
+          correctAnswer: "76",
+          correctValue: 76,
+          explanation:
+            "76. Until 1955 it was called Seine-Inférieure, which explains where it sits in the alphabetical order.",
+        },
+        {
+          id: 17,
+          question: "What is the number of Ille-et-Vilaine, the department of Rennes?",
+          answers: [],
+          correctAnswer: "35",
+          correctValue: 35,
+          explanation:
+            "35. The department is named after two rivers, the Ille and the Vilaine, which meet in Rennes.",
+        },
+        {
+          id: 18,
+          question: "What is the number of Pas-de-Calais?",
+          answers: [],
+          correctAnswer: "62",
+          correctValue: 62,
+          explanation:
+            "62. Its prefecture is Arras, not Calais or Boulogne as people often think.",
+        },
+        {
+          id: 19,
+          question: "What is the number of Guadeloupe?",
+          answers: [],
+          correctAnswer: "971",
+          correctValue: 971,
+          explanation:
+            "971. France's overseas departments have three-digit numbers starting with 97, and Guadeloupe comes first.",
+        },
+        {
+          id: 20,
+          question: "How many departments are there in the Île-de-France region?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8: Paris, Seine-et-Marne, Yvelines, Essonne, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne and Val-d'Oise.",
+        },
       ],
     },
     es: {
       title: "Estimación: los números de los departamentos",
       description:
-        "Diez números sobre los departamentos franceses, sobre todo su número oficial. Tú propones una cifra y te decimos si es más o menos.",
+        "Veinte números sobre los departamentos franceses, sobre todo su número oficial. Tú propones una cifra y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -323,6 +503,96 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
           correctValue: 974,
           explanation:
             "El 974. Los departamentos de ultramar tienen un código de tres cifras que empieza por 97: 971 para Guadalupe, 972 para Martinica, etc.",
+        },
+        {
+          id: 11,
+          question: "¿Cuál es el número del departamento de Ain?",
+          answers: [],
+          correctAnswer: "1",
+          correctValue: 1,
+          explanation:
+            "El 01. Ain es el primero por orden alfabético, por eso abre la lista.",
+        },
+        {
+          id: 12,
+          question: "¿Cuál es el número de Finisterre, en la punta de Bretaña?",
+          answers: [],
+          correctAnswer: "29",
+          correctValue: 29,
+          explanation:
+            "El 29. El nombre viene del latín finis terrae, «el fin de la tierra».",
+        },
+        {
+          id: 13,
+          question: "¿Cuál es el número de la Alta Saboya, el departamento de Annecy?",
+          answers: [],
+          correctAnswer: "74",
+          correctValue: 74,
+          explanation:
+            "El 74. Saboya tiene el 73: los dos departamentos se crearon en 1860, cuando Saboya pasó a ser francesa.",
+        },
+        {
+          id: 14,
+          question: "¿Cuál es el número de los Alpes Marítimos, el departamento de Niza?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "El 06. Está en la letra A, justo después de los antiguos Bajos Alpes (04) y Altos Alpes (05). El departamento actual es de 1860, el año en que Niza pasó a ser francesa.",
+        },
+        {
+          id: 15,
+          question: "¿Cuál es el número de Seine-Saint-Denis?",
+          answers: [],
+          correctAnswer: "93",
+          correctValue: 93,
+          explanation:
+            "El 93, al que en Francia llaman a menudo el «9-3». Es uno de los departamentos creados alrededor de París en 1968.",
+        },
+        {
+          id: 16,
+          question: "¿Cuál es el número de Sena Marítimo, el departamento de Ruan?",
+          answers: [],
+          correctAnswer: "76",
+          correctValue: 76,
+          explanation:
+            "El 76. Hasta 1955 se llamaba Seine-Inférieure, y eso explica su lugar en el orden alfabético.",
+        },
+        {
+          id: 17,
+          question: "¿Cuál es el número de Ille y Vilaine, el departamento de Rennes?",
+          answers: [],
+          correctAnswer: "35",
+          correctValue: 35,
+          explanation:
+            "El 35. El departamento lleva el nombre de dos ríos, el Ille y el Vilaine, que se juntan en Rennes.",
+        },
+        {
+          id: 18,
+          question: "¿Cuál es el número del Paso de Calais?",
+          answers: [],
+          correctAnswer: "62",
+          correctValue: 62,
+          explanation:
+            "El 62. Su prefectura es Arras, y no Calais ni Boulogne, como se suele creer.",
+        },
+        {
+          id: 19,
+          question: "¿Cuál es el número de Guadalupe?",
+          answers: [],
+          correctAnswer: "971",
+          correctValue: 971,
+          explanation:
+            "El 971. Los departamentos de ultramar tienen números de tres cifras que empiezan por 97, y Guadalupe abre la serie.",
+        },
+        {
+          id: 20,
+          question: "¿Cuántos departamentos tiene la región de Isla de Francia?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8: París, Seine-et-Marne, Yvelines, Essonne, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne y Val-d'Oise.",
         },
       ],
     },

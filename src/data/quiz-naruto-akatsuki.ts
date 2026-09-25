@@ -20,7 +20,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
     fr: {
       title: "Quiz Naruto : les membres de l'Akatsuki",
       description:
-        "Dix questions sur l'Akatsuki, de Pain à Kakuzu : leurs techniques, leurs armes et les ninjas qui les ont battus.",
+        "Vingt questions sur l'Akatsuki, de Pain à Kakuzu : leurs techniques, leurs armes et les ninjas qui les ont battus.",
       questions: [
         {
           id: 1,
@@ -157,12 +157,142 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
           explanation:
             "Cinq. Il vole les cœurs de ses adversaires pour vivre plus longtemps, et il faut les détruire un par un pour le battre.",
         },
+        {
+          id: 11,
+          question: "Avec quel membre de l'Akatsuki Kisame fait-il équipe ?",
+          answers: [
+            { id: "a", text: "Deidara" },
+            { id: "b", text: "Itachi" },
+            { id: "c", text: "Hidan" },
+            { id: "d", text: "Sasori" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Avec Itachi Uchiwa. Les deux font équipe quand ils viennent chercher Naruto à Konoha, dans la première partie.",
+        },
+        {
+          id: 12,
+          question: "De quel village Deidara est-il un déserteur ?",
+          answers: [
+            { id: "a", text: "Kiri, le village de la Brume" },
+            { id: "b", text: "Kumo, le village des Nuages" },
+            { id: "c", text: "Suna, le village du Sable" },
+            { id: "d", text: "Iwa, le village de la Roche" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "D'Iwa, le village de la Roche. Il l'a quitté avant de rejoindre l'Akatsuki, où il fait d'abord équipe avec Sasori.",
+        },
+        {
+          id: 13,
+          question: "Contre qui Deidara se fait-il exploser à la fin de son dernier combat ?",
+          answers: [
+            { id: "a", text: "Sasuke" },
+            { id: "b", text: "Naruto" },
+            { id: "c", text: "Kakashi" },
+            { id: "d", text: "Gaara" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Contre Sasuke. Deidara se fait exploser pour l'emporter avec lui, mais Sasuke s'en sort en se protégeant avec le serpent Manda.",
+        },
+        {
+          id: 14,
+          question: "Quel membre de l'Akatsuki a un corps coupé en deux moitiés, une noire et une blanche ?",
+          answers: [
+            { id: "a", text: "Kakuzu" },
+            { id: "b", text: "Kisame" },
+            { id: "c", text: "Zetsu" },
+            { id: "d", text: "Konan" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Zetsu. Ce sont deux êtres dans un même corps, avec chacun sa voix, et ils servent surtout d'espions à l'organisation.",
+        },
+        {
+          id: 15,
+          question: "Quel motif est dessiné sur les manteaux noirs de l'Akatsuki ?",
+          answers: [
+            { id: "a", text: "Des flammes noires" },
+            { id: "b", text: "Des nuages rouges" },
+            { id: "c", text: "Des feuilles vertes" },
+            { id: "d", text: "Des éclairs jaunes" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Des nuages rouges bordés de blanc. Avec ce manteau et la bague, on reconnaît un membre de l'Akatsuki au premier coup d'œil.",
+        },
+        {
+          id: 16,
+          question: "Quels yeux Nagato possède-t-il ?",
+          answers: [
+            { id: "a", text: "Le Rinnegan" },
+            { id: "b", text: "Le Sharingan" },
+            { id: "c", text: "Le Byakugan" },
+            { id: "d", text: "Le Tenseigan" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le Rinnegan, des yeux violets à cercles. C'est grâce à eux qu'il contrôle les six corps de Pain à distance.",
+        },
+        {
+          id: 17,
+          question: "Quel ancien élève du troisième Hokage a fait partie de l'Akatsuki avant de la quitter ?",
+          answers: [
+            { id: "a", text: "Kabuto" },
+            { id: "b", text: "Danzō" },
+            { id: "c", text: "Orochimaru" },
+            { id: "d", text: "Jiraya" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Orochimaru. Il quitte l'organisation après un affrontement avec Itachi, dont il voulait prendre le corps, et garde sa bague en partant.",
+        },
+        {
+          id: 18,
+          question: "De quel village Kakuzu est-il originaire ?",
+          answers: [
+            { id: "a", text: "Ame, le village de la Pluie" },
+            { id: "b", text: "Oto, le village du Son" },
+            { id: "c", text: "Kiri, le village de la Brume" },
+            { id: "d", text: "Taki, le village de la Cascade" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "De Taki, le village de la Cascade. Il en est parti après avoir échoué face au premier Hokage et y avoir volé des cœurs.",
+        },
+        {
+          id: 19,
+          question: "Que cherche à capturer l'Akatsuki pendant Naruto Shippuden ?",
+          answers: [
+            { id: "a", text: "Les démons à queues, les bijû" },
+            { id: "b", text: "Les rouleaux interdits de Konoha" },
+            { id: "c", text: "Les yeux du clan Hyûga" },
+            { id: "d", text: "Les épées des sept sabreurs" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Les bijû. L'organisation traque leurs hôtes, les jinchûriki, comme Gaara ou Naruto, pour extraire les démons scellés en eux.",
+        },
+        {
+          id: 20,
+          question: "Quel village Pain rase presque entièrement pour trouver Naruto ?",
+          answers: [
+            { id: "a", text: "Suna" },
+            { id: "b", text: "Konoha" },
+            { id: "c", text: "Kumo" },
+            { id: "d", text: "Ame" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Konoha. Pain détruit le village pendant que Naruto s'entraîne chez les crapauds, avant que celui-ci ne revienne l'affronter.",
+        },
       ],
     },
     en: {
       title: "Naruto Quiz: The Members of the Akatsuki",
       description:
-        "Ten questions on the Akatsuki, from Pain to Kakuzu: their techniques, their weapons and the ninja who beat them.",
+        "Twenty questions on the Akatsuki, from Pain to Kakuzu: their techniques, their weapons and the ninja who beat them.",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
           explanation:
             "Five. He steals his opponents' hearts to live longer, and you have to destroy them one by one to beat him.",
         },
+        {
+          id: 11,
+          question: "Which Akatsuki member is Kisame partnered with?",
+          answers: [
+            { id: "a", text: "Deidara" },
+            { id: "b", text: "Itachi" },
+            { id: "c", text: "Hidan" },
+            { id: "d", text: "Sasori" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Itachi Uchiha. The two of them come to Konoha together to go after Naruto in Part I.",
+        },
+        {
+          id: 12,
+          question: "Which village did Deidara defect from?",
+          answers: [
+            { id: "a", text: "Kiri, the Hidden Mist" },
+            { id: "b", text: "Kumo, the Hidden Cloud" },
+            { id: "c", text: "Suna, the Hidden Sand" },
+            { id: "d", text: "Iwa, the Hidden Stone" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Iwa, the Hidden Stone Village. He left it before joining the Akatsuki, where his first partner is Sasori.",
+        },
+        {
+          id: 13,
+          question: "Who is Deidara fighting when he blows himself up?",
+          answers: [
+            { id: "a", text: "Sasuke" },
+            { id: "b", text: "Naruto" },
+            { id: "c", text: "Kakashi" },
+            { id: "d", text: "Gaara" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sasuke. Deidara blows himself up to take Sasuke down with him, but Sasuke survives by shielding himself with the snake Manda.",
+        },
+        {
+          id: 14,
+          question: "Which Akatsuki member has a body split into a black half and a white half?",
+          answers: [
+            { id: "a", text: "Kakuzu" },
+            { id: "b", text: "Kisame" },
+            { id: "c", text: "Zetsu" },
+            { id: "d", text: "Konan" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Zetsu. It's two beings sharing one body, each with its own voice, and the organization mostly uses them as spies.",
+        },
+        {
+          id: 15,
+          question: "What pattern is printed on the Akatsuki's black cloaks?",
+          answers: [
+            { id: "a", text: "Black flames" },
+            { id: "b", text: "Red clouds" },
+            { id: "c", text: "Green leaves" },
+            { id: "d", text: "Yellow lightning bolts" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Red clouds outlined in white. Between the cloak and the ring, you can spot an Akatsuki member right away.",
+        },
+        {
+          id: 16,
+          question: "Which eyes does Nagato have?",
+          answers: [
+            { id: "a", text: "The Rinnegan" },
+            { id: "b", text: "The Sharingan" },
+            { id: "c", text: "The Byakugan" },
+            { id: "d", text: "The Tenseigan" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Rinnegan, purple eyes with rings. That's how he controls the six bodies of Pain from a distance.",
+        },
+        {
+          id: 17,
+          question: "Which former student of the Third Hokage was in the Akatsuki before leaving it?",
+          answers: [
+            { id: "a", text: "Kabuto" },
+            { id: "b", text: "Danzō" },
+            { id: "c", text: "Orochimaru" },
+            { id: "d", text: "Jiraiya" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Orochimaru. He leaves the organization after a clash with Itachi, whose body he wanted to take, and he keeps his ring when he goes.",
+        },
+        {
+          id: 18,
+          question: "Which village does Kakuzu come from?",
+          answers: [
+            { id: "a", text: "Ame, the Hidden Rain" },
+            { id: "b", text: "Oto, the Hidden Sound" },
+            { id: "c", text: "Kiri, the Hidden Mist" },
+            { id: "d", text: "Taki, the Hidden Waterfall" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Taki, the Village Hidden by Falling Water. He left after failing against the First Hokage, stealing hearts on his way out.",
+        },
+        {
+          id: 19,
+          question: "What is the Akatsuki trying to capture in Naruto Shippuden?",
+          answers: [
+            { id: "a", text: "The tailed beasts" },
+            { id: "b", text: "Konoha's forbidden scrolls" },
+            { id: "c", text: "The eyes of the Hyuga clan" },
+            { id: "d", text: "The swords of the Seven Swordsmen" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The tailed beasts. The organization hunts down their hosts, the jinchuriki, like Gaara or Naruto, to pull out the beasts sealed inside them.",
+        },
+        {
+          id: 20,
+          question: "Which village does Pain almost wipe off the map while looking for Naruto?",
+          answers: [
+            { id: "a", text: "Suna" },
+            { id: "b", text: "Konoha" },
+            { id: "c", text: "Kumo" },
+            { id: "d", text: "Ame" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Konoha. Pain destroys the village while Naruto is training with the toads, and Naruto comes back to fight him.",
+        },
       ],
     },
     es: {
       title: "Quiz Naruto: los miembros de Akatsuki",
       description:
-        "Diez preguntas sobre Akatsuki, de Pain a Kakuzu: sus técnicas, sus armas y los ninjas que acabaron con ellos.",
+        "Veinte preguntas sobre Akatsuki, de Pain a Kakuzu: sus técnicas, sus armas y los ninjas que acabaron con ellos.",
       questions: [
         {
           id: 1,
@@ -440,6 +700,136 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Cinco. Roba los corazones de sus rivales para vivir más, y hay que destruirlos uno a uno para vencerlo.",
+        },
+        {
+          id: 11,
+          question: "¿Con qué miembro de Akatsuki forma pareja Kisame?",
+          answers: [
+            { id: "a", text: "Deidara" },
+            { id: "b", text: "Itachi" },
+            { id: "c", text: "Hidan" },
+            { id: "d", text: "Sasori" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Con Itachi Uchiha. Los dos llegan juntos a Konoha para ir a por Naruto en la primera parte.",
+        },
+        {
+          id: 12,
+          question: "¿De qué aldea desertó Deidara?",
+          answers: [
+            { id: "a", text: "Kiri, la aldea de la Niebla" },
+            { id: "b", text: "Kumo, la aldea de las Nubes" },
+            { id: "c", text: "Suna, la aldea de la Arena" },
+            { id: "d", text: "Iwa, la aldea de la Roca" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "De Iwa, la aldea de la Roca. La abandonó antes de unirse a Akatsuki, donde su primer compañero es Sasori.",
+        },
+        {
+          id: 13,
+          question: "¿Contra quién pelea Deidara cuando se hace explotar?",
+          answers: [
+            { id: "a", text: "Sasuke" },
+            { id: "b", text: "Naruto" },
+            { id: "c", text: "Kakashi" },
+            { id: "d", text: "Gaara" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Contra Sasuke. Deidara se hace explotar para llevárselo por delante, pero Sasuke se salva protegiéndose con la serpiente Manda.",
+        },
+        {
+          id: 14,
+          question: "¿Qué miembro de Akatsuki tiene el cuerpo partido en una mitad negra y otra blanca?",
+          answers: [
+            { id: "a", text: "Kakuzu" },
+            { id: "b", text: "Kisame" },
+            { id: "c", text: "Zetsu" },
+            { id: "d", text: "Konan" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Zetsu. Son dos seres en un mismo cuerpo, cada uno con su voz, y la organización los usa sobre todo como espías.",
+        },
+        {
+          id: 15,
+          question: "¿Qué dibujo llevan las capas negras de Akatsuki?",
+          answers: [
+            { id: "a", text: "Llamas negras" },
+            { id: "b", text: "Nubes rojas" },
+            { id: "c", text: "Hojas verdes" },
+            { id: "d", text: "Rayos amarillos" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Nubes rojas con borde blanco. Con la capa y el anillo, a un miembro de Akatsuki se le reconoce enseguida.",
+        },
+        {
+          id: 16,
+          question: "¿Qué ojos tiene Nagato?",
+          answers: [
+            { id: "a", text: "El Rinnegan" },
+            { id: "b", text: "El Sharingan" },
+            { id: "c", text: "El Byakugan" },
+            { id: "d", text: "El Tenseigan" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Rinnegan, unos ojos morados con círculos. Gracias a ellos controla a distancia los seis cuerpos de Pain.",
+        },
+        {
+          id: 17,
+          question: "¿Qué antiguo alumno del Tercer Hokage estuvo en Akatsuki antes de dejarla?",
+          answers: [
+            { id: "a", text: "Kabuto" },
+            { id: "b", text: "Danzō" },
+            { id: "c", text: "Orochimaru" },
+            { id: "d", text: "Jiraiya" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Orochimaru. Deja la organización tras un enfrentamiento con Itachi, cuyo cuerpo quería quedarse, y se lleva su anillo al irse.",
+        },
+        {
+          id: 18,
+          question: "¿De qué aldea es Kakuzu?",
+          answers: [
+            { id: "a", text: "Ame, la aldea de la Lluvia" },
+            { id: "b", text: "Oto, la aldea del Sonido" },
+            { id: "c", text: "Kiri, la aldea de la Niebla" },
+            { id: "d", text: "Taki, la aldea de la Cascada" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "De Taki, la aldea de la Cascada. Se marchó tras fracasar contra el Primer Hokage, robando corazones al irse.",
+        },
+        {
+          id: 19,
+          question: "¿Qué intenta capturar Akatsuki en Naruto Shippuden?",
+          answers: [
+            { id: "a", text: "Las bestias con cola" },
+            { id: "b", text: "Los pergaminos prohibidos de Konoha" },
+            { id: "c", text: "Los ojos del clan Hyuga" },
+            { id: "d", text: "Las espadas de los Siete Espadachines" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Las bestias con cola. La organización persigue a sus portadores, los jinchūriki, como Gaara o Naruto, para sacarles la bestia que llevan sellada.",
+        },
+        {
+          id: 20,
+          question: "¿Qué aldea arrasa casi por completo Pain para encontrar a Naruto?",
+          answers: [
+            { id: "a", text: "Suna" },
+            { id: "b", text: "Konoha" },
+            { id: "c", text: "Kumo" },
+            { id: "d", text: "Ame" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Konoha. Pain destruye la aldea mientras Naruto entrena con los sapos, y luego Naruto vuelve para enfrentarse a él.",
         },
       ],
     },

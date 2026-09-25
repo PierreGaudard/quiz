@@ -27,7 +27,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
     fr: {
       title: "Duel 39-45 : les Alliés et l'Axe",
       description:
-        "Dix duels sur la Seconde Guerre mondiale : les pays neutres, les chefs militaires, les conférences et les lieux du conflit.",
+        "Vingt duels sur la Seconde Guerre mondiale : les pays neutres, les chefs militaires, les conférences et les lieux du conflit.",
       questions: [
         {
           id: 1,
@@ -143,12 +143,122 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
           explanation:
             "Leningrad, l'actuelle Saint-Pétersbourg, assiégée du 8 septembre 1941 au 27 janvier 1944. Moscou, elle, n'a jamais été encerclée.",
         },
+        {
+          id: 11,
+          question: "Quel pays signe le pacte tripartite avec l'Allemagne et l'Italie, en septembre 1940 ?",
+          answers: [
+            { id: "a", text: "Le Japon" },
+            { id: "b", text: "L'Espagne" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le Japon. Le pacte, signé à Berlin le 27 septembre 1940, prévoit que les trois pays s'aident si l'un d'eux est attaqué. L'Espagne de Franco reste officiellement hors de la guerre.",
+        },
+        {
+          id: 12,
+          question: "Quel pays signe un pacte de non-agression avec l'Allemagne en août 1939, une semaine avant l'invasion de la Pologne ?",
+          answers: [
+            { id: "a", text: "Le Royaume-Uni" },
+            { id: "b", text: "L'URSS" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'URSS. Le pacte germano-soviétique est signé à Moscou le 23 août 1939 par Ribbentrop et Molotov. Un protocole secret partage la Pologne entre les deux pays.",
+        },
+        {
+          id: 13,
+          question: "Qui dirige l'Union soviétique pendant toute la guerre ?",
+          answers: [
+            { id: "a", text: "Joseph Staline" },
+            { id: "b", text: "Léon Trotski" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Joseph Staline, au pouvoir depuis la fin des années 1920. Léon Trotski, son grand rival, avait été chassé d'URSS, et il est assassiné au Mexique en 1940.",
+        },
+        {
+          id: 14,
+          question: "Quel général américain commande dans le Pacifique Sud-Ouest et reçoit la capitulation du Japon, en septembre 1945 ?",
+          answers: [
+            { id: "a", text: "George Patton" },
+            { id: "b", text: "Douglas MacArthur" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Douglas MacArthur. La capitulation est signée le 2 septembre 1945 à bord du cuirassé Missouri, dans la baie de Tokyo. George Patton se bat en Europe.",
+        },
+        {
+          id: 15,
+          question: "Quel général britannique bat l'armée de Rommel à El Alamein, en Égypte, en 1942 ?",
+          answers: [
+            { id: "a", text: "Bernard Montgomery" },
+            { id: "b", text: "Louis Mountbatten" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Bernard Montgomery. La victoire d'El Alamein, en novembre 1942, repousse les troupes germano-italiennes loin de l'Égypte et du canal de Suez. Mountbatten prend le commandement en Asie du Sud-Est en 1943.",
+        },
+        {
+          id: 16,
+          question: "Dans quelle ville se réunissent les Alliés en juillet 1945, après la capitulation de l'Allemagne, pour décider de son sort ?",
+          answers: [
+            { id: "a", text: "Munich" },
+            { id: "b", text: "Potsdam" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Potsdam, près de Berlin. Staline y retrouve Truman et Churchill, remplacé en cours de route par Clement Attlee après les élections britanniques. La conférence de Munich date de 1938, avant la guerre.",
+        },
+        {
+          id: 17,
+          question: "Lequel de ces deux pays est envahi par l'Allemagne en avril 1940 ?",
+          answers: [
+            { id: "a", text: "La Norvège" },
+            { id: "b", text: "La Suède" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Norvège, attaquée le 9 avril 1940, le même jour que le Danemark. Le roi Haakon VII et le gouvernement partent à Londres. La Suède reste neutre pendant toute la guerre.",
+        },
+        {
+          id: 18,
+          question: "Qui est Premier ministre du Japon au moment de l'attaque de Pearl Harbor, en décembre 1941 ?",
+          answers: [
+            { id: "a", text: "Isoroku Yamamoto" },
+            { id: "b", text: "Hideki Tojo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Hideki Tojo, un général devenu chef du gouvernement en octobre 1941. L'amiral Yamamoto est celui qui a préparé l'attaque, mais il commande la flotte et n'est pas à la tête du gouvernement.",
+        },
+        {
+          id: 19,
+          question: "Quel est le nom de code de l'évacuation des soldats alliés depuis Dunkerque, en 1940 ?",
+          answers: [
+            { id: "a", text: "Opération Dynamo" },
+            { id: "b", text: "Opération Torch" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "L'opération Dynamo, du 26 mai au 4 juin 1940. Environ 338 000 soldats britanniques et français sont ramenés en Angleterre, dont une partie par de petits bateaux civils. L'opération Torch est le débarquement en Afrique du Nord, en novembre 1942.",
+        },
+        {
+          id: 20,
+          question: "Lequel de ces deux pays d'Amérique du Sud envoie des soldats combattre en Europe aux côtés des Alliés ?",
+          answers: [
+            { id: "a", text: "L'Argentine" },
+            { id: "b", text: "Le Brésil" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le Brésil, entré en guerre en août 1942. Sa force expéditionnaire, environ 25 000 hommes, se bat en Italie en 1944 et 1945. L'Argentine ne déclare la guerre à l'Allemagne qu'en mars 1945, sans envoyer de troupes.",
+        },
       ],
     },
     en: {
       title: "WWII duel: the Allies and the Axis",
       description:
-        "Ten duels about the Second World War: neutral countries, military leaders, the big conferences and key places of the war.",
+        "Twenty duels about the Second World War: neutral countries, military leaders, the big conferences and key places of the war.",
       questions: [
         {
           id: 1,
@@ -264,12 +374,122 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
           explanation:
             "Leningrad, today's Saint Petersburg, besieged from 8 September 1941 to 27 January 1944. Moscow was never encircled.",
         },
+        {
+          id: 11,
+          question: "Which country signed the Tripartite Pact with Germany and Italy in September 1940?",
+          answers: [
+            { id: "a", text: "Japan" },
+            { id: "b", text: "Spain" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Japan. The pact, signed in Berlin on 27 September 1940, said the three countries would help each other if one of them was attacked. Franco's Spain officially stayed out of the war.",
+        },
+        {
+          id: 12,
+          question: "Which country signed a non-aggression pact with Germany in August 1939, a week before the invasion of Poland?",
+          answers: [
+            { id: "a", text: "The United Kingdom" },
+            { id: "b", text: "The USSR" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The USSR. The German-Soviet pact was signed in Moscow on 23 August 1939 by Ribbentrop and Molotov. A secret protocol divided Poland between the two countries.",
+        },
+        {
+          id: 13,
+          question: "Who led the Soviet Union throughout the war?",
+          answers: [
+            { id: "a", text: "Joseph Stalin" },
+            { id: "b", text: "Leon Trotsky" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Joseph Stalin, in power since the late 1920s. Leon Trotsky, his great rival, had been expelled from the USSR and was murdered in Mexico in 1940.",
+        },
+        {
+          id: 14,
+          question: "Which American general commanded in the South-West Pacific and received Japan's surrender in September 1945?",
+          answers: [
+            { id: "a", text: "George Patton" },
+            { id: "b", text: "Douglas MacArthur" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Douglas MacArthur. The surrender was signed on 2 September 1945 aboard the battleship Missouri, in Tokyo Bay. Patton fought in Europe.",
+        },
+        {
+          id: 15,
+          question: "Which British general defeated Rommel's army at El Alamein, in Egypt, in 1942?",
+          answers: [
+            { id: "a", text: "Bernard Montgomery" },
+            { id: "b", text: "Louis Mountbatten" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Bernard Montgomery. The victory at El Alamein, in November 1942, pushed the German and Italian forces far back from Egypt and the Suez Canal. Mountbatten was given command in South-East Asia from 1943.",
+        },
+        {
+          id: 16,
+          question: "In which city did the Allies meet in July 1945, after Germany's surrender, to decide its future?",
+          answers: [
+            { id: "a", text: "Munich" },
+            { id: "b", text: "Potsdam" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Potsdam, near Berlin. Stalin met Truman and Churchill there, and Churchill was replaced partway through by Clement Attlee after the British election. The Munich conference was in 1938, before the war.",
+        },
+        {
+          id: 17,
+          question: "Which of these two countries was invaded by Germany in April 1940?",
+          answers: [
+            { id: "a", text: "Norway" },
+            { id: "b", text: "Sweden" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Norway, attacked on 9 April 1940, the same day as Denmark. King Haakon VII and the government went to London. Sweden stayed neutral throughout the war.",
+        },
+        {
+          id: 18,
+          question: "Who was Prime Minister of Japan at the time of the attack on Pearl Harbor, in December 1941?",
+          answers: [
+            { id: "a", text: "Isoroku Yamamoto" },
+            { id: "b", text: "Hideki Tojo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Hideki Tojo, a general who became head of government in October 1941. Admiral Yamamoto planned the attack, but he commanded the fleet and was not in charge of the government.",
+        },
+        {
+          id: 19,
+          question: "What was the code name of the evacuation of Allied soldiers from Dunkirk in 1940?",
+          answers: [
+            { id: "a", text: "Operation Dynamo" },
+            { id: "b", text: "Operation Torch" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Operation Dynamo, from 26 May to 4 June 1940. About 338,000 British and French soldiers were taken to England, some of them by small civilian boats. Operation Torch was the landing in North Africa in November 1942.",
+        },
+        {
+          id: 20,
+          question: "Which of these two South American countries sent soldiers to fight in Europe alongside the Allies?",
+          answers: [
+            { id: "a", text: "Argentina" },
+            { id: "b", text: "Brazil" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Brazil, which entered the war in August 1942. Its expeditionary force, around 25,000 men, fought in Italy in 1944 and 1945. Argentina only declared war on Germany in March 1945 and sent no troops.",
+        },
       ],
     },
     es: {
       title: "Duelo 39-45: los Aliados y el Eje",
       description:
-        "Diez duelos sobre la Segunda Guerra Mundial: los países neutrales, los jefes militares, las conferencias y los lugares clave.",
+        "Veinte duelos sobre la Segunda Guerra Mundial: los países neutrales, los jefes militares, las conferencias y los lugares clave.",
       questions: [
         {
           id: 1,
@@ -384,6 +604,116 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Leningrado, la actual San Petersburgo, sitiada del 8 de septiembre de 1941 al 27 de enero de 1944. Moscú nunca llegó a estar cercada.",
+        },
+        {
+          id: 11,
+          question: "¿Qué país firmó el pacto tripartito con Alemania e Italia en septiembre de 1940?",
+          answers: [
+            { id: "a", text: "Japón" },
+            { id: "b", text: "España" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Japón. El pacto, firmado en Berlín el 27 de septiembre de 1940, preveía que los tres países se ayudaran si uno de ellos era atacado. La España de Franco se mantuvo oficialmente fuera de la guerra.",
+        },
+        {
+          id: 12,
+          question: "¿Qué país firmó un pacto de no agresión con Alemania en agosto de 1939, una semana antes de la invasión de Polonia?",
+          answers: [
+            { id: "a", text: "El Reino Unido" },
+            { id: "b", text: "La URSS" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La URSS. El pacto germano-soviético se firmó en Moscú el 23 de agosto de 1939, por Ribbentrop y Mólotov. Un protocolo secreto repartía Polonia entre los dos países.",
+        },
+        {
+          id: 13,
+          question: "¿Quién dirigió la Unión Soviética durante toda la guerra?",
+          answers: [
+            { id: "a", text: "Iósif Stalin" },
+            { id: "b", text: "León Trotski" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Iósif Stalin, en el poder desde finales de los años veinte. León Trotski, su gran rival, había sido expulsado de la URSS y fue asesinado en México en 1940.",
+        },
+        {
+          id: 14,
+          question: "¿Qué general estadounidense mandaba en el Pacífico Suroeste y recibió la rendición de Japón en septiembre de 1945?",
+          answers: [
+            { id: "a", text: "George Patton" },
+            { id: "b", text: "Douglas MacArthur" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Douglas MacArthur. La rendición se firmó el 2 de septiembre de 1945 a bordo del acorazado Missouri, en la bahía de Tokio. Patton combatió en Europa.",
+        },
+        {
+          id: 15,
+          question: "¿Qué general británico venció al ejército de Rommel en El Alamein, en Egipto, en 1942?",
+          answers: [
+            { id: "a", text: "Bernard Montgomery" },
+            { id: "b", text: "Louis Mountbatten" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Bernard Montgomery. La victoria de El Alamein, en noviembre de 1942, alejó a las tropas germano-italianas de Egipto y del canal de Suez. Mountbatten mandó en el Sudeste Asiático a partir de 1943.",
+        },
+        {
+          id: 16,
+          question: "¿En qué ciudad se reunieron los Aliados en julio de 1945, tras la capitulación alemana, para decidir el destino de Alemania?",
+          answers: [
+            { id: "a", text: "Múnich" },
+            { id: "b", text: "Potsdam" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Potsdam, cerca de Berlín. Stalin se reunió allí con Truman y Churchill, al que sustituyó Clement Attlee a mitad de camino tras las elecciones británicas. La conferencia de Múnich fue en 1938, antes de la guerra.",
+        },
+        {
+          id: 17,
+          question: "¿Cuál de estos dos países fue invadido por Alemania en abril de 1940?",
+          answers: [
+            { id: "a", text: "Noruega" },
+            { id: "b", text: "Suecia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Noruega, atacada el 9 de abril de 1940, el mismo día que Dinamarca. El rey Haakon VII y el Gobierno se marcharon a Londres. Suecia siguió siendo neutral durante toda la guerra.",
+        },
+        {
+          id: 18,
+          question: "¿Quién era primer ministro de Japón en el momento del ataque a Pearl Harbor, en diciembre de 1941?",
+          answers: [
+            { id: "a", text: "Isoroku Yamamoto" },
+            { id: "b", text: "Hideki Tojo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Hideki Tojo, un general que pasó a jefe del Gobierno en octubre de 1941. El almirante Yamamoto preparó el ataque, pero mandaba la flota y no dirigía el Gobierno.",
+        },
+        {
+          id: 19,
+          question: "¿Cuál fue el nombre en clave de la evacuación de soldados aliados desde Dunkerque, en 1940?",
+          answers: [
+            { id: "a", text: "Operación Dinamo" },
+            { id: "b", text: "Operación Antorcha" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La operación Dinamo, del 26 de mayo al 4 de junio de 1940. Unos 338 000 soldados británicos y franceses fueron llevados a Inglaterra, algunos en pequeños barcos civiles. La operación Antorcha fue el desembarco en el norte de África, en noviembre de 1942.",
+        },
+        {
+          id: 20,
+          question: "¿Cuál de estos dos países sudamericanos envió soldados a combatir en Europa junto a los Aliados?",
+          answers: [
+            { id: "a", text: "Argentina" },
+            { id: "b", text: "Brasil" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Brasil, que entró en guerra en agosto de 1942. Su fuerza expedicionaria, unos 25 000 hombres, combatió en Italia en 1944 y 1945. Argentina no declaró la guerra a Alemania hasta marzo de 1945, y no envió tropas.",
         },
       ],
     },

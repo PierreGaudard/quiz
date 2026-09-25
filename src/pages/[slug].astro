@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import CategoryPage from "../components/CategoryPage";
 import { localePath } from "../utils/base";
 import { t } from "../i18n/ui";
-import { getSlugPaths, resolveCategoryData, categoryTitle } from "../lib/page-helpers";
+import { getSlugPaths, resolveCategoryData, categoryTitle, categoryH1 } from "../lib/page-helpers";
 import { getHreflangCategoryPaths } from "../lib/hreflang-helpers";
 import type { Locale } from "../i18n/config";
 
@@ -27,6 +27,7 @@ const lp = (path: string) => localePath(path, locale);
     gameTypes={availableGameTypes}
     quizzesByType={quizzesByType}
     locale={locale}
+    h1={categoryH1(categorySlug, category.name, locale)}
   />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",

@@ -23,7 +23,7 @@ export const quizCyclisme: TranslatedQuiz = {
     fr: {
       title: "Estimation : les chiffres du Tour de France",
       description:
-        "Dix nombres à trouver sur le cyclisme et le Tour de France. Tu proposes un chiffre, on te dit plus haut ou plus bas.",
+        "Vingt nombres à trouver sur le cyclisme et le Tour de France. Tu proposes un chiffre, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -119,12 +119,102 @@ export const quizCyclisme: TranslatedQuiz = {
           explanation:
             "En 1896, sept ans avant le premier Tour de France. C'est l'Allemand Josef Fischer qui l'a gagné.",
         },
+        {
+          id: 11,
+          question: "Combien de coureurs ont pris le départ du premier Tour de France, en 1903 ?",
+          answers: [],
+          correctAnswer: "60",
+          correctValue: 60,
+          explanation:
+            "60 coureurs. Seuls 21 d'entre eux sont arrivés au bout des six étapes.",
+        },
+        {
+          id: 12,
+          question: "En quelle année a eu lieu le premier Tour d'Italie ?",
+          answers: [],
+          correctAnswer: "1909",
+          correctValue: 1909,
+          explanation:
+            "En 1909, six ans après le premier Tour de France. Il a été gagné par l'Italien Luigi Ganna.",
+        },
+        {
+          id: 13,
+          question: "En quelle année a été couru le premier Tour d'Espagne ?",
+          answers: [],
+          correctAnswer: "1935",
+          correctValue: 1935,
+          explanation:
+            "En 1935. C'est le Belge Gustaaf Deloor qui a gagné cette première Vuelta.",
+        },
+        {
+          id: 14,
+          question: "Combien de jours Eddy Merckx a-t-il porté le maillot jaune sur l'ensemble de sa carrière ?",
+          answers: [],
+          correctAnswer: "96",
+          correctValue: 96,
+          explanation:
+            "96 jours, sur ses sept participations au Tour. C'est toujours le record du Tour.",
+        },
+        {
+          id: 15,
+          question: "Combien de coureurs chaque équipe aligne-t-elle au départ du Tour de France depuis 2018 ?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Huit coureurs. Avant 2018, les équipes en avaient neuf, et les organisateurs ont réduit ce nombre pour rendre les courses moins verrouillées.",
+        },
+        {
+          id: 16,
+          question: "À quelle altitude culmine le mont Ventoux, en mètres ?",
+          answers: [],
+          correctAnswer: "1910",
+          correctValue: 1910,
+          explanation:
+            "1 910 mètres. Le « Géant de Provence » fait partie des arrivées les plus dures du Tour, avec sa fin de montée sans arbres, très exposée au vent.",
+        },
+        {
+          id: 17,
+          question: "Combien de virages compte la montée de l'Alpe d'Huez ?",
+          answers: [],
+          correctAnswer: "21",
+          correctValue: 21,
+          explanation:
+            "21 virages, numérotés du bas vers le haut. Chacun porte le nom d'un ou plusieurs vainqueurs d'étape à l'Alpe d'Huez.",
+        },
+        {
+          id: 18,
+          question: "Combien de titres de champion du monde sur route Peter Sagan a-t-il gagnés d'affilée ?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Trois titres, en 2015, 2016 et 2017. Le Slovaque est le premier coureur à avoir gagné les Mondiaux trois années de suite.",
+        },
+        {
+          id: 19,
+          question: "En quelle année ont eu lieu les premiers championnats du monde sur route pour les professionnels ?",
+          answers: [],
+          correctAnswer: "1927",
+          correctValue: 1927,
+          explanation:
+            "En 1927, sur le circuit du Nürburgring, en Allemagne. C'est l'Italien Alfredo Binda qui a gagné.",
+        },
+        {
+          id: 20,
+          question: "Combien de Tours de France Chris Froome a-t-il gagnés ?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Quatre, en 2013, 2015, 2016 et 2017. Le Britannique a aussi gagné un Giro et deux Vuelta.",
+        },
       ],
     },
     en: {
       title: "Estimation: Tour de France numbers",
       description:
-        "Ten numbers to find about cycling and the Tour de France. You guess a figure, we tell you higher or lower.",
+        "Twenty numbers to find about cycling and the Tour de France. You guess a figure, we tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -220,12 +310,102 @@ export const quizCyclisme: TranslatedQuiz = {
           explanation:
             "In 1896, seven years before the first Tour de France. The German rider Josef Fischer won it.",
         },
+        {
+          id: 11,
+          question: "How many riders started the first Tour de France, in 1903?",
+          answers: [],
+          correctAnswer: "60",
+          correctValue: 60,
+          explanation:
+            "60 riders. Only 21 of them made it to the end of the six stages.",
+        },
+        {
+          id: 12,
+          question: "In what year was the first Giro d'Italia held?",
+          answers: [],
+          correctAnswer: "1909",
+          correctValue: 1909,
+          explanation:
+            "In 1909, six years after the first Tour de France. The Italian Luigi Ganna won it.",
+        },
+        {
+          id: 13,
+          question: "In what year was the first Vuelta a España raced?",
+          answers: [],
+          correctAnswer: "1935",
+          correctValue: 1935,
+          explanation:
+            "In 1935. Belgium's Gustaaf Deloor won that first Vuelta.",
+        },
+        {
+          id: 14,
+          question: "How many days did Eddy Merckx wear the yellow jersey over his whole career?",
+          answers: [],
+          correctAnswer: "96",
+          correctValue: 96,
+          explanation:
+            "96 days, over his seven Tours. It's still the Tour record.",
+        },
+        {
+          id: 15,
+          question: "How many riders has each team started the Tour de France with since 2018?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Eight riders. Teams had nine before 2018, and the organisers cut the number to make races harder to control.",
+        },
+        {
+          id: 16,
+          question: "How high is the summit of Mont Ventoux, in metres?",
+          answers: [],
+          correctAnswer: "1910",
+          correctValue: 1910,
+          explanation:
+            "1,910 metres. The \"Giant of Provence\" is one of the Tour's toughest finishes, with a bare, windswept top section.",
+        },
+        {
+          id: 17,
+          question: "How many hairpin bends are there on the climb to Alpe d'Huez?",
+          answers: [],
+          correctAnswer: "21",
+          correctValue: 21,
+          explanation:
+            "21 bends, numbered from the bottom up. Each one carries the name of one or more stage winners at Alpe d'Huez.",
+        },
+        {
+          id: 18,
+          question: "How many road world titles in a row did Peter Sagan win?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Three, in 2015, 2016 and 2017. The Slovak was the first rider to win the Worlds three years running.",
+        },
+        {
+          id: 19,
+          question: "In what year was the first professional road world championship held?",
+          answers: [],
+          correctAnswer: "1927",
+          correctValue: 1927,
+          explanation:
+            "In 1927, on the Nürburgring circuit in Germany. Italy's Alfredo Binda won.",
+        },
+        {
+          id: 20,
+          question: "How many Tours de France did Chris Froome win?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Four, in 2013, 2015, 2016 and 2017. The British rider also won one Giro and two Vueltas.",
+        },
       ],
     },
     es: {
       title: "Estimación: las cifras del Tour de Francia",
       description:
-        "Diez números sobre ciclismo y el Tour de Francia. Tú propones una cifra y te decimos si es más o menos.",
+        "Veinte números sobre ciclismo y el Tour de Francia. Tú propones una cifra y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -320,6 +500,96 @@ export const quizCyclisme: TranslatedQuiz = {
           correctValue: 1896,
           explanation:
             "En 1896, siete años antes del primer Tour de Francia. La ganó el alemán Josef Fischer.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos ciclistas tomaron la salida del primer Tour de Francia, en 1903?",
+          answers: [],
+          correctAnswer: "60",
+          correctValue: 60,
+          explanation:
+            "60 ciclistas. Solo 21 de ellos terminaron las seis etapas.",
+        },
+        {
+          id: 12,
+          question: "¿En qué año se disputó el primer Giro de Italia?",
+          answers: [],
+          correctAnswer: "1909",
+          correctValue: 1909,
+          explanation:
+            "En 1909, seis años después del primer Tour de Francia. Lo ganó el italiano Luigi Ganna.",
+        },
+        {
+          id: 13,
+          question: "¿En qué año se corrió la primera Vuelta a España?",
+          answers: [],
+          correctAnswer: "1935",
+          correctValue: 1935,
+          explanation:
+            "En 1935. El belga Gustaaf Deloor ganó aquella primera Vuelta.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántos días llevó Eddy Merckx el maillot amarillo en toda su carrera?",
+          answers: [],
+          correctAnswer: "96",
+          correctValue: 96,
+          explanation:
+            "96 días, en sus siete participaciones en el Tour. Sigue siendo el récord del Tour.",
+        },
+        {
+          id: 15,
+          question: "¿Con cuántos ciclistas sale cada equipo en el Tour de Francia desde 2018?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Con ocho. Antes de 2018 eran nueve, y los organizadores bajaron la cifra para que las carreras fueran menos controladas.",
+        },
+        {
+          id: 16,
+          question: "¿A qué altitud está la cima del Mont Ventoux, en metros?",
+          answers: [],
+          correctAnswer: "1910",
+          correctValue: 1910,
+          explanation:
+            "A 1.910 metros. El «Gigante de la Provenza» es uno de los finales más duros del Tour, con una parte alta sin árboles y muy expuesta al viento.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántas curvas tiene la subida a Alpe d'Huez?",
+          answers: [],
+          correctAnswer: "21",
+          correctValue: 21,
+          explanation:
+            "21 curvas, numeradas de abajo arriba. Cada una lleva el nombre de uno o varios ganadores de etapa en Alpe d'Huez.",
+        },
+        {
+          id: 18,
+          question: "¿Cuántos títulos mundiales en ruta seguidos ganó Peter Sagan?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Tres, en 2015, 2016 y 2017. El eslovaco fue el primero en ganar el Mundial tres años seguidos.",
+        },
+        {
+          id: 19,
+          question: "¿En qué año se celebró el primer Mundial de ruta para profesionales?",
+          answers: [],
+          correctAnswer: "1927",
+          correctValue: 1927,
+          explanation:
+            "En 1927, en el circuito de Nürburgring, en Alemania. Lo ganó el italiano Alfredo Binda.",
+        },
+        {
+          id: 20,
+          question: "¿Cuántos Tours de Francia ganó Chris Froome?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Cuatro, en 2013, 2015, 2016 y 2017. El británico también ganó un Giro y dos Vueltas.",
         },
       ],
     },

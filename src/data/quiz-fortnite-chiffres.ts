@@ -1,7 +1,7 @@
 import type { TranslatedQuiz } from "./types";
 
 /**
- * Quiz Fortnite en mode estimation : dix nombres sur le jeu d'Epic Games.
+ * Quiz Fortnite en mode estimation : vingt nombres sur le jeu d'Epic Games.
  *
  * Tolérance de 5 % et cinq essais (EstimationPlayer). Les années et les gros
  * chiffres laissent de la marge, les petits nombres (4 joueurs, 10 saisons) se
@@ -23,7 +23,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
     fr: {
       title: "Estimation : les chiffres de Fortnite",
       description:
-        "Dix nombres à trouver sur Fortnite, de son annonce en 2011 au retour de la carte OG. Tu proposes, on te dit plus haut ou plus bas.",
+        "Vingt nombres à trouver sur Fortnite, de son annonce en 2011 au retour de la carte OG. Tu proposes, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -120,12 +120,102 @@ export const quizFortniteChiffres: TranslatedQuiz = {
           explanation:
             "Environ 630 000 (628 000 d'après Twitch). C'était le record pour une chaîne individuelle sur Twitch, loin devant l'ancien record d'environ 388 000.",
         },
+        {
+          id: 11,
+          question: "Combien de saisons compte le Chapitre 2 de Fortnite ?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Huit, d'octobre 2019 à décembre 2021. C'est deux de moins que le Chapitre 1, qui en avait dix.",
+        },
+        {
+          id: 12,
+          question: "En quelle année est sorti Unreal, le jeu qui a donné son nom au moteur de Fortnite ?",
+          answers: [],
+          correctAnswer: "1998",
+          correctValue: 1998,
+          explanation:
+            "En 1998. Epic l'a développé avec le studio Digital Extremes, et son moteur, l'Unreal Engine, a ensuite servi à des centaines de jeux, dont Fortnite.",
+        },
+        {
+          id: 13,
+          question: "En 2012, le groupe chinois Tencent entre au capital d'Epic Games. Quel pourcentage de l'entreprise récupère-t-il, à peu près ?",
+          answers: [],
+          correctAnswer: "40",
+          correctValue: 40,
+          explanation:
+            "Environ 40 %, pour 330 millions de dollars. Tim Sweeney, le fondateur, est resté l'actionnaire qui contrôle l'entreprise.",
+        },
+        {
+          id: 14,
+          question: "En quelle année Epic Games a-t-il ouvert sa propre boutique de jeux sur PC, l'Epic Games Store ?",
+          answers: [],
+          correctAnswer: "2018",
+          correctValue: 2018,
+          explanation:
+            "En 2018, en décembre, pendant les Game Awards. L'argent de Fortnite a permis à Epic de se lancer face à Steam.",
+        },
+        {
+          id: 15,
+          question: "À son lancement, quel pourcentage de chaque vente l'Epic Games Store gardait-il pour lui ?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "12 %, le reste allait au studio qui avait fait le jeu. Sur Steam, la part habituelle était de 30 %, et c'est comme ça qu'Epic a attiré des développeurs.",
+        },
+        {
+          id: 16,
+          question: "En juillet 2020, combien de millions de dollars Sony investit-il dans Epic Games ?",
+          answers: [],
+          correctAnswer: "250",
+          correctValue: 250,
+          explanation:
+            "250 millions de dollars, pour une petite part de l'entreprise. C'était deux mois après la démonstration de l'Unreal Engine 5 sur PS5.",
+        },
+        {
+          id: 17,
+          question: "En février 2024, combien de milliards de dollars Disney investit-il dans Epic Games ?",
+          answers: [],
+          correctAnswer: "1.5",
+          correctValue: 1.5,
+          explanation:
+            "1,5 milliard de dollars, pour environ 9 % de l'entreprise. Disney veut créer avec Epic un univers autour de ses personnages, relié à Fortnite.",
+        },
+        {
+          id: 18,
+          question: "En quelle année est arrivé le mode Zéro construction, le Battle Royale sans construction ?",
+          answers: [],
+          correctAnswer: "2022",
+          correctValue: 2022,
+          explanation:
+            "En 2022, au mois de mars. On s'y bat seulement avec les armes et le décor, sans pouvoir poser de murs ni de rampes.",
+        },
+        {
+          id: 19,
+          question: "Combien de joueurs s'affrontent dans une partie de Fortnite Reload, le mode lancé en juin 2024 ?",
+          answers: [],
+          correctAnswer: "40",
+          correctValue: 40,
+          explanation:
+            "40 joueurs, sur une petite île, contre 100 dans le Battle Royale classique. On y réapparaît tout seul tant qu'un coéquipier est encore en vie.",
+        },
+        {
+          id: 20,
+          question: "Retiré de l'App Store en 2020, Fortnite est revenu sur les iPhone américains. En quelle année ?",
+          answers: [],
+          correctAnswer: "2025",
+          correctValue: 2025,
+          explanation:
+            "En 2025, le 20 mai, après une décision de justice contre Apple. En Europe, le jeu était déjà revenu sur iPhone en août 2024.",
+        },
       ],
     },
     en: {
       title: "Estimation: the numbers behind Fortnite",
       description:
-        "Ten numbers to find about Fortnite, from its 2011 reveal to the return of the OG map. You guess, we tell you higher or lower.",
+        "Twenty numbers to find about Fortnite, from its 2011 reveal to the return of the OG map. You guess, we tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -222,12 +312,102 @@ export const quizFortniteChiffres: TranslatedQuiz = {
           explanation:
             "About 630,000 (628,000 according to Twitch). It was the record for an individual channel on Twitch, well ahead of the old record of around 388,000.",
         },
+        {
+          id: 11,
+          question: "How many seasons are there in Fortnite Chapter 2?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Eight, from October 2019 to December 2021. That's two fewer than Chapter 1, which had ten.",
+        },
+        {
+          id: 12,
+          question: "In what year did Unreal, the game that gave Fortnite's engine its name, come out?",
+          answers: [],
+          correctAnswer: "1998",
+          correctValue: 1998,
+          explanation:
+            "In 1998. Epic made it with the studio Digital Extremes, and its engine, the Unreal Engine, went on to power hundreds of games, Fortnite included.",
+        },
+        {
+          id: 13,
+          question: "In 2012, China's Tencent bought into Epic Games. Roughly what percentage of the company did it get?",
+          answers: [],
+          correctAnswer: "40",
+          correctValue: 40,
+          explanation:
+            "About 40%, for $330 million. Founder Tim Sweeney remained the shareholder in control of the company.",
+        },
+        {
+          id: 14,
+          question: "In what year did Epic Games open its own PC game shop, the Epic Games Store?",
+          answers: [],
+          correctAnswer: "2018",
+          correctValue: 2018,
+          explanation:
+            "In 2018, in December, during The Game Awards. Fortnite money is what let Epic take on Steam.",
+        },
+        {
+          id: 15,
+          question: "At launch, what percentage of each sale did the Epic Games Store keep?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "12%, and the rest went to the studio that made the game. Steam's usual cut was 30%, and that's how Epic won over developers.",
+        },
+        {
+          id: 16,
+          question: "In July 2020, how many millions of dollars did Sony invest in Epic Games?",
+          answers: [],
+          correctAnswer: "250",
+          correctValue: 250,
+          explanation:
+            "$250 million, for a small stake in the company. It came two months after the Unreal Engine 5 demo on PS5.",
+        },
+        {
+          id: 17,
+          question: "In February 2024, how many billions of dollars did Disney invest in Epic Games?",
+          answers: [],
+          correctAnswer: "1.5",
+          correctValue: 1.5,
+          explanation:
+            "$1.5 billion, for about 9% of the company. Disney wants to build a universe around its characters with Epic, linked to Fortnite.",
+        },
+        {
+          id: 18,
+          question: "In what year did Zero Build, the Battle Royale without building, arrive?",
+          answers: [],
+          correctAnswer: "2022",
+          correctValue: 2022,
+          explanation:
+            "In 2022, in March. You fight only with weapons and the scenery, with no walls or ramps to build.",
+        },
+        {
+          id: 19,
+          question: "How many players are in a match of Fortnite Reload, the mode launched in June 2024?",
+          answers: [],
+          correctAnswer: "40",
+          correctValue: 40,
+          explanation:
+            "40 players, on a small island, against 100 in regular Battle Royale. You respawn automatically as long as a teammate is still alive.",
+        },
+        {
+          id: 20,
+          question: "Pulled from the App Store in 2020, Fortnite came back to American iPhones. In what year?",
+          answers: [],
+          correctAnswer: "2025",
+          correctValue: 2025,
+          explanation:
+            "In 2025, on May 20, after a court ruling against Apple. In Europe, the game had already come back to iPhone in August 2024.",
+        },
       ],
     },
     es: {
       title: "Estimación: las cifras de Fortnite",
       description:
-        "Diez números sobre Fortnite, desde su anuncio en 2011 hasta la vuelta del mapa OG. Tú propones y te decimos si es más o menos.",
+        "Veinte números sobre Fortnite, desde su anuncio en 2011 hasta la vuelta del mapa OG. Tú propones y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -323,6 +503,96 @@ export const quizFortniteChiffres: TranslatedQuiz = {
           correctValue: 630,
           explanation:
             "Unos 630 000 (628 000 según Twitch). Fue el récord para un canal individual de Twitch, muy por delante del anterior, de unos 388 000.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántas temporadas tiene el Capítulo 2 de Fortnite?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "Ocho, de octubre de 2019 a diciembre de 2021. Son dos menos que el Capítulo 1, que tuvo diez.",
+        },
+        {
+          id: 12,
+          question: "¿En qué año salió Unreal, el juego que dio nombre al motor de Fortnite?",
+          answers: [],
+          correctAnswer: "1998",
+          correctValue: 1998,
+          explanation:
+            "En 1998. Epic lo desarrolló con el estudio Digital Extremes, y su motor, el Unreal Engine, se usó después en cientos de juegos, entre ellos Fortnite.",
+        },
+        {
+          id: 13,
+          question: "En 2012, el grupo chino Tencent entró en el capital de Epic Games. ¿Qué porcentaje de la empresa se quedó, más o menos?",
+          answers: [],
+          correctAnswer: "40",
+          correctValue: 40,
+          explanation:
+            "Alrededor del 40 %, por 330 millones de dólares. Tim Sweeney, el fundador, siguió siendo el accionista que controla la empresa.",
+        },
+        {
+          id: 14,
+          question: "¿En qué año abrió Epic Games su propia tienda de juegos para PC, la Epic Games Store?",
+          answers: [],
+          correctAnswer: "2018",
+          correctValue: 2018,
+          explanation:
+            "En 2018, en diciembre, durante The Game Awards. El dinero de Fortnite permitió a Epic plantar cara a Steam.",
+        },
+        {
+          id: 15,
+          question: "Al abrir, ¿qué porcentaje de cada venta se quedaba la Epic Games Store?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "El 12 %, y el resto era para el estudio que había hecho el juego. En Steam la parte habitual era del 30 %, y así fue como Epic atrajo a los desarrolladores.",
+        },
+        {
+          id: 16,
+          question: "En julio de 2020, ¿cuántos millones de dólares invirtió Sony en Epic Games?",
+          answers: [],
+          correctAnswer: "250",
+          correctValue: 250,
+          explanation:
+            "250 millones de dólares, por una pequeña parte de la empresa. Fue dos meses después de la demostración del Unreal Engine 5 en PS5.",
+        },
+        {
+          id: 17,
+          question: "En febrero de 2024, ¿cuántos miles de millones de dólares invirtió Disney en Epic Games?",
+          answers: [],
+          correctAnswer: "1.5",
+          correctValue: 1.5,
+          explanation:
+            "1.500 millones de dólares, por alrededor del 9 % de la empresa. Disney quiere crear con Epic un universo con sus personajes, conectado a Fortnite.",
+        },
+        {
+          id: 18,
+          question: "¿En qué año llegó el modo Cero construcción, el Battle Royale sin construir?",
+          answers: [],
+          correctAnswer: "2022",
+          correctValue: 2022,
+          explanation:
+            "En 2022, en marzo. Se pelea solo con las armas y el escenario, sin poder levantar muros ni rampas.",
+        },
+        {
+          id: 19,
+          question: "¿Cuántos jugadores se enfrentan en una partida de Fortnite Reload, el modo lanzado en junio de 2024?",
+          answers: [],
+          correctAnswer: "40",
+          correctValue: 40,
+          explanation:
+            "40 jugadores, en una isla pequeña, frente a 100 en el Battle Royale clásico. Se reaparece solo mientras quede un compañero con vida.",
+        },
+        {
+          id: 20,
+          question: "Retirado de la App Store en 2020, Fortnite volvió a los iPhone de Estados Unidos. ¿En qué año?",
+          answers: [],
+          correctAnswer: "2025",
+          correctValue: 2025,
+          explanation:
+            "En 2025, el 20 de mayo, tras una decisión judicial contra Apple. En Europa, el juego ya había vuelto al iPhone en agosto de 2024.",
         },
       ],
     },

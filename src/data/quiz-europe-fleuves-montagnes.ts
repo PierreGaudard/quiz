@@ -24,7 +24,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
     fr: {
       title: "Quiz Europe : fleuves, montagnes et mers",
       description:
-        "Dix questions sur la géographie de l'Europe : ses fleuves, ses chaînes de montagnes, ses mers et ses volcans, de la Volga à l'Etna.",
+        "Vingt questions sur la géographie de l'Europe : ses fleuves, ses chaînes de montagnes, ses mers et ses volcans, de la Volga à l'Etna.",
       questions: [
         {
           id: 1,
@@ -161,12 +161,142 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
           explanation:
             "L'Oural, qui traverse la Russie du nord au sud sur plus de 2 000 km. Plus au sud, la limite suit le fleuve Oural puis la mer Caspienne.",
         },
+        {
+          id: 11,
+          question: "Quel fleuve traverse Londres ?",
+          answers: [
+            { id: "a", text: "La Tamise" },
+            { id: "b", text: "La Severn" },
+            { id: "c", text: "La Trent" },
+            { id: "d", text: "La Mersey" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Tamise, qui passe devant le Parlement et sous le Tower Bridge. La Severn, dans l'ouest, est le plus long fleuve de Grande-Bretagne.",
+        },
+        {
+          id: 12,
+          question: "Quel détroit coupe Istanbul en deux, entre l'Europe et l'Asie ?",
+          answers: [
+            { id: "a", text: "Les Dardanelles" },
+            { id: "b", text: "Le détroit de Kertch" },
+            { id: "c", text: "Le Bosphore" },
+            { id: "d", text: "Le détroit d'Otrante" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le Bosphore, qui relie la mer Noire à la mer de Marmara. Les Dardanelles, plus au sud-ouest, relient la mer de Marmara à la mer Égée.",
+        },
+        {
+          id: 13,
+          question: "Quel est le plus haut sommet des Pyrénées ?",
+          answers: [
+            { id: "a", text: "Le Vignemale" },
+            { id: "b", text: "L'Aneto" },
+            { id: "c", text: "Le mont Perdu" },
+            { id: "d", text: "Le pic du Midi de Bigorre" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'Aneto, à 3 404 mètres, côté espagnol. Le Vignemale est le plus haut sommet des Pyrénées françaises.",
+        },
+        {
+          id: 14,
+          question: "Quel fleuve se jette dans la Manche au Havre ?",
+          answers: [
+            { id: "a", text: "La Somme" },
+            { id: "b", text: "La Loire" },
+            { id: "c", text: "L'Orne" },
+            { id: "d", text: "La Seine" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "La Seine, qui a traversé Paris et Rouen avant d'arriver à la mer. La Loire se jette dans l'Atlantique, du côté de Saint-Nazaire.",
+        },
+        {
+          id: 15,
+          question: "Dans quel pays se trouve le lac Balaton ?",
+          answers: [
+            { id: "a", text: "La Hongrie" },
+            { id: "b", text: "L'Autriche" },
+            { id: "c", text: "La Slovaquie" },
+            { id: "d", text: "La Croatie" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En Hongrie. C'est le plus grand lac d'Europe centrale, et comme le pays n'a pas de mer, on l'appelle parfois la « mer hongroise ».",
+        },
+        {
+          id: 16,
+          question: "Quelle mer baigne à la fois Venise et Dubrovnik ?",
+          answers: [
+            { id: "a", text: "La mer Égée" },
+            { id: "b", text: "La mer Adriatique" },
+            { id: "c", text: "La mer Tyrrhénienne" },
+            { id: "d", text: "La mer Ligure" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'Adriatique, qui sépare l'Italie des Balkans. La mer Égée est entre la Grèce et la Turquie.",
+        },
+        {
+          id: 17,
+          question: "Quel fleuve arrive à la mer à Lisbonne ?",
+          answers: [
+            { id: "a", text: "Le Douro" },
+            { id: "b", text: "Le Guadalquivir" },
+            { id: "c", text: "Le Tage" },
+            { id: "d", text: "Le Minho" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le Tage, qui prend sa source en Espagne. Le Douro vient aussi d'Espagne et se jette dans l'Atlantique à Porto.",
+        },
+        {
+          id: 18,
+          question: "Quel volcan islandais a bloqué une grande partie du trafic aérien européen en 2010 ?",
+          answers: [
+            { id: "a", text: "L'Eyjafjallajökull" },
+            { id: "b", text: "L'Hekla" },
+            { id: "c", text: "Le Katla" },
+            { id: "d", text: "Le Grímsvötn" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "L'Eyjafjallajökull. Son nuage de cendres a fait annuler des dizaines de milliers de vols en avril 2010, et son nom est resté célèbre parce que personne n'arrivait à le prononcer.",
+        },
+        {
+          id: 19,
+          question: "Quelle chaîne de montagnes s'étire le long de la Norvège et de la Suède ?",
+          answers: [
+            { id: "a", text: "Les Carpates" },
+            { id: "b", text: "Les Apennins" },
+            { id: "c", text: "Les Dinarides" },
+            { id: "d", text: "Les Alpes scandinaves" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Les Alpes scandinaves, qu'on appelle aussi les Scandes. Elles forment une bonne partie de la frontière entre les deux pays.",
+        },
+        {
+          id: 20,
+          question: "Quel est le plus long fleuve d'Italie ?",
+          answers: [
+            { id: "a", text: "Le Pô" },
+            { id: "b", text: "Le Tibre" },
+            { id: "c", text: "L'Arno" },
+            { id: "d", text: "L'Adige" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le Pô, avec environ 650 km. Il traverse la plaine du nord de l'Italie, de Turin jusqu'à l'Adriatique. Le Tibre est le fleuve de Rome.",
+        },
       ],
     },
     en: {
       title: "Europe quiz: rivers, mountains and seas",
       description:
-        "Ten questions on Europe's physical geography: its rivers, mountain ranges, seas and volcanoes, from the Volga to Mount Etna.",
+        "Twenty questions on Europe's physical geography: its rivers, mountain ranges, seas and volcanoes, from the Volga to Mount Etna.",
       questions: [
         {
           id: 1,
@@ -303,12 +433,142 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
           explanation:
             "The Urals, which run north to south across Russia for more than 2,000 km. Further south, the line follows the Ural River and then the Caspian Sea.",
         },
+        {
+          id: 11,
+          question: "Which river runs through London?",
+          answers: [
+            { id: "a", text: "The Thames" },
+            { id: "b", text: "The Severn" },
+            { id: "c", text: "The Trent" },
+            { id: "d", text: "The Mersey" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Thames, which flows past Parliament and under Tower Bridge. The Severn, in the west, is the longest river in Great Britain.",
+        },
+        {
+          id: 12,
+          question: "Which strait cuts Istanbul in two, between Europe and Asia?",
+          answers: [
+            { id: "a", text: "The Dardanelles" },
+            { id: "b", text: "The Kerch Strait" },
+            { id: "c", text: "The Bosphorus" },
+            { id: "d", text: "The Strait of Otranto" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The Bosphorus, which links the Black Sea to the Sea of Marmara. The Dardanelles, further south-west, link the Sea of Marmara to the Aegean.",
+        },
+        {
+          id: 13,
+          question: "What is the highest peak in the Pyrenees?",
+          answers: [
+            { id: "a", text: "Vignemale" },
+            { id: "b", text: "Aneto" },
+            { id: "c", text: "Monte Perdido" },
+            { id: "d", text: "Pic du Midi de Bigorre" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Aneto, at 3,404 metres, on the Spanish side. Vignemale is the highest peak in the French Pyrenees.",
+        },
+        {
+          id: 14,
+          question: "Which river flows into the English Channel at Le Havre?",
+          answers: [
+            { id: "a", text: "The Somme" },
+            { id: "b", text: "The Loire" },
+            { id: "c", text: "The Orne" },
+            { id: "d", text: "The Seine" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "The Seine, after passing through Paris and Rouen. The Loire flows into the Atlantic, near Saint-Nazaire.",
+        },
+        {
+          id: 15,
+          question: "Which country is Lake Balaton in?",
+          answers: [
+            { id: "a", text: "Hungary" },
+            { id: "b", text: "Austria" },
+            { id: "c", text: "Slovakia" },
+            { id: "d", text: "Croatia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Hungary. It's the largest lake in Central Europe, and since the country has no coast, it's sometimes called the Hungarian Sea.",
+        },
+        {
+          id: 16,
+          question: "Which sea washes both Venice and Dubrovnik?",
+          answers: [
+            { id: "a", text: "The Aegean Sea" },
+            { id: "b", text: "The Adriatic Sea" },
+            { id: "c", text: "The Tyrrhenian Sea" },
+            { id: "d", text: "The Ligurian Sea" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Adriatic, which separates Italy from the Balkans. The Aegean lies between Greece and Turkey.",
+        },
+        {
+          id: 17,
+          question: "Which river reaches the sea at Lisbon?",
+          answers: [
+            { id: "a", text: "The Douro" },
+            { id: "b", text: "The Guadalquivir" },
+            { id: "c", text: "The Tagus" },
+            { id: "d", text: "The Minho" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The Tagus, which rises in Spain. The Douro also comes from Spain and meets the Atlantic at Porto.",
+        },
+        {
+          id: 18,
+          question: "Which Icelandic volcano grounded much of Europe's air traffic in 2010?",
+          answers: [
+            { id: "a", text: "Eyjafjallajökull" },
+            { id: "b", text: "Hekla" },
+            { id: "c", text: "Katla" },
+            { id: "d", text: "Grímsvötn" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Eyjafjallajökull. Its ash cloud led to tens of thousands of cancelled flights in April 2010, and its name stuck because nobody could pronounce it.",
+        },
+        {
+          id: 19,
+          question: "Which mountain range runs along Norway and Sweden?",
+          answers: [
+            { id: "a", text: "The Carpathians" },
+            { id: "b", text: "The Apennines" },
+            { id: "c", text: "The Dinaric Alps" },
+            { id: "d", text: "The Scandinavian Mountains" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "The Scandinavian Mountains, also called the Scandes. They make up a good part of the border between the two countries.",
+        },
+        {
+          id: 20,
+          question: "What is the longest river in Italy?",
+          answers: [
+            { id: "a", text: "The Po" },
+            { id: "b", text: "The Tiber" },
+            { id: "c", text: "The Arno" },
+            { id: "d", text: "The Adige" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Po, at about 650 km. It crosses the plain of northern Italy, from Turin to the Adriatic. The Tiber is the river of Rome.",
+        },
       ],
     },
     es: {
       title: "Quiz de Europa: ríos, montañas y mares",
       description:
-        "Diez preguntas sobre la geografía de Europa: sus ríos, sus cordilleras, sus mares y sus volcanes, del Volga al Etna.",
+        "Veinte preguntas sobre la geografía de Europa: sus ríos, sus cordilleras, sus mares y sus volcanes, del Volga al Etna.",
       questions: [
         {
           id: 1,
@@ -444,6 +704,136 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
           correctAnswer: "d",
           explanation:
             "Los Urales, que cruzan Rusia de norte a sur durante más de 2.000 km. Más al sur, el límite sigue el río Ural y luego el mar Caspio.",
+        },
+        {
+          id: 11,
+          question: "¿Qué río atraviesa Londres?",
+          answers: [
+            { id: "a", text: "El Támesis" },
+            { id: "b", text: "El Severn" },
+            { id: "c", text: "El Trent" },
+            { id: "d", text: "El Mersey" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Támesis, que pasa delante del Parlamento y bajo el Tower Bridge. El Severn, en el oeste, es el río más largo de Gran Bretaña.",
+        },
+        {
+          id: 12,
+          question: "¿Qué estrecho parte Estambul en dos, entre Europa y Asia?",
+          answers: [
+            { id: "a", text: "Los Dardanelos" },
+            { id: "b", text: "El estrecho de Kerch" },
+            { id: "c", text: "El Bósforo" },
+            { id: "d", text: "El canal de Otranto" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El Bósforo, que une el mar Negro con el mar de Mármara. Los Dardanelos, más al suroeste, unen el mar de Mármara con el Egeo.",
+        },
+        {
+          id: 13,
+          question: "¿Cuál es la cumbre más alta de los Pirineos?",
+          answers: [
+            { id: "a", text: "El Vignemale" },
+            { id: "b", text: "El Aneto" },
+            { id: "c", text: "El Monte Perdido" },
+            { id: "d", text: "El Pic du Midi de Bigorre" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El Aneto, con 3404 metros, en el lado español. El Vignemale es la cumbre más alta de los Pirineos franceses.",
+        },
+        {
+          id: 14,
+          question: "¿Qué río desemboca en el canal de la Mancha en El Havre?",
+          answers: [
+            { id: "a", text: "El Somme" },
+            { id: "b", text: "El Loira" },
+            { id: "c", text: "El Orne" },
+            { id: "d", text: "El Sena" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "El Sena, después de pasar por París y Ruan. El Loira desemboca en el Atlántico, cerca de Saint-Nazaire.",
+        },
+        {
+          id: 15,
+          question: "¿En qué país está el lago Balaton?",
+          answers: [
+            { id: "a", text: "Hungría" },
+            { id: "b", text: "Austria" },
+            { id: "c", text: "Eslovaquia" },
+            { id: "d", text: "Croacia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En Hungría. Es el mayor lago de Europa Central, y como el país no tiene mar, a veces lo llaman el «mar húngaro».",
+        },
+        {
+          id: 16,
+          question: "¿Qué mar baña a la vez Venecia y Dubrovnik?",
+          answers: [
+            { id: "a", text: "El mar Egeo" },
+            { id: "b", text: "El mar Adriático" },
+            { id: "c", text: "El mar Tirreno" },
+            { id: "d", text: "El mar de Liguria" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El Adriático, que separa Italia de los Balcanes. El Egeo está entre Grecia y Turquía.",
+        },
+        {
+          id: 17,
+          question: "¿Qué río llega al mar en Lisboa?",
+          answers: [
+            { id: "a", text: "El Duero" },
+            { id: "b", text: "El Guadalquivir" },
+            { id: "c", text: "El Tajo" },
+            { id: "d", text: "El Miño" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El Tajo, que nace en España. El Duero también viene de España y desemboca en el Atlántico en Oporto.",
+        },
+        {
+          id: 18,
+          question: "¿Qué volcán islandés paralizó buena parte del tráfico aéreo europeo en 2010?",
+          answers: [
+            { id: "a", text: "El Eyjafjallajökull" },
+            { id: "b", text: "El Hekla" },
+            { id: "c", text: "El Katla" },
+            { id: "d", text: "El Grímsvötn" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Eyjafjallajökull. Su nube de ceniza obligó a cancelar decenas de miles de vuelos en abril de 2010, y su nombre se hizo famoso porque nadie sabía pronunciarlo.",
+        },
+        {
+          id: 19,
+          question: "¿Qué cordillera se extiende a lo largo de Noruega y Suecia?",
+          answers: [
+            { id: "a", text: "Los Cárpatos" },
+            { id: "b", text: "Los Apeninos" },
+            { id: "c", text: "Los Alpes Dináricos" },
+            { id: "d", text: "Los Alpes escandinavos" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Los Alpes escandinavos, también llamados Escandes. Forman buena parte de la frontera entre los dos países.",
+        },
+        {
+          id: 20,
+          question: "¿Cuál es el río más largo de Italia?",
+          answers: [
+            { id: "a", text: "El Po" },
+            { id: "b", text: "El Tíber" },
+            { id: "c", text: "El Arno" },
+            { id: "d", text: "El Adigio" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Po, con unos 650 km. Atraviesa la llanura del norte de Italia, de Turín al Adriático. El Tíber es el río de Roma.",
         },
       ],
     },

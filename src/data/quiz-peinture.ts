@@ -21,7 +21,7 @@ export const quizPeinture: TranslatedQuiz = {
     fr: {
       title: "Duel peinture : quel artiste, quel tableau ?",
       description:
-        "Dix duels sur les grands tableaux et les peintres qui les ont faits. Deux propositions à chaque fois, une seule est la bonne.",
+        "Vingt duels sur les grands tableaux et les peintres qui les ont faits. Deux propositions à chaque fois, une seule est la bonne.",
       questions: [
         {
           id: 1,
@@ -139,12 +139,122 @@ export const quizPeinture: TranslatedQuiz = {
           explanation:
             "Impression, soleil levant, de Claude Monet. Un critique s'en est moqué en 1874 en parlant des « impressionnistes », et le nom est resté.",
         },
+        {
+          id: 11,
+          question: "Qui a peint Olympia, le nu qui a fait scandale au Salon de 1865 ?",
+          answers: [
+            { id: "a", text: "Claude Monet" },
+            { id: "b", text: "Édouard Manet" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Édouard Manet. Olympia regarde le spectateur droit dans les yeux, et le public de l'époque a trouvé ça choquant. Le tableau est aujourd'hui au musée d'Orsay.",
+        },
+        {
+          id: 12,
+          question: "Qui a peint La Naissance de Vénus, où la déesse arrive sur un coquillage ?",
+          answers: [
+            { id: "a", text: "Sandro Botticelli" },
+            { id: "b", text: "Raphaël" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sandro Botticelli, vers 1485, à Florence. Le tableau est exposé à la galerie des Offices, dans la même ville.",
+        },
+        {
+          id: 13,
+          question: "Qui a peint La Ronde de nuit ?",
+          answers: [
+            { id: "a", text: "Johannes Vermeer" },
+            { id: "b", text: "Rembrandt" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rembrandt, en 1642. Le tableau montre une compagnie de miliciens d'Amsterdam et il est immense, plus de 4 mètres de large. On le voit au Rijksmuseum.",
+        },
+        {
+          id: 14,
+          question: "Qui a réalisé La Grande Vague de Kanagawa, l'estampe japonaise la plus célèbre ?",
+          answers: [
+            { id: "a", text: "Hokusai" },
+            { id: "b", text: "Hiroshige" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Katsushika Hokusai, vers 1831. Elle fait partie de sa série des Trente-six vues du mont Fuji, qu'on aperçoit en petit au fond. Hiroshige est un autre grand maître de l'estampe, un peu plus jeune.",
+        },
+        {
+          id: 15,
+          question: "Qui a peint Les Glaneuses, trois paysannes penchées dans un champ ?",
+          answers: [
+            { id: "a", text: "Gustave Courbet" },
+            { id: "b", text: "Jean-François Millet" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jean-François Millet, en 1857. Il peignait la vie des paysans, et on peut voir le tableau au musée d'Orsay, à Paris.",
+        },
+        {
+          id: 16,
+          question: "Qui a peint American Gothic, le fermier à la fourche et sa fille devant leur maison ?",
+          answers: [
+            { id: "a", text: "Grant Wood" },
+            { id: "b", text: "Edward Hopper" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Grant Wood, en 1930. Beaucoup pensent que c'est un couple, mais le peintre disait que c'était un fermier et sa fille. Edward Hopper est le peintre de Nighthawks.",
+        },
+        {
+          id: 17,
+          question: "Qui a peint Les Ménines, où l'on voit la petite infante d'Espagne entourée de ses dames de compagnie ?",
+          answers: [
+            { id: "a", text: "Francisco de Goya" },
+            { id: "b", text: "Diego Velázquez" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Diego Velázquez, en 1656. Le peintre s'est représenté lui-même à gauche, en train de peindre. Le tableau est au musée du Prado, à Madrid.",
+        },
+        {
+          id: 18,
+          question: "Qui a peint Le Fils de l'homme, l'homme au chapeau melon dont une pomme verte cache le visage ?",
+          answers: [
+            { id: "a", text: "René Magritte" },
+            { id: "b", text: "Salvador Dalí" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "René Magritte, en 1964. L'homme au chapeau melon revient dans beaucoup de ses tableaux, et on dit souvent que c'est une sorte d'autoportrait.",
+        },
+        {
+          id: 19,
+          question: "Qui a peint Le Sacre de Napoléon, exposé au Louvre ?",
+          answers: [
+            { id: "a", text: "Jean-Auguste-Dominique Ingres" },
+            { id: "b", text: "Jacques-Louis David" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jacques-Louis David, entre 1805 et 1807. La toile fait presque 10 mètres de large. On y voit Napoléon couronner lui-même l'impératrice Joséphine, à Notre-Dame de Paris.",
+        },
+        {
+          id: 20,
+          question: "Qui a peint Le Jardin des délices, un tableau rempli de créatures étranges ?",
+          answers: [
+            { id: "a", text: "Jérôme Bosch" },
+            { id: "b", text: "Pieter Bruegel l'Ancien" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Jérôme Bosch, vers 1500. Le triptyque montre le paradis, les plaisirs terrestres puis l'enfer. Il est au musée du Prado, à Madrid.",
+        },
       ],
     },
     en: {
       title: "Painting duel: which artist, which work?",
       description:
-        "Ten duels about famous paintings and the artists behind them. Two options each time, and only one is right.",
+        "Twenty duels about famous paintings and the artists behind them. Two options each time, and only one is right.",
       questions: [
         {
           id: 1,
@@ -262,12 +372,122 @@ export const quizPeinture: TranslatedQuiz = {
           explanation:
             "Impression, Sunrise, by Claude Monet. A critic made fun of it in 1874 by calling the group \"Impressionists\", and the name stuck.",
         },
+        {
+          id: 11,
+          question: "Who painted Olympia, the nude that caused a scandal at the 1865 Salon?",
+          answers: [
+            { id: "a", text: "Claude Monet" },
+            { id: "b", text: "Édouard Manet" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Édouard Manet. Olympia stares straight at the viewer, which shocked the public at the time. The painting now hangs in the Musée d'Orsay.",
+        },
+        {
+          id: 12,
+          question: "Who painted The Birth of Venus, where the goddess arrives on a shell?",
+          answers: [
+            { id: "a", text: "Sandro Botticelli" },
+            { id: "b", text: "Raphael" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sandro Botticelli, around 1485, in Florence. The painting hangs in the Uffizi Gallery in the same city.",
+        },
+        {
+          id: 13,
+          question: "Who painted The Night Watch?",
+          answers: [
+            { id: "a", text: "Johannes Vermeer" },
+            { id: "b", text: "Rembrandt" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rembrandt, in 1642. The painting shows a company of Amsterdam militiamen and it's huge, more than 4 metres wide. You can see it in the Rijksmuseum.",
+        },
+        {
+          id: 14,
+          question: "Who made The Great Wave off Kanagawa, the most famous Japanese print?",
+          answers: [
+            { id: "a", text: "Hokusai" },
+            { id: "b", text: "Hiroshige" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Katsushika Hokusai, around 1831. It's part of his Thirty-Six Views of Mount Fuji, which you can see small in the background. Hiroshige was another great print master, a little younger.",
+        },
+        {
+          id: 15,
+          question: "Who painted The Gleaners, three peasant women bent over in a field?",
+          answers: [
+            { id: "a", text: "Gustave Courbet" },
+            { id: "b", text: "Jean-François Millet" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jean-François Millet, in 1857. He painted the lives of peasants, and the picture is in the Musée d'Orsay in Paris.",
+        },
+        {
+          id: 16,
+          question: "Who painted American Gothic, the farmer with a pitchfork and his daughter outside their house?",
+          answers: [
+            { id: "a", text: "Grant Wood" },
+            { id: "b", text: "Edward Hopper" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Grant Wood, in 1930. A lot of people think it's a married couple, but the painter said it was a farmer and his daughter. Edward Hopper is the one who painted Nighthawks.",
+        },
+        {
+          id: 17,
+          question: "Who painted Las Meninas, showing the little Spanish princess surrounded by her maids of honour?",
+          answers: [
+            { id: "a", text: "Francisco de Goya" },
+            { id: "b", text: "Diego Velázquez" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Diego Velázquez, in 1656. The painter put himself in the picture, on the left, brush in hand. It hangs in the Prado in Madrid.",
+        },
+        {
+          id: 18,
+          question: "Who painted The Son of Man, the man in a bowler hat whose face is hidden by a green apple?",
+          answers: [
+            { id: "a", text: "René Magritte" },
+            { id: "b", text: "Salvador Dalí" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "René Magritte, in 1964. The man in the bowler hat turns up in many of his paintings, and it's often seen as a kind of self-portrait.",
+        },
+        {
+          id: 19,
+          question: "Who painted The Coronation of Napoleon, which hangs in the Louvre?",
+          answers: [
+            { id: "a", text: "Jean-Auguste-Dominique Ingres" },
+            { id: "b", text: "Jacques-Louis David" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jacques-Louis David, between 1805 and 1807. The canvas is almost 10 metres wide. It shows Napoleon crowning the Empress Josephine himself, in Notre-Dame de Paris.",
+        },
+        {
+          id: 20,
+          question: "Who painted The Garden of Earthly Delights, a picture full of strange creatures?",
+          answers: [
+            { id: "a", text: "Hieronymus Bosch" },
+            { id: "b", text: "Pieter Bruegel the Elder" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Hieronymus Bosch, around 1500. The triptych shows paradise, earthly pleasures and then hell. It's in the Prado in Madrid.",
+        },
       ],
     },
     es: {
       title: "Duelo de pintura: ¿qué artista, qué cuadro?",
       description:
-        "Diez duelos sobre cuadros famosos y los pintores que los hicieron. Dos opciones cada vez, y solo una es la buena.",
+        "Veinte duelos sobre cuadros famosos y los pintores que los hicieron. Dos opciones cada vez, y solo una es la buena.",
       questions: [
         {
           id: 1,
@@ -384,6 +604,116 @@ export const quizPeinture: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Impresión, sol naciente, de Claude Monet. Un crítico se burló en 1874 hablando de los «impresionistas», y el nombre se quedó.",
+        },
+        {
+          id: 11,
+          question: "¿Quién pintó Olympia, el desnudo que escandalizó en el Salón de 1865?",
+          answers: [
+            { id: "a", text: "Claude Monet" },
+            { id: "b", text: "Édouard Manet" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Édouard Manet. Olympia mira al espectador directamente a los ojos, y al público de la época le pareció escandaloso. Hoy el cuadro está en el Museo de Orsay.",
+        },
+        {
+          id: 12,
+          question: "¿Quién pintó El nacimiento de Venus, en el que la diosa llega sobre una concha?",
+          answers: [
+            { id: "a", text: "Sandro Botticelli" },
+            { id: "b", text: "Rafael" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sandro Botticelli, hacia 1485, en Florencia. El cuadro está en la Galería Uffizi, en la misma ciudad.",
+        },
+        {
+          id: 13,
+          question: "¿Quién pintó La ronda de noche?",
+          answers: [
+            { id: "a", text: "Johannes Vermeer" },
+            { id: "b", text: "Rembrandt" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rembrandt, en 1642. Muestra a una compañía de milicianos de Ámsterdam y es enorme, más de 4 metros de ancho. Se puede ver en el Rijksmuseum.",
+        },
+        {
+          id: 14,
+          question: "¿Quién hizo La gran ola de Kanagawa, la estampa japonesa más famosa?",
+          answers: [
+            { id: "a", text: "Hokusai" },
+            { id: "b", text: "Hiroshige" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Katsushika Hokusai, hacia 1831. Forma parte de su serie Treinta y seis vistas del monte Fuji, que se ve pequeño al fondo. Hiroshige es otro gran maestro de la estampa, algo más joven.",
+        },
+        {
+          id: 15,
+          question: "¿Quién pintó Las espigadoras, tres campesinas inclinadas en un campo?",
+          answers: [
+            { id: "a", text: "Gustave Courbet" },
+            { id: "b", text: "Jean-François Millet" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jean-François Millet, en 1857. Pintaba la vida de los campesinos, y el cuadro está en el Museo de Orsay, en París.",
+        },
+        {
+          id: 16,
+          question: "¿Quién pintó American Gothic, el granjero con la horca y su hija delante de su casa?",
+          answers: [
+            { id: "a", text: "Grant Wood" },
+            { id: "b", text: "Edward Hopper" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Grant Wood, en 1930. Mucha gente cree que es un matrimonio, pero el pintor decía que eran un granjero y su hija. Edward Hopper es el autor de Nighthawks.",
+        },
+        {
+          id: 17,
+          question: "¿Quién pintó Las meninas, donde se ve a la infanta de España rodeada de sus damas?",
+          answers: [
+            { id: "a", text: "Francisco de Goya" },
+            { id: "b", text: "Diego Velázquez" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Diego Velázquez, en 1656. El pintor se retrató a sí mismo a la izquierda, pintando. El cuadro está en el Museo del Prado, en Madrid.",
+        },
+        {
+          id: 18,
+          question: "¿Quién pintó El hijo del hombre, el hombre con bombín al que una manzana verde le tapa la cara?",
+          answers: [
+            { id: "a", text: "René Magritte" },
+            { id: "b", text: "Salvador Dalí" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "René Magritte, en 1964. El hombre del bombín aparece en muchos de sus cuadros, y a menudo se ve como una especie de autorretrato.",
+        },
+        {
+          id: 19,
+          question: "¿Quién pintó La coronación de Napoleón, expuesta en el Louvre?",
+          answers: [
+            { id: "a", text: "Jean-Auguste-Dominique Ingres" },
+            { id: "b", text: "Jacques-Louis David" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Jacques-Louis David, entre 1805 y 1807. El lienzo mide casi 10 metros de ancho. Se ve a Napoleón coronando él mismo a la emperatriz Josefina en Notre-Dame de París.",
+        },
+        {
+          id: 20,
+          question: "¿Quién pintó El jardín de las delicias, un cuadro lleno de criaturas extrañas?",
+          answers: [
+            { id: "a", text: "El Bosco" },
+            { id: "b", text: "Pieter Brueghel el Viejo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Bosco, hacia 1500. El tríptico muestra el paraíso, los placeres terrenales y el infierno. Está en el Museo del Prado, en Madrid.",
         },
       ],
     },

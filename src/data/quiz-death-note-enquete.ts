@@ -20,7 +20,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
     fr: {
       title: "Quiz Death Note : l'enquête sur Kira",
       description:
-        "Dix questions sur l'enquête de Death Note : le piège de L à la télé, le FBI, les menottes, Yotsuba et le deuxième Kira.",
+        "Vingt questions sur l'enquête de Death Note : le piège de L à la télé, le FBI, les menottes, Yotsuba et le deuxième Kira.",
       questions: [
         {
           id: 1,
@@ -156,12 +156,142 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
           explanation:
             "Light veut devenir le dieu d'un nouveau monde sans criminels. Il le dit dès le début, et c'est ce qui le pousse à tuer toujours plus.",
         },
+        {
+          id: 11,
+          question: "Qui est la première personne que Light tue avec le Death Note ?",
+          answers: [
+            { id: "a", text: "Kurou Otoharada" },
+            { id: "b", text: "Lind L. Tailor" },
+            { id: "c", text: "Takuo Shibuimaru" },
+            { id: "d", text: "Raye Penber" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Kurou Otoharada, un homme qui retient des enfants en otage dans une école maternelle. Light voit l'info à la télé et écrit son nom pour tester le cahier. Le motard Takuo Shibuimaru, c'est la deuxième victime.",
+        },
+        {
+          id: 12,
+          question: "Sous quel faux nom L se présente-t-il aux autres étudiants de l'université ?",
+          answers: [
+            { id: "a", text: "Hideki Ryuga" },
+            { id: "b", text: "Deneuve" },
+            { id: "c", text: "Eraldo Coil" },
+            { id: "d", text: "Near" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Hideki Ryuga, le nom d'une idole de la chanson. L le choisit exprès : si Kira essaie de le tuer avec ce nom, c'est le chanteur qui risque sa vie, pas lui.",
+        },
+        {
+          id: 13,
+          question: "Qui est la fiancée de l'agent Raye Penber, qui enquête seule après sa mort ?",
+          answers: [
+            { id: "a", text: "Kiyomi Takada" },
+            { id: "b", text: "Sayu Yagami" },
+            { id: "c", text: "Naomi Misora" },
+            { id: "d", text: "Halle Lidner" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Naomi Misora, une ancienne agente du FBI. Elle a compris comment Kira tue, mais elle croise Light avant de pouvoir parler à la police, et il la fait disparaître.",
+        },
+        {
+          id: 14,
+          question: "Quel policier de l'équipe se fait passer pour le manager de Misa Amane ?",
+          answers: [
+            { id: "a", text: "Shuichi Aizawa" },
+            { id: "b", text: "Touta Matsuda" },
+            { id: "c", text: "Kanzo Mogi" },
+            { id: "d", text: "Hideki Ide" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Touta Matsuda, le plus jeune et le plus maladroit de l'équipe. Il se fait embaucher comme manager de Misa, ce qui lui permet d'entrer chez Yotsuba.",
+        },
+        {
+          id: 15,
+          question: "Qu'est-ce que L fait installer chez les Yagami pour surveiller Light ?",
+          answers: [
+            { id: "a", text: "Un agent déguisé en livreur" },
+            { id: "b", text: "Un traceur sur son téléphone" },
+            { id: "c", text: "Des caméras et des micros" },
+            { id: "d", text: "Un détecteur de mensonges" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Des caméras et des micros dans toute la maison, y compris dans la chambre de Light. Light s'en doute, et il tue des criminels sans jamais rien faire de suspect devant les caméras.",
+        },
+        {
+          id: 16,
+          question: "Comment Light protège-t-il le Death Note caché dans le tiroir de son bureau ?",
+          answers: [
+            { id: "a", text: "Avec une alarme reliée à son téléphone" },
+            { id: "b", text: "Avec un cadenas à code" },
+            { id: "c", text: "Avec un double fond piégé qui brûle le cahier si on force" },
+            { id: "d", text: "En le laissant à Ryuk" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le tiroir a un double fond. Si quelqu'un l'ouvre sans la bonne méthode, un petit dispositif met le feu au cahier, et personne ne peut plus rien prouver.",
+        },
+        {
+          id: 17,
+          question: "Après la mort de L, qui prend sa place à la tête de l'enquête japonaise ?",
+          answers: [
+            { id: "a", text: "Watari" },
+            { id: "b", text: "Light Yagami" },
+            { id: "c", text: "Soichiro Yagami" },
+            { id: "d", text: "Touta Matsuda" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Light lui-même. Il se fait passer pour le nouveau L, et il dirige donc l'enquête sur Kira alors que c'est lui, Kira.",
+        },
+        {
+          id: 18,
+          question: "Comment s'appelle l'équipe que dirige Near pour traquer Kira ?",
+          answers: [
+            { id: "a", text: "La NHN" },
+            { id: "b", text: "Le SPK" },
+            { id: "c", text: "La Wammy's House" },
+            { id: "d", text: "Le FBI" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le SPK, une unité spéciale mise en place par les États-Unis. Near la dirige depuis New York, avec des agents comme Halle Lidner et Stephen Gevanni.",
+        },
+        {
+          id: 19,
+          question: "Où se passe la confrontation finale entre Near et Light ?",
+          answers: [
+            { id: "a", text: "Dans un entrepôt" },
+            { id: "b", text: "Sur le toit du QG de l'enquête" },
+            { id: "c", text: "Au siège de Yotsuba" },
+            { id: "d", text: "Dans une église" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Dans un entrepôt, le Yellow Box, près de Tokyo. Near y fait venir Light et la police japonaise, en sachant que Mikami va écrire leurs noms.",
+        },
+        {
+          id: 20,
+          question: "Pendant la confrontation finale, quel nom manque dans le cahier de Mikami ?",
+          answers: [
+            { id: "a", text: "Celui de Soichiro" },
+            { id: "b", text: "Celui de Light" },
+            { id: "c", text: "Celui de Near" },
+            { id: "d", text: "Celui de Matsuda" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Celui de Light. Mikami a écrit le nom de tous les autres, sauf le sien. Comme personne ne meurt, ça prouve devant tout le monde que Light est Kira.",
+        },
       ],
     },
     en: {
       title: "Death Note quiz: the Kira investigation",
       description:
-        "Ten questions on the Death Note investigation: L's TV trap, the FBI, the handcuffs, Yotsuba and the second Kira.",
+        "Twenty questions on the Death Note investigation: L's TV trap, the FBI, the handcuffs, Yotsuba and the second Kira.",
       questions: [
         {
           id: 1,
@@ -297,12 +427,142 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
           explanation:
             "Light wants to become the god of a new world with no criminals. He says so from the start, and it's what drives him to kill more and more.",
         },
+        {
+          id: 11,
+          question: "Who is the first person Light kills with the Death Note?",
+          answers: [
+            { id: "a", text: "Kurou Otoharada" },
+            { id: "b", text: "Lind L. Tailor" },
+            { id: "c", text: "Takuo Shibuimaru" },
+            { id: "d", text: "Raye Penber" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Kurou Otoharada, a man holding children hostage in a nursery school. Light sees him on the news and writes his name to test the notebook. The biker Takuo Shibuimaru is the second victim.",
+        },
+        {
+          id: 12,
+          question: "What fake name does L use with the other students at university?",
+          answers: [
+            { id: "a", text: "Hideki Ryuga" },
+            { id: "b", text: "Deneuve" },
+            { id: "c", text: "Eraldo Coil" },
+            { id: "d", text: "Near" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Hideki Ryuga, the name of a pop idol. L picks it on purpose: if Kira tries to kill him with that name, it's the singer whose life is at risk, not his.",
+        },
+        {
+          id: 13,
+          question: "Who is FBI agent Raye Penber's fiancée, who investigates alone after his death?",
+          answers: [
+            { id: "a", text: "Kiyomi Takada" },
+            { id: "b", text: "Sayu Yagami" },
+            { id: "c", text: "Naomi Misora" },
+            { id: "d", text: "Halle Lidner" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Naomi Misora, a former FBI agent. She figures out how Kira kills, but she runs into Light before she can talk to the police, and he makes her disappear.",
+        },
+        {
+          id: 14,
+          question: "Which member of the task force poses as Misa Amane's manager?",
+          answers: [
+            { id: "a", text: "Shuichi Aizawa" },
+            { id: "b", text: "Touta Matsuda" },
+            { id: "c", text: "Kanzo Mogi" },
+            { id: "d", text: "Hideki Ide" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Touta Matsuda, the youngest and clumsiest of the team. He gets hired as Misa's manager, which gets him inside Yotsuba.",
+        },
+        {
+          id: 15,
+          question: "What does L have installed at the Yagami house to watch Light?",
+          answers: [
+            { id: "a", text: "An agent disguised as a delivery man" },
+            { id: "b", text: "A tracker on his phone" },
+            { id: "c", text: "Cameras and microphones" },
+            { id: "d", text: "A lie detector" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cameras and microphones all over the house, Light's bedroom included. Light suspects it, and he keeps killing criminals without ever doing anything suspicious on camera.",
+        },
+        {
+          id: 16,
+          question: "How does Light protect the Death Note hidden in his desk drawer?",
+          answers: [
+            { id: "a", text: "With an alarm linked to his phone" },
+            { id: "b", text: "With a combination lock" },
+            { id: "c", text: "With a booby-trapped false bottom that burns it if forced" },
+            { id: "d", text: "By leaving it with Ryuk" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The drawer has a false bottom. If someone opens it the wrong way, a small device sets the notebook on fire, and nobody can prove anything anymore.",
+        },
+        {
+          id: 17,
+          question: "After L dies, who takes over the Japanese investigation?",
+          answers: [
+            { id: "a", text: "Watari" },
+            { id: "b", text: "Light Yagami" },
+            { id: "c", text: "Soichiro Yagami" },
+            { id: "d", text: "Touta Matsuda" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Light himself. He poses as the new L, so he ends up leading the hunt for Kira while being Kira.",
+        },
+        {
+          id: 18,
+          question: "What is the name of the team Near leads to hunt Kira?",
+          answers: [
+            { id: "a", text: "NHN" },
+            { id: "b", text: "The SPK" },
+            { id: "c", text: "Wammy's House" },
+            { id: "d", text: "The FBI" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The SPK, a special unit set up by the United States. Near runs it from New York, with agents such as Halle Lidner and Stephen Gevanni.",
+        },
+        {
+          id: 19,
+          question: "Where does the final showdown between Near and Light take place?",
+          answers: [
+            { id: "a", text: "In a warehouse" },
+            { id: "b", text: "On the roof of the task force HQ" },
+            { id: "c", text: "At Yotsuba headquarters" },
+            { id: "d", text: "In a church" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "In a warehouse called Yellow Box, near Tokyo. Near brings Light and the Japanese police there, knowing that Mikami will write their names.",
+        },
+        {
+          id: 20,
+          question: "During the final showdown, whose name is missing from Mikami's notebook?",
+          answers: [
+            { id: "a", text: "Soichiro's" },
+            { id: "b", text: "Light's" },
+            { id: "c", text: "Near's" },
+            { id: "d", text: "Matsuda's" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Light's. Mikami wrote down everyone's name except his. Since nobody dies, it proves in front of everyone that Light is Kira.",
+        },
       ],
     },
     es: {
       title: "Quiz de Death Note: la investigación de Kira",
       description:
-        "Diez preguntas sobre la investigación de Death Note: la trampa de L en la tele, el FBI, las esposas, Yotsuba y el segundo Kira.",
+        "Veinte preguntas sobre la investigación de Death Note: la trampa de L en la tele, el FBI, las esposas, Yotsuba y el segundo Kira.",
       questions: [
         {
           id: 1,
@@ -437,6 +697,136 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Light quiere ser el dios de un mundo nuevo sin criminales. Lo dice desde el principio, y eso lo empuja a matar cada vez más.",
+        },
+        {
+          id: 11,
+          question: "¿Quién es la primera persona que Light mata con el Death Note?",
+          answers: [
+            { id: "a", text: "Kurou Otoharada" },
+            { id: "b", text: "Lind L. Tailor" },
+            { id: "c", text: "Takuo Shibuimaru" },
+            { id: "d", text: "Raye Penber" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Kurou Otoharada, un hombre que tiene a unos niños como rehenes en una guardería. Light lo ve en las noticias y escribe su nombre para probar el cuaderno. El motorista Takuo Shibuimaru es la segunda víctima.",
+        },
+        {
+          id: 12,
+          question: "¿Con qué nombre falso se presenta L ante los demás estudiantes de la universidad?",
+          answers: [
+            { id: "a", text: "Hideki Ryuga" },
+            { id: "b", text: "Deneuve" },
+            { id: "c", text: "Eraldo Coil" },
+            { id: "d", text: "Near" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Hideki Ryuga, el nombre de un ídolo de la canción. L lo elige a propósito: si Kira intenta matarlo con ese nombre, el que corre peligro es el cantante, no él.",
+        },
+        {
+          id: 13,
+          question: "¿Quién es la prometida del agente Raye Penber, que investiga sola tras su muerte?",
+          answers: [
+            { id: "a", text: "Kiyomi Takada" },
+            { id: "b", text: "Sayu Yagami" },
+            { id: "c", text: "Naomi Misora" },
+            { id: "d", text: "Halle Lidner" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Naomi Misora, una exagente del FBI. Descubre cómo mata Kira, pero se cruza con Light antes de poder hablar con la policía, y él la hace desaparecer.",
+        },
+        {
+          id: 14,
+          question: "¿Qué policía del equipo se hace pasar por el mánager de Misa Amane?",
+          answers: [
+            { id: "a", text: "Shuichi Aizawa" },
+            { id: "b", text: "Touta Matsuda" },
+            { id: "c", text: "Kanzo Mogi" },
+            { id: "d", text: "Hideki Ide" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Touta Matsuda, el más joven y el más torpe del equipo. Consigue que lo contraten como mánager de Misa, y así puede entrar en Yotsuba.",
+        },
+        {
+          id: 15,
+          question: "¿Qué manda instalar L en casa de los Yagami para vigilar a Light?",
+          answers: [
+            { id: "a", text: "Un agente disfrazado de repartidor" },
+            { id: "b", text: "Un localizador en su móvil" },
+            { id: "c", text: "Cámaras y micrófonos" },
+            { id: "d", text: "Un detector de mentiras" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cámaras y micrófonos por toda la casa, también en el cuarto de Light. Light se lo huele, y sigue matando criminales sin hacer nunca nada sospechoso delante de las cámaras.",
+        },
+        {
+          id: 16,
+          question: "¿Cómo protege Light el Death Note escondido en el cajón de su escritorio?",
+          answers: [
+            { id: "a", text: "Con una alarma conectada a su móvil" },
+            { id: "b", text: "Con un candado de combinación" },
+            { id: "c", text: "Con un doble fondo con trampa que quema el cuaderno si se fuerza" },
+            { id: "d", text: "Dejándoselo a Ryuk" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El cajón tiene un doble fondo. Si alguien lo abre sin saber cómo, un pequeño mecanismo prende fuego al cuaderno, y ya nadie puede demostrar nada.",
+        },
+        {
+          id: 17,
+          question: "Tras la muerte de L, ¿quién se pone al frente de la investigación japonesa?",
+          answers: [
+            { id: "a", text: "Watari" },
+            { id: "b", text: "Light Yagami" },
+            { id: "c", text: "Soichiro Yagami" },
+            { id: "d", text: "Touta Matsuda" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El propio Light. Se hace pasar por el nuevo L, así que acaba dirigiendo la búsqueda de Kira siendo él mismo Kira.",
+        },
+        {
+          id: 18,
+          question: "¿Cómo se llama el equipo que dirige Near para atrapar a Kira?",
+          answers: [
+            { id: "a", text: "La NHN" },
+            { id: "b", text: "La SPK" },
+            { id: "c", text: "La Wammy's House" },
+            { id: "d", text: "El FBI" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La SPK, una unidad especial creada por Estados Unidos. Near la dirige desde Nueva York, con agentes como Halle Lidner y Stephen Gevanni.",
+        },
+        {
+          id: 19,
+          question: "¿Dónde tiene lugar el enfrentamiento final entre Near y Light?",
+          answers: [
+            { id: "a", text: "En un almacén" },
+            { id: "b", text: "En la azotea del cuartel de la investigación" },
+            { id: "c", text: "En la sede de Yotsuba" },
+            { id: "d", text: "En una iglesia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En un almacén llamado Yellow Box, cerca de Tokio. Near lleva allí a Light y a la policía japonesa, sabiendo que Mikami va a escribir sus nombres.",
+        },
+        {
+          id: 20,
+          question: "Durante el enfrentamiento final, ¿qué nombre falta en el cuaderno de Mikami?",
+          answers: [
+            { id: "a", text: "El de Soichiro" },
+            { id: "b", text: "El de Light" },
+            { id: "c", text: "El de Near" },
+            { id: "d", text: "El de Matsuda" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El de Light. Mikami ha escrito el nombre de todos los demás menos el suyo. Como nadie muere, queda claro delante de todos que Light es Kira.",
         },
       ],
     },

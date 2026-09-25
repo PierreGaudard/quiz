@@ -4,8 +4,8 @@ import type { TranslatedQuiz } from "./types";
  * Quiz sur l'espace en mode vrai-faux : planètes, Lune, conquête spatiale.
  *
  * Comme dans quiz-europe.ts, « vrai » porte l'id « a » et « faux » l'id « b »
- * dans les trois langues (VraiFauxPlayer repère la réponse par l'id). Cinq
- * affirmations vraies, cinq fausses, dont des idées reçues courantes (la
+ * dans les trois langues (VraiFauxPlayer repère la réponse par l'id). Dix
+ * affirmations vraies, dix fausses, dont des idées reçues courantes (la
  * Muraille de Chine vue de la Lune, Saturne seule planète à anneaux).
  */
 export const quizEspace: TranslatedQuiz = {
@@ -21,7 +21,7 @@ export const quizEspace: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : l'espace et les planètes",
       description:
-        "Dix affirmations sur les planètes, la Lune et la conquête spatiale. À toi de dire lesquelles sont vraies.",
+        "Vingt affirmations sur les planètes, la Lune et la conquête spatiale. À toi de dire lesquelles sont vraies.",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizEspace: TranslatedQuiz = {
           explanation:
             "Faux. Jupiter, Uranus et Neptune en ont aussi, mais ils sont fins et sombres, donc bien moins visibles que ceux de Saturne.",
         },
+        {
+          id: 11,
+          question: "Le Soleil est une étoile.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. C'est une étoile de taille moyenne, et la plus proche de nous. Les étoiles qu'on voit la nuit sont d'autres soleils, beaucoup plus lointains.",
+        },
+        {
+          id: 12,
+          question: "Dans l'espace, on entend le bruit des explosions.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le son a besoin d'air, ou d'une autre matière, pour se propager. Dans le vide de l'espace, une explosion ne fait aucun bruit, contrairement à ce qu'on voit dans les films.",
+        },
+        {
+          id: 13,
+          question: "Sur Vénus, un jour dure plus longtemps qu'une année.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Vénus met 243 jours terrestres pour tourner sur elle-même, et seulement 225 pour faire le tour du Soleil.",
+        },
+        {
+          id: 14,
+          question: "Notre galaxie s'appelle la Voie lactée.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Le Système solaire se trouve dans l'un de ses bras, assez loin du centre. Elle compte plusieurs centaines de milliards d'étoiles.",
+        },
+        {
+          id: 15,
+          question: "La planète Uranus a été découverte par Galilée.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. C'est l'astronome William Herschel qui l'a découverte, en 1781. Galilée, lui, est surtout connu pour avoir observé les lunes de Jupiter en 1610.",
+        },
+        {
+          id: 16,
+          question: "Une étoile filante est une étoile qui tombe du ciel.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. C'est un petit caillou venu de l'espace, souvent pas plus gros qu'un grain de sable, qui brûle en entrant dans l'atmosphère.",
+        },
+        {
+          id: 17,
+          question: "Les astronautes flottent dans la Station spatiale parce qu'il n'y a plus de gravité là-haut.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. À 400 km d'altitude, la gravité est encore à peu près 90 % de celle du sol. Les astronautes flottent parce que la station et eux sont en chute libre permanente autour de la Terre.",
+        },
+        {
+          id: 18,
+          question: "La face cachée de la Lune est toujours dans le noir.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Elle est éclairée par le Soleil autant que l'autre face. On l'appelle cachée parce qu'on ne la voit jamais depuis la Terre, la Lune nous montrant toujours le même côté.",
+        },
+        {
+          id: 19,
+          question: "Mars est rouge à cause de la rouille.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Son sol et ses poussières sont riches en oxyde de fer, autrement dit de la rouille, ce qui lui donne sa couleur.",
+        },
+        {
+          id: 20,
+          question: "La Grande Tache rouge de Jupiter est une tempête.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. C'est une tempête géante, plus large que la Terre, observée depuis plus de 150 ans. Elle rétrécit peu à peu.",
+        },
       ],
     },
     en: {
       title: "True or False: space and the planets",
       description:
-        "Ten statements about the planets, the Moon and space exploration. Your job is to say which ones are true.",
+        "Twenty statements about the planets, the Moon and space exploration. Your job is to say which ones are true.",
       questions: [
         {
           id: 1,
@@ -260,12 +370,122 @@ export const quizEspace: TranslatedQuiz = {
           explanation:
             "False. Jupiter, Uranus and Neptune have rings too, but they're thin and dark, so they're much harder to see than Saturn's.",
         },
+        {
+          id: 11,
+          question: "The Sun is a star.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. It's a medium-sized star and the closest one to us. The stars you see at night are other suns, much farther away.",
+        },
+        {
+          id: 12,
+          question: "You can hear explosions in space.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Sound needs air, or some other material, to travel through. In the vacuum of space an explosion makes no noise at all, whatever the movies show.",
+        },
+        {
+          id: 13,
+          question: "On Venus, a day lasts longer than a year.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Venus takes 243 Earth days to spin once on its axis, but only 225 to go around the Sun.",
+        },
+        {
+          id: 14,
+          question: "Our galaxy is called the Milky Way.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The Solar System sits in one of its arms, quite far from the centre. It holds several hundred billion stars.",
+        },
+        {
+          id: 15,
+          question: "The planet Uranus was discovered by Galileo.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The astronomer William Herschel discovered it in 1781. Galileo is best known for spotting Jupiter's moons in 1610.",
+        },
+        {
+          id: 16,
+          question: "A shooting star is a star falling from the sky.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. It's a tiny bit of space rock, often no bigger than a grain of sand, burning up as it hits the atmosphere.",
+        },
+        {
+          id: 17,
+          question: "Astronauts float on the space station because there's no gravity up there.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. At 400 km up, gravity is still about 90% of what it is on the ground. Astronauts float because they and the station are constantly falling around the Earth.",
+        },
+        {
+          id: 18,
+          question: "The far side of the Moon is always dark.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. It gets as much sunlight as the side we see. It's called the far side because we never see it from Earth, since the Moon always shows us the same face.",
+        },
+        {
+          id: 19,
+          question: "Mars is red because of rust.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Its soil and dust are full of iron oxide, which is basically rust, and that's what gives the planet its colour.",
+        },
+        {
+          id: 20,
+          question: "Jupiter's Great Red Spot is a storm.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. It's a giant storm, wider than Earth, that has been watched for more than 150 years. It's slowly getting smaller.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: el espacio y los planetas",
       description:
-        "Diez afirmaciones sobre los planetas, la Luna y la carrera espacial. Te toca decir cuáles son verdad.",
+        "Veinte afirmaciones sobre los planetas, la Luna y la carrera espacial. Te toca decir cuáles son verdad.",
       questions: [
         {
           id: 1,
@@ -381,6 +601,116 @@ export const quizEspace: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso. Júpiter, Urano y Neptuno también tienen, pero son finos y oscuros, así que se ven mucho menos que los de Saturno.",
+        },
+        {
+          id: 11,
+          question: "El Sol es una estrella.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Es una estrella de tamaño medio y la más cercana a nosotros. Las estrellas que vemos de noche son otros soles, mucho más lejanos.",
+        },
+        {
+          id: 12,
+          question: "En el espacio se oye el ruido de las explosiones.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El sonido necesita aire, u otra materia, para propagarse. En el vacío del espacio una explosión no hace ningún ruido, aunque en las películas suene.",
+        },
+        {
+          id: 13,
+          question: "En Venus, un día dura más que un año.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Venus tarda 243 días terrestres en girar sobre sí misma y solo 225 en dar la vuelta al Sol.",
+        },
+        {
+          id: 14,
+          question: "Nuestra galaxia se llama la Vía Láctea.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El sistema solar está en uno de sus brazos, bastante lejos del centro. Tiene varios cientos de miles de millones de estrellas.",
+        },
+        {
+          id: 15,
+          question: "El planeta Urano lo descubrió Galileo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Lo descubrió el astrónomo William Herschel en 1781. Galileo es conocido sobre todo por haber observado las lunas de Júpiter en 1610.",
+        },
+        {
+          id: 16,
+          question: "Una estrella fugaz es una estrella que cae del cielo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Es una piedrecita llegada del espacio, a menudo no más grande que un grano de arena, que se quema al entrar en la atmósfera.",
+        },
+        {
+          id: 17,
+          question: "Los astronautas flotan en la Estación Espacial porque allí arriba no hay gravedad.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. A 400 km de altura, la gravedad sigue siendo más o menos el 90 % de la del suelo. Flotan porque ellos y la estación están en caída libre continua alrededor de la Tierra.",
+        },
+        {
+          id: 18,
+          question: "La cara oculta de la Luna siempre está a oscuras.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Recibe tanta luz del Sol como la otra cara. Se llama oculta porque nunca se ve desde la Tierra, ya que la Luna nos enseña siempre el mismo lado.",
+        },
+        {
+          id: 19,
+          question: "Marte es rojo por culpa del óxido.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Su suelo y su polvo están llenos de óxido de hierro, es decir, herrumbre, y eso le da su color.",
+        },
+        {
+          id: 20,
+          question: "La Gran Mancha Roja de Júpiter es una tormenta.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Es una tormenta gigante, más ancha que la Tierra, que se observa desde hace más de 150 años. Poco a poco se va haciendo más pequeña.",
         },
       ],
     },

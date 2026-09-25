@@ -332,7 +332,7 @@ export default function DuelPlayer({ quiz, locale = "en" }: Props) {
             {tt("home")}
           </a>
         </div>
-        <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} />
+        <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} progress={{ correct: score, total: totalQuestions, title: quiz.title, image: quiz.coverImage || null, path: quiz.path || null }} />
       </div>
     );
   }

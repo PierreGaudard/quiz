@@ -4,7 +4,7 @@ import Layout from "../../../layouts/Layout.astro";
 import CategoryPage from "../../../components/CategoryPage";
 import { localePath } from "../../../utils/base";
 import { t } from "../../../i18n/ui";
-import { getSubPaths, resolveSubcategoryData, subcategoryTitle } from "../../../lib/page-helpers";
+import { getSubPaths, resolveSubcategoryData, subcategoryTitle, subcategoryH1 } from "../../../lib/page-helpers";
 import { getHreflangSubcategoryPaths } from "../../../lib/hreflang-helpers";
 import type { Locale } from "../../../i18n/config";
 
@@ -33,6 +33,7 @@ const hreflangPaths = getHreflangSubcategoryPaths(categorySlug, subName, locale)
   <CategoryPage
     client:load
     category={subCategory}
+    h1={subcategoryH1(subName, locale)}
     quizzes={quizzes}
     featured={featured}
     gameTypes={availableGameTypes}

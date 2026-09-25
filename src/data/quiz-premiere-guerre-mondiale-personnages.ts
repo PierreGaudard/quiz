@@ -27,7 +27,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
     fr: {
       title: "Quiz 14-18 : les grands personnages",
       description:
-        "Dix questions sur les personnages de la Première Guerre mondiale : Foch, Clemenceau, le Baron rouge, Marie Curie, etc.",
+        "Vingt questions sur les personnages de la Première Guerre mondiale : Foch, Clemenceau, le Baron rouge, Marie Curie, etc.",
       questions: [
         {
           id: 1,
@@ -164,12 +164,142 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
           explanation:
             "Thomas Edward Lawrence, qu'on appelle Lawrence d'Arabie. Son histoire a été racontée au cinéma en 1962 par David Lean.",
         },
+        {
+          id: 11,
+          question: "Quel général, qui organise la défense de Verdun à partir de février 1916, est appelé « le vainqueur de Verdun » ?",
+          answers: [
+            { id: "a", text: "Charles Mangin" },
+            { id: "b", text: "Robert Nivelle" },
+            { id: "c", text: "Philippe Pétain" },
+            { id: "d", text: "Joseph Gallieni" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Philippe Pétain. Il met en place la noria, la rotation des unités, et fait ravitailler la ville par la Voie sacrée. Ce prestige explique en partie le rôle qu'on lui confie en 1940.",
+        },
+        {
+          id: 12,
+          question: "Quel gouverneur militaire de Paris réquisitionne des taxis pour envoyer des soldats sur la Marne, en septembre 1914 ?",
+          answers: [
+            { id: "a", text: "Joseph Gallieni" },
+            { id: "b", text: "Hubert Lyautey" },
+            { id: "c", text: "Louis Franchet d'Espèrey" },
+            { id: "d", text: "Robert Nivelle" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Joseph Gallieni. Plusieurs centaines de taxis parisiens transportent des milliers de soldats vers le front dans la nuit du 6 au 7 septembre 1914. C'est l'épisode des « taxis de la Marne ».",
+        },
+        {
+          id: 13,
+          question: "Qui est président de la République française pendant toute la guerre ?",
+          answers: [
+            { id: "a", text: "Alexandre Millerand" },
+            { id: "b", text: "Raymond Poincaré" },
+            { id: "c", text: "Paul Deschanel" },
+            { id: "d", text: "Gaston Doumergue" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Raymond Poincaré, élu en 1913 et resté en fonction jusqu'en février 1920. Clemenceau, avec qui il s'entend mal, est président du Conseil, c'est-à-dire chef du gouvernement, à partir de 1917.",
+        },
+        {
+          id: 14,
+          question: "Quelle danseuse néerlandaise, accusée d'espionnage pour l'Allemagne, est fusillée par les Français en 1917 ?",
+          answers: [
+            { id: "a", text: "Louise de Bettignies" },
+            { id: "b", text: "Marthe Richard" },
+            { id: "c", text: "Edith Cavell" },
+            { id: "d", text: "Mata Hari" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Mata Hari, de son vrai nom Margaretha Zelle. Elle est fusillée à Vincennes le 15 octobre 1917. Les historiens pensent aujourd'hui que son rôle d'espionne a été très exagéré lors de son procès.",
+        },
+        {
+          id: 15,
+          question: "Quelle infirmière britannique est fusillée par les Allemands en 1915 pour avoir aidé des soldats alliés à fuir la Belgique occupée ?",
+          answers: [
+            { id: "a", text: "Edith Cavell" },
+            { id: "b", text: "Florence Nightingale" },
+            { id: "c", text: "Elsie Inglis" },
+            { id: "d", text: "Mata Hari" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Edith Cavell, qui dirigeait une école d'infirmières à Bruxelles. Elle est exécutée le 12 octobre 1915, et sa mort provoque une grande émotion au Royaume-Uni et dans le monde.",
+        },
+        {
+          id: 16,
+          question: "Quel général commande le corps expéditionnaire américain en France ?",
+          answers: [
+            { id: "a", text: "Douglas MacArthur" },
+            { id: "b", text: "George Patton" },
+            { id: "c", text: "John Pershing" },
+            { id: "d", text: "Dwight Eisenhower" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "John Pershing. Il arrive en France en juin 1917 et tient à ce que ses troupes combattent sous commandement américain. MacArthur et Patton font aussi la guerre en France, mais à des postes moins élevés.",
+        },
+        {
+          id: 17,
+          question: "Quel poète, blessé à la tête par un éclat d'obus en 1916, publie le recueil « Calligrammes » en 1918 ?",
+          answers: [
+            { id: "a", text: "Charles Péguy" },
+            { id: "b", text: "Guillaume Apollinaire" },
+            { id: "c", text: "Alain-Fournier" },
+            { id: "d", text: "Paul Valéry" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Guillaume Apollinaire. Il meurt de la grippe espagnole le 9 novembre 1918, deux jours avant l'armistice. Charles Péguy et Alain-Fournier sont tués au combat dès septembre 1914.",
+        },
+        {
+          id: 18,
+          question: "Quel empereur d'Autriche-Hongrie meurt en novembre 1916, après 68 ans de règne ?",
+          answers: [
+            { id: "a", text: "François-Joseph" },
+            { id: "b", text: "Charles Ier" },
+            { id: "c", text: "François-Ferdinand" },
+            { id: "d", text: "Maximilien" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "François-Joseph, empereur depuis 1848. Son petit-neveu Charles Ier lui succède et sera le dernier empereur. François-Ferdinand, l'héritier assassiné à Sarajevo, était aussi son neveu.",
+        },
+        {
+          id: 19,
+          question: "Quel roi des Belges, surnommé « le Roi-Chevalier », reste avec son armée sur le front de l'Yser pendant toute la guerre ?",
+          answers: [
+            { id: "a", text: "Léopold II" },
+            { id: "b", text: "Baudouin Ier" },
+            { id: "c", text: "Léopold III" },
+            { id: "d", text: "Albert Ier" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Albert Ier. Il refuse de laisser passer l'armée allemande en août 1914, et il commande lui-même l'armée belge, qui tient un petit morceau du pays derrière l'Yser jusqu'en 1918.",
+        },
+        {
+          id: 20,
+          question: "Qui est Premier ministre du Royaume-Uni de décembre 1916 à la fin de la guerre ?",
+          answers: [
+            { id: "a", text: "Herbert Asquith" },
+            { id: "b", text: "David Lloyd George" },
+            { id: "c", text: "Winston Churchill" },
+            { id: "d", text: "Arthur Balfour" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "David Lloyd George. Il remplace Herbert Asquith en décembre 1916 et reste en poste jusqu'en 1922. Il fait partie des « quatre grands » de la conférence de la paix, avec Clemenceau, Wilson et Orlando.",
+        },
       ],
     },
     en: {
       title: "WWI quiz: the key figures",
       description:
-        "Ten questions about the people of the First World War: Foch, Clemenceau, the Red Baron, Marie Curie, and more.",
+        "Twenty questions about the people of the First World War: Foch, Clemenceau, the Red Baron, Marie Curie, and more.",
       questions: [
         {
           id: 1,
@@ -306,12 +436,142 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
           explanation:
             "Thomas Edward Lawrence, known as Lawrence of Arabia. David Lean told his story on screen in 1962.",
         },
+        {
+          id: 11,
+          question: "Which general, in charge of defending Verdun from February 1916, became known as \"the victor of Verdun\"?",
+          answers: [
+            { id: "a", text: "Charles Mangin" },
+            { id: "b", text: "Robert Nivelle" },
+            { id: "c", text: "Philippe Pétain" },
+            { id: "d", text: "Joseph Gallieni" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Philippe Pétain. He set up the rotation of units and had the town supplied along the Voie Sacrée road. That prestige partly explains the role he was given in 1940.",
+        },
+        {
+          id: 12,
+          question: "Which military governor of Paris requisitioned taxis to send soldiers to the Marne in September 1914?",
+          answers: [
+            { id: "a", text: "Joseph Gallieni" },
+            { id: "b", text: "Hubert Lyautey" },
+            { id: "c", text: "Louis Franchet d'Espèrey" },
+            { id: "d", text: "Robert Nivelle" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Joseph Gallieni. Several hundred Paris taxis carried thousands of soldiers to the front on the night of 6 to 7 September 1914, in what became known as the \"taxis of the Marne\".",
+        },
+        {
+          id: 13,
+          question: "Who was President of France throughout the war?",
+          answers: [
+            { id: "a", text: "Alexandre Millerand" },
+            { id: "b", text: "Raymond Poincaré" },
+            { id: "c", text: "Paul Deschanel" },
+            { id: "d", text: "Gaston Doumergue" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Raymond Poincaré, elected in 1913 and in office until February 1920. Clemenceau, with whom he got on badly, was head of government from 1917.",
+        },
+        {
+          id: 14,
+          question: "Which Dutch dancer, accused of spying for Germany, was shot by the French in 1917?",
+          answers: [
+            { id: "a", text: "Louise de Bettignies" },
+            { id: "b", text: "Marthe Richard" },
+            { id: "c", text: "Edith Cavell" },
+            { id: "d", text: "Mata Hari" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Mata Hari, whose real name was Margaretha Zelle. She was shot at Vincennes on 15 October 1917. Historians now think her role as a spy was greatly exaggerated at her trial.",
+        },
+        {
+          id: 15,
+          question: "Which British nurse was shot by the Germans in 1915 for helping Allied soldiers escape from occupied Belgium?",
+          answers: [
+            { id: "a", text: "Edith Cavell" },
+            { id: "b", text: "Florence Nightingale" },
+            { id: "c", text: "Elsie Inglis" },
+            { id: "d", text: "Mata Hari" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Edith Cavell, who ran a nursing school in Brussels. She was executed on 12 October 1915, and her death caused an outcry in Britain and around the world.",
+        },
+        {
+          id: 16,
+          question: "Which general commanded the American Expeditionary Forces in France?",
+          answers: [
+            { id: "a", text: "Douglas MacArthur" },
+            { id: "b", text: "George Patton" },
+            { id: "c", text: "John Pershing" },
+            { id: "d", text: "Dwight Eisenhower" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "John Pershing. He arrived in France in June 1917 and insisted that his troops fight under American command. MacArthur and Patton also served in France, but in lower posts.",
+        },
+        {
+          id: 17,
+          question: "Which poet, wounded in the head by shrapnel in 1916, published the collection \"Calligrammes\" in 1918?",
+          answers: [
+            { id: "a", text: "Charles Péguy" },
+            { id: "b", text: "Guillaume Apollinaire" },
+            { id: "c", text: "Alain-Fournier" },
+            { id: "d", text: "Paul Valéry" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Guillaume Apollinaire. He died of Spanish flu on 9 November 1918, two days before the armistice. Charles Péguy and Alain-Fournier were both killed in action in September 1914.",
+        },
+        {
+          id: 18,
+          question: "Which emperor of Austria-Hungary died in November 1916, after 68 years on the throne?",
+          answers: [
+            { id: "a", text: "Franz Joseph" },
+            { id: "b", text: "Charles I" },
+            { id: "c", text: "Franz Ferdinand" },
+            { id: "d", text: "Maximilian" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Franz Joseph, emperor since 1848. His great-nephew Charles I succeeded him and was the last emperor. Franz Ferdinand, the heir killed in Sarajevo, was also his nephew.",
+        },
+        {
+          id: 19,
+          question: "Which King of the Belgians, nicknamed \"the Knight King\", stayed with his army on the Yser front throughout the war?",
+          answers: [
+            { id: "a", text: "Leopold II" },
+            { id: "b", text: "Baudouin I" },
+            { id: "c", text: "Leopold III" },
+            { id: "d", text: "Albert I" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Albert I. He refused to let the German army through in August 1914 and led the Belgian army himself, holding a small strip of the country behind the Yser until 1918.",
+        },
+        {
+          id: 20,
+          question: "Who was British Prime Minister from December 1916 to the end of the war?",
+          answers: [
+            { id: "a", text: "Herbert Asquith" },
+            { id: "b", text: "David Lloyd George" },
+            { id: "c", text: "Winston Churchill" },
+            { id: "d", text: "Arthur Balfour" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "David Lloyd George. He replaced Herbert Asquith in December 1916 and stayed in office until 1922. He was one of the \"Big Four\" at the Peace Conference, with Clemenceau, Wilson and Orlando.",
+        },
       ],
     },
     es: {
       title: "Quiz Primera Guerra Mundial: personajes",
       description:
-        "Diez preguntas sobre los personajes de la Primera Guerra Mundial: Foch, Clemenceau, el Barón Rojo, Marie Curie, etc.",
+        "Veinte preguntas sobre los personajes de la Primera Guerra Mundial: Foch, Clemenceau, el Barón Rojo, Marie Curie, etc.",
       questions: [
         {
           id: 1,
@@ -447,6 +707,136 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Thomas Edward Lawrence, conocido como Lawrence de Arabia. David Lean contó su historia en el cine en 1962.",
+        },
+        {
+          id: 11,
+          question: "¿Qué general, al frente de la defensa de Verdún desde febrero de 1916, fue llamado «el vencedor de Verdún»?",
+          answers: [
+            { id: "a", text: "Charles Mangin" },
+            { id: "b", text: "Robert Nivelle" },
+            { id: "c", text: "Philippe Pétain" },
+            { id: "d", text: "Joseph Gallieni" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Philippe Pétain. Organizó la rotación de las unidades y el abastecimiento de la ciudad por la Voie Sacrée. Ese prestigio explica en parte el papel que se le dio en 1940.",
+        },
+        {
+          id: 12,
+          question: "¿Qué gobernador militar de París requisó taxis para enviar soldados al Marne en septiembre de 1914?",
+          answers: [
+            { id: "a", text: "Joseph Gallieni" },
+            { id: "b", text: "Hubert Lyautey" },
+            { id: "c", text: "Louis Franchet d'Espèrey" },
+            { id: "d", text: "Robert Nivelle" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Joseph Gallieni. Varios cientos de taxis parisinos llevaron a miles de soldados al frente en la noche del 6 al 7 de septiembre de 1914. Es el episodio de los «taxis del Marne».",
+        },
+        {
+          id: 13,
+          question: "¿Quién fue presidente de la República francesa durante toda la guerra?",
+          answers: [
+            { id: "a", text: "Alexandre Millerand" },
+            { id: "b", text: "Raymond Poincaré" },
+            { id: "c", text: "Paul Deschanel" },
+            { id: "d", text: "Gaston Doumergue" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Raymond Poincaré, elegido en 1913 y en el cargo hasta febrero de 1920. Clemenceau, con quien se llevaba mal, fue jefe del Gobierno a partir de 1917.",
+        },
+        {
+          id: 14,
+          question: "¿Qué bailarina neerlandesa, acusada de espiar para Alemania, fue fusilada por los franceses en 1917?",
+          answers: [
+            { id: "a", text: "Louise de Bettignies" },
+            { id: "b", text: "Marthe Richard" },
+            { id: "c", text: "Edith Cavell" },
+            { id: "d", text: "Mata Hari" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Mata Hari, cuyo nombre real era Margaretha Zelle. Fue fusilada en Vincennes el 15 de octubre de 1917. Hoy los historiadores creen que su papel de espía se exageró mucho en el juicio.",
+        },
+        {
+          id: 15,
+          question: "¿Qué enfermera británica fue fusilada por los alemanes en 1915 por ayudar a soldados aliados a huir de la Bélgica ocupada?",
+          answers: [
+            { id: "a", text: "Edith Cavell" },
+            { id: "b", text: "Florence Nightingale" },
+            { id: "c", text: "Elsie Inglis" },
+            { id: "d", text: "Mata Hari" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Edith Cavell, que dirigía una escuela de enfermeras en Bruselas. Fue ejecutada el 12 de octubre de 1915, y su muerte causó una gran conmoción en el Reino Unido y en el mundo.",
+        },
+        {
+          id: 16,
+          question: "¿Qué general mandaba el cuerpo expedicionario estadounidense en Francia?",
+          answers: [
+            { id: "a", text: "Douglas MacArthur" },
+            { id: "b", text: "George Patton" },
+            { id: "c", text: "John Pershing" },
+            { id: "d", text: "Dwight Eisenhower" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "John Pershing. Llegó a Francia en junio de 1917 y quiso que sus tropas combatieran bajo mando estadounidense. MacArthur y Patton también estuvieron en Francia, pero en puestos menores.",
+        },
+        {
+          id: 17,
+          question: "¿Qué poeta, herido en la cabeza por un fragmento de obús en 1916, publica el libro «Caligramas» en 1918?",
+          answers: [
+            { id: "a", text: "Charles Péguy" },
+            { id: "b", text: "Guillaume Apollinaire" },
+            { id: "c", text: "Alain-Fournier" },
+            { id: "d", text: "Paul Valéry" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Guillaume Apollinaire. Murió de gripe española el 9 de noviembre de 1918, dos días antes del armisticio. Charles Péguy y Alain-Fournier murieron en combate ya en septiembre de 1914.",
+        },
+        {
+          id: 18,
+          question: "¿Qué emperador de Austria-Hungría murió en noviembre de 1916, tras 68 años de reinado?",
+          answers: [
+            { id: "a", text: "Francisco José" },
+            { id: "b", text: "Carlos I" },
+            { id: "c", text: "Francisco Fernando" },
+            { id: "d", text: "Maximiliano" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Francisco José, emperador desde 1848. Le sucedió su sobrino nieto Carlos I, que fue el último emperador. Francisco Fernando, el heredero asesinado en Sarajevo, también era sobrino suyo.",
+        },
+        {
+          id: 19,
+          question: "¿Qué rey de los belgas, apodado «el Rey Caballero», se quedó con su ejército en el frente del Yser durante toda la guerra?",
+          answers: [
+            { id: "a", text: "Leopoldo II" },
+            { id: "b", text: "Balduino I" },
+            { id: "c", text: "Leopoldo III" },
+            { id: "d", text: "Alberto I" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Alberto I. Se negó a dejar pasar al ejército alemán en agosto de 1914 y mandó él mismo el ejército belga, que resistió en un pequeño trozo del país detrás del Yser hasta 1918.",
+        },
+        {
+          id: 20,
+          question: "¿Quién fue primer ministro del Reino Unido desde diciembre de 1916 hasta el final de la guerra?",
+          answers: [
+            { id: "a", text: "Herbert Asquith" },
+            { id: "b", text: "David Lloyd George" },
+            { id: "c", text: "Winston Churchill" },
+            { id: "d", text: "Arthur Balfour" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "David Lloyd George. Sustituyó a Herbert Asquith en diciembre de 1916 y siguió en el cargo hasta 1922. Fue uno de los «cuatro grandes» de la conferencia de paz, con Clemenceau, Wilson y Orlando.",
         },
       ],
     },

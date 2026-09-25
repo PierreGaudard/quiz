@@ -12,7 +12,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
   slug: "quiz-etats-unis-villes",
   slugs: { en: "usa-cities-quiz", fr: "quiz-etats-unis-villes", es: "quiz-estados-unidos-ciudades" },
   categorySlug: "geographie",
-  subcategory: "Etats-Unis",
+  subcategory: "États-Unis",
   difficulty: "medium",
   coverImage: "/images/cover-etats-unis-villes.webp",
   gameType: "chrono",

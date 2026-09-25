@@ -6,8 +6,8 @@ import type { TranslatedQuiz } from "./types";
  * Gyomei, Sanemi, Obanai).
  *
  * Le quiz qcm existant (quiz-demon-slayer.ts) demande deja combien il y a de
- * Piliers et qui est celui de la Flamme : on n'y revient pas. Cinq
- * affirmations vraies, cinq fausses, et le moteur lit « vrai » sur l'id « a ».
+ * Piliers et qui est celui de la Flamme : on n'y revient pas. Dix
+ * affirmations vraies, dix fausses, et le moteur lit « vrai » sur l'id « a ».
  */
 export const quizDemonSlayerPiliers: TranslatedQuiz = {
   slug: "quiz-demon-slayer-piliers",
@@ -22,7 +22,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les Piliers de Demon Slayer",
       description:
-        "Dix affirmations sur les Piliers de Demon Slayer : Shinobu, Mitsuri, Muichiro, Tengen, Gyomei, etc. Vrai ou faux, à toi de voir.",
+        "Vingt affirmations sur les Piliers de Demon Slayer : Shinobu, Mitsuri, Muichiro, Tengen, Gyomei, etc. Vrai ou faux, à toi de voir.",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
           explanation:
             "Faux. Le plus jeune, c'est Muichiro Tokito, qui a 14 ans. Gyomei est au contraire un géant de 27 ans, le plus âgé des Piliers.",
         },
+        {
+          id: 11,
+          question: "Kanae, la grande sœur de Shinobu, était le Pilier de la Fleur.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Kanae Kocho était le Pilier de la Fleur avant d'être tuée par Doma. Shinobu a continué le combat en gardant son sourire et sa gentillesse.",
+        },
+        {
+          id: 12,
+          question: "Tengen Uzui meurt dans l'arc du Quartier des plaisirs.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Tengen survit, mais il perd une main et un œil. Il décide alors de quitter son rôle de Pilier.",
+        },
+        {
+          id: 13,
+          question: "Muichiro Tokito avait un frère jumeau, Yuichiro.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Yuichiro est mort quand un démon a attaqué leur maison. Le choc a fait perdre la mémoire à Muichiro pendant longtemps.",
+        },
+        {
+          id: 14,
+          question: "Mitsuri Kanroji se bat avec un sabre rigide et très lourd.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Son sabre est une lame très fine et souple, qui ondule comme un fouet. Ça colle à son style de combat, très rapide et très agile.",
+        },
+        {
+          id: 15,
+          question: "Le père de Rengoku a lui aussi été Pilier de la Flamme.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Shinjuro Rengoku a été Pilier de la Flamme avant de tout lâcher et de se mettre à boire. Kyojuro a pris la suite après lui.",
+        },
+        {
+          id: 16,
+          question: "Le sang de Sanemi Shinazugawa n'a rien de particulier.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Sanemi a un sang rare qui enivre les démons. Il s'entaille lui-même pendant les combats pour les rendre plus faibles.",
+        },
+        {
+          id: 17,
+          question: "Giyu Tomioka a passé la Sélection finale en même temps que Sabito.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Sabito a protégé tous les candidats cette année-là, Giyu compris, et il est mort face au démon aux mains. Giyu ne se sent pas digne d'être Pilier à cause de ça.",
+        },
+        {
+          id: 18,
+          question: "Obanai Iguro a les deux yeux de la même couleur.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Il a un œil jaune et un œil turquoise. On appelle ça l'hétérochromie.",
+        },
+        {
+          id: 19,
+          question: "Mitsuri Kanroji a d'abord été l'élève de Rengoku.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Elle a appris la respiration de la Flamme avec lui, puis elle en a tiré sa propre respiration, celle de l'Amour.",
+        },
+        {
+          id: 20,
+          question: "Gyomei Himejima se bat avec un sabre classique.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Gyomei se bat avec une hache et une boule à pointes reliées par une chaîne. Les deux armes sont faites du même métal que les sabres des pourfendeurs.",
+        },
       ],
     },
     en: {
       title: "True or false: the Demon Slayer Hashira",
       description:
-        "Ten statements about the Demon Slayer Hashira: Shinobu, Mitsuri, Muichiro, Tengen, Gyomei and more. True or false, you decide.",
+        "Twenty statements about the Demon Slayer Hashira: Shinobu, Mitsuri, Muichiro, Tengen, Gyomei and more. True or false, you decide.",
       questions: [
         {
           id: 1,
@@ -259,12 +369,122 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
           explanation:
             "False. The youngest is Muichiro Tokito, who is 14. Gyomei is a 27-year-old giant, the oldest of the Hashira.",
         },
+        {
+          id: 11,
+          question: "Kanae, Shinobu's older sister, was the Flower Hashira.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Kanae Kocho was the Flower Hashira until Doma killed her. Shinobu kept fighting while holding on to her sister's smile and kindness.",
+        },
+        {
+          id: 12,
+          question: "Tengen Uzui dies in the Entertainment District arc.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Tengen survives, but he loses a hand and an eye. He then decides to step down as a Hashira.",
+        },
+        {
+          id: 13,
+          question: "Muichiro Tokito had a twin brother, Yuichiro.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Yuichiro died when a demon attacked their home. The shock left Muichiro with memory loss for a long time.",
+        },
+        {
+          id: 14,
+          question: "Mitsuri Kanroji fights with a stiff, very heavy sword.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Her sword is a very thin, flexible blade that ripples like a whip. It fits her fighting style, which is fast and very agile.",
+        },
+        {
+          id: 15,
+          question: "Rengoku's father was also a Flame Hashira.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Shinjuro Rengoku was the Flame Hashira before giving it all up and turning to drink. Kyojuro took over from him.",
+        },
+        {
+          id: 16,
+          question: "There's nothing special about Sanemi Shinazugawa's blood.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Sanemi has rare blood that makes demons drunk. He cuts himself during fights to weaken them.",
+        },
+        {
+          id: 17,
+          question: "Giyu Tomioka took the Final Selection at the same time as Sabito.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Sabito protected every candidate that year, Giyu included, and died fighting the Hand Demon. It's why Giyu doesn't feel he deserves to be a Hashira.",
+        },
+        {
+          id: 18,
+          question: "Obanai Iguro has two eyes of the same color.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. He has one yellow eye and one turquoise eye. That's called heterochromia.",
+        },
+        {
+          id: 19,
+          question: "Mitsuri Kanroji started out as Rengoku's student.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. She learned Flame Breathing from him, then turned it into her own style, Love Breathing.",
+        },
+        {
+          id: 20,
+          question: "Gyomei Himejima fights with a regular sword.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Gyomei fights with an axe and a spiked ball joined by a chain. Both are made of the same metal as the slayers' swords.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: los Pilares de Demon Slayer",
       description:
-        "Diez frases sobre los Pilares de Demon Slayer: Shinobu, Mitsuri, Muichiro, Tengen, Gyomei, etc. ¿Verdadero o falso? Tú decides.",
+        "Veinte frases sobre los Pilares de Demon Slayer: Shinobu, Mitsuri, Muichiro, Tengen, Gyomei, etc. ¿Verdadero o falso? Tú decides.",
       questions: [
         {
           id: 1,
@@ -379,6 +599,116 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso. El más joven es Muichiro Tokito, con 14 años. Gyomei es un gigante de 27 años, el mayor de los Pilares.",
+        },
+        {
+          id: 11,
+          question: "Kanae, la hermana mayor de Shinobu, era la Pilar de la Flor.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Kanae Kocho fue la Pilar de la Flor hasta que Doma la mató. Shinobu siguió luchando conservando la sonrisa y la amabilidad de su hermana.",
+        },
+        {
+          id: 12,
+          question: "Tengen Uzui muere en el arco del Distrito Rojo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Tengen sobrevive, pero pierde una mano y un ojo. Entonces decide dejar de ser Pilar.",
+        },
+        {
+          id: 13,
+          question: "Muichiro Tokito tenía un hermano gemelo, Yuichiro.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Yuichiro murió cuando un demonio atacó su casa. Del golpe, Muichiro perdió la memoria durante mucho tiempo.",
+        },
+        {
+          id: 14,
+          question: "Mitsuri Kanroji pelea con una espada rígida y muy pesada.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Su espada es una hoja finísima y flexible que se mueve como un látigo. Va con su forma de pelear, muy rápida y ágil.",
+        },
+        {
+          id: 15,
+          question: "El padre de Rengoku también fue Pilar de la Llama.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Shinjuro Rengoku fue Pilar de la Llama antes de dejarlo todo y darse a la bebida. Kyojuro tomó el relevo.",
+        },
+        {
+          id: 16,
+          question: "La sangre de Sanemi Shinazugawa no tiene nada de especial.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Sanemi tiene una sangre rara que emborracha a los demonios. Se hace cortes a sí mismo en los combates para debilitarlos.",
+        },
+        {
+          id: 17,
+          question: "Giyu Tomioka hizo la Selección Final a la vez que Sabito.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Sabito protegió a todos los candidatos ese año, Giyu incluido, y murió frente al demonio de las manos. Por eso Giyu no se siente digno de ser Pilar.",
+        },
+        {
+          id: 18,
+          question: "Obanai Iguro tiene los dos ojos del mismo color.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Tiene un ojo amarillo y otro turquesa. Es lo que se llama heterocromía.",
+        },
+        {
+          id: 19,
+          question: "Mitsuri Kanroji empezó siendo alumna de Rengoku.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Aprendió con él la respiración de la Llama, y a partir de ella creó la suya, la respiración del Amor.",
+        },
+        {
+          id: 20,
+          question: "Gyomei Himejima pelea con una espada normal.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Gyomei pelea con un hacha y una bola con pinchos unidas por una cadena. Las dos están hechas del mismo metal que las espadas de los cazadores.",
         },
       ],
     },

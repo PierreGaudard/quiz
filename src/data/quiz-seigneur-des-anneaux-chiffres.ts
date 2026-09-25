@@ -22,7 +22,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
     fr: {
       title: "Quiz Seigneur des Anneaux : les chiffres",
       description:
-        "Combien d'anneaux, quel âge pour Bilbon, quelle année pour Le Hobbit ? Dix nombres à deviner sur la Terre du Milieu et Tolkien.",
+        "Combien d'anneaux, quel âge pour Bilbon, quelle année pour Le Hobbit ? Vingt nombres à deviner sur la Terre du Milieu et Tolkien.",
       questions: [
         {
           id: 1,
@@ -118,12 +118,102 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
           explanation:
             "5. On en connaît surtout trois : Gandalf, Saroumane et Radagast. Les deux derniers sont les mages bleus, dont on ne sait presque rien.",
         },
+        {
+          id: 11,
+          question: "En quelle année est sorti au cinéma Le Retour du roi ?",
+          answers: [],
+          correctAnswer: "2003",
+          correctValue: 2003,
+          explanation:
+            "En 2003, deux ans après La Communauté de l'Anneau. Le film a gagné l'Oscar du meilleur film en 2004.",
+        },
+        {
+          id: 12,
+          question: "En quelle année est sorti Le Hobbit : Un voyage inattendu ?",
+          answers: [],
+          correctAnswer: "2012",
+          correctValue: 2012,
+          explanation:
+            "En 2012, neuf ans après Le Retour du roi. C'est le premier des trois films du Hobbit, toujours réalisés par Peter Jackson.",
+        },
+        {
+          id: 13,
+          question: "Combien de minutes dure Le Retour du roi dans sa version cinéma ?",
+          answers: [],
+          correctAnswer: "201",
+          correctValue: 201,
+          explanation:
+            "201 minutes, soit 3 h 21. La version longue sortie en DVD dépasse les quatre heures.",
+        },
+        {
+          id: 14,
+          question: "Combien de films Peter Jackson a-t-il réalisés sur la Terre du Milieu ?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "6 : les trois films du Seigneur des Anneaux, de 2001 à 2003, puis les trois films du Hobbit, de 2012 à 2014.",
+        },
+        {
+          id: 15,
+          question: "Dans les livres, quel âge a Aragorn pendant la guerre de l'Anneau ?",
+          answers: [],
+          correctAnswer: "87",
+          correctValue: 87,
+          explanation:
+            "87 ans. Il descend des Númenóréens, qui vivent bien plus longtemps que les autres hommes, et il meurt à 210 ans.",
+        },
+        {
+          id: 16,
+          question: "Combien de nains partent avec Bilbon dans Le Hobbit ?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13, menés par Thorin Écu-de-Chêne. Avec Bilbon et Gandalf, la compagnie compte quinze membres au départ.",
+        },
+        {
+          id: 17,
+          question: "En quelle année est mort J. R. R. Tolkien ?",
+          answers: [],
+          correctAnswer: "1973",
+          correctValue: 1973,
+          explanation:
+            "En 1973, à 81 ans. Le Silmarillion n'était pas encore publié.",
+        },
+        {
+          id: 18,
+          question: "Dans le livre, quel âge a Frodon quand il quitte Cul-de-Sac avec l'Anneau ?",
+          answers: [],
+          correctAnswer: "50",
+          correctValue: 50,
+          explanation:
+            "50 ans. Il part juste après son anniversaire, comme Bilbon, qui avait lui aussi 50 ans quand il est parti à l'aventure dans Le Hobbit.",
+        },
+        {
+          id: 19,
+          question: "En quelle année est paru Le Silmarillion ?",
+          answers: [],
+          correctAnswer: "1977",
+          correctValue: 1977,
+          explanation:
+            "En 1977, quatre ans après la mort de Tolkien. C'est son fils Christopher qui a rassemblé et publié les textes.",
+        },
+        {
+          id: 20,
+          question: "Dans le livre, combien d'années séparent la fête de Bilbon du départ de Frodon ?",
+          answers: [],
+          correctAnswer: "17",
+          correctValue: 17,
+          explanation:
+            "17 ans. Gandalf met tout ce temps à comprendre que l'anneau de Bilbon est l'Anneau unique. Le film raccourcit beaucoup cette attente.",
+        },
       ],
     },
     en: {
       title: "Lord of the Rings quiz: the numbers",
       description:
-        "How many rings, how old is Bilbo, what year was The Hobbit published? Ten numbers to guess about Middle-earth and Tolkien.",
+        "How many rings, how old is Bilbo, what year was The Hobbit published? Twenty numbers to guess about Middle-earth and Tolkien.",
       questions: [
         {
           id: 1,
@@ -219,12 +309,102 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
           explanation:
             "5. Three are well known: Gandalf, Saruman and Radagast. The other two are the Blue Wizards, and we know almost nothing about them.",
         },
+        {
+          id: 11,
+          question: "In what year did The Return of the King come out in cinemas?",
+          answers: [],
+          correctAnswer: "2003",
+          correctValue: 2003,
+          explanation:
+            "In 2003, two years after The Fellowship of the Ring. It won the Oscar for Best Picture in 2004.",
+        },
+        {
+          id: 12,
+          question: "In what year was The Hobbit: An Unexpected Journey released?",
+          answers: [],
+          correctAnswer: "2012",
+          correctValue: 2012,
+          explanation:
+            "In 2012, nine years after The Return of the King. It's the first of three Hobbit films, again directed by Peter Jackson.",
+        },
+        {
+          id: 13,
+          question: "How many minutes long is the theatrical cut of The Return of the King?",
+          answers: [],
+          correctAnswer: "201",
+          correctValue: 201,
+          explanation:
+            "201 minutes, so 3 hours 21. The extended edition released on DVD runs over four hours.",
+        },
+        {
+          id: 14,
+          question: "How many Middle-earth films did Peter Jackson direct?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "6: the three Lord of the Rings films from 2001 to 2003, then the three Hobbit films from 2012 to 2014.",
+        },
+        {
+          id: 15,
+          question: "In the books, how old is Aragorn during the War of the Ring?",
+          answers: [],
+          correctAnswer: "87",
+          correctValue: 87,
+          explanation:
+            "87. He descends from the Númenóreans, who live far longer than other men, and he dies at 210.",
+        },
+        {
+          id: 16,
+          question: "How many dwarves set off with Bilbo in The Hobbit?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13, led by Thorin Oakenshield. With Bilbo and Gandalf, the company has fifteen members when it sets out.",
+        },
+        {
+          id: 17,
+          question: "In what year did J. R. R. Tolkien die?",
+          answers: [],
+          correctAnswer: "1973",
+          correctValue: 1973,
+          explanation:
+            "In 1973, at the age of 81. The Silmarillion had not been published yet.",
+        },
+        {
+          id: 18,
+          question: "In the book, how old is Frodo when he leaves Bag End with the Ring?",
+          answers: [],
+          correctAnswer: "50",
+          correctValue: 50,
+          explanation:
+            "50. He leaves just after his birthday, like Bilbo, who was also 50 when he set off on his adventure in The Hobbit.",
+        },
+        {
+          id: 19,
+          question: "In what year was The Silmarillion published?",
+          answers: [],
+          correctAnswer: "1977",
+          correctValue: 1977,
+          explanation:
+            "In 1977, four years after Tolkien's death. His son Christopher put the texts together and published them.",
+        },
+        {
+          id: 20,
+          question: "In the book, how many years pass between Bilbo's party and Frodo's departure?",
+          answers: [],
+          correctAnswer: "17",
+          correctValue: 17,
+          explanation:
+            "17 years. That's how long it takes Gandalf to work out that Bilbo's ring is the One Ring. The film cuts that wait down a lot.",
+        },
       ],
     },
     es: {
       title: "El Señor de los Anillos: las cifras",
       description:
-        "¿Cuántos anillos, qué edad cumple Bilbo, en qué año salió El hobbit? Diez números que adivinar sobre la Tierra Media y Tolkien.",
+        "¿Cuántos anillos, qué edad cumple Bilbo, en qué año salió El hobbit? Veinte números que adivinar sobre la Tierra Media y Tolkien.",
       questions: [
         {
           id: 1,
@@ -319,6 +499,96 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
           correctValue: 5,
           explanation:
             "5. Se conocen sobre todo tres: Gandalf, Saruman y Radagast. Los otros dos son los magos azules, de los que casi no se sabe nada.",
+        },
+        {
+          id: 11,
+          question: "¿En qué año se estrenó en cines El retorno del rey?",
+          answers: [],
+          correctAnswer: "2003",
+          correctValue: 2003,
+          explanation:
+            "En 2003, dos años después de La Comunidad del Anillo. Ganó el Óscar a la mejor película en 2004.",
+        },
+        {
+          id: 12,
+          question: "¿En qué año se estrenó El hobbit: Un viaje inesperado?",
+          answers: [],
+          correctAnswer: "2012",
+          correctValue: 2012,
+          explanation:
+            "En 2012, nueve años después de El retorno del rey. Es la primera de las tres películas de El hobbit, también dirigidas por Peter Jackson.",
+        },
+        {
+          id: 13,
+          question: "¿Cuántos minutos dura El retorno del rey en su versión de cine?",
+          answers: [],
+          correctAnswer: "201",
+          correctValue: 201,
+          explanation:
+            "201 minutos, es decir, 3 h 21. La versión extendida que salió en DVD pasa de las cuatro horas.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántas películas sobre la Tierra Media dirigió Peter Jackson?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "6: las tres de El Señor de los Anillos, de 2001 a 2003, y las tres de El hobbit, de 2012 a 2014.",
+        },
+        {
+          id: 15,
+          question: "En los libros, ¿qué edad tiene Aragorn durante la guerra del Anillo?",
+          answers: [],
+          correctAnswer: "87",
+          correctValue: 87,
+          explanation:
+            "87 años. Desciende de los númenóreanos, que viven mucho más que los demás hombres, y muere a los 210.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántos enanos parten con Bilbo en El hobbit?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13, liderados por Thorin Escudo de Roble. Con Bilbo y Gandalf, la compañía tiene quince miembros al partir.",
+        },
+        {
+          id: 17,
+          question: "¿En qué año murió J. R. R. Tolkien?",
+          answers: [],
+          correctAnswer: "1973",
+          correctValue: 1973,
+          explanation:
+            "En 1973, a los 81 años. El Silmarillion todavía no se había publicado.",
+        },
+        {
+          id: 18,
+          question: "En el libro, ¿qué edad tiene Frodo cuando sale de Bolsón Cerrado con el Anillo?",
+          answers: [],
+          correctAnswer: "50",
+          correctValue: 50,
+          explanation:
+            "50 años. Se va justo después de su cumpleaños, igual que Bilbo, que también tenía 50 cuando se fue de aventura en El hobbit.",
+        },
+        {
+          id: 19,
+          question: "¿En qué año se publicó El Silmarillion?",
+          answers: [],
+          correctAnswer: "1977",
+          correctValue: 1977,
+          explanation:
+            "En 1977, cuatro años después de la muerte de Tolkien. Su hijo Christopher reunió los textos y los publicó.",
+        },
+        {
+          id: 20,
+          question: "En el libro, ¿cuántos años pasan entre la fiesta de Bilbo y la partida de Frodo?",
+          answers: [],
+          correctAnswer: "17",
+          correctValue: 17,
+          explanation:
+            "17 años. Es lo que tarda Gandalf en descubrir que el anillo de Bilbo es el Anillo Único. La película acorta mucho esa espera.",
         },
       ],
     },

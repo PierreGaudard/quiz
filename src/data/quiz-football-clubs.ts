@@ -22,7 +22,7 @@ export const quizFootballClubs: TranslatedQuiz = {
     fr: {
       title: "Duel foot : les grands clubs européens",
       description:
-        "Dix duels sur les grands clubs d'Europe : leurs stades, leurs surnoms, leurs villes et leurs soirées de Ligue des champions.",
+        "Vingt duels sur les grands clubs d'Europe : leurs stades, leurs surnoms, leurs villes et leurs soirées de Ligue des champions.",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizFootballClubs: TranslatedQuiz = {
           explanation:
             "Le FC Barcelone. Le match entre le Real et l'Atlético, les deux clubs de Madrid, s'appelle le derby madrilène.",
         },
+        {
+          id: 11,
+          question: "Quel club joue à Anfield ?",
+          answers: [
+            { id: "a", text: "Liverpool" },
+            { id: "b", text: "Everton" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Liverpool. Everton, l'autre club de la ville, a longtemps joué à Goodison Park, juste de l'autre côté du parc de Stanley.",
+        },
+        {
+          id: 12,
+          question: "Quel club anglais est surnommé « les Red Devils » ?",
+          answers: [
+            { id: "a", text: "Liverpool" },
+            { id: "b", text: "Manchester United" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Manchester United, dont le logo montre d'ailleurs un petit diable rouge. Liverpool, qu'on appelle plutôt « les Reds », joue aussi en rouge.",
+        },
+        {
+          id: 13,
+          question: "Quel club joue au stade Vélodrome ?",
+          answers: [
+            { id: "a", text: "L'Olympique de Marseille" },
+            { id: "b", text: "L'Olympique lyonnais" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "L'OM, à Marseille. L'OL joue au Groupama Stadium, à Décines, près de Lyon.",
+        },
+        {
+          id: 14,
+          question: "Quel club de Milan est surnommé les « Rossoneri », les rouge et noir ?",
+          answers: [
+            { id: "a", text: "L'Inter" },
+            { id: "b", text: "L'AC Milan" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'AC Milan, qui joue en rouge et noir. L'Inter joue en bleu et noir, et on l'appelle les « Nerazzurri ».",
+        },
+        {
+          id: 15,
+          question: "Quel club a gagné la finale de Ligue des champions 2005 après avoir été mené 3-0 à la mi-temps ?",
+          answers: [
+            { id: "a", text: "Liverpool" },
+            { id: "b", text: "L'AC Milan" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Liverpool, à Istanbul. Les Anglais sont revenus à 3-3 en six minutes en deuxième mi-temps, puis ils ont gagné aux tirs au but contre l'AC Milan.",
+        },
+        {
+          id: 16,
+          question: "Dans quelle ville joue le Celtic ?",
+          answers: [
+            { id: "a", text: "Édimbourg" },
+            { id: "b", text: "Glasgow" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "À Glasgow, au Celtic Park. Son grand rival, les Rangers, est aussi à Glasgow, et leur derby s'appelle l'« Old Firm ».",
+        },
+        {
+          id: 17,
+          question: "Quel club a gagné la Bundesliga 2023-2024 sans perdre un seul match ?",
+          answers: [
+            { id: "a", text: "Le Bayern Munich" },
+            { id: "b", text: "Le Bayer Leverkusen" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le Bayer Leverkusen, entraîné par Xabi Alonso. C'était son premier titre de champion d'Allemagne, et il a mis fin à onze titres de suite du Bayern.",
+        },
+        {
+          id: 18,
+          question: "Quel club londonien joue à Stamford Bridge ?",
+          answers: [
+            { id: "a", text: "Chelsea" },
+            { id: "b", text: "Tottenham" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Chelsea, depuis sa création en 1905. Tottenham joue dans le nord de Londres, dans son nouveau stade ouvert en 2019.",
+        },
+        {
+          id: 19,
+          question: "Quel club a été champion de France le plus de fois, sans compter le PSG ?",
+          answers: [
+            { id: "a", text: "L'Olympique de Marseille" },
+            { id: "b", text: "L'AS Saint-Étienne" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'AS Saint-Étienne, avec dix titres, le dernier en 1981. L'OM en compte neuf, parce que le titre de 1993 lui a été retiré après l'affaire VA-OM.",
+        },
+        {
+          id: 20,
+          question: "Quel club espagnol joue au Metropolitano ?",
+          answers: [
+            { id: "a", text: "L'Atlético de Madrid" },
+            { id: "b", text: "Le FC Séville" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "L'Atlético de Madrid, depuis 2017. Le FC Séville joue au stade Ramón-Sánchez-Pizjuán.",
+        },
       ],
     },
     en: {
       title: "Football duel: Europe's big clubs",
       description:
-        "Ten head-to-heads on Europe's biggest clubs: their grounds, their nicknames, their cities and their Champions League nights.",
+        "Twenty head-to-heads on Europe's biggest clubs: their grounds, their nicknames, their cities and their Champions League nights.",
       questions: [
         {
           id: 1,
@@ -259,12 +369,122 @@ export const quizFootballClubs: TranslatedQuiz = {
           explanation:
             "FC Barcelona. When Real play Atlético, the other big Madrid club, it's called the Madrid derby.",
         },
+        {
+          id: 11,
+          question: "Which club plays at Anfield?",
+          answers: [
+            { id: "a", text: "Liverpool" },
+            { id: "b", text: "Everton" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Liverpool. Everton, the other club in the city, spent well over a century at Goodison Park, just across Stanley Park.",
+        },
+        {
+          id: 12,
+          question: "Which English club is nicknamed \"the Red Devils\"?",
+          answers: [
+            { id: "a", text: "Liverpool" },
+            { id: "b", text: "Manchester United" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Manchester United, which has a little red devil on its badge. Liverpool, known simply as \"the Reds\", also plays in red.",
+        },
+        {
+          id: 13,
+          question: "Which club plays at the Stade Vélodrome?",
+          answers: [
+            { id: "a", text: "Olympique de Marseille" },
+            { id: "b", text: "Olympique Lyonnais" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Marseille. Lyon plays at the Groupama Stadium, in Décines, just outside the city.",
+        },
+        {
+          id: 14,
+          question: "Which Milan club is nicknamed the \"Rossoneri\", the red and blacks?",
+          answers: [
+            { id: "a", text: "Inter" },
+            { id: "b", text: "AC Milan" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "AC Milan, who play in red and black. Inter play in blue and black and are called the \"Nerazzurri\".",
+        },
+        {
+          id: 15,
+          question: "Which club won the 2005 Champions League final after trailing 3-0 at half-time?",
+          answers: [
+            { id: "a", text: "Liverpool" },
+            { id: "b", text: "AC Milan" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Liverpool, in Istanbul. They scored three times in six minutes after the break to make it 3-3, then beat AC Milan on penalties.",
+        },
+        {
+          id: 16,
+          question: "Which city do Celtic play in?",
+          answers: [
+            { id: "a", text: "Edinburgh" },
+            { id: "b", text: "Glasgow" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Glasgow, at Celtic Park. Their big rivals, Rangers, are also from Glasgow, and the derby between them is called the Old Firm.",
+        },
+        {
+          id: 17,
+          question: "Which club won the 2023-24 Bundesliga without losing a single game?",
+          answers: [
+            { id: "a", text: "Bayern Munich" },
+            { id: "b", text: "Bayer Leverkusen" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Bayer Leverkusen, coached by Xabi Alonso. It was the club's first German title, and it ended Bayern's run of eleven in a row.",
+        },
+        {
+          id: 18,
+          question: "Which London club plays at Stamford Bridge?",
+          answers: [
+            { id: "a", text: "Chelsea" },
+            { id: "b", text: "Tottenham" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Chelsea, ever since the club was founded in 1905. Tottenham play in north London, in their new stadium that opened in 2019.",
+        },
+        {
+          id: 19,
+          question: "Leaving PSG aside, which club has won the French league the most times?",
+          answers: [
+            { id: "a", text: "Olympique de Marseille" },
+            { id: "b", text: "AS Saint-Étienne" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "AS Saint-Étienne, with ten titles, the last one in 1981. Marseille has nine, because its 1993 title was taken away after a match-fixing scandal.",
+        },
+        {
+          id: 20,
+          question: "Which Spanish club plays at the Metropolitano?",
+          answers: [
+            { id: "a", text: "Atlético Madrid" },
+            { id: "b", text: "Sevilla" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Atlético Madrid, since 2017. Sevilla play at the Ramón Sánchez-Pizjuán.",
+        },
       ],
     },
     es: {
       title: "Duelo de fútbol: los grandes clubes europeos",
       description:
-        "Diez duelos sobre los grandes clubes de Europa: sus estadios, sus apodos, sus ciudades y sus noches de Liga de Campeones.",
+        "Veinte duelos sobre los grandes clubes de Europa: sus estadios, sus apodos, sus ciudades y sus noches de Liga de Campeones.",
       questions: [
         {
           id: 1,
@@ -379,6 +599,116 @@ export const quizFootballClubs: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "El FC Barcelona. Cuando el Real juega contra el Atlético, el otro gran club de Madrid, se habla del derbi madrileño.",
+        },
+        {
+          id: 11,
+          question: "¿Qué club juega en Anfield?",
+          answers: [
+            { id: "a", text: "El Liverpool" },
+            { id: "b", text: "El Everton" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Liverpool. El Everton, el otro club de la ciudad, jugó durante más de un siglo en Goodison Park, al otro lado de Stanley Park.",
+        },
+        {
+          id: 12,
+          question: "¿Qué club inglés tiene el apodo de «los Diablos Rojos»?",
+          answers: [
+            { id: "a", text: "El Liverpool" },
+            { id: "b", text: "El Manchester United" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El Manchester United, que lleva un diablo rojo en su escudo. Al Liverpool se le llama más bien «los Reds», y también juega de rojo.",
+        },
+        {
+          id: 13,
+          question: "¿Qué club juega en el estadio Vélodrome?",
+          answers: [
+            { id: "a", text: "El Olympique de Marsella" },
+            { id: "b", text: "El Olympique de Lyon" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Olympique de Marsella. El Lyon juega en el Groupama Stadium, en Décines, a las afueras de la ciudad.",
+        },
+        {
+          id: 14,
+          question: "¿Qué club de Milán recibe el apodo de «Rossoneri», los rojinegros?",
+          answers: [
+            { id: "a", text: "El Inter" },
+            { id: "b", text: "El AC Milan" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El AC Milan, que viste de rojo y negro. El Inter viste de azul y negro, y se le llama «Nerazzurri».",
+        },
+        {
+          id: 15,
+          question: "¿Qué club ganó la final de la Liga de Campeones de 2005 tras ir perdiendo 3-0 al descanso?",
+          answers: [
+            { id: "a", text: "El Liverpool" },
+            { id: "b", text: "El AC Milan" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Liverpool, en Estambul. Los ingleses empataron 3-3 en seis minutos en la segunda parte y luego ganaron al AC Milan en los penaltis.",
+        },
+        {
+          id: 16,
+          question: "¿En qué ciudad juega el Celtic?",
+          answers: [
+            { id: "a", text: "Edimburgo" },
+            { id: "b", text: "Glasgow" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Glasgow, en el Celtic Park. Su gran rival, el Rangers, también es de Glasgow, y su derbi se llama el «Old Firm».",
+        },
+        {
+          id: 17,
+          question: "¿Qué club ganó la Bundesliga 2023-2024 sin perder ni un partido?",
+          answers: [
+            { id: "a", text: "El Bayern de Múnich" },
+            { id: "b", text: "El Bayer Leverkusen" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El Bayer Leverkusen, entrenado por Xabi Alonso. Fue su primera liga alemana y cortó la racha de once títulos seguidos del Bayern.",
+        },
+        {
+          id: 18,
+          question: "¿Qué club londinense juega en Stamford Bridge?",
+          answers: [
+            { id: "a", text: "El Chelsea" },
+            { id: "b", text: "El Tottenham" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Chelsea, desde su fundación en 1905. El Tottenham juega en el norte de Londres, en su nuevo estadio inaugurado en 2019.",
+        },
+        {
+          id: 19,
+          question: "Sin contar al PSG, ¿qué club ha ganado más veces la liga francesa?",
+          answers: [
+            { id: "a", text: "El Olympique de Marsella" },
+            { id: "b", text: "El AS Saint-Étienne" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El AS Saint-Étienne, con diez títulos, el último en 1981. El Marsella tiene nueve, porque le quitaron el de 1993 por un caso de amaño de partidos.",
+        },
+        {
+          id: 20,
+          question: "¿Qué club español juega en el Metropolitano?",
+          answers: [
+            { id: "a", text: "El Atlético de Madrid" },
+            { id: "b", text: "El Sevilla" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El Atlético de Madrid, desde 2017. El Sevilla juega en el Ramón Sánchez-Pizjuán.",
         },
       ],
     },

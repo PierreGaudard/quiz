@@ -5,8 +5,8 @@ import type { TranslatedQuiz } from "./types";
  * vocabulaire du cheval et quelques grands moments francais.
  *
  * Comme dans quiz-europe.ts, le VraiFauxPlayer lit « vrai » sur l'id « a » et
- * « faux » sur l'id « b », dans les trois langues. Cinq affirmations vraies,
- * cinq fausses.
+ * « faux » sur l'id « b », dans les trois langues. Dix affirmations vraies,
+ * dix fausses.
  */
 export const quizEquitation: TranslatedQuiz = {
   slug: "quiz-equitation",
@@ -21,7 +21,7 @@ export const quizEquitation: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : l'équitation et les chevaux",
       description:
-        "Dix affirmations sur l'équitation, les chevaux et les JO. À toi de dire lesquelles sont vraies et lesquelles sont fausses.",
+        "Vingt affirmations sur l'équitation, les chevaux et les JO. À toi de dire lesquelles sont vraies et lesquelles sont fausses.",
       questions: [
         {
           id: 1,
@@ -137,12 +137,122 @@ export const quizEquitation: TranslatedQuiz = {
           explanation:
             "Faux. Un mâle castré s'appelle un hongre. L'étalon est justement le mâle qui n'est pas castré et qui sert à la reproduction.",
         },
+        {
+          id: 11,
+          question: "Un cheval peut dormir debout.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Un système de tendons et de ligaments bloque ses articulations, ce qui lui permet de somnoler debout sans tomber. Pour le sommeil profond, par contre, il a besoin de se coucher.",
+        },
+        {
+          id: 12,
+          question: "Un cheval peut respirer par la bouche.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Chez le cheval, le voile du palais ferme le passage entre la bouche et la gorge, sauf quand il avale. Du coup, il ne respire que par les naseaux, même à pleine vitesse.",
+        },
+        {
+          id: 13,
+          question: "Le Prix d'Amérique est une course de galop.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le Prix d'Amérique est la plus grande course de trot attelé du monde. Il se court chaque année fin janvier à l'hippodrome de Vincennes, près de Paris.",
+        },
+        {
+          id: 14,
+          question: "Aux JO de Paris 2024, les épreuves d'équitation ont eu lieu dans le parc du château de Versailles.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Une arène provisoire avait été montée devant le Grand Canal, dans les jardins du château. Le cross du concours complet passait d'ailleurs dans le parc.",
+        },
+        {
+          id: 15,
+          question: "Le Cadre noir est installé à Saumur.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Le Cadre noir est le corps des écuyers de l'École nationale d'équitation, à Saumur, dans le Maine-et-Loire. Il doit son nom à l'uniforme noir de ses cavaliers.",
+        },
+        {
+          id: 16,
+          question: "La Garde républicaine, avec ses cavaliers, fait partie de la police nationale.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. La Garde républicaine fait partie de la gendarmerie nationale. Son régiment de cavalerie compte environ 470 chevaux, et c'est la dernière unité à cheval de l'armée française.",
+        },
+        {
+          id: 17,
+          question: "En saut d'obstacles, faire tomber une barre coûte 4 points de pénalité.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Une barre tombée, c'est 4 points, et un refus aussi. Le but est de finir le parcours avec zéro point, dans le temps imparti.",
+        },
+        {
+          id: 18,
+          question: "Un cheval voit tout en noir et blanc.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le cheval voit les couleurs, mais moins que nous : il distingue bien les bleus et les verts, et il a du mal avec le rouge. Par contre, ses yeux sur les côtés de la tête lui donnent un champ de vision d'environ 350°.",
+        },
+        {
+          id: 19,
+          question: "L'équitation fera encore partie du pentathlon moderne aux JO de Los Angeles 2028.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. À partir de 2028, le saut d'obstacles à cheval est remplacé par une course d'obstacles, un peu comme dans « Ninja Warrior ». La décision a été prise après les incidents avec des chevaux tirés au sort aux JO de Tokyo.",
+        },
+        {
+          id: 20,
+          question: "Un cheval domestique vit en général 25 à 30 ans.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. C'est l'espérance de vie moyenne d'un cheval bien soigné. Certains dépassent d'ailleurs les 30 ans, surtout les poneys.",
+        },
       ],
     },
     en: {
       title: "True or false: horses and horse riding",
       description:
-        "Ten statements about horse riding, horses and the Olympics. Your job is to say which ones are true and which are false.",
+        "Twenty statements about horse riding, horses and the Olympics. Your job is to say which ones are true and which are false.",
       questions: [
         {
           id: 1,
@@ -258,12 +368,122 @@ export const quizEquitation: TranslatedQuiz = {
           explanation:
             "False. A castrated male is a gelding. A stallion is the male that has not been castrated and is used for breeding.",
         },
+        {
+          id: 11,
+          question: "A horse can sleep standing up.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. A system of tendons and ligaments locks its legs, so it can doze on its feet without falling over. For deep sleep, though, it still needs to lie down.",
+        },
+        {
+          id: 12,
+          question: "A horse can breathe through its mouth.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. In a horse, the soft palate closes the passage between the mouth and the throat, except when it swallows. So it only breathes through its nostrils, even at full speed.",
+        },
+        {
+          id: 13,
+          question: "The Prix d'Amérique is a flat race run at a gallop.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The Prix d'Amérique is the biggest harness trotting race in the world. It is held every year at the end of January at Vincennes racecourse, near Paris.",
+        },
+        {
+          id: 14,
+          question: "At the Paris 2024 Olympics, the equestrian events were held in the grounds of the Palace of Versailles.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. A temporary arena was built by the Grand Canal, in the palace gardens, and the eventing cross-country course went through the park.",
+        },
+        {
+          id: 15,
+          question: "The Cadre Noir, France's elite riding corps, is based in Saumur.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The Cadre Noir is the corps of riding masters of the French national riding school in Saumur, in the Loire valley. It is named after the black uniform its riders wear.",
+        },
+        {
+          id: 16,
+          question: "France's Republican Guard, with its mounted regiment, is part of the national police.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The Republican Guard belongs to the Gendarmerie, which is part of the military. Its cavalry regiment has around 470 horses and is the last mounted unit in the French armed forces.",
+        },
+        {
+          id: 17,
+          question: "In show jumping, knocking down a pole costs 4 penalty points.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. A knocked-down pole is 4 faults, and so is a refusal. The aim is to finish the round on zero faults within the time allowed.",
+        },
+        {
+          id: 18,
+          question: "Horses only see in black and white.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Horses do see colour, just less than we do: they pick up blues and greens well but struggle with red. On the other hand, their eyes on the sides of the head give them a field of view of about 350°.",
+        },
+        {
+          id: 19,
+          question: "Horse riding will still be part of modern pentathlon at the 2028 Los Angeles Olympics.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. From 2028, show jumping on horseback is replaced by an obstacle course race, a bit like \"Ninja Warrior\". The change came after problems with randomly drawn horses at the Tokyo Olympics.",
+        },
+        {
+          id: 20,
+          question: "A domestic horse usually lives 25 to 30 years.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. That is the average life expectancy of a well-cared-for horse, and some go past 30, ponies in particular.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: la equitación",
       description:
-        "Diez afirmaciones sobre la equitación, los caballos y los Juegos. Te toca decir cuáles son verdaderas y cuáles son falsas.",
+        "Veinte afirmaciones sobre la equitación, los caballos y los Juegos. Te toca decir cuáles son verdaderas y cuáles son falsas.",
       questions: [
         {
           id: 1,
@@ -378,6 +598,116 @@ export const quizEquitation: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso. Un macho castrado es un caballo capón. El semental es justo el macho sin castrar que se usa para la cría.",
+        },
+        {
+          id: 11,
+          question: "Un caballo puede dormir de pie.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Un sistema de tendones y ligamentos le bloquea las patas, así que puede dormitar de pie sin caerse. Para el sueño profundo, eso sí, necesita tumbarse.",
+        },
+        {
+          id: 12,
+          question: "Un caballo puede respirar por la boca.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. En el caballo, el velo del paladar cierra el paso entre la boca y la garganta, salvo cuando traga. Por eso solo respira por los ollares, incluso a toda velocidad.",
+        },
+        {
+          id: 13,
+          question: "El Prix d'Amérique es una carrera de galope.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El Prix d'Amérique es la carrera de trote enganchado más importante del mundo. Se corre cada año a finales de enero en el hipódromo de Vincennes, cerca de París.",
+        },
+        {
+          id: 14,
+          question: "En los Juegos de París 2024, la hípica se disputó en los jardines del palacio de Versalles.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Se montó una pista provisional junto al Gran Canal, en los jardines del palacio, y el cross del concurso completo pasaba por el parque.",
+        },
+        {
+          id: 15,
+          question: "El Cadre Noir, el cuerpo de élite de la equitación francesa, tiene su sede en Saumur.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El Cadre Noir reúne a los maestros jinetes de la Escuela Nacional de Equitación de Francia, en Saumur, en el valle del Loira. Su nombre viene del uniforme negro de sus jinetes.",
+        },
+        {
+          id: 16,
+          question: "La Guardia Republicana francesa, con su caballería, forma parte de la policía nacional.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. La Guardia Republicana pertenece a la Gendarmería, que es un cuerpo militar. Su regimiento de caballería tiene unos 470 caballos y es la última unidad a caballo del ejército francés.",
+        },
+        {
+          id: 17,
+          question: "En salto, derribar una barra cuesta 4 puntos de penalización.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Una barra derribada son 4 puntos, y un rehúse también. El objetivo es terminar el recorrido con cero puntos dentro del tiempo concedido.",
+        },
+        {
+          id: 18,
+          question: "Los caballos lo ven todo en blanco y negro.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El caballo ve colores, aunque menos que nosotros: distingue bien los azules y los verdes, y le cuesta el rojo. Eso sí, sus ojos a los lados de la cabeza le dan un campo de visión de unos 350°.",
+        },
+        {
+          id: 19,
+          question: "La hípica seguirá formando parte del pentatlón moderno en los Juegos de Los Ángeles 2028.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. A partir de 2028, el salto a caballo se sustituye por una carrera de obstáculos, al estilo de «Ninja Warrior». El cambio llegó tras los problemas con caballos sorteados en los Juegos de Tokio.",
+        },
+        {
+          id: 20,
+          question: "Un caballo doméstico suele vivir entre 25 y 30 años.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Es la esperanza de vida media de un caballo bien cuidado, y algunos pasan de los 30, sobre todo los ponis.",
         },
       ],
     },

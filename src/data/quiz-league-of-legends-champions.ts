@@ -22,7 +22,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
     fr: {
       title: "Quiz League of Legends : les champions",
       description:
-        "Teemo, Garen, Yasuo, Annie, Thresh ou encore Blitzcrank : dix questions sur les champions de League of Legends. Tu les connais par cœur ?",
+        "Teemo, Garen, Yasuo, Annie, Thresh ou encore Blitzcrank : vingt questions sur les champions de League of Legends. Tu les connais par cœur ?",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
           explanation:
             "Blitzcrank, un robot de Zaun. Son grappin fait partie des sorts les plus redoutés du jeu : un ennemi attrapé se retrouve tiré au milieu de l'équipe adverse.",
         },
+        {
+          id: 11,
+          question: "Quel chiffre obsède Jhin, le tueur qui se prend pour un artiste ?",
+          answers: [
+            { id: "a", text: "Le 3" },
+            { id: "b", text: "Le 4" },
+            { id: "c", text: "Le 7" },
+            { id: "d", text: "Le 13" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le 4. Son arme ne tire que quatre balles, et la quatrième fait toujours plus de dégâts. Les développeurs lui ont même donné des statistiques construites autour du chiffre quatre.",
+        },
+        {
+          id: 12,
+          question: "Combien de queues a Ahri, la championne renarde ?",
+          answers: [
+            { id: "a", text: "3" },
+            { id: "b", text: "5" },
+            { id: "c", text: "7" },
+            { id: "d", text: "9" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Neuf, comme le renard à neuf queues des légendes coréennes, le gumiho. Ahri est une vastaya, un peuple mi-humain mi-animal d'Ionia.",
+        },
+        {
+          id: 13,
+          question: "De quelle région glacée vient Ashe, l'archère aux flèches de glace ?",
+          answers: [
+            { id: "a", text: "Freljord" },
+            { id: "b", text: "Targon" },
+            { id: "c", text: "Shurima" },
+            { id: "d", text: "Ixtal" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Freljord, le grand Nord du jeu. Ashe y dirige un peuple qui veut réunir les tribus, face à ses rivales Sejuani et Lissandra.",
+        },
+        {
+          id: 14,
+          question: "Que lance Twisted Fate pour attaquer ?",
+          answers: [
+            { id: "a", text: "Des dés" },
+            { id: "b", text: "Des pièces" },
+            { id: "c", text: "Des cartes" },
+            { id: "d", text: "Des dagues" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Des cartes. C'est un joueur de cartes et un escroc de Bilgewater, qui peut aussi se téléporter presque n'importe où sur la carte avec son ultime.",
+        },
+        {
+          id: 15,
+          question: "Quel art martial Maître Yi pratique-t-il ?",
+          answers: [
+            { id: "a", text: "Le Kinkou" },
+            { id: "b", text: "Le Wuju" },
+            { id: "c", text: "Le Navori" },
+            { id: "d", text: "Le Shojin" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le Wuju, un style de combat à l'épée d'Ionia. Maître Yi est l'un des derniers à le connaître, et il l'enseigne à Wukong.",
+        },
+        {
+          id: 16,
+          question: "Quelle chasseuse de primes de Bilgewater se bat avec deux pistolets ?",
+          answers: [
+            { id: "a", text: "Miss Fortune" },
+            { id: "b", text: "Sivir" },
+            { id: "c", text: "Caitlyn" },
+            { id: "d", text: "Samira" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Miss Fortune, capitaine pirate de Bilgewater. Son ultime fait pleuvoir des balles devant elle, et elle ne quitte jamais ses deux pistolets. Caitlyn, elle, a un fusil de précision.",
+        },
+        {
+          id: 17,
+          question: "Que pose Heimerdinger, le yordle inventeur de Piltover ?",
+          answers: [
+            { id: "a", text: "Des pièges à ours" },
+            { id: "b", text: "Des mines" },
+            { id: "c", text: "Des murs" },
+            { id: "d", text: "Des tourelles" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Des tourelles, qui tirent toutes seules sur les ennemis. Heimerdinger est un savant de l'académie de Piltover, et on le voit d'ailleurs dans Arcane.",
+        },
+        {
+          id: 18,
+          question: "Quelle championne est la sœur de Katarina, l'assassin de Noxus ?",
+          answers: [
+            { id: "a", text: "LeBlanc" },
+            { id: "b", text: "Morgana" },
+            { id: "c", text: "Cassiopeia" },
+            { id: "d", text: "Sona" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cassiopeia, une femme changée en serpent par une malédiction. Les deux sœurs sont les filles du général Du Couteau, une grande famille de Noxus.",
+        },
+        {
+          id: 19,
+          question: "Qu'est-ce que Braum utilise comme bouclier ?",
+          answers: [
+            { id: "a", text: "Un couvercle de tonneau" },
+            { id: "b", text: "Une porte de coffre-fort" },
+            { id: "c", text: "Une pierre tombale" },
+            { id: "d", text: "Une roue de chariot" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Une énorme porte de coffre-fort. Braum est le gros moustachu gentil de Freljord, et il protège ses alliés avec.",
+        },
+        {
+          id: 20,
+          question: "Qui est la sœur jumelle de Kayle, l'ange à l'épée de feu ?",
+          answers: [
+            { id: "a", text: "Morgana" },
+            { id: "b", text: "Lux" },
+            { id: "c", text: "Syndra" },
+            { id: "d", text: "Janna" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Morgana, un ange déchu. Les deux jumelles se sont brouillées, et elles se retrouvent souvent face à face dans l'histoire du jeu. Lux, c'est la sœur de Garen.",
+        },
       ],
     },
     en: {
       title: "League of Legends quiz: the champions",
       description:
-        "Teemo, Garen, Yasuo, Annie, Thresh, Blitzcrank and more: ten questions about League of Legends champions. Do you know them by heart?",
+        "Teemo, Garen, Yasuo, Annie, Thresh, Blitzcrank and more: twenty questions about League of Legends champions. Do you know them by heart?",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
           explanation:
             "Blitzcrank, a robot from Zaun. His grab is one of the most feared spells in the game: a caught enemy gets pulled right into the other team.",
         },
+        {
+          id: 11,
+          question: "Which number is Jhin, the killer who sees himself as an artist, obsessed with?",
+          answers: [
+            { id: "a", text: "3" },
+            { id: "b", text: "4" },
+            { id: "c", text: "7" },
+            { id: "d", text: "13" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "4. His gun only fires four shots, and the fourth one always hits harder. The developers even gave him stats built around the number four.",
+        },
+        {
+          id: 12,
+          question: "How many tails does Ahri, the fox champion, have?",
+          answers: [
+            { id: "a", text: "3" },
+            { id: "b", text: "5" },
+            { id: "c", text: "7" },
+            { id: "d", text: "9" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Nine, like the nine-tailed fox of Korean legends, the gumiho. Ahri is a vastaya, a half-human, half-animal people from Ionia.",
+        },
+        {
+          id: 13,
+          question: "Which frozen region does Ashe, the archer with ice arrows, come from?",
+          answers: [
+            { id: "a", text: "Freljord" },
+            { id: "b", text: "Targon" },
+            { id: "c", text: "Shurima" },
+            { id: "d", text: "Ixtal" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Freljord, the game's frozen north. Ashe leads a people who want to unite the tribes, up against her rivals Sejuani and Lissandra.",
+        },
+        {
+          id: 14,
+          question: "What does Twisted Fate throw to attack?",
+          answers: [
+            { id: "a", text: "Dice" },
+            { id: "b", text: "Coins" },
+            { id: "c", text: "Cards" },
+            { id: "d", text: "Daggers" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cards. He's a card sharp and con man from Bilgewater, and his ultimate lets him teleport almost anywhere on the map.",
+        },
+        {
+          id: 15,
+          question: "Which martial art does Master Yi practice?",
+          answers: [
+            { id: "a", text: "Kinkou" },
+            { id: "b", text: "Wuju" },
+            { id: "c", text: "Navori" },
+            { id: "d", text: "Shojin" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Wuju, an Ionian sword-fighting style. Master Yi is one of the last people who knows it, and he teaches it to Wukong.",
+        },
+        {
+          id: 16,
+          question: "Which Bilgewater bounty hunter fights with two pistols?",
+          answers: [
+            { id: "a", text: "Miss Fortune" },
+            { id: "b", text: "Sivir" },
+            { id: "c", text: "Caitlyn" },
+            { id: "d", text: "Samira" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Miss Fortune, a pirate captain from Bilgewater. Her ultimate rains bullets in front of her, and she never goes anywhere without her two pistols. Caitlyn uses a sniper rifle.",
+        },
+        {
+          id: 17,
+          question: "What does Heimerdinger, Piltover's yordle inventor, set down?",
+          answers: [
+            { id: "a", text: "Bear traps" },
+            { id: "b", text: "Mines" },
+            { id: "c", text: "Walls" },
+            { id: "d", text: "Turrets" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Turrets, which fire at enemies on their own. Heimerdinger is a scientist at the Piltover academy, and he also shows up in Arcane.",
+        },
+        {
+          id: 18,
+          question: "Which champion is the sister of Katarina, the Noxian assassin?",
+          answers: [
+            { id: "a", text: "LeBlanc" },
+            { id: "b", text: "Morgana" },
+            { id: "c", text: "Cassiopeia" },
+            { id: "d", text: "Sona" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cassiopeia, a woman turned into a serpent by a curse. The two sisters are the daughters of General Du Couteau, from a great Noxian family.",
+        },
+        {
+          id: 19,
+          question: "What does Braum use as a shield?",
+          answers: [
+            { id: "a", text: "A barrel lid" },
+            { id: "b", text: "A vault door" },
+            { id: "c", text: "A gravestone" },
+            { id: "d", text: "A cart wheel" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A huge vault door. Braum is Freljord's big, kind mustached hero, and he uses it to protect his allies.",
+        },
+        {
+          id: 20,
+          question: "Who is the twin sister of Kayle, the angel with the flaming sword?",
+          answers: [
+            { id: "a", text: "Morgana" },
+            { id: "b", text: "Lux" },
+            { id: "c", text: "Syndra" },
+            { id: "d", text: "Janna" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Morgana, a fallen angel. The twins fell out, and they often end up facing each other in the game's story. Lux is Garen's sister.",
+        },
       ],
     },
     es: {
       title: "Quiz League of Legends: los campeones",
       description:
-        "Teemo, Garen, Yasuo, Annie, Thresh o Blitzcrank: diez preguntas sobre los campeones de League of Legends. ¿Te los sabes de memoria?",
+        "Teemo, Garen, Yasuo, Annie, Thresh o Blitzcrank: veinte preguntas sobre los campeones de League of Legends. ¿Te los sabes de memoria?",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Blitzcrank, un robot de Zaun. Su gancho es uno de los hechizos más temidos del juego: el enemigo atrapado acaba en medio del equipo rival.",
+        },
+        {
+          id: 11,
+          question: "¿Qué número obsesiona a Jhin, el asesino que se cree un artista?",
+          answers: [
+            { id: "a", text: "El 3" },
+            { id: "b", text: "El 4" },
+            { id: "c", text: "El 7" },
+            { id: "d", text: "El 13" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El 4. Su arma solo dispara cuatro balas, y la cuarta siempre hace más daño. Los desarrolladores hasta le pusieron estadísticas basadas en el número cuatro.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántas colas tiene Ahri, la campeona zorro?",
+          answers: [
+            { id: "a", text: "3" },
+            { id: "b", text: "5" },
+            { id: "c", text: "7" },
+            { id: "d", text: "9" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Nueve, como el zorro de nueve colas de las leyendas coreanas, el gumiho. Ahri es una vastaya, un pueblo mitad humano mitad animal de Jonia.",
+        },
+        {
+          id: 13,
+          question: "¿De qué región helada viene Ashe, la arquera de flechas de hielo?",
+          answers: [
+            { id: "a", text: "Freljord" },
+            { id: "b", text: "Targon" },
+            { id: "c", text: "Shurima" },
+            { id: "d", text: "Ixtal" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "De Freljord, el gran norte del juego. Ashe dirige allí a un pueblo que quiere unir a las tribus, frente a sus rivales Sejuani y Lissandra.",
+        },
+        {
+          id: 14,
+          question: "¿Qué lanza Twisted Fate para atacar?",
+          answers: [
+            { id: "a", text: "Dados" },
+            { id: "b", text: "Monedas" },
+            { id: "c", text: "Cartas" },
+            { id: "d", text: "Dagas" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cartas. Es un tahúr y estafador de Aguasturbias, que además puede teletransportarse a casi cualquier punto del mapa con su definitiva.",
+        },
+        {
+          id: 15,
+          question: "¿Qué arte marcial practica el Maestro Yi?",
+          answers: [
+            { id: "a", text: "El Kinkou" },
+            { id: "b", text: "El Wuju" },
+            { id: "c", text: "El Navori" },
+            { id: "d", text: "El Shojin" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El Wuju, un estilo de lucha con espada de Jonia. El Maestro Yi es uno de los últimos que lo conocen, y se lo enseña a Wukong.",
+        },
+        {
+          id: 16,
+          question: "¿Qué cazarrecompensas de Aguasturbias pelea con dos pistolas?",
+          answers: [
+            { id: "a", text: "Miss Fortune" },
+            { id: "b", text: "Sivir" },
+            { id: "c", text: "Caitlyn" },
+            { id: "d", text: "Samira" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Miss Fortune, capitana pirata de Aguasturbias. Su definitiva hace llover balas delante de ella, y nunca va sin sus dos pistolas. Caitlyn usa un rifle de francotirador.",
+        },
+        {
+          id: 17,
+          question: "¿Qué coloca Heimerdinger, el yordle inventor de Piltover?",
+          answers: [
+            { id: "a", text: "Trampas para osos" },
+            { id: "b", text: "Minas" },
+            { id: "c", text: "Muros" },
+            { id: "d", text: "Torretas" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Torretas, que disparan solas a los enemigos. Heimerdinger es un científico de la academia de Piltover, y también aparece en Arcane.",
+        },
+        {
+          id: 18,
+          question: "¿Qué campeona es la hermana de Katarina, la asesina de Noxus?",
+          answers: [
+            { id: "a", text: "LeBlanc" },
+            { id: "b", text: "Morgana" },
+            { id: "c", text: "Cassiopeia" },
+            { id: "d", text: "Sona" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cassiopeia, una mujer convertida en serpiente por una maldición. Las dos hermanas son hijas del general Du Couteau, de una gran familia de Noxus.",
+        },
+        {
+          id: 19,
+          question: "¿Qué usa Braum como escudo?",
+          answers: [
+            { id: "a", text: "La tapa de un barril" },
+            { id: "b", text: "La puerta de una cámara acorazada" },
+            { id: "c", text: "Una lápida" },
+            { id: "d", text: "La rueda de un carro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La enorme puerta de una cámara acorazada. Braum es el grandullón bigotudo y bonachón de Freljord, y la usa para proteger a sus aliados.",
+        },
+        {
+          id: 20,
+          question: "¿Quién es la hermana gemela de Kayle, el ángel de la espada de fuego?",
+          answers: [
+            { id: "a", text: "Morgana" },
+            { id: "b", text: "Lux" },
+            { id: "c", text: "Syndra" },
+            { id: "d", text: "Janna" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Morgana, un ángel caído. Las gemelas se enemistaron, y en la historia del juego acaban enfrentándose a menudo. Lux es la hermana de Garen.",
         },
       ],
     },

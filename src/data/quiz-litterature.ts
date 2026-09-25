@@ -20,7 +20,7 @@ export const quizLitterature: TranslatedQuiz = {
     fr: {
       title: "Quiz littérature : les grands classiques",
       description:
-        "Dix questions sur les grands livres et leurs auteurs, de Victor Hugo à George Orwell en passant par Cervantès.",
+        "Vingt questions sur les grands livres et leurs auteurs, de Victor Hugo à George Orwell en passant par Cervantès.",
       questions: [
         {
           id: 1,
@@ -157,12 +157,142 @@ export const quizLitterature: TranslatedQuiz = {
           explanation:
             "Jules Verne. C'est l'histoire du capitaine Nemo et de son sous-marin, le Nautilus, publiée à partir de 1869.",
         },
+        {
+          id: 11,
+          question: "Qui a écrit la fable Le Corbeau et le Renard ?",
+          answers: [
+            { id: "a", text: "Charles Perrault" },
+            { id: "b", text: "Molière" },
+            { id: "c", text: "Jean de La Fontaine" },
+            { id: "d", text: "Jean Racine" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Jean de La Fontaine, dans son premier recueil de Fables, en 1668. Il a repris l'histoire du Grec Ésope, comme pour beaucoup de ses fables.",
+        },
+        {
+          id: 12,
+          question: "Qui a écrit Guerre et Paix ?",
+          answers: [
+            { id: "a", text: "Fiodor Dostoïevski" },
+            { id: "b", text: "Léon Tolstoï" },
+            { id: "c", text: "Anton Tchekhov" },
+            { id: "d", text: "Alexandre Pouchkine" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Léon Tolstoï. Le roman, publié entre 1865 et 1869, suit plusieurs familles russes pendant les guerres contre Napoléon.",
+        },
+        {
+          id: 13,
+          question: "Quel écrivain a créé le commissaire Maigret ?",
+          answers: [
+            { id: "a", text: "Agatha Christie" },
+            { id: "b", text: "Maurice Leblanc" },
+            { id: "c", text: "Gaston Leroux" },
+            { id: "d", text: "Georges Simenon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Georges Simenon, un écrivain belge. Il a écrit 75 romans avec Maigret, le commissaire à la pipe du quai des Orfèvres, à Paris.",
+        },
+        {
+          id: 14,
+          question: "Qui a écrit les histoires du Petit Nicolas ?",
+          answers: [
+            { id: "a", text: "René Goscinny" },
+            { id: "b", text: "Marcel Pagnol" },
+            { id: "c", text: "Hergé" },
+            { id: "d", text: "Daniel Pennac" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "René Goscinny, le scénariste d'Astérix. Jean-Jacques Sempé s'occupait des dessins, et le premier livre est sorti en 1960.",
+        },
+        {
+          id: 15,
+          question: "Qui a écrit Le Livre de la jungle, avec Mowgli ?",
+          answers: [
+            { id: "a", text: "Jack London" },
+            { id: "b", text: "Lewis Carroll" },
+            { id: "c", text: "Rudyard Kipling" },
+            { id: "d", text: "Oscar Wilde" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Rudyard Kipling, en 1894. Il avait grandi en partie en Inde, où se passe l'histoire de Mowgli, élevé par les loups.",
+        },
+        {
+          id: 16,
+          question: "Quel prix littéraire français est remis chaque automne au restaurant Drouant, à Paris ?",
+          answers: [
+            { id: "a", text: "Le prix Renaudot" },
+            { id: "b", text: "Le prix Goncourt" },
+            { id: "c", text: "Le prix Femina" },
+            { id: "d", text: "Le prix Médicis" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le prix Goncourt, créé par le testament d'Edmond de Goncourt et remis pour la première fois en 1903. Le chèque ne vaut que 10 euros, mais le livre primé se vend très bien.",
+        },
+        {
+          id: 17,
+          question: "Dans Les Mille et Une Nuits, comment s'appelle la conteuse qui raconte une histoire chaque nuit au roi ?",
+          answers: [
+            { id: "a", text: "Esmeralda" },
+            { id: "b", text: "Jasmine" },
+            { id: "c", text: "Salomé" },
+            { id: "d", text: "Shéhérazade" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Shéhérazade. Le roi Shahryar a décidé de tuer chaque épouse au matin. Elle s'arrête chaque nuit au moment le plus intéressant, du coup le roi la garde en vie pour connaître la suite.",
+        },
+        {
+          id: 18,
+          question: "Qui a écrit Autant en emporte le vent ?",
+          answers: [
+            { id: "a", text: "Margaret Mitchell" },
+            { id: "b", text: "Harper Lee" },
+            { id: "c", text: "Jane Austen" },
+            { id: "d", text: "Emily Brontë" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Margaret Mitchell, en 1936. C'est le seul roman qu'elle a publié, et il lui a valu le prix Pulitzer. On y suit Scarlett O'Hara pendant la guerre de Sécession.",
+        },
+        {
+          id: 19,
+          question: "Quel poète a écrit Le Dormeur du val, sur un jeune soldat allongé dans l'herbe ?",
+          answers: [
+            { id: "a", text: "Paul Verlaine" },
+            { id: "b", text: "Charles Baudelaire" },
+            { id: "c", text: "Arthur Rimbaud" },
+            { id: "d", text: "Guillaume Apollinaire" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Arthur Rimbaud, en 1870, quand il avait 16 ans. On croit d'abord que le soldat dort, et on comprend au dernier vers qu'il est mort.",
+        },
+        {
+          id: 20,
+          question: "Qui a écrit Les Quatre Filles du docteur March ?",
+          answers: [
+            { id: "a", text: "Charlotte Brontë" },
+            { id: "b", text: "Louisa May Alcott" },
+            { id: "c", text: "Mary Shelley" },
+            { id: "d", text: "Virginia Woolf" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Louisa May Alcott, en 1868. Elle s'est inspirée de sa propre famille pour raconter la vie de Meg, Jo, Beth et Amy.",
+        },
       ],
     },
     en: {
       title: "Literature quiz: the great classics",
       description:
-        "Ten questions about famous books and the people who wrote them, from Victor Hugo to George Orwell and Cervantes.",
+        "Twenty questions about famous books and the people who wrote them, from Victor Hugo to George Orwell and Cervantes.",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizLitterature: TranslatedQuiz = {
           explanation:
             "Jules Verne. It's the story of Captain Nemo and his submarine, the Nautilus, first published from 1869.",
         },
+        {
+          id: 11,
+          question: "Who wrote the fable The Crow and the Fox?",
+          answers: [
+            { id: "a", text: "Charles Perrault" },
+            { id: "b", text: "Molière" },
+            { id: "c", text: "Jean de La Fontaine" },
+            { id: "d", text: "Jean Racine" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Jean de La Fontaine, in his first book of Fables, in 1668. He borrowed the story from the Greek writer Aesop, as he did for many of his fables.",
+        },
+        {
+          id: 12,
+          question: "Who wrote War and Peace?",
+          answers: [
+            { id: "a", text: "Fyodor Dostoevsky" },
+            { id: "b", text: "Leo Tolstoy" },
+            { id: "c", text: "Anton Chekhov" },
+            { id: "d", text: "Alexander Pushkin" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Leo Tolstoy. The novel, published between 1865 and 1869, follows several Russian families during the wars against Napoleon.",
+        },
+        {
+          id: 13,
+          question: "Which writer created Inspector Maigret?",
+          answers: [
+            { id: "a", text: "Agatha Christie" },
+            { id: "b", text: "Maurice Leblanc" },
+            { id: "c", text: "Gaston Leroux" },
+            { id: "d", text: "Georges Simenon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Georges Simenon, a Belgian writer. He wrote 75 novels about Maigret, the pipe-smoking detective of the Paris police.",
+        },
+        {
+          id: 14,
+          question: "Who wrote the Little Nicholas stories?",
+          answers: [
+            { id: "a", text: "René Goscinny" },
+            { id: "b", text: "Marcel Pagnol" },
+            { id: "c", text: "Hergé" },
+            { id: "d", text: "Daniel Pennac" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "René Goscinny, who also wrote Asterix. Jean-Jacques Sempé did the drawings, and the first book came out in 1960.",
+        },
+        {
+          id: 15,
+          question: "Who wrote The Jungle Book, with Mowgli?",
+          answers: [
+            { id: "a", text: "Jack London" },
+            { id: "b", text: "Lewis Carroll" },
+            { id: "c", text: "Rudyard Kipling" },
+            { id: "d", text: "Oscar Wilde" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Rudyard Kipling, in 1894. He spent part of his childhood in India, where the story of Mowgli, raised by wolves, takes place.",
+        },
+        {
+          id: 16,
+          question: "Which French literary prize is handed out every autumn at the Drouant restaurant in Paris?",
+          answers: [
+            { id: "a", text: "The Prix Renaudot" },
+            { id: "b", text: "The Prix Goncourt" },
+            { id: "c", text: "The Prix Femina" },
+            { id: "d", text: "The Prix Médicis" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Prix Goncourt, set up in Edmond de Goncourt's will and first awarded in 1903. The cheque is only worth 10 euros, but the winning book sells very well.",
+        },
+        {
+          id: 17,
+          question: "In One Thousand and One Nights, what's the name of the storyteller who tells the king a tale every night?",
+          answers: [
+            { id: "a", text: "Esmeralda" },
+            { id: "b", text: "Jasmine" },
+            { id: "c", text: "Salome" },
+            { id: "d", text: "Scheherazade" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Scheherazade. King Shahryar has decided to kill each new wife the morning after the wedding. She always stops at the best part, so the king keeps her alive to hear the rest.",
+        },
+        {
+          id: 18,
+          question: "Who wrote Gone with the Wind?",
+          answers: [
+            { id: "a", text: "Margaret Mitchell" },
+            { id: "b", text: "Harper Lee" },
+            { id: "c", text: "Jane Austen" },
+            { id: "d", text: "Emily Brontë" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Margaret Mitchell, in 1936. It's the only novel she published, and it won her the Pulitzer Prize. It follows Scarlett O'Hara through the American Civil War.",
+        },
+        {
+          id: 19,
+          question: "Which poet wrote Le Dormeur du val (The Sleeper in the Valley), about a young soldier lying in the grass?",
+          answers: [
+            { id: "a", text: "Paul Verlaine" },
+            { id: "b", text: "Charles Baudelaire" },
+            { id: "c", text: "Arthur Rimbaud" },
+            { id: "d", text: "Guillaume Apollinaire" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Arthur Rimbaud, in 1870, when he was 16. You first think the soldier is asleep, and only the last line tells you he's dead.",
+        },
+        {
+          id: 20,
+          question: "Who wrote Little Women?",
+          answers: [
+            { id: "a", text: "Charlotte Brontë" },
+            { id: "b", text: "Louisa May Alcott" },
+            { id: "c", text: "Mary Shelley" },
+            { id: "d", text: "Virginia Woolf" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Louisa May Alcott, in 1868. She drew on her own family to tell the story of Meg, Jo, Beth and Amy.",
+        },
       ],
     },
     es: {
       title: "Quiz de literatura: los grandes clásicos",
       description:
-        "Diez preguntas sobre libros famosos y sus autores, de Cervantes a García Márquez pasando por Victor Hugo y Orwell.",
+        "Veinte preguntas sobre libros famosos y sus autores, de Cervantes a García Márquez pasando por Victor Hugo y Orwell.",
       questions: [
         {
           id: 1,
@@ -440,6 +700,136 @@ export const quizLitterature: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Jules Verne. Es la historia del capitán Nemo y su submarino, el Nautilus, publicada a partir de 1869.",
+        },
+        {
+          id: 11,
+          question: "¿Quién escribió la fábula El cuervo y el zorro?",
+          answers: [
+            { id: "a", text: "Charles Perrault" },
+            { id: "b", text: "Molière" },
+            { id: "c", text: "Jean de La Fontaine" },
+            { id: "d", text: "Jean Racine" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Jean de La Fontaine, en su primer libro de Fábulas, de 1668. Tomó la historia del griego Esopo, como hizo con muchas de sus fábulas.",
+        },
+        {
+          id: 12,
+          question: "¿Quién escribió Guerra y paz?",
+          answers: [
+            { id: "a", text: "Fiódor Dostoievski" },
+            { id: "b", text: "León Tolstói" },
+            { id: "c", text: "Antón Chéjov" },
+            { id: "d", text: "Aleksandr Pushkin" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "León Tolstói. La novela, publicada entre 1865 y 1869, sigue a varias familias rusas durante las guerras contra Napoleón.",
+        },
+        {
+          id: 13,
+          question: "¿Qué escritor creó al comisario Maigret?",
+          answers: [
+            { id: "a", text: "Agatha Christie" },
+            { id: "b", text: "Maurice Leblanc" },
+            { id: "c", text: "Gaston Leroux" },
+            { id: "d", text: "Georges Simenon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Georges Simenon, un escritor belga. Escribió 75 novelas con Maigret, el comisario de la pipa de la policía de París.",
+        },
+        {
+          id: 14,
+          question: "¿Quién escribió las historias del pequeño Nicolás?",
+          answers: [
+            { id: "a", text: "René Goscinny" },
+            { id: "b", text: "Marcel Pagnol" },
+            { id: "c", text: "Hergé" },
+            { id: "d", text: "Daniel Pennac" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "René Goscinny, el guionista de Astérix. Jean-Jacques Sempé hacía los dibujos, y el primer libro salió en 1960.",
+        },
+        {
+          id: 15,
+          question: "¿Quién escribió El libro de la selva, con Mowgli?",
+          answers: [
+            { id: "a", text: "Jack London" },
+            { id: "b", text: "Lewis Carroll" },
+            { id: "c", text: "Rudyard Kipling" },
+            { id: "d", text: "Oscar Wilde" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Rudyard Kipling, en 1894. Pasó parte de su infancia en la India, donde transcurre la historia de Mowgli, criado por los lobos.",
+        },
+        {
+          id: 16,
+          question: "¿Qué premio literario francés se entrega cada otoño en el restaurante Drouant, en París?",
+          answers: [
+            { id: "a", text: "El premio Renaudot" },
+            { id: "b", text: "El premio Goncourt" },
+            { id: "c", text: "El premio Femina" },
+            { id: "d", text: "El premio Médicis" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El premio Goncourt, creado por el testamento de Edmond de Goncourt y entregado por primera vez en 1903. El cheque es de solo 10 euros, pero el libro premiado se vende muchísimo.",
+        },
+        {
+          id: 17,
+          question: "En Las mil y una noches, ¿cómo se llama la narradora que cuenta una historia al rey cada noche?",
+          answers: [
+            { id: "a", text: "Esmeralda" },
+            { id: "b", text: "Jasmín" },
+            { id: "c", text: "Salomé" },
+            { id: "d", text: "Sherezade" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Sherezade. El rey Shahriar ha decidido matar a cada esposa por la mañana. Ella se detiene cada noche en el mejor momento, así que el rey la deja vivir para saber cómo sigue.",
+        },
+        {
+          id: 18,
+          question: "¿Quién escribió Lo que el viento se llevó?",
+          answers: [
+            { id: "a", text: "Margaret Mitchell" },
+            { id: "b", text: "Harper Lee" },
+            { id: "c", text: "Jane Austen" },
+            { id: "d", text: "Emily Brontë" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Margaret Mitchell, en 1936. Es la única novela que publicó, y le valió el Premio Pulitzer. Sigue a Scarlett O'Hara durante la guerra de Secesión.",
+        },
+        {
+          id: 19,
+          question: "¿Qué poeta escribió El durmiente del valle, sobre un joven soldado tumbado en la hierba?",
+          answers: [
+            { id: "a", text: "Paul Verlaine" },
+            { id: "b", text: "Charles Baudelaire" },
+            { id: "c", text: "Arthur Rimbaud" },
+            { id: "d", text: "Guillaume Apollinaire" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Arthur Rimbaud, en 1870, con 16 años. Primero parece que el soldado duerme, y en el último verso se entiende que está muerto.",
+        },
+        {
+          id: 20,
+          question: "¿Quién escribió Mujercitas?",
+          answers: [
+            { id: "a", text: "Charlotte Brontë" },
+            { id: "b", text: "Louisa May Alcott" },
+            { id: "c", text: "Mary Shelley" },
+            { id: "d", text: "Virginia Woolf" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Louisa May Alcott, en 1868. Se inspiró en su propia familia para contar la vida de Meg, Jo, Beth y Amy.",
         },
       ],
     },

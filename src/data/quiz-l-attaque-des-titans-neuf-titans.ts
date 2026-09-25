@@ -25,7 +25,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
     fr: {
       title: "L'Attaque des Titans : les neuf Titans",
       description:
-        "Dix questions sur les neuf Titans et leurs porteurs, du Titan Cuirassé au Titan Charrette. Tu sais qui porte quoi ?",
+        "Vingt questions sur les neuf Titans et leurs porteurs, du Titan Cuirassé au Titan Charrette. Tu sais qui porte quoi ?",
       questions: [
         {
           id: 1,
@@ -162,12 +162,142 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
           explanation:
             "Il voit les souvenirs de ses porteurs à venir, pas seulement ceux du passé. C'est ce qui permet à Eren de connaître l'avenir.",
         },
+        {
+          id: 11,
+          question: "Qui porte le Titan Féminin ?",
+          answers: [
+            { id: "a", text: "Mikasa Ackerman" },
+            { id: "b", text: "Annie Leonhart" },
+            { id: "c", text: "Pieck Finger" },
+            { id: "d", text: "Historia Reiss" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Annie Leonhart. Elle fait partie des guerriers envoyés par Marley avec Reiner et Bertholdt, et elle attaque le Bataillon d'exploration pendant la 57e expédition.",
+        },
+        {
+          id: 12,
+          question: "Qui porte le Titan Marteau d'armes quand Eren attaque Liberio ?",
+          answers: [
+            { id: "a", text: "Willy Tybur" },
+            { id: "b", text: "Pieck Finger" },
+            { id: "c", text: "Lara Tybur" },
+            { id: "d", text: "Theo Magath" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lara Tybur, la petite sœur de Willy. C'est Willy qui fait le discours sur la scène, mais le pouvoir du Titan est entre les mains de sa sœur.",
+        },
+        {
+          id: 13,
+          question: "Qui peut changer des Eldiens en Titans par un simple cri, après leur avoir fait avaler son liquide céphalo-rachidien ?",
+          answers: [
+            { id: "a", text: "Zeke Jäger" },
+            { id: "b", text: "Reiner Braun" },
+            { id: "c", text: "Porco Galliard" },
+            { id: "d", text: "Eren Kruger" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Zeke. Il a du sang royal par sa mère, Dina Fritz, et son cri marche sur tous les Eldiens qui ont avalé ce liquide, même en toute petite quantité.",
+        },
+        {
+          id: 14,
+          question: "De quel sang le porteur du Titan Originel a-t-il besoin pour utiliser tout son pouvoir ?",
+          answers: [
+            { id: "a", text: "Du sang royal" },
+            { id: "b", text: "Du sang Ackerman" },
+            { id: "c", text: "Du sang Tybur" },
+            { id: "d", text: "Du sang Azumabito" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Du sang royal, celui de la famille Fritz, devenue Reiss à l'intérieur des murs. Eren, qui n'a pas ce sang, ne peut s'en servir qu'au contact d'un membre de la famille royale, comme Zeke.",
+        },
+        {
+          id: 15,
+          question: "Quel Titan libère une énorme explosion de chaleur au moment où il apparaît ?",
+          answers: [
+            { id: "a", text: "Le Titan Cuirassé" },
+            { id: "b", text: "Le Titan Colossal" },
+            { id: "c", text: "Le Titan Charrette" },
+            { id: "d", text: "Le Titan Mâchoire" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le Titan Colossal. Sa transformation souffle tout ce qui se trouve autour de lui, et il peut aussi dégager une vapeur brûlante pour empêcher qu'on l'approche.",
+        },
+        {
+          id: 16,
+          question: "Dans quoi Annie s'enferme-t-elle à Stohess pour ne pas être capturée ?",
+          answers: [
+            { id: "a", text: "Une cage de fer" },
+            { id: "b", text: "Un cristal de peau durcie" },
+            { id: "c", text: "Le corps d'un Titan pur" },
+            { id: "d", text: "Un souterrain muré" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Dans un cristal qu'elle forme elle-même en durcissant sa peau. Personne n'arrive à le briser, et elle y reste endormie pendant des années.",
+        },
+        {
+          id: 17,
+          question: "Quel roi a emmené son peuple sur l'île de Paradis et fait le vœu de renoncer à la guerre ?",
+          answers: [
+            { id: "a", text: "Rod Reiss" },
+            { id: "b", text: "Uri Reiss" },
+            { id: "c", text: "Karl Fritz" },
+            { id: "d", text: "Willy Tybur" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Karl Fritz, le 145e roi d'Eldia. Son vœu empêche les porteurs de sang royal qui héritent après lui du Titan Originel de s'en servir pour faire la guerre.",
+        },
+        {
+          id: 18,
+          question: "Quelle partie du Titan Mâchoire est assez dure pour briser la peau durcie ?",
+          answers: [
+            { id: "a", text: "Sa queue" },
+            { id: "b", text: "Ses mâchoires et ses griffes" },
+            { id: "c", text: "Ses cornes" },
+            { id: "d", text: "Ses genoux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ses mâchoires et ses griffes. Le Titan Mâchoire est petit mais très rapide, et à Liberio, Eren s'en sert d'ailleurs pour briser le cristal du Titan Marteau d'armes.",
+        },
+        {
+          id: 19,
+          question: "Comment un Eldien hérite-t-il en général de l'un des neuf Titans ?",
+          answers: [
+            { id: "a", text: "En buvant le sang du porteur" },
+            { id: "b", text: "En dévorant le porteur sous sa forme de Titan pur" },
+            { id: "c", text: "En touchant le porteur pendant sa transformation" },
+            { id: "d", text: "En naissant le même jour que lui" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En dévorant le porteur. On change d'abord l'héritier en Titan pur avec une injection, puis il mange le porteur et redevient humain avec son pouvoir.",
+        },
+        {
+          id: 20,
+          question: "Que devient le pouvoir d'un des neuf Titans si son porteur meurt sans être dévoré ?",
+          answers: [
+            { id: "a", text: "Il disparaît pour toujours" },
+            { id: "b", text: "Il passe au hasard à un bébé eldien qui vient de naître" },
+            { id: "c", text: "Il revient à la famille royale" },
+            { id: "d", text: "Il reste dans le corps du porteur" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Il passe à un bébé eldien qui naît au même moment, n'importe où. C'est pour ça que Marley tient à ce qu'un successeur choisi dévore ses guerriers avant leur mort.",
+        },
       ],
     },
     en: {
       title: "Attack on Titan Quiz: The Nine Titans",
       description:
-        "Ten questions on the Nine Titans and the people who hold them, from the Armored Titan to the Cart Titan. Do you know who has what?",
+        "Twenty questions on the Nine Titans and the people who hold them, from the Armored Titan to the Cart Titan. Do you know who has what?",
       questions: [
         {
           id: 1,
@@ -304,12 +434,142 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
           explanation:
             "It sees the memories of its future holders, not just past ones. That's how Eren gets to know what's coming.",
         },
+        {
+          id: 11,
+          question: "Who holds the Female Titan?",
+          answers: [
+            { id: "a", text: "Mikasa Ackerman" },
+            { id: "b", text: "Annie Leonhart" },
+            { id: "c", text: "Pieck Finger" },
+            { id: "d", text: "Historia Reiss" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Annie Leonhart. She's one of the Warriors Marley sent in with Reiner and Bertholdt, and she attacks the Survey Corps during the 57th expedition.",
+        },
+        {
+          id: 12,
+          question: "Who holds the War Hammer Titan when Eren attacks Liberio?",
+          answers: [
+            { id: "a", text: "Willy Tybur" },
+            { id: "b", text: "Pieck Finger" },
+            { id: "c", text: "Lara Tybur" },
+            { id: "d", text: "Theo Magath" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lara Tybur, Willy's younger sister. Willy is the one giving the speech on stage, but the Titan's power is in his sister's hands.",
+        },
+        {
+          id: 13,
+          question: "Who can turn Eldians into Titans with a single scream, once they've swallowed his spinal fluid?",
+          answers: [
+            { id: "a", text: "Zeke Yeager" },
+            { id: "b", text: "Reiner Braun" },
+            { id: "c", text: "Porco Galliard" },
+            { id: "d", text: "Eren Kruger" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Zeke. He has royal blood through his mother, Dina Fritz, and his scream works on any Eldian who has swallowed that fluid, even a tiny amount.",
+        },
+        {
+          id: 14,
+          question: "What blood does the holder of the Founding Titan need to use its full power?",
+          answers: [
+            { id: "a", text: "Royal blood" },
+            { id: "b", text: "Ackerman blood" },
+            { id: "c", text: "Tybur blood" },
+            { id: "d", text: "Azumabito blood" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Royal blood, from the Fritz family, who became the Reiss family inside the walls. Eren doesn't have it, so he can only use the power through contact with someone of royal blood, like Zeke.",
+        },
+        {
+          id: 15,
+          question: "Which Titan lets out a huge blast of heat the moment it appears?",
+          answers: [
+            { id: "a", text: "The Armored Titan" },
+            { id: "b", text: "The Colossal Titan" },
+            { id: "c", text: "The Cart Titan" },
+            { id: "d", text: "The Jaw Titan" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Colossal Titan. Its transformation blows away everything around it, and it can also give off scalding steam to keep people from getting close.",
+        },
+        {
+          id: 16,
+          question: "What does Annie seal herself inside in Stohess to avoid being captured?",
+          answers: [
+            { id: "a", text: "An iron cage" },
+            { id: "b", text: "A crystal of hardened skin" },
+            { id: "c", text: "The body of a Pure Titan" },
+            { id: "d", text: "A walled-up tunnel" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A crystal she makes herself by hardening her skin. Nobody manages to break it, and she stays asleep in there for years.",
+        },
+        {
+          id: 17,
+          question: "Which king took his people to Paradis Island and made a vow to renounce war?",
+          answers: [
+            { id: "a", text: "Rod Reiss" },
+            { id: "b", text: "Uri Reiss" },
+            { id: "c", text: "Karl Fritz" },
+            { id: "d", text: "Willy Tybur" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Karl Fritz, the 145th king of Eldia. His vow stops the royal-blooded holders who inherit the Founding Titan after him from using it to wage war.",
+        },
+        {
+          id: 18,
+          question: "Which part of the Jaw Titan is hard enough to break hardened skin?",
+          answers: [
+            { id: "a", text: "Its tail" },
+            { id: "b", text: "Its jaws and claws" },
+            { id: "c", text: "Its horns" },
+            { id: "d", text: "Its knees" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Its jaws and claws. The Jaw Titan is small but very fast, and in Liberio Eren actually uses it to crack the War Hammer Titan's crystal.",
+        },
+        {
+          id: 19,
+          question: "How does an Eldian usually inherit one of the Nine Titans?",
+          answers: [
+            { id: "a", text: "By drinking the holder's blood" },
+            { id: "b", text: "By eating the holder while in Pure Titan form" },
+            { id: "c", text: "By touching the holder during a transformation" },
+            { id: "d", text: "By being born on the same day" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "By eating the holder. The heir is first turned into a Pure Titan with an injection, then eats the holder and turns back into a human with the power.",
+        },
+        {
+          id: 20,
+          question: "What happens to the power of one of the Nine Titans if its holder dies without being eaten?",
+          answers: [
+            { id: "a", text: "It's gone forever" },
+            { id: "b", text: "It goes to a random newborn Eldian baby" },
+            { id: "c", text: "It returns to the royal family" },
+            { id: "d", text: "It stays in the holder's body" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "It goes to an Eldian baby born at that same moment, anywhere at all. That's why Marley makes sure a chosen successor eats its Warriors before they die.",
+        },
       ],
     },
     es: {
       title: "Ataque a los Titanes: los nueve Titanes",
       description:
-        "Diez preguntas sobre los Nueve Titanes y sus portadores, del Titán Acorazado al Titán Carguero. ¿Sabes quién lleva cada uno?",
+        "Veinte preguntas sobre los Nueve Titanes y sus portadores, del Titán Acorazado al Titán Carguero. ¿Sabes quién lleva cada uno?",
       questions: [
         {
           id: 1,
@@ -445,6 +705,136 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Ve los recuerdos de sus portadores futuros, no solo los del pasado. Así es como Eren llega a conocer lo que va a pasar.",
+        },
+        {
+          id: 11,
+          question: "¿Quién lleva la Titán Hembra?",
+          answers: [
+            { id: "a", text: "Mikasa Ackerman" },
+            { id: "b", text: "Annie Leonhart" },
+            { id: "c", text: "Pieck Finger" },
+            { id: "d", text: "Historia Reiss" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Annie Leonhart. Es una de los guerreros que Marley envió con Reiner y Bertholdt, y ataca a la Legión de Reconocimiento durante la 57.ª expedición.",
+        },
+        {
+          id: 12,
+          question: "¿Quién lleva el Titán Martillo de Guerra cuando Eren ataca Liberio?",
+          answers: [
+            { id: "a", text: "Willy Tybur" },
+            { id: "b", text: "Pieck Finger" },
+            { id: "c", text: "Lara Tybur" },
+            { id: "d", text: "Theo Magath" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lara Tybur, la hermana pequeña de Willy. Willy es el que da el discurso en el escenario, pero el poder del Titán lo tiene su hermana.",
+        },
+        {
+          id: 13,
+          question: "¿Quién puede convertir a los eldianos en Titanes con un solo grito, después de hacerles tragar su líquido cefalorraquídeo?",
+          answers: [
+            { id: "a", text: "Zeke Jaeger" },
+            { id: "b", text: "Reiner Braun" },
+            { id: "c", text: "Porco Galliard" },
+            { id: "d", text: "Eren Kruger" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Zeke. Tiene sangre real por su madre, Dina Fritz, y su grito funciona con cualquier eldiano que haya tragado ese líquido, aunque sea muy poquito.",
+        },
+        {
+          id: 14,
+          question: "¿Qué sangre necesita el portador del Titán Fundador para usar todo su poder?",
+          answers: [
+            { id: "a", text: "Sangre real" },
+            { id: "b", text: "Sangre Ackerman" },
+            { id: "c", text: "Sangre Tybur" },
+            { id: "d", text: "Sangre Azumabito" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sangre real, la de la familia Fritz, que dentro de los muros pasó a llamarse Reiss. Eren no la tiene, así que solo puede usar el poder en contacto con alguien de sangre real, como Zeke.",
+        },
+        {
+          id: 15,
+          question: "¿Qué Titán suelta una enorme explosión de calor en cuanto aparece?",
+          answers: [
+            { id: "a", text: "El Titán Acorazado" },
+            { id: "b", text: "El Titán Colosal" },
+            { id: "c", text: "El Titán Carguero" },
+            { id: "d", text: "El Titán Mandíbula" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El Titán Colosal. Su transformación arrasa con todo lo que tiene alrededor, y además puede soltar un vapor abrasador para que nadie se le acerque.",
+        },
+        {
+          id: 16,
+          question: "¿Dentro de qué se encierra Annie en Stohess para que no la capturen?",
+          answers: [
+            { id: "a", text: "Una jaula de hierro" },
+            { id: "b", text: "Un cristal de piel endurecida" },
+            { id: "c", text: "El cuerpo de un Titán puro" },
+            { id: "d", text: "Un túnel tapiado" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Dentro de un cristal que forma ella misma endureciendo su piel. Nadie consigue romperlo, y ella se queda ahí dormida durante años.",
+        },
+        {
+          id: 17,
+          question: "¿Qué rey llevó a su pueblo a la isla Paradis e hizo el voto de renunciar a la guerra?",
+          answers: [
+            { id: "a", text: "Rod Reiss" },
+            { id: "b", text: "Uri Reiss" },
+            { id: "c", text: "Karl Fritz" },
+            { id: "d", text: "Willy Tybur" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Karl Fritz, el rey 145 de Eldia. Su voto impide que los portadores de sangre real que heredan después de él el Titán Fundador lo usen para hacer la guerra.",
+        },
+        {
+          id: 18,
+          question: "¿Qué parte del Titán Mandíbula es lo bastante dura para romper la piel endurecida?",
+          answers: [
+            { id: "a", text: "Su cola" },
+            { id: "b", text: "Sus mandíbulas y sus garras" },
+            { id: "c", text: "Sus cuernos" },
+            { id: "d", text: "Sus rodillas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sus mandíbulas y sus garras. El Titán Mandíbula es pequeño pero muy rápido, y en Liberio Eren lo usa justamente para romper el cristal del Titán Martillo de Guerra.",
+        },
+        {
+          id: 19,
+          question: "¿Cómo hereda normalmente un eldiano uno de los Nueve Titanes?",
+          answers: [
+            { id: "a", text: "Bebiendo la sangre del portador" },
+            { id: "b", text: "Devorando al portador en forma de Titán puro" },
+            { id: "c", text: "Tocando al portador mientras se transforma" },
+            { id: "d", text: "Naciendo el mismo día que él" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Devorando al portador. Primero convierten al heredero en Titán puro con una inyección, y luego se come al portador y vuelve a ser humano con su poder.",
+        },
+        {
+          id: 20,
+          question: "¿Qué pasa con el poder de uno de los Nueve Titanes si su portador muere sin que nadie lo devore?",
+          answers: [
+            { id: "a", text: "Desaparece para siempre" },
+            { id: "b", text: "Pasa al azar a un bebé eldiano recién nacido" },
+            { id: "c", text: "Vuelve a la familia real" },
+            { id: "d", text: "Se queda en el cuerpo del portador" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Pasa a un bebé eldiano que nace en ese mismo momento, en cualquier sitio. Por eso Marley se asegura de que un sucesor elegido devore a sus guerreros antes de que mueran.",
         },
       ],
     },

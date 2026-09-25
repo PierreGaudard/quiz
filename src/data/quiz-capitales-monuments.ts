@@ -23,7 +23,7 @@ export const quizCapitalesMonuments: TranslatedQuiz = {
     fr: {
       title: "Quiz capitales : les monuments célèbres",
       description:
-        "Dix monuments connus dans le monde entier, du Colisée à l'India Gate. À toi de dire dans quelle capitale se trouve chacun d'eux.",
+        "Vingt monuments connus dans le monde entier, du Colisée à l'India Gate. À toi de dire dans quelle capitale se trouve chacun d'eux.",
       questions: [
         {
           id: 1,
@@ -165,12 +165,142 @@ export const quizCapitalesMonuments: TranslatedQuiz = {
           explanation:
             "À New Delhi. Cet arc rend hommage aux soldats indiens morts pendant la Première Guerre mondiale. Calcutta a été la capitale de l'Inde britannique jusqu'en 1911.",
         },
+        {
+          id: 11,
+          question: "Dans quelle capitale se trouve Big Ben ?",
+          answers: [
+            { id: "a", text: "Manchester" },
+            { id: "b", text: "Londres" },
+            { id: "c", text: "Liverpool" },
+            { id: "d", text: "Birmingham" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "À Londres. Big Ben est le nom de la grosse cloche de la tour de l'horloge, au bout du palais de Westminster, où siège le Parlement britannique.",
+        },
+        {
+          id: 12,
+          question: "Dans quelle capitale se trouve le musée du Prado ?",
+          answers: [
+            { id: "a", text: "Barcelone" },
+            { id: "b", text: "Séville" },
+            { id: "c", text: "Madrid" },
+            { id: "d", text: "Valence" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "À Madrid. C'est l'un des plus grands musées de peinture du monde, avec pas mal de Vélasquez et de Goya.",
+        },
+        {
+          id: 13,
+          question: "Dans quelle capitale se trouve la statue de la Petite Sirène ?",
+          answers: [
+            { id: "a", text: "Copenhague" },
+            { id: "b", text: "Aarhus" },
+            { id: "c", text: "Odense" },
+            { id: "d", text: "Aalborg" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "À Copenhague, sur un rocher du port. Elle rend hommage au conte de Hans Christian Andersen, qui était danois.",
+        },
+        {
+          id: 14,
+          question: "Dans quelle capitale se trouve le pont Charles ?",
+          answers: [
+            { id: "a", text: "Brno" },
+            { id: "b", text: "Ostrava" },
+            { id: "c", text: "Plzeň" },
+            { id: "d", text: "Prague" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "À Prague, où il enjambe la Vltava. C'est un pont de pierre du XIVe siècle, bordé de statues.",
+        },
+        {
+          id: 15,
+          question: "Dans quelle capitale se trouve l'immense Parlement néogothique qui borde le Danube ?",
+          answers: [
+            { id: "a", text: "Debrecen" },
+            { id: "b", text: "Budapest" },
+            { id: "c", text: "Szeged" },
+            { id: "d", text: "Pécs" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "À Budapest, en Hongrie. Le bâtiment est sur la rive de Pest, face aux collines de Buda.",
+        },
+        {
+          id: 16,
+          question: "Dans quelle capitale se trouve la tour de Belém ?",
+          answers: [
+            { id: "a", text: "Porto" },
+            { id: "b", text: "Coimbra" },
+            { id: "c", text: "Lisbonne" },
+            { id: "d", text: "Faro" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "À Lisbonne, au bord du Tage. Elle date du début du XVIe siècle, l'époque des grandes navigations portugaises.",
+        },
+        {
+          id: 17,
+          question: "Dans quelle capitale se trouve la Skytree, la plus haute tour du Japon ?",
+          answers: [
+            { id: "a", text: "Tokyo" },
+            { id: "b", text: "Osaka" },
+            { id: "c", text: "Kyoto" },
+            { id: "d", text: "Yokohama" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "À Tokyo. Elle fait 634 mètres et sert surtout de tour de télévision, avec deux observatoires en haut.",
+        },
+        {
+          id: 18,
+          question: "Dans quelle capitale se trouve le palais Gyeongbokgung ?",
+          answers: [
+            { id: "a", text: "Busan" },
+            { id: "b", text: "Incheon" },
+            { id: "c", text: "Daegu" },
+            { id: "d", text: "Séoul" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "À Séoul, en Corée du Sud. C'était le palais principal de la dynastie Joseon, et on y voit encore la relève de la garde en costume.",
+        },
+        {
+          id: 19,
+          question: "Dans quelle capitale se trouve la Casa Rosada, le palais présidentiel tout rose ?",
+          answers: [
+            { id: "a", text: "Córdoba" },
+            { id: "b", text: "Buenos Aires" },
+            { id: "c", text: "Rosario" },
+            { id: "d", text: "Mendoza" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "À Buenos Aires, en Argentine. Le palais donne sur la place de Mai, le grand lieu des manifestations du pays.",
+        },
+        {
+          id: 20,
+          question: "Dans quelle capitale se trouve le château de Schönbrunn, ancienne résidence des Habsbourg ?",
+          answers: [
+            { id: "a", text: "Salzbourg" },
+            { id: "b", text: "Innsbruck" },
+            { id: "c", text: "Vienne" },
+            { id: "d", text: "Graz" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "À Vienne, en Autriche. C'était la résidence d'été de la famille impériale, et Sissi y a vécu.",
+        },
       ],
     },
     en: {
       title: "Capitals quiz: famous landmarks",
       description:
-        "Ten landmarks known all over the world, from the Colosseum to India Gate. Can you name the capital city each one is in?",
+        "Twenty landmarks known all over the world, from the Colosseum to India Gate. Can you name the capital city each one is in?",
       questions: [
         {
           id: 1,
@@ -312,12 +442,142 @@ export const quizCapitalesMonuments: TranslatedQuiz = {
           explanation:
             "New Delhi. The arch honors Indian soldiers who died in the First World War. Kolkata, then Calcutta, was the capital of British India until 1911.",
         },
+        {
+          id: 11,
+          question: "Which capital is Big Ben in?",
+          answers: [
+            { id: "a", text: "Manchester" },
+            { id: "b", text: "London" },
+            { id: "c", text: "Liverpool" },
+            { id: "d", text: "Birmingham" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "London. Big Ben is the name of the great bell in the clock tower at the end of the Palace of Westminster, where the UK Parliament sits.",
+        },
+        {
+          id: 12,
+          question: "Which capital is the Prado Museum in?",
+          answers: [
+            { id: "a", text: "Barcelona" },
+            { id: "b", text: "Seville" },
+            { id: "c", text: "Madrid" },
+            { id: "d", text: "Valencia" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Madrid. It's one of the biggest art museums in the world, with plenty of Velázquez and Goya.",
+        },
+        {
+          id: 13,
+          question: "Which capital is the Little Mermaid statue in?",
+          answers: [
+            { id: "a", text: "Copenhagen" },
+            { id: "b", text: "Aarhus" },
+            { id: "c", text: "Odense" },
+            { id: "d", text: "Aalborg" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Copenhagen, on a rock by the harbour. It honours the fairy tale by Hans Christian Andersen, who was Danish.",
+        },
+        {
+          id: 14,
+          question: "Which capital is the Charles Bridge in?",
+          answers: [
+            { id: "a", text: "Brno" },
+            { id: "b", text: "Ostrava" },
+            { id: "c", text: "Plzeň" },
+            { id: "d", text: "Prague" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Prague, where it crosses the Vltava. It's a 14th-century stone bridge lined with statues.",
+        },
+        {
+          id: 15,
+          question: "Which capital is home to the huge Gothic Revival Parliament on the banks of the Danube?",
+          answers: [
+            { id: "a", text: "Debrecen" },
+            { id: "b", text: "Budapest" },
+            { id: "c", text: "Szeged" },
+            { id: "d", text: "Pécs" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Budapest, in Hungary. The building stands on the Pest side, facing the hills of Buda.",
+        },
+        {
+          id: 16,
+          question: "Which capital is the Belém Tower in?",
+          answers: [
+            { id: "a", text: "Porto" },
+            { id: "b", text: "Coimbra" },
+            { id: "c", text: "Lisbon" },
+            { id: "d", text: "Faro" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lisbon, on the banks of the Tagus. It dates from the early 16th century, the era of the great Portuguese voyages.",
+        },
+        {
+          id: 17,
+          question: "Which capital is the Skytree, Japan's tallest tower, in?",
+          answers: [
+            { id: "a", text: "Tokyo" },
+            { id: "b", text: "Osaka" },
+            { id: "c", text: "Kyoto" },
+            { id: "d", text: "Yokohama" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tokyo. It's 634 metres tall and is mainly a TV tower, with two observation decks near the top.",
+        },
+        {
+          id: 18,
+          question: "Which capital is Gyeongbokgung Palace in?",
+          answers: [
+            { id: "a", text: "Busan" },
+            { id: "b", text: "Incheon" },
+            { id: "c", text: "Daegu" },
+            { id: "d", text: "Seoul" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Seoul, in South Korea. It was the main palace of the Joseon dynasty, and the changing of the guard in period costume still takes place there.",
+        },
+        {
+          id: 19,
+          question: "Which capital is the Casa Rosada, the pink presidential palace, in?",
+          answers: [
+            { id: "a", text: "Córdoba" },
+            { id: "b", text: "Buenos Aires" },
+            { id: "c", text: "Rosario" },
+            { id: "d", text: "Mendoza" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Buenos Aires, in Argentina. The palace looks onto the Plaza de Mayo, the country's main square for protests and rallies.",
+        },
+        {
+          id: 20,
+          question: "Which capital is Schönbrunn Palace, the former Habsburg residence, in?",
+          answers: [
+            { id: "a", text: "Salzburg" },
+            { id: "b", text: "Innsbruck" },
+            { id: "c", text: "Vienna" },
+            { id: "d", text: "Graz" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Vienna, in Austria. It was the imperial family's summer residence, and Empress Sisi lived there.",
+        },
       ],
     },
     es: {
       title: "Quiz de capitales: monumentos famosos",
       description:
-        "Diez monumentos conocidos en todo el mundo, del Coliseo a la Puerta de la India. Tienes que decir en qué capital está cada uno.",
+        "Veinte monumentos conocidos en todo el mundo, del Coliseo a la Puerta de la India. Tienes que decir en qué capital está cada uno.",
       questions: [
         {
           id: 1,
@@ -458,6 +718,136 @@ export const quizCapitalesMonuments: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "En Nueva Delhi. Este arco recuerda a los soldados indios muertos en la Primera Guerra Mundial. Calcuta fue la capital de la India británica hasta 1911.",
+        },
+        {
+          id: 11,
+          question: "¿En qué capital está el Big Ben?",
+          answers: [
+            { id: "a", text: "Mánchester" },
+            { id: "b", text: "Londres" },
+            { id: "c", text: "Liverpool" },
+            { id: "d", text: "Birmingham" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Londres. Big Ben es el nombre de la gran campana de la torre del reloj, en un extremo del palacio de Westminster, donde se reúne el Parlamento británico.",
+        },
+        {
+          id: 12,
+          question: "¿En qué capital está el Museo del Prado?",
+          answers: [
+            { id: "a", text: "Barcelona" },
+            { id: "b", text: "Sevilla" },
+            { id: "c", text: "Madrid" },
+            { id: "d", text: "Valencia" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "En Madrid. Es uno de los mayores museos de pintura del mundo, con un buen puñado de Velázquez y de Goya.",
+        },
+        {
+          id: 13,
+          question: "¿En qué capital está la estatua de la Sirenita?",
+          answers: [
+            { id: "a", text: "Copenhague" },
+            { id: "b", text: "Aarhus" },
+            { id: "c", text: "Odense" },
+            { id: "d", text: "Aalborg" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En Copenhague, sobre una roca del puerto. Homenajea el cuento de Hans Christian Andersen, que era danés.",
+        },
+        {
+          id: 14,
+          question: "¿En qué capital está el puente de Carlos?",
+          answers: [
+            { id: "a", text: "Brno" },
+            { id: "b", text: "Ostrava" },
+            { id: "c", text: "Pilsen" },
+            { id: "d", text: "Praga" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "En Praga, donde cruza el Moldava. Es un puente de piedra del siglo XIV, con estatuas a los dos lados.",
+        },
+        {
+          id: 15,
+          question: "¿En qué capital está el enorme Parlamento neogótico a orillas del Danubio?",
+          answers: [
+            { id: "a", text: "Debrecen" },
+            { id: "b", text: "Budapest" },
+            { id: "c", text: "Szeged" },
+            { id: "d", text: "Pécs" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Budapest, en Hungría. El edificio está en la orilla de Pest, frente a las colinas de Buda.",
+        },
+        {
+          id: 16,
+          question: "¿En qué capital está la torre de Belém?",
+          answers: [
+            { id: "a", text: "Oporto" },
+            { id: "b", text: "Coímbra" },
+            { id: "c", text: "Lisboa" },
+            { id: "d", text: "Faro" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "En Lisboa, a orillas del Tajo. Es de principios del siglo XVI, la época de los grandes viajes portugueses por mar.",
+        },
+        {
+          id: 17,
+          question: "¿En qué capital está la Skytree, la torre más alta de Japón?",
+          answers: [
+            { id: "a", text: "Tokio" },
+            { id: "b", text: "Osaka" },
+            { id: "c", text: "Kioto" },
+            { id: "d", text: "Yokohama" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En Tokio. Mide 634 metros y es sobre todo una torre de televisión, con dos miradores arriba.",
+        },
+        {
+          id: 18,
+          question: "¿En qué capital está el palacio Gyeongbokgung?",
+          answers: [
+            { id: "a", text: "Busan" },
+            { id: "b", text: "Incheon" },
+            { id: "c", text: "Daegu" },
+            { id: "d", text: "Seúl" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "En Seúl, en Corea del Sur. Era el palacio principal de la dinastía Joseon, y allí se sigue haciendo el cambio de guardia con trajes de época.",
+        },
+        {
+          id: 19,
+          question: "¿En qué capital está la Casa Rosada, el palacio presidencial de color rosa?",
+          answers: [
+            { id: "a", text: "Córdoba" },
+            { id: "b", text: "Buenos Aires" },
+            { id: "c", text: "Rosario" },
+            { id: "d", text: "Mendoza" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Buenos Aires, en Argentina. El palacio da a la plaza de Mayo, el gran lugar de las manifestaciones del país.",
+        },
+        {
+          id: 20,
+          question: "¿En qué capital está el palacio de Schönbrunn, antigua residencia de los Habsburgo?",
+          answers: [
+            { id: "a", text: "Salzburgo" },
+            { id: "b", text: "Innsbruck" },
+            { id: "c", text: "Viena" },
+            { id: "d", text: "Graz" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "En Viena, en Austria. Era la residencia de verano de la familia imperial, y Sissi vivió allí.",
         },
       ],
     },

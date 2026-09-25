@@ -23,7 +23,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
     fr: {
       title: "Quiz KPop Demon Hunters : HUNTR/X et Golden",
       description:
-        "Dix questions sur KPop Demon Hunters, le film de Netflix : HUNTR/X, les Saja Boys, Derpy, la chanson Golden et les Oscars.",
+        "Vingt questions sur KPop Demon Hunters, le film de Netflix : HUNTR/X, les Saja Boys, Derpy, la chanson Golden et les Oscars.",
       questions: [
         {
           id: 1,
@@ -159,12 +159,142 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
           explanation:
             "Ce sont Maggie Kang et Chris Appelhans. Chris Buck et Jennifer Lee ont fait La Reine des neiges, et Pete Docter Vice-versa.",
         },
+        {
+          id: 11,
+          question: "Pour la chanson Your Idol, les Saja Boys portent des hanbok noirs et des chapeaux gat. Quelle figure du folklore coréen évoquent-ils ?",
+          answers: [
+            { id: "a", text: "Les jeoseung saja, les messagers de la mort" },
+            { id: "b", text: "Les dokkaebi, des lutins farceurs" },
+            { id: "c", text: "Les gumiho, des renards à neuf queues" },
+            { id: "d", text: "Les haetae, des lions gardiens" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Ils évoquent les jeoseung saja, les messagers qui viennent chercher les âmes des morts. C'est d'ailleurs de là que vient le nom des Saja Boys.",
+        },
+        {
+          id: 12,
+          question: "Quel est le rôle de Mira dans HUNTR/X ?",
+          answers: [
+            { id: "a", text: "Chanteuse principale" },
+            { id: "b", text: "Danseuse principale" },
+            { id: "c", text: "Rappeuse" },
+            { id: "d", text: "Productrice" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mira est la danseuse principale du groupe. La chanteuse principale, c'est Rumi, et la rappeuse, Zoey.",
+        },
+        {
+          id: 13,
+          question: "Où Zoey a-t-elle grandi ?",
+          answers: [
+            { id: "a", text: "À Busan, en Corée du Sud" },
+            { id: "b", text: "À Tokyo, au Japon" },
+            { id: "c", text: "À Burbank, en Californie" },
+            { id: "d", text: "À Sydney, en Australie" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Zoey est américaine d'origine coréenne et elle a grandi à Burbank, en Californie, près de Los Angeles.",
+        },
+        {
+          id: 14,
+          question: "Qui est la maknae de HUNTR/X, c'est-à-dire la plus jeune du groupe ?",
+          answers: [
+            { id: "a", text: "Rumi" },
+            { id: "b", text: "Mira" },
+            { id: "c", text: "Celine" },
+            { id: "d", text: "Zoey" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "C'est Zoey. En K-pop, on appelle maknae le membre le plus jeune d'un groupe.",
+        },
+        {
+          id: 15,
+          question: "Combien de temps dure KPop Demon Hunters ?",
+          answers: [
+            { id: "a", text: "1 h 15" },
+            { id: "b", text: "1 h 35" },
+            { id: "c", text: "2 h" },
+            { id: "d", text: "2 h 20" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le film dure 95 minutes, donc 1 h 35. C'est une durée assez classique pour un film d'animation.",
+        },
+        {
+          id: 16,
+          question: "Sous quelle forme apparaît Gwi-Ma, le roi des démons ?",
+          answers: [
+            { id: "a", text: "Un dragon noir" },
+            { id: "b", text: "Un tigre bleu" },
+            { id: "c", text: "Une bouche géante en feu" },
+            { id: "d", text: "Un serpent à trois têtes" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Gwi-Ma apparaît comme une énorme bouche enflammée. Le tigre bleu, c'est Derpy, le compagnon de Jinu.",
+        },
+        {
+          id: 17,
+          question: "Quelle cérémonie HUNTR/X et les Saja Boys veulent-ils gagner ?",
+          answers: [
+            { id: "a", text: "Les Idol Awards" },
+            { id: "b", text: "Les Grammy Awards" },
+            { id: "c", text: "Les MAMA Awards" },
+            { id: "d", text: "Les Golden Disc Awards" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Ce sont les Idol Awards, une cérémonie inventée pour le film. C'est là que les marques de Rumi sont révélées devant tout le public.",
+        },
+        {
+          id: 18,
+          question: "Où HUNTR/X attaque-t-elle les Saja Boys pour la première fois ?",
+          answers: [
+            { id: "a", text: "Dans un avion" },
+            { id: "b", text: "Dans un temple" },
+            { id: "c", text: "Dans un bain public" },
+            { id: "d", text: "Sur un plateau de télé" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le premier combat a lieu dans un bain public, juste après une émission de télé. C'est pendant ce combat que Jinu découvre les marques de Rumi.",
+        },
+        {
+          id: 19,
+          question: "Quel plat les trois HUNTR/X dévorent-elles dans une scène qui a lancé un défi sur internet ?",
+          answers: [
+            { id: "a", text: "Des tteokbokki" },
+            { id: "b", text: "Du bibimbap" },
+            { id: "c", text: "Du poulet frit" },
+            { id: "d", text: "Des ramyeon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Ce sont des ramyeon, des nouilles instantanées. Des fans ont voulu refaire la scène, et des médecins ont dû rappeler qu'on se brûle vite avec des nouilles trop chaudes.",
+        },
+        {
+          id: 20,
+          question: "À la fin du film, de quelle couleur est le nouveau Honmoon ?",
+          answers: [
+            { id: "a", text: "Doré" },
+            { id: "b", text: "Arc-en-ciel" },
+            { id: "c", text: "Violet" },
+            { id: "d", text: "Rouge" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Il devient arc-en-ciel. Rumi espérait au départ un Honmoon doré, mais c'est un Honmoon aux couleurs de l'arc-en-ciel qui scelle les démons.",
+        },
       ],
     },
     en: {
       title: "KPop Demon Hunters quiz: HUNTR/X and Golden",
       description:
-        "Ten questions on KPop Demon Hunters, the Netflix movie: HUNTR/X, the Saja Boys, Derpy, the song Golden and the Oscars.",
+        "Twenty questions on KPop Demon Hunters, the Netflix movie: HUNTR/X, the Saja Boys, Derpy, the song Golden and the Oscars.",
       questions: [
         {
           id: 1,
@@ -300,12 +430,142 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
           explanation:
             "Maggie Kang and Chris Appelhans. Chris Buck and Jennifer Lee made Frozen, and Pete Docter made Inside Out.",
         },
+        {
+          id: 11,
+          question: "For the song Your Idol, the Saja Boys wear black hanbok and gat hats. Which figure from Korean folklore do they bring to mind?",
+          answers: [
+            { id: "a", text: "The jeoseung saja, the messengers of death" },
+            { id: "b", text: "The dokkaebi, mischievous goblins" },
+            { id: "c", text: "The gumiho, nine-tailed foxes" },
+            { id: "d", text: "The haetae, guardian lions" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "They bring to mind the jeoseung saja, the messengers who come to collect the souls of the dead. That's where the name Saja Boys comes from.",
+        },
+        {
+          id: 12,
+          question: "What is Mira's role in HUNTR/X?",
+          answers: [
+            { id: "a", text: "Lead vocalist" },
+            { id: "b", text: "Main dancer" },
+            { id: "c", text: "Rapper" },
+            { id: "d", text: "Producer" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mira is the group's main dancer. Rumi is the lead vocalist, and Zoey is the rapper.",
+        },
+        {
+          id: 13,
+          question: "Where did Zoey grow up?",
+          answers: [
+            { id: "a", text: "Busan, South Korea" },
+            { id: "b", text: "Tokyo, Japan" },
+            { id: "c", text: "Burbank, California" },
+            { id: "d", text: "Sydney, Australia" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Zoey is Korean American and grew up in Burbank, California, near Los Angeles.",
+        },
+        {
+          id: 14,
+          question: "Who is the maknae of HUNTR/X, meaning the youngest member?",
+          answers: [
+            { id: "a", text: "Rumi" },
+            { id: "b", text: "Mira" },
+            { id: "c", text: "Celine" },
+            { id: "d", text: "Zoey" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "It's Zoey. In K-pop, the maknae is the youngest member of a group.",
+        },
+        {
+          id: 15,
+          question: "How long is KPop Demon Hunters?",
+          answers: [
+            { id: "a", text: "1 h 15 min" },
+            { id: "b", text: "1 h 35 min" },
+            { id: "c", text: "2 h" },
+            { id: "d", text: "2 h 20 min" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The film runs 95 minutes, so 1 hour 35. That's a pretty standard length for an animated movie.",
+        },
+        {
+          id: 16,
+          question: "What form does Gwi-Ma, the demon king, take?",
+          answers: [
+            { id: "a", text: "A black dragon" },
+            { id: "b", text: "A blue tiger" },
+            { id: "c", text: "A giant fiery mouth" },
+            { id: "d", text: "A three-headed snake" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Gwi-Ma shows up as a huge mouth made of fire. The blue tiger is Derpy, Jinu's companion.",
+        },
+        {
+          id: 17,
+          question: "Which award show do HUNTR/X and the Saja Boys both want to win?",
+          answers: [
+            { id: "a", text: "The Idol Awards" },
+            { id: "b", text: "The Grammy Awards" },
+            { id: "c", text: "The MAMA Awards" },
+            { id: "d", text: "The Golden Disc Awards" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Idol Awards, a ceremony made up for the film. That's where Rumi's patterns get revealed in front of everyone.",
+        },
+        {
+          id: 18,
+          question: "Where does HUNTR/X first attack the Saja Boys?",
+          answers: [
+            { id: "a", text: "On a plane" },
+            { id: "b", text: "In a temple" },
+            { id: "c", text: "In a bathhouse" },
+            { id: "d", text: "On a TV set" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The first fight happens in a bathhouse, right after a TV show. During that fight, Jinu discovers Rumi's patterns.",
+        },
+        {
+          id: 19,
+          question: "Which food do the three HUNTR/X members wolf down in a scene that started an internet challenge?",
+          answers: [
+            { id: "a", text: "Tteokbokki" },
+            { id: "b", text: "Bibimbap" },
+            { id: "c", text: "Fried chicken" },
+            { id: "d", text: "Ramyeon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Ramyeon, instant noodles. Some fans tried to copy the scene, and doctors had to warn people about burning themselves on noodles that are way too hot.",
+        },
+        {
+          id: 20,
+          question: "At the end of the film, what color is the new Honmoon?",
+          answers: [
+            { id: "a", text: "Gold" },
+            { id: "b", text: "Rainbow" },
+            { id: "c", text: "Purple" },
+            { id: "d", text: "Red" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "It turns rainbow. Rumi was hoping for a golden Honmoon at first, but it's a rainbow Honmoon that seals the demons away.",
+        },
       ],
     },
     es: {
       title: "Quiz de KPop Demon Hunters: HUNTR/X y Golden",
       description:
-        "Diez preguntas sobre KPop Demon Hunters, la película de Netflix: HUNTR/X, los Saja Boys, Derpy, Golden y los Óscar.",
+        "Veinte preguntas sobre KPop Demon Hunters, la película de Netflix: HUNTR/X, los Saja Boys, Derpy, Golden y los Óscar.",
       questions: [
         {
           id: 1,
@@ -440,6 +700,136 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Maggie Kang y Chris Appelhans. Chris Buck y Jennifer Lee hicieron Frozen, y Pete Docter, Del revés.",
+        },
+        {
+          id: 11,
+          question: "En la canción Your Idol, los Saja Boys llevan hanbok negros y sombreros gat. ¿Qué figura del folclore coreano recuerdan?",
+          answers: [
+            { id: "a", text: "Los jeoseung saja, los mensajeros de la muerte" },
+            { id: "b", text: "Los dokkaebi, duendes traviesos" },
+            { id: "c", text: "Los gumiho, zorros de nueve colas" },
+            { id: "d", text: "Los haetae, leones guardianes" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Recuerdan a los jeoseung saja, los mensajeros que vienen a buscar las almas de los muertos. De ahí viene justamente el nombre de los Saja Boys.",
+        },
+        {
+          id: 12,
+          question: "¿Qué papel tiene Mira en HUNTR/X?",
+          answers: [
+            { id: "a", text: "Vocalista principal" },
+            { id: "b", text: "Bailarina principal" },
+            { id: "c", text: "Rapera" },
+            { id: "d", text: "Productora" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mira es la bailarina principal del grupo. La vocalista principal es Rumi, y la rapera, Zoey.",
+        },
+        {
+          id: 13,
+          question: "¿Dónde creció Zoey?",
+          answers: [
+            { id: "a", text: "En Busan, Corea del Sur" },
+            { id: "b", text: "En Tokio, Japón" },
+            { id: "c", text: "En Burbank, California" },
+            { id: "d", text: "En Sídney, Australia" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Zoey es coreano-estadounidense y creció en Burbank, California, cerca de Los Ángeles.",
+        },
+        {
+          id: 14,
+          question: "¿Quién es la maknae de HUNTR/X, es decir, la más joven del grupo?",
+          answers: [
+            { id: "a", text: "Rumi" },
+            { id: "b", text: "Mira" },
+            { id: "c", text: "Celine" },
+            { id: "d", text: "Zoey" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Es Zoey. En el K-pop se llama maknae al miembro más joven de un grupo.",
+        },
+        {
+          id: 15,
+          question: "¿Cuánto dura KPop Demon Hunters?",
+          answers: [
+            { id: "a", text: "1 h 15 min" },
+            { id: "b", text: "1 h 35 min" },
+            { id: "c", text: "2 h" },
+            { id: "d", text: "2 h 20 min" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La película dura 95 minutos, o sea, 1 hora y 35. Es una duración bastante normal para una película de animación.",
+        },
+        {
+          id: 16,
+          question: "¿Con qué forma aparece Gwi-Ma, el rey de los demonios?",
+          answers: [
+            { id: "a", text: "Un dragón negro" },
+            { id: "b", text: "Un tigre azul" },
+            { id: "c", text: "Una boca gigante de fuego" },
+            { id: "d", text: "Una serpiente de tres cabezas" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Gwi-Ma aparece como una boca enorme en llamas. El tigre azul es Derpy, el compañero de Jinu.",
+        },
+        {
+          id: 17,
+          question: "¿Qué ceremonia quieren ganar HUNTR/X y los Saja Boys?",
+          answers: [
+            { id: "a", text: "Los Idol Awards" },
+            { id: "b", text: "Los Grammy" },
+            { id: "c", text: "Los MAMA Awards" },
+            { id: "d", text: "Los Golden Disc Awards" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Los Idol Awards, una ceremonia inventada para la película. Ahí es donde se descubren las marcas de Rumi delante de todo el público.",
+        },
+        {
+          id: 18,
+          question: "¿Dónde atacan HUNTR/X a los Saja Boys por primera vez?",
+          answers: [
+            { id: "a", text: "En un avión" },
+            { id: "b", text: "En un templo" },
+            { id: "c", text: "En unos baños públicos" },
+            { id: "d", text: "En un plató de televisión" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "La primera pelea es en unos baños públicos, justo después de un programa de televisión. En esa pelea, Jinu descubre las marcas de Rumi.",
+        },
+        {
+          id: 19,
+          question: "¿Qué comida devoran las tres HUNTR/X en una escena que lanzó un reto en internet?",
+          answers: [
+            { id: "a", text: "Tteokbokki" },
+            { id: "b", text: "Bibimbap" },
+            { id: "c", text: "Pollo frito" },
+            { id: "d", text: "Ramyeon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Ramyeon, fideos instantáneos. Algunos fans quisieron copiar la escena, y los médicos tuvieron que avisar de que uno se quema fácilmente con fideos demasiado calientes.",
+        },
+        {
+          id: 20,
+          question: "Al final de la película, ¿de qué color es el nuevo Honmoon?",
+          answers: [
+            { id: "a", text: "Dorado" },
+            { id: "b", text: "Arcoíris" },
+            { id: "c", text: "Morado" },
+            { id: "d", text: "Rojo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Se vuelve de color arcoíris. Al principio Rumi esperaba un Honmoon dorado, pero es un Honmoon arcoíris el que sella a los demonios.",
         },
       ],
     },

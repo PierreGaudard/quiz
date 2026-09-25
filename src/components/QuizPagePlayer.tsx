@@ -1,3 +1,4 @@
+import { Icon5050, IconSecondChance, IconHint } from "./BonusIcons";
 import { useState, useRef, useCallback, useEffect } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
@@ -17,7 +18,7 @@ const qpT: Record<string, Record<string, string>> = {
   wrongShort: { en: "Wrong", fr: "Faux", es: "Fallo" },
   startQuiz: { en: "Start quiz", fr: "Commencer le quiz", es: "Empezar el quiz" },
   bonus: { en: "Bonus", fr: "Bonus", es: "Bonus" },
-  retry: { en: "Retry", fr: "2e chance", es: "2a opción" },
+  retry: { en: "2nd chance", fr: "2e chance", es: "2.ª oportunidad" },
   hint: { en: "Hint", fr: "Indice", es: "Pista" },
   fiftyFifty: { en: "50/50", fr: "50/50", es: "50/50" },
   questions: { en: "questions", fr: "questions", es: "preguntas" },
@@ -456,7 +457,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                       : "bg-gray-50 text-gray-500 border border-gray-100 cursor-default opacity-40"
                   }`}
                 >
-                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-[11px] font-black text-white ${bonus5050 > 0 ? "bg-sun hover:bg-sun-dark" : "bg-gray-500"}`}>50</span>
+                  <span className={`w-9 h-9 rounded-lg flex items-center justify-center ${bonus5050 > 0 ? "bg-amber-500 text-white" : "bg-gray-500 text-white"}`}><Icon5050 className="w-6 h-6" /></span>
                   <span className="flex-1 font-bold">50/50</span>
                   <span className={`text-[11px] font-black px-1.5 py-0.5 rounded-full ${bonus5050 > 0 ? "bg-amber-200 text-amber-800" : "bg-gray-200 text-gray-500"}`}>{bonus5050}x</span>
                 </button>
@@ -470,8 +471,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                       : "bg-gray-50 text-gray-500 border border-gray-100 cursor-default opacity-40"
                   }`}
                 >
-                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusSecondChance > 0 ? "bg-blue-600" : "bg-gray-500"}`}>
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" /></svg>
+                  <span style={{ ["--bonus-tile" as any]: bonusSecondChance > 0 ? "#2563eb" : "#6b7280" }} className={`w-9 h-9 rounded-lg flex items-center justify-center text-white ${bonusSecondChance > 0 ? "bg-blue-600" : "bg-gray-500"}`}>
+                    <IconSecondChance className="w-6 h-6" />
                   </span>
                   <span className="flex-1 font-bold">{tt("retry")}</span>
                   <span className={`text-[11px] font-black px-1.5 py-0.5 rounded-full ${bonusSecondChance > 0 ? "bg-blue-200 text-blue-800" : "bg-gray-200 text-gray-500"}`}>{bonusSecondChance}x</span>
@@ -486,8 +487,8 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                       : "bg-gray-50 text-gray-500 border border-gray-100 cursor-default opacity-40"
                   }`}
                 >
-                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white ${bonusIndice > 0 ? "bg-brand" : "bg-gray-500"}`}>
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                  <span className={`w-9 h-9 rounded-lg flex items-center justify-center text-white ${bonusIndice > 0 ? "bg-brand" : "bg-gray-500"}`}>
+                    <IconHint className="w-6 h-6" />
                   </span>
                   <span className="flex-1 font-bold">{tt("hint")}</span>
                   <span className={`text-[11px] font-black px-1.5 py-0.5 rounded-full ${bonusIndice > 0 ? "bg-brand-200 text-brand-800" : "bg-gray-200 text-gray-500"}`}>{bonusIndice}x</span>
@@ -607,33 +608,33 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
                       : "opacity-40"
                   }`}
                 >
-                  <svg className={`w-5 h-5 ${bonus5050 > 0 ? "text-amber-500" : "text-gray-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                  <Icon5050 className={`w-5 h-5 ${bonus5050 > 0 ? "text-amber-500" : "text-gray-500"}`} />
                   <span className={`text-[11px] font-bold ${bonus5050 > 0 ? "text-amber-700" : "text-gray-500"}`}>50/50</span>
                 </button>
                 <button
                   onClick={handleBonusSecondChance}
                   disabled={bonusSecondChance <= 0 || !canUseBonus}
-                  aria-label="Second chance"
+                  aria-label={tt("retry")}
                   className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-lg transition-all ${
                     bonusSecondChance > 0 && canUseBonus
                       ? "bg-blue-50 active:scale-90"
                       : "opacity-40"
                   }`}
                 >
-                  <svg className={`w-5 h-5 ${bonusSecondChance > 0 ? "text-blue-500" : "text-gray-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9" /></svg>
+                  <span style={{ ["--bonus-tile" as any]: "#eff6ff" }}><IconSecondChance className={`w-5 h-5 ${bonusSecondChance > 0 ? "text-blue-500" : "text-gray-500"}`} /></span>
                   <span className={`text-[11px] font-bold ${bonusSecondChance > 0 ? "text-blue-700" : "text-gray-500"}`}>{tt("retry")}</span>
                 </button>
                 <button
                   onClick={handleBonusIndice}
                   disabled={bonusIndice <= 0 || !canUseBonus}
-                  aria-label="Hint"
+                  aria-label={tt("hint")}
                   className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-lg transition-all ${
                     bonusIndice > 0 && canUseBonus
                       ? "bg-brand-50 active:scale-90"
                       : "opacity-40"
                   }`}
                 >
-                  <svg className={`w-5 h-5 ${bonusIndice > 0 ? "text-brand-500" : "text-gray-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                  <IconHint className={`w-5 h-5 ${bonusIndice > 0 ? "text-brand-500" : "text-gray-500"}`} />
                   <span className={`text-[11px] font-bold ${bonusIndice > 0 ? "text-brand-700" : "text-gray-500"}`}>{tt("hint")}</span>
                 </button>
               </div>
@@ -824,7 +825,7 @@ export default function QuizPagePlayer({ quiz, locale = "en" }: Props) {
 
         {/* ===== RESULTS CARD ===== */}
         {showResults && (
-          <div ref={resultsRef} className="scroll-mt-28">
+          <div ref={resultsRef} className="scroll-mt-32">
             <div className="bg-white rounded-2xl border-2 border-brand-200 shadow-sm overflow-hidden">
               <div className="relative bg-brand p-6 md:p-8 text-center text-white">
                 {/* Confettis a partir de 70% : une bonne partie se fete, une

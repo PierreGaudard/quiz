@@ -21,7 +21,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
     fr: {
       title: "L'Attaque des Titans dans l'ordre",
       description:
-        "Dix listes à remettre dans l'ordre sur L'Attaque des Titans : événements, Titans, commandants et dates de sortie.",
+        "Vingt listes à remettre dans l'ordre sur L'Attaque des Titans : événements, Titans, commandants et dates de sortie.",
       questions: [
         {
           id: 1,
@@ -169,12 +169,152 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
           explanation:
             "Le manga d'Hajime Isayama démarre en 2009, l'anime arrive en 2013, le manga se termine en 2021 et le dernier épisode de l'anime sort en novembre 2023.",
         },
+        {
+          id: 11,
+          question: "Remets ces génériques d'ouverture dans l'ordre de leur saison.",
+          answers: [
+            { id: "a", text: "Guren no Yumiya" },
+            { id: "b", text: "Shinzou wo Sasageyo!" },
+            { id: "c", text: "Red Swan" },
+            { id: "d", text: "Boku no Sensou" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Guren no Yumiya ouvre la saison 1, Shinzou wo Sasageyo! la saison 2 et Red Swan la première partie de la saison 3. Boku no Sensou, du groupe Shinsei Kamattechan, ouvre la saison finale.",
+        },
+        {
+          id: 12,
+          question: "Remets ces grands moments de l'histoire du monde dans l'ordre.",
+          answers: [
+            { id: "a", text: "Ymir Fritz reçoit le pouvoir des Titans" },
+            { id: "b", text: "La Grande Guerre des Titans" },
+            { id: "c", text: "La construction des trois Murs" },
+            { id: "d", text: "La chute de Shiganshina" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Ymir reçoit son pouvoir il y a environ 2 000 ans. La Grande Guerre des Titans oppose bien plus tard Eldia et Marley, puis les Murs sont bâtis sur Paradis, une centaine d'années avant la chute de Shiganshina en 845.",
+        },
+        {
+          id: 13,
+          question: "Remets ces moments de la vie de Grisha Jäger dans l'ordre.",
+          answers: [
+            { id: "a", text: "La naissance de Zeke" },
+            { id: "b", text: "Grisha reçoit le Titan Assaillant" },
+            { id: "c", text: "La naissance d'Eren" },
+            { id: "d", text: "Grisha disparaît pendant la chute de Shiganshina" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Zeke naît à Marley. Quand Grisha est dénoncé et exilé sur Paradis, Eren Kruger lui transmet le Titan Assaillant. Il épouse ensuite Carla, Eren naît, et Grisha disparaît en 845.",
+        },
+        {
+          id: 14,
+          question: "Remets ces événements de la saison 3 dans l'ordre.",
+          answers: [
+            { id: "a", text: "Eren et Historia sont enlevés" },
+            { id: "b", text: "Historia refuse de devenir un Titan" },
+            { id: "c", text: "Rod Reiss se change en Titan géant" },
+            { id: "d", text: "Historia est couronnée reine" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Eren et Historia sont enlevés et emmenés dans la grotte des Reiss. Historia refuse de dévorer Eren, Rod Reiss se change alors lui-même en Titan géant, et après sa mort Historia devient reine.",
+        },
+        {
+          id: 15,
+          question: "Remets ces événements de la saison 2 dans l'ordre.",
+          answers: [
+            { id: "a", text: "Des Titans apparaissent à l'intérieur du Mur Rose" },
+            { id: "b", text: "Le siège du château d'Utgard" },
+            { id: "c", text: "Reiner et Bertholdt enlèvent Eren" },
+            { id: "d", text: "Eren fait attaquer un Titan par d'autres Titans" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Des Titans surgissent dans le Mur Rose, et une partie de la 104e brigade se retrouve assiégée au château d'Utgard. Reiner et Bertholdt enlèvent ensuite Eren, et pendant son sauvetage, il envoie des Titans sur celui qui a dévoré sa mère.",
+        },
+        {
+          id: 16,
+          question: "Remets ces parties de la fin de l'anime dans leur ordre de sortie.",
+          answers: [
+            { id: "a", text: "Saison finale, partie 1" },
+            { id: "b", text: "Saison finale, partie 2" },
+            { id: "c", text: "Chapitres finaux, partie 1" },
+            { id: "d", text: "Le film The Last Attack" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La partie 1 démarre en décembre 2020 et la partie 2 en janvier 2022. Les Chapitres finaux sortent en deux épisodes spéciaux en 2023, et le film The Last Attack, qui les reprend, arrive au cinéma en novembre 2024.",
+        },
+        {
+          id: 17,
+          question: "Classe ces recrues de la 104e brigade selon leur rang de sortie, du premier au dernier.",
+          answers: [
+            { id: "a", text: "Mikasa" },
+            { id: "b", text: "Reiner" },
+            { id: "c", text: "Eren" },
+            { id: "d", text: "Jean" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Mikasa sort première, devant Reiner. Bertholdt et Annie prennent les places 3 et 4, Eren finit cinquième et Jean sixième.",
+        },
+        {
+          id: 18,
+          question: "Remets ces étapes de la bataille de Trost dans l'ordre.",
+          answers: [
+            { id: "a", text: "Le Titan Colossal détruit la porte de Trost" },
+            { id: "b", text: "Eren se fait avaler en sauvant Armin" },
+            { id: "c", text: "Un Titan inconnu se met à tuer les autres Titans" },
+            { id: "d", text: "Eren bouche la brèche avec un rocher" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le Colossal ouvre la porte, et Eren est avalé en sauvant Armin. Un Titan se met ensuite à abattre les autres Titans, et on découvre que c'est Eren. Sous cette forme, il finit par boucher le trou avec un énorme rocher.",
+        },
+        {
+          id: 19,
+          question: "Remets ces étapes de la reconquête du Mur Maria dans l'ordre.",
+          answers: [
+            { id: "a", text: "Le Bataillon quitte Trost de nuit" },
+            { id: "b", text: "La charge d'Erwin face au Titan Bestial" },
+            { id: "c", text: "La découverte de la cave de Grisha" },
+            { id: "d", text: "Le Bataillon voit la mer pour la première fois" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le Bataillon part de nuit pour ne pas croiser de Titans. Erwin mène sa charge à Shiganshina pour laisser Livaï atteindre le Titan Bestial. Après la bataille, on ouvre enfin la cave de Grisha, et quelque temps plus tard le Bataillon arrive devant la mer.",
+        },
+        {
+          id: 20,
+          question: "Remets ces étapes de la vie de Livaï dans l'ordre.",
+          answers: [
+            { id: "a", text: "Il grandit avec Kenny dans la ville souterraine" },
+            { id: "b", text: "Il entre au Bataillon d'exploration" },
+            { id: "c", text: "Il prend la tête de l'escouade spéciale chargée d'Eren" },
+            { id: "d", text: "Il affronte Zeke dans la forêt aux arbres géants" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Livaï grandit sous terre avec Kenny, puis Erwin le fait entrer au Bataillon d'exploration. En 850, il dirige l'escouade qui surveille Eren, et c'est dans la saison finale qu'il garde Zeke dans la forêt aux arbres géants, où Zeke se retourne contre lui.",
+        },
       ],
     },
     en: {
       title: "Attack on Titan in order",
       description:
-        "Ten lists to put in the right order about Attack on Titan: key events, Titans, commanders and release dates.",
+        "Twenty lists to put in the right order about Attack on Titan: key events, Titans, commanders and release dates.",
       questions: [
         {
           id: 1,
@@ -322,12 +462,152 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
           explanation:
             "Hajime Isayama's manga starts in 2009, the anime arrives in 2013, the manga ends in 2021 and the final anime episode comes out in November 2023.",
         },
+        {
+          id: 11,
+          question: "Put these opening songs in order of their season.",
+          answers: [
+            { id: "a", text: "Guren no Yumiya" },
+            { id: "b", text: "Shinzou wo Sasageyo!" },
+            { id: "c", text: "Red Swan" },
+            { id: "d", text: "My War" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Guren no Yumiya opens season 1, Shinzou wo Sasageyo! opens season 2, and Red Swan opens the first part of season 3. My War, by the band Shinsei Kamattechan, opens The Final Season.",
+        },
+        {
+          id: 12,
+          question: "Put these big moments in the history of the world in order.",
+          answers: [
+            { id: "a", text: "Ymir Fritz gets the power of the Titans" },
+            { id: "b", text: "The Great Titan War" },
+            { id: "c", text: "The three Walls are built" },
+            { id: "d", text: "The fall of Shiganshina" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Ymir gets her power about 2,000 years ago. The Great Titan War between Eldia and Marley comes much later, then the Walls are built on Paradis, around a hundred years before Shiganshina falls in 845.",
+        },
+        {
+          id: 13,
+          question: "Put these moments in Grisha Yeager's life in order.",
+          answers: [
+            { id: "a", text: "Zeke is born" },
+            { id: "b", text: "Grisha gets the Attack Titan" },
+            { id: "c", text: "Eren is born" },
+            { id: "d", text: "Grisha disappears during the fall of Shiganshina" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Zeke is born in Marley. When Grisha is turned in and exiled to Paradis, Eren Kruger passes the Attack Titan on to him. He then marries Carla, Eren is born, and Grisha disappears in 845.",
+        },
+        {
+          id: 14,
+          question: "Put these season 3 events in order.",
+          answers: [
+            { id: "a", text: "Eren and Historia are kidnapped" },
+            { id: "b", text: "Historia refuses to become a Titan" },
+            { id: "c", text: "Rod Reiss turns into a giant Titan" },
+            { id: "d", text: "Historia is crowned queen" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Eren and Historia are kidnapped and taken to the Reiss family's cavern. Historia refuses to eat Eren, so Rod Reiss turns himself into a giant Titan, and after he dies Historia becomes queen.",
+        },
+        {
+          id: 15,
+          question: "Put these season 2 events in order.",
+          answers: [
+            { id: "a", text: "Titans show up inside Wall Rose" },
+            { id: "b", text: "The siege of Utgard Castle" },
+            { id: "c", text: "Reiner and Bertholdt kidnap Eren" },
+            { id: "d", text: "Eren makes other Titans attack a Titan" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Titans appear inside Wall Rose, and part of the 104th ends up trapped at Utgard Castle. Reiner and Bertholdt then kidnap Eren, and during his rescue he sends Titans after the one that ate his mother.",
+        },
+        {
+          id: 16,
+          question: "Put these parts of the anime's ending in release order.",
+          answers: [
+            { id: "a", text: "The Final Season Part 1" },
+            { id: "b", text: "The Final Season Part 2" },
+            { id: "c", text: "The Final Chapters Special 1" },
+            { id: "d", text: "The Last Attack movie" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Part 1 starts in December 2020 and Part 2 in January 2022. The Final Chapters come out as two specials in 2023, and The Last Attack, a movie built from those two specials, hits theaters in November 2024.",
+        },
+        {
+          id: 17,
+          question: "Rank these 104th cadets by their graduation rank, from first to last.",
+          answers: [
+            { id: "a", text: "Mikasa" },
+            { id: "b", text: "Reiner" },
+            { id: "c", text: "Eren" },
+            { id: "d", text: "Jean" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Mikasa graduates first, ahead of Reiner. Bertholdt and Annie take 3rd and 4th, Eren comes 5th and Jean 6th.",
+        },
+        {
+          id: 18,
+          question: "Put these moments of the Battle of Trost in order.",
+          answers: [
+            { id: "a", text: "The Colossal Titan breaks the Trost gate" },
+            { id: "b", text: "Eren gets swallowed saving Armin" },
+            { id: "c", text: "A mystery Titan starts killing other Titans" },
+            { id: "d", text: "Eren plugs the hole with a boulder" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Colossal breaks open the gate, and Eren gets swallowed saving Armin. A Titan then starts taking down the other Titans, and it turns out to be Eren. In that form he ends up sealing the hole with a huge boulder.",
+        },
+        {
+          id: 19,
+          question: "Put these steps of the retaking of Wall Maria in order.",
+          answers: [
+            { id: "a", text: "The Survey Corps leaves Trost at night" },
+            { id: "b", text: "Erwin's charge against the Beast Titan" },
+            { id: "c", text: "Grisha's basement is opened" },
+            { id: "d", text: "The Survey Corps sees the ocean for the first time" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Survey Corps leaves at night to avoid Titans. Erwin leads his charge in Shiganshina so Levi can reach the Beast Titan. After the battle they finally open Grisha's basement, and some time later the Survey Corps reaches the ocean.",
+        },
+        {
+          id: 20,
+          question: "Put these steps of Levi's life in order.",
+          answers: [
+            { id: "a", text: "He grows up with Kenny in the Underground" },
+            { id: "b", text: "He joins the Survey Corps" },
+            { id: "c", text: "He leads the special squad guarding Eren" },
+            { id: "d", text: "He faces Zeke in the forest of giant trees" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Levi grows up underground with Kenny, then Erwin brings him into the Survey Corps. In 850 he leads the squad keeping watch on Eren, and in The Final Season he guards Zeke in the forest of giant trees, where Zeke turns on him.",
+        },
       ],
     },
     es: {
       title: "Ataque a los Titanes en orden",
       description:
-        "Diez listas para poner en orden sobre Ataque a los Titanes: sucesos, Titanes, comandantes y fechas de estreno.",
+        "Veinte listas para poner en orden sobre Ataque a los Titanes: sucesos, Titanes, comandantes y fechas de estreno.",
       questions: [
         {
           id: 1,
@@ -474,6 +754,146 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "El manga de Hajime Isayama empieza en 2009, el anime llega en 2013, el manga termina en 2021 y el último episodio del anime sale en noviembre de 2023.",
+        },
+        {
+          id: 11,
+          question: "Pon estos openings en el orden de su temporada.",
+          answers: [
+            { id: "a", text: "Guren no Yumiya" },
+            { id: "b", text: "Shinzou wo Sasageyo!" },
+            { id: "c", text: "Red Swan" },
+            { id: "d", text: "Boku no Sensou" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Guren no Yumiya abre la temporada 1, Shinzou wo Sasageyo! la temporada 2 y Red Swan la primera parte de la temporada 3. Boku no Sensou, del grupo Shinsei Kamattechan, abre la temporada final.",
+        },
+        {
+          id: 12,
+          question: "Pon en orden estos grandes momentos de la historia del mundo.",
+          answers: [
+            { id: "a", text: "Ymir Fritz recibe el poder de los Titanes" },
+            { id: "b", text: "La Gran Guerra de los Titanes" },
+            { id: "c", text: "La construcción de las tres Murallas" },
+            { id: "d", text: "La caída de Shiganshina" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Ymir recibe su poder hace unos 2.000 años. La Gran Guerra de los Titanes enfrenta mucho después a Eldia y Marley, y luego se levantan las Murallas en Paradis, unos cien años antes de la caída de Shiganshina en el 845.",
+        },
+        {
+          id: 13,
+          question: "Pon en orden estos momentos de la vida de Grisha Jaeger.",
+          answers: [
+            { id: "a", text: "Nace Zeke" },
+            { id: "b", text: "Grisha recibe el Titán de Ataque" },
+            { id: "c", text: "Nace Eren" },
+            { id: "d", text: "Grisha desaparece durante la caída de Shiganshina" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Zeke nace en Marley. Cuando denuncian a Grisha y lo destierran a Paradis, Eren Kruger le pasa el Titán de Ataque. Después se casa con Carla, nace Eren, y Grisha desaparece en el 845.",
+        },
+        {
+          id: 14,
+          question: "Pon en orden estos sucesos de la temporada 3.",
+          answers: [
+            { id: "a", text: "Secuestran a Eren y a Historia" },
+            { id: "b", text: "Historia se niega a convertirse en Titán" },
+            { id: "c", text: "Rod Reiss se transforma en un Titán gigante" },
+            { id: "d", text: "Coronan reina a Historia" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Secuestran a Eren y a Historia y se los llevan a la cueva de los Reiss. Historia se niega a devorar a Eren, así que Rod Reiss se transforma él mismo en un Titán gigante, y cuando muere Historia pasa a ser reina.",
+        },
+        {
+          id: 15,
+          question: "Pon en orden estos sucesos de la temporada 2.",
+          answers: [
+            { id: "a", text: "Aparecen Titanes dentro de la Muralla Rose" },
+            { id: "b", text: "El asedio del castillo de Utgard" },
+            { id: "c", text: "Reiner y Bertholdt secuestran a Eren" },
+            { id: "d", text: "Eren hace que otros Titanes ataquen a un Titán" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Aparecen Titanes dentro de la Muralla Rose, y parte de la Tropa 104 queda atrapada en el castillo de Utgard. Luego Reiner y Bertholdt secuestran a Eren, y durante su rescate él lanza a varios Titanes contra el que devoró a su madre.",
+        },
+        {
+          id: 16,
+          question: "Pon estas partes del final del anime en su orden de estreno.",
+          answers: [
+            { id: "a", text: "Temporada final, parte 1" },
+            { id: "b", text: "Temporada final, parte 2" },
+            { id: "c", text: "Capítulos finales, parte 1" },
+            { id: "d", text: "La película The Last Attack" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La parte 1 empieza en diciembre de 2020 y la parte 2 en enero de 2022. Los Capítulos finales salen en dos especiales en 2023, y la película The Last Attack, que junta esos dos especiales, llega a los cines en noviembre de 2024.",
+        },
+        {
+          id: 17,
+          question: "Ordena a estos reclutas de la Tropa 104 según su puesto al graduarse, del primero al último.",
+          answers: [
+            { id: "a", text: "Mikasa" },
+            { id: "b", text: "Reiner" },
+            { id: "c", text: "Eren" },
+            { id: "d", text: "Jean" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Mikasa se gradúa la primera, por delante de Reiner. Bertholdt y Annie ocupan los puestos 3 y 4, Eren queda quinto y Jean sexto.",
+        },
+        {
+          id: 18,
+          question: "Pon en orden estos momentos de la batalla de Trost.",
+          answers: [
+            { id: "a", text: "El Titán Colosal rompe la puerta de Trost" },
+            { id: "b", text: "Eren es tragado al salvar a Armin" },
+            { id: "c", text: "Un Titán desconocido empieza a matar a otros Titanes" },
+            { id: "d", text: "Eren tapa el agujero con una roca" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El Colosal abre la puerta, y Eren es tragado al salvar a Armin. Luego un Titán empieza a acabar con los demás Titanes, y resulta ser Eren. En esa forma termina tapando el agujero con una roca enorme.",
+        },
+        {
+          id: 19,
+          question: "Pon en orden estas etapas de la reconquista de la Muralla María.",
+          answers: [
+            { id: "a", text: "La Legión sale de Trost de noche" },
+            { id: "b", text: "La carga de Erwin contra el Titán Bestia" },
+            { id: "c", text: "Se abre el sótano de Grisha" },
+            { id: "d", text: "La Legión ve el mar por primera vez" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Legión sale de noche para no cruzarse con Titanes. Erwin lanza su carga en Shiganshina para que Levi pueda llegar hasta el Titán Bestia. Después de la batalla por fin abren el sótano de Grisha, y un tiempo más tarde la Legión llega al mar.",
+        },
+        {
+          id: 20,
+          question: "Pon en orden estas etapas de la vida de Levi.",
+          answers: [
+            { id: "a", text: "Crece con Kenny en la Ciudad Subterránea" },
+            { id: "b", text: "Entra en la Legión de Reconocimiento" },
+            { id: "c", text: "Dirige el escuadrón especial que vigila a Eren" },
+            { id: "d", text: "Se enfrenta a Zeke en el bosque de árboles gigantes" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Levi crece bajo tierra con Kenny, y luego Erwin lo mete en la Legión de Reconocimiento. En el 850 dirige el escuadrón que vigila a Eren, y en la temporada final custodia a Zeke en el bosque de árboles gigantes, donde Zeke se vuelve contra él.",
         },
       ],
     },

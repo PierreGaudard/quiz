@@ -22,7 +22,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
     fr: {
       title: "Duel Seigneur des Anneaux : les personnages",
       description:
-        "Frodon ou Sam, Legolas ou Elrond, Éowyn ou Aragorn… Dix duels sur les personnages du Seigneur des Anneaux.",
+        "Frodon ou Sam, Legolas ou Elrond, Éowyn ou Aragorn… Vingt duels sur les personnages du Seigneur des Anneaux.",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
           explanation:
             "Gripoil, le plus rapide des chevaux du Rohan. Brego est le cheval d'Aragorn dans les films.",
         },
+        {
+          id: 11,
+          question: "Quel est le vrai nom de Gollum ?",
+          answers: [
+            { id: "a", text: "Déagol" },
+            { id: "b", text: "Sméagol" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sméagol. Déagol est son cousin, celui qui a trouvé l'Anneau dans la rivière et que Sméagol a tué pour le lui prendre.",
+        },
+        {
+          id: 12,
+          question: "Qui est la Dame de la Lórien ?",
+          answers: [
+            { id: "a", text: "Galadriel" },
+            { id: "b", text: "Éowyn" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Galadriel, qui accueille la Communauté après la Moria. Éowyn est la nièce du roi du Rohan.",
+        },
+        {
+          id: 13,
+          question: "Qui est le maître de Fondcombe, où se tient le Conseil ?",
+          answers: [
+            { id: "a", text: "Celeborn" },
+            { id: "b", text: "Elrond" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Elrond, le père d'Arwen. Celeborn est le mari de Galadriel et vit en Lórien.",
+        },
+        {
+          id: 14,
+          question: "Qui est le roi du Rohan ?",
+          answers: [
+            { id: "a", text: "Théoden" },
+            { id: "b", text: "Denethor" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Théoden, que Gandalf libère de l'emprise de Saroumane. Denethor est l'Intendant du Gondor.",
+        },
+        {
+          id: 15,
+          question: "Qui est le frère de Boromir ?",
+          answers: [
+            { id: "a", text: "Éomer" },
+            { id: "b", text: "Faramir" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faramir, le fils cadet de Denethor. Éomer est le frère d'Éowyn, au Rohan.",
+        },
+        {
+          id: 16,
+          question: "Quel est le nom de famille de Sam ?",
+          answers: [
+            { id: "a", text: "Gamegie" },
+            { id: "b", text: "Brandebouc" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Gamegie : il s'appelle Samsagace Gamegie. Brandebouc est le nom de famille de Merry.",
+        },
+        {
+          id: 17,
+          question: "Qui a forgé l'Anneau unique ?",
+          answers: [
+            { id: "a", text: "Saroumane" },
+            { id: "b", text: "Sauron" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sauron, dans les flammes de la Montagne du Destin. C'est pour ça que l'Anneau ne peut être détruit qu'à cet endroit.",
+        },
+        {
+          id: 18,
+          question: "Quelle créature attaque Frodon dans son repaire, à l'entrée du Mordor ?",
+          answers: [
+            { id: "a", text: "Smaug" },
+            { id: "b", text: "Arachné" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Arachné, une araignée géante vers qui Gollum a conduit Frodon exprès. Smaug est le dragon du Hobbit.",
+        },
+        {
+          id: 19,
+          question: "Quel hobbit jure fidélité au roi Théoden ?",
+          answers: [
+            { id: "a", text: "Merry" },
+            { id: "b", text: "Pippin" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Merry, qui se bat ensuite aux côtés d'Éowyn contre le Roi-Sorcier. Pippin, de son côté, se met au service de Denethor à Minas Tirith.",
+        },
+        {
+          id: 20,
+          question: "Quelle créature de feu affronte Gandalf sur le pont de la Moria ?",
+          answers: [
+            { id: "a", text: "Le Roi-Sorcier" },
+            { id: "b", text: "Le Balrog" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le Balrog, un démon de l'ancien monde réveillé par les nains. Gandalf tombe avec lui dans le gouffre et revient ensuite en Gandalf le Blanc.",
+        },
       ],
     },
     en: {
       title: "Lord of the Rings duel: the characters",
       description:
-        "Frodo or Sam, Legolas or Elrond, Éowyn or Aragorn… Ten duels on the characters of The Lord of the Rings.",
+        "Frodo or Sam, Legolas or Elrond, Éowyn or Aragorn… Twenty duels on the characters of The Lord of the Rings.",
       questions: [
         {
           id: 1,
@@ -259,12 +369,122 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
           explanation:
             "Shadowfax, the fastest horse in Rohan. Brego is Aragorn's horse in the films.",
         },
+        {
+          id: 11,
+          question: "What is Gollum's real name?",
+          answers: [
+            { id: "a", text: "Déagol" },
+            { id: "b", text: "Sméagol" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sméagol. Déagol is his cousin, who found the Ring in the river and was killed by Sméagol for it.",
+        },
+        {
+          id: 12,
+          question: "Who is the Lady of Lórien?",
+          answers: [
+            { id: "a", text: "Galadriel" },
+            { id: "b", text: "Éowyn" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Galadriel, who welcomes the Fellowship after Moria. Éowyn is the niece of the King of Rohan.",
+        },
+        {
+          id: 13,
+          question: "Who is the lord of Rivendell, where the Council is held?",
+          answers: [
+            { id: "a", text: "Celeborn" },
+            { id: "b", text: "Elrond" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Elrond, Arwen's father. Celeborn is Galadriel's husband and lives in Lórien.",
+        },
+        {
+          id: 14,
+          question: "Who is the King of Rohan?",
+          answers: [
+            { id: "a", text: "Théoden" },
+            { id: "b", text: "Denethor" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Théoden, whom Gandalf frees from Saruman's hold. Denethor is the Steward of Gondor.",
+        },
+        {
+          id: 15,
+          question: "Who is Boromir's brother?",
+          answers: [
+            { id: "a", text: "Éomer" },
+            { id: "b", text: "Faramir" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faramir, Denethor's younger son. Éomer is Éowyn's brother, in Rohan.",
+        },
+        {
+          id: 16,
+          question: "What is Sam's surname?",
+          answers: [
+            { id: "a", text: "Gamgee" },
+            { id: "b", text: "Brandybuck" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Gamgee: his full name is Samwise Gamgee. Brandybuck is Merry's family name.",
+        },
+        {
+          id: 17,
+          question: "Who forged the One Ring?",
+          answers: [
+            { id: "a", text: "Saruman" },
+            { id: "b", text: "Sauron" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sauron, in the fires of Mount Doom. That's why the Ring can only be destroyed there.",
+        },
+        {
+          id: 18,
+          question: "Which creature attacks Frodo in her lair on the way into Mordor?",
+          answers: [
+            { id: "a", text: "Smaug" },
+            { id: "b", text: "Shelob" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Shelob, a giant spider Gollum leads Frodo to on purpose. Smaug is the dragon from The Hobbit.",
+        },
+        {
+          id: 19,
+          question: "Which hobbit swears allegiance to King Théoden?",
+          answers: [
+            { id: "a", text: "Merry" },
+            { id: "b", text: "Pippin" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Merry, who later fights beside Éowyn against the Witch-king. Pippin swears service to Denethor in Minas Tirith instead.",
+        },
+        {
+          id: 20,
+          question: "Which fiery creature does Gandalf face on the bridge in Moria?",
+          answers: [
+            { id: "a", text: "The Witch-king" },
+            { id: "b", text: "The Balrog" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Balrog, a demon of the ancient world woken by the dwarves. Gandalf falls into the chasm with it and later comes back as Gandalf the White.",
+        },
       ],
     },
     es: {
       title: "Duelo El Señor de los Anillos: personajes",
       description:
-        "Frodo o Sam, Legolas o Elrond, Éowyn o Aragorn… Diez duelos sobre los personajes de El Señor de los Anillos.",
+        "Frodo o Sam, Legolas o Elrond, Éowyn o Aragorn… Veinte duelos sobre los personajes de El Señor de los Anillos.",
       questions: [
         {
           id: 1,
@@ -379,6 +599,116 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Sombragrís, el caballo más rápido de Rohan. Brego es el caballo de Aragorn en las películas.",
+        },
+        {
+          id: 11,
+          question: "¿Cuál es el verdadero nombre de Gollum?",
+          answers: [
+            { id: "a", text: "Déagol" },
+            { id: "b", text: "Sméagol" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sméagol. Déagol es su primo, el que encontró el Anillo en el río y al que Sméagol mató para quedárselo.",
+        },
+        {
+          id: 12,
+          question: "¿Quién es la Dama de Lórien?",
+          answers: [
+            { id: "a", text: "Galadriel" },
+            { id: "b", text: "Éowyn" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Galadriel, que acoge a la Comunidad después de Moria. Éowyn es la sobrina del rey de Rohan.",
+        },
+        {
+          id: 13,
+          question: "¿Quién es el señor de Rivendel, donde se celebra el Concilio?",
+          answers: [
+            { id: "a", text: "Celeborn" },
+            { id: "b", text: "Elrond" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Elrond, el padre de Arwen. Celeborn es el marido de Galadriel y vive en Lórien.",
+        },
+        {
+          id: 14,
+          question: "¿Quién es el rey de Rohan?",
+          answers: [
+            { id: "a", text: "Théoden" },
+            { id: "b", text: "Denethor" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Théoden, al que Gandalf libera del dominio de Saruman. Denethor es el senescal de Gondor.",
+        },
+        {
+          id: 15,
+          question: "¿Quién es el hermano de Boromir?",
+          answers: [
+            { id: "a", text: "Éomer" },
+            { id: "b", text: "Faramir" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faramir, el hijo menor de Denethor. Éomer es el hermano de Éowyn, en Rohan.",
+        },
+        {
+          id: 16,
+          question: "¿Cuál es el apellido de Sam?",
+          answers: [
+            { id: "a", text: "Gamyi" },
+            { id: "b", text: "Brandigamo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Gamyi: se llama Samsagaz Gamyi. Brandigamo es el apellido de Merry.",
+        },
+        {
+          id: 17,
+          question: "¿Quién forjó el Anillo Único?",
+          answers: [
+            { id: "a", text: "Saruman" },
+            { id: "b", text: "Sauron" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sauron, en el fuego del Monte del Destino. Por eso el Anillo solo puede destruirse allí.",
+        },
+        {
+          id: 18,
+          question: "¿Qué criatura ataca a Frodo en su guarida, a la entrada de Mordor?",
+          answers: [
+            { id: "a", text: "Smaug" },
+            { id: "b", text: "Ella-Laraña" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ella-Laraña, una araña gigante a la que Gollum lleva a Frodo a propósito. Smaug es el dragón de El hobbit.",
+        },
+        {
+          id: 19,
+          question: "¿Qué hobbit jura lealtad al rey Théoden?",
+          answers: [
+            { id: "a", text: "Merry" },
+            { id: "b", text: "Pippin" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Merry, que luego lucha junto a Éowyn contra el Rey Brujo. Pippin, en cambio, se pone al servicio de Denethor en Minas Tirith.",
+        },
+        {
+          id: 20,
+          question: "¿A qué criatura de fuego se enfrenta Gandalf en el puente de Moria?",
+          answers: [
+            { id: "a", text: "El Rey Brujo" },
+            { id: "b", text: "El balrog" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El balrog, un demonio del mundo antiguo al que despertaron los enanos. Gandalf cae con él al abismo y después vuelve como Gandalf el Blanco.",
         },
       ],
     },

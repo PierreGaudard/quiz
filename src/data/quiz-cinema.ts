@@ -271,6 +271,32 @@ export const quizHarryPotter: TranslatedQuiz = {
           explanation:
             "Dobby est l'elfe de maison qui avertit Harry du danger et l'aide tout au long de la série. Ancien serviteur des Malefoy, il est libéré grâce à une chaussette.",
         },
+        {
+          id: 19,
+          question: "Comment s'appelle la chouette de Harry ?",
+          answers: [
+            { id: "a", text: "Errol" },
+            { id: "b", text: "Coquecigrue" },
+            { id: "c", text: "Hedwige" },
+            { id: "d", text: "Hermès" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Hedwige, une chouette blanche que Hagrid offre à Harry pour ses 11 ans. Errol est le vieux hibou des Weasley, Coquecigrue celui de Ron et Hermès celui de Percy.",
+        },
+        {
+          id: 20,
+          question: "De quel quai de la gare de King's Cross part le Poudlard Express ?",
+          answers: [
+            { id: "a", text: "Le quai 9 ½" },
+            { id: "b", text: "Le quai 9 ¾" },
+            { id: "c", text: "Le quai 10 ¼" },
+            { id: "d", text: "Le quai 7 ¾" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le quai 9 ¾. Pour y accéder, il faut foncer droit sur la barrière entre les quais 9 et 10, et c'est Molly Weasley qui l'explique à Harry.",
+        },
       ],
     },
     en: {
@@ -534,6 +560,32 @@ export const quizHarryPotter: TranslatedQuiz = {
           explanation:
             "Dobby is the house-elf who warns Harry of danger and helps him throughout the series. A former servant of the Malfoys, he is freed thanks to a sock.",
         },
+        {
+          id: 19,
+          question: "What is the name of Harry's owl?",
+          answers: [
+            { id: "a", text: "Errol" },
+            { id: "b", text: "Pigwidgeon" },
+            { id: "c", text: "Hedwig" },
+            { id: "d", text: "Hermes" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Hedwig, the snowy owl Hagrid gives Harry for his 11th birthday. Errol is the Weasleys' old owl, Pigwidgeon is Ron's and Hermes is Percy's.",
+        },
+        {
+          id: 20,
+          question: "Which platform at King's Cross does the Hogwarts Express leave from?",
+          answers: [
+            { id: "a", text: "Platform 9 ½" },
+            { id: "b", text: "Platform 9 ¾" },
+            { id: "c", text: "Platform 10 ¼" },
+            { id: "d", text: "Platform 7 ¾" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Platform 9 ¾. You get there by walking straight into the barrier between platforms 9 and 10, and it's Molly Weasley who shows Harry how.",
+        },
       ],
     },
     es: {
@@ -796,6 +848,32 @@ export const quizHarryPotter: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "Dobby es el elfo doméstico que advierte a Harry del peligro y lo ayuda a lo largo de la serie. Antiguo sirviente de los Malfoy, es liberado gracias a un calcetín.",
+        },
+        {
+          id: 19,
+          question: "¿Cómo se llama la lechuza de Harry?",
+          answers: [
+            { id: "a", text: "Errol" },
+            { id: "b", text: "Pigwidgeon" },
+            { id: "c", text: "Hedwig" },
+            { id: "d", text: "Hermes" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Hedwig, la lechuza blanca que Hagrid le regala a Harry por su undécimo cumpleaños. Errol es la vieja lechuza de los Weasley, Pigwidgeon la de Ron y Hermes la de Percy.",
+        },
+        {
+          id: 20,
+          question: "¿De qué andén de la estación de King's Cross sale el expreso de Hogwarts?",
+          answers: [
+            { id: "a", text: "El andén 9 ½" },
+            { id: "b", text: "El andén 9 ¾" },
+            { id: "c", text: "El andén 10 ¼" },
+            { id: "d", text: "El andén 7 ¾" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El andén 9 ¾. Para llegar hay que atravesar la barrera entre los andenes 9 y 10, y es Molly Weasley quien le explica a Harry cómo hacerlo.",
         },
       ],
     },

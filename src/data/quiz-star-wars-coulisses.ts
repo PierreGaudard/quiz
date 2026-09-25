@@ -4,7 +4,7 @@ import type { TranslatedQuiz } from "./types";
  * Star Wars, troisieme quiz : les coulisses des films (tournage, musique,
  * acteurs, rachat par Disney), en vrai ou faux.
  *
- * Cinq affirmations vraies et cinq fausses. Aucune ne porte sur l'ordre des
+ * Dix affirmations vraies et dix fausses. Aucune ne porte sur l'ordre des
  * films, deja couvert par quiz-star-wars.ts.
  */
 export const quizStarWarsCoulisses: TranslatedQuiz = {
@@ -20,7 +20,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les coulisses de Star Wars",
       description:
-        "Tournage en Tunisie, voix de Dark Vador, cri de Chewbacca… Dix affirmations sur les coulisses de Star Wars, à toi de dire si c'est vrai.",
+        "Tournage en Tunisie, voix de Dark Vador, cri de Chewbacca… Vingt affirmations sur les coulisses de Star Wars, à toi de dire si c'est vrai.",
       questions: [
         {
           id: 1,
@@ -136,12 +136,122 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
           explanation:
             "C'est vrai. Il faisait de la menuiserie entre deux petits rôles, et c'est d'ailleurs pendant des travaux de menuiserie pour Francis Ford Coppola qu'il a recroisé George Lucas.",
         },
+        {
+          id: 11,
+          question: "Le bourdonnement des sabres laser mélange le bruit d'un vieux projecteur de cinéma et le grésillement d'un téléviseur.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Le monteur son Ben Burtt a enregistré le moteur d'un projecteur, puis a ajouté le grésillement qu'un micro captait près d'une télévision.",
+        },
+        {
+          id: 12,
+          question: "Dark Vador dit « Luke, je suis ton père » dans L'Empire contre-attaque.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, même si tout le monde cite la réplique comme ça. En version originale, Vador répond « No, I am your father », c'est-à-dire « Non, je suis ton père ».",
+        },
+        {
+          id: 13,
+          question: "Dans L'Empire contre-attaque, Yoda est une marionnette animée par Frank Oz, qui fait aussi sa voix.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Frank Oz, connu pour les Muppets, animait Yoda avec d'autres marionnettistes et lui prêtait sa voix.",
+        },
+        {
+          id: 14,
+          question: "Carrie Fisher avait plus de 25 ans pendant le tournage du premier Star Wars.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, elle avait 19 ans. Née en octobre 1956, elle a tourné le film au printemps 1976.",
+        },
+        {
+          id: 15,
+          question: "Les scènes de la planète glacée Hoth ont été tournées en Norvège.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai, sur un glacier près de Finse, au début de l'année 1979. L'équipe a eu droit à de vraies tempêtes de neige.",
+        },
+        {
+          id: 16,
+          question: "Les scènes en studio du film de 1977 ont été tournées à Hollywood.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Elles ont été tournées aux studios d'Elstree, près de Londres, après les extérieurs en Tunisie.",
+        },
+        {
+          id: 17,
+          question: "Un acteur de 1,12 m, Kenny Baker, se glissait à l'intérieur de R2-D2.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Kenny Baker faisait bouger le droïde de l'intérieur dans beaucoup de scènes, et une version télécommandée servait pour celles où R2-D2 roule.",
+        },
+        {
+          id: 18,
+          question: "Le Réveil de la Force a été réalisé par Rian Johnson.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, c'est J. J. Abrams. Rian Johnson a réalisé l'épisode suivant, Les Derniers Jedi, sorti en 2017.",
+        },
+        {
+          id: 19,
+          question: "Pour L'Empire contre-attaque, un Faucon Millenium grandeur nature a été construit.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Le vaisseau en taille réelle occupait un plateau entier des studios d'Elstree, en Angleterre.",
+        },
+        {
+          id: 20,
+          question: "Peter Mayhew, l'acteur dans le costume de Chewbacca, mesurait moins de 2 mètres.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, il mesurait 2,21 m. C'est justement sa taille qui lui a valu le rôle.",
+        },
       ],
     },
     en: {
       title: "True or false: Star Wars behind the scenes",
       description:
-        "Filming in Tunisia, Darth Vader's voice, Chewbacca's roar… Ten statements about how Star Wars was made. Is each one true or false?",
+        "Filming in Tunisia, Darth Vader's voice, Chewbacca's roar… Twenty statements about how Star Wars was made. Is each one true or false?",
       questions: [
         {
           id: 1,
@@ -257,12 +367,122 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
           explanation:
             "True. He did carpentry between small parts, and he ran into George Lucas again while doing carpentry work for Francis Ford Coppola.",
         },
+        {
+          id: 11,
+          question: "The hum of the lightsabers mixes the sound of an old film projector with the buzz of a television set.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Sound designer Ben Burtt recorded the motor of a projector, then added the buzz a microphone picked up near a TV.",
+        },
+        {
+          id: 12,
+          question: "Darth Vader says \"Luke, I am your father\" in The Empire Strikes Back.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, even though everyone quotes it that way. The actual line is \"No, I am your father.\"",
+        },
+        {
+          id: 13,
+          question: "In The Empire Strikes Back, Yoda is a puppet worked by Frank Oz, who also does his voice.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Frank Oz, known for the Muppets, worked Yoda with other puppeteers and voiced him too.",
+        },
+        {
+          id: 14,
+          question: "Carrie Fisher was over 25 when the first Star Wars was filmed.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, she was 19. Born in October 1956, she shot the film in spring 1976.",
+        },
+        {
+          id: 15,
+          question: "The scenes on the ice planet Hoth were filmed in Norway.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True, on a glacier near Finse, in early 1979. The crew had to deal with real snowstorms.",
+        },
+        {
+          id: 16,
+          question: "The studio scenes of the 1977 film were shot in Hollywood.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. They were shot at Elstree Studios, near London, after the location work in Tunisia.",
+        },
+        {
+          id: 17,
+          question: "A 3 ft 8 in actor, Kenny Baker, climbed inside R2-D2.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Kenny Baker moved the droid from the inside in many scenes, and a remote-controlled version was used when R2-D2 had to roll.",
+        },
+        {
+          id: 18,
+          question: "The Force Awakens was directed by Rian Johnson.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, it was J. J. Abrams. Rian Johnson directed the next episode, The Last Jedi, released in 2017.",
+        },
+        {
+          id: 19,
+          question: "A full-size Millennium Falcon was built for The Empire Strikes Back.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The life-size ship took up a whole stage at Elstree Studios, in England.",
+        },
+        {
+          id: 20,
+          question: "Peter Mayhew, the actor inside the Chewbacca suit, was under 6 ft 7 in.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, he was 7 ft 3 in. His height is what got him the part.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: el rodaje de Star Wars",
       description:
-        "Rodaje en Túnez, la voz de Darth Vader, el rugido de Chewbacca… Diez afirmaciones sobre cómo se hizo Star Wars. ¿Verdadero o falso?",
+        "Rodaje en Túnez, la voz de Darth Vader, el rugido de Chewbacca… Veinte afirmaciones sobre cómo se hizo Star Wars. ¿Verdadero o falso?",
       questions: [
         {
           id: 1,
@@ -377,6 +597,116 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero. Hacía trabajos de carpintería entre papeles pequeños, y volvió a cruzarse con George Lucas mientras hacía trabajos de carpintería para Francis Ford Coppola.",
+        },
+        {
+          id: 11,
+          question: "El zumbido de los sables de luz mezcla el ruido de un viejo proyector de cine y la interferencia de un televisor.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El diseñador de sonido Ben Burtt grabó el motor de un proyector y le añadió la interferencia que captaba un micrófono junto a un televisor.",
+        },
+        {
+          id: 12,
+          question: "Darth Vader dice «Luke, yo soy tu padre» en El Imperio contraataca.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, aunque todo el mundo la cite así. En versión original, Vader contesta «No, I am your father», es decir, «No, yo soy tu padre».",
+        },
+        {
+          id: 13,
+          question: "En El Imperio contraataca, Yoda es una marioneta manejada por Frank Oz, que también le pone la voz.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Frank Oz, conocido por los Teleñecos, manejaba a Yoda con otros titiriteros y le ponía la voz.",
+        },
+        {
+          id: 14,
+          question: "Carrie Fisher tenía más de 25 años durante el rodaje de la primera Star Wars.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, tenía 19 años. Nació en octubre de 1956 y rodó la película en la primavera de 1976.",
+        },
+        {
+          id: 15,
+          question: "Las escenas del planeta helado Hoth se rodaron en Noruega.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero, en un glaciar cerca de Finse, a principios de 1979. El equipo tuvo que aguantar auténticas tormentas de nieve.",
+        },
+        {
+          id: 16,
+          question: "Las escenas de estudio de la película de 1977 se rodaron en Hollywood.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Se rodaron en los estudios Elstree, cerca de Londres, después de los exteriores en Túnez.",
+        },
+        {
+          id: 17,
+          question: "Un actor de 1,12 m, Kenny Baker, se metía dentro de R2-D2.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Kenny Baker movía al droide desde dentro en muchas escenas, y se usaba una versión teledirigida cuando R2-D2 tenía que rodar.",
+        },
+        {
+          id: 18,
+          question: "El despertar de la Fuerza lo dirigió Rian Johnson.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, fue J. J. Abrams. Rian Johnson dirigió el episodio siguiente, Los últimos Jedi, estrenado en 2017.",
+        },
+        {
+          id: 19,
+          question: "Para El Imperio contraataca se construyó un Halcón Milenario a tamaño real.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. La nave a tamaño real ocupaba un plató entero de los estudios Elstree, en Inglaterra.",
+        },
+        {
+          id: 20,
+          question: "Peter Mayhew, el actor dentro del traje de Chewbacca, medía menos de 2 metros.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, medía 2,21 m. Fue justamente su altura lo que le dio el papel.",
         },
       ],
     },

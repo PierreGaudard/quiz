@@ -153,6 +153,136 @@ export const quizDragonBall: TranslatedQuiz = {
           explanation:
             "Goku se transforme en Super Saiyan pour la première fois sur Namek, après la mort de Krillin aux mains de Freezer. Ce moment est l'un des plus emblématiques de la série.",
         },
+        {
+          id: 11,
+          question: "Qui a créé le manga Dragon Ball ?",
+          answers: [
+            { id: "a", text: "Eiichiro Oda" },
+            { id: "b", text: "Akira Toriyama" },
+            { id: "c", text: "Masashi Kishimoto" },
+            { id: "d", text: "Yoshihiro Togashi" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Akira Toriyama. Le manga a commencé en 1984 dans le Weekly Shōnen Jump. Toriyama avait déjà eu un gros succès avec Dr Slump.",
+        },
+        {
+          id: 12,
+          question: "Comment s'appelle le nuage sur lequel Goku se déplace ?",
+          answers: [
+            { id: "a", text: "Nyoibo" },
+            { id: "b", text: "Senzu" },
+            { id: "c", text: "Kinto'un" },
+            { id: "d", text: "Hoi-Poi" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le Kinto'un, qu'on appelle aussi le nuage magique. Il ne porte que les gens qui ont le cœur pur, c'est pour ça que Goku peut monter dessus et pas Tortue Géniale.",
+        },
+        {
+          id: 13,
+          question: "Qui est la femme de Goku ?",
+          answers: [
+            { id: "a", text: "Bulma" },
+            { id: "b", text: "Chi-Chi" },
+            { id: "c", text: "Videl" },
+            { id: "d", text: "C-18" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Chi-Chi, la fille du roi Gyumao. Goku lui avait promis de l'épouser quand il était petit, sans trop savoir ce que ça voulait dire, et ils se marient après le 23e Tenkaichi Budokai.",
+        },
+        {
+          id: 14,
+          question: "Qui est la mère de Trunks ?",
+          answers: [
+            { id: "a", text: "Chi-Chi" },
+            { id: "b", text: "C-18" },
+            { id: "c", text: "Bulma" },
+            { id: "d", text: "Videl" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bulma. Trunks est le fils de Bulma et de Vegeta, et il hérite du nom de famille Brief, celui de la famille qui dirige Capsule Corporation.",
+        },
+        {
+          id: 15,
+          question: "Quel ami de Goku n'a pas de nez ?",
+          answers: [
+            { id: "a", text: "Yamcha" },
+            { id: "b", text: "Tenshinhan" },
+            { id: "c", text: "Krilin" },
+            { id: "d", text: "Chaozu" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Krilin. Il n'a pas de nez, et c'est d'ailleurs un sujet de blague dans la série. Il a aussi six petits points sur le front, comme les moines du temple où il s'est entraîné.",
+        },
+        {
+          id: 16,
+          question: "À quoi sert un Senzu ?",
+          answers: [
+            { id: "a", text: "À invoquer Shenron" },
+            { id: "b", text: "À soigner et rassasier d'un coup" },
+            { id: "c", text: "À se transformer en singe géant" },
+            { id: "d", text: "À voyager dans le temps" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Un Senzu est un haricot magique qui soigne toutes les blessures et nourrit pour une dizaine de jours. C'est Maître Karin qui les fait pousser, en haut de sa tour.",
+        },
+        {
+          id: 17,
+          question: "À quel peuple Piccolo appartient-il ?",
+          answers: [
+            { id: "a", text: "Les Saiyans" },
+            { id: "b", text: "Les Nameks" },
+            { id: "c", text: "Les Yardrats" },
+            { id: "d", text: "Les Kaioshin" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Piccolo est un Namek. Il est né sur Terre, mais son peuple vient de la planète Namek, où les héros partent chercher d'autres Dragon Balls.",
+        },
+        {
+          id: 18,
+          question: "Comment s'appelle le père de Goku ?",
+          answers: [
+            { id: "a", text: "Raditz" },
+            { id: "b", text: "Nappa" },
+            { id: "c", text: "Bardock" },
+            { id: "d", text: "Le roi Vegeta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bardock, un guerrier Saiyan de basse classe. Il meurt en essayant d'arrêter Freezer au moment où celui-ci détruit la planète Vegeta. Raditz, lui, est le frère de Goku.",
+        },
+        {
+          id: 19,
+          question: "Comment s'appelle la fusion de Goku et Vegeta obtenue avec les boucles d'oreilles Potara ?",
+          answers: [
+            { id: "a", text: "Gogeta" },
+            { id: "b", text: "Gotenks" },
+            { id: "c", text: "Vegeto" },
+            { id: "d", text: "Kefla" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Vegeto. Gogeta est aussi une fusion de Goku et Vegeta, mais obtenue avec la danse de la fusion. Gotenks, c'est Goten et Trunks.",
+        },
+        {
+          id: 20,
+          question: "Quelle Dragon Ball Goku garde-t-il en souvenir de son grand-père Gohan ?",
+          answers: [
+            { id: "a", text: "Celle à une étoile" },
+            { id: "b", text: "Celle à trois étoiles" },
+            { id: "c", text: "Celle à quatre étoiles" },
+            { id: "d", text: "Celle à sept étoiles" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Celle à quatre étoiles. Goku la considère comme un souvenir de son grand-père adoptif, et c'est en la voyant que Bulma comprend qu'il possède une Dragon Ball.",
+        },
       ],
     },
     en: {
@@ -296,6 +426,136 @@ export const quizDragonBall: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Goku transforms into a Super Saiyan for the first time on Namek, triggered by Krillin's death at the hands of Frieza. This moment is one of the most iconic in the entire series.",
+        },
+        {
+          id: 11,
+          question: "Who created the Dragon Ball manga?",
+          answers: [
+            { id: "a", text: "Eiichiro Oda" },
+            { id: "b", text: "Akira Toriyama" },
+            { id: "c", text: "Masashi Kishimoto" },
+            { id: "d", text: "Yoshihiro Togashi" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Akira Toriyama. The manga started in 1984 in Weekly Shōnen Jump, after Toriyama had already had a big hit with Dr. Slump.",
+        },
+        {
+          id: 12,
+          question: "What is the name of the cloud Goku rides around on?",
+          answers: [
+            { id: "a", text: "Nyoibo" },
+            { id: "b", text: "Senzu" },
+            { id: "c", text: "Kinto'un" },
+            { id: "d", text: "Hoi-Poi" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The Kinto'un, better known in English as the Flying Nimbus. Only people with a pure heart can ride it, which is why Goku can and Master Roshi can't.",
+        },
+        {
+          id: 13,
+          question: "Who is Goku's wife?",
+          answers: [
+            { id: "a", text: "Bulma" },
+            { id: "b", text: "Chi-Chi" },
+            { id: "c", text: "Videl" },
+            { id: "d", text: "Android 18" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Chi-Chi, the daughter of the Ox-King. Goku promised to marry her as a kid without really knowing what that meant, and they get married after the 23rd World Martial Arts Tournament.",
+        },
+        {
+          id: 14,
+          question: "Who is Trunks' mother?",
+          answers: [
+            { id: "a", text: "Chi-Chi" },
+            { id: "b", text: "Android 18" },
+            { id: "c", text: "Bulma" },
+            { id: "d", text: "Videl" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bulma. Trunks is the son of Bulma and Vegeta, and he gets the Brief family name, the family that runs Capsule Corporation.",
+        },
+        {
+          id: 15,
+          question: "Which of Goku's friends has no nose?",
+          answers: [
+            { id: "a", text: "Yamcha" },
+            { id: "b", text: "Tien" },
+            { id: "c", text: "Krillin" },
+            { id: "d", text: "Chiaotzu" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Krillin. He has no nose, and it's a running joke in the series. He also has six small dots on his forehead, like the monks of the temple where he trained.",
+        },
+        {
+          id: 16,
+          question: "What does a Senzu bean do?",
+          answers: [
+            { id: "a", text: "It summons Shenron" },
+            { id: "b", text: "It heals you and fills you up at once" },
+            { id: "c", text: "It turns you into a giant ape" },
+            { id: "d", text: "It lets you travel in time" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A Senzu bean heals every injury and keeps you fed for about ten days. Korin grows them at the top of his tower.",
+        },
+        {
+          id: 17,
+          question: "Which people does Piccolo belong to?",
+          answers: [
+            { id: "a", text: "The Saiyans" },
+            { id: "b", text: "The Namekians" },
+            { id: "c", text: "The Yardrats" },
+            { id: "d", text: "The Kais" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Piccolo is a Namekian. He was born on Earth, but his people come from planet Namek, where the heroes go looking for another set of Dragon Balls.",
+        },
+        {
+          id: 18,
+          question: "What is the name of Goku's father?",
+          answers: [
+            { id: "a", text: "Raditz" },
+            { id: "b", text: "Nappa" },
+            { id: "c", text: "Bardock" },
+            { id: "d", text: "King Vegeta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bardock, a low-class Saiyan warrior. He dies trying to stop Frieza as Frieza destroys planet Vegeta. Raditz is Goku's brother, not his father.",
+        },
+        {
+          id: 19,
+          question: "What is the name of the fusion of Goku and Vegeta made with the Potara earrings?",
+          answers: [
+            { id: "a", text: "Gogeta" },
+            { id: "b", text: "Gotenks" },
+            { id: "c", text: "Vegito" },
+            { id: "d", text: "Kefla" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Vegito. Gogeta is also a fusion of Goku and Vegeta, but that one comes from the Fusion Dance. Gotenks is Goten and Trunks.",
+        },
+        {
+          id: 20,
+          question: "Which Dragon Ball does Goku keep as a memento of his grandpa Gohan?",
+          answers: [
+            { id: "a", text: "The one-star ball" },
+            { id: "b", text: "The three-star ball" },
+            { id: "c", text: "The four-star ball" },
+            { id: "d", text: "The seven-star ball" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The four-star ball. Goku treasures it as a keepsake of his adoptive grandfather, and when Bulma sees it she realizes he has a Dragon Ball.",
         },
       ],
     },
@@ -442,6 +702,136 @@ export const quizDragonBall: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Goku se transforma en Super Saiyan por primera vez en Namek, tras la muerte de Krillin a manos de Freezer. Este momento es uno de los más icónicos de toda la serie.",
+        },
+        {
+          id: 11,
+          question: "¿Quién creó el manga Dragon Ball?",
+          answers: [
+            { id: "a", text: "Eiichiro Oda" },
+            { id: "b", text: "Akira Toriyama" },
+            { id: "c", text: "Masashi Kishimoto" },
+            { id: "d", text: "Yoshihiro Togashi" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Akira Toriyama. El manga empezó en 1984 en la Weekly Shōnen Jump, cuando Toriyama ya había triunfado con Dr. Slump.",
+        },
+        {
+          id: 12,
+          question: "¿Cómo se llama la nube en la que viaja Goku?",
+          answers: [
+            { id: "a", text: "Nyoibo" },
+            { id: "b", text: "Senzu" },
+            { id: "c", text: "Kinto'un" },
+            { id: "d", text: "Hoi-Poi" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "La Kinto'un, que en español se conoce como la Nube Voladora. Solo pueden subirse las personas de corazón puro, por eso Goku puede y el Maestro Roshi no.",
+        },
+        {
+          id: 13,
+          question: "¿Quién es la esposa de Goku?",
+          answers: [
+            { id: "a", text: "Bulma" },
+            { id: "b", text: "Chi-Chi" },
+            { id: "c", text: "Videl" },
+            { id: "d", text: "C-18" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Chi-Chi, la hija de Ox-Satán. Goku le prometió casarse con ella de niño sin saber muy bien qué significaba, y se casan después del 23.º Torneo de Artes Marciales.",
+        },
+        {
+          id: 14,
+          question: "¿Quién es la madre de Trunks?",
+          answers: [
+            { id: "a", text: "Chi-Chi" },
+            { id: "b", text: "C-18" },
+            { id: "c", text: "Bulma" },
+            { id: "d", text: "Videl" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bulma. Trunks es hijo de Bulma y Vegeta, y lleva el apellido Brief, el de la familia que dirige la Capsule Corporation.",
+        },
+        {
+          id: 15,
+          question: "¿Qué amigo de Goku no tiene nariz?",
+          answers: [
+            { id: "a", text: "Yamcha" },
+            { id: "b", text: "Ten Shin Han" },
+            { id: "c", text: "Krilin" },
+            { id: "d", text: "Chaoz" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Krilin. No tiene nariz, y eso da pie a más de una broma en la serie. También lleva seis puntitos en la frente, como los monjes del templo donde entrenó.",
+        },
+        {
+          id: 16,
+          question: "¿Para qué sirve una semilla Senzu?",
+          answers: [
+            { id: "a", text: "Para invocar a Shenron" },
+            { id: "b", text: "Para curarse y saciarse de golpe" },
+            { id: "c", text: "Para convertirse en mono gigante" },
+            { id: "d", text: "Para viajar en el tiempo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Una semilla Senzu cura todas las heridas y alimenta durante unos diez días. Las cultiva el maestro Karin en lo alto de su torre.",
+        },
+        {
+          id: 17,
+          question: "¿A qué pueblo pertenece Piccolo?",
+          answers: [
+            { id: "a", text: "Los Saiyans" },
+            { id: "b", text: "Los namekianos" },
+            { id: "c", text: "Los yardrats" },
+            { id: "d", text: "Los Kaioshin" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Piccolo es namekiano. Nació en la Tierra, pero su pueblo viene del planeta Namek, adonde los héroes van a buscar otras esferas del dragón.",
+        },
+        {
+          id: 18,
+          question: "¿Cómo se llama el padre de Goku?",
+          answers: [
+            { id: "a", text: "Raditz" },
+            { id: "b", text: "Nappa" },
+            { id: "c", text: "Bardock" },
+            { id: "d", text: "El rey Vegeta" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Bardock, un guerrero Saiyan de clase baja. Muere intentando frenar a Freezer cuando este destruye el planeta Vegeta. Raditz es el hermano de Goku.",
+        },
+        {
+          id: 19,
+          question: "¿Cómo se llama la fusión de Goku y Vegeta con los pendientes Potara?",
+          answers: [
+            { id: "a", text: "Gogeta" },
+            { id: "b", text: "Gotenks" },
+            { id: "c", text: "Vegetto" },
+            { id: "d", text: "Kefla" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Vegetto. Gogeta también es una fusión de Goku y Vegeta, pero se consigue con la danza de la fusión. Gotenks es la fusión de Goten y Trunks.",
+        },
+        {
+          id: 20,
+          question: "¿Qué esfera del dragón guarda Goku como recuerdo de su abuelo Gohan?",
+          answers: [
+            { id: "a", text: "La de una estrella" },
+            { id: "b", text: "La de tres estrellas" },
+            { id: "c", text: "La de cuatro estrellas" },
+            { id: "d", text: "La de siete estrellas" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "La de cuatro estrellas. Goku la guarda como recuerdo de su abuelo adoptivo, y al verla Bulma se da cuenta de que tiene una esfera del dragón.",
         },
       ],
     },

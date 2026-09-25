@@ -21,7 +21,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : l'histoire de Brawl Stars",
       description:
-        "Brawl Pass, boîtes, gadgets, hypercharges et modes de jeu : dix affirmations sur l'histoire de Brawl Stars. Vrai ou faux ?",
+        "Brawl Pass, boîtes, gadgets, hypercharges et modes de jeu : vingt affirmations sur l'histoire de Brawl Stars. Vrai ou faux ?",
       questions: [
         {
           id: 1,
@@ -137,12 +137,122 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
           explanation:
             "C'est vrai. Chaque tir qui touche remplit un peu la jauge du Super. Quand elle est pleine, on peut le lancer.",
         },
+        {
+          id: 11,
+          question: "Pendant sa phase de test, Brawl Stars se jouait en tenant le téléphone à la verticale.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Au début, le jeu se jouait en mode portrait, en touchant l'écran pour se déplacer. Il est passé à l'horizontale, avec des joysticks, avant la sortie mondiale.",
+        },
+        {
+          id: 12,
+          question: "Quand le test de Brawl Stars a commencé au Canada, en 2017, le jeu n'existait que sur iPhone et iPad.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Le test a démarré le 15 juin 2017 sur iOS seulement. La version Android n'est arrivée qu'en juin 2018.",
+        },
+        {
+          id: 13,
+          question: "La phase de test de Brawl Stars a duré moins de six mois.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Elle a duré 522 jours, soit près d'un an et demi, entre le lancement au Canada en juin 2017 et la sortie mondiale de décembre 2018.",
+        },
+        {
+          id: 14,
+          question: "Brawl Stars est sorti la même année que Clash Royale.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Clash Royale est sorti en 2016, et Brawl Stars en décembre 2018. Les deux jeux sont de Supercell.",
+        },
+        {
+          id: 15,
+          question: "En Survivant duo, les joueurs s'affrontent par équipes de deux.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Il y a cinq équipes de deux, donc dix joueurs en tout, comme en Survivant solo. Un coéquipier éliminé peut revenir si l'autre reste en vie.",
+        },
+        {
+          id: 16,
+          question: "En Survivant, un nuage de poison réduit peu à peu la zone de jeu.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Le poison avance depuis les bords de la carte et fait perdre de la vie à ceux qui restent dedans, ce qui pousse les derniers joueurs à se rapprocher.",
+        },
+        {
+          id: 17,
+          question: "Un brawler peut monter jusqu'au niveau de puissance 20.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Le niveau de puissance maximum est 11. On y arrive en dépensant des points de pouvoir et des pièces pour chaque brawler.",
+        },
+        {
+          id: 18,
+          question: "En 2020, c'est l'équipe e-sport du PSG qui a gagné le championnat du monde de Brawl Stars.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. PSG Esports a gagné les World Finals 2020 et 200 000 dollars. Elles devaient se jouer à Katowice, en Pologne, mais elles ont eu lieu en ligne à cause du Covid.",
+        },
+        {
+          id: 19,
+          question: "Les World Finals 2024 se sont jouées à Helsinki, la ville de Supercell.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Elles ont eu lieu pendant la Superfest, avec les finales de Clash Royale et de Clash of Clans. L'équipe HMBLE a gagné en battant Crazy Raccoon.",
+        },
+        {
+          id: 20,
+          question: "Les World Finals 2025 de Brawl Stars se sont jouées à Tokyo.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Elles se sont jouées à Stockholm, en Suède, pendant la DreamHack. Crazy Raccoon a pris sa revanche sur HMBLE en finale, 3 à 0.",
+        },
       ],
     },
     en: {
       title: "True or false: Brawl Stars history",
       description:
-        "Brawl Pass, boxes, gadgets, Hypercharges and game modes: ten statements about the history of Brawl Stars. True or false?",
+        "Brawl Pass, boxes, gadgets, Hypercharges and game modes: twenty statements about the history of Brawl Stars. True or false?",
       questions: [
         {
           id: 1,
@@ -258,12 +368,122 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
           explanation:
             "True. Every shot that lands fills the Super meter a little. Once it's full, you can use it.",
         },
+        {
+          id: 11,
+          question: "During its test phase, Brawl Stars was played holding the phone upright.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. At first the game ran in portrait mode, and you tapped the screen to move. It switched to landscape, with joysticks, before the worldwide release.",
+        },
+        {
+          id: 12,
+          question: "When Brawl Stars went into testing in Canada in 2017, it was only available on iPhone and iPad.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The test started on June 15, 2017, on iOS only. The Android version didn't arrive until June 2018.",
+        },
+        {
+          id: 13,
+          question: "The Brawl Stars test phase lasted less than six months.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. It lasted 522 days, almost a year and a half, between the Canadian launch in June 2017 and the worldwide release in December 2018.",
+        },
+        {
+          id: 14,
+          question: "Brawl Stars came out the same year as Clash Royale.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Clash Royale came out in 2016, and Brawl Stars in December 2018. Both games are made by Supercell.",
+        },
+        {
+          id: 15,
+          question: "In Duo Showdown, players fight in teams of two.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. There are five teams of two, so ten players in total, just like in Solo Showdown. A teammate who gets knocked out can come back if the other one stays alive.",
+        },
+        {
+          id: 16,
+          question: "In Showdown, a poison cloud slowly shrinks the play area.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The poison moves in from the edges of the map and drains the health of anyone inside it, which pushes the last players closer together.",
+        },
+        {
+          id: 17,
+          question: "A brawler can go up to power level 20.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The highest power level is 11. You get there by spending power points and coins on each brawler.",
+        },
+        {
+          id: 18,
+          question: "In 2020, the PSG esports team won the Brawl Stars World Championship.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. PSG Esports won the 2020 World Finals and $200,000. The event was meant to be held in Katowice, Poland, but it moved online because of Covid.",
+        },
+        {
+          id: 19,
+          question: "The 2024 World Finals were held in Helsinki, Supercell's home city.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. They took place during Superfest, alongside the Clash Royale and Clash of Clans finals. Team HMBLE won by beating Crazy Raccoon.",
+        },
+        {
+          id: 20,
+          question: "The 2025 Brawl Stars World Finals were held in Tokyo.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. They were held in Stockholm, Sweden, during DreamHack. Crazy Raccoon got revenge on HMBLE in the final, winning 3-0.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: historia de Brawl Stars",
       description:
-        "Brawl Pass, cajas, gadgets, hipercargas y modos de juego: diez afirmaciones sobre la historia de Brawl Stars. ¿Verdadero o falso?",
+        "Brawl Pass, cajas, gadgets, hipercargas y modos de juego: veinte afirmaciones sobre la historia de Brawl Stars. ¿Verdadero o falso?",
       questions: [
         {
           id: 1,
@@ -378,6 +598,116 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero. Cada disparo que acierta llena un poco la barra del súper. Cuando está llena, se puede lanzar.",
+        },
+        {
+          id: 11,
+          question: "Durante su fase de pruebas, Brawl Stars se jugaba con el móvil en vertical.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Al principio el juego iba en modo retrato y se tocaba la pantalla para moverse. Pasó a horizontal, con joysticks, antes del lanzamiento mundial.",
+        },
+        {
+          id: 12,
+          question: "Cuando empezaron las pruebas de Brawl Stars en Canadá, en 2017, el juego solo estaba en iPhone y iPad.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. La prueba empezó el 15 de junio de 2017, solo en iOS. La versión de Android no llegó hasta junio de 2018.",
+        },
+        {
+          id: 13,
+          question: "La fase de pruebas de Brawl Stars duró menos de seis meses.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Duró 522 días, casi un año y medio, entre el lanzamiento en Canadá en junio de 2017 y el lanzamiento mundial de diciembre de 2018.",
+        },
+        {
+          id: 14,
+          question: "Brawl Stars salió el mismo año que Clash Royale.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Clash Royale salió en 2016, y Brawl Stars en diciembre de 2018. Los dos juegos son de Supercell.",
+        },
+        {
+          id: 15,
+          question: "En Supervivencia a dúo, los jugadores se enfrentan en equipos de dos.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Hay cinco equipos de dos, o sea diez jugadores en total, igual que en Supervivencia en solitario. Un compañero eliminado puede volver si el otro sigue vivo.",
+        },
+        {
+          id: 16,
+          question: "En Supervivencia, una nube de veneno va reduciendo poco a poco la zona de juego.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El veneno avanza desde los bordes del mapa y quita vida a quien se queda dentro, así que los últimos jugadores acaban muy cerca unos de otros.",
+        },
+        {
+          id: 17,
+          question: "Un brawler puede subir hasta el nivel de poder 20.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El nivel de poder máximo es el 11. Se llega gastando puntos de poder y monedas en cada brawler.",
+        },
+        {
+          id: 18,
+          question: "En 2020, el equipo de esports del PSG ganó el campeonato del mundo de Brawl Stars.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. PSG Esports ganó las World Finals de 2020 y 200.000 dólares. Iban a jugarse en Katowice, en Polonia, pero se jugaron en línea por el Covid.",
+        },
+        {
+          id: 19,
+          question: "Las World Finals de 2024 se jugaron en Helsinki, la ciudad de Supercell.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Fueron durante la Superfest, junto con las finales de Clash Royale y Clash of Clans. El equipo HMBLE ganó contra Crazy Raccoon.",
+        },
+        {
+          id: 20,
+          question: "Las World Finals de 2025 de Brawl Stars se jugaron en Tokio.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Se jugaron en Estocolmo, en Suecia, durante la DreamHack. Crazy Raccoon se vengó de HMBLE en la final, con un 3 a 0.",
         },
       ],
     },

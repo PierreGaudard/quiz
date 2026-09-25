@@ -27,7 +27,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
     fr: {
       title: "Quiz JO : les villes hôtes dans l'ordre",
       description:
-        "Dix séries de villes olympiques à remettre dans l'ordre, des premiers Jeux d'Athènes en 1896 à ceux de Salt Lake City en 2034.",
+        "Vingt séries de villes olympiques à remettre dans l'ordre, des premiers Jeux d'Athènes en 1896 à ceux de Salt Lake City en 2034.",
       questions: [
         {
           id: 1,
@@ -173,12 +173,152 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
           explanation:
             "Innsbruck en 1964, Sapporo en 1972, Sarajevo en 1984 et Calgary en 1988. Innsbruck a d'ailleurs de nouveau reçu les Jeux d'hiver en 1976.",
         },
+        {
+          id: 11,
+          question: "Remets dans l'ordre ces Jeux d'été d'avant la Seconde Guerre mondiale.",
+          answers: [
+            { id: "a", text: "Anvers" },
+            { id: "b", text: "Berlin" },
+            { id: "c", text: "Stockholm" },
+            { id: "d", text: "Amsterdam" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Stockholm en 1912, Anvers en 1920, les premiers Jeux après la Première Guerre mondiale, Amsterdam en 1928 et Berlin en 1936.",
+        },
+        {
+          id: 12,
+          question: "Remets dans l'ordre ces Jeux organisés en Italie, d'été comme d'hiver.",
+          answers: [
+            { id: "a", text: "Turin" },
+            { id: "b", text: "Cortina d'Ampezzo" },
+            { id: "c", text: "Milan-Cortina" },
+            { id: "d", text: "Rome" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Cortina d'Ampezzo pour l'hiver 1956, Rome pour l'été 1960, Turin pour l'hiver 2006 et Milan-Cortina pour l'hiver 2026.",
+        },
+        {
+          id: 13,
+          question: "Remets dans l'ordre ces Jeux d'hiver organisés en Asie.",
+          answers: [
+            { id: "a", text: "Pékin" },
+            { id: "b", text: "Nagano" },
+            { id: "c", text: "Pyeongchang" },
+            { id: "d", text: "Sapporo" },
+          ],
+          correctOrder: ["d", "b", "c", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Sapporo en 1972, les premiers Jeux d'hiver en Asie, Nagano en 1998, Pyeongchang en 2018 et Pékin en 2022.",
+        },
+        {
+          id: 14,
+          question: "Remets dans l'ordre ces Jeux d'hiver organisés en Amérique du Nord.",
+          answers: [
+            { id: "a", text: "Squaw Valley" },
+            { id: "b", text: "Salt Lake City" },
+            { id: "c", text: "Calgary" },
+            { id: "d", text: "Vancouver" },
+          ],
+          correctOrder: ["a", "c", "b", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Squaw Valley, en Californie, en 1960, Calgary en 1988, Salt Lake City en 2002 et Vancouver en 2010.",
+        },
+        {
+          id: 15,
+          question: "Classe ces pays selon l'année où ils ont organisé des Jeux d'été pour la première fois.",
+          answers: [
+            { id: "a", text: "L'Espagne" },
+            { id: "b", text: "La Chine" },
+            { id: "c", text: "La Finlande" },
+            { id: "d", text: "Le Mexique" },
+          ],
+          correctOrder: ["c", "d", "a", "b"],
+          correctAnswer: "c",
+          explanation:
+            "La Finlande à Helsinki en 1952, le Mexique à Mexico en 1968, l'Espagne à Barcelone en 1992 et la Chine à Pékin en 2008.",
+        },
+        {
+          id: 16,
+          question: "Classe ces pays selon l'année où ils ont organisé des Jeux d'hiver pour la première fois.",
+          answers: [
+            { id: "a", text: "L'Allemagne" },
+            { id: "b", text: "La Suisse" },
+            { id: "c", text: "L'Autriche" },
+            { id: "d", text: "La Norvège" },
+          ],
+          correctOrder: ["b", "a", "d", "c"],
+          correctAnswer: "b",
+          explanation:
+            "La Suisse à Saint-Moritz en 1928, l'Allemagne à Garmisch-Partenkirchen en 1936, la Norvège à Oslo en 1952 et l'Autriche à Innsbruck en 1964.",
+        },
+        {
+          id: 17,
+          question: "Remets dans l'ordre ces Jeux des années 2020, d'été comme d'hiver.",
+          answers: [
+            { id: "a", text: "Pékin" },
+            { id: "b", text: "Milan-Cortina" },
+            { id: "c", text: "Paris" },
+            { id: "d", text: "Tokyo" },
+          ],
+          correctOrder: ["d", "a", "c", "b"],
+          correctAnswer: "d",
+          explanation:
+            "Tokyo en 2021, reportés d'un an à cause du Covid, Pékin pour l'hiver 2022, Paris en 2024 et Milan-Cortina pour l'hiver 2026.",
+        },
+        {
+          id: 18,
+          question: "Classe ces continents selon l'année de leurs premiers Jeux d'été.",
+          answers: [
+            { id: "a", text: "L'Amérique du Nord" },
+            { id: "b", text: "L'Océanie" },
+            { id: "c", text: "L'Amérique du Sud" },
+            { id: "d", text: "L'Asie" },
+          ],
+          correctOrder: ["a", "b", "d", "c"],
+          correctAnswer: "a",
+          explanation:
+            "L'Amérique du Nord avec Saint-Louis en 1904, l'Océanie avec Melbourne en 1956, l'Asie avec Tokyo en 1964 et l'Amérique du Sud avec Rio en 2016. L'Afrique n'a encore jamais reçu les Jeux.",
+        },
+        {
+          id: 19,
+          question: "Remets dans l'ordre ces Jeux d'été, du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "Tokyo" },
+            { id: "b", text: "Rome" },
+            { id: "c", text: "Melbourne" },
+            { id: "d", text: "Mexico" },
+          ],
+          correctOrder: ["c", "b", "a", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Melbourne en 1956, Rome en 1960, Tokyo en 1964 et Mexico en 1968. Ce sont quatre Jeux de suite, chacun sur un continent différent.",
+        },
+        {
+          id: 20,
+          question: "Remets ces exploits dans l'ordre des Jeux où ils ont eu lieu.",
+          answers: [
+            { id: "a", text: "Le triplé d'Usain Bolt" },
+            { id: "b", text: "Les quatre médailles d'or de Carl Lewis" },
+            { id: "c", text: "Le premier 10 de Nadia Comăneci" },
+            { id: "d", text: "Les quatre médailles d'or de Jesse Owens" },
+          ],
+          correctOrder: ["d", "c", "b", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Owens a gagné ses quatre titres à Berlin en 1936, Comăneci a eu le premier 10 de l'histoire à Montréal en 1976, Lewis a gagné quatre titres à Los Angeles en 1984, et Bolt a gagné le 100 m, le 200 m et le relais à Pékin en 2008.",
+        },
       ],
     },
     en: {
       title: "Olympics quiz: host cities in order",
       description:
-        "Ten sets of Olympic host cities to put in order, from the first Games in Athens in 1896 to Salt Lake City in 2034.",
+        "Twenty sets of Olympic host cities to put in order, from the first Games in Athens in 1896 to Salt Lake City in 2034.",
       questions: [
         {
           id: 1,
@@ -324,12 +464,152 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
           explanation:
             "Innsbruck in 1964, Sapporo in 1972, Sarajevo in 1984 and Calgary in 1988. Innsbruck hosted the Winter Games again in 1976, by the way.",
         },
+        {
+          id: 11,
+          question: "Put these pre-Second World War Summer Games in order.",
+          answers: [
+            { id: "a", text: "Antwerp" },
+            { id: "b", text: "Berlin" },
+            { id: "c", text: "Stockholm" },
+            { id: "d", text: "Amsterdam" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Stockholm in 1912, Antwerp in 1920, the first Games after the First World War, Amsterdam in 1928 and Berlin in 1936.",
+        },
+        {
+          id: 12,
+          question: "Put these Games held in Italy in order, summer and winter.",
+          answers: [
+            { id: "a", text: "Turin" },
+            { id: "b", text: "Cortina d'Ampezzo" },
+            { id: "c", text: "Milan-Cortina" },
+            { id: "d", text: "Rome" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Cortina d'Ampezzo for the 1956 Winter Games, Rome for the 1960 Summer Games, Turin for winter 2006 and Milan-Cortina for winter 2026.",
+        },
+        {
+          id: 13,
+          question: "Put these Winter Games held in Asia in order.",
+          answers: [
+            { id: "a", text: "Beijing" },
+            { id: "b", text: "Nagano" },
+            { id: "c", text: "Pyeongchang" },
+            { id: "d", text: "Sapporo" },
+          ],
+          correctOrder: ["d", "b", "c", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Sapporo in 1972, the first Winter Games in Asia, Nagano in 1998, Pyeongchang in 2018 and Beijing in 2022.",
+        },
+        {
+          id: 14,
+          question: "Put these Winter Games held in North America in order.",
+          answers: [
+            { id: "a", text: "Squaw Valley" },
+            { id: "b", text: "Salt Lake City" },
+            { id: "c", text: "Calgary" },
+            { id: "d", text: "Vancouver" },
+          ],
+          correctOrder: ["a", "c", "b", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Squaw Valley, California, in 1960, Calgary in 1988, Salt Lake City in 2002 and Vancouver in 2010.",
+        },
+        {
+          id: 15,
+          question: "Rank these countries by the year they first hosted the Summer Games.",
+          answers: [
+            { id: "a", text: "Spain" },
+            { id: "b", text: "China" },
+            { id: "c", text: "Finland" },
+            { id: "d", text: "Mexico" },
+          ],
+          correctOrder: ["c", "d", "a", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Finland in Helsinki in 1952, Mexico in Mexico City in 1968, Spain in Barcelona in 1992 and China in Beijing in 2008.",
+        },
+        {
+          id: 16,
+          question: "Rank these countries by the year they first hosted the Winter Games.",
+          answers: [
+            { id: "a", text: "Germany" },
+            { id: "b", text: "Switzerland" },
+            { id: "c", text: "Austria" },
+            { id: "d", text: "Norway" },
+          ],
+          correctOrder: ["b", "a", "d", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Switzerland at St. Moritz in 1928, Germany at Garmisch-Partenkirchen in 1936, Norway in Oslo in 1952 and Austria in Innsbruck in 1964.",
+        },
+        {
+          id: 17,
+          question: "Put these Games of the 2020s in order, summer and winter.",
+          answers: [
+            { id: "a", text: "Beijing" },
+            { id: "b", text: "Milan-Cortina" },
+            { id: "c", text: "Paris" },
+            { id: "d", text: "Tokyo" },
+          ],
+          correctOrder: ["d", "a", "c", "b"],
+          correctAnswer: "d",
+          explanation:
+            "Tokyo in 2021, a year late because of Covid, Beijing for winter 2022, Paris in 2024 and Milan-Cortina for winter 2026.",
+        },
+        {
+          id: 18,
+          question: "Rank these continents by the year of their first Summer Games.",
+          answers: [
+            { id: "a", text: "North America" },
+            { id: "b", text: "Oceania" },
+            { id: "c", text: "South America" },
+            { id: "d", text: "Asia" },
+          ],
+          correctOrder: ["a", "b", "d", "c"],
+          correctAnswer: "a",
+          explanation:
+            "North America with St. Louis in 1904, Oceania with Melbourne in 1956, Asia with Tokyo in 1964 and South America with Rio in 2016. Africa has never hosted the Games.",
+        },
+        {
+          id: 19,
+          question: "Put these Summer Games in order, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Tokyo" },
+            { id: "b", text: "Rome" },
+            { id: "c", text: "Melbourne" },
+            { id: "d", text: "Mexico City" },
+          ],
+          correctOrder: ["c", "b", "a", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Melbourne in 1956, Rome in 1960, Tokyo in 1964 and Mexico City in 1968: four Games in a row, each on a different continent.",
+        },
+        {
+          id: 20,
+          question: "Put these feats in order, by the Games where they happened.",
+          answers: [
+            { id: "a", text: "Usain Bolt's triple" },
+            { id: "b", text: "Carl Lewis's four gold medals" },
+            { id: "c", text: "Nadia Comăneci's first perfect 10" },
+            { id: "d", text: "Jesse Owens's four gold medals" },
+          ],
+          correctOrder: ["d", "c", "b", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Owens won his four titles in Berlin in 1936, Comăneci scored the first perfect 10 in Montreal in 1976, Lewis won four titles in Los Angeles in 1984, and Bolt won the 100 m, 200 m and relay in Beijing in 2008.",
+        },
       ],
     },
     es: {
       title: "Quiz de los Juegos: ciudades sede en orden",
       description:
-        "Diez series de ciudades olímpicas para ordenar, desde los primeros Juegos de Atenas en 1896 hasta Salt Lake City en 2034.",
+        "Veinte series de ciudades olímpicas para ordenar, desde los primeros Juegos de Atenas en 1896 hasta Salt Lake City en 2034.",
       questions: [
         {
           id: 1,
@@ -474,6 +754,146 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Innsbruck en 1964, Sapporo en 1972, Sarajevo en 1984 y Calgary en 1988. Por cierto, Innsbruck volvió a organizar los Juegos de invierno en 1976.",
+        },
+        {
+          id: 11,
+          question: "Ordena estos Juegos de verano anteriores a la Segunda Guerra Mundial.",
+          answers: [
+            { id: "a", text: "Amberes" },
+            { id: "b", text: "Berlín" },
+            { id: "c", text: "Estocolmo" },
+            { id: "d", text: "Ámsterdam" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Estocolmo en 1912, Amberes en 1920, los primeros Juegos tras la Primera Guerra Mundial, Ámsterdam en 1928 y Berlín en 1936.",
+        },
+        {
+          id: 12,
+          question: "Ordena estos Juegos celebrados en Italia, de verano y de invierno.",
+          answers: [
+            { id: "a", text: "Turín" },
+            { id: "b", text: "Cortina d'Ampezzo" },
+            { id: "c", text: "Milán-Cortina" },
+            { id: "d", text: "Roma" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Cortina d'Ampezzo en el invierno de 1956, Roma en el verano de 1960, Turín en el invierno de 2006 y Milán-Cortina en el de 2026.",
+        },
+        {
+          id: 13,
+          question: "Ordena estos Juegos de invierno celebrados en Asia.",
+          answers: [
+            { id: "a", text: "Pekín" },
+            { id: "b", text: "Nagano" },
+            { id: "c", text: "Pyeongchang" },
+            { id: "d", text: "Sapporo" },
+          ],
+          correctOrder: ["d", "b", "c", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Sapporo en 1972, los primeros Juegos de invierno en Asia, Nagano en 1998, Pyeongchang en 2018 y Pekín en 2022.",
+        },
+        {
+          id: 14,
+          question: "Ordena estos Juegos de invierno celebrados en América del Norte.",
+          answers: [
+            { id: "a", text: "Squaw Valley" },
+            { id: "b", text: "Salt Lake City" },
+            { id: "c", text: "Calgary" },
+            { id: "d", text: "Vancouver" },
+          ],
+          correctOrder: ["a", "c", "b", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Squaw Valley, en California, en 1960, Calgary en 1988, Salt Lake City en 2002 y Vancouver en 2010.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos países según el año en que organizaron por primera vez unos Juegos de verano.",
+          answers: [
+            { id: "a", text: "España" },
+            { id: "b", text: "China" },
+            { id: "c", text: "Finlandia" },
+            { id: "d", text: "México" },
+          ],
+          correctOrder: ["c", "d", "a", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Finlandia en Helsinki en 1952, México en Ciudad de México en 1968, España en Barcelona en 1992 y China en Pekín en 2008.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos países según el año en que organizaron por primera vez unos Juegos de invierno.",
+          answers: [
+            { id: "a", text: "Alemania" },
+            { id: "b", text: "Suiza" },
+            { id: "c", text: "Austria" },
+            { id: "d", text: "Noruega" },
+          ],
+          correctOrder: ["b", "a", "d", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Suiza en St. Moritz en 1928, Alemania en Garmisch-Partenkirchen en 1936, Noruega en Oslo en 1952 y Austria en Innsbruck en 1964.",
+        },
+        {
+          id: 17,
+          question: "Ordena estos Juegos de la década de 2020, de verano y de invierno.",
+          answers: [
+            { id: "a", text: "Pekín" },
+            { id: "b", text: "Milán-Cortina" },
+            { id: "c", text: "París" },
+            { id: "d", text: "Tokio" },
+          ],
+          correctOrder: ["d", "a", "c", "b"],
+          correctAnswer: "d",
+          explanation:
+            "Tokio en 2021, con un año de retraso por el covid, Pekín en el invierno de 2022, París en 2024 y Milán-Cortina en el invierno de 2026.",
+        },
+        {
+          id: 18,
+          question: "Ordena estos continentes según el año de sus primeros Juegos de verano.",
+          answers: [
+            { id: "a", text: "América del Norte" },
+            { id: "b", text: "Oceanía" },
+            { id: "c", text: "América del Sur" },
+            { id: "d", text: "Asia" },
+          ],
+          correctOrder: ["a", "b", "d", "c"],
+          correctAnswer: "a",
+          explanation:
+            "América del Norte con San Luis en 1904, Oceanía con Melbourne en 1956, Asia con Tokio en 1964 y América del Sur con Río en 2016. África todavía no ha organizado unos Juegos.",
+        },
+        {
+          id: 19,
+          question: "Ordena estos Juegos de verano, del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "Tokio" },
+            { id: "b", text: "Roma" },
+            { id: "c", text: "Melbourne" },
+            { id: "d", text: "Ciudad de México" },
+          ],
+          correctOrder: ["c", "b", "a", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Melbourne en 1956, Roma en 1960, Tokio en 1964 y Ciudad de México en 1968. Son cuatro Juegos seguidos, cada uno en un continente distinto.",
+        },
+        {
+          id: 20,
+          question: "Ordena estas hazañas según los Juegos en los que ocurrieron.",
+          answers: [
+            { id: "a", text: "El triplete de Usain Bolt" },
+            { id: "b", text: "Las cuatro medallas de oro de Carl Lewis" },
+            { id: "c", text: "El primer 10 de Nadia Comăneci" },
+            { id: "d", text: "Las cuatro medallas de oro de Jesse Owens" },
+          ],
+          correctOrder: ["d", "c", "b", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Owens ganó sus cuatro títulos en Berlín en 1936, Comăneci logró el primer 10 de la historia en Montreal en 1976, Lewis ganó cuatro oros en Los Ángeles en 1984 y Bolt ganó los 100 m, los 200 m y el relevo en Pekín en 2008.",
         },
       ],
     },

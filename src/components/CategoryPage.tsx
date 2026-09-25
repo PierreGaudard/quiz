@@ -149,6 +149,8 @@ interface CategoryPageProps {
   locale?: string;
   /** Les pages de sous-theme ont deja leur fil d'Ariane complet (Accueil > Categorie > Sous-theme). */
   hideBreadcrumb?: boolean;
+  /** H1 de la page, calcule par categoryH1() ou subcategoryH1(). */
+  h1?: string;
 }
 
 /* ───────────────────────────── helpers ───────────────────────────── */
@@ -204,6 +206,7 @@ export default function CategoryPage({
   quizzesByType,
   locale,
   hideBreadcrumb,
+  h1,
 }: CategoryPageProps) {
   const tt = (key: string) => catPageT[key]?.[locale || "en"] || catPageT[key]?.en || key;
   const gtLabel = (gt: GameType) => GAME_TYPE_LABELS_I18N[gt]?.[locale || "en"] || GAME_TYPE_LABELS_I18N[gt]?.en;
@@ -348,7 +351,7 @@ export default function CategoryPage({
           />
           <div className="flex-1">
             <h1 className="font-display text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Quiz {category.name}
+              {h1 || `Quiz ${category.name}`}
             </h1>
           </div>
         </div>

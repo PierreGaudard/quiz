@@ -569,7 +569,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
   if (question && (reveal || me.answered < total)) {
     const isLast = index + 1 >= total;
     return (
-      <div ref={topRef} className="grid gap-6 md:grid-cols-[1fr_300px] scroll-mt-28">
+      <div ref={topRef} className="grid gap-6 md:grid-cols-[1fr_300px] scroll-mt-32">
         <section className={`${card} p-5 md:p-6 space-y-4 min-w-0`}>
           <div className="flex items-center justify-between text-xs font-semibold text-gray-500">
             <span>

@@ -32,13 +32,13 @@ export const quizFootball: TranslatedQuiz = {
           id: 2,
           question: "Qui est le meilleur buteur de l'histoire de la Coupe du Monde ?",
           answers: [
-            { id: "a", text: "Ronaldo (Brésil)" },
-            { id: "b", text: "Miroslav Klose" },
+            { id: "a", text: "Lionel Messi" },
+            { id: "b", text: "Kylian Mbappé" },
             { id: "c", text: "Pelé" },
-            { id: "d", text: "Gerd Müller" },
+            { id: "d", text: "Miroslav Klose" },
           ],
           correctAnswer: "b",
-          explanation: "Miroslav Klose détient le record avec 16 buts en Coupe du Monde.",
+          explanation: "Kylian Mbappé, avec 22 buts, dont 10 pendant la Coupe du Monde 2026. Il a dépassé Lionel Messi (21 buts) et Miroslav Klose, qui détenait le record avec 16 buts depuis 2014.",
         },
         {
           id: 3,
@@ -212,6 +212,58 @@ export const quizFootball: TranslatedQuiz = {
           correctAnswer: "c",
           explanation: "Rogério Ceni, gardien brésilien du São Paulo FC, détient le record avec 131 buts marqués en carrière, principalement sur coups francs et penalties.",
         },
+        {
+          id: 17,
+          question: "Quel pays a gagné l'Euro 2024, en Allemagne ?",
+          answers: [
+            { id: "a", text: "Angleterre" },
+            { id: "b", text: "Espagne" },
+            { id: "c", text: "France" },
+            { id: "d", text: "Italie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'Espagne a battu l'Angleterre 2-1 en finale, à Berlin. C'était son quatrième Euro, un record.",
+        },
+        {
+          id: 18,
+          question: "À quelle distance de la ligne de but se trouve le point de penalty ?",
+          answers: [
+            { id: "a", text: "9 mètres" },
+            { id: "b", text: "11 mètres" },
+            { id: "c", text: "13 mètres" },
+            { id: "d", text: "16,5 mètres" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le point de penalty est à 11 mètres de la ligne de but. Les 16,5 mètres, c'est la profondeur de la surface de réparation.",
+        },
+        {
+          id: 19,
+          question: "Quel joueur a marqué 91 buts sur la seule année 2012, un record ?",
+          answers: [
+            { id: "a", text: "Lionel Messi" },
+            { id: "b", text: "Cristiano Ronaldo" },
+            { id: "c", text: "Gerd Müller" },
+            { id: "d", text: "Pelé" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Lionel Messi, avec le FC Barcelone et l'Argentine. Il a battu les 85 buts de Gerd Müller en 1972.",
+        },
+        {
+          id: 20,
+          question: "Quelle sélection est devenue la première d'Afrique à jouer une demi-finale de Coupe du monde, en 2022 ?",
+          answers: [
+            { id: "a", text: "Le Sénégal" },
+            { id: "b", text: "Le Cameroun" },
+            { id: "c", text: "Le Maroc" },
+            { id: "d", text: "Le Ghana" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le Maroc, au Qatar. Il a éliminé l'Espagne et le Portugal avant de perdre 2-0 contre la France en demi-finale.",
+        },
       ],
     },
     en: {
@@ -235,13 +287,13 @@ export const quizFootball: TranslatedQuiz = {
           id: 2,
           question: "Who is the all-time top scorer in FIFA World Cup history?",
           answers: [
-            { id: "a", text: "Ronaldo (Brazil)" },
-            { id: "b", text: "Miroslav Klose" },
+            { id: "a", text: "Lionel Messi" },
+            { id: "b", text: "Kylian Mbappé" },
             { id: "c", text: "Pelé" },
-            { id: "d", text: "Gerd Müller" },
+            { id: "d", text: "Miroslav Klose" },
           ],
           correctAnswer: "b",
-          explanation: "Miroslav Klose holds the record with 16 goals scored in FIFA World Cup tournaments.",
+          explanation: "Kylian Mbappé, with 22 goals, 10 of them at the 2026 World Cup. He moved past Lionel Messi (21 goals) and Miroslav Klose, who had held the record with 16 goals since 2014.",
         },
         {
           id: 3,
@@ -415,6 +467,58 @@ export const quizFootball: TranslatedQuiz = {
           correctAnswer: "c",
           explanation: "Rogério Ceni, Brazilian goalkeeper for São Paulo FC, holds the record with 131 career goals, mainly from free kicks and penalties.",
         },
+        {
+          id: 17,
+          question: "Which country won Euro 2024 in Germany?",
+          answers: [
+            { id: "a", text: "England" },
+            { id: "b", text: "Spain" },
+            { id: "c", text: "France" },
+            { id: "d", text: "Italy" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Spain beat England 2-1 in the final in Berlin. It was their fourth European Championship, a record.",
+        },
+        {
+          id: 18,
+          question: "How far is the penalty spot from the goal line?",
+          answers: [
+            { id: "a", text: "9 metres" },
+            { id: "b", text: "11 metres" },
+            { id: "c", text: "13 metres" },
+            { id: "d", text: "16.5 metres" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The penalty spot is 11 metres (12 yards) from the goal line. The 16.5 metres is the depth of the penalty area.",
+        },
+        {
+          id: 19,
+          question: "Which player scored 91 goals in the calendar year 2012, a record?",
+          answers: [
+            { id: "a", text: "Lionel Messi" },
+            { id: "b", text: "Cristiano Ronaldo" },
+            { id: "c", text: "Gerd Müller" },
+            { id: "d", text: "Pelé" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Lionel Messi, for Barcelona and Argentina. He beat Gerd Müller's 85 goals from 1972.",
+        },
+        {
+          id: 20,
+          question: "Which team became the first from Africa to play a World Cup semi-final, in 2022?",
+          answers: [
+            { id: "a", text: "Senegal" },
+            { id: "b", text: "Cameroon" },
+            { id: "c", text: "Morocco" },
+            { id: "d", text: "Ghana" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Morocco, in Qatar. They knocked out Spain and Portugal before losing 2-0 to France in the semi-final.",
+        },
       ],
     },
     es: {
@@ -438,13 +542,13 @@ export const quizFootball: TranslatedQuiz = {
           id: 2,
           question: "¿Quién es el máximo goleador en la historia de la Copa del Mundo?",
           answers: [
-            { id: "a", text: "Ronaldo (Brasil)" },
-            { id: "b", text: "Miroslav Klose" },
+            { id: "a", text: "Lionel Messi" },
+            { id: "b", text: "Kylian Mbappé" },
             { id: "c", text: "Pelé" },
-            { id: "d", text: "Gerd Müller" },
+            { id: "d", text: "Miroslav Klose" },
           ],
           correctAnswer: "b",
-          explanation: "Miroslav Klose ostenta el récord con 16 goles en la Copa del Mundo.",
+          explanation: "Kylian Mbappé, con 22 goles, 10 de ellos en el Mundial 2026. Superó a Lionel Messi (21 goles) y a Miroslav Klose, que tenía el récord con 16 goles desde 2014.",
         },
         {
           id: 3,
@@ -617,6 +721,58 @@ export const quizFootball: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation: "Rogério Ceni, portero brasileño del São Paulo FC, ostenta el récord con 131 goles en su carrera, principalmente de tiros libres y penaltis.",
+        },
+        {
+          id: 17,
+          question: "¿Qué selección ganó la Eurocopa 2024, en Alemania?",
+          answers: [
+            { id: "a", text: "Inglaterra" },
+            { id: "b", text: "España" },
+            { id: "c", text: "Francia" },
+            { id: "d", text: "Italia" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "España ganó 2-1 a Inglaterra en la final de Berlín. Fue su cuarta Eurocopa, un récord.",
+        },
+        {
+          id: 18,
+          question: "¿A qué distancia de la línea de gol está el punto de penalti?",
+          answers: [
+            { id: "a", text: "9 metros" },
+            { id: "b", text: "11 metros" },
+            { id: "c", text: "13 metros" },
+            { id: "d", text: "16,5 metros" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El punto de penalti está a 11 metros de la línea de gol. Los 16,5 metros son la profundidad del área grande.",
+        },
+        {
+          id: 19,
+          question: "¿Qué jugador marcó 91 goles solo en el año 2012, un récord?",
+          answers: [
+            { id: "a", text: "Lionel Messi" },
+            { id: "b", text: "Cristiano Ronaldo" },
+            { id: "c", text: "Gerd Müller" },
+            { id: "d", text: "Pelé" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Lionel Messi, entre el Barcelona y Argentina. Superó los 85 goles de Gerd Müller en 1972.",
+        },
+        {
+          id: 20,
+          question: "¿Qué selección fue la primera de África en jugar una semifinal del Mundial, en 2022?",
+          answers: [
+            { id: "a", text: "Senegal" },
+            { id: "b", text: "Camerún" },
+            { id: "c", text: "Marruecos" },
+            { id: "d", text: "Ghana" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Marruecos, en Catar. Eliminó a España y a Portugal y luego perdió 2-0 contra Francia en semifinales.",
         },
       ],
     },

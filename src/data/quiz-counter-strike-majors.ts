@@ -2,7 +2,7 @@ import type { TranslatedQuiz } from "./types";
 
 /**
  * Quiz Counter-Strike en mode duel sur les Majors, les grands tournois
- * soutenus par Valve, de 2014 à 2024, et sur les joueurs qui les ont gagnés.
+ * soutenus par Valve, de 2014 à 2026, et sur les joueurs qui les ont gagnés.
  *
  * Le moteur n'affiche que answers[0] et answers[1] (cf. quiz-marvel.ts) : deux
  * propositions par question. Le premier Major (Fnatic, 2013) est déjà posé dans
@@ -13,7 +13,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
   slug: "quiz-counter-strike-majors",
   slugs: { en: "counter-strike-majors-quiz", fr: "quiz-counter-strike-majors", es: "quiz-counter-strike-majors" },
   categorySlug: "jeux-video",
-  subcategory: "Counter Strike",
+  subcategory: "Counter-Strike",
   difficulty: "hard",
   coverImage: "/images/cover-counter-strike-majors.webp",
   gameType: "duel",
@@ -22,7 +22,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
     fr: {
       title: "Duel Counter-Strike : les Majors",
       description:
-        "Dix duels sur les Majors de Counter-Strike, de Katowice 2014 à Shanghai 2024 : qui a gagné, avec quelle équipe et contre qui.",
+        "Vingt duels sur les Majors de Counter-Strike, de Katowice 2014 à Cologne 2026 : qui a gagné, avec quelle équipe et contre qui.",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
           explanation:
             "Team Spirit, en battant FaZe Clan en finale. donk avait 17 ans et c'était son premier Major. The MongolZ a perdu la finale du Major suivant, à Austin.",
         },
+        {
+          id: 11,
+          question: "Qui a gagné le Major de Katowice en 2015 ?",
+          answers: [
+            { id: "a", text: "Ninjas in Pyjamas" },
+            { id: "b", text: "Fnatic" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Fnatic, en battant les Ninjas in Pyjamas en finale. C'était le deuxième Major des Suédois de Fnatic, après la DreamHack Winter 2013.",
+        },
+        {
+          id: 12,
+          question: "Quelle équipe a été la première à gagner deux Majors de suite ?",
+          answers: [
+            { id: "a", text: "Fnatic" },
+            { id: "b", text: "Astralis" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Fnatic, avec Katowice puis Cologne en 2015. C'était aussi la première équipe à gagner trois Majors. Astralis a fait mieux plus tard, avec trois titres de suite.",
+        },
+        {
+          id: 13,
+          question: "Contre qui Astralis a-t-elle gagné son premier Major, à Atlanta en 2017 ?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Virtus.pro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Contre Virtus.pro, les Polonais qui avaient gagné Katowice en 2014. C'était le premier des quatre Majors d'Astralis.",
+        },
+        {
+          id: 14,
+          question: "Contre quelle équipe brésilienne Gambit a-t-elle gagné la finale de Cracovie en 2017 ?",
+          answers: [
+            { id: "a", text: "Immortals" },
+            { id: "b", text: "SK Gaming" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Immortals. Gambit, avec surtout des joueurs du Kazakhstan, devenait la première équipe d'Asie et de l'ex-URSS à gagner un Major.",
+        },
+        {
+          id: 15,
+          question: "Quelle équipe finlandaise a perdu la finale de Katowice 2019 contre Astralis ?",
+          answers: [
+            { id: "a", text: "Heroic" },
+            { id: "b", text: "ENCE" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "ENCE, la surprise du tournoi. Heroic est une équipe danoise, comme Astralis, et elle a perdu la finale de Rio en 2022.",
+        },
+        {
+          id: 16,
+          question: "Contre qui Astralis a-t-elle gagné le Major de Berlin en 2019, son troisième de suite ?",
+          answers: [
+            { id: "a", text: "AVANGAR" },
+            { id: "b", text: "Gambit" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "AVANGAR, une équipe du Kazakhstan qui arrivait en finale sans être favorite. Astralis l'a battue facilement, 2 à 0.",
+        },
+        {
+          id: 17,
+          question: "Qui a gagné le Major d'Anvers en 2022 ?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Natus Vincere" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "FaZe Clan, en battant Natus Vincere 2 à 0 en finale. C'était la première fois qu'une équipe avec des joueurs de plusieurs pays gagnait un Major sur CS:GO.",
+        },
+        {
+          id: 18,
+          question: "Sous quel nom Virtus.pro a-t-elle gagné le Major de Rio en 2022 ?",
+          answers: [
+            { id: "a", text: "Heroic" },
+            { id: "b", text: "Outsiders" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Outsiders, un nom neutre que l'équipe a pris à cause de ses liens avec la Russie après l'invasion de l'Ukraine. Elle a battu Heroic 2 à 0 en finale.",
+        },
+        {
+          id: 19,
+          question: "Qui a gagné le Major de Budapest en décembre 2025 ?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Team Vitality" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Team Vitality, en battant FaZe Clan 3 à 1. C'était son deuxième Major de l'année après Austin, et la première finale de Major jouée au meilleur des cinq cartes.",
+        },
+        {
+          id: 20,
+          question: "Quelle équipe a gagné le Major de Cologne en juin 2026 ?",
+          answers: [
+            { id: "a", text: "Team Falcons" },
+            { id: "b", text: "FURIA" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Team Falcons, emmenée par NiKo, en battant les Brésiliens de FURIA en finale. C'était le tout premier Major de l'équipe.",
+        },
       ],
     },
     en: {
       title: "Counter-Strike duel: the Majors",
       description:
-        "Ten duels on the Counter-Strike Majors, from Katowice 2014 to Shanghai 2024: who won, with which team and against whom.",
+        "Twenty duels on the Counter-Strike Majors, from Katowice 2014 to Cologne 2026: who won, with which team and against whom.",
       questions: [
         {
           id: 1,
@@ -259,12 +369,122 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
           explanation:
             "Team Spirit, who beat FaZe Clan in the final. donk was 17 and it was his first Major. The MongolZ lost the final of the next Major, in Austin.",
         },
+        {
+          id: 11,
+          question: "Who won the Katowice Major in 2015?",
+          answers: [
+            { id: "a", text: "Ninjas in Pyjamas" },
+            { id: "b", text: "Fnatic" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Fnatic, beating Ninjas in Pyjamas in the final. It was the Swedish team's second Major, after DreamHack Winter 2013.",
+        },
+        {
+          id: 12,
+          question: "Which team was the first to win two Majors in a row?",
+          answers: [
+            { id: "a", text: "Fnatic" },
+            { id: "b", text: "Astralis" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Fnatic, with Katowice and then Cologne in 2015. It was also the first team to win three Majors. Astralis did even better later, with three titles in a row.",
+        },
+        {
+          id: 13,
+          question: "Who did Astralis beat to win their first Major, in Atlanta in 2017?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Virtus.pro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Virtus.pro, the Polish team that had won Katowice in 2014. It was the first of Astralis's four Majors.",
+        },
+        {
+          id: 14,
+          question: "Which Brazilian team did Gambit beat in the 2017 Kraków final?",
+          answers: [
+            { id: "a", text: "Immortals" },
+            { id: "b", text: "SK Gaming" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Immortals. Gambit, made up mostly of players from Kazakhstan, became the first team from Asia and the former Soviet countries to win a Major.",
+        },
+        {
+          id: 15,
+          question: "Which Finnish team lost the Katowice 2019 final to Astralis?",
+          answers: [
+            { id: "a", text: "Heroic" },
+            { id: "b", text: "ENCE" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "ENCE, the surprise of the tournament. Heroic is a Danish team, like Astralis, and it lost the Rio final in 2022.",
+        },
+        {
+          id: 16,
+          question: "Who did Astralis beat to win the 2019 Berlin Major, their third in a row?",
+          answers: [
+            { id: "a", text: "AVANGAR" },
+            { id: "b", text: "Gambit" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "AVANGAR, a team from Kazakhstan that reached the final as outsiders. Astralis beat them easily, 2-0.",
+        },
+        {
+          id: 17,
+          question: "Who won the 2022 Antwerp Major?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Natus Vincere" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "FaZe Clan, beating Natus Vincere 2-0 in the final. It was the first time a team with players from several countries won a CS:GO Major.",
+        },
+        {
+          id: 18,
+          question: "Under what name did Virtus.pro win the 2022 Rio Major?",
+          answers: [
+            { id: "a", text: "Heroic" },
+            { id: "b", text: "Outsiders" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Outsiders, a neutral name the team took because of its ties to Russia after the invasion of Ukraine. It beat Heroic 2-0 in the final.",
+        },
+        {
+          id: 19,
+          question: "Who won the Budapest Major in December 2025?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Team Vitality" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Team Vitality, beating FaZe Clan 3-1. It was their second Major of the year after Austin, and the first Major final played as a best of five maps.",
+        },
+        {
+          id: 20,
+          question: "Which team won the Cologne Major in June 2026?",
+          answers: [
+            { id: "a", text: "Team Falcons" },
+            { id: "b", text: "FURIA" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Team Falcons, led by NiKo, beating Brazil's FURIA in the final. It was the team's very first Major.",
+        },
       ],
     },
     es: {
       title: "Duelo Counter-Strike: los Majors",
       description:
-        "Diez duelos sobre los Majors de Counter-Strike, de Katowice 2014 a Shanghái 2024: quién ganó, con qué equipo y contra quién.",
+        "Veinte duelos sobre los Majors de Counter-Strike, de Katowice 2014 a Colonia 2026: quién ganó, con qué equipo y contra quién.",
       questions: [
         {
           id: 1,
@@ -379,6 +599,116 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Con Team Spirit, que ganó la final a FaZe Clan. donk tenía 17 años y era su primer Major. The MongolZ perdió la final del Major siguiente, en Austin.",
+        },
+        {
+          id: 11,
+          question: "¿Quién ganó el Major de Katowice en 2015?",
+          answers: [
+            { id: "a", text: "Ninjas in Pyjamas" },
+            { id: "b", text: "Fnatic" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Fnatic, que ganó a Ninjas in Pyjamas en la final. Era el segundo Major del equipo sueco, tras la DreamHack Winter 2013.",
+        },
+        {
+          id: 12,
+          question: "¿Qué equipo fue el primero en ganar dos Majors seguidos?",
+          answers: [
+            { id: "a", text: "Fnatic" },
+            { id: "b", text: "Astralis" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Fnatic, con Katowice y después Colonia en 2015. También fue el primer equipo en ganar tres Majors. Astralis lo superó más tarde, con tres títulos seguidos.",
+        },
+        {
+          id: 13,
+          question: "¿A quién ganó Astralis en su primer Major, en Atlanta en 2017?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Virtus.pro" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A Virtus.pro, el equipo polaco que había ganado Katowice en 2014. Fue el primero de los cuatro Majors de Astralis.",
+        },
+        {
+          id: 14,
+          question: "¿A qué equipo brasileño ganó Gambit en la final de Cracovia en 2017?",
+          answers: [
+            { id: "a", text: "Immortals" },
+            { id: "b", text: "SK Gaming" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A Immortals. Gambit, con jugadores sobre todo de Kazajistán, se convirtió en el primer equipo de Asia y de la antigua URSS en ganar un Major.",
+        },
+        {
+          id: 15,
+          question: "¿Qué equipo finlandés perdió la final de Katowice 2019 contra Astralis?",
+          answers: [
+            { id: "a", text: "Heroic" },
+            { id: "b", text: "ENCE" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "ENCE, la sorpresa del torneo. Heroic es un equipo danés, como Astralis, y perdió la final de Río en 2022.",
+        },
+        {
+          id: 16,
+          question: "¿A quién ganó Astralis en el Major de Berlín de 2019, su tercero seguido?",
+          answers: [
+            { id: "a", text: "AVANGAR" },
+            { id: "b", text: "Gambit" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A AVANGAR, un equipo de Kazajistán que llegó a la final sin ser favorito. Astralis ganó fácil, 2 a 0.",
+        },
+        {
+          id: 17,
+          question: "¿Quién ganó el Major de Amberes en 2022?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Natus Vincere" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "FaZe Clan, que ganó 2 a 0 a Natus Vincere en la final. Fue la primera vez que un equipo con jugadores de varios países ganaba un Major de CS:GO.",
+        },
+        {
+          id: 18,
+          question: "¿Con qué nombre ganó Virtus.pro el Major de Río en 2022?",
+          answers: [
+            { id: "a", text: "Heroic" },
+            { id: "b", text: "Outsiders" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Outsiders, un nombre neutral que el equipo adoptó por sus lazos con Rusia tras la invasión de Ucrania. Ganó 2 a 0 a Heroic en la final.",
+        },
+        {
+          id: 19,
+          question: "¿Quién ganó el Major de Budapest en diciembre de 2025?",
+          answers: [
+            { id: "a", text: "FaZe Clan" },
+            { id: "b", text: "Team Vitality" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Team Vitality, que ganó 3 a 1 a FaZe Clan. Era su segundo Major del año después de Austin, y la primera final de un Major jugada al mejor de cinco mapas.",
+        },
+        {
+          id: 20,
+          question: "¿Qué equipo ganó el Major de Colonia en junio de 2026?",
+          answers: [
+            { id: "a", text: "Team Falcons" },
+            { id: "b", text: "FURIA" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Team Falcons, con NiKo a la cabeza, que ganó a los brasileños de FURIA en la final. Era el primer Major del equipo.",
         },
       ],
     },

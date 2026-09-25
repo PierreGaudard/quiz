@@ -22,7 +22,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
     fr: {
       title: "Ordre : les dates de la conquête spatiale",
       description:
-        "Dix suites d'événements spatiaux à remettre dans l'ordre : Spoutnik, Hubble, les rovers martiens, les stations spatiales ou encore Ariane.",
+        "Vingt suites d'événements spatiaux à remettre dans l'ordre : Spoutnik, Hubble, les rovers martiens, les stations spatiales ou encore Ariane.",
       questions: [
         {
           id: 1,
@@ -169,12 +169,152 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
           explanation:
             "Le cœur de Mir part en 1986, le premier module de l'ISS en 1998, le petit laboratoire chinois Tiangong-1 en 2011 et le module central de la grande station Tiangong en 2021.",
         },
+        {
+          id: 11,
+          question: "Range ces animaux envoyés dans l'espace du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "La chienne Laïka" },
+            { id: "b", text: "Les chiennes Belka et Strelka" },
+            { id: "c", text: "La chatte Félicette" },
+            { id: "d", text: "Les tortues de la sonde Zond 5" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Laïka part en 1957 à bord de Spoutnik 2. Belka et Strelka reviennent vivantes en 1960, Félicette, lancée par la France, vole en 1963, et les tortues de Zond 5 font le tour de la Lune en 1968.",
+        },
+        {
+          id: 12,
+          question: "Range ces sorties dans l'espace de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "La première sortie, par Alexeï Leonov" },
+            { id: "b", text: "La première sortie d'une femme, Svetlana Savitskaïa" },
+            { id: "c", text: "La première sortie faite uniquement par des femmes" },
+            { id: "d", text: "La première sortie privée, pendant Polaris Dawn" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Leonov sort de son vaisseau en 1965, Savitskaïa en 1984. Christina Koch et Jessica Meir font la première sortie 100 % féminine en 2019, et Jared Isaacman ouvre la première sortie privée en 2024.",
+        },
+        {
+          id: 13,
+          question: "Range ces vaisseaux dans l'ordre de leur premier vol habité.",
+          answers: [
+            { id: "a", text: "Voskhod" },
+            { id: "b", text: "Soyouz" },
+            { id: "c", text: "Shenzhou" },
+            { id: "d", text: "Starliner de Boeing" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Voskhod 1 emmène trois cosmonautes en 1964, Soyouz 1 décolle en 1967, Shenzhou 5 fait de Yang Liwei le premier Chinois dans l'espace en 2003, et Starliner emporte ses premiers astronautes en 2024.",
+        },
+        {
+          id: 14,
+          question: "Range ces télescopes spatiaux du plus ancien au plus récent lancement.",
+          answers: [
+            { id: "a", text: "Spitzer" },
+            { id: "b", text: "Kepler" },
+            { id: "c", text: "Gaia" },
+            { id: "d", text: "Euclid" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Spitzer, qui observe en infrarouge, part en 2003. Kepler, le chasseur d'exoplanètes, suit en 2009, Gaia, qui cartographie les étoiles, en 2013, et Euclid, envoyé par l'Europe, en 2023.",
+        },
+        {
+          id: 15,
+          question: "Range ces arrivées de sondes près de Jupiter et Saturne de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "Pioneer 10 survole Jupiter" },
+            { id: "b", text: "Galileo se met en orbite autour de Jupiter" },
+            { id: "c", text: "Cassini se met en orbite autour de Saturne" },
+            { id: "d", text: "Juno se met en orbite autour de Jupiter" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Pioneer 10 passe près de Jupiter en 1973. Galileo arrive en orbite en 1995, Cassini autour de Saturne en 2004 et Juno autour de Jupiter en 2016.",
+        },
+        {
+          id: 16,
+          question: "Range ces premiers satellites nationaux du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "Explorer 1, premier satellite américain" },
+            { id: "b", text: "Astérix, premier satellite français" },
+            { id: "c", text: "Dong Fang Hong 1, premier satellite chinois" },
+            { id: "d", text: "Rohini, premier satellite lancé par l'Inde" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Explorer 1 part en 1958, quelques mois après Spoutnik. La France place Astérix en orbite en 1965, la Chine Dong Fang Hong 1 en 1970, et l'Inde lance Rohini avec sa propre fusée en 1980.",
+        },
+        {
+          id: 17,
+          question: "Range ces moments de la vie en orbite du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "Gemini 8, premier amarrage de deux engins" },
+            { id: "b", text: "La poignée de main Apollo-Soyouz" },
+            { id: "c", text: "Valeri Polyakov part pour 437 jours à bord de Mir" },
+            { id: "d", text: "Dennis Tito, premier touriste de l'espace" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Gemini 8 réussit le premier amarrage en 1966, et Américains et Soviétiques se serrent la main en orbite en 1975. Valeri Polyakov passe 437 jours d'affilée sur la station Mir à partir de janvier 1994, et Dennis Tito paie son séjour sur l'ISS en 2001.",
+        },
+        {
+          id: 18,
+          question: "Range ces missions vers Mars de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "Mariner 4, premier survol de Mars" },
+            { id: "b", text: "Mariner 9, première sonde en orbite autour d'une autre planète" },
+            { id: "c", text: "La sonde européenne Mars Express" },
+            { id: "d", text: "Le premier vol de l'hélicoptère Ingenuity" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Mariner 4 envoie les premières photos de Mars en 1965, Mariner 9 se met en orbite en 1971, Mars Express arrive en 2003, et Ingenuity décolle du sol martien en 2021.",
+        },
+        {
+          id: 19,
+          question: "Range ces missions vers Vénus et Mercure de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "Venera 7 se pose sur Vénus" },
+            { id: "b", text: "Magellan cartographie Vénus au radar" },
+            { id: "c", text: "Messenger se met en orbite autour de Mercure" },
+            { id: "d", text: "Le lancement de BepiColombo vers Mercure" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Venera 7 devient en 1970 le premier engin à se poser en douceur sur une autre planète. Magellan arrive près de Vénus en 1990, Messenger autour de Mercure en 2011, et la mission européenne et japonaise BepiColombo part en 2018.",
+        },
+        {
+          id: 20,
+          question: "Range ces femmes astronautes dans l'ordre de l'exploit cité.",
+          answers: [
+            { id: "a", text: "Sally Ride, première Américaine dans l'espace" },
+            { id: "b", text: "Helen Sharman, première Britannique dans l'espace" },
+            { id: "c", text: "Eileen Collins, première femme aux commandes d'une navette" },
+            { id: "d", text: "Peggy Whitson, première femme commandant de l'ISS" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sally Ride vole en 1983 et Helen Sharman en 1991. Eileen Collins commande la navette Columbia en 1999, et Peggy Whitson prend le commandement de l'ISS en 2007.",
+        },
       ],
     },
     en: {
       title: "Order: the space race timeline",
       description:
-        "Ten sets of space events to put in order: Sputnik, Hubble, the Mars rovers, space stations, Ariane rockets and more.",
+        "Twenty sets of space events to put in order: Sputnik, Hubble, the Mars rovers, space stations, Ariane rockets and more.",
       questions: [
         {
           id: 1,
@@ -321,12 +461,152 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
           explanation:
             "Mir's core module goes up in 1986, the first ISS module in 1998, China's small Tiangong-1 lab in 2011 and the core module of the big Tiangong station in 2021.",
         },
+        {
+          id: 11,
+          question: "Put these animals sent into space in order, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Laika the dog" },
+            { id: "b", text: "The dogs Belka and Strelka" },
+            { id: "c", text: "Félicette the cat" },
+            { id: "d", text: "The tortoises on the Zond 5 probe" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Laika went up in 1957 aboard Sputnik 2. Belka and Strelka came back alive in 1960, France launched Félicette in 1963, and the Zond 5 tortoises flew around the Moon in 1968.",
+        },
+        {
+          id: 12,
+          question: "Put these spacewalks in order, from earliest to latest.",
+          answers: [
+            { id: "a", text: "The first spacewalk, by Alexei Leonov" },
+            { id: "b", text: "The first spacewalk by a woman, Svetlana Savitskaya" },
+            { id: "c", text: "The first all-female spacewalk" },
+            { id: "d", text: "The first private spacewalk, on Polaris Dawn" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Leonov stepped outside in 1965 and Savitskaya in 1984. Christina Koch and Jessica Meir made the first all-female spacewalk in 2019, and Jared Isaacman led the first private one in 2024.",
+        },
+        {
+          id: 13,
+          question: "Put these spacecraft in order of their first crewed flight.",
+          answers: [
+            { id: "a", text: "Voskhod" },
+            { id: "b", text: "Soyuz" },
+            { id: "c", text: "Shenzhou" },
+            { id: "d", text: "Boeing's Starliner" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Voskhod 1 carried three cosmonauts in 1964, Soyuz 1 launched in 1967, Shenzhou 5 made Yang Liwei China's first astronaut in 2003, and Starliner flew its first crew in 2024.",
+        },
+        {
+          id: 14,
+          question: "Put these space telescopes in order of launch, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Spitzer" },
+            { id: "b", text: "Kepler" },
+            { id: "c", text: "Gaia" },
+            { id: "d", text: "Euclid" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Spitzer, an infrared telescope, launched in 2003. Kepler, the planet hunter, followed in 2009, Gaia, which maps the stars, in 2013, and Europe's Euclid in 2023.",
+        },
+        {
+          id: 15,
+          question: "Put these probe arrivals at Jupiter and Saturn in order, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Pioneer 10 flies past Jupiter" },
+            { id: "b", text: "Galileo goes into orbit around Jupiter" },
+            { id: "c", text: "Cassini goes into orbit around Saturn" },
+            { id: "d", text: "Juno goes into orbit around Jupiter" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Pioneer 10 flew past Jupiter in 1973. Galileo reached orbit in 1995, Cassini arrived at Saturn in 2004 and Juno at Jupiter in 2016.",
+        },
+        {
+          id: 16,
+          question: "Put these countries' first satellites in order, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Explorer 1, the first American satellite" },
+            { id: "b", text: "Astérix, the first French satellite" },
+            { id: "c", text: "Dong Fang Hong 1, the first Chinese satellite" },
+            { id: "d", text: "Rohini, the first satellite launched by India" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Explorer 1 went up in 1958, a few months after Sputnik. France put Astérix into orbit in 1965, China launched Dong Fang Hong 1 in 1970, and India sent Rohini up on its own rocket in 1980.",
+        },
+        {
+          id: 17,
+          question: "Put these moments of life in orbit in order, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Gemini 8, the first docking of two spacecraft" },
+            { id: "b", text: "The Apollo-Soyuz handshake" },
+            { id: "c", text: "Valeri Polyakov starts a 437-day stay on Mir" },
+            { id: "d", text: "Dennis Tito, the first space tourist" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Gemini 8 made the first docking in 1966, and American and Soviet crews shook hands in orbit in 1975. Valeri Polyakov spent 437 days in a row on the Mir station from January 1994, and Dennis Tito paid his own way to the ISS in 2001.",
+        },
+        {
+          id: 18,
+          question: "Put these Mars missions in order, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Mariner 4, the first flyby of Mars" },
+            { id: "b", text: "Mariner 9, the first probe to orbit another planet" },
+            { id: "c", text: "The European probe Mars Express" },
+            { id: "d", text: "The first flight of the Ingenuity helicopter" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Mariner 4 sent back the first close-up photos of Mars in 1965, Mariner 9 entered orbit in 1971, Mars Express arrived in 2003, and Ingenuity lifted off the Martian ground in 2021.",
+        },
+        {
+          id: 19,
+          question: "Put these missions to Venus and Mercury in order, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Venera 7 lands on Venus" },
+            { id: "b", text: "Magellan maps Venus with radar" },
+            { id: "c", text: "Messenger goes into orbit around Mercury" },
+            { id: "d", text: "BepiColombo launches for Mercury" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "In 1970 Venera 7 became the first craft to soft-land on another planet. Magellan reached Venus in 1990, Messenger went into orbit around Mercury in 2011, and the European-Japanese BepiColombo mission launched in 2018.",
+        },
+        {
+          id: 20,
+          question: "Put these women astronauts in order of the feat mentioned.",
+          answers: [
+            { id: "a", text: "Sally Ride, the first American woman in space" },
+            { id: "b", text: "Helen Sharman, the first Briton in space" },
+            { id: "c", text: "Eileen Collins, the first woman to command a shuttle" },
+            { id: "d", text: "Peggy Whitson, the first woman to command the ISS" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sally Ride flew in 1983 and Helen Sharman in 1991. Eileen Collins commanded the shuttle Columbia in 1999, and Peggy Whitson took charge of the ISS in 2007.",
+        },
       ],
     },
     es: {
       title: "Orden: las fechas de la carrera espacial",
       description:
-        "Diez series de hitos espaciales para ordenar: el Sputnik, el Hubble, los rovers de Marte, las estaciones espaciales, los cohetes Ariane y más.",
+        "Veinte series de hitos espaciales para ordenar: el Sputnik, el Hubble, los rovers de Marte, las estaciones espaciales, los cohetes Ariane y más.",
       questions: [
         {
           id: 1,
@@ -472,6 +752,146 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "El módulo central de la Mir sale en 1986, el primer módulo de la ISS en 1998, el pequeño laboratorio chino Tiangong-1 en 2011 y el módulo central de la gran estación Tiangong en 2021.",
+        },
+        {
+          id: 11,
+          question: "Ordena estos animales enviados al espacio del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "La perra Laika" },
+            { id: "b", text: "Las perras Belka y Strelka" },
+            { id: "c", text: "La gata Félicette" },
+            { id: "d", text: "Las tortugas de la sonda Zond 5" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Laika despega en 1957 a bordo del Sputnik 2. Belka y Strelka vuelven vivas en 1960, Francia lanza a Félicette en 1963 y las tortugas de la Zond 5 rodean la Luna en 1968.",
+        },
+        {
+          id: 12,
+          question: "Ordena estos paseos espaciales del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "El primer paseo, de Alexéi Leónov" },
+            { id: "b", text: "El primer paseo de una mujer, Svetlana Savítskaya" },
+            { id: "c", text: "El primer paseo hecho solo por mujeres" },
+            { id: "d", text: "El primer paseo privado, en la misión Polaris Dawn" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Leónov sale de su nave en 1965 y Savítskaya en 1984. Christina Koch y Jessica Meir hacen el primer paseo solo de mujeres en 2019, y Jared Isaacman el primero privado en 2024.",
+        },
+        {
+          id: 13,
+          question: "Ordena estas naves según su primer vuelo tripulado.",
+          answers: [
+            { id: "a", text: "Vosjod" },
+            { id: "b", text: "Soyuz" },
+            { id: "c", text: "Shenzhou" },
+            { id: "d", text: "Starliner de Boeing" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Vosjod 1 lleva a tres cosmonautas en 1964, la Soyuz 1 despega en 1967, la Shenzhou 5 convierte a Yang Liwei en el primer astronauta chino en 2003 y la Starliner lleva a sus primeros astronautas en 2024.",
+        },
+        {
+          id: 14,
+          question: "Ordena estos telescopios espaciales según su lanzamiento, del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "Spitzer" },
+            { id: "b", text: "Kepler" },
+            { id: "c", text: "Gaia" },
+            { id: "d", text: "Euclid" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El Spitzer, que observa en infrarrojo, despega en 2003. Le siguen el Kepler, cazador de exoplanetas, en 2009, el Gaia, que cartografía las estrellas, en 2013, y el europeo Euclid en 2023.",
+        },
+        {
+          id: 15,
+          question: "Ordena estas llegadas de sondas a Júpiter y Saturno de la más antigua a la más reciente.",
+          answers: [
+            { id: "a", text: "La Pioneer 10 sobrevuela Júpiter" },
+            { id: "b", text: "La Galileo entra en órbita de Júpiter" },
+            { id: "c", text: "La Cassini entra en órbita de Saturno" },
+            { id: "d", text: "La Juno entra en órbita de Júpiter" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Pioneer 10 pasa cerca de Júpiter en 1973. La Galileo entra en órbita en 1995, la Cassini llega a Saturno en 2004 y la Juno a Júpiter en 2016.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos primeros satélites nacionales del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "Explorer 1, primer satélite estadounidense" },
+            { id: "b", text: "Astérix, primer satélite francés" },
+            { id: "c", text: "Dong Fang Hong 1, primer satélite chino" },
+            { id: "d", text: "Rohini, primer satélite lanzado por la India" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El Explorer 1 despega en 1958, pocos meses después del Sputnik. Francia pone en órbita el Astérix en 1965, China el Dong Fang Hong 1 en 1970 y la India lanza el Rohini con su propio cohete en 1980.",
+        },
+        {
+          id: 17,
+          question: "Ordena estos momentos de la vida en órbita del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "La Gemini 8, primer acoplamiento de dos naves" },
+            { id: "b", text: "El apretón de manos Apolo-Soyuz" },
+            { id: "c", text: "Valeri Poliakov empieza 437 días a bordo de la Mir" },
+            { id: "d", text: "Dennis Tito, primer turista espacial" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Gemini 8 logra el primer acoplamiento en 1966, y estadounidenses y soviéticos se dan la mano en órbita en 1975. Valeri Poliakov pasa 437 días seguidos en la estación Mir desde enero de 1994, y Dennis Tito se paga su estancia en la ISS en 2001.",
+        },
+        {
+          id: 18,
+          question: "Ordena estas misiones a Marte de la más antigua a la más reciente.",
+          answers: [
+            { id: "a", text: "La Mariner 4, primer sobrevuelo de Marte" },
+            { id: "b", text: "La Mariner 9, primera sonda en órbita de otro planeta" },
+            { id: "c", text: "La sonda europea Mars Express" },
+            { id: "d", text: "El primer vuelo del helicóptero Ingenuity" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Mariner 4 manda las primeras fotos de Marte en 1965, la Mariner 9 entra en órbita en 1971, la Mars Express llega en 2003 y el Ingenuity despega del suelo marciano en 2021.",
+        },
+        {
+          id: 19,
+          question: "Ordena estas misiones a Venus y Mercurio de la más antigua a la más reciente.",
+          answers: [
+            { id: "a", text: "La Venera 7 se posa en Venus" },
+            { id: "b", text: "La Magellan cartografía Venus con radar" },
+            { id: "c", text: "La Messenger entra en órbita de Mercurio" },
+            { id: "d", text: "El lanzamiento de BepiColombo hacia Mercurio" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "En 1970 la Venera 7 es la primera nave que se posa suavemente en otro planeta. La Magellan llega a Venus en 1990, la Messenger a la órbita de Mercurio en 2011 y la misión europea y japonesa BepiColombo despega en 2018.",
+        },
+        {
+          id: 20,
+          question: "Ordena a estas astronautas según la hazaña indicada.",
+          answers: [
+            { id: "a", text: "Sally Ride, primera estadounidense en el espacio" },
+            { id: "b", text: "Helen Sharman, primera británica en el espacio" },
+            { id: "c", text: "Eileen Collins, primera mujer al mando de un transbordador" },
+            { id: "d", text: "Peggy Whitson, primera mujer comandante de la ISS" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sally Ride vuela en 1983 y Helen Sharman en 1991. Eileen Collins manda el transbordador Columbia en 1999 y Peggy Whitson toma el mando de la ISS en 2007.",
         },
       ],
     },

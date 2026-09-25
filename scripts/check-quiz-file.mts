@@ -54,9 +54,10 @@ for (const q of quizzes ?? []) {
     if (pageTitle.length < 30 || pageTitle.length > 60) err(`${id}/${l}: title de page ${pageTitle.length} car. (30-60) : "${pageTitle}"`);
     if (c.description.length < 70 || c.description.length > 155) err(`${id}/${l}: description ${c.description.length} car. (70-155)`);
     counts.add(c.questions.length);
-    // Le chrono s'arrete quand toutes les questions sont jouees : a 10, un bon
-    // joueur finit avant les 60 secondes et le mode ne sert plus a rien.
-    const minQ = gt === "chrono" ? 20 : 10;
+    // 20 questions dans tous les modes, sur le modele de quiz-couple (decision
+    // de Pierre, 25/09/2026). Le chrono en avait deja besoin : il s'arrete
+    // quand toutes les questions sont jouees.
+    const minQ = 20;
     if (c.questions.length < minQ) err(`${id}/${l}: ${c.questions.length} questions (${minQ} minimum en ${gt})`);
     const texts = [c.title, c.description];
     c.questions.forEach((qq: any, i: number) => {

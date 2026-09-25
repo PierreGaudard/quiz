@@ -23,7 +23,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
     fr: {
       title: "Quiz drapeaux : étoiles, bandes et dates",
       description:
-        "Combien d'étoiles, combien de bandes, quelle année ? Dix nombres à deviner sur les drapeaux du monde, avec plus haut ou plus bas.",
+        "Combien d'étoiles, combien de bandes, quelle année ? Vingt nombres à deviner sur les drapeaux du monde, avec plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -120,12 +120,102 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
           explanation:
             "4 étoiles rouges bordées de blanc, qui dessinent la Croix du Sud. C'est justement ce qui le distingue du drapeau australien, qui a des étoiles blanches.",
         },
+        {
+          id: 11,
+          question: "Combien d'étoiles blanches figurent sur le drapeau de l'Australie ?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "6 : une grande étoile sous l'Union Jack, pour la fédération, et les cinq étoiles de la Croix du Sud à droite.",
+        },
+        {
+          id: 12,
+          question: "Combien de rayons compte la roue bleue au centre du drapeau de l'Inde ?",
+          answers: [],
+          correctAnswer: "24",
+          correctValue: 24,
+          explanation:
+            "24. Cette roue s'appelle l'Ashoka Chakra, d'après l'empereur Ashoka, qui l'avait fait graver sur ses colonnes.",
+        },
+        {
+          id: 13,
+          question: "Combien de bandes rouges et blanches compte le drapeau de la Malaisie ?",
+          answers: [],
+          correctAnswer: "14",
+          correctValue: 14,
+          explanation:
+            "14, comme les 13 États du pays plus le gouvernement fédéral. L'étoile jaune a d'ailleurs 14 branches pour la même raison.",
+        },
+        {
+          id: 14,
+          question: "Combien d'étoiles blanches y a-t-il sur le drapeau du Venezuela ?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8, en arc de cercle dans la bande bleue. Il y en avait 7 jusqu'en 2006, date à laquelle une huitième a été ajoutée.",
+        },
+        {
+          id: 15,
+          question: "Combien de pointes compte la feuille d'érable du drapeau du Canada ?",
+          answers: [],
+          correctAnswer: "11",
+          correctValue: 11,
+          explanation:
+            "11. Le dessin a été simplifié exprès pour rester lisible quand le drapeau flotte au vent.",
+        },
+        {
+          id: 16,
+          question: "Combien de rayons a le soleil du drapeau des Philippines ?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8, un pour chacune des huit provinces qui se sont soulevées les premières contre l'Espagne en 1896.",
+        },
+        {
+          id: 17,
+          question: "Combien de branches a l'étoile blanche du drapeau de la Jordanie ?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "7. Elle se trouve dans le triangle rouge, côté mât, et renvoie aux sept versets de la première sourate du Coran.",
+        },
+        {
+          id: 18,
+          question: "Combien de bandes horizontales compte le drapeau de l'Uruguay ?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "9 : cinq blanches et quatre bleues, avec le soleil de Mai dans le coin en haut à gauche.",
+        },
+        {
+          id: 19,
+          question: "En quelle année le drapeau bleu aux douze étoiles a-t-il été adopté par le Conseil de l'Europe ?",
+          answers: [],
+          correctAnswer: "1955",
+          correctValue: 1955,
+          explanation:
+            "En 1955. Les Communautés européennes, l'ancêtre de l'Union européenne, ne l'ont repris qu'en 1985, trente ans plus tard.",
+        },
+        {
+          id: 20,
+          question: "En quelle année une loi a-t-elle fait du disque rouge sur fond blanc le drapeau officiel du Japon ?",
+          answers: [],
+          correctAnswer: "1999",
+          correctValue: 1999,
+          explanation:
+            "En 1999. Le drapeau était utilisé depuis bien longtemps, mais aucune loi ne l'avait encore rendu officiel.",
+        },
       ],
     },
     en: {
       title: "Flags quiz: stars, stripes and dates",
       description:
-        "How many stars, how many stripes, which year? Ten numbers to guess about flags of the world, with higher or lower hints.",
+        "How many stars, how many stripes, which year? Twenty numbers to guess about flags of the world, with higher or lower hints.",
       questions: [
         {
           id: 1,
@@ -222,12 +312,102 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
           explanation:
             "4 red stars with a white border, forming the Southern Cross. That's the easy way to tell it apart from the Australian flag, whose stars are white.",
         },
+        {
+          id: 11,
+          question: "How many white stars are on the flag of Australia?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "6: one large star under the Union Jack, for the federation, and the five stars of the Southern Cross on the right.",
+        },
+        {
+          id: 12,
+          question: "How many spokes does the blue wheel in the middle of India's flag have?",
+          answers: [],
+          correctAnswer: "24",
+          correctValue: 24,
+          explanation:
+            "24. The wheel is called the Ashoka Chakra, after Emperor Ashoka, who had it carved on his pillars.",
+        },
+        {
+          id: 13,
+          question: "How many red and white stripes are on the flag of Malaysia?",
+          answers: [],
+          correctAnswer: "14",
+          correctValue: 14,
+          explanation:
+            "14, for the country's 13 states plus the federal government. The yellow star has 14 points for the same reason.",
+        },
+        {
+          id: 14,
+          question: "How many white stars are on the flag of Venezuela?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8, in an arc across the blue stripe. There were 7 until 2006, when an eighth was added.",
+        },
+        {
+          id: 15,
+          question: "How many points does the maple leaf on Canada's flag have?",
+          answers: [],
+          correctAnswer: "11",
+          correctValue: 11,
+          explanation:
+            "11. The design was simplified on purpose so it stays readable when the flag is flying in the wind.",
+        },
+        {
+          id: 16,
+          question: "How many rays does the sun on the flag of the Philippines have?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8, one for each of the eight provinces that were first to rise up against Spain in 1896.",
+        },
+        {
+          id: 17,
+          question: "How many points does the white star on Jordan's flag have?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "7. It sits in the red triangle by the hoist and refers to the seven verses of the first chapter of the Quran.",
+        },
+        {
+          id: 18,
+          question: "How many horizontal stripes are on the flag of Uruguay?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "9: five white and four blue, with the Sun of May in the top left corner.",
+        },
+        {
+          id: 19,
+          question: "In what year did the Council of Europe adopt the blue flag with twelve stars?",
+          answers: [],
+          correctAnswer: "1955",
+          correctValue: 1955,
+          explanation:
+            "1955. The European Communities, the forerunner of the EU, only took it up in 1985, thirty years later.",
+        },
+        {
+          id: 20,
+          question: "In what year did a law make the red disc on white the official flag of Japan?",
+          answers: [],
+          correctAnswer: "1999",
+          correctValue: 1999,
+          explanation:
+            "1999. The flag had been in use for a very long time, but no law had made it official until then.",
+        },
       ],
     },
     es: {
       title: "Quiz de banderas: estrellas, franjas y fechas",
       description:
-        "¿Cuántas estrellas, cuántas franjas, qué año? Diez números que adivinar sobre las banderas del mundo, con pistas de más o menos.",
+        "¿Cuántas estrellas, cuántas franjas, qué año? Veinte números que adivinar sobre las banderas del mundo, con pistas de más o menos.",
       questions: [
         {
           id: 1,
@@ -323,6 +503,96 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
           correctValue: 4,
           explanation:
             "4 estrellas rojas con borde blanco, que forman la Cruz del Sur. Justo eso la distingue de la bandera australiana, que tiene las estrellas blancas.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántas estrellas blancas hay en la bandera de Australia?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "6: una estrella grande bajo la Union Jack, por la federación, y las cinco estrellas de la Cruz del Sur a la derecha.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántos radios tiene la rueda azul del centro de la bandera de la India?",
+          answers: [],
+          correctAnswer: "24",
+          correctValue: 24,
+          explanation:
+            "24. La rueda se llama Ashoka Chakra, por el emperador Ashoka, que la mandó grabar en sus columnas.",
+        },
+        {
+          id: 13,
+          question: "¿Cuántas franjas rojas y blancas tiene la bandera de Malasia?",
+          answers: [],
+          correctAnswer: "14",
+          correctValue: 14,
+          explanation:
+            "14, por los 13 estados del país más el gobierno federal. La estrella amarilla tiene además 14 puntas por el mismo motivo.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántas estrellas blancas hay en la bandera de Venezuela?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8, en arco sobre la franja azul. Había 7 hasta 2006, cuando se añadió la octava.",
+        },
+        {
+          id: 15,
+          question: "¿Cuántas puntas tiene la hoja de arce de la bandera de Canadá?",
+          answers: [],
+          correctAnswer: "11",
+          correctValue: 11,
+          explanation:
+            "11. El dibujo se simplificó a propósito para que se viera bien cuando la bandera ondea con el viento.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántos rayos tiene el sol de la bandera de Filipinas?",
+          answers: [],
+          correctAnswer: "8",
+          correctValue: 8,
+          explanation:
+            "8, uno por cada una de las ocho provincias que se alzaron primero contra España en 1896.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántas puntas tiene la estrella blanca de la bandera de Jordania?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "7. Está en el triángulo rojo, junto al mástil, y remite a los siete versículos de la primera sura del Corán.",
+        },
+        {
+          id: 18,
+          question: "¿Cuántas franjas horizontales tiene la bandera de Uruguay?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "9: cinco blancas y cuatro azules, con el Sol de Mayo en la esquina superior izquierda.",
+        },
+        {
+          id: 19,
+          question: "¿En qué año adoptó el Consejo de Europa la bandera azul con doce estrellas?",
+          answers: [],
+          correctAnswer: "1955",
+          correctValue: 1955,
+          explanation:
+            "En 1955. Las Comunidades Europeas, antecesoras de la Unión Europea, no la hicieron suya hasta 1985, treinta años después.",
+        },
+        {
+          id: 20,
+          question: "¿En qué año una ley convirtió el disco rojo sobre fondo blanco en la bandera oficial de Japón?",
+          answers: [],
+          correctAnswer: "1999",
+          correctValue: 1999,
+          explanation:
+            "En 1999. La bandera se usaba desde hacía mucho tiempo, pero ninguna ley la había hecho oficial.",
         },
       ],
     },

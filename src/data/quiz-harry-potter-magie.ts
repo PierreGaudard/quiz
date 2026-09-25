@@ -20,7 +20,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
     fr: {
       title: "Quiz Harry Potter : sorts, potions et objets",
       description:
-        "Wingardium Leviosa, Polynectar, Pensine… Dix questions sur les sortilèges, les potions et les objets magiques de Harry Potter.",
+        "Wingardium Leviosa, Polynectar, Pensine… Vingt questions sur les sortilèges, les potions et les objets magiques de Harry Potter.",
       questions: [
         {
           id: 1,
@@ -156,12 +156,142 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
           explanation:
             "Une Pensine, une bassine de pierre où on dépose ses souvenirs pour s'y replonger. Harry y découvre le passé de Rogue.",
         },
+        {
+          id: 11,
+          question: "Quel sort fait fuir un Épouvantard en le rendant ridicule ?",
+          answers: [
+            { id: "a", text: "Expelliarmus" },
+            { id: "b", text: "Riddikulus" },
+            { id: "c", text: "Protego" },
+            { id: "d", text: "Stupefix" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Riddikulus. Lupin l'apprend à sa classe en troisième année : il faut penser à quelque chose de drôle, et l'Épouvantard prend cette forme.",
+        },
+        {
+          id: 12,
+          question: "Quel sort allume le bout d'une baguette ?",
+          answers: [
+            { id: "a", text: "Nox" },
+            { id: "b", text: "Incendio" },
+            { id: "c", text: "Lumos" },
+            { id: "d", text: "Accio" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lumos. Pour éteindre la lumière, on dit Nox, et Incendio sert à allumer un vrai feu.",
+        },
+        {
+          id: 13,
+          question: "Quelle potion oblige celui qui la boit à dire la vérité ?",
+          answers: [
+            { id: "a", text: "Le Veritaserum" },
+            { id: "b", text: "La Goutte du Mort vivant" },
+            { id: "c", text: "Le Polynectar" },
+            { id: "d", text: "L'Amortentia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le Veritaserum. Trois gouttes suffisent, et c'est avec ça que Dumbledore fait avouer Barty Croupton Jr. dans La Coupe de feu.",
+        },
+        {
+          id: 14,
+          question: "Quel sort Harry lance sur Drago dans les toilettes, dans Le Prince de sang-mêlé ?",
+          answers: [
+            { id: "a", text: "Sectumsempra" },
+            { id: "b", text: "Levicorpus" },
+            { id: "c", text: "Petrificus Totalus" },
+            { id: "d", text: "Confringo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sectumsempra, un sort qu'il a trouvé dans le vieux livre du Prince de sang-mêlé. Drago est gravement blessé, et c'est Rogue qui le soigne.",
+        },
+        {
+          id: 15,
+          question: "Comment s'appelle un objet qui transporte d'un endroit à un autre dès qu'on le touche ?",
+          answers: [
+            { id: "a", text: "Un Rapeltout" },
+            { id: "b", text: "Un Scrutoscope" },
+            { id: "c", text: "Un Portoloin" },
+            { id: "d", text: "Un Vif d'or" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Un Portoloin. Dans La Coupe de feu, Harry et les Weasley touchent une vieille botte pour aller à la Coupe du monde de Quidditch.",
+        },
+        {
+          id: 16,
+          question: "Selon Slughorn, quelle est la potion d'amour la plus puissante du monde ?",
+          answers: [
+            { id: "a", text: "Le Felix Felicis" },
+            { id: "b", text: "L'Amortentia" },
+            { id: "c", text: "Le Veritaserum" },
+            { id: "d", text: "La Pimentine" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'Amortentia. Son odeur change selon la personne : Hermione y sent l'herbe fraîchement coupée, le parchemin neuf et les cheveux de quelqu'un.",
+        },
+        {
+          id: 17,
+          question: "Quel sort Harry utilise pour faire venir son Éclair de feu pendant la première tâche du Tournoi ?",
+          answers: [
+            { id: "a", text: "Accio" },
+            { id: "b", text: "Alohomora" },
+            { id: "c", text: "Wingardium Leviosa" },
+            { id: "d", text: "Lumos" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Accio, le sortilège d'attraction. Hermione l'a fait répéter à Harry pendant des heures pour qu'il puisse échapper au dragon.",
+        },
+        {
+          id: 18,
+          question: "En plus de l'or, que permet de fabriquer la pierre philosophale ?",
+          answers: [
+            { id: "a", text: "Du Felix Felicis" },
+            { id: "b", text: "De la poudre de Cheminette" },
+            { id: "c", text: "L'élixir de longue vie" },
+            { id: "d", text: "Du Polynectar" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "L'élixir de longue vie, qui rend immortel tant qu'on en boit. Nicolas Flamel l'a utilisé pour vivre plus de 600 ans.",
+        },
+        {
+          id: 19,
+          question: "Quel sort répare un objet cassé ?",
+          answers: [
+            { id: "a", text: "Reparo" },
+            { id: "b", text: "Diffindo" },
+            { id: "c", text: "Protego" },
+            { id: "d", text: "Obliviate" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Reparo. Diffindo sert au contraire à couper ou déchirer, et Obliviate efface la mémoire.",
+        },
+        {
+          id: 20,
+          question: "Qu'est-ce que Dumbledore lègue à Harry dans son testament, dans Les Reliques de la Mort ?",
+          answers: [
+            { id: "a", text: "Le Déluminateur" },
+            { id: "b", text: "Les Contes de Beedle le Barde" },
+            { id: "c", text: "Le premier Vif d'or qu'il a attrapé" },
+            { id: "d", text: "La Pensine" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le Vif d'or de son premier match à Poudlard, qui cache la Pierre de résurrection. Le Déluminateur va à Ron et les Contes de Beedle le Barde à Hermione.",
+        },
       ],
     },
     en: {
       title: "Harry Potter quiz: spells, potions and objects",
       description:
-        "Wingardium Leviosa, Polyjuice, the Pensieve… Ten questions on the spells, potions and magical objects of Harry Potter.",
+        "Wingardium Leviosa, Polyjuice, the Pensieve… Twenty questions on the spells, potions and magical objects of Harry Potter.",
       questions: [
         {
           id: 1,
@@ -297,12 +427,142 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
           explanation:
             "A Pensieve, a stone basin where you put memories to dive back into them. Harry learns about Snape's past in one.",
         },
+        {
+          id: 11,
+          question: "Which spell defeats a Boggart by making it look ridiculous?",
+          answers: [
+            { id: "a", text: "Expelliarmus" },
+            { id: "b", text: "Riddikulus" },
+            { id: "c", text: "Protego" },
+            { id: "d", text: "Stupefix" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Riddikulus. Lupin teaches it to his class in third year: you picture something funny and the Boggart turns into it.",
+        },
+        {
+          id: 12,
+          question: "Which spell lights up the tip of a wand?",
+          answers: [
+            { id: "a", text: "Nox" },
+            { id: "b", text: "Incendio" },
+            { id: "c", text: "Lumos" },
+            { id: "d", text: "Accio" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lumos. To turn the light off you say Nox, and Incendio is for starting an actual fire.",
+        },
+        {
+          id: 13,
+          question: "Which potion forces the drinker to tell the truth?",
+          answers: [
+            { id: "a", text: "Veritaserum" },
+            { id: "b", text: "The Draught of Living Death" },
+            { id: "c", text: "Polyjuice Potion" },
+            { id: "d", text: "Amortentia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Veritaserum. Three drops are enough, and Dumbledore uses it to make Barty Crouch Jr. confess in Goblet of Fire.",
+        },
+        {
+          id: 14,
+          question: "Which spell does Harry cast on Draco in the bathroom in Half-Blood Prince?",
+          answers: [
+            { id: "a", text: "Sectumsempra" },
+            { id: "b", text: "Levicorpus" },
+            { id: "c", text: "Petrificus Totalus" },
+            { id: "d", text: "Confringo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sectumsempra, a spell he found in the Half-Blood Prince's old book. Draco is badly hurt and Snape is the one who heals him.",
+        },
+        {
+          id: 15,
+          question: "What do you call an object that carries you to another place as soon as you touch it?",
+          answers: [
+            { id: "a", text: "A Remembrall" },
+            { id: "b", text: "A Sneakoscope" },
+            { id: "c", text: "A Portkey" },
+            { id: "d", text: "A Golden Snitch" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "A Portkey. In Goblet of Fire, Harry and the Weasleys grab an old boot to get to the Quidditch World Cup.",
+        },
+        {
+          id: 16,
+          question: "According to Slughorn, what is the most powerful love potion in the world?",
+          answers: [
+            { id: "a", text: "Felix Felicis" },
+            { id: "b", text: "Amortentia" },
+            { id: "c", text: "Veritaserum" },
+            { id: "d", text: "Pepperup Potion" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Amortentia. It smells different to each person: Hermione picks up freshly mown grass, new parchment and someone's hair.",
+        },
+        {
+          id: 17,
+          question: "Which spell does Harry use to summon his Firebolt during the first task of the Tournament?",
+          answers: [
+            { id: "a", text: "Accio" },
+            { id: "b", text: "Alohomora" },
+            { id: "c", text: "Wingardium Leviosa" },
+            { id: "d", text: "Lumos" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Accio, the Summoning Charm. Hermione made him practise it for hours so he could get away from the dragon.",
+        },
+        {
+          id: 18,
+          question: "Apart from gold, what can the Philosopher's Stone produce?",
+          answers: [
+            { id: "a", text: "Felix Felicis" },
+            { id: "b", text: "Floo powder" },
+            { id: "c", text: "The Elixir of Life" },
+            { id: "d", text: "Polyjuice Potion" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The Elixir of Life, which keeps you alive as long as you keep drinking it. Nicolas Flamel used it to live more than 600 years.",
+        },
+        {
+          id: 19,
+          question: "Which spell fixes a broken object?",
+          answers: [
+            { id: "a", text: "Reparo" },
+            { id: "b", text: "Diffindo" },
+            { id: "c", text: "Protego" },
+            { id: "d", text: "Obliviate" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Reparo. Diffindo does the opposite and cuts or rips things, and Obliviate wipes someone's memory.",
+        },
+        {
+          id: 20,
+          question: "What does Dumbledore leave Harry in his will in Deathly Hallows?",
+          answers: [
+            { id: "a", text: "The Deluminator" },
+            { id: "b", text: "The Tales of Beedle the Bard" },
+            { id: "c", text: "The first Snitch he ever caught" },
+            { id: "d", text: "The Pensieve" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The Snitch from his first Quidditch match at Hogwarts, which hides the Resurrection Stone. The Deluminator goes to Ron and The Tales of Beedle the Bard to Hermione.",
+        },
       ],
     },
     es: {
       title: "Harry Potter: hechizos, pociones y objetos",
       description:
-        "Wingardium Leviosa, multijugos, el pensadero… Diez preguntas sobre los hechizos, las pociones y los objetos mágicos de Harry Potter.",
+        "Wingardium Leviosa, multijugos, el pensadero… Veinte preguntas sobre los hechizos, las pociones y los objetos mágicos de Harry Potter.",
       questions: [
         {
           id: 1,
@@ -437,6 +697,136 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Un pensadero, una vasija de piedra donde se dejan los recuerdos para volver a vivirlos. Harry descubre ahí el pasado de Snape.",
+        },
+        {
+          id: 11,
+          question: "¿Qué hechizo vence a un boggart volviéndolo ridículo?",
+          answers: [
+            { id: "a", text: "Expelliarmus" },
+            { id: "b", text: "Riddikulus" },
+            { id: "c", text: "Protego" },
+            { id: "d", text: "Stupefix" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Riddikulus. Lupin se lo enseña a su clase en tercer curso: hay que pensar en algo gracioso y el boggart adopta esa forma.",
+        },
+        {
+          id: 12,
+          question: "¿Qué hechizo enciende la punta de la varita?",
+          answers: [
+            { id: "a", text: "Nox" },
+            { id: "b", text: "Incendio" },
+            { id: "c", text: "Lumos" },
+            { id: "d", text: "Accio" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lumos. Para apagar la luz se dice Nox, e Incendio sirve para prender fuego de verdad.",
+        },
+        {
+          id: 13,
+          question: "¿Qué poción obliga a quien la bebe a decir la verdad?",
+          answers: [
+            { id: "a", text: "El veritaserum" },
+            { id: "b", text: "El filtro de muertos en vida" },
+            { id: "c", text: "La poción multijugos" },
+            { id: "d", text: "La amortentia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El veritaserum. Bastan tres gotas, y Dumbledore lo usa para que Barty Crouch Jr. confiese en El cáliz de fuego.",
+        },
+        {
+          id: 14,
+          question: "¿Qué hechizo le lanza Harry a Draco en el baño en El misterio del príncipe?",
+          answers: [
+            { id: "a", text: "Sectumsempra" },
+            { id: "b", text: "Levicorpus" },
+            { id: "c", text: "Petrificus Totalus" },
+            { id: "d", text: "Confringo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sectumsempra, un hechizo que encontró en el viejo libro del Príncipe Mestizo. Draco queda malherido y es Snape quien lo cura.",
+        },
+        {
+          id: 15,
+          question: "¿Cómo se llama el objeto que te lleva a otro lugar en cuanto lo tocas?",
+          answers: [
+            { id: "a", text: "Una recordadora" },
+            { id: "b", text: "Un chivatoscopio" },
+            { id: "c", text: "Un traslador" },
+            { id: "d", text: "Una snitch dorada" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Un traslador. En El cáliz de fuego, Harry y los Weasley tocan una bota vieja para ir a los Mundiales de quidditch.",
+        },
+        {
+          id: 16,
+          question: "Según Slughorn, ¿cuál es el filtro de amor más poderoso del mundo?",
+          answers: [
+            { id: "a", text: "El felix felicis" },
+            { id: "b", text: "La amortentia" },
+            { id: "c", text: "El veritaserum" },
+            { id: "d", text: "La poción pimentónica" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La amortentia. Huele distinto para cada persona: Hermione nota el olor a césped recién cortado, a pergamino nuevo y al pelo de alguien.",
+        },
+        {
+          id: 17,
+          question: "¿Qué hechizo usa Harry para atraer su Saeta de Fuego en la primera prueba del Torneo?",
+          answers: [
+            { id: "a", text: "Accio" },
+            { id: "b", text: "Alohomora" },
+            { id: "c", text: "Wingardium Leviosa" },
+            { id: "d", text: "Lumos" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Accio, el encantamiento convocador. Hermione le hizo practicarlo durante horas para que pudiera escapar del dragón.",
+        },
+        {
+          id: 18,
+          question: "Además de oro, ¿qué permite fabricar la piedra filosofal?",
+          answers: [
+            { id: "a", text: "Felix felicis" },
+            { id: "b", text: "Polvos flu" },
+            { id: "c", text: "El elixir de la vida" },
+            { id: "d", text: "Poción multijugos" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El elixir de la vida, que te mantiene con vida mientras lo sigas bebiendo. Nicolas Flamel lo usó para vivir más de 600 años.",
+        },
+        {
+          id: 19,
+          question: "¿Qué hechizo arregla un objeto roto?",
+          answers: [
+            { id: "a", text: "Reparo" },
+            { id: "b", text: "Diffindo" },
+            { id: "c", text: "Protego" },
+            { id: "d", text: "Obliviate" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Reparo. Diffindo hace lo contrario, corta o rasga, y Obliviate borra la memoria.",
+        },
+        {
+          id: 20,
+          question: "¿Qué le deja Dumbledore a Harry en su testamento en Las reliquias de la Muerte?",
+          answers: [
+            { id: "a", text: "El desiluminador" },
+            { id: "b", text: "Los cuentos de Beedle el Bardo" },
+            { id: "c", text: "La primera snitch que atrapó" },
+            { id: "d", text: "El pensadero" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "La snitch de su primer partido en Hogwarts, que esconde la piedra de la resurrección. El desiluminador es para Ron y Los cuentos de Beedle el Bardo para Hermione.",
         },
       ],
     },

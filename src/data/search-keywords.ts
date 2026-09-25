@@ -35,14 +35,14 @@ export const keywordMappings: KeywordMapping[] = [
   { keywords: ["takemichi", "mikey", "draken", "toman", "tokyo manji"], categorySlug: "anime", subcategory: "Tokyo Revengers" },
 
   // Jeux Video
-  { keywords: ["pikachu", "dracaufeu", "charizard", "ash", "sacha", "pokeball", "pokedex", "mewtwo", "evoli", "eevee", "pokemon"], categorySlug: "jeux-video", subcategory: "Pokemon" },
+  { keywords: ["pikachu", "dracaufeu", "charizard", "ash", "sacha", "pokeball", "pokedex", "mewtwo", "evoli", "eevee", "pokemon"], categorySlug: "jeux-video", subcategory: "Pokémon" },
   { keywords: ["steve", "creeper", "enderman", "ender dragon", "nether", "redstone", "crafting", "pickaxe", "minecraft", "notch"], categorySlug: "jeux-video", subcategory: "Minecraft" },
   { keywords: ["fortnite", "battle royale", "skin", "tilted towers", "victory royale", "epic games"], categorySlug: "jeux-video", subcategory: "Fortnite" },
   { keywords: ["trevor", "michael", "franklin", "los santos", "san andreas", "gta", "rockstar"], categorySlug: "jeux-video", subcategory: "GTA" },
   { keywords: ["warzone", "zombies", "prestige", "call of duty", "cod", "modern warfare", "black ops"], categorySlug: "jeux-video", subcategory: "Call of Duty" },
   { keywords: ["yasuo", "ahri", "lux", "jinx", "arcane", "summoner", "rift", "lol", "league"], categorySlug: "jeux-video", subcategory: "League of Legends" },
   { keywords: ["horde", "alliance", "azeroth", "wow", "warcraft", "sylvanas", "arthas", "lich king"], categorySlug: "jeux-video", subcategory: "World of Warcraft" },
-  { keywords: ["ct", "terrorist", "dust2", "awp", "csgo", "cs2", "counter strike", "defuse"], categorySlug: "jeux-video", subcategory: "Counter Strike" },
+  { keywords: ["ct", "terrorist", "dust2", "awp", "csgo", "cs2", "counter strike", "defuse"], categorySlug: "jeux-video", subcategory: "Counter-Strike" },
   { keywords: ["brawl stars", "brawler", "supercell", "spike", "leon", "crow", "el primo"], categorySlug: "jeux-video", subcategory: "Brawl Stars" },
   { keywords: ["fifa", "fut", "ultimate team", "ea sports", "fc 24", "ea fc"], categorySlug: "jeux-video", subcategory: "FIFA" },
   { keywords: ["link", "zelda", "hyrule", "ganon", "triforce", "breath of the wild", "tears of the kingdom"], categorySlug: "jeux-video", subcategory: "Zelda" },
@@ -54,5 +54,5 @@ export const keywordMappings: KeywordMapping[] = [
   { keywords: ["capitale", "capital", "ville", "city", "paris", "washington", "tokyo", "londres", "london"], categorySlug: "geographie", subcategory: "Capitales" },
   { keywords: ["departement", "prefecture", "region", "france", "ile de france", "bretagne", "alsace"], categorySlug: "geographie", subcategory: "Départements français" },
   { keywords: ["europe", "union europeenne", "ue", "eu", "bruxelles", "schengen"], categorySlug: "geographie", subcategory: "Europe" },
-  { keywords: ["etats-unis", "usa", "amerique", "america", "new york", "california", "texas", "washington"], categorySlug: "geographie", subcategory: "Etats-Unis" },
+  { keywords: ["etats-unis", "usa", "amerique", "america", "new york", "california", "texas", "washington"], categorySlug: "geographie", subcategory: "États-Unis" },
 ];

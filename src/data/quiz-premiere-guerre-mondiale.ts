@@ -25,7 +25,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
     fr: {
       title: "Estimation : les chiffres de 14-18",
       description:
-        "Dix dates et chiffres de la Première Guerre mondiale à retrouver. Tu proposes un nombre, on te dit plus haut ou plus bas.",
+        "Vingt dates et chiffres de la Première Guerre mondiale à retrouver. Tu proposes un nombre, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -121,12 +121,102 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
           explanation:
             "Le 28 juin 1919, dans la galerie des Glaces du château de Versailles, cinq ans jour pour jour après l'attentat de Sarajevo. Il fixe les conditions de paix imposées à l'Allemagne.",
         },
+        {
+          id: 11,
+          question: "Combien de jours séparent l'attentat de Sarajevo, le 28 juin 1914, de la déclaration de guerre de l'Autriche-Hongrie à la Serbie ?",
+          answers: [],
+          correctAnswer: "30",
+          correctValue: 30,
+          explanation:
+            "30 jours : l'Autriche-Hongrie déclare la guerre à la Serbie le 28 juillet 1914. Entre les deux, il y a l'ultimatum du 23 juillet, et en quelques jours le jeu des alliances entraîne toute l'Europe.",
+        },
+        {
+          id: 12,
+          question: "En quelle année le paquebot britannique Lusitania est-il coulé par un sous-marin allemand ?",
+          answers: [],
+          correctAnswer: "1915",
+          correctValue: 1915,
+          explanation:
+            "En 1915, le 7 mai, au large de l'Irlande. Près de 1 200 personnes meurent, dont plus d'une centaine d'Américains, ce qui retourne une partie de l'opinion américaine contre l'Allemagne.",
+        },
+        {
+          id: 13,
+          question: "Quel âge avait l'aviateur Georges Guynemer quand il disparaît en combat, en septembre 1917 ?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22 ans. Né en décembre 1894, il disparaît le 11 septembre 1917 au-dessus de la Belgique, avec 53 victoires homologuées. On n'a jamais retrouvé ni son avion ni son corps.",
+        },
+        {
+          id: 14,
+          question: "À combien de kilomètres de Paris environ se trouve le canon géant allemand qui bombarde la capitale à partir de mars 1918 ?",
+          answers: [],
+          correctAnswer: "120",
+          correctValue: 120,
+          explanation:
+            "Environ 120 kilomètres. Le canon, qu'on surnomme souvent à tort la Grosse Bertha, tire depuis un bois près de Crépy, dans l'Aisne. 367 obus tombent sur Paris et ses environs entre mars et août 1918.",
+        },
+        {
+          id: 15,
+          question: "Combien de millions de soldats américains environ sont venus en France avant l'armistice ?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "Environ 2 millions. À partir de juin 1918, il en arrive jusqu'à 10 000 par jour, et leur nombre pèse lourd dans les derniers mois de la guerre.",
+        },
+        {
+          id: 16,
+          question: "Environ combien de noms de soldats disparus, jamais retrouvés, sont gravés sur le mémorial britannique de Thiepval, dans la Somme ?",
+          answers: [],
+          correctAnswer: "72000",
+          correctValue: 72000,
+          explanation:
+            "Environ 72 000, 72 244 exactement. Ce sont des soldats britanniques et sud-africains tombés dans la Somme et qui n'ont pas de tombe connue. Le mémorial a été inauguré en 1932.",
+        },
+        {
+          id: 17,
+          question: "Quel âge avait Lazare Ponticelli, le dernier poilu, à sa mort en 2008 ?",
+          answers: [],
+          correctAnswer: "110",
+          correctValue: 110,
+          explanation:
+            "110 ans. Né en Italie en décembre 1897, il s'était engagé dans l'armée française en 1914. Il meurt le 12 mars 2008, et un hommage national lui est rendu aux Invalides.",
+        },
+        {
+          id: 18,
+          question: "En quelle année la Société des Nations, créée par le traité de Versailles, tient-elle sa première assemblée à Genève ?",
+          answers: [],
+          correctAnswer: "1920",
+          correctValue: 1920,
+          explanation:
+            "En 1920, le 15 novembre. La SDN doit éviter une nouvelle guerre en réglant les conflits par la discussion, mais les États-Unis, qui l'avaient pourtant voulue, n'en font jamais partie.",
+        },
+        {
+          id: 19,
+          question: "Combien de mètres de haut mesure la tour de l'ossuaire de Douaumont, près de Verdun ?",
+          answers: [],
+          correctAnswer: "46",
+          correctValue: 46,
+          explanation:
+            "46 mètres. La tour sert aussi de phare des morts, et on peut y monter pour voir tout le champ de bataille. L'ossuaire a été inauguré en 1932.",
+        },
+        {
+          id: 20,
+          question: "Quel âge a Georges Clemenceau quand il devient président du Conseil, en novembre 1917 ?",
+          answers: [],
+          correctAnswer: "76",
+          correctValue: 76,
+          explanation:
+            "76 ans. Né en septembre 1841, il avait déjà dirigé le gouvernement de 1906 à 1909. Après l'armistice, on le surnomme « le Père la Victoire ».",
+        },
       ],
     },
     en: {
       title: "Estimation: World War One in numbers",
       description:
-        "Ten dates and figures from the First World War to find. You guess a number and we tell you higher or lower.",
+        "Twenty dates and figures from the First World War to find. You guess a number and we tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -222,12 +312,102 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
           explanation:
             "On 28 June 1919, in the Hall of Mirrors at Versailles, five years to the day after the Sarajevo assassination. It set out the peace terms imposed on Germany.",
         },
+        {
+          id: 11,
+          question: "How many days passed between the Sarajevo assassination on 28 June 1914 and Austria-Hungary's declaration of war on Serbia?",
+          answers: [],
+          correctAnswer: "30",
+          correctValue: 30,
+          explanation:
+            "30 days: Austria-Hungary declared war on Serbia on 28 July 1914. In between came the ultimatum of 23 July, and within a few days the system of alliances dragged the whole of Europe in.",
+        },
+        {
+          id: 12,
+          question: "In what year was the British liner Lusitania sunk by a German submarine?",
+          answers: [],
+          correctAnswer: "1915",
+          correctValue: 1915,
+          explanation:
+            "In 1915, on 7 May, off the coast of Ireland. Nearly 1,200 people died, including more than a hundred Americans, which turned part of American opinion against Germany.",
+        },
+        {
+          id: 13,
+          question: "How old was the pilot Georges Guynemer when he went missing in combat in September 1917?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22. Born in December 1894, he disappeared over Belgium on 11 September 1917, with 53 confirmed victories. Neither his plane nor his body was ever found.",
+        },
+        {
+          id: 14,
+          question: "Roughly how many kilometres from Paris was the giant German gun that shelled the city from March 1918?",
+          answers: [],
+          correctAnswer: "120",
+          correctValue: 120,
+          explanation:
+            "About 120 kilometres. The gun, often wrongly called Big Bertha, fired from a wood near Crépy, in the Aisne. 367 shells fell on Paris and its surroundings between March and August 1918.",
+        },
+        {
+          id: 15,
+          question: "Roughly how many million American soldiers came to France before the armistice?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "About 2 million. From June 1918, up to 10,000 were arriving every day, and their numbers counted for a lot in the last months of the war.",
+        },
+        {
+          id: 16,
+          question: "Roughly how many names of missing soldiers, never found, are carved on the British memorial at Thiepval, on the Somme?",
+          answers: [],
+          correctAnswer: "72000",
+          correctValue: 72000,
+          explanation:
+            "About 72,000, 72,244 to be exact. They are British and South African soldiers who fell on the Somme and have no known grave. The memorial was opened in 1932.",
+        },
+        {
+          id: 17,
+          question: "How old was Lazare Ponticelli, the last French First World War veteran, when he died in 2008?",
+          answers: [],
+          correctAnswer: "110",
+          correctValue: 110,
+          explanation:
+            "110. Born in Italy in December 1897, he had joined the French army in 1914. He died on 12 March 2008 and was given a national tribute at Les Invalides.",
+        },
+        {
+          id: 18,
+          question: "In what year did the League of Nations, created by the Treaty of Versailles, hold its first assembly in Geneva?",
+          answers: [],
+          correctAnswer: "1920",
+          correctValue: 1920,
+          explanation:
+            "In 1920, on 15 November. The League was meant to prevent another war by settling disputes through talks, but the United States, which had pushed for it, never joined.",
+        },
+        {
+          id: 19,
+          question: "How many metres tall is the tower of the Douaumont Ossuary, near Verdun?",
+          answers: [],
+          correctAnswer: "46",
+          correctValue: 46,
+          explanation:
+            "46 metres. The tower also acts as a lantern for the dead, and you can climb it to look out over the whole battlefield. The ossuary was opened in 1932.",
+        },
+        {
+          id: 20,
+          question: "How old was Georges Clemenceau when he became head of the French government in November 1917?",
+          answers: [],
+          correctAnswer: "76",
+          correctValue: 76,
+          explanation:
+            "76. Born in September 1841, he had already led the government from 1906 to 1909. After the armistice he was nicknamed \"Father Victory\".",
+        },
       ],
     },
     es: {
       title: "Estimación: la Primera Guerra Mundial en cifras",
       description:
-        "Diez fechas y cifras de la Primera Guerra Mundial para adivinar. Propones un número y te decimos si es más o menos.",
+        "Veinte fechas y cifras de la Primera Guerra Mundial para adivinar. Propones un número y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -322,6 +502,96 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
           correctValue: 1919,
           explanation:
             "El 28 de junio de 1919, en la galería de los Espejos del palacio de Versalles, cinco años exactos después del atentado de Sarajevo. Fijaba las condiciones de paz impuestas a Alemania.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos días pasan entre el atentado de Sarajevo, el 28 de junio de 1914, y la declaración de guerra de Austria-Hungría a Serbia?",
+          answers: [],
+          correctAnswer: "30",
+          correctValue: 30,
+          explanation:
+            "30 días: Austria-Hungría declara la guerra a Serbia el 28 de julio de 1914. Entre medias llega el ultimátum del 23 de julio, y en pocos días el juego de alianzas arrastra a toda Europa.",
+        },
+        {
+          id: 12,
+          question: "¿En qué año fue hundido el transatlántico británico Lusitania por un submarino alemán?",
+          answers: [],
+          correctAnswer: "1915",
+          correctValue: 1915,
+          explanation:
+            "En 1915, el 7 de mayo, frente a las costas de Irlanda. Murieron casi 1200 personas, entre ellas más de un centenar de estadounidenses, lo que puso a parte de la opinión estadounidense contra Alemania.",
+        },
+        {
+          id: 13,
+          question: "¿Qué edad tenía el aviador Georges Guynemer cuando desapareció en combate, en septiembre de 1917?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22 años. Nacido en diciembre de 1894, desapareció el 11 de septiembre de 1917 sobre Bélgica, con 53 victorias homologadas. Nunca se encontraron ni su avión ni su cuerpo.",
+        },
+        {
+          id: 14,
+          question: "¿A cuántos kilómetros de París estaba aproximadamente el cañón gigante alemán que bombardeó la capital a partir de marzo de 1918?",
+          answers: [],
+          correctAnswer: "120",
+          correctValue: 120,
+          explanation:
+            "Unos 120 kilómetros. El cañón, al que a menudo se llama por error Gran Berta, disparaba desde un bosque cerca de Crépy, en el Aisne. Entre marzo y agosto de 1918 cayeron 367 obuses sobre París y sus alrededores.",
+        },
+        {
+          id: 15,
+          question: "¿Cuántos millones de soldados estadounidenses llegaron aproximadamente a Francia antes del armisticio?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "Unos 2 millones. A partir de junio de 1918 llegaban hasta 10 000 al día, y su número pesó mucho en los últimos meses de la guerra.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántos nombres de soldados desaparecidos, nunca encontrados, hay grabados aproximadamente en el memorial británico de Thiepval, en el Somme?",
+          answers: [],
+          correctAnswer: "72000",
+          correctValue: 72000,
+          explanation:
+            "Unos 72 000, 72 244 exactamente. Son soldados británicos y sudafricanos caídos en el Somme que no tienen tumba conocida. El memorial se inauguró en 1932.",
+        },
+        {
+          id: 17,
+          question: "¿Qué edad tenía Lazare Ponticelli, el último poilu, es decir, el último veterano francés de la guerra, cuando murió en 2008?",
+          answers: [],
+          correctAnswer: "110",
+          correctValue: 110,
+          explanation:
+            "110 años. Nacido en Italia en diciembre de 1897, se había alistado en el ejército francés en 1914. Murió el 12 de marzo de 2008 y recibió un homenaje nacional en los Inválidos.",
+        },
+        {
+          id: 18,
+          question: "¿En qué año celebra la Sociedad de Naciones, creada por el tratado de Versalles, su primera asamblea en Ginebra?",
+          answers: [],
+          correctAnswer: "1920",
+          correctValue: 1920,
+          explanation:
+            "En 1920, el 15 de noviembre. La Sociedad de Naciones debía evitar otra guerra resolviendo los conflictos mediante el diálogo, pero Estados Unidos, que la había impulsado, nunca llegó a entrar.",
+        },
+        {
+          id: 19,
+          question: "¿Cuántos metros de altura tiene la torre del osario de Douaumont, cerca de Verdún?",
+          answers: [],
+          correctAnswer: "46",
+          correctValue: 46,
+          explanation:
+            "46 metros. La torre hace también de faro de los muertos, y se puede subir para ver todo el campo de batalla. El osario se inauguró en 1932.",
+        },
+        {
+          id: 20,
+          question: "¿Qué edad tenía Georges Clemenceau cuando pasó a presidir el Gobierno francés, en noviembre de 1917?",
+          answers: [],
+          correctAnswer: "76",
+          correctValue: 76,
+          explanation:
+            "76 años. Nacido en septiembre de 1841, ya había dirigido el Gobierno de 1906 a 1909. Tras el armisticio lo apodaron «el Padre de la Victoria».",
         },
       ],
     },

@@ -21,7 +21,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
     fr: {
       title: "Quiz départements : connais-tu la France ?",
       description:
-        "Dix questions sur les départements français : numéros, préfectures, lieux célèbres et un peu d'histoire.",
+        "Vingt questions sur les départements français : numéros, préfectures, lieux célèbres et un peu d'histoire.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           explanation:
             "Le Mont-Saint-Michel est dans la Manche, donc en Normandie. La Bretagne est à quelques kilomètres, d'ailleurs le Couesnon, la rivière qui sépare les deux régions, se jette juste à côté.",
         },
+        {
+          id: 11,
+          question: "Quelle ville est la préfecture de la Seine-Maritime ?",
+          answers: [
+            { id: "a", text: "Le Havre" },
+            { id: "b", text: "Rouen" },
+            { id: "c", text: "Dieppe" },
+            { id: "d", text: "Fécamp" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rouen. Le Havre est plus peuplé, mais la préfecture est restée à Rouen, l'ancienne capitale de la Normandie.",
+        },
+        {
+          id: 12,
+          question: "Dans quel département se trouve le pont du Gard ?",
+          answers: [
+            { id: "a", text: "Le Gard" },
+            { id: "b", text: "L'Hérault" },
+            { id: "c", text: "Le Vaucluse" },
+            { id: "d", text: "Les Bouches-du-Rhône" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Dans le Gard, comme son nom l'indique. C'est un pont-aqueduc romain qui amenait l'eau jusqu'à Nîmes.",
+        },
+        {
+          id: 13,
+          question: "Quelle ville est la préfecture du Puy-de-Dôme ?",
+          answers: [
+            { id: "a", text: "Vichy" },
+            { id: "b", text: "Riom" },
+            { id: "c", text: "Clermont-Ferrand" },
+            { id: "d", text: "Thiers" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Clermont-Ferrand, au pied de la chaîne des Puys. Vichy est dans l'Allier, le département voisin.",
+        },
+        {
+          id: 14,
+          question: "Dans quel département se trouve Lourdes ?",
+          answers: [
+            { id: "a", text: "Les Pyrénées-Atlantiques" },
+            { id: "b", text: "Les Hautes-Pyrénées" },
+            { id: "c", text: "La Haute-Garonne" },
+            { id: "d", text: "Le Gers" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Dans les Hautes-Pyrénées, dont la préfecture est Tarbes. Lourdes est l'un des plus grands lieux de pèlerinage catholique du monde.",
+        },
+        {
+          id: 15,
+          question: "Quelle ville est la préfecture de la Savoie ?",
+          answers: [
+            { id: "a", text: "Chambéry" },
+            { id: "b", text: "Annecy" },
+            { id: "c", text: "Albertville" },
+            { id: "d", text: "Aix-les-Bains" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Chambéry. Annecy est souvent citée à tort : c'est la préfecture de la Haute-Savoie, le département voisin.",
+        },
+        {
+          id: 16,
+          question: "Dans quel département se trouve le château de Chambord ?",
+          answers: [
+            { id: "a", text: "L'Indre-et-Loire" },
+            { id: "b", text: "Le Loiret" },
+            { id: "c", text: "Le Cher" },
+            { id: "d", text: "Le Loir-et-Cher" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Dans le Loir-et-Cher, pas loin de Blois, qui est la préfecture. Amboise et Chenonceau se trouvent en Indre-et-Loire.",
+        },
+        {
+          id: 17,
+          question: "Quel département d'outre-mer se trouve en Amérique du Sud ?",
+          answers: [
+            { id: "a", text: "La Guyane" },
+            { id: "b", text: "La Martinique" },
+            { id: "c", text: "La Guadeloupe" },
+            { id: "d", text: "La Réunion" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Guyane, entre le Brésil et le Suriname. C'est de là, à Kourou, que partent les fusées Ariane. La Martinique et la Guadeloupe sont des îles des Antilles.",
+        },
+        {
+          id: 18,
+          question: "Quel est le département le moins peuplé de France ?",
+          answers: [
+            { id: "a", text: "La Creuse" },
+            { id: "b", text: "Le Cantal" },
+            { id: "c", text: "La Lozère" },
+            { id: "d", text: "Les Hautes-Alpes" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "La Lozère, avec environ 76 000 habitants. La Creuse arrive juste derrière, avec un peu plus de 110 000.",
+        },
+        {
+          id: 19,
+          question: "Quelle ville est la préfecture de la Marne ?",
+          answers: [
+            { id: "a", text: "Reims" },
+            { id: "b", text: "Châlons-en-Champagne" },
+            { id: "c", text: "Épernay" },
+            { id: "d", text: "Vitry-le-François" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Châlons-en-Champagne, alors que Reims est environ quatre fois plus peuplée. C'est l'un des pièges classiques des préfectures.",
+        },
+        {
+          id: 20,
+          question: "Dans quel département se trouve la dune du Pilat ?",
+          answers: [
+            { id: "a", text: "La Gironde" },
+            { id: "b", text: "Les Landes" },
+            { id: "c", text: "La Charente-Maritime" },
+            { id: "d", text: "Les Pyrénées-Atlantiques" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En Gironde, à l'entrée du bassin d'Arcachon. C'est la plus haute dune d'Europe, à un peu plus de 100 mètres.",
+        },
       ],
     },
     en: {
       title: "French Departments Quiz",
       description:
-        "Ten questions on the departments of France: their numbers, their prefectures, famous places and a bit of history.",
+        "Twenty questions on the departments of France: their numbers, their prefectures, famous places and a bit of history.",
       questions: [
         {
           id: 1,
@@ -300,12 +430,142 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           explanation:
             "Mont-Saint-Michel is in Manche, so it belongs to Normandy. Brittany is only a few kilometres away: the Couesnon river, which marks the border, flows into the bay right next to it.",
         },
+        {
+          id: 11,
+          question: "Which city is the prefecture of Seine-Maritime?",
+          answers: [
+            { id: "a", text: "Le Havre" },
+            { id: "b", text: "Rouen" },
+            { id: "c", text: "Dieppe" },
+            { id: "d", text: "Fécamp" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rouen. Le Havre has more people, but the prefecture stayed in Rouen, the old capital of Normandy.",
+        },
+        {
+          id: 12,
+          question: "Which department is the Pont du Gard in?",
+          answers: [
+            { id: "a", text: "Gard" },
+            { id: "b", text: "Hérault" },
+            { id: "c", text: "Vaucluse" },
+            { id: "d", text: "Bouches-du-Rhône" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Gard, as the name suggests. It's a Roman aqueduct bridge that carried water to Nîmes.",
+        },
+        {
+          id: 13,
+          question: "Which city is the prefecture of Puy-de-Dôme?",
+          answers: [
+            { id: "a", text: "Vichy" },
+            { id: "b", text: "Riom" },
+            { id: "c", text: "Clermont-Ferrand" },
+            { id: "d", text: "Thiers" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Clermont-Ferrand, at the foot of the Chaîne des Puys volcanoes. Vichy is in the Allier, the next department over.",
+        },
+        {
+          id: 14,
+          question: "Which department is Lourdes in?",
+          answers: [
+            { id: "a", text: "Pyrénées-Atlantiques" },
+            { id: "b", text: "Hautes-Pyrénées" },
+            { id: "c", text: "Haute-Garonne" },
+            { id: "d", text: "Gers" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Hautes-Pyrénées, whose prefecture is Tarbes. Lourdes is one of the biggest Catholic pilgrimage sites in the world.",
+        },
+        {
+          id: 15,
+          question: "Which city is the prefecture of Savoie?",
+          answers: [
+            { id: "a", text: "Chambéry" },
+            { id: "b", text: "Annecy" },
+            { id: "c", text: "Albertville" },
+            { id: "d", text: "Aix-les-Bains" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Chambéry. People often say Annecy, but that's the prefecture of Haute-Savoie, the neighbouring department.",
+        },
+        {
+          id: 16,
+          question: "Which department is the Château de Chambord in?",
+          answers: [
+            { id: "a", text: "Indre-et-Loire" },
+            { id: "b", text: "Loiret" },
+            { id: "c", text: "Cher" },
+            { id: "d", text: "Loir-et-Cher" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Loir-et-Cher, not far from Blois, the prefecture. Amboise and Chenonceau are in Indre-et-Loire.",
+        },
+        {
+          id: 17,
+          question: "Which French overseas department is in South America?",
+          answers: [
+            { id: "a", text: "French Guiana" },
+            { id: "b", text: "Martinique" },
+            { id: "c", text: "Guadeloupe" },
+            { id: "d", text: "Réunion" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "French Guiana, between Brazil and Suriname. Ariane rockets take off from Kourou, on its coast. Martinique and Guadeloupe are Caribbean islands.",
+        },
+        {
+          id: 18,
+          question: "Which French department has the smallest population?",
+          answers: [
+            { id: "a", text: "Creuse" },
+            { id: "b", text: "Cantal" },
+            { id: "c", text: "Lozère" },
+            { id: "d", text: "Hautes-Alpes" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lozère, with around 76,000 people. Creuse comes just behind, with a little over 110,000.",
+        },
+        {
+          id: 19,
+          question: "Which city is the prefecture of the Marne?",
+          answers: [
+            { id: "a", text: "Reims" },
+            { id: "b", text: "Châlons-en-Champagne" },
+            { id: "c", text: "Épernay" },
+            { id: "d", text: "Vitry-le-François" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Châlons-en-Champagne, even though Reims has about four times as many people. It's one of the classic prefecture traps.",
+        },
+        {
+          id: 20,
+          question: "Which department is the Dune du Pilat in?",
+          answers: [
+            { id: "a", text: "Gironde" },
+            { id: "b", text: "Landes" },
+            { id: "c", text: "Charente-Maritime" },
+            { id: "d", text: "Pyrénées-Atlantiques" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Gironde, at the mouth of the Arcachon Bay. It's the tallest sand dune in Europe, at just over 100 metres.",
+        },
       ],
     },
     es: {
       title: "Quiz de departamentos franceses",
       description:
-        "Diez preguntas sobre los departamentos de Francia: sus números, sus prefecturas, lugares famosos y algo de historia.",
+        "Veinte preguntas sobre los departamentos de Francia: sus números, sus prefecturas, lugares famosos y algo de historia.",
       questions: [
         {
           id: 1,
@@ -441,6 +701,136 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "El Mont-Saint-Michel está en la Mancha, o sea en Normandía. Bretaña queda a pocos kilómetros: el río Couesnon, que marca la frontera, desemboca justo al lado.",
+        },
+        {
+          id: 11,
+          question: "¿Qué ciudad es la prefectura de Sena Marítimo?",
+          answers: [
+            { id: "a", text: "El Havre" },
+            { id: "b", text: "Ruan" },
+            { id: "c", text: "Dieppe" },
+            { id: "d", text: "Fécamp" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ruan. El Havre tiene más habitantes, pero la prefectura se quedó en Ruan, la antigua capital de Normandía.",
+        },
+        {
+          id: 12,
+          question: "¿En qué departamento está el puente del Gard?",
+          answers: [
+            { id: "a", text: "Gard" },
+            { id: "b", text: "Hérault" },
+            { id: "c", text: "Vaucluse" },
+            { id: "d", text: "Bocas del Ródano" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En el Gard, como indica su nombre. Es un puente acueducto romano que llevaba el agua hasta Nimes.",
+        },
+        {
+          id: 13,
+          question: "¿Qué ciudad es la prefectura de Puy-de-Dôme?",
+          answers: [
+            { id: "a", text: "Vichy" },
+            { id: "b", text: "Riom" },
+            { id: "c", text: "Clermont-Ferrand" },
+            { id: "d", text: "Thiers" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Clermont-Ferrand, al pie de la cadena de los Puys. Vichy está en el Allier, el departamento vecino.",
+        },
+        {
+          id: 14,
+          question: "¿En qué departamento está Lourdes?",
+          answers: [
+            { id: "a", text: "Pirineos Atlánticos" },
+            { id: "b", text: "Altos Pirineos" },
+            { id: "c", text: "Alto Garona" },
+            { id: "d", text: "Gers" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En los Altos Pirineos, cuya prefectura es Tarbes. Lourdes es uno de los mayores lugares de peregrinación católica del mundo.",
+        },
+        {
+          id: 15,
+          question: "¿Qué ciudad es la prefectura de Saboya?",
+          answers: [
+            { id: "a", text: "Chambéry" },
+            { id: "b", text: "Annecy" },
+            { id: "c", text: "Albertville" },
+            { id: "d", text: "Aix-les-Bains" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Chambéry. Mucha gente dice Annecy, pero esa es la prefectura de la Alta Saboya, el departamento vecino.",
+        },
+        {
+          id: 16,
+          question: "¿En qué departamento está el castillo de Chambord?",
+          answers: [
+            { id: "a", text: "Indre y Loira" },
+            { id: "b", text: "Loiret" },
+            { id: "c", text: "Cher" },
+            { id: "d", text: "Loir y Cher" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "En Loir y Cher, no muy lejos de Blois, que es la prefectura. Amboise y Chenonceau están en Indre y Loira.",
+        },
+        {
+          id: 17,
+          question: "¿Qué departamento francés de ultramar está en América del Sur?",
+          answers: [
+            { id: "a", text: "Guayana Francesa" },
+            { id: "b", text: "Martinica" },
+            { id: "c", text: "Guadalupe" },
+            { id: "d", text: "Reunión" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Guayana Francesa, entre Brasil y Surinam. Desde Kourou, en su costa, despegan los cohetes Ariane. Martinica y Guadalupe son islas del Caribe.",
+        },
+        {
+          id: 18,
+          question: "¿Cuál es el departamento menos poblado de Francia?",
+          answers: [
+            { id: "a", text: "Creuse" },
+            { id: "b", text: "Cantal" },
+            { id: "c", text: "Lozère" },
+            { id: "d", text: "Altos Alpes" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Lozère, con unos 76 000 habitantes. Creuse va justo detrás, con algo más de 110 000.",
+        },
+        {
+          id: 19,
+          question: "¿Qué ciudad es la prefectura del Marne?",
+          answers: [
+            { id: "a", text: "Reims" },
+            { id: "b", text: "Châlons-en-Champagne" },
+            { id: "c", text: "Épernay" },
+            { id: "d", text: "Vitry-le-François" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Châlons-en-Champagne, aunque Reims tiene unas cuatro veces más habitantes. Es una de las trampas clásicas de las prefecturas.",
+        },
+        {
+          id: 20,
+          question: "¿En qué departamento está la duna de Pilat?",
+          answers: [
+            { id: "a", text: "Gironda" },
+            { id: "b", text: "Landas" },
+            { id: "c", text: "Charente Marítimo" },
+            { id: "d", text: "Pirineos Atlánticos" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En la Gironda, a la entrada de la bahía de Arcachon. Es la duna más alta de Europa, con algo más de 100 metros.",
         },
       ],
     },

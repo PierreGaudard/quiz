@@ -22,7 +22,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : la vie des grands peintres",
       description:
-        "Dix affirmations sur la vie de Van Gogh, Picasso, Frida Kahlo, Gauguin ou encore Magritte. À toi de démêler le vrai du faux !",
+        "Vingt affirmations sur la vie de Van Gogh, Picasso, Frida Kahlo, Gauguin ou encore Magritte. À toi de démêler le vrai du faux !",
       questions: [
         {
           id: 1,
@@ -139,12 +139,122 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
           explanation:
             "Faux. Magritte est belge, né en 1898 dans le Hainaut. Il a vécu quelques années près de Paris, mais il a fait l'essentiel de sa carrière à Bruxelles.",
         },
+        {
+          id: 11,
+          question: "Michel-Ange a peint le plafond de la chapelle Sixtine allongé sur le dos.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Il travaillait debout sur un échafaudage, la tête renversée en arrière. Il s'est d'ailleurs dessiné dans cette position, dans un poème où il se plaint de ses douleurs.",
+        },
+        {
+          id: 12,
+          question: "Frida Kahlo était mariée au peintre Diego Rivera.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Ils se sont mariés en 1929, ont divorcé en 1939, puis se sont remariés l'année suivante. Rivera était surtout connu pour ses grandes peintures murales.",
+        },
+        {
+          id: 13,
+          question: "Vincent van Gogh est mort en France.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Il est mort en juillet 1890 à Auvers-sur-Oise, près de Paris, où il est enterré à côté de son frère Théo.",
+        },
+        {
+          id: 14,
+          question: "Le Caravage a dû fuir Rome après avoir tué un homme.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. En 1606, il tue Ranuccio Tomassoni lors d'une bagarre et il est condamné à mort. Il passe ses dernières années en fuite, entre Naples, Malte et la Sicile.",
+        },
+        {
+          id: 15,
+          question: "Pablo Picasso a été interrogé par la police après le vol de La Joconde, en 1911.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Son ami, le poète Guillaume Apollinaire, avait été arrêté, et Picasso a été convoqué à son tour. Les deux ont été mis hors de cause. Le voleur était un ouvrier italien, Vincenzo Peruggia.",
+        },
+        {
+          id: 16,
+          question: "Pablo Picasso est mort centenaire.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Il est mort en 1973 à 91 ans, dans le sud de la France. Il a peint jusqu'à la fin de sa vie.",
+        },
+        {
+          id: 17,
+          question: "Édouard Manet et Claude Monet étaient frères.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Ils n'avaient aucun lien de parenté, malgré des noms presque identiques. Ils se connaissaient bien, en revanche, et on les confondait déjà à l'époque.",
+        },
+        {
+          id: 18,
+          question: "Andy Warhol a commencé sa carrière comme dessinateur publicitaire.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Dans les années 1950, à New York, il dessinait des chaussures pour des publicités et des magazines. Le monde de la pub se retrouve ensuite dans ses œuvres pop art.",
+        },
+        {
+          id: 19,
+          question: "Johannes Vermeer a laissé plus de 300 tableaux.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. On ne lui en attribue qu'environ 35. Il peignait lentement et il est mort jeune, à 43 ans, criblé de dettes.",
+        },
+        {
+          id: 20,
+          question: "Salvador Dalí est né au Mexique.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Il est né en 1904 à Figueres, en Catalogne, en Espagne. Il y a d'ailleurs créé son propre musée, le Théâtre-Musée Dalí, où il est enterré.",
+        },
       ],
     },
     en: {
       title: "True or false: the lives of great painters",
       description:
-        "Ten statements about the lives of Van Gogh, Picasso, Frida Kahlo, Gauguin, Magritte and more. Can you tell the true ones from the false?",
+        "Twenty statements about the lives of Van Gogh, Picasso, Frida Kahlo, Gauguin, Magritte and more. Can you tell the true ones from the false?",
       questions: [
         {
           id: 1,
@@ -261,12 +371,122 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
           explanation:
             "False. Magritte was Belgian, born in 1898 in the Hainaut province. He lived near Paris for a few years, but did most of his work in Brussels.",
         },
+        {
+          id: 11,
+          question: "Michelangelo painted the Sistine Chapel ceiling lying on his back.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. He worked standing on scaffolding, with his head tipped back. He even drew himself in that position, next to a poem complaining about the pain.",
+        },
+        {
+          id: 12,
+          question: "Frida Kahlo was married to the painter Diego Rivera.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. They married in 1929, divorced in 1939 and remarried the following year. Rivera was best known for his huge murals.",
+        },
+        {
+          id: 13,
+          question: "Vincent van Gogh died in France.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. He died in July 1890 in Auvers-sur-Oise, near Paris, where he's buried next to his brother Theo.",
+        },
+        {
+          id: 14,
+          question: "Caravaggio had to flee Rome after killing a man.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. In 1606 he killed Ranuccio Tomassoni in a fight and was sentenced to death. He spent his last years on the run, between Naples, Malta and Sicily.",
+        },
+        {
+          id: 15,
+          question: "Pablo Picasso was questioned by the police after the Mona Lisa was stolen in 1911.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. His friend, the poet Guillaume Apollinaire, had been arrested, and Picasso was called in too. Both were cleared. The thief turned out to be an Italian workman, Vincenzo Peruggia.",
+        },
+        {
+          id: 16,
+          question: "Pablo Picasso lived to be 100.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. He died in 1973, aged 91, in the south of France. He kept painting until the very end.",
+        },
+        {
+          id: 17,
+          question: "Édouard Manet and Claude Monet were brothers.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. They weren't related at all, despite their near-identical names. They did know each other well, though, and people mixed them up even back then.",
+        },
+        {
+          id: 18,
+          question: "Andy Warhol started his career as a commercial illustrator.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. In the 1950s, in New York, he drew shoes for adverts and magazines. The world of advertising then carried over into his Pop Art.",
+        },
+        {
+          id: 19,
+          question: "Johannes Vermeer left more than 300 paintings.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Only about 35 are credited to him. He painted slowly and died young, at 43, deep in debt.",
+        },
+        {
+          id: 20,
+          question: "Salvador Dalí was born in Mexico.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. He was born in 1904 in Figueres, in Catalonia, Spain. He set up his own museum there, the Dalí Theatre-Museum, where he's buried.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: la vida de los pintores",
       description:
-        "Diez afirmaciones sobre la vida de Van Gogh, Picasso, Frida Kahlo, Gauguin o Magritte. ¡A ver si separas lo verdadero de lo falso!",
+        "Veinte afirmaciones sobre la vida de Van Gogh, Picasso, Frida Kahlo, Gauguin o Magritte. ¡A ver si separas lo verdadero de lo falso!",
       questions: [
         {
           id: 1,
@@ -382,6 +602,116 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso. Magritte era belga, nacido en 1898 en la provincia de Henao. Vivió unos años cerca de París, pero hizo casi toda su obra en Bruselas.",
+        },
+        {
+          id: 11,
+          question: "Miguel Ángel pintó el techo de la Capilla Sixtina tumbado boca arriba.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Trabajaba de pie sobre un andamio, con la cabeza echada hacia atrás. Incluso se dibujó así, junto a un poema en el que se queja de los dolores.",
+        },
+        {
+          id: 12,
+          question: "Frida Kahlo estaba casada con el pintor Diego Rivera.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Se casaron en 1929, se divorciaron en 1939 y volvieron a casarse al año siguiente. Rivera era conocido sobre todo por sus grandes murales.",
+        },
+        {
+          id: 13,
+          question: "Vincent van Gogh murió en Francia.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Murió en julio de 1890 en Auvers-sur-Oise, cerca de París, donde está enterrado junto a su hermano Theo.",
+        },
+        {
+          id: 14,
+          question: "Caravaggio tuvo que huir de Roma después de matar a un hombre.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. En 1606 mata a Ranuccio Tomassoni en una pelea y lo condenan a muerte. Pasa sus últimos años huyendo, entre Nápoles, Malta y Sicilia.",
+        },
+        {
+          id: 15,
+          question: "Pablo Picasso fue interrogado por la policía tras el robo de la Gioconda, en 1911.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Su amigo, el poeta Guillaume Apollinaire, había sido detenido, y a Picasso también lo llamaron. Los dos quedaron libres de sospecha. El ladrón era un obrero italiano, Vincenzo Peruggia.",
+        },
+        {
+          id: 16,
+          question: "Pablo Picasso murió con más de cien años.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Murió en 1973 a los 91 años, en el sur de Francia. Siguió pintando hasta el final de su vida.",
+        },
+        {
+          id: 17,
+          question: "Édouard Manet y Claude Monet eran hermanos.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. No eran parientes, aunque sus apellidos se parezcan tanto. Eso sí, se conocían bien, y ya en su época la gente los confundía.",
+        },
+        {
+          id: 18,
+          question: "Andy Warhol empezó su carrera como dibujante publicitario.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. En los años cincuenta, en Nueva York, dibujaba zapatos para anuncios y revistas. El mundo de la publicidad se nota luego en sus obras de pop art.",
+        },
+        {
+          id: 19,
+          question: "Johannes Vermeer dejó más de 300 cuadros.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Solo se le atribuyen unos 35. Pintaba despacio y murió joven, a los 43 años, lleno de deudas.",
+        },
+        {
+          id: 20,
+          question: "Salvador Dalí nació en México.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Nació en 1904 en Figueres, en Cataluña. Allí creó su propio museo, el Teatro-Museo Dalí, donde está enterrado.",
         },
       ],
     },

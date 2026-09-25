@@ -64,10 +64,11 @@ function formatCount(n: number): string {
           {/* Left */}
           <div class="space-y-5">
             <h1 class="first-letter:uppercase font-display text-4xl md:text-6xl font-bold text-white leading-[1.05]">
-              Test your knowledge with free quizzes
+              Free Online Trivia Quizzes
+              <span class="block mt-3 font-sans text-xl md:text-2xl font-semibold text-white/80 leading-snug">General knowledge, history, sports, anime and video games</span>
             </h1>
             <p class="text-white/70 text-base md:text-lg max-w-lg leading-relaxed">
-              Sports, movies, anime, geography, etc.: {totalQuestions} questions, and under each one the explanation of the right answer. It's free and you play without an account.
+              {totalQuestions} questions in all, and under each one the explanation of the right answer. It's free and you play without an account.
             </p>
             <div class="max-w-sm">
               <div class="relative">
@@ -307,7 +308,7 @@ function formatCount(n: number): string {
           <h2 class="font-display text-xl md:text-2xl font-bold text-gray-900 tracking-tight mb-3">The quizzes everyone's playing right now</h2>
           <div class="text-sm text-gray-500 leading-relaxed space-y-3">
             <p>If you want one to start with, take the flags quiz: 17 questions, and after a couple of rounds you stop confusing the ones that look alike.</p>
-            <p>The <a href={lp('/cinema')} class="text-brand-600 font-semibold hover:underline">eight Harry Potter films</a> make the longest quiz on the site, with 18 questions. Dragon Ball and Minecraft are shorter, ten questions each, and they are the two where fans get caught out the most.</p>
+            <p>The <a href={lp('/cinema')} class="text-brand-600 font-semibold hover:underline">eight Harry Potter films</a> get their own quiz, just like Dragon Ball or Minecraft, and each one has 20 questions. Those last two are where fans get caught out the most.</p>
             <p>Fair warning on <a href={lp('/anime')} class="text-brand-600 font-semibold hover:underline">the Saiyan names</a>: the ones that look obvious are rarely the right answer.</p>
           </div>
         </div>

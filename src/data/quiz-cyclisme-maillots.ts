@@ -5,7 +5,7 @@ import type { TranslatedQuiz } from "./types";
  * rose du Giro, rouge de la Vuelta, arc-en-ciel du champion du monde.
  *
  * Moteur VraiFauxPlayer : « vrai » = id a, « faux » = id b, dans les trois
- * langues. Cinq affirmations vraies et cinq fausses. Le quiz existant sur le
+ * langues. Dix affirmations vraies et dix fausses. Le quiz existant sur le
  * cyclisme joue sur les chiffres du Tour : ici on ne demande aucune date du
  * premier Tour ni aucun palmarès chiffré.
  */
@@ -22,7 +22,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les maillots du cyclisme",
       description:
-        "Dix affirmations sur les maillots du cyclisme : le jaune, le vert, le maillot à pois, le rose du Giro ou encore l'arc-en-ciel.",
+        "Vingt affirmations sur les maillots du cyclisme : le jaune, le vert, le maillot à pois, le rose du Giro ou encore l'arc-en-ciel.",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
           explanation:
             "Faux. Le plus combatif n'a pas de maillot, il porte un dossard d'une autre couleur le lendemain. Le maillot blanc, c'est celui du meilleur jeune, pour les coureurs de moins de 26 ans.",
         },
+        {
+          id: 11,
+          question: "Le maillot vert du Tour de France a été créé en 1953, pour les 50 ans de la course.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Le classement par points a été lancé cette année-là pour fêter le cinquantenaire du Tour. Le vert était la couleur de son sponsor, La Belle Jardinière.",
+        },
+        {
+          id: 12,
+          question: "Quand un coureur est en tête de deux classements, il porte le maillot le plus important, et l'autre maillot passe au deuxième de ce classement.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. L'ordre est le suivant : jaune, vert, pois, puis blanc. Par exemple, un maillot jaune qui mène aussi le classement du meilleur jeune laisse le maillot blanc au deuxième jeune.",
+        },
+        {
+          id: 13,
+          question: "Le champion de France sur route court toute l'année avec un maillot bleu, blanc et rouge.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Chaque champion national porte un maillot aux couleurs de son pays jusqu'au championnat suivant, dans les courses de sa spécialité.",
+        },
+        {
+          id: 14,
+          question: "Sur le Tour d'Italie, le meilleur grimpeur porte un maillot bleu.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai, c'est la maglia azzurra, depuis 2012. Avant, le maillot du meilleur grimpeur du Giro était vert.",
+        },
+        {
+          id: 15,
+          question: "Sur le Tour d'Italie, le classement par points est récompensé par un maillot vert.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le leader du classement par points du Giro porte la maglia ciclamino, un maillot violet. Le vert, sur le Giro, c'était l'ancien maillot du meilleur grimpeur.",
+        },
+        {
+          id: 16,
+          question: "La leader du Tour de France Femmes porte elle aussi un maillot jaune.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Le Tour de France Femmes, relancé en 2022, reprend les mêmes maillots que le Tour des hommes : jaune, vert, à pois et blanc.",
+        },
+        {
+          id: 17,
+          question: "Sur le Tour, l'équipe en tête du classement par équipes porte un maillot bleu.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Il n'y a pas de maillot pour les équipes. Les coureurs de l'équipe en tête portent un dossard jaune, et souvent un casque jaune.",
+        },
+        {
+          id: 18,
+          question: "La lanterne rouge, c'est-à-dire le dernier du classement général, porte un maillot rouge.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. La lanterne rouge n'a pas de maillot. Le surnom vient de la lampe rouge accrochée à l'arrière du dernier wagon des trains.",
+        },
+        {
+          id: 19,
+          question: "Mark Cavendish a gagné le maillot vert du Tour plus souvent que Peter Sagan.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Peter Sagan a le record avec sept maillots verts. Mark Cavendish en a gagné deux, en 2011 et en 2021, même s'il détient le record de victoires d'étapes.",
+        },
+        {
+          id: 20,
+          question: "Sur le Tour, le maillot jaune revient au coureur qui a gagné le plus d'étapes.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le maillot jaune va au coureur qui a mis le moins de temps au total, en additionnant toutes les étapes. On peut d'ailleurs gagner le Tour sans gagner une seule étape.",
+        },
       ],
     },
     en: {
       title: "True or false: cycling jerseys",
       description:
-        "Ten statements about cycling jerseys: the yellow, the green, the polka dots, the Giro's pink or the rainbow stripes. True or false?",
+        "Twenty statements about cycling jerseys: the yellow, the green, the polka dots, the Giro's pink or the rainbow stripes. True or false?",
       questions: [
         {
           id: 1,
@@ -259,12 +369,122 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
           explanation:
             "False. The most combative rider gets no jersey, just a race number in a different colour the next day. White is for the best young rider, under 26.",
         },
+        {
+          id: 11,
+          question: "The Tour de France green jersey was created in 1953, for the race's 50th anniversary.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The points classification was launched that year to celebrate 50 years of the Tour. Green was the colour of its sponsor, La Belle Jardinière.",
+        },
+        {
+          id: 12,
+          question: "When a rider leads two classifications, he wears the more important jersey and the other one goes to the second-placed rider in that classification.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The order is yellow, green, polka dots, then white. For example, if the yellow jersey also leads the young rider classification, the white jersey goes to the second-best young rider.",
+        },
+        {
+          id: 13,
+          question: "The French road race champion wears a blue, white and red jersey all year.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Every national champion wears a jersey in their country's colours until the next championship, in races of their discipline.",
+        },
+        {
+          id: 14,
+          question: "At the Giro d'Italia, the best climber wears a blue jersey.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True, it's the maglia azzurra, used since 2012. Before that, the Giro's best climber wore green.",
+        },
+        {
+          id: 15,
+          question: "At the Giro d'Italia, the points classification leader wears a green jersey.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The Giro's points leader wears the maglia ciclamino, a purple jersey. Green at the Giro was the old climber's jersey.",
+        },
+        {
+          id: 16,
+          question: "The leader of the Tour de France Femmes also wears a yellow jersey.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The Tour de France Femmes, relaunched in 2022, uses the same jerseys as the men's Tour: yellow, green, polka dots and white.",
+        },
+        {
+          id: 17,
+          question: "At the Tour, the team leading the team classification wears a blue jersey.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. There's no team jersey. Riders from the leading team wear yellow race numbers, and often yellow helmets.",
+        },
+        {
+          id: 18,
+          question: "The lanterne rouge, the last rider on general classification, wears a red jersey.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The lanterne rouge doesn't get a jersey. The name comes from the red lamp hung on the back of the last carriage of a train.",
+        },
+        {
+          id: 19,
+          question: "Mark Cavendish won the Tour's green jersey more often than Peter Sagan.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Peter Sagan holds the record with seven green jerseys. Mark Cavendish won two, in 2011 and 2021, even though he holds the record for stage wins.",
+        },
+        {
+          id: 20,
+          question: "At the Tour, the yellow jersey goes to the rider who has won the most stages.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. It goes to the rider with the lowest total time once all the stages are added up. You can even win the Tour without winning a single stage.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: los maillots del ciclismo",
       description:
-        "Diez afirmaciones sobre los maillots del ciclismo: el amarillo, el verde, el de lunares, el rosa del Giro o el arcoíris. ¿Verdadero o falso?",
+        "Veinte afirmaciones sobre los maillots del ciclismo: el amarillo, el verde, el de lunares, el rosa del Giro o el arcoíris. ¿Verdadero o falso?",
       questions: [
         {
           id: 1,
@@ -379,6 +599,116 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso. El más combativo no tiene maillot, lleva un dorsal de otro color al día siguiente. El blanco es para el mejor joven, menor de 26 años.",
+        },
+        {
+          id: 11,
+          question: "El maillot verde del Tour de Francia se creó en 1953, para los 50 años de la carrera.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. La clasificación por puntos se lanzó ese año para celebrar el cincuentenario del Tour. El verde era el color de su patrocinador, La Belle Jardinière.",
+        },
+        {
+          id: 12,
+          question: "Cuando un ciclista lidera dos clasificaciones, lleva el maillot más importante y el otro pasa al segundo de esa clasificación.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El orden es amarillo, verde, lunares y blanco. Por ejemplo, si el maillot amarillo también lidera la clasificación de jóvenes, el blanco lo lleva el segundo mejor joven.",
+        },
+        {
+          id: 13,
+          question: "El campeón de Francia en ruta corre todo el año con un maillot azul, blanco y rojo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Cada campeón nacional lleva un maillot con los colores de su país hasta el campeonato siguiente, en las carreras de su especialidad.",
+        },
+        {
+          id: 14,
+          question: "En el Giro de Italia, el mejor escalador lleva un maillot azul.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero, es la maglia azzurra, desde 2012. Antes, el mejor escalador del Giro vestía de verde.",
+        },
+        {
+          id: 15,
+          question: "En el Giro de Italia, el líder de la clasificación por puntos lleva un maillot verde.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El líder por puntos del Giro lleva la maglia ciclamino, de color morado. El verde, en el Giro, era el antiguo maillot del mejor escalador.",
+        },
+        {
+          id: 16,
+          question: "La líder del Tour de Francia Femenino también lleva un maillot amarillo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El Tour femenino, que volvió en 2022, usa los mismos maillots que el de los hombres: amarillo, verde, de lunares y blanco.",
+        },
+        {
+          id: 17,
+          question: "En el Tour, el equipo que lidera la clasificación por equipos lleva un maillot azul.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. No hay maillot por equipos. Los corredores del equipo líder llevan el dorsal amarillo, y a menudo también el casco amarillo.",
+        },
+        {
+          id: 18,
+          question: "El farolillo rojo, el último de la general, lleva un maillot rojo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El farolillo rojo no tiene maillot. El nombre viene de la luz roja que se colgaba en el último vagón de los trenes.",
+        },
+        {
+          id: 19,
+          question: "Mark Cavendish ganó el maillot verde del Tour más veces que Peter Sagan.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Peter Sagan tiene el récord con siete maillots verdes. Mark Cavendish ganó dos, en 2011 y en 2021, aunque tiene el récord de victorias de etapa.",
+        },
+        {
+          id: 20,
+          question: "En el Tour, el maillot amarillo es para el ciclista que ha ganado más etapas.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Es para el que lleva menos tiempo en total, sumando todas las etapas. De hecho, se puede ganar el Tour sin ganar ni una sola etapa.",
         },
       ],
     },

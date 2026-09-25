@@ -1,7 +1,7 @@
 import type { TranslatedQuiz } from "./types";
 
 /**
- * Quiz sur le corps humain en mode estimation : dix nombres à trouver.
+ * Quiz sur le corps humain en mode estimation : vingt nombres à trouver.
  *
  * Tolérance de 5 % et cinq essais : les petits nombres (4 cavités du cœur,
  * 5 litres de sang, 12 paires de côtes) se jouent au chiffre exact, les
@@ -22,7 +22,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
     fr: {
       title: "Estimation : les chiffres du corps humain",
       description:
-        "Os, dents, sang, chromosomes : dix nombres à trouver sur le corps humain. Tu proposes, on te dit plus haut ou plus bas.",
+        "Os, dents, sang, chromosomes : vingt nombres à trouver sur le corps humain. Tu proposes, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -119,12 +119,102 @@ export const quizCorpsHumain: TranslatedQuiz = {
           explanation:
             "En 1953, par James Watson et Francis Crick, qui se sont appuyés sur les clichés aux rayons X de Rosalind Franklin.",
         },
+        {
+          id: 11,
+          question: "Combien d'osselets y a-t-il dans chaque oreille moyenne ?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Trois : le marteau, l'enclume et l'étrier. Ils transmettent les vibrations du tympan jusqu'à l'oreille interne.",
+        },
+        {
+          id: 12,
+          question: "Combien d'os compte une main humaine, poignet compris ?",
+          answers: [],
+          correctAnswer: "27",
+          correctValue: 27,
+          explanation:
+            "27 os : 8 dans le poignet, 5 dans la paume et 14 phalanges pour les doigts.",
+        },
+        {
+          id: 13,
+          question: "Combien d'os compte un pied humain ?",
+          answers: [],
+          correctAnswer: "26",
+          correctValue: 26,
+          explanation:
+            "26 os. À eux deux, les pieds rassemblent donc à peu près un quart des os du squelette.",
+        },
+        {
+          id: 14,
+          question: "Combien d'os forment le crâne, sans compter les osselets de l'oreille ?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22 os : 8 pour la boîte qui protège le cerveau et 14 pour le visage. La mâchoire inférieure est le seul qui bouge.",
+        },
+        {
+          id: 15,
+          question: "Combien de paires de nerfs partent directement du cerveau (les nerfs crâniens) ?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "12 paires. On y trouve entre autres le nerf optique pour la vue, le nerf olfactif pour l'odorat et le nerf vague, qui descend jusqu'au ventre.",
+        },
+        {
+          id: 16,
+          question: "Combien de lobes a le poumon droit ?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Trois. Le poumon gauche n'en a que deux, parce qu'il laisse de la place au cœur.",
+        },
+        {
+          id: 17,
+          question: "Combien de jours vit un globule rouge, en moyenne ?",
+          answers: [],
+          correctAnswer: "120",
+          correctValue: 120,
+          explanation:
+            "Environ 120 jours. Ensuite, il est détruit, surtout dans la rate et le foie, et la moelle osseuse en fabrique de nouveaux en continu.",
+        },
+        {
+          id: 18,
+          question: "Combien de groupes sanguins compte le système ABO ?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Quatre : A, B, AB et O. Le rhésus, positif ou négatif, est un autre système qu'on ajoute derrière.",
+        },
+        {
+          id: 19,
+          question: "En quelle année Karl Landsteiner a-t-il découvert les groupes sanguins ?",
+          answers: [],
+          correctAnswer: "1901",
+          correctValue: 1901,
+          explanation:
+            "En 1901, à Vienne. Sa découverte a rendu les transfusions beaucoup plus sûres, et elle lui a valu le prix Nobel de médecine en 1930.",
+        },
+        {
+          id: 20,
+          question: "En quelle année est née Louise Brown, le premier bébé conçu par fécondation in vitro ?",
+          answers: [],
+          correctAnswer: "1978",
+          correctValue: 1978,
+          explanation:
+            "En 1978, le 25 juillet, en Angleterre. Les médecins Robert Edwards et Patrick Steptoe étaient derrière cette première.",
+        },
       ],
     },
     en: {
       title: "Estimation: the numbers of the human body",
       description:
-        "Bones, teeth, blood, chromosomes: ten numbers to find about the human body. You guess, we tell you higher or lower.",
+        "Bones, teeth, blood, chromosomes: twenty numbers to find about the human body. You guess, we tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -221,12 +311,102 @@ export const quizCorpsHumain: TranslatedQuiz = {
           explanation:
             "1953, by James Watson and Francis Crick, who relied on Rosalind Franklin's X-ray images.",
         },
+        {
+          id: 11,
+          question: "How many tiny bones are there in each middle ear?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Three: the hammer, the anvil and the stirrup. They pass the vibrations of the eardrum on to the inner ear.",
+        },
+        {
+          id: 12,
+          question: "How many bones are in a human hand, wrist included?",
+          answers: [],
+          correctAnswer: "27",
+          correctValue: 27,
+          explanation:
+            "27 bones: 8 in the wrist, 5 in the palm and 14 finger bones, the phalanges.",
+        },
+        {
+          id: 13,
+          question: "How many bones are in one human foot?",
+          answers: [],
+          correctAnswer: "26",
+          correctValue: 26,
+          explanation:
+            "26 bones. So between them, your two feet hold about a quarter of all the bones in the skeleton.",
+        },
+        {
+          id: 14,
+          question: "How many bones make up the skull, not counting the tiny ear bones?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22 bones: 8 in the part that protects the brain and 14 in the face. The lower jaw is the only one that moves.",
+        },
+        {
+          id: 15,
+          question: "How many pairs of nerves come straight out of the brain (the cranial nerves)?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "12 pairs. They include the optic nerve for sight, the olfactory nerve for smell and the vagus nerve, which runs all the way down to the gut.",
+        },
+        {
+          id: 16,
+          question: "How many lobes does the right lung have?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Three. The left lung only has two, because it leaves room for the heart.",
+        },
+        {
+          id: 17,
+          question: "On average, how many days does a red blood cell live?",
+          answers: [],
+          correctAnswer: "120",
+          correctValue: 120,
+          explanation:
+            "About 120 days. After that it's broken down, mostly in the spleen and liver, while the bone marrow keeps making new ones.",
+        },
+        {
+          id: 18,
+          question: "How many blood groups are there in the ABO system?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Four: A, B, AB and O. The Rh factor, positive or negative, is a separate system added on top.",
+        },
+        {
+          id: 19,
+          question: "In what year did Karl Landsteiner discover blood groups?",
+          answers: [],
+          correctAnswer: "1901",
+          correctValue: 1901,
+          explanation:
+            "In 1901, in Vienna. His discovery made blood transfusions far safer and earned him the Nobel Prize in Medicine in 1930.",
+        },
+        {
+          id: 20,
+          question: "In what year was Louise Brown, the first baby conceived through IVF, born?",
+          answers: [],
+          correctAnswer: "1978",
+          correctValue: 1978,
+          explanation:
+            "In 1978, on 25 July, in England. Doctors Robert Edwards and Patrick Steptoe were behind it.",
+        },
       ],
     },
     es: {
       title: "Estimación: los números del cuerpo humano",
       description:
-        "Huesos, dientes, sangre, cromosomas: diez números sobre el cuerpo humano. Tú propones y te decimos si es más o menos.",
+        "Huesos, dientes, sangre, cromosomas: veinte números sobre el cuerpo humano. Tú propones y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -322,6 +502,96 @@ export const quizCorpsHumain: TranslatedQuiz = {
           correctValue: 1953,
           explanation:
             "En 1953, gracias a James Watson y Francis Crick, que se basaron en las imágenes de rayos X de Rosalind Franklin.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos huesecillos hay en cada oído medio?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Tres: el martillo, el yunque y el estribo. Transmiten las vibraciones del tímpano hasta el oído interno.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántos huesos tiene una mano humana, contando la muñeca?",
+          answers: [],
+          correctAnswer: "27",
+          correctValue: 27,
+          explanation:
+            "27 huesos: 8 en la muñeca, 5 en la palma y 14 falanges en los dedos.",
+        },
+        {
+          id: 13,
+          question: "¿Cuántos huesos tiene un pie humano?",
+          answers: [],
+          correctAnswer: "26",
+          correctValue: 26,
+          explanation:
+            "26 huesos. Entre los dos pies suman más o menos una cuarta parte de los huesos del esqueleto.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántos huesos forman el cráneo, sin contar los huesecillos del oído?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22 huesos: 8 en la parte que protege el cerebro y 14 en la cara. La mandíbula inferior es el único que se mueve.",
+        },
+        {
+          id: 15,
+          question: "¿Cuántos pares de nervios salen directamente del cerebro (los nervios craneales)?",
+          answers: [],
+          correctAnswer: "12",
+          correctValue: 12,
+          explanation:
+            "12 pares. Entre ellos están el nervio óptico para la vista, el olfatorio para el olfato y el nervio vago, que baja hasta el abdomen.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántos lóbulos tiene el pulmón derecho?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Tres. El izquierdo solo tiene dos, porque deja sitio al corazón.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántos días vive un glóbulo rojo, de media?",
+          answers: [],
+          correctAnswer: "120",
+          correctValue: 120,
+          explanation:
+            "Unos 120 días. Después se destruye, sobre todo en el bazo y el hígado, y la médula ósea fabrica otros nuevos sin parar.",
+        },
+        {
+          id: 18,
+          question: "¿Cuántos grupos sanguíneos tiene el sistema ABO?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Cuatro: A, B, AB y O. El factor Rh, positivo o negativo, es otro sistema que se añade detrás.",
+        },
+        {
+          id: 19,
+          question: "¿En qué año descubrió Karl Landsteiner los grupos sanguíneos?",
+          answers: [],
+          correctAnswer: "1901",
+          correctValue: 1901,
+          explanation:
+            "En 1901, en Viena. Su descubrimiento hizo mucho más seguras las transfusiones y le valió el Nobel de Medicina en 1930.",
+        },
+        {
+          id: 20,
+          question: "¿En qué año nació Louise Brown, el primer bebé concebido por fecundación in vitro?",
+          answers: [],
+          correctAnswer: "1978",
+          correctValue: 1978,
+          explanation:
+            "En 1978, el 25 de julio, en Inglaterra. Detrás de ese primer caso estaban los médicos Robert Edwards y Patrick Steptoe.",
         },
       ],
     },

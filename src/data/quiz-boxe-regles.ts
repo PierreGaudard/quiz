@@ -22,7 +22,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
     fr: {
       title: "Quiz boxe : les règles et les coups",
       description:
-        "Dix questions sur les règles de la boxe : le nom des coups, les juges, le matériel ou encore ce que veut dire « jeter l'éponge ».",
+        "Vingt questions sur les règles de la boxe : le nom des coups, les juges, le matériel ou encore ce que veut dire « jeter l'éponge ».",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizBoxeRegles: TranslatedQuiz = {
           explanation:
             "Avec les pieds, en plus des poings. Les boxeurs portent des chaussures spéciales, et les coups de coude ou de genou sont interdits.",
         },
+        {
+          id: 11,
+          question: "Comment s'appelle le coup porté sur le côté, avec le bras plié ?",
+          answers: [
+            { id: "a", text: "Le jab" },
+            { id: "b", text: "Le crochet" },
+            { id: "c", text: "Le direct" },
+            { id: "d", text: "L'uppercut" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le crochet. Le bras forme un angle et le poing arrive de côté, en général vers la mâchoire ou vers les côtes.",
+        },
+        {
+          id: 12,
+          question: "Que veut dire être champion du monde « incontesté » ?",
+          answers: [
+            { id: "a", text: "Avoir gagné tous ses combats" },
+            { id: "b", text: "Avoir les ceintures des quatre grandes fédérations en même temps" },
+            { id: "c", text: "Avoir gagné un titre par K.-O." },
+            { id: "d", text: "Avoir gardé son titre plus de cinq ans" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Détenir en même temps les ceintures des quatre grandes fédérations : la WBA, le WBC, l'IBF et la WBO. C'est rare, parce que chaque fédération a son propre champion.",
+        },
+        {
+          id: 13,
+          question: "Comment appelle-t-on le fait de s'accrocher à l'adversaire pour l'empêcher de frapper ?",
+          answers: [
+            { id: "a", text: "Le sparring" },
+            { id: "b", text: "Le shadow" },
+            { id: "c", text: "Le clinch" },
+            { id: "d", text: "L'esquive" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le clinch. Un boxeur fatigué ou sonné s'en sert pour souffler, et l'arbitre sépare les deux boxeurs en criant « break ».",
+        },
+        {
+          id: 14,
+          question: "Qu'est-ce que le « shadow boxing » ?",
+          answers: [
+            { id: "a", text: "Boxer seul face à un adversaire imaginaire" },
+            { id: "b", text: "Boxer dans une salle sans lumière" },
+            { id: "c", text: "Frapper un sac de sable" },
+            { id: "d", text: "Boxer les yeux bandés" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "On boxe seul, dans le vide, comme face à un adversaire imaginaire. Ça sert à travailler les coups et les déplacements, souvent devant un miroir.",
+        },
+        {
+          id: 15,
+          question: "Comment appelle-t-on un combat d'entraînement avec un partenaire ?",
+          answers: [
+            { id: "a", text: "Un round d'essai" },
+            { id: "b", text: "Une exhibition" },
+            { id: "c", text: "Un sparring" },
+            { id: "d", text: "Un clinch" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Un sparring. Le partenaire s'appelle d'ailleurs un sparring-partner, et on boxe en général avec des gants plus lourds et un casque.",
+        },
+        {
+          id: 16,
+          question: "Quelle protection un boxeur garde-t-il dans la bouche ?",
+          answers: [
+            { id: "a", text: "Le protège-dents" },
+            { id: "b", text: "La coquille" },
+            { id: "c", text: "La mentonnière" },
+            { id: "d", text: "La visière" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le protège-dents. Il protège les dents et amortit une partie des coups à la mâchoire. Il est obligatoire, chez les amateurs comme chez les pros.",
+        },
+        {
+          id: 17,
+          question: "Que met-on autour des mains avant d'enfiler les gants ?",
+          answers: [
+            { id: "a", text: "Des mitaines en laine" },
+            { id: "b", text: "Des bandes" },
+            { id: "c", text: "Du scotch sur les ongles" },
+            { id: "d", text: "Rien du tout" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Des bandes, enroulées autour des poignets et des phalanges. Elles tiennent les os de la main et évitent pas mal de fractures.",
+        },
+        {
+          id: 18,
+          question: "Comment appelle-t-on la garde d'un boxeur qui met la main droite devant ?",
+          answers: [
+            { id: "a", text: "La garde haute" },
+            { id: "b", text: "La garde fermée" },
+            { id: "c", text: "La garde croisée" },
+            { id: "d", text: "La fausse garde" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "La fausse garde. C'est la garde des gauchers : la main droite devant pour le jab, et la main gauche, la plus forte, derrière. En anglais, on dit « southpaw ».",
+        },
+        {
+          id: 19,
+          question: "Qu'est-ce qu'une « décision partagée » ?",
+          answers: [
+            { id: "a", text: "Deux juges donnent la victoire à un boxeur, le troisième à l'autre" },
+            { id: "b", text: "Les deux boxeurs se partagent la bourse" },
+            { id: "c", text: "Le combat est déclaré nul" },
+            { id: "d", text: "L'arbitre et les juges votent ensemble" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Deux des trois juges voient gagner un boxeur, le troisième voit gagner l'autre. Le boxeur qui a deux juges pour lui gagne le combat.",
+        },
+        {
+          id: 20,
+          question: "À quoi sert la pesée avant un combat ?",
+          answers: [
+            { id: "a", text: "À calculer la bourse des boxeurs" },
+            { id: "b", text: "À choisir la taille des gants" },
+            { id: "c", text: "À vérifier que le boxeur respecte la limite de sa catégorie" },
+            { id: "d", text: "À savoir qui monte en premier sur le ring" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "À vérifier que chaque boxeur ne dépasse pas la limite de poids de sa catégorie. Chez les pros, elle a lieu en général la veille du combat.",
+        },
       ],
     },
     en: {
       title: "Boxing quiz: rules and punches",
       description:
-        "Ten questions on the rules of boxing: the names of the punches, the judges, the gear and what \"throwing in the towel\" means.",
+        "Twenty questions on the rules of boxing: the names of the punches, the judges, the gear and what \"throwing in the towel\" means.",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizBoxeRegles: TranslatedQuiz = {
           explanation:
             "Your feet, as well as your fists. Fighters wear special shoes, and elbows and knees aren't allowed.",
         },
+        {
+          id: 11,
+          question: "What's the name of the punch thrown from the side with a bent arm?",
+          answers: [
+            { id: "a", text: "The jab" },
+            { id: "b", text: "The hook" },
+            { id: "c", text: "The cross" },
+            { id: "d", text: "The uppercut" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The hook. The arm stays bent and the fist comes in from the side, usually to the jaw or the ribs.",
+        },
+        {
+          id: 12,
+          question: "What does it mean to be \"undisputed\" world champion?",
+          answers: [
+            { id: "a", text: "Having won every fight" },
+            { id: "b", text: "Holding the belts of all four major sanctioning bodies at once" },
+            { id: "c", text: "Winning a title by knockout" },
+            { id: "d", text: "Keeping a title for more than five years" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "It means holding the WBA, WBC, IBF and WBO belts at the same time. It's rare, since each body crowns its own champion.",
+        },
+        {
+          id: 13,
+          question: "What do you call holding on to your opponent so they can't punch?",
+          answers: [
+            { id: "a", text: "Sparring" },
+            { id: "b", text: "Shadowboxing" },
+            { id: "c", text: "Clinching" },
+            { id: "d", text: "Slipping" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Clinching. A tired or hurt boxer does it to catch his breath, and the referee pulls the two apart by calling \"break\".",
+        },
+        {
+          id: 14,
+          question: "What is shadowboxing?",
+          answers: [
+            { id: "a", text: "Boxing alone against an imaginary opponent" },
+            { id: "b", text: "Boxing in a room with no lights" },
+            { id: "c", text: "Hitting a heavy bag" },
+            { id: "d", text: "Boxing blindfolded" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "You box on your own, throwing punches at thin air as if someone were in front of you. It's a way to work on punches and footwork, often in front of a mirror.",
+        },
+        {
+          id: 15,
+          question: "What do you call a practice fight with a training partner?",
+          answers: [
+            { id: "a", text: "A trial round" },
+            { id: "b", text: "An exhibition" },
+            { id: "c", text: "Sparring" },
+            { id: "d", text: "A clinch" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Sparring. The partner is called a sparring partner, and you usually wear heavier gloves and headgear.",
+        },
+        {
+          id: 16,
+          question: "Which piece of protection does a boxer keep in his mouth?",
+          answers: [
+            { id: "a", text: "A mouthguard" },
+            { id: "b", text: "A cup" },
+            { id: "c", text: "A chin strap" },
+            { id: "d", text: "A visor" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A mouthguard. It protects the teeth and softens some of the blows to the jaw. It's compulsory for amateurs and pros alike.",
+        },
+        {
+          id: 17,
+          question: "What goes around a boxer's hands before the gloves go on?",
+          answers: [
+            { id: "a", text: "Wool mittens" },
+            { id: "b", text: "Hand wraps" },
+            { id: "c", text: "Tape on the fingernails" },
+            { id: "d", text: "Nothing at all" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Hand wraps, wound around the wrists and knuckles. They hold the bones of the hand together and prevent a lot of fractures.",
+        },
+        {
+          id: 18,
+          question: "What do you call the stance of a boxer who leads with the right hand?",
+          answers: [
+            { id: "a", text: "High guard" },
+            { id: "b", text: "Peek-a-boo" },
+            { id: "c", text: "Cross-arm guard" },
+            { id: "d", text: "Southpaw" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Southpaw. It's the stance left-handers use: right hand in front for the jab, and the stronger left hand at the back.",
+        },
+        {
+          id: 19,
+          question: "What is a split decision?",
+          answers: [
+            { id: "a", text: "Two judges score it for one boxer, the third for the other" },
+            { id: "b", text: "The two boxers split the purse" },
+            { id: "c", text: "The fight is declared a draw" },
+            { id: "d", text: "The referee and judges vote together" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Two of the three judges have one boxer winning, and the third has the other one ahead. The boxer with two judges on his side wins.",
+        },
+        {
+          id: 20,
+          question: "What is the weigh-in before a fight for?",
+          answers: [
+            { id: "a", text: "Working out the boxers' purses" },
+            { id: "b", text: "Picking the size of the gloves" },
+            { id: "c", text: "Checking the boxer is within his weight class limit" },
+            { id: "d", text: "Deciding who enters the ring first" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "It checks that each boxer is under the weight limit for his division. In pro boxing, it usually takes place the day before the fight.",
+        },
       ],
     },
     es: {
       title: "Quiz de boxeo: las reglas y los golpes",
       description:
-        "Diez preguntas sobre las reglas del boxeo: los nombres de los golpes, los jueces, el material o qué quiere decir « tirar la toalla ».",
+        "Veinte preguntas sobre las reglas del boxeo: los nombres de los golpes, los jueces, el material o qué quiere decir « tirar la toalla ».",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizBoxeRegles: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "Con los pies, además de los puños. Se pelea con un calzado especial, y los codos y las rodillas están prohibidos.",
+        },
+        {
+          id: 11,
+          question: "¿Cómo se llama el golpe que llega de lado, con el brazo doblado?",
+          answers: [
+            { id: "a", text: "El jab" },
+            { id: "b", text: "El gancho" },
+            { id: "c", text: "El directo" },
+            { id: "d", text: "El uppercut" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El gancho. El brazo va doblado y el puño entra de lado, casi siempre a la mandíbula o a las costillas.",
+        },
+        {
+          id: 12,
+          question: "¿Qué quiere decir ser campeón del mundo « indiscutido »?",
+          answers: [
+            { id: "a", text: "Haber ganado todos sus combates" },
+            { id: "b", text: "Tener a la vez los cinturones de los cuatro grandes organismos" },
+            { id: "c", text: "Haber ganado un título por nocaut" },
+            { id: "d", text: "Haber mantenido el título más de cinco años" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Tener a la vez los cinturones de la AMB, el CMB, la FIB y la OMB. Es raro, porque cada organismo tiene su propio campeón.",
+        },
+        {
+          id: 13,
+          question: "¿Cómo se llama agarrarse al rival para que no pueda golpear?",
+          answers: [
+            { id: "a", text: "El sparring" },
+            { id: "b", text: "La sombra" },
+            { id: "c", text: "El clinch" },
+            { id: "d", text: "La esquiva" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El clinch, o amarre. Un boxeador cansado o tocado lo usa para respirar, y el árbitro los separa gritando « break ».",
+        },
+        {
+          id: 14,
+          question: "¿Qué es el « boxeo de sombra »?",
+          answers: [
+            { id: "a", text: "Boxear solo contra un rival imaginario" },
+            { id: "b", text: "Boxear en una sala sin luz" },
+            { id: "c", text: "Golpear un saco" },
+            { id: "d", text: "Boxear con los ojos vendados" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Se boxea solo, al aire, como si hubiera un rival delante. Sirve para trabajar los golpes y los desplazamientos, muchas veces frente a un espejo.",
+        },
+        {
+          id: 15,
+          question: "¿Cómo se llama un combate de entrenamiento con un compañero?",
+          answers: [
+            { id: "a", text: "Un asalto de prueba" },
+            { id: "b", text: "Una exhibición" },
+            { id: "c", text: "Un sparring" },
+            { id: "d", text: "Un clinch" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Un sparring. Al compañero se le llama sparring, y se suele boxear con guantes más pesados y con casco.",
+        },
+        {
+          id: 16,
+          question: "¿Qué protección lleva el boxeador en la boca?",
+          answers: [
+            { id: "a", text: "El protector bucal" },
+            { id: "b", text: "La coquilla" },
+            { id: "c", text: "La barbillera" },
+            { id: "d", text: "La visera" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El protector bucal. Protege los dientes y amortigua parte de los golpes en la mandíbula. Es obligatorio, en aficionados y en profesionales.",
+        },
+        {
+          id: 17,
+          question: "¿Qué se pone en las manos antes de los guantes?",
+          answers: [
+            { id: "a", text: "Unas manoplas de lana" },
+            { id: "b", text: "Vendas" },
+            { id: "c", text: "Cinta en las uñas" },
+            { id: "d", text: "Nada" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Vendas, enrolladas alrededor de las muñecas y los nudillos. Sujetan los huesos de la mano y evitan muchas fracturas.",
+        },
+        {
+          id: 18,
+          question: "¿Cómo se llama la guardia del boxeador que pone la mano derecha delante?",
+          answers: [
+            { id: "a", text: "Guardia alta" },
+            { id: "b", text: "Guardia cerrada" },
+            { id: "c", text: "Guardia cruzada" },
+            { id: "d", text: "Guardia zurda" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "La guardia zurda. Es la de los zurdos: la derecha delante para el jab y la izquierda, la más fuerte, detrás. En inglés se dice « southpaw ».",
+        },
+        {
+          id: 19,
+          question: "¿Qué es una « decisión dividida »?",
+          answers: [
+            { id: "a", text: "Dos jueces dan ganador a un boxeador y el tercero al otro" },
+            { id: "b", text: "Los dos boxeadores se reparten la bolsa" },
+            { id: "c", text: "El combate se declara nulo" },
+            { id: "d", text: "El árbitro y los jueces votan juntos" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Dos de los tres jueces ven ganar a un boxeador y el tercero ve ganar al otro. Gana el que tiene a dos jueces a su favor.",
+        },
+        {
+          id: 20,
+          question: "¿Para qué sirve el pesaje antes de un combate?",
+          answers: [
+            { id: "a", text: "Para calcular la bolsa de los boxeadores" },
+            { id: "b", text: "Para elegir la talla de los guantes" },
+            { id: "c", text: "Para comprobar que el boxeador no pasa el límite de su categoría" },
+            { id: "d", text: "Para decidir quién sube primero al ring" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Para comprobar que cada boxeador está por debajo del límite de peso de su categoría. En el boxeo profesional, suele hacerse la víspera del combate.",
         },
       ],
     },

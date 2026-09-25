@@ -21,7 +21,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
     fr: {
       title: "Quiz Moyen Âge : châteaux forts et chevaliers",
       description:
-        "Dix questions sur les châteaux forts et la vie des chevaliers : le donjon, la herse, l'adoubement, le fief, etc.",
+        "Vingt questions sur les châteaux forts et la vie des chevaliers : le donjon, la herse, l'adoubement, le fief, etc.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
           explanation:
             "Le fief. En échange, le vassal doit aider son seigneur, à la guerre surtout. La dîme et la taille sont des impôts, versés à l'Église pour la dîme et au seigneur ou au roi pour la taille.",
         },
+        {
+          id: 11,
+          question: "Comment s'appelle le pont qu'on relève pour fermer l'accès au château ?",
+          answers: [
+            { id: "a", text: "Le pont-levis" },
+            { id: "b", text: "Le pont-canal" },
+            { id: "c", text: "Le pont de bateaux" },
+            { id: "d", text: "Le viaduc" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le pont-levis. Il passe au-dessus des douves et se relève avec des chaînes ou des poutres, ce qui bloque en même temps la porte.",
+        },
+        {
+          id: 12,
+          question: "Comment appelle-t-on le jeune noble qui sert un chevalier et porte son bouclier, avant d'être lui-même adoubé ?",
+          answers: [
+            { id: "a", text: "Le bailli" },
+            { id: "b", text: "Le sénéchal" },
+            { id: "c", text: "L'écuyer" },
+            { id: "d", text: "Le troubadour" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "L'écuyer. Le mot vient de « écu », le bouclier du chevalier. L'écuyer s'occupe aussi des chevaux et des armes de son maître, et le suit au combat.",
+        },
+        {
+          id: 13,
+          question: "Comment s'appelle le combat où deux chevaliers à cheval foncent l'un vers l'autre, lance en avant ?",
+          answers: [
+            { id: "a", text: "La soule" },
+            { id: "b", text: "La joute" },
+            { id: "c", text: "Le jeu de paume" },
+            { id: "d", text: "L'escrime" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La joute. Le but est de désarçonner l'adversaire ou de briser sa lance sur lui. Les joutes avaient lieu pendant les tournois, qui réunissaient de nombreux chevaliers.",
+        },
+        {
+          id: 14,
+          question: "Comment s'appelle la longue chemise en mailles de fer que porte le chevalier ?",
+          answers: [
+            { id: "a", text: "Le haubert" },
+            { id: "b", text: "Le plastron" },
+            { id: "c", text: "L'écu" },
+            { id: "d", text: "Le tabard" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le haubert, c'est-à-dire la cotte de mailles. Il est fait de milliers de petits anneaux de fer entrelacés et peut peser une dizaine de kilos.",
+        },
+        {
+          id: 15,
+          question: "Comment s'appellent les ouvertures régulières en haut d'une muraille, entre lesquelles les défenseurs s'abritent ?",
+          answers: [
+            { id: "a", text: "Les courtines" },
+            { id: "b", text: "Les hourds" },
+            { id: "c", text: "Les barbacanes" },
+            { id: "d", text: "Les créneaux" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Les créneaux. Les parties pleines entre deux créneaux s'appellent les merlons : on tire par le créneau, puis on se cache derrière le merlon.",
+        },
+        {
+          id: 16,
+          question: "Comment appelle-t-on le passage en haut des murailles où circulent les soldats qui montent la garde ?",
+          answers: [
+            { id: "a", text: "La poterne" },
+            { id: "b", text: "Le chemin de ronde" },
+            { id: "c", text: "La lice" },
+            { id: "d", text: "Le glacis" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le chemin de ronde. Il fait le tour des remparts, derrière les créneaux, et permet de surveiller les alentours et de se rendre vite à l'endroit attaqué.",
+        },
+        {
+          id: 17,
+          question: "Comment s'appelle la cérémonie où le vassal s'agenouille, met ses mains dans celles de son seigneur et lui jure fidélité ?",
+          answers: [
+            { id: "a", text: "L'hommage" },
+            { id: "b", text: "L'investiture papale" },
+            { id: "c", text: "Le ban" },
+            { id: "d", text: "La taille" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "L'hommage. Le vassal devient « l'homme » de son seigneur, d'où le nom. En échange de sa fidélité et de son aide, le seigneur lui doit protection.",
+        },
+        {
+          id: 18,
+          question: "Comment s'appelle le casque fermé qui couvre toute la tête du chevalier ?",
+          answers: [
+            { id: "a", text: "Le morion" },
+            { id: "b", text: "La cervelière" },
+            { id: "c", text: "Le heaume" },
+            { id: "d", text: "Le képi" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le heaume. Il enveloppe toute la tête et ne laisse qu'une fente pour les yeux. Comme on ne reconnaît plus personne, les chevaliers se distinguent grâce aux armoiries peintes sur leur écu.",
+        },
+        {
+          id: 19,
+          question: "Quel roi fait bâtir la tour Blanche, le grand donjon de la tour de Londres, à partir des années 1070 ?",
+          answers: [
+            { id: "a", text: "Richard Cœur de Lion" },
+            { id: "b", text: "Guillaume le Conquérant" },
+            { id: "c", text: "Henri VIII" },
+            { id: "d", text: "Édouard Ier" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Guillaume le Conquérant, le duc de Normandie devenu roi d'Angleterre en 1066. Les travaux commencent vers 1075-1080, pour tenir Londres en respect. La tour Blanche est achevée vers 1100.",
+        },
+        {
+          id: 20,
+          question: "Comment s'appelle le gros tronc d'arbre qu'on lance contre une porte pour l'enfoncer ?",
+          answers: [
+            { id: "a", text: "Le mangonneau" },
+            { id: "b", text: "La baliste" },
+            { id: "c", text: "La tour de siège" },
+            { id: "d", text: "Le bélier" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Le bélier, souvent protégé par un toit en bois recouvert de peaux mouillées contre les flèches enflammées. Son bout était parfois garni de fer en forme de tête de bélier, d'où le nom.",
+        },
       ],
     },
     en: {
       title: "Middle Ages quiz: castles and knights",
       description:
-        "Ten questions about medieval castles and the life of knights: the keep, the portcullis, the dubbing ceremony, the fief, and more.",
+        "Twenty questions about medieval castles and the life of knights: the keep, the portcullis, the dubbing ceremony, the fief, and more.",
       questions: [
         {
           id: 1,
@@ -300,12 +430,142 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
           explanation:
             "The fief. In return, the vassal has to help his lord, mainly in war. The tithe and the tallage are taxes, the tithe paid to the Church and the tallage to the lord or the king.",
         },
+        {
+          id: 11,
+          question: "What is the bridge that can be raised to close off the castle called?",
+          answers: [
+            { id: "a", text: "The drawbridge" },
+            { id: "b", text: "The aqueduct" },
+            { id: "c", text: "The pontoon bridge" },
+            { id: "d", text: "The viaduct" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The drawbridge. It crosses the moat and is pulled up with chains or beams, which also blocks the gateway.",
+        },
+        {
+          id: 12,
+          question: "What do you call the young noble who serves a knight and carries his shield, before being knighted himself?",
+          answers: [
+            { id: "a", text: "The bailiff" },
+            { id: "b", text: "The seneschal" },
+            { id: "c", text: "The squire" },
+            { id: "d", text: "The troubadour" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The squire. He also looks after his master's horses and weapons and follows him into battle. The French word, écuyer, comes from écu, the knight's shield.",
+        },
+        {
+          id: 13,
+          question: "What is the contest where two mounted knights charge at each other, lances forward?",
+          answers: [
+            { id: "a", text: "Folk football" },
+            { id: "b", text: "The joust" },
+            { id: "c", text: "Real tennis" },
+            { id: "d", text: "Fencing" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The joust. The aim is to knock the opponent off his horse or break your lance on him. Jousts took place at tournaments, which brought many knights together.",
+        },
+        {
+          id: 14,
+          question: "What is the long shirt of iron rings worn by a knight called?",
+          answers: [
+            { id: "a", text: "The hauberk" },
+            { id: "b", text: "The breastplate" },
+            { id: "c", text: "The shield" },
+            { id: "d", text: "The tabard" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The hauberk, in other words the coat of mail. It is made of thousands of small interlinked iron rings and can weigh around ten kilos.",
+        },
+        {
+          id: 15,
+          question: "What are the regular gaps at the top of a castle wall, between which defenders take cover, called?",
+          answers: [
+            { id: "a", text: "Curtain walls" },
+            { id: "b", text: "Hoardings" },
+            { id: "c", text: "Barbicans" },
+            { id: "d", text: "Crenels" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Crenels, which give a wall its battlements. The solid parts between them are called merlons: defenders shoot through the gap, then hide behind the merlon.",
+        },
+        {
+          id: 16,
+          question: "What is the walkway along the top of the walls, used by soldiers on guard duty, called?",
+          answers: [
+            { id: "a", text: "The postern" },
+            { id: "b", text: "The wall walk" },
+            { id: "c", text: "The lists" },
+            { id: "d", text: "The glacis" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The wall walk, also called the allure. It runs around the ramparts behind the battlements, so guards can watch the surroundings and get quickly to any point under attack.",
+        },
+        {
+          id: 17,
+          question: "What is the ceremony where a vassal kneels, places his hands in his lord's and swears loyalty to him?",
+          answers: [
+            { id: "a", text: "Homage" },
+            { id: "b", text: "Papal investiture" },
+            { id: "c", text: "The ban" },
+            { id: "d", text: "The tallage" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Homage. The vassal becomes his lord's \"man\" (homme in French), hence the name. In return for his loyalty and help, the lord owes him protection.",
+        },
+        {
+          id: 18,
+          question: "What is the closed helmet covering the knight's whole head called?",
+          answers: [
+            { id: "a", text: "The morion" },
+            { id: "b", text: "The skullcap" },
+            { id: "c", text: "The great helm" },
+            { id: "d", text: "The kepi" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The great helm. It covers the whole head, with just a slit for the eyes. Since faces could no longer be seen, knights were recognised by the coat of arms painted on their shield.",
+        },
+        {
+          id: 19,
+          question: "Which king had the White Tower, the great keep of the Tower of London, built from the 1070s?",
+          answers: [
+            { id: "a", text: "Richard the Lionheart" },
+            { id: "b", text: "William the Conqueror" },
+            { id: "c", text: "Henry VIII" },
+            { id: "d", text: "Edward I" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "William the Conqueror, the Duke of Normandy who became King of England in 1066. Work started around 1075 to 1080, to keep London under control. The White Tower was finished around 1100.",
+        },
+        {
+          id: 20,
+          question: "What is the heavy tree trunk swung against a gate to break it down called?",
+          answers: [
+            { id: "a", text: "The mangonel" },
+            { id: "b", text: "The ballista" },
+            { id: "c", text: "The siege tower" },
+            { id: "d", text: "The battering ram" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "The battering ram, often protected by a wooden roof covered with wet hides against fire arrows. Its tip was sometimes capped with iron shaped like a ram's head, hence the name.",
+        },
       ],
     },
     es: {
       title: "Quiz Edad Media: castillos y caballeros",
       description:
-        "Diez preguntas sobre los castillos medievales y la vida de los caballeros: la torre del homenaje, el rastrillo, el feudo, etc.",
+        "Veinte preguntas sobre los castillos medievales y la vida de los caballeros: la torre del homenaje, el rastrillo, el feudo, etc.",
       questions: [
         {
           id: 1,
@@ -441,6 +701,136 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
           correctAnswer: "d",
           explanation:
             "El feudo. A cambio, el vasallo tiene que ayudar a su señor, sobre todo en la guerra. El diezmo y la talla son impuestos: el diezmo se pagaba a la Iglesia y la talla al señor o al rey.",
+        },
+        {
+          id: 11,
+          question: "¿Cómo se llama el puente que se levanta para cerrar el acceso al castillo?",
+          answers: [
+            { id: "a", text: "El puente levadizo" },
+            { id: "b", text: "El acueducto" },
+            { id: "c", text: "El puente de barcas" },
+            { id: "d", text: "El viaducto" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El puente levadizo. Pasa por encima del foso y se levanta con cadenas o vigas, lo que además bloquea la puerta.",
+        },
+        {
+          id: 12,
+          question: "¿Cómo se llama el joven noble que sirve a un caballero y lleva su escudo, antes de ser armado caballero?",
+          answers: [
+            { id: "a", text: "El alguacil" },
+            { id: "b", text: "El senescal" },
+            { id: "c", text: "El escudero" },
+            { id: "d", text: "El trovador" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El escudero, palabra que viene de «escudo». También cuida los caballos y las armas de su señor y lo acompaña en combate.",
+        },
+        {
+          id: 13,
+          question: "¿Cómo se llama el combate en el que dos caballeros a caballo cargan uno contra otro, lanza en ristre?",
+          answers: [
+            { id: "a", text: "La soule" },
+            { id: "b", text: "La justa" },
+            { id: "c", text: "El juego de pelota" },
+            { id: "d", text: "La esgrima" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La justa. El objetivo es derribar al rival del caballo o romper la lanza contra él. Las justas se celebraban en los torneos, que reunían a muchos caballeros.",
+        },
+        {
+          id: 14,
+          question: "¿Cómo se llama la larga camisa de mallas de hierro que lleva el caballero?",
+          answers: [
+            { id: "a", text: "La cota de malla" },
+            { id: "b", text: "El peto" },
+            { id: "c", text: "El escudo" },
+            { id: "d", text: "El tabardo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La cota de malla, que en francés se llama haubert. Está hecha de miles de pequeñas anillas de hierro entrelazadas y puede pesar unos diez kilos.",
+        },
+        {
+          id: 15,
+          question: "¿Cómo se llaman los bloques regulares en lo alto de una muralla, detrás de los que se protegen los defensores?",
+          answers: [
+            { id: "a", text: "Las cortinas" },
+            { id: "b", text: "Los cadalsos" },
+            { id: "c", text: "Las barbacanas" },
+            { id: "d", text: "Las almenas" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Las almenas. Entre dos almenas queda un hueco por el que se dispara, antes de volver a esconderse detrás de la almena.",
+        },
+        {
+          id: 16,
+          question: "¿Cómo se llama el pasillo en lo alto de las murallas por donde circulan los soldados de guardia?",
+          answers: [
+            { id: "a", text: "La poterna" },
+            { id: "b", text: "El adarve" },
+            { id: "c", text: "La liza" },
+            { id: "d", text: "El glacis" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El adarve, también llamado camino de ronda. Recorre las murallas detrás de las almenas y permite vigilar los alrededores y llegar rápido al punto atacado.",
+        },
+        {
+          id: 17,
+          question: "¿Cómo se llama la ceremonia en la que el vasallo se arrodilla, pone sus manos entre las de su señor y le jura fidelidad?",
+          answers: [
+            { id: "a", text: "El homenaje" },
+            { id: "b", text: "La investidura papal" },
+            { id: "c", text: "El bando" },
+            { id: "d", text: "La talla" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El homenaje. El vasallo pasa a ser el «hombre» de su señor, de ahí el nombre. A cambio de su fidelidad y su ayuda, el señor le debe protección.",
+        },
+        {
+          id: 18,
+          question: "¿Cómo se llama el casco cerrado que cubre toda la cabeza del caballero?",
+          answers: [
+            { id: "a", text: "El morrión" },
+            { id: "b", text: "La cervillera" },
+            { id: "c", text: "El yelmo" },
+            { id: "d", text: "El quepis" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El yelmo. Envuelve toda la cabeza y solo deja una ranura para los ojos. Como ya no se reconocía a nadie, los caballeros se distinguían por el escudo de armas pintado en su escudo.",
+        },
+        {
+          id: 19,
+          question: "¿Qué rey mandó construir la Torre Blanca, la gran torre del homenaje de la Torre de Londres, a partir de la década de 1070?",
+          answers: [
+            { id: "a", text: "Ricardo Corazón de León" },
+            { id: "b", text: "Guillermo el Conquistador" },
+            { id: "c", text: "Enrique VIII" },
+            { id: "d", text: "Eduardo I" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Guillermo el Conquistador, el duque de Normandía que se convirtió en rey de Inglaterra en 1066. Las obras empezaron hacia 1075-1080, para tener Londres bajo control. La Torre Blanca se terminó hacia el año 1100.",
+        },
+        {
+          id: 20,
+          question: "¿Cómo se llama el gran tronco que se lanza contra una puerta para derribarla?",
+          answers: [
+            { id: "a", text: "La catapulta" },
+            { id: "b", text: "La balista" },
+            { id: "c", text: "La torre de asedio" },
+            { id: "d", text: "El ariete" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "El ariete, a menudo protegido por un techo de madera cubierto de pieles mojadas contra las flechas incendiarias. Su punta a veces llevaba hierro con forma de cabeza de carnero, que en latín se decía aries.",
         },
       ],
     },

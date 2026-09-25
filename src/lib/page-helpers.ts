@@ -1,5 +1,5 @@
 import type { Locale } from "../i18n/config";
-import { getCategories, getGameTypes, categoryDefs, getSubcategoryImageSlug } from "../data/categories";
+import { getCategories, findCategoryDef, getGameTypes, categoryDefs, getSubcategoryImageSlug } from "../data/categories";
 import { getAllQuizzes, getQuizzesByCategory, getFeaturedQuiz, getAllSubcategoryPaths, getQuizzesBySubcategory, slugifySubcategory } from "../data/quizzes";
 
 /** Generate static paths for [slug].astro (categories only). */
@@ -135,6 +135,34 @@ export function categoryTitle(name: string, locale: Locale): string {
     : `${name} quizzes: test your knowledge | WizyQuiz`;
   if (t.length <= 60) return t;
   return locale === "fr" ? `Quiz ${lower} gratuits | WizyQuiz` : locale === "es" ? `Quizzes de ${lower} gratis | WizyQuiz` : `Free ${lower} quizzes | WizyQuiz`;
+}
+
+/**
+ * H1 des pages de categorie, ecrit a la main par categorie et par langue :
+ * la requete principale d'abord (« quiz de geographie », « sports trivia »,
+ * « test de cultura general »), puis les sujets phares que les gens tapent.
+ * Cle : slug de base de la categorie (celui de categories.ts).
+ */
+const CATEGORY_H1: Record<string, Record<Locale, string>> = {
+  "culture-generale": { fr: "Quiz de culture générale gratuits", en: "Free General Knowledge Trivia Quizzes", es: "Test y preguntas de cultura general gratis" },
+  histoire: { fr: "Quiz d'histoire : de l'Antiquité à la Seconde Guerre mondiale", en: "History Trivia Quizzes: From Ancient Egypt to WWII", es: "Quiz de historia: de la Antigüedad a la Segunda Guerra Mundial" },
+  sport: { fr: "Quiz sport : foot, F1, tennis, rugby et JO", en: "Sports Trivia Quizzes: Soccer, NBA, F1 and Tennis", es: "Quiz de deportes: fútbol, F1, tenis, rugby y JJ. OO." },
+  geographie: { fr: "Quiz de géographie : capitales, drapeaux et départements", en: "Geography Quizzes: Capitals, Flags and US States", es: "Quiz de geografía: capitales, banderas y países" },
+  anime: { fr: "Quiz anime et manga : One Piece, Naruto, Dragon Ball", en: "Anime Quizzes: One Piece, Naruto, Dragon Ball", es: "Quiz de anime y manga: One Piece, Naruto, Dragon Ball" },
+  cinema: { fr: "Quiz cinéma : Harry Potter, Marvel, Star Wars", en: "Movie Trivia Quizzes: Harry Potter, Marvel, Star Wars", es: "Quiz de cine: Harry Potter, Marvel, Star Wars" },
+  "jeux-video": { fr: "Quiz jeux vidéo : Pokémon, Minecraft, Fortnite", en: "Video Game Quizzes: Pokémon, Minecraft, Fortnite", es: "Quiz de videojuegos: Pokémon, Minecraft, Fortnite" },
+};
+
+export function categoryH1(slug: string, name: string, locale: Locale): string {
+  // Les pages EN et ES recoivent leur slug traduit (« sports », « deportes ») :
+  // on remonte au slug de base avant de chercher le H1.
+  const base = findCategoryDef(slug)?.slug || slug;
+  return CATEGORY_H1[base]?.[locale] || subcategoryH1(name, locale);
+}
+
+/** H1 des sous-themes : le nom du sujet et le mot « quiz », dans l'ordre de la langue. */
+export function subcategoryH1(sub: string, locale: Locale): string {
+  return locale === "fr" ? `Quiz ${sub}` : locale === "es" ? `Quiz de ${sub}` : `${sub} Quizzes`;
 }
 
 export function subcategoryTitle(sub: string, category: string, locale: Locale): string {

@@ -21,7 +21,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
     fr: {
       title: "Duel Death Note : les règles du cahier",
       description:
-        "Dix duels sur les règles du Death Note : le visage, les 6 minutes 40, la fausse règle des 13 jours, etc. Deux réponses, une seule bonne.",
+        "Vingt duels sur les règles du Death Note : le visage, les 6 minutes 40, la fausse règle des 13 jours, etc. Deux réponses, une seule bonne.",
       questions: [
         {
           id: 1,
@@ -137,12 +137,122 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
           explanation:
             "Il s'ennuie dans le monde des dieux de la mort. Il lâche son cahier exprès, pour voir ce qu'un humain en ferait.",
         },
+        {
+          id: 11,
+          question: "Suffit-il d'avoir vu la personne en photo ou à la télé pour que le cahier marche ?",
+          answers: [
+            { id: "a", text: "Oui, connaître son visage suffit" },
+            { id: "b", text: "Non, il faut l'avoir vue en vrai" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Oui. Il faut connaître le visage, peu importe comment. C'est pour ça que Light peut tuer des criminels qu'il voit seulement aux informations.",
+        },
+        {
+          id: 12,
+          question: "Peut-on sauver quelqu'un en effaçant son nom du cahier ?",
+          answers: [
+            { id: "a", text: "Oui, si on efface vite" },
+            { id: "b", text: "Non, un nom écrit ne s'annule pas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Non. Une fois le nom écrit, la mort est fixée : gomme, correcteur ou page arrachée, rien ne l'arrête.",
+        },
+        {
+          id: 13,
+          question: "Que se passe-t-il si on se trompe quatre fois en écrivant le nom de la même personne ?",
+          answers: [
+            { id: "a", text: "La personne ne peut plus être tuée par le cahier" },
+            { id: "b", text: "Celui qui écrit meurt à sa place" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La personne devient intouchable pour le Death Note. Après quatre erreurs sur son nom, on ne peut plus la tuer avec le cahier.",
+        },
+        {
+          id: 14,
+          question: "Jusqu'à combien de temps peut-on repousser une mort en écrivant ses circonstances ?",
+          answers: [
+            { id: "a", text: "23 jours" },
+            { id: "b", text: "13 jours" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "23 jours. On peut faire agir la victime avant sa mort, mais dans cette limite. Les 13 jours, c'est la fausse règle que Light a fait ajouter au cahier.",
+        },
+        {
+          id: 15,
+          question: "Que se passe-t-il si la mort décrite est impossible pour la victime ?",
+          answers: [
+            { id: "a", text: "Elle ne meurt pas du tout" },
+            { id: "b", text: "Elle meurt d'une crise cardiaque" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Elle meurt d'une crise cardiaque. Le cahier ne peut pas faire faire à quelqu'un une chose dont il est incapable, du coup il revient à la cause de mort par défaut.",
+        },
+        {
+          id: 16,
+          question: "Un dieu de la mort peut-il être tué en écrivant son nom dans le cahier ?",
+          answers: [
+            { id: "a", text: "Oui, comme un humain" },
+            { id: "b", text: "Non, ça ne marche pas sur eux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Non. Le Death Note ne tue pas les dieux de la mort. Ils ne peuvent mourir que dans des cas précis, comme Rem quand elle sauve Misa.",
+        },
+        {
+          id: 17,
+          question: "À quoi le cahier sert-il d'abord pour un dieu de la mort ?",
+          answers: [
+            { id: "a", text: "À juger les humains" },
+            { id: "b", text: "À prolonger sa propre vie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "À prolonger sa vie. Quand un dieu de la mort tue un humain, il récupère le temps qui restait à vivre à sa victime.",
+        },
+        {
+          id: 18,
+          question: "Que voit un humain qui a les yeux de dieu de la mort en regardant quelqu'un ?",
+          answers: [
+            { id: "a", text: "Son nom et le temps qu'il lui reste à vivre" },
+            { id: "b", text: "Ses pensées et ses souvenirs" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Son nom et sa durée de vie, affichés au-dessus de sa tête. Il n'a donc plus besoin de connaître le nom de la personne à l'avance.",
+        },
+        {
+          id: 19,
+          question: "Où va, après sa mort, un humain qui a utilisé le Death Note ?",
+          answers: [
+            { id: "a", text: "Directement en enfer" },
+            { id: "b", text: "Ni au paradis ni en enfer" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ni au paradis ni en enfer. Ryuk le dit à Light dès leur première rencontre : c'est le prix à payer pour avoir utilisé le cahier.",
+        },
+        {
+          id: 20,
+          question: "La deuxième fausse règle que Light fait écrire dit que si on détruit le cahier…",
+          answers: [
+            { id: "a", text: "Tous ceux qui l'ont touché meurent" },
+            { id: "b", text: "Le propriétaire perd la mémoire" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tous ceux qui l'ont touché meurent. Avec cette fausse règle, la police n'ose pas brûler le cahier, et Light garde une chance de le récupérer.",
+        },
       ],
     },
     en: {
       title: "Death Note duel: the notebook's rules",
       description:
-        "Ten duels on the Death Note rules: the face, the 6 minutes 40, the fake 13-day rule and more. Two answers, only one is right.",
+        "Twenty duels on the Death Note rules: the face, the 6 minutes 40, the fake 13-day rule and more. Two answers, only one is right.",
       questions: [
         {
           id: 1,
@@ -258,12 +368,122 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
           explanation:
             "He's bored in the shinigami realm. He drops his notebook on purpose, to see what a human would do with it.",
         },
+        {
+          id: 11,
+          question: "Is seeing the person in a photo or on TV enough for the notebook to work?",
+          answers: [
+            { id: "a", text: "Yes, knowing the face is enough" },
+            { id: "b", text: "No, you must have seen them in person" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Yes. You need to know the face, it doesn't matter how. That's why Light can kill criminals he only sees on the news.",
+        },
+        {
+          id: 12,
+          question: "Can you save someone by erasing their name from the notebook?",
+          answers: [
+            { id: "a", text: "Yes, if you erase it fast" },
+            { id: "b", text: "No, a written name can't be undone" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "No. Once the name is written, the death is set: eraser, correction fluid or a torn-out page, nothing stops it.",
+        },
+        {
+          id: 13,
+          question: "What happens if you misspell the same person's name four times?",
+          answers: [
+            { id: "a", text: "That person can no longer be killed by the notebook" },
+            { id: "b", text: "The writer dies instead" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The person becomes immune to the Death Note. After four mistakes on their name, the notebook can no longer kill them.",
+        },
+        {
+          id: 14,
+          question: "How long can you put off a death by writing out its circumstances?",
+          answers: [
+            { id: "a", text: "23 days" },
+            { id: "b", text: "13 days" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "23 days. You can make the victim do things before dying, but only within that limit. The 13 days come from the fake rule Light had added to the notebook.",
+        },
+        {
+          id: 15,
+          question: "What happens if the death you describe is impossible for the victim?",
+          answers: [
+            { id: "a", text: "They don't die at all" },
+            { id: "b", text: "They die of a heart attack" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "They die of a heart attack. The notebook can't make someone do something they're unable to do, so it falls back on the default cause of death.",
+        },
+        {
+          id: 16,
+          question: "Can a god of death be killed by writing its name in the notebook?",
+          answers: [
+            { id: "a", text: "Yes, just like a human" },
+            { id: "b", text: "No, it doesn't work on them" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "No. The Death Note doesn't kill gods of death. They can only die in specific cases, like Rem when she saves Misa.",
+        },
+        {
+          id: 17,
+          question: "What is the notebook mainly for, from a god of death's point of view?",
+          answers: [
+            { id: "a", text: "Judging humans" },
+            { id: "b", text: "Extending its own life" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Extending its life. When a god of death kills a human, it gets the time that human had left to live.",
+        },
+        {
+          id: 18,
+          question: "What does a human with the Shinigami Eyes see when looking at someone?",
+          answers: [
+            { id: "a", text: "Their name and how long they have left to live" },
+            { id: "b", text: "Their thoughts and memories" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Their name and lifespan, shown above their head. So there's no need to know the person's name beforehand.",
+        },
+        {
+          id: 19,
+          question: "Where does a human who used the Death Note go after dying?",
+          answers: [
+            { id: "a", text: "Straight to hell" },
+            { id: "b", text: "Neither to heaven nor to hell" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Neither heaven nor hell. Ryuk tells Light this the first time they meet: it's the price of using the notebook.",
+        },
+        {
+          id: 20,
+          question: "The second fake rule Light has written says that if the notebook is destroyed…",
+          answers: [
+            { id: "a", text: "Everyone who touched it dies" },
+            { id: "b", text: "The owner loses their memory" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Everyone who touched it dies. Because of that fake rule, the police don't dare burn the notebook, and Light keeps a chance of getting it back.",
+        },
       ],
     },
     es: {
       title: "Duelo Death Note: las reglas del cuaderno",
       description:
-        "Diez duelos sobre las reglas del Death Note: la cara, los 6 minutos 40, la falsa regla de los 13 días, etc. Dos respuestas, solo una vale.",
+        "Veinte duelos sobre las reglas del Death Note: la cara, los 6 minutos 40, la falsa regla de los 13 días, etc. Dos respuestas, solo una vale.",
       questions: [
         {
           id: 1,
@@ -378,6 +598,116 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Se aburre en el mundo de los dioses de la muerte. Suelta el cuaderno a propósito, para ver qué haría un humano con él.",
+        },
+        {
+          id: 11,
+          question: "¿Basta con haber visto a la persona en una foto o en la tele para que funcione el cuaderno?",
+          answers: [
+            { id: "a", text: "Sí, basta con conocer su cara" },
+            { id: "b", text: "No, hay que haberla visto en persona" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sí. Hay que conocer la cara, da igual cómo. Por eso Light puede matar a criminales que solo ve en las noticias.",
+        },
+        {
+          id: 12,
+          question: "¿Se puede salvar a alguien borrando su nombre del cuaderno?",
+          answers: [
+            { id: "a", text: "Sí, si se borra rápido" },
+            { id: "b", text: "No, un nombre escrito no se anula" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "No. Una vez escrito el nombre, la muerte ya está decidida: goma, típex o página arrancada, nada la detiene.",
+        },
+        {
+          id: 13,
+          question: "¿Qué pasa si te equivocas cuatro veces al escribir el nombre de la misma persona?",
+          answers: [
+            { id: "a", text: "Esa persona ya no puede morir por el cuaderno" },
+            { id: "b", text: "El que escribe muere en su lugar" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La persona se vuelve inmune al Death Note. Después de cuatro errores con su nombre, el cuaderno ya no puede matarla.",
+        },
+        {
+          id: 14,
+          question: "¿Hasta cuánto tiempo se puede retrasar una muerte escribiendo sus circunstancias?",
+          answers: [
+            { id: "a", text: "23 días" },
+            { id: "b", text: "13 días" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "23 días. Se puede hacer que la víctima haga cosas antes de morir, pero dentro de ese límite. Los 13 días son de la regla falsa que Light hizo añadir al cuaderno.",
+        },
+        {
+          id: 15,
+          question: "¿Qué pasa si la muerte que se describe es imposible para la víctima?",
+          answers: [
+            { id: "a", text: "No muere" },
+            { id: "b", text: "Muere de un ataque al corazón" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Muere de un ataque al corazón. El cuaderno no puede obligar a alguien a hacer algo de lo que es incapaz, así que vuelve a la causa de muerte por defecto.",
+        },
+        {
+          id: 16,
+          question: "¿Se puede matar a un dios de la muerte escribiendo su nombre en el cuaderno?",
+          answers: [
+            { id: "a", text: "Sí, como a un humano" },
+            { id: "b", text: "No, con ellos no funciona" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "No. El Death Note no mata a los dioses de la muerte. Solo pueden morir en casos concretos, como Rem cuando salva a Misa.",
+        },
+        {
+          id: 17,
+          question: "¿Para qué sirve sobre todo el cuaderno a un dios de la muerte?",
+          answers: [
+            { id: "a", text: "Para juzgar a los humanos" },
+            { id: "b", text: "Para alargar su propia vida" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Para alargar su vida. Cuando un dios de la muerte mata a un humano, se queda con el tiempo que le quedaba de vida a esa persona.",
+        },
+        {
+          id: 18,
+          question: "¿Qué ve un humano con los ojos de dios de la muerte cuando mira a alguien?",
+          answers: [
+            { id: "a", text: "Su nombre y el tiempo que le queda de vida" },
+            { id: "b", text: "Sus pensamientos y sus recuerdos" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Su nombre y su tiempo de vida, encima de la cabeza. Así ya no necesita saber el nombre de la persona de antemano.",
+        },
+        {
+          id: 19,
+          question: "¿Adónde va, al morir, un humano que ha usado el Death Note?",
+          answers: [
+            { id: "a", text: "Directo al infierno" },
+            { id: "b", text: "Ni al cielo ni al infierno" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ni al cielo ni al infierno. Ryuk se lo dice a Light la primera vez que se ven: es el precio por usar el cuaderno.",
+        },
+        {
+          id: 20,
+          question: "La segunda regla falsa que Light manda escribir dice que si se destruye el cuaderno…",
+          answers: [
+            { id: "a", text: "Mueren todos los que lo han tocado" },
+            { id: "b", text: "El dueño pierde la memoria" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Mueren todos los que lo han tocado. Por esa regla falsa, la policía no se atreve a quemar el cuaderno, y Light conserva la opción de recuperarlo.",
         },
       ],
     },

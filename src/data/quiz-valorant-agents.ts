@@ -22,7 +22,7 @@ export const quizValorantAgents: TranslatedQuiz = {
     fr: {
       title: "Quiz Valorant : les agents",
       description:
-        "Phoenix, Chamber, Cypher, Raze, KAY/O ou encore Clove : dix questions sur les agents de Valorant, leur pays et leurs capacités.",
+        "Phoenix, Chamber, Cypher, Raze, KAY/O ou encore Clove : vingt questions sur les agents de Valorant, leur pays et leurs capacités.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizValorantAgents: TranslatedQuiz = {
           explanation:
             "Du Mexique. Reyna est une duelliste qui se soigne ou devient intouchable un court moment en absorbant l'âme des ennemis qu'elle vient de tuer.",
         },
+        {
+          id: 11,
+          question: "Quel agent vient du Japon ?",
+          answers: [
+            { id: "a", text: "Neon" },
+            { id: "b", text: "Iso" },
+            { id: "c", text: "Yoru" },
+            { id: "d", text: "Harbor" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Yoru, un duelliste qui crée des failles pour se téléporter et des leurres pour tromper l'adversaire. Neon vient des Philippines, Iso de Chine et Harbor d'Inde.",
+        },
+        {
+          id: 12,
+          question: "Quel agent se sert de l'eau pour créer des murs et des boucliers ?",
+          answers: [
+            { id: "a", text: "Harbor" },
+            { id: "b", text: "Viper" },
+            { id: "c", text: "Astra" },
+            { id: "d", text: "Deadlock" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Harbor, un contrôleur venu d'Inde. Il fait monter des murs d'eau qui bloquent la vue. Viper fait à peu près la même chose, mais avec du gaz toxique.",
+        },
+        {
+          id: 13,
+          question: "Quel est le rôle de Brimstone ?",
+          answers: [
+            { id: "a", text: "Sentinelle" },
+            { id: "b", text: "Duelliste" },
+            { id: "c", text: "Initiateur" },
+            { id: "d", text: "Contrôleur" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Contrôleur. Brimstone, l'Américain du jeu, envoie ses fumigènes depuis une carte tactique et peut appeler une frappe orbitale avec son ultime.",
+        },
+        {
+          id: 14,
+          question: "De quel pays vient Astra ?",
+          answers: [
+            { id: "a", text: "Du Nigeria" },
+            { id: "b", text: "Du Ghana" },
+            { id: "c", text: "Du Kenya" },
+            { id: "d", text: "D'Afrique du Sud" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Du Ghana. Astra est une contrôleuse qui place des étoiles sur la carte depuis une vue astrale, puis les transforme en fumigènes ou en pièges.",
+        },
+        {
+          id: 15,
+          question: "Quel agent court très vite et lance des éclairs grâce à l'électricité ?",
+          answers: [
+            { id: "a", text: "Jett" },
+            { id: "b", text: "Raze" },
+            { id: "c", text: "Yoru" },
+            { id: "d", text: "Neon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Neon, une duelliste venue des Philippines. Elle peut sprinter et glisser, et son ultime lui fait tirer un rayon électrique.",
+        },
+        {
+          id: 16,
+          question: "Comment s'appelle la créature de Gekko qui peut poser ou désamorcer le Spike à sa place ?",
+          answers: [
+            { id: "a", text: "Dizzy" },
+            { id: "b", text: "Wingman" },
+            { id: "c", text: "Thrash" },
+            { id: "d", text: "Mosh" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Wingman. Gekko peut l'envoyer poser le Spike ou le désamorcer pendant que lui reste à couvert. Dizzy, Thrash et Mosh sont ses trois autres créatures.",
+        },
+        {
+          id: 17,
+          question: "Quel agent vient du Sénégal ?",
+          answers: [
+            { id: "a", text: "Tejo" },
+            { id: "b", text: "Waylay" },
+            { id: "c", text: "Veto" },
+            { id: "d", text: "Vyse" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Veto, une sentinelle qui neutralise les capacités adverses. Tejo vient de Colombie et Waylay de Thaïlande.",
+        },
+        {
+          id: 18,
+          question: "Quel agent envoie un tigre de Tasmanie et des faucons pour aider son équipe ?",
+          answers: [
+            { id: "a", text: "Fade" },
+            { id: "b", text: "Skye" },
+            { id: "c", text: "Sova" },
+            { id: "d", text: "KAY/O" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Skye, une initiatrice venue d'Australie. Ses faucons aveuglent les ennemis, son tigre les étourdit, et elle peut aussi soigner ses coéquipiers.",
+        },
+        {
+          id: 19,
+          question: "Quel agent a des bras bioniques qui envoient des ondes de choc à travers les murs ?",
+          answers: [
+            { id: "a", text: "Breach" },
+            { id: "b", text: "KAY/O" },
+            { id: "c", text: "Deadlock" },
+            { id: "d", text: "Gekko" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Breach, l'initiateur suédois. Ses attaques traversent les murs pour aveugler ou étourdir les ennemis qui attendent derrière.",
+        },
+        {
+          id: 20,
+          question: "Quel agent vient de Croatie ?",
+          answers: [
+            { id: "a", text: "Chamber" },
+            { id: "b", text: "Miks" },
+            { id: "c", text: "Deadlock" },
+            { id: "d", text: "Vyse" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Miks, un contrôleur arrivé après Veto. Chamber vient de France et Deadlock de Norvège.",
+        },
       ],
     },
     en: {
       title: "Valorant quiz: the agents",
       description:
-        "Phoenix, Chamber, Cypher, Raze, KAY/O, Clove and more: ten questions on the Valorant agents, where they come from and what they do.",
+        "Phoenix, Chamber, Cypher, Raze, KAY/O, Clove and more: twenty questions on the Valorant agents, where they come from and what they do.",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizValorantAgents: TranslatedQuiz = {
           explanation:
             "Mexico. Reyna is a Duelist who heals herself, or becomes untouchable for a moment, by absorbing the souls of enemies she has just killed.",
         },
+        {
+          id: 11,
+          question: "Which agent comes from Japan?",
+          answers: [
+            { id: "a", text: "Neon" },
+            { id: "b", text: "Iso" },
+            { id: "c", text: "Yoru" },
+            { id: "d", text: "Harbor" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Yoru, a duelist who opens rifts to teleport and sends out decoys to fool the enemy. Neon is from the Philippines, Iso from China and Harbor from India.",
+        },
+        {
+          id: 12,
+          question: "Which agent uses water to build walls and shields?",
+          answers: [
+            { id: "a", text: "Harbor" },
+            { id: "b", text: "Viper" },
+            { id: "c", text: "Astra" },
+            { id: "d", text: "Deadlock" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Harbor, a controller from India. He raises walls of water that block vision. Viper does something similar, but with toxic gas.",
+        },
+        {
+          id: 13,
+          question: "What is Brimstone's role?",
+          answers: [
+            { id: "a", text: "Sentinel" },
+            { id: "b", text: "Duelist" },
+            { id: "c", text: "Initiator" },
+            { id: "d", text: "Controller" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Controller. Brimstone, the game's American veteran, drops his smokes from a tactical map and can call in an orbital strike with his ultimate.",
+        },
+        {
+          id: 14,
+          question: "Which country does Astra come from?",
+          answers: [
+            { id: "a", text: "Nigeria" },
+            { id: "b", text: "Ghana" },
+            { id: "c", text: "Kenya" },
+            { id: "d", text: "South Africa" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ghana. Astra is a controller who places stars on the map from an astral view, then turns them into smokes or traps.",
+        },
+        {
+          id: 15,
+          question: "Which agent runs very fast and throws lightning thanks to electricity?",
+          answers: [
+            { id: "a", text: "Jett" },
+            { id: "b", text: "Raze" },
+            { id: "c", text: "Yoru" },
+            { id: "d", text: "Neon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Neon, a duelist from the Philippines. She can sprint and slide, and her ultimate lets her fire an electric beam.",
+        },
+        {
+          id: 16,
+          question: "What's the name of Gekko's creature that can plant or defuse the Spike for him?",
+          answers: [
+            { id: "a", text: "Dizzy" },
+            { id: "b", text: "Wingman" },
+            { id: "c", text: "Thrash" },
+            { id: "d", text: "Mosh" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Wingman. Gekko can send it to plant or defuse the Spike while he stays in cover. Dizzy, Thrash and Mosh are his three other creatures.",
+        },
+        {
+          id: 17,
+          question: "Which agent comes from Senegal?",
+          answers: [
+            { id: "a", text: "Tejo" },
+            { id: "b", text: "Waylay" },
+            { id: "c", text: "Veto" },
+            { id: "d", text: "Vyse" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Veto, a sentinel who shuts down enemy abilities. Tejo is from Colombia and Waylay from Thailand.",
+        },
+        {
+          id: 18,
+          question: "Which agent sends a Tasmanian tiger and hawks to help the team?",
+          answers: [
+            { id: "a", text: "Fade" },
+            { id: "b", text: "Skye" },
+            { id: "c", text: "Sova" },
+            { id: "d", text: "KAY/O" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Skye, an initiator from Australia. Her hawks blind enemies, her tiger stuns them, and she can also heal her teammates.",
+        },
+        {
+          id: 19,
+          question: "Which agent has bionic arms that send shockwaves through walls?",
+          answers: [
+            { id: "a", text: "Breach" },
+            { id: "b", text: "KAY/O" },
+            { id: "c", text: "Deadlock" },
+            { id: "d", text: "Gekko" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Breach, the Swedish initiator. His blasts go through walls to blind or stun the enemies waiting on the other side.",
+        },
+        {
+          id: 20,
+          question: "Which agent comes from Croatia?",
+          answers: [
+            { id: "a", text: "Chamber" },
+            { id: "b", text: "Miks" },
+            { id: "c", text: "Deadlock" },
+            { id: "d", text: "Vyse" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Miks, a controller who arrived after Veto. Chamber is from France and Deadlock from Norway.",
+        },
       ],
     },
     es: {
       title: "Quiz de Valorant: los agentes",
       description:
-        "Phoenix, Chamber, Cypher, Raze, KAY/O, Clove y más: diez preguntas sobre los agentes de Valorant, su país y sus habilidades.",
+        "Phoenix, Chamber, Cypher, Raze, KAY/O, Clove y más: veinte preguntas sobre los agentes de Valorant, su país y sus habilidades.",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizValorantAgents: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "De México. Reyna es una duelista que se cura, o se vuelve intocable un momento, absorbiendo el alma de los enemigos que acaba de matar.",
+        },
+        {
+          id: 11,
+          question: "¿Qué agente es de Japón?",
+          answers: [
+            { id: "a", text: "Neon" },
+            { id: "b", text: "Iso" },
+            { id: "c", text: "Yoru" },
+            { id: "d", text: "Harbor" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Yoru, un duelista que abre grietas para teletransportarse y lanza señuelos para engañar al rival. Neon es de Filipinas, Iso de China y Harbor de India.",
+        },
+        {
+          id: 12,
+          question: "¿Qué agente usa el agua para crear muros y escudos?",
+          answers: [
+            { id: "a", text: "Harbor" },
+            { id: "b", text: "Viper" },
+            { id: "c", text: "Astra" },
+            { id: "d", text: "Deadlock" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Harbor, un controlador que viene de India. Levanta muros de agua que tapan la visión. Viper hace algo parecido, pero con gas tóxico.",
+        },
+        {
+          id: 13,
+          question: "¿Cuál es el rol de Brimstone?",
+          answers: [
+            { id: "a", text: "Centinela" },
+            { id: "b", text: "Duelista" },
+            { id: "c", text: "Iniciador" },
+            { id: "d", text: "Controlador" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Controlador. Brimstone, el veterano estadounidense del juego, lanza sus humos desde un mapa táctico y con su definitiva puede pedir un ataque orbital.",
+        },
+        {
+          id: 14,
+          question: "¿De qué país es Astra?",
+          answers: [
+            { id: "a", text: "De Nigeria" },
+            { id: "b", text: "De Ghana" },
+            { id: "c", text: "De Kenia" },
+            { id: "d", text: "De Sudáfrica" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "De Ghana. Astra es una controladora que coloca estrellas en el mapa desde una vista astral y luego las convierte en humos o trampas.",
+        },
+        {
+          id: 15,
+          question: "¿Qué agente corre muy rápido y lanza rayos gracias a la electricidad?",
+          answers: [
+            { id: "a", text: "Jett" },
+            { id: "b", text: "Raze" },
+            { id: "c", text: "Yoru" },
+            { id: "d", text: "Neon" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Neon, una duelista de Filipinas. Puede esprintar y deslizarse, y con su definitiva dispara un rayo eléctrico.",
+        },
+        {
+          id: 16,
+          question: "¿Cómo se llama la criatura de Gekko que puede plantar o desactivar la Spike por él?",
+          answers: [
+            { id: "a", text: "Dizzy" },
+            { id: "b", text: "Wingman" },
+            { id: "c", text: "Thrash" },
+            { id: "d", text: "Mosh" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Wingman. Gekko puede mandarlo a plantar o desactivar la Spike mientras él se queda a cubierto. Dizzy, Thrash y Mosh son sus otras tres criaturas.",
+        },
+        {
+          id: 17,
+          question: "¿Qué agente es de Senegal?",
+          answers: [
+            { id: "a", text: "Tejo" },
+            { id: "b", text: "Waylay" },
+            { id: "c", text: "Veto" },
+            { id: "d", text: "Vyse" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Veto, un centinela que anula las habilidades del rival. Tejo es de Colombia y Waylay de Tailandia.",
+        },
+        {
+          id: 18,
+          question: "¿Qué agente manda un tigre de Tasmania y unos halcones para ayudar a su equipo?",
+          answers: [
+            { id: "a", text: "Fade" },
+            { id: "b", text: "Skye" },
+            { id: "c", text: "Sova" },
+            { id: "d", text: "KAY/O" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Skye, una iniciadora de Australia. Sus halcones ciegan a los enemigos, su tigre los aturde, y además puede curar a sus compañeros.",
+        },
+        {
+          id: 19,
+          question: "¿Qué agente tiene brazos biónicos que lanzan ondas de choque a través de las paredes?",
+          answers: [
+            { id: "a", text: "Breach" },
+            { id: "b", text: "KAY/O" },
+            { id: "c", text: "Deadlock" },
+            { id: "d", text: "Gekko" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Breach, el iniciador sueco. Sus ataques atraviesan las paredes para cegar o aturdir a los enemigos que esperan al otro lado.",
+        },
+        {
+          id: 20,
+          question: "¿Qué agente es de Croacia?",
+          answers: [
+            { id: "a", text: "Chamber" },
+            { id: "b", text: "Miks" },
+            { id: "c", text: "Deadlock" },
+            { id: "d", text: "Vyse" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Miks, un controlador que llegó después de Veto. Chamber es de Francia y Deadlock de Noruega.",
         },
       ],
     },

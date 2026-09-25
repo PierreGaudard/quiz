@@ -22,7 +22,7 @@ export const quizFifa: TranslatedQuiz = {
     fr: {
       title: "Estimation : les chiffres de FIFA",
       description:
-        "Dix nombres à trouver sur la série FIFA d'EA Sports, de 1993 à FIFA 23. Tu proposes, on te dit plus haut ou plus bas.",
+        "Vingt nombres à trouver sur la série FIFA d'EA Sports, de 1993 à FIFA 23. Tu proposes, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -118,12 +118,102 @@ export const quizFifa: TranslatedQuiz = {
           explanation:
             "En 2016. Un FIFA sort l'année qui précède son numéro, donc FIFA 17 est sorti en septembre 2016. C'était aussi le premier FIFA sur le moteur Frostbite.",
         },
+        {
+          id: 11,
+          question: "En quelle année a été fondée Electronic Arts, l'éditeur des jeux FIFA ?",
+          answers: [],
+          correctAnswer: "1982",
+          correctValue: 1982,
+          explanation:
+            "En 1982, en Californie. La marque EA Sports, elle, est arrivée au début des années 1990, juste avant le premier FIFA.",
+        },
+        {
+          id: 12,
+          question: "Combien de sélections nationales pouvait-on jouer dans le mode qualifications de FIFA 98 : En route pour la Coupe du monde ?",
+          answers: [],
+          correctAnswer: "172",
+          correctValue: 172,
+          explanation:
+            "172, toutes les sélections qui avaient participé aux qualifications de la Coupe du monde 1998. C'était énorme pour l'époque.",
+        },
+        {
+          id: 13,
+          question: "Et combien de stades comptait FIFA 98 : En route pour la Coupe du monde ?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "16 stades. Le jeu avait aussi un mode en salle, un souvenir des premiers FIFA.",
+        },
+        {
+          id: 14,
+          question: "En quelle année est sorti le premier FIFA Street, avec Ronaldinho sur la jaquette ?",
+          answers: [],
+          correctAnswer: "2005",
+          correctValue: 2005,
+          explanation:
+            "En 2005, en février. FIFA Street se jouait à quatre contre quatre dans la rue, avec des gestes techniques à enchaîner. FIFA Street 2 a suivi un an plus tard.",
+        },
+        {
+          id: 15,
+          question: "En quelle année est sorti le mode Volta, le football de rue dans le jeu principal ?",
+          answers: [],
+          correctAnswer: "2019",
+          correctValue: 2019,
+          explanation:
+            "En 2019, avec FIFA 20. Volta reprenait l'idée de FIFA Street, avec des petits terrains et des équipes réduites.",
+        },
+        {
+          id: 16,
+          question: "Pour la technologie HyperMotion de FIFA 22, combien de vrais joueurs ont disputé un match en combinaison de capture de mouvement ?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22, soit deux équipes complètes, qui ont joué un vrai match à pleine intensité. Leurs mouvements ont servi à rendre les animations du jeu plus naturelles.",
+        },
+        {
+          id: 17,
+          question: "Combien de championnats féminins de clubs y avait-il dans FIFA 23, le premier FIFA à en proposer ?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "2 : la Women's Super League anglaise et la D1 française. Jusque-là, on ne pouvait jouer que des sélections nationales féminines.",
+        },
+        {
+          id: 18,
+          question: "Dans Ultimate Team sur FIFA 23, combien de points de collectif une équipe peut-elle avoir au maximum ?",
+          answers: [],
+          correctAnswer: "33",
+          correctValue: 33,
+          explanation:
+            "33, soit 3 points pour chacun des 11 titulaires. Avant FIFA 23, le collectif se comptait sur 100.",
+        },
+        {
+          id: 19,
+          question: "Quelle est la note générale la plus haute qu'un joueur peut avoir dans un FIFA ?",
+          answers: [],
+          correctAnswer: "99",
+          correctValue: 99,
+          explanation:
+            "99. Dans les jeux de base, les meilleures stars tournent plutôt entre 91 et 94, assez loin de ce maximum.",
+        },
+        {
+          id: 20,
+          question: "En quelle année est sorti EA Sports FC 24, le premier jeu après la fin du nom FIFA ?",
+          answers: [],
+          correctAnswer: "2023",
+          correctValue: 2023,
+          explanation:
+            "En 2023, le 29 septembre. C'est Erling Haaland qui était sur la jaquette de l'édition standard.",
+        },
       ],
     },
     en: {
       title: "Estimation: the numbers behind FIFA",
       description:
-        "Ten numbers to find about EA Sports' FIFA series, from 1993 to FIFA 23. You guess, we tell you higher or lower.",
+        "Twenty numbers to find about EA Sports' FIFA series, from 1993 to FIFA 23. You guess, we tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -219,12 +309,102 @@ export const quizFifa: TranslatedQuiz = {
           explanation:
             "In 2016. A FIFA game comes out the year before the number on its box, so FIFA 17 landed in September 2016. It was also the first FIFA on the Frostbite engine.",
         },
+        {
+          id: 11,
+          question: "In what year was Electronic Arts, the publisher of the FIFA games, founded?",
+          answers: [],
+          correctAnswer: "1982",
+          correctValue: 1982,
+          explanation:
+            "In 1982, in California. The EA Sports brand came later, in the early 1990s, just before the first FIFA.",
+        },
+        {
+          id: 12,
+          question: "How many national teams could you play in the qualifying mode of FIFA: Road to World Cup 98?",
+          answers: [],
+          correctAnswer: "172",
+          correctValue: 172,
+          explanation:
+            "172, every national team that took part in qualifying for the 1998 World Cup. That was huge for the time.",
+        },
+        {
+          id: 13,
+          question: "And how many stadiums did FIFA: Road to World Cup 98 have?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "16 stadiums. The game also had an indoor mode, a leftover from the early FIFA games.",
+        },
+        {
+          id: 14,
+          question: "In what year did the first FIFA Street come out, with Ronaldinho on the cover?",
+          answers: [],
+          correctAnswer: "2005",
+          correctValue: 2005,
+          explanation:
+            "In 2005, in February. FIFA Street was played four against four on the streets, chaining tricks together. FIFA Street 2 followed a year later.",
+        },
+        {
+          id: 15,
+          question: "In what year did Volta, the street football mode in the main game, come out?",
+          answers: [],
+          correctAnswer: "2019",
+          correctValue: 2019,
+          explanation:
+            "In 2019, with FIFA 20. Volta took the idea of FIFA Street, with small pitches and smaller teams.",
+        },
+        {
+          id: 16,
+          question: "For FIFA 22's HyperMotion technology, how many real players played a match in motion capture suits?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22, so two full teams, who played a real match at full intensity. Their movements were used to make the game's animations more natural.",
+        },
+        {
+          id: 17,
+          question: "How many women's club leagues were in FIFA 23, the first FIFA to include any?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "2: England's Women's Super League and France's Division 1. Until then, you could only play women's national teams.",
+        },
+        {
+          id: 18,
+          question: "In FIFA 23 Ultimate Team, what's the maximum number of chemistry points a team can have?",
+          answers: [],
+          correctAnswer: "33",
+          correctValue: 33,
+          explanation:
+            "33, which is 3 points for each of the 11 starters. Before FIFA 23, chemistry was counted out of 100.",
+        },
+        {
+          id: 19,
+          question: "What's the highest overall rating a player can have in a FIFA game?",
+          answers: [],
+          correctAnswer: "99",
+          correctValue: 99,
+          explanation:
+            "99. In the base games, the top stars usually sit between 91 and 94, a fair way below that maximum.",
+        },
+        {
+          id: 20,
+          question: "In what year did EA Sports FC 24, the first game after the FIFA name was dropped, come out?",
+          answers: [],
+          correctAnswer: "2023",
+          correctValue: 2023,
+          explanation:
+            "In 2023, on September 29. Erling Haaland was on the cover of the standard edition.",
+        },
       ],
     },
     es: {
       title: "Estimación: las cifras de FIFA",
       description:
-        "Diez números que encontrar sobre la saga FIFA de EA Sports, de 1993 a FIFA 23. Propones y te decimos más alto o más bajo.",
+        "Veinte números que encontrar sobre la saga FIFA de EA Sports, de 1993 a FIFA 23. Propones y te decimos más alto o más bajo.",
       questions: [
         {
           id: 1,
@@ -319,6 +499,96 @@ export const quizFifa: TranslatedQuiz = {
           correctValue: 2016,
           explanation:
             "En 2016. Cada FIFA sale el año anterior al de su número, así que FIFA 17 llegó en septiembre de 2016. También fue el primer FIFA con el motor Frostbite.",
+        },
+        {
+          id: 11,
+          question: "¿En qué año se fundó Electronic Arts, la editora de los FIFA?",
+          answers: [],
+          correctAnswer: "1982",
+          correctValue: 1982,
+          explanation:
+            "En 1982, en California. La marca EA Sports llegó más tarde, a principios de los años 90, justo antes del primer FIFA.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántas selecciones nacionales se podían jugar en el modo clasificación de FIFA: Rumbo al Mundial 98?",
+          answers: [],
+          correctAnswer: "172",
+          correctValue: 172,
+          explanation:
+            "172, todas las selecciones que jugaron la fase de clasificación del Mundial de 1998. Para la época, era muchísimo.",
+        },
+        {
+          id: 13,
+          question: "¿Y cuántos estadios tenía FIFA: Rumbo al Mundial 98?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "16 estadios. El juego también tenía un modo de fútbol sala, un recuerdo de los primeros FIFA.",
+        },
+        {
+          id: 14,
+          question: "¿En qué año salió el primer FIFA Street, con Ronaldinho en la portada?",
+          answers: [],
+          correctAnswer: "2005",
+          correctValue: 2005,
+          explanation:
+            "En 2005, en febrero. FIFA Street se jugaba cuatro contra cuatro en la calle, encadenando regates. FIFA Street 2 llegó un año después.",
+        },
+        {
+          id: 15,
+          question: "¿En qué año salió el modo Volta, el fútbol callejero dentro del juego principal?",
+          answers: [],
+          correctAnswer: "2019",
+          correctValue: 2019,
+          explanation:
+            "En 2019, con FIFA 20. Volta retomaba la idea de FIFA Street, con campos pequeños y equipos reducidos.",
+        },
+        {
+          id: 16,
+          question: "Para la tecnología HyperMotion de FIFA 22, ¿cuántos jugadores reales disputaron un partido con trajes de captura de movimiento?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22, es decir, dos equipos completos, que jugaron un partido de verdad a máxima intensidad. Sus movimientos sirvieron para que las animaciones del juego fueran más naturales.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántas ligas femeninas de clubes había en FIFA 23, el primer FIFA que las incluyó?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "2: la Women's Super League inglesa y la D1 francesa. Hasta entonces solo se podían jugar selecciones nacionales femeninas.",
+        },
+        {
+          id: 18,
+          question: "En Ultimate Team de FIFA 23, ¿cuántos puntos de química puede tener como máximo un equipo?",
+          answers: [],
+          correctAnswer: "33",
+          correctValue: 33,
+          explanation:
+            "33, es decir, 3 puntos para cada uno de los 11 titulares. Antes de FIFA 23, la química se contaba sobre 100.",
+        },
+        {
+          id: 19,
+          question: "¿Cuál es la media general más alta que puede tener un jugador en un FIFA?",
+          answers: [],
+          correctAnswer: "99",
+          correctValue: 99,
+          explanation:
+            "99. En los juegos base, las grandes estrellas suelen estar entre 91 y 94, bastante lejos de ese máximo.",
+        },
+        {
+          id: 20,
+          question: "¿En qué año salió EA Sports FC 24, el primer juego después del fin del nombre FIFA?",
+          answers: [],
+          correctAnswer: "2023",
+          correctValue: 2023,
+          explanation:
+            "En 2023, el 29 de septiembre. En la portada de la edición estándar estaba Erling Haaland.",
         },
       ],
     },

@@ -21,7 +21,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
     fr: {
       title: "Quiz Seigneur des Anneaux : la trilogie",
       description:
-        "Dix questions sur les films du Seigneur des Anneaux de Peter Jackson : les acteurs, les lieux, les objets et les records.",
+        "Vingt questions sur les films du Seigneur des Anneaux de Peter Jackson : les acteurs, les lieux, les objets et les records.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
           explanation:
             "J. R. R. Tolkien, un professeur d'Oxford. Le roman est paru en trois tomes en 1954 et 1955. C. S. Lewis, l'auteur de Narnia, était d'ailleurs son ami.",
         },
+        {
+          id: 11,
+          question: "Quel acteur joue Aragorn ?",
+          answers: [
+            { id: "a", text: "Orlando Bloom" },
+            { id: "b", text: "Sean Bean" },
+            { id: "c", text: "Viggo Mortensen" },
+            { id: "d", text: "Karl Urban" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Viggo Mortensen. Orlando Bloom joue Legolas, Sean Bean joue Boromir et Karl Urban joue Éomer.",
+        },
+        {
+          id: 12,
+          question: "Quel acteur donne sa voix et ses mouvements à Gollum ?",
+          answers: [
+            { id: "a", text: "Andy Serkis" },
+            { id: "b", text: "Hugo Weaving" },
+            { id: "c", text: "Brad Dourif" },
+            { id: "d", text: "Christopher Lee" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Andy Serkis, filmé en capture de mouvement. Hugo Weaving joue Elrond, Brad Dourif joue Gríma et Christopher Lee joue Saroumane.",
+        },
+        {
+          id: 13,
+          question: "Qui a composé la musique des trois films ?",
+          answers: [
+            { id: "a", text: "John Williams" },
+            { id: "b", text: "Hans Zimmer" },
+            { id: "c", text: "Danny Elfman" },
+            { id: "d", text: "Howard Shore" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Howard Shore, qui a gagné trois Oscars pour cette trilogie. John Williams, lui, est le compositeur de Star Wars.",
+        },
+        {
+          id: 14,
+          question: "Dans quel film se déroule la bataille du Gouffre de Helm ?",
+          answers: [
+            { id: "a", text: "La Communauté de l'Anneau" },
+            { id: "b", text: "Les Deux Tours" },
+            { id: "c", text: "Le Retour du roi" },
+            { id: "d", text: "Le Hobbit : La Bataille des Cinq Armées" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Les Deux Tours, le film de 2002. La grande bataille du Retour du roi est celle des champs du Pelennor, devant Minas Tirith.",
+        },
+        {
+          id: 15,
+          question: "Près de quelle ville de Nouvelle-Zélande se trouve le décor de Hobbitebourg, qu'on peut encore visiter ?",
+          answers: [
+            { id: "a", text: "Queenstown" },
+            { id: "b", text: "Wellington" },
+            { id: "c", text: "Matamata" },
+            { id: "d", text: "Rotorua" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Matamata, dans une ferme de l'île du Nord. Le décor a été reconstruit en dur pour Le Hobbit et il accueille aujourd'hui des visiteurs.",
+        },
+        {
+          id: 16,
+          question: "Comment s'appelle l'épée que Bilbon donne à Frodon ?",
+          answers: [
+            { id: "a", text: "Glamdring" },
+            { id: "b", text: "Orcrist" },
+            { id: "c", text: "Andúril" },
+            { id: "d", text: "Dard" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Dard, une lame elfique qui devient bleue quand des orques approchent. Glamdring est l'épée de Gandalf.",
+        },
+        {
+          id: 17,
+          question: "En quel métal est la cotte de mailles que Bilbon offre à Frodon ?",
+          answers: [
+            { id: "a", text: "En argent" },
+            { id: "b", text: "En mithril" },
+            { id: "c", text: "En or" },
+            { id: "d", text: "En bronze" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En mithril, un métal très léger et plus solide que l'acier. Elle sauve la vie de Frodon dans la Moria, quand un troll le frappe avec une lance.",
+        },
+        {
+          id: 18,
+          question: "Quelle actrice joue Galadriel ?",
+          answers: [
+            { id: "a", text: "Liv Tyler" },
+            { id: "b", text: "Miranda Otto" },
+            { id: "c", text: "Cate Blanchett" },
+            { id: "d", text: "Emma Watson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cate Blanchett. Liv Tyler joue Arwen et Miranda Otto joue Éowyn.",
+        },
+        {
+          id: 19,
+          question: "Qui vient chercher Frodon et Sam sur les pentes de la Montagne du Destin, à la fin ?",
+          answers: [
+            { id: "a", text: "Les Ents" },
+            { id: "b", text: "Les cavaliers du Rohan" },
+            { id: "c", text: "Les aigles" },
+            { id: "d", text: "Les elfes de la Lórien" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Les aigles, avec Gandalf sur le dos de l'un d'eux. Ils emportent les deux hobbits loin de la lave.",
+        },
+        {
+          id: 20,
+          question: "Quelle ville est la capitale du Gondor ?",
+          answers: [
+            { id: "a", text: "Edoras" },
+            { id: "b", text: "Minas Tirith" },
+            { id: "c", text: "Osgiliath" },
+            { id: "d", text: "Fondcombe" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Minas Tirith, la cité blanche bâtie sur sept niveaux. Edoras est la capitale du Rohan.",
+        },
       ],
     },
     en: {
       title: "Lord of the Rings Quiz: the trilogy",
       description:
-        "Ten questions on Peter Jackson's Lord of the Rings films: the cast, the places, the objects and the records.",
+        "Twenty questions on Peter Jackson's Lord of the Rings films: the cast, the places, the objects and the records.",
       questions: [
         {
           id: 1,
@@ -300,12 +430,142 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
           explanation:
             "J. R. R. Tolkien, an Oxford professor. The novel came out in three volumes in 1954 and 1955. C. S. Lewis, who wrote Narnia, was one of his friends.",
         },
+        {
+          id: 11,
+          question: "Which actor plays Aragorn?",
+          answers: [
+            { id: "a", text: "Orlando Bloom" },
+            { id: "b", text: "Sean Bean" },
+            { id: "c", text: "Viggo Mortensen" },
+            { id: "d", text: "Karl Urban" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Viggo Mortensen. Orlando Bloom plays Legolas, Sean Bean plays Boromir and Karl Urban plays Éomer.",
+        },
+        {
+          id: 12,
+          question: "Which actor gives Gollum his voice and movements?",
+          answers: [
+            { id: "a", text: "Andy Serkis" },
+            { id: "b", text: "Hugo Weaving" },
+            { id: "c", text: "Brad Dourif" },
+            { id: "d", text: "Christopher Lee" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Andy Serkis, using motion capture. Hugo Weaving plays Elrond, Brad Dourif plays Gríma and Christopher Lee plays Saruman.",
+        },
+        {
+          id: 13,
+          question: "Who composed the music for the three films?",
+          answers: [
+            { id: "a", text: "John Williams" },
+            { id: "b", text: "Hans Zimmer" },
+            { id: "c", text: "Danny Elfman" },
+            { id: "d", text: "Howard Shore" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Howard Shore, who won three Oscars for the trilogy. John Williams is the Star Wars composer.",
+        },
+        {
+          id: 14,
+          question: "Which film features the Battle of Helm's Deep?",
+          answers: [
+            { id: "a", text: "The Fellowship of the Ring" },
+            { id: "b", text: "The Two Towers" },
+            { id: "c", text: "The Return of the King" },
+            { id: "d", text: "The Hobbit: The Battle of the Five Armies" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Two Towers, the 2002 film. The big battle in The Return of the King is the one on the Pelennor Fields, outside Minas Tirith.",
+        },
+        {
+          id: 15,
+          question: "Near which New Zealand town is the Hobbiton set, which you can still visit?",
+          answers: [
+            { id: "a", text: "Queenstown" },
+            { id: "b", text: "Wellington" },
+            { id: "c", text: "Matamata" },
+            { id: "d", text: "Rotorua" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Matamata, on a farm on the North Island. The set was rebuilt to last for The Hobbit and now takes visitors.",
+        },
+        {
+          id: 16,
+          question: "What is the name of the sword Bilbo gives Frodo?",
+          answers: [
+            { id: "a", text: "Glamdring" },
+            { id: "b", text: "Orcrist" },
+            { id: "c", text: "Andúril" },
+            { id: "d", text: "Dard" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Sting, an elven blade that glows blue when orcs are near. Glamdring is Gandalf's sword.",
+        },
+        {
+          id: 17,
+          question: "What metal is the mail shirt Bilbo gives Frodo made of?",
+          answers: [
+            { id: "a", text: "Silver" },
+            { id: "b", text: "Mithril" },
+            { id: "c", text: "Gold" },
+            { id: "d", text: "Bronze" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mithril, a very light metal that's stronger than steel. It saves Frodo's life in Moria when a troll stabs him with a spear.",
+        },
+        {
+          id: 18,
+          question: "Which actress plays Galadriel?",
+          answers: [
+            { id: "a", text: "Liv Tyler" },
+            { id: "b", text: "Miranda Otto" },
+            { id: "c", text: "Cate Blanchett" },
+            { id: "d", text: "Emma Watson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cate Blanchett. Liv Tyler plays Arwen and Miranda Otto plays Éowyn.",
+        },
+        {
+          id: 19,
+          question: "Who comes to pick up Frodo and Sam on the slopes of Mount Doom at the end?",
+          answers: [
+            { id: "a", text: "The Ents" },
+            { id: "b", text: "The Riders of Rohan" },
+            { id: "c", text: "The eagles" },
+            { id: "d", text: "The elves of Lórien" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The eagles, with Gandalf riding one of them. They carry the two hobbits away from the lava.",
+        },
+        {
+          id: 20,
+          question: "Which city is the capital of Gondor?",
+          answers: [
+            { id: "a", text: "Edoras" },
+            { id: "b", text: "Minas Tirith" },
+            { id: "c", text: "Osgiliath" },
+            { id: "d", text: "Rivendell" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Minas Tirith, the white city built on seven levels. Edoras is the capital of Rohan.",
+        },
       ],
     },
     es: {
       title: "Quiz de El Señor de los Anillos",
       description:
-        "Diez preguntas sobre las películas de El Señor de los Anillos de Peter Jackson: los actores, los lugares, los objetos y los récords.",
+        "Veinte preguntas sobre las películas de El Señor de los Anillos de Peter Jackson: los actores, los lugares, los objetos y los récords.",
       questions: [
         {
           id: 1,
@@ -441,6 +701,136 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "J. R. R. Tolkien, un profesor de Oxford. La novela se publicó en tres tomos en 1954 y 1955. C. S. Lewis, el autor de Narnia, era amigo suyo.",
+        },
+        {
+          id: 11,
+          question: "¿Qué actor interpreta a Aragorn?",
+          answers: [
+            { id: "a", text: "Orlando Bloom" },
+            { id: "b", text: "Sean Bean" },
+            { id: "c", text: "Viggo Mortensen" },
+            { id: "d", text: "Karl Urban" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Viggo Mortensen. Orlando Bloom es Legolas, Sean Bean es Boromir y Karl Urban es Éomer.",
+        },
+        {
+          id: 12,
+          question: "¿Qué actor pone la voz y los movimientos de Gollum?",
+          answers: [
+            { id: "a", text: "Andy Serkis" },
+            { id: "b", text: "Hugo Weaving" },
+            { id: "c", text: "Brad Dourif" },
+            { id: "d", text: "Christopher Lee" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Andy Serkis, con captura de movimiento. Hugo Weaving es Elrond, Brad Dourif es Gríma y Christopher Lee es Saruman.",
+        },
+        {
+          id: 13,
+          question: "¿Quién compuso la música de las tres películas?",
+          answers: [
+            { id: "a", text: "John Williams" },
+            { id: "b", text: "Hans Zimmer" },
+            { id: "c", text: "Danny Elfman" },
+            { id: "d", text: "Howard Shore" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Howard Shore, que ganó tres Óscar con la trilogía. John Williams es el compositor de Star Wars.",
+        },
+        {
+          id: 14,
+          question: "¿En qué película tiene lugar la batalla del Abismo de Helm?",
+          answers: [
+            { id: "a", text: "La Comunidad del Anillo" },
+            { id: "b", text: "Las dos torres" },
+            { id: "c", text: "El retorno del rey" },
+            { id: "d", text: "El hobbit: La batalla de los cinco ejércitos" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Las dos torres, la película de 2002. La gran batalla de El retorno del rey es la de los campos del Pelennor, ante Minas Tirith.",
+        },
+        {
+          id: 15,
+          question: "¿Cerca de qué ciudad de Nueva Zelanda está el decorado de Hobbiton, que todavía se puede visitar?",
+          answers: [
+            { id: "a", text: "Queenstown" },
+            { id: "b", text: "Wellington" },
+            { id: "c", text: "Matamata" },
+            { id: "d", text: "Rotorua" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Matamata, en una granja de la Isla Norte. El decorado se reconstruyó de forma permanente para El hobbit y hoy recibe visitantes.",
+        },
+        {
+          id: 16,
+          question: "¿Cómo se llama la espada que Bilbo le da a Frodo?",
+          answers: [
+            { id: "a", text: "Glamdring" },
+            { id: "b", text: "Orcrist" },
+            { id: "c", text: "Andúril" },
+            { id: "d", text: "Dard" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Dardo, una hoja élfica que brilla en azul cuando hay orcos cerca. Glamdring es la espada de Gandalf.",
+        },
+        {
+          id: 17,
+          question: "¿De qué metal es la cota de malla que Bilbo le regala a Frodo?",
+          answers: [
+            { id: "a", text: "De plata" },
+            { id: "b", text: "De mithril" },
+            { id: "c", text: "De oro" },
+            { id: "d", text: "De bronce" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "De mithril, un metal muy ligero y más resistente que el acero. Le salva la vida a Frodo en Moria, cuando un troll lo golpea con una lanza.",
+        },
+        {
+          id: 18,
+          question: "¿Qué actriz interpreta a Galadriel?",
+          answers: [
+            { id: "a", text: "Liv Tyler" },
+            { id: "b", text: "Miranda Otto" },
+            { id: "c", text: "Cate Blanchett" },
+            { id: "d", text: "Emma Watson" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Cate Blanchett. Liv Tyler es Arwen y Miranda Otto es Éowyn.",
+        },
+        {
+          id: 19,
+          question: "¿Quién va a buscar a Frodo y a Sam a las laderas del Monte del Destino al final?",
+          answers: [
+            { id: "a", text: "Los ents" },
+            { id: "b", text: "Los jinetes de Rohan" },
+            { id: "c", text: "Las águilas" },
+            { id: "d", text: "Los elfos de Lórien" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Las águilas, con Gandalf a lomos de una de ellas. Se llevan a los dos hobbits lejos de la lava.",
+        },
+        {
+          id: 20,
+          question: "¿Qué ciudad es la capital de Gondor?",
+          answers: [
+            { id: "a", text: "Edoras" },
+            { id: "b", text: "Minas Tirith" },
+            { id: "c", text: "Osgiliath" },
+            { id: "d", text: "Rivendel" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Minas Tirith, la ciudad blanca construida en siete niveles. Edoras es la capital de Rohan.",
         },
       ],
     },

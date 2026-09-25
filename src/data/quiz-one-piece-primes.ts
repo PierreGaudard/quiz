@@ -22,7 +22,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
     fr: {
       title: "Quiz One Piece : les primes des pirates",
       description:
-        "Dix primes de One Piece à estimer, de Luffy à Gol D. Roger. Tu proposes un montant, on te dit plus haut ou plus bas.",
+        "Vingt primes de One Piece à estimer, de Luffy à Gol D. Roger. Tu proposes un montant, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -119,12 +119,102 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
           explanation:
             "5 564,8 millions de berrys, soit 5 564 800 000. C'est la plus grosse prime connue de toute l'histoire de One Piece, devant celle de Barbe Blanche.",
         },
+        {
+          id: 11,
+          question: "Quelle est la prime de Sanji après l'arc Wano, en millions de berrys ?",
+          answers: [],
+          correctAnswer: "1032",
+          correctValue: 1032,
+          explanation:
+            "1 032 millions de berrys. Il dépasse le milliard pour la première fois. Sa prime précédente, après Whole Cake Island, était de 330 millions.",
+        },
+        {
+          id: 12,
+          question: "Quelle est la prime de Nico Robin après l'arc Wano, en millions de berrys ?",
+          answers: [],
+          correctAnswer: "930",
+          correctValue: 930,
+          explanation:
+            "930 millions de berrys. Elle était à 130 millions après Dressrosa, et le raid sur Onigashima, où elle bat Black Maria, la fait grimper d'un coup.",
+        },
+        {
+          id: 13,
+          question: "Quelle est la prime de Franky après l'arc Wano, en millions de berrys ?",
+          answers: [],
+          correctAnswer: "394",
+          correctValue: 394,
+          explanation:
+            "394 millions de berrys. Sa toute première prime, obtenue après Enies Lobby, était de 44 millions.",
+        },
+        {
+          id: 14,
+          question: "Quelle est la prime de Brook après l'arc Wano, en millions de berrys ?",
+          answers: [],
+          correctAnswer: "383",
+          correctValue: 383,
+          explanation:
+            "383 millions de berrys. Sa première prime, 33 millions, datait de l'époque où il naviguait avec les pirates du Rumbar, bien avant de rencontrer Luffy.",
+        },
+        {
+          id: 15,
+          question: "Après Enies Lobby, à combien de millions de berrys passe la prime de Luffy ?",
+          answers: [],
+          correctAnswer: "300",
+          correctValue: 300,
+          explanation:
+            "300 millions de berrys. Il valait 100 millions depuis Alabasta, et l'attaque d'une île du Gouvernement mondial triple du coup sa prime.",
+        },
+        {
+          id: 16,
+          question: "Après Whole Cake Island, la prime de Luffy dépasse le milliard. De combien de millions de berrys ?",
+          answers: [],
+          correctAnswer: "1500",
+          correctValue: 1500,
+          explanation:
+            "1 500 millions de berrys, donc 1,5 milliard. Il a échappé à Big Mom et battu Katakuri. Avant ça, il était à 500 millions depuis Dressrosa.",
+        },
+        {
+          id: 17,
+          question: "Quelle était la prime de Barbe Blanche, en millions de berrys ?",
+          answers: [],
+          correctAnswer: "5046",
+          correctValue: 5046,
+          explanation:
+            "5 046 millions de berrys. C'est la deuxième plus grosse prime connue de la série, juste derrière celle de Gol D. Roger.",
+        },
+        {
+          id: 18,
+          question: "Quelle était la prime de Portgas D. Ace, en millions de berrys ?",
+          answers: [],
+          correctAnswer: "550",
+          correctValue: 550,
+          explanation:
+            "550 millions de berrys. Pendant toute la première partie du manga, c'est la plus grosse prime qu'on voit en chiffres.",
+        },
+        {
+          id: 19,
+          question: "Quelle est la prime de Kaido, en millions de berrys ?",
+          answers: [],
+          correctAnswer: "4611.1",
+          correctValue: 4611.1,
+          explanation:
+            "4 611,1 millions de berrys, soit 4 611 100 000. C'est la plus grosse prime encore active connue, devant celle de Big Mom, qui est à 4 388 millions.",
+        },
+        {
+          id: 20,
+          question: "Quelle est la prime de Shanks le Roux, en millions de berrys ?",
+          answers: [],
+          correctAnswer: "4048.9",
+          correctValue: 4048.9,
+          explanation:
+            "4 048,9 millions de berrys. On la découvre au chapitre 957, en même temps que celles de Kaido, Big Mom, Barbe Blanche et Roger.",
+        },
       ],
     },
     en: {
       title: "One Piece Quiz: Guess the Pirate Bounties",
       description:
-        "Ten One Piece bounties to guess, from Luffy to Gol D. Roger. Type a number and we tell you higher or lower.",
+        "Twenty One Piece bounties to guess, from Luffy to Gol D. Roger. Type a number and we tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -221,12 +311,102 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
           explanation:
             "5,564.8 million berries, or 5,564,800,000. It's the highest known bounty in all of One Piece, ahead of Whitebeard's.",
         },
+        {
+          id: 11,
+          question: "What is Sanji's bounty after the Wano arc, in millions of berries?",
+          answers: [],
+          correctAnswer: "1032",
+          correctValue: 1032,
+          explanation:
+            "1,032 million berries. It's the first time he goes over a billion. His previous bounty, after Whole Cake Island, was 330 million.",
+        },
+        {
+          id: 12,
+          question: "What is Nico Robin's bounty after the Wano arc, in millions of berries?",
+          answers: [],
+          correctAnswer: "930",
+          correctValue: 930,
+          explanation:
+            "930 million berries. She was at 130 million after Dressrosa, and the raid on Onigashima, where she beats Black Maria, sends it way up.",
+        },
+        {
+          id: 13,
+          question: "What is Franky's bounty after the Wano arc, in millions of berries?",
+          answers: [],
+          correctAnswer: "394",
+          correctValue: 394,
+          explanation:
+            "394 million berries. His very first bounty, after Enies Lobby, was 44 million.",
+        },
+        {
+          id: 14,
+          question: "What is Brook's bounty after the Wano arc, in millions of berries?",
+          answers: [],
+          correctAnswer: "383",
+          correctValue: 383,
+          explanation:
+            "383 million berries. His first bounty, 33 million, goes back to his days with the Rumbar Pirates, long before he met Luffy.",
+        },
+        {
+          id: 15,
+          question: "After Enies Lobby, how many millions of berries is Luffy's bounty?",
+          answers: [],
+          correctAnswer: "300",
+          correctValue: 300,
+          explanation:
+            "300 million berries. He had been worth 100 million since Alabasta, and attacking a World Government island tripled it.",
+        },
+        {
+          id: 16,
+          question: "After Whole Cake Island, Luffy's bounty goes past a billion. How many millions of berries?",
+          answers: [],
+          correctAnswer: "1500",
+          correctValue: 1500,
+          explanation:
+            "1,500 million, so 1.5 billion berries. He got away from Big Mom and beat Katakuri. Before that, he had been at 500 million since Dressrosa.",
+        },
+        {
+          id: 17,
+          question: "What was Whitebeard's bounty, in millions of berries?",
+          answers: [],
+          correctAnswer: "5046",
+          correctValue: 5046,
+          explanation:
+            "5,046 million berries. It's the second highest bounty known in the series, right behind Gol D. Roger's.",
+        },
+        {
+          id: 18,
+          question: "What was Portgas D. Ace's bounty, in millions of berries?",
+          answers: [],
+          correctAnswer: "550",
+          correctValue: 550,
+          explanation:
+            "550 million berries. For the whole first part of the manga, it's the biggest bounty we actually see as a number.",
+        },
+        {
+          id: 19,
+          question: "What is Kaido's bounty, in millions of berries?",
+          answers: [],
+          correctAnswer: "4611.1",
+          correctValue: 4611.1,
+          explanation:
+            "4,611.1 million berries, or 4,611,100,000. It's the highest active bounty known, ahead of Big Mom's 4,388 million.",
+        },
+        {
+          id: 20,
+          question: "What is Red-Haired Shanks' bounty, in millions of berries?",
+          answers: [],
+          correctAnswer: "4048.9",
+          correctValue: 4048.9,
+          explanation:
+            "4,048.9 million berries. It's revealed in chapter 957, at the same time as Kaido's, Big Mom's, Whitebeard's and Roger's.",
+        },
       ],
     },
     es: {
       title: "Quiz One Piece: las recompensas piratas",
       description:
-        "Diez recompensas de One Piece para adivinar, de Luffy a Gol D. Roger. Tú dices una cifra y te decimos si es más o menos.",
+        "Veinte recompensas de One Piece para adivinar, de Luffy a Gol D. Roger. Tú dices una cifra y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -322,6 +502,96 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
           correctValue: 5564.8,
           explanation:
             "5564,8 millones de berries, es decir, 5 564 800 000. Es la recompensa más alta que se conoce en todo One Piece, por delante de la de Barbablanca.",
+        },
+        {
+          id: 11,
+          question: "¿Cuál es la recompensa de Sanji después del arco de Wano, en millones de berries?",
+          answers: [],
+          correctAnswer: "1032",
+          correctValue: 1032,
+          explanation:
+            "1032 millones de berries. Es la primera vez que pasa de los mil millones. Su recompensa anterior, después de Whole Cake Island, era de 330 millones.",
+        },
+        {
+          id: 12,
+          question: "¿Cuál es la recompensa de Nico Robin después del arco de Wano, en millones de berries?",
+          answers: [],
+          correctAnswer: "930",
+          correctValue: 930,
+          explanation:
+            "930 millones de berries. Estaba en 130 millones después de Dressrosa, y el asalto a Onigashima, donde vence a Black Maria, la hace subir de golpe.",
+        },
+        {
+          id: 13,
+          question: "¿Cuál es la recompensa de Franky después del arco de Wano, en millones de berries?",
+          answers: [],
+          correctAnswer: "394",
+          correctValue: 394,
+          explanation:
+            "394 millones de berries. Su primera recompensa, después de Enies Lobby, era de 44 millones.",
+        },
+        {
+          id: 14,
+          question: "¿Cuál es la recompensa de Brook después del arco de Wano, en millones de berries?",
+          answers: [],
+          correctAnswer: "383",
+          correctValue: 383,
+          explanation:
+            "383 millones de berries. Su primera recompensa, 33 millones, viene de cuando navegaba con los Piratas Rumbar, mucho antes de conocer a Luffy.",
+        },
+        {
+          id: 15,
+          question: "Después de Enies Lobby, ¿a cuántos millones de berries sube la recompensa de Luffy?",
+          answers: [],
+          correctAnswer: "300",
+          correctValue: 300,
+          explanation:
+            "300 millones de berries. Valía 100 millones desde Alabasta, y atacar una isla del Gobierno Mundial le triplica la recompensa.",
+        },
+        {
+          id: 16,
+          question: "Después de Whole Cake Island, la recompensa de Luffy pasa de los mil millones. ¿De cuántos millones de berries?",
+          answers: [],
+          correctAnswer: "1500",
+          correctValue: 1500,
+          explanation:
+            "1500 millones de berries. Escapó de Big Mom y venció a Katakuri. Antes estaba en 500 millones desde Dressrosa.",
+        },
+        {
+          id: 17,
+          question: "¿Cuál era la recompensa de Barbablanca, en millones de berries?",
+          answers: [],
+          correctAnswer: "5046",
+          correctValue: 5046,
+          explanation:
+            "5046 millones de berries. Es la segunda recompensa más alta que se conoce en la serie, justo detrás de la de Gol D. Roger.",
+        },
+        {
+          id: 18,
+          question: "¿Cuál era la recompensa de Portgas D. Ace, en millones de berries?",
+          answers: [],
+          correctAnswer: "550",
+          correctValue: 550,
+          explanation:
+            "550 millones de berries. En toda la primera parte del manga, es la recompensa más alta que se ve en cifras.",
+        },
+        {
+          id: 19,
+          question: "¿Cuál es la recompensa de Kaido, en millones de berries?",
+          answers: [],
+          correctAnswer: "4611.1",
+          correctValue: 4611.1,
+          explanation:
+            "4611,1 millones de berries, o sea 4 611 100 000. Es la recompensa activa más alta que se conoce, por delante de la de Big Mom, que es de 4388 millones.",
+        },
+        {
+          id: 20,
+          question: "¿Cuál es la recompensa de Shanks el Pelirrojo, en millones de berries?",
+          answers: [],
+          correctAnswer: "4048.9",
+          correctValue: 4048.9,
+          explanation:
+            "4048,9 millones de berries. Se revela en el capítulo 957, al mismo tiempo que las de Kaido, Big Mom, Barbablanca y Roger.",
         },
       ],
     },

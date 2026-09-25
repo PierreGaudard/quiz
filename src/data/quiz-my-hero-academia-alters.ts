@@ -25,7 +25,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
     fr: {
       title: "Quiz My Hero Academia : les Alters de la 1-A",
       description:
-        "Dix questions sur les pouvoirs des élèves de la classe 1-A de Yuei, d'Iida à Todoroki. À toi de retrouver qui fait quoi.",
+        "Vingt questions sur les pouvoirs des élèves de la classe 1-A de Yuei, d'Iida à Todoroki. À toi de retrouver qui fait quoi.",
       questions: [
         {
           id: 1,
@@ -162,12 +162,142 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
           explanation:
             "Le côté droit fait la glace, le gauche fait le feu. Il a hérité la glace de sa mère et le feu de son père, et au début il refuse d'utiliser le feu.",
         },
+        {
+          id: 11,
+          question: "Que sécrète la peau de Mina Ashido ?",
+          answers: [
+            { id: "a", text: "Du poison" },
+            { id: "b", text: "De la colle" },
+            { id: "c", text: "De l'acide" },
+            { id: "d", text: "De l'huile" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "De l'acide. Elle peut régler sa force et sa consistance selon ce qu'elle veut en faire. Son nom de héros est Pinky.",
+        },
+        {
+          id: 12,
+          question: "D'où sort le ruban adhésif de Hanta Sero ?",
+          answers: [
+            { id: "a", text: "De ses coudes" },
+            { id: "b", text: "De sa bouche" },
+            { id: "c", text: "De ses poignets" },
+            { id: "d", text: "De ses genoux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "De ses coudes, qui ressemblent à des dérouleurs de scotch. Son nom de héros est d'ailleurs Cellophane.",
+        },
+        {
+          id: 13,
+          question: "Quel élève de la 1-A a une grosse queue très musclée ?",
+          answers: [
+            { id: "a", text: "Koji Koda" },
+            { id: "b", text: "Mashirao Ojiro" },
+            { id: "c", text: "Mezo Shoji" },
+            { id: "d", text: "Rikido Sato" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mashirao Ojiro. Son Alter s'appelle tout simplement Tail : il se bat surtout avec sa queue, un peu comme avec un bras en plus.",
+        },
+        {
+          id: 14,
+          question: "Que doit avaler Rikido Sato pour devenir beaucoup plus fort ?",
+          answers: [
+            { id: "a", text: "Du sel" },
+            { id: "b", text: "Du café" },
+            { id: "c", text: "Du sucre" },
+            { id: "d", text: "De la viande" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Du sucre. Son Alter s'appelle Sugar Rush : chaque dose de 10 grammes de sucre lui donne trois minutes de force en plus, mais il devient moins vif d'esprit. Du coup, il adore faire des gâteaux.",
+        },
+        {
+          id: 15,
+          question: "Avec quoi Koji Koda peut-il communiquer grâce à son Alter ?",
+          answers: [
+            { id: "a", text: "Les animaux" },
+            { id: "b", text: "Les machines" },
+            { id: "c", text: "Les plantes" },
+            { id: "d", text: "Les morts" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Avec les animaux. Son Alter s'appelle Anivoice : il leur parle et ils l'aident. Il a quand même très peur des insectes.",
+        },
+        {
+          id: 16,
+          question: "Que peut faire pousser Mezo Shoji au bout de ses bras en forme de tentacules ?",
+          answers: [
+            { id: "a", text: "Des griffes" },
+            { id: "b", text: "Des ailes" },
+            { id: "c", text: "Des fleurs" },
+            { id: "d", text: "Des organes, comme des yeux ou des bouches" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Des organes : des yeux, des oreilles, des bouches ou encore des mains. Son Alter s'appelle Dupli-Arms, et il a quatre de ces bras qui partent de ses épaules.",
+        },
+        {
+          id: 17,
+          question: "Quelle élève de la 1-A est invisible en permanence ?",
+          answers: [
+            { id: "a", text: "Kyoka Jiro" },
+            { id: "b", text: "Toru Hagakure" },
+            { id: "c", text: "Mina Ashido" },
+            { id: "d", text: "Tsuyu Asui" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Toru Hagakure. Elle ne peut pas couper son Alter, donc personne dans la classe ne sait à quoi elle ressemble. Son Alter lui permet aussi de dévier la lumière.",
+        },
+        {
+          id: 18,
+          question: "Quel est le nom de héros de Momo Yaoyorozu ?",
+          answers: [
+            { id: "a", text: "Creati" },
+            { id: "b", text: "Uravity" },
+            { id: "c", text: "Earphone Jack" },
+            { id: "d", text: "Pinky" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Creati, qui vient de son Alter de création. Uravity, c'est Ochaco, Earphone Jack, c'est Kyoka Jiro, et Pinky, c'est Mina.",
+        },
+        {
+          id: 19,
+          question: "De qui Tenya Iida reprend-il le nom de héros Ingenium ?",
+          answers: [
+            { id: "a", text: "De son père" },
+            { id: "b", text: "De son grand frère" },
+            { id: "c", text: "De son professeur" },
+            { id: "d", text: "D'All Might" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "De son grand frère, Tensei Iida. Tensei doit arrêter d'être un héros après avoir été gravement blessé par Stain, et Tenya prend la suite sous le même nom.",
+        },
+        {
+          id: 20,
+          question: "Quel est le nom de héros de Fumikage Tokoyami ?",
+          answers: [
+            { id: "a", text: "Shadow King" },
+            { id: "b", text: "Crow" },
+            { id: "c", text: "Tsukuyomi" },
+            { id: "d", text: "Chargebolt" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Tsukuyomi, le dieu de la lune dans la mythologie japonaise. Chargebolt, c'est Denki Kaminari.",
+        },
       ],
     },
     en: {
       title: "My Hero Academia Quiz: Class 1-A Quirks",
       description:
-        "Ten questions on the powers of the students in U.A.'s Class 1-A, from Iida to Todoroki. Can you match each Quirk to its owner?",
+        "Twenty questions on the powers of the students in U.A.'s Class 1-A, from Iida to Todoroki. Can you match each Quirk to its owner?",
       questions: [
         {
           id: 1,
@@ -304,12 +434,142 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
           explanation:
             "The right side makes ice and the left side makes fire. He got the ice from his mother and the fire from his father, and at first he refuses to use the fire.",
         },
+        {
+          id: 11,
+          question: "What does Mina Ashido's skin produce?",
+          answers: [
+            { id: "a", text: "Poison" },
+            { id: "b", text: "Glue" },
+            { id: "c", text: "Acid" },
+            { id: "d", text: "Oil" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Acid. She can control how strong and how thick it is, depending on what she needs. Her hero name is Pinky.",
+        },
+        {
+          id: 12,
+          question: "Where does Hanta Sero's tape come out of?",
+          answers: [
+            { id: "a", text: "His elbows" },
+            { id: "b", text: "His mouth" },
+            { id: "c", text: "His wrists" },
+            { id: "d", text: "His knees" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "His elbows, which look like tape dispensers. That's why his hero name is Cellophane.",
+        },
+        {
+          id: 13,
+          question: "Which Class 1-A student has a big, muscular tail?",
+          answers: [
+            { id: "a", text: "Koji Koda" },
+            { id: "b", text: "Mashirao Ojiro" },
+            { id: "c", text: "Mezo Shoji" },
+            { id: "d", text: "Rikido Sato" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mashirao Ojiro. His Quirk is just called Tail: he mostly fights with it, a bit like having an extra arm.",
+        },
+        {
+          id: 14,
+          question: "What does Rikido Sato need to eat to get much stronger?",
+          answers: [
+            { id: "a", text: "Salt" },
+            { id: "b", text: "Coffee" },
+            { id: "c", text: "Sugar" },
+            { id: "d", text: "Meat" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Sugar. His Quirk is Sugar Rush: every 10 grams of sugar gives him three more minutes of extra strength, but it also slows his thinking down. No surprise he loves baking.",
+        },
+        {
+          id: 15,
+          question: "What can Koji Koda talk to thanks to his Quirk?",
+          answers: [
+            { id: "a", text: "Animals" },
+            { id: "b", text: "Machines" },
+            { id: "c", text: "Plants" },
+            { id: "d", text: "Ghosts" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Animals. His Quirk is called Anivoice: he talks to them and they help him out. He's still terrified of bugs, though.",
+        },
+        {
+          id: 16,
+          question: "What can Mezo Shoji grow at the tips of his tentacle arms?",
+          answers: [
+            { id: "a", text: "Claws" },
+            { id: "b", text: "Wings" },
+            { id: "c", text: "Flowers" },
+            { id: "d", text: "Body parts like eyes or mouths" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Body parts: eyes, ears, mouths, hands and so on. His Quirk is called Dupli-Arms, and he has four of these arms growing from his shoulders.",
+        },
+        {
+          id: 17,
+          question: "Which Class 1-A student is invisible all the time?",
+          answers: [
+            { id: "a", text: "Kyoka Jiro" },
+            { id: "b", text: "Toru Hagakure" },
+            { id: "c", text: "Mina Ashido" },
+            { id: "d", text: "Tsuyu Asui" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Toru Hagakure. She can't switch her Quirk off, so nobody in class knows what she looks like. Her Quirk also lets her bend light.",
+        },
+        {
+          id: 18,
+          question: "What is Momo Yaoyorozu's hero name?",
+          answers: [
+            { id: "a", text: "Creati" },
+            { id: "b", text: "Uravity" },
+            { id: "c", text: "Earphone Jack" },
+            { id: "d", text: "Pinky" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Creati, from her Quirk that creates things. Uravity is Ochaco, Earphone Jack is Kyoka Jiro and Pinky is Mina.",
+        },
+        {
+          id: 19,
+          question: "Who does Tenya Iida take the hero name Ingenium from?",
+          answers: [
+            { id: "a", text: "His father" },
+            { id: "b", text: "His older brother" },
+            { id: "c", text: "His teacher" },
+            { id: "d", text: "All Might" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "His older brother, Tensei Iida. Tensei has to quit being a hero after Stain badly injures him, and Tenya carries on under the same name.",
+        },
+        {
+          id: 20,
+          question: "What is Fumikage Tokoyami's hero name?",
+          answers: [
+            { id: "a", text: "Shadow King" },
+            { id: "b", text: "Crow" },
+            { id: "c", text: "Tsukuyomi" },
+            { id: "d", text: "Chargebolt" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Tsukuyomi, the moon god in Japanese mythology. Chargebolt is Denki Kaminari.",
+        },
       ],
     },
     es: {
       title: "Quiz My Hero Academia: los Dones de la 1-A",
       description:
-        "Diez preguntas sobre los poderes de los alumnos de la clase 1-A de la U.A., de Iida a Todoroki. ¿Sabes quién hace qué?",
+        "Veinte preguntas sobre los poderes de los alumnos de la clase 1-A de la U.A., de Iida a Todoroki. ¿Sabes quién hace qué?",
       questions: [
         {
           id: 1,
@@ -445,6 +705,136 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "El lado derecho hace hielo y el izquierdo, fuego. Heredó el hielo de su madre y el fuego de su padre, y al principio se niega a usar el fuego.",
+        },
+        {
+          id: 11,
+          question: "¿Qué suelta la piel de Mina Ashido?",
+          answers: [
+            { id: "a", text: "Veneno" },
+            { id: "b", text: "Pegamento" },
+            { id: "c", text: "Ácido" },
+            { id: "d", text: "Aceite" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Ácido. Puede controlar lo fuerte y lo espeso que es, según lo que necesite. Su nombre de heroína es Pinky.",
+        },
+        {
+          id: 12,
+          question: "¿De dónde sale la cinta adhesiva de Hanta Sero?",
+          answers: [
+            { id: "a", text: "De los codos" },
+            { id: "b", text: "De la boca" },
+            { id: "c", text: "De las muñecas" },
+            { id: "d", text: "De las rodillas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "De los codos, que parecen portarrollos de celo. Por eso su nombre de héroe es Cellophane.",
+        },
+        {
+          id: 13,
+          question: "¿Qué alumno de la 1-A tiene una cola grande y muy musculosa?",
+          answers: [
+            { id: "a", text: "Koji Koda" },
+            { id: "b", text: "Mashirao Ojiro" },
+            { id: "c", text: "Mezo Shoji" },
+            { id: "d", text: "Rikido Sato" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mashirao Ojiro. Su Don se llama simplemente Tail: pelea sobre todo con la cola, como si tuviera un brazo más.",
+        },
+        {
+          id: 14,
+          question: "¿Qué tiene que comer Rikido Sato para volverse mucho más fuerte?",
+          answers: [
+            { id: "a", text: "Sal" },
+            { id: "b", text: "Café" },
+            { id: "c", text: "Azúcar" },
+            { id: "d", text: "Carne" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Azúcar. Su Don se llama Sugar Rush: cada 10 gramos de azúcar le dan tres minutos más de fuerza extra, pero le cuesta más pensar. Por algo le encanta hacer pasteles.",
+        },
+        {
+          id: 15,
+          question: "¿Con qué puede comunicarse Koji Koda gracias a su Don?",
+          answers: [
+            { id: "a", text: "Con los animales" },
+            { id: "b", text: "Con las máquinas" },
+            { id: "c", text: "Con las plantas" },
+            { id: "d", text: "Con los fantasmas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Con los animales. Su Don se llama Anivoice: les habla y ellos le ayudan. Eso sí, los insectos le dan pánico.",
+        },
+        {
+          id: 16,
+          question: "¿Qué puede hacer crecer Mezo Shoji en la punta de sus brazos con forma de tentáculo?",
+          answers: [
+            { id: "a", text: "Garras" },
+            { id: "b", text: "Alas" },
+            { id: "c", text: "Flores" },
+            { id: "d", text: "Partes del cuerpo, como ojos o bocas" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Partes del cuerpo: ojos, orejas, bocas, manos, etc. Su Don se llama Dupli-Arms, y tiene cuatro de esos brazos que le salen de los hombros.",
+        },
+        {
+          id: 17,
+          question: "¿Qué alumna de la 1-A es invisible todo el tiempo?",
+          answers: [
+            { id: "a", text: "Kyoka Jiro" },
+            { id: "b", text: "Toru Hagakure" },
+            { id: "c", text: "Mina Ashido" },
+            { id: "d", text: "Tsuyu Asui" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Toru Hagakure. No puede apagar su Don, así que nadie en la clase sabe qué cara tiene. Su Don también le permite desviar la luz.",
+        },
+        {
+          id: 18,
+          question: "¿Cuál es el nombre de heroína de Momo Yaoyorozu?",
+          answers: [
+            { id: "a", text: "Creati" },
+            { id: "b", text: "Uravity" },
+            { id: "c", text: "Earphone Jack" },
+            { id: "d", text: "Pinky" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Creati, por su Don de crear cosas. Uravity es Ochaco, Earphone Jack es Kyoka Jiro y Pinky es Mina.",
+        },
+        {
+          id: 19,
+          question: "¿De quién hereda Tenya Iida el nombre de héroe Ingenium?",
+          answers: [
+            { id: "a", text: "De su padre" },
+            { id: "b", text: "De su hermano mayor" },
+            { id: "c", text: "De su profesor" },
+            { id: "d", text: "De All Might" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "De su hermano mayor, Tensei Iida. Tensei tiene que dejar de ser héroe después de que Stain lo hiera de gravedad, y Tenya sigue con el mismo nombre.",
+        },
+        {
+          id: 20,
+          question: "¿Cuál es el nombre de héroe de Fumikage Tokoyami?",
+          answers: [
+            { id: "a", text: "Shadow King" },
+            { id: "b", text: "Crow" },
+            { id: "c", text: "Tsukuyomi" },
+            { id: "d", text: "Chargebolt" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Tsukuyomi, el dios de la luna en la mitología japonesa. Chargebolt es Denki Kaminari.",
         },
       ],
     },

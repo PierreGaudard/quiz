@@ -21,7 +21,7 @@ export const quizOnePiece: TranslatedQuiz = {
     fr: {
       title: "Connais-tu bien One Piece ?",
       description:
-        "Dix questions sur One Piece : Luffy et son fruit du démon, Zoro, Sanji, Chopper, Shanks, Ace et le Thousand Sunny.",
+        "Vingt questions sur One Piece : Luffy et son fruit du démon, Zoro, Sanji, Chopper, Shanks, Ace et le Thousand Sunny.",
       questions: [
         {
           id: 1,
@@ -159,12 +159,142 @@ export const quizOnePiece: TranslatedQuiz = {
           explanation:
             "Iñaki Godoy, un acteur mexicain. Mackenyu y joue Zoro, Taz Skylar joue Sanji et Jacob Romero Gibson joue Usopp.",
         },
+        {
+          id: 11,
+          question: "Quel est le rêve de Zoro ?",
+          answers: [
+            { id: "a", text: "Retrouver son père" },
+            { id: "b", text: "Devenir le plus grand sabreur du monde" },
+            { id: "c", text: "Trouver All Blue" },
+            { id: "d", text: "Devenir le Roi des Pirates" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Devenir le plus grand sabreur du monde. Pour y arriver, il doit battre Dracule Mihawk, qui porte justement ce titre.",
+        },
+        {
+          id: 12,
+          question: "Qui est le musicien de l'équipage de Luffy ?",
+          answers: [
+            { id: "a", text: "Franky" },
+            { id: "b", text: "Usopp" },
+            { id: "c", text: "Brook" },
+            { id: "d", text: "Jinbe" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Brook, un squelette qui joue du violon et du piano. Il a mangé le Yomi Yomi no Mi, le fruit qui l'a ramené à la vie après sa mort.",
+        },
+        {
+          id: 13,
+          question: "Quel est le rôle de Nami dans l'équipage ?",
+          answers: [
+            { id: "a", text: "Navigatrice" },
+            { id: "b", text: "Archéologue" },
+            { id: "c", text: "Médecin" },
+            { id: "d", text: "Tireuse d'élite" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Nami est la navigatrice. Son rêve est d'ailleurs de dessiner une carte du monde entier.",
+        },
+        {
+          id: 14,
+          question: "Quel est le rêve de Sanji ?",
+          answers: [
+            { id: "a", text: "Battre Zeff en cuisine" },
+            { id: "b", text: "Retrouver sa famille" },
+            { id: "c", text: "Ouvrir un restaurant sur Grand Line" },
+            { id: "d", text: "Trouver All Blue" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Trouver All Blue, une mer de légende où vivraient les poissons des quatre océans. C'était aussi le rêve de Zeff, qui l'a élevé au Baratie.",
+        },
+        {
+          id: 15,
+          question: "Comment s'appelle le grand-père de Luffy, héros de la Marine ?",
+          answers: [
+            { id: "a", text: "Sengoku" },
+            { id: "b", text: "Garp" },
+            { id: "c", text: "Kizaru" },
+            { id: "d", text: "Rayleigh" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Monkey D. Garp, vice-amiral de la Marine. Il voulait que Luffy devienne Marine lui aussi, et c'est raté !",
+        },
+        {
+          id: 16,
+          question: "Qui est le père de Luffy ?",
+          answers: [
+            { id: "a", text: "Shanks" },
+            { id: "b", text: "Gol D. Roger" },
+            { id: "c", text: "Monkey D. Dragon" },
+            { id: "d", text: "Barbe Blanche" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Monkey D. Dragon, le chef de l'armée révolutionnaire et l'homme le plus recherché du monde. C'est Garp qui l'apprend à Luffy, à Water Seven.",
+        },
+        {
+          id: 17,
+          question: "Quel frère adoptif de Luffy devient chef d'état-major de l'armée révolutionnaire ?",
+          answers: [
+            { id: "a", text: "Ace" },
+            { id: "b", text: "Sabo" },
+            { id: "c", text: "Koby" },
+            { id: "d", text: "Trafalgar Law" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sabo. Luffy et Ace le croyaient mort depuis l'enfance. Il réapparaît à Dressrosa, où il mange le Mera Mera no Mi, le fruit qu'avait Ace.",
+        },
+        {
+          id: 18,
+          question: "Qui règne sur Amazon Lily, l'île des guerrières Kuja ?",
+          answers: [
+            { id: "a", text: "Nico Robin" },
+            { id: "b", text: "Big Mom" },
+            { id: "c", text: "Boa Hancock" },
+            { id: "d", text: "Perona" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Boa Hancock, l'impératrice des Kuja. Elle tombe amoureuse de Luffy quand il atterrit sur son île.",
+        },
+        {
+          id: 19,
+          question: "Quel studio produit l'anime One Piece ?",
+          answers: [
+            { id: "a", text: "Toei Animation" },
+            { id: "b", text: "Studio Ghibli" },
+            { id: "c", text: "MAPPA" },
+            { id: "d", text: "Madhouse" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Toei Animation, qui diffuse la série au Japon depuis octobre 1999. C'est aussi le studio de l'anime Dragon Ball.",
+        },
+        {
+          id: 20,
+          question: "De quelle mer vient Luffy ?",
+          answers: [
+            { id: "a", text: "North Blue" },
+            { id: "b", text: "South Blue" },
+            { id: "c", text: "West Blue" },
+            { id: "d", text: "East Blue" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "D'East Blue, la plus calme des quatre mers. Il est né au village de Fuchsia, sur l'île de Dawn.",
+        },
       ],
     },
     en: {
       title: "How well do you know One Piece?",
       description:
-        "Ten questions on One Piece: Luffy and his Devil Fruit, Zoro, Sanji, Chopper, Shanks, Ace and the Thousand Sunny.",
+        "Twenty questions on One Piece: Luffy and his Devil Fruit, Zoro, Sanji, Chopper, Shanks, Ace and the Thousand Sunny.",
       questions: [
         {
           id: 1,
@@ -302,12 +432,142 @@ export const quizOnePiece: TranslatedQuiz = {
           explanation:
             "Iñaki Godoy, a Mexican actor. Mackenyu plays Zoro, Taz Skylar plays Sanji and Jacob Romero Gibson plays Usopp.",
         },
+        {
+          id: 11,
+          question: "What is Zoro's dream?",
+          answers: [
+            { id: "a", text: "To find his father" },
+            { id: "b", text: "To become the world's greatest swordsman" },
+            { id: "c", text: "To find the All Blue" },
+            { id: "d", text: "To become King of the Pirates" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "To become the world's greatest swordsman. To get there, he has to beat Dracule Mihawk, who holds that exact title.",
+        },
+        {
+          id: 12,
+          question: "Who is the musician of Luffy's crew?",
+          answers: [
+            { id: "a", text: "Franky" },
+            { id: "b", text: "Usopp" },
+            { id: "c", text: "Brook" },
+            { id: "d", text: "Jinbe" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Brook, a skeleton who plays the violin and the piano. He ate the Revive-Revive Fruit, which brought him back to life after he died.",
+        },
+        {
+          id: 13,
+          question: "What is Nami's job on the crew?",
+          answers: [
+            { id: "a", text: "Navigator" },
+            { id: "b", text: "Archaeologist" },
+            { id: "c", text: "Doctor" },
+            { id: "d", text: "Sniper" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Nami is the navigator. Her dream is to draw a map of the whole world.",
+        },
+        {
+          id: 14,
+          question: "What is Sanji's dream?",
+          answers: [
+            { id: "a", text: "To beat Zeff at cooking" },
+            { id: "b", text: "To find his family" },
+            { id: "c", text: "To open a restaurant on the Grand Line" },
+            { id: "d", text: "To find the All Blue" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "To find the All Blue, a legendary sea where fish from all four oceans are said to live. It was Zeff's dream too, the man who raised him at the Baratie.",
+        },
+        {
+          id: 15,
+          question: "What is the name of Luffy's grandfather, a Marine hero?",
+          answers: [
+            { id: "a", text: "Sengoku" },
+            { id: "b", text: "Garp" },
+            { id: "c", text: "Kizaru" },
+            { id: "d", text: "Rayleigh" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Monkey D. Garp, a Marine vice admiral. He wanted Luffy to become a Marine too, and that didn't go as planned!",
+        },
+        {
+          id: 16,
+          question: "Who is Luffy's father?",
+          answers: [
+            { id: "a", text: "Shanks" },
+            { id: "b", text: "Gol D. Roger" },
+            { id: "c", text: "Monkey D. Dragon" },
+            { id: "d", text: "Whitebeard" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Monkey D. Dragon, the leader of the Revolutionary Army and the most wanted man in the world. Garp is the one who tells Luffy, in Water 7.",
+        },
+        {
+          id: 17,
+          question: "Which of Luffy's sworn brothers becomes Chief of Staff of the Revolutionary Army?",
+          answers: [
+            { id: "a", text: "Ace" },
+            { id: "b", text: "Sabo" },
+            { id: "c", text: "Koby" },
+            { id: "d", text: "Trafalgar Law" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sabo. Luffy and Ace thought he had died when they were kids. He shows up again in Dressrosa, where he eats the Flame-Flame Fruit that Ace used to have.",
+        },
+        {
+          id: 18,
+          question: "Who rules Amazon Lily, the island of the Kuja warriors?",
+          answers: [
+            { id: "a", text: "Nico Robin" },
+            { id: "b", text: "Big Mom" },
+            { id: "c", text: "Boa Hancock" },
+            { id: "d", text: "Perona" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Boa Hancock, the Kuja empress. She falls in love with Luffy when he crash-lands on her island.",
+        },
+        {
+          id: 19,
+          question: "Which studio makes the One Piece anime?",
+          answers: [
+            { id: "a", text: "Toei Animation" },
+            { id: "b", text: "Studio Ghibli" },
+            { id: "c", text: "MAPPA" },
+            { id: "d", text: "Madhouse" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Toei Animation, which has been airing the show in Japan since October 1999. It's also the studio behind the Dragon Ball anime.",
+        },
+        {
+          id: 20,
+          question: "Which sea is Luffy from?",
+          answers: [
+            { id: "a", text: "North Blue" },
+            { id: "b", text: "South Blue" },
+            { id: "c", text: "West Blue" },
+            { id: "d", text: "East Blue" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "East Blue, the calmest of the four seas. He was born in Foosha Village, on Dawn Island.",
+        },
       ],
     },
     es: {
       title: "¿Cuánto sabes de One Piece?",
       description:
-        "Diez preguntas sobre One Piece: Luffy y su fruta del diablo, Zoro, Sanji, Chopper, Shanks, Ace y el Thousand Sunny.",
+        "Veinte preguntas sobre One Piece: Luffy y su fruta del diablo, Zoro, Sanji, Chopper, Shanks, Ace y el Thousand Sunny.",
       questions: [
         {
           id: 1,
@@ -444,6 +704,136 @@ export const quizOnePiece: TranslatedQuiz = {
           correctAnswer: "d",
           explanation:
             "Iñaki Godoy, un actor mexicano. Mackenyu hace de Zoro, Taz Skylar de Sanji y Jacob Romero Gibson de Usopp.",
+        },
+        {
+          id: 11,
+          question: "¿Cuál es el sueño de Zoro?",
+          answers: [
+            { id: "a", text: "Encontrar a su padre" },
+            { id: "b", text: "Ser el mejor espadachín del mundo" },
+            { id: "c", text: "Encontrar el All Blue" },
+            { id: "d", text: "Ser el Rey de los Piratas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ser el mejor espadachín del mundo. Para lograrlo tiene que vencer a Dracule Mihawk, que tiene justamente ese título.",
+        },
+        {
+          id: 12,
+          question: "¿Quién es el músico de la tripulación de Luffy?",
+          answers: [
+            { id: "a", text: "Franky" },
+            { id: "b", text: "Usopp" },
+            { id: "c", text: "Brook" },
+            { id: "d", text: "Jinbe" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Brook, un esqueleto que toca el violín y el piano. Se comió la Yomi Yomi no Mi, la fruta que lo devolvió a la vida después de morir.",
+        },
+        {
+          id: 13,
+          question: "¿Qué papel tiene Nami en la tripulación?",
+          answers: [
+            { id: "a", text: "Navegante" },
+            { id: "b", text: "Arqueóloga" },
+            { id: "c", text: "Médica" },
+            { id: "d", text: "Francotiradora" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Nami es la navegante. Su sueño es, de hecho, dibujar un mapa del mundo entero.",
+        },
+        {
+          id: 14,
+          question: "¿Cuál es el sueño de Sanji?",
+          answers: [
+            { id: "a", text: "Ganar a Zeff en la cocina" },
+            { id: "b", text: "Encontrar a su familia" },
+            { id: "c", text: "Abrir un restaurante en el Grand Line" },
+            { id: "d", text: "Encontrar el All Blue" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Encontrar el All Blue, un mar legendario donde vivirían los peces de los cuatro océanos. También era el sueño de Zeff, que lo crio en el Baratie.",
+        },
+        {
+          id: 15,
+          question: "¿Cómo se llama el abuelo de Luffy, un héroe de la Marina?",
+          answers: [
+            { id: "a", text: "Sengoku" },
+            { id: "b", text: "Garp" },
+            { id: "c", text: "Kizaru" },
+            { id: "d", text: "Rayleigh" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Monkey D. Garp, vicealmirante de la Marina. Quería que Luffy también fuera marine, ¡y no le salió nada bien!",
+        },
+        {
+          id: 16,
+          question: "¿Quién es el padre de Luffy?",
+          answers: [
+            { id: "a", text: "Shanks" },
+            { id: "b", text: "Gol D. Roger" },
+            { id: "c", text: "Monkey D. Dragon" },
+            { id: "d", text: "Barbablanca" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Monkey D. Dragon, el líder del Ejército Revolucionario y el hombre más buscado del mundo. Es Garp quien se lo cuenta a Luffy, en Water Seven.",
+        },
+        {
+          id: 17,
+          question: "¿Qué hermano de Luffy llega a ser jefe del Estado Mayor del Ejército Revolucionario?",
+          answers: [
+            { id: "a", text: "Ace" },
+            { id: "b", text: "Sabo" },
+            { id: "c", text: "Koby" },
+            { id: "d", text: "Trafalgar Law" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sabo. Luffy y Ace lo creían muerto desde niños. Reaparece en Dressrosa, donde se come la Mera Mera no Mi, la fruta que tenía Ace.",
+        },
+        {
+          id: 18,
+          question: "¿Quién gobierna Amazon Lily, la isla de las guerreras Kuja?",
+          answers: [
+            { id: "a", text: "Nico Robin" },
+            { id: "b", text: "Big Mom" },
+            { id: "c", text: "Boa Hancock" },
+            { id: "d", text: "Perona" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Boa Hancock, la emperatriz de las Kuja. Se enamora de Luffy cuando él cae en su isla.",
+        },
+        {
+          id: 19,
+          question: "¿Qué estudio hace el anime de One Piece?",
+          answers: [
+            { id: "a", text: "Toei Animation" },
+            { id: "b", text: "Studio Ghibli" },
+            { id: "c", text: "MAPPA" },
+            { id: "d", text: "Madhouse" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Toei Animation, que emite la serie en Japón desde octubre de 1999. También es el estudio del anime de Dragon Ball.",
+        },
+        {
+          id: 20,
+          question: "¿De qué mar viene Luffy?",
+          answers: [
+            { id: "a", text: "North Blue" },
+            { id: "b", text: "South Blue" },
+            { id: "c", text: "West Blue" },
+            { id: "d", text: "East Blue" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Del East Blue, el más tranquilo de los cuatro mares. Nació en la aldea Foosha, en la isla Dawn.",
         },
       ],
     },

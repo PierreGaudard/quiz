@@ -1,7 +1,7 @@
 import type { TranslatedQuiz } from "./types";
 
 /**
- * Quiz Call of Duty en mode duel : dix questions à deux propositions sur les
+ * Quiz Call of Duty en mode duel : vingt questions à deux propositions sur les
  * personnages des campagnes et du mode Zombies.
  *
  * Le moteur n'affiche que answers[0] et answers[1] (DuelPlayer), donc exactement
@@ -22,7 +22,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
     fr: {
       title: "Duel Call of Duty : les personnages",
       description:
-        "Price, Ghost, Soap, Makarov, Mason ou encore Reznov : dix duels sur les personnages de Call of Duty. Une seule des deux réponses est la bonne !",
+        "Price, Ghost, Soap, Makarov, Mason ou encore Reznov : vingt duels sur les personnages de Call of Duty. Une seule des deux réponses est la bonne !",
       questions: [
         {
           id: 1,
@@ -139,12 +139,122 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
           explanation:
             "Edward Richtofen, un savant du Groupe 935, l'organisation qui a créé les zombies. Tank Dempsey est un marine américain.",
         },
+        {
+          id: 11,
+          question: "Dans Call of Duty 4, quel soldat du SAS le joueur incarne-t-il ?",
+          answers: [
+            { id: "a", text: "Le capitaine Price" },
+            { id: "b", text: "Soap MacTavish" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Soap MacTavish, un jeune sergent qui vient d'arriver dans l'équipe du capitaine Price. Price est le chef de son équipe.",
+        },
+        {
+          id: 12,
+          question: "Dans Call of Duty 4, quel marine américain meurt après l'explosion de la bombe nucléaire ?",
+          answers: [
+            { id: "a", text: "Paul Jackson" },
+            { id: "b", text: "Frank Woods" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le sergent Paul Jackson. Son hélicoptère s'écrase à cause du souffle de la bombe, et il meurt quelques instants plus tard dans les ruines. C'est l'une des scènes les plus marquantes du jeu.",
+        },
+        {
+          id: 13,
+          question: "Quel membre de la Task Force 141 meurt dans Modern Warfare 3 (2011) ?",
+          answers: [
+            { id: "a", text: "Le capitaine Price" },
+            { id: "b", text: "Soap MacTavish" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Soap MacTavish. Blessé pendant une mission à Prague, il meurt dans les bras de Price après lui avoir dit que Makarov connaissait Yuri, un autre membre du groupe.",
+        },
+        {
+          id: 14,
+          question: "Qui tue Makarov à la fin de Modern Warfare 3 (2011) ?",
+          answers: [
+            { id: "a", text: "Le capitaine Price" },
+            { id: "b", text: "Le général Shepherd" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le capitaine Price, sur le toit d'un hôtel de Dubaï, en le pendant avec un câble. Shepherd ne pouvait pas le faire : Price l'avait déjà tué à la fin de Modern Warfare 2.",
+        },
+        {
+          id: 15,
+          question: "Dans World at War, avec quel soldat soviétique Reznov se bat-il jusqu'à Berlin ?",
+          answers: [
+            { id: "a", text: "Dimitri Petrenko" },
+            { id: "b", text: "Alex Mason" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Dimitri Petrenko, le soldat que joue le joueur dans la campagne soviétique. Reznov le sauve au début du jeu, à Stalingrad. Alex Mason n'arrive qu'avec Black Ops.",
+        },
+        {
+          id: 16,
+          question: "Dans Black Ops, quel soldat américain accompagne Alex Mason dans ses missions ?",
+          answers: [
+            { id: "a", text: "Soap MacTavish" },
+            { id: "b", text: "Frank Woods" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Frank Woods, son meilleur ami et son partenaire sur le terrain. On le retrouve dans Black Ops II, âgé, dans une maison de retraite où il raconte ses souvenirs.",
+        },
+        {
+          id: 17,
+          question: "Quel acteur de Game of Thrones joue le méchant d'Infinite Warfare ?",
+          answers: [
+            { id: "a", text: "Kit Harington" },
+            { id: "b", text: "Sean Bean" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Kit Harington, le Jon Snow de la série. Il joue l'amiral Salen Kotch, le chef des forces qui attaquent la Terre depuis Mars.",
+        },
+        {
+          id: 18,
+          question: "Dans Modern Warfare (2019), qui dirige les combattants qui libèrent l'Urzikstan ?",
+          answers: [
+            { id: "a", text: "Valeria Garza" },
+            { id: "b", text: "Farah Karim" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Farah Karim, qui se bat depuis l'enfance contre l'armée russe dans son pays. Valeria Garza, c'est la cheffe de cartel de Modern Warfare II, sorti en 2022.",
+        },
+        {
+          id: 19,
+          question: "Dans Black Ops Cold War, quel espion soviétique la CIA traque-t-elle ?",
+          answers: [
+            { id: "a", text: "Perseus" },
+            { id: "b", text: "Makarov" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Perseus, un agent soviétique dont on ne connaît que le nom de code. Le jeu se passe en 1981, et l'équipe de Russell Adler essaie de l'empêcher de faire exploser des bombes nucléaires en Europe.",
+        },
+        {
+          id: 20,
+          question: "Dans quel jeu un capitaine Price apparaît-il pour la toute première fois ?",
+          answers: [
+            { id: "a", text: "Call of Duty 4" },
+            { id: "b", text: "Le premier Call of Duty (2003)" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le premier Call of Duty, en 2003. Il y commande les soldats britanniques pendant la Seconde Guerre mondiale. Le John Price de Call of Duty 4 est arrivé ensuite.",
+        },
       ],
     },
     en: {
       title: "Call of Duty duel: the characters",
       description:
-        "Price, Ghost, Soap, Makarov, Mason, Reznov and more: ten duels about Call of Duty characters. Only one of the two answers is right!",
+        "Price, Ghost, Soap, Makarov, Mason, Reznov and more: twenty duels about Call of Duty characters. Only one of the two answers is right!",
       questions: [
         {
           id: 1,
@@ -261,12 +371,122 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
           explanation:
             "Edward Richtofen, a scientist from Group 935, the organization that created the zombies. Tank Dempsey is an American marine.",
         },
+        {
+          id: 11,
+          question: "In Call of Duty 4, which SAS soldier does the player control?",
+          answers: [
+            { id: "a", text: "Captain Price" },
+            { id: "b", text: "Soap MacTavish" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Soap MacTavish, a young sergeant who has just joined Captain Price's team. Price is his team leader.",
+        },
+        {
+          id: 12,
+          question: "In Call of Duty 4, which US Marine dies after the nuclear bomb goes off?",
+          answers: [
+            { id: "a", text: "Paul Jackson" },
+            { id: "b", text: "Frank Woods" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sergeant Paul Jackson. His helicopter goes down in the blast, and he dies a few moments later in the ruins. It's one of the most memorable scenes in the game.",
+        },
+        {
+          id: 13,
+          question: "Which Task Force 141 member dies in Modern Warfare 3 (2011)?",
+          answers: [
+            { id: "a", text: "Captain Price" },
+            { id: "b", text: "Soap MacTavish" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Soap MacTavish. Wounded during a mission in Prague, he dies in Price's arms after telling him that Makarov knew Yuri, another member of the group.",
+        },
+        {
+          id: 14,
+          question: "Who kills Makarov at the end of Modern Warfare 3 (2011)?",
+          answers: [
+            { id: "a", text: "Captain Price" },
+            { id: "b", text: "General Shepherd" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Captain Price, on the roof of a hotel in Dubai, by hanging him with a cable. Shepherd couldn't have done it: Price had already killed him at the end of Modern Warfare 2.",
+        },
+        {
+          id: 15,
+          question: "In World at War, which Soviet soldier fights alongside Reznov all the way to Berlin?",
+          answers: [
+            { id: "a", text: "Dimitri Petrenko" },
+            { id: "b", text: "Alex Mason" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Dimitri Petrenko, the soldier you play in the Soviet campaign. Reznov saves him at the start of the game, in Stalingrad. Alex Mason only shows up in Black Ops.",
+        },
+        {
+          id: 16,
+          question: "In Black Ops, which American soldier goes on missions with Alex Mason?",
+          answers: [
+            { id: "a", text: "Soap MacTavish" },
+            { id: "b", text: "Frank Woods" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Frank Woods, his best friend and partner in the field. He's back in Black Ops II as an old man in a retirement home, telling his memories.",
+        },
+        {
+          id: 17,
+          question: "Which Game of Thrones actor plays the villain in Infinite Warfare?",
+          answers: [
+            { id: "a", text: "Kit Harington" },
+            { id: "b", text: "Sean Bean" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Kit Harington, Jon Snow in the show. He plays Admiral Salen Kotch, the leader of the forces attacking Earth from Mars.",
+        },
+        {
+          id: 18,
+          question: "In Modern Warfare (2019), who leads the fighters freeing Urzikstan?",
+          answers: [
+            { id: "a", text: "Valeria Garza" },
+            { id: "b", text: "Farah Karim" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Farah Karim, who has been fighting the Russian army in her country since childhood. Valeria Garza is the cartel boss from Modern Warfare II, released in 2022.",
+        },
+        {
+          id: 19,
+          question: "In Black Ops Cold War, which Soviet spy is the CIA hunting?",
+          answers: [
+            { id: "a", text: "Perseus" },
+            { id: "b", text: "Makarov" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Perseus, a Soviet agent known only by his code name. The game is set in 1981, and Russell Adler's team tries to stop him from setting off nuclear bombs in Europe.",
+        },
+        {
+          id: 20,
+          question: "In which game does a Captain Price appear for the very first time?",
+          answers: [
+            { id: "a", text: "Call of Duty 4" },
+            { id: "b", text: "The first Call of Duty (2003)" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The first Call of Duty, in 2003. He leads the British soldiers during the Second World War. The John Price of Call of Duty 4 came later.",
+        },
       ],
     },
     es: {
       title: "Duelo Call of Duty: los personajes",
       description:
-        "Price, Ghost, Soap, Makarov, Mason o Reznov: diez duelos sobre los personajes de Call of Duty. ¡Solo una de las dos respuestas es la buena!",
+        "Price, Ghost, Soap, Makarov, Mason o Reznov: veinte duelos sobre los personajes de Call of Duty. ¡Solo una de las dos respuestas es la buena!",
       questions: [
         {
           id: 1,
@@ -382,6 +602,116 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Edward Richtofen, un científico del Grupo 935, la organización que creó a los zombis. Tank Dempsey es un marine estadounidense.",
+        },
+        {
+          id: 11,
+          question: "En Call of Duty 4, ¿qué soldado del SAS controla el jugador?",
+          answers: [
+            { id: "a", text: "El capitán Price" },
+            { id: "b", text: "Soap MacTavish" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Soap MacTavish, un joven sargento que acaba de llegar al equipo del capitán Price. Price es el jefe de su equipo.",
+        },
+        {
+          id: 12,
+          question: "En Call of Duty 4, ¿qué marine estadounidense muere tras la explosión de la bomba nuclear?",
+          answers: [
+            { id: "a", text: "Paul Jackson" },
+            { id: "b", text: "Frank Woods" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El sargento Paul Jackson. Su helicóptero cae por la onda expansiva, y muere unos instantes después entre las ruinas. Es una de las escenas más recordadas del juego.",
+        },
+        {
+          id: 13,
+          question: "¿Qué miembro de la Task Force 141 muere en Modern Warfare 3 (2011)?",
+          answers: [
+            { id: "a", text: "El capitán Price" },
+            { id: "b", text: "Soap MacTavish" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Soap MacTavish. Herido durante una misión en Praga, muere en brazos de Price después de decirle que Makarov conocía a Yuri, otro miembro del grupo.",
+        },
+        {
+          id: 14,
+          question: "¿Quién mata a Makarov al final de Modern Warfare 3 (2011)?",
+          answers: [
+            { id: "a", text: "El capitán Price" },
+            { id: "b", text: "El general Shepherd" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El capitán Price, en la azotea de un hotel de Dubái, ahorcándolo con un cable. Shepherd no podía ser: Price ya lo había matado al final de Modern Warfare 2.",
+        },
+        {
+          id: 15,
+          question: "En World at War, ¿con qué soldado soviético lucha Reznov hasta Berlín?",
+          answers: [
+            { id: "a", text: "Dimitri Petrenko" },
+            { id: "b", text: "Alex Mason" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Dimitri Petrenko, el soldado que maneja el jugador en la campaña soviética. Reznov lo salva al principio del juego, en Stalingrado. Alex Mason no aparece hasta Black Ops.",
+        },
+        {
+          id: 16,
+          question: "En Black Ops, ¿qué soldado estadounidense acompaña a Alex Mason en sus misiones?",
+          answers: [
+            { id: "a", text: "Soap MacTavish" },
+            { id: "b", text: "Frank Woods" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Frank Woods, su mejor amigo y compañero sobre el terreno. Vuelve en Black Ops II ya mayor, en una residencia, contando sus recuerdos.",
+        },
+        {
+          id: 17,
+          question: "¿Qué actor de Juego de tronos interpreta al villano de Infinite Warfare?",
+          answers: [
+            { id: "a", text: "Kit Harington" },
+            { id: "b", text: "Sean Bean" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Kit Harington, el Jon Nieve de la serie. Interpreta al almirante Salen Kotch, el jefe de las fuerzas que atacan la Tierra desde Marte.",
+        },
+        {
+          id: 18,
+          question: "En Modern Warfare (2019), ¿quién dirige a los combatientes que liberan Urzikistán?",
+          answers: [
+            { id: "a", text: "Valeria Garza" },
+            { id: "b", text: "Farah Karim" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Farah Karim, que lucha contra el ejército ruso en su país desde que era niña. Valeria Garza es la jefa del cártel de Modern Warfare II, de 2022.",
+        },
+        {
+          id: 19,
+          question: "En Black Ops Cold War, ¿a qué espía soviético persigue la CIA?",
+          answers: [
+            { id: "a", text: "Perseus" },
+            { id: "b", text: "Makarov" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Perseus, un agente soviético del que solo se conoce el nombre en clave. El juego transcurre en 1981, y el equipo de Russell Adler intenta impedir que haga estallar bombas nucleares en Europa.",
+        },
+        {
+          id: 20,
+          question: "¿En qué juego aparece por primera vez un capitán Price?",
+          answers: [
+            { id: "a", text: "Call of Duty 4" },
+            { id: "b", text: "El primer Call of Duty (2003)" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En el primer Call of Duty, de 2003. Allí dirige a los soldados británicos durante la Segunda Guerra Mundial. El John Price de Call of Duty 4 llegó después.",
         },
       ],
     },

@@ -23,7 +23,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
     fr: {
       title: "Duel World of Warcraft : Horde ou Alliance ?",
       description:
-        "Taurens, gnomes, draeneï, worgens ou encore pandarens : dix duels sur les races de World of Warcraft et leur camp. Tu choisis lequel ?",
+        "Taurens, gnomes, draeneï, worgens ou encore pandarens : vingt duels sur les races de World of Warcraft et leur camp. Tu choisis lequel ?",
       questions: [
         {
           id: 1,
@@ -140,12 +140,122 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
           explanation:
             "Sylvanas Coursevent, une ancienne elfe devenue morte-vivante. Jaina Portvaillant est une grande magicienne humaine, du côté de l'Alliance.",
         },
+        {
+          id: 11,
+          question: "Dans quel camp jouent les nains ?",
+          answers: [
+            { id: "a", text: "La Horde" },
+            { id: "b", text: "L'Alliance" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'Alliance, depuis le lancement du jeu. Les nains vivent dans les montagnes enneigées de Dun Morogh, autour de leur ville de Forgefer.",
+        },
+        {
+          id: 12,
+          question: "Dans quel camp jouent les orcs ?",
+          answers: [
+            { id: "a", text: "La Horde" },
+            { id: "b", text: "L'Alliance" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Horde, dont ils sont le cœur depuis toujours. Dans le jeu d'origine, ils commencent au Durotar, une terre rouge et sèche de Kalimdor.",
+        },
+        {
+          id: 13,
+          question: "Dans quel camp jouent les elfes de la nuit ?",
+          answers: [
+            { id: "a", text: "La Horde" },
+            { id: "b", text: "L'Alliance" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'Alliance. Les elfes de la nuit commençaient l'aventure à Teldrassil, un arbre géant au nord de Kalimdor, jusqu'à ce qu'il brûle dans Battle for Azeroth.",
+        },
+        {
+          id: 14,
+          question: "Dans quel camp jouent les Sacrenuit, arrivés comme race alliée en 2018 ?",
+          answers: [
+            { id: "a", text: "La Horde" },
+            { id: "b", text: "L'Alliance" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Horde. Les Sacrenuit sont des elfes de la ville de Suramar, qu'on découvre dans l'extension Legion.",
+        },
+        {
+          id: 15,
+          question: "Dans quel camp jouent les elfes du Vide ?",
+          answers: [
+            { id: "a", text: "La Horde" },
+            { id: "b", text: "L'Alliance" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'Alliance. Ce sont d'anciens elfes de sang chassés de Lune-d'argent parce qu'ils s'intéressaient de trop près aux pouvoirs du Vide.",
+        },
+        {
+          id: 16,
+          question: "Qui était le roi des nains de Forgefer à la sortie du jeu ?",
+          answers: [
+            { id: "a", text: "Cairne Sabot-de-Sang" },
+            { id: "b", text: "Magni Barbe-de-bronze" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Magni Barbe-de-bronze, qu'on trouve sur son trône à Forgefer. Cairne Sabot-de-Sang est le grand chef des taurens.",
+        },
+        {
+          id: 17,
+          question: "Qui a dirigé les taurens jusqu'à sa mort dans Cataclysm ?",
+          answers: [
+            { id: "a", text: "Cairne Sabot-de-Sang" },
+            { id: "b", text: "Vol'jin" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Cairne Sabot-de-Sang, tué en duel par Garrosh. C'est ensuite son fils Baine qui prend la tête des taurens. Vol'jin, lui, dirigeait les trolls.",
+        },
+        {
+          id: 18,
+          question: "Comment s'appelle le fils du roi Varian Wrynn, qui devient roi de Hurlevent après lui ?",
+          answers: [
+            { id: "a", text: "Anduin" },
+            { id: "b", text: "Arthas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Anduin Wrynn, qui monte sur le trône à la mort de son père au début de Legion. Arthas est le prince de Lordaeron, un tout autre royaume.",
+        },
+        {
+          id: 19,
+          question: "De quelle planète viennent les orcs ?",
+          answers: [
+            { id: "a", text: "Argus" },
+            { id: "b", text: "Draenor" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Draenor, qu'ils ont quittée en passant par la Porte des ténèbres. Argus est la planète d'origine des draeneï.",
+        },
+        {
+          id: 20,
+          question: "Qui est à la tête des elfes de la nuit ?",
+          answers: [
+            { id: "a", text: "Tyrande Murmevent" },
+            { id: "b", text: "Sylvanas Coursevent" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tyrande Murmevent, la grande prêtresse d'Élune, qui dirige son peuple avec Malfurion Hurlorage. Sylvanas est dans le camp d'en face, avec les Réprouvés.",
+        },
       ],
     },
     en: {
       title: "World of Warcraft duel: Horde or Alliance?",
       description:
-        "Tauren, gnomes, draenei, worgen, pandaren and more: ten duels about the races of World of Warcraft and their side. Which one do you pick?",
+        "Tauren, gnomes, draenei, worgen, pandaren and more: twenty duels about the races of World of Warcraft and their side. Which one do you pick?",
       questions: [
         {
           id: 1,
@@ -262,12 +372,122 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
           explanation:
             "Sylvanas Windrunner, a former elf who became undead. Jaina Proudmoore is a powerful human mage on the Alliance side.",
         },
+        {
+          id: 11,
+          question: "Which side do the dwarves play on?",
+          answers: [
+            { id: "a", text: "The Horde" },
+            { id: "b", text: "The Alliance" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Alliance, since the game came out. The dwarves live in the snowy mountains of Dun Morogh, around their city of Ironforge.",
+        },
+        {
+          id: 12,
+          question: "Which side do the orcs play on?",
+          answers: [
+            { id: "a", text: "The Horde" },
+            { id: "b", text: "The Alliance" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Horde, and they've always been at its heart. In the original game they start out in Durotar, a dry red land in Kalimdor.",
+        },
+        {
+          id: 13,
+          question: "Which side do the night elves play on?",
+          answers: [
+            { id: "a", text: "The Horde" },
+            { id: "b", text: "The Alliance" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Alliance. Night elves used to start out on Teldrassil, a giant tree in the north of Kalimdor, until it burned down in Battle for Azeroth.",
+        },
+        {
+          id: 14,
+          question: "Which side do the Nightborne play on, since they became an allied race in 2018?",
+          answers: [
+            { id: "a", text: "The Horde" },
+            { id: "b", text: "The Alliance" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Horde. The Nightborne are elves from the city of Suramar, which you discover in the Legion expansion.",
+        },
+        {
+          id: 15,
+          question: "Which side do the void elves play on?",
+          answers: [
+            { id: "a", text: "The Horde" },
+            { id: "b", text: "The Alliance" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Alliance. They're former blood elves who were thrown out of Silvermoon for getting too interested in the powers of the Void.",
+        },
+        {
+          id: 16,
+          question: "Who was king of the Ironforge dwarves when the game came out?",
+          answers: [
+            { id: "a", text: "Cairne Bloodhoof" },
+            { id: "b", text: "Magni Bronzebeard" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Magni Bronzebeard, who sits on his throne in Ironforge. Cairne Bloodhoof is the great chieftain of the tauren.",
+        },
+        {
+          id: 17,
+          question: "Who led the tauren until he died in Cataclysm?",
+          answers: [
+            { id: "a", text: "Cairne Bloodhoof" },
+            { id: "b", text: "Vol'jin" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Cairne Bloodhoof, killed in a duel by Garrosh. His son Baine then takes over the tauren. Vol'jin was the leader of the trolls.",
+        },
+        {
+          id: 18,
+          question: "What's the name of King Varian Wrynn's son, who becomes king of Stormwind after him?",
+          answers: [
+            { id: "a", text: "Anduin" },
+            { id: "b", text: "Arthas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Anduin Wrynn, who takes the throne when his father dies at the start of Legion. Arthas is the prince of Lordaeron, a completely different kingdom.",
+        },
+        {
+          id: 19,
+          question: "Which planet do the orcs come from?",
+          answers: [
+            { id: "a", text: "Argus" },
+            { id: "b", text: "Draenor" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Draenor, which they left through the Dark Portal. Argus is the home planet of the draenei.",
+        },
+        {
+          id: 20,
+          question: "Who leads the night elves?",
+          answers: [
+            { id: "a", text: "Tyrande Whisperwind" },
+            { id: "b", text: "Sylvanas Windrunner" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tyrande Whisperwind, the high priestess of Elune, who leads her people alongside Malfurion Stormrage. Sylvanas is on the other side, with the Forsaken.",
+        },
       ],
     },
     es: {
       title: "Duelo World of Warcraft: ¿Horda o Alianza?",
       description:
-        "Taurens, gnomos, draenei, huargen o pandaren: diez duelos sobre las razas de World of Warcraft y su bando. ¿Cuál eliges?",
+        "Taurens, gnomos, draenei, huargen o pandaren: veinte duelos sobre las razas de World of Warcraft y su bando. ¿Cuál eliges?",
       questions: [
         {
           id: 1,
@@ -383,6 +603,116 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Sylvanas Brisaveloz, una antigua elfa convertida en no-muerta. Jaina Valiente es una gran maga humana, del lado de la Alianza.",
+        },
+        {
+          id: 11,
+          question: "¿En qué bando juegan los enanos?",
+          answers: [
+            { id: "a", text: "La Horda" },
+            { id: "b", text: "La Alianza" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La Alianza, desde el lanzamiento del juego. Los enanos viven en las montañas nevadas de Dun Morogh, alrededor de su ciudad, Forjaz.",
+        },
+        {
+          id: 12,
+          question: "¿En qué bando juegan los orcos?",
+          answers: [
+            { id: "a", text: "La Horda" },
+            { id: "b", text: "La Alianza" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Horda, de la que siempre han sido el corazón. En el juego original empiezan en Durotar, una tierra roja y seca de Kalimdor.",
+        },
+        {
+          id: 13,
+          question: "¿En qué bando juegan los elfos de la noche?",
+          answers: [
+            { id: "a", text: "La Horda" },
+            { id: "b", text: "La Alianza" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La Alianza. Los elfos de la noche empezaban en Teldrassil, un árbol gigante al norte de Kalimdor, hasta que ardió en Battle for Azeroth.",
+        },
+        {
+          id: 14,
+          question: "¿En qué bando juegan los nocheterna, que llegaron como raza aliada en 2018?",
+          answers: [
+            { id: "a", text: "La Horda" },
+            { id: "b", text: "La Alianza" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Horda. Los nocheterna son elfos de la ciudad de Suramar, que se descubre en la expansión Legion.",
+        },
+        {
+          id: 15,
+          question: "¿En qué bando juegan los elfos del Vacío?",
+          answers: [
+            { id: "a", text: "La Horda" },
+            { id: "b", text: "La Alianza" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La Alianza. Son antiguos elfos de sangre expulsados de Lunargenta por interesarse demasiado por los poderes del Vacío.",
+        },
+        {
+          id: 16,
+          question: "¿Quién era el rey de los enanos de Forjaz cuando salió el juego?",
+          answers: [
+            { id: "a", text: "Cairne Pezuña de Sangre" },
+            { id: "b", text: "Magni Barbabronce" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Magni Barbabronce, al que se encuentra en su trono de Forjaz. Cairne Pezuña de Sangre es el gran jefe de los taurens.",
+        },
+        {
+          id: 17,
+          question: "¿Quién dirigió a los taurens hasta su muerte en Cataclysm?",
+          answers: [
+            { id: "a", text: "Cairne Pezuña de Sangre" },
+            { id: "b", text: "Vol'jin" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Cairne Pezuña de Sangre, al que Garrosh mata en un duelo. Después es su hijo Baine quien toma el mando de los taurens. Vol'jin era el líder de los trols.",
+        },
+        {
+          id: 18,
+          question: "¿Cómo se llama el hijo del rey Varian Wrynn, que se convierte en rey de Ventormenta después de él?",
+          answers: [
+            { id: "a", text: "Anduin" },
+            { id: "b", text: "Arthas" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Anduin Wrynn, que sube al trono cuando muere su padre al principio de Legion. Arthas es el príncipe de Lordaeron, un reino totalmente distinto.",
+        },
+        {
+          id: 19,
+          question: "¿De qué planeta vienen los orcos?",
+          answers: [
+            { id: "a", text: "Argus" },
+            { id: "b", text: "Draenor" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "De Draenor, que dejaron atrás cruzando el Portal Oscuro. Argus es el planeta de origen de los draenei.",
+        },
+        {
+          id: 20,
+          question: "¿Quién está al frente de los elfos de la noche?",
+          answers: [
+            { id: "a", text: "Tyrande Susurravientos" },
+            { id: "b", text: "Sylvanas Brisaveloz" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tyrande Susurravientos, la suma sacerdotisa de Elune, que guía a su pueblo junto a Malfurion Tempestira. Sylvanas está en el bando contrario, con los Renegados.",
         },
       ],
     },

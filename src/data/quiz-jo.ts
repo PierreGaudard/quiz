@@ -26,7 +26,7 @@ export const quizJO: TranslatedQuiz = {
     fr: {
       title: "Estimation : les chiffres des Jeux olympiques",
       description:
-        "Dix nombres à trouver sur les Jeux. Tu proposes, on te dit plus haut ou plus bas.",
+        "Vingt nombres à trouver sur les Jeux. Tu proposes, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -119,12 +119,102 @@ export const quizJO: TranslatedQuiz = {
           explanation:
             "40 minutes, en quatre quarts-temps de dix. C'est huit minutes de moins qu'en NBA, où les quarts-temps durent douze minutes.",
         },
+        {
+          id: 11,
+          question: "Combien de médailles, toutes couleurs confondues, la France a-t-elle gagnées à Paris 2024 ?",
+          answers: [],
+          correctAnswer: "64",
+          correctValue: 64,
+          explanation:
+            "64 : 16 en or, 26 en argent et 22 en bronze. C'est le meilleur total de la France aux Jeux depuis 1900.",
+        },
+        {
+          id: 12,
+          question: "Combien de médailles d'or individuelles Léon Marchand a-t-il gagnées à Paris 2024 ?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Quatre : le 400 m quatre nages, le 200 m papillon, le 200 m brasse et le 200 m quatre nages. Il a aussi eu le bronze avec le relais 4 x 100 m quatre nages.",
+        },
+        {
+          id: 13,
+          question: "Combien de mètres fait un tour de piste d'athlétisme, dans le couloir 1 ?",
+          answers: [],
+          correctAnswer: "400",
+          correctValue: 400,
+          explanation:
+            "400 mètres. C'est pour ça que le 400 m se court en un seul tour, avec des départs décalés pour que tout le monde fasse la même distance.",
+        },
+        {
+          id: 14,
+          question: "Combien de mètres de long mesure un bassin de natation olympique ?",
+          answers: [],
+          correctAnswer: "50",
+          correctValue: 50,
+          explanation:
+            "50 mètres, avec 10 couloirs dont 8 utilisés en finale. Une course de 100 m, c'est donc un aller-retour.",
+        },
+        {
+          id: 15,
+          question: "Combien de kilomètres mesure un marathon ?",
+          answers: [],
+          correctAnswer: "42.195",
+          correctValue: 42.195,
+          explanation:
+            "42,195 km. La distance a été fixée aux Jeux de Londres en 1908 et elle est officielle depuis 1921.",
+        },
+        {
+          id: 16,
+          question: "Combien de médailles d'or olympiques Teddy Riner a-t-il gagnées, en individuel et par équipes ?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Cinq : trois en individuel, en 2012, 2016 et 2024, et deux par équipes mixtes, en 2021 et 2024. Il a aussi deux médailles de bronze.",
+        },
+        {
+          id: 17,
+          question: "Combien de fois Usain Bolt a-t-il été champion olympique du 100 mètres ?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Trois fois : à Pékin en 2008, à Londres en 2012 et à Rio en 2016. Personne d'autre n'a gagné le 100 m olympique trois fois.",
+        },
+        {
+          id: 18,
+          question: "Combien d'épreuves compte le décathlon ?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "Dix, sur deux jours : quatre courses, trois sauts et trois lancers. Chez les femmes, l'épreuve olympique est l'heptathlon, en sept épreuves.",
+        },
+        {
+          id: 19,
+          question: "À combien de mètres de la cible tirent les archers aux Jeux olympiques ?",
+          answers: [],
+          correctAnswer: "70",
+          correctValue: 70,
+          explanation:
+            "À 70 mètres, pour l'arc classique. La cible mesure 1,22 m de diamètre et le cercle du 10, au centre, ne fait que 12,2 cm.",
+        },
+        {
+          id: 20,
+          question: "Combien de kilos pèse le poids que lancent les hommes aux Jeux ? (à un dixième près)",
+          answers: [],
+          correctAnswer: "7.26",
+          correctValue: 7.26,
+          explanation:
+            "7,26 kg, soit 16 livres. Chez les femmes, le poids fait 4 kg.",
+        },
       ],
     },
     en: {
       title: "Estimation: the numbers behind the Olympics",
       description:
-        "Ten numbers to find about the Games. You guess, we tell you higher or lower.",
+        "Twenty numbers to find about the Games. You guess, we tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -217,12 +307,102 @@ export const quizJO: TranslatedQuiz = {
           explanation:
             "40 minutes, in four ten-minute quarters. That is eight minutes shorter than the NBA, where quarters run twelve minutes.",
         },
+        {
+          id: 11,
+          question: "How many medals in total did France win at Paris 2024?",
+          answers: [],
+          correctAnswer: "64",
+          correctValue: 64,
+          explanation:
+            "64: 16 gold, 26 silver and 22 bronze. It was France's best total at the Games since 1900.",
+        },
+        {
+          id: 12,
+          question: "How many individual gold medals did Léon Marchand win at Paris 2024?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Four: the 400 m individual medley, the 200 m butterfly, the 200 m breaststroke and the 200 m individual medley. He also took bronze in the 4 x 100 m medley relay.",
+        },
+        {
+          id: 13,
+          question: "How many metres is one lap of an athletics track, in lane 1?",
+          answers: [],
+          correctAnswer: "400",
+          correctValue: 400,
+          explanation:
+            "400 metres. That is why the 400 m is a single lap, with staggered starts so everyone runs the same distance.",
+        },
+        {
+          id: 14,
+          question: "How many metres long is an Olympic swimming pool?",
+          answers: [],
+          correctAnswer: "50",
+          correctValue: 50,
+          explanation:
+            "50 metres, with 10 lanes, 8 of which are used in a final. So a 100 m race is one length there and back.",
+        },
+        {
+          id: 15,
+          question: "How many kilometres is a marathon?",
+          answers: [],
+          correctAnswer: "42.195",
+          correctValue: 42.195,
+          explanation:
+            "42.195 km. The distance was set at the 1908 London Games and has been official since 1921.",
+        },
+        {
+          id: 16,
+          question: "How many Olympic gold medals has Teddy Riner won, individual and team events together?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Five: three individual golds, in 2012, 2016 and 2024, and two in the mixed team event, in 2021 and 2024. He also has two bronze medals.",
+        },
+        {
+          id: 17,
+          question: "How many times was Usain Bolt Olympic 100 metres champion?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Three times: Beijing 2008, London 2012 and Rio 2016. Nobody else has won the Olympic 100 m three times.",
+        },
+        {
+          id: 18,
+          question: "How many events are there in the decathlon?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "Ten, over two days: four races, three jumps and three throws. For women, the Olympic version is the heptathlon, with seven events.",
+        },
+        {
+          id: 19,
+          question: "How many metres from the target do archers shoot at the Olympics?",
+          answers: [],
+          correctAnswer: "70",
+          correctValue: 70,
+          explanation:
+            "70 metres, with the recurve bow. The target is 1.22 m across and the 10 ring in the middle is only 12.2 cm wide.",
+        },
+        {
+          id: 20,
+          question: "How many kilograms does the men's shot weigh at the Olympics? (to one decimal place)",
+          answers: [],
+          correctAnswer: "7.26",
+          correctValue: 7.26,
+          explanation:
+            "7.26 kg, which is 16 pounds. The women's shot weighs 4 kg.",
+        },
       ],
     },
     es: {
       title: "Estimación: las cifras de los Juegos Olímpicos",
       description:
-        "Diez números que encontrar sobre los Juegos. Propones y te decimos más alto o más bajo.",
+        "Veinte números que encontrar sobre los Juegos. Propones y te decimos más alto o más bajo.",
       questions: [
         {
           id: 1,
@@ -314,6 +494,96 @@ export const quizJO: TranslatedQuiz = {
           correctValue: 40,
           explanation:
             "40 minutos, en cuatro cuartos de diez. Son ocho minutos menos que en la NBA, donde los cuartos duran doce.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántas medallas en total ganó Francia en París 2024?",
+          answers: [],
+          correctAnswer: "64",
+          correctValue: 64,
+          explanation:
+            "64: 16 de oro, 26 de plata y 22 de bronce. Es el mejor total de Francia en unos Juegos desde 1900.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántas medallas de oro individuales ganó Léon Marchand en París 2024?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Cuatro: los 400 m estilos, los 200 m mariposa, los 200 m braza y los 200 m estilos. También se colgó el bronce en el relevo 4 x 100 m estilos.",
+        },
+        {
+          id: 13,
+          question: "¿Cuántos metros mide una vuelta a la pista de atletismo, por la calle 1?",
+          answers: [],
+          correctAnswer: "400",
+          correctValue: 400,
+          explanation:
+            "400 metros. Por eso los 400 m son una sola vuelta, con salidas escalonadas para que todos corran la misma distancia.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántos metros de largo mide una piscina olímpica?",
+          answers: [],
+          correctAnswer: "50",
+          correctValue: 50,
+          explanation:
+            "50 metros, con 10 calles, de las que se usan 8 en una final. Una prueba de 100 m es, por tanto, ida y vuelta.",
+        },
+        {
+          id: 15,
+          question: "¿Cuántos kilómetros mide un maratón?",
+          answers: [],
+          correctAnswer: "42.195",
+          correctValue: 42.195,
+          explanation:
+            "42,195 km. La distancia se fijó en los Juegos de Londres de 1908 y es oficial desde 1921.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántas medallas de oro olímpicas ha ganado Teddy Riner, sumando individual y por equipos?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "Cinco: tres individuales, en 2012, 2016 y 2024, y dos por equipos mixtos, en 2021 y 2024. También tiene dos bronces.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántas veces fue Usain Bolt campeón olímpico de los 100 metros?",
+          answers: [],
+          correctAnswer: "3",
+          correctValue: 3,
+          explanation:
+            "Tres veces: en Pekín 2008, Londres 2012 y Río 2016. Nadie más ha ganado tres veces los 100 m olímpicos.",
+        },
+        {
+          id: 18,
+          question: "¿Cuántas pruebas tiene el decatlón?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "Diez, en dos días: cuatro carreras, tres saltos y tres lanzamientos. En mujeres, la prueba olímpica es el heptatlón, con siete pruebas.",
+        },
+        {
+          id: 19,
+          question: "¿A cuántos metros de la diana tiran los arqueros en los Juegos Olímpicos?",
+          answers: [],
+          correctAnswer: "70",
+          correctValue: 70,
+          explanation:
+            "A 70 metros, con arco recurvo. La diana mide 1,22 m de diámetro y el círculo del 10, en el centro, solo 12,2 cm.",
+        },
+        {
+          id: 20,
+          question: "¿Cuántos kilos pesa la bala que lanzan los hombres en los Juegos? (con un decimal)",
+          answers: [],
+          correctAnswer: "7.26",
+          correctValue: 7.26,
+          explanation:
+            "7,26 kg, es decir, 16 libras. La de las mujeres pesa 4 kg.",
         },
       ],
     },

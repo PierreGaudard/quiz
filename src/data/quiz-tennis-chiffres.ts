@@ -23,7 +23,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
     fr: {
       title: "Estimation : les chiffres du tennis",
       description:
-        "Dix nombres à trouver sur le tennis, du plus long match de l'histoire aux dimensions du filet. Tu proposes, on te dit plus haut ou plus bas.",
+        "Vingt nombres à trouver sur le tennis, du plus long match de l'histoire aux dimensions du filet. Tu proposes, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -119,12 +119,102 @@ export const quizTennisChiffres: TranslatedQuiz = {
           explanation:
             "24, entre 1960 et 1973, dont onze à l'Open d'Australie. Une bonne partie date d'avant 1968, quand les professionnels n'avaient pas encore le droit de jouer ces tournois.",
         },
+        {
+          id: 11,
+          question: "Combien de titres du Grand Chelem en simple Steffi Graf a-t-elle gagnés ?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22, entre 1987 et 1999. En 1988, elle a gagné les quatre tournois du Grand Chelem et l'or olympique la même année.",
+        },
+        {
+          id: 12,
+          question: "Combien de fois Martina Navratilova a-t-elle gagné Wimbledon en simple ?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "Neuf fois, dont six de suite entre 1982 et 1987. C'est le record, hommes et femmes confondus.",
+        },
+        {
+          id: 13,
+          question: "En quelle année a commencé l'ère Open, quand les professionnels ont pu jouer les tournois du Grand Chelem ?",
+          answers: [],
+          correctAnswer: "1968",
+          correctValue: 1968,
+          explanation:
+            "En 1968. Avant, les grands tournois étaient réservés aux amateurs. Roland-Garros 1968 a été le premier Grand Chelem ouvert à tous.",
+        },
+        {
+          id: 14,
+          question: "Combien de mètres de long mesure un court de tennis ? (à un mètre près)",
+          answers: [],
+          correctAnswer: "23.77",
+          correctValue: 23.77,
+          explanation:
+            "23,77 mètres, soit 78 pieds. La largeur est de 8,23 m en simple et de 10,97 m en double.",
+        },
+        {
+          id: 15,
+          question: "Quel âge avait Rafael Nadal quand il a gagné son premier Roland-Garros, en 2005 ?",
+          answers: [],
+          correctAnswer: "19",
+          correctValue: 19,
+          explanation:
+            "19 ans. Il a gagné la finale contre Mariano Puerta deux jours après son anniversaire, et c'était sa première participation au tournoi.",
+        },
+        {
+          id: 16,
+          question: "Combien de titres en simple Jimmy Connors a-t-il gagnés, le record du circuit ATP ?",
+          answers: [],
+          correctAnswer: "109",
+          correctValue: 109,
+          explanation:
+            "109, entre 1972 et 1989. Roger Federer en a gagné 103, et Novak Djokovic a passé la barre des 100 en 2025.",
+        },
+        {
+          id: 17,
+          question: "Combien de titres du Grand Chelem en simple Björn Borg a-t-il gagnés ?",
+          answers: [],
+          correctAnswer: "11",
+          correctValue: 11,
+          explanation:
+            "11 : six Roland-Garros et cinq Wimbledon. Il a arrêté sa carrière à 26 ans, en 1983.",
+        },
+        {
+          id: 18,
+          question: "Combien de fois Serena Williams a-t-elle gagné l'US Open en simple ?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Six fois : en 1999, 2002, 2008, 2012, 2013 et 2014. Son premier titre du Grand Chelem, elle l'a gagné à New York, à 17 ans.",
+        },
+        {
+          id: 19,
+          question: "Combien de fois Rod Laver a-t-il gagné les quatre tournois du Grand Chelem la même année ?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "Deux fois, en 1962 puis en 1969. Aucun autre joueur n'a réussi ce Grand Chelem calendaire deux fois.",
+        },
+        {
+          id: 20,
+          question: "À quel âge Martina Hingis est-elle devenue numéro 1 mondiale, la plus jeune de l'histoire ?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "À 16 ans, en mars 1997. La même année, elle a gagné l'Open d'Australie, Wimbledon et l'US Open.",
+        },
       ],
     },
     en: {
       title: "Guess the number: tennis stats",
       description:
-        "Ten numbers to find about tennis, from the longest match ever played to the height of the net. Make a guess and we'll say higher or lower.",
+        "Twenty numbers to find about tennis, from the longest match ever played to the height of the net. Make a guess and we'll say higher or lower.",
       questions: [
         {
           id: 1,
@@ -220,12 +310,102 @@ export const quizTennisChiffres: TranslatedQuiz = {
           explanation:
             "24, between 1960 and 1973, including eleven at the Australian Open. Quite a few came before 1968, when professionals still weren't allowed to play these events.",
         },
+        {
+          id: 11,
+          question: "How many Grand Slam singles titles did Steffi Graf win?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22, between 1987 and 1999. In 1988 she won all four Grand Slams and Olympic gold in the same year.",
+        },
+        {
+          id: 12,
+          question: "How many times did Martina Navratilova win the Wimbledon singles title?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "Nine times, including six in a row from 1982 to 1987. It is the record for men and women alike.",
+        },
+        {
+          id: 13,
+          question: "In which year did the Open Era begin, when professionals were first allowed into Grand Slam events?",
+          answers: [],
+          correctAnswer: "1968",
+          correctValue: 1968,
+          explanation:
+            "In 1968. Before that, the big tournaments were for amateurs only. The 1968 French Open was the first Grand Slam open to everyone.",
+        },
+        {
+          id: 14,
+          question: "How many metres long is a tennis court? (to the nearest metre)",
+          answers: [],
+          correctAnswer: "23.77",
+          correctValue: 23.77,
+          explanation:
+            "23.77 metres, which is 78 feet. It is 8.23 m wide for singles and 10.97 m for doubles.",
+        },
+        {
+          id: 15,
+          question: "How old was Rafael Nadal when he won his first French Open, in 2005?",
+          answers: [],
+          correctAnswer: "19",
+          correctValue: 19,
+          explanation:
+            "19. He won the final against Mariano Puerta two days after his birthday, on his first appearance at the tournament.",
+        },
+        {
+          id: 16,
+          question: "How many singles titles did Jimmy Connors win, the ATP record?",
+          answers: [],
+          correctAnswer: "109",
+          correctValue: 109,
+          explanation:
+            "109, between 1972 and 1989. Roger Federer won 103, and Novak Djokovic reached 100 in 2025.",
+        },
+        {
+          id: 17,
+          question: "How many Grand Slam singles titles did Björn Borg win?",
+          answers: [],
+          correctAnswer: "11",
+          correctValue: 11,
+          explanation:
+            "11: six French Opens and five Wimbledons. He retired at the age of 26, in 1983.",
+        },
+        {
+          id: 18,
+          question: "How many times did Serena Williams win the US Open singles title?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Six times: 1999, 2002, 2008, 2012, 2013 and 2014. Her first Grand Slam title came in New York, when she was 17.",
+        },
+        {
+          id: 19,
+          question: "How many times did Rod Laver win all four Grand Slam tournaments in the same year?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "Twice, in 1962 and in 1969. No other man has completed the calendar Grand Slam twice.",
+        },
+        {
+          id: 20,
+          question: "How old was Martina Hingis when she became world No. 1, the youngest ever?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "16, in March 1997. That same year she won the Australian Open, Wimbledon and the US Open.",
+        },
       ],
     },
     es: {
       title: "Estimación: las cifras del tenis",
       description:
-        "Diez números sobre el tenis, desde el partido más largo de la historia hasta la altura de la red. Tú propones y te decimos si es más o menos.",
+        "Veinte números sobre el tenis, desde el partido más largo de la historia hasta la altura de la red. Tú propones y te decimos si es más o menos.",
       questions: [
         {
           id: 1,
@@ -320,6 +500,96 @@ export const quizTennisChiffres: TranslatedQuiz = {
           correctValue: 24,
           explanation:
             "24, entre 1960 y 1973, once de ellos en el Abierto de Australia. Muchos llegaron antes de 1968, cuando los profesionales aún no podían jugar estos torneos.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos títulos de Grand Slam individuales ganó Steffi Graf?",
+          answers: [],
+          correctAnswer: "22",
+          correctValue: 22,
+          explanation:
+            "22, entre 1987 y 1999. En 1988 ganó los cuatro Grand Slams y el oro olímpico el mismo año.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántas veces ganó Martina Navratilova Wimbledon en individuales?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "Nueve veces, seis de ellas seguidas entre 1982 y 1987. Es el récord, entre hombres y mujeres.",
+        },
+        {
+          id: 13,
+          question: "¿En qué año empezó la Era Abierta, cuando los profesionales pudieron jugar los Grand Slams?",
+          answers: [],
+          correctAnswer: "1968",
+          correctValue: 1968,
+          explanation:
+            "En 1968. Antes, los grandes torneos eran solo para aficionados. Roland Garros 1968 fue el primer Grand Slam abierto a todos.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántos metros de largo mide una pista de tenis? (con un metro de margen)",
+          answers: [],
+          correctAnswer: "23.77",
+          correctValue: 23.77,
+          explanation:
+            "23,77 metros, es decir, 78 pies. Mide 8,23 m de ancho en individuales y 10,97 m en dobles.",
+        },
+        {
+          id: 15,
+          question: "¿Qué edad tenía Rafael Nadal cuando ganó su primer Roland Garros, en 2005?",
+          answers: [],
+          correctAnswer: "19",
+          correctValue: 19,
+          explanation:
+            "19 años. Ganó la final a Mariano Puerta dos días después de su cumpleaños, y era la primera vez que jugaba el torneo.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántos títulos individuales ganó Jimmy Connors, el récord de la ATP?",
+          answers: [],
+          correctAnswer: "109",
+          correctValue: 109,
+          explanation:
+            "109, entre 1972 y 1989. Roger Federer ganó 103 y Novak Djokovic llegó a los 100 en 2025.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántos títulos de Grand Slam individuales ganó Björn Borg?",
+          answers: [],
+          correctAnswer: "11",
+          correctValue: 11,
+          explanation:
+            "11: seis Roland Garros y cinco Wimbledon. Se retiró con 26 años, en 1983.",
+        },
+        {
+          id: 18,
+          question: "¿Cuántas veces ganó Serena Williams el US Open en individuales?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Seis veces: en 1999, 2002, 2008, 2012, 2013 y 2014. Su primer Grand Slam lo ganó en Nueva York, con 17 años.",
+        },
+        {
+          id: 19,
+          question: "¿Cuántas veces ganó Rod Laver los cuatro Grand Slams en el mismo año?",
+          answers: [],
+          correctAnswer: "2",
+          correctValue: 2,
+          explanation:
+            "Dos veces, en 1962 y en 1969. Ningún otro jugador ha logrado dos veces el Grand Slam en un año natural.",
+        },
+        {
+          id: 20,
+          question: "¿Con qué edad llegó Martina Hingis al número 1 mundial, la más joven de la historia?",
+          answers: [],
+          correctAnswer: "16",
+          correctValue: 16,
+          explanation:
+            "Con 16 años, en marzo de 1997. Ese mismo año ganó el Abierto de Australia, Wimbledon y el US Open.",
         },
       ],
     },

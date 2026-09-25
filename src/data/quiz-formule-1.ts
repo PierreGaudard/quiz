@@ -23,7 +23,7 @@ export const quizFormule1: TranslatedQuiz = {
     fr: {
       title: "Formule 1 dans l'ordre : pilotes et écuries",
       description:
-        "Dix listes à remettre dans l'ordre sur la F1 : premiers titres, écuries, victoires et circuits. Lis bien le sens demandé.",
+        "Vingt listes à remettre dans l'ordre sur la F1 : premiers titres, écuries, victoires et circuits. Lis bien le sens demandé.",
       questions: [
         {
           id: 1,
@@ -169,12 +169,152 @@ export const quizFormule1: TranslatedQuiz = {
           explanation:
             "Vettel a disputé son premier Grand Prix avec BMW Sauber en 2007, aux États-Unis. Il a gagné ses quatre titres avec Red Bull, est passé chez Ferrari en 2015 et a fini chez Aston Martin en 2022.",
         },
+        {
+          id: 11,
+          question: "Classe ces champions du monde selon l'année de leur titre, du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "Keke Rosberg" },
+            { id: "b", text: "Jacques Villeneuve" },
+            { id: "c", text: "Jochen Rindt" },
+            { id: "d", text: "Damon Hill" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Rindt a été champion en 1970, Rosberg en 1982, Damon Hill en 1996 et Villeneuve en 1997. Rindt reste le seul pilote sacré après sa mort.",
+        },
+        {
+          id: 12,
+          question: "Remets dans l'ordre les écuries de Kimi Räikkönen, selon la première fois qu'il les a rejointes.",
+          answers: [
+            { id: "a", text: "Ferrari" },
+            { id: "b", text: "Sauber" },
+            { id: "c", text: "Lotus" },
+            { id: "d", text: "McLaren" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Räikkönen a débuté chez Sauber en 2001, est passé chez McLaren en 2002 et chez Ferrari en 2007, l'année de son titre. Il a couru pour Lotus à partir de 2012.",
+        },
+        {
+          id: 13,
+          question: "Remets dans l'ordre ces écuries de la carrière de Daniel Ricciardo.",
+          answers: [
+            { id: "a", text: "McLaren" },
+            { id: "b", text: "Red Bull" },
+            { id: "c", text: "Renault" },
+            { id: "d", text: "HRT" },
+          ],
+          correctOrder: ["d", "b", "c", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Ricciardo a débuté chez HRT en 2011. Il a rejoint Red Bull en 2014, Renault en 2019 et McLaren en 2021.",
+        },
+        {
+          id: 14,
+          question: "Remets dans l'ordre les écuries de Carlos Sainz.",
+          answers: [
+            { id: "a", text: "Toro Rosso" },
+            { id: "b", text: "McLaren" },
+            { id: "c", text: "Renault" },
+            { id: "d", text: "Ferrari" },
+          ],
+          correctOrder: ["a", "c", "b", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sainz a débuté chez Toro Rosso en 2015, puis il est passé chez Renault fin 2017, chez McLaren en 2019 et chez Ferrari en 2021. Il a rejoint Williams en 2025.",
+        },
+        {
+          id: 15,
+          question: "Classe ces circuits selon l'année de leur premier Grand Prix de F1, du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "Suzuka" },
+            { id: "b", text: "Yas Marina" },
+            { id: "c", text: "Monza" },
+            { id: "d", text: "Interlagos" },
+          ],
+          correctOrder: ["c", "d", "a", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Monza est au calendrier depuis 1950, Interlagos depuis 1973, Suzuka depuis 1987 et Yas Marina depuis 2009.",
+        },
+        {
+          id: 16,
+          question: "Classe ces champions du monde britanniques selon l'année de leur premier titre.",
+          answers: [
+            { id: "a", text: "Jim Clark" },
+            { id: "b", text: "Mike Hawthorn" },
+            { id: "c", text: "Nigel Mansell" },
+            { id: "d", text: "James Hunt" },
+          ],
+          correctOrder: ["b", "a", "d", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Hawthorn a été le premier champion britannique, en 1958. Clark a gagné son premier titre en 1963, Hunt en 1976 et Mansell en 1992.",
+        },
+        {
+          id: 17,
+          question: "Remets ces directeurs de la Scuderia Ferrari dans l'ordre où ils ont pris le poste.",
+          answers: [
+            { id: "a", text: "Stefano Domenicali" },
+            { id: "b", text: "Frédéric Vasseur" },
+            { id: "c", text: "Mattia Binotto" },
+            { id: "d", text: "Jean Todt" },
+          ],
+          correctOrder: ["d", "a", "c", "b"],
+          correctAnswer: "d",
+          explanation:
+            "Jean Todt est arrivé en 1993, Stefano Domenicali lui a succédé en 2008, Mattia Binotto a pris la tête de l'équipe en 2019 et Frédéric Vasseur en 2023.",
+        },
+        {
+          id: 18,
+          question: "Remets dans l'ordre ces coéquipiers de Max Verstappen chez Red Bull.",
+          answers: [
+            { id: "a", text: "Daniel Ricciardo" },
+            { id: "b", text: "Pierre Gasly" },
+            { id: "c", text: "Liam Lawson" },
+            { id: "d", text: "Sergio Pérez" },
+          ],
+          correctOrder: ["a", "b", "d", "c"],
+          correctAnswer: "a",
+          explanation:
+            "Ricciardo était son coéquipier à partir de 2016, Gasly en 2019, Pérez de 2021 à 2024, et Lawson au début de la saison 2025.",
+        },
+        {
+          id: 19,
+          question: "Remets ces changements du règlement dans l'ordre où ils sont arrivés en F1.",
+          answers: [
+            { id: "a", text: "Le halo" },
+            { id: "b", text: "L'aileron arrière mobile (DRS)" },
+            { id: "c", text: "L'interdiction des ravitaillements" },
+            { id: "d", text: "Les courses sprint" },
+          ],
+          correctOrder: ["c", "b", "a", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Les ravitaillements en course ont été interdits en 2010, le DRS est arrivé en 2011, le halo en 2018 et les courses sprint en 2021.",
+        },
+        {
+          id: 20,
+          question: "Classe ces écuries selon l'année de leur premier titre de champion du monde des constructeurs.",
+          answers: [
+            { id: "a", text: "Red Bull" },
+            { id: "b", text: "Williams" },
+            { id: "c", text: "McLaren" },
+            { id: "d", text: "Lotus" },
+          ],
+          correctOrder: ["d", "c", "b", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Lotus a gagné son premier titre constructeurs en 1963, McLaren en 1974, Williams en 1980 et Red Bull en 2010.",
+        },
       ],
     },
     en: {
       title: "Formula 1 in order: drivers and teams",
       description:
-        "Ten lists to put in order about F1: first titles, teams, wins and circuits. Check which way each list goes.",
+        "Twenty lists to put in order about F1: first titles, teams, wins and circuits. Check which way each list goes.",
       questions: [
         {
           id: 1,
@@ -320,12 +460,152 @@ export const quizFormule1: TranslatedQuiz = {
           explanation:
             "Vettel raced his first Grand Prix for BMW Sauber in 2007, in the United States. He won his four titles with Red Bull, moved to Ferrari in 2015 and finished at Aston Martin in 2022.",
         },
+        {
+          id: 11,
+          question: "Rank these world champions by the year of their title, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Keke Rosberg" },
+            { id: "b", text: "Jacques Villeneuve" },
+            { id: "c", text: "Jochen Rindt" },
+            { id: "d", text: "Damon Hill" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Rindt was champion in 1970, Rosberg in 1982, Damon Hill in 1996 and Villeneuve in 1997. Rindt is still the only driver crowned after his death.",
+        },
+        {
+          id: 12,
+          question: "Put Kimi Räikkönen's teams in order, by the first time he joined each one.",
+          answers: [
+            { id: "a", text: "Ferrari" },
+            { id: "b", text: "Sauber" },
+            { id: "c", text: "Lotus" },
+            { id: "d", text: "McLaren" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Räikkönen started at Sauber in 2001, moved to McLaren in 2002 and to Ferrari in 2007, the year of his title. He drove for Lotus from 2012.",
+        },
+        {
+          id: 13,
+          question: "Put these teams from Daniel Ricciardo's career in order.",
+          answers: [
+            { id: "a", text: "McLaren" },
+            { id: "b", text: "Red Bull" },
+            { id: "c", text: "Renault" },
+            { id: "d", text: "HRT" },
+          ],
+          correctOrder: ["d", "b", "c", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Ricciardo made his debut with HRT in 2011. He joined Red Bull in 2014, Renault in 2019 and McLaren in 2021.",
+        },
+        {
+          id: 14,
+          question: "Put Carlos Sainz's teams in order.",
+          answers: [
+            { id: "a", text: "Toro Rosso" },
+            { id: "b", text: "McLaren" },
+            { id: "c", text: "Renault" },
+            { id: "d", text: "Ferrari" },
+          ],
+          correctOrder: ["a", "c", "b", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sainz started at Toro Rosso in 2015, then moved to Renault in late 2017, McLaren in 2019 and Ferrari in 2021. He joined Williams in 2025.",
+        },
+        {
+          id: 15,
+          question: "Rank these circuits by the year of their first F1 Grand Prix, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Suzuka" },
+            { id: "b", text: "Yas Marina" },
+            { id: "c", text: "Monza" },
+            { id: "d", text: "Interlagos" },
+          ],
+          correctOrder: ["c", "d", "a", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Monza has been on the calendar since 1950, Interlagos since 1973, Suzuka since 1987 and Yas Marina since 2009.",
+        },
+        {
+          id: 16,
+          question: "Rank these British world champions by the year of their first title.",
+          answers: [
+            { id: "a", text: "Jim Clark" },
+            { id: "b", text: "Mike Hawthorn" },
+            { id: "c", text: "Nigel Mansell" },
+            { id: "d", text: "James Hunt" },
+          ],
+          correctOrder: ["b", "a", "d", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Hawthorn was the first British champion, in 1958. Clark won his first title in 1963, Hunt in 1976 and Mansell in 1992.",
+        },
+        {
+          id: 17,
+          question: "Put these Ferrari team principals in the order they took the job.",
+          answers: [
+            { id: "a", text: "Stefano Domenicali" },
+            { id: "b", text: "Frédéric Vasseur" },
+            { id: "c", text: "Mattia Binotto" },
+            { id: "d", text: "Jean Todt" },
+          ],
+          correctOrder: ["d", "a", "c", "b"],
+          correctAnswer: "d",
+          explanation:
+            "Jean Todt arrived in 1993, Stefano Domenicali took over in 2008, Mattia Binotto became team principal in 2019 and Frédéric Vasseur in 2023.",
+        },
+        {
+          id: 18,
+          question: "Put these Red Bull team-mates of Max Verstappen in order.",
+          answers: [
+            { id: "a", text: "Daniel Ricciardo" },
+            { id: "b", text: "Pierre Gasly" },
+            { id: "c", text: "Liam Lawson" },
+            { id: "d", text: "Sergio Pérez" },
+          ],
+          correctOrder: ["a", "b", "d", "c"],
+          correctAnswer: "a",
+          explanation:
+            "Ricciardo was his team-mate from 2016, Gasly in 2019, Pérez from 2021 to 2024 and Lawson at the start of the 2025 season.",
+        },
+        {
+          id: 19,
+          question: "Put these rule changes in the order they arrived in F1.",
+          answers: [
+            { id: "a", text: "The halo" },
+            { id: "b", text: "The moving rear wing (DRS)" },
+            { id: "c", text: "The refuelling ban" },
+            { id: "d", text: "Sprint races" },
+          ],
+          correctOrder: ["c", "b", "a", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Refuelling during races was banned in 2010, DRS arrived in 2011, the halo in 2018 and sprint races in 2021.",
+        },
+        {
+          id: 20,
+          question: "Rank these teams by the year of their first constructors' world title.",
+          answers: [
+            { id: "a", text: "Red Bull" },
+            { id: "b", text: "Williams" },
+            { id: "c", text: "McLaren" },
+            { id: "d", text: "Lotus" },
+          ],
+          correctOrder: ["d", "c", "b", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Lotus won its first constructors' title in 1963, McLaren in 1974, Williams in 1980 and Red Bull in 2010.",
+        },
       ],
     },
     es: {
       title: "Fórmula 1 en orden: pilotos y escuderías",
       description:
-        "Diez listas de F1 para poner en orden: primeros títulos, escuderías, victorias y circuitos. Fíjate bien en el sentido que se pide.",
+        "Veinte listas de F1 para poner en orden: primeros títulos, escuderías, victorias y circuitos. Fíjate bien en el sentido que se pide.",
       questions: [
         {
           id: 1,
@@ -470,6 +750,146 @@ export const quizFormule1: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Vettel corrió su primer Gran Premio con BMW Sauber en 2007, en Estados Unidos. Ganó sus cuatro títulos con Red Bull, pasó a Ferrari en 2015 y terminó en Aston Martin en 2022.",
+        },
+        {
+          id: 11,
+          question: "Ordena a estos campeones del mundo según el año de su título, del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "Keke Rosberg" },
+            { id: "b", text: "Jacques Villeneuve" },
+            { id: "c", text: "Jochen Rindt" },
+            { id: "d", text: "Damon Hill" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Rindt fue campeón en 1970, Rosberg en 1982, Damon Hill en 1996 y Villeneuve en 1997. Rindt sigue siendo el único campeón a título póstumo.",
+        },
+        {
+          id: 12,
+          question: "Ordena las escuderías de Kimi Räikkönen, según la primera vez que llegó a cada una.",
+          answers: [
+            { id: "a", text: "Ferrari" },
+            { id: "b", text: "Sauber" },
+            { id: "c", text: "Lotus" },
+            { id: "d", text: "McLaren" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Räikkönen debutó con Sauber en 2001, pasó a McLaren en 2002 y a Ferrari en 2007, el año de su título. Corrió para Lotus desde 2012.",
+        },
+        {
+          id: 13,
+          question: "Ordena estas escuderías de la carrera de Daniel Ricciardo.",
+          answers: [
+            { id: "a", text: "McLaren" },
+            { id: "b", text: "Red Bull" },
+            { id: "c", text: "Renault" },
+            { id: "d", text: "HRT" },
+          ],
+          correctOrder: ["d", "b", "c", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Ricciardo debutó con HRT en 2011. Llegó a Red Bull en 2014, a Renault en 2019 y a McLaren en 2021.",
+        },
+        {
+          id: 14,
+          question: "Ordena las escuderías de Carlos Sainz.",
+          answers: [
+            { id: "a", text: "Toro Rosso" },
+            { id: "b", text: "McLaren" },
+            { id: "c", text: "Renault" },
+            { id: "d", text: "Ferrari" },
+          ],
+          correctOrder: ["a", "c", "b", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sainz debutó con Toro Rosso en 2015, pasó a Renault a finales de 2017, a McLaren en 2019 y a Ferrari en 2021. En 2025 fichó por Williams.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos circuitos según el año de su primer Gran Premio de F1, del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "Suzuka" },
+            { id: "b", text: "Yas Marina" },
+            { id: "c", text: "Monza" },
+            { id: "d", text: "Interlagos" },
+          ],
+          correctOrder: ["c", "d", "a", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Monza está en el calendario desde 1950, Interlagos desde 1973, Suzuka desde 1987 y Yas Marina desde 2009.",
+        },
+        {
+          id: 16,
+          question: "Ordena a estos campeones del mundo británicos según el año de su primer título.",
+          answers: [
+            { id: "a", text: "Jim Clark" },
+            { id: "b", text: "Mike Hawthorn" },
+            { id: "c", text: "Nigel Mansell" },
+            { id: "d", text: "James Hunt" },
+          ],
+          correctOrder: ["b", "a", "d", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Hawthorn fue el primer campeón británico, en 1958. Clark ganó su primer título en 1963, Hunt en 1976 y Mansell en 1992.",
+        },
+        {
+          id: 17,
+          question: "Ordena a estos jefes de Ferrari según el año en que llegaron al cargo.",
+          answers: [
+            { id: "a", text: "Stefano Domenicali" },
+            { id: "b", text: "Frédéric Vasseur" },
+            { id: "c", text: "Mattia Binotto" },
+            { id: "d", text: "Jean Todt" },
+          ],
+          correctOrder: ["d", "a", "c", "b"],
+          correctAnswer: "d",
+          explanation:
+            "Jean Todt llegó en 1993, Stefano Domenicali le sucedió en 2008, Mattia Binotto tomó el mando en 2019 y Frédéric Vasseur en 2023.",
+        },
+        {
+          id: 18,
+          question: "Ordena a estos compañeros de Max Verstappen en Red Bull.",
+          answers: [
+            { id: "a", text: "Daniel Ricciardo" },
+            { id: "b", text: "Pierre Gasly" },
+            { id: "c", text: "Liam Lawson" },
+            { id: "d", text: "Sergio Pérez" },
+          ],
+          correctOrder: ["a", "b", "d", "c"],
+          correctAnswer: "a",
+          explanation:
+            "Ricciardo fue su compañero desde 2016, Gasly en 2019, Pérez de 2021 a 2024 y Lawson a principios de la temporada 2025.",
+        },
+        {
+          id: 19,
+          question: "Ordena estos cambios del reglamento según el año en que llegaron a la F1.",
+          answers: [
+            { id: "a", text: "El halo" },
+            { id: "b", text: "El alerón trasero móvil (DRS)" },
+            { id: "c", text: "La prohibición de repostar" },
+            { id: "d", text: "Las carreras al sprint" },
+          ],
+          correctOrder: ["c", "b", "a", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Repostar en carrera se prohibió en 2010, el DRS llegó en 2011, el halo en 2018 y las carreras al sprint en 2021.",
+        },
+        {
+          id: 20,
+          question: "Ordena estas escuderías según el año de su primer título mundial de constructores.",
+          answers: [
+            { id: "a", text: "Red Bull" },
+            { id: "b", text: "Williams" },
+            { id: "c", text: "McLaren" },
+            { id: "d", text: "Lotus" },
+          ],
+          correctOrder: ["d", "c", "b", "a"],
+          correctAnswer: "d",
+          explanation:
+            "Lotus ganó su primer título de constructores en 1963, McLaren en 1974, Williams en 1980 y Red Bull en 2010.",
         },
       ],
     },

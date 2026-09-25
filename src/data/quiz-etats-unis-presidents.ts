@@ -6,15 +6,15 @@ import type { TranslatedQuiz } from "./types";
  *
  * Mode ordre (le premier quiz Etats-Unis est un vrai-faux sur les Etats). Le
  * moteur melange les propositions (OrdrePlayer.tsx), seul `correctOrder`
- * compte. Six questions portent sur les presidents par date d'entree en
- * fonction, quatre sur des evenements. Hawai et l'Alaska, deja dans
+ * compte. Neuf questions portent sur les presidents par date d'entree en
+ * fonction, onze sur des evenements. Hawai et l'Alaska, deja dans
  * quiz-etats-unis.ts, sont evites dans la question sur les Etats.
  */
 export const quizEtatsUnisPresidents: TranslatedQuiz = {
   slug: "quiz-etats-unis-presidents",
   slugs: { en: "usa-presidents-quiz", fr: "quiz-etats-unis-presidents", es: "quiz-estados-unidos-presidentes" },
   categorySlug: "geographie",
-  subcategory: "Etats-Unis",
+  subcategory: "États-Unis",
   difficulty: "medium",
   coverImage: "/images/cover-etats-unis-presidents.webp",
   gameType: "ordre",
@@ -169,6 +169,146 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
           explanation:
             "Wilson en 1913, Truman en 1945 à la mort de Roosevelt, Ford en 1974 après la démission de Nixon, et Trump en 2017 pour son premier mandat.",
         },
+        {
+          id: 11,
+          question: "Remets ces présidents dans l'ordre où ils sont arrivés au pouvoir.",
+          answers: [
+            { id: "a", text: "John Adams" },
+            { id: "b", text: "James Madison" },
+            { id: "c", text: "James Monroe" },
+            { id: "d", text: "John Quincy Adams" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "John Adams en 1797, James Madison en 1809, James Monroe en 1817 et John Quincy Adams, le fils de John Adams, en 1825.",
+        },
+        {
+          id: 12,
+          question: "Remets ces présidents dans l'ordre où ils sont arrivés au pouvoir.",
+          answers: [
+            { id: "a", text: "Ulysses S. Grant" },
+            { id: "b", text: "Grover Cleveland" },
+            { id: "c", text: "William Taft" },
+            { id: "d", text: "Herbert Hoover" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Grant en 1869, juste après la guerre de Sécession, Cleveland en 1885, Taft en 1909 et Hoover en 1929, l'année du krach.",
+        },
+        {
+          id: 13,
+          question: "Remets ces événements du XIXe et du XXe siècle dans l'ordre chronologique.",
+          answers: [
+            { id: "a", text: "La ruée vers l'or en Californie" },
+            { id: "b", text: "L'achèvement du premier chemin de fer transcontinental" },
+            { id: "c", text: "L'ouverture d'Ellis Island aux immigrants" },
+            { id: "d", text: "L'inauguration de l'Empire State Building" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La ruée vers l'or commence en 1848, le chemin de fer d'un océan à l'autre est terminé en 1869, Ellis Island ouvre en 1892 et l'Empire State Building est inauguré en 1931.",
+        },
+        {
+          id: 14,
+          question: "Remets ces États dans l'ordre où ils ont rejoint l'Union.",
+          answers: [
+            { id: "a", text: "La Pennsylvanie" },
+            { id: "b", text: "La Floride" },
+            { id: "c", text: "Le Colorado" },
+            { id: "d", text: "L'Arizona" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Pennsylvanie en 1787, parmi les treize premiers, la Floride en 1845, le Colorado en 1876 et l'Arizona en 1912, dernier des 48 États d'un seul tenant.",
+        },
+        {
+          id: 15,
+          question: "Remets ces moments de la guerre froide dans l'ordre chronologique.",
+          answers: [
+            { id: "a", text: "Le début de la guerre de Corée" },
+            { id: "b", text: "La crise des missiles de Cuba" },
+            { id: "c", text: "La chute de Saïgon" },
+            { id: "d", text: "La chute du mur de Berlin" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La guerre de Corée commence en 1950, la crise de Cuba a lieu en 1962, Saïgon tombe en 1975 et le mur de Berlin en 1989.",
+        },
+        {
+          id: 16,
+          question: "Remets ces avancées des droits civiques dans l'ordre chronologique.",
+          answers: [
+            { id: "a", text: "L'abolition de l'esclavage" },
+            { id: "b", text: "Le droit de vote des femmes" },
+            { id: "c", text: "Le Civil Rights Act contre la ségrégation" },
+            { id: "d", text: "La légalisation du mariage homosexuel dans tout le pays" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "L'esclavage est aboli par le 13e amendement en 1865, les femmes obtiennent le droit de vote en 1920, le Civil Rights Act est signé en 1964 et la Cour suprême autorise le mariage homosexuel partout en 2015.",
+        },
+        {
+          id: 17,
+          question: "Remets ces premières de l'air et de l'espace dans l'ordre chronologique.",
+          answers: [
+            { id: "a", text: "Le premier vol des frères Wright" },
+            { id: "b", text: "La traversée de l'Atlantique en solitaire de Lindbergh" },
+            { id: "c", text: "Le premier Américain en orbite, John Glenn" },
+            { id: "d", text: "Le premier vol de la navette spatiale Columbia" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Les frères Wright volent en 1903, Lindbergh relie New York à Paris en 1927, John Glenn fait le tour de la Terre en 1962 et la navette Columbia décolle pour la première fois en 1981.",
+        },
+        {
+          id: 18,
+          question: "Remets ces villes dans l'ordre de leur fondation.",
+          answers: [
+            { id: "a", text: "Saint Augustine, en Floride" },
+            { id: "b", text: "Santa Fe, au Nouveau-Mexique" },
+            { id: "c", text: "La Nouvelle-Amsterdam, future New York" },
+            { id: "d", text: "La Nouvelle-Orléans" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Les Espagnols fondent Saint Augustine en 1565 et Santa Fe vers 1610, les Hollandais la Nouvelle-Amsterdam en 1625 et les Français la Nouvelle-Orléans en 1718.",
+        },
+        {
+          id: 19,
+          question: "Remets ces monuments dans l'ordre où ils ont été achevés.",
+          answers: [
+            { id: "a", text: "La statue de la Liberté" },
+            { id: "b", text: "Le Golden Gate Bridge" },
+            { id: "c", text: "Le mont Rushmore" },
+            { id: "d", text: "La Gateway Arch de Saint-Louis" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La statue de la Liberté est inaugurée en 1886, le Golden Gate ouvre en 1937, le mont Rushmore est terminé en 1941 et la Gateway Arch en 1965.",
+        },
+        {
+          id: 20,
+          question: "Remets ces présidents dans l'ordre où ils sont arrivés au pouvoir.",
+          answers: [
+            { id: "a", text: "Martin Van Buren" },
+            { id: "b", text: "Andrew Johnson" },
+            { id: "c", text: "Calvin Coolidge" },
+            { id: "d", text: "Joe Biden" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Van Buren en 1837, Andrew Johnson en 1865 après l'assassinat de Lincoln, Coolidge en 1923 après la mort de Harding, et Joe Biden en 2021.",
+        },
       ],
     },
     en: {
@@ -320,6 +460,146 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
           explanation:
             "Wilson in 1913, Truman in 1945 when Roosevelt died, Ford in 1974 after Nixon resigned, and Trump in 2017 for his first term.",
         },
+        {
+          id: 11,
+          question: "Put these presidents in the order they took office.",
+          answers: [
+            { id: "a", text: "John Adams" },
+            { id: "b", text: "James Madison" },
+            { id: "c", text: "James Monroe" },
+            { id: "d", text: "John Quincy Adams" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "John Adams in 1797, James Madison in 1809, James Monroe in 1817 and John Quincy Adams, John Adams's son, in 1825.",
+        },
+        {
+          id: 12,
+          question: "Put these presidents in the order they took office.",
+          answers: [
+            { id: "a", text: "Ulysses S. Grant" },
+            { id: "b", text: "Grover Cleveland" },
+            { id: "c", text: "William Taft" },
+            { id: "d", text: "Herbert Hoover" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Grant in 1869, right after the Civil War, Cleveland in 1885, Taft in 1909 and Hoover in 1929, the year of the crash.",
+        },
+        {
+          id: 13,
+          question: "Put these 19th and 20th century events in chronological order.",
+          answers: [
+            { id: "a", text: "The California Gold Rush" },
+            { id: "b", text: "The completion of the first transcontinental railroad" },
+            { id: "c", text: "Ellis Island opens to immigrants" },
+            { id: "d", text: "The Empire State Building opens" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Gold Rush starts in 1848, the coast-to-coast railroad is finished in 1869, Ellis Island opens in 1892 and the Empire State Building opens in 1931.",
+        },
+        {
+          id: 14,
+          question: "Put these states in the order they joined the Union.",
+          answers: [
+            { id: "a", text: "Pennsylvania" },
+            { id: "b", text: "Florida" },
+            { id: "c", text: "Colorado" },
+            { id: "d", text: "Arizona" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Pennsylvania in 1787, one of the original thirteen, Florida in 1845, Colorado in 1876 and Arizona in 1912, the last of the 48 contiguous states.",
+        },
+        {
+          id: 15,
+          question: "Put these Cold War moments in chronological order.",
+          answers: [
+            { id: "a", text: "The start of the Korean War" },
+            { id: "b", text: "The Cuban Missile Crisis" },
+            { id: "c", text: "The fall of Saigon" },
+            { id: "d", text: "The fall of the Berlin Wall" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Korean War starts in 1950, the Cuban Missile Crisis happens in 1962, Saigon falls in 1975 and the Berlin Wall in 1989.",
+        },
+        {
+          id: 16,
+          question: "Put these civil rights milestones in chronological order.",
+          answers: [
+            { id: "a", text: "The abolition of slavery" },
+            { id: "b", text: "Women get the right to vote" },
+            { id: "c", text: "The Civil Rights Act against segregation" },
+            { id: "d", text: "Same-sex marriage legal nationwide" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Slavery is abolished by the 13th Amendment in 1865, women win the vote in 1920, the Civil Rights Act is signed in 1964 and the Supreme Court allows same-sex marriage nationwide in 2015.",
+        },
+        {
+          id: 17,
+          question: "Put these air and space firsts in chronological order.",
+          answers: [
+            { id: "a", text: "The Wright brothers' first flight" },
+            { id: "b", text: "Lindbergh's solo Atlantic crossing" },
+            { id: "c", text: "John Glenn, the first American in orbit" },
+            { id: "d", text: "The first flight of the Space Shuttle Columbia" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Wright brothers fly in 1903, Lindbergh goes from New York to Paris in 1927, John Glenn orbits the Earth in 1962 and the shuttle Columbia first lifts off in 1981.",
+        },
+        {
+          id: 18,
+          question: "Put these cities in the order they were founded.",
+          answers: [
+            { id: "a", text: "St. Augustine, Florida" },
+            { id: "b", text: "Santa Fe, New Mexico" },
+            { id: "c", text: "New Amsterdam, the future New York" },
+            { id: "d", text: "New Orleans" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Spanish found St. Augustine in 1565 and Santa Fe around 1610, the Dutch New Amsterdam in 1625 and the French New Orleans in 1718.",
+        },
+        {
+          id: 19,
+          question: "Put these monuments in the order they were completed.",
+          answers: [
+            { id: "a", text: "The Statue of Liberty" },
+            { id: "b", text: "The Golden Gate Bridge" },
+            { id: "c", text: "Mount Rushmore" },
+            { id: "d", text: "The Gateway Arch in St. Louis" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Statue of Liberty is unveiled in 1886, the Golden Gate opens in 1937, Mount Rushmore is finished in 1941 and the Gateway Arch in 1965.",
+        },
+        {
+          id: 20,
+          question: "Put these presidents in the order they took office.",
+          answers: [
+            { id: "a", text: "Martin Van Buren" },
+            { id: "b", text: "Andrew Johnson" },
+            { id: "c", text: "Calvin Coolidge" },
+            { id: "d", text: "Joe Biden" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Van Buren in 1837, Andrew Johnson in 1865 after Lincoln was assassinated, Coolidge in 1923 after Harding died, and Joe Biden in 2021.",
+        },
       ],
     },
     es: {
@@ -470,6 +750,146 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "Wilson en 1913, Truman en 1945 a la muerte de Roosevelt, Ford en 1974 tras la dimisión de Nixon y Trump en 2017 para su primer mandato.",
+        },
+        {
+          id: 11,
+          question: "Ordena a estos presidentes según su llegada al poder.",
+          answers: [
+            { id: "a", text: "John Adams" },
+            { id: "b", text: "James Madison" },
+            { id: "c", text: "James Monroe" },
+            { id: "d", text: "John Quincy Adams" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "John Adams en 1797, James Madison en 1809, James Monroe en 1817 y John Quincy Adams, el hijo de John Adams, en 1825.",
+        },
+        {
+          id: 12,
+          question: "Ordena a estos presidentes según su llegada al poder.",
+          answers: [
+            { id: "a", text: "Ulysses S. Grant" },
+            { id: "b", text: "Grover Cleveland" },
+            { id: "c", text: "William Taft" },
+            { id: "d", text: "Herbert Hoover" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Grant en 1869, justo después de la guerra de Secesión, Cleveland en 1885, Taft en 1909 y Hoover en 1929, el año del crac.",
+        },
+        {
+          id: 13,
+          question: "Ordena estos acontecimientos de los siglos XIX y XX de forma cronológica.",
+          answers: [
+            { id: "a", text: "La fiebre del oro de California" },
+            { id: "b", text: "La terminación del primer ferrocarril transcontinental" },
+            { id: "c", text: "La apertura de Ellis Island a los inmigrantes" },
+            { id: "d", text: "La inauguración del Empire State Building" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La fiebre del oro empieza en 1848, el ferrocarril de costa a costa se termina en 1869, Ellis Island abre en 1892 y el Empire State Building se inaugura en 1931.",
+        },
+        {
+          id: 14,
+          question: "Ordena estos estados según la fecha en que entraron en la Unión.",
+          answers: [
+            { id: "a", text: "Pensilvania" },
+            { id: "b", text: "Florida" },
+            { id: "c", text: "Colorado" },
+            { id: "d", text: "Arizona" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Pensilvania en 1787, uno de los trece primeros, Florida en 1845, Colorado en 1876 y Arizona en 1912, el último de los 48 estados contiguos.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos momentos de la Guerra Fría de forma cronológica.",
+          answers: [
+            { id: "a", text: "El comienzo de la guerra de Corea" },
+            { id: "b", text: "La crisis de los misiles de Cuba" },
+            { id: "c", text: "La caída de Saigón" },
+            { id: "d", text: "La caída del muro de Berlín" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La guerra de Corea empieza en 1950, la crisis de los misiles es en 1962, Saigón cae en 1975 y el muro de Berlín en 1989.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos avances de los derechos civiles de forma cronológica.",
+          answers: [
+            { id: "a", text: "La abolición de la esclavitud" },
+            { id: "b", text: "El derecho al voto de las mujeres" },
+            { id: "c", text: "La Civil Rights Act contra la segregación" },
+            { id: "d", text: "La legalización del matrimonio homosexual en todo el país" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La esclavitud se abole con la 13.ª enmienda en 1865, las mujeres consiguen el voto en 1920, la Civil Rights Act se firma en 1964 y el Tribunal Supremo permite el matrimonio homosexual en todo el país en 2015.",
+        },
+        {
+          id: 17,
+          question: "Ordena estos hitos del aire y del espacio de forma cronológica.",
+          answers: [
+            { id: "a", text: "El primer vuelo de los hermanos Wright" },
+            { id: "b", text: "La travesía del Atlántico en solitario de Lindbergh" },
+            { id: "c", text: "John Glenn, el primer estadounidense en órbita" },
+            { id: "d", text: "El primer vuelo del transbordador Columbia" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Los hermanos Wright vuelan en 1903, Lindbergh une Nueva York y París en 1927, John Glenn da la vuelta a la Tierra en 1962 y el transbordador Columbia despega por primera vez en 1981.",
+        },
+        {
+          id: 18,
+          question: "Ordena estas ciudades según la fecha de su fundación.",
+          answers: [
+            { id: "a", text: "San Agustín, en Florida" },
+            { id: "b", text: "Santa Fe, en Nuevo México" },
+            { id: "c", text: "Nueva Ámsterdam, la futura Nueva York" },
+            { id: "d", text: "Nueva Orleans" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Los españoles fundan San Agustín en 1565 y Santa Fe hacia 1610, los neerlandeses Nueva Ámsterdam en 1625 y los franceses Nueva Orleans en 1718.",
+        },
+        {
+          id: 19,
+          question: "Ordena estos monumentos según la fecha en que se terminaron.",
+          answers: [
+            { id: "a", text: "La estatua de la Libertad" },
+            { id: "b", text: "El puente Golden Gate" },
+            { id: "c", text: "El monte Rushmore" },
+            { id: "d", text: "El Gateway Arch de San Luis" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La estatua de la Libertad se inaugura en 1886, el Golden Gate abre en 1937, el monte Rushmore se termina en 1941 y el Gateway Arch en 1965.",
+        },
+        {
+          id: 20,
+          question: "Ordena a estos presidentes según su llegada al poder.",
+          answers: [
+            { id: "a", text: "Martin Van Buren" },
+            { id: "b", text: "Andrew Johnson" },
+            { id: "c", text: "Calvin Coolidge" },
+            { id: "d", text: "Joe Biden" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Van Buren en 1837, Andrew Johnson en 1865 tras el asesinato de Lincoln, Coolidge en 1923 tras la muerte de Harding, y Joe Biden en 2021.",
         },
       ],
     },

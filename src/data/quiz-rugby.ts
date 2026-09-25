@@ -20,7 +20,7 @@ export const quizRugby: TranslatedQuiz = {
     fr: {
       title: "Quiz rugby : règles, Coupe du monde et XV",
       description:
-        "Dix questions sur le rugby à XV : les règles, la Coupe du monde, le Tournoi des Six Nations et quelques grands joueurs.",
+        "Vingt questions sur le rugby à XV : les règles, la Coupe du monde, le Tournoi des Six Nations et quelques grands joueurs.",
       questions: [
         {
           id: 1,
@@ -156,12 +156,142 @@ export const quizRugby: TranslatedQuiz = {
           explanation:
             "La Géorgie. Le Tournoi réunit l'Angleterre, l'Écosse, la France, l'Irlande, l'Italie et le pays de Galles. L'Italie y est entrée en 2000, c'est là que le Tournoi est passé de cinq à six nations.",
         },
+        {
+          id: 11,
+          question: "Quel pays a gagné la toute première Coupe du monde, en 1987 ?",
+          answers: [
+            { id: "a", text: "La Nouvelle-Zélande" },
+            { id: "b", text: "L'Australie" },
+            { id: "c", text: "La France" },
+            { id: "d", text: "L'Angleterre" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Nouvelle-Zélande, qui organisait le tournoi avec l'Australie. Elle a battu la France 29-9 en finale, à Auckland.",
+        },
+        {
+          id: 12,
+          question: "Comment s'appelle la danse maorie que font les All Blacks avant leurs matchs ?",
+          answers: [
+            { id: "a", text: "Le sipi tau" },
+            { id: "b", text: "Le cibi" },
+            { id: "c", text: "Le haka" },
+            { id: "d", text: "Le siva tau" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le haka. Le plus connu s'appelle « Ka Mate ». Les Tonga, les Fidji et les Samoa ont aussi leur danse : le sipi tau, le cibi et le siva tau.",
+        },
+        {
+          id: 13,
+          question: "Quel club a gagné le plus de titres de champion de France de rugby ?",
+          answers: [
+            { id: "a", text: "Le Stade français" },
+            { id: "b", text: "Le Stade toulousain" },
+            { id: "c", text: "L'ASM Clermont" },
+            { id: "d", text: "Le RC Toulon" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le Stade toulousain, avec 25 titres après sa victoire de 2026. Il est loin devant tous les autres clubs.",
+        },
+        {
+          id: 14,
+          question: "Quel ailier néo-zélandais a marqué 15 essais en Coupe du monde, un record qu'il partage avec Bryan Habana ?",
+          answers: [
+            { id: "a", text: "Doug Howlett" },
+            { id: "b", text: "Christian Cullen" },
+            { id: "c", text: "Joe Rokocoko" },
+            { id: "d", text: "Jonah Lomu" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Jonah Lomu, en 1995 et 1999. Bryan Habana, l'ailier sud-africain, a égalé son total en 2015.",
+        },
+        {
+          id: 15,
+          question: "Quel pays a gagné la Coupe du monde 2003 grâce à un drop de Jonny Wilkinson en prolongation ?",
+          answers: [
+            { id: "a", text: "L'Australie" },
+            { id: "b", text: "L'Angleterre" },
+            { id: "c", text: "La Nouvelle-Zélande" },
+            { id: "d", text: "Le pays de Galles" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "L'Angleterre, qui a battu l'Australie 20-17 à Sydney. C'est toujours la seule équipe de l'hémisphère Nord championne du monde.",
+        },
+        {
+          id: 16,
+          question: "Combien de finales de Coupe du monde le XV de France a-t-il jouées ?",
+          answers: [
+            { id: "a", text: "Aucune" },
+            { id: "b", text: "Deux" },
+            { id: "c", text: "Trois" },
+            { id: "d", text: "Quatre" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Trois, et il les a toutes perdues : contre la Nouvelle-Zélande en 1987, contre l'Australie en 1999 et de nouveau contre la Nouvelle-Zélande en 2011, 8-7.",
+        },
+        {
+          id: 17,
+          question: "Dans quel stade s'est jouée la finale de la Coupe du monde 2023 ?",
+          answers: [
+            { id: "a", text: "Le Stade de France" },
+            { id: "b", text: "Le Stade Vélodrome" },
+            { id: "c", text: "Le Groupama Stadium" },
+            { id: "d", text: "Le Parc des Princes" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Au Stade de France, à Saint-Denis. L'Afrique du Sud y a battu la Nouvelle-Zélande 12-11.",
+        },
+        {
+          id: 18,
+          question: "À quel poste joue le joueur qui porte le numéro 10 ?",
+          answers: [
+            { id: "a", text: "Talonneur" },
+            { id: "b", text: "Arrière" },
+            { id: "c", text: "Centre" },
+            { id: "d", text: "Demi d'ouverture" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Demi d'ouverture, qu'on appelle aussi l'ouvreur. C'est souvent lui qui organise le jeu et qui tape les coups de pied. Le numéro 9 est le demi de mêlée.",
+        },
+        {
+          id: 19,
+          question: "D'après la légende, dans quelle ville anglaise le rugby est-il né ?",
+          answers: [
+            { id: "a", text: "Oxford" },
+            { id: "b", text: "Rugby" },
+            { id: "c", text: "Cambridge" },
+            { id: "d", text: "Eton" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "À Rugby, dans le collège du même nom. On raconte qu'en 1823, un élève, William Webb Ellis, a pris le ballon dans ses mains pendant un match de football.",
+        },
+        {
+          id: 20,
+          question: "Quel pays organise la Coupe du monde de rugby 2027 ?",
+          answers: [
+            { id: "a", text: "L'Afrique du Sud" },
+            { id: "b", text: "L'Angleterre" },
+            { id: "c", text: "L'Australie" },
+            { id: "d", text: "Le Japon" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "L'Australie, pour la troisième fois après 1987, avec la Nouvelle-Zélande, et 2003. Ce sera la première Coupe du monde à 24 équipes.",
+        },
       ],
     },
     en: {
       title: "Rugby quiz: rules, World Cup and legends",
       description:
-        "Ten questions on rugby union: the rules, the World Cup, the Six Nations and a few big names in the game.",
+        "Twenty questions on rugby union: the rules, the World Cup, the Six Nations and a few big names in the game.",
       questions: [
         {
           id: 1,
@@ -297,12 +427,142 @@ export const quizRugby: TranslatedQuiz = {
           explanation:
             "Georgia. The Six Nations brings together England, Scotland, France, Ireland, Italy and Wales. Italy joined in 2000, which is when the tournament went from five nations to six.",
         },
+        {
+          id: 11,
+          question: "Which country won the very first Rugby World Cup, in 1987?",
+          answers: [
+            { id: "a", text: "New Zealand" },
+            { id: "b", text: "Australia" },
+            { id: "c", text: "France" },
+            { id: "d", text: "England" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "New Zealand, who co-hosted the tournament with Australia. They beat France 29-9 in the final in Auckland.",
+        },
+        {
+          id: 12,
+          question: "What is the name of the Maori dance the All Blacks perform before their matches?",
+          answers: [
+            { id: "a", text: "The sipi tau" },
+            { id: "b", text: "The cibi" },
+            { id: "c", text: "The haka" },
+            { id: "d", text: "The siva tau" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The haka. The best-known one is called \"Ka Mate\". Tonga, Fiji and Samoa have their own dances too: the sipi tau, the cibi and the siva tau.",
+        },
+        {
+          id: 13,
+          question: "Which club has won the most French rugby championship titles?",
+          answers: [
+            { id: "a", text: "Stade Français" },
+            { id: "b", text: "Stade Toulousain" },
+            { id: "c", text: "ASM Clermont" },
+            { id: "d", text: "RC Toulon" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Stade Toulousain, with 25 titles after winning again in 2026. No other club comes close.",
+        },
+        {
+          id: 14,
+          question: "Which New Zealand wing scored 15 World Cup tries, a record he shares with Bryan Habana?",
+          answers: [
+            { id: "a", text: "Doug Howlett" },
+            { id: "b", text: "Christian Cullen" },
+            { id: "c", text: "Joe Rokocoko" },
+            { id: "d", text: "Jonah Lomu" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Jonah Lomu, in 1995 and 1999. Bryan Habana, the South African wing, matched his total in 2015.",
+        },
+        {
+          id: 15,
+          question: "Which country won the 2003 World Cup thanks to a Jonny Wilkinson drop goal in extra time?",
+          answers: [
+            { id: "a", text: "Australia" },
+            { id: "b", text: "England" },
+            { id: "c", text: "New Zealand" },
+            { id: "d", text: "Wales" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "England, who beat Australia 20-17 in Sydney. They are still the only northern hemisphere side to have won the World Cup.",
+        },
+        {
+          id: 16,
+          question: "How many World Cup finals have France played?",
+          answers: [
+            { id: "a", text: "None" },
+            { id: "b", text: "Two" },
+            { id: "c", text: "Three" },
+            { id: "d", text: "Four" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Three, and they lost them all: to New Zealand in 1987, to Australia in 1999 and to New Zealand again in 2011, 8-7.",
+        },
+        {
+          id: 17,
+          question: "Which stadium hosted the 2023 World Cup final?",
+          answers: [
+            { id: "a", text: "Stade de France" },
+            { id: "b", text: "Stade Vélodrome" },
+            { id: "c", text: "Groupama Stadium" },
+            { id: "d", text: "Parc des Princes" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Stade de France, in Saint-Denis. South Africa beat New Zealand 12-11 there.",
+        },
+        {
+          id: 18,
+          question: "Which position does the player wearing number 10 play?",
+          answers: [
+            { id: "a", text: "Hooker" },
+            { id: "b", text: "Full-back" },
+            { id: "c", text: "Centre" },
+            { id: "d", text: "Fly-half" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Fly-half, also called the out-half or first five-eighth. He usually runs the attack and does a lot of the kicking. Number 9 is the scrum-half.",
+        },
+        {
+          id: 19,
+          question: "According to legend, in which English town was rugby born?",
+          answers: [
+            { id: "a", text: "Oxford" },
+            { id: "b", text: "Rugby" },
+            { id: "c", text: "Cambridge" },
+            { id: "d", text: "Eton" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rugby, at the school of the same name. The story goes that in 1823 a pupil, William Webb Ellis, picked up the ball during a football match.",
+        },
+        {
+          id: 20,
+          question: "Which country is hosting the 2027 Rugby World Cup?",
+          answers: [
+            { id: "a", text: "South Africa" },
+            { id: "b", text: "England" },
+            { id: "c", text: "Australia" },
+            { id: "d", text: "Japan" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Australia, for the third time after 1987, with New Zealand, and 2003. It will be the first World Cup with 24 teams.",
+        },
       ],
     },
     es: {
       title: "Quiz de rugby: reglas y Copa del Mundo",
       description:
-        "Diez preguntas sobre rugby a XV: las reglas, la Copa del Mundo, el Seis Naciones y algunos grandes nombres de este deporte.",
+        "Veinte preguntas sobre rugby a XV: las reglas, la Copa del Mundo, el Seis Naciones y algunos grandes nombres de este deporte.",
       questions: [
         {
           id: 1,
@@ -437,6 +697,136 @@ export const quizRugby: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "Georgia. El Seis Naciones reúne a Inglaterra, Escocia, Francia, Irlanda, Italia y Gales. Italia entró en 2000, y ahí el torneo pasó de cinco a seis naciones.",
+        },
+        {
+          id: 11,
+          question: "¿Qué país ganó el primer Mundial de rugby, en 1987?",
+          answers: [
+            { id: "a", text: "Nueva Zelanda" },
+            { id: "b", text: "Australia" },
+            { id: "c", text: "Francia" },
+            { id: "d", text: "Inglaterra" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Nueva Zelanda, que organizó el torneo junto con Australia. Ganó 29-9 a Francia en la final de Auckland.",
+        },
+        {
+          id: 12,
+          question: "¿Cómo se llama la danza maorí que hacen los All Blacks antes de sus partidos?",
+          answers: [
+            { id: "a", text: "El sipi tau" },
+            { id: "b", text: "El cibi" },
+            { id: "c", text: "El haka" },
+            { id: "d", text: "El siva tau" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El haka. El más famoso se llama « Ka Mate ». Tonga, Fiyi y Samoa también tienen su danza: el sipi tau, el cibi y el siva tau.",
+        },
+        {
+          id: 13,
+          question: "¿Qué club ha ganado más títulos de campeón de Francia de rugby?",
+          answers: [
+            { id: "a", text: "Stade Français" },
+            { id: "b", text: "Stade Toulousain" },
+            { id: "c", text: "ASM Clermont" },
+            { id: "d", text: "RC Toulon" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El Stade Toulousain, con 25 títulos tras ganar de nuevo en 2026. Ningún otro club se le acerca.",
+        },
+        {
+          id: 14,
+          question: "¿Qué ala neozelandés marcó 15 ensayos en el Mundial, un récord que comparte con Bryan Habana?",
+          answers: [
+            { id: "a", text: "Doug Howlett" },
+            { id: "b", text: "Christian Cullen" },
+            { id: "c", text: "Joe Rokocoko" },
+            { id: "d", text: "Jonah Lomu" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Jonah Lomu, en 1995 y 1999. Bryan Habana, el ala sudafricano, igualó su cifra en 2015.",
+        },
+        {
+          id: 15,
+          question: "¿Qué país ganó el Mundial 2003 gracias a un drop de Jonny Wilkinson en la prórroga?",
+          answers: [
+            { id: "a", text: "Australia" },
+            { id: "b", text: "Inglaterra" },
+            { id: "c", text: "Nueva Zelanda" },
+            { id: "d", text: "Gales" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Inglaterra, que ganó 20-17 a Australia en Sídney. Sigue siendo la única selección del hemisferio norte campeona del mundo.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántas finales del Mundial ha jugado Francia?",
+          answers: [
+            { id: "a", text: "Ninguna" },
+            { id: "b", text: "Dos" },
+            { id: "c", text: "Tres" },
+            { id: "d", text: "Cuatro" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Tres, y las perdió todas: contra Nueva Zelanda en 1987, contra Australia en 1999 y otra vez contra Nueva Zelanda en 2011, por 8-7.",
+        },
+        {
+          id: 17,
+          question: "¿En qué estadio se jugó la final del Mundial 2023?",
+          answers: [
+            { id: "a", text: "Stade de France" },
+            { id: "b", text: "Stade Vélodrome" },
+            { id: "c", text: "Groupama Stadium" },
+            { id: "d", text: "Parque de los Príncipes" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En el Stade de France, en Saint-Denis. Sudáfrica ganó allí 12-11 a Nueva Zelanda.",
+        },
+        {
+          id: 18,
+          question: "¿En qué puesto juega el jugador que lleva el número 10?",
+          answers: [
+            { id: "a", text: "Talonador" },
+            { id: "b", text: "Zaguero" },
+            { id: "c", text: "Centro" },
+            { id: "d", text: "Apertura" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Apertura. Suele ser quien dirige el juego y se encarga de muchas patadas. El número 9 es el medio melé.",
+        },
+        {
+          id: 19,
+          question: "Según la leyenda, ¿en qué ciudad inglesa nació el rugby?",
+          answers: [
+            { id: "a", text: "Oxford" },
+            { id: "b", text: "Rugby" },
+            { id: "c", text: "Cambridge" },
+            { id: "d", text: "Eton" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En Rugby, en el colegio del mismo nombre. Se cuenta que en 1823 un alumno, William Webb Ellis, cogió el balón con las manos en un partido de fútbol.",
+        },
+        {
+          id: 20,
+          question: "¿Qué país organiza el Mundial de rugby 2027?",
+          answers: [
+            { id: "a", text: "Sudáfrica" },
+            { id: "b", text: "Inglaterra" },
+            { id: "c", text: "Australia" },
+            { id: "d", text: "Japón" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Australia, por tercera vez después de 1987, con Nueva Zelanda, y de 2003. Será el primer Mundial con 24 selecciones.",
         },
       ],
     },

@@ -167,6 +167,145 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
           explanation:
             "Super Saiyan pendant l'entraînement contre Cell, Super Saiyan 2 pendant le combat contre Cell, la forme Ultime face à Buu, et Gohan Beast dans le film Super Hero.",
         },
+        {
+          id: 11,
+          question: "Remets ces rencontres de Goku enfant dans l'ordre de l'histoire.",
+          answers: [
+            { id: "a", text: "Bulma" },
+            { id: "b", text: "Yamcha" },
+            { id: "c", text: "Chi-Chi" },
+            { id: "d", text: "Krilin" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Goku rencontre Bulma au tout début, puis Yamcha dans le désert pendant la chasse aux Dragon Balls. Chi-Chi arrive juste après, sur la route du mont Fry-Pan, et Krilin n'apparaît qu'au moment de l'entraînement chez Tortue Géniale.",
+        },
+        {
+          id: 12,
+          question: "Remets dans l'ordre les adversaires de Goku en finale des trois premiers Tenkaichi Budokai.",
+          answers: [
+            { id: "a", text: "Jackie Chun" },
+            { id: "b", text: "Tenshinhan" },
+            { id: "c", text: "Piccolo" },
+          ],
+          correctOrder: ["a", "b", "c"],
+          correctAnswer: "a",
+          explanation:
+            "Goku perd la finale du 21e tournoi contre Jackie Chun, qui est en fait Tortue Géniale déguisé, puis celle du 22e contre Tenshinhan. Il gagne enfin le 23e, en battant Piccolo.",
+        },
+        {
+          id: 13,
+          question: "Remets ces combattants dans l'ordre où ils meurent pendant la saga des Saiyans.",
+          answers: [
+            { id: "a", text: "Yamcha" },
+            { id: "b", text: "Chaozu" },
+            { id: "c", text: "Tenshinhan" },
+            { id: "d", text: "Piccolo" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Yamcha est tué par un Saibaman, puis Chaozu se fait exploser sur Nappa sans réussir à le battre. Tenshinhan meurt après avoir tout donné dans une dernière attaque, et Piccolo se sacrifie pour protéger Gohan.",
+        },
+        {
+          id: 14,
+          question: "Remets ces personnages dans l'ordre où ils débarquent sur Terre.",
+          answers: [
+            { id: "a", text: "Raditz" },
+            { id: "b", text: "Vegeta et Nappa" },
+            { id: "c", text: "Freezer et le roi Cold" },
+            { id: "d", text: "Beerus" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Raditz arrive au début de Dragon Ball Z, puis Vegeta et Nappa un an plus tard. Freezer et son père viennent après Namek, et Beerus débarque dans Dragon Ball Super pour chercher le Super Saiyan God.",
+        },
+        {
+          id: 15,
+          question: "Remets ces événements de la saga Freezer dans l'ordre du récit.",
+          answers: [
+            { id: "a", text: "Le commando Ginyu arrive sur Namek" },
+            { id: "b", text: "Ginyu échange son corps avec celui de Goku" },
+            { id: "c", text: "Freezer tue Krilin" },
+            { id: "d", text: "La planète Namek explose" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Freezer appelle d'abord le commando Ginyu en renfort. Le capitaine Ginyu vole le corps de Goku pendant leur combat, puis Freezer tue Krilin sous les yeux de Goku, et Namek finit par exploser à la fin du combat.",
+        },
+        {
+          id: 16,
+          question: "Remets ces événements du Cell Game dans l'ordre.",
+          answers: [
+            { id: "a", text: "Mister Satan se fait éjecter du ring" },
+            { id: "b", text: "Goku affronte Cell" },
+            { id: "c", text: "Cell fait naître des Cell Junior" },
+            { id: "d", text: "Gohan achève Cell" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Mister Satan passe en premier et Cell l'envoie hors du ring d'une gifle. Goku se bat ensuite et abandonne pour laisser sa place à Gohan. Cell lâche alors ses Cell Junior, et Gohan finit par le détruire avec un Kamehameha.",
+        },
+        {
+          id: 17,
+          question: "Remets ces événements de la saga de Majin Buu dans l'ordre du récit.",
+          answers: [
+            { id: "a", text: "Le 25e Tenkaichi Budokai commence" },
+            { id: "b", text: "Vegeta passe sous le contrôle de Babidi" },
+            { id: "c", text: "Gotenks affronte Super Buu" },
+            { id: "d", text: "Goku lance un Genki Dama sur Buu originel" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Tout part du 25e tournoi, où Babidi fait de Vegeta un Majin. Plus tard, Goten et Trunks fusionnent en Gotenks pour affronter Super Buu, et c'est un Genki Dama de Goku qui détruit enfin la forme originelle de Buu.",
+        },
+        {
+          id: 18,
+          question: "Remets ces formes de Majin Buu dans l'ordre où elles apparaissent.",
+          answers: [
+            { id: "a", text: "Le gros Buu" },
+            { id: "b", text: "Le Buu maléfique" },
+            { id: "c", text: "Super Buu" },
+            { id: "d", text: "Buu originel" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le gros Buu apparaît en premier. La part méchante de Buu se sépare de lui et devient le Buu maléfique, qui le mange pour donner Super Buu. Quand le gros Buu est retiré de son corps, il revient à sa forme originelle, la plus petite.",
+        },
+        {
+          id: 19,
+          question: "Remets ces formes de Vegeta dans l'ordre où il les prend pour la première fois.",
+          answers: [
+            { id: "a", text: "Super Saiyan" },
+            { id: "b", text: "Majin Vegeta" },
+            { id: "c", text: "Super Saiyan Blue" },
+            { id: "d", text: "Ultra Ego" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Vegeta devient Super Saiyan avant l'arrivée des cyborgs, puis Majin sous le contrôle de Babidi. Il passe Super Saiyan Blue dans La Résurrection de « F », et l'Ultra Ego arrive dans le manga Dragon Ball Super, pendant l'arc de Granola.",
+        },
+        {
+          id: 20,
+          question: "Remets ces dates de l'histoire de Dragon Ball dans l'ordre.",
+          answers: [
+            { id: "a", text: "Le début du manga Dragon Ball" },
+            { id: "b", text: "La première diffusion de l'anime Dragon Ball" },
+            { id: "c", text: "La fin du manga Dragon Ball" },
+            { id: "d", text: "Le début du manga Dragon Ball Super" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le manga démarre en 1984 dans le Weekly Shōnen Jump, et l'anime suit en 1986. Le manga se termine en 1995, et le manga Dragon Ball Super commence en 2015 dans le magazine V Jump.",
+        },
       ],
     },
     en: {
@@ -318,6 +457,145 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
           explanation:
             "Super Saiyan while training for Cell, Super Saiyan 2 during the fight with Cell, the Ultimate form against Buu, and Gohan Beast in the movie Super Hero.",
         },
+        {
+          id: 11,
+          question: "Put these meetings from Goku's childhood in story order.",
+          answers: [
+            { id: "a", text: "Bulma" },
+            { id: "b", text: "Yamcha" },
+            { id: "c", text: "Chi-Chi" },
+            { id: "d", text: "Krillin" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Goku meets Bulma at the very start, then Yamcha in the desert during the Dragon Ball hunt. Chi-Chi shows up right after, on the way to Fire Mountain, and Krillin only arrives when training with Master Roshi begins.",
+        },
+        {
+          id: 12,
+          question: "Put Goku's opponents in the finals of the first three World Martial Arts Tournaments in order.",
+          answers: [
+            { id: "a", text: "Jackie Chun" },
+            { id: "b", text: "Tien" },
+            { id: "c", text: "Piccolo" },
+          ],
+          correctOrder: ["a", "b", "c"],
+          correctAnswer: "a",
+          explanation:
+            "Goku loses the 21st tournament final to Jackie Chun, who is really Master Roshi in disguise, then the 22nd to Tien. He finally wins the 23rd by beating Piccolo.",
+        },
+        {
+          id: 13,
+          question: "Put these fighters in the order they die during the Saiyan Saga.",
+          answers: [
+            { id: "a", text: "Yamcha" },
+            { id: "b", text: "Chiaotzu" },
+            { id: "c", text: "Tien" },
+            { id: "d", text: "Piccolo" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Yamcha is killed by a Saibaman, then Chiaotzu blows himself up on Nappa without managing to beat him. Tien dies after giving everything in one last attack, and Piccolo sacrifices himself to protect Gohan.",
+        },
+        {
+          id: 14,
+          question: "Put these characters in the order they land on Earth.",
+          answers: [
+            { id: "a", text: "Raditz" },
+            { id: "b", text: "Vegeta and Nappa" },
+            { id: "c", text: "Frieza and King Cold" },
+            { id: "d", text: "Beerus" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Raditz arrives at the start of Dragon Ball Z, then Vegeta and Nappa a year later. Frieza and his father come after Namek, and Beerus shows up in Dragon Ball Super looking for the Super Saiyan God.",
+        },
+        {
+          id: 15,
+          question: "Put these Frieza Saga events in story order.",
+          answers: [
+            { id: "a", text: "The Ginyu Force lands on Namek" },
+            { id: "b", text: "Ginyu swaps bodies with Goku" },
+            { id: "c", text: "Frieza kills Krillin" },
+            { id: "d", text: "Planet Namek explodes" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Frieza first calls in the Ginyu Force. Captain Ginyu steals Goku's body during their fight, then Frieza kills Krillin in front of Goku, and Namek ends up exploding at the end of the battle.",
+        },
+        {
+          id: 16,
+          question: "Put these Cell Games events in order.",
+          answers: [
+            { id: "a", text: "Mr. Satan gets knocked out of the ring" },
+            { id: "b", text: "Goku fights Cell" },
+            { id: "c", text: "Cell spawns the Cell Juniors" },
+            { id: "d", text: "Gohan finishes Cell off" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Mr. Satan goes first and Cell swats him out of the ring. Goku fights next, then gives up and lets Gohan take over. Cell releases his Cell Juniors, and Gohan finally destroys him with a Kamehameha.",
+        },
+        {
+          id: 17,
+          question: "Put these Majin Buu Saga events in story order.",
+          answers: [
+            { id: "a", text: "The 25th World Martial Arts Tournament begins" },
+            { id: "b", text: "Vegeta falls under Babidi's control" },
+            { id: "c", text: "Gotenks fights Super Buu" },
+            { id: "d", text: "Goku hits Kid Buu with a Spirit Bomb" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "It all starts at the 25th tournament, where Babidi turns Vegeta into a Majin. Later, Goten and Trunks fuse into Gotenks to fight Super Buu, and a Spirit Bomb from Goku finally destroys Kid Buu.",
+        },
+        {
+          id: 18,
+          question: "Put these forms of Majin Buu in the order they appear.",
+          answers: [
+            { id: "a", text: "Fat Buu" },
+            { id: "b", text: "Evil Buu" },
+            { id: "c", text: "Super Buu" },
+            { id: "d", text: "Kid Buu" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Fat Buu comes first. Buu's evil side splits off and becomes Evil Buu, who eats Fat Buu and turns into Super Buu. When Fat Buu is pulled out of his body, he goes back to his original form, Kid Buu, the smallest one.",
+        },
+        {
+          id: 19,
+          question: "Put these forms of Vegeta in the order he first reaches them.",
+          answers: [
+            { id: "a", text: "Super Saiyan" },
+            { id: "b", text: "Majin Vegeta" },
+            { id: "c", text: "Super Saiyan Blue" },
+            { id: "d", text: "Ultra Ego" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Vegeta goes Super Saiyan before the androids arrive, then becomes a Majin under Babidi's control. He reaches Super Saiyan Blue in Resurrection 'F', and Ultra Ego comes in the Dragon Ball Super manga, during the Granolah arc.",
+        },
+        {
+          id: 20,
+          question: "Put these dates from Dragon Ball's history in order.",
+          answers: [
+            { id: "a", text: "The Dragon Ball manga starts" },
+            { id: "b", text: "The Dragon Ball anime first airs" },
+            { id: "c", text: "The Dragon Ball manga ends" },
+            { id: "d", text: "The Dragon Ball Super manga starts" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The manga starts in 1984 in Weekly Shōnen Jump, and the anime follows in 1986. The manga ends in 1995, and the Dragon Ball Super manga begins in 2015 in V Jump magazine.",
+        },
       ],
     },
     es: {
@@ -468,6 +746,145 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Super Saiyan durante el entrenamiento para Cell, Super Saiyan 2 en la pelea contra Cell, la forma Definitiva contra Bu y Gohan Bestia en la película Super Hero.",
+        },
+        {
+          id: 11,
+          question: "Ordena estos encuentros de Goku de niño según la historia.",
+          answers: [
+            { id: "a", text: "Bulma" },
+            { id: "b", text: "Yamcha" },
+            { id: "c", text: "Chi-Chi" },
+            { id: "d", text: "Krilin" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Goku conoce a Bulma al principio de todo y luego a Yamcha en el desierto, durante la búsqueda de las esferas. Chi-Chi aparece justo después, de camino a la montaña Fry-Pan, y Krilin no llega hasta el entrenamiento con el Maestro Roshi.",
+        },
+        {
+          id: 12,
+          question: "Ordena a los rivales de Goku en la final de los tres primeros Torneos de Artes Marciales.",
+          answers: [
+            { id: "a", text: "Jackie Chun" },
+            { id: "b", text: "Ten Shin Han" },
+            { id: "c", text: "Piccolo" },
+          ],
+          correctOrder: ["a", "b", "c"],
+          correctAnswer: "a",
+          explanation:
+            "Goku pierde la final del 21.º torneo contra Jackie Chun, que en realidad es el Maestro Roshi disfrazado, y luego la del 22.º contra Ten Shin Han. Por fin gana el 23.º al vencer a Piccolo.",
+        },
+        {
+          id: 13,
+          question: "Ordena a estos luchadores según el momento en que mueren en la saga de los Saiyans.",
+          answers: [
+            { id: "a", text: "Yamcha" },
+            { id: "b", text: "Chaoz" },
+            { id: "c", text: "Ten Shin Han" },
+            { id: "d", text: "Piccolo" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "A Yamcha lo mata un Saibaman, y luego Chaoz se hace explotar encima de Nappa sin conseguir vencerlo. Ten Shin Han muere tras darlo todo en un último ataque, y Piccolo se sacrifica para proteger a Gohan.",
+        },
+        {
+          id: 14,
+          question: "Ordena a estos personajes según el orden en que llegan a la Tierra.",
+          answers: [
+            { id: "a", text: "Raditz" },
+            { id: "b", text: "Vegeta y Nappa" },
+            { id: "c", text: "Freezer y el rey Cold" },
+            { id: "d", text: "Beerus" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Raditz llega al principio de Dragon Ball Z, y Vegeta y Nappa un año después. Freezer y su padre vienen después de Namek, y Beerus aparece en Dragon Ball Super buscando al Super Saiyan Dios.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos momentos de la saga de Freezer según la historia.",
+          answers: [
+            { id: "a", text: "Las Fuerzas Especiales Ginyu llegan a Namek" },
+            { id: "b", text: "Ginyu intercambia su cuerpo con el de Goku" },
+            { id: "c", text: "Freezer mata a Krilin" },
+            { id: "d", text: "El planeta Namek explota" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Freezer llama primero a las Fuerzas Especiales Ginyu. El capitán Ginyu le roba el cuerpo a Goku durante su combate, luego Freezer mata a Krilin delante de Goku, y Namek acaba explotando al final de la pelea.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos momentos de los Juegos de Cell.",
+          answers: [
+            { id: "a", text: "Mr. Satán sale despedido del ring" },
+            { id: "b", text: "Goku pelea contra Cell" },
+            { id: "c", text: "Cell crea a los Cell Jr." },
+            { id: "d", text: "Gohan acaba con Cell" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Mr. Satán sale primero y Cell lo saca del ring de un manotazo. Después pelea Goku, que se rinde para dejarle el sitio a Gohan. Cell suelta entonces a sus Cell Jr., y Gohan termina destruyéndolo con un Kamehameha.",
+        },
+        {
+          id: 17,
+          question: "Ordena estos momentos de la saga de Majin Bu según la historia.",
+          answers: [
+            { id: "a", text: "Empieza el 25.º Torneo de Artes Marciales" },
+            { id: "b", text: "Vegeta cae bajo el control de Babidi" },
+            { id: "c", text: "Gotenks pelea contra Super Bu" },
+            { id: "d", text: "Goku lanza una Genkidama contra Kid Bu" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Todo empieza en el 25.º torneo, donde Babidi convierte a Vegeta en un Majin. Más tarde, Goten y Trunks se fusionan en Gotenks para enfrentarse a Super Bu, y una Genkidama de Goku acaba por fin con Kid Bu.",
+        },
+        {
+          id: 18,
+          question: "Ordena estas formas de Majin Bu según el orden en que aparecen.",
+          answers: [
+            { id: "a", text: "El Bu gordo" },
+            { id: "b", text: "El Bu malvado" },
+            { id: "c", text: "Super Bu" },
+            { id: "d", text: "Kid Bu" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El Bu gordo aparece primero. La parte malvada de Bu se separa de él y se convierte en el Bu malvado, que se lo come y da lugar a Super Bu. Cuando le sacan al Bu gordo del cuerpo, vuelve a su forma original, Kid Bu, la más pequeña.",
+        },
+        {
+          id: 19,
+          question: "Ordena estas formas de Vegeta según el momento en que las alcanza por primera vez.",
+          answers: [
+            { id: "a", text: "Super Saiyan" },
+            { id: "b", text: "Majin Vegeta" },
+            { id: "c", text: "Super Saiyan Blue" },
+            { id: "d", text: "Ultra Ego" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Vegeta se convierte en Super Saiyan antes de que lleguen los androides, y luego en Majin bajo el control de Babidi. Alcanza el Super Saiyan Blue en La resurrección de F, y el Ultra Ego llega en el manga de Dragon Ball Super, durante el arco de Granola.",
+        },
+        {
+          id: 20,
+          question: "Ordena estas fechas de la historia de Dragon Ball.",
+          answers: [
+            { id: "a", text: "Empieza el manga Dragon Ball" },
+            { id: "b", text: "Se estrena el anime Dragon Ball" },
+            { id: "c", text: "Termina el manga Dragon Ball" },
+            { id: "d", text: "Empieza el manga Dragon Ball Super" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El manga empieza en 1984 en la Weekly Shōnen Jump, y el anime llega en 1986. El manga termina en 1995, y el manga de Dragon Ball Super arranca en 2015 en la revista V Jump.",
         },
       ],
     },

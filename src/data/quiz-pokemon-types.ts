@@ -13,7 +13,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
   slug: "quiz-pokemon-types",
   slugs: { en: "pokemon-types-quiz", fr: "quiz-pokemon-types", es: "quiz-pokemon-tipos" },
   categorySlug: "jeux-video",
-  subcategory: "Pokemon",
+  subcategory: "Pokémon",
   difficulty: "medium",
   coverImage: "/images/cover-pokemon-types.webp",
   gameType: "duel",
@@ -22,7 +22,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
     fr: {
       title: "Duel Pokémon : les types",
       description:
-        "Plante ou Feu, Sol ou Vol, Spectre ou Roche : dix duels sur les types Pokémon et leurs faiblesses. À toi de choisir le bon !",
+        "Plante ou Feu, Sol ou Vol, Spectre ou Roche : vingt duels sur les types Pokémon et leurs faiblesses. À toi de choisir le bon !",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizPokemonTypes: TranslatedQuiz = {
           explanation:
             "Ténèbres, comme Insecte et Spectre. Le Combat, au contraire, est peu efficace contre un Pokémon Psy.",
         },
+        {
+          id: 11,
+          question: "Sur quel type les attaques Dragon n'ont-elles aucun effet ?",
+          answers: [
+            { id: "a", text: "Acier" },
+            { id: "b", text: "Fée" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Fée. Un Pokémon Fée ne prend aucun dégât d'une attaque Dragon. L'Acier, de son côté, résiste au Dragon, mais il prend quand même un peu de dégâts.",
+        },
+        {
+          id: 12,
+          question: "Sur quel type les attaques Sol n'ont-elles aucun effet ?",
+          answers: [
+            { id: "a", text: "Vol" },
+            { id: "b", text: "Eau" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vol. Un Pokémon qui vole ne se fait pas toucher par un Séisme, par exemple. Contre l'Eau, le Sol fait des dégâts normaux.",
+        },
+        {
+          id: 13,
+          question: "Quel type est super efficace contre le type Roche ?",
+          answers: [
+            { id: "a", text: "Feu" },
+            { id: "b", text: "Eau" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Eau, comme Plante, Combat, Sol et Acier. Le Feu, au contraire, est peu efficace contre la Roche.",
+        },
+        {
+          id: 14,
+          question: "Quels sont les types de Lokhlass ?",
+          answers: [
+            { id: "a", text: "Eau et Glace" },
+            { id: "b", text: "Eau et Psy" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Eau et Glace. Lokhlass, le grand Pokémon qui transporte les dresseurs sur son dos, connaît d'ailleurs souvent Laser Glace.",
+        },
+        {
+          id: 15,
+          question: "Quel type est super efficace contre le type Acier ?",
+          answers: [
+            { id: "a", text: "Glace" },
+            { id: "b", text: "Feu" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Feu, comme Combat et Sol. La Glace, elle, est peu efficace contre l'Acier, qui la résiste.",
+        },
+        {
+          id: 16,
+          question: "Quels sont les types de Tyranocif ?",
+          answers: [
+            { id: "a", text: "Roche et Ténèbres" },
+            { id: "b", text: "Roche et Sol" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Roche et Ténèbres. Il est arrivé avec Or et Argent, en même temps que le type Ténèbres. Du coup, il craint beaucoup les attaques Combat, qui lui font quatre fois plus de dégâts.",
+        },
+        {
+          id: 17,
+          question: "Sur quel type les attaques Poison n'ont-elles aucun effet ?",
+          answers: [
+            { id: "a", text: "Insecte" },
+            { id: "b", text: "Acier" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Acier. Un Pokémon Acier ne peut pas être empoisonné par une attaque Poison. Contre l'Insecte, le Poison fait des dégâts normaux.",
+        },
+        {
+          id: 18,
+          question: "Quel type est super efficace contre le type Glace ?",
+          answers: [
+            { id: "a", text: "Combat" },
+            { id: "b", text: "Eau" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Combat, comme Feu, Roche et Acier. L'Eau fait des dégâts normaux à un Pokémon Glace.",
+        },
+        {
+          id: 19,
+          question: "Quels sont les types de M. Mime depuis Pokémon X et Y ?",
+          answers: [
+            { id: "a", text: "Psy et Normal" },
+            { id: "b", text: "Psy et Fée" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Psy et Fée. Dans les cinq premières générations, M. Mime était de type Psy tout court. Il a reçu le type Fée quand celui-ci est apparu, en 2013.",
+        },
+        {
+          id: 20,
+          question: "Quels sont les types de Lucario ?",
+          answers: [
+            { id: "a", text: "Combat et Acier" },
+            { id: "b", text: "Combat et Psy" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Combat et Acier. Lucario vient de la 4e génération, dans Diamant et Perle, et il est connu pour maîtriser l'aura.",
+        },
       ],
     },
     en: {
       title: "Pokémon duel: the types",
       description:
-        "Grass or Fire, Ground or Flying, Ghost or Rock: ten duels about Pokémon types and their weaknesses. Pick the right one!",
+        "Grass or Fire, Ground or Flying, Ghost or Rock: twenty duels about Pokémon types and their weaknesses. Pick the right one!",
       questions: [
         {
           id: 1,
@@ -259,12 +369,122 @@ export const quizPokemonTypes: TranslatedQuiz = {
           explanation:
             "Dark, along with Bug and Ghost. Fighting, on the other hand, isn't very effective against a Psychic Pokémon.",
         },
+        {
+          id: 11,
+          question: "Which type is completely immune to Dragon moves?",
+          answers: [
+            { id: "a", text: "Steel" },
+            { id: "b", text: "Fairy" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Fairy. A Fairy-type Pokémon takes no damage at all from a Dragon move. Steel resists Dragon, but it still takes a bit of damage.",
+        },
+        {
+          id: 12,
+          question: "Which type is completely immune to Ground moves?",
+          answers: [
+            { id: "a", text: "Flying" },
+            { id: "b", text: "Water" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Flying. A Pokémon in the air can't be hit by Earthquake, for example. Against Water, Ground moves do normal damage.",
+        },
+        {
+          id: 13,
+          question: "Which type is super effective against Rock?",
+          answers: [
+            { id: "a", text: "Fire" },
+            { id: "b", text: "Water" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Water, along with Grass, Fighting, Ground and Steel. Fire is the opposite: it's not very effective against Rock.",
+        },
+        {
+          id: 14,
+          question: "What are Lapras's types?",
+          answers: [
+            { id: "a", text: "Water and Ice" },
+            { id: "b", text: "Water and Psychic" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Water and Ice. Lapras, the big Pokémon that carries trainers across the sea on its back, often knows Ice Beam.",
+        },
+        {
+          id: 15,
+          question: "Which type is super effective against Steel?",
+          answers: [
+            { id: "a", text: "Ice" },
+            { id: "b", text: "Fire" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Fire, along with Fighting and Ground. Ice is not very effective against Steel, which resists it.",
+        },
+        {
+          id: 16,
+          question: "What are Tyranitar's types?",
+          answers: [
+            { id: "a", text: "Rock and Dark" },
+            { id: "b", text: "Rock and Ground" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Rock and Dark. It arrived in Gold and Silver, at the same time as the Dark type. That's why Fighting moves hurt it so much: they do four times the damage.",
+        },
+        {
+          id: 17,
+          question: "Which type is completely immune to Poison moves?",
+          answers: [
+            { id: "a", text: "Bug" },
+            { id: "b", text: "Steel" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Steel. Poison moves don't affect Steel-type Pokémon at all. Against Bug, Poison does normal damage.",
+        },
+        {
+          id: 18,
+          question: "Which type is super effective against Ice?",
+          answers: [
+            { id: "a", text: "Fighting" },
+            { id: "b", text: "Water" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Fighting, along with Fire, Rock and Steel. Water only does normal damage to an Ice-type Pokémon.",
+        },
+        {
+          id: 19,
+          question: "What have Mr. Mime's types been since Pokémon X and Y?",
+          answers: [
+            { id: "a", text: "Psychic and Normal" },
+            { id: "b", text: "Psychic and Fairy" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Psychic and Fairy. In the first five generations Mr. Mime was pure Psychic, and it got the Fairy type when that type was added in 2013.",
+        },
+        {
+          id: 20,
+          question: "What are Lucario's types?",
+          answers: [
+            { id: "a", text: "Fighting and Steel" },
+            { id: "b", text: "Fighting and Psychic" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Fighting and Steel. Lucario comes from the fourth generation, Diamond and Pearl, and it's known for controlling aura.",
+        },
       ],
     },
     es: {
       title: "Duelo Pokémon: los tipos",
       description:
-        "Planta o Fuego, Tierra o Volador, Fantasma o Roca: diez duelos sobre los tipos Pokémon y sus debilidades. ¡Elige el bueno!",
+        "Planta o Fuego, Tierra o Volador, Fantasma o Roca: veinte duelos sobre los tipos Pokémon y sus debilidades. ¡Elige el bueno!",
       questions: [
         {
           id: 1,
@@ -379,6 +599,116 @@ export const quizPokemonTypes: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Siniestro, igual que Bicho y Fantasma. La Lucha, en cambio, es poco eficaz contra un Pokémon Psíquico.",
+        },
+        {
+          id: 11,
+          question: "¿Qué tipo no recibe ningún daño de los ataques de tipo Dragón?",
+          answers: [
+            { id: "a", text: "Acero" },
+            { id: "b", text: "Hada" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Hada. Un Pokémon de tipo Hada no recibe nada de daño de un ataque Dragón. El Acero resiste al Dragón, pero aun así recibe algo de daño.",
+        },
+        {
+          id: 12,
+          question: "¿Qué tipo no recibe ningún daño de los ataques de tipo Tierra?",
+          answers: [
+            { id: "a", text: "Volador" },
+            { id: "b", text: "Agua" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Volador. A un Pokémon que vuela no le afecta un Terremoto, por ejemplo. Contra el Agua, la Tierra hace un daño normal.",
+        },
+        {
+          id: 13,
+          question: "¿Qué tipo es súper eficaz contra el tipo Roca?",
+          answers: [
+            { id: "a", text: "Fuego" },
+            { id: "b", text: "Agua" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Agua, igual que Planta, Lucha, Tierra y Acero. El Fuego, en cambio, es poco eficaz contra la Roca.",
+        },
+        {
+          id: 14,
+          question: "¿De qué tipos es Lapras?",
+          answers: [
+            { id: "a", text: "Agua y Hielo" },
+            { id: "b", text: "Agua y Psíquico" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Agua y Hielo. Lapras, el gran Pokémon que lleva a los entrenadores por el mar a su espalda, suele saber Rayo Hielo.",
+        },
+        {
+          id: 15,
+          question: "¿Qué tipo es súper eficaz contra el tipo Acero?",
+          answers: [
+            { id: "a", text: "Hielo" },
+            { id: "b", text: "Fuego" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Fuego, igual que Lucha y Tierra. El Hielo es poco eficaz contra el Acero, que lo resiste.",
+        },
+        {
+          id: 16,
+          question: "¿De qué tipos es Tyranitar?",
+          answers: [
+            { id: "a", text: "Roca y Siniestro" },
+            { id: "b", text: "Roca y Tierra" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Roca y Siniestro. Llegó con Oro y Plata, a la vez que el tipo Siniestro. Por eso los ataques de tipo Lucha le hacen tanto daño: cuatro veces más de lo normal.",
+        },
+        {
+          id: 17,
+          question: "¿Qué tipo no recibe ningún daño de los ataques de tipo Veneno?",
+          answers: [
+            { id: "a", text: "Bicho" },
+            { id: "b", text: "Acero" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Acero. Los ataques de tipo Veneno no le hacen nada a un Pokémon de tipo Acero. Contra el tipo Bicho, el Veneno hace un daño normal.",
+        },
+        {
+          id: 18,
+          question: "¿Qué tipo es súper eficaz contra el tipo Hielo?",
+          answers: [
+            { id: "a", text: "Lucha" },
+            { id: "b", text: "Agua" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Lucha, igual que Fuego, Roca y Acero. El Agua solo hace un daño normal a un Pokémon de tipo Hielo.",
+        },
+        {
+          id: 19,
+          question: "¿De qué tipos es Mr. Mime desde Pokémon X e Y?",
+          answers: [
+            { id: "a", text: "Psíquico y Normal" },
+            { id: "b", text: "Psíquico y Hada" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Psíquico y Hada. En las cinco primeras generaciones Mr. Mime era solo de tipo Psíquico, y recibió el tipo Hada cuando este apareció, en 2013.",
+        },
+        {
+          id: 20,
+          question: "¿De qué tipos es Lucario?",
+          answers: [
+            { id: "a", text: "Lucha y Acero" },
+            { id: "b", text: "Lucha y Psíquico" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Lucha y Acero. Lucario es de la cuarta generación, la de Diamante y Perla, y es famoso por controlar el aura.",
         },
       ],
     },

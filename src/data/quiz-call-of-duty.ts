@@ -1,7 +1,7 @@
 import type { TranslatedQuiz } from "./types";
 
 /**
- * Quiz Call of Duty en mode ordre : dix suites de quatre elements a ranger.
+ * Quiz Call of Duty en mode ordre : vingt suites de quatre elements a ranger.
  *
  * Le moteur melange les propositions (OrdrePlayer), seul `correctOrder` compte.
  * La plupart des questions portent sur l'ordre de sortie, avec deux variantes
@@ -21,7 +21,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
     fr: {
       title: "Call of Duty dans l'ordre",
       description:
-        "Dix suites Call of Duty à remettre dans l'ordre, de 2003 à Black Ops 6. Lis bien la question : parfois c'est la sortie, parfois l'époque du jeu.",
+        "Vingt suites Call of Duty à remettre dans l'ordre, de 2003 à Black Ops 7. Lis bien la question : parfois c'est la sortie, parfois l'époque du jeu.",
       questions: [
         {
           id: 1,
@@ -167,12 +167,152 @@ export const quizCallOfDuty: TranslatedQuiz = {
           explanation:
             "World at War en 2008, Modern Warfare 2 en 2009, Black Ops en 2010, et Modern Warfare 3 en 2011. Un jeu par an, du coup, en alternant Treyarch et Infinity Ward.",
         },
+        {
+          id: 11,
+          question: "Remets ces Black Ops dans leur ordre de sortie.",
+          answers: [
+            { id: "a", text: "Black Ops Cold War" },
+            { id: "b", text: "Black Ops 7" },
+            { id: "c", text: "Black Ops 4" },
+            { id: "d", text: "Black Ops 6" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Black Ops 4 en 2018, Black Ops Cold War en 2020, Black Ops 6 en 2024, puis Black Ops 7 en novembre 2025. Les quatre sont menés par Treyarch.",
+        },
+        {
+          id: 12,
+          question: "Range ces jeux selon l'époque où se passe leur histoire, de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "Black Ops II" },
+            { id: "b", text: "Black Ops 6" },
+            { id: "c", text: "Black Ops III" },
+            { id: "d", text: "Modern Warfare (2019)" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Black Ops 6 se passe au début des années 1990, pendant la guerre du Golfe, Modern Warfare en 2019, Black Ops II en 2025 pour sa partie principale, et Black Ops III en 2065.",
+        },
+        {
+          id: 13,
+          question: "Remets ces jeux Call of Duty sur mobile dans leur ordre de sortie.",
+          answers: [
+            { id: "a", text: "Call of Duty: Mobile" },
+            { id: "b", text: "Call of Duty: Heroes" },
+            { id: "c", text: "Warzone Mobile" },
+            { id: "d", text: "Call of Duty: Strike Team" },
+          ],
+          correctOrder: ["d", "b", "a", "c"],
+          correctAnswer: "d",
+          explanation:
+            "Strike Team en 2013, Heroes en 2014, Call of Duty: Mobile en 2019, puis Warzone Mobile en mars 2024. Warzone Mobile a d'ailleurs été retiré des boutiques dès mai 2025.",
+        },
+        {
+          id: 14,
+          question: "Remets ces modes battle royale dans leur ordre de sortie.",
+          answers: [
+            { id: "a", text: "Warzone" },
+            { id: "b", text: "Warzone 2.0" },
+            { id: "c", text: "Blackout, dans Black Ops 4" },
+            { id: "d", text: "Warzone Mobile" },
+          ],
+          correctOrder: ["c", "a", "b", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Blackout en octobre 2018, dans Black Ops 4, puis Warzone en mars 2020, Warzone 2.0 en novembre 2022 et Warzone Mobile en mars 2024. Blackout a été le premier battle royale de la série.",
+        },
+        {
+          id: 15,
+          question: "Remets ces cartes Zombies dans leur ordre de sortie.",
+          answers: [
+            { id: "a", text: "Mob of the Dead" },
+            { id: "b", text: "Der Riese" },
+            { id: "c", text: "Der Eisendrache" },
+            { id: "d", text: "Moon" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Der Riese en 2009 pour World at War, Moon en 2011 pour Black Ops, Mob of the Dead en 2013 pour Black Ops II, et Der Eisendrache en 2016 pour Black Ops III. Toutes sont sorties en contenu téléchargeable.",
+        },
+        {
+          id: 16,
+          question: "Dans Modern Warfare 2 (2009), range ces séries d'éliminations de la moins chère à la plus chère en éliminations.",
+          answers: [
+            { id: "a", text: "Drone" },
+            { id: "b", text: "AC-130" },
+            { id: "c", text: "Missile Predator" },
+            { id: "d", text: "Harrier" },
+          ],
+          correctOrder: ["a", "c", "d", "b"],
+          correctAnswer: "a",
+          explanation:
+            "Le drone demande 3 éliminations, le missile Predator 5, le Harrier 7 et l'AC-130 11. Plus la série est longue, plus elle fait de dégâts.",
+        },
+        {
+          id: 17,
+          question: "Dans les premiers modes Zombies, range ces atouts du moins cher au plus cher.",
+          answers: [
+            { id: "a", text: "Juggernog" },
+            { id: "b", text: "Double Tap" },
+            { id: "c", text: "Speed Cola" },
+            { id: "d", text: "Quick Revive" },
+          ],
+          correctOrder: ["d", "b", "a", "c"],
+          correctAnswer: "d",
+          explanation:
+            "Quick Revive coûte 1 500 points en coopération, Double Tap 2 000, Juggernog 2 500 et Speed Cola 3 000. Ce sont les prix de World at War et du premier Black Ops.",
+        },
+        {
+          id: 18,
+          question: "Range ces méchants selon la sortie du jeu où ils apparaissent pour la première fois.",
+          answers: [
+            { id: "a", text: "Jonathan Irons" },
+            { id: "b", text: "Imran Zakhaev" },
+            { id: "c", text: "Raul Menendez" },
+            { id: "d", text: "Le général Shepherd" },
+          ],
+          correctOrder: ["b", "d", "c", "a"],
+          correctAnswer: "b",
+          explanation:
+            "Zakhaev dans Call of Duty 4 en 2007, Shepherd dans Modern Warfare 2 en 2009, Menendez dans Black Ops II en 2012, et Irons dans Advanced Warfare en 2014.",
+        },
+        {
+          id: 19,
+          question: "Remets ces étapes du rachat d'Activision par Microsoft dans l'ordre.",
+          answers: [
+            { id: "a", text: "L'autorité britannique de la concurrence bloque le rachat" },
+            { id: "b", text: "Black Ops 6 sort le jour même dans le Game Pass" },
+            { id: "c", text: "Microsoft annonce le rachat" },
+            { id: "d", text: "Le rachat est finalisé" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Microsoft annonce le rachat en janvier 2022, l'autorité britannique le bloque en avril 2023, le rachat est finalisé en octobre 2023, et Black Ops 6 arrive dans le Game Pass dès sa sortie, en octobre 2024.",
+        },
+        {
+          id: 20,
+          question: "Remets ces jeux de Sledgehammer Games dans leur ordre de sortie.",
+          answers: [
+            { id: "a", text: "Vanguard" },
+            { id: "b", text: "Advanced Warfare" },
+            { id: "c", text: "Modern Warfare III" },
+            { id: "d", text: "Call of Duty: WWII" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Advanced Warfare en 2014, WWII en 2017, Vanguard en 2021, puis Modern Warfare III en 2023. Sledgehammer est le troisième grand studio de la série, avec Infinity Ward et Treyarch.",
+        },
       ],
     },
     en: {
       title: "Call of Duty in the right order",
       description:
-        "Ten sets of Call of Duty games to put in order, from 2003 to Black Ops 6. Read carefully: sometimes it's release date, sometimes the game's era.",
+        "Twenty sets of Call of Duty games to put in order, from 2003 to Black Ops 7. Read carefully: sometimes it's release date, sometimes the game's era.",
       questions: [
         {
           id: 1,
@@ -318,12 +458,152 @@ export const quizCallOfDuty: TranslatedQuiz = {
           explanation:
             "World at War in 2008, Modern Warfare 2 in 2009, Black Ops in 2010, and Modern Warfare 3 in 2011. One game a year, with Treyarch and Infinity Ward taking turns.",
         },
+        {
+          id: 11,
+          question: "Put these Black Ops games in release order.",
+          answers: [
+            { id: "a", text: "Black Ops Cold War" },
+            { id: "b", text: "Black Ops 7" },
+            { id: "c", text: "Black Ops 4" },
+            { id: "d", text: "Black Ops 6" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Black Ops 4 in 2018, Black Ops Cold War in 2020, Black Ops 6 in 2024, then Black Ops 7 in November 2025. All four are led by Treyarch.",
+        },
+        {
+          id: 12,
+          question: "Sort these games by when their story takes place, from earliest to latest.",
+          answers: [
+            { id: "a", text: "Black Ops II" },
+            { id: "b", text: "Black Ops 6" },
+            { id: "c", text: "Black Ops III" },
+            { id: "d", text: "Modern Warfare (2019)" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Black Ops 6 is set in the early 1990s, during the Gulf War, Modern Warfare in 2019, Black Ops II in 2025 for most of its story, and Black Ops III in 2065.",
+        },
+        {
+          id: 13,
+          question: "Put these Call of Duty mobile games in release order.",
+          answers: [
+            { id: "a", text: "Call of Duty: Mobile" },
+            { id: "b", text: "Call of Duty: Heroes" },
+            { id: "c", text: "Warzone Mobile" },
+            { id: "d", text: "Call of Duty: Strike Team" },
+          ],
+          correctOrder: ["d", "b", "a", "c"],
+          correctAnswer: "d",
+          explanation:
+            "Strike Team in 2013, Heroes in 2014, Call of Duty: Mobile in 2019, then Warzone Mobile in March 2024. Warzone Mobile was pulled from the app stores as early as May 2025.",
+        },
+        {
+          id: 14,
+          question: "Put these battle royale modes in release order.",
+          answers: [
+            { id: "a", text: "Warzone" },
+            { id: "b", text: "Warzone 2.0" },
+            { id: "c", text: "Blackout, in Black Ops 4" },
+            { id: "d", text: "Warzone Mobile" },
+          ],
+          correctOrder: ["c", "a", "b", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Blackout in October 2018, in Black Ops 4, then Warzone in March 2020, Warzone 2.0 in November 2022 and Warzone Mobile in March 2024. Blackout was the series' first battle royale.",
+        },
+        {
+          id: 15,
+          question: "Put these Zombies maps in release order.",
+          answers: [
+            { id: "a", text: "Mob of the Dead" },
+            { id: "b", text: "Der Riese" },
+            { id: "c", text: "Der Eisendrache" },
+            { id: "d", text: "Moon" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Der Riese in 2009 for World at War, Moon in 2011 for Black Ops, Mob of the Dead in 2013 for Black Ops II, and Der Eisendrache in 2016 for Black Ops III. All of them came out as downloadable content.",
+        },
+        {
+          id: 16,
+          question: "In Modern Warfare 2 (2009), sort these killstreaks from the fewest kills needed to the most.",
+          answers: [
+            { id: "a", text: "UAV" },
+            { id: "b", text: "AC-130" },
+            { id: "c", text: "Predator Missile" },
+            { id: "d", text: "Harrier Strike" },
+          ],
+          correctOrder: ["a", "c", "d", "b"],
+          correctAnswer: "a",
+          explanation:
+            "The UAV takes 3 kills, the Predator Missile 5, the Harrier Strike 7 and the AC-130 11. The longer the streak, the more damage it does.",
+        },
+        {
+          id: 17,
+          question: "In the early Zombies modes, sort these perks from cheapest to most expensive.",
+          answers: [
+            { id: "a", text: "Juggernog" },
+            { id: "b", text: "Double Tap" },
+            { id: "c", text: "Speed Cola" },
+            { id: "d", text: "Quick Revive" },
+          ],
+          correctOrder: ["d", "b", "a", "c"],
+          correctAnswer: "d",
+          explanation:
+            "Quick Revive costs 1,500 points in co-op, Double Tap 2,000, Juggernog 2,500 and Speed Cola 3,000. Those are the prices in World at War and the first Black Ops.",
+        },
+        {
+          id: 18,
+          question: "Sort these villains by the release of the game they first appear in.",
+          answers: [
+            { id: "a", text: "Jonathan Irons" },
+            { id: "b", text: "Imran Zakhaev" },
+            { id: "c", text: "Raul Menendez" },
+            { id: "d", text: "General Shepherd" },
+          ],
+          correctOrder: ["b", "d", "c", "a"],
+          correctAnswer: "b",
+          explanation:
+            "Zakhaev in Call of Duty 4 in 2007, Shepherd in Modern Warfare 2 in 2009, Menendez in Black Ops II in 2012, and Irons in Advanced Warfare in 2014.",
+        },
+        {
+          id: 19,
+          question: "Put these steps of Microsoft's purchase of Activision in order.",
+          answers: [
+            { id: "a", text: "The UK competition authority blocks the deal" },
+            { id: "b", text: "Black Ops 6 launches on Game Pass on day one" },
+            { id: "c", text: "Microsoft announces the deal" },
+            { id: "d", text: "The deal is completed" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Microsoft announces the deal in January 2022, the UK authority blocks it in April 2023, the deal closes in October 2023, and Black Ops 6 lands on Game Pass on launch day, in October 2024.",
+        },
+        {
+          id: 20,
+          question: "Put these Sledgehammer Games titles in release order.",
+          answers: [
+            { id: "a", text: "Vanguard" },
+            { id: "b", text: "Advanced Warfare" },
+            { id: "c", text: "Modern Warfare III" },
+            { id: "d", text: "Call of Duty: WWII" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Advanced Warfare in 2014, WWII in 2017, Vanguard in 2021, then Modern Warfare III in 2023. Sledgehammer is the series' third main studio, alongside Infinity Ward and Treyarch.",
+        },
       ],
     },
     es: {
       title: "Call of Duty en orden",
       description:
-        "Diez series de Call of Duty para ordenar, de 2003 a Black Ops 6. Lee bien la pregunta: a veces es la fecha de salida y a veces la época del juego.",
+        "Veinte series de Call of Duty para ordenar, de 2003 a Black Ops 7. Lee bien la pregunta: a veces es la fecha de salida y a veces la época del juego.",
       questions: [
         {
           id: 1,
@@ -468,6 +748,146 @@ export const quizCallOfDuty: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "World at War en 2008, Modern Warfare 2 en 2009, Black Ops en 2010 y Modern Warfare 3 en 2011. Un juego al año, turnándose Treyarch e Infinity Ward.",
+        },
+        {
+          id: 11,
+          question: "Ordena estos Black Ops según su fecha de lanzamiento.",
+          answers: [
+            { id: "a", text: "Black Ops Cold War" },
+            { id: "b", text: "Black Ops 7" },
+            { id: "c", text: "Black Ops 4" },
+            { id: "d", text: "Black Ops 6" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Black Ops 4 en 2018, Black Ops Cold War en 2020, Black Ops 6 en 2024 y Black Ops 7 en noviembre de 2025. Los cuatro los dirige Treyarch.",
+        },
+        {
+          id: 12,
+          question: "Ordena estos juegos según la época en la que transcurre su historia, de la más antigua a la más reciente.",
+          answers: [
+            { id: "a", text: "Black Ops II" },
+            { id: "b", text: "Black Ops 6" },
+            { id: "c", text: "Black Ops III" },
+            { id: "d", text: "Modern Warfare (2019)" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Black Ops 6 transcurre a principios de los años 90, durante la guerra del Golfo, Modern Warfare en 2019, Black Ops II en 2025 en su parte principal, y Black Ops III en 2065.",
+        },
+        {
+          id: 13,
+          question: "Ordena estos Call of Duty para móvil según su fecha de lanzamiento.",
+          answers: [
+            { id: "a", text: "Call of Duty: Mobile" },
+            { id: "b", text: "Call of Duty: Heroes" },
+            { id: "c", text: "Warzone Mobile" },
+            { id: "d", text: "Call of Duty: Strike Team" },
+          ],
+          correctOrder: ["d", "b", "a", "c"],
+          correctAnswer: "d",
+          explanation:
+            "Strike Team en 2013, Heroes en 2014, Call of Duty: Mobile en 2019 y Warzone Mobile en marzo de 2024. Por cierto, Warzone Mobile se retiró de las tiendas ya en mayo de 2025.",
+        },
+        {
+          id: 14,
+          question: "Ordena estos modos battle royale según su fecha de lanzamiento.",
+          answers: [
+            { id: "a", text: "Warzone" },
+            { id: "b", text: "Warzone 2.0" },
+            { id: "c", text: "Blackout, en Black Ops 4" },
+            { id: "d", text: "Warzone Mobile" },
+          ],
+          correctOrder: ["c", "a", "b", "d"],
+          correctAnswer: "c",
+          explanation:
+            "Blackout en octubre de 2018, dentro de Black Ops 4, luego Warzone en marzo de 2020, Warzone 2.0 en noviembre de 2022 y Warzone Mobile en marzo de 2024. Blackout fue el primer battle royale de la saga.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos mapas de Zombis según su fecha de lanzamiento.",
+          answers: [
+            { id: "a", text: "Mob of the Dead" },
+            { id: "b", text: "Der Riese" },
+            { id: "c", text: "Der Eisendrache" },
+            { id: "d", text: "Moon" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Der Riese en 2009 para World at War, Moon en 2011 para Black Ops, Mob of the Dead en 2013 para Black Ops II, y Der Eisendrache en 2016 para Black Ops III. Todos salieron como contenido descargable.",
+        },
+        {
+          id: 16,
+          question: "En Modern Warfare 2 (2009), ordena estas rachas de bajas de la que pide menos bajas a la que pide más.",
+          answers: [
+            { id: "a", text: "UAV" },
+            { id: "b", text: "AC-130" },
+            { id: "c", text: "Misil Predator" },
+            { id: "d", text: "Harrier" },
+          ],
+          correctOrder: ["a", "c", "d", "b"],
+          correctAnswer: "a",
+          explanation:
+            "El UAV pide 3 bajas, el misil Predator 5, el Harrier 7 y el AC-130 11. Cuanto más larga es la racha, más daño hace.",
+        },
+        {
+          id: 17,
+          question: "En los primeros modos Zombis, ordena estas ventajas de la más barata a la más cara.",
+          answers: [
+            { id: "a", text: "Juggernog" },
+            { id: "b", text: "Double Tap" },
+            { id: "c", text: "Speed Cola" },
+            { id: "d", text: "Quick Revive" },
+          ],
+          correctOrder: ["d", "b", "a", "c"],
+          correctAnswer: "d",
+          explanation:
+            "Quick Revive cuesta 1.500 puntos en cooperativo, Double Tap 2.000, Juggernog 2.500 y Speed Cola 3.000. Son los precios de World at War y del primer Black Ops.",
+        },
+        {
+          id: 18,
+          question: "Ordena a estos villanos según la salida del juego en el que aparecen por primera vez.",
+          answers: [
+            { id: "a", text: "Jonathan Irons" },
+            { id: "b", text: "Imran Zakhaev" },
+            { id: "c", text: "Raul Menendez" },
+            { id: "d", text: "El general Shepherd" },
+          ],
+          correctOrder: ["b", "d", "c", "a"],
+          correctAnswer: "b",
+          explanation:
+            "Zakhaev en Call of Duty 4 en 2007, Shepherd en Modern Warfare 2 en 2009, Menendez en Black Ops II en 2012, e Irons en Advanced Warfare en 2014.",
+        },
+        {
+          id: 19,
+          question: "Ordena estas etapas de la compra de Activision por Microsoft.",
+          answers: [
+            { id: "a", text: "La autoridad británica de la competencia bloquea la compra" },
+            { id: "b", text: "Black Ops 6 sale el mismo día en Game Pass" },
+            { id: "c", text: "Microsoft anuncia la compra" },
+            { id: "d", text: "Se cierra la compra" },
+          ],
+          correctOrder: ["c", "a", "d", "b"],
+          correctAnswer: "c",
+          explanation:
+            "Microsoft anuncia la compra en enero de 2022, la autoridad británica la bloquea en abril de 2023, la compra se cierra en octubre de 2023, y Black Ops 6 llega a Game Pass el día de su salida, en octubre de 2024.",
+        },
+        {
+          id: 20,
+          question: "Ordena estos juegos de Sledgehammer Games según su fecha de lanzamiento.",
+          answers: [
+            { id: "a", text: "Vanguard" },
+            { id: "b", text: "Advanced Warfare" },
+            { id: "c", text: "Modern Warfare III" },
+            { id: "d", text: "Call of Duty: WWII" },
+          ],
+          correctOrder: ["b", "d", "a", "c"],
+          correctAnswer: "b",
+          explanation:
+            "Advanced Warfare en 2014, WWII en 2017, Vanguard en 2021 y Modern Warfare III en 2023. Sledgehammer es el tercer gran estudio de la saga, junto a Infinity Ward y Treyarch.",
         },
       ],
     },

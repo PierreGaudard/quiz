@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ScoreCompare from "./ScoreCompare";
 
 interface FriendScore {
@@ -19,6 +19,41 @@ interface QuizSocialBlockProps {
    */
   scoreOutOf?: number | null;
   locale?: string;
+  /**
+   * Partie a inscrire dans le profil du joueur connecte (historique + XP).
+   * Le QCM l'enregistre lui-meme et ne passe pas cette prop ; les cinq autres
+   * modes la passent, sinon leurs parties n'apparaissaient nulle part.
+   */
+  progress?: { correct: number; total: number; title: string; image?: string | null; path?: string | null };
+}
+
+const XP_PER_CORRECT = 100;
+
+function useSaveProgress(quizSlug: string, progress: QuizSocialBlockProps["progress"]) {
+  const sent = useRef(false);
+  useEffect(() => {
+    if (!progress || sent.current) return;
+    sent.current = true;
+    fetch("/api/auth/me")
+      .then((r) => r.json())
+      .then((d) => {
+        if (!d?.user) return;
+        return fetch("/api/quiz/progress", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            quizSlug,
+            score: progress.correct,
+            totalQuestions: progress.total,
+            xpEarned: progress.correct * XP_PER_CORRECT,
+            quizTitle: progress.title,
+            quizImage: progress.image || null,
+            quizPath: progress.path || null,
+          }),
+        });
+      })
+      .catch(() => {});
+  }, [quizSlug, progress]);
 }
 
 const socialT: Record<string, Record<string, string>> = {
@@ -32,6 +67,7 @@ const socialT: Record<string, Record<string, string>> = {
 
 export default function QuizSocialBlock(props: QuizSocialBlockProps) {
   const { quizSlug, userScore, totalQuestions, scoreOutOf, locale = "en" } = props;
+  useSaveProgress(quizSlug, props.progress);
   // La comparaison avec tous les joueurs s'affiche pour tout le monde,
   // connecte ou pas. Le bloc amis, lui, n'existe que pour un compte.
   return (

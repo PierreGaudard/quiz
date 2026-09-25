@@ -23,7 +23,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
     fr: {
       title: "Quiz Révolution française : 1789 à 1799",
       description:
-        "Dix questions sur la Révolution française : la Bastille, Varennes, la Terreur, Robespierre ou encore le 18 brumaire.",
+        "Vingt questions sur la Révolution française : la Bastille, Varennes, la Terreur, Robespierre ou encore le 18 brumaire.",
       questions: [
         {
           id: 1,
@@ -159,12 +159,142 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
           explanation:
             "Le 18 brumaire an VIII, soit le 9 novembre 1799, Bonaparte renverse le Directoire et devient Premier consul. On prend souvent ce coup d'État comme la fin de la Révolution.",
         },
+        {
+          id: 11,
+          question: "À quelle date s'ouvrent les états généraux, à Versailles ?",
+          answers: [
+            { id: "a", text: "Le 1er janvier 1789" },
+            { id: "b", text: "Le 5 mai 1789" },
+            { id: "c", text: "Le 20 juin 1789" },
+            { id: "d", text: "Le 4 août 1789" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le 5 mai 1789. Louis XVI les a convoqués pour trouver de l'argent, car le royaume est presque en faillite. Les états généraux ne s'étaient plus réunis depuis 1614.",
+        },
+        {
+          id: 12,
+          question: "Quel document chaque paroisse rédige-t-elle en 1789 pour faire connaître au roi les plaintes et les souhaits des habitants ?",
+          answers: [
+            { id: "a", text: "Un cahier de doléances" },
+            { id: "b", text: "Une lettre de cachet" },
+            { id: "c", text: "Un édit royal" },
+            { id: "d", text: "Un registre paroissial" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un cahier de doléances. On en a rédigé plusieurs dizaines de milliers dans tout le pays, avant les états généraux. On y lit des plaintes contre les impôts, les droits des seigneurs ou le prix du pain.",
+        },
+        {
+          id: 13,
+          question: "En quelle année est adoptée la première Constitution écrite de la France, qui fait du pays une monarchie constitutionnelle ?",
+          answers: [
+            { id: "a", text: "1789" },
+            { id: "b", text: "1790" },
+            { id: "c", text: "1791" },
+            { id: "d", text: "1793" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "En 1791, le 3 septembre. Le roi garde sa place, mais il partage le pouvoir avec une Assemblée élue. Ce régime ne dure même pas un an : la monarchie tombe en août 1792.",
+        },
+        {
+          id: 14,
+          question: "Comment s'appelle le papier-monnaie émis pendant la Révolution, qui perd vite presque toute sa valeur ?",
+          answers: [
+            { id: "a", text: "Le louis" },
+            { id: "b", text: "L'écu" },
+            { id: "c", text: "Le franc germinal" },
+            { id: "d", text: "L'assignat" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "L'assignat. Il est d'abord garanti par la vente des biens de l'Église, en 1789-1790. On en imprime tellement qu'il ne vaut presque plus rien en 1796, quand il est abandonné.",
+        },
+        {
+          id: 15,
+          question: "Quel palais parisien est pris d'assaut le 10 août 1792, ce qui entraîne la chute de la monarchie ?",
+          answers: [
+            { id: "a", text: "Les Tuileries" },
+            { id: "b", text: "Le Louvre" },
+            { id: "c", text: "Le Palais-Royal" },
+            { id: "d", text: "Le palais du Luxembourg" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Les Tuileries, où vivait la famille royale depuis octobre 1789. Le roi se réfugie auprès de l'Assemblée, qui le suspend. La République est proclamée le mois suivant.",
+        },
+        {
+          id: 16,
+          question: "Quelle bataille, le 20 septembre 1792, voit l'armée française arrêter les Prussiens ?",
+          answers: [
+            { id: "a", text: "Jemmapes" },
+            { id: "b", text: "Valmy" },
+            { id: "c", text: "Fleurus" },
+            { id: "d", text: "Rivoli" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Valmy, dans la Marne. C'est surtout un duel d'artillerie, mais les Prussiens reculent. Le lendemain, la Convention abolit la royauté.",
+        },
+        {
+          id: 17,
+          question: "Comment appelle-t-on les députés modérés, dont beaucoup viennent de la Gironde, qui s'opposent aux Montagnards ?",
+          answers: [
+            { id: "a", text: "Les Feuillants" },
+            { id: "b", text: "Les Cordeliers" },
+            { id: "c", text: "Les Girondins" },
+            { id: "d", text: "Les Enragés" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Les Girondins, comme Brissot ou Vergniaud. Ils sont chassés de la Convention en juin 1793, et plusieurs d'entre eux sont guillotinés à l'automne.",
+        },
+        {
+          id: 18,
+          question: "Quelle région de l'Ouest se soulève en mars 1793 contre la République et la levée de soldats ?",
+          answers: [
+            { id: "a", text: "La Vendée" },
+            { id: "b", text: "La Lorraine" },
+            { id: "c", text: "La Provence" },
+            { id: "d", text: "L'Auvergne" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Vendée. Le refus de partir à l'armée déclenche une guerre qui oppose pendant des années les « Blancs », royalistes et catholiques, aux « Bleus », les républicains.",
+        },
+        {
+          id: 19,
+          question: "Quel comité, dont Robespierre est membre, gouverne la France pendant la Terreur ?",
+          answers: [
+            { id: "a", text: "Le Directoire" },
+            { id: "b", text: "Le Consulat" },
+            { id: "c", text: "Le Sénat" },
+            { id: "d", text: "Le Comité de salut public" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Le Comité de salut public, créé en avril 1793. Ses membres dirigent la guerre et la répression jusqu'à la chute de Robespierre, en juillet 1794.",
+        },
+        {
+          id: 20,
+          question: "Quelle loi de septembre 1793 permet d'arrêter toute personne soupçonnée d'être hostile à la Révolution ?",
+          answers: [
+            { id: "a", text: "La loi Le Chapelier" },
+            { id: "b", text: "La loi des suspects" },
+            { id: "c", text: "La loi du maximum" },
+            { id: "d", text: "La loi salique" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La loi des suspects, votée le 17 septembre 1793. Elle remplit les prisons pendant la Terreur. La loi du maximum, votée quelques jours plus tard, fixe un prix plafond pour le pain et d'autres produits.",
+        },
       ],
     },
     en: {
       title: "French Revolution quiz: 1789 to 1799",
       description:
-        "Ten questions on the French Revolution: the Bastille, the flight to Varennes, the Terror, Robespierre and the coup of 18 Brumaire.",
+        "Twenty questions on the French Revolution: the Bastille, the flight to Varennes, the Terror, Robespierre and the coup of 18 Brumaire.",
       questions: [
         {
           id: 1,
@@ -300,12 +430,142 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
           explanation:
             "On 18 Brumaire Year VIII, which is 9 November 1799, Bonaparte overthrew the Directory and became First Consul. This coup is often taken as the end of the Revolution.",
         },
+        {
+          id: 11,
+          question: "On what date did the Estates General open at Versailles?",
+          answers: [
+            { id: "a", text: "1 January 1789" },
+            { id: "b", text: "5 May 1789" },
+            { id: "c", text: "20 June 1789" },
+            { id: "d", text: "4 August 1789" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "5 May 1789. Louis XVI had called them to raise money, because the kingdom was close to bankruptcy. The Estates General had not met since 1614.",
+        },
+        {
+          id: 12,
+          question: "What document did every parish write in 1789 to tell the king about the people's complaints and wishes?",
+          answers: [
+            { id: "a", text: "A cahier de doléances, or book of grievances" },
+            { id: "b", text: "A lettre de cachet" },
+            { id: "c", text: "A royal edict" },
+            { id: "d", text: "A parish register" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A cahier de doléances, a book of grievances. Tens of thousands were written across the country before the Estates General. They complain about taxes, the lords' rights or the price of bread.",
+        },
+        {
+          id: 13,
+          question: "In what year was France's first written constitution adopted, making the country a constitutional monarchy?",
+          answers: [
+            { id: "a", text: "1789" },
+            { id: "b", text: "1790" },
+            { id: "c", text: "1791" },
+            { id: "d", text: "1793" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "In 1791, on 3 September. The king stayed on the throne but shared power with an elected Assembly. The system lasted less than a year: the monarchy fell in August 1792.",
+        },
+        {
+          id: 14,
+          question: "What was the paper money issued during the Revolution, which soon lost almost all its value, called?",
+          answers: [
+            { id: "a", text: "The louis" },
+            { id: "b", text: "The écu" },
+            { id: "c", text: "The germinal franc" },
+            { id: "d", text: "The assignat" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "The assignat. It was first backed by the sale of Church property, in 1789 and 1790. So many were printed that they were worth almost nothing by 1796, when they were dropped.",
+        },
+        {
+          id: 15,
+          question: "Which Paris palace was stormed on 10 August 1792, bringing down the monarchy?",
+          answers: [
+            { id: "a", text: "The Tuileries" },
+            { id: "b", text: "The Louvre" },
+            { id: "c", text: "The Palais-Royal" },
+            { id: "d", text: "The Luxembourg Palace" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Tuileries, where the royal family had lived since October 1789. The king took refuge with the Assembly, which suspended him. The Republic was proclaimed the following month.",
+        },
+        {
+          id: 16,
+          question: "Which battle, on 20 September 1792, saw the French army halt the Prussians?",
+          answers: [
+            { id: "a", text: "Jemappes" },
+            { id: "b", text: "Valmy" },
+            { id: "c", text: "Fleurus" },
+            { id: "d", text: "Rivoli" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Valmy, in the Marne. It was mostly an artillery duel, but the Prussians pulled back. The next day, the Convention abolished the monarchy.",
+        },
+        {
+          id: 17,
+          question: "What were the moderate deputies, many of them from the Gironde, who opposed the Montagnards called?",
+          answers: [
+            { id: "a", text: "The Feuillants" },
+            { id: "b", text: "The Cordeliers" },
+            { id: "c", text: "The Girondins" },
+            { id: "d", text: "The Enragés" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "The Girondins, such as Brissot or Vergniaud. They were driven out of the Convention in June 1793, and several of them were guillotined that autumn.",
+        },
+        {
+          id: 18,
+          question: "Which region in the west rose up in March 1793 against the Republic and the call-up of soldiers?",
+          answers: [
+            { id: "a", text: "The Vendée" },
+            { id: "b", text: "Lorraine" },
+            { id: "c", text: "Provence" },
+            { id: "d", text: "Auvergne" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Vendée. The refusal to be drafted started a war that for years pitted the \"Whites\", royalist and Catholic, against the \"Blues\", the republicans.",
+        },
+        {
+          id: 19,
+          question: "Which committee, with Robespierre among its members, governed France during the Terror?",
+          answers: [
+            { id: "a", text: "The Directory" },
+            { id: "b", text: "The Consulate" },
+            { id: "c", text: "The Senate" },
+            { id: "d", text: "The Committee of Public Safety" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "The Committee of Public Safety, set up in April 1793. Its members ran the war and the repression until Robespierre's fall in July 1794.",
+        },
+        {
+          id: 20,
+          question: "Which law of September 1793 allowed the arrest of anyone suspected of being hostile to the Revolution?",
+          answers: [
+            { id: "a", text: "The Le Chapelier law" },
+            { id: "b", text: "The Law of Suspects" },
+            { id: "c", text: "The Law of the Maximum" },
+            { id: "d", text: "Salic law" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The Law of Suspects, passed on 17 September 1793. It filled the prisons during the Terror. The Law of the Maximum, passed a few days later, set price caps on bread and other goods.",
+        },
       ],
     },
     es: {
       title: "Quiz de la Revolución francesa: 1789-1799",
       description:
-        "Diez preguntas sobre la Revolución francesa: la Bastilla, la huida a Varennes, el Terror, Robespierre o el golpe del 18 de brumario.",
+        "Veinte preguntas sobre la Revolución francesa: la Bastilla, la huida a Varennes, el Terror, Robespierre o el golpe del 18 de brumario.",
       questions: [
         {
           id: 1,
@@ -440,6 +700,136 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
           correctAnswer: "d",
           explanation:
             "El 18 de brumario del año VIII, o sea el 9 de noviembre de 1799, Bonaparte derribó el Directorio y se convirtió en primer cónsul. Muchos historiadores toman este golpe como el final de la Revolución.",
+        },
+        {
+          id: 11,
+          question: "¿En qué fecha se abren los Estados Generales, en Versalles?",
+          answers: [
+            { id: "a", text: "El 1 de enero de 1789" },
+            { id: "b", text: "El 5 de mayo de 1789" },
+            { id: "c", text: "El 20 de junio de 1789" },
+            { id: "d", text: "El 4 de agosto de 1789" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El 5 de mayo de 1789. Luis XVI los convocó para conseguir dinero, porque el reino estaba casi en bancarrota. Los Estados Generales no se reunían desde 1614.",
+        },
+        {
+          id: 12,
+          question: "¿Qué documento redacta cada parroquia en 1789 para dar a conocer al rey las quejas y los deseos de sus habitantes?",
+          answers: [
+            { id: "a", text: "Un cuaderno de quejas" },
+            { id: "b", text: "Una lettre de cachet" },
+            { id: "c", text: "Un edicto real" },
+            { id: "d", text: "Un registro parroquial" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un cuaderno de quejas, los «cahiers de doléances». Se redactaron varias decenas de miles en todo el país antes de los Estados Generales. En ellos hay quejas contra los impuestos, los derechos señoriales o el precio del pan.",
+        },
+        {
+          id: 13,
+          question: "¿En qué año se aprueba la primera Constitución escrita de Francia, que convierte al país en una monarquía constitucional?",
+          answers: [
+            { id: "a", text: "1789" },
+            { id: "b", text: "1790" },
+            { id: "c", text: "1791" },
+            { id: "d", text: "1793" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "En 1791, el 3 de septiembre. El rey conserva su lugar, pero comparte el poder con una Asamblea elegida. El régimen no dura ni un año: la monarquía cae en agosto de 1792.",
+        },
+        {
+          id: 14,
+          question: "¿Cómo se llama el papel moneda emitido durante la Revolución, que pronto perdió casi todo su valor?",
+          answers: [
+            { id: "a", text: "El luis" },
+            { id: "b", text: "El escudo" },
+            { id: "c", text: "El franco germinal" },
+            { id: "d", text: "El asignado" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "El asignado. Al principio estaba respaldado por la venta de los bienes de la Iglesia, en 1789 y 1790. Se imprimieron tantos que en 1796, cuando se abandonaron, ya casi no valían nada.",
+        },
+        {
+          id: 15,
+          question: "¿Qué palacio de París fue asaltado el 10 de agosto de 1792, lo que provocó la caída de la monarquía?",
+          answers: [
+            { id: "a", text: "Las Tullerías" },
+            { id: "b", text: "El Louvre" },
+            { id: "c", text: "El Palais-Royal" },
+            { id: "d", text: "El palacio de Luxemburgo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Las Tullerías, donde vivía la familia real desde octubre de 1789. El rey se refugió en la Asamblea, que lo suspendió. La República se proclamó al mes siguiente.",
+        },
+        {
+          id: 16,
+          question: "¿Qué batalla, el 20 de septiembre de 1792, ve al ejército francés frenar a los prusianos?",
+          answers: [
+            { id: "a", text: "Jemmapes" },
+            { id: "b", text: "Valmy" },
+            { id: "c", text: "Fleurus" },
+            { id: "d", text: "Rívoli" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Valmy, en el departamento del Marne. Fue sobre todo un duelo de artillería, pero los prusianos retrocedieron. Al día siguiente, la Convención abolió la monarquía.",
+        },
+        {
+          id: 17,
+          question: "¿Cómo se llama a los diputados moderados, muchos de ellos de la Gironda, que se oponían a los montañeses?",
+          answers: [
+            { id: "a", text: "Los fuldenses" },
+            { id: "b", text: "Los cordeleros" },
+            { id: "c", text: "Los girondinos" },
+            { id: "d", text: "Los rabiosos" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Los girondinos, como Brissot o Vergniaud. Fueron expulsados de la Convención en junio de 1793, y varios de ellos fueron guillotinados en otoño.",
+        },
+        {
+          id: 18,
+          question: "¿Qué región del oeste se sublevó en marzo de 1793 contra la República y el reclutamiento de soldados?",
+          answers: [
+            { id: "a", text: "La Vendée" },
+            { id: "b", text: "Lorena" },
+            { id: "c", text: "Provenza" },
+            { id: "d", text: "Auvernia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La Vendée. La negativa a ir al ejército desató una guerra que enfrentó durante años a los «blancos», realistas y católicos, con los «azules», los republicanos.",
+        },
+        {
+          id: 19,
+          question: "¿Qué comité, del que Robespierre formaba parte, gobernó Francia durante el Terror?",
+          answers: [
+            { id: "a", text: "El Directorio" },
+            { id: "b", text: "El Consulado" },
+            { id: "c", text: "El Senado" },
+            { id: "d", text: "El Comité de Salvación Pública" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "El Comité de Salvación Pública, creado en abril de 1793. Sus miembros dirigieron la guerra y la represión hasta la caída de Robespierre, en julio de 1794.",
+        },
+        {
+          id: 20,
+          question: "¿Qué ley de septiembre de 1793 permite detener a cualquier persona sospechosa de ser hostil a la Revolución?",
+          answers: [
+            { id: "a", text: "La ley Le Chapelier" },
+            { id: "b", text: "La ley de sospechosos" },
+            { id: "c", text: "La ley del máximo" },
+            { id: "d", text: "La ley sálica" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La ley de sospechosos, votada el 17 de septiembre de 1793. Llenó las cárceles durante el Terror. La ley del máximo, votada pocos días después, fijó precios máximos para el pan y otros productos.",
         },
       ],
     },

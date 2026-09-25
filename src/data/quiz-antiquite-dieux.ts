@@ -21,7 +21,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
     fr: {
       title: "Duel : les dieux grecs et romains",
       description:
-        "Dix duels sur les dieux de l'Antiquité, de Zeus à Vulcain. À chaque fois deux noms, et un seul correspond à la question.",
+        "Vingt duels sur les dieux de l'Antiquité, de Zeus à Vulcain. À chaque fois deux noms, et un seul correspond à la question.",
       questions: [
         {
           id: 1,
@@ -137,12 +137,122 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
           explanation:
             "Vulcain, qui a donné le mot « volcan ». Neptune est le nom romain de Poséidon.",
         },
+        {
+          id: 11,
+          question: "Quel dieu grec de la musique et des arts joue de la lyre et a un grand sanctuaire à Delphes ?",
+          answers: [
+            { id: "a", text: "Arès" },
+            { id: "b", text: "Apollon" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Apollon, fils de Zeus et de Léto. Son oracle de Delphes était le plus célèbre du monde grec. Arès est le dieu de la guerre.",
+        },
+        {
+          id: 12,
+          question: "Quelle déesse de la chasse est la sœur jumelle d'Apollon ?",
+          answers: [
+            { id: "a", text: "Artémis" },
+            { id: "b", text: "Déméter" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Artémis. On la représente avec un arc et des flèches, souvent accompagnée d'une biche. Déméter est la déesse des moissons.",
+        },
+        {
+          id: 13,
+          question: "Comment les Romains appellent-ils Hermès, le messager des dieux ?",
+          answers: [
+            { id: "a", text: "Neptune" },
+            { id: "b", text: "Mercure" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mercure. Comme Hermès, il porte un chapeau et des sandales ailés. Il a d'ailleurs donné son nom à une planète et au mercredi.",
+        },
+        {
+          id: 14,
+          question: "Quelle déesse des moissons est la mère de Perséphone ?",
+          answers: [
+            { id: "a", text: "Déméter" },
+            { id: "b", text: "Hestia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Déméter. Selon le mythe, quand Hadès enlève Perséphone, Déméter est si triste que plus rien ne pousse : c'est l'origine de l'hiver. Hestia est la déesse du foyer.",
+        },
+        {
+          id: 15,
+          question: "Sur quelle montagne vivent les dieux grecs ?",
+          answers: [
+            { id: "a", text: "Le Parnasse" },
+            { id: "b", text: "L'Olympe" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sur l'Olympe, le plus haut sommet de Grèce. C'est de là que vient le nom des « dieux de l'Olympe ». Le Parnasse est la montagne des Muses, près de Delphes.",
+        },
+        {
+          id: 16,
+          question: "Quel dieu romain à deux visages a donné son nom au mois de janvier ?",
+          answers: [
+            { id: "a", text: "Janus" },
+            { id: "b", text: "Saturne" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Janus, le dieu des portes et des commencements. Ses deux visages regardent l'un vers le passé, l'autre vers l'avenir, et janvier ouvre l'année.",
+        },
+        {
+          id: 17,
+          question: "Quel titan est condamné par Zeus à porter le ciel sur ses épaules ?",
+          answers: [
+            { id: "a", text: "Cronos" },
+            { id: "b", text: "Atlas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Atlas, puni pour avoir combattu les dieux de l'Olympe. L'océan Atlantique, la « mer d'Atlas » des Grecs, lui doit son nom. Cronos est le père de Zeus.",
+        },
+        {
+          id: 18,
+          question: "Quel titan vole le feu aux dieux pour le donner aux hommes ?",
+          answers: [
+            { id: "a", text: "Prométhée" },
+            { id: "b", text: "Hypérion" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Prométhée. Pour le punir, Zeus le fait enchaîner à un rocher, où un aigle vient chaque jour lui dévorer le foie.",
+        },
+        {
+          id: 19,
+          question: "Quel est le nom romain d'Athéna ?",
+          answers: [
+            { id: "a", text: "Junon" },
+            { id: "b", text: "Minerve" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Minerve, déesse de la sagesse, des arts et de la guerre réfléchie, comme Athéna. Junon est le nom romain d'Héra.",
+        },
+        {
+          id: 20,
+          question: "Comment les Romains appellent-ils Éros, le petit dieu de l'amour qui tire des flèches ?",
+          answers: [
+            { id: "a", text: "Cupidon" },
+            { id: "b", text: "Bacchus" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Cupidon. Il est souvent montré comme un enfant ailé, et ceux qu'il touche d'une flèche tombent amoureux. Bacchus est le nom romain de Dionysos.",
+        },
       ],
     },
     en: {
       title: "Duel: Greek and Roman gods",
       description:
-        "Ten duels about the gods of the ancient world, from Zeus to Vulcan. Two names each time, and only one fits the question.",
+        "Twenty duels about the gods of the ancient world, from Zeus to Vulcan. Two names each time, and only one fits the question.",
       questions: [
         {
           id: 1,
@@ -258,12 +368,122 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
           explanation:
             "Vulcan, which gave us the word \"volcano\". Neptune is the Roman name for Poseidon.",
         },
+        {
+          id: 11,
+          question: "Which Greek god of music and the arts plays the lyre and has a great sanctuary at Delphi?",
+          answers: [
+            { id: "a", text: "Ares" },
+            { id: "b", text: "Apollo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Apollo, son of Zeus and Leto. His oracle at Delphi was the most famous in the Greek world. Ares is the god of war.",
+        },
+        {
+          id: 12,
+          question: "Which goddess of hunting is Apollo's twin sister?",
+          answers: [
+            { id: "a", text: "Artemis" },
+            { id: "b", text: "Demeter" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Artemis. She is shown with a bow and arrows, often with a deer by her side. Demeter is the goddess of the harvest.",
+        },
+        {
+          id: 13,
+          question: "What do the Romans call Hermes, the messenger of the gods?",
+          answers: [
+            { id: "a", text: "Neptune" },
+            { id: "b", text: "Mercury" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mercury. Like Hermes, he wears a winged hat and winged sandals. A planet is named after him, and so is Wednesday in French and Spanish (mercredi, miércoles).",
+        },
+        {
+          id: 14,
+          question: "Which goddess of the harvest is the mother of Persephone?",
+          answers: [
+            { id: "a", text: "Demeter" },
+            { id: "b", text: "Hestia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Demeter. In the myth, when Hades carries off Persephone, Demeter is so sad that nothing grows any more, which is how winter came about. Hestia is the goddess of the hearth.",
+        },
+        {
+          id: 15,
+          question: "On which mountain do the Greek gods live?",
+          answers: [
+            { id: "a", text: "Mount Parnassus" },
+            { id: "b", text: "Mount Olympus" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mount Olympus, the highest peak in Greece, which is why they are called the Olympian gods. Parnassus is the mountain of the Muses, near Delphi.",
+        },
+        {
+          id: 16,
+          question: "Which two-faced Roman god gave his name to the month of January?",
+          answers: [
+            { id: "a", text: "Janus" },
+            { id: "b", text: "Saturn" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Janus, the god of doorways and beginnings. One face looks to the past and the other to the future, and January opens the year.",
+        },
+        {
+          id: 17,
+          question: "Which Titan is condemned by Zeus to hold up the sky on his shoulders?",
+          answers: [
+            { id: "a", text: "Cronus" },
+            { id: "b", text: "Atlas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Atlas, punished for fighting against the Olympian gods. The Atlantic Ocean, the \"sea of Atlas\" for the Greeks, is named after him. Cronus is Zeus's father.",
+        },
+        {
+          id: 18,
+          question: "Which Titan steals fire from the gods and gives it to humans?",
+          answers: [
+            { id: "a", text: "Prometheus" },
+            { id: "b", text: "Hyperion" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Prometheus. As punishment, Zeus has him chained to a rock, where an eagle comes every day to eat his liver.",
+        },
+        {
+          id: 19,
+          question: "What is the Roman name for Athena?",
+          answers: [
+            { id: "a", text: "Juno" },
+            { id: "b", text: "Minerva" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Minerva, goddess of wisdom, crafts and strategy, just like Athena. Juno is the Roman name for Hera.",
+        },
+        {
+          id: 20,
+          question: "What do the Romans call Eros, the little god of love who shoots arrows?",
+          answers: [
+            { id: "a", text: "Cupid" },
+            { id: "b", text: "Bacchus" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Cupid. He is usually shown as a winged child, and anyone hit by one of his arrows falls in love. Bacchus is the Roman name for Dionysus.",
+        },
       ],
     },
     es: {
       title: "Duelo: dioses griegos y romanos",
       description:
-        "Diez duelos sobre los dioses de la Antigüedad, de Zeus a Vulcano. Dos nombres cada vez, y solo uno responde a la pregunta.",
+        "Veinte duelos sobre los dioses de la Antigüedad, de Zeus a Vulcano. Dos nombres cada vez, y solo uno responde a la pregunta.",
       questions: [
         {
           id: 1,
@@ -378,6 +598,116 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Vulcano, de donde viene la palabra «volcán». Neptuno es el nombre romano de Poseidón.",
+        },
+        {
+          id: 11,
+          question: "¿Qué dios griego de la música y las artes toca la lira y tiene un gran santuario en Delfos?",
+          answers: [
+            { id: "a", text: "Ares" },
+            { id: "b", text: "Apolo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Apolo, hijo de Zeus y de Leto. Su oráculo de Delfos era el más famoso del mundo griego. Ares es el dios de la guerra.",
+        },
+        {
+          id: 12,
+          question: "¿Qué diosa de la caza es la hermana gemela de Apolo?",
+          answers: [
+            { id: "a", text: "Artemisa" },
+            { id: "b", text: "Deméter" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Artemisa. Se la representa con arco y flechas, a menudo junto a una cierva. Deméter es la diosa de las cosechas.",
+        },
+        {
+          id: 13,
+          question: "¿Cómo llaman los romanos a Hermes, el mensajero de los dioses?",
+          answers: [
+            { id: "a", text: "Neptuno" },
+            { id: "b", text: "Mercurio" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mercurio. Como Hermes, lleva sombrero y sandalias con alas. Le debemos el nombre de un planeta y también el del miércoles.",
+        },
+        {
+          id: 14,
+          question: "¿Qué diosa de las cosechas es la madre de Perséfone?",
+          answers: [
+            { id: "a", text: "Deméter" },
+            { id: "b", text: "Hestia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Deméter. Según el mito, cuando Hades rapta a Perséfone, Deméter se pone tan triste que nada crece: así nace el invierno. Hestia es la diosa del hogar.",
+        },
+        {
+          id: 15,
+          question: "¿En qué montaña viven los dioses griegos?",
+          answers: [
+            { id: "a", text: "El Parnaso" },
+            { id: "b", text: "El Olimpo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "En el Olimpo, la cumbre más alta de Grecia. De ahí viene lo de «dioses del Olimpo». El Parnaso es la montaña de las musas, cerca de Delfos.",
+        },
+        {
+          id: 16,
+          question: "¿Qué dios romano de dos caras dio su nombre al mes de enero?",
+          answers: [
+            { id: "a", text: "Jano" },
+            { id: "b", text: "Saturno" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Jano, el dios de las puertas y de los comienzos. Una cara mira al pasado y la otra al futuro, y enero abre el año.",
+        },
+        {
+          id: 17,
+          question: "¿Qué titán es condenado por Zeus a cargar el cielo sobre sus hombros?",
+          answers: [
+            { id: "a", text: "Crono" },
+            { id: "b", text: "Atlas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Atlas, castigado por luchar contra los dioses del Olimpo. El océano Atlántico, el «mar de Atlas» de los griegos, le debe su nombre. Crono es el padre de Zeus.",
+        },
+        {
+          id: 18,
+          question: "¿Qué titán roba el fuego a los dioses para dárselo a los hombres?",
+          answers: [
+            { id: "a", text: "Prometeo" },
+            { id: "b", text: "Hiperión" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Prometeo. Para castigarlo, Zeus lo encadena a una roca, donde un águila viene cada día a comerle el hígado.",
+        },
+        {
+          id: 19,
+          question: "¿Cuál es el nombre romano de Atenea?",
+          answers: [
+            { id: "a", text: "Juno" },
+            { id: "b", text: "Minerva" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Minerva, diosa de la sabiduría, de las artes y de la estrategia, como Atenea. Juno es el nombre romano de Hera.",
+        },
+        {
+          id: 20,
+          question: "¿Cómo llaman los romanos a Eros, el pequeño dios del amor que lanza flechas?",
+          answers: [
+            { id: "a", text: "Cupido" },
+            { id: "b", text: "Baco" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Cupido. Suele aparecer como un niño con alas, y quien recibe una de sus flechas se enamora. Baco es el nombre romano de Dioniso.",
         },
       ],
     },

@@ -5,7 +5,7 @@ import type { TranslatedQuiz } from "./types";
  * Constantinople.
  *
  * Comme dans quiz-europe.ts, « vrai » porte l'id « a » et « faux » l'id « b »
- * (src/components/VraiFauxPlayer.tsx). Cinq affirmations vraies, cinq
+ * (src/components/VraiFauxPlayer.tsx). Dix affirmations vraies, dix
  * fausses. Pour la Peste noire, les estimations de mortalité varient selon
  * les historiens : l'explication donne une fourchette plutôt qu'un chiffre.
  */
@@ -37,7 +37,7 @@ export const quizMoyenAge: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : le Moyen Âge",
       description:
-        "Dix affirmations sur le Moyen Âge, de Charlemagne à Jeanne d'Arc. À toi de dire lesquelles sont vraies.",
+        "Vingt affirmations sur le Moyen Âge, de Charlemagne à Jeanne d'Arc. À toi de dire lesquelles sont vraies.",
       questions: [
         {
           id: 1,
@@ -124,12 +124,92 @@ export const quizMoyenAge: TranslatedQuiz = {
           explanation:
             "C'est vrai. Urbain II l'a appelée au concile de Clermont, en 1095. Les croisés ont pris Jérusalem en 1099.",
         },
+        {
+          id: 11,
+          question: "Les Vikings portaient des casques à cornes au combat.",
+          answers: [...VF.fr],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Aucun casque viking à cornes n'a été retrouvé. Cette image vient surtout du XIXe siècle, des costumes de l'opéra de Wagner et des peintres romantiques.",
+        },
+        {
+          id: 12,
+          question: "Aliénor d'Aquitaine a été reine de France, puis reine d'Angleterre.",
+          answers: [...VF.fr],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Elle épouse d'abord le roi de France Louis VII, en 1137. Leur mariage est annulé en 1152, et elle se remarie la même année avec Henri Plantagenêt, qui devient roi d'Angleterre en 1154.",
+        },
+        {
+          id: 13,
+          question: "Au Moyen Âge, les gens instruits pensaient que la Terre était plate.",
+          answers: [...VF.fr],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Depuis les Grecs de l'Antiquité, les savants savent que la Terre est ronde, et les auteurs du Moyen Âge le répètent. L'idée d'un Moyen Âge qui croyait à une Terre plate est née au XIXe siècle.",
+        },
+        {
+          id: 14,
+          question: "Marco Polo était un marchand vénitien qui a voyagé jusqu'en Chine.",
+          answers: [...VF.fr],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Il part en 1271 avec son père et son oncle, vit de longues années à la cour de l'empereur mongol Kubilai Khan, et rentre à Venise en 1295. Le récit de son voyage devient le Livre des merveilles.",
+        },
+        {
+          id: 15,
+          question: "L'existence du roi Arthur est prouvée par des documents de son époque.",
+          answers: [...VF.fr],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Aucun texte de l'époque où il aurait vécu, vers l'an 500, ne parle de lui. Sa légende, avec la Table ronde et Merlin, se construit surtout à partir du XIIe siècle.",
+        },
+        {
+          id: 16,
+          question: "Dans les monastères, les moines recopiaient les livres à la main.",
+          answers: [...VF.fr],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Ils travaillaient dans une salle appelée le scriptorium, sur du parchemin fait de peau d'animal. Copier une Bible entière pouvait prendre des années.",
+        },
+        {
+          id: 17,
+          question: "Les gens du Moyen Âge appelaient eux-mêmes leur époque « le Moyen Âge ».",
+          answers: [...VF.fr],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Le nom a été inventé plus tard, par les savants de la Renaissance, pour désigner la période « du milieu » entre l'Antiquité et leur propre temps.",
+        },
+        {
+          id: 18,
+          question: "Jeanne d'Arc a été déclarée sainte au XXe siècle.",
+          answers: [...VF.fr],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Elle est canonisée par le pape Benoît XV en 1920, près de cinq cents ans après sa mort. Elle avait déjà été réhabilitée par un second procès en 1456.",
+        },
+        {
+          id: 19,
+          question: "Au Moyen Âge, on ne se lavait presque jamais.",
+          answers: [...VF.fr],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Les villes avaient des étuves, des bains publics où l'on allait se laver et se détendre, et Paris en comptait près de trente à la fin du XIIIe siècle. Elles déclinent surtout à partir du XVIe siècle.",
+        },
+        {
+          id: 20,
+          question: "Des Vikings ont assiégé Paris au IXe siècle.",
+          answers: [...VF.fr],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Ils remontent la Seine et pillent Paris en 845, puis assiègent la ville pendant près d'un an en 885 et 886. Le comte Eudes la défend, et il devient roi quelques années plus tard.",
+        },
       ],
     },
     en: {
       title: "True or false: the Middle Ages",
       description:
-        "Ten statements about the Middle Ages, from Charlemagne to Joan of Arc. Can you tell which ones are true?",
+        "Twenty statements about the Middle Ages, from Charlemagne to Joan of Arc. Can you tell which ones are true?",
       questions: [
         {
           id: 1,
@@ -216,12 +296,92 @@ export const quizMoyenAge: TranslatedQuiz = {
           explanation:
             "True. Urban II called for it at the Council of Clermont in 1095. The crusaders took Jerusalem in 1099.",
         },
+        {
+          id: 11,
+          question: "Vikings wore horned helmets in battle.",
+          answers: [...VF.en],
+          correctAnswer: "b",
+          explanation:
+            "False. No horned Viking helmet has ever been found. The image mostly comes from the 19th century, from the costumes of Wagner's operas and from Romantic painters.",
+        },
+        {
+          id: 12,
+          question: "Eleanor of Aquitaine was Queen of France and then Queen of England.",
+          answers: [...VF.en],
+          correctAnswer: "a",
+          explanation:
+            "True. She first married King Louis VII of France in 1137. The marriage was annulled in 1152, and that same year she married Henry Plantagenet, who became King of England in 1154.",
+        },
+        {
+          id: 13,
+          question: "In the Middle Ages, educated people believed the Earth was flat.",
+          answers: [...VF.en],
+          correctAnswer: "b",
+          explanation:
+            "False. Scholars had known the Earth was round since the ancient Greeks, and medieval writers said so too. The idea of a flat-Earth Middle Ages was born in the 19th century.",
+        },
+        {
+          id: 14,
+          question: "Marco Polo was a Venetian merchant who travelled as far as China.",
+          answers: [...VF.en],
+          correctAnswer: "a",
+          explanation:
+            "True. He left in 1271 with his father and uncle, spent many years at the court of the Mongol emperor Kublai Khan and got back to Venice in 1295. His account of the journey became known as The Travels of Marco Polo.",
+        },
+        {
+          id: 15,
+          question: "King Arthur's existence is proven by documents from his own time.",
+          answers: [...VF.en],
+          correctAnswer: "b",
+          explanation:
+            "False. No text from the time he is supposed to have lived, around AD 500, mentions him. His legend, with the Round Table and Merlin, took shape mainly from the 12th century.",
+        },
+        {
+          id: 16,
+          question: "In monasteries, monks copied books out by hand.",
+          answers: [...VF.en],
+          correctAnswer: "a",
+          explanation:
+            "True. They worked in a room called the scriptorium, on parchment made from animal skin. Copying a whole Bible could take years.",
+        },
+        {
+          id: 17,
+          question: "People in the Middle Ages called their own time \"the Middle Ages\".",
+          answers: [...VF.en],
+          correctAnswer: "b",
+          explanation:
+            "False. The name was invented later by Renaissance scholars, to describe the period \"in the middle\" between antiquity and their own time.",
+        },
+        {
+          id: 18,
+          question: "Joan of Arc was declared a saint in the 20th century.",
+          answers: [...VF.en],
+          correctAnswer: "a",
+          explanation:
+            "True. Pope Benedict XV canonised her in 1920, nearly five hundred years after her death. A second trial had already cleared her name in 1456.",
+        },
+        {
+          id: 19,
+          question: "In the Middle Ages, people almost never washed.",
+          answers: [...VF.en],
+          correctAnswer: "b",
+          explanation:
+            "False. Towns had bathhouses, called étuves in France, where people went to wash and relax, and Paris had nearly thirty of them at the end of the 13th century. They mostly declined from the 16th century.",
+        },
+        {
+          id: 20,
+          question: "Vikings laid siege to Paris in the 9th century.",
+          answers: [...VF.en],
+          correctAnswer: "a",
+          explanation:
+            "True. They sailed up the Seine and sacked Paris in 845, then besieged the city for almost a year in 885 and 886. Count Odo defended it, and he became king a few years later.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: la Edad Media",
       description:
-        "Diez afirmaciones sobre la Edad Media, de Carlomagno a Juana de Arco. Te toca decir cuáles son verdaderas.",
+        "Veinte afirmaciones sobre la Edad Media, de Carlomagno a Juana de Arco. Te toca decir cuáles son verdaderas.",
       questions: [
         {
           id: 1,
@@ -307,6 +467,86 @@ export const quizMoyenAge: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero. Urbano II la proclamó en el concilio de Clermont, en 1095. Los cruzados tomaron Jerusalén en 1099.",
+        },
+        {
+          id: 11,
+          question: "Los vikingos llevaban cascos con cuernos en combate.",
+          answers: [...VF.es],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Nunca se ha encontrado un casco vikingo con cuernos. Esa imagen viene sobre todo del siglo XIX, del vestuario de las óperas de Wagner y de los pintores románticos.",
+        },
+        {
+          id: 12,
+          question: "Leonor de Aquitania fue reina de Francia y después reina de Inglaterra.",
+          answers: [...VF.es],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Primero se casó con el rey de Francia Luis VII, en 1137. El matrimonio se anuló en 1152, y ese mismo año se casó con Enrique Plantagenet, que fue rey de Inglaterra desde 1154.",
+        },
+        {
+          id: 13,
+          question: "En la Edad Media, la gente culta creía que la Tierra era plana.",
+          answers: [...VF.es],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Los sabios sabían que la Tierra es redonda desde los griegos de la Antigüedad, y los autores medievales lo repiten. La idea de una Edad Media que creía en una Tierra plana nació en el siglo XIX.",
+        },
+        {
+          id: 14,
+          question: "Marco Polo fue un mercader veneciano que viajó hasta China.",
+          answers: [...VF.es],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Partió en 1271 con su padre y su tío, vivió muchos años en la corte del emperador mongol Kublai Kan y volvió a Venecia en 1295. El relato de su viaje se conoce como el Libro de las maravillas.",
+        },
+        {
+          id: 15,
+          question: "La existencia del rey Arturo está demostrada por documentos de su época.",
+          answers: [...VF.es],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Ningún texto de la época en que habría vivido, hacia el año 500, habla de él. Su leyenda, con la Mesa Redonda y Merlín, se forma sobre todo a partir del siglo XII.",
+        },
+        {
+          id: 16,
+          question: "En los monasterios, los monjes copiaban los libros a mano.",
+          answers: [...VF.es],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Trabajaban en una sala llamada scriptorium, sobre pergamino hecho de piel de animal. Copiar una Biblia entera podía llevar años.",
+        },
+        {
+          id: 17,
+          question: "La gente de la Edad Media ya llamaba a su época «la Edad Media».",
+          answers: [...VF.es],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El nombre lo inventaron más tarde los eruditos del Renacimiento, para designar el periodo «del medio» entre la Antigüedad y su propia época.",
+        },
+        {
+          id: 18,
+          question: "Juana de Arco fue declarada santa en el siglo XX.",
+          answers: [...VF.es],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El papa Benedicto XV la canonizó en 1920, casi quinientos años después de su muerte. Un segundo juicio ya la había rehabilitado en 1456.",
+        },
+        {
+          id: 19,
+          question: "En la Edad Media casi nadie se lavaba.",
+          answers: [...VF.es],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Las ciudades tenían baños públicos donde la gente iba a lavarse y a relajarse, y París tenía casi treinta a finales del siglo XIII. Empezaron a desaparecer sobre todo a partir del siglo XVI.",
+        },
+        {
+          id: 20,
+          question: "Los vikingos asediaron París en el siglo IX.",
+          answers: [...VF.es],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Remontaron el Sena y saquearon París en 845, y luego sitiaron la ciudad durante casi un año, en 885 y 886. El conde Eudes la defendió, y pocos años después fue rey.",
         },
       ],
     },

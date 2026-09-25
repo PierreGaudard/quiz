@@ -21,7 +21,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
     fr: {
       title: "Quiz basket : les records de la NBA",
       description:
-        "Dix chiffres à trouver sur la NBA : les 100 points de Chamberlain, les 73 victoires des Warriors ou encore les titres de Bill Russell.",
+        "Vingt chiffres à trouver sur la NBA : les 100 points de Chamberlain, les 73 victoires des Warriors ou encore les titres de Bill Russell.",
       questions: [
         {
           id: 1,
@@ -117,12 +117,102 @@ export const quizBasketballRecords: TranslatedQuiz = {
           explanation:
             "30 équipes, 29 aux États-Unis et une au Canada, les Toronto Raptors. La ligue étudie l'arrivée de Seattle et de Las Vegas, mais pas avant 2028.",
         },
+        {
+          id: 11,
+          question: "Combien de rebonds Wilt Chamberlain a-t-il pris dans un match contre Boston, en novembre 1960 ?",
+          answers: [],
+          correctAnswer: "55",
+          correctValue: 55,
+          explanation:
+            "55 rebonds, le 24 novembre 1960, face aux Celtics de Bill Russell. C'est le record de la NBA pour un match, et son équipe a quand même perdu.",
+        },
+        {
+          id: 12,
+          question: "Combien de passes décisives Scott Skiles a-t-il faites dans un match, en décembre 1990 ?",
+          answers: [],
+          correctAnswer: "30",
+          correctValue: 30,
+          explanation:
+            "30 passes décisives, le 30 décembre 1990, avec Orlando contre Denver. C'est toujours le record de la NBA pour un match.",
+        },
+        {
+          id: 13,
+          question: "Combien de points les Pistons et les Nuggets ont-ils marqués à eux deux dans le match le plus prolifique de l'histoire, en 1983 ?",
+          answers: [],
+          correctAnswer: "370",
+          correctValue: 370,
+          explanation:
+            "370 points : Detroit a gagné 186 à 184 après trois prolongations, le 13 décembre 1983. Quatre joueurs ont dépassé les 40 points ce soir-là.",
+        },
+        {
+          id: 14,
+          question: "Combien de matchs d'affilée les Los Angeles Lakers ont-ils gagnés pendant la saison 1971-1972 ?",
+          answers: [],
+          correctAnswer: "33",
+          correctValue: 33,
+          explanation:
+            "33 victoires de suite. La série s'est arrêtée le 9 janvier 1972 contre Milwaukee, et c'est toujours le record de la NBA.",
+        },
+        {
+          id: 15,
+          question: "Combien de matchs les Philadelphia 76ers ont-ils gagnés pendant la saison 1972-1973 ?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "Seulement 9, pour 73 défaites. C'est toujours le pire bilan de l'histoire sur une saison complète de 82 matchs.",
+        },
+        {
+          id: 16,
+          question: "En quelle année Michael Jordan a-t-il été drafté par les Chicago Bulls ?",
+          answers: [],
+          correctAnswer: "1984",
+          correctValue: 1984,
+          explanation:
+            "En 1984, en troisième position. Houston avait pris Hakeem Olajuwon en premier, et Portland Sam Bowie en deuxième.",
+        },
+        {
+          id: 17,
+          question: "Combien de matchs chaque équipe joue-t-elle en saison régulière de NBA ?",
+          answers: [],
+          correctAnswer: "82",
+          correctValue: 82,
+          explanation:
+            "82 matchs, 41 à domicile et 41 à l'extérieur. Ce format est en place depuis la saison 1967-1968.",
+        },
+        {
+          id: 18,
+          question: "Combien de points Klay Thompson a-t-il marqués en un seul quart-temps, en janvier 2015 ?",
+          answers: [],
+          correctAnswer: "37",
+          correctValue: 37,
+          explanation:
+            "37 points, dans le troisième quart-temps contre Sacramento, le 23 janvier 2015. Il a réussi ses 13 tirs, dont 9 à trois points, et c'est le record de la NBA pour un quart-temps.",
+        },
+        {
+          id: 19,
+          question: "Combien de points Kareem Abdul-Jabbar a-t-il marqués au total dans sa carrière NBA ?",
+          answers: [],
+          correctAnswer: "38387",
+          correctValue: 38387,
+          explanation:
+            "38 387 points. Il a gardé ce record de 1984 à 2023, jusqu'à ce que LeBron James le dépasse.",
+        },
+        {
+          id: 20,
+          question: "Combien de titres NBA Robert Horry a-t-il gagnés ?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "Sept titres : deux avec Houston, trois avec les Lakers et deux avec San Antonio. En dehors des Celtics des années 1950 et 1960, aucun joueur n'en a gagné plus de six.",
+        },
       ],
     },
     en: {
       title: "Basketball quiz: NBA records",
       description:
-        "Ten NBA numbers to guess: Chamberlain's 100-point game, the Warriors' 73 wins, Bill Russell's rings and a few more.",
+        "Twenty NBA numbers to guess: Chamberlain's 100-point game, the Warriors' 73 wins, Bill Russell's rings and a few more.",
       questions: [
         {
           id: 1,
@@ -218,12 +308,102 @@ export const quizBasketballRecords: TranslatedQuiz = {
           explanation:
             "30 teams, 29 in the US and one in Canada, the Toronto Raptors. The league is looking at adding Seattle and Las Vegas, but not before 2028.",
         },
+        {
+          id: 11,
+          question: "How many rebounds did Wilt Chamberlain grab in one game against Boston in November 1960?",
+          answers: [],
+          correctAnswer: "55",
+          correctValue: 55,
+          explanation:
+            "55 rebounds, on November 24, 1960, against Bill Russell's Celtics. It's the NBA record for a single game, and his team still lost.",
+        },
+        {
+          id: 12,
+          question: "How many assists did Scott Skiles hand out in one game in December 1990?",
+          answers: [],
+          correctAnswer: "30",
+          correctValue: 30,
+          explanation:
+            "30 assists, on December 30, 1990, for Orlando against Denver. It's still the NBA single-game record.",
+        },
+        {
+          id: 13,
+          question: "How many points did the Pistons and the Nuggets score between them in the highest-scoring game ever, in 1983?",
+          answers: [],
+          correctAnswer: "370",
+          correctValue: 370,
+          explanation:
+            "370 points. Detroit won 186-184 in triple overtime on December 13, 1983, and four players scored more than 40 that night.",
+        },
+        {
+          id: 14,
+          question: "How many games in a row did the Los Angeles Lakers win during the 1971-72 season?",
+          answers: [],
+          correctAnswer: "33",
+          correctValue: 33,
+          explanation:
+            "33 straight wins. The streak ended on January 9, 1972, against Milwaukee, and it's still the NBA record.",
+        },
+        {
+          id: 15,
+          question: "How many games did the Philadelphia 76ers win in the 1972-73 season?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "Just 9, with 73 losses. It's still the worst record ever over a full 82-game season.",
+        },
+        {
+          id: 16,
+          question: "In what year did the Chicago Bulls draft Michael Jordan?",
+          answers: [],
+          correctAnswer: "1984",
+          correctValue: 1984,
+          explanation:
+            "In 1984, third overall. Houston took Hakeem Olajuwon first and Portland took Sam Bowie second.",
+        },
+        {
+          id: 17,
+          question: "How many games does each team play in an NBA regular season?",
+          answers: [],
+          correctAnswer: "82",
+          correctValue: 82,
+          explanation:
+            "82 games, 41 at home and 41 on the road. The league has used that format since the 1967-68 season.",
+        },
+        {
+          id: 18,
+          question: "How many points did Klay Thompson score in a single quarter in January 2015?",
+          answers: [],
+          correctAnswer: "37",
+          correctValue: 37,
+          explanation:
+            "37 points, in the third quarter against Sacramento on January 23, 2015. He made all 13 of his shots, including 9 threes, and it's the NBA record for a quarter.",
+        },
+        {
+          id: 19,
+          question: "How many career points did Kareem Abdul-Jabbar score in the NBA?",
+          answers: [],
+          correctAnswer: "38387",
+          correctValue: 38387,
+          explanation:
+            "38,387 points. He held the record from 1984 to 2023, when LeBron James passed him.",
+        },
+        {
+          id: 20,
+          question: "How many NBA titles did Robert Horry win?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "Seven: two with Houston, three with the Lakers and two with San Antonio. Apart from the 1950s and 1960s Celtics, no player has won more than six.",
+        },
       ],
     },
     es: {
       title: "Quiz de baloncesto: los récords de la NBA",
       description:
-        "Diez cifras de la NBA para adivinar: los 100 puntos de Chamberlain, las 73 victorias de los Warriors o los anillos de Bill Russell.",
+        "Veinte cifras de la NBA para adivinar: los 100 puntos de Chamberlain, las 73 victorias de los Warriors o los anillos de Bill Russell.",
       questions: [
         {
           id: 1,
@@ -318,6 +498,96 @@ export const quizBasketballRecords: TranslatedQuiz = {
           correctValue: 30,
           explanation:
             "30 equipos, 29 en Estados Unidos y uno en Canadá, los Toronto Raptors. La liga estudia sumar a Seattle y Las Vegas, pero no antes de 2028.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos rebotes cogió Wilt Chamberlain en un partido contra Boston en noviembre de 1960?",
+          answers: [],
+          correctAnswer: "55",
+          correctValue: 55,
+          explanation:
+            "55 rebotes, el 24 de noviembre de 1960, contra los Celtics de Bill Russell. Es el récord de la NBA en un partido, y aun así su equipo perdió.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántas asistencias dio Scott Skiles en un partido en diciembre de 1990?",
+          answers: [],
+          correctAnswer: "30",
+          correctValue: 30,
+          explanation:
+            "30 asistencias, el 30 de diciembre de 1990, con Orlando contra Denver. Sigue siendo el récord de la NBA en un partido.",
+        },
+        {
+          id: 13,
+          question: "¿Cuántos puntos sumaron entre Pistons y Nuggets en el partido con más puntos de la historia, en 1983?",
+          answers: [],
+          correctAnswer: "370",
+          correctValue: 370,
+          explanation:
+            "370 puntos. Detroit ganó 186-184 tras tres prórrogas, el 13 de diciembre de 1983, y cuatro jugadores pasaron de los 40 puntos esa noche.",
+        },
+        {
+          id: 14,
+          question: "¿Cuántos partidos seguidos ganaron Los Angeles Lakers en la temporada 1971-1972?",
+          answers: [],
+          correctAnswer: "33",
+          correctValue: 33,
+          explanation:
+            "33 victorias seguidas. La racha se cortó el 9 de enero de 1972 contra Milwaukee, y sigue siendo el récord de la NBA.",
+        },
+        {
+          id: 15,
+          question: "¿Cuántos partidos ganaron los Philadelphia 76ers en la temporada 1972-1973?",
+          answers: [],
+          correctAnswer: "9",
+          correctValue: 9,
+          explanation:
+            "Solo 9, con 73 derrotas. Sigue siendo el peor balance de la historia en una temporada completa de 82 partidos.",
+        },
+        {
+          id: 16,
+          question: "¿En qué año eligieron los Chicago Bulls a Michael Jordan en el draft?",
+          answers: [],
+          correctAnswer: "1984",
+          correctValue: 1984,
+          explanation:
+            "En 1984, con el número tres. Houston se quedó con Hakeem Olajuwon en el primer puesto y Portland con Sam Bowie en el segundo.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántos partidos juega cada equipo en la temporada regular de la NBA?",
+          answers: [],
+          correctAnswer: "82",
+          correctValue: 82,
+          explanation:
+            "82 partidos, 41 en casa y 41 fuera. La liga usa ese formato desde la temporada 1967-1968.",
+        },
+        {
+          id: 18,
+          question: "¿Cuántos puntos anotó Klay Thompson en un solo cuarto en enero de 2015?",
+          answers: [],
+          correctAnswer: "37",
+          correctValue: 37,
+          explanation:
+            "37 puntos, en el tercer cuarto contra Sacramento, el 23 de enero de 2015. Metió sus 13 tiros, 9 de ellos triples, y es el récord de la NBA en un cuarto.",
+        },
+        {
+          id: 19,
+          question: "¿Cuántos puntos anotó Kareem Abdul-Jabbar en toda su carrera en la NBA?",
+          answers: [],
+          correctAnswer: "38387",
+          correctValue: 38387,
+          explanation:
+            "38.387 puntos. Tuvo ese récord de 1984 a 2023, cuando lo superó LeBron James.",
+        },
+        {
+          id: 20,
+          question: "¿Cuántos títulos de la NBA ganó Robert Horry?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "Siete: dos con Houston, tres con los Lakers y dos con San Antonio. Fuera de los Celtics de los años cincuenta y sesenta, ningún jugador ha ganado más de seis.",
         },
       ],
     },

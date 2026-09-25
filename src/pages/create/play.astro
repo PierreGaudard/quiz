@@ -5,5 +5,5 @@ import CustomQuizPlayer from "../../components/CustomQuizPlayer";
 ---
 
 <Layout title="A quiz made by a player | WizyQuiz" description="Play this quiz made by a WizyQuiz player, with the explanation of each answer when the author wrote one." locale="en" hreflangPaths={getHreflangStaticPaths("createPlay")} noindex={true}>
-  <CustomQuizPlayer client:load />
+  <CustomQuizPlayer client:only="react" />
 </Layout>

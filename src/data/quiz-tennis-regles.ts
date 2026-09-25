@@ -22,7 +22,7 @@ export const quizTennisRegles: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les règles du tennis",
       description:
-        "Dix affirmations sur les règles du tennis : le service, le filet, les lignes ou encore le tie-break. À toi de trier le vrai du faux.",
+        "Vingt affirmations sur les règles du tennis : le service, le filet, les lignes ou encore le tie-break. À toi de trier le vrai du faux.",
       questions: [
         {
           id: 1,
@@ -108,12 +108,92 @@ export const quizTennisRegles: TranslatedQuiz = {
           explanation:
             "Vrai. Avant 2022, chaque tournoi avait sa règle, et Roland-Garros n'avait même pas de tie-break dans le dernier set. Depuis, c'est le même super tie-break partout.",
         },
+        {
+          id: 11,
+          question: "En anglais, pour dire zéro au tennis, on dit « love ».",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. « 15-love » veut dire 15-0. L'origine du mot n'est pas certaine : on parle souvent du mot « l'œuf », pour la forme du zéro.",
+        },
+        {
+          id: 12,
+          question: "À 40-40, il faut gagner deux points de suite pour remporter le jeu.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. À 40-40, on dit « égalité ». Le joueur qui gagne le point suivant a « l'avantage », et il doit gagner encore un point pour prendre le jeu.",
+        },
+        {
+          id: 13,
+          question: "Les joueurs changent de côté après chaque jeu.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Ils changent de côté après les jeux impairs : après le premier, le troisième, le cinquième jeu, etc. Dans un tie-break, c'est tous les six points.",
+        },
+        {
+          id: 14,
+          question: "Dans un tie-break classique, le premier à 7 points avec deux points d'écart gagne le set.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Si le score arrive à 6-6 dans le tie-break, on continue jusqu'à ce qu'un joueur ait deux points d'avance, par exemple 9-7.",
+        },
+        {
+          id: 15,
+          question: "Un set se gagne en six jeux, avec au moins deux jeux d'écart.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. À 6-5, il faut gagner un jeu de plus pour finir à 7-5. À 6-6, on joue le tie-break.",
+        },
+        {
+          id: 16,
+          question: "Pendant un échange, la balle a le droit de rebondir deux fois avant d'être renvoyée.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Elle ne doit rebondir qu'une fois. Si elle touche deux fois le sol, le joueur perd le point. Seul le tennis-fauteuil autorise deux rebonds.",
+        },
+        {
+          id: 17,
+          question: "Au moment de servir, le joueur a le droit de marcher sur la ligne de fond.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. C'est une faute de pied : les pieds doivent rester derrière la ligne jusqu'à ce que la raquette frappe la balle. Le service est alors compté comme faute.",
+        },
+        {
+          id: 18,
+          question: "Au double, les couloirs sur les côtés sont hors du terrain pendant l'échange.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. En double, les couloirs font partie du terrain pendant l'échange. Ils ne comptent pas au service, qui doit tomber dans le carré de simple.",
+        },
+        {
+          id: 19,
+          question: "À Wimbledon, les joueurs doivent être habillés presque entièrement en blanc.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. La règle vaut pour les vêtements, les chaussures et même les casquettes. Depuis 2023, les joueuses peuvent porter un short de couleur foncée sous leur tenue.",
+        },
+        {
+          id: 20,
+          question: "Si la balle touche un joueur avant de rebondir, ce joueur perd le point, même s'il est hors du terrain.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Peu importe où il se trouve : si la balle le touche, lui ou ses vêtements, avant le rebond, le point va à l'adversaire.",
+        },
       ],
     },
     en: {
       title: "True or false: the rules of tennis",
       description:
-        "Ten statements about the rules of tennis, from serving and the net to the lines and the tiebreak. Can you tell which ones are true?",
+        "Twenty statements about the rules of tennis, from serving and the net to the lines and the tiebreak. Can you tell which ones are true?",
       questions: [
         {
           id: 1,
@@ -199,12 +279,92 @@ export const quizTennisRegles: TranslatedQuiz = {
           explanation:
             "True. Before 2022 each major had its own rule, and the French Open had no final-set tiebreak at all. Now it's the same one everywhere.",
         },
+        {
+          id: 11,
+          question: "In English tennis scoring, zero is called \"love\".",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. \"15-love\" means 15-0. Nobody is quite sure where the word comes from: one common theory is the French \"l'œuf\", the egg, for the shape of a zero.",
+        },
+        {
+          id: 12,
+          question: "At 40-40, you have to win two points in a row to take the game.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. 40-40 is called deuce. Whoever wins the next point has the advantage, and needs one more point to win the game.",
+        },
+        {
+          id: 13,
+          question: "Players change ends after every game.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. They change ends after the odd games: the first, third, fifth game and so on. In a tiebreak, it is every six points.",
+        },
+        {
+          id: 14,
+          question: "In a standard tiebreak, the first to 7 points with a two-point lead wins the set.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. If the tiebreak reaches 6-6, play goes on until one player is two points clear, 9-7 for example.",
+        },
+        {
+          id: 15,
+          question: "A set is won with six games and a lead of at least two games.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. At 6-5 you need one more game to win it 7-5. At 6-6 there is a tiebreak.",
+        },
+        {
+          id: 16,
+          question: "During a rally, the ball is allowed to bounce twice before it is hit back.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. It can only bounce once. If it touches the ground twice, the player loses the point. Only wheelchair tennis allows two bounces.",
+        },
+        {
+          id: 17,
+          question: "When serving, a player is allowed to step on the baseline.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. That is a foot fault: the feet must stay behind the line until the racket hits the ball. The serve then counts as a fault.",
+        },
+        {
+          id: 18,
+          question: "In doubles, the alleys on each side are out during a rally.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. In doubles, the alleys are part of the court during the rally. They do not count on the serve, which has to land in the singles service box.",
+        },
+        {
+          id: 19,
+          question: "At Wimbledon, players have to dress almost entirely in white.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. The rule covers clothing, shoes and even caps. Since 2023, women have been allowed to wear dark-coloured shorts under their outfit.",
+        },
+        {
+          id: 20,
+          question: "If the ball hits a player before it bounces, that player loses the point, even if he is standing outside the court.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. It does not matter where he is: if the ball touches him or his clothes before bouncing, the point goes to the opponent.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: las reglas del tenis",
       description:
-        "Diez afirmaciones sobre las reglas del tenis: el saque, la red, las líneas o el tie-break. Tú decides cuáles son verdad y cuáles no.",
+        "Veinte afirmaciones sobre las reglas del tenis: el saque, la red, las líneas o el tie-break. Tú decides cuáles son verdad y cuáles no.",
       questions: [
         {
           id: 1,
@@ -289,6 +449,86 @@ export const quizTennisRegles: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero. Antes de 2022 cada torneo tenía su regla, y Roland Garros ni siquiera tenía tie-break en el último set. Ahora es igual en todos.",
+        },
+        {
+          id: 11,
+          question: "En inglés, el cero en el tenis se dice « love ».",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. « 15-love » significa 15-0. El origen de la palabra no está claro: una idea muy repetida es que viene del francés « l'œuf », el huevo, por la forma del cero.",
+        },
+        {
+          id: 12,
+          question: "Con 40-40, hay que ganar dos puntos seguidos para llevarse el juego.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El 40-40 se llama « iguales ». Quien gana el punto siguiente tiene « ventaja » y necesita otro punto más para ganar el juego.",
+        },
+        {
+          id: 13,
+          question: "Los jugadores cambian de lado después de cada juego.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Cambian de lado tras los juegos impares: el primero, el tercero, el quinto, etc. En un tie-break, cada seis puntos.",
+        },
+        {
+          id: 14,
+          question: "En un tie-break normal, gana el set el primero que llega a 7 puntos con dos de diferencia.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Si el tie-break llega a 6-6, se sigue jugando hasta que alguien saque dos puntos de ventaja, por ejemplo 9-7.",
+        },
+        {
+          id: 15,
+          question: "Un set se gana con seis juegos y al menos dos de diferencia.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Con 6-5 hay que ganar un juego más para acabar 7-5. Con 6-6 se juega el tie-break.",
+        },
+        {
+          id: 16,
+          question: "Durante un intercambio, la pelota puede botar dos veces antes de devolverla.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Solo puede botar una vez. Si toca el suelo dos veces, el jugador pierde el punto. Solo el tenis en silla de ruedas permite dos botes.",
+        },
+        {
+          id: 17,
+          question: "Al sacar, el jugador puede pisar la línea de fondo.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Es una falta de pie: los pies deben quedar detrás de la línea hasta que la raqueta golpea la pelota. Ese saque cuenta como falta.",
+        },
+        {
+          id: 18,
+          question: "En dobles, los pasillos laterales están fuera durante el intercambio.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. En dobles, los pasillos forman parte de la pista durante el intercambio. No cuentan en el saque, que debe caer en el cuadro de individuales.",
+        },
+        {
+          id: 19,
+          question: "En Wimbledon, los jugadores tienen que vestir casi completamente de blanco.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. La norma vale para la ropa, las zapatillas e incluso las gorras. Desde 2023, las jugadoras pueden llevar pantalones cortos oscuros debajo.",
+        },
+        {
+          id: 20,
+          question: "Si la pelota toca a un jugador antes de botar, ese jugador pierde el punto, aunque esté fuera de la pista.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Da igual dónde esté: si la pelota le toca a él o a su ropa antes de botar, el punto es para el rival.",
         },
       ],
     },

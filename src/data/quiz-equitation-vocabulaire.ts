@@ -21,7 +21,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
     fr: {
       title: "Duel équitation : le vocabulaire du cavalier",
       description:
-        "Dix duels sur les mots de l'équitation : la robe du cheval, le matériel ou encore les métiers. Deux réponses à chaque fois, une seule est juste.",
+        "Vingt duels sur les mots de l'équitation : la robe du cheval, le matériel ou encore les métiers. Deux réponses à chaque fois, une seule est juste.",
       questions: [
         {
           id: 1,
@@ -138,12 +138,122 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
           explanation:
             "À attacher le cheval et à le mener à pied. Il n'a pas de mors, contrairement au filet qu'on utilise pour monter.",
         },
+        {
+          id: 11,
+          question: "Une robe « isabelle », c'est une robe :",
+          answers: [
+            { id: "a", text: "Jaune sable, avec les crins noirs" },
+            { id: "b", text: "Noire, avec une étoile blanche sur le front" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Jaune sable, avec les crins et le bas des jambes noirs. Beaucoup de chevaux Fjord ont d'ailleurs une robe isabelle claire.",
+        },
+        {
+          id: 12,
+          question: "Le cri du cheval s'appelle :",
+          answers: [
+            { id: "a", text: "Le braiment" },
+            { id: "b", text: "Le hennissement" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le hennissement : le cheval hennit. Le braiment, c'est le cri de l'âne.",
+        },
+        {
+          id: 13,
+          question: "À l'écurie, le compartiment où vit un cheval s'appelle :",
+          answers: [
+            { id: "a", text: "Un box" },
+            { id: "b", text: "Un chenil" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un box. C'est un espace fermé où le cheval peut bouger et se coucher. Le chenil, c'est pour les chiens.",
+        },
+        {
+          id: 14,
+          question: "Les longs poils qui poussent le long de l'encolure du cheval forment :",
+          answers: [
+            { id: "a", text: "Le toupet" },
+            { id: "b", text: "La crinière" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La crinière. Le toupet, c'est la mèche qui tombe sur le front du cheval, entre les oreilles.",
+        },
+        {
+          id: 15,
+          question: "En saut d'obstacles, un « refus », c'est quand :",
+          answers: [
+            { id: "a", text: "Le cheval s'arrête devant l'obstacle" },
+            { id: "b", text: "Le cavalier tombe après l'obstacle" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le cheval s'arrête devant l'obstacle au lieu de sauter. Le cavalier prend des points de pénalité, et au deuxième refus, il est éliminé.",
+        },
+        {
+          id: 16,
+          question: "Dans une course de trot attelé, celui qui mène le cheval depuis son sulky s'appelle :",
+          answers: [
+            { id: "a", text: "Le jockey" },
+            { id: "b", text: "Le driver" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le driver. Le jockey monte sur le dos du cheval, en course de galop ou de trot monté.",
+        },
+        {
+          id: 17,
+          question: "Le « pansage », c'est :",
+          answers: [
+            { id: "a", text: "Brosser et nettoyer le cheval" },
+            { id: "b", text: "Soigner une blessure du cheval" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Brosser et nettoyer le cheval, avec l'étrille, la brosse, le cure-pieds, etc. On le fait avant et après chaque séance.",
+        },
+        {
+          id: 18,
+          question: "En France, les examens de niveau des cavaliers s'appellent :",
+          answers: [
+            { id: "a", text: "Les Ceintures" },
+            { id: "b", text: "Les Galops" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Les Galops, du Galop 1 au Galop 7, délivrés par la Fédération française d'équitation. Les ceintures, c'est pour le judo ou le karaté.",
+        },
+        {
+          id: 19,
+          question: "La courroie qui passe sous le ventre du cheval pour tenir la selle s'appelle :",
+          answers: [
+            { id: "a", text: "La sangle" },
+            { id: "b", text: "La rêne" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La sangle. Il faut la resserrer après quelques minutes, parce que le cheval gonfle souvent le ventre quand on le selle. Les rênes se tiennent dans les mains.",
+        },
+        {
+          id: 20,
+          question: "Quand un cheval fait un « écart », il :",
+          answers: [
+            { id: "a", text: "S'arrête pour brouter" },
+            { id: "b", text: "Fait un saut de côté, souvent par peur" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Il fait un saut brusque sur le côté, souvent parce que quelque chose lui a fait peur : un sac en plastique, un bruit, etc. C'est une des causes de chute les plus fréquentes.",
+        },
       ],
     },
     en: {
       title: "Horse riding duel: the rider's vocabulary",
       description:
-        "Ten head-to-heads on riding words: coat colors, tack and the people who look after horses. Two answers each time, and only one is right.",
+        "Twenty head-to-heads on riding words: coat colors, tack and the people who look after horses. Two answers each time, and only one is right.",
       questions: [
         {
           id: 1,
@@ -260,12 +370,122 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
           explanation:
             "Tying the horse up and leading it on foot. It has no bit, unlike the bridle you use for riding.",
         },
+        {
+          id: 11,
+          question: "A \"buckskin\" horse has a coat that is:",
+          answers: [
+            { id: "a", text: "Sandy yellow, with a black mane and tail" },
+            { id: "b", text: "Black, with a white star on the forehead" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Sandy yellow, with a black mane, tail and lower legs. The colour comes from a cream gene acting on a bay coat.",
+        },
+        {
+          id: 12,
+          question: "The sound a horse makes is called:",
+          answers: [
+            { id: "a", text: "A bray" },
+            { id: "b", text: "A neigh" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A neigh: horses neigh or whinny. Braying is the sound a donkey makes.",
+        },
+        {
+          id: 13,
+          question: "In a stable, the enclosed space a horse lives in is called:",
+          answers: [
+            { id: "a", text: "A stall" },
+            { id: "b", text: "A kennel" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A stall, or a loose box in British English. It is big enough for the horse to move around and lie down. A kennel is for dogs.",
+        },
+        {
+          id: 14,
+          question: "The long hair growing along the top of a horse's neck is its:",
+          answers: [
+            { id: "a", text: "Forelock" },
+            { id: "b", text: "Mane" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Its mane. The forelock is the tuft of hair that falls onto the horse's forehead, between the ears.",
+        },
+        {
+          id: 15,
+          question: "In show jumping, a \"refusal\" is when:",
+          answers: [
+            { id: "a", text: "The horse stops in front of the fence" },
+            { id: "b", text: "The rider falls off after the fence" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The horse stops in front of the fence instead of jumping it. The rider picks up penalty points, and a second refusal means elimination.",
+        },
+        {
+          id: 16,
+          question: "In harness racing, the person driving the horse from the sulky is called:",
+          answers: [
+            { id: "a", text: "The jockey" },
+            { id: "b", text: "The driver" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "The driver. A jockey rides on the horse's back, in flat racing or jump racing.",
+        },
+        {
+          id: 17,
+          question: "\"Grooming\" a horse means:",
+          answers: [
+            { id: "a", text: "Brushing and cleaning it" },
+            { id: "b", text: "Treating one of its wounds" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Brushing and cleaning it, with a curry comb, brushes, a hoof pick and so on. Riders do it before and after every session.",
+        },
+        {
+          id: 18,
+          question: "In France, riders' level exams are called:",
+          answers: [
+            { id: "a", text: "Belts" },
+            { id: "b", text: "Galops" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Galops, from Galop 1 to Galop 7, awarded by the French riding federation. Belts are for judo or karate.",
+        },
+        {
+          id: 19,
+          question: "The strap that goes under the horse's belly to hold the saddle on is the:",
+          answers: [
+            { id: "a", text: "Girth" },
+            { id: "b", text: "Rein" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The girth. It often needs tightening after a few minutes, because many horses puff out their belly while being saddled. The reins are what you hold in your hands.",
+        },
+        {
+          id: 20,
+          question: "When a horse \"shies\", it:",
+          answers: [
+            { id: "a", text: "Stops to graze" },
+            { id: "b", text: "Jumps sideways, usually out of fright" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "It jumps sideways all of a sudden, usually because something scared it: a plastic bag, a noise and so on. It is one of the most common reasons riders fall off.",
+        },
       ],
     },
     es: {
       title: "Duelo de equitación: el vocabulario",
       description:
-        "Diez duelos sobre las palabras de la equitación: el pelaje del caballo, el equipo o los oficios. Dos respuestas cada vez y solo una es correcta.",
+        "Veinte duelos sobre las palabras de la equitación: el pelaje del caballo, el equipo o los oficios. Dos respuestas cada vez y solo una es correcta.",
       questions: [
         {
           id: 1,
@@ -381,6 +601,116 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Para atar al caballo y llevarlo a pie. No lleva bocado, a diferencia de la brida que se usa para montar.",
+        },
+        {
+          id: 11,
+          question: "Un caballo «bayo» tiene la capa:",
+          answers: [
+            { id: "a", text: "Amarillenta, con las crines negras" },
+            { id: "b", text: "Negra, con una estrella blanca en la frente" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Amarillenta, con las crines y la parte baja de las patas negras. Muchos caballos fiordos, por ejemplo, tienen la capa baya clara.",
+        },
+        {
+          id: 12,
+          question: "¿Cómo se llama el sonido que hace el caballo?",
+          answers: [
+            { id: "a", text: "El rebuzno" },
+            { id: "b", text: "El relincho" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El relincho: el caballo relincha. El rebuzno es el sonido del burro.",
+        },
+        {
+          id: 13,
+          question: "En la cuadra, el espacio cerrado donde vive un caballo se llama:",
+          answers: [
+            { id: "a", text: "Box" },
+            { id: "b", text: "Perrera" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Box. Es un espacio cerrado donde el caballo puede moverse y tumbarse. La perrera es para los perros.",
+        },
+        {
+          id: 14,
+          question: "El pelo largo que crece a lo largo del cuello del caballo son:",
+          answers: [
+            { id: "a", text: "El copete" },
+            { id: "b", text: "Las crines" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Las crines. El copete es el mechón que cae sobre la frente del caballo, entre las orejas.",
+        },
+        {
+          id: 15,
+          question: "En salto, un «rehúse» es cuando:",
+          answers: [
+            { id: "a", text: "El caballo se para delante del obstáculo" },
+            { id: "b", text: "El jinete se cae después del obstáculo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El caballo se para delante del obstáculo en vez de saltar. El jinete suma puntos de penalización, y con el segundo rehúse queda eliminado.",
+        },
+        {
+          id: 16,
+          question: "En una carrera de trote enganchado, quien lleva al caballo desde el sulky se llama:",
+          answers: [
+            { id: "a", text: "Jockey" },
+            { id: "b", text: "Driver" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Driver. El jockey va montado sobre el caballo, en las carreras de galope o de trote montado.",
+        },
+        {
+          id: 17,
+          question: "«Almohazar» al caballo es:",
+          answers: [
+            { id: "a", text: "Cepillarlo y limpiarlo" },
+            { id: "b", text: "Curarle una herida" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Cepillarlo y limpiarlo con la almohaza, el cepillo, el limpiacascos, etc. Se hace antes y después de cada sesión.",
+        },
+        {
+          id: 18,
+          question: "En Francia, los exámenes de nivel de los jinetes se llaman:",
+          answers: [
+            { id: "a", text: "Cinturones" },
+            { id: "b", text: "Galops" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Galops, del Galop 1 al Galop 7, que da la federación francesa de hípica. Los cinturones son para el judo o el kárate.",
+        },
+        {
+          id: 19,
+          question: "La correa que pasa por debajo de la barriga del caballo para sujetar la silla es:",
+          answers: [
+            { id: "a", text: "La cincha" },
+            { id: "b", text: "La rienda" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "La cincha. Hay que apretarla otra vez al cabo de unos minutos, porque muchos caballos hinchan la barriga cuando se les ensilla. Las riendas se llevan en las manos.",
+        },
+        {
+          id: 20,
+          question: "Cuando un caballo «hace un extraño»:",
+          answers: [
+            { id: "a", text: "Se para a pastar" },
+            { id: "b", text: "Da un salto de lado, casi siempre por miedo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Da un salto brusco de lado, casi siempre porque algo lo ha asustado: una bolsa de plástico, un ruido, etc. Es una de las causas de caída más habituales.",
         },
       ],
     },

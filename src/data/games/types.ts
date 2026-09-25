@@ -3,7 +3,7 @@ import type { Locale } from "../../i18n/config";
 /**
  * Les minis-jeux, a cote des quiz.
  *
- * Un quiz est fini : dix questions, un score, c'est joue. Un mini-jeu tire ses
+ * Un quiz est fini : vingt questions, un score, c'est joue. Un mini-jeu tire ses
  * manches au hasard dans un gros lot et ne se termine que sur une erreur, donc
  * on y revient. Les deux cohabitent, ils ne se remplacent pas : le quiz amene
  * la requete precise (« quiz Dragon Ball »), le mini-jeu amene le temps passe

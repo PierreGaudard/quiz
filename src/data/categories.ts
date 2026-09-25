@@ -109,7 +109,7 @@ export const categoryDefs: CategoryDef[] = [
       es: {
         name: "Deportes",
         description: "Quizzes de fútbol, baloncesto, tenis, rugby, Fórmula 1, boxeo y otros deportes. ¡Pon a prueba tus conocimientos!",
-        subcategories: ["Baloncesto", "Ciclismo", "Futbol", "Formula 1", "Juegos Olímpicos", "Rugby", "Tenis", "Equitación", "Boxeo"],
+        subcategories: ["Baloncesto", "Ciclismo", "Fútbol", "Fórmula 1", "Juegos Olímpicos", "Rugby", "Tenis", "Equitación", "Boxeo"],
         seoIntro: "Fútbol, baloncesto, tenis, rugby, Fórmula 1, boxeo, etc.: quizzes de deportes gratis, con una explicación en cada respuesta y sin cuenta.",
         seoFooter: "Cada deporte tiene su quiz y su modo de juego: contrarreloj para el boxeo, duelos para el tenis, estimaciones para el ciclismo, etc. Cuando una pregunta se te atraganta, la explicación te da la respuesta correcta y el porqué.",
       },
@@ -132,7 +132,7 @@ export const categoryDefs: CategoryDef[] = [
       fr: {
         name: "Géographie",
         description: "Drapeaux, capitales, Europe, États-Unis, départements français... Teste ta géographie !",
-        subcategories: ["Départements français", "Europe", "Capitales", "Drapeaux", "Etats-Unis"],
+        subcategories: ["Départements français", "Europe", "Capitales", "Drapeaux", "États-Unis"],
         seoIntro: "Drapeaux, capitales, Europe, États-Unis et départements français : des quiz de géographie gratuits, avec une explication sous chaque réponse.",
         seoFooter: "Il y a les drapeaux qu'on reconnaît du premier coup, et ceux qu'on confond toujours avec le voisin. Pareil pour les capitales : Canberra, Ottawa ou Brasília piègent pas mal de monde. Chaque réponse est expliquée, du coup ça reste la fois suivante.",
       },
@@ -199,7 +199,7 @@ export const categoryDefs: CategoryDef[] = [
       es: {
         name: "Cine",
         description: "Harry Potter, Marvel, Star Wars, El Señor de los Anillos: ¡pon a prueba lo que recuerdas de las grandes sagas!",
-        subcategories: ["Harry Potter", "Marvel", "Star Wars", "El Senor de los Anillos"],
+        subcategories: ["Harry Potter", "Marvel", "Star Wars", "El Señor de los Anillos"],
         seoIntro: "Harry Potter, Marvel, Star Wars y El Señor de los Anillos: quizzes de cine gratis sobre las grandes sagas, con una explicación en cada respuesta.",
         seoFooter: "Si has vuelto a ver las sagas varias veces, te irá bien. Si no, la explicación debajo de cada respuesta lo compensa. Cada saga tiene su modo de juego: duelos para Marvel, ordenar las películas para Star Wars, etc.",
       },
@@ -215,21 +215,21 @@ export const categoryDefs: CategoryDef[] = [
       en: {
         name: "Video Games",
         description: "Minecraft, Pokémon, Zelda, GTA, Fortnite, League of Legends and more. Are you a real gamer?",
-        subcategories: ["Minecraft", "GTA", "Fortnite", "Call of Duty", "Pokemon", "League of Legends", "World of Warcraft", "Counter Strike", "Brawl Stars", "FIFA", "Zelda", "Roblox", "Valorant"],
+        subcategories: ["Minecraft", "GTA", "Fortnite", "Call of Duty", "Pokémon", "League of Legends", "World of Warcraft", "Counter-Strike", "Brawl Stars", "FIFA", "Zelda", "Roblox", "Valorant"],
         seoIntro: "Minecraft, Pokémon, Zelda, GTA, Fortnite, Valorant, League of Legends, etc.: free video game quizzes with an explanation under every answer.",
         seoFooter: "You don't need 500 hours in each game, but you do need to have played them. The questions cover the characters, the maps, the release dates and the records that players talk about.",
       },
       fr: {
         name: "Jeux Vidéo",
         description: "Minecraft, Pokémon, Zelda, GTA, Fortnite, League of Legends et d'autres. Es-tu un vrai gamer ?",
-        subcategories: ["Minecraft", "GTA", "Fortnite", "Call of Duty", "Pokemon", "League of Legends", "World of Warcraft", "Counter Strike", "Brawl Stars", "FIFA", "Zelda", "Roblox", "Valorant"],
+        subcategories: ["Minecraft", "GTA", "Fortnite", "Call of Duty", "Pokémon", "League of Legends", "World of Warcraft", "Counter-Strike", "Brawl Stars", "FIFA", "Zelda", "Roblox", "Valorant"],
         seoIntro: "Minecraft, Pokémon, Zelda, GTA, Fortnite, Valorant, League of Legends, etc. : des quiz de jeux vidéo gratuits, avec une explication à chaque réponse.",
         seoFooter: "Pas besoin d'avoir 500 heures sur chaque jeu, mais il faut y avoir joué. Les questions portent sur les personnages, les cartes, les dates de sortie et les records dont parlent les joueurs.",
       },
       es: {
         name: "Videojuegos",
         description: "Minecraft, Pokémon, Zelda, GTA, Fortnite, League of Legends y más. ¿Eres un verdadero gamer?",
-        subcategories: ["Minecraft", "GTA", "Fortnite", "Call of Duty", "Pokemon", "League of Legends", "World of Warcraft", "Counter Strike", "Brawl Stars", "FIFA", "Zelda", "Roblox", "Valorant"],
+        subcategories: ["Minecraft", "GTA", "Fortnite", "Call of Duty", "Pokémon", "League of Legends", "World of Warcraft", "Counter-Strike", "Brawl Stars", "FIFA", "Zelda", "Roblox", "Valorant"],
         seoIntro: "Minecraft, Pokémon, Zelda, GTA, Fortnite, Valorant, League of Legends, etc.: quizzes de videojuegos gratis, con una explicación en cada respuesta.",
         seoFooter: "No hace falta tener 500 horas en cada juego, pero sí haber jugado. Las preguntas tratan de los personajes, los mapas, las fechas de lanzamiento y los récords de los que hablan los jugadores.",
       },

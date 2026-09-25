@@ -21,7 +21,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
     fr: {
       title: "Duel Tokyo Revengers : les personnages",
       description:
-        "Dix duels sur les personnages de Tokyo Revengers : Mitsuya, Chifuyu, Baji, Mikey, Hanma, Kazutora, Hakkai, etc. Une seule bonne réponse.",
+        "Vingt duels sur les personnages de Tokyo Revengers : Mitsuya, Chifuyu, Baji, Mikey, Hanma, Kazutora, Hakkai, etc. Une seule bonne réponse.",
       questions: [
         {
           id: 1,
@@ -137,12 +137,122 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
           explanation:
             "Devant les filles. Hakkai est grand et costaud, mais il devient tout timide et ne sait plus quoi dire, sauf avec sa sœur Yuzuha.",
         },
+        {
+          id: 11,
+          question: "Quels mots Shuji Hanma a-t-il tatoués sur les mains ?",
+          answers: [
+            { id: "a", text: "« Péché » et « Châtiment »" },
+            { id: "b", text: "« Force » et « Honneur »" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "« Péché » sur la main gauche et « Châtiment » sur la droite, en kanjis. En japonais, ce sont les kanjis 罪 et 罰.",
+        },
+        {
+          id: 12,
+          question: "Pourquoi Baji se met-il à porter des lunettes à l'école ?",
+          answers: [
+            { id: "a", text: "Parce qu'il voit mal de loin" },
+            { id: "b", text: "Pour avoir l'air plus intelligent" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Baji redouble et sa mère en pleure. Mikey lui dit que les lunettes le rendraient plus malin, du coup il en porte en classe.",
+        },
+        {
+          id: 13,
+          question: "Qui réveille Mikey le matin pour aller à l'école ?",
+          answers: [
+            { id: "a", text: "Draken" },
+            { id: "b", text: "Emma" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est Draken. Mikey va surtout à l'école pour le déjeuner, et il dort pendant presque tous les cours.",
+        },
+        {
+          id: 14,
+          question: "Qui est le meilleur ami de Pah-chin ?",
+          answers: [
+            { id: "a", text: "Hakkai Shiba" },
+            { id: "b", text: "Peh-yan" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est Peh-yan, de son vrai nom Ryohei Hayashi. Il est aussi le vice-capitaine de Pah-chin dans la 3e division.",
+        },
+        {
+          id: 15,
+          question: "Quel métier Mitsuya rêve-t-il de faire ?",
+          answers: [
+            { id: "a", text: "Créateur de mode" },
+            { id: "b", text: "Cuisinier" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Mitsuya veut devenir créateur de mode, ce qui va bien avec son goût pour la couture. Dans le présent, il y arrive.",
+        },
+        {
+          id: 16,
+          question: "Quelle marque Inupi porte-t-il sur le visage ?",
+          answers: [
+            { id: "a", text: "Un tatouage de serpent" },
+            { id: "b", text: "Une cicatrice de brûlure" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Une cicatrice de brûlure sur le visage. Seishu Inui, dit Inupi, est un ancien du Black Dragon.",
+        },
+        {
+          id: 17,
+          question: "Quel quartier de Tokyo les frères Haitani contrôlent-ils ?",
+          answers: [
+            { id: "a", text: "Roppongi" },
+            { id: "b", text: "Shinjuku" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Roppongi. Ran et Rindo Haitani y font la loi à deux, sans avoir besoin d'un gang, avant de rejoindre Tenjiku.",
+        },
+        {
+          id: 18,
+          question: "Quel accessoire Tetta Kisaki porte-t-il toujours sur le visage ?",
+          answers: [
+            { id: "a", text: "Un cache-œil" },
+            { id: "b", text: "Des lunettes" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Des lunettes. Kisaki a aussi une boucle d'oreille à l'oreille gauche et les cheveux teints en blond.",
+        },
+        {
+          id: 19,
+          question: "Qui prend la tête de la 11e génération du Black Dragon ?",
+          answers: [
+            { id: "a", text: "Inupi" },
+            { id: "b", text: "Takemichi" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est Takemichi. Après la défaite de la 10e génération contre le Toman, le Black Dragon passe sous la 1re division, celle de Takemichi. Inupi, lui, avait relancé la 10e génération.",
+        },
+        {
+          id: 20,
+          question: "Que fait Mikey pendant les cours ?",
+          answers: [
+            { id: "a", text: "Il dessine des motos" },
+            { id: "b", text: "Il dort" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Il dort, presque tout le temps. Mikey dit qu'il se « recharge », et il fait pareil à la pause de midi.",
+        },
       ],
     },
     en: {
       title: "Tokyo Revengers duel: the characters",
       description:
-        "Ten duels on the Tokyo Revengers characters: Mitsuya, Chifuyu, Baji, Mikey, Hanma, Kazutora, Hakkai and more. Only one right answer.",
+        "Twenty duels on the Tokyo Revengers characters: Mitsuya, Chifuyu, Baji, Mikey, Hanma, Kazutora, Hakkai and more. Only one right answer.",
       questions: [
         {
           id: 1,
@@ -258,12 +368,122 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
           explanation:
             "Girls. Hakkai is tall and tough, but around girls he goes shy and doesn't know what to say, except with his sister Yuzuha.",
         },
+        {
+          id: 11,
+          question: "What words does Shuji Hanma have tattooed on his hands?",
+          answers: [
+            { id: "a", text: "\"Sin\" and \"Punishment\"" },
+            { id: "b", text: "\"Strength\" and \"Honor\"" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "\"Sin\" on his left hand and \"Punishment\" on his right, in kanji. In Japanese, those are the kanji 罪 and 罰.",
+        },
+        {
+          id: 12,
+          question: "Why does Baji start wearing glasses at school?",
+          answers: [
+            { id: "a", text: "Because he can't see far" },
+            { id: "b", text: "To look smarter" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Baji has to repeat a year and his mom cries about it. Mikey tells him glasses would make him smarter, so he wears some in class.",
+        },
+        {
+          id: 13,
+          question: "Who wakes Mikey up in the morning to go to school?",
+          answers: [
+            { id: "a", text: "Draken" },
+            { id: "b", text: "Emma" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Draken. Mikey mostly goes to school for lunch, and he sleeps through nearly every class.",
+        },
+        {
+          id: 14,
+          question: "Who is Pah-chin's best friend?",
+          answers: [
+            { id: "a", text: "Hakkai Shiba" },
+            { id: "b", text: "Peh-yan" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Peh-yan, whose real name is Ryohei Hayashi. He's also Pah-chin's vice-captain in the 3rd Division.",
+        },
+        {
+          id: 15,
+          question: "What job does Mitsuya dream of?",
+          answers: [
+            { id: "a", text: "Fashion designer" },
+            { id: "b", text: "Chef" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Mitsuya wants to be a fashion designer, which fits his love of sewing. In the present, he makes it.",
+        },
+        {
+          id: 16,
+          question: "What mark does Inupi have on his face?",
+          answers: [
+            { id: "a", text: "A snake tattoo" },
+            { id: "b", text: "A burn scar" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A burn scar on his face. Seishu Inui, known as Inupi, is a former Black Dragon member.",
+        },
+        {
+          id: 17,
+          question: "Which part of Tokyo do the Haitani brothers control?",
+          answers: [
+            { id: "a", text: "Roppongi" },
+            { id: "b", text: "Shinjuku" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Roppongi. Ran and Rindo Haitani run the area on their own, no gang needed, before they join Tenjiku.",
+        },
+        {
+          id: 18,
+          question: "What does Tetta Kisaki always wear on his face?",
+          answers: [
+            { id: "a", text: "An eye patch" },
+            { id: "b", text: "Glasses" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Glasses. Kisaki also has an earring in his left ear and dyed blond hair.",
+        },
+        {
+          id: 19,
+          question: "Who ends up leading the 11th generation of the Black Dragons?",
+          answers: [
+            { id: "a", text: "Inupi" },
+            { id: "b", text: "Takemichi" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Takemichi. After the 10th generation loses to the Toman, the Black Dragons come under the 1st Division, which is Takemichi's. Inupi had been the one to revive the 10th generation.",
+        },
+        {
+          id: 20,
+          question: "What does Mikey do during class?",
+          answers: [
+            { id: "a", text: "He draws motorcycles" },
+            { id: "b", text: "He sleeps" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "He sleeps, pretty much the whole time. Mikey calls it \"charging\", and he does the same at lunch break.",
+        },
       ],
     },
     es: {
       title: "Duelo Tokyo Revengers: los personajes",
       description:
-        "Diez duelos sobre los personajes de Tokyo Revengers: Mitsuya, Chifuyu, Baji, Mikey, Hanma, Kazutora, Hakkai, etc. Solo una respuesta vale.",
+        "Veinte duelos sobre los personajes de Tokyo Revengers: Mitsuya, Chifuyu, Baji, Mikey, Hanma, Kazutora, Hakkai, etc. Solo una respuesta vale.",
       questions: [
         {
           id: 1,
@@ -378,6 +598,116 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Delante de las chicas. Hakkai es alto y fuerte, pero con ellas se vuelve tímido y no sabe qué decir, salvo con su hermana Yuzuha.",
+        },
+        {
+          id: 11,
+          question: "¿Qué palabras lleva Shuji Hanma tatuadas en las manos?",
+          answers: [
+            { id: "a", text: "«Pecado» y «Castigo»" },
+            { id: "b", text: "«Fuerza» y «Honor»" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "«Pecado» en la mano izquierda y «Castigo» en la derecha, en kanji. En japonés, son los kanji 罪 y 罰.",
+        },
+        {
+          id: 12,
+          question: "¿Por qué empieza Baji a llevar gafas en el colegio?",
+          answers: [
+            { id: "a", text: "Porque no ve bien de lejos" },
+            { id: "b", text: "Para parecer más listo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Baji repite curso y su madre llora por eso. Mikey le dice que con gafas sería más listo, así que se las pone en clase.",
+        },
+        {
+          id: 13,
+          question: "¿Quién despierta a Mikey por la mañana para ir al colegio?",
+          answers: [
+            { id: "a", text: "Draken" },
+            { id: "b", text: "Emma" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Draken. Mikey va al colegio sobre todo por la comida, y se duerme en casi todas las clases.",
+        },
+        {
+          id: 14,
+          question: "¿Quién es el mejor amigo de Pah-chin?",
+          answers: [
+            { id: "a", text: "Hakkai Shiba" },
+            { id: "b", text: "Peh-yan" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Peh-yan, que en realidad se llama Ryohei Hayashi. También es el vicecapitán de Pah-chin en la 3.ª división.",
+        },
+        {
+          id: 15,
+          question: "¿A qué sueña con dedicarse Mitsuya?",
+          answers: [
+            { id: "a", text: "Al diseño de moda" },
+            { id: "b", text: "A la cocina" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Mitsuya quiere ser diseñador de moda, algo que encaja con lo mucho que le gusta coser. En el presente, lo consigue.",
+        },
+        {
+          id: 16,
+          question: "¿Qué marca tiene Inupi en la cara?",
+          answers: [
+            { id: "a", text: "Un tatuaje de serpiente" },
+            { id: "b", text: "Una cicatriz de quemadura" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Una cicatriz de quemadura en la cara. Seishu Inui, alias Inupi, es un antiguo miembro de los Black Dragon.",
+        },
+        {
+          id: 17,
+          question: "¿Qué barrio de Tokio controlan los hermanos Haitani?",
+          answers: [
+            { id: "a", text: "Roppongi" },
+            { id: "b", text: "Shinjuku" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Roppongi. Ran y Rindo Haitani mandan allí los dos solos, sin banda, antes de unirse a Tenjiku.",
+        },
+        {
+          id: 18,
+          question: "¿Qué lleva siempre Tetta Kisaki en la cara?",
+          answers: [
+            { id: "a", text: "Un parche en el ojo" },
+            { id: "b", text: "Gafas" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Gafas. Kisaki también lleva un pendiente en la oreja izquierda y el pelo teñido de rubio.",
+        },
+        {
+          id: 19,
+          question: "¿Quién se pone al frente de la 11.ª generación de los Black Dragon?",
+          answers: [
+            { id: "a", text: "Inupi" },
+            { id: "b", text: "Takemichi" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Takemichi. Cuando la 10.ª generación pierde contra el Toman, los Black Dragon pasan a depender de la 1.ª división, la de Takemichi. Inupi, por su parte, había refundado la 10.ª generación.",
+        },
+        {
+          id: 20,
+          question: "¿Qué hace Mikey durante las clases?",
+          answers: [
+            { id: "a", text: "Dibuja motos" },
+            { id: "b", text: "Duerme" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Duerme, casi todo el tiempo. Mikey dice que se está «recargando», y hace lo mismo en el recreo de mediodía.",
         },
       ],
     },

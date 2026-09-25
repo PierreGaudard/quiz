@@ -386,7 +386,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                 {tt("share")}
               </button>
             </div>
-            <QuizSocialBlock quizSlug={quiz.slug} userScore={totalPoints} totalQuestions={maxPossiblePoints} locale={locale} />
+            <QuizSocialBlock quizSlug={quiz.slug} userScore={totalPoints} totalQuestions={maxPossiblePoints} locale={locale} progress={{ correct: results.filter((r) => r.points === MAX_POINTS_PER_QUESTION).length, total: totalQuestions, title: quiz.title, image: quiz.coverImage || null, path: quiz.path || null }} />
           </div>
         </div>
       </div>

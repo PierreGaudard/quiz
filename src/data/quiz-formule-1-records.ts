@@ -23,7 +23,7 @@ export const quizFormule1Records: TranslatedQuiz = {
     fr: {
       title: "Estimation : les records de la Formule 1",
       description:
-        "Dix chiffres à trouver sur la F1 : l'âge de Verstappen à sa première victoire, les tours de Monaco, les titres de Ferrari, etc.",
+        "Vingt chiffres à trouver sur la F1 : l'âge de Verstappen à sa première victoire, les tours de Monaco, les titres de Ferrari, etc.",
       questions: [
         {
           id: 1,
@@ -119,12 +119,102 @@ export const quizFormule1Records: TranslatedQuiz = {
           explanation:
             "En 1994, le 1er mai, sur le circuit d'Imola. La veille, le pilote autrichien Roland Ratzenberger s'était tué aux qualifications. Ce week-end a changé les règles de sécurité en F1.",
         },
+        {
+          id: 11,
+          question: "Combien de Grands Prix Ayrton Senna a-t-il gagnés dans sa carrière ?",
+          answers: [],
+          correctAnswer: "41",
+          correctValue: 41,
+          explanation:
+            "41, entre 1985 et 1994, avec Lotus puis McLaren. Il a aussi réussi 65 pole positions.",
+        },
+        {
+          id: 12,
+          question: "Combien de titres de champion du monde Alain Prost a-t-il gagnés ?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Quatre : en 1985, 1986 et 1989 avec McLaren, puis en 1993 avec Williams. C'est toujours le seul Français champion du monde de F1.",
+        },
+        {
+          id: 13,
+          question: "Quel âge avait Sebastian Vettel quand il a gagné son premier titre mondial, en 2010 ?",
+          answers: [],
+          correctAnswer: "23",
+          correctValue: 23,
+          explanation:
+            "23 ans. Il a été sacré à Abu Dhabi, lors de la dernière course de la saison, et il a ensuite gagné les trois titres suivants.",
+        },
+        {
+          id: 14,
+          question: "Quel âge avait Luigi Fagioli, le plus vieux vainqueur d'un Grand Prix de F1, en 1951 ?",
+          answers: [],
+          correctAnswer: "53",
+          correctValue: 53,
+          explanation:
+            "53 ans. Il a gagné le Grand Prix de France 1951 en partageant sa voiture avec Juan Manuel Fangio, ce qui était permis à l'époque.",
+        },
+        {
+          id: 15,
+          question: "En quelle année s'est couru le tout premier Grand Prix de Monaco ?",
+          answers: [],
+          correctAnswer: "1929",
+          correctValue: 1929,
+          explanation:
+            "En 1929, bien avant la création du championnat du monde de F1 en 1950. Le vainqueur était William Grover-Williams, sur une Bugatti.",
+        },
+        {
+          id: 16,
+          question: "Combien de titres de champion du monde des constructeurs McLaren avait-elle gagnés à la fin de la saison 2025 ?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "Dix. Le premier en 1974, les derniers en 2024 et 2025. Seule Ferrari en a plus.",
+        },
+        {
+          id: 17,
+          question: "Combien de Grands Prix Michael Schumacher a-t-il gagnés pendant la saison 2004 ?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13 sur 18. C'était le record de victoires sur une saison, égalé par Vettel en 2013 et battu par Verstappen en 2022.",
+        },
+        {
+          id: 18,
+          question: "Combien de fois Ayrton Senna a-t-il gagné le Grand Prix de Monaco, un record ?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Six fois : en 1987, puis cinq années de suite, de 1989 à 1993. Graham Hill, surnommé « Monsieur Monaco », l'avait gagné cinq fois.",
+        },
+        {
+          id: 19,
+          question: "Combien de tours compte le Grand Prix d'Italie, à Monza ?",
+          answers: [],
+          correctAnswer: "53",
+          correctValue: 53,
+          explanation:
+            "53 tours d'un circuit de 5,793 km. Comme Monza est très rapide, c'est souvent l'un des Grands Prix les plus courts en temps.",
+        },
+        {
+          id: 20,
+          question: "En quelle année le championnat du monde des constructeurs a-t-il été créé ?",
+          answers: [],
+          correctAnswer: "1958",
+          correctValue: 1958,
+          explanation:
+            "En 1958, huit ans après celui des pilotes. Le premier titre est allé à l'écurie britannique Vanwall.",
+        },
       ],
     },
     en: {
       title: "Estimation: Formula 1 records",
       description:
-        "Ten F1 numbers to guess: Verstappen's age at his first win, the laps of Monaco, Ferrari's titles and a few more.",
+        "Twenty F1 numbers to guess: Verstappen's age at his first win, the laps of Monaco, Ferrari's titles and a few more.",
       questions: [
         {
           id: 1,
@@ -220,12 +310,102 @@ export const quizFormule1Records: TranslatedQuiz = {
           explanation:
             "In 1994, on May 1, at Imola. The day before, Austrian driver Roland Ratzenberger had been killed in qualifying. That weekend changed F1's safety rules.",
         },
+        {
+          id: 11,
+          question: "How many Grands Prix did Ayrton Senna win in his career?",
+          answers: [],
+          correctAnswer: "41",
+          correctValue: 41,
+          explanation:
+            "41, between 1985 and 1994, with Lotus and then McLaren. He also took 65 pole positions.",
+        },
+        {
+          id: 12,
+          question: "How many world titles did Alain Prost win?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Four: 1985, 1986 and 1989 with McLaren, then 1993 with Williams. He is still the only French F1 world champion.",
+        },
+        {
+          id: 13,
+          question: "How old was Sebastian Vettel when he won his first world title, in 2010?",
+          answers: [],
+          correctAnswer: "23",
+          correctValue: 23,
+          explanation:
+            "23. He clinched it in Abu Dhabi at the last race of the season, then won the next three titles as well.",
+        },
+        {
+          id: 14,
+          question: "How old was Luigi Fagioli, the oldest winner of an F1 Grand Prix, in 1951?",
+          answers: [],
+          correctAnswer: "53",
+          correctValue: 53,
+          explanation:
+            "53. He won the 1951 French Grand Prix sharing his car with Juan Manuel Fangio, which was allowed back then.",
+        },
+        {
+          id: 15,
+          question: "In which year was the very first Monaco Grand Prix held?",
+          answers: [],
+          correctAnswer: "1929",
+          correctValue: 1929,
+          explanation:
+            "In 1929, long before the F1 world championship began in 1950. It was won by William Grover-Williams in a Bugatti.",
+        },
+        {
+          id: 16,
+          question: "How many constructors' world titles had McLaren won by the end of the 2025 season?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "Ten. The first came in 1974 and the latest in 2024 and 2025. Only Ferrari has more.",
+        },
+        {
+          id: 17,
+          question: "How many Grands Prix did Michael Schumacher win in the 2004 season?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13 out of 18. It was the record for wins in a season, matched by Vettel in 2013 and beaten by Verstappen in 2022.",
+        },
+        {
+          id: 18,
+          question: "How many times did Ayrton Senna win the Monaco Grand Prix, a record?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Six times: in 1987, then five years in a row from 1989 to 1993. Graham Hill, known as Mr Monaco, had won it five times.",
+        },
+        {
+          id: 19,
+          question: "How many laps is the Italian Grand Prix at Monza?",
+          answers: [],
+          correctAnswer: "53",
+          correctValue: 53,
+          explanation:
+            "53 laps of a 5.793 km track. Monza is so fast that it is often one of the shortest races of the year in time.",
+        },
+        {
+          id: 20,
+          question: "In which year was the constructors' world championship created?",
+          answers: [],
+          correctAnswer: "1958",
+          correctValue: 1958,
+          explanation:
+            "In 1958, eight years after the drivers' title. The first one went to the British team Vanwall.",
+        },
       ],
     },
     es: {
       title: "Estimación: los récords de la Fórmula 1",
       description:
-        "Diez cifras de la F1 para adivinar: la edad de Verstappen en su primera victoria, las vueltas de Mónaco, los títulos de Ferrari y más.",
+        "Veinte cifras de la F1 para adivinar: la edad de Verstappen en su primera victoria, las vueltas de Mónaco, los títulos de Ferrari y más.",
       questions: [
         {
           id: 1,
@@ -320,6 +500,96 @@ export const quizFormule1Records: TranslatedQuiz = {
           correctValue: 1994,
           explanation:
             "En 1994, el 1 de mayo, en Imola. El día anterior, el piloto austriaco Roland Ratzenberger había muerto en la clasificación. Aquel fin de semana cambió las normas de seguridad de la F1.",
+        },
+        {
+          id: 11,
+          question: "¿Cuántos Grandes Premios ganó Ayrton Senna en su carrera?",
+          answers: [],
+          correctAnswer: "41",
+          correctValue: 41,
+          explanation:
+            "41, entre 1985 y 1994, con Lotus y luego con McLaren. También logró 65 poles.",
+        },
+        {
+          id: 12,
+          question: "¿Cuántos títulos de campeón del mundo ganó Alain Prost?",
+          answers: [],
+          correctAnswer: "4",
+          correctValue: 4,
+          explanation:
+            "Cuatro: en 1985, 1986 y 1989 con McLaren, y en 1993 con Williams. Sigue siendo el único francés campeón del mundo de F1.",
+        },
+        {
+          id: 13,
+          question: "¿Qué edad tenía Sebastian Vettel cuando ganó su primer título mundial, en 2010?",
+          answers: [],
+          correctAnswer: "23",
+          correctValue: 23,
+          explanation:
+            "23 años. Lo logró en Abu Dabi, en la última carrera del año, y después ganó también los tres títulos siguientes.",
+        },
+        {
+          id: 14,
+          question: "¿Qué edad tenía Luigi Fagioli, el ganador más veterano de un Gran Premio de F1, en 1951?",
+          answers: [],
+          correctAnswer: "53",
+          correctValue: 53,
+          explanation:
+            "53 años. Ganó el Gran Premio de Francia de 1951 compartiendo el coche con Juan Manuel Fangio, algo que entonces estaba permitido.",
+        },
+        {
+          id: 15,
+          question: "¿En qué año se corrió el primer Gran Premio de Mónaco?",
+          answers: [],
+          correctAnswer: "1929",
+          correctValue: 1929,
+          explanation:
+            "En 1929, mucho antes de que naciera el campeonato del mundo de F1 en 1950. Lo ganó William Grover-Williams con un Bugatti.",
+        },
+        {
+          id: 16,
+          question: "¿Cuántos títulos de campeón del mundo de constructores tenía McLaren al acabar la temporada 2025?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "Diez. El primero en 1974 y los últimos en 2024 y 2025. Solo Ferrari tiene más.",
+        },
+        {
+          id: 17,
+          question: "¿Cuántos Grandes Premios ganó Michael Schumacher en la temporada 2004?",
+          answers: [],
+          correctAnswer: "13",
+          correctValue: 13,
+          explanation:
+            "13 de 18. Era el récord de victorias en una temporada, igualado por Vettel en 2013 y superado por Verstappen en 2022.",
+        },
+        {
+          id: 18,
+          question: "¿Cuántas veces ganó Ayrton Senna el Gran Premio de Mónaco, un récord?",
+          answers: [],
+          correctAnswer: "6",
+          correctValue: 6,
+          explanation:
+            "Seis veces: en 1987 y luego cinco años seguidos, de 1989 a 1993. Graham Hill, al que llamaban « Mister Mónaco », lo había ganado cinco veces.",
+        },
+        {
+          id: 19,
+          question: "¿Cuántas vueltas tiene el Gran Premio de Italia, en Monza?",
+          answers: [],
+          correctAnswer: "53",
+          correctValue: 53,
+          explanation:
+            "53 vueltas a un circuito de 5,793 km. Como Monza es tan rápido, suele ser una de las carreras más cortas del año en tiempo.",
+        },
+        {
+          id: 20,
+          question: "¿En qué año se creó el campeonato del mundo de constructores?",
+          answers: [],
+          correctAnswer: "1958",
+          correctValue: 1958,
+          explanation:
+            "En 1958, ocho años después del de pilotos. El primer título fue para la escudería británica Vanwall.",
         },
       ],
     },

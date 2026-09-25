@@ -21,7 +21,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
     fr: {
       title: "Quiz peinture : les grands mouvements",
       description:
-        "Cubisme, pop art, surréalisme, fauvisme… Dix questions pour relier les peintres et leurs tableaux au bon mouvement artistique.",
+        "Cubisme, pop art, surréalisme, fauvisme… Vingt questions pour relier les peintres et leurs tableaux au bon mouvement artistique.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizPeintureMouvements: TranslatedQuiz = {
           explanation:
             "La Sécession viennoise, qu'il fonde en 1897. C'est la version autrichienne de l'Art nouveau, et Le Baiser est connu pour ses feuilles d'or.",
         },
+        {
+          id: 11,
+          question: "De quel mouvement fait partie Banksy, qui peint ses œuvres sur les murs des villes ?",
+          answers: [
+            { id: "a", text: "Le street art" },
+            { id: "b", text: "L'art naïf" },
+            { id: "c", text: "L'hyperréalisme" },
+            { id: "d", text: "L'art cinétique" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le street art, l'art de rue. Banksy, dont on ne connaît toujours pas officiellement l'identité, a commencé à Bristol, en Angleterre, dans les années 1990.",
+        },
+        {
+          id: 12,
+          question: "Comment s'appelle la technique de Léonard de Vinci qui estompe les contours, comme sur le sourire de La Joconde ?",
+          answers: [
+            { id: "a", text: "Le clair-obscur" },
+            { id: "b", text: "Le trompe-l'œil" },
+            { id: "c", text: "Le sfumato" },
+            { id: "d", text: "La grisaille" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le sfumato, un mot italien qui veut dire « enfumé ». Léonard posait des couches de peinture très fines pour que les passages entre l'ombre et la lumière ne se voient pas.",
+        },
+        {
+          id: 13,
+          question: "Le Caravage est célèbre pour ses contrastes très forts entre ombre et lumière. Comment appelle-t-on ce procédé ?",
+          answers: [
+            { id: "a", text: "Le sfumato" },
+            { id: "b", text: "Le clair-obscur" },
+            { id: "c", text: "Le pointillisme" },
+            { id: "d", text: "Le glacis" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le clair-obscur. Chez le Caravage, les personnages sortent d'un fond presque noir, comme éclairés par un projecteur. On parle aussi de ténébrisme pour les peintres qui l'ont imité.",
+        },
+        {
+          id: 14,
+          question: "Marcel Duchamp a exposé un urinoir sous le titre Fontaine, en 1917. À quel mouvement le rattache-t-on ?",
+          answers: [
+            { id: "a", text: "Le cubisme" },
+            { id: "b", text: "Le futurisme" },
+            { id: "c", text: "Le pop art" },
+            { id: "d", text: "Le dadaïsme" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Le dadaïsme, ou Dada. Né à Zurich en 1916, en pleine Première Guerre mondiale, ce mouvement se moquait des règles de l'art et de la société.",
+        },
+        {
+          id: 15,
+          question: "Quel mouvement de la fin du XIXe siècle est connu pour ses lignes courbes et ses motifs de fleurs, comme les affiches d'Alfons Mucha ?",
+          answers: [
+            { id: "a", text: "L'Art nouveau" },
+            { id: "b", text: "L'Art déco" },
+            { id: "c", text: "Le baroque" },
+            { id: "d", text: "Le symbolisme" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "L'Art nouveau. On le retrouve aussi dans l'architecture et les objets, par exemple sur les entrées du métro parisien dessinées par Hector Guimard. L'Art déco, plus géométrique, arrive après, dans les années 1920.",
+        },
+        {
+          id: 16,
+          question: "Vassily Kandinsky est considéré comme l'un des premiers peintres de quel type de peinture ?",
+          answers: [
+            { id: "a", text: "La peinture d'histoire" },
+            { id: "b", text: "L'art naïf" },
+            { id: "c", text: "L'art abstrait" },
+            { id: "d", text: "Le réalisme" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "L'art abstrait. Vers 1910, Kandinsky peint des tableaux qui ne représentent plus rien de reconnaissable, seulement des formes et des couleurs. Il comparait d'ailleurs la peinture à la musique.",
+        },
+        {
+          id: 17,
+          question: "Quel mouvement italien, lancé par un manifeste en 1909, célébrait la vitesse, les machines et la ville moderne ?",
+          answers: [
+            { id: "a", text: "Le dadaïsme" },
+            { id: "b", text: "Le futurisme" },
+            { id: "c", text: "Le constructivisme" },
+            { id: "d", text: "Le vérisme" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le futurisme. Le poète Filippo Tommaso Marinetti publie son manifeste dans le journal Le Figaro, à Paris, en février 1909. Des peintres comme Umberto Boccioni le suivent.",
+        },
+        {
+          id: 18,
+          question: "Piet Mondrian, avec ses lignes noires et ses carrés rouges, jaunes et bleus, est une figure de quel mouvement ?",
+          answers: [
+            { id: "a", text: "Le suprématisme" },
+            { id: "b", text: "L'op art" },
+            { id: "c", text: "Le fauvisme" },
+            { id: "d", text: "De Stijl" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "De Stijl, « le style » en néerlandais, fondé aux Pays-Bas en 1917. Mondrian appelait sa manière de peindre le néoplasticisme.",
+        },
+        {
+          id: 19,
+          question: "Jacques-Louis David, le peintre du Serment des Horaces, est le maître de quel mouvement ?",
+          answers: [
+            { id: "a", text: "Le néoclassicisme" },
+            { id: "b", text: "Le rococo" },
+            { id: "c", text: "Le romantisme" },
+            { id: "d", text: "Le maniérisme" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le néoclassicisme, qui s'inspire de l'Antiquité grecque et romaine. Le Serment des Horaces date de 1784, quelques années avant la Révolution française.",
+        },
+        {
+          id: 20,
+          question: "Pierre Paul Rubens, le peintre flamand du XVIIe siècle, est un grand maître de quel style ?",
+          answers: [
+            { id: "a", text: "Le gothique" },
+            { id: "b", text: "Le néoclassicisme" },
+            { id: "c", text: "Le baroque" },
+            { id: "d", text: "L'impressionnisme" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le baroque, un style plein de mouvement, de couleurs et de mise en scène. Les femmes aux formes généreuses de ses tableaux ont d'ailleurs donné l'adjectif « rubénien ».",
+        },
       ],
     },
     en: {
       title: "Painting quiz: the great art movements",
       description:
-        "Cubism, Pop Art, Surrealism, Fauvism... Ten questions to match painters and their works with the right art movement.",
+        "Cubism, Pop Art, Surrealism, Fauvism... Twenty questions to match painters and their works with the right art movement.",
       questions: [
         {
           id: 1,
@@ -300,12 +430,142 @@ export const quizPeintureMouvements: TranslatedQuiz = {
           explanation:
             "The Vienna Secession, which he founded in 1897. It's the Austrian take on Art Nouveau, and The Kiss is famous for its gold leaf.",
         },
+        {
+          id: 11,
+          question: "Which movement does Banksy, who paints his works on city walls, belong to?",
+          answers: [
+            { id: "a", text: "Street art" },
+            { id: "b", text: "Naive art" },
+            { id: "c", text: "Hyperrealism" },
+            { id: "d", text: "Kinetic art" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Street art. Banksy, whose identity has still never been officially confirmed, started out in Bristol, England, in the 1990s.",
+        },
+        {
+          id: 12,
+          question: "What's the name of Leonardo da Vinci's technique for softening outlines, as on the Mona Lisa's smile?",
+          answers: [
+            { id: "a", text: "Chiaroscuro" },
+            { id: "b", text: "Trompe-l'œil" },
+            { id: "c", text: "Sfumato" },
+            { id: "d", text: "Grisaille" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Sfumato, an Italian word meaning \"smoky\". Leonardo laid down very thin layers of paint so you can't see where shadow turns into light.",
+        },
+        {
+          id: 13,
+          question: "Caravaggio is famous for very strong contrasts between light and shadow. What is this called?",
+          answers: [
+            { id: "a", text: "Sfumato" },
+            { id: "b", text: "Chiaroscuro" },
+            { id: "c", text: "Pointillism" },
+            { id: "d", text: "Glazing" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Chiaroscuro. In Caravaggio's paintings, the figures come out of an almost black background, as if lit by a spotlight. The painters who copied him are sometimes called tenebrists.",
+        },
+        {
+          id: 14,
+          question: "In 1917 Marcel Duchamp exhibited a urinal under the title Fountain. Which movement is he linked to?",
+          answers: [
+            { id: "a", text: "Cubism" },
+            { id: "b", text: "Futurism" },
+            { id: "c", text: "Pop Art" },
+            { id: "d", text: "Dada" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Dada. Born in Zurich in 1916, in the middle of the First World War, the movement made fun of the rules of art and of society.",
+        },
+        {
+          id: 15,
+          question: "Which late 19th-century movement is known for curving lines and flower patterns, like Alphonse Mucha's posters?",
+          answers: [
+            { id: "a", text: "Art Nouveau" },
+            { id: "b", text: "Art Deco" },
+            { id: "c", text: "Baroque" },
+            { id: "d", text: "Symbolism" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Art Nouveau. You can see it in buildings and objects too, like the Paris metro entrances designed by Hector Guimard. Art Deco, which is more geometric, came later, in the 1920s.",
+        },
+        {
+          id: 16,
+          question: "Wassily Kandinsky is seen as one of the first painters of which kind of art?",
+          answers: [
+            { id: "a", text: "History painting" },
+            { id: "b", text: "Naive art" },
+            { id: "c", text: "Abstract art" },
+            { id: "d", text: "Realism" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Abstract art. Around 1910, Kandinsky started painting pictures that no longer showed anything recognisable, just shapes and colours. He liked to compare painting to music.",
+        },
+        {
+          id: 17,
+          question: "Which Italian movement, launched with a manifesto in 1909, celebrated speed, machines and the modern city?",
+          answers: [
+            { id: "a", text: "Dada" },
+            { id: "b", text: "Futurism" },
+            { id: "c", text: "Constructivism" },
+            { id: "d", text: "Verismo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Futurism. The poet Filippo Tommaso Marinetti published its manifesto in the Paris newspaper Le Figaro in February 1909, and painters like Umberto Boccioni followed him.",
+        },
+        {
+          id: 18,
+          question: "Piet Mondrian, with his black lines and red, yellow and blue squares, is a key figure of which movement?",
+          answers: [
+            { id: "a", text: "Suprematism" },
+            { id: "b", text: "Op Art" },
+            { id: "c", text: "Fauvism" },
+            { id: "d", text: "De Stijl" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "De Stijl, Dutch for \"the style\", founded in the Netherlands in 1917. Mondrian called his own way of painting Neoplasticism.",
+        },
+        {
+          id: 19,
+          question: "Jacques-Louis David, who painted The Oath of the Horatii, is the leading figure of which movement?",
+          answers: [
+            { id: "a", text: "Neoclassicism" },
+            { id: "b", text: "Rococo" },
+            { id: "c", text: "Romanticism" },
+            { id: "d", text: "Mannerism" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Neoclassicism, which drew on ancient Greece and Rome. The Oath of the Horatii dates from 1784, a few years before the French Revolution.",
+        },
+        {
+          id: 20,
+          question: "Peter Paul Rubens, the 17th-century Flemish painter, is a great master of which style?",
+          answers: [
+            { id: "a", text: "Gothic" },
+            { id: "b", text: "Neoclassicism" },
+            { id: "c", text: "Baroque" },
+            { id: "d", text: "Impressionism" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Baroque, a style full of movement, colour and drama. The full-figured women in his paintings even gave English the word \"Rubenesque\".",
+        },
       ],
     },
     es: {
       title: "Quiz de pintura: los grandes movimientos",
       description:
-        "Cubismo, pop art, surrealismo, fauvismo... Diez preguntas para unir a los pintores y sus cuadros con el movimiento artístico correcto.",
+        "Cubismo, pop art, surrealismo, fauvismo... Veinte preguntas para unir a los pintores y sus cuadros con el movimiento artístico correcto.",
       questions: [
         {
           id: 1,
@@ -441,6 +701,136 @@ export const quizPeintureMouvements: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "La Secesión de Viena, que fundó en 1897. Es la versión austriaca del modernismo, y El beso es famoso por su pan de oro.",
+        },
+        {
+          id: 11,
+          question: "¿A qué movimiento pertenece Banksy, que pinta sus obras en las paredes de las ciudades?",
+          answers: [
+            { id: "a", text: "El arte urbano" },
+            { id: "b", text: "El arte naíf" },
+            { id: "c", text: "El hiperrealismo" },
+            { id: "d", text: "El arte cinético" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Al arte urbano o street art. Banksy, cuya identidad nunca se ha confirmado oficialmente, empezó en Bristol, Inglaterra, en los años noventa.",
+        },
+        {
+          id: 12,
+          question: "¿Cómo se llama la técnica de Leonardo da Vinci que difumina los contornos, como en la sonrisa de la Gioconda?",
+          answers: [
+            { id: "a", text: "El claroscuro" },
+            { id: "b", text: "El trampantojo" },
+            { id: "c", text: "El sfumato" },
+            { id: "d", text: "La grisalla" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El sfumato, una palabra italiana que significa «ahumado». Leonardo aplicaba capas de pintura muy finas para que no se notara el paso de la sombra a la luz.",
+        },
+        {
+          id: 13,
+          question: "Caravaggio es famoso por sus contrastes muy fuertes entre luz y sombra. ¿Cómo se llama ese recurso?",
+          answers: [
+            { id: "a", text: "El sfumato" },
+            { id: "b", text: "El claroscuro" },
+            { id: "c", text: "El puntillismo" },
+            { id: "d", text: "La veladura" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El claroscuro. En Caravaggio, los personajes salen de un fondo casi negro, como iluminados por un foco. A los pintores que lo imitaron se les llama tenebristas.",
+        },
+        {
+          id: 14,
+          question: "En 1917, Marcel Duchamp expuso un urinario con el título Fuente. ¿A qué movimiento se le asocia?",
+          answers: [
+            { id: "a", text: "El cubismo" },
+            { id: "b", text: "El futurismo" },
+            { id: "c", text: "El pop art" },
+            { id: "d", text: "El dadaísmo" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Al dadaísmo, o Dadá. Nacido en Zúrich en 1916, en plena Primera Guerra Mundial, el movimiento se burlaba de las reglas del arte y de la sociedad.",
+        },
+        {
+          id: 15,
+          question: "¿Qué movimiento de finales del siglo XIX es conocido por sus líneas curvas y sus motivos florales, como los carteles de Alfons Mucha?",
+          answers: [
+            { id: "a", text: "El art nouveau" },
+            { id: "b", text: "El art déco" },
+            { id: "c", text: "El barroco" },
+            { id: "d", text: "El simbolismo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El art nouveau, que en España se llamó modernismo. También se ve en edificios y objetos, como las entradas del metro de París de Hector Guimard. El art déco, más geométrico, llega después, en los años veinte.",
+        },
+        {
+          id: 16,
+          question: "¿De qué tipo de arte se considera a Vasili Kandinski uno de los primeros pintores?",
+          answers: [
+            { id: "a", text: "La pintura de historia" },
+            { id: "b", text: "El arte naíf" },
+            { id: "c", text: "El arte abstracto" },
+            { id: "d", text: "El realismo" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El arte abstracto. Hacia 1910, Kandinski pinta cuadros que ya no representan nada reconocible, solo formas y colores. Le gustaba comparar la pintura con la música.",
+        },
+        {
+          id: 17,
+          question: "¿Qué movimiento italiano, lanzado con un manifiesto en 1909, celebraba la velocidad, las máquinas y la ciudad moderna?",
+          answers: [
+            { id: "a", text: "El dadaísmo" },
+            { id: "b", text: "El futurismo" },
+            { id: "c", text: "El constructivismo" },
+            { id: "d", text: "El verismo" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "El futurismo. El poeta Filippo Tommaso Marinetti publica su manifiesto en el diario parisino Le Figaro en febrero de 1909, y pintores como Umberto Boccioni lo siguen.",
+        },
+        {
+          id: 18,
+          question: "Piet Mondrian pintaba líneas negras y cuadrados rojos, amarillos y azules. ¿De qué movimiento es una figura clave?",
+          answers: [
+            { id: "a", text: "El suprematismo" },
+            { id: "b", text: "El op art" },
+            { id: "c", text: "El fauvismo" },
+            { id: "d", text: "De Stijl" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "De Stijl, «el estilo» en neerlandés, fundado en los Países Bajos en 1917. Mondrian llamaba neoplasticismo a su forma de pintar.",
+        },
+        {
+          id: 19,
+          question: "¿De qué movimiento es el gran maestro Jacques-Louis David, autor de El juramento de los Horacios?",
+          answers: [
+            { id: "a", text: "El neoclasicismo" },
+            { id: "b", text: "El rococó" },
+            { id: "c", text: "El romanticismo" },
+            { id: "d", text: "El manierismo" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "El neoclasicismo, que se inspira en la Antigüedad griega y romana. El juramento de los Horacios es de 1784, pocos años antes de la Revolución francesa.",
+        },
+        {
+          id: 20,
+          question: "¿De qué estilo es un gran maestro Pedro Pablo Rubens, el pintor flamenco del siglo XVII?",
+          answers: [
+            { id: "a", text: "El gótico" },
+            { id: "b", text: "El neoclasicismo" },
+            { id: "c", text: "El barroco" },
+            { id: "d", text: "El impresionismo" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "El barroco, un estilo lleno de movimiento, color y teatralidad. Las mujeres de formas generosas de sus cuadros dieron incluso el adjetivo «rubensiano».",
         },
       ],
     },

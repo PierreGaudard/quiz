@@ -26,7 +26,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les figures de la Révolution",
       description:
-        "Douze affirmations sur les personnages de la Révolution française, de Robespierre à Olympe de Gouges. Vrai ou faux ?",
+        "Vingt affirmations sur les personnages de la Révolution française, de Robespierre à Olympe de Gouges. Vrai ou faux ?",
       questions: [
         {
           id: 1,
@@ -164,12 +164,100 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
           explanation:
             "C'est vrai. Recherché, il se cache pendant neuf mois à Paris, puis il est arrêté et on le retrouve mort dans sa cellule à Bourg-la-Reine, fin mars 1794. On ne sait pas exactement de quoi il est mort.",
         },
+        {
+          id: 13,
+          question: "Camille Desmoulins a appelé la foule à prendre les armes au Palais-Royal, le 12 juillet 1789.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. En apprenant le renvoi du ministre Necker, il monte sur une table du jardin du Palais-Royal et appelle les Parisiens aux armes. Deux jours plus tard, la Bastille est prise.",
+        },
+        {
+          id: 14,
+          question: "Marie-Antoinette a dit « Qu'ils mangent de la brioche » en apprenant que le peuple manquait de pain.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Aucun document ne montre qu'elle l'ait dit. Une phrase de ce genre apparaît dans les Confessions de Rousseau, attribuée à « une grande princesse », à une époque où Marie-Antoinette était encore une enfant en Autriche.",
+        },
+        {
+          id: 15,
+          question: "Louis XVI a été guillotiné sur l'actuelle place de la Concorde, à Paris.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Elle s'appelait alors place de la Révolution, et c'est là qu'il est exécuté le 21 janvier 1793. La place avait d'abord porté le nom de place Louis-XV.",
+        },
+        {
+          id: 16,
+          question: "Le docteur Guillotin est mort guillotiné.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Joseph Ignace Guillotin a proposé en 1789 une machine pour que les exécutions soient les mêmes pour tous, mais il meurt de maladie, dans son lit, en 1814. Il n'a d'ailleurs pas inventé la machine qui porte son nom.",
+        },
+        {
+          id: 17,
+          question: "Robespierre a eu la mâchoire fracassée par un coup de pistolet la veille de son exécution.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Dans la nuit du 9 au 10 thermidor an II, à l'Hôtel de Ville, une balle lui brise la mâchoire. On ne sait toujours pas s'il a voulu se tuer ou si c'est un gendarme qui a tiré.",
+        },
+        {
+          id: 18,
+          question: "Danton publiait le journal « L'Ami du peuple ».",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. « L'Ami du peuple » est le journal de Jean-Paul Marat, qui finit par lui servir de surnom. Danton était avant tout un orateur, et il a peu écrit.",
+        },
+        {
+          id: 19,
+          question: "Louis XVII, le fils de Louis XVI, a régné sur la France.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Les royalistes le considèrent comme roi après la mort de son père, mais il reste enfermé à la prison du Temple, où il meurt en 1795, à 10 ans. Il n'a jamais gouverné.",
+        },
+        {
+          id: 20,
+          question: "Madame Roland, figure du camp girondin, a été guillotinée en 1793.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Elle est exécutée le 8 novembre 1793. On lui prête une phrase célèbre devant l'échafaud : « Ô Liberté, que de crimes on commet en ton nom ! »",
+        },
       ],
     },
     en: {
       title: "French Revolution figures: true or false?",
       description:
-        "Twelve statements about the people of the French Revolution, from Robespierre to Olympe de Gouges. True or false?",
+        "Twenty statements about the people of the French Revolution, from Robespierre to Olympe de Gouges. True or false?",
       questions: [
         {
           id: 1,
@@ -307,12 +395,100 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
           explanation:
             "True. Wanted by the authorities, he hid in Paris for nine months, then was arrested and found dead in his cell at Bourg-la-Reine at the end of March 1794. The exact cause of death is unknown.",
         },
+        {
+          id: 13,
+          question: "Camille Desmoulins called on the crowd to take up arms at the Palais-Royal on 12 July 1789.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. On hearing that the minister Necker had been dismissed, he climbed onto a table in the Palais-Royal gardens and called Parisians to arms. Two days later, the Bastille fell.",
+        },
+        {
+          id: 14,
+          question: "Marie Antoinette said \"Let them eat cake\" on hearing that the people had no bread.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. No document shows she ever said it. A similar line appears in Rousseau's Confessions, put in the mouth of \"a great princess\", at a time when Marie Antoinette was still a child in Austria.",
+        },
+        {
+          id: 15,
+          question: "Louis XVI was guillotined on what is now the Place de la Concorde in Paris.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. It was then called the Place de la Révolution, and he was executed there on 21 January 1793. Before that, the square had been named after Louis XV.",
+        },
+        {
+          id: 16,
+          question: "Doctor Guillotin was himself guillotined.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Joseph Ignace Guillotin proposed a machine in 1789 so that executions would be the same for everyone, but he died of illness, in his bed, in 1814. He did not actually invent the machine named after him.",
+        },
+        {
+          id: 17,
+          question: "Robespierre had his jaw shattered by a pistol shot the day before his execution.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. On the night of 9 to 10 Thermidor Year II, at the Hôtel de Ville, a bullet broke his jaw. It is still not known whether he tried to kill himself or a gendarme fired the shot.",
+        },
+        {
+          id: 18,
+          question: "Danton published the newspaper \"L'Ami du peuple\" (The Friend of the People).",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. \"L'Ami du peuple\" was Jean-Paul Marat's paper, and its title ended up as his nickname. Danton was above all a speaker and wrote very little.",
+        },
+        {
+          id: 19,
+          question: "Louis XVII, the son of Louis XVI, reigned over France.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Royalists regarded him as king after his father's death, but he stayed locked up in the Temple prison, where he died in 1795, aged 10. He never ruled.",
+        },
+        {
+          id: 20,
+          question: "Madame Roland, a leading figure of the Girondins, was guillotined in 1793.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. She was executed on 8 November 1793. She is said to have spoken a famous line at the scaffold: \"O Liberty, what crimes are committed in your name!\"",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: figuras de la Revolución",
       description:
-        "Doce afirmaciones sobre los personajes de la Revolución francesa, de Robespierre a Olympe de Gouges. ¿Verdadero o falso?",
+        "Veinte afirmaciones sobre los personajes de la Revolución francesa, de Robespierre a Olympe de Gouges. ¿Verdadero o falso?",
       questions: [
         {
           id: 1,
@@ -449,6 +625,94 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero. Buscado por las autoridades, estuvo escondido nueve meses en París. Luego lo detuvieron y lo encontraron muerto en su celda en Bourg-la-Reine, a finales de marzo de 1794. No se sabe con exactitud de qué murió.",
+        },
+        {
+          id: 13,
+          question: "Camille Desmoulins llamó a la multitud a tomar las armas en el Palais-Royal el 12 de julio de 1789.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Al saber que el ministro Necker había sido destituido, se subió a una mesa en los jardines del Palais-Royal y llamó a los parisinos a las armas. Dos días después cayó la Bastilla.",
+        },
+        {
+          id: 14,
+          question: "María Antonieta dijo «Que coman pasteles» al saber que el pueblo no tenía pan.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Ningún documento prueba que lo dijera. Una frase parecida aparece en las Confesiones de Rousseau, atribuida a «una gran princesa», cuando María Antonieta todavía era una niña en Austria.",
+        },
+        {
+          id: 15,
+          question: "Luis XVI fue guillotinado en la actual plaza de la Concordia, en París.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Entonces se llamaba plaza de la Revolución, y allí fue ejecutado el 21 de enero de 1793. Antes, la plaza había llevado el nombre de Luis XV.",
+        },
+        {
+          id: 16,
+          question: "El doctor Guillotin murió guillotinado.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Joseph Ignace Guillotin propuso en 1789 una máquina para que las ejecuciones fueran iguales para todos, pero murió de enfermedad, en su cama, en 1814. Además, no inventó la máquina que lleva su nombre.",
+        },
+        {
+          id: 17,
+          question: "A Robespierre le destrozó la mandíbula un disparo de pistola la víspera de su ejecución.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. En la noche del 9 al 10 de termidor del año II, en el Ayuntamiento de París, una bala le rompió la mandíbula. Aún no se sabe si quiso suicidarse o si disparó un gendarme.",
+        },
+        {
+          id: 18,
+          question: "Danton publicaba el periódico «L'Ami du peuple» (El amigo del pueblo).",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. «L'Ami du peuple» era el periódico de Jean-Paul Marat, y su título acabó siendo su apodo. Danton era ante todo un orador y escribió muy poco.",
+        },
+        {
+          id: 19,
+          question: "Luis XVII, el hijo de Luis XVI, reinó en Francia.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Los realistas lo consideraban rey tras la muerte de su padre, pero siguió encerrado en la prisión del Temple, donde murió en 1795, con 10 años. Nunca gobernó.",
+        },
+        {
+          id: 20,
+          question: "Madame Roland, figura de los girondinos, fue guillotinada en 1793.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Fue ejecutada el 8 de noviembre de 1793. Se le atribuye una frase célebre ante el cadalso: «¡Oh, Libertad, cuántos crímenes se cometen en tu nombre!»",
         },
       ],
     },

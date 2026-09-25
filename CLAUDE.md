@@ -376,7 +376,7 @@ npm run preview  # Preview production build
 ### Contrôler un quiz avant de l'ajouter
 
 `npx tsx scripts/check-quiz-file.mts src/data/quiz-xxx.ts` doit afficher `OK` :
-langues complètes, 10 questions au moins (20 pour un chrono, qui s'arrête quand toutes les questions sont jouées), réponses cohérentes avec le mode,
+langues complètes, 20 questions dans tous les modes (sur le modèle de quiz-couple, décision du 25/09/2026), réponses cohérentes avec le mode,
 title de page 30-60 et description 70-155, images présentes en WebP, marqueurs
 IA et tirets cadratins interdits, accents et « ¿ » présents, sous-catégorie
 existante, slug unique. Il ne remplace pas la partie jouée dans un navigateur.

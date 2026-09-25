@@ -4,8 +4,8 @@ import type { TranslatedQuiz } from "./types";
  * Quiz League of Legends en vrai-faux : l'e-sport, les Worlds, le MSI et
  * les grandes ligues.
  *
- * Réponse « vrai » = id « a », « faux » = id « b » (VraiFauxPlayer). Six vraies,
- * quatre fausses. Le quiz d'origine (quiz-league-of-legends.ts) cite déjà
+ * Réponse « vrai » = id « a », « faux » = id « b » (VraiFauxPlayer). Douze vraies,
+ * huit fausses. Le quiz d'origine (quiz-league-of-legends.ts) cite déjà
  * Fnatic en 2011, la finale de Paris en 2019 et le palmarès de Faker : on parle
  * ici des autres éditions et des ligues. Tout est daté, rien ne dépend de la
  * saison en cours.
@@ -23,7 +23,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : l'e-sport sur League of Legends",
       description:
-        "Les Worlds, le MSI, la LEC, T1 ou encore DRX : dix affirmations sur l'e-sport League of Legends. Démêle le vrai du faux !",
+        "Les Worlds, le MSI, la LEC, T1 ou encore DRX : vingt affirmations sur l'e-sport League of Legends. Démêle le vrai du faux !",
       questions: [
         {
           id: 1,
@@ -69,7 +69,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
           ],
           correctAnswer: "a",
           explanation:
-            "Vrai. G2 a battu Team Liquid 3 à 1 en finale, à Taipei. La même année, l'équipe a aussi atteint la finale des Worlds.",
+            "Vrai. G2 a battu Team Liquid 3 à 0 en finale, à Taipei. La même année, l'équipe a aussi atteint la finale des Worlds.",
         },
         {
           id: 5,
@@ -140,12 +140,122 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
           explanation:
             "Vrai, au stade de la Coupe du monde de Séoul, devant environ 40 000 personnes. Samsung White y a battu Star Horn Royal Club 3 à 1.",
         },
+        {
+          id: 11,
+          question: "La finale des Worlds 2025 a opposé deux équipes coréennes, T1 et KT Rolster.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. T1 a gagné 3 à 2, à Chengdu, en Chine. C'était son troisième titre de suite, après 2023 et 2024.",
+        },
+        {
+          id: 12,
+          question: "Les Worlds 2021 se sont joués en Islande.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. À cause du Covid, tout le tournoi s'est joué à Reykjavik. EDward Gaming y a battu DWG KIA 3 à 2 en finale.",
+        },
+        {
+          id: 13,
+          question: "L'équipe chinoise Suning a gagné les Worlds 2020.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Suning a perdu la finale 3 à 1 contre les Coréens de Damwon Gaming, à Shanghai.",
+        },
+        {
+          id: 14,
+          question: "La finale des Worlds 2024 s'est jouée à Londres.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai, à l'O2 Arena. T1 y a battu les Chinois de Bilibili Gaming 3 à 2.",
+        },
+        {
+          id: 15,
+          question: "Une équipe nord-américaine a déjà gagné les Worlds.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Aucune équipe d'Amérique du Nord n'a gagné le tournoi. Le meilleur résultat récent, c'est la demi-finale de Cloud9 en 2018.",
+        },
+        {
+          id: 16,
+          question: "Le tout premier MSI, en 2015, a été gagné par une équipe coréenne.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. C'est l'équipe chinoise EDward Gaming qui l'a gagné, en battant SK Telecom T1 3 à 2 en finale, à Tallahassee, aux États-Unis.",
+        },
+        {
+          id: 17,
+          question: "Avant 2019, la LEC s'appelait EU LCS.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. La ligue a changé de nom en 2019. Depuis 2023, le sigle veut dire League of Legends EMEA Championship, parce qu'elle couvre aussi le Moyen-Orient et l'Afrique.",
+        },
+        {
+          id: 18,
+          question: "« Warriors », la chanson officielle des Worlds 2014, est d'Imagine Dragons.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Le groupe américain l'a d'ailleurs jouée en direct pendant la finale, à Séoul.",
+        },
+        {
+          id: 19,
+          question: "T1 a gagné le MSI 2025.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Faux. C'est Gen.G qui l'a gagné, 3 à 2 contre T1, à Vancouver. Gen.G avait déjà remporté l'édition 2024.",
+        },
+        {
+          id: 20,
+          question: "En 2018, l'équipe européenne Fnatic a joué la finale des Worlds.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Fnatic a perdu 3 à 0 contre Invictus Gaming, à Incheon, en Corée du Sud.",
+        },
       ],
     },
     en: {
       title: "True or false: League of Legends esports",
       description:
-        "Worlds, MSI, the LEC, T1, DRX and more: ten statements about League of Legends esports. Can you tell which ones are true?",
+        "Worlds, MSI, the LEC, T1, DRX and more: twenty statements about League of Legends esports. Can you tell which ones are true?",
       questions: [
         {
           id: 1,
@@ -191,7 +301,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
           ],
           correctAnswer: "a",
           explanation:
-            "True. G2 beat Team Liquid 3-1 in the final, in Taipei. The same year, the team also made it to the Worlds final.",
+            "True. G2 beat Team Liquid 3-0 in the final, in Taipei. The same year, the team also made it to the Worlds final.",
         },
         {
           id: 5,
@@ -262,12 +372,122 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
           explanation:
             "True, at Seoul World Cup Stadium, in front of about 40,000 people. Samsung White beat Star Horn Royal Club 3-1 there.",
         },
+        {
+          id: 11,
+          question: "The Worlds 2025 final was played between two Korean teams, T1 and KT Rolster.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. T1 won 3-2 in Chengdu, China. It was the team's third title in a row, after 2023 and 2024.",
+        },
+        {
+          id: 12,
+          question: "Worlds 2021 was played in Iceland.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Because of Covid, the whole tournament took place in Reykjavik. EDward Gaming beat DWG KIA 3-2 in the final there.",
+        },
+        {
+          id: 13,
+          question: "The Chinese team Suning won Worlds 2020.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Suning lost the final 3-1 to Korea's Damwon Gaming, in Shanghai.",
+        },
+        {
+          id: 14,
+          question: "The Worlds 2024 final was played in London.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True, at the O2 Arena. T1 beat China's Bilibili Gaming 3-2 there.",
+        },
+        {
+          id: 15,
+          question: "A North American team has already won Worlds.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. No team from North America has ever won the tournament. The best recent run was Cloud9 reaching the semifinals in 2018.",
+        },
+        {
+          id: 16,
+          question: "The very first MSI, in 2015, was won by a Korean team.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. The Chinese team EDward Gaming won it, beating SK Telecom T1 3-2 in the final, in Tallahassee, Florida.",
+        },
+        {
+          id: 17,
+          question: "Before 2019, the LEC was called the EU LCS.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The league changed its name in 2019. Since 2023, the acronym stands for League of Legends EMEA Championship, since it also covers the Middle East and Africa.",
+        },
+        {
+          id: 18,
+          question: "\"Warriors\", the official song of Worlds 2014, is by Imagine Dragons.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The American band even played it live during the final, in Seoul.",
+        },
+        {
+          id: 19,
+          question: "T1 won MSI 2025.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. Gen.G won it, beating T1 3-2 in Vancouver. Gen.G had already won the 2024 edition.",
+        },
+        {
+          id: 20,
+          question: "In 2018, the European team Fnatic played in the Worlds final.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Fnatic lost 3-0 to Invictus Gaming, in Incheon, South Korea.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: los esports de LoL",
       description:
-        "El Mundial, el MSI, la LEC, T1 o DRX: diez afirmaciones sobre los esports de League of Legends. ¿Sabes cuáles son verdad?",
+        "El Mundial, el MSI, la LEC, T1 o DRX: veinte afirmaciones sobre los esports de League of Legends. ¿Sabes cuáles son verdad?",
       questions: [
         {
           id: 1,
@@ -313,7 +533,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
           ],
           correctAnswer: "a",
           explanation:
-            "Verdadero. G2 ganó 3 a 1 a Team Liquid en la final, en Taipéi. Ese mismo año, el equipo también llegó a la final del Mundial.",
+            "Verdadero. G2 ganó 3 a 0 a Team Liquid en la final, en Taipéi. Ese mismo año, el equipo también llegó a la final del Mundial.",
         },
         {
           id: 5,
@@ -383,6 +603,116 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero, en el Estadio de la Copa Mundial de Seúl, ante unas 40 000 personas. Samsung White ganó allí 3 a 1 a Star Horn Royal Club.",
+        },
+        {
+          id: 11,
+          question: "La final del Mundial 2025 la jugaron dos equipos coreanos, T1 y KT Rolster.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. T1 ganó 3 a 2 en Chengdu, China. Fue su tercer título seguido, después de 2023 y 2024.",
+        },
+        {
+          id: 12,
+          question: "El Mundial 2021 se jugó en Islandia.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Por el Covid, todo el torneo se jugó en Reikiavik. EDward Gaming ganó allí la final 3 a 2 a DWG KIA.",
+        },
+        {
+          id: 13,
+          question: "El equipo chino Suning ganó el Mundial 2020.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Suning perdió la final 3 a 1 contra los coreanos de Damwon Gaming, en Shanghái.",
+        },
+        {
+          id: 14,
+          question: "La final del Mundial 2024 se jugó en Londres.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero, en el O2 Arena. T1 ganó allí 3 a 2 a los chinos de Bilibili Gaming.",
+        },
+        {
+          id: 15,
+          question: "Un equipo de Norteamérica ya ha ganado el Mundial.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Ningún equipo norteamericano ha ganado el torneo. Lo más lejos que se ha llegado en los últimos años son las semifinales de Cloud9 en 2018.",
+        },
+        {
+          id: 16,
+          question: "El primer MSI, en 2015, lo ganó un equipo coreano.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Lo ganó el equipo chino EDward Gaming, que venció 3 a 2 a SK Telecom T1 en la final, en Tallahassee, Estados Unidos.",
+        },
+        {
+          id: 17,
+          question: "Antes de 2019, la LEC se llamaba EU LCS.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. La liga cambió de nombre en 2019. Desde 2023, la sigla significa League of Legends EMEA Championship, porque también cubre Oriente Medio y África.",
+        },
+        {
+          id: 18,
+          question: "«Warriors», la canción oficial del Mundial 2014, es de Imagine Dragons.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El grupo estadounidense incluso la tocó en directo durante la final, en Seúl.",
+        },
+        {
+          id: 19,
+          question: "T1 ganó el MSI 2025.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Lo ganó Gen.G, 3 a 2 contra T1, en Vancouver. Gen.G ya había ganado la edición de 2024.",
+        },
+        {
+          id: 20,
+          question: "En 2018, el equipo europeo Fnatic jugó la final del Mundial.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Fnatic perdió 3 a 0 contra Invictus Gaming, en Incheon, Corea del Sur.",
         },
       ],
     },

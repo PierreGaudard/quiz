@@ -22,7 +22,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
     fr: {
       title: "Estimation : les chiffres de Jujutsu Kaisen",
       description:
-        "Dix nombres à trouver sur Jujutsu Kaisen : épisodes, âges, dates et chapitres. Tu proposes, on te dit plus haut ou plus bas.",
+        "Vingt nombres à trouver sur Jujutsu Kaisen : épisodes, âges, dates et chapitres. Tu proposes, on te dit plus haut ou plus bas.",
       questions: [
         {
           id: 1,
@@ -118,12 +118,102 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
           explanation:
             "100 points. Chaque joueur marque des points en éliminant les autres, et avec 100 points il peut ajouter une nouvelle règle au jeu.",
         },
+        {
+          id: 11,
+          question: "En combien de colonies le Culling Game est-il découpé à travers le Japon ?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "10 colonies, reliées par des barrières qui forment une ligne du nord au sud du pays. Tokyo en compte deux à elle seule.",
+        },
+        {
+          id: 12,
+          question: "Dans le Culling Game, combien de points rapporte l'élimination d'un exorciste ?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "5 points. Tuer quelqu'un qui n'est pas exorciste ne rapporte qu'un point.",
+        },
+        {
+          id: 13,
+          question: "Dans le Culling Game, pendant combien de jours un joueur peut-il garder le même score avant de perdre sa technique ?",
+          answers: [],
+          correctAnswer: "19",
+          correctValue: 19,
+          explanation:
+            "19 jours. Si son score ne bouge pas pendant ce délai, le joueur se voit retirer sa technique. C'est ce qui oblige tout le monde à se battre.",
+        },
+        {
+          id: 14,
+          question: "Combien d'habitants du village Geto tue-t-il le jour où il devient un exorciste maudit ?",
+          answers: [],
+          correctAnswer: "112",
+          correctValue: 112,
+          explanation:
+            "112. Il découvre que les villageois maltraitent deux petites filles, Mimiko et Nanako, et il les tue tous. Il quitte ensuite l'école de Tokyo.",
+        },
+        {
+          id: 15,
+          question: "Dans Jujutsu Kaisen 0, combien de fléaux Geto promet-il de lâcher sur chacune des villes visées, Shinjuku et Kyoto ?",
+          answers: [],
+          correctAnswer: "1000",
+          correctValue: 1000,
+          explanation:
+            "1 000 fléaux dans chaque ville, pour le soir du 24 décembre. C'est ce qu'il appelle la Parade nocturne des cent démons.",
+        },
+        {
+          id: 16,
+          question: "Le grand combat entre Gojo et Sukuna a lieu un jour de décembre 2018. Lequel ?",
+          answers: [],
+          correctAnswer: "24",
+          correctValue: 24,
+          explanation:
+            "Le 24 décembre, à Shinjuku. Les deux camps s'étaient mis d'accord sur cette date à l'avance.",
+        },
+        {
+          id: 17,
+          question: "Dans quel chapitre du manga Gojo meurt-il face à Sukuna ?",
+          answers: [],
+          correctAnswer: "236",
+          correctValue: 236,
+          explanation:
+            "Au chapitre 236. Le combat entre les deux avait commencé au chapitre 223.",
+        },
+        {
+          id: 18,
+          question: "Dans quel chapitre Gojo sort-il enfin de la Prison Realm ?",
+          answers: [],
+          correctAnswer: "221",
+          correctValue: 221,
+          explanation:
+            "Au chapitre 221. Hana Kurusu détruit la porte arrière de la Prison Realm, et Gojo en sort sans une égratignure.",
+        },
+        {
+          id: 19,
+          question: "Satoru Gojo est né un jour de décembre. Lequel ?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "Le 7 décembre 1989. Il a donc 28 ans au début de la série, qui se passe en 2018.",
+        },
+        {
+          id: 20,
+          question: "Yuji Itadori est né un jour de mars. Lequel ?",
+          answers: [],
+          correctAnswer: "20",
+          correctValue: 20,
+          explanation:
+            "Le 20 mars 2003. Il a 15 ans quand il avale le premier doigt de Sukuna.",
+        },
       ],
     },
     en: {
       title: "Estimation: Jujutsu Kaisen by the numbers",
       description:
-        "Ten numbers to find about Jujutsu Kaisen: episodes, ages, dates and chapters. You guess, we tell you higher or lower.",
+        "Twenty numbers to find about Jujutsu Kaisen: episodes, ages, dates and chapters. You guess, we tell you higher or lower.",
       questions: [
         {
           id: 1,
@@ -219,12 +309,102 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
           explanation:
             "100 points. Players score points by taking out others, and with 100 points they can add a new rule to the game.",
         },
+        {
+          id: 11,
+          question: "How many colonies is the Culling Game split into across Japan?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "10 colonies, linked by barriers that form a line running down the country. Tokyo alone has two of them.",
+        },
+        {
+          id: 12,
+          question: "In the Culling Game, how many points do you get for eliminating a sorcerer?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "5 points. Killing someone who isn't a sorcerer is only worth one point.",
+        },
+        {
+          id: 13,
+          question: "In the Culling Game, for how many days can a player keep the same score before losing their technique?",
+          answers: [],
+          correctAnswer: "19",
+          correctValue: 19,
+          explanation:
+            "19 days. If their score doesn't change in that time, the player has their technique removed. That's what forces everyone to fight.",
+        },
+        {
+          id: 14,
+          question: "How many villagers does Geto kill on the day he becomes a curse user?",
+          answers: [],
+          correctAnswer: "112",
+          correctValue: 112,
+          explanation:
+            "112. He finds out the villagers are abusing two little girls, Mimiko and Nanako, and he kills every one of them. He then leaves Tokyo Jujutsu High.",
+        },
+        {
+          id: 15,
+          question: "In Jujutsu Kaisen 0, how many curses does Geto promise to unleash on each target city, Shinjuku and Kyoto?",
+          answers: [],
+          correctAnswer: "1000",
+          correctValue: 1000,
+          explanation:
+            "1,000 curses on each city, on the evening of December 24. He calls it the Night Parade of a Hundred Demons.",
+        },
+        {
+          id: 16,
+          question: "The big fight between Gojo and Sukuna takes place on a day in December 2018. Which day?",
+          answers: [],
+          correctAnswer: "24",
+          correctValue: 24,
+          explanation:
+            "December 24, in Shinjuku. Both sides had agreed on that date in advance.",
+        },
+        {
+          id: 17,
+          question: "In which chapter of the manga does Gojo die against Sukuna?",
+          answers: [],
+          correctAnswer: "236",
+          correctValue: 236,
+          explanation:
+            "Chapter 236. Their fight started in chapter 223.",
+        },
+        {
+          id: 18,
+          question: "In which chapter does Gojo finally get out of the Prison Realm?",
+          answers: [],
+          correctAnswer: "221",
+          correctValue: 221,
+          explanation:
+            "Chapter 221. Hana Kurusu destroys the Prison Realm's back gate, and Gojo walks out without a scratch.",
+        },
+        {
+          id: 19,
+          question: "Satoru Gojo was born on a day in December. Which day?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "December 7, 1989. That makes him 28 at the start of the series, which takes place in 2018.",
+        },
+        {
+          id: 20,
+          question: "Yuji Itadori was born on a day in March. Which day?",
+          answers: [],
+          correctAnswer: "20",
+          correctValue: 20,
+          explanation:
+            "March 20, 2003. He's 15 when he swallows Sukuna's first finger.",
+        },
       ],
     },
     es: {
       title: "Estimación: las cifras de Jujutsu Kaisen",
       description:
-        "Diez números que adivinar sobre Jujutsu Kaisen: episodios, edades, fechas y capítulos. Tú propones y te decimos más o menos.",
+        "Veinte números que adivinar sobre Jujutsu Kaisen: episodios, edades, fechas y capítulos. Tú propones y te decimos más o menos.",
       questions: [
         {
           id: 1,
@@ -319,6 +499,96 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
           correctValue: 100,
           explanation:
             "100 puntos. Los jugadores ganan puntos eliminando a otros, y con 100 puntos pueden añadir una regla nueva al juego.",
+        },
+        {
+          id: 11,
+          question: "¿En cuántas colonias se divide el Culling Game por todo Japón?",
+          answers: [],
+          correctAnswer: "10",
+          correctValue: 10,
+          explanation:
+            "10 colonias, unidas por barreras que forman una línea de norte a sur del país. Solo Tokio tiene dos.",
+        },
+        {
+          id: 12,
+          question: "En el Culling Game, ¿cuántos puntos da eliminar a un hechicero?",
+          answers: [],
+          correctAnswer: "5",
+          correctValue: 5,
+          explanation:
+            "5 puntos. Matar a alguien que no es hechicero solo vale un punto.",
+        },
+        {
+          id: 13,
+          question: "En el Culling Game, ¿cuántos días puede un jugador mantener la misma puntuación antes de perder su técnica?",
+          answers: [],
+          correctAnswer: "19",
+          correctValue: 19,
+          explanation:
+            "19 días. Si su puntuación no cambia en ese plazo, le quitan la técnica. Eso es lo que obliga a todos a pelear.",
+        },
+        {
+          id: 14,
+          question: "¿A cuántos habitantes del pueblo mata Geto el día en que se convierte en usuario de maldiciones?",
+          answers: [],
+          correctAnswer: "112",
+          correctValue: 112,
+          explanation:
+            "A 112. Descubre que los aldeanos maltratan a dos niñas, Mimiko y Nanako, y los mata a todos. Después deja la escuela de Tokio.",
+        },
+        {
+          id: 15,
+          question: "En Jujutsu Kaisen 0, ¿cuántas maldiciones promete Geto soltar en cada ciudad elegida, Shinjuku y Kioto?",
+          answers: [],
+          correctAnswer: "1000",
+          correctValue: 1000,
+          explanation:
+            "1000 maldiciones en cada ciudad, la noche del 24 de diciembre. Lo llama el Desfile Nocturno de los Cien Demonios.",
+        },
+        {
+          id: 16,
+          question: "El gran combate entre Gojo y Sukuna es un día de diciembre de 2018. ¿Qué día?",
+          answers: [],
+          correctAnswer: "24",
+          correctValue: 24,
+          explanation:
+            "El 24 de diciembre, en Shinjuku. Los dos bandos habían acordado esa fecha de antemano.",
+        },
+        {
+          id: 17,
+          question: "¿En qué capítulo del manga muere Gojo frente a Sukuna?",
+          answers: [],
+          correctAnswer: "236",
+          correctValue: 236,
+          explanation:
+            "En el capítulo 236. El combate entre los dos había empezado en el capítulo 223.",
+        },
+        {
+          id: 18,
+          question: "¿En qué capítulo sale por fin Gojo de la Prison Realm?",
+          answers: [],
+          correctAnswer: "221",
+          correctValue: 221,
+          explanation:
+            "En el capítulo 221. Hana Kurusu destruye la puerta trasera de la Prison Realm, y Gojo sale sin un rasguño.",
+        },
+        {
+          id: 19,
+          question: "Satoru Gojo nació un día de diciembre. ¿Cuál?",
+          answers: [],
+          correctAnswer: "7",
+          correctValue: 7,
+          explanation:
+            "El 7 de diciembre de 1989. Por eso tiene 28 años al principio de la serie, que transcurre en 2018.",
+        },
+        {
+          id: 20,
+          question: "Yuji Itadori nació un día de marzo. ¿Cuál?",
+          answers: [],
+          correctAnswer: "20",
+          correctValue: 20,
+          explanation:
+            "El 20 de marzo de 2003. Tiene 15 años cuando se traga el primer dedo de Sukuna.",
         },
       ],
     },

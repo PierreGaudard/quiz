@@ -5,7 +5,7 @@ import type { TranslatedQuiz } from "./types";
  *
  * Même convention que quiz-europe.ts : « vrai » porte l'id « a », « faux »
  * l'id « b », dans les trois langues (VraiFauxPlayer s'appuie sur l'id).
- * Cinq affirmations vraies, cinq fausses, mélangées.
+ * Dix affirmations vraies, dix fausses, mélangées.
  */
 const vf = {
   fr: [
@@ -26,7 +26,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
   slug: "quiz-etats-unis",
   slugs: { en: "united-states-quiz", fr: "quiz-etats-unis", es: "quiz-estados-unidos" },
   categorySlug: "geographie",
-  subcategory: "Etats-Unis",
+  subcategory: "États-Unis",
   difficulty: "easy",
   coverImage: "/images/sub-etats-unis.webp",
   gameType: "vrai-faux",
@@ -35,7 +35,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les États-Unis",
       description:
-        "Dix affirmations sur les États-Unis, leurs États, leurs capitales et leurs grands sites. À toi de trier le vrai du faux.",
+        "Vingt affirmations sur les États-Unis, leurs États, leurs capitales et leurs grands sites. À toi de trier le vrai du faux.",
       questions: [
         {
           id: 1,
@@ -121,12 +121,92 @@ export const quizEtatsUnis: TranslatedQuiz = {
           explanation:
             "C'est faux, il y en a quatre : George Washington, Thomas Jefferson, Theodore Roosevelt et Abraham Lincoln. Le monument est dans le Dakota du Sud.",
         },
+        {
+          id: 11,
+          question: "Chicago se trouve au bord du lac Michigan.",
+          answers: vf.fr,
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Le lac Michigan est l'un des cinq Grands Lacs, et c'est le seul qui soit entièrement aux États-Unis.",
+        },
+        {
+          id: 12,
+          question: "Le Texas a été un pays indépendant avant de devenir un État américain.",
+          answers: vf.fr,
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. La république du Texas a existé de 1836 à 1845, après sa séparation du Mexique, avant de rejoindre les États-Unis.",
+        },
+        {
+          id: 13,
+          question: "La capitale de l'État de Washington est Seattle.",
+          answers: vf.fr,
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, c'est Olympia, une ville bien plus petite. Seattle est la plus grande ville de l'État, mais pas sa capitale.",
+        },
+        {
+          id: 14,
+          question: "Les États-Unis ont acheté l'Alaska au Canada.",
+          answers: vf.fr,
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, ils l'ont achetée à la Russie, en 1867, pour 7,2 millions de dollars.",
+        },
+        {
+          id: 15,
+          question: "Les chutes du Niagara se trouvent à la frontière entre les États-Unis et le Canada.",
+          answers: vf.fr,
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Elles sont entre l'État de New York et l'Ontario, et la plus grande des chutes, le fer à cheval, est surtout côté canadien.",
+        },
+        {
+          id: 16,
+          question: "Las Vegas se trouve en Arizona.",
+          answers: vf.fr,
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, Las Vegas est dans le Nevada, en plein désert de Mojave. L'Arizona commence un peu plus à l'est, après le barrage Hoover.",
+        },
+        {
+          id: 17,
+          question: "Yellowstone est le premier parc national créé au monde.",
+          answers: vf.fr,
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Il a été créé en 1872, bien avant que d'autres pays ne suivent l'exemple.",
+        },
+        {
+          id: 18,
+          question: "Le Texas compte plus d'habitants que la Californie.",
+          answers: vf.fr,
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. La Californie reste l'État le plus peuplé, avec environ 39 millions d'habitants, contre un peu plus de 30 millions pour le Texas.",
+        },
+        {
+          id: 19,
+          question: "Le Grand Lac Salé se trouve dans l'Utah.",
+          answers: vf.fr,
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai, il a d'ailleurs donné son nom à Salt Lake City, la capitale de l'Utah. Son eau est bien plus salée que celle de la mer.",
+        },
+        {
+          id: 20,
+          question: "Le Mississippi se jette dans l'océan Pacifique.",
+          answers: vf.fr,
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Il descend du nord au sud et se jette dans le golfe du Mexique, en aval de La Nouvelle-Orléans.",
+        },
       ],
     },
     en: {
       title: "True or False: the United States",
       description:
-        "Ten statements about the United States, its states, their capitals and its famous landmarks. Tell the true from the false.",
+        "Twenty statements about the United States, its states, their capitals and its famous landmarks. Tell the true from the false.",
       questions: [
         {
           id: 1,
@@ -212,12 +292,92 @@ export const quizEtatsUnis: TranslatedQuiz = {
           explanation:
             "False, there are four: George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln. The monument is in South Dakota.",
         },
+        {
+          id: 11,
+          question: "Chicago sits on the shore of Lake Michigan.",
+          answers: vf.en,
+          correctAnswer: "a",
+          explanation:
+            "True. Lake Michigan is one of the five Great Lakes, and the only one that lies entirely within the United States.",
+        },
+        {
+          id: 12,
+          question: "Texas was an independent country before it became a US state.",
+          answers: vf.en,
+          correctAnswer: "a",
+          explanation:
+            "True. The Republic of Texas existed from 1836 to 1845, after breaking away from Mexico, before it joined the United States.",
+        },
+        {
+          id: 13,
+          question: "The capital of Washington State is Seattle.",
+          answers: vf.en,
+          correctAnswer: "b",
+          explanation:
+            "False, it's Olympia, a much smaller city. Seattle is the largest city in the state, but not its capital.",
+        },
+        {
+          id: 14,
+          question: "The United States bought Alaska from Canada.",
+          answers: vf.en,
+          correctAnswer: "b",
+          explanation:
+            "False, they bought it from Russia, in 1867, for 7.2 million dollars.",
+        },
+        {
+          id: 15,
+          question: "Niagara Falls is on the border between the United States and Canada.",
+          answers: vf.en,
+          correctAnswer: "a",
+          explanation:
+            "True. It lies between New York State and Ontario, and the biggest fall, the Horseshoe, is mostly on the Canadian side.",
+        },
+        {
+          id: 16,
+          question: "Las Vegas is in Arizona.",
+          answers: vf.en,
+          correctAnswer: "b",
+          explanation:
+            "False, Las Vegas is in Nevada, in the middle of the Mojave Desert. Arizona starts a little further east, past the Hoover Dam.",
+        },
+        {
+          id: 17,
+          question: "Yellowstone was the first national park ever created.",
+          answers: vf.en,
+          correctAnswer: "a",
+          explanation:
+            "True. It was set up in 1872, well before other countries followed the idea.",
+        },
+        {
+          id: 18,
+          question: "Texas has more people than California.",
+          answers: vf.en,
+          correctAnswer: "b",
+          explanation:
+            "False. California is still the most populous state, with about 39 million people, against a little over 30 million in Texas.",
+        },
+        {
+          id: 19,
+          question: "The Great Salt Lake is in Utah.",
+          answers: vf.en,
+          correctAnswer: "a",
+          explanation:
+            "True, and it gave its name to Salt Lake City, the capital of Utah. Its water is much saltier than the sea.",
+        },
+        {
+          id: 20,
+          question: "The Mississippi flows into the Pacific Ocean.",
+          answers: vf.en,
+          correctAnswer: "b",
+          explanation:
+            "False. It runs from north to south and flows into the Gulf of Mexico, below New Orleans.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: Estados Unidos",
       description:
-        "Diez afirmaciones sobre Estados Unidos, sus estados, sus capitales y sus lugares más famosos. Te toca separar lo verdadero de lo falso.",
+        "Veinte afirmaciones sobre Estados Unidos, sus estados, sus capitales y sus lugares más famosos. Te toca separar lo verdadero de lo falso.",
       questions: [
         {
           id: 1,
@@ -302,6 +462,86 @@ export const quizEtatsUnis: TranslatedQuiz = {
           correctAnswer: "b",
           explanation:
             "Falso, son cuatro: George Washington, Thomas Jefferson, Theodore Roosevelt y Abraham Lincoln. El monumento está en Dakota del Sur.",
+        },
+        {
+          id: 11,
+          question: "Chicago está a orillas del lago Míchigan.",
+          answers: vf.es,
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El lago Míchigan es uno de los cinco Grandes Lagos, y el único que está entero dentro de Estados Unidos.",
+        },
+        {
+          id: 12,
+          question: "Texas fue un país independiente antes de convertirse en un estado de Estados Unidos.",
+          answers: vf.es,
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. La República de Texas existió de 1836 a 1845, tras separarse de México, antes de unirse a Estados Unidos.",
+        },
+        {
+          id: 13,
+          question: "La capital del estado de Washington es Seattle.",
+          answers: vf.es,
+          correctAnswer: "b",
+          explanation:
+            "Falso, es Olympia, una ciudad mucho más pequeña. Seattle es la ciudad más grande del estado, pero no su capital.",
+        },
+        {
+          id: 14,
+          question: "Estados Unidos compró Alaska a Canadá.",
+          answers: vf.es,
+          correctAnswer: "b",
+          explanation:
+            "Falso, se la compró a Rusia, en 1867, por 7,2 millones de dólares.",
+        },
+        {
+          id: 15,
+          question: "Las cataratas del Niágara están en la frontera entre Estados Unidos y Canadá.",
+          answers: vf.es,
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Están entre el estado de Nueva York y Ontario, y la mayor de las cataratas, la de la Herradura, queda sobre todo del lado canadiense.",
+        },
+        {
+          id: 16,
+          question: "Las Vegas está en Arizona.",
+          answers: vf.es,
+          correctAnswer: "b",
+          explanation:
+            "Falso, Las Vegas está en Nevada, en pleno desierto de Mojave. Arizona empieza un poco más al este, pasada la presa Hoover.",
+        },
+        {
+          id: 17,
+          question: "Yellowstone fue el primer parque nacional creado en el mundo.",
+          answers: vf.es,
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Se creó en 1872, mucho antes de que otros países siguieran el ejemplo.",
+        },
+        {
+          id: 18,
+          question: "Texas tiene más habitantes que California.",
+          answers: vf.es,
+          correctAnswer: "b",
+          explanation:
+            "Falso. California sigue siendo el estado más poblado, con unos 39 millones de habitantes, frente a algo más de 30 millones en Texas.",
+        },
+        {
+          id: 19,
+          question: "El Gran Lago Salado está en Utah.",
+          answers: vf.es,
+          correctAnswer: "a",
+          explanation:
+            "Verdadero, y además dio nombre a Salt Lake City, la capital de Utah. Su agua es mucho más salada que la del mar.",
+        },
+        {
+          id: 20,
+          question: "El Misisipi desemboca en el océano Pacífico.",
+          answers: vf.es,
+          correctAnswer: "b",
+          explanation:
+            "Falso. Baja de norte a sur y desemboca en el golfo de México, aguas abajo de Nueva Orleans.",
         },
       ],
     },

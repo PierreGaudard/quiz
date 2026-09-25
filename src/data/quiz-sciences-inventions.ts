@@ -23,7 +23,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
     fr: {
       title: "Ordre : les grandes inventions de l'histoire",
       description:
-        "Dix suites de quatre inventions à remettre dans l'ordre, de la plus ancienne à la plus récente : la roue, le téléphone, le laser, etc.",
+        "Vingt suites de quatre inventions à remettre dans l'ordre, de la plus ancienne à la plus récente : la roue, le téléphone, le laser, etc.",
       questions: [
         {
           id: 1,
@@ -170,12 +170,152 @@ export const quizSciencesInventions: TranslatedQuiz = {
           explanation:
             "L'écriture naît en Mésopotamie vers 3300 av. J.-C. La Chine fabrique du papier vers l'an 100, puis la boussole au XIe siècle. Les premières lunettes apparaissent en Italie à la fin du XIIIe siècle.",
         },
+        {
+          id: 11,
+          question: "Range ces inventions liées aux déplacements de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "La draisienne, ancêtre du vélo" },
+            { id: "b", text: "Le métro de Londres" },
+            { id: "c", text: "Le pneu gonflable de Dunlop" },
+            { id: "d", text: "Le TGV" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le baron Drais présente sa draisienne en 1817. Le premier métro du monde ouvre à Londres en 1863, John Boyd Dunlop dépose son brevet de pneu gonflable en 1888, et le TGV entre en service commercial en 1981.",
+        },
+        {
+          id: 12,
+          question: "Range ces façons de mesurer le temps de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "Le cadran solaire" },
+            { id: "b", text: "L'horloge à pendule de Huygens" },
+            { id: "c", text: "Le chronomètre de marine de Harrison" },
+            { id: "d", text: "L'horloge atomique" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le cadran solaire sert déjà dans l'Antiquité. Christiaan Huygens fabrique la première horloge à pendule en 1656, le chronomètre H4 de John Harrison fait ses preuves en mer en 1761, et la première horloge atomique au césium fonctionne en 1955.",
+        },
+        {
+          id: 13,
+          question: "Range ces inventions liées à l'énergie de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "Le moulin à vent" },
+            { id: "b", text: "La dynamo de Gramme" },
+            { id: "c", text: "La cellule solaire au silicium" },
+            { id: "d", text: "La batterie lithium-ion" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Les moulins à vent tournent en Europe dès le Moyen Âge. Zénobe Gramme présente sa dynamo en 1871, les laboratoires Bell montrent la première cellule solaire au silicium en 1954, et Sony vend les premières batteries lithium-ion en 1991.",
+        },
+        {
+          id: 14,
+          question: "Range ces outils pour écrire et calculer du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "La règle à calcul" },
+            { id: "b", text: "La machine à écrire" },
+            { id: "c", text: "La souris d'ordinateur" },
+            { id: "d", text: "La clé USB" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La règle à calcul apparaît en Angleterre dans les années 1620. La machine à écrire de Sholes et Glidden est brevetée en 1868, Douglas Engelbart présente la souris en public en 1968, et les premières clés USB sont vendues en 2000.",
+        },
+        {
+          id: 15,
+          question: "Range ces instruments de musique du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "Le piano" },
+            { id: "b", text: "Le saxophone" },
+            { id: "c", text: "La guitare électrique" },
+            { id: "d", text: "Le synthétiseur Moog" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Bartolomeo Cristofori invente le piano vers 1700, à Florence. Adolphe Sax brevette le saxophone en 1846, la première guitare électrique vendue en série sort au début des années 1930, et Robert Moog présente son synthétiseur en 1964.",
+        },
+        {
+          id: 16,
+          question: "Range ces inventions de l'image de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "La lanterne magique" },
+            { id: "b", text: "L'appareil photo Kodak" },
+            { id: "c", text: "Le Polaroïd, qui développe la photo tout seul" },
+            { id: "d", text: "L'appareil photo numérique" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La lanterne magique, qui projette des images peintes, date des années 1650. Le premier Kodak est vendu en 1888, le Polaroïd arrive en 1948, et l'ingénieur Steven Sasson fabrique le premier appareil photo numérique chez Kodak en 1975.",
+        },
+        {
+          id: 17,
+          question: "Range ces inventions pour voler du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "Le premier saut en parachute de Garnerin" },
+            { id: "b", text: "Le dirigeable à vapeur de Giffard" },
+            { id: "c", text: "L'hélicoptère moderne de Sikorsky" },
+            { id: "d", text: "Le premier vol du Concorde" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "André-Jacques Garnerin saute en parachute au-dessus de Paris en 1797. Henri Giffard fait voler son dirigeable en 1852, Igor Sikorsky met au point son hélicoptère VS-300 en 1939, et le Concorde fait son premier vol en 1969.",
+        },
+        {
+          id: 18,
+          question: "Range ces matériaux du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "L'acier bon marché du procédé Bessemer" },
+            { id: "b", text: "La bakélite, premier plastique de synthèse" },
+            { id: "c", text: "Le nylon" },
+            { id: "d", text: "Le Kevlar" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Henry Bessemer dépose son procédé pour produire de l'acier en masse en 1856. Leo Baekeland invente la bakélite en 1907, le nylon est mis au point chez DuPont en 1935, et la chimiste Stephanie Kwolek y découvre le Kevlar en 1965.",
+        },
+        {
+          id: 19,
+          question: "Range ces façons d'envoyer un message de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "Le télégraphe optique de Chappe" },
+            { id: "b", text: "Le télégraphe électrique de Morse" },
+            { id: "c", text: "Le premier e-mail" },
+            { id: "d", text: "Le premier SMS" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le télégraphe de Claude Chappe, avec ses bras articulés sur des tours, relie Paris à Lille en 1794. Samuel Morse envoie son premier message officiel en 1844, Ray Tomlinson envoie le premier e-mail en 1971, et le premier SMS part en 1992.",
+        },
+        {
+          id: 20,
+          question: "Range ces inventions françaises de la plus ancienne à la plus récente.",
+          answers: [
+            { id: "a", text: "Le métier à tisser Jacquard" },
+            { id: "b", text: "L'écriture braille" },
+            { id: "c", text: "La pasteurisation" },
+            { id: "d", text: "Le Minitel" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Joseph-Marie Jacquard présente son métier à tisser en 1801. Louis Braille publie sa méthode d'écriture en 1829, Louis Pasteur brevette la pasteurisation en 1865, et le Minitel est testé à partir de 1980 avant d'arriver dans les foyers.",
+        },
       ],
     },
     en: {
       title: "Order: great inventions through history",
       description:
-        "Ten sets of four inventions to put in order, oldest first: the wheel, the telephone, the laser and plenty more.",
+        "Twenty sets of four inventions to put in order, oldest first: the wheel, the telephone, the laser and plenty more.",
       questions: [
         {
           id: 1,
@@ -322,12 +462,152 @@ export const quizSciencesInventions: TranslatedQuiz = {
           explanation:
             "Writing appears in Mesopotamia around 3300 BC. China makes paper around AD 100, then the compass in the 11th century. The first eyeglasses turn up in Italy at the end of the 13th century.",
         },
+        {
+          id: 11,
+          question: "Put these inventions for getting around in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "The draisine, ancestor of the bicycle" },
+            { id: "b", text: "The London Underground" },
+            { id: "c", text: "Dunlop's pneumatic tyre" },
+            { id: "d", text: "France's TGV high-speed train" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Baron Drais showed off his draisine in 1817. The world's first underground railway opened in London in 1863, John Boyd Dunlop patented his pneumatic tyre in 1888, and the TGV started carrying passengers in 1981.",
+        },
+        {
+          id: 12,
+          question: "Put these ways of keeping time in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "The sundial" },
+            { id: "b", text: "Huygens's pendulum clock" },
+            { id: "c", text: "Harrison's marine chronometer" },
+            { id: "d", text: "The atomic clock" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sundials were already in use in ancient times. Christiaan Huygens built the first pendulum clock in 1656, John Harrison's H4 chronometer proved itself at sea in 1761, and the first caesium atomic clock ran in 1955.",
+        },
+        {
+          id: 13,
+          question: "Put these energy inventions in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "The windmill" },
+            { id: "b", text: "Gramme's dynamo" },
+            { id: "c", text: "The silicon solar cell" },
+            { id: "d", text: "The lithium-ion battery" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Windmills were turning in Europe back in the Middle Ages. Zénobe Gramme presented his dynamo in 1871, Bell Labs showed the first silicon solar cell in 1954, and Sony sold the first lithium-ion batteries in 1991.",
+        },
+        {
+          id: 14,
+          question: "Put these tools for writing and calculating in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "The slide rule" },
+            { id: "b", text: "The typewriter" },
+            { id: "c", text: "The computer mouse" },
+            { id: "d", text: "The USB flash drive" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The slide rule appeared in England in the 1620s. Sholes and Glidden's typewriter was patented in 1868, Douglas Engelbart showed the mouse in public in 1968, and the first USB flash drives went on sale in 2000.",
+        },
+        {
+          id: 15,
+          question: "Put these musical instruments in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "The piano" },
+            { id: "b", text: "The saxophone" },
+            { id: "c", text: "The electric guitar" },
+            { id: "d", text: "The Moog synthesizer" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Bartolomeo Cristofori invented the piano around 1700, in Florence. Adolphe Sax patented the saxophone in 1846, the first mass-produced electric guitar came out in the early 1930s, and Robert Moog unveiled his synthesizer in 1964.",
+        },
+        {
+          id: 16,
+          question: "Put these picture inventions in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "The magic lantern" },
+            { id: "b", text: "The Kodak camera" },
+            { id: "c", text: "The Polaroid, which develops its own photos" },
+            { id: "d", text: "The digital camera" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The magic lantern, which projected painted images, dates from the 1650s. The first Kodak went on sale in 1888, the Polaroid arrived in 1948, and engineer Steven Sasson built the first digital camera at Kodak in 1975.",
+        },
+        {
+          id: 17,
+          question: "Put these flying inventions in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "Garnerin's first parachute jump" },
+            { id: "b", text: "Giffard's steam-powered airship" },
+            { id: "c", text: "Sikorsky's modern helicopter" },
+            { id: "d", text: "Concorde's first flight" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "André-Jacques Garnerin jumped with a parachute over Paris in 1797. Henri Giffard flew his airship in 1852, Igor Sikorsky got his VS-300 helicopter flying in 1939, and Concorde first took off in 1969.",
+        },
+        {
+          id: 18,
+          question: "Put these materials in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "Cheap steel from the Bessemer process" },
+            { id: "b", text: "Bakelite, the first synthetic plastic" },
+            { id: "c", text: "Nylon" },
+            { id: "d", text: "Kevlar" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Henry Bessemer patented his process for mass-producing steel in 1856. Leo Baekeland invented Bakelite in 1907, nylon was developed at DuPont in 1935, and chemist Stephanie Kwolek discovered Kevlar there in 1965.",
+        },
+        {
+          id: 19,
+          question: "Put these ways of sending a message in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "Chappe's semaphore telegraph" },
+            { id: "b", text: "Morse's electric telegraph" },
+            { id: "c", text: "The first email" },
+            { id: "d", text: "The first text message (SMS)" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Claude Chappe's semaphore telegraph, with moving arms on top of towers, linked Paris and Lille in 1794. Samuel Morse sent his first official message in 1844, Ray Tomlinson sent the first email in 1971, and the first text message went out in 1992.",
+        },
+        {
+          id: 20,
+          question: "Put these French inventions in order, from oldest to newest.",
+          answers: [
+            { id: "a", text: "The Jacquard loom" },
+            { id: "b", text: "Braille" },
+            { id: "c", text: "Pasteurisation" },
+            { id: "d", text: "The Minitel" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Joseph-Marie Jacquard presented his loom in 1801. Louis Braille published his writing system in 1829, Louis Pasteur patented pasteurisation in 1865, and the Minitel went into trials in 1980 before reaching French homes.",
+        },
       ],
     },
     es: {
       title: "Orden: los grandes inventos de la historia",
       description:
-        "Diez series de cuatro inventos para ordenar, del más antiguo al más reciente: la rueda, el teléfono, el láser y muchos más.",
+        "Veinte series de cuatro inventos para ordenar, del más antiguo al más reciente: la rueda, el teléfono, el láser y muchos más.",
       questions: [
         {
           id: 1,
@@ -473,6 +753,146 @@ export const quizSciencesInventions: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "La escritura nace en Mesopotamia hacia el 3300 a. C. China fabrica papel hacia el año 100 y luego la brújula en el siglo XI. Las primeras gafas aparecen en Italia a finales del siglo XIII.",
+        },
+        {
+          id: 11,
+          question: "Ordena estos inventos para desplazarse del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "La draisiana, antepasada de la bicicleta" },
+            { id: "b", text: "El metro de Londres" },
+            { id: "c", text: "El neumático de Dunlop" },
+            { id: "d", text: "El tren de alta velocidad francés TGV" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El barón Drais presenta su draisiana en 1817. El primer metro del mundo abre en Londres en 1863, John Boyd Dunlop patenta su neumático en 1888 y el TGV empieza a llevar pasajeros en 1981.",
+        },
+        {
+          id: 12,
+          question: "Ordena estas formas de medir el tiempo de la más antigua a la más reciente.",
+          answers: [
+            { id: "a", text: "El reloj de sol" },
+            { id: "b", text: "El reloj de péndulo de Huygens" },
+            { id: "c", text: "El cronómetro marino de Harrison" },
+            { id: "d", text: "El reloj atómico" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El reloj de sol ya se usa en la Antigüedad. Christiaan Huygens construye el primer reloj de péndulo en 1656, el cronómetro H4 de John Harrison demuestra lo que vale en el mar en 1761 y el primer reloj atómico de cesio funciona en 1955.",
+        },
+        {
+          id: 13,
+          question: "Ordena estos inventos relacionados con la energía del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "El molino de viento" },
+            { id: "b", text: "La dinamo de Gramme" },
+            { id: "c", text: "La célula solar de silicio" },
+            { id: "d", text: "La batería de iones de litio" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Los molinos de viento ya giran en Europa en la Edad Media. Zénobe Gramme presenta su dinamo en 1871, los laboratorios Bell enseñan la primera célula solar de silicio en 1954 y Sony vende las primeras baterías de iones de litio en 1991.",
+        },
+        {
+          id: 14,
+          question: "Ordena estas herramientas para escribir y calcular de la más antigua a la más reciente.",
+          answers: [
+            { id: "a", text: "La regla de cálculo" },
+            { id: "b", text: "La máquina de escribir" },
+            { id: "c", text: "El ratón de ordenador" },
+            { id: "d", text: "La memoria USB" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La regla de cálculo aparece en Inglaterra hacia 1620. La máquina de escribir de Sholes y Glidden se patenta en 1868, Douglas Engelbart presenta el ratón en público en 1968 y las primeras memorias USB salen a la venta en 2000.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos instrumentos musicales del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "El piano" },
+            { id: "b", text: "El saxofón" },
+            { id: "c", text: "La guitarra eléctrica" },
+            { id: "d", text: "El sintetizador Moog" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Bartolomeo Cristofori inventa el piano hacia 1700, en Florencia. Adolphe Sax patenta el saxofón en 1846, la primera guitarra eléctrica fabricada en serie sale a principios de los años treinta y Robert Moog presenta su sintetizador en 1964.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos inventos de la imagen del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "La linterna mágica" },
+            { id: "b", text: "La cámara Kodak" },
+            { id: "c", text: "La Polaroid, que revela la foto sola" },
+            { id: "d", text: "La cámara digital" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La linterna mágica, que proyecta imágenes pintadas, es de los años 1650. La primera Kodak se vende en 1888, la Polaroid llega en 1948 y el ingeniero Steven Sasson construye la primera cámara digital en Kodak en 1975.",
+        },
+        {
+          id: 17,
+          question: "Ordena estos inventos para volar del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "El primer salto en paracaídas de Garnerin" },
+            { id: "b", text: "El dirigible de vapor de Giffard" },
+            { id: "c", text: "El helicóptero moderno de Sikorsky" },
+            { id: "d", text: "El primer vuelo del Concorde" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "André-Jacques Garnerin salta en paracaídas sobre París en 1797. Henri Giffard hace volar su dirigible en 1852, Igor Sikorsky pone a punto su helicóptero VS-300 en 1939 y el Concorde hace su primer vuelo en 1969.",
+        },
+        {
+          id: 18,
+          question: "Ordena estos materiales del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "El acero barato del proceso Bessemer" },
+            { id: "b", text: "La baquelita, primer plástico sintético" },
+            { id: "c", text: "El nailon" },
+            { id: "d", text: "El kevlar" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Henry Bessemer patenta en 1856 su proceso para fabricar acero en masa. Leo Baekeland inventa la baquelita en 1907, el nailon nace en DuPont en 1935 y la química Stephanie Kwolek descubre allí el kevlar en 1965.",
+        },
+        {
+          id: 19,
+          question: "Ordena estas formas de enviar un mensaje de la más antigua a la más reciente.",
+          answers: [
+            { id: "a", text: "El telégrafo óptico de Chappe" },
+            { id: "b", text: "El telégrafo eléctrico de Morse" },
+            { id: "c", text: "El primer correo electrónico" },
+            { id: "d", text: "El primer SMS" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El telégrafo de Claude Chappe, con brazos articulados sobre torres, une París y Lille en 1794. Samuel Morse envía su primer mensaje oficial en 1844, Ray Tomlinson manda el primer correo electrónico en 1971 y el primer SMS sale en 1992.",
+        },
+        {
+          id: 20,
+          question: "Ordena estos inventos franceses del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "El telar de Jacquard" },
+            { id: "b", text: "El sistema braille" },
+            { id: "c", text: "La pasteurización" },
+            { id: "d", text: "El Minitel" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Joseph-Marie Jacquard presenta su telar en 1801. Louis Braille publica su método de escritura en 1829, Louis Pasteur patenta la pasteurización en 1865 y el Minitel se prueba a partir de 1980 antes de llegar a los hogares.",
         },
       ],
     },

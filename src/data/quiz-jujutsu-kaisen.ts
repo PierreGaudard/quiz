@@ -22,7 +22,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
     fr: {
       title: "Quiz Jujutsu Kaisen : Yuji, Gojo et Sukuna",
       description:
-        "Dix questions sur Jujutsu Kaisen : Yuji Itadori, les doigts de Sukuna, Gojo, Megumi, Nobara et la fin du manga.",
+        "Vingt questions sur Jujutsu Kaisen : Yuji Itadori, les doigts de Sukuna, Gojo, Megumi, Nobara et la fin du manga.",
       questions: [
         {
           id: 1,
@@ -158,12 +158,142 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
           explanation:
             "Le dernier chapitre est sorti le 30 septembre 2024 dans le Weekly Shōnen Jump. Le manga avait commencé en 2018, et il compte 30 tomes.",
         },
+        {
+          id: 11,
+          question: "Que décident les chefs du monde de l'exorcisme pour Yuji, après qu'il a avalé le doigt ?",
+          answers: [
+            { id: "a", text: "Ils le nomment exorciste de grade spécial" },
+            { id: "b", text: "Ils l'enferment à vie" },
+            { id: "c", text: "Ils le renvoient chez lui" },
+            { id: "d", text: "Ils le condamnent à mort, mais repoussent l'exécution" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Ils le condamnent à mort. Gojo obtient qu'on attende qu'il ait mangé tous les doigts de Sukuna, pour se débarrasser de Sukuna en même temps que lui.",
+        },
+        {
+          id: 12,
+          question: "Qui tue Kento Nanami pendant l'incident de Shibuya ?",
+          answers: [
+            { id: "a", text: "Choso" },
+            { id: "b", text: "Mahito" },
+            { id: "c", text: "Jogo" },
+            { id: "d", text: "Sukuna" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mahito. Nanami est déjà gravement brûlé par Jogo quand Mahito le touche et l'achève, sous les yeux de Yuji.",
+        },
+        {
+          id: 13,
+          question: "Quel objet relie Yuta Okkotsu à son amie d'enfance Rika ?",
+          answers: [
+            { id: "a", text: "Une bague" },
+            { id: "b", text: "Une montre" },
+            { id: "c", text: "Un collier" },
+            { id: "d", text: "Un bracelet" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Une bague. Enfants, Yuta et Rika s'étaient promis de se marier. Même après que la malédiction de Rika a été levée, cette bague reste le lien entre les deux.",
+        },
+        {
+          id: 14,
+          question: "Au début de la série, de quoi Maki Zenin a-t-elle besoin pour voir les fléaux ?",
+          answers: [
+            { id: "a", text: "De lunettes spéciales" },
+            { id: "b", text: "D'un shikigami" },
+            { id: "c", text: "D'un talisman" },
+            { id: "d", text: "D'une épée maudite" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "De lunettes spéciales. Maki n'a presque pas d'énergie occulte, du coup elle ne voit pas les fléaux à l'œil nu. Elle compense avec des armes maudites et une force physique énorme.",
+        },
+        {
+          id: 15,
+          question: "Que fait Aoi Todo en tapant dans ses mains ?",
+          answers: [
+            { id: "a", text: "Il crée un bouclier" },
+            { id: "b", text: "Il se téléporte chez lui" },
+            { id: "c", text: "Il arrête le temps" },
+            { id: "d", text: "Il échange la place de deux personnes ou objets" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Il échange instantanément la place de deux personnes ou objets. Même quand il tape dans ses mains pour rien, l'adversaire doit deviner si un échange a eu lieu.",
+        },
+        {
+          id: 16,
+          question: "Qui tue Satoru Gojo dans le manga ?",
+          answers: [
+            { id: "a", text: "Kenjaku" },
+            { id: "b", text: "Toji Fushiguro" },
+            { id: "c", text: "Mahito" },
+            { id: "d", text: "Sukuna" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Sukuna, pendant leur grand combat. Il coupe Gojo en deux avec une attaque qui tranche l'espace lui-même, au chapitre 236.",
+        },
+        {
+          id: 17,
+          question: "Dans le corps de qui Sukuna s'installe-t-il pour la bataille finale ?",
+          answers: [
+            { id: "a", text: "Megumi Fushiguro" },
+            { id: "b", text: "Yuji Itadori" },
+            { id: "c", text: "Yuta Okkotsu" },
+            { id: "d", text: "Choso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Megumi Fushiguro. Sukuna le trouve très intéressant depuis le début, et il finit par prendre le contrôle de son corps pour se servir de ses Dix Ombres.",
+        },
+        {
+          id: 18,
+          question: "Qui, en réalité, a donné naissance à Yuji ?",
+          answers: [
+            { id: "a", text: "Tsumiki Fushiguro" },
+            { id: "b", text: "Sa grand-mère" },
+            { id: "c", text: "Kenjaku, dans le corps de sa mère" },
+            { id: "d", text: "Rika Orimoto" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Kenjaku. Il occupait le corps de Kaori, la mère de Yuji, quand Yuji est né. Ça explique pourquoi Yuji supporte si bien d'avoir Sukuna en lui.",
+        },
+        {
+          id: 19,
+          question: "Que devient Nobara Kugisaki, gravement blessée par Mahito à Shibuya ?",
+          answers: [
+            { id: "a", text: "Elle meurt pour de bon" },
+            { id: "b", text: "Elle part vivre à la campagne" },
+            { id: "c", text: "Elle devient un fléau" },
+            { id: "d", text: "Elle revient à la fin du manga" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Elle revient à la fin du manga. On la croit morte pendant longtemps, puis elle réapparaît pendant le combat final contre Sukuna et aide Yuji.",
+        },
+        {
+          id: 20,
+          question: "Qui porte le coup final à Sukuna à la fin du manga ?",
+          answers: [
+            { id: "a", text: "Aoi Todo" },
+            { id: "b", text: "Yuji Itadori" },
+            { id: "c", text: "Maki Zenin" },
+            { id: "d", text: "Yuta Okkotsu" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Yuji Itadori. Yuta, Maki et d'autres exorcistes affaiblissent Sukuna, puis Yuji termine le combat et arrache Megumi à son emprise.",
+        },
       ],
     },
     en: {
       title: "Jujutsu Kaisen quiz: Yuji, Gojo and Sukuna",
       description:
-        "Ten questions on Jujutsu Kaisen: Yuji Itadori, Sukuna's fingers, Gojo, Megumi, Nobara and how the manga ended.",
+        "Twenty questions on Jujutsu Kaisen: Yuji Itadori, Sukuna's fingers, Gojo, Megumi, Nobara and how the manga ended.",
       questions: [
         {
           id: 1,
@@ -299,12 +429,142 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
           explanation:
             "The last chapter came out on September 30, 2024, in Weekly Shōnen Jump. The manga had started in 2018 and runs to 30 volumes.",
         },
+        {
+          id: 11,
+          question: "What do the jujutsu higher-ups decide for Yuji after he swallows the finger?",
+          answers: [
+            { id: "a", text: "They make him a special grade sorcerer" },
+            { id: "b", text: "They lock him up for life" },
+            { id: "c", text: "They send him home" },
+            { id: "d", text: "They sentence him to death but postpone the execution" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "They sentence him to death. Gojo gets them to wait until Yuji has eaten all of Sukuna's fingers, so that Sukuna can be destroyed along with him.",
+        },
+        {
+          id: 12,
+          question: "Who kills Kento Nanami during the Shibuya Incident?",
+          answers: [
+            { id: "a", text: "Choso" },
+            { id: "b", text: "Mahito" },
+            { id: "c", text: "Jogo" },
+            { id: "d", text: "Sukuna" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mahito. Nanami has already been badly burned by Jogo when Mahito touches him and finishes him off, right in front of Yuji.",
+        },
+        {
+          id: 13,
+          question: "What object connects Yuta Okkotsu to his childhood friend Rika?",
+          answers: [
+            { id: "a", text: "A ring" },
+            { id: "b", text: "A watch" },
+            { id: "c", text: "A necklace" },
+            { id: "d", text: "A bracelet" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "A ring. As kids, Yuta and Rika promised to get married. Even after Rika's curse is lifted, the ring remains their connection.",
+        },
+        {
+          id: 14,
+          question: "At the start of the series, what does Maki Zenin need to see curses?",
+          answers: [
+            { id: "a", text: "Special glasses" },
+            { id: "b", text: "A shikigami" },
+            { id: "c", text: "A talisman" },
+            { id: "d", text: "A cursed sword" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Special glasses. Maki has almost no cursed energy, so she can't see curses with her own eyes. She makes up for it with cursed tools and huge physical strength.",
+        },
+        {
+          id: 15,
+          question: "What does Aoi Todo do when he claps his hands?",
+          answers: [
+            { id: "a", text: "He creates a shield" },
+            { id: "b", text: "He teleports home" },
+            { id: "c", text: "He stops time" },
+            { id: "d", text: "He swaps the places of two people or objects" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "He instantly swaps the places of two people or objects. Even when he claps for nothing, his opponent has to guess whether a swap happened.",
+        },
+        {
+          id: 16,
+          question: "Who kills Satoru Gojo in the manga?",
+          answers: [
+            { id: "a", text: "Kenjaku" },
+            { id: "b", text: "Toji Fushiguro" },
+            { id: "c", text: "Mahito" },
+            { id: "d", text: "Sukuna" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Sukuna, during their big fight. He cuts Gojo in half with an attack that slices through space itself, in chapter 236.",
+        },
+        {
+          id: 17,
+          question: "Whose body does Sukuna take over for the final battle?",
+          answers: [
+            { id: "a", text: "Megumi Fushiguro" },
+            { id: "b", text: "Yuji Itadori" },
+            { id: "c", text: "Yuta Okkotsu" },
+            { id: "d", text: "Choso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Megumi Fushiguro. Sukuna has been interested in him from the start, and he ends up taking over his body to use his Ten Shadows.",
+        },
+        {
+          id: 18,
+          question: "Who actually gave birth to Yuji?",
+          answers: [
+            { id: "a", text: "Tsumiki Fushiguro" },
+            { id: "b", text: "His grandmother" },
+            { id: "c", text: "Kenjaku, in his mother's body" },
+            { id: "d", text: "Rika Orimoto" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Kenjaku. He was using the body of Kaori, Yuji's mother, when Yuji was born. It helps explain why Yuji can hold Sukuna inside him so well.",
+        },
+        {
+          id: 19,
+          question: "What happens to Nobara Kugisaki after Mahito badly wounds her in Shibuya?",
+          answers: [
+            { id: "a", text: "She dies for good" },
+            { id: "b", text: "She moves back to the countryside" },
+            { id: "c", text: "She turns into a curse" },
+            { id: "d", text: "She comes back at the end of the manga" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "She comes back at the end of the manga. For a long time everyone thinks she's dead, then she shows up during the final fight against Sukuna and helps Yuji.",
+        },
+        {
+          id: 20,
+          question: "Who lands the final blow on Sukuna at the end of the manga?",
+          answers: [
+            { id: "a", text: "Aoi Todo" },
+            { id: "b", text: "Yuji Itadori" },
+            { id: "c", text: "Maki Zenin" },
+            { id: "d", text: "Yuta Okkotsu" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Yuji Itadori. Yuta, Maki and other sorcerers wear Sukuna down, then Yuji finishes the fight and pulls Megumi free.",
+        },
       ],
     },
     es: {
       title: "Quiz de Jujutsu Kaisen: Yuji, Gojo y Sukuna",
       description:
-        "Diez preguntas sobre Jujutsu Kaisen: Yuji Itadori, los dedos de Sukuna, Gojo, Megumi, Nobara y el final del manga.",
+        "Veinte preguntas sobre Jujutsu Kaisen: Yuji Itadori, los dedos de Sukuna, Gojo, Megumi, Nobara y el final del manga.",
       questions: [
         {
           id: 1,
@@ -439,6 +699,136 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "El último capítulo salió el 30 de septiembre de 2024 en la Weekly Shōnen Jump. El manga había empezado en 2018 y tiene 30 tomos.",
+        },
+        {
+          id: 11,
+          question: "¿Qué deciden los altos mandos del mundo del jujutsu sobre Yuji después de que se trague el dedo?",
+          answers: [
+            { id: "a", text: "Lo nombran hechicero de grado especial" },
+            { id: "b", text: "Lo encierran de por vida" },
+            { id: "c", text: "Lo mandan a casa" },
+            { id: "d", text: "Lo condenan a muerte, pero aplazan la ejecución" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Lo condenan a muerte. Gojo consigue que esperen a que se haya comido todos los dedos de Sukuna, para acabar con Sukuna a la vez que con él.",
+        },
+        {
+          id: 12,
+          question: "¿Quién mata a Kento Nanami durante el incidente de Shibuya?",
+          answers: [
+            { id: "a", text: "Choso" },
+            { id: "b", text: "Mahito" },
+            { id: "c", text: "Jogo" },
+            { id: "d", text: "Sukuna" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Mahito. Nanami ya está muy quemado por Jogo cuando Mahito lo toca y lo remata, delante de Yuji.",
+        },
+        {
+          id: 13,
+          question: "¿Qué objeto une a Yuta Okkotsu con su amiga de la infancia Rika?",
+          answers: [
+            { id: "a", text: "Un anillo" },
+            { id: "b", text: "Un reloj" },
+            { id: "c", text: "Un collar" },
+            { id: "d", text: "Una pulsera" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Un anillo. De niños, Yuta y Rika se prometieron casarse. Incluso cuando se levanta la maldición de Rika, el anillo sigue siendo su vínculo.",
+        },
+        {
+          id: 14,
+          question: "Al principio de la serie, ¿qué necesita Maki Zenin para ver a las maldiciones?",
+          answers: [
+            { id: "a", text: "Unas gafas especiales" },
+            { id: "b", text: "Un shikigami" },
+            { id: "c", text: "Un talismán" },
+            { id: "d", text: "Una espada maldita" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Unas gafas especiales. Maki casi no tiene energía maldita, así que no ve las maldiciones a simple vista. Lo compensa con armas malditas y una fuerza física enorme.",
+        },
+        {
+          id: 15,
+          question: "¿Qué hace Aoi Todo al dar una palmada?",
+          answers: [
+            { id: "a", text: "Crea un escudo" },
+            { id: "b", text: "Se teletransporta a su casa" },
+            { id: "c", text: "Detiene el tiempo" },
+            { id: "d", text: "Intercambia la posición de dos personas u objetos" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Intercambia al instante la posición de dos personas u objetos. Aunque dé una palmada sin más, el rival tiene que adivinar si ha habido intercambio.",
+        },
+        {
+          id: 16,
+          question: "¿Quién mata a Satoru Gojo en el manga?",
+          answers: [
+            { id: "a", text: "Kenjaku" },
+            { id: "b", text: "Toji Fushiguro" },
+            { id: "c", text: "Mahito" },
+            { id: "d", text: "Sukuna" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Sukuna, durante su gran combate. Parte a Gojo en dos con un ataque que corta el propio espacio, en el capítulo 236.",
+        },
+        {
+          id: 17,
+          question: "¿En el cuerpo de quién se instala Sukuna para la batalla final?",
+          answers: [
+            { id: "a", text: "Megumi Fushiguro" },
+            { id: "b", text: "Yuji Itadori" },
+            { id: "c", text: "Yuta Okkotsu" },
+            { id: "d", text: "Choso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "En el de Megumi Fushiguro. A Sukuna le interesa desde el principio, y acaba apoderándose de su cuerpo para usar sus Diez Sombras.",
+        },
+        {
+          id: 18,
+          question: "¿Quién dio a luz a Yuji en realidad?",
+          answers: [
+            { id: "a", text: "Tsumiki Fushiguro" },
+            { id: "b", text: "Su abuela" },
+            { id: "c", text: "Kenjaku, en el cuerpo de su madre" },
+            { id: "d", text: "Rika Orimoto" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Kenjaku. Ocupaba el cuerpo de Kaori, la madre de Yuji, cuando Yuji nació. Eso ayuda a entender por qué Yuji aguanta tan bien tener a Sukuna dentro.",
+        },
+        {
+          id: 19,
+          question: "¿Qué pasa con Nobara Kugisaki después de que Mahito la hiera gravemente en Shibuya?",
+          answers: [
+            { id: "a", text: "Muere para siempre" },
+            { id: "b", text: "Se vuelve a vivir al campo" },
+            { id: "c", text: "Se convierte en maldición" },
+            { id: "d", text: "Vuelve al final del manga" },
+          ],
+          correctAnswer: "d",
+          explanation:
+            "Vuelve al final del manga. Durante mucho tiempo todos la creen muerta, y luego reaparece en el combate final contra Sukuna para ayudar a Yuji.",
+        },
+        {
+          id: 20,
+          question: "¿Quién le da el golpe final a Sukuna al final del manga?",
+          answers: [
+            { id: "a", text: "Aoi Todo" },
+            { id: "b", text: "Yuji Itadori" },
+            { id: "c", text: "Maki Zenin" },
+            { id: "d", text: "Yuta Okkotsu" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Yuji Itadori. Yuta, Maki y otros hechiceros van debilitando a Sukuna, y Yuji termina el combate y libera a Megumi.",
         },
       ],
     },

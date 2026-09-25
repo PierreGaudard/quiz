@@ -22,7 +22,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
     fr: {
       title: "La boxe dans l'ordre : combats et champions",
       description:
-        "Dix listes à remettre dans l'ordre chronologique : grands combats, champions des poids lourds, boxeurs français ou encore films de boxe.",
+        "Vingt listes à remettre dans l'ordre chronologique : grands combats, champions des poids lourds, boxeurs français ou encore films de boxe.",
       questions: [
         {
           id: 1,
@@ -168,12 +168,152 @@ export const quizBoxeHistoire: TranslatedQuiz = {
           explanation:
             "1938 à New York, 1965 à Lewiston, 1980 à La Nouvelle-Orléans et 1993 à Las Vegas, quand un homme en parachute motorisé est tombé sur le ring.",
         },
+        {
+          id: 11,
+          question: "Remets ces combats de Floyd Mayweather dans l'ordre.",
+          answers: [
+            { id: "a", text: "Son premier titre mondial contre Genaro Hernández" },
+            { id: "b", text: "Sa victoire contre Oscar De La Hoya" },
+            { id: "c", text: "Sa victoire contre Manny Pacquiao" },
+            { id: "d", text: "Son combat contre Conor McGregor" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1998, 2007, 2015 et 2017. Contre McGregor, star de l'UFC, Mayweather a gagné par arrêt de l'arbitre au 10e round, pour finir sa carrière pro à 50 victoires sans défaite.",
+        },
+        {
+          id: 12,
+          question: "Remets ces étapes de la carrière d'Oleksandr Usyk dans l'ordre.",
+          answers: [
+            { id: "a", text: "Champion olympique à Londres" },
+            { id: "b", text: "Premier titre mondial des lourds-légers contre Krzysztof Głowacki" },
+            { id: "c", text: "Champion incontesté des lourds-légers contre Murat Gassiev" },
+            { id: "d", text: "Champion des lourds contre Anthony Joshua" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2012, 2016, 2018 et 2021. Contre Gassiev, Usyk est devenu le premier boxeur à détenir les quatre grandes ceintures des lourds-légers en même temps.",
+        },
+        {
+          id: 13,
+          question: "Remets ces combats de Canelo Álvarez dans l'ordre.",
+          answers: [
+            { id: "a", text: "Sa défaite contre Floyd Mayweather" },
+            { id: "b", text: "Sa victoire contre Gennady Golovkin, lors de leur revanche" },
+            { id: "c", text: "Son titre incontesté des super-moyens contre Caleb Plant" },
+            { id: "d", text: "Sa défaite contre Terence Crawford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2013, 2018, 2021 et 2025. Contre Caleb Plant, Canelo est devenu le premier champion incontesté de l'histoire chez les super-moyens. Crawford l'a battu aux points à Las Vegas en septembre 2025.",
+        },
+        {
+          id: 14,
+          question: "Remets ces combats de Manny Pacquiao dans l'ordre.",
+          answers: [
+            { id: "a", text: "Sa victoire contre Oscar De La Hoya" },
+            { id: "b", text: "Son K.-O. subi contre Juan Manuel Márquez" },
+            { id: "c", text: "Sa victoire contre Keith Thurman" },
+            { id: "d", text: "Son retour contre Mario Barrios" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2008, 2012, 2019 et 2025. Contre Thurman, à 40 ans, il est devenu le plus vieux champion du monde des welters. Contre Barrios, à 46 ans, il a obtenu un match nul.",
+        },
+        {
+          id: 15,
+          question: "Remets ces moments des débuts de la boxe chez les lourds dans l'ordre.",
+          answers: [
+            { id: "a", text: "Jack Johnson devient le premier champion noir des lourds" },
+            { id: "b", text: "Dempsey contre Carpentier, le premier million de dollars de recette" },
+            { id: "c", text: "Tunney contre Dempsey, le combat du « long compte »" },
+            { id: "d", text: "Primo Carnera devient champion du monde" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1908 à Sydney, 1921 dans le New Jersey, 1927 à Chicago et 1933 à New York. Lors du « long compte », l'arbitre a tardé à compter Tunney au tapis, ce qui l'a peut-être sauvé.",
+        },
+        {
+          id: 16,
+          question: "Remets ces grands moments de la boxe féminine dans l'ordre.",
+          answers: [
+            { id: "a", text: "La boxe féminine arrive aux Jeux olympiques" },
+            { id: "b", text: "Claressa Shields devient championne incontestée des moyens" },
+            { id: "c", text: "Katie Taylor et Amanda Serrano en tête d'affiche au Madison Square Garden" },
+            { id: "d", text: "Imane Khelif championne olympique" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Londres en 2012, 2019, 2022, puis Paris en 2024. Taylor-Serrano a été le premier combat de femmes en tête d'affiche du Madison Square Garden.",
+        },
+        {
+          id: 17,
+          question: "Remets ces moments de la vie de Marcel Cerdan dans l'ordre.",
+          answers: [
+            { id: "a", text: "Champion d'Europe des welters" },
+            { id: "b", text: "Champion du monde des moyens contre Tony Zale" },
+            { id: "c", text: "Il perd son titre contre Jake LaMotta" },
+            { id: "d", text: "Il meurt dans un accident d'avion aux Açores" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1939 à Milan, septembre 1948 à Jersey City, juin 1949 à Detroit, puis octobre 1949. Il partait à New York pour préparer la revanche contre LaMotta.",
+        },
+        {
+          id: 18,
+          question: "Remets ces changements de règles dans l'ordre.",
+          answers: [
+            { id: "a", text: "Les règles de Jack Broughton" },
+            { id: "b", text: "Les règles du London Prize Ring" },
+            { id: "c", text: "Les femmes boxent pour la première fois aux JO" },
+            { id: "d", text: "Les boxeurs pros ont le droit de faire les JO" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1743, 1838, 2012 à Londres et 2016 à Rio. Avant Rio, seuls les amateurs pouvaient boxer aux Jeux olympiques.",
+        },
+        {
+          id: 19,
+          question: "Remets ces étapes de la carrière d'Anthony Joshua dans l'ordre.",
+          answers: [
+            { id: "a", text: "Champion olympique à Londres" },
+            { id: "b", text: "Premier titre mondial contre Charles Martin" },
+            { id: "c", text: "Sa victoire contre Wladimir Klitschko à Wembley" },
+            { id: "d", text: "Sa défaite surprise contre Andy Ruiz Jr." },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2012, 2016, 2017 et 2019. Contre Ruiz, au Madison Square Garden, Joshua est allé quatre fois au tapis et il a perdu ses ceintures au 7e round.",
+        },
+        {
+          id: 20,
+          question: "Remets ces combats de Marvin Hagler et Sugar Ray Leonard dans l'ordre.",
+          answers: [
+            { id: "a", text: "Hagler devient champion du monde contre Alan Minter" },
+            { id: "b", text: "Leonard contre Thomas Hearns, le premier combat" },
+            { id: "c", text: "Hagler contre Roberto Durán" },
+            { id: "d", text: "Leonard contre Hagler" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1980 à Londres, 1981, 1983 et 1987 à Las Vegas. Leonard a battu Hagler aux points, une décision partagée dont on discute encore.",
+        },
       ],
     },
     en: {
       title: "Boxing in order: fights and champions",
       description:
-        "Ten lists to put in chronological order: legendary fights, heavyweight champions, French boxers and boxing movies.",
+        "Twenty lists to put in chronological order: legendary fights, heavyweight champions, French boxers and boxing movies.",
       questions: [
         {
           id: 1,
@@ -319,12 +459,152 @@ export const quizBoxeHistoire: TranslatedQuiz = {
           explanation:
             "1938 in New York, 1965 in Lewiston, 1980 in New Orleans and 1993 in Las Vegas, when a man on a powered paraglider crashed into the ring.",
         },
+        {
+          id: 11,
+          question: "Put these Floyd Mayweather fights in order.",
+          answers: [
+            { id: "a", text: "His first world title against Genaro Hernández" },
+            { id: "b", text: "His win over Oscar De La Hoya" },
+            { id: "c", text: "His win over Manny Pacquiao" },
+            { id: "d", text: "His fight against Conor McGregor" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1998, 2007, 2015 and 2017. Against the UFC star McGregor, Mayweather won by stoppage in the 10th round and ended his pro career at 50 wins and no losses.",
+        },
+        {
+          id: 12,
+          question: "Put these steps in Oleksandr Usyk's career in order.",
+          answers: [
+            { id: "a", text: "Olympic gold in London" },
+            { id: "b", text: "First cruiserweight world title against Krzysztof Głowacki" },
+            { id: "c", text: "Undisputed cruiserweight champion against Murat Gassiev" },
+            { id: "d", text: "Heavyweight champion against Anthony Joshua" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2012, 2016, 2018 and 2021. Beating Gassiev made Usyk the first boxer to hold all four major cruiserweight belts at once.",
+        },
+        {
+          id: 13,
+          question: "Put these Canelo Álvarez fights in order.",
+          answers: [
+            { id: "a", text: "His loss to Floyd Mayweather" },
+            { id: "b", text: "His win over Gennady Golovkin in their rematch" },
+            { id: "c", text: "His undisputed super middleweight title against Caleb Plant" },
+            { id: "d", text: "His loss to Terence Crawford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2013, 2018, 2021 and 2025. Against Caleb Plant, Canelo became the first undisputed super middleweight champion ever. Crawford beat him on points in Las Vegas in September 2025.",
+        },
+        {
+          id: 14,
+          question: "Put these Manny Pacquiao fights in order.",
+          answers: [
+            { id: "a", text: "His win over Oscar De La Hoya" },
+            { id: "b", text: "His knockout loss to Juan Manuel Márquez" },
+            { id: "c", text: "His win over Keith Thurman" },
+            { id: "d", text: "His comeback against Mario Barrios" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2008, 2012, 2019 and 2025. Beating Thurman at 40 made him the oldest welterweight world champion. Against Barrios, at 46, he got a draw.",
+        },
+        {
+          id: 15,
+          question: "Put these moments from early heavyweight boxing in order.",
+          answers: [
+            { id: "a", text: "Jack Johnson becomes the first Black heavyweight champion" },
+            { id: "b", text: "Dempsey vs Carpentier, the first million-dollar gate" },
+            { id: "c", text: "Tunney vs Dempsey, the \"Long Count\" fight" },
+            { id: "d", text: "Primo Carnera becomes world champion" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1908 in Sydney, 1921 in New Jersey, 1927 in Chicago and 1933 in New York. In the Long Count fight, the referee was slow to start counting over Tunney, which may have saved him.",
+        },
+        {
+          id: 16,
+          question: "Put these big moments in women's boxing in order.",
+          answers: [
+            { id: "a", text: "Women's boxing joins the Olympic Games" },
+            { id: "b", text: "Claressa Shields becomes undisputed middleweight champion" },
+            { id: "c", text: "Katie Taylor and Amanda Serrano headline Madison Square Garden" },
+            { id: "d", text: "Imane Khelif wins Olympic gold" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "London in 2012, 2019, 2022, then Paris in 2024. Taylor vs Serrano was the first women's fight to headline Madison Square Garden.",
+        },
+        {
+          id: 17,
+          question: "Put these moments from Marcel Cerdan's life in order.",
+          answers: [
+            { id: "a", text: "European welterweight champion" },
+            { id: "b", text: "World middleweight champion against Tony Zale" },
+            { id: "c", text: "He loses his title to Jake LaMotta" },
+            { id: "d", text: "He dies in a plane crash in the Azores" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1939 in Milan, September 1948 in Jersey City, June 1949 in Detroit, then October 1949. He was flying to New York to get ready for the rematch with LaMotta.",
+        },
+        {
+          id: 18,
+          question: "Put these rule changes in order.",
+          answers: [
+            { id: "a", text: "Jack Broughton's rules" },
+            { id: "b", text: "The London Prize Ring rules" },
+            { id: "c", text: "Women box at the Olympics for the first time" },
+            { id: "d", text: "Pro boxers are allowed at the Olympics" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1743, 1838, 2012 in London and 2016 in Rio. Before Rio, only amateurs could box at the Olympic Games.",
+        },
+        {
+          id: 19,
+          question: "Put these steps in Anthony Joshua's career in order.",
+          answers: [
+            { id: "a", text: "Olympic gold in London" },
+            { id: "b", text: "First world title against Charles Martin" },
+            { id: "c", text: "His win over Wladimir Klitschko at Wembley" },
+            { id: "d", text: "His shock loss to Andy Ruiz Jr." },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2012, 2016, 2017 and 2019. Against Ruiz at Madison Square Garden, Joshua went down four times and lost his belts in the 7th round.",
+        },
+        {
+          id: 20,
+          question: "Put these Marvin Hagler and Sugar Ray Leonard fights in order.",
+          answers: [
+            { id: "a", text: "Hagler becomes world champion against Alan Minter" },
+            { id: "b", text: "Leonard vs Thomas Hearns, the first fight" },
+            { id: "c", text: "Hagler vs Roberto Durán" },
+            { id: "d", text: "Leonard vs Hagler" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1980 in London, 1981, 1983 and 1987 in Las Vegas. Leonard beat Hagler on a split decision that people still argue about.",
+        },
       ],
     },
     es: {
       title: "El boxeo en orden: combates y campeones",
       description:
-        "Diez listas para ordenar por fecha: grandes combates, campeones de los pesos pesados, boxeadores franceses y películas de boxeo.",
+        "Veinte listas para ordenar por fecha: grandes combates, campeones de los pesos pesados, boxeadores franceses y películas de boxeo.",
       questions: [
         {
           id: 1,
@@ -469,6 +749,146 @@ export const quizBoxeHistoire: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "1938 en Nueva York, 1965 en Lewiston, 1980 en Nueva Orleans y 1993 en Las Vegas, cuando un hombre en parapente con motor cayó sobre el ring.",
+        },
+        {
+          id: 11,
+          question: "Ordena estos combates de Floyd Mayweather.",
+          answers: [
+            { id: "a", text: "Su primer título mundial contra Genaro Hernández" },
+            { id: "b", text: "Su victoria contra Oscar De La Hoya" },
+            { id: "c", text: "Su victoria contra Manny Pacquiao" },
+            { id: "d", text: "Su combate contra Conor McGregor" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1998, 2007, 2015 y 2017. Contra McGregor, la estrella de la UFC, Mayweather ganó por detención en el décimo asalto y cerró su carrera profesional con 50 victorias y ninguna derrota.",
+        },
+        {
+          id: 12,
+          question: "Ordena estas etapas de la carrera de Oleksandr Usyk.",
+          answers: [
+            { id: "a", text: "Oro olímpico en Londres" },
+            { id: "b", text: "Primer título mundial del peso crucero contra Krzysztof Głowacki" },
+            { id: "c", text: "Campeón indiscutido del peso crucero contra Murat Gassiev" },
+            { id: "d", text: "Campeón de los pesados contra Anthony Joshua" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2012, 2016, 2018 y 2021. Al ganar a Gassiev, Usyk fue el primer boxeador con los cuatro grandes cinturones del peso crucero a la vez.",
+        },
+        {
+          id: 13,
+          question: "Ordena estos combates de Canelo Álvarez.",
+          answers: [
+            { id: "a", text: "Su derrota contra Floyd Mayweather" },
+            { id: "b", text: "Su victoria contra Gennady Golovkin en la revancha" },
+            { id: "c", text: "Su título indiscutido del supermedio contra Caleb Plant" },
+            { id: "d", text: "Su derrota contra Terence Crawford" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2013, 2018, 2021 y 2025. Contra Caleb Plant, Canelo se convirtió en el primer campeón indiscutido de la historia del supermedio. Crawford le ganó a los puntos en Las Vegas en septiembre de 2025.",
+        },
+        {
+          id: 14,
+          question: "Ordena estos combates de Manny Pacquiao.",
+          answers: [
+            { id: "a", text: "Su victoria contra Oscar De La Hoya" },
+            { id: "b", text: "Su derrota por nocaut contra Juan Manuel Márquez" },
+            { id: "c", text: "Su victoria contra Keith Thurman" },
+            { id: "d", text: "Su regreso contra Mario Barrios" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2008, 2012, 2019 y 2025. Al ganar a Thurman, con 40 años, fue el campeón del mundo del wélter más veterano. Contra Barrios, con 46 años, sacó un empate.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos momentos de los inicios de los pesos pesados.",
+          answers: [
+            { id: "a", text: "Jack Johnson, primer campeón negro de los pesados" },
+            { id: "b", text: "Dempsey contra Carpentier, la primera taquilla de un millón de dólares" },
+            { id: "c", text: "Tunney contra Dempsey, la pelea de la « cuenta larga »" },
+            { id: "d", text: "Primo Carnera se proclama campeón del mundo" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1908 en Sídney, 1921 en Nueva Jersey, 1927 en Chicago y 1933 en Nueva York. En la « cuenta larga », el árbitro tardó en empezar a contar a Tunney en la lona, y eso quizá le salvó.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos grandes momentos del boxeo femenino.",
+          answers: [
+            { id: "a", text: "El boxeo femenino llega a los Juegos Olímpicos" },
+            { id: "b", text: "Claressa Shields, campeona indiscutida del peso medio" },
+            { id: "c", text: "Katie Taylor y Amanda Serrano encabezan el cartel del Madison Square Garden" },
+            { id: "d", text: "Imane Khelif, campeona olímpica" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Londres en 2012, 2019, 2022 y luego París en 2024. El Taylor-Serrano fue el primer combate de mujeres que encabezó un cartel en el Madison Square Garden.",
+        },
+        {
+          id: 17,
+          question: "Ordena estos momentos de la vida de Marcel Cerdan.",
+          answers: [
+            { id: "a", text: "Campeón de Europa del wélter" },
+            { id: "b", text: "Campeón del mundo del peso medio contra Tony Zale" },
+            { id: "c", text: "Pierde su título contra Jake LaMotta" },
+            { id: "d", text: "Muere en un accidente de avión en las Azores" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1939 en Milán, septiembre de 1948 en Jersey City, junio de 1949 en Detroit y octubre de 1949. Viajaba a Nueva York para preparar la revancha contra LaMotta.",
+        },
+        {
+          id: 18,
+          question: "Ordena estos cambios de reglas.",
+          answers: [
+            { id: "a", text: "Las reglas de Jack Broughton" },
+            { id: "b", text: "Las reglas del London Prize Ring" },
+            { id: "c", text: "Las mujeres boxean por primera vez en los Juegos" },
+            { id: "d", text: "Los boxeadores profesionales pueden ir a los Juegos" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1743, 1838, 2012 en Londres y 2016 en Río. Antes de Río, solo los aficionados podían boxear en los Juegos Olímpicos.",
+        },
+        {
+          id: 19,
+          question: "Ordena estas etapas de la carrera de Anthony Joshua.",
+          answers: [
+            { id: "a", text: "Oro olímpico en Londres" },
+            { id: "b", text: "Primer título mundial contra Charles Martin" },
+            { id: "c", text: "Su victoria contra Wladimir Klitschko en Wembley" },
+            { id: "d", text: "Su derrota sorpresa contra Andy Ruiz Jr." },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "2012, 2016, 2017 y 2019. Contra Ruiz, en el Madison Square Garden, Joshua cayó cuatro veces a la lona y perdió sus cinturones en el séptimo asalto.",
+        },
+        {
+          id: 20,
+          question: "Ordena estos combates de Marvin Hagler y Sugar Ray Leonard.",
+          answers: [
+            { id: "a", text: "Hagler se proclama campeón del mundo contra Alan Minter" },
+            { id: "b", text: "Leonard contra Thomas Hearns, el primer combate" },
+            { id: "c", text: "Hagler contra Roberto Durán" },
+            { id: "d", text: "Leonard contra Hagler" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "1980 en Londres, 1981, 1983 y 1987 en Las Vegas. Leonard ganó a Hagler por decisión dividida, y todavía se discute.",
         },
       ],
     },

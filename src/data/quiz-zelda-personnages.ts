@@ -23,7 +23,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
     fr: {
       title: "Duel Zelda : les personnages d'Hyrule",
       description:
-        "Gorons, Zoras, Midna, Fi, Skull Kid ou encore Hestu : dix duels sur les personnages et les peuples de Zelda. Une seule réponse est la bonne.",
+        "Gorons, Zoras, Midna, Fi, Skull Kid ou encore Hestu : vingt duels sur les personnages et les peuples de Zelda. Une seule réponse est la bonne.",
       questions: [
         {
           id: 1,
@@ -139,12 +139,122 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
           explanation:
             "Le Chant du Soleil, qu'on apprend dans le cimetière de Cocorico. La Berceuse de Zelda sert surtout à ouvrir des passages liés à la famille royale.",
         },
+        {
+          id: 11,
+          question: "Dans Ocarina of Time, quelle princesse Zora Link sauve-t-il dans le ventre de Jabu-Jabu ?",
+          answers: [
+            { id: "a", text: "Mipha" },
+            { id: "b", text: "Ruto" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ruto, qui devient plus tard la Sage de l'Eau. Mipha est aussi une princesse Zora, mais dans Breath of the Wild.",
+        },
+        {
+          id: 12,
+          question: "Quel personnage en collant vert rêve de devenir une fée ?",
+          answers: [
+            { id: "a", text: "Tingle" },
+            { id: "b", text: "Kafei" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tingle, qui vend des cartes à Link dans Majora's Mask. Kafei est le fiancé disparu d'Anju, dans le même jeu.",
+        },
+        {
+          id: 13,
+          question: "Dans The Wind Waker, qui est la capitaine des pirates ?",
+          answers: [
+            { id: "a", text: "Makar" },
+            { id: "b", text: "Tetra" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Tetra, qui découvre en cours de route qu'elle est en fait la princesse Zelda. Makar est un petit Korogu qui joue du violon.",
+        },
+        {
+          id: 14,
+          question: "Quel peuple de l'ombre protège depuis toujours la famille royale d'Hyrule ?",
+          answers: [
+            { id: "a", text: "Les Sheikah" },
+            { id: "b", text: "Les Gorons" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Les Sheikah, reconnaissables à leur symbole d'œil qui pleure. Impa, la gardienne de Zelda, fait partie de ce peuple.",
+        },
+        {
+          id: 15,
+          question: "Quels animaux se jettent sur Link en groupe s'il les frappe trop souvent ?",
+          answers: [
+            { id: "a", text: "Les Octoroks" },
+            { id: "b", text: "Les Cocottes" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Les Cocottes, les poules d'Hyrule. Au bout de quelques coups, tout un essaim arrive et Link ne peut rien y faire. Les Octoroks sont des monstres qui crachent des cailloux.",
+        },
+        {
+          id: 16,
+          question: "Dans Breath of the Wild, qui est la Prodige des Gerudo ?",
+          answers: [
+            { id: "a", text: "Urbosa" },
+            { id: "b", text: "Riju" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Urbosa, qui pilotait la Créature divine Vah'Naboris. Riju est la jeune cheffe des Gerudo à l'époque du jeu, cent ans plus tard.",
+        },
+        {
+          id: 17,
+          question: "Dans Breath of the Wild, quel prince Zora aide Link à approcher Vah'Ruta ?",
+          answers: [
+            { id: "a", text: "Kass" },
+            { id: "b", text: "Sidon" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sidon, le petit frère de Mipha. Kass est un Rito qui joue de l'accordéon et donne des énigmes à Link un peu partout.",
+        },
+        {
+          id: 18,
+          question: "Dans Twilight Princess, qui s'est emparé du trône du royaume du Crépuscule ?",
+          answers: [
+            { id: "a", text: "Xanto" },
+            { id: "b", text: "Ghirahim" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Xanto, qui a pris la place de Midna avec l'aide de Ganondorf. Ghirahim est le démon qui s'oppose à Link dans Skyward Sword.",
+        },
+        {
+          id: 19,
+          question: "Dans Tears of the Kingdom, quel premier roi d'Hyrule donne son bras à Link ?",
+          answers: [
+            { id: "a", text: "Yunobo" },
+            { id: "b", text: "Rauru" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rauru, qui a scellé Ganondorf sous le château d'Hyrule il y a très longtemps. Yunobo est un jeune Goron qu'on croise dans les deux jeux.",
+        },
+        {
+          id: 20,
+          question: "Dans Breath of the Wild, quel Rito est le Prodige qui pilote Vah'Medoh ?",
+          answers: [
+            { id: "a", text: "Revali" },
+            { id: "b", text: "Teba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Revali, un archer très doué et un peu vaniteux. Teba est le guerrier Rito qui aide Link à atteindre Vah'Medoh, cent ans plus tard.",
+        },
       ],
     },
     en: {
       title: "Zelda duel: the people of Hyrule",
       description:
-        "Gorons, Zoras, Midna, Fi, Skull Kid, Hestu and more: ten duels on the characters and peoples of Zelda. Only one answer is right.",
+        "Gorons, Zoras, Midna, Fi, Skull Kid, Hestu and more: twenty duels on the characters and peoples of Zelda. Only one answer is right.",
       questions: [
         {
           id: 1,
@@ -260,12 +370,122 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
           explanation:
             "The Sun's Song, which you learn in the Kakariko graveyard. Zelda's Lullaby is mostly used to open things linked to the royal family.",
         },
+        {
+          id: 11,
+          question: "In Ocarina of Time, which Zora princess does Link rescue inside Jabu-Jabu's belly?",
+          answers: [
+            { id: "a", text: "Mipha" },
+            { id: "b", text: "Ruto" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Ruto, who later becomes the Sage of Water. Mipha is a Zora princess too, but in Breath of the Wild.",
+        },
+        {
+          id: 12,
+          question: "Which character in green tights dreams of becoming a fairy?",
+          answers: [
+            { id: "a", text: "Tingle" },
+            { id: "b", text: "Kafei" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tingle, who sells maps to Link in Majora's Mask. Kafei is Anju's missing fiancé in the same game.",
+        },
+        {
+          id: 13,
+          question: "In The Wind Waker, who is the pirate captain?",
+          answers: [
+            { id: "a", text: "Makar" },
+            { id: "b", text: "Tetra" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Tetra, who finds out along the way that she is actually Princess Zelda. Makar is a small Korok who plays the violin.",
+        },
+        {
+          id: 14,
+          question: "Which shadow people have always protected Hyrule's royal family?",
+          answers: [
+            { id: "a", text: "The Sheikah" },
+            { id: "b", text: "The Gorons" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "The Sheikah, known for their crying eye symbol. Impa, Zelda's guardian, is one of them.",
+        },
+        {
+          id: 15,
+          question: "Which animals swarm Link if he hits them too many times?",
+          answers: [
+            { id: "a", text: "Octoroks" },
+            { id: "b", text: "Cuccos" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Cuccos, the chickens of Hyrule. After a few hits a whole flock shows up and Link can't do a thing about it. Octoroks are monsters that spit rocks.",
+        },
+        {
+          id: 16,
+          question: "In Breath of the Wild, who is the Gerudo Champion?",
+          answers: [
+            { id: "a", text: "Urbosa" },
+            { id: "b", text: "Riju" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Urbosa, who piloted the Divine Beast Vah'Naboris. Riju is the young Gerudo chief at the time of the game, a hundred years later.",
+        },
+        {
+          id: 17,
+          question: "In Breath of the Wild, which Zora prince helps Link reach Vah'Ruta?",
+          answers: [
+            { id: "a", text: "Kass" },
+            { id: "b", text: "Sidon" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sidon, Mipha's little brother. Kass is a Rito who plays the accordion and leaves riddles for Link all over the map.",
+        },
+        {
+          id: 18,
+          question: "In Twilight Princess, who seized the throne of the Twilight Realm?",
+          answers: [
+            { id: "a", text: "Zant" },
+            { id: "b", text: "Ghirahim" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Zant, who took Midna's place with Ganondorf's help. Ghirahim is the demon Link faces in Skyward Sword.",
+        },
+        {
+          id: 19,
+          question: "In Tears of the Kingdom, which first king of Hyrule gives Link his arm?",
+          answers: [
+            { id: "a", text: "Yunobo" },
+            { id: "b", text: "Rauru" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rauru, who sealed Ganondorf beneath Hyrule Castle a very long time ago. Yunobo is a young Goron you meet in both games.",
+        },
+        {
+          id: 20,
+          question: "In Breath of the Wild, which Rito is the Champion who pilots Vah'Medoh?",
+          answers: [
+            { id: "a", text: "Revali" },
+            { id: "b", text: "Teba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Revali, a very skilled and rather vain archer. Teba is the Rito warrior who helps Link reach Vah'Medoh a hundred years later.",
+        },
       ],
     },
     es: {
       title: "Duelo Zelda: los personajes de Hyrule",
       description:
-        "Gorons, zoras, Midna, Fay, Skull Kid, Hestu y más: diez duelos sobre los personajes y los pueblos de Zelda. Solo una respuesta es la buena.",
+        "Gorons, zoras, Midna, Fay, Skull Kid, Hestu y más: veinte duelos sobre los personajes y los pueblos de Zelda. Solo una respuesta es la buena.",
       questions: [
         {
           id: 1,
@@ -380,6 +600,116 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "La Canción del Sol, que se aprende en el cementerio de Kakariko. La Nana de Zelda sirve sobre todo para abrir cosas ligadas a la familia real.",
+        },
+        {
+          id: 11,
+          question: "En Ocarina of Time, ¿a qué princesa zora rescata Link dentro de la tripa de Jabu-Jabu?",
+          answers: [
+            { id: "a", text: "A Mipha" },
+            { id: "b", text: "A Ruto" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "A Ruto, que más tarde se convierte en la Sabia del Agua. Mipha también es una princesa zora, pero en Breath of the Wild.",
+        },
+        {
+          id: 12,
+          question: "¿Qué personaje con mallas verdes sueña con ser un hada?",
+          answers: [
+            { id: "a", text: "Tingle" },
+            { id: "b", text: "Kafei" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Tingle, que le vende mapas a Link en Majora's Mask. Kafei es el prometido desaparecido de Anju en el mismo juego.",
+        },
+        {
+          id: 13,
+          question: "En The Wind Waker, ¿quién es la capitana de los piratas?",
+          answers: [
+            { id: "a", text: "Makar" },
+            { id: "b", text: "Tetra" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Tetra, que descubre por el camino que en realidad es la princesa Zelda. Makar es un pequeño kolog que toca el violín.",
+        },
+        {
+          id: 14,
+          question: "¿Qué pueblo de las sombras protege desde siempre a la familia real de Hyrule?",
+          answers: [
+            { id: "a", text: "Los sheikah" },
+            { id: "b", text: "Los gorons" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Los sheikah, que se reconocen por su símbolo de un ojo que llora. Impa, la protectora de Zelda, es de este pueblo.",
+        },
+        {
+          id: 15,
+          question: "¿Qué animales atacan a Link en grupo si les pega demasiadas veces?",
+          answers: [
+            { id: "a", text: "Los octoroks" },
+            { id: "b", text: "Los cucos" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Los cucos, las gallinas de Hyrule. Tras unos cuantos golpes llega una bandada entera y Link no puede hacer nada. Los octoroks son monstruos que escupen piedras.",
+        },
+        {
+          id: 16,
+          question: "En Breath of the Wild, ¿quién es la Elegida de las gerudo?",
+          answers: [
+            { id: "a", text: "Urbosa" },
+            { id: "b", text: "Riju" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Urbosa, que pilotaba la Bestia Divina Vah'Naboris. Riju es la joven jefa de las gerudo en la época del juego, cien años después.",
+        },
+        {
+          id: 17,
+          question: "En Breath of the Wild, ¿qué príncipe zora ayuda a Link a acercarse a Vah'Ruta?",
+          answers: [
+            { id: "a", text: "Kass" },
+            { id: "b", text: "Sidon" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Sidon, el hermano pequeño de Mipha. Kass es un orni que toca el acordeón y va dejando acertijos a Link por todo el mapa.",
+        },
+        {
+          id: 18,
+          question: "En Twilight Princess, ¿quién se ha apoderado del trono del Reino del Crepúsculo?",
+          answers: [
+            { id: "a", text: "Zant" },
+            { id: "b", text: "Ghirahim" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Zant, que le quitó el sitio a Midna con la ayuda de Ganondorf. Ghirahim es el demonio al que se enfrenta Link en Skyward Sword.",
+        },
+        {
+          id: 19,
+          question: "En Tears of the Kingdom, ¿qué primer rey de Hyrule le da su brazo a Link?",
+          answers: [
+            { id: "a", text: "Yunobo" },
+            { id: "b", text: "Rauru" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Rauru, que selló a Ganondorf bajo el castillo de Hyrule hace muchísimo tiempo. Yunobo es un goron joven que sale en los dos juegos.",
+        },
+        {
+          id: 20,
+          question: "En Breath of the Wild, ¿qué orni es el Elegido que pilota a Vah'Medoh?",
+          answers: [
+            { id: "a", text: "Revali" },
+            { id: "b", text: "Teba" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Revali, un arquero con mucho talento y bastante vanidoso. Teba es el guerrero orni que ayuda a Link a llegar hasta Vah'Medoh cien años después.",
         },
       ],
     },

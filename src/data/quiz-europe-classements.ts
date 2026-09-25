@@ -24,7 +24,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
     fr: {
       title: "L'Europe dans l'ordre : pays, villes et dates",
       description:
-        "Dix listes à ranger sur l'Europe : pays par taille ou population, capitales du nord au sud, sommets, îles et grandes dates de l'UE.",
+        "Vingt listes à ranger sur l'Europe : pays par taille ou population, capitales du nord au sud, sommets, îles et grandes dates de l'UE.",
       questions: [
         {
           id: 1,
@@ -171,12 +171,152 @@ export const quizEuropeClassements: TranslatedQuiz = {
           explanation:
             "Le traité de Rome crée la CEE en 1957, l'Acte unique date de 1986, Maastricht crée l'Union européenne en 1992 et Lisbonne est signé en 2007.",
         },
+        {
+          id: 11,
+          question: "Range ces fleuves du plus long au plus court.",
+          answers: [
+            { id: "a", text: "Le Danube" },
+            { id: "b", text: "Le Dniepr" },
+            { id: "c", text: "Le Rhin" },
+            { id: "d", text: "La Seine" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le Danube fait environ 2 850 km, le Dniepr 2 200, le Rhin 1 230 et la Seine 780.",
+        },
+        {
+          id: 12,
+          question: "Range ces pays du plus peuplé au moins peuplé.",
+          answers: [
+            { id: "a", text: "La Pologne" },
+            { id: "b", text: "Les Pays-Bas" },
+            { id: "c", text: "La Suède" },
+            { id: "d", text: "Le Danemark" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Pologne a environ 37 millions d'habitants, les Pays-Bas 18 millions, la Suède 10,5 millions et le Danemark 6 millions.",
+        },
+        {
+          id: 13,
+          question: "Range ces capitales de la plus au nord à la plus au sud.",
+          answers: [
+            { id: "a", text: "Helsinki" },
+            { id: "b", text: "Varsovie" },
+            { id: "c", text: "Budapest" },
+            { id: "d", text: "La Valette" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Helsinki est vers le 60e parallèle, Varsovie vers le 52e, Budapest vers le 47e et La Valette, à Malte, vers le 36e.",
+        },
+        {
+          id: 14,
+          question: "Range ces capitales de la plus à l'ouest à la plus à l'est.",
+          answers: [
+            { id: "a", text: "Lisbonne" },
+            { id: "b", text: "Paris" },
+            { id: "c", text: "Vienne" },
+            { id: "d", text: "Bucarest" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Lisbonne est à 9° de longitude ouest, Paris à un peu plus de 2° est, Vienne à 16° est et Bucarest à 26° est.",
+        },
+        {
+          id: 15,
+          question: "Range ces pays du plus grand au plus petit en superficie.",
+          answers: [
+            { id: "a", text: "La Suède" },
+            { id: "b", text: "L'Italie" },
+            { id: "c", text: "Le Royaume-Uni" },
+            { id: "d", text: "La Grèce" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Suède fait environ 450 000 km², l'Italie 301 000, le Royaume-Uni 243 000 et la Grèce 132 000.",
+        },
+        {
+          id: 16,
+          question: "Range ces monuments du plus ancien au plus récent.",
+          answers: [
+            { id: "a", text: "Stonehenge" },
+            { id: "b", text: "La tour de Pise" },
+            { id: "c", text: "La tour Eiffel" },
+            { id: "d", text: "Le viaduc de Millau" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Les premières pierres de Stonehenge ont environ 4 500 ans, la tour de Pise a été commencée en 1173, la tour Eiffel inaugurée en 1889 et le viaduc de Millau en 2004.",
+        },
+        {
+          id: 17,
+          question: "Range ces volcans du plus haut au moins haut.",
+          answers: [
+            { id: "a", text: "L'Etna" },
+            { id: "b", text: "L'Hekla" },
+            { id: "c", text: "Le Vésuve" },
+            { id: "d", text: "Le Stromboli" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "L'Etna dépasse les 3 300 mètres, l'Hekla, en Islande, fait environ 1 490 mètres, le Vésuve 1 280 et le Stromboli 920.",
+        },
+        {
+          id: 18,
+          question: "Range ces îles de la Méditerranée de la plus grande à la plus petite.",
+          answers: [
+            { id: "a", text: "La Sardaigne" },
+            { id: "b", text: "Chypre" },
+            { id: "c", text: "La Corse" },
+            { id: "d", text: "Majorque" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "La Sardaigne fait environ 24 000 km², Chypre 9 250, la Corse 8 700 et Majorque 3 600.",
+        },
+        {
+          id: 19,
+          question: "Range ces villes dans l'ordre où le Rhin les traverse, de l'amont vers l'aval.",
+          answers: [
+            { id: "a", text: "Bâle" },
+            { id: "b", text: "Strasbourg" },
+            { id: "c", text: "Cologne" },
+            { id: "d", text: "Düsseldorf" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Le Rhin quitte la Suisse à Bâle, longe l'Alsace à Strasbourg, puis passe à Cologne et à Düsseldorf avant d'entrer aux Pays-Bas.",
+        },
+        {
+          id: 20,
+          question: "Range ces capitales de la plus haute à la plus basse en altitude.",
+          answers: [
+            { id: "a", text: "Andorre-la-Vieille" },
+            { id: "b", text: "Madrid" },
+            { id: "c", text: "Berne" },
+            { id: "d", text: "Amsterdam" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Andorre-la-Vieille est à 1 023 mètres, c'est la plus haute capitale d'Europe. Madrid est vers 650 mètres, Berne vers 540 et Amsterdam à peu près au niveau de la mer.",
+        },
       ],
     },
     en: {
       title: "Europe in order: countries, cities and dates",
       description:
-        "Ten lists to sort about Europe: countries by size or population, capitals from north to south, peaks, islands and key EU dates.",
+        "Twenty lists to sort about Europe: countries by size or population, capitals from north to south, peaks, islands and key EU dates.",
       questions: [
         {
           id: 1,
@@ -323,12 +463,152 @@ export const quizEuropeClassements: TranslatedQuiz = {
           explanation:
             "The Treaty of Rome set up the EEC in 1957, the Single European Act dates from 1986, Maastricht created the European Union in 1992 and Lisbon was signed in 2007.",
         },
+        {
+          id: 11,
+          question: "Sort these rivers from longest to shortest.",
+          answers: [
+            { id: "a", text: "The Danube" },
+            { id: "b", text: "The Dnieper" },
+            { id: "c", text: "The Rhine" },
+            { id: "d", text: "The Seine" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Danube is about 2,850 km long, the Dnieper 2,200, the Rhine 1,230 and the Seine 780.",
+        },
+        {
+          id: 12,
+          question: "Sort these countries from most to least populous.",
+          answers: [
+            { id: "a", text: "Poland" },
+            { id: "b", text: "The Netherlands" },
+            { id: "c", text: "Sweden" },
+            { id: "d", text: "Denmark" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Poland has about 37 million people, the Netherlands 18 million, Sweden 10.5 million and Denmark 6 million.",
+        },
+        {
+          id: 13,
+          question: "Sort these capitals from furthest north to furthest south.",
+          answers: [
+            { id: "a", text: "Helsinki" },
+            { id: "b", text: "Warsaw" },
+            { id: "c", text: "Budapest" },
+            { id: "d", text: "Valletta" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Helsinki is near the 60th parallel, Warsaw near the 52nd, Budapest near the 47th and Valletta, in Malta, near the 36th.",
+        },
+        {
+          id: 14,
+          question: "Sort these capitals from furthest west to furthest east.",
+          answers: [
+            { id: "a", text: "Lisbon" },
+            { id: "b", text: "Paris" },
+            { id: "c", text: "Vienna" },
+            { id: "d", text: "Bucharest" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Lisbon is at 9° west, Paris just over 2° east, Vienna at 16° east and Bucharest at 26° east.",
+        },
+        {
+          id: 15,
+          question: "Sort these countries from largest to smallest by area.",
+          answers: [
+            { id: "a", text: "Sweden" },
+            { id: "b", text: "Italy" },
+            { id: "c", text: "The United Kingdom" },
+            { id: "d", text: "Greece" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sweden covers about 450,000 km², Italy 301,000, the United Kingdom 243,000 and Greece 132,000.",
+        },
+        {
+          id: 16,
+          question: "Sort these monuments from oldest to newest.",
+          answers: [
+            { id: "a", text: "Stonehenge" },
+            { id: "b", text: "The Leaning Tower of Pisa" },
+            { id: "c", text: "The Eiffel Tower" },
+            { id: "d", text: "The Millau Viaduct" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The first stones of Stonehenge are about 4,500 years old, work on the Tower of Pisa began in 1173, the Eiffel Tower opened in 1889 and the Millau Viaduct in 2004.",
+        },
+        {
+          id: 17,
+          question: "Sort these volcanoes from highest to lowest.",
+          answers: [
+            { id: "a", text: "Etna" },
+            { id: "b", text: "Hekla" },
+            { id: "c", text: "Vesuvius" },
+            { id: "d", text: "Stromboli" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Etna is over 3,300 metres, Hekla, in Iceland, about 1,490 metres, Vesuvius 1,280 and Stromboli 920.",
+        },
+        {
+          id: 18,
+          question: "Sort these Mediterranean islands from largest to smallest.",
+          answers: [
+            { id: "a", text: "Sardinia" },
+            { id: "b", text: "Cyprus" },
+            { id: "c", text: "Corsica" },
+            { id: "d", text: "Majorca" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Sardinia covers about 24,000 km², Cyprus 9,250, Corsica 8,700 and Majorca 3,600.",
+        },
+        {
+          id: 19,
+          question: "Sort these cities in the order the Rhine flows through them, from upstream to downstream.",
+          answers: [
+            { id: "a", text: "Basel" },
+            { id: "b", text: "Strasbourg" },
+            { id: "c", text: "Cologne" },
+            { id: "d", text: "Düsseldorf" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "The Rhine leaves Switzerland at Basel, runs past Strasbourg in Alsace, then through Cologne and Düsseldorf before entering the Netherlands.",
+        },
+        {
+          id: 20,
+          question: "Sort these capitals from highest to lowest altitude.",
+          answers: [
+            { id: "a", text: "Andorra la Vella" },
+            { id: "b", text: "Madrid" },
+            { id: "c", text: "Bern" },
+            { id: "d", text: "Amsterdam" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Andorra la Vella is at 1,023 metres, the highest capital in Europe. Madrid is around 650 metres, Bern around 540 and Amsterdam roughly at sea level.",
+        },
       ],
     },
     es: {
       title: "Europa en orden: países, ciudades y fechas",
       description:
-        "Diez listas para ordenar sobre Europa: países por tamaño o población, capitales de norte a sur, cumbres, islas y fechas clave de la UE.",
+        "Veinte listas para ordenar sobre Europa: países por tamaño o población, capitales de norte a sur, cumbres, islas y fechas clave de la UE.",
       questions: [
         {
           id: 1,
@@ -474,6 +754,146 @@ export const quizEuropeClassements: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "El Tratado de Roma creó la CEE en 1957, el Acta Única es de 1986, Maastricht creó la Unión Europea en 1992 y el de Lisboa se firmó en 2007.",
+        },
+        {
+          id: 11,
+          question: "Ordena estos ríos del más largo al más corto.",
+          answers: [
+            { id: "a", text: "El Danubio" },
+            { id: "b", text: "El Dniéper" },
+            { id: "c", text: "El Rin" },
+            { id: "d", text: "El Sena" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El Danubio mide unos 2850 km, el Dniéper 2200, el Rin 1230 y el Sena 780.",
+        },
+        {
+          id: 12,
+          question: "Ordena estos países del más poblado al menos poblado.",
+          answers: [
+            { id: "a", text: "Polonia" },
+            { id: "b", text: "Países Bajos" },
+            { id: "c", text: "Suecia" },
+            { id: "d", text: "Dinamarca" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Polonia tiene unos 37 millones de habitantes, Países Bajos 18 millones, Suecia 10,5 millones y Dinamarca 6 millones.",
+        },
+        {
+          id: 13,
+          question: "Ordena estas capitales de la más al norte a la más al sur.",
+          answers: [
+            { id: "a", text: "Helsinki" },
+            { id: "b", text: "Varsovia" },
+            { id: "c", text: "Budapest" },
+            { id: "d", text: "La Valeta" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Helsinki está cerca del paralelo 60, Varsovia del 52, Budapest del 47 y La Valeta, en Malta, del 36.",
+        },
+        {
+          id: 14,
+          question: "Ordena estas capitales de la más al oeste a la más al este.",
+          answers: [
+            { id: "a", text: "Lisboa" },
+            { id: "b", text: "París" },
+            { id: "c", text: "Viena" },
+            { id: "d", text: "Bucarest" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Lisboa está a 9° de longitud oeste, París a algo más de 2° este, Viena a 16° este y Bucarest a 26° este.",
+        },
+        {
+          id: 15,
+          question: "Ordena estos países del más grande al más pequeño en superficie.",
+          answers: [
+            { id: "a", text: "Suecia" },
+            { id: "b", text: "Italia" },
+            { id: "c", text: "Reino Unido" },
+            { id: "d", text: "Grecia" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Suecia tiene unos 450 000 km², Italia 301 000, Reino Unido 243 000 y Grecia 132 000.",
+        },
+        {
+          id: 16,
+          question: "Ordena estos monumentos del más antiguo al más reciente.",
+          answers: [
+            { id: "a", text: "Stonehenge" },
+            { id: "b", text: "La torre de Pisa" },
+            { id: "c", text: "La torre Eiffel" },
+            { id: "d", text: "El viaducto de Millau" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Las primeras piedras de Stonehenge tienen unos 4500 años, la torre de Pisa se empezó en 1173, la torre Eiffel se inauguró en 1889 y el viaducto de Millau en 2004.",
+        },
+        {
+          id: 17,
+          question: "Ordena estos volcanes del más alto al más bajo.",
+          answers: [
+            { id: "a", text: "El Etna" },
+            { id: "b", text: "El Hekla" },
+            { id: "c", text: "El Vesubio" },
+            { id: "d", text: "El Estrómboli" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El Etna supera los 3300 metros, el Hekla, en Islandia, mide unos 1490 metros, el Vesubio 1280 y el Estrómboli 920.",
+        },
+        {
+          id: 18,
+          question: "Ordena estas islas del Mediterráneo de la más grande a la más pequeña.",
+          answers: [
+            { id: "a", text: "Cerdeña" },
+            { id: "b", text: "Chipre" },
+            { id: "c", text: "Córcega" },
+            { id: "d", text: "Mallorca" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Cerdeña tiene unos 24 000 km², Chipre 9250, Córcega 8700 y Mallorca 3600.",
+        },
+        {
+          id: 19,
+          question: "Ordena estas ciudades según el orden en que las atraviesa el Rin, de la fuente a la desembocadura.",
+          answers: [
+            { id: "a", text: "Basilea" },
+            { id: "b", text: "Estrasburgo" },
+            { id: "c", text: "Colonia" },
+            { id: "d", text: "Düsseldorf" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "El Rin sale de Suiza en Basilea, pasa junto a Estrasburgo, en Alsacia, y luego por Colonia y Düsseldorf antes de entrar en los Países Bajos.",
+        },
+        {
+          id: 20,
+          question: "Ordena estas capitales de la más alta a la más baja en altitud.",
+          answers: [
+            { id: "a", text: "Andorra la Vieja" },
+            { id: "b", text: "Madrid" },
+            { id: "c", text: "Berna" },
+            { id: "d", text: "Ámsterdam" },
+          ],
+          correctOrder: ["a", "b", "c", "d"],
+          correctAnswer: "a",
+          explanation:
+            "Andorra la Vieja está a 1023 metros, es la capital más alta de Europa. Madrid está a unos 650 metros, Berna a unos 540 y Ámsterdam más o menos al nivel del mar.",
         },
       ],
     },

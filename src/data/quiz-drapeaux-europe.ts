@@ -6,7 +6,7 @@ import type { TranslatedQuiz } from "./types";
  * Le qcm de quiz-geographie.ts couvre deja la Suisse, l'Autriche, Monaco et
  * le pays de Galles : ils sont laisses de cote ici. Les affirmations portent
  * sur des details qu'on croit connaitre (sens des bandes, ordre des couleurs),
- * cinq vraies et cinq fausses.
+ * dix vraies et dix fausses.
  */
 export const quizDrapeauxEurope: TranslatedQuiz = {
   slug: "quiz-drapeaux-europe",
@@ -21,7 +21,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les drapeaux d'Europe",
       description:
-        "Dix affirmations sur les drapeaux européens, leurs couleurs et le sens de leurs bandes. À toi de trier le vrai du faux.",
+        "Vingt affirmations sur les drapeaux européens, leurs couleurs et le sens de leurs bandes. À toi de trier le vrai du faux.",
       questions: [
         {
           id: 1,
@@ -137,12 +137,122 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
           explanation:
             "C'est vrai. Le blanc est souvent rattaché à la neige et le bleu aux milliers de lacs du pays.",
         },
+        {
+          id: 11,
+          question: "Le drapeau de la Belgique est noir, jaune et rouge, en bandes verticales.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai, avec le noir côté mât. Ces couleurs viennent des armoiries du duché de Brabant.",
+        },
+        {
+          id: 12,
+          question: "Le drapeau du Danemark est une croix rouge sur fond blanc.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, c'est l'inverse : une croix blanche sur fond rouge. On le confond facilement avec celui de la Suisse, qui a une croix droite au centre.",
+        },
+        {
+          id: 13,
+          question: "Le drapeau de l'Ukraine est bleu en haut et jaune en bas.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. On explique souvent ces deux couleurs par le ciel bleu au-dessus des champs de blé.",
+        },
+        {
+          id: 14,
+          question: "Le drapeau de la Hongrie est rouge, blanc et bleu.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, il est rouge, blanc et vert, en bandes horizontales. Ce sont les mêmes couleurs que l'Italie, mais posées dans l'autre sens.",
+        },
+        {
+          id: 15,
+          question: "Le drapeau de la Norvège porte une croix bleue bordée de blanc sur fond rouge.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. C'est une croix scandinave, comme au Danemark ou en Suède, avec les couleurs de la France, du Royaume-Uni ou des États-Unis.",
+        },
+        {
+          id: 16,
+          question: "Le drapeau de l'Estonie est bleu, blanc et rouge.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, il est bleu, noir et blanc, en bandes horizontales. Le noir est assez rare sur un drapeau européen.",
+        },
+        {
+          id: 17,
+          question: "Le drapeau de la Croatie porte un blason à damier rouge et blanc.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Le damier est au centre, sur trois bandes rouge, blanche et bleue, et on le retrouve d'ailleurs sur le maillot de l'équipe de foot.",
+        },
+        {
+          id: 18,
+          question: "Le drapeau de l'Islande est rouge avec une croix blanche.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux, il est bleu avec une croix rouge bordée de blanc. Rouge avec une croix blanche, c'est le Danemark.",
+        },
+        {
+          id: 19,
+          question: "Le drapeau de la Roumanie et celui du Tchad sont presque identiques.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "C'est vrai. Les deux ont trois bandes verticales bleu, jaune et rouge. Seul le bleu change un peu, plus foncé sur le drapeau tchadien.",
+        },
+        {
+          id: 20,
+          question: "Les drapeaux de la Slovaquie et de la Slovénie sont identiques.",
+          answers: [
+            { id: "a", text: "Vrai" },
+            { id: "b", text: "Faux" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "C'est faux. Ils ont les mêmes bandes blanche, bleue et rouge, mais pas le même blason : une double croix blanche pour la Slovaquie, le mont Triglav pour la Slovénie.",
+        },
       ],
     },
     en: {
       title: "True or false: flags of Europe",
       description:
-        "Ten statements about European flags, their colours and which way their stripes go. It's up to you to sort true from false.",
+        "Twenty statements about European flags, their colours and which way their stripes go. It's up to you to sort true from false.",
       questions: [
         {
           id: 1,
@@ -258,12 +368,122 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
           explanation:
             "True. The white is usually linked to snow and the blue to the country's thousands of lakes.",
         },
+        {
+          id: 11,
+          question: "The flag of Belgium is black, yellow and red, in vertical stripes.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True, with black by the hoist. The colours come from the coat of arms of the Duchy of Brabant.",
+        },
+        {
+          id: 12,
+          question: "The flag of Denmark is a red cross on a white background.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, it's the other way round: a white cross on red. It's easy to mix up with Switzerland's, which has a straight cross in the middle.",
+        },
+        {
+          id: 13,
+          question: "The flag of Ukraine is blue on top and yellow below.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The two colours are often explained as a blue sky above fields of wheat.",
+        },
+        {
+          id: 14,
+          question: "The flag of Hungary is red, white and blue.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, it's red, white and green, in horizontal stripes. Same colours as Italy, but laid out the other way.",
+        },
+        {
+          id: 15,
+          question: "The flag of Norway has a white-edged blue cross on a red background.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. It's a Nordic cross, like Denmark's or Sweden's, in the same colours as France, the UK or the US.",
+        },
+        {
+          id: 16,
+          question: "The flag of Estonia is blue, white and red.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, it's blue, black and white, in horizontal stripes. Black is fairly rare on a European flag.",
+        },
+        {
+          id: 17,
+          question: "The flag of Croatia has a red and white checkerboard coat of arms.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. The checkerboard is in the middle, over red, white and blue stripes, and it's also on the national football shirt.",
+        },
+        {
+          id: 18,
+          question: "The flag of Iceland is red with a white cross.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False, it's blue with a white-edged red cross. Red with a white cross is Denmark.",
+        },
+        {
+          id: 19,
+          question: "The flags of Romania and Chad are almost identical.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "True. Both have three vertical stripes in blue, yellow and red. Only the blue differs slightly, darker on the Chadian flag.",
+        },
+        {
+          id: 20,
+          question: "The flags of Slovakia and Slovenia are identical.",
+          answers: [
+            { id: "a", text: "True" },
+            { id: "b", text: "False" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "False. They share the same white, blue and red stripes, but not the same coat of arms: a white double cross for Slovakia, Mount Triglav for Slovenia.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: banderas de Europa",
       description:
-        "Diez afirmaciones sobre las banderas europeas, sus colores y la dirección de sus franjas. Te toca separar lo verdadero de lo falso.",
+        "Veinte afirmaciones sobre las banderas europeas, sus colores y la dirección de sus franjas. Te toca separar lo verdadero de lo falso.",
       questions: [
         {
           id: 1,
@@ -378,6 +598,116 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero. El blanco se suele asociar a la nieve y el azul a los miles de lagos del país.",
+        },
+        {
+          id: 11,
+          question: "La bandera de Bélgica es negra, amarilla y roja, en franjas verticales.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero, con el negro junto al mástil. Los colores vienen del escudo del ducado de Brabante.",
+        },
+        {
+          id: 12,
+          question: "La bandera de Dinamarca es una cruz roja sobre fondo blanco.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, es al revés: una cruz blanca sobre fondo rojo. Es fácil confundirla con la de Suiza, que tiene una cruz recta en el centro.",
+        },
+        {
+          id: 13,
+          question: "La bandera de Ucrania es azul arriba y amarilla abajo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Se suele explicar como el cielo azul sobre los campos de trigo.",
+        },
+        {
+          id: 14,
+          question: "La bandera de Hungría es roja, blanca y azul.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, es roja, blanca y verde, en franjas horizontales. Son los mismos colores que Italia, pero colocados en el otro sentido.",
+        },
+        {
+          id: 15,
+          question: "La bandera de Noruega tiene una cruz azul con borde blanco sobre fondo rojo.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Es una cruz escandinava, como la de Dinamarca o Suecia, con los colores de Francia, Reino Unido o Estados Unidos.",
+        },
+        {
+          id: 16,
+          question: "La bandera de Estonia es azul, blanca y roja.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, es azul, negra y blanca, en franjas horizontales. El negro es bastante raro en una bandera europea.",
+        },
+        {
+          id: 17,
+          question: "La bandera de Croacia lleva un escudo ajedrezado rojo y blanco.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El ajedrezado está en el centro, sobre tres franjas roja, blanca y azul, y también aparece en la camiseta de la selección de fútbol.",
+        },
+        {
+          id: 18,
+          question: "La bandera de Islandia es roja con una cruz blanca.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso, es azul con una cruz roja de borde blanco. Roja con cruz blanca es la de Dinamarca.",
+        },
+        {
+          id: 19,
+          question: "La bandera de Rumanía y la de Chad son casi idénticas.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Las dos tienen tres franjas verticales azul, amarilla y roja. Solo cambia un poco el azul, más oscuro en la bandera de Chad.",
+        },
+        {
+          id: 20,
+          question: "Las banderas de Eslovaquia y Eslovenia son idénticas.",
+          answers: [
+            { id: "a", text: "Verdadero" },
+            { id: "b", text: "Falso" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Tienen las mismas franjas blanca, azul y roja, pero no el mismo escudo: una cruz doble blanca en Eslovaquia y el monte Triglav en Eslovenia.",
         },
       ],
     },

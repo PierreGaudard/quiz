@@ -515,7 +515,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en" }: Props) {
                 {tt("share")}
               </button>
             </div>
-            <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} />
+            <QuizSocialBlock quizSlug={quiz.slug} userScore={score} totalQuestions={totalQuestions} locale={locale} progress={{ correct: score, total: totalQuestions, title: quiz.title, image: quiz.coverImage || null, path: quiz.path || null }} />
           </div>
         </div>
       </div>

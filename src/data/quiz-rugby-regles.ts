@@ -20,7 +20,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
     fr: {
       title: "Vrai ou faux : les règles du rugby",
       description:
-        "Dix affirmations sur les règles du rugby : la passe en avant, la mêlée, les cartons, la transformation ou encore le rugby à VII.",
+        "Vingt affirmations sur les règles du rugby : la passe en avant, la mêlée, les cartons, la transformation ou encore le rugby à VII.",
       questions: [
         {
           id: 1,
@@ -136,12 +136,92 @@ export const quizRugbyRegles: TranslatedQuiz = {
           explanation:
             "Vrai, sept minutes par mi-temps, sauf en finale, où elles passent à dix minutes. Le terrain est pourtant le même qu'au rugby à XV, donc ça court beaucoup !",
         },
+        {
+          id: 11,
+          question: "Quand un joueur laisse tomber le ballon vers l'avant, l'arbitre siffle un en-avant et donne une mêlée à l'adversaire.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. L'en-avant est une faute légère : elle ne donne pas de pénalité, seulement une mêlée pour l'équipe adverse.",
+        },
+        {
+          id: 12,
+          question: "Pour marquer un essai, il suffit de franchir la ligne d'en-but en tenant le ballon.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Il faut aplatir le ballon au sol dans l'en-but, en appuyant dessus avec la main, les bras ou le haut du corps.",
+        },
+        {
+          id: 13,
+          question: "La transformation se tire dans l'alignement de l'endroit où l'essai a été marqué.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. Le buteur peut reculer autant qu'il veut, mais il reste en face du point où le ballon a été aplati. C'est pour ça qu'on essaie de marquer près des poteaux.",
+        },
+        {
+          id: 14,
+          question: "En touche, le lanceur a le droit de lancer le ballon de travers, vers ses coéquipiers.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le ballon doit être lancé droit, au milieu de l'espace entre les deux alignements. Sinon, l'adversaire a le choix entre une touche et une mêlée.",
+        },
+        {
+          id: 15,
+          question: "Un match de rugby à XV ne peut jamais se finir sur un match nul.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Le match nul existe, en championnat comme en phase de poules de Coupe du monde. Il n'y a prolongation ou tirs au but que dans les matchs à élimination directe.",
+        },
+        {
+          id: 16,
+          question: "Au rugby, la règle du hors-jeu n'existe pas.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Elle existe et elle est même partout : dans le jeu courant, en mêlée, en touche et dans les regroupements. Un joueur hors-jeu n'a pas le droit de participer à l'action.",
+        },
+        {
+          id: 17,
+          question: "Le coup d'envoi se donne au pied, depuis le milieu du terrain.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. On le tire en drop depuis le centre de la ligne médiane, au début de chaque mi-temps et après chaque point marqué. Le ballon doit parcourir au moins 10 mètres.",
+        },
+        {
+          id: 18,
+          question: "Un joueur qui attrape au vol un coup de pied adverse dans ses 22 mètres peut crier « marque » et obtenir un coup franc.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. La marque ne marche que dans ses propres 22 mètres ou dans son en-but, et sur un ballon attrapé directement, sans rebond.",
+        },
+        {
+          id: 19,
+          question: "En touche, les coéquipiers ont le droit de soulever le sauteur pour qu'il attrape le ballon.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "a",
+          explanation:
+            "Vrai. C'est autorisé depuis la fin des années 1990. Les soutiens doivent le lever et le reposer sans danger.",
+        },
+        {
+          id: 20,
+          question: "Un plaquage au-dessus des épaules est autorisé s'il est fait avec les bras.",
+          answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
+          correctAnswer: "b",
+          explanation:
+            "Faux. Tout plaquage au niveau de la tête ou du cou est interdit. Selon la gravité, il vaut une pénalité, un carton jaune ou un carton rouge.",
+        },
       ],
     },
     en: {
       title: "True or false: the rules of rugby",
       description:
-        "Ten statements about the rules of rugby: forward passes, scrums, cards, conversions and a bit of rugby sevens. True or false?",
+        "Twenty statements about the rules of rugby: forward passes, scrums, cards, conversions and a bit of rugby sevens. True or false?",
       questions: [
         {
           id: 1,
@@ -257,12 +337,92 @@ export const quizRugbyRegles: TranslatedQuiz = {
           explanation:
             "True, seven minutes a half, except in finals, where it goes up to ten. The pitch is the same size as in fifteens, so there's a lot of running!",
         },
+        {
+          id: 11,
+          question: "When a player drops the ball forwards, the referee calls a knock-on and gives a scrum to the other team.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. A knock-on is a minor offence: it does not give a penalty, only a scrum to the opposition.",
+        },
+        {
+          id: 12,
+          question: "To score a try, you just need to cross the try line holding the ball.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. You have to ground the ball in the in-goal area, pressing down on it with a hand, the arms or the upper body.",
+        },
+        {
+          id: 13,
+          question: "The conversion is taken in line with the spot where the try was scored.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. The kicker can move as far back as he likes, but must stay in line with where the ball was grounded. That is why players try to score near the posts.",
+        },
+        {
+          id: 14,
+          question: "At a lineout, the thrower is allowed to throw the ball crooked, towards his own team-mates.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. The ball has to go in straight, down the middle of the gap between the two lines. Otherwise the other team can choose a lineout or a scrum.",
+        },
+        {
+          id: 15,
+          question: "A game of rugby union can never end in a draw.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. Draws happen, in league games and in the World Cup pool stage. Extra time and kicking competitions are only for knockout matches.",
+        },
+        {
+          id: 16,
+          question: "There is no offside rule in rugby.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. There is one, and it is everywhere: in open play, at scrums, lineouts, rucks and mauls. An offside player is not allowed to take part in the play.",
+        },
+        {
+          id: 17,
+          question: "The kick-off is taken with the foot, from the middle of the pitch.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. It is a drop kick from the centre of the halfway line, at the start of each half and after every score. The ball has to travel at least 10 metres.",
+        },
+        {
+          id: 18,
+          question: "A player who catches an opponent's kick on the full inside his own 22 can shout \"mark\" and get a free kick.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. A mark only works inside your own 22 or in-goal area, on a ball caught directly, before it bounces.",
+        },
+        {
+          id: 19,
+          question: "At a lineout, team-mates are allowed to lift the jumper so he can catch the ball.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "a",
+          explanation:
+            "True. Lifting has been legal since the late 1990s. The lifters have to raise him and bring him down safely.",
+        },
+        {
+          id: 20,
+          question: "A tackle above the shoulders is allowed as long as it is made with the arms.",
+          answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
+          correctAnswer: "b",
+          explanation:
+            "False. Any tackle at head or neck height is illegal. Depending on how bad it is, it gets a penalty, a yellow card or a red card.",
+        },
       ],
     },
     es: {
       title: "Verdadero o falso: las reglas del rugby",
       description:
-        "Diez afirmaciones sobre las reglas del rugby: el pase adelantado, la melé, las tarjetas, la conversión y algo de rugby a siete.",
+        "Veinte afirmaciones sobre las reglas del rugby: el pase adelantado, la melé, las tarjetas, la conversión y algo de rugby a siete.",
       questions: [
         {
           id: 1,
@@ -377,6 +537,86 @@ export const quizRugbyRegles: TranslatedQuiz = {
           correctAnswer: "a",
           explanation:
             "Verdadero, siete minutos por tiempo, salvo en las finales, donde pasan a diez. El campo es igual de grande que en el rugby a quince, así que se corre muchísimo.",
+        },
+        {
+          id: 11,
+          question: "Cuando un jugador deja caer el balón hacia delante, el árbitro pita un avant y da una melé al rival.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El avant es una falta leve: no da golpe de castigo, solo una melé para el equipo contrario.",
+        },
+        {
+          id: 12,
+          question: "Para marcar un ensayo basta con cruzar la línea de ensayo con el balón en las manos.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Hay que apoyar el balón en el suelo dentro del ingoal, presionándolo con la mano, los brazos o la parte superior del cuerpo.",
+        },
+        {
+          id: 13,
+          question: "La conversión se patea en línea con el punto donde se marcó el ensayo.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El pateador puede alejarse lo que quiera, pero siempre en línea con el lugar donde se apoyó el balón. Por eso se intenta marcar cerca de los palos.",
+        },
+        {
+          id: 14,
+          question: "En el saque de lateral, el lanzador puede tirar el balón torcido, hacia sus compañeros.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El balón tiene que entrar recto, por el medio del pasillo entre las dos filas. Si no, el rival elige entre un lateral y una melé.",
+        },
+        {
+          id: 15,
+          question: "Un partido de rugby a XV nunca puede acabar en empate.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. El empate existe, en liga y en la fase de grupos del Mundial. La prórroga y la tanda de patadas solo se usan en las eliminatorias.",
+        },
+        {
+          id: 16,
+          question: "En el rugby no existe el fuera de juego.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Existe y está por todas partes: en el juego abierto, en la melé, en el lateral y en los agrupamientos. Un jugador en fuera de juego no puede participar en la jugada.",
+        },
+        {
+          id: 17,
+          question: "El saque inicial se hace con el pie, desde el centro del campo.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Es una patada de botepronto desde el centro de la línea de medio campo, al inicio de cada parte y después de cada anotación. El balón debe avanzar al menos 10 metros.",
+        },
+        {
+          id: 18,
+          question: "Un jugador que atrapa en el aire una patada rival dentro de sus 22 metros puede gritar « mark » y conseguir un golpe franco.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. El mark solo vale dentro de los propios 22 metros o del ingoal, y con un balón atrapado directamente, sin bote.",
+        },
+        {
+          id: 19,
+          question: "En el lateral, los compañeros pueden levantar al saltador para que atrape el balón.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "a",
+          explanation:
+            "Verdadero. Está permitido desde finales de los años noventa. Quienes lo levantan deben subirlo y bajarlo sin peligro.",
+        },
+        {
+          id: 20,
+          question: "Un placaje por encima de los hombros está permitido si se hace con los brazos.",
+          answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
+          correctAnswer: "b",
+          explanation:
+            "Falso. Todo placaje a la altura de la cabeza o del cuello está prohibido. Según la gravedad, se castiga con golpe de castigo, tarjeta amarilla o roja.",
         },
       ],
     },

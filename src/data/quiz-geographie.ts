@@ -253,6 +253,45 @@ export const quizDrapeaux: TranslatedQuiz = {
           explanation:
             "Le drapeau du Pakistan est vert foncé avec un croissant de lune et une étoile à cinq branches blancs, et une bande blanche verticale côté hampe représentant les minorités non musulmanes.",
         },
+        {
+          id: 18,
+          question: "Quel pays a un drapeau avec un cèdre vert au centre ?",
+          answers: [
+            { id: "a", text: "Chypre" },
+            { id: "b", text: "Liban" },
+            { id: "c", text: "Jordanie" },
+            { id: "d", text: "Syrie" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Le drapeau du Liban a un cèdre vert sur une large bande blanche, entre deux bandes rouges. Le cèdre est l'arbre symbole du pays depuis l'Antiquité.",
+        },
+        {
+          id: 19,
+          question: "Quel pays a un drapeau avec un lion doré qui tient un sabre ?",
+          answers: [
+            { id: "a", text: "Bhoutan" },
+            { id: "b", text: "Inde" },
+            { id: "c", text: "Sri Lanka" },
+            { id: "d", text: "Népal" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Le drapeau du Sri Lanka montre un lion jaune tenant un sabre sur fond bordeaux, avec deux bandes verte et orange côté mât. Le drapeau du Bhoutan porte un dragon.",
+        },
+        {
+          id: 20,
+          question: "Quel pays a un fusil d'assaut sur son drapeau ?",
+          answers: [
+            { id: "a", text: "Mozambique" },
+            { id: "b", text: "Angola" },
+            { id: "c", text: "Zimbabwe" },
+            { id: "d", text: "Zambie" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Le Mozambique, dont le drapeau montre une kalachnikov croisée avec une houe, sur un livre ouvert. Le drapeau de l'Angola porte une machette et une roue dentée.",
+        },
       ],
     },
     en: {
@@ -498,6 +537,45 @@ export const quizDrapeaux: TranslatedQuiz = {
           explanation:
             "Pakistan's flag is dark green with a white crescent moon and five-pointed star, and a white vertical stripe on the hoist side representing non-Muslim minorities.",
         },
+        {
+          id: 18,
+          question: "Which country's flag has a green cedar tree in the middle?",
+          answers: [
+            { id: "a", text: "Cyprus" },
+            { id: "b", text: "Lebanon" },
+            { id: "c", text: "Jordan" },
+            { id: "d", text: "Syria" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "Lebanon's flag has a green cedar on a wide white band, between two red bands. The cedar has been the country's symbol since ancient times.",
+        },
+        {
+          id: 19,
+          question: "Which country's flag has a golden lion holding a sword?",
+          answers: [
+            { id: "a", text: "Bhutan" },
+            { id: "b", text: "India" },
+            { id: "c", text: "Sri Lanka" },
+            { id: "d", text: "Nepal" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "Sri Lanka's flag shows a yellow lion holding a sword on a maroon background, with a green and an orange stripe by the hoist. Bhutan has a dragon.",
+        },
+        {
+          id: 20,
+          question: "Which country has an assault rifle on its flag?",
+          answers: [
+            { id: "a", text: "Mozambique" },
+            { id: "b", text: "Angola" },
+            { id: "c", text: "Zimbabwe" },
+            { id: "d", text: "Zambia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Mozambique, whose flag shows an AK-47 crossed with a hoe, over an open book. Angola's flag has a machete and a cogwheel.",
+        },
       ],
     },
     es: {
@@ -742,6 +820,45 @@ export const quizDrapeaux: TranslatedQuiz = {
           correctAnswer: "c",
           explanation:
             "La bandera de Pakistán es verde oscuro con una media luna y una estrella de cinco puntas blancas, y una franja blanca vertical en el lado del asta que representa a las minorías no musulmanas.",
+        },
+        {
+          id: 18,
+          question: "¿Qué país tiene una bandera con un cedro verde en el centro?",
+          answers: [
+            { id: "a", text: "Chipre" },
+            { id: "b", text: "Líbano" },
+            { id: "c", text: "Jordania" },
+            { id: "d", text: "Siria" },
+          ],
+          correctAnswer: "b",
+          explanation:
+            "La bandera del Líbano tiene un cedro verde sobre una ancha franja blanca, entre dos franjas rojas. El cedro es el símbolo del país desde la Antigüedad.",
+        },
+        {
+          id: 19,
+          question: "¿Qué país tiene una bandera con un león dorado que sostiene una espada?",
+          answers: [
+            { id: "a", text: "Bután" },
+            { id: "b", text: "India" },
+            { id: "c", text: "Sri Lanka" },
+            { id: "d", text: "Nepal" },
+          ],
+          correctAnswer: "c",
+          explanation:
+            "La bandera de Sri Lanka muestra un león amarillo con una espada sobre fondo granate, con una franja verde y otra naranja junto al mástil. Bután tiene un dragón.",
+        },
+        {
+          id: 20,
+          question: "¿Qué país tiene un fusil de asalto en su bandera?",
+          answers: [
+            { id: "a", text: "Mozambique" },
+            { id: "b", text: "Angola" },
+            { id: "c", text: "Zimbabue" },
+            { id: "d", text: "Zambia" },
+          ],
+          correctAnswer: "a",
+          explanation:
+            "Mozambique, cuya bandera muestra un kalashnikov cruzado con una azada, sobre un libro abierto. La bandera de Angola lleva un machete y una rueda dentada.",
         },
       ],
     },
