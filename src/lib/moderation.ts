@@ -14,12 +14,21 @@ export async function ensureModeration(db: D1Database): Promise<void> {
   if (ensured) return;
   const cols = await db.prepare("PRAGMA table_info(user_quizzes)").all<{ name: string }>();
   const names = new Set((cols.results || []).map((c) => c.name));
-  const stmts: D1PreparedStatement[] = [];
-  if (!names.has("status")) stmts.push(db.prepare("ALTER TABLE user_quizzes ADD COLUMN status TEXT NOT NULL DEFAULT 'pending'"));
-  if (!names.has("reviewed_at")) stmts.push(db.prepare("ALTER TABLE user_quizzes ADD COLUMN reviewed_at TEXT"));
-  if (!names.has("review_note")) stmts.push(db.prepare("ALTER TABLE user_quizzes ADD COLUMN review_note TEXT"));
-  stmts.push(db.prepare("CREATE INDEX IF NOT EXISTS idx_user_quizzes_status ON user_quizzes(status, created_at)"));
-  await db.batch(stmts);
+  const sql: string[] = [];
+  if (!names.has("status")) sql.push("ALTER TABLE user_quizzes ADD COLUMN status TEXT NOT NULL DEFAULT 'pending'");
+  if (!names.has("reviewed_at")) sql.push("ALTER TABLE user_quizzes ADD COLUMN reviewed_at TEXT");
+  if (!names.has("review_note")) sql.push("ALTER TABLE user_quizzes ADD COLUMN review_note TEXT");
+  sql.push("CREATE INDEX IF NOT EXISTS idx_user_quizzes_status ON user_quizzes(status, created_at)");
+  // Une commande à la fois : deux requêtes arrivées ensemble sur une base sans
+  // la migration 012 ajoutent la même colonne, la seconde échoue sur
+  // « duplicate column » et ce n'est pas une erreur.
+  for (const q of sql) {
+    try {
+      await db.prepare(q).run();
+    } catch (e) {
+      if (!/duplicate column/i.test(String(e))) throw e;
+    }
+  }
   ensured = true;
 }
 

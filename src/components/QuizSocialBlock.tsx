@@ -74,8 +74,10 @@ export default function QuizSocialBlock(props: QuizSocialBlockProps) {
   useEffect(() => {
     if (ended.current) return;
     ended.current = true;
-    trackQuizEnd(quizSlug, userScore, scoreOutOf === undefined ? totalQuestions : scoreOutOf);
-  }, [quizSlug, userScore, totalQuestions, scoreOutOf]);
+    // Le total est le nombre de questions jouées, pas le plafond du score :
+    // le chrono passe scoreOutOf à null, sa partie n'aurait sinon aucun total.
+    trackQuizEnd(quizSlug, userScore, totalQuestions);
+  }, [quizSlug, userScore, totalQuestions]);
   // La comparaison avec tous les joueurs et la note du quiz s'affichent pour
   // tout le monde, connecte ou pas (voter, lui, demande un compte). Le bloc
   // amis n'existe que pour un compte.

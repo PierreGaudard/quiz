@@ -49,6 +49,8 @@ export const onRequest = defineMiddleware(async (context, next) => {
   res.headers.set("X-Robots-Tag", "noindex, nofollow");
   res.headers.set("Content-Security-Policy", "frame-ancestors 'none'");
   res.headers.set("X-Frame-Options", "DENY");
-  res.headers.set("Referrer-Policy", "no-referrer");
+  // Pas « no-referrer » : avec lui, le navigateur envoie « Origin: null » sur
+  // les formulaires, et le contrôle d'origine ci-dessus refuserait toute action.
+  res.headers.set("Referrer-Policy", "same-origin");
   return res;
 });

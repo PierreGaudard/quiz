@@ -139,7 +139,8 @@ interface ActiveGame {
   slug: string;
   custom: boolean;
   start: number;
-  answers: number[];
+  /** Réponse par numéro de question : 1 bonne, 0 mauvaise, null pas répondue. */
+  answers: (number | null)[];
   ended: boolean;
 }
 let active: ActiveGame | null = null;
@@ -154,9 +155,9 @@ function hookAbandon(): void {
     track("quiz_abandon", {
       q: active.slug,
       custom: active.custom,
-      n: active.answers.length,
+      n: answered(active),
       d: Date.now() - active.start,
-      x: { a: active.answers.join("") },
+      x: { a: answerString(active) },
     });
   });
 }
@@ -182,10 +183,20 @@ export function trackQuizStart(quizSlug: string, opts: { custom?: boolean } = {}
   } catch {}
 }
 
-/** Une reponse donnee dans la partie en cours. Rien ne part : c'est envoye avec la fin ou l'abandon. */
-export function trackAnswer(correct: boolean): void {
-  if (active && !active.ended) active.answers.push(correct ? 1 : 0);
+/**
+ * Une reponse donnee dans la partie en cours, a son numero de question si le
+ * lecteur le connait (sinon a la suite). Rien ne part : c'est envoye avec la
+ * fin ou l'abandon, en chaine « 1 » / « 0 » / « - » (pas repondue).
+ */
+export function trackAnswer(correct: boolean, questionIndex?: number): void {
+  if (!active || active.ended) return;
+  const i = typeof questionIndex === "number" && questionIndex >= 0 && questionIndex < 500 ? questionIndex : active.answers.length;
+  while (active.answers.length < i) active.answers.push(null);
+  active.answers[i] = correct ? 1 : 0;
 }
+
+const answered = (g: ActiveGame) => g.answers.filter((a) => a !== null).length;
+const answerString = (g: ActiveGame) => g.answers.map((a) => (a === null ? "-" : String(a))).join("");
 
 /** Partie terminee (ecran de resultat). */
 export function trackQuizEnd(quizSlug: string, score: number, total?: number | null): void {
@@ -197,6 +208,6 @@ export function trackQuizEnd(quizSlug: string, score: number, total?: number | n
     n: Math.round(score),
     tot: total ?? undefined,
     d: game ? Date.now() - game.start : undefined,
-    x: game && game.answers.length ? { a: game.answers.join("") } : undefined,
+    x: game && game.answers.length ? { a: answerString(game) } : undefined,
   });
 }

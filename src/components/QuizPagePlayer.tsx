@@ -139,7 +139,6 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
     (questionIndex: number, answerId: string) => {
       const q = quiz.questions[questionIndex];
       const isCorrect = answerId === q.correctAnswer;
-      trackAnswer(isCorrect);
       const currentState = questionStates[questionIndex];
 
       // Second chance: if wrong and has second chance active, don't mark as answered
@@ -169,6 +168,10 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
 
       if (!hasStarted) setHasStarted(true);
       if (!startTracked.current) { startTracked.current = true; trackQuizStart(quiz.slug); }
+      // Après le début de partie (qui remet le détail à zéro) et après la 2e
+      // chance (un premier essai raté ne compte pas), au numéro de la question :
+      // sur cette page, on peut répondre dans le désordre.
+      trackAnswer(isCorrect, questionIndex);
       setShowIndice(null);
 
       // XP gain

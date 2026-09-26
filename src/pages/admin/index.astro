@@ -223,7 +223,11 @@ if (quizParam) {
   );
   const nQ = Math.max(qs.length, ...endRows.map((r) => (r.a || "").length), 1);
   const ok = Array(nQ).fill(0), seen = Array(nQ).fill(0);
-  for (const r of endRows) for (let i = 0; i < (r.a || "").length; i++) { seen[i]++; if (r.a[i] === "1") ok[i]++; }
+  for (const r of endRows) for (let i = 0; i < (r.a || "").length; i++) {
+    if (r.a[i] === "-") continue;
+    seen[i]++;
+    if (r.a[i] === "1") ok[i]++;
+  }
   const ab = new Map(abRows.map((r) => [r.num, r.n]));
   const scoreMap = new Map<number, number>();
   for (const r of endRows) scoreMap.set(r.num, (scoreMap.get(r.num) || 0) + 1);
