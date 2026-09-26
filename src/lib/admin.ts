@@ -14,7 +14,7 @@
  *   ACCESS_AUD          l'« Application Audience (AUD) Tag » de l'application
  *   ADMIN_EMAILS        adresses autorisees, separees par des virgules
  * Sans eux, tout est refuse. En local, ADMIN_BYPASS=1 dans .dev.vars ouvre
- * l'acces (fichier non versionne).
+ * l'acces, et seulement sur localhost (fichier non versionne).
  */
 
 interface AdminEnv {
@@ -61,7 +61,10 @@ async function verifyAccessJwt(token: string, env: AdminEnv): Promise<string | n
   if (!ok) return null;
   const now = Math.floor(Date.now() / 1000);
   const auds = Array.isArray(payload.aud) ? payload.aud : [payload.aud];
-  if (!auds.includes(aud) || (payload.exp && payload.exp < now) || payload.iss !== `https://${team}`) return null;
+  if (!auds.includes(aud) || payload.iss !== `https://${team}`) return null;
+  // Expiration obligatoire : un jeton sans date de fin est refusé.
+  if (typeof payload.exp !== "number" || payload.exp < now) return null;
+  if (typeof payload.nbf === "number" && payload.nbf > now + 60) return null;
   const email = String(payload.email || "").toLowerCase();
   const allowed = (env.ADMIN_EMAILS || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
   if (!email || !allowed.includes(email)) return null;
@@ -71,7 +74,12 @@ async function verifyAccessJwt(token: string, env: AdminEnv): Promise<string | n
 /** L'adresse de l'admin connecte, ou null. */
 export async function getAdmin(request: Request): Promise<string | null> {
   const env = await getEnv();
-  if (env.ADMIN_BYPASS === "1") return "local";
+  // Le passe-droit local ne vaut que sur la machine : même posé par erreur
+  // sur le Worker, il ne s'appliquerait pas à wizyquiz.com.
+  if (env.ADMIN_BYPASS === "1") {
+    const host = new URL(request.url).hostname;
+    if (host === "localhost" || host === "127.0.0.1") return "local";
+  }
   const token = request.headers.get("cf-access-jwt-assertion");
   if (!token) return null;
   try {
