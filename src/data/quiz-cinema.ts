@@ -286,6 +286,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-20.webp",
           question: "De quel quai de la gare de King's Cross part le Poudlard Express ?",
           answers: [
             { id: "a", text: "Le quai 9 ½" },
@@ -575,6 +576,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-20.webp",
           question: "Which platform at King's Cross does the Hogwarts Express leave from?",
           answers: [
             { id: "a", text: "Platform 9 ½" },
@@ -864,6 +866,7 @@ export const quizHarryPotter: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-20.webp",
           question: "¿De qué andén de la estación de King's Cross sale el expreso de Hogwarts?",
           answers: [
             { id: "a", text: "El andén 9 ½" },

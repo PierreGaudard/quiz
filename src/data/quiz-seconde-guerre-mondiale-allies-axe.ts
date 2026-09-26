@@ -31,6 +31,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-1.webp",
           question: "Lequel de ces deux pays est resté neutre pendant toute la guerre ?",
           answers: [
             { id: "a", text: "La Suisse" },
@@ -88,6 +89,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-6.webp",
           question: "Qui commande en chef les forces alliées lors du débarquement de Normandie ?",
           answers: [
             { id: "a", text: "Dwight Eisenhower" },
@@ -145,6 +147,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-11.webp",
           question: "Quel pays signe le pacte tripartite avec l'Allemagne et l'Italie, en septembre 1940 ?",
           answers: [
             { id: "a", text: "Le Japon" },
@@ -178,6 +181,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-14.webp",
           question: "Quel général américain commande dans le Pacifique Sud-Ouest et reçoit la capitulation du Japon, en septembre 1945 ?",
           answers: [
             { id: "a", text: "George Patton" },
@@ -211,6 +215,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-17.webp",
           question: "Lequel de ces deux pays est envahi par l'Allemagne en avril 1940 ?",
           answers: [
             { id: "a", text: "La Norvège" },
@@ -244,6 +249,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-20.webp",
           question: "Lequel de ces deux pays d'Amérique du Sud envoie des soldats combattre en Europe aux côtés des Alliés ?",
           answers: [
             { id: "a", text: "L'Argentine" },
@@ -262,6 +268,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-1.webp",
           question: "Which of these two countries stayed neutral for the whole war?",
           answers: [
             { id: "a", text: "Switzerland" },
@@ -319,6 +326,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-6.webp",
           question: "Who was in overall command of the Allied forces for the Normandy landings?",
           answers: [
             { id: "a", text: "Dwight Eisenhower" },
@@ -376,6 +384,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-11.webp",
           question: "Which country signed the Tripartite Pact with Germany and Italy in September 1940?",
           answers: [
             { id: "a", text: "Japan" },
@@ -409,6 +418,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-14.webp",
           question: "Which American general commanded in the South-West Pacific and received Japan's surrender in September 1945?",
           answers: [
             { id: "a", text: "George Patton" },
@@ -442,6 +452,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-17.webp",
           question: "Which of these two countries was invaded by Germany in April 1940?",
           answers: [
             { id: "a", text: "Norway" },
@@ -475,6 +486,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-20.webp",
           question: "Which of these two South American countries sent soldiers to fight in Europe alongside the Allies?",
           answers: [
             { id: "a", text: "Argentina" },
@@ -493,6 +505,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-1.webp",
           question: "¿Cuál de estos dos países se mantuvo neutral durante toda la guerra?",
           answers: [
             { id: "a", text: "Suiza" },
@@ -550,6 +563,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-6.webp",
           question: "¿Quién tenía el mando supremo de las fuerzas aliadas en el desembarco de Normandía?",
           answers: [
             { id: "a", text: "Dwight Eisenhower" },
@@ -607,6 +621,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-11.webp",
           question: "¿Qué país firmó el pacto tripartito con Alemania e Italia en septiembre de 1940?",
           answers: [
             { id: "a", text: "Japón" },
@@ -640,6 +655,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-14.webp",
           question: "¿Qué general estadounidense mandaba en el Pacífico Suroeste y recibió la rendición de Japón en septiembre de 1945?",
           answers: [
             { id: "a", text: "George Patton" },
@@ -673,6 +689,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-17.webp",
           question: "¿Cuál de estos dos países fue invadido por Alemania en abril de 1940?",
           answers: [
             { id: "a", text: "Noruega" },
@@ -706,6 +723,7 @@ export const quizSecondeGuerreMondialeAlliesAxe: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seconde-guerre-mondiale-allies-axe-20.webp",
           question: "¿Cuál de estos dos países sudamericanos envió soldados a combatir en Europa junto a los Aliados?",
           answers: [
             { id: "a", text: "Argentina" },

@@ -46,6 +46,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-villes-2.webp",
           question: "Remets dans l'ordre les Jeux d'hiver organisés en France.",
           answers: [
             { id: "a", text: "Chamonix" },
@@ -75,6 +76,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-jeux-olympiques-villes-4.webp",
           question: "Remets ces prochains Jeux dans l'ordre, d'été comme d'hiver.",
           answers: [
             { id: "a", text: "Milan-Cortina" },
@@ -175,6 +177,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jeux-olympiques-villes-11.webp",
           question: "Remets dans l'ordre ces Jeux d'été d'avant la Seconde Guerre mondiale.",
           answers: [
             { id: "a", text: "Anvers" },
@@ -217,6 +220,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jeux-olympiques-villes-14.webp",
           question: "Remets dans l'ordre ces Jeux d'hiver organisés en Amérique du Nord.",
           answers: [
             { id: "a", text: "Squaw Valley" },
@@ -259,6 +263,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-villes-17.webp",
           question: "Remets dans l'ordre ces Jeux des années 2020, d'été comme d'hiver.",
           answers: [
             { id: "a", text: "Pékin" },
@@ -301,6 +306,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-villes-20.webp",
           question: "Remets ces exploits dans l'ordre des Jeux où ils ont eu lieu.",
           answers: [
             { id: "a", text: "Le triplé d'Usain Bolt" },
@@ -337,6 +343,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-villes-2.webp",
           question: "Put the Winter Games held in France in order.",
           answers: [
             { id: "a", text: "Chamonix" },
@@ -366,6 +373,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-jeux-olympiques-villes-4.webp",
           question: "Put these upcoming Games in order, summer and winter together.",
           answers: [
             { id: "a", text: "Milan-Cortina" },
@@ -466,6 +474,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jeux-olympiques-villes-11.webp",
           question: "Put these pre-Second World War Summer Games in order.",
           answers: [
             { id: "a", text: "Antwerp" },
@@ -508,6 +517,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jeux-olympiques-villes-14.webp",
           question: "Put these Winter Games held in North America in order.",
           answers: [
             { id: "a", text: "Squaw Valley" },
@@ -550,6 +560,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-villes-17.webp",
           question: "Put these Games of the 2020s in order, summer and winter.",
           answers: [
             { id: "a", text: "Beijing" },
@@ -592,6 +603,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-villes-20.webp",
           question: "Put these feats in order, by the Games where they happened.",
           answers: [
             { id: "a", text: "Usain Bolt's triple" },
@@ -628,6 +640,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-villes-2.webp",
           question: "Ordena los Juegos de invierno celebrados en Francia.",
           answers: [
             { id: "a", text: "Chamonix" },
@@ -657,6 +670,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-jeux-olympiques-villes-4.webp",
           question: "Ordena estos próximos Juegos, de verano y de invierno juntos.",
           answers: [
             { id: "a", text: "Milán-Cortina" },
@@ -757,6 +771,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jeux-olympiques-villes-11.webp",
           question: "Ordena estos Juegos de verano anteriores a la Segunda Guerra Mundial.",
           answers: [
             { id: "a", text: "Amberes" },
@@ -799,6 +814,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jeux-olympiques-villes-14.webp",
           question: "Ordena estos Juegos de invierno celebrados en América del Norte.",
           answers: [
             { id: "a", text: "Squaw Valley" },
@@ -841,6 +857,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-villes-17.webp",
           question: "Ordena estos Juegos de la década de 2020, de verano y de invierno.",
           answers: [
             { id: "a", text: "Pekín" },
@@ -883,6 +900,7 @@ export const quizJeuxOlympiquesVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-villes-20.webp",
           question: "Ordena estas hazañas según los Juegos en los que ocurrieron.",
           answers: [
             { id: "a", text: "El triplete de Usain Bolt" },

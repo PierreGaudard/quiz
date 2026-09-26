@@ -38,6 +38,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-cyclisme-maillots-2.webp",
           question: "Sur le Tour de France, le maillot vert récompense le meilleur jeune.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -72,6 +73,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-cyclisme-maillots-5.webp",
           question: "Le maillot jaune existe depuis le tout premier Tour de France.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -151,6 +153,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-cyclisme-maillots-12.webp",
           question: "Quand un coureur est en tête de deux classements, il porte le maillot le plus important, et l'autre maillot passe au deuxième de ce classement.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -184,6 +187,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-cyclisme-maillots-15.webp",
           question: "Sur le Tour d'Italie, le classement par points est récompensé par un maillot vert.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +210,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-maillots-17.webp",
           question: "Sur le Tour, l'équipe en tête du classement par équipes porte un maillot bleu.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +244,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-maillots-20.webp",
           question: "Sur le Tour, le maillot jaune revient au coureur qui a gagné le plus d'étapes.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -269,6 +275,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-cyclisme-maillots-2.webp",
           question: "At the Tour de France, the green jersey goes to the best young rider.",
           answers: [
             { id: "a", text: "True" },
@@ -303,6 +310,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-cyclisme-maillots-5.webp",
           question: "The yellow jersey has existed since the very first Tour de France.",
           answers: [
             { id: "a", text: "True" },
@@ -382,6 +390,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-cyclisme-maillots-12.webp",
           question: "When a rider leads two classifications, he wears the more important jersey and the other one goes to the second-placed rider in that classification.",
           answers: [
             { id: "a", text: "True" },
@@ -415,6 +424,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-cyclisme-maillots-15.webp",
           question: "At the Giro d'Italia, the points classification leader wears a green jersey.",
           answers: [
             { id: "a", text: "True" },
@@ -437,6 +447,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-maillots-17.webp",
           question: "At the Tour, the team leading the team classification wears a blue jersey.",
           answers: [
             { id: "a", text: "True" },
@@ -470,6 +481,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-maillots-20.webp",
           question: "At the Tour, the yellow jersey goes to the rider who has won the most stages.",
           answers: [
             { id: "a", text: "True" },
@@ -500,6 +512,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-cyclisme-maillots-2.webp",
           question: "En el Tour de Francia, el maillot verde es para el mejor joven.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -534,6 +547,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-cyclisme-maillots-5.webp",
           question: "El maillot amarillo existe desde el primer Tour de Francia.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -613,6 +627,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-cyclisme-maillots-12.webp",
           question: "Cuando un ciclista lidera dos clasificaciones, lleva el maillot más importante y el otro pasa al segundo de esa clasificación.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -646,6 +661,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-cyclisme-maillots-15.webp",
           question: "En el Giro de Italia, el líder de la clasificación por puntos lleva un maillot verde.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -668,6 +684,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-maillots-17.webp",
           question: "En el Tour, el equipo que lidera la clasificación por equipos lleva un maillot azul.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -701,6 +718,7 @@ export const quizCyclismeMaillots: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-maillots-20.webp",
           question: "En el Tour, el maillot amarillo es para el ciclista que ha ganado más etapas.",
           answers: [
             { id: "a", text: "Verdadero" },

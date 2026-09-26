@@ -62,6 +62,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-call-of-duty-personnages-4.webp",
           question: "Dans Modern Warfare 2 (2009), qui trahit la Task Force 141 et abat Ghost et Roach ?",
           answers: [
             { id: "a", text: "Le général Shepherd" },
@@ -141,6 +142,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-call-of-duty-personnages-11.webp",
           question: "Dans Call of Duty 4, quel soldat du SAS le joueur incarne-t-il ?",
           answers: [
             { id: "a", text: "Le capitaine Price" },
@@ -174,6 +176,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-call-of-duty-personnages-14.webp",
           question: "Qui tue Makarov à la fin de Modern Warfare 3 (2011) ?",
           answers: [
             { id: "a", text: "Le capitaine Price" },
@@ -207,6 +210,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-call-of-duty-personnages-17.webp",
           question: "Quel acteur de Game of Thrones joue le méchant d'Infinite Warfare ?",
           answers: [
             { id: "a", text: "Kit Harington" },
@@ -240,6 +244,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-personnages-20.webp",
           question: "Dans quel jeu un capitaine Price apparaît-il pour la toute première fois ?",
           answers: [
             { id: "a", text: "Call of Duty 4" },
@@ -294,6 +299,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-call-of-duty-personnages-4.webp",
           question: "In Modern Warfare 2 (2009), who betrays Task Force 141 and shoots Ghost and Roach?",
           answers: [
             { id: "a", text: "General Shepherd" },
@@ -373,6 +379,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-call-of-duty-personnages-11.webp",
           question: "In Call of Duty 4, which SAS soldier does the player control?",
           answers: [
             { id: "a", text: "Captain Price" },
@@ -406,6 +413,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-call-of-duty-personnages-14.webp",
           question: "Who kills Makarov at the end of Modern Warfare 3 (2011)?",
           answers: [
             { id: "a", text: "Captain Price" },
@@ -439,6 +447,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-call-of-duty-personnages-17.webp",
           question: "Which Game of Thrones actor plays the villain in Infinite Warfare?",
           answers: [
             { id: "a", text: "Kit Harington" },
@@ -472,6 +481,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-personnages-20.webp",
           question: "In which game does a Captain Price appear for the very first time?",
           answers: [
             { id: "a", text: "Call of Duty 4" },
@@ -526,6 +536,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-call-of-duty-personnages-4.webp",
           question: "En Modern Warfare 2 (2009), ¿quién traiciona a la Task Force 141 y dispara a Ghost y a Roach?",
           answers: [
             { id: "a", text: "El general Shepherd" },
@@ -605,6 +616,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-call-of-duty-personnages-11.webp",
           question: "En Call of Duty 4, ¿qué soldado del SAS controla el jugador?",
           answers: [
             { id: "a", text: "El capitán Price" },
@@ -638,6 +650,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-call-of-duty-personnages-14.webp",
           question: "¿Quién mata a Makarov al final de Modern Warfare 3 (2011)?",
           answers: [
             { id: "a", text: "El capitán Price" },
@@ -671,6 +684,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-call-of-duty-personnages-17.webp",
           question: "¿Qué actor de Juego de tronos interpreta al villano de Infinite Warfare?",
           answers: [
             { id: "a", text: "Kit Harington" },
@@ -704,6 +718,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-personnages-20.webp",
           question: "¿En qué juego aparece por primera vez un capitán Price?",
           answers: [
             { id: "a", text: "Call of Duty 4" },

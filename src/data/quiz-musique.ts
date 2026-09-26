@@ -147,6 +147,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-musique-10.webp",
           question: "À quelle famille d'instruments appartient le saxophone ?",
           answers: [
             { id: "a", text: "Les cuivres" },
@@ -186,6 +187,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-musique-13.webp",
           question: "Qui est surnommé le « roi du rock'n'roll » ?",
           answers: [
             { id: "a", text: "Chuck Berry" },
@@ -225,6 +227,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-musique-16.webp",
           question: "Quel style a rendu Bob Marley célèbre ?",
           answers: [
             { id: "a", text: "Le reggae" },
@@ -251,6 +254,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-musique-18.webp",
           question: "Qui a composé « Le Lac des cygnes » ?",
           answers: [
             { id: "a", text: "Tchaïkovski" },
@@ -277,6 +281,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-20.webp",
           question: "Quel instrument à archet est le plus grave de l'orchestre ?",
           answers: [
             { id: "a", text: "Le violoncelle" },
@@ -419,6 +424,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-musique-10.webp",
           question: "Which family of instruments does the saxophone belong to?",
           answers: [
             { id: "a", text: "Brass" },
@@ -458,6 +464,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-musique-13.webp",
           question: "Who is known as the King of Rock and Roll?",
           answers: [
             { id: "a", text: "Chuck Berry" },
@@ -497,6 +504,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-musique-16.webp",
           question: "Which style made Bob Marley famous?",
           answers: [
             { id: "a", text: "Reggae" },
@@ -523,6 +531,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-musique-18.webp",
           question: "Who composed Swan Lake?",
           answers: [
             { id: "a", text: "Tchaikovsky" },
@@ -549,6 +558,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-20.webp",
           question: "Which bowed instrument plays the lowest in the orchestra?",
           answers: [
             { id: "a", text: "Cello" },
@@ -691,6 +701,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-musique-10.webp",
           question: "¿A qué familia de instrumentos pertenece el saxofón?",
           answers: [
             { id: "a", text: "Viento metal" },
@@ -730,6 +741,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-musique-13.webp",
           question: "¿A quién llaman el «rey del rock and roll»?",
           answers: [
             { id: "a", text: "Chuck Berry" },
@@ -769,6 +781,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-musique-16.webp",
           question: "¿Qué estilo hizo famoso a Bob Marley?",
           answers: [
             { id: "a", text: "El reggae" },
@@ -795,6 +808,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-musique-18.webp",
           question: "¿Quién compuso «El lago de los cisnes»?",
           answers: [
             { id: "a", text: "Chaikovski" },
@@ -821,6 +835,7 @@ export const quizMusique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-20.webp",
           question: "¿Qué instrumento de arco es el más grave de la orquesta?",
           answers: [
             { id: "a", text: "El violonchelo" },

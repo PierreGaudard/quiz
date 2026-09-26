@@ -101,6 +101,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-7.webp",
           question: "Quel roi est assassiné en 1589 par le moine Jacques Clément ?",
           answers: [
             { id: "a", text: "Henri III" },
@@ -158,6 +159,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-12.webp",
           question: "Quel roi a épousé Catherine de Médicis ?",
           answers: [
             { id: "a", text: "Henri II" },
@@ -191,6 +193,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-15.webp",
           question: "Quel roi des Francs est baptisé à Reims par l'évêque Remi ?",
           answers: [
             { id: "a", text: "Charlemagne" },
@@ -213,6 +216,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-17.webp",
           question: "Sous quel roi est creusé le canal du Midi, qui relie Toulouse à la Méditerranée ?",
           answers: [
             { id: "a", text: "Henri IV" },
@@ -246,6 +250,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-20.webp",
           question: "Quel roi est renversé par la révolution de juillet 1830, les « Trois Glorieuses » ?",
           answers: [
             { id: "a", text: "Charles X" },
@@ -333,6 +338,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-7.webp",
           question: "Which king was assassinated in 1589 by the monk Jacques Clément?",
           answers: [
             { id: "a", text: "Henry III" },
@@ -390,6 +396,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-12.webp",
           question: "Which king married Catherine de' Medici?",
           answers: [
             { id: "a", text: "Henry II" },
@@ -423,6 +430,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-15.webp",
           question: "Which king of the Franks was baptised at Reims by Bishop Remigius?",
           answers: [
             { id: "a", text: "Charlemagne" },
@@ -445,6 +453,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-17.webp",
           question: "Under which king was the Canal du Midi, linking Toulouse to the Mediterranean, dug?",
           answers: [
             { id: "a", text: "Henry IV" },
@@ -478,6 +487,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-20.webp",
           question: "Which king was overthrown by the July Revolution of 1830, the \"Three Glorious Days\"?",
           answers: [
             { id: "a", text: "Charles X" },
@@ -565,6 +575,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-7.webp",
           question: "¿Qué rey fue asesinado en 1589 por el monje Jacques Clément?",
           answers: [
             { id: "a", text: "Enrique III" },
@@ -622,6 +633,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-12.webp",
           question: "¿Qué rey se casó con Catalina de Médici?",
           answers: [
             { id: "a", text: "Enrique II" },
@@ -655,6 +667,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-15.webp",
           question: "¿Qué rey de los francos fue bautizado en Reims por el obispo Remigio?",
           answers: [
             { id: "a", text: "Carlomagno" },
@@ -677,6 +690,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-17.webp",
           question: "¿Bajo qué rey se excavó el canal del Midi, que une Toulouse con el Mediterráneo?",
           answers: [
             { id: "a", text: "Enrique IV" },
@@ -710,6 +724,7 @@ export const quizRoisDeFranceQuiAFaitQuoi: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-qui-a-fait-quoi-20.webp",
           question: "¿Qué rey fue derrocado por la revolución de julio de 1830, las «Tres Gloriosas»?",
           answers: [
             { id: "a", text: "Carlos X" },

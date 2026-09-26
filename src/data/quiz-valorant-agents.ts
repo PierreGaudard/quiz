@@ -40,6 +40,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-valorant-agents-2.webp",
           question: "Quel agent vient de France ?",
           answers: [
             { id: "a", text: "Chamber" },
@@ -80,6 +81,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-valorant-agents-5.webp",
           question: "Quel agent est un robot ?",
           answers: [
             { id: "a", text: "Viper" },
@@ -173,6 +175,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-valorant-agents-12.webp",
           question: "Quel agent se sert de l'eau pour créer des murs et des boucliers ?",
           answers: [
             { id: "a", text: "Harbor" },
@@ -212,6 +215,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-valorant-agents-15.webp",
           question: "Quel agent court très vite et lance des éclairs grâce à l'électricité ?",
           answers: [
             { id: "a", text: "Jett" },
@@ -238,6 +242,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-valorant-agents-17.webp",
           question: "Quel agent vient du Sénégal ?",
           answers: [
             { id: "a", text: "Tejo" },
@@ -277,6 +282,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-agents-20.webp",
           question: "Quel agent vient de Croatie ?",
           answers: [
             { id: "a", text: "Chamber" },
@@ -311,6 +317,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-valorant-agents-2.webp",
           question: "Which agent is from France?",
           answers: [
             { id: "a", text: "Chamber" },
@@ -351,6 +358,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-valorant-agents-5.webp",
           question: "Which agent is a robot?",
           answers: [
             { id: "a", text: "Viper" },
@@ -444,6 +452,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-valorant-agents-12.webp",
           question: "Which agent uses water to build walls and shields?",
           answers: [
             { id: "a", text: "Harbor" },
@@ -483,6 +492,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-valorant-agents-15.webp",
           question: "Which agent runs very fast and throws lightning thanks to electricity?",
           answers: [
             { id: "a", text: "Jett" },
@@ -509,6 +519,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-valorant-agents-17.webp",
           question: "Which agent comes from Senegal?",
           answers: [
             { id: "a", text: "Tejo" },
@@ -548,6 +559,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-agents-20.webp",
           question: "Which agent comes from Croatia?",
           answers: [
             { id: "a", text: "Chamber" },
@@ -582,6 +594,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-valorant-agents-2.webp",
           question: "¿Qué agente es de Francia?",
           answers: [
             { id: "a", text: "Chamber" },
@@ -622,6 +635,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-valorant-agents-5.webp",
           question: "¿Qué agente es un robot?",
           answers: [
             { id: "a", text: "Viper" },
@@ -715,6 +729,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-valorant-agents-12.webp",
           question: "¿Qué agente usa el agua para crear muros y escudos?",
           answers: [
             { id: "a", text: "Harbor" },
@@ -754,6 +769,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-valorant-agents-15.webp",
           question: "¿Qué agente corre muy rápido y lanza rayos gracias a la electricidad?",
           answers: [
             { id: "a", text: "Jett" },
@@ -780,6 +796,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-valorant-agents-17.webp",
           question: "¿Qué agente es de Senegal?",
           answers: [
             { id: "a", text: "Tejo" },
@@ -819,6 +836,7 @@ export const quizValorantAgents: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-agents-20.webp",
           question: "¿Qué agente es de Croacia?",
           answers: [
             { id: "a", text: "Chamber" },

@@ -130,6 +130,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-peinture-10.webp",
           question: "Quel tableau a donné son nom à l'impressionnisme ?",
           answers: [
             { id: "a", text: "Impression, soleil levant" },
@@ -163,6 +164,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-peinture-13.webp",
           question: "Qui a peint La Ronde de nuit ?",
           answers: [
             { id: "a", text: "Johannes Vermeer" },
@@ -196,6 +198,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-peinture-16.webp",
           question: "Qui a peint American Gothic, le fermier à la fourche et sa fille devant leur maison ?",
           answers: [
             { id: "a", text: "Grant Wood" },
@@ -240,6 +243,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-20.webp",
           question: "Qui a peint Le Jardin des délices, un tableau rempli de créatures étranges ?",
           answers: [
             { id: "a", text: "Jérôme Bosch" },
@@ -363,6 +367,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-peinture-10.webp",
           question: "Which painting gave Impressionism its name?",
           answers: [
             { id: "a", text: "Impression, Sunrise" },
@@ -396,6 +401,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-peinture-13.webp",
           question: "Who painted The Night Watch?",
           answers: [
             { id: "a", text: "Johannes Vermeer" },
@@ -429,6 +435,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-peinture-16.webp",
           question: "Who painted American Gothic, the farmer with a pitchfork and his daughter outside their house?",
           answers: [
             { id: "a", text: "Grant Wood" },
@@ -473,6 +480,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-20.webp",
           question: "Who painted The Garden of Earthly Delights, a picture full of strange creatures?",
           answers: [
             { id: "a", text: "Hieronymus Bosch" },
@@ -596,6 +604,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-peinture-10.webp",
           question: "¿Qué cuadro le dio nombre al impresionismo?",
           answers: [
             { id: "a", text: "Impresión, sol naciente" },
@@ -629,6 +638,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-peinture-13.webp",
           question: "¿Quién pintó La ronda de noche?",
           answers: [
             { id: "a", text: "Johannes Vermeer" },
@@ -662,6 +672,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-peinture-16.webp",
           question: "¿Quién pintó American Gothic, el granjero con la horca y su hija delante de su casa?",
           answers: [
             { id: "a", text: "Grant Wood" },
@@ -706,6 +717,7 @@ export const quizPeinture: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-20.webp",
           question: "¿Quién pintó El jardín de las delicias, un cuadro lleno de criaturas extrañas?",
           answers: [
             { id: "a", text: "El Bosco" },

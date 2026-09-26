@@ -31,6 +31,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-drapeaux-2.webp",
           question:
             "Quel drapeau est identique à celui de Monaco, à l'exception de ses proportions ?",
           answers: [
@@ -157,6 +158,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-drapeaux-11.webp",
           question:
             "Quel pays a un drapeau avec un symbole yin-yang (taegeuk) en son centre ?",
           answers: [
@@ -199,6 +201,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-drapeaux-14.webp",
           question:
             "Quel pays a un drapeau avec le Union Jack dans le coin supérieur et des étoiles dont la Croix du Sud ?",
           answers: [
@@ -241,6 +244,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-drapeaux-17.webp",
           question:
             "Quel drapeau est vert avec une bande blanche côté hampe, un croissant et une étoile blancs ?",
           answers: [
@@ -281,6 +285,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-20.webp",
           question: "Quel pays a un fusil d'assaut sur son drapeau ?",
           answers: [
             { id: "a", text: "Mozambique" },
@@ -315,6 +320,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-drapeaux-2.webp",
           question:
             "Which flag is identical to Monaco's, except for its proportions?",
           answers: [
@@ -441,6 +447,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-drapeaux-11.webp",
           question:
             "Which country has a flag with a yin-yang symbol (taegeuk) at its center?",
           answers: [
@@ -483,6 +490,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-drapeaux-14.webp",
           question:
             "Which country has a flag with the Union Jack in the upper corner and stars including the Southern Cross?",
           answers: [
@@ -525,6 +533,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-drapeaux-17.webp",
           question:
             "Which flag is green with a white stripe at the hoist and a white crescent and star?",
           answers: [
@@ -565,6 +574,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-20.webp",
           question: "Which country has an assault rifle on its flag?",
           answers: [
             { id: "a", text: "Mozambique" },
@@ -599,6 +609,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-drapeaux-2.webp",
           question:
             "\u00bfQué bandera es idéntica a la de Mónaco, salvo por sus proporciones?",
           answers: [
@@ -725,6 +736,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-drapeaux-11.webp",
           question:
             "\u00bfQué país tiene una bandera con un símbolo yin-yang (taegeuk) en su centro?",
           answers: [
@@ -767,6 +779,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-drapeaux-14.webp",
           question:
             "\u00bfQué país tiene una bandera con la Union Jack en la esquina superior y estrellas incluida la Cruz del Sur?",
           answers: [
@@ -809,6 +822,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-drapeaux-17.webp",
           question:
             "\u00bfQué bandera es verde, con una franja blanca junto al asta y una media luna y una estrella blancas?",
           answers: [
@@ -849,6 +863,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-20.webp",
           question: "¿Qué país tiene un fusil de asalto en su bandera?",
           answers: [
             { id: "a", text: "Mozambique" },

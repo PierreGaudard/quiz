@@ -42,6 +42,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-sciences-inventions-2.webp",
           question: "Range ces moyens de communication du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Le téléphone" },
@@ -186,6 +187,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-sciences-inventions-12.webp",
           question: "Range ces façons de mesurer le temps de la plus ancienne à la plus récente.",
           answers: [
             { id: "a", text: "Le cadran solaire" },
@@ -228,6 +230,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-sciences-inventions-15.webp",
           question: "Range ces instruments de musique du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Le piano" },
@@ -256,6 +259,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-sciences-inventions-17.webp",
           question: "Range ces inventions pour voler du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Le premier saut en parachute de Garnerin" },
@@ -298,6 +302,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-inventions-20.webp",
           question: "Range ces inventions françaises de la plus ancienne à la plus récente.",
           answers: [
             { id: "a", text: "Le métier à tisser Jacquard" },
@@ -334,6 +339,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-sciences-inventions-2.webp",
           question: "Put these ways of communicating in order, oldest first.",
           answers: [
             { id: "a", text: "The telephone" },
@@ -478,6 +484,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-sciences-inventions-12.webp",
           question: "Put these ways of keeping time in order, from oldest to newest.",
           answers: [
             { id: "a", text: "The sundial" },
@@ -520,6 +527,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-sciences-inventions-15.webp",
           question: "Put these musical instruments in order, from oldest to newest.",
           answers: [
             { id: "a", text: "The piano" },
@@ -548,6 +556,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-sciences-inventions-17.webp",
           question: "Put these flying inventions in order, from oldest to newest.",
           answers: [
             { id: "a", text: "Garnerin's first parachute jump" },
@@ -590,6 +599,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-inventions-20.webp",
           question: "Put these French inventions in order, from oldest to newest.",
           answers: [
             { id: "a", text: "The Jacquard loom" },
@@ -626,6 +636,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-sciences-inventions-2.webp",
           question: "Ordena estos medios de comunicación del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "El teléfono" },
@@ -770,6 +781,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-sciences-inventions-12.webp",
           question: "Ordena estas formas de medir el tiempo de la más antigua a la más reciente.",
           answers: [
             { id: "a", text: "El reloj de sol" },
@@ -812,6 +824,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-sciences-inventions-15.webp",
           question: "Ordena estos instrumentos musicales del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "El piano" },
@@ -840,6 +853,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-sciences-inventions-17.webp",
           question: "Ordena estos inventos para volar del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "El primer salto en paracaídas de Garnerin" },
@@ -882,6 +896,7 @@ export const quizSciencesInventions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-inventions-20.webp",
           question: "Ordena estos inventos franceses del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "El telar de Jacquard" },

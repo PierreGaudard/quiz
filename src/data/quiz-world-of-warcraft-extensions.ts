@@ -27,6 +27,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-world-of-warcraft-extensions-1.webp",
           question: "Remets ces extensions dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Cataclysm" },
@@ -186,6 +187,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-world-of-warcraft-extensions-12.webp",
           question: "Range ces raids de Wrath of the Lich King dans l'ordre où ils sont arrivés.",
           answers: [
             { id: "a", text: "Ulduar" },
@@ -228,6 +230,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-world-of-warcraft-extensions-15.webp",
           question: "Range les campagnes de Warcraft III : Reign of Chaos dans l'ordre où on les joue, après le prologue.",
           answers: [
             { id: "a", text: "La campagne des orcs" },
@@ -256,6 +259,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-extensions-17.webp",
           question: "Range ces races alliées dans l'ordre où elles sont devenues jouables.",
           answers: [
             { id: "a", text: "Troll zandalari" },
@@ -298,6 +302,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-extensions-20.webp",
           question: "Range ces champs de bataille dans l'ordre où ils sont arrivés dans le jeu.",
           answers: [
             { id: "a", text: "Bassin Arathi" },
@@ -319,6 +324,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-world-of-warcraft-extensions-1.webp",
           question: "Put these expansions in release order.",
           answers: [
             { id: "a", text: "Cataclysm" },
@@ -478,6 +484,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-world-of-warcraft-extensions-12.webp",
           question: "Put these Wrath of the Lich King raids in the order they were added.",
           answers: [
             { id: "a", text: "Ulduar" },
@@ -520,6 +527,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-world-of-warcraft-extensions-15.webp",
           question: "Put the Warcraft III: Reign of Chaos campaigns in the order you play them, after the prologue.",
           answers: [
             { id: "a", text: "The orc campaign" },
@@ -548,6 +556,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-extensions-17.webp",
           question: "Put these allied races in the order they became playable.",
           answers: [
             { id: "a", text: "Zandalari troll" },
@@ -590,6 +599,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-extensions-20.webp",
           question: "Put these battlegrounds in the order they were added to the game.",
           answers: [
             { id: "a", text: "Arathi Basin" },
@@ -611,6 +621,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-world-of-warcraft-extensions-1.webp",
           question: "Ordena estas expansiones por fecha de lanzamiento.",
           answers: [
             { id: "a", text: "Cataclysm" },
@@ -770,6 +781,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-world-of-warcraft-extensions-12.webp",
           question: "Ordena estas bandas de Wrath of the Lich King según el orden en que llegaron.",
           answers: [
             { id: "a", text: "Ulduar" },
@@ -812,6 +824,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-world-of-warcraft-extensions-15.webp",
           question: "Ordena las campañas de Warcraft III: Reign of Chaos en el orden en que se juegan, después del prólogo.",
           answers: [
             { id: "a", text: "La campaña de los orcos" },
@@ -840,6 +853,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-extensions-17.webp",
           question: "Ordena estas razas aliadas según el orden en que se pudieron jugar.",
           answers: [
             { id: "a", text: "Trol Zandalari" },
@@ -882,6 +896,7 @@ export const quizWorldOfWarcraftExtensions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-extensions-20.webp",
           question: "Ordena estos campos de batalla según el orden en que llegaron al juego.",
           answers: [
             { id: "a", text: "Cuenca de Arathi" },

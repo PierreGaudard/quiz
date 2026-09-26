@@ -26,6 +26,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-1.webp",
           question: "Combien d'anneaux de pouvoir y a-t-il en tout, en comptant l'Anneau unique ?",
           answers: [],
           correctAnswer: "20",
@@ -45,6 +46,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-3.webp",
           question: "Combien d'anneaux ont été donnés aux seigneurs nains ?",
           answers: [],
           correctAnswer: "7",
@@ -120,6 +122,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-11.webp",
           question: "En quelle année est sorti au cinéma Le Retour du roi ?",
           answers: [],
           correctAnswer: "2003",
@@ -147,6 +150,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-14.webp",
           question: "Combien de films Peter Jackson a-t-il réalisés sur la Terre du Milieu ?",
           answers: [],
           correctAnswer: "6",
@@ -174,6 +178,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-17.webp",
           question: "En quelle année est mort J. R. R. Tolkien ?",
           answers: [],
           correctAnswer: "1973",
@@ -201,6 +206,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-20.webp",
           question: "Dans le livre, combien d'années séparent la fête de Bilbon du départ de Frodon ?",
           answers: [],
           correctAnswer: "17",
@@ -217,6 +223,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-1.webp",
           question: "How many Rings of Power are there in total, counting the One Ring?",
           answers: [],
           correctAnswer: "20",
@@ -236,6 +243,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-3.webp",
           question: "How many rings were given to the dwarf lords?",
           answers: [],
           correctAnswer: "7",
@@ -311,6 +319,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-11.webp",
           question: "In what year did The Return of the King come out in cinemas?",
           answers: [],
           correctAnswer: "2003",
@@ -338,6 +347,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-14.webp",
           question: "How many Middle-earth films did Peter Jackson direct?",
           answers: [],
           correctAnswer: "6",
@@ -365,6 +375,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-17.webp",
           question: "In what year did J. R. R. Tolkien die?",
           answers: [],
           correctAnswer: "1973",
@@ -392,6 +403,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-20.webp",
           question: "In the book, how many years pass between Bilbo's party and Frodo's departure?",
           answers: [],
           correctAnswer: "17",
@@ -408,6 +420,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-1.webp",
           question: "¿Cuántos anillos de poder hay en total, contando el Anillo Único?",
           answers: [],
           correctAnswer: "20",
@@ -427,6 +440,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-3.webp",
           question: "¿Cuántos anillos se dieron a los señores enanos?",
           answers: [],
           correctAnswer: "7",
@@ -502,6 +516,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-11.webp",
           question: "¿En qué año se estrenó en cines El retorno del rey?",
           answers: [],
           correctAnswer: "2003",
@@ -529,6 +544,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-14.webp",
           question: "¿Cuántas películas sobre la Tierra Media dirigió Peter Jackson?",
           answers: [],
           correctAnswer: "6",
@@ -556,6 +572,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-17.webp",
           question: "¿En qué año murió J. R. R. Tolkien?",
           answers: [],
           correctAnswer: "1973",
@@ -583,6 +600,7 @@ export const quizSeigneurDesAnneauxChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-chiffres-20.webp",
           question: "En el libro, ¿cuántos años pasan entre la fiesta de Bilbo y la partida de Frodo?",
           answers: [],
           correctAnswer: "17",

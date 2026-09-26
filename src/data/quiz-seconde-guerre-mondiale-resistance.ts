@@ -31,6 +31,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-1.webp",
           question: "Comment s'appelle l'émission en français de la BBC écoutée en cachette pendant l'Occupation ?",
           answers: [
             { id: "a", text: "Les Français parlent aux Français" },
@@ -179,6 +180,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-12.webp",
           question: "Comment s'appelle la force armée créée par le régime de Vichy en janvier 1943 pour traquer les résistants ?",
           answers: [
             { id: "a", text: "La Milice" },
@@ -218,6 +220,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-15.webp",
           question: "Quel chant, écrit en 1943 par Joseph Kessel et Maurice Druon à Londres, devient l'hymne de la Résistance ?",
           answers: [
             { id: "a", text: "Le Chant des partisans" },
@@ -244,6 +247,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-17.webp",
           question: "Quel chef de la Gestapo de Lyon a fait arrêter et torturer Jean Moulin, en 1943 ?",
           answers: [
             { id: "a", text: "Alois Brunner" },
@@ -283,6 +287,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-20.webp",
           question: "De quel poète sont les vers « Les sanglots longs des violons de l'automne », diffusés par la BBC pour prévenir les résistants du débarquement ?",
           answers: [
             { id: "a", text: "Charles Baudelaire" },
@@ -303,6 +308,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-1.webp",
           question: "What was the BBC's French-language programme, listened to in secret during the Occupation?",
           answers: [
             { id: "a", text: "Les Français parlent aux Français" },
@@ -451,6 +457,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-12.webp",
           question: "What was the armed force created by the Vichy regime in January 1943 to hunt down resistance fighters called?",
           answers: [
             { id: "a", text: "The Milice" },
@@ -490,6 +497,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-15.webp",
           question: "Which song, written in London in 1943 by Joseph Kessel and Maurice Druon, became the anthem of the Resistance?",
           answers: [
             { id: "a", text: "Le Chant des partisans" },
@@ -516,6 +524,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-17.webp",
           question: "Which head of the Lyon Gestapo had Jean Moulin arrested and tortured in 1943?",
           answers: [
             { id: "a", text: "Alois Brunner" },
@@ -555,6 +564,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-20.webp",
           question: "Which poet wrote the lines \"Les sanglots longs des violons de l'automne\", broadcast by the BBC to warn the Resistance of the landings?",
           answers: [
             { id: "a", text: "Charles Baudelaire" },
@@ -575,6 +585,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-1.webp",
           question: "¿Cómo se llamaba el programa en francés de la BBC que se escuchaba a escondidas durante la Ocupación?",
           answers: [
             { id: "a", text: "Les Français parlent aux Français" },
@@ -723,6 +734,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-12.webp",
           question: "¿Cómo se llamaba la fuerza armada creada por el régimen de Vichy en enero de 1943 para perseguir a los resistentes?",
           answers: [
             { id: "a", text: "La Milicia" },
@@ -762,6 +774,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-15.webp",
           question: "¿Qué canción, escrita en Londres en 1943 por Joseph Kessel y Maurice Druon, se convirtió en el himno de la Resistencia?",
           answers: [
             { id: "a", text: "Le Chant des partisans" },
@@ -788,6 +801,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-17.webp",
           question: "¿Qué jefe de la Gestapo de Lyon hizo detener y torturar a Jean Moulin en 1943?",
           answers: [
             { id: "a", text: "Alois Brunner" },
@@ -827,6 +841,7 @@ export const quizSecondeGuerreMondialeResistance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seconde-guerre-mondiale-resistance-20.webp",
           question: "¿De qué poeta son los versos «Les sanglots longs des violons de l'automne», emitidos por la BBC para avisar a la Resistencia del desembarco?",
           answers: [
             { id: "a", text: "Charles Baudelaire" },

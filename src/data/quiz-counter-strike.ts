@@ -37,6 +37,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-counter-strike-2.webp",
           question: "Counter-Strike a été créé par Blizzard.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -94,6 +95,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-counter-strike-7.webp",
           question: "Dans un match compétitif de CS2, la première équipe qui gagne 13 manches remporte la partie.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -139,6 +141,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-counter-strike-11.webp",
           question: "Counter-Strike: Global Offensive est sorti en 2012.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -172,6 +175,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-counter-strike-14.webp",
           question: "Dans CS2, la bombe explose 40 secondes après avoir été posée.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -205,6 +209,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-counter-strike-17.webp",
           question: "Les terroristes peuvent acheter un kit de désamorçage.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -238,6 +243,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-20.webp",
           question: "Les skins d'armes sont arrivés dans la série avec Counter-Strike 2.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -268,6 +274,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-counter-strike-2.webp",
           question: "Counter-Strike was made by Blizzard.",
           answers: [
             { id: "a", text: "True" },
@@ -325,6 +332,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-counter-strike-7.webp",
           question: "In a CS2 competitive match, the first team to win 13 rounds takes the game.",
           answers: [
             { id: "a", text: "True" },
@@ -370,6 +378,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-counter-strike-11.webp",
           question: "Counter-Strike: Global Offensive came out in 2012.",
           answers: [
             { id: "a", text: "True" },
@@ -403,6 +412,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-counter-strike-14.webp",
           question: "In CS2, the bomb goes off 40 seconds after it's planted.",
           answers: [
             { id: "a", text: "True" },
@@ -436,6 +446,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-counter-strike-17.webp",
           question: "Terrorists can buy a defuse kit.",
           answers: [
             { id: "a", text: "True" },
@@ -469,6 +480,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-20.webp",
           question: "Weapon skins came into the series with Counter-Strike 2.",
           answers: [
             { id: "a", text: "True" },
@@ -499,6 +511,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-counter-strike-2.webp",
           question: "Counter-Strike lo creó Blizzard.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -556,6 +569,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-counter-strike-7.webp",
           question: "En una partida competitiva de CS2, gana el primer equipo que llega a 13 rondas.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -601,6 +615,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-counter-strike-11.webp",
           question: "Counter-Strike: Global Offensive salió en 2012.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -634,6 +649,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-counter-strike-14.webp",
           question: "En CS2, la bomba explota 40 segundos después de ser colocada.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -667,6 +683,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-counter-strike-17.webp",
           question: "Los terroristas pueden comprar un kit de desactivación.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -700,6 +717,7 @@ export const quizCounterStrike: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-20.webp",
           question: "Las skins de armas llegaron a la saga con Counter-Strike 2.",
           answers: [
             { id: "a", text: "Verdadero" },

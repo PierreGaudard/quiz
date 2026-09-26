@@ -26,6 +26,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-pokemon-types-1.webp",
           question: "Quel type est super efficace contre le type Eau ?",
           answers: [
             { id: "a", text: "Plante" },
@@ -37,6 +38,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-types-2.webp",
           question: "Sur quel type les attaques Électrik n'ont-elles aucun effet ?",
           answers: [
             { id: "a", text: "Vol" },
@@ -140,6 +142,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-pokemon-types-11.webp",
           question: "Sur quel type les attaques Dragon n'ont-elles aucun effet ?",
           answers: [
             { id: "a", text: "Acier" },
@@ -173,6 +176,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-pokemon-types-14.webp",
           question: "Quels sont les types de Lokhlass ?",
           answers: [
             { id: "a", text: "Eau et Glace" },
@@ -206,6 +210,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-types-17.webp",
           question: "Sur quel type les attaques Poison n'ont-elles aucun effet ?",
           answers: [
             { id: "a", text: "Insecte" },
@@ -239,6 +244,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-types-20.webp",
           question: "Quels sont les types de Lucario ?",
           answers: [
             { id: "a", text: "Combat et Acier" },
@@ -257,6 +263,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-pokemon-types-1.webp",
           question: "Which type is super effective against Water?",
           answers: [
             { id: "a", text: "Grass" },
@@ -268,6 +275,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-types-2.webp",
           question: "Which type are Electric attacks completely useless against?",
           answers: [
             { id: "a", text: "Flying" },
@@ -371,6 +379,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-pokemon-types-11.webp",
           question: "Which type is completely immune to Dragon moves?",
           answers: [
             { id: "a", text: "Steel" },
@@ -404,6 +413,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-pokemon-types-14.webp",
           question: "What are Lapras's types?",
           answers: [
             { id: "a", text: "Water and Ice" },
@@ -437,6 +447,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-types-17.webp",
           question: "Which type is completely immune to Poison moves?",
           answers: [
             { id: "a", text: "Bug" },
@@ -470,6 +481,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-types-20.webp",
           question: "What are Lucario's types?",
           answers: [
             { id: "a", text: "Fighting and Steel" },
@@ -488,6 +500,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-pokemon-types-1.webp",
           question: "¿Qué tipo es súper eficaz contra el tipo Agua?",
           answers: [
             { id: "a", text: "Planta" },
@@ -499,6 +512,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-types-2.webp",
           question: "¿Contra qué tipo no tienen ningún efecto los ataques Eléctricos?",
           answers: [
             { id: "a", text: "Volador" },
@@ -602,6 +616,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-pokemon-types-11.webp",
           question: "¿Qué tipo no recibe ningún daño de los ataques de tipo Dragón?",
           answers: [
             { id: "a", text: "Acero" },
@@ -635,6 +650,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-pokemon-types-14.webp",
           question: "¿De qué tipos es Lapras?",
           answers: [
             { id: "a", text: "Agua y Hielo" },
@@ -668,6 +684,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-types-17.webp",
           question: "¿Qué tipo no recibe ningún daño de los ataques de tipo Veneno?",
           answers: [
             { id: "a", text: "Bicho" },
@@ -701,6 +718,7 @@ export const quizPokemonTypes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-types-20.webp",
           question: "¿De qué tipos es Lucario?",
           answers: [
             { id: "a", text: "Lucha y Acero" },

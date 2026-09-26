@@ -146,6 +146,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-naruto-akatsuki-10.webp",
           question: "Combien de cœurs Kakuzu a-t-il dans le corps ?",
           answers: [
             { id: "a", text: "Trois" },
@@ -185,6 +186,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-naruto-akatsuki-13.webp",
           question: "Contre qui Deidara se fait-il exploser à la fin de son dernier combat ?",
           answers: [
             { id: "a", text: "Sasuke" },
@@ -224,6 +226,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-naruto-akatsuki-16.webp",
           question: "Quels yeux Nagato possède-t-il ?",
           answers: [
             { id: "a", text: "Le Rinnegan" },
@@ -250,6 +253,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-naruto-akatsuki-18.webp",
           question: "De quel village Kakuzu est-il originaire ?",
           answers: [
             { id: "a", text: "Ame, le village de la Pluie" },
@@ -276,6 +280,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-akatsuki-20.webp",
           question: "Quel village Pain rase presque entièrement pour trouver Naruto ?",
           answers: [
             { id: "a", text: "Suna" },
@@ -418,6 +423,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-naruto-akatsuki-10.webp",
           question: "How many hearts does Kakuzu have in his body?",
           answers: [
             { id: "a", text: "Three" },
@@ -457,6 +463,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-naruto-akatsuki-13.webp",
           question: "Who is Deidara fighting when he blows himself up?",
           answers: [
             { id: "a", text: "Sasuke" },
@@ -496,6 +503,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-naruto-akatsuki-16.webp",
           question: "Which eyes does Nagato have?",
           answers: [
             { id: "a", text: "The Rinnegan" },
@@ -522,6 +530,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-naruto-akatsuki-18.webp",
           question: "Which village does Kakuzu come from?",
           answers: [
             { id: "a", text: "Ame, the Hidden Rain" },
@@ -548,6 +557,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-akatsuki-20.webp",
           question: "Which village does Pain almost wipe off the map while looking for Naruto?",
           answers: [
             { id: "a", text: "Suna" },
@@ -690,6 +700,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-naruto-akatsuki-10.webp",
           question: "¿Cuántos corazones tiene Kakuzu en el cuerpo?",
           answers: [
             { id: "a", text: "Tres" },
@@ -729,6 +740,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-naruto-akatsuki-13.webp",
           question: "¿Contra quién pelea Deidara cuando se hace explotar?",
           answers: [
             { id: "a", text: "Sasuke" },
@@ -768,6 +780,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-naruto-akatsuki-16.webp",
           question: "¿Qué ojos tiene Nagato?",
           answers: [
             { id: "a", text: "El Rinnegan" },
@@ -794,6 +807,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-naruto-akatsuki-18.webp",
           question: "¿De qué aldea es Kakuzu?",
           answers: [
             { id: "a", text: "Ame, la aldea de la Lluvia" },
@@ -820,6 +834,7 @@ export const quizNarutoAkatsuki: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-akatsuki-20.webp",
           question: "¿Qué aldea arrasa casi por completo Pain para encontrar a Naruto?",
           answers: [
             { id: "a", text: "Suna" },

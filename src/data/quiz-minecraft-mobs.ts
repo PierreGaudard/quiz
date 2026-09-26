@@ -36,6 +36,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-mobs-2.webp",
           question: "Lequel des deux lâche de la poudre à canon ?",
           answers: [
             { id: "a", text: "Le Creeper" },
@@ -139,6 +140,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-mobs-11.webp",
           question: "Lequel des deux se reproduit avec du blé ?",
           answers: [
             { id: "a", text: "La vache" },
@@ -172,6 +174,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-mobs-14.webp",
           question: "Lequel des deux lâche une étoile du Nether ?",
           answers: [
             { id: "a", text: "Le Wither" },
@@ -205,6 +208,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-mobs-17.webp",
           question: "Lequel des deux vit dans le Nether ?",
           answers: [
             { id: "a", text: "Le slime" },
@@ -238,6 +242,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-mobs-20.webp",
           question: "Lequel des deux est le plus grand ?",
           answers: [
             { id: "a", text: "Le Ghast" },
@@ -268,6 +273,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-mobs-2.webp",
           question: "Which of the two drops gunpowder?",
           answers: [
             { id: "a", text: "The Creeper" },
@@ -371,6 +377,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-mobs-11.webp",
           question: "Which of the two breeds with wheat?",
           answers: [
             { id: "a", text: "The cow" },
@@ -404,6 +411,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-mobs-14.webp",
           question: "Which of the two drops a Nether Star?",
           answers: [
             { id: "a", text: "The Wither" },
@@ -437,6 +445,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-mobs-17.webp",
           question: "Which of the two lives in the Nether?",
           answers: [
             { id: "a", text: "The slime" },
@@ -470,6 +479,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-mobs-20.webp",
           question: "Which of the two is bigger?",
           answers: [
             { id: "a", text: "The Ghast" },
@@ -500,6 +510,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-mobs-2.webp",
           question: "¿Cuál de los dos suelta pólvora?",
           answers: [
             { id: "a", text: "El Creeper" },
@@ -603,6 +614,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-mobs-11.webp",
           question: "¿Cuál de los dos se reproduce con trigo?",
           answers: [
             { id: "a", text: "La vaca" },
@@ -636,6 +648,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-mobs-14.webp",
           question: "¿Cuál de los dos suelta una estrella del Nether?",
           answers: [
             { id: "a", text: "El Wither" },
@@ -669,6 +682,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-mobs-17.webp",
           question: "¿Cuál de los dos vive en el Nether?",
           answers: [
             { id: "a", text: "El slime" },
@@ -702,6 +716,7 @@ export const quizMinecraftMobs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-mobs-20.webp",
           question: "¿Cuál de los dos es más grande?",
           answers: [
             { id: "a", text: "El Ghast" },

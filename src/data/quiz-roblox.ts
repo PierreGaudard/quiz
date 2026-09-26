@@ -27,6 +27,7 @@ export const quizRoblox: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-roblox-1.webp",
           question: "En quelle année Roblox est-il sorti ?",
           answers: [
             { id: "a", text: "2006" },
@@ -38,6 +39,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-2.webp",
           question: "Qui a cofondé Roblox ?",
           answers: [
             { id: "a", text: "Markus Persson" },
@@ -141,6 +143,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-roblox-11.webp",
           question: "Dans quel pays est né David Baszucki, le cofondateur de Roblox ?",
           answers: [
             { id: "a", text: "Au Royaume-Uni" },
@@ -174,6 +177,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-roblox-14.webp",
           question: "Lequel de ces deux groupes a donné un concert virtuel sur Roblox ?",
           answers: [
             { id: "a", text: "Twenty One Pilots" },
@@ -207,6 +211,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-roblox-17.webp",
           question: "Dans quel jeu Roblox des abeilles récoltent-elles du pollen pour en faire du miel ?",
           answers: [
             { id: "a", text: "Jailbreak" },
@@ -240,6 +245,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-20.webp",
           question: "Dans quelle université David Baszucki a-t-il fait ses études ?",
           answers: [
             { id: "a", text: "Stanford" },
@@ -258,6 +264,7 @@ export const quizRoblox: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-roblox-1.webp",
           question: "In what year did Roblox come out?",
           answers: [
             { id: "a", text: "2006" },
@@ -269,6 +276,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-2.webp",
           question: "Who co-founded Roblox?",
           answers: [
             { id: "a", text: "Markus Persson" },
@@ -372,6 +380,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-roblox-11.webp",
           question: "Which country was David Baszucki, the co-founder of Roblox, born in?",
           answers: [
             { id: "a", text: "The United Kingdom" },
@@ -405,6 +414,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-roblox-14.webp",
           question: "Which of these two bands played a virtual concert on Roblox?",
           answers: [
             { id: "a", text: "Twenty One Pilots" },
@@ -438,6 +448,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-roblox-17.webp",
           question: "In which Roblox game do bees collect pollen to turn it into honey?",
           answers: [
             { id: "a", text: "Jailbreak" },
@@ -471,6 +482,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-20.webp",
           question: "Which university did David Baszucki go to?",
           answers: [
             { id: "a", text: "Stanford" },
@@ -489,6 +501,7 @@ export const quizRoblox: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-roblox-1.webp",
           question: "¿En qué año salió Roblox?",
           answers: [
             { id: "a", text: "2006" },
@@ -500,6 +513,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-2.webp",
           question: "¿Quién cofundó Roblox?",
           answers: [
             { id: "a", text: "Markus Persson" },
@@ -603,6 +617,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-roblox-11.webp",
           question: "¿En qué país nació David Baszucki, el cofundador de Roblox?",
           answers: [
             { id: "a", text: "En el Reino Unido" },
@@ -636,6 +651,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-roblox-14.webp",
           question: "¿Cuál de estos dos grupos dio un concierto virtual en Roblox?",
           answers: [
             { id: "a", text: "Twenty One Pilots" },
@@ -669,6 +685,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-roblox-17.webp",
           question: "¿En qué juego de Roblox las abejas recogen polen para convertirlo en miel?",
           answers: [
             { id: "a", text: "Jailbreak" },
@@ -702,6 +719,7 @@ export const quizRoblox: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-20.webp",
           question: "¿En qué universidad estudió David Baszucki?",
           answers: [
             { id: "a", text: "Stanford" },

@@ -41,6 +41,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-l-attaque-des-titans-personnages-2.webp",
           question: "Qui a donné son écharpe rouge à Mikasa ?",
           answers: [
             { id: "a", text: "Eren" },
@@ -155,6 +156,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-l-attaque-des-titans-personnages-12.webp",
           question: "Lequel des deux vient du village de Ragako ?",
           answers: [
             { id: "a", text: "Connie Springer" },
@@ -188,6 +190,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-l-attaque-des-titans-personnages-15.webp",
           question: "Qui commande la garnison et soutient le plan d'Eren pour boucher la brèche de Trost ?",
           answers: [
             { id: "a", text: "Dot Pixis" },
@@ -210,6 +213,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-personnages-17.webp",
           question: "Lequel des deux est amoureux de Gabi ?",
           answers: [
             { id: "a", text: "Falco Grice" },
@@ -243,6 +247,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-personnages-20.webp",
           question: "Qui étaient les deux amis de Livaï dans la ville souterraine ?",
           answers: [
             { id: "a", text: "Farlan et Isabel" },
@@ -273,6 +278,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-l-attaque-des-titans-personnages-2.webp",
           question: "Who gave Mikasa her red scarf?",
           answers: [
             { id: "a", text: "Eren" },
@@ -387,6 +393,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-l-attaque-des-titans-personnages-12.webp",
           question: "Which of the two comes from Ragako village?",
           answers: [
             { id: "a", text: "Connie Springer" },
@@ -420,6 +427,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-l-attaque-des-titans-personnages-15.webp",
           question: "Who commands the Garrison and backs Eren's plan to seal the hole in Trost?",
           answers: [
             { id: "a", text: "Dot Pixis" },
@@ -442,6 +450,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-personnages-17.webp",
           question: "Which of the two is in love with Gabi?",
           answers: [
             { id: "a", text: "Falco Grice" },
@@ -475,6 +484,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-personnages-20.webp",
           question: "Who were Levi's two friends in the Underground?",
           answers: [
             { id: "a", text: "Farlan and Isabel" },
@@ -505,6 +515,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-l-attaque-des-titans-personnages-2.webp",
           question: "¿Quién le dio a Mikasa su bufanda roja?",
           answers: [
             { id: "a", text: "Eren" },
@@ -619,6 +630,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-l-attaque-des-titans-personnages-12.webp",
           question: "¿Cuál de los dos viene de la aldea de Ragako?",
           answers: [
             { id: "a", text: "Connie Springer" },
@@ -652,6 +664,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-l-attaque-des-titans-personnages-15.webp",
           question: "¿Quién manda la Guarnición y apoya el plan de Eren para tapar el agujero de Trost?",
           answers: [
             { id: "a", text: "Dot Pixis" },
@@ -674,6 +687,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-personnages-17.webp",
           question: "¿Cuál de los dos está enamorado de Gabi?",
           answers: [
             { id: "a", text: "Falco Grice" },
@@ -707,6 +721,7 @@ export const quizAttaqueDesTitansPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-personnages-20.webp",
           question: "¿Quiénes eran los dos amigos de Levi en la Ciudad Subterránea?",
           answers: [
             { id: "a", text: "Farlan e Isabel" },

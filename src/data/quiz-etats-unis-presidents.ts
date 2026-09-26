@@ -42,6 +42,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-etats-unis-presidents-2.webp",
           question: "Remets ces présidents dans l'ordre où ils sont arrivés au pouvoir.",
           answers: [
             { id: "a", text: "Richard Nixon" },
@@ -56,6 +57,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-etats-unis-presidents-3.webp",
           question: "Remets ces présidents dans l'ordre où ils sont arrivés au pouvoir.",
           answers: [
             { id: "a", text: "Barack Obama" },
@@ -171,6 +173,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-etats-unis-presidents-11.webp",
           question: "Remets ces présidents dans l'ordre où ils sont arrivés au pouvoir.",
           answers: [
             { id: "a", text: "John Adams" },
@@ -213,6 +216,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-etats-unis-presidents-14.webp",
           question: "Remets ces États dans l'ordre où ils ont rejoint l'Union.",
           answers: [
             { id: "a", text: "La Pennsylvanie" },
@@ -255,6 +259,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-presidents-17.webp",
           question: "Remets ces premières de l'air et de l'espace dans l'ordre chronologique.",
           answers: [
             { id: "a", text: "Le premier vol des frères Wright" },
@@ -297,6 +302,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-presidents-20.webp",
           question: "Remets ces présidents dans l'ordre où ils sont arrivés au pouvoir.",
           answers: [
             { id: "a", text: "Martin Van Buren" },
@@ -333,6 +339,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-etats-unis-presidents-2.webp",
           question: "Put these presidents in the order they took office.",
           answers: [
             { id: "a", text: "Richard Nixon" },
@@ -347,6 +354,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-etats-unis-presidents-3.webp",
           question: "Put these presidents in the order they took office.",
           answers: [
             { id: "a", text: "Barack Obama" },
@@ -462,6 +470,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-etats-unis-presidents-11.webp",
           question: "Put these presidents in the order they took office.",
           answers: [
             { id: "a", text: "John Adams" },
@@ -504,6 +513,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-etats-unis-presidents-14.webp",
           question: "Put these states in the order they joined the Union.",
           answers: [
             { id: "a", text: "Pennsylvania" },
@@ -546,6 +556,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-presidents-17.webp",
           question: "Put these air and space firsts in chronological order.",
           answers: [
             { id: "a", text: "The Wright brothers' first flight" },
@@ -588,6 +599,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-presidents-20.webp",
           question: "Put these presidents in the order they took office.",
           answers: [
             { id: "a", text: "Martin Van Buren" },
@@ -624,6 +636,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-etats-unis-presidents-2.webp",
           question: "Ordena a estos presidentes según su llegada al poder.",
           answers: [
             { id: "a", text: "Richard Nixon" },
@@ -638,6 +651,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-etats-unis-presidents-3.webp",
           question: "Ordena a estos presidentes según su llegada al poder.",
           answers: [
             { id: "a", text: "Barack Obama" },
@@ -753,6 +767,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-etats-unis-presidents-11.webp",
           question: "Ordena a estos presidentes según su llegada al poder.",
           answers: [
             { id: "a", text: "John Adams" },
@@ -795,6 +810,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-etats-unis-presidents-14.webp",
           question: "Ordena estos estados según la fecha en que entraron en la Unión.",
           answers: [
             { id: "a", text: "Pensilvania" },
@@ -837,6 +853,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-presidents-17.webp",
           question: "Ordena estos hitos del aire y del espacio de forma cronológica.",
           answers: [
             { id: "a", text: "El primer vuelo de los hermanos Wright" },
@@ -879,6 +896,7 @@ export const quizEtatsUnisPresidents: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-presidents-20.webp",
           question: "Ordena a estos presidentes según su llegada al poder.",
           answers: [
             { id: "a", text: "Martin Van Buren" },

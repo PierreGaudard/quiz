@@ -42,6 +42,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-revolution-francaise-personnages-2.webp",
           question: "Danton a été guillotiné avant Robespierre.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -133,6 +134,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-revolution-francaise-personnages-10.webp",
           question: "Napoléon Bonaparte s'est fait remarquer au siège de Toulon, en 1793.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -166,6 +168,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-revolution-francaise-personnages-13.webp",
           question: "Camille Desmoulins a appelé la foule à prendre les armes au Palais-Royal, le 12 juillet 1789.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -199,6 +202,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-revolution-francaise-personnages-16.webp",
           question: "Le docteur Guillotin est mort guillotiné.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -221,6 +225,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-revolution-francaise-personnages-18.webp",
           question: "Danton publiait le journal « L'Ami du peuple ».",
           answers: [
             { id: "a", text: "Vrai" },
@@ -243,6 +248,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-personnages-20.webp",
           question: "Madame Roland, figure du camp girondin, a été guillotinée en 1793.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -273,6 +279,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-revolution-francaise-personnages-2.webp",
           question: "Danton was guillotined before Robespierre.",
           answers: [
             { id: "a", text: "True" },
@@ -364,6 +371,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-revolution-francaise-personnages-10.webp",
           question: "Napoleon Bonaparte made his name at the siege of Toulon in 1793.",
           answers: [
             { id: "a", text: "True" },
@@ -397,6 +405,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-revolution-francaise-personnages-13.webp",
           question: "Camille Desmoulins called on the crowd to take up arms at the Palais-Royal on 12 July 1789.",
           answers: [
             { id: "a", text: "True" },
@@ -430,6 +439,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-revolution-francaise-personnages-16.webp",
           question: "Doctor Guillotin was himself guillotined.",
           answers: [
             { id: "a", text: "True" },
@@ -452,6 +462,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-revolution-francaise-personnages-18.webp",
           question: "Danton published the newspaper \"L'Ami du peuple\" (The Friend of the People).",
           answers: [
             { id: "a", text: "True" },
@@ -474,6 +485,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-personnages-20.webp",
           question: "Madame Roland, a leading figure of the Girondins, was guillotined in 1793.",
           answers: [
             { id: "a", text: "True" },
@@ -504,6 +516,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-revolution-francaise-personnages-2.webp",
           question: "Danton fue guillotinado antes que Robespierre.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -595,6 +608,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-revolution-francaise-personnages-10.webp",
           question: "Napoleón Bonaparte se dio a conocer en el sitio de Tolón, en 1793.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -628,6 +642,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-revolution-francaise-personnages-13.webp",
           question: "Camille Desmoulins llamó a la multitud a tomar las armas en el Palais-Royal el 12 de julio de 1789.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -661,6 +676,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-revolution-francaise-personnages-16.webp",
           question: "El doctor Guillotin murió guillotinado.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -683,6 +699,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-revolution-francaise-personnages-18.webp",
           question: "Danton publicaba el periódico «L'Ami du peuple» (El amigo del pueblo).",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -705,6 +722,7 @@ export const quizRevolutionFrancaisePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-personnages-20.webp",
           question: "Madame Roland, figura de los girondinos, fue guillotinada en 1793.",
           answers: [
             { id: "a", text: "Verdadero" },

@@ -32,6 +32,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-basketball-equipe-de-france-1.webp",
           question: "Contre quel pays la France a-t-elle gagné la finale de l'Euro 2013 ?",
           answers: [
             { id: "a", text: "L'Espagne" },
@@ -45,6 +46,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-basketball-equipe-de-france-2.webp",
           question: "Qui a été élu meilleur joueur de l'Euro 2013 ?",
           answers: [
             { id: "a", text: "Boris Diaw" },
@@ -152,6 +154,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-basketball-equipe-de-france-10.webp",
           question: "Quelle équipe la France a-t-elle éliminée en quart de finale de la Coupe du monde 2019 ?",
           answers: [
             { id: "a", text: "Les États-Unis" },
@@ -231,6 +234,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-basketball-equipe-de-france-16.webp",
           question: "Quelle médaille les Bleues ont-elles gagnée aux JO de Tokyo ?",
           answers: [
             { id: "a", text: "L'or" },
@@ -257,6 +261,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-basketball-equipe-de-france-18.webp",
           question: "Quel numéro portait Tony Parker aux San Antonio Spurs ?",
           answers: [
             { id: "a", text: "Le 9" },
@@ -283,6 +288,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-equipe-de-france-20.webp",
           question: "Qui a succédé à Vincent Collet à la tête des Bleus en 2024 ?",
           answers: [
             { id: "a", text: "Frédéric Fauthoux" },
@@ -303,6 +309,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-basketball-equipe-de-france-1.webp",
           question: "Who did France beat in the EuroBasket 2013 final?",
           answers: [
             { id: "a", text: "Spain" },
@@ -316,6 +323,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-basketball-equipe-de-france-2.webp",
           question: "Who was named MVP of EuroBasket 2013?",
           answers: [
             { id: "a", text: "Boris Diaw" },
@@ -423,6 +431,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-basketball-equipe-de-france-10.webp",
           question: "Which team did France knock out in the 2019 World Cup quarter-finals?",
           answers: [
             { id: "a", text: "The United States" },
@@ -502,6 +511,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-basketball-equipe-de-france-16.webp",
           question: "Which medal did France's women win at the Tokyo Olympics?",
           answers: [
             { id: "a", text: "Gold" },
@@ -528,6 +538,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-basketball-equipe-de-france-18.webp",
           question: "What number did Tony Parker wear for the San Antonio Spurs?",
           answers: [
             { id: "a", text: "9" },
@@ -554,6 +565,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-equipe-de-france-20.webp",
           question: "Who took over from Vincent Collet as France's coach in 2024?",
           answers: [
             { id: "a", text: "Frédéric Fauthoux" },
@@ -574,6 +586,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-basketball-equipe-de-france-1.webp",
           question: "¿A qué país ganó Francia en la final del Eurobasket 2013?",
           answers: [
             { id: "a", text: "España" },
@@ -587,6 +600,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-basketball-equipe-de-france-2.webp",
           question: "¿Quién fue elegido MVP del Eurobasket 2013?",
           answers: [
             { id: "a", text: "Boris Diaw" },
@@ -694,6 +708,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-basketball-equipe-de-france-10.webp",
           question: "¿A qué selección eliminó Francia en cuartos del Mundial 2019?",
           answers: [
             { id: "a", text: "Estados Unidos" },
@@ -773,6 +788,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-basketball-equipe-de-france-16.webp",
           question: "¿Qué medalla ganaron las francesas en los Juegos de Tokio?",
           answers: [
             { id: "a", text: "El oro" },
@@ -799,6 +815,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-basketball-equipe-de-france-18.webp",
           question: "¿Qué dorsal llevaba Tony Parker en los San Antonio Spurs?",
           answers: [
             { id: "a", text: "El 9" },
@@ -825,6 +842,7 @@ export const quizBasketballEquipeDeFrance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-equipe-de-france-20.webp",
           question: "¿Quién sustituyó a Vincent Collet como seleccionador francés en 2024?",
           answers: [
             { id: "a", text: "Frédéric Fauthoux" },

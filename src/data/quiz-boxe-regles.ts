@@ -54,6 +54,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-boxe-regles-3.webp",
           question: "En combien de rounds au maximum se dispute un championnat du monde professionnel aujourd'hui ?",
           answers: [
             { id: "a", text: "10" },
@@ -173,6 +174,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-boxe-regles-12.webp",
           question: "Que veut dire être champion du monde « incontesté » ?",
           answers: [
             { id: "a", text: "Avoir gagné tous ses combats" },
@@ -212,6 +214,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-boxe-regles-15.webp",
           question: "Comment appelle-t-on un combat d'entraînement avec un partenaire ?",
           answers: [
             { id: "a", text: "Un round d'essai" },
@@ -238,6 +241,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-boxe-regles-17.webp",
           question: "Que met-on autour des mains avant d'enfiler les gants ?",
           answers: [
             { id: "a", text: "Des mitaines en laine" },
@@ -277,6 +281,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-regles-20.webp",
           question: "À quoi sert la pesée avant un combat ?",
           answers: [
             { id: "a", text: "À calculer la bourse des boxeurs" },
@@ -325,6 +330,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-boxe-regles-3.webp",
           question: "What's the maximum number of rounds in a pro world title fight today?",
           answers: [
             { id: "a", text: "10" },
@@ -444,6 +450,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-boxe-regles-12.webp",
           question: "What does it mean to be \"undisputed\" world champion?",
           answers: [
             { id: "a", text: "Having won every fight" },
@@ -483,6 +490,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-boxe-regles-15.webp",
           question: "What do you call a practice fight with a training partner?",
           answers: [
             { id: "a", text: "A trial round" },
@@ -509,6 +517,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-boxe-regles-17.webp",
           question: "What goes around a boxer's hands before the gloves go on?",
           answers: [
             { id: "a", text: "Wool mittens" },
@@ -548,6 +557,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-regles-20.webp",
           question: "What is the weigh-in before a fight for?",
           answers: [
             { id: "a", text: "Working out the boxers' purses" },
@@ -596,6 +606,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-boxe-regles-3.webp",
           question: "¿A cuántos asaltos como máximo se disputa hoy un campeonato del mundo profesional?",
           answers: [
             { id: "a", text: "10" },
@@ -715,6 +726,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-boxe-regles-12.webp",
           question: "¿Qué quiere decir ser campeón del mundo « indiscutido »?",
           answers: [
             { id: "a", text: "Haber ganado todos sus combates" },
@@ -754,6 +766,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-boxe-regles-15.webp",
           question: "¿Cómo se llama un combate de entrenamiento con un compañero?",
           answers: [
             { id: "a", text: "Un asalto de prueba" },
@@ -780,6 +793,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-boxe-regles-17.webp",
           question: "¿Qué se pone en las manos antes de los guantes?",
           answers: [
             { id: "a", text: "Unas manoplas de lana" },
@@ -819,6 +833,7 @@ export const quizBoxeRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-regles-20.webp",
           question: "¿Para qué sirve el pesaje antes de un combate?",
           answers: [
             { id: "a", text: "Para calcular la bolsa de los boxeadores" },

@@ -37,6 +37,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-harry-potter-personnages-2.webp",
           question: "Qui Ron Weasley épouse-t-il à la fin de la saga ?",
           answers: [
             { id: "a", text: "Hermione Granger" },
@@ -60,6 +61,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-harry-potter-personnages-4.webp",
           question: "Qui est la directrice de la maison Gryffondor ?",
           answers: [
             { id: "a", text: "Pomona Chourave" },
@@ -139,6 +141,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-harry-potter-personnages-11.webp",
           question: "Qui est le grand rival de Harry à Serpentard ?",
           answers: [
             { id: "a", text: "Cedric Diggory" },
@@ -172,6 +175,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-harry-potter-personnages-14.webp",
           question: "Quels frères Weasley ouvrent une boutique de farces et attrapes ?",
           answers: [
             { id: "a", text: "Fred et George" },
@@ -205,6 +209,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-harry-potter-personnages-17.webp",
           question: "Quelle élève de Serdaigle porte des boucles d'oreilles en forme de radis ?",
           answers: [
             { id: "a", text: "Luna Lovegood" },
@@ -238,6 +243,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-personnages-20.webp",
           question: "Qui tue Dumbledore au sommet de la tour d'astronomie ?",
           answers: [
             { id: "a", text: "Drago Malefoy" },
@@ -268,6 +274,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-harry-potter-personnages-2.webp",
           question: "Who does Ron Weasley marry at the end of the saga?",
           answers: [
             { id: "a", text: "Hermione Granger" },
@@ -291,6 +298,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-harry-potter-personnages-4.webp",
           question: "Who is the head of Gryffindor house?",
           answers: [
             { id: "a", text: "Pomona Sprout" },
@@ -370,6 +378,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-harry-potter-personnages-11.webp",
           question: "Who is Harry's big rival in Slytherin?",
           answers: [
             { id: "a", text: "Cedric Diggory" },
@@ -403,6 +412,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-harry-potter-personnages-14.webp",
           question: "Which Weasley brothers open a joke shop?",
           answers: [
             { id: "a", text: "Fred and George" },
@@ -436,6 +446,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-harry-potter-personnages-17.webp",
           question: "Which Ravenclaw student wears radish earrings?",
           answers: [
             { id: "a", text: "Luna Lovegood" },
@@ -469,6 +480,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-personnages-20.webp",
           question: "Who kills Dumbledore at the top of the Astronomy Tower?",
           answers: [
             { id: "a", text: "Draco Malfoy" },
@@ -499,6 +511,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-harry-potter-personnages-2.webp",
           question: "¿Con quién se casa Ron Weasley al final de la saga?",
           answers: [
             { id: "a", text: "Hermione Granger" },
@@ -522,6 +535,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-harry-potter-personnages-4.webp",
           question: "¿Quién es la jefa de la casa Gryffindor?",
           answers: [
             { id: "a", text: "Pomona Sprout" },
@@ -601,6 +615,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-harry-potter-personnages-11.webp",
           question: "¿Quién es el gran rival de Harry en Slytherin?",
           answers: [
             { id: "a", text: "Cedric Diggory" },
@@ -634,6 +649,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-harry-potter-personnages-14.webp",
           question: "¿Qué hermanos Weasley abren una tienda de artículos de broma?",
           answers: [
             { id: "a", text: "Fred y George" },
@@ -667,6 +683,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-harry-potter-personnages-17.webp",
           question: "¿Qué alumna de Ravenclaw lleva pendientes con forma de rábano?",
           answers: [
             { id: "a", text: "Luna Lovegood" },
@@ -700,6 +717,7 @@ export const quizHarryPotterPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-personnages-20.webp",
           question: "¿Quién mata a Dumbledore en lo alto de la torre de Astronomía?",
           answers: [
             { id: "a", text: "Draco Malfoy" },

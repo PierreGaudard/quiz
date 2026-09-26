@@ -34,6 +34,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-naruto-chiffres-2.webp",
           question: "Combien de chapitres compte le manga Naruto ?",
           answers: [],
           correctAnswer: "700",
@@ -52,6 +53,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-naruto-chiffres-4.webp",
           question: "Et Naruto Shippuden, combien d'épisodes ?",
           answers: [],
           correctAnswer: "500",
@@ -127,6 +129,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-naruto-chiffres-12.webp",
           question: "Naruto est né un jour d'octobre. Lequel ?",
           answers: [],
           correctAnswer: "10",
@@ -154,6 +157,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-naruto-chiffres-15.webp",
           question: "Combien de natures de chakra de base existe-t-il ?",
           answers: [],
           correctAnswer: "5",
@@ -172,6 +176,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-naruto-chiffres-17.webp",
           question: "Combien de tomoe, ces petites virgules noires, a un Sharingan pleinement éveillé ?",
           answers: [],
           correctAnswer: "3",
@@ -199,6 +204,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-chiffres-20.webp",
           question: "En quelle année sort au cinéma The Last: Naruto the Movie, où Naruto et Hinata se rapprochent ?",
           answers: [],
           correctAnswer: "2014",
@@ -225,6 +231,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-naruto-chiffres-2.webp",
           question: "How many chapters does the Naruto manga have?",
           answers: [],
           correctAnswer: "700",
@@ -243,6 +250,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-naruto-chiffres-4.webp",
           question: "And Naruto Shippuden, how many episodes?",
           answers: [],
           correctAnswer: "500",
@@ -318,6 +326,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-naruto-chiffres-12.webp",
           question: "Naruto was born in October. On which day?",
           answers: [],
           correctAnswer: "10",
@@ -345,6 +354,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-naruto-chiffres-15.webp",
           question: "How many basic chakra natures are there?",
           answers: [],
           correctAnswer: "5",
@@ -363,6 +373,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-naruto-chiffres-17.webp",
           question: "How many tomoe, the little black commas, does a fully awakened Sharingan have?",
           answers: [],
           correctAnswer: "3",
@@ -390,6 +401,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-chiffres-20.webp",
           question: "In what year was The Last: Naruto the Movie, where Naruto and Hinata get together, released?",
           answers: [],
           correctAnswer: "2014",
@@ -416,6 +428,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-naruto-chiffres-2.webp",
           question: "¿Cuántos capítulos tiene el manga de Naruto?",
           answers: [],
           correctAnswer: "700",
@@ -434,6 +447,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-naruto-chiffres-4.webp",
           question: "¿Y Naruto Shippuden? ¿Cuántos episodios tiene?",
           answers: [],
           correctAnswer: "500",
@@ -509,6 +523,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-naruto-chiffres-12.webp",
           question: "Naruto nació en octubre. ¿Qué día?",
           answers: [],
           correctAnswer: "10",
@@ -536,6 +551,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-naruto-chiffres-15.webp",
           question: "¿Cuántas naturalezas básicas de chakra existen?",
           answers: [],
           correctAnswer: "5",
@@ -554,6 +570,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-naruto-chiffres-17.webp",
           question: "¿Cuántos tomoe, esas pequeñas comas negras, tiene un Sharingan completamente despierto?",
           answers: [],
           correctAnswer: "3",
@@ -581,6 +598,7 @@ export const quizNarutoChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-chiffres-20.webp",
           question: "¿En qué año se estrena The Last: Naruto the Movie, donde Naruto y Hinata acaban juntos?",
           answers: [],
           correctAnswer: "2014",

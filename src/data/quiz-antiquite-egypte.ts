@@ -106,6 +106,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-antiquite-egypte-8.webp",
           question: "Le Nil coule du nord vers le sud.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -174,6 +175,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-antiquite-egypte-14.webp",
           question: "Osiris est le dieu du soleil.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -196,6 +198,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-egypte-16.webp",
           question: "Cléopâtre VII a vécu plus près de notre époque que de la construction de la pyramide de Khéops.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -240,6 +243,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-egypte-20.webp",
           question: "Les pyramides de Gizeh ont été construites sous le règne de Ramsès II.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -339,6 +343,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-antiquite-egypte-8.webp",
           question: "The Nile flows from north to south.",
           answers: [
             { id: "a", text: "True" },
@@ -407,6 +412,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-antiquite-egypte-14.webp",
           question: "Osiris is the sun god.",
           answers: [
             { id: "a", text: "True" },
@@ -429,6 +435,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-egypte-16.webp",
           question: "Cleopatra VII lived closer to our time than to the building of the Great Pyramid of Khufu.",
           answers: [
             { id: "a", text: "True" },
@@ -473,6 +480,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-egypte-20.webp",
           question: "The pyramids of Giza were built during the reign of Ramesses II.",
           answers: [
             { id: "a", text: "True" },
@@ -572,6 +580,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-antiquite-egypte-8.webp",
           question: "El Nilo corre de norte a sur.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -640,6 +649,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-antiquite-egypte-14.webp",
           question: "Osiris es el dios del sol.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -662,6 +672,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-egypte-16.webp",
           question: "Cleopatra VII vivió más cerca de nuestra época que de la construcción de la pirámide de Keops.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -706,6 +717,7 @@ export const quizAntiquiteEgypte: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-egypte-20.webp",
           question: "Las pirámides de Guiza se construyeron durante el reinado de Ramsés II.",
           answers: [
             { id: "a", text: "Verdadero" },

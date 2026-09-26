@@ -124,6 +124,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-my-hero-academia-alters-8.webp",
           question: "Que fait l'Alter de Minoru Mineta ?",
           answers: [
             { id: "a", text: "Il arrache de sa tête des boules qui collent" },
@@ -177,6 +178,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-my-hero-academia-alters-12.webp",
           question: "D'où sort le ruban adhésif de Hanta Sero ?",
           answers: [
             { id: "a", text: "De ses coudes" },
@@ -216,6 +218,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-my-hero-academia-alters-15.webp",
           question: "Avec quoi Koji Koda peut-il communiquer grâce à son Alter ?",
           answers: [
             { id: "a", text: "Les animaux" },
@@ -242,6 +245,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-alters-17.webp",
           question: "Quelle élève de la 1-A est invisible en permanence ?",
           answers: [
             { id: "a", text: "Kyoka Jiro" },
@@ -281,6 +285,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-alters-20.webp",
           question: "Quel est le nom de héros de Fumikage Tokoyami ?",
           answers: [
             { id: "a", text: "Shadow King" },
@@ -396,6 +401,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-my-hero-academia-alters-8.webp",
           question: "What does Minoru Mineta's Quirk do?",
           answers: [
             { id: "a", text: "He pulls sticky balls off his head" },
@@ -449,6 +455,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-my-hero-academia-alters-12.webp",
           question: "Where does Hanta Sero's tape come out of?",
           answers: [
             { id: "a", text: "His elbows" },
@@ -488,6 +495,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-my-hero-academia-alters-15.webp",
           question: "What can Koji Koda talk to thanks to his Quirk?",
           answers: [
             { id: "a", text: "Animals" },
@@ -514,6 +522,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-alters-17.webp",
           question: "Which Class 1-A student is invisible all the time?",
           answers: [
             { id: "a", text: "Kyoka Jiro" },
@@ -553,6 +562,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-alters-20.webp",
           question: "What is Fumikage Tokoyami's hero name?",
           answers: [
             { id: "a", text: "Shadow King" },
@@ -668,6 +678,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-my-hero-academia-alters-8.webp",
           question: "¿Qué hace el Don de Minoru Mineta?",
           answers: [
             { id: "a", text: "Se arranca de la cabeza bolas que se pegan" },
@@ -721,6 +732,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-my-hero-academia-alters-12.webp",
           question: "¿De dónde sale la cinta adhesiva de Hanta Sero?",
           answers: [
             { id: "a", text: "De los codos" },
@@ -760,6 +772,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-my-hero-academia-alters-15.webp",
           question: "¿Con qué puede comunicarse Koji Koda gracias a su Don?",
           answers: [
             { id: "a", text: "Con los animales" },
@@ -786,6 +799,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-alters-17.webp",
           question: "¿Qué alumna de la 1-A es invisible todo el tiempo?",
           answers: [
             { id: "a", text: "Kyoka Jiro" },
@@ -825,6 +839,7 @@ export const quizMyHeroAcademiaAlters: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-alters-20.webp",
           question: "¿Cuál es el nombre de héroe de Fumikage Tokoyami?",
           answers: [
             { id: "a", text: "Shadow King" },

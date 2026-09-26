@@ -42,6 +42,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-call-of-duty-cartes-2.webp",
           question: "Quelle est la toute première carte de Warzone ?",
           answers: [
             { id: "a", text: "Caldera" },
@@ -122,6 +123,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-call-of-duty-cartes-8.webp",
           question: "Quelle carte a remplacé Verdansk dans Warzone en décembre 2021 ?",
           answers: [
             { id: "a", text: "Rebirth Island" },
@@ -148,6 +150,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-call-of-duty-cartes-10.webp",
           question: "En Élimination confirmée, que ramasse-t-on sur les ennemis tués ?",
           answers: [
             { id: "a", text: "Des plaques d'identité" },
@@ -201,6 +204,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-call-of-duty-cartes-14.webp",
           question: "Comment gagne-t-on un Match à mort par équipe ?",
           answers: [
             { id: "a", text: "En posant une bombe" },
@@ -280,6 +284,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-cartes-20.webp",
           question: "En Zombies, que voit-on quand la boîte mystère change de place ?",
           answers: [
             { id: "a", text: "Un crâne" },
@@ -314,6 +319,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-call-of-duty-cartes-2.webp",
           question: "What was the very first Warzone map?",
           answers: [
             { id: "a", text: "Caldera" },
@@ -394,6 +400,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-call-of-duty-cartes-8.webp",
           question: "Which map replaced Verdansk in Warzone in December 2021?",
           answers: [
             { id: "a", text: "Rebirth Island" },
@@ -420,6 +427,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-call-of-duty-cartes-10.webp",
           question: "In Kill Confirmed, what do you pick up from dead enemies?",
           answers: [
             { id: "a", text: "Dog tags" },
@@ -473,6 +481,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-call-of-duty-cartes-14.webp",
           question: "How do you win a Team Deathmatch?",
           answers: [
             { id: "a", text: "By planting a bomb" },
@@ -552,6 +561,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-cartes-20.webp",
           question: "In Zombies, what do you see when the Mystery Box moves?",
           answers: [
             { id: "a", text: "A skull" },
@@ -586,6 +596,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-call-of-duty-cartes-2.webp",
           question: "¿Cuál fue el primer mapa de Warzone?",
           answers: [
             { id: "a", text: "Caldera" },
@@ -666,6 +677,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-call-of-duty-cartes-8.webp",
           question: "¿Qué mapa sustituyó a Verdansk en Warzone en diciembre de 2021?",
           answers: [
             { id: "a", text: "Rebirth Island" },
@@ -692,6 +704,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-call-of-duty-cartes-10.webp",
           question: "En Baja confirmada, ¿qué se recoge de los enemigos abatidos?",
           answers: [
             { id: "a", text: "Placas de identificación" },
@@ -745,6 +758,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-call-of-duty-cartes-14.webp",
           question: "¿Cómo se gana un Duelo por equipos?",
           answers: [
             { id: "a", text: "Colocando una bomba" },
@@ -824,6 +838,7 @@ export const quizCallOfDutyCartes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-cartes-20.webp",
           question: "En Zombis, ¿qué se ve cuando la caja misteriosa cambia de sitio?",
           answers: [
             { id: "a", text: "Una calavera" },

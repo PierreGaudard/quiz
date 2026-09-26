@@ -49,6 +49,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-gta-villes-3.webp",
           question: "La ville de Los Santos, dans GTA V, s'inspire de Los Angeles.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -140,6 +141,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-gta-villes-11.webp",
           question: "Dans GTA IV, le quartier de Bohan s'inspire du Bronx.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -173,6 +175,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-gta-villes-14.webp",
           question: "Dans GTA V, Sandy Shores est une petite ville au bord d'un grand lac, l'Alamo Sea.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +209,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-villes-17.webp",
           question: "Dans GTA San Andreas, on ne peut passer d'une ville à l'autre qu'en avion.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +243,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-villes-20.webp",
           question: "Dans GTA IV, on peut aller en voiture jusqu'à Vice City.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -281,6 +286,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-gta-villes-3.webp",
           question: "The city of Los Santos in GTA V is based on Los Angeles.",
           answers: [
             { id: "a", text: "True" },
@@ -372,6 +378,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-gta-villes-11.webp",
           question: "In GTA IV, the Bohan district is based on the Bronx.",
           answers: [
             { id: "a", text: "True" },
@@ -405,6 +412,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-gta-villes-14.webp",
           question: "In GTA V, Sandy Shores is a small town on the shore of a big lake, the Alamo Sea.",
           answers: [
             { id: "a", text: "True" },
@@ -438,6 +446,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-villes-17.webp",
           question: "In GTA San Andreas, you can only get from one city to another by plane.",
           answers: [
             { id: "a", text: "True" },
@@ -471,6 +480,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-villes-20.webp",
           question: "In GTA IV, you can drive all the way to Vice City.",
           answers: [
             { id: "a", text: "True" },
@@ -513,6 +523,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-gta-villes-3.webp",
           question: "La ciudad de Los Santos, en GTA V, está inspirada en Los Ángeles.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -604,6 +615,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-gta-villes-11.webp",
           question: "En GTA IV, el barrio de Bohan se inspira en el Bronx.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -637,6 +649,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-gta-villes-14.webp",
           question: "En GTA V, Sandy Shores es un pueblo a orillas de un gran lago, el Alamo Sea.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -670,6 +683,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-villes-17.webp",
           question: "En GTA San Andreas, solo se puede ir de una ciudad a otra en avión.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -703,6 +717,7 @@ export const quizGtaVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-villes-20.webp",
           question: "En GTA IV se puede ir en coche hasta Vice City.",
           answers: [
             { id: "a", text: "Verdadero" },

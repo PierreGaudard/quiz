@@ -42,6 +42,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rois-de-france-2.webp",
           question: "Remets ces rois du Moyen Âge dans l'ordre de leur règne.",
           answers: [
             { id: "a", text: "Philippe Auguste" },
@@ -157,6 +158,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-rois-de-france-10.webp",
           question: "Remets ces rois de la dynastie des Valois dans l'ordre de leur règne.",
           answers: [
             { id: "a", text: "Charles V" },
@@ -199,6 +201,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-rois-de-france-13.webp",
           question: "Remets ces rois des XIIIe et XIVe siècles dans l'ordre de leur règne.",
           answers: [
             { id: "a", text: "Louis VIII" },
@@ -241,6 +244,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-rois-de-france-16.webp",
           question: "Remets ces chantiers dans l'ordre où ils ont commencé.",
           answers: [
             { id: "a", text: "Le château de Fontainebleau de François Ier" },
@@ -269,6 +273,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-rois-de-france-18.webp",
           question: "Remets ces événements des guerres de Religion dans l'ordre.",
           answers: [
             { id: "a", text: "Le massacre de Wassy" },
@@ -297,6 +302,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-20.webp",
           question: "Remets ces provinces dans l'ordre où elles sont rattachées au royaume.",
           answers: [
             { id: "a", text: "La Normandie" },
@@ -333,6 +339,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rois-de-france-2.webp",
           question: "Put these medieval kings in the order they reigned.",
           answers: [
             { id: "a", text: "Philip Augustus" },
@@ -448,6 +455,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-rois-de-france-10.webp",
           question: "Put these kings of the Valois dynasty in the order they reigned.",
           answers: [
             { id: "a", text: "Charles V" },
@@ -490,6 +498,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-rois-de-france-13.webp",
           question: "Put these 13th and 14th century kings in the order of their reigns.",
           answers: [
             { id: "a", text: "Louis VIII" },
@@ -532,6 +541,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-rois-de-france-16.webp",
           question: "Put these building projects in the order they were started.",
           answers: [
             { id: "a", text: "Francis I's Château de Fontainebleau" },
@@ -560,6 +570,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-rois-de-france-18.webp",
           question: "Put these events of the Wars of Religion in order.",
           answers: [
             { id: "a", text: "The massacre of Wassy" },
@@ -588,6 +599,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-20.webp",
           question: "Put these provinces in the order they became part of the kingdom.",
           answers: [
             { id: "a", text: "Normandy" },
@@ -624,6 +636,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rois-de-france-2.webp",
           question: "Ordena a estos reyes medievales según su reinado.",
           answers: [
             { id: "a", text: "Felipe Augusto" },
@@ -739,6 +752,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-rois-de-france-10.webp",
           question: "Ordena a estos reyes de la dinastía Valois según su reinado.",
           answers: [
             { id: "a", text: "Carlos V" },
@@ -781,6 +795,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-rois-de-france-13.webp",
           question: "Ordena a estos reyes de los siglos XIII y XIV según su reinado.",
           answers: [
             { id: "a", text: "Luis VIII" },
@@ -823,6 +838,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-rois-de-france-16.webp",
           question: "Ordena estas obras según el momento en que empezaron.",
           answers: [
             { id: "a", text: "El castillo de Fontainebleau de Francisco I" },
@@ -851,6 +867,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-rois-de-france-18.webp",
           question: "Ordena estos hechos de las guerras de religión.",
           answers: [
             { id: "a", text: "La matanza de Wassy" },
@@ -879,6 +896,7 @@ export const quizRoisDeFrance: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-20.webp",
           question: "Ordena estas provincias según su incorporación al reino.",
           answers: [
             { id: "a", text: "Normandía" },

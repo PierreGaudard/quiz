@@ -38,6 +38,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-clubs-2.webp",
           question: "Quel club français a gagné la Ligue des champions le premier ?",
           answers: [
             { id: "a", text: "Paris Saint-Germain" },
@@ -106,6 +107,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-football-clubs-8.webp",
           question: "Quel club anglais a fini la saison 2003-2004 de Premier League sans perdre un seul match ?",
           answers: [
             { id: "a", text: "Chelsea" },
@@ -151,6 +153,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-football-clubs-12.webp",
           question: "Quel club anglais est surnommé « les Red Devils » ?",
           answers: [
             { id: "a", text: "Liverpool" },
@@ -184,6 +187,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-football-clubs-15.webp",
           question: "Quel club a gagné la finale de Ligue des champions 2005 après avoir été mené 3-0 à la mi-temps ?",
           answers: [
             { id: "a", text: "Liverpool" },
@@ -206,6 +210,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-clubs-17.webp",
           question: "Quel club a gagné la Bundesliga 2023-2024 sans perdre un seul match ?",
           answers: [
             { id: "a", text: "Le Bayern Munich" },
@@ -239,6 +244,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-clubs-20.webp",
           question: "Quel club espagnol joue au Metropolitano ?",
           answers: [
             { id: "a", text: "L'Atlético de Madrid" },
@@ -269,6 +275,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-clubs-2.webp",
           question: "Which French club won the Champions League first?",
           answers: [
             { id: "a", text: "Paris Saint-Germain" },
@@ -337,6 +344,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-football-clubs-8.webp",
           question: "Which English club went through the 2003-04 Premier League season unbeaten?",
           answers: [
             { id: "a", text: "Chelsea" },
@@ -382,6 +390,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-football-clubs-12.webp",
           question: "Which English club is nicknamed \"the Red Devils\"?",
           answers: [
             { id: "a", text: "Liverpool" },
@@ -415,6 +424,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-football-clubs-15.webp",
           question: "Which club won the 2005 Champions League final after trailing 3-0 at half-time?",
           answers: [
             { id: "a", text: "Liverpool" },
@@ -437,6 +447,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-clubs-17.webp",
           question: "Which club won the 2023-24 Bundesliga without losing a single game?",
           answers: [
             { id: "a", text: "Bayern Munich" },
@@ -470,6 +481,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-clubs-20.webp",
           question: "Which Spanish club plays at the Metropolitano?",
           answers: [
             { id: "a", text: "Atlético Madrid" },
@@ -500,6 +512,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-clubs-2.webp",
           question: "¿Qué club francés ganó antes la Liga de Campeones?",
           answers: [
             { id: "a", text: "Paris Saint-Germain" },
@@ -568,6 +581,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-football-clubs-8.webp",
           question: "¿Qué club inglés terminó la Premier League 2003-2004 sin perder ni un partido?",
           answers: [
             { id: "a", text: "Chelsea" },
@@ -613,6 +627,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-football-clubs-12.webp",
           question: "¿Qué club inglés tiene el apodo de «los Diablos Rojos»?",
           answers: [
             { id: "a", text: "El Liverpool" },
@@ -646,6 +661,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-football-clubs-15.webp",
           question: "¿Qué club ganó la final de la Liga de Campeones de 2005 tras ir perdiendo 3-0 al descanso?",
           answers: [
             { id: "a", text: "El Liverpool" },
@@ -668,6 +684,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-clubs-17.webp",
           question: "¿Qué club ganó la Bundesliga 2023-2024 sin perder ni un partido?",
           answers: [
             { id: "a", text: "El Bayern de Múnich" },
@@ -701,6 +718,7 @@ export const quizFootballClubs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-clubs-20.webp",
           question: "¿Qué club español juega en el Metropolitano?",
           answers: [
             { id: "a", text: "El Atlético de Madrid" },

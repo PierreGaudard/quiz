@@ -39,6 +39,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-2.webp",
           question: "Qui a écrit et dessiné le manga Tokyo Revengers ?",
           answers: [
             { id: "a", text: "Hajime Isayama" },
@@ -160,6 +161,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-11.webp",
           question: "Quel studio a produit l'anime Tokyo Revengers ?",
           answers: [
             { id: "a", text: "MAPPA" },
@@ -199,6 +201,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-14.webp",
           question: "Quel surnom les voyous de Tokyo donnent-ils à Mikey pour sa force ?",
           answers: [
             { id: "a", text: "Le Dragon de Shibuya" },
@@ -238,6 +241,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-17.webp",
           question: "Qui poignarde Draken le soir du festival d'été, le 3 août 2005 ?",
           answers: [
             { id: "a", text: "Shuji Hanma" },
@@ -277,6 +281,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-20.webp",
           question: "Dans le film live de 2021, quel acteur joue Takemichi ?",
           answers: [
             { id: "a", text: "Ryo Yoshizawa" },
@@ -311,6 +316,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-2.webp",
           question: "Who wrote and drew the Tokyo Revengers manga?",
           answers: [
             { id: "a", text: "Hajime Isayama" },
@@ -432,6 +438,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-11.webp",
           question: "Which studio made the Tokyo Revengers anime?",
           answers: [
             { id: "a", text: "MAPPA" },
@@ -471,6 +478,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-14.webp",
           question: "What do Tokyo's delinquents call Mikey because of how strong he is?",
           answers: [
             { id: "a", text: "The Dragon of Shibuya" },
@@ -510,6 +518,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-17.webp",
           question: "Who stabs Draken on the night of the summer festival, August 3, 2005?",
           answers: [
             { id: "a", text: "Shuji Hanma" },
@@ -549,6 +558,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-20.webp",
           question: "In the 2021 live-action film, which actor plays Takemichi?",
           answers: [
             { id: "a", text: "Ryo Yoshizawa" },
@@ -583,6 +593,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-2.webp",
           question: "¿Quién escribió y dibujó el manga de Tokyo Revengers?",
           answers: [
             { id: "a", text: "Hajime Isayama" },
@@ -704,6 +715,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-11.webp",
           question: "¿Qué estudio hizo el anime de Tokyo Revengers?",
           answers: [
             { id: "a", text: "MAPPA" },
@@ -743,6 +755,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-14.webp",
           question: "¿Qué apodo le dan a Mikey los pandilleros de Tokio por su fuerza?",
           answers: [
             { id: "a", text: "El Dragón de Shibuya" },
@@ -782,6 +795,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-17.webp",
           question: "¿Quién apuñala a Draken la noche del festival de verano, el 3 de agosto de 2005?",
           answers: [
             { id: "a", text: "Shuji Hanma" },
@@ -821,6 +835,7 @@ export const quizTokyoRevengers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-20.webp",
           question: "En la película de imagen real de 2021, ¿qué actor interpreta a Takemichi?",
           answers: [
             { id: "a", text: "Ryo Yoshizawa" },

@@ -40,6 +40,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-marvel-acteurs-2.webp",
           question: "Qui joue Thor ?",
           answers: [
             { id: "a", text: "Chris Pratt" },
@@ -80,6 +81,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-marvel-acteurs-5.webp",
           question: "Qui joue Thanos ?",
           answers: [
             { id: "a", text: "Josh Brolin" },
@@ -160,6 +162,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-marvel-acteurs-11.webp",
           question: "Qui joue Nick Fury ?",
           answers: [
             { id: "a", text: "Don Cheadle" },
@@ -199,6 +202,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-marvel-acteurs-14.webp",
           question: "Qui joue Wolverine dans Deadpool & Wolverine ?",
           answers: [
             { id: "a", text: "Hugh Jackman" },
@@ -238,6 +242,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-acteurs-17.webp",
           question: "Qui joue Clint Barton, alias Hawkeye ?",
           answers: [
             { id: "a", text: "Jeremy Renner" },
@@ -277,6 +282,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-acteurs-20.webp",
           question: "Qui joue Shuri, la sœur de T'Challa ?",
           answers: [
             { id: "a", text: "Lupita Nyong'o" },
@@ -311,6 +317,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-marvel-acteurs-2.webp",
           question: "Who plays Thor?",
           answers: [
             { id: "a", text: "Chris Pratt" },
@@ -351,6 +358,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-marvel-acteurs-5.webp",
           question: "Who plays Thanos?",
           answers: [
             { id: "a", text: "Josh Brolin" },
@@ -431,6 +439,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-marvel-acteurs-11.webp",
           question: "Who plays Nick Fury?",
           answers: [
             { id: "a", text: "Don Cheadle" },
@@ -470,6 +479,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-marvel-acteurs-14.webp",
           question: "Who plays Wolverine in Deadpool & Wolverine?",
           answers: [
             { id: "a", text: "Hugh Jackman" },
@@ -509,6 +519,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-acteurs-17.webp",
           question: "Who plays Clint Barton, aka Hawkeye?",
           answers: [
             { id: "a", text: "Jeremy Renner" },
@@ -548,6 +559,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-acteurs-20.webp",
           question: "Who plays Shuri, T'Challa's sister?",
           answers: [
             { id: "a", text: "Lupita Nyong'o" },
@@ -582,6 +594,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-marvel-acteurs-2.webp",
           question: "¿Quién interpreta a Thor?",
           answers: [
             { id: "a", text: "Chris Pratt" },
@@ -622,6 +635,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-marvel-acteurs-5.webp",
           question: "¿Quién interpreta a Thanos?",
           answers: [
             { id: "a", text: "Josh Brolin" },
@@ -702,6 +716,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-marvel-acteurs-11.webp",
           question: "¿Quién interpreta a Nick Fury?",
           answers: [
             { id: "a", text: "Don Cheadle" },
@@ -741,6 +756,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-marvel-acteurs-14.webp",
           question: "¿Quién interpreta a Lobezno en Deadpool y Lobezno?",
           answers: [
             { id: "a", text: "Hugh Jackman" },
@@ -780,6 +796,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-acteurs-17.webp",
           question: "¿Quién interpreta a Clint Barton, alias Ojo de Halcón?",
           answers: [
             { id: "a", text: "Jeremy Renner" },
@@ -819,6 +836,7 @@ export const quizMarvelActeurs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-acteurs-20.webp",
           question: "¿Quién interpreta a Shuri, la hermana de T'Challa?",
           answers: [
             { id: "a", text: "Lupita Nyong'o" },

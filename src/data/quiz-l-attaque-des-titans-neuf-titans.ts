@@ -97,6 +97,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-6.webp",
           question: "Combien d'années un porteur de l'un des neuf Titans vit-il après l'avoir reçu ?",
           answers: [
             { id: "a", text: "Dix ans" },
@@ -164,6 +165,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-11.webp",
           question: "Qui porte le Titan Féminin ?",
           answers: [
             { id: "a", text: "Mikasa Ackerman" },
@@ -203,6 +205,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-14.webp",
           question: "De quel sang le porteur du Titan Originel a-t-il besoin pour utiliser tout son pouvoir ?",
           answers: [
             { id: "a", text: "Du sang royal" },
@@ -242,6 +245,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-17.webp",
           question: "Quel roi a emmené son peuple sur l'île de Paradis et fait le vœu de renoncer à la guerre ?",
           answers: [
             { id: "a", text: "Rod Reiss" },
@@ -281,6 +285,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-20.webp",
           question: "Que devient le pouvoir d'un des neuf Titans si son porteur meurt sans être dévoré ?",
           answers: [
             { id: "a", text: "Il disparaît pour toujours" },
@@ -369,6 +374,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-6.webp",
           question: "How many years does someone live after inheriting one of the Nine Titans?",
           answers: [
             { id: "a", text: "Ten years" },
@@ -436,6 +442,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-11.webp",
           question: "Who holds the Female Titan?",
           answers: [
             { id: "a", text: "Mikasa Ackerman" },
@@ -475,6 +482,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-14.webp",
           question: "What blood does the holder of the Founding Titan need to use its full power?",
           answers: [
             { id: "a", text: "Royal blood" },
@@ -514,6 +522,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-17.webp",
           question: "Which king took his people to Paradis Island and made a vow to renounce war?",
           answers: [
             { id: "a", text: "Rod Reiss" },
@@ -553,6 +562,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-20.webp",
           question: "What happens to the power of one of the Nine Titans if its holder dies without being eaten?",
           answers: [
             { id: "a", text: "It's gone forever" },
@@ -641,6 +651,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-6.webp",
           question: "¿Cuántos años vive alguien después de heredar uno de los Nueve Titanes?",
           answers: [
             { id: "a", text: "Diez años" },
@@ -708,6 +719,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-11.webp",
           question: "¿Quién lleva la Titán Hembra?",
           answers: [
             { id: "a", text: "Mikasa Ackerman" },
@@ -747,6 +759,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-14.webp",
           question: "¿Qué sangre necesita el portador del Titán Fundador para usar todo su poder?",
           answers: [
             { id: "a", text: "Sangre real" },
@@ -786,6 +799,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-17.webp",
           question: "¿Qué rey llevó a su pueblo a la isla Paradis e hizo el voto de renunciar a la guerra?",
           answers: [
             { id: "a", text: "Rod Reiss" },
@@ -825,6 +839,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-neuf-titans-20.webp",
           question: "¿Qué pasa con el poder de uno de los Nueve Titanes si su portador muere sin que nadie lo devore?",
           answers: [
             { id: "a", text: "Desaparece para siempre" },

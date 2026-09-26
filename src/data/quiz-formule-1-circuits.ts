@@ -40,6 +40,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-circuits-2.webp",
           question: "Quel circuit est surnommé « le Temple de la vitesse » ?",
           answers: [
             { id: "a", text: "Monza" },
@@ -147,6 +148,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-formule-1-circuits-10.webp",
           question: "Dans quelle ville se trouve le Madring, qui a reçu son premier Grand Prix en septembre 2026 ?",
           answers: [
             { id: "a", text: "Barcelone" },
@@ -186,6 +188,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-formule-1-circuits-13.webp",
           question: "Près de quelle capitale se trouve le Hungaroring ?",
           answers: [
             { id: "a", text: "Budapest" },
@@ -225,6 +228,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-formule-1-circuits-16.webp",
           question: "Dans quelle ville se court le Grand Prix d'Australie, autour du lac d'Albert Park ?",
           answers: [
             { id: "a", text: "Sydney" },
@@ -251,6 +255,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-formule-1-circuits-18.webp",
           question: "Dans quelle ville se court le Grand Prix d'Azerbaïdjan, en partie dans la vieille ville ?",
           answers: [
             { id: "a", text: "Bakou" },
@@ -277,6 +282,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-circuits-20.webp",
           question: "Près de quelle grande ville se trouve le circuit de Monza ?",
           answers: [
             { id: "a", text: "Turin" },
@@ -311,6 +317,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-circuits-2.webp",
           question: "Which circuit is nicknamed \"the Temple of Speed\"?",
           answers: [
             { id: "a", text: "Monza" },
@@ -418,6 +425,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-formule-1-circuits-10.webp",
           question: "Which city is the Madring in, the track that held its first Grand Prix in September 2026?",
           answers: [
             { id: "a", text: "Barcelona" },
@@ -457,6 +465,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-formule-1-circuits-13.webp",
           question: "Which capital city is the Hungaroring close to?",
           answers: [
             { id: "a", text: "Budapest" },
@@ -496,6 +505,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-formule-1-circuits-16.webp",
           question: "Which city hosts the Australian Grand Prix, around the lake at Albert Park?",
           answers: [
             { id: "a", text: "Sydney" },
@@ -522,6 +532,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-formule-1-circuits-18.webp",
           question: "Which city hosts the Azerbaijan Grand Prix, partly through its old town?",
           answers: [
             { id: "a", text: "Baku" },
@@ -548,6 +559,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-circuits-20.webp",
           question: "Which big city is the Monza circuit close to?",
           answers: [
             { id: "a", text: "Turin" },
@@ -582,6 +594,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-circuits-2.webp",
           question: "¿A qué circuito llaman «el Templo de la velocidad»?",
           answers: [
             { id: "a", text: "Monza" },
@@ -689,6 +702,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-formule-1-circuits-10.webp",
           question: "¿En qué ciudad está el Madring, que estrenó su Gran Premio en septiembre de 2026?",
           answers: [
             { id: "a", text: "Barcelona" },
@@ -728,6 +742,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-formule-1-circuits-13.webp",
           question: "¿Cerca de qué capital está el Hungaroring?",
           answers: [
             { id: "a", text: "Budapest" },
@@ -767,6 +782,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-formule-1-circuits-16.webp",
           question: "¿En qué ciudad se corre el Gran Premio de Australia, alrededor del lago de Albert Park?",
           answers: [
             { id: "a", text: "Sídney" },
@@ -793,6 +809,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-formule-1-circuits-18.webp",
           question: "¿En qué ciudad se corre el Gran Premio de Azerbaiyán, en parte por el casco antiguo?",
           answers: [
             { id: "a", text: "Bakú" },
@@ -819,6 +836,7 @@ export const quizFormule1Circuits: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-circuits-20.webp",
           question: "¿Cerca de qué gran ciudad está el circuito de Monza?",
           answers: [
             { id: "a", text: "Turín" },

@@ -38,6 +38,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-kpop-demon-hunters-histoire-2.webp",
           question: "Les Saja Boys sont quatre.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -49,6 +50,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-kpop-demon-hunters-histoire-3.webp",
           question: "Mira se bat avec des couteaux de lancer.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -140,6 +142,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-kpop-demon-hunters-histoire-11.webp",
           question: "Le but des chasseuses est de créer un Honmoon doré, qui enfermerait les démons pour toujours.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -173,6 +176,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-kpop-demon-hunters-histoire-14.webp",
           question: "Au début du film, Rumi commence à perdre sa voix.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +210,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-kpop-demon-hunters-histoire-17.webp",
           question: "Mira vient d'une famille pauvre.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +244,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-histoire-20.webp",
           question: "Au début du film, HUNTR/X s'apprête à partir en tournée mondiale.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -269,6 +275,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-kpop-demon-hunters-histoire-2.webp",
           question: "There are four Saja Boys.",
           answers: [
             { id: "a", text: "True" },
@@ -280,6 +287,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-kpop-demon-hunters-histoire-3.webp",
           question: "Mira fights with throwing knives.",
           answers: [
             { id: "a", text: "True" },
@@ -371,6 +379,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-kpop-demon-hunters-histoire-11.webp",
           question: "The hunters' goal is to create a Golden Honmoon that would lock the demons away forever.",
           answers: [
             { id: "a", text: "True" },
@@ -404,6 +413,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-kpop-demon-hunters-histoire-14.webp",
           question: "Early in the film, Rumi starts losing her voice.",
           answers: [
             { id: "a", text: "True" },
@@ -437,6 +447,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-kpop-demon-hunters-histoire-17.webp",
           question: "Mira comes from a poor family.",
           answers: [
             { id: "a", text: "True" },
@@ -470,6 +481,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-histoire-20.webp",
           question: "At the start of the film, HUNTR/X is about to leave on a world tour.",
           answers: [
             { id: "a", text: "True" },
@@ -500,6 +512,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-kpop-demon-hunters-histoire-2.webp",
           question: "Los Saja Boys son cuatro.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -511,6 +524,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-kpop-demon-hunters-histoire-3.webp",
           question: "Mira pelea con cuchillos arrojadizos.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -602,6 +616,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-kpop-demon-hunters-histoire-11.webp",
           question: "El objetivo de las cazadoras es crear un Honmoon dorado que encierre a los demonios para siempre.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -635,6 +650,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-kpop-demon-hunters-histoire-14.webp",
           question: "Al principio de la película, Rumi empieza a perder la voz.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -668,6 +684,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-kpop-demon-hunters-histoire-17.webp",
           question: "Mira viene de una familia pobre.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -701,6 +718,7 @@ export const quizKpopDemonHuntersHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-histoire-20.webp",
           question: "Al principio de la película, HUNTR/X está a punto de irse de gira mundial.",
           answers: [
             { id: "a", text: "Verdadero" },

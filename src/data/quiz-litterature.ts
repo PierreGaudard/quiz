@@ -146,6 +146,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-litterature-10.webp",
           question: "Qui a écrit Vingt Mille Lieues sous les mers ?",
           answers: [
             { id: "a", text: "Victor Hugo" },
@@ -185,6 +186,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-litterature-13.webp",
           question: "Quel écrivain a créé le commissaire Maigret ?",
           answers: [
             { id: "a", text: "Agatha Christie" },
@@ -224,6 +226,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-litterature-16.webp",
           question: "Quel prix littéraire français est remis chaque automne au restaurant Drouant, à Paris ?",
           answers: [
             { id: "a", text: "Le prix Renaudot" },
@@ -250,6 +253,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-litterature-18.webp",
           question: "Qui a écrit Autant en emporte le vent ?",
           answers: [
             { id: "a", text: "Margaret Mitchell" },
@@ -276,6 +280,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-20.webp",
           question: "Qui a écrit Les Quatre Filles du docteur March ?",
           answers: [
             { id: "a", text: "Charlotte Brontë" },
@@ -418,6 +423,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-litterature-10.webp",
           question: "Who wrote Twenty Thousand Leagues Under the Sea?",
           answers: [
             { id: "a", text: "H. G. Wells" },
@@ -457,6 +463,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-litterature-13.webp",
           question: "Which writer created Inspector Maigret?",
           answers: [
             { id: "a", text: "Agatha Christie" },
@@ -496,6 +503,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-litterature-16.webp",
           question: "Which French literary prize is handed out every autumn at the Drouant restaurant in Paris?",
           answers: [
             { id: "a", text: "The Prix Renaudot" },
@@ -522,6 +530,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-litterature-18.webp",
           question: "Who wrote Gone with the Wind?",
           answers: [
             { id: "a", text: "Margaret Mitchell" },
@@ -548,6 +557,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-20.webp",
           question: "Who wrote Little Women?",
           answers: [
             { id: "a", text: "Charlotte Brontë" },
@@ -690,6 +700,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-litterature-10.webp",
           question: "¿Quién escribió Veinte mil leguas de viaje submarino?",
           answers: [
             { id: "a", text: "Victor Hugo" },
@@ -729,6 +740,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-litterature-13.webp",
           question: "¿Qué escritor creó al comisario Maigret?",
           answers: [
             { id: "a", text: "Agatha Christie" },
@@ -768,6 +780,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-litterature-16.webp",
           question: "¿Qué premio literario francés se entrega cada otoño en el restaurante Drouant, en París?",
           answers: [
             { id: "a", text: "El premio Renaudot" },
@@ -794,6 +807,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-litterature-18.webp",
           question: "¿Quién escribió Lo que el viento se llevó?",
           answers: [
             { id: "a", text: "Margaret Mitchell" },
@@ -820,6 +834,7 @@ export const quizLitterature: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-20.webp",
           question: "¿Quién escribió Mujercitas?",
           answers: [
             { id: "a", text: "Charlotte Brontë" },

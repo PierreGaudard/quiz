@@ -70,6 +70,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-boxe-histoire-4.webp",
           question: "Remets ces moments de la vie de Mohamed Ali dans l'ordre.",
           answers: [
             { id: "a", text: "Médaille d'or aux JO de Rome" },
@@ -170,6 +171,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-boxe-histoire-11.webp",
           question: "Remets ces combats de Floyd Mayweather dans l'ordre.",
           answers: [
             { id: "a", text: "Son premier titre mondial contre Genaro Hernández" },
@@ -212,6 +214,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-boxe-histoire-14.webp",
           question: "Remets ces combats de Manny Pacquiao dans l'ordre.",
           answers: [
             { id: "a", text: "Sa victoire contre Oscar De La Hoya" },
@@ -254,6 +257,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-boxe-histoire-17.webp",
           question: "Remets ces moments de la vie de Marcel Cerdan dans l'ordre.",
           answers: [
             { id: "a", text: "Champion d'Europe des welters" },
@@ -296,6 +300,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-histoire-20.webp",
           question: "Remets ces combats de Marvin Hagler et Sugar Ray Leonard dans l'ordre.",
           answers: [
             { id: "a", text: "Hagler devient champion du monde contre Alan Minter" },
@@ -361,6 +366,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-boxe-histoire-4.webp",
           question: "Put these moments from Muhammad Ali's life in order.",
           answers: [
             { id: "a", text: "Olympic gold in Rome" },
@@ -461,6 +467,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-boxe-histoire-11.webp",
           question: "Put these Floyd Mayweather fights in order.",
           answers: [
             { id: "a", text: "His first world title against Genaro Hernández" },
@@ -503,6 +510,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-boxe-histoire-14.webp",
           question: "Put these Manny Pacquiao fights in order.",
           answers: [
             { id: "a", text: "His win over Oscar De La Hoya" },
@@ -545,6 +553,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-boxe-histoire-17.webp",
           question: "Put these moments from Marcel Cerdan's life in order.",
           answers: [
             { id: "a", text: "European welterweight champion" },
@@ -587,6 +596,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-histoire-20.webp",
           question: "Put these Marvin Hagler and Sugar Ray Leonard fights in order.",
           answers: [
             { id: "a", text: "Hagler becomes world champion against Alan Minter" },
@@ -652,6 +662,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-boxe-histoire-4.webp",
           question: "Ordena estos momentos de la vida de Muhammad Ali.",
           answers: [
             { id: "a", text: "Oro en los Juegos de Roma" },
@@ -752,6 +763,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-boxe-histoire-11.webp",
           question: "Ordena estos combates de Floyd Mayweather.",
           answers: [
             { id: "a", text: "Su primer título mundial contra Genaro Hernández" },
@@ -794,6 +806,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-boxe-histoire-14.webp",
           question: "Ordena estos combates de Manny Pacquiao.",
           answers: [
             { id: "a", text: "Su victoria contra Oscar De La Hoya" },
@@ -836,6 +849,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-boxe-histoire-17.webp",
           question: "Ordena estos momentos de la vida de Marcel Cerdan.",
           answers: [
             { id: "a", text: "Campeón de Europa del wélter" },
@@ -878,6 +892,7 @@ export const quizBoxeHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-histoire-20.webp",
           question: "Ordena estos combates de Marvin Hagler y Sugar Ray Leonard.",
           answers: [
             { id: "a", text: "Hagler se proclama campeón del mundo contra Alan Minter" },

@@ -37,6 +37,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-equitation-vocabulaire-2.webp",
           question: "Comment s'appelle la femelle adulte du cheval ?",
           answers: [
             { id: "a", text: "La pouliche" },
@@ -173,6 +174,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-equitation-vocabulaire-14.webp",
           question: "Les longs poils qui poussent le long de l'encolure du cheval forment :",
           answers: [
             { id: "a", text: "Le toupet" },
@@ -206,6 +208,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-equitation-vocabulaire-17.webp",
           question: "Le « pansage », c'est :",
           answers: [
             { id: "a", text: "Brosser et nettoyer le cheval" },
@@ -239,6 +242,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-vocabulaire-20.webp",
           question: "Quand un cheval fait un « écart », il :",
           answers: [
             { id: "a", text: "S'arrête pour brouter" },
@@ -269,6 +273,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-equitation-vocabulaire-2.webp",
           question: "What do you call an adult female horse?",
           answers: [
             { id: "a", text: "A filly" },
@@ -405,6 +410,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-equitation-vocabulaire-14.webp",
           question: "The long hair growing along the top of a horse's neck is its:",
           answers: [
             { id: "a", text: "Forelock" },
@@ -438,6 +444,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-equitation-vocabulaire-17.webp",
           question: "\"Grooming\" a horse means:",
           answers: [
             { id: "a", text: "Brushing and cleaning it" },
@@ -471,6 +478,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-vocabulaire-20.webp",
           question: "When a horse \"shies\", it:",
           answers: [
             { id: "a", text: "Stops to graze" },
@@ -501,6 +509,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-equitation-vocabulaire-2.webp",
           question: "¿Cómo se llama la hembra adulta del caballo?",
           answers: [
             { id: "a", text: "La potranca" },
@@ -637,6 +646,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-equitation-vocabulaire-14.webp",
           question: "El pelo largo que crece a lo largo del cuello del caballo son:",
           answers: [
             { id: "a", text: "El copete" },
@@ -670,6 +680,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-equitation-vocabulaire-17.webp",
           question: "«Almohazar» al caballo es:",
           answers: [
             { id: "a", text: "Cepillarlo y limpiarlo" },
@@ -703,6 +714,7 @@ export const quizEquitationVocabulaire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-vocabulaire-20.webp",
           question: "Cuando un caballo «hace un extraño»:",
           answers: [
             { id: "a", text: "Se para a pastar" },

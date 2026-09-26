@@ -39,6 +39,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-etats-unis-1.webp",
           question: "La capitale de la Californie est Los Angeles.",
           answers: vf.fr,
           correctAnswer: "b",
@@ -98,6 +99,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-etats-unis-8.webp",
           question: "La ville de New York est la capitale de l'État de New York.",
           answers: vf.fr,
           correctAnswer: "b",
@@ -131,6 +133,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-etats-unis-12.webp",
           question: "Le Texas a été un pays indépendant avant de devenir un État américain.",
           answers: vf.fr,
           correctAnswer: "a",
@@ -155,6 +158,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-etats-unis-15.webp",
           question: "Les chutes du Niagara se trouvent à la frontière entre les États-Unis et le Canada.",
           answers: vf.fr,
           correctAnswer: "a",
@@ -171,6 +175,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-17.webp",
           question: "Yellowstone est le premier parc national créé au monde.",
           answers: vf.fr,
           correctAnswer: "a",
@@ -195,6 +200,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-20.webp",
           question: "Le Mississippi se jette dans l'océan Pacifique.",
           answers: vf.fr,
           correctAnswer: "b",
@@ -210,6 +216,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-etats-unis-1.webp",
           question: "The capital of California is Los Angeles.",
           answers: vf.en,
           correctAnswer: "b",
@@ -269,6 +276,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-etats-unis-8.webp",
           question: "New York City is the capital of New York State.",
           answers: vf.en,
           correctAnswer: "b",
@@ -302,6 +310,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-etats-unis-12.webp",
           question: "Texas was an independent country before it became a US state.",
           answers: vf.en,
           correctAnswer: "a",
@@ -326,6 +335,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-etats-unis-15.webp",
           question: "Niagara Falls is on the border between the United States and Canada.",
           answers: vf.en,
           correctAnswer: "a",
@@ -342,6 +352,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-17.webp",
           question: "Yellowstone was the first national park ever created.",
           answers: vf.en,
           correctAnswer: "a",
@@ -366,6 +377,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-20.webp",
           question: "The Mississippi flows into the Pacific Ocean.",
           answers: vf.en,
           correctAnswer: "b",
@@ -381,6 +393,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-etats-unis-1.webp",
           question: "La capital de California es Los Ángeles.",
           answers: vf.es,
           correctAnswer: "b",
@@ -440,6 +453,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-etats-unis-8.webp",
           question: "La ciudad de Nueva York es la capital del estado de Nueva York.",
           answers: vf.es,
           correctAnswer: "b",
@@ -473,6 +487,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-etats-unis-12.webp",
           question: "Texas fue un país independiente antes de convertirse en un estado de Estados Unidos.",
           answers: vf.es,
           correctAnswer: "a",
@@ -497,6 +512,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-etats-unis-15.webp",
           question: "Las cataratas del Niágara están en la frontera entre Estados Unidos y Canadá.",
           answers: vf.es,
           correctAnswer: "a",
@@ -513,6 +529,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-17.webp",
           question: "Yellowstone fue el primer parque nacional creado en el mundo.",
           answers: vf.es,
           correctAnswer: "a",
@@ -537,6 +554,7 @@ export const quizEtatsUnis: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-20.webp",
           question: "El Misisipi desemboca en el océano Pacífico.",
           answers: vf.es,
           correctAnswer: "b",

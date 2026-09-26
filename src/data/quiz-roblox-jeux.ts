@@ -39,6 +39,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-jeux-2.webp",
           question: "De quel manga s'inspire Blox Fruits ?",
           answers: [
             { id: "a", text: "One Piece" },
@@ -146,6 +147,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-roblox-jeux-10.webp",
           question: "Sur Roblox, que veut dire le mot « obby » ?",
           answers: [
             { id: "a", text: "Un jeu de cartes" },
@@ -185,6 +187,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-roblox-jeux-13.webp",
           question: "Dans Pet Simulator, d'où sortent les animaux qu'on collectionne ?",
           answers: [
             { id: "a", text: "D'œufs qu'on achète" },
@@ -224,6 +227,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-roblox-jeux-16.webp",
           question: "Que construit-on dans Theme Park Tycoon 2 ?",
           answers: [
             { id: "a", text: "Un zoo" },
@@ -250,6 +254,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-roblox-jeux-18.webp",
           question: "Dans Royale High, qui sont les joueurs ?",
           answers: [
             { id: "a", text: "Des pilotes de course" },
@@ -276,6 +281,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-jeux-20.webp",
           question: "Dans le jeu de tir Arsenal, que se passe-t-il à chaque élimination ?",
           answers: [
             { id: "a", text: "On perd une vie" },
@@ -310,6 +316,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-jeux-2.webp",
           question: "Which manga is Blox Fruits based on?",
           answers: [
             { id: "a", text: "One Piece" },
@@ -417,6 +424,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-roblox-jeux-10.webp",
           question: "On Roblox, what does the word \"obby\" mean?",
           answers: [
             { id: "a", text: "A card game" },
@@ -456,6 +464,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-roblox-jeux-13.webp",
           question: "In Pet Simulator, where do the pets you collect come from?",
           answers: [
             { id: "a", text: "Eggs you buy" },
@@ -495,6 +504,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-roblox-jeux-16.webp",
           question: "What do you build in Theme Park Tycoon 2?",
           answers: [
             { id: "a", text: "A zoo" },
@@ -521,6 +531,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-roblox-jeux-18.webp",
           question: "In Royale High, who are the players?",
           answers: [
             { id: "a", text: "Race car drivers" },
@@ -547,6 +558,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-jeux-20.webp",
           question: "In the shooter Arsenal, what happens every time you get a kill?",
           answers: [
             { id: "a", text: "You lose a life" },
@@ -581,6 +593,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-jeux-2.webp",
           question: "¿En qué manga se inspira Blox Fruits?",
           answers: [
             { id: "a", text: "One Piece" },
@@ -688,6 +701,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-roblox-jeux-10.webp",
           question: "En Roblox, ¿qué significa la palabra «obby»?",
           answers: [
             { id: "a", text: "Un juego de cartas" },
@@ -727,6 +741,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-roblox-jeux-13.webp",
           question: "En Pet Simulator, ¿de dónde salen las mascotas que se coleccionan?",
           answers: [
             { id: "a", text: "De huevos que se compran" },
@@ -766,6 +781,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-roblox-jeux-16.webp",
           question: "¿Qué se construye en Theme Park Tycoon 2?",
           answers: [
             { id: "a", text: "Un zoo" },
@@ -792,6 +808,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-roblox-jeux-18.webp",
           question: "En Royale High, ¿quiénes son los jugadores?",
           answers: [
             { id: "a", text: "Pilotos de carreras" },
@@ -818,6 +835,7 @@ export const quizRobloxJeux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-jeux-20.webp",
           question: "En el juego de disparos Arsenal, ¿qué pasa cada vez que eliminas a alguien?",
           answers: [
             { id: "a", text: "Pierdes una vida" },

@@ -37,6 +37,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tennis-chiffres-2.webp",
           question: "Dans ce même match, combien de jeux Isner a-t-il gagnés dans le cinquième set ?",
           answers: [],
           correctAnswer: "70",
@@ -112,6 +113,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-tennis-chiffres-10.webp",
           question: "Combien de titres du Grand Chelem en simple l'Australienne Margaret Court a-t-elle gagnés ?",
           answers: [],
           correctAnswer: "24",
@@ -139,6 +141,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-tennis-chiffres-13.webp",
           question: "En quelle année a commencé l'ère Open, quand les professionnels ont pu jouer les tournois du Grand Chelem ?",
           answers: [],
           correctAnswer: "1968",
@@ -166,6 +169,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-tennis-chiffres-16.webp",
           question: "Combien de titres en simple Jimmy Connors a-t-il gagnés, le record du circuit ATP ?",
           answers: [],
           correctAnswer: "109",
@@ -184,6 +188,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-tennis-chiffres-18.webp",
           question: "Combien de fois Serena Williams a-t-elle gagné l'US Open en simple ?",
           answers: [],
           correctAnswer: "6",
@@ -202,6 +207,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-chiffres-20.webp",
           question: "À quel âge Martina Hingis est-elle devenue numéro 1 mondiale, la plus jeune de l'histoire ?",
           answers: [],
           correctAnswer: "16",
@@ -228,6 +234,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tennis-chiffres-2.webp",
           question: "In that same match, how many games did Isner win in the fifth set?",
           answers: [],
           correctAnswer: "70",
@@ -303,6 +310,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-tennis-chiffres-10.webp",
           question: "How many Grand Slam singles titles did Australia's Margaret Court win?",
           answers: [],
           correctAnswer: "24",
@@ -330,6 +338,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-tennis-chiffres-13.webp",
           question: "In which year did the Open Era begin, when professionals were first allowed into Grand Slam events?",
           answers: [],
           correctAnswer: "1968",
@@ -357,6 +366,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-tennis-chiffres-16.webp",
           question: "How many singles titles did Jimmy Connors win, the ATP record?",
           answers: [],
           correctAnswer: "109",
@@ -375,6 +385,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-tennis-chiffres-18.webp",
           question: "How many times did Serena Williams win the US Open singles title?",
           answers: [],
           correctAnswer: "6",
@@ -393,6 +404,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-chiffres-20.webp",
           question: "How old was Martina Hingis when she became world No. 1, the youngest ever?",
           answers: [],
           correctAnswer: "16",
@@ -419,6 +431,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tennis-chiffres-2.webp",
           question: "En ese mismo partido, ¿cuántos juegos ganó Isner en el quinto set?",
           answers: [],
           correctAnswer: "70",
@@ -494,6 +507,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-tennis-chiffres-10.webp",
           question: "¿Cuántos títulos de Grand Slam individuales ganó la australiana Margaret Court?",
           answers: [],
           correctAnswer: "24",
@@ -521,6 +535,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-tennis-chiffres-13.webp",
           question: "¿En qué año empezó la Era Abierta, cuando los profesionales pudieron jugar los Grand Slams?",
           answers: [],
           correctAnswer: "1968",
@@ -548,6 +563,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-tennis-chiffres-16.webp",
           question: "¿Cuántos títulos individuales ganó Jimmy Connors, el récord de la ATP?",
           answers: [],
           correctAnswer: "109",
@@ -566,6 +582,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-tennis-chiffres-18.webp",
           question: "¿Cuántas veces ganó Serena Williams el US Open en individuales?",
           answers: [],
           correctAnswer: "6",
@@ -584,6 +601,7 @@ export const quizTennisChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-chiffres-20.webp",
           question: "¿Con qué edad llegó Martina Hingis al número 1 mundial, la más joven de la historia?",
           answers: [],
           correctAnswer: "16",

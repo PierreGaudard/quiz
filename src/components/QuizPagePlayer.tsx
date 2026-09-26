@@ -39,7 +39,7 @@ const qpT: Record<string, Record<string, string>> = {
   questionDetails: { en: "Question details", fr: "Détail des questions", es: "Detalle de preguntas" },
   msgExcellent: { en: "Excellent! You've mastered this topic!", fr: "Excellent ! Vous maîtrisez le sujet !", es: "Excelente! Dominas el tema!" },
   msgNotBad: { en: "Not bad! You have a solid foundation.", fr: "Pas mal ! Vous avez de bonnes bases.", es: "Nada mal! Tienes buenas bases." },
-  msgKeepGoing: { en: "Keep practicing, you'll improve!", fr: "Continuez, vous allez progresser !", es: "Sigue practicando, vas a mejorar!" },
+  msgKeepGoing: { en: "Keep practicing, you'll improve!", fr: "Continuez, vous allez progresser !", es: "¡Sigue practicando, vas a mejorar!" },
   rankLegend: { en: "Legend", fr: "Légende", es: "Leyenda" },
   rankExpert: { en: "Expert", fr: "Expert", es: "Experto" },
   rankSkilled: { en: "Skilled", fr: "Confirmé", es: "Hábil" },

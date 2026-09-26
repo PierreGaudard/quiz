@@ -42,6 +42,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-generations-2.webp",
           question: "Range ces régions dans l'ordre où elles sont apparues dans les jeux.",
           answers: [
             { id: "a", text: "Kalos" },
@@ -186,6 +187,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-pokemon-generations-12.webp",
           question: "Range ces Pokémon de départ Feu selon leur génération, de la plus ancienne à la plus récente.",
           answers: [
             { id: "a", text: "Poussifeu" },
@@ -228,6 +230,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-pokemon-generations-15.webp",
           question: "Range ces Pokémon du plus léger au plus lourd, d'après le Pokédex.",
           answers: [
             { id: "a", text: "Lokhlass" },
@@ -256,6 +259,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-generations-17.webp",
           question: "Range ces Pokémon par numéro du Pokédex, du plus petit au plus grand.",
           answers: [
             { id: "a", text: "Sulfura" },
@@ -298,6 +302,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-generations-20.webp",
           question: "Range ces pseudo-légendaires selon leur génération, de la plus ancienne à la plus récente.",
           answers: [
             { id: "a", text: "Carchacrok" },
@@ -334,6 +339,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-generations-2.webp",
           question: "Put these regions in the order they first appeared in the games.",
           answers: [
             { id: "a", text: "Kalos" },
@@ -478,6 +484,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-pokemon-generations-12.webp",
           question: "Sort these Fire-type starters by generation, from oldest to newest.",
           answers: [
             { id: "a", text: "Torchic" },
@@ -520,6 +527,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-pokemon-generations-15.webp",
           question: "Sort these Pokémon from lightest to heaviest, according to the Pokédex.",
           answers: [
             { id: "a", text: "Lapras" },
@@ -548,6 +556,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-generations-17.webp",
           question: "Sort these Pokémon by Pokédex number, from lowest to highest.",
           answers: [
             { id: "a", text: "Moltres" },
@@ -590,6 +599,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-generations-20.webp",
           question: "Sort these pseudo-legendary Pokémon by generation, from oldest to newest.",
           answers: [
             { id: "a", text: "Garchomp" },
@@ -626,6 +636,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-generations-2.webp",
           question: "Ordena estas regiones según su aparición en los juegos.",
           answers: [
             { id: "a", text: "Kalos" },
@@ -770,6 +781,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-pokemon-generations-12.webp",
           question: "Ordena estos iniciales de tipo Fuego por generación, de la más antigua a la más reciente.",
           answers: [
             { id: "a", text: "Torchic" },
@@ -812,6 +824,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-pokemon-generations-15.webp",
           question: "Ordena estos Pokémon del más ligero al más pesado, según la Pokédex.",
           answers: [
             { id: "a", text: "Lapras" },
@@ -840,6 +853,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-generations-17.webp",
           question: "Ordena estos Pokémon por número de la Pokédex, de menor a mayor.",
           answers: [
             { id: "a", text: "Moltres" },
@@ -882,6 +896,7 @@ export const quizPokemonGenerations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-generations-20.webp",
           question: "Ordena estos pseudolegendarios por generación, de la más antigua a la más reciente.",
           answers: [
             { id: "a", text: "Garchomp" },

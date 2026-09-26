@@ -124,6 +124,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-capitales-8.webp",
           question: "Quelle est la capitale du Vietnam ?",
           answers: [
             { id: "a", text: "Hô Chi Minh-Ville" },
@@ -150,6 +151,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-capitales-10.webp",
           question: "Quelle est la capitale du Pakistan ?",
           answers: [
             { id: "a", text: "Karachi" },
@@ -176,6 +178,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-capitales-12.webp",
           question: "Quelle est la capitale des États-Unis ?",
           answers: [
             { id: "a", text: "New York" },
@@ -228,6 +231,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-capitales-16.webp",
           question: "Quelle est la capitale du Cameroun ?",
           answers: [
             { id: "a", text: "Yaoundé" },
@@ -280,6 +284,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-capitales-20.webp",
           question: "Quelle est la capitale des Philippines ?",
           answers: [
             { id: "a", text: "Quezon City" },
@@ -396,6 +401,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-capitales-8.webp",
           question: "What is the capital of Vietnam?",
           answers: [
             { id: "a", text: "Ho Chi Minh City" },
@@ -422,6 +428,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-capitales-10.webp",
           question: "What is the capital of Pakistan?",
           answers: [
             { id: "a", text: "Karachi" },
@@ -448,6 +455,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-capitales-12.webp",
           question: "What is the capital of the United States?",
           answers: [
             { id: "a", text: "New York" },
@@ -500,6 +508,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-capitales-16.webp",
           question: "What is the capital of Cameroon?",
           answers: [
             { id: "a", text: "Yaoundé" },
@@ -552,6 +561,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-capitales-20.webp",
           question: "What is the capital of the Philippines?",
           answers: [
             { id: "a", text: "Quezon City" },
@@ -668,6 +678,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-capitales-8.webp",
           question: "¿Cuál es la capital de Vietnam?",
           answers: [
             { id: "a", text: "Ciudad Ho Chi Minh" },
@@ -694,6 +705,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-capitales-10.webp",
           question: "¿Cuál es la capital de Pakistán?",
           answers: [
             { id: "a", text: "Karachi" },
@@ -720,6 +732,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-capitales-12.webp",
           question: "¿Cuál es la capital de Estados Unidos?",
           answers: [
             { id: "a", text: "Nueva York" },
@@ -772,6 +785,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-capitales-16.webp",
           question: "¿Cuál es la capital de Camerún?",
           answers: [
             { id: "a", text: "Yaundé" },
@@ -824,6 +838,7 @@ export const quizCapitales: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-capitales-20.webp",
           question: "¿Cuál es la capital de Filipinas?",
           answers: [
             { id: "a", text: "Quezon City" },

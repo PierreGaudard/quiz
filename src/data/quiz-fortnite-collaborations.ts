@@ -54,6 +54,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fortnite-collaborations-3.webp",
           question: "Quelle chanteuse était la vedette du Rift Tour, en août 2021 ?",
           answers: [
             { id: "a", text: "Taylor Swift" },
@@ -67,6 +68,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-fortnite-collaborations-4.webp",
           question: "Quel réalisateur est venu présenter un extrait de Star Wars : L'Ascension de Skywalker dans Fortnite, en décembre 2019 ?",
           answers: [
             { id: "a", text: "George Lucas" },
@@ -173,6 +175,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fortnite-collaborations-12.webp",
           question: "En juillet 2019, Fortnite accueille Stranger Things. Quel monstre de la série arrive dans le jeu ?",
           answers: [
             { id: "a", text: "Le Démogorgon" },
@@ -212,6 +215,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fortnite-collaborations-15.webp",
           question: "Quel méchant géant de Marvel les joueurs ont-ils affronté pendant l'événement de fin du Chapitre 2, saison 4, en décembre 2020 ?",
           answers: [
             { id: "a", text: "Galactus" },
@@ -238,6 +242,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-collaborations-17.webp",
           question: "En novembre 2018, les maillots de quelle ligue sportive américaine arrivent dans la boutique de Fortnite ?",
           answers: [
             { id: "a", text: "La NBA" },
@@ -277,6 +282,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-collaborations-20.webp",
           question: "Quel monstre géant du cinéma japonais débarque sur l'île de Fortnite en janvier 2025 ?",
           answers: [
             { id: "a", text: "Mothra" },
@@ -325,6 +331,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fortnite-collaborations-3.webp",
           question: "Which singer headlined the Rift Tour, in August 2021?",
           answers: [
             { id: "a", text: "Taylor Swift" },
@@ -338,6 +345,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-fortnite-collaborations-4.webp",
           question: "Which director came to Fortnite to show a clip of Star Wars: The Rise of Skywalker, in December 2019?",
           answers: [
             { id: "a", text: "George Lucas" },
@@ -444,6 +452,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fortnite-collaborations-12.webp",
           question: "In July 2019, Fortnite teamed up with Stranger Things. Which monster from the show came into the game?",
           answers: [
             { id: "a", text: "The Demogorgon" },
@@ -483,6 +492,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fortnite-collaborations-15.webp",
           question: "Which giant Marvel villain did players fight during the end event of Chapter 2, Season 4, in December 2020?",
           answers: [
             { id: "a", text: "Galactus" },
@@ -509,6 +519,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-collaborations-17.webp",
           question: "In November 2018, jerseys from which American sports league arrived in the Fortnite shop?",
           answers: [
             { id: "a", text: "The NBA" },
@@ -548,6 +559,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-collaborations-20.webp",
           question: "Which giant monster from Japanese cinema landed on the Fortnite island in January 2025?",
           answers: [
             { id: "a", text: "Mothra" },
@@ -596,6 +608,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fortnite-collaborations-3.webp",
           question: "¿Qué cantante fue la estrella del Rift Tour, en agosto de 2021?",
           answers: [
             { id: "a", text: "Taylor Swift" },
@@ -609,6 +622,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-fortnite-collaborations-4.webp",
           question: "¿Qué director presentó un fragmento de Star Wars: El ascenso de Skywalker dentro de Fortnite, en diciembre de 2019?",
           answers: [
             { id: "a", text: "George Lucas" },
@@ -715,6 +729,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fortnite-collaborations-12.webp",
           question: "En julio de 2019, Fortnite recibe a Stranger Things. ¿Qué monstruo de la serie llega al juego?",
           answers: [
             { id: "a", text: "El Demogorgon" },
@@ -754,6 +769,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fortnite-collaborations-15.webp",
           question: "¿A qué villano gigante de Marvel se enfrentaron los jugadores en el evento final del Capítulo 2, temporada 4, en diciembre de 2020?",
           answers: [
             { id: "a", text: "Galactus" },
@@ -780,6 +796,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-collaborations-17.webp",
           question: "En noviembre de 2018, ¿de qué liga deportiva estadounidense llegan las camisetas a la tienda de Fortnite?",
           answers: [
             { id: "a", text: "La NBA" },
@@ -819,6 +836,7 @@ export const quizFortniteCollaborations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-collaborations-20.webp",
           question: "¿Qué monstruo gigante del cine japonés llega a la isla de Fortnite en enero de 2025?",
           answers: [
             { id: "a", text: "Mothra" },

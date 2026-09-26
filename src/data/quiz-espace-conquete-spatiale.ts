@@ -41,6 +41,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-espace-conquete-spatiale-2.webp",
           question: "Range ces événements de la NASA du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "La mission Apollo 13" },
@@ -171,6 +172,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-espace-conquete-spatiale-11.webp",
           question: "Range ces animaux envoyés dans l'espace du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "La chienne Laïka" },
@@ -213,6 +215,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-espace-conquete-spatiale-14.webp",
           question: "Range ces télescopes spatiaux du plus ancien au plus récent lancement.",
           answers: [
             { id: "a", text: "Spitzer" },
@@ -255,6 +258,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-conquete-spatiale-17.webp",
           question: "Range ces moments de la vie en orbite du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Gemini 8, premier amarrage de deux engins" },
@@ -297,6 +301,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-conquete-spatiale-20.webp",
           question: "Range ces femmes astronautes dans l'ordre de l'exploit cité.",
           answers: [
             { id: "a", text: "Sally Ride, première Américaine dans l'espace" },
@@ -333,6 +338,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-espace-conquete-spatiale-2.webp",
           question: "Put these NASA events in order, oldest first.",
           answers: [
             { id: "a", text: "The Apollo 13 mission" },
@@ -463,6 +469,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-espace-conquete-spatiale-11.webp",
           question: "Put these animals sent into space in order, from earliest to latest.",
           answers: [
             { id: "a", text: "Laika the dog" },
@@ -505,6 +512,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-espace-conquete-spatiale-14.webp",
           question: "Put these space telescopes in order of launch, from earliest to latest.",
           answers: [
             { id: "a", text: "Spitzer" },
@@ -547,6 +555,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-conquete-spatiale-17.webp",
           question: "Put these moments of life in orbit in order, from earliest to latest.",
           answers: [
             { id: "a", text: "Gemini 8, the first docking of two spacecraft" },
@@ -589,6 +598,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-conquete-spatiale-20.webp",
           question: "Put these women astronauts in order of the feat mentioned.",
           answers: [
             { id: "a", text: "Sally Ride, the first American woman in space" },
@@ -625,6 +635,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-espace-conquete-spatiale-2.webp",
           question: "Ordena estos acontecimientos de la NASA del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "La misión Apolo 13" },
@@ -755,6 +766,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-espace-conquete-spatiale-11.webp",
           question: "Ordena estos animales enviados al espacio del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "La perra Laika" },
@@ -797,6 +809,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-espace-conquete-spatiale-14.webp",
           question: "Ordena estos telescopios espaciales según su lanzamiento, del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "Spitzer" },
@@ -839,6 +852,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-conquete-spatiale-17.webp",
           question: "Ordena estos momentos de la vida en órbita del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "La Gemini 8, primer acoplamiento de dos naves" },
@@ -881,6 +895,7 @@ export const quizEspaceConqueteSpatiale: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-conquete-spatiale-20.webp",
           question: "Ordena a estas astronautas según la hazaña indicada.",
           answers: [
             { id: "a", text: "Sally Ride, primera estadounidense en el espacio" },

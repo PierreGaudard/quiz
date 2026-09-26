@@ -40,6 +40,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-2.webp",
           question: "Combien d'anneaux compte le drapeau olympique ?",
           answers: [],
           correctAnswer: "5",
@@ -49,6 +50,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jeux-olympiques-3.webp",
           question: "Combien de médailles d'or Michael Phelps a-t-il remportées au total ?",
           answers: [],
           correctAnswer: "23",
@@ -67,6 +69,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-jeux-olympiques-5.webp",
           question: "En quelle année Paris avait-il accueilli les Jeux avant 2024 ?",
           answers: [],
           correctAnswer: "1924",
@@ -85,6 +88,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-jeux-olympiques-7.webp",
           question: "Combien de médailles d'or la France a-t-elle gagnées à Paris 2024 ?",
           answers: [],
           correctAnswer: "16",
@@ -112,6 +116,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-jeux-olympiques-10.webp",
           question: "Combien de minutes dure un match de basket aux Jeux olympiques ?",
           answers: [],
           correctAnswer: "40",
@@ -130,6 +135,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-jeux-olympiques-12.webp",
           question: "Combien de médailles d'or individuelles Léon Marchand a-t-il gagnées à Paris 2024 ?",
           answers: [],
           correctAnswer: "4",
@@ -157,6 +163,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-jeux-olympiques-15.webp",
           question: "Combien de kilomètres mesure un marathon ?",
           answers: [],
           correctAnswer: "42.195",
@@ -175,6 +182,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-17.webp",
           question: "Combien de fois Usain Bolt a-t-il été champion olympique du 100 mètres ?",
           answers: [],
           correctAnswer: "3",
@@ -202,6 +210,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-20.webp",
           question: "Combien de kilos pèse le poids que lancent les hommes aux Jeux ? (à un dixième près)",
           answers: [],
           correctAnswer: "7.26",
@@ -228,6 +237,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-2.webp",
           question: "How many rings are on the Olympic flag?",
           answers: [],
           correctAnswer: "5",
@@ -237,6 +247,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jeux-olympiques-3.webp",
           question: "How many gold medals did Michael Phelps win in total?",
           answers: [],
           correctAnswer: "23",
@@ -255,6 +266,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-jeux-olympiques-5.webp",
           question: "In what year had Paris hosted the Games before 2024?",
           answers: [],
           correctAnswer: "1924",
@@ -273,6 +285,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-jeux-olympiques-7.webp",
           question: "How many gold medals did France win at Paris 2024?",
           answers: [],
           correctAnswer: "16",
@@ -300,6 +313,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-jeux-olympiques-10.webp",
           question: "How many minutes does an Olympic basketball game last?",
           answers: [],
           correctAnswer: "40",
@@ -318,6 +332,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-jeux-olympiques-12.webp",
           question: "How many individual gold medals did Léon Marchand win at Paris 2024?",
           answers: [],
           correctAnswer: "4",
@@ -345,6 +360,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-jeux-olympiques-15.webp",
           question: "How many kilometres is a marathon?",
           answers: [],
           correctAnswer: "42.195",
@@ -363,6 +379,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-17.webp",
           question: "How many times was Usain Bolt Olympic 100 metres champion?",
           answers: [],
           correctAnswer: "3",
@@ -390,6 +407,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-20.webp",
           question: "How many kilograms does the men's shot weigh at the Olympics? (to one decimal place)",
           answers: [],
           correctAnswer: "7.26",
@@ -416,6 +434,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-2.webp",
           question: "¿Cuántos aros tiene la bandera olímpica?",
           answers: [],
           correctAnswer: "5",
@@ -425,6 +444,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jeux-olympiques-3.webp",
           question: "¿Cuántas medallas de oro ganó Michael Phelps en total?",
           answers: [],
           correctAnswer: "23",
@@ -443,6 +463,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-jeux-olympiques-5.webp",
           question: "¿En qué año había acogido París los Juegos antes de 2024?",
           answers: [],
           correctAnswer: "1924",
@@ -461,6 +482,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-jeux-olympiques-7.webp",
           question: "¿Cuántas medallas de oro ganó Francia en París 2024?",
           answers: [],
           correctAnswer: "16",
@@ -488,6 +510,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-jeux-olympiques-10.webp",
           question: "¿Cuántos minutos dura un partido de baloncesto olímpico?",
           answers: [],
           correctAnswer: "40",
@@ -506,6 +529,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-jeux-olympiques-12.webp",
           question: "¿Cuántas medallas de oro individuales ganó Léon Marchand en París 2024?",
           answers: [],
           correctAnswer: "4",
@@ -533,6 +557,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-jeux-olympiques-15.webp",
           question: "¿Cuántos kilómetros mide un maratón?",
           answers: [],
           correctAnswer: "42.195",
@@ -551,6 +576,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-17.webp",
           question: "¿Cuántas veces fue Usain Bolt campeón olímpico de los 100 metros?",
           answers: [],
           correctAnswer: "3",
@@ -578,6 +604,7 @@ export const quizJO: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-20.webp",
           question: "¿Cuántos kilos pesa la bala que lanzan los hombres en los Juegos? (con un decimal)",
           answers: [],
           correctAnswer: "7.26",

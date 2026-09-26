@@ -27,6 +27,7 @@ export const quizTennis: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-tennis-1.webp",
           question: "Sur quelle surface se joue Roland-Garros ?",
           answers: [
             { id: "a", text: "La terre battue" },
@@ -73,6 +74,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-tennis-5.webp",
           question: "Quel tournoi du Grand Chelem se joue en premier dans l'année ?",
           answers: [
             { id: "a", text: "L'US Open" },
@@ -141,6 +143,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tennis-11.webp",
           question: "Dans quelle ville se joue l'US Open ?",
           answers: [
             { id: "a", text: "New York" },
@@ -174,6 +177,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tennis-14.webp",
           question: "Qui a gagné le plus de fois l'Open d'Australie chez les hommes ?",
           answers: [
             { id: "a", text: "Roger Federer" },
@@ -207,6 +211,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tennis-17.webp",
           question: "Qui a gagné le plus de matchs dans les duels entre Roger Federer et Rafael Nadal ?",
           answers: [
             { id: "a", text: "Roger Federer" },
@@ -240,6 +245,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-20.webp",
           question: "Qui a gagné la médaille d'or olympique en simple messieurs à Paris 2024 ?",
           answers: [
             { id: "a", text: "Carlos Alcaraz" },
@@ -258,6 +264,7 @@ export const quizTennis: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-tennis-1.webp",
           question: "What surface is Roland-Garros played on?",
           answers: [
             { id: "a", text: "Clay" },
@@ -304,6 +311,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-tennis-5.webp",
           question: "Which Grand Slam comes first in the year?",
           answers: [
             { id: "a", text: "The US Open" },
@@ -372,6 +380,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tennis-11.webp",
           question: "Which city hosts the US Open?",
           answers: [
             { id: "a", text: "New York" },
@@ -405,6 +414,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tennis-14.webp",
           question: "Who has won the men's Australian Open the most times?",
           answers: [
             { id: "a", text: "Roger Federer" },
@@ -438,6 +448,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tennis-17.webp",
           question: "Who won more of the head-to-head matches between Roger Federer and Rafael Nadal?",
           answers: [
             { id: "a", text: "Roger Federer" },
@@ -471,6 +482,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-20.webp",
           question: "Who won the men's singles Olympic gold at Paris 2024?",
           answers: [
             { id: "a", text: "Carlos Alcaraz" },
@@ -489,6 +501,7 @@ export const quizTennis: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-tennis-1.webp",
           question: "¿Sobre qué superficie se juega Roland Garros?",
           answers: [
             { id: "a", text: "Tierra batida" },
@@ -535,6 +548,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-tennis-5.webp",
           question: "¿Qué Grand Slam se juega primero en el año?",
           answers: [
             { id: "a", text: "El US Open" },
@@ -603,6 +617,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tennis-11.webp",
           question: "¿En qué ciudad se juega el US Open?",
           answers: [
             { id: "a", text: "Nueva York" },
@@ -636,6 +651,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tennis-14.webp",
           question: "¿Quién ha ganado más veces el Abierto de Australia masculino?",
           answers: [
             { id: "a", text: "Roger Federer" },
@@ -669,6 +685,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tennis-17.webp",
           question: "¿Quién ganó más partidos en los duelos entre Roger Federer y Rafael Nadal?",
           answers: [
             { id: "a", text: "Roger Federer" },
@@ -702,6 +719,7 @@ export const quizTennis: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-20.webp",
           question: "¿Quién ganó el oro olímpico individual masculino en París 2024?",
           answers: [
             { id: "a", text: "Carlos Alcaraz" },

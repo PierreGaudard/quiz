@@ -171,6 +171,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-l-attaque-des-titans-11.webp",
           question: "Remets ces génériques d'ouverture dans l'ordre de leur saison.",
           answers: [
             { id: "a", text: "Guren no Yumiya" },
@@ -213,6 +214,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-l-attaque-des-titans-14.webp",
           question: "Remets ces événements de la saison 3 dans l'ordre.",
           answers: [
             { id: "a", text: "Eren et Historia sont enlevés" },
@@ -255,6 +257,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-17.webp",
           question: "Classe ces recrues de la 104e brigade selon leur rang de sortie, du premier au dernier.",
           answers: [
             { id: "a", text: "Mikasa" },
@@ -297,6 +300,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-20.webp",
           question: "Remets ces étapes de la vie de Livaï dans l'ordre.",
           answers: [
             { id: "a", text: "Il grandit avec Kenny dans la ville souterraine" },
@@ -464,6 +468,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-l-attaque-des-titans-11.webp",
           question: "Put these opening songs in order of their season.",
           answers: [
             { id: "a", text: "Guren no Yumiya" },
@@ -506,6 +511,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-l-attaque-des-titans-14.webp",
           question: "Put these season 3 events in order.",
           answers: [
             { id: "a", text: "Eren and Historia are kidnapped" },
@@ -548,6 +554,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-17.webp",
           question: "Rank these 104th cadets by their graduation rank, from first to last.",
           answers: [
             { id: "a", text: "Mikasa" },
@@ -590,6 +597,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-20.webp",
           question: "Put these steps of Levi's life in order.",
           answers: [
             { id: "a", text: "He grows up with Kenny in the Underground" },
@@ -757,6 +765,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-l-attaque-des-titans-11.webp",
           question: "Pon estos openings en el orden de su temporada.",
           answers: [
             { id: "a", text: "Guren no Yumiya" },
@@ -799,6 +808,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-l-attaque-des-titans-14.webp",
           question: "Pon en orden estos sucesos de la temporada 3.",
           answers: [
             { id: "a", text: "Secuestran a Eren y a Historia" },
@@ -841,6 +851,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-l-attaque-des-titans-17.webp",
           question: "Ordena a estos reclutas de la Tropa 104 según su puesto al graduarse, del primero al último.",
           answers: [
             { id: "a", text: "Mikasa" },
@@ -883,6 +894,7 @@ export const quizAttaqueDesTitans: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-l-attaque-des-titans-20.webp",
           question: "Pon en orden estas etapas de la vida de Levi.",
           answers: [
             { id: "a", text: "Crece con Kenny en la Ciudad Subterránea" },

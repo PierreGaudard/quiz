@@ -36,6 +36,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jujutsu-kaisen-chiffres-2.webp",
           question: "Combien d'épisodes compte la saison 2 ?",
           answers: [],
           correctAnswer: "23",
@@ -45,6 +46,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jujutsu-kaisen-chiffres-3.webp",
           question: "En quelle année l'anime Jujutsu Kaisen a-t-il commencé au Japon ?",
           answers: [],
           correctAnswer: "2020",
@@ -120,6 +122,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jujutsu-kaisen-chiffres-11.webp",
           question: "En combien de colonies le Culling Game est-il découpé à travers le Japon ?",
           answers: [],
           correctAnswer: "10",
@@ -147,6 +150,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jujutsu-kaisen-chiffres-14.webp",
           question: "Combien d'habitants du village Geto tue-t-il le jour où il devient un exorciste maudit ?",
           answers: [],
           correctAnswer: "112",
@@ -174,6 +178,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jujutsu-kaisen-chiffres-17.webp",
           question: "Dans quel chapitre du manga Gojo meurt-il face à Sukuna ?",
           answers: [],
           correctAnswer: "236",
@@ -201,6 +206,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-chiffres-20.webp",
           question: "Yuji Itadori est né un jour de mars. Lequel ?",
           answers: [],
           correctAnswer: "20",
@@ -227,6 +233,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jujutsu-kaisen-chiffres-2.webp",
           question: "How many episodes are in season 2?",
           answers: [],
           correctAnswer: "23",
@@ -236,6 +243,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jujutsu-kaisen-chiffres-3.webp",
           question: "In what year did the Jujutsu Kaisen anime start in Japan?",
           answers: [],
           correctAnswer: "2020",
@@ -311,6 +319,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jujutsu-kaisen-chiffres-11.webp",
           question: "How many colonies is the Culling Game split into across Japan?",
           answers: [],
           correctAnswer: "10",
@@ -338,6 +347,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jujutsu-kaisen-chiffres-14.webp",
           question: "How many villagers does Geto kill on the day he becomes a curse user?",
           answers: [],
           correctAnswer: "112",
@@ -365,6 +375,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jujutsu-kaisen-chiffres-17.webp",
           question: "In which chapter of the manga does Gojo die against Sukuna?",
           answers: [],
           correctAnswer: "236",
@@ -392,6 +403,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-chiffres-20.webp",
           question: "Yuji Itadori was born on a day in March. Which day?",
           answers: [],
           correctAnswer: "20",
@@ -418,6 +430,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jujutsu-kaisen-chiffres-2.webp",
           question: "¿Cuántos episodios tiene la temporada 2?",
           answers: [],
           correctAnswer: "23",
@@ -427,6 +440,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jujutsu-kaisen-chiffres-3.webp",
           question: "¿En qué año empezó el anime de Jujutsu Kaisen en Japón?",
           answers: [],
           correctAnswer: "2020",
@@ -502,6 +516,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jujutsu-kaisen-chiffres-11.webp",
           question: "¿En cuántas colonias se divide el Culling Game por todo Japón?",
           answers: [],
           correctAnswer: "10",
@@ -529,6 +544,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jujutsu-kaisen-chiffres-14.webp",
           question: "¿A cuántos habitantes del pueblo mata Geto el día en que se convierte en usuario de maldiciones?",
           answers: [],
           correctAnswer: "112",
@@ -556,6 +572,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jujutsu-kaisen-chiffres-17.webp",
           question: "¿En qué capítulo del manga muere Gojo frente a Sukuna?",
           answers: [],
           correctAnswer: "236",
@@ -583,6 +600,7 @@ export const quizJujutsuKaisenChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-chiffres-20.webp",
           question: "Yuji Itadori nació un día de marzo. ¿Cuál?",
           answers: [],
           correctAnswer: "20",

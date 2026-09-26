@@ -28,6 +28,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-europe-classements-1.webp",
           question: "Range ces pays du plus grand au plus petit en superficie.",
           answers: [
             { id: "a", text: "L'Ukraine" },
@@ -173,6 +174,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-europe-classements-11.webp",
           question: "Range ces fleuves du plus long au plus court.",
           answers: [
             { id: "a", text: "Le Danube" },
@@ -215,6 +217,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-europe-classements-14.webp",
           question: "Range ces capitales de la plus à l'ouest à la plus à l'est.",
           answers: [
             { id: "a", text: "Lisbonne" },
@@ -257,6 +260,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-europe-classements-17.webp",
           question: "Range ces volcans du plus haut au moins haut.",
           answers: [
             { id: "a", text: "L'Etna" },
@@ -299,6 +303,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-classements-20.webp",
           question: "Range ces capitales de la plus haute à la plus basse en altitude.",
           answers: [
             { id: "a", text: "Andorre-la-Vieille" },
@@ -320,6 +325,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-europe-classements-1.webp",
           question: "Sort these countries from largest to smallest by area.",
           answers: [
             { id: "a", text: "Ukraine" },
@@ -465,6 +471,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-europe-classements-11.webp",
           question: "Sort these rivers from longest to shortest.",
           answers: [
             { id: "a", text: "The Danube" },
@@ -507,6 +514,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-europe-classements-14.webp",
           question: "Sort these capitals from furthest west to furthest east.",
           answers: [
             { id: "a", text: "Lisbon" },
@@ -549,6 +557,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-europe-classements-17.webp",
           question: "Sort these volcanoes from highest to lowest.",
           answers: [
             { id: "a", text: "Etna" },
@@ -591,6 +600,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-classements-20.webp",
           question: "Sort these capitals from highest to lowest altitude.",
           answers: [
             { id: "a", text: "Andorra la Vella" },
@@ -612,6 +622,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-europe-classements-1.webp",
           question: "Ordena estos países del más grande al más pequeño en superficie.",
           answers: [
             { id: "a", text: "Ucrania" },
@@ -757,6 +768,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-europe-classements-11.webp",
           question: "Ordena estos ríos del más largo al más corto.",
           answers: [
             { id: "a", text: "El Danubio" },
@@ -799,6 +811,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-europe-classements-14.webp",
           question: "Ordena estas capitales de la más al oeste a la más al este.",
           answers: [
             { id: "a", text: "Lisboa" },
@@ -841,6 +854,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-europe-classements-17.webp",
           question: "Ordena estos volcanes del más alto al más bajo.",
           answers: [
             { id: "a", text: "El Etna" },
@@ -883,6 +897,7 @@ export const quizEuropeClassements: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-classements-20.webp",
           question: "Ordena estas capitales de la más alta a la más baja en altitud.",
           answers: [
             { id: "a", text: "Andorra la Vieja" },

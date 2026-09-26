@@ -150,6 +150,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-europe-fleuves-montagnes-10.webp",
           question: "Quelle chaîne de montagnes sert de limite entre l'Europe et l'Asie ?",
           answers: [
             { id: "a", text: "Les Alpes" },
@@ -189,6 +190,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-europe-fleuves-montagnes-13.webp",
           question: "Quel est le plus haut sommet des Pyrénées ?",
           answers: [
             { id: "a", text: "Le Vignemale" },
@@ -228,6 +230,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-europe-fleuves-montagnes-16.webp",
           question: "Quelle mer baigne à la fois Venise et Dubrovnik ?",
           answers: [
             { id: "a", text: "La mer Égée" },
@@ -254,6 +257,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-europe-fleuves-montagnes-18.webp",
           question: "Quel volcan islandais a bloqué une grande partie du trafic aérien européen en 2010 ?",
           answers: [
             { id: "a", text: "L'Eyjafjallajökull" },
@@ -280,6 +284,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-fleuves-montagnes-20.webp",
           question: "Quel est le plus long fleuve d'Italie ?",
           answers: [
             { id: "a", text: "Le Pô" },
@@ -422,6 +427,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-europe-fleuves-montagnes-10.webp",
           question: "Which mountain range is the traditional boundary between Europe and Asia?",
           answers: [
             { id: "a", text: "The Alps" },
@@ -461,6 +467,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-europe-fleuves-montagnes-13.webp",
           question: "What is the highest peak in the Pyrenees?",
           answers: [
             { id: "a", text: "Vignemale" },
@@ -500,6 +507,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-europe-fleuves-montagnes-16.webp",
           question: "Which sea washes both Venice and Dubrovnik?",
           answers: [
             { id: "a", text: "The Aegean Sea" },
@@ -526,6 +534,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-europe-fleuves-montagnes-18.webp",
           question: "Which Icelandic volcano grounded much of Europe's air traffic in 2010?",
           answers: [
             { id: "a", text: "Eyjafjallajökull" },
@@ -552,6 +561,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-fleuves-montagnes-20.webp",
           question: "What is the longest river in Italy?",
           answers: [
             { id: "a", text: "The Po" },
@@ -694,6 +704,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-europe-fleuves-montagnes-10.webp",
           question: "¿Qué cordillera marca el límite entre Europa y Asia?",
           answers: [
             { id: "a", text: "Los Alpes" },
@@ -733,6 +744,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-europe-fleuves-montagnes-13.webp",
           question: "¿Cuál es la cumbre más alta de los Pirineos?",
           answers: [
             { id: "a", text: "El Vignemale" },
@@ -772,6 +784,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-europe-fleuves-montagnes-16.webp",
           question: "¿Qué mar baña a la vez Venecia y Dubrovnik?",
           answers: [
             { id: "a", text: "El mar Egeo" },
@@ -798,6 +811,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-europe-fleuves-montagnes-18.webp",
           question: "¿Qué volcán islandés paralizó buena parte del tráfico aéreo europeo en 2010?",
           answers: [
             { id: "a", text: "El Eyjafjallajökull" },
@@ -824,6 +838,7 @@ export const quizEuropeFleuvesMontagnes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-fleuves-montagnes-20.webp",
           question: "¿Cuál es el río más largo de Italia?",
           answers: [
             { id: "a", text: "El Po" },

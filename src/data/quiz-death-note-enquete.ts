@@ -38,6 +38,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-death-note-enquete-2.webp",
           question: "Grâce à ce piège, dans quelle région du Japon L situe-t-il Kira ?",
           answers: [
             { id: "a", text: "Hokkaidō" },
@@ -51,6 +52,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-death-note-enquete-3.webp",
           question: "Quel rôle joue Soichiro Yagami, le père de Light ?",
           answers: [
             { id: "a", text: "Il est juge" },
@@ -171,6 +173,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-death-note-enquete-12.webp",
           question: "Sous quel faux nom L se présente-t-il aux autres étudiants de l'université ?",
           answers: [
             { id: "a", text: "Hideki Ryuga" },
@@ -210,6 +213,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-death-note-enquete-15.webp",
           question: "Qu'est-ce que L fait installer chez les Yagami pour surveiller Light ?",
           answers: [
             { id: "a", text: "Un agent déguisé en livreur" },
@@ -236,6 +240,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-death-note-enquete-17.webp",
           question: "Après la mort de L, qui prend sa place à la tête de l'enquête japonaise ?",
           answers: [
             { id: "a", text: "Watari" },
@@ -275,6 +280,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-enquete-20.webp",
           question: "Pendant la confrontation finale, quel nom manque dans le cahier de Mikami ?",
           answers: [
             { id: "a", text: "Celui de Soichiro" },
@@ -309,6 +315,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-death-note-enquete-2.webp",
           question: "Thanks to that trap, which region of Japan does L place Kira in?",
           answers: [
             { id: "a", text: "Hokkaido" },
@@ -322,6 +329,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-death-note-enquete-3.webp",
           question: "What role does Soichiro Yagami, Light's father, play?",
           answers: [
             { id: "a", text: "He's a judge" },
@@ -442,6 +450,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-death-note-enquete-12.webp",
           question: "What fake name does L use with the other students at university?",
           answers: [
             { id: "a", text: "Hideki Ryuga" },
@@ -481,6 +490,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-death-note-enquete-15.webp",
           question: "What does L have installed at the Yagami house to watch Light?",
           answers: [
             { id: "a", text: "An agent disguised as a delivery man" },
@@ -507,6 +517,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-death-note-enquete-17.webp",
           question: "After L dies, who takes over the Japanese investigation?",
           answers: [
             { id: "a", text: "Watari" },
@@ -546,6 +557,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-enquete-20.webp",
           question: "During the final showdown, whose name is missing from Mikami's notebook?",
           answers: [
             { id: "a", text: "Soichiro's" },
@@ -580,6 +592,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-death-note-enquete-2.webp",
           question: "Gracias a esa trampa, ¿en qué región de Japón sitúa L a Kira?",
           answers: [
             { id: "a", text: "Hokkaido" },
@@ -593,6 +606,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-death-note-enquete-3.webp",
           question: "¿Qué papel tiene Soichiro Yagami, el padre de Light?",
           answers: [
             { id: "a", text: "Es juez" },
@@ -713,6 +727,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-death-note-enquete-12.webp",
           question: "¿Con qué nombre falso se presenta L ante los demás estudiantes de la universidad?",
           answers: [
             { id: "a", text: "Hideki Ryuga" },
@@ -752,6 +767,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-death-note-enquete-15.webp",
           question: "¿Qué manda instalar L en casa de los Yagami para vigilar a Light?",
           answers: [
             { id: "a", text: "Un agente disfrazado de repartidor" },
@@ -778,6 +794,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-death-note-enquete-17.webp",
           question: "Tras la muerte de L, ¿quién se pone al frente de la investigación japonesa?",
           answers: [
             { id: "a", text: "Watari" },
@@ -817,6 +834,7 @@ export const quizDeathNoteEnquete: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-enquete-20.webp",
           question: "Durante el enfrentamiento final, ¿qué nombre falta en el cuaderno de Mikami?",
           answers: [
             { id: "a", text: "El de Soichiro" },

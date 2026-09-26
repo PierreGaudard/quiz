@@ -35,6 +35,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tennis-regles-2.webp",
           question: "Au tennis, on a droit à trois services pour chaque point.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "b",
@@ -52,6 +53,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-tennis-regles-4.webp",
           question: "Une balle qui touche la ligne est faute.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "b",
@@ -110,6 +112,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tennis-regles-11.webp",
           question: "En anglais, pour dire zéro au tennis, on dit « love ».",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "a",
@@ -134,6 +137,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tennis-regles-14.webp",
           question: "Dans un tie-break classique, le premier à 7 points avec deux points d'écart gagne le set.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "a",
@@ -158,6 +162,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tennis-regles-17.webp",
           question: "Au moment de servir, le joueur a le droit de marcher sur la ligne de fond.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "b",
@@ -182,6 +187,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-regles-20.webp",
           question: "Si la balle touche un joueur avant de rebondir, ce joueur perd le point, même s'il est hors du terrain.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "a",
@@ -206,6 +212,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tennis-regles-2.webp",
           question: "In tennis you get three serves for every point.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "b",
@@ -223,6 +230,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-tennis-regles-4.webp",
           question: "A ball that lands on the line is out.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "b",
@@ -281,6 +289,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tennis-regles-11.webp",
           question: "In English tennis scoring, zero is called \"love\".",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "a",
@@ -305,6 +314,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tennis-regles-14.webp",
           question: "In a standard tiebreak, the first to 7 points with a two-point lead wins the set.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "a",
@@ -329,6 +339,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tennis-regles-17.webp",
           question: "When serving, a player is allowed to step on the baseline.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "b",
@@ -353,6 +364,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-regles-20.webp",
           question: "If the ball hits a player before it bounces, that player loses the point, even if he is standing outside the court.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "a",
@@ -377,6 +389,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tennis-regles-2.webp",
           question: "En tenis tienes tres saques en cada punto.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "b",
@@ -394,6 +407,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-tennis-regles-4.webp",
           question: "Una bola que toca la línea es mala.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "b",
@@ -452,6 +466,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tennis-regles-11.webp",
           question: "En inglés, el cero en el tenis se dice « love ».",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "a",
@@ -476,6 +491,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tennis-regles-14.webp",
           question: "En un tie-break normal, gana el set el primero que llega a 7 puntos con dos de diferencia.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "a",
@@ -500,6 +516,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tennis-regles-17.webp",
           question: "Al sacar, el jugador puede pisar la línea de fondo.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "b",
@@ -524,6 +541,7 @@ export const quizTennisRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tennis-regles-20.webp",
           question: "Si la pelota toca a un jugador antes de botar, ese jugador pierde el punto, aunque esté fuera de la pista.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "a",

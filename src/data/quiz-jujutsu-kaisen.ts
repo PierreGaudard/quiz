@@ -134,6 +134,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-jujutsu-kaisen-9.webp",
           question: "Que devient Gojo pendant l'incident de Shibuya ?",
           answers: [
             { id: "a", text: "Il devient le directeur de l'école" },
@@ -160,6 +161,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jujutsu-kaisen-11.webp",
           question: "Que décident les chefs du monde de l'exorcisme pour Yuji, après qu'il a avalé le doigt ?",
           answers: [
             { id: "a", text: "Ils le nomment exorciste de grade spécial" },
@@ -186,6 +188,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-jujutsu-kaisen-13.webp",
           question: "Quel objet relie Yuta Okkotsu à son amie d'enfance Rika ?",
           answers: [
             { id: "a", text: "Une bague" },
@@ -225,6 +228,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-jujutsu-kaisen-16.webp",
           question: "Qui tue Satoru Gojo dans le manga ?",
           answers: [
             { id: "a", text: "Kenjaku" },
@@ -251,6 +255,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-jujutsu-kaisen-18.webp",
           question: "Qui, en réalité, a donné naissance à Yuji ?",
           answers: [
             { id: "a", text: "Tsumiki Fushiguro" },
@@ -277,6 +282,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-20.webp",
           question: "Qui porte le coup final à Sukuna à la fin du manga ?",
           answers: [
             { id: "a", text: "Aoi Todo" },
@@ -405,6 +411,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-jujutsu-kaisen-9.webp",
           question: "What happens to Gojo during the Shibuya Incident?",
           answers: [
             { id: "a", text: "He becomes the school principal" },
@@ -431,6 +438,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jujutsu-kaisen-11.webp",
           question: "What do the jujutsu higher-ups decide for Yuji after he swallows the finger?",
           answers: [
             { id: "a", text: "They make him a special grade sorcerer" },
@@ -457,6 +465,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-jujutsu-kaisen-13.webp",
           question: "What object connects Yuta Okkotsu to his childhood friend Rika?",
           answers: [
             { id: "a", text: "A ring" },
@@ -496,6 +505,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-jujutsu-kaisen-16.webp",
           question: "Who kills Satoru Gojo in the manga?",
           answers: [
             { id: "a", text: "Kenjaku" },
@@ -522,6 +532,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-jujutsu-kaisen-18.webp",
           question: "Who actually gave birth to Yuji?",
           answers: [
             { id: "a", text: "Tsumiki Fushiguro" },
@@ -548,6 +559,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-20.webp",
           question: "Who lands the final blow on Sukuna at the end of the manga?",
           answers: [
             { id: "a", text: "Aoi Todo" },
@@ -676,6 +688,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-jujutsu-kaisen-9.webp",
           question: "¿Qué le pasa a Gojo durante el incidente de Shibuya?",
           answers: [
             { id: "a", text: "Se convierte en director de la escuela" },
@@ -702,6 +715,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-jujutsu-kaisen-11.webp",
           question: "¿Qué deciden los altos mandos del mundo del jujutsu sobre Yuji después de que se trague el dedo?",
           answers: [
             { id: "a", text: "Lo nombran hechicero de grado especial" },
@@ -728,6 +742,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-jujutsu-kaisen-13.webp",
           question: "¿Qué objeto une a Yuta Okkotsu con su amiga de la infancia Rika?",
           answers: [
             { id: "a", text: "Un anillo" },
@@ -767,6 +782,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-jujutsu-kaisen-16.webp",
           question: "¿Quién mata a Satoru Gojo en el manga?",
           answers: [
             { id: "a", text: "Kenjaku" },
@@ -793,6 +809,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-jujutsu-kaisen-18.webp",
           question: "¿Quién dio a luz a Yuji en realidad?",
           answers: [
             { id: "a", text: "Tsumiki Fushiguro" },
@@ -819,6 +836,7 @@ export const quizJujutsuKaisen: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-20.webp",
           question: "¿Quién le da el golpe final a Sukuna al final del manga?",
           answers: [
             { id: "a", text: "Aoi Todo" },

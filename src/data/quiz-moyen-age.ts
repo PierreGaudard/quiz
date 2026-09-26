@@ -59,6 +59,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-moyen-age-3.webp",
           question: "La guerre de Cent Ans a duré exactement cent ans.",
           answers: [...VF.fr],
           correctAnswer: "b",
@@ -126,6 +127,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-moyen-age-11.webp",
           question: "Les Vikings portaient des casques à cornes au combat.",
           answers: [...VF.fr],
           correctAnswer: "b",
@@ -150,6 +152,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-moyen-age-14.webp",
           question: "Marco Polo était un marchand vénitien qui a voyagé jusqu'en Chine.",
           answers: [...VF.fr],
           correctAnswer: "a",
@@ -174,6 +177,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-17.webp",
           question: "Les gens du Moyen Âge appelaient eux-mêmes leur époque « le Moyen Âge ».",
           answers: [...VF.fr],
           correctAnswer: "b",
@@ -198,6 +202,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-20.webp",
           question: "Des Vikings ont assiégé Paris au IXe siècle.",
           answers: [...VF.fr],
           correctAnswer: "a",
@@ -231,6 +236,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-moyen-age-3.webp",
           question: "The Hundred Years' War lasted exactly one hundred years.",
           answers: [...VF.en],
           correctAnswer: "b",
@@ -298,6 +304,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-moyen-age-11.webp",
           question: "Vikings wore horned helmets in battle.",
           answers: [...VF.en],
           correctAnswer: "b",
@@ -322,6 +329,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-moyen-age-14.webp",
           question: "Marco Polo was a Venetian merchant who travelled as far as China.",
           answers: [...VF.en],
           correctAnswer: "a",
@@ -346,6 +354,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-17.webp",
           question: "People in the Middle Ages called their own time \"the Middle Ages\".",
           answers: [...VF.en],
           correctAnswer: "b",
@@ -370,6 +379,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-20.webp",
           question: "Vikings laid siege to Paris in the 9th century.",
           answers: [...VF.en],
           correctAnswer: "a",
@@ -403,6 +413,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-moyen-age-3.webp",
           question: "La guerra de los Cien Años duró exactamente cien años.",
           answers: [...VF.es],
           correctAnswer: "b",
@@ -470,6 +481,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-moyen-age-11.webp",
           question: "Los vikingos llevaban cascos con cuernos en combate.",
           answers: [...VF.es],
           correctAnswer: "b",
@@ -494,6 +506,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-moyen-age-14.webp",
           question: "Marco Polo fue un mercader veneciano que viajó hasta China.",
           answers: [...VF.es],
           correctAnswer: "a",
@@ -518,6 +531,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-17.webp",
           question: "La gente de la Edad Media ya llamaba a su época «la Edad Media».",
           answers: [...VF.es],
           correctAnswer: "b",
@@ -542,6 +556,7 @@ export const quizMoyenAge: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-20.webp",
           question: "Los vikingos asediaron París en el siglo IX.",
           answers: [...VF.es],
           correctAnswer: "a",

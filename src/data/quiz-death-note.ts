@@ -117,6 +117,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-death-note-9.webp",
           question: "Le film Death Note sorti sur Netflix en 2017 a été réalisé par Christopher Nolan.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -139,6 +140,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-death-note-11.webp",
           question: "Watari, l'assistant de L, s'appelle en réalité Quillsh Wammy.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -161,6 +163,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-death-note-13.webp",
           question: "Tout le monde peut voir Ryuk.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -194,6 +197,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-death-note-16.webp",
           question: "C'est Kiyomi Takada qui tue Mello.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -216,6 +220,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-death-note-18.webp",
           question: "Le surnom Kira vient de la prononciation japonaise du mot anglais « killer ».",
           answers: [
             { id: "a", text: "Vrai" },
@@ -238,6 +243,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-20.webp",
           question: "Teru Mikami crie « Sakujo », c'est-à-dire « supprimer », en écrivant les noms dans le cahier.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -348,6 +354,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-death-note-9.webp",
           question: "The 2017 Netflix Death Note movie was directed by Christopher Nolan.",
           answers: [
             { id: "a", text: "True" },
@@ -370,6 +377,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-death-note-11.webp",
           question: "Watari, L's assistant, is really named Quillsh Wammy.",
           answers: [
             { id: "a", text: "True" },
@@ -392,6 +400,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-death-note-13.webp",
           question: "Anyone can see Ryuk.",
           answers: [
             { id: "a", text: "True" },
@@ -425,6 +434,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-death-note-16.webp",
           question: "Kiyomi Takada is the one who kills Mello.",
           answers: [
             { id: "a", text: "True" },
@@ -447,6 +457,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-death-note-18.webp",
           question: "The name Kira comes from the Japanese pronunciation of the English word 'killer'.",
           answers: [
             { id: "a", text: "True" },
@@ -469,6 +480,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-20.webp",
           question: "Teru Mikami shouts 'Sakujo', meaning 'delete', as he writes names in the notebook.",
           answers: [
             { id: "a", text: "True" },
@@ -579,6 +591,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-death-note-9.webp",
           question: "La película de Death Note que estrenó Netflix en 2017 la dirigió Christopher Nolan.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -601,6 +614,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-death-note-11.webp",
           question: "Watari, el ayudante de L, se llama en realidad Quillsh Wammy.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -623,6 +637,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-death-note-13.webp",
           question: "Todo el mundo puede ver a Ryuk.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -656,6 +671,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-death-note-16.webp",
           question: "Kiyomi Takada es quien mata a Mello.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -678,6 +694,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-death-note-18.webp",
           question: "El nombre Kira viene de cómo se pronuncia en japonés la palabra inglesa «killer».",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -700,6 +717,7 @@ export const quizDeathNote: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-20.webp",
           question: "Teru Mikami grita «Sakujo», que significa «eliminar», cuando escribe nombres en el cuaderno.",
           answers: [
             { id: "a", text: "Verdadero" },

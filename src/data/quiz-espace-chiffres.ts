@@ -74,6 +74,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-espace-chiffres-6.webp",
           question: "Quel est le diamètre de la Terre, en kilomètres ?",
           answers: [],
           correctAnswer: "12 742",
@@ -130,6 +131,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-espace-chiffres-12.webp",
           question: "Combien d'années terrestres dure une année sur Jupiter, arrondi à l'année ?",
           answers: [],
           correctAnswer: "12",
@@ -157,6 +159,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-espace-chiffres-15.webp",
           question: "À quelle altitude, en kilomètres, place-t-on d'habitude la limite de l'espace ?",
           answers: [],
           correctAnswer: "100",
@@ -175,6 +178,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-chiffres-17.webp",
           question: "Combien de fois pèse-t-on moins lourd sur la Lune que sur Terre ?",
           answers: [],
           correctAnswer: "6",
@@ -202,6 +206,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-chiffres-20.webp",
           question: "Quel âge a l'Univers, en millions d'années ?",
           answers: [],
           correctAnswer: "13 800",
@@ -266,6 +271,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-espace-chiffres-6.webp",
           question: "What is the diameter of the Earth, in kilometres?",
           answers: [],
           correctAnswer: "12,742",
@@ -322,6 +328,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-espace-chiffres-12.webp",
           question: "How many Earth years does one year on Jupiter last, to the nearest year?",
           answers: [],
           correctAnswer: "12",
@@ -349,6 +356,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-espace-chiffres-15.webp",
           question: "At what altitude, in kilometres, is the edge of space usually placed?",
           answers: [],
           correctAnswer: "100",
@@ -367,6 +375,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-chiffres-17.webp",
           question: "How many times lighter do you weigh on the Moon than on Earth?",
           answers: [],
           correctAnswer: "6",
@@ -394,6 +403,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-chiffres-20.webp",
           question: "How old is the universe, in millions of years?",
           answers: [],
           correctAnswer: "13,800",
@@ -458,6 +468,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-espace-chiffres-6.webp",
           question: "¿Cuál es el diámetro de la Tierra, en kilómetros?",
           answers: [],
           correctAnswer: "12 742",
@@ -514,6 +525,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-espace-chiffres-12.webp",
           question: "¿Cuántos años terrestres dura un año en Júpiter, redondeando?",
           answers: [],
           correctAnswer: "12",
@@ -541,6 +553,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-espace-chiffres-15.webp",
           question: "¿A qué altitud, en kilómetros, se suele situar el límite del espacio?",
           answers: [],
           correctAnswer: "100",
@@ -559,6 +572,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-chiffres-17.webp",
           question: "¿Cuántas veces menos se pesa en la Luna que en la Tierra?",
           answers: [],
           correctAnswer: "6",
@@ -586,6 +600,7 @@ export const quizEspaceChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-chiffres-20.webp",
           question: "¿Qué edad tiene el universo, en millones de años?",
           answers: [],
           correctAnswer: "13 800",

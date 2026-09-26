@@ -37,6 +37,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-cyclisme-2.webp",
           question: "Combien d'étapes comptait ce premier Tour de 1903 ?",
           answers: [],
           correctAnswer: "6",
@@ -46,6 +47,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-cyclisme-3.webp",
           question: "Combien de kilomètres faisait le Tour de 1903, au total ?",
           answers: [],
           correctAnswer: "2428",
@@ -121,6 +123,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-cyclisme-11.webp",
           question: "Combien de coureurs ont pris le départ du premier Tour de France, en 1903 ?",
           answers: [],
           correctAnswer: "60",
@@ -148,6 +151,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-cyclisme-14.webp",
           question: "Combien de jours Eddy Merckx a-t-il porté le maillot jaune sur l'ensemble de sa carrière ?",
           answers: [],
           correctAnswer: "96",
@@ -175,6 +179,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-17.webp",
           question: "Combien de virages compte la montée de l'Alpe d'Huez ?",
           answers: [],
           correctAnswer: "21",
@@ -202,6 +207,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-20.webp",
           question: "Combien de Tours de France Chris Froome a-t-il gagnés ?",
           answers: [],
           correctAnswer: "4",
@@ -228,6 +234,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-cyclisme-2.webp",
           question: "How many stages did that first Tour have in 1903?",
           answers: [],
           correctAnswer: "6",
@@ -237,6 +244,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-cyclisme-3.webp",
           question: "How many kilometres long was the 1903 Tour in total?",
           answers: [],
           correctAnswer: "2428",
@@ -312,6 +320,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-cyclisme-11.webp",
           question: "How many riders started the first Tour de France, in 1903?",
           answers: [],
           correctAnswer: "60",
@@ -339,6 +348,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-cyclisme-14.webp",
           question: "How many days did Eddy Merckx wear the yellow jersey over his whole career?",
           answers: [],
           correctAnswer: "96",
@@ -366,6 +376,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-17.webp",
           question: "How many hairpin bends are there on the climb to Alpe d'Huez?",
           answers: [],
           correctAnswer: "21",
@@ -393,6 +404,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-20.webp",
           question: "How many Tours de France did Chris Froome win?",
           answers: [],
           correctAnswer: "4",
@@ -419,6 +431,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-cyclisme-2.webp",
           question: "¿Cuántas etapas tuvo aquel primer Tour de 1903?",
           answers: [],
           correctAnswer: "6",
@@ -428,6 +441,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-cyclisme-3.webp",
           question: "¿Cuántos kilómetros tuvo en total el Tour de 1903?",
           answers: [],
           correctAnswer: "2428",
@@ -503,6 +517,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-cyclisme-11.webp",
           question: "¿Cuántos ciclistas tomaron la salida del primer Tour de Francia, en 1903?",
           answers: [],
           correctAnswer: "60",
@@ -530,6 +545,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-cyclisme-14.webp",
           question: "¿Cuántos días llevó Eddy Merckx el maillot amarillo en toda su carrera?",
           answers: [],
           correctAnswer: "96",
@@ -557,6 +573,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-17.webp",
           question: "¿Cuántas curvas tiene la subida a Alpe d'Huez?",
           answers: [],
           correctAnswer: "21",
@@ -584,6 +601,7 @@ export const quizCyclisme: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-20.webp",
           question: "¿Cuántos Tours de Francia ganó Chris Froome?",
           answers: [],
           correctAnswer: "4",

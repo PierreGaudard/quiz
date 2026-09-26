@@ -36,6 +36,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-regles-2.webp",
           question: "Une transformation réussie rapporte 2 points.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -59,6 +60,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-rugby-regles-4.webp",
           question: "Au rugby à XV, un carton jaune exclut le joueur pendant dix minutes.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -138,6 +140,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-rugby-regles-11.webp",
           question: "Quand un joueur laisse tomber le ballon vers l'avant, l'arbitre siffle un en-avant et donne une mêlée à l'adversaire.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "a",
@@ -162,6 +165,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-rugby-regles-14.webp",
           question: "En touche, le lanceur a le droit de lancer le ballon de travers, vers ses coéquipiers.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "b",
@@ -186,6 +190,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-regles-17.webp",
           question: "Le coup d'envoi se donne au pied, depuis le milieu du terrain.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "a",
@@ -210,6 +215,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-regles-20.webp",
           question: "Un plaquage au-dessus des épaules est autorisé s'il est fait avec les bras.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "b",
@@ -237,6 +243,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-regles-2.webp",
           question: "A successful conversion is worth 2 points.",
           answers: [
             { id: "a", text: "True" },
@@ -260,6 +267,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-rugby-regles-4.webp",
           question: "In rugby union, a yellow card sends a player off for ten minutes.",
           answers: [
             { id: "a", text: "True" },
@@ -339,6 +347,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-rugby-regles-11.webp",
           question: "When a player drops the ball forwards, the referee calls a knock-on and gives a scrum to the other team.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "a",
@@ -363,6 +372,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-rugby-regles-14.webp",
           question: "At a lineout, the thrower is allowed to throw the ball crooked, towards his own team-mates.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "b",
@@ -387,6 +397,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-regles-17.webp",
           question: "The kick-off is taken with the foot, from the middle of the pitch.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "a",
@@ -411,6 +422,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-regles-20.webp",
           question: "A tackle above the shoulders is allowed as long as it is made with the arms.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "b",
@@ -438,6 +450,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-regles-2.webp",
           question: "Una conversión acertada vale 2 puntos.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -461,6 +474,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-rugby-regles-4.webp",
           question: "En el rugby a quince, una tarjeta amarilla deja al jugador fuera diez minutos.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -540,6 +554,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-rugby-regles-11.webp",
           question: "Cuando un jugador deja caer el balón hacia delante, el árbitro pita un avant y da una melé al rival.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "a",
@@ -564,6 +579,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-rugby-regles-14.webp",
           question: "En el saque de lateral, el lanzador puede tirar el balón torcido, hacia sus compañeros.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "b",
@@ -588,6 +604,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-regles-17.webp",
           question: "El saque inicial se hace con el pie, desde el centro del campo.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "a",
@@ -612,6 +629,7 @@ export const quizRugbyRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-regles-20.webp",
           question: "Un placaje por encima de los hombros está permitido si se hace con los brazos.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "b",

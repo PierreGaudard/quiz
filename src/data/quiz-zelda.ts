@@ -40,6 +40,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-zelda-2.webp",
           question: "Comment s'appelle le héros que l'on joue dans Zelda ?",
           answers: [
             { id: "a", text: "Zelda" },
@@ -53,6 +54,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-zelda-3.webp",
           question: "Qui a créé la série avec Takashi Tezuka ?",
           answers: [
             { id: "a", text: "Hideo Kojima" },
@@ -160,6 +162,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-zelda-11.webp",
           question: "Comment s'appelle l'argent que Link ramasse dans les jeux Zelda ?",
           answers: [
             { id: "a", text: "Les pièces d'or" },
@@ -199,6 +202,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-zelda-14.webp",
           question: "Sur quelle île Link fait-il naufrage dans Link's Awakening ?",
           answers: [
             { id: "a", text: "Termina" },
@@ -238,6 +242,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-zelda-17.webp",
           question: "Qui est aujourd'hui le producteur de la série Zelda ?",
           answers: [
             { id: "a", text: "Masahiro Sakurai" },
@@ -277,6 +282,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-20.webp",
           question: "De quelle couleur est la tunique classique de Link ?",
           answers: [
             { id: "a", text: "Bleue" },
@@ -311,6 +317,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-zelda-2.webp",
           question: "What is the name of the hero you play in Zelda?",
           answers: [
             { id: "a", text: "Zelda" },
@@ -324,6 +331,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-zelda-3.webp",
           question: "Who created the series with Takashi Tezuka?",
           answers: [
             { id: "a", text: "Hideo Kojima" },
@@ -431,6 +439,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-zelda-11.webp",
           question: "What is the money Link picks up in the Zelda games called?",
           answers: [
             { id: "a", text: "Gold coins" },
@@ -470,6 +479,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-zelda-14.webp",
           question: "On which island is Link shipwrecked in Link's Awakening?",
           answers: [
             { id: "a", text: "Termina" },
@@ -509,6 +519,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-zelda-17.webp",
           question: "Who is the producer of the Zelda series today?",
           answers: [
             { id: "a", text: "Masahiro Sakurai" },
@@ -548,6 +559,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-20.webp",
           question: "What color is Link's classic tunic?",
           answers: [
             { id: "a", text: "Blue" },
@@ -582,6 +594,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-zelda-2.webp",
           question: "¿Cómo se llama el héroe al que controlas en Zelda?",
           answers: [
             { id: "a", text: "Zelda" },
@@ -595,6 +608,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-zelda-3.webp",
           question: "¿Quién creó la saga junto a Takashi Tezuka?",
           answers: [
             { id: "a", text: "Hideo Kojima" },
@@ -702,6 +716,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-zelda-11.webp",
           question: "¿Cómo se llama el dinero que recoge Link en los juegos de Zelda?",
           answers: [
             { id: "a", text: "Monedas de oro" },
@@ -741,6 +756,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-zelda-14.webp",
           question: "¿En qué isla naufraga Link en Link's Awakening?",
           answers: [
             { id: "a", text: "Termina" },
@@ -780,6 +796,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-zelda-17.webp",
           question: "¿Quién es hoy el productor de la saga Zelda?",
           answers: [
             { id: "a", text: "Masahiro Sakurai" },
@@ -819,6 +836,7 @@ export const quizZelda: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-20.webp",
           question: "¿De qué color es la túnica clásica de Link?",
           answers: [
             { id: "a", text: "Azul" },

@@ -37,6 +37,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-records-2.webp",
           question: "Combien de Grands Prix Max Verstappen a-t-il gagnés sur la seule saison 2023 ?",
           answers: [],
           correctAnswer: "19",
@@ -46,6 +47,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-formule-1-records-3.webp",
           question: "Combien de courses d'affilée Verstappen a-t-il gagnées en 2023, un record ?",
           answers: [],
           correctAnswer: "10",
@@ -121,6 +123,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-formule-1-records-11.webp",
           question: "Combien de Grands Prix Ayrton Senna a-t-il gagnés dans sa carrière ?",
           answers: [],
           correctAnswer: "41",
@@ -148,6 +151,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-formule-1-records-14.webp",
           question: "Quel âge avait Luigi Fagioli, le plus vieux vainqueur d'un Grand Prix de F1, en 1951 ?",
           answers: [],
           correctAnswer: "53",
@@ -175,6 +179,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-formule-1-records-17.webp",
           question: "Combien de Grands Prix Michael Schumacher a-t-il gagnés pendant la saison 2004 ?",
           answers: [],
           correctAnswer: "13",
@@ -202,6 +207,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-records-20.webp",
           question: "En quelle année le championnat du monde des constructeurs a-t-il été créé ?",
           answers: [],
           correctAnswer: "1958",
@@ -228,6 +234,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-records-2.webp",
           question: "How many Grands Prix did Max Verstappen win in the 2023 season alone?",
           answers: [],
           correctAnswer: "19",
@@ -237,6 +244,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-formule-1-records-3.webp",
           question: "How many races in a row did Verstappen win in 2023, a record?",
           answers: [],
           correctAnswer: "10",
@@ -312,6 +320,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-formule-1-records-11.webp",
           question: "How many Grands Prix did Ayrton Senna win in his career?",
           answers: [],
           correctAnswer: "41",
@@ -339,6 +348,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-formule-1-records-14.webp",
           question: "How old was Luigi Fagioli, the oldest winner of an F1 Grand Prix, in 1951?",
           answers: [],
           correctAnswer: "53",
@@ -366,6 +376,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-formule-1-records-17.webp",
           question: "How many Grands Prix did Michael Schumacher win in the 2004 season?",
           answers: [],
           correctAnswer: "13",
@@ -393,6 +404,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-records-20.webp",
           question: "In which year was the constructors' world championship created?",
           answers: [],
           correctAnswer: "1958",
@@ -419,6 +431,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-records-2.webp",
           question: "¿Cuántos Grandes Premios ganó Max Verstappen solo en la temporada 2023?",
           answers: [],
           correctAnswer: "19",
@@ -428,6 +441,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-formule-1-records-3.webp",
           question: "¿Cuántas carreras seguidas ganó Verstappen en 2023, un récord?",
           answers: [],
           correctAnswer: "10",
@@ -503,6 +517,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-formule-1-records-11.webp",
           question: "¿Cuántos Grandes Premios ganó Ayrton Senna en su carrera?",
           answers: [],
           correctAnswer: "41",
@@ -530,6 +545,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-formule-1-records-14.webp",
           question: "¿Qué edad tenía Luigi Fagioli, el ganador más veterano de un Gran Premio de F1, en 1951?",
           answers: [],
           correctAnswer: "53",
@@ -557,6 +573,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-formule-1-records-17.webp",
           question: "¿Cuántos Grandes Premios ganó Michael Schumacher en la temporada 2004?",
           answers: [],
           correctAnswer: "13",
@@ -584,6 +601,7 @@ export const quizFormule1Records: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-records-20.webp",
           question: "¿En qué año se creó el campeonato del mundo de constructores?",
           answers: [],
           correctAnswer: "1958",

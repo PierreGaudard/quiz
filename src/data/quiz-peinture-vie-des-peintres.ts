@@ -26,6 +26,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-peinture-vie-des-peintres-1.webp",
           question: "Vincent van Gogh s'est coupé une partie de l'oreille.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -152,6 +153,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-peinture-vie-des-peintres-12.webp",
           question: "Frida Kahlo était mariée au peintre Diego Rivera.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -185,6 +187,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-peinture-vie-des-peintres-15.webp",
           question: "Pablo Picasso a été interrogé par la police après le vol de La Joconde, en 1911.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -207,6 +210,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-peinture-vie-des-peintres-17.webp",
           question: "Édouard Manet et Claude Monet étaient frères.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -240,6 +244,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-vie-des-peintres-20.webp",
           question: "Salvador Dalí est né au Mexique.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -258,6 +263,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-peinture-vie-des-peintres-1.webp",
           question: "Vincent van Gogh cut off part of his own ear.",
           answers: [
             { id: "a", text: "True" },
@@ -384,6 +390,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-peinture-vie-des-peintres-12.webp",
           question: "Frida Kahlo was married to the painter Diego Rivera.",
           answers: [
             { id: "a", text: "True" },
@@ -417,6 +424,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-peinture-vie-des-peintres-15.webp",
           question: "Pablo Picasso was questioned by the police after the Mona Lisa was stolen in 1911.",
           answers: [
             { id: "a", text: "True" },
@@ -439,6 +447,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-peinture-vie-des-peintres-17.webp",
           question: "Édouard Manet and Claude Monet were brothers.",
           answers: [
             { id: "a", text: "True" },
@@ -472,6 +481,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-vie-des-peintres-20.webp",
           question: "Salvador Dalí was born in Mexico.",
           answers: [
             { id: "a", text: "True" },
@@ -490,6 +500,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-peinture-vie-des-peintres-1.webp",
           question: "Vincent van Gogh se cortó un trozo de la oreja.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -616,6 +627,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-peinture-vie-des-peintres-12.webp",
           question: "Frida Kahlo estaba casada con el pintor Diego Rivera.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -649,6 +661,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-peinture-vie-des-peintres-15.webp",
           question: "Pablo Picasso fue interrogado por la policía tras el robo de la Gioconda, en 1911.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -671,6 +684,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-peinture-vie-des-peintres-17.webp",
           question: "Édouard Manet y Claude Monet eran hermanos.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -704,6 +718,7 @@ export const quizPeintureVieDesPeintres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-vie-des-peintres-20.webp",
           question: "Salvador Dalí nació en México.",
           answers: [
             { id: "a", text: "Verdadero" },

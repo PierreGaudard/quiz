@@ -31,6 +31,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-2.webp",
           question: "Combien de Dragon Balls faut-il réunir pour invoquer Shenron ?",
           answers: [
             { id: "a", text: "5" },
@@ -155,6 +156,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-dragon-ball-11.webp",
           question: "Qui a créé le manga Dragon Ball ?",
           answers: [
             { id: "a", text: "Eiichiro Oda" },
@@ -194,6 +196,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-dragon-ball-14.webp",
           question: "Qui est la mère de Trunks ?",
           answers: [
             { id: "a", text: "Chi-Chi" },
@@ -233,6 +236,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-17.webp",
           question: "À quel peuple Piccolo appartient-il ?",
           answers: [
             { id: "a", text: "Les Saiyans" },
@@ -272,6 +276,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-20.webp",
           question: "Quelle Dragon Ball Goku garde-t-il en souvenir de son grand-père Gohan ?",
           answers: [
             { id: "a", text: "Celle à une étoile" },
@@ -306,6 +311,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-2.webp",
           question: "How many Dragon Balls do you need to summon Shenron?",
           answers: [
             { id: "a", text: "5" },
@@ -429,6 +435,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-dragon-ball-11.webp",
           question: "Who created the Dragon Ball manga?",
           answers: [
             { id: "a", text: "Eiichiro Oda" },
@@ -468,6 +475,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-dragon-ball-14.webp",
           question: "Who is Trunks' mother?",
           answers: [
             { id: "a", text: "Chi-Chi" },
@@ -507,6 +515,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-17.webp",
           question: "Which people does Piccolo belong to?",
           answers: [
             { id: "a", text: "The Saiyans" },
@@ -546,6 +555,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-20.webp",
           question: "Which Dragon Ball does Goku keep as a memento of his grandpa Gohan?",
           answers: [
             { id: "a", text: "The one-star ball" },
@@ -580,6 +590,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-2.webp",
           question:
             "¿Cuántas esferas del dragón se necesitan para invocar a Shenron?",
           answers: [
@@ -705,6 +716,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-dragon-ball-11.webp",
           question: "¿Quién creó el manga Dragon Ball?",
           answers: [
             { id: "a", text: "Eiichiro Oda" },
@@ -744,6 +756,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-dragon-ball-14.webp",
           question: "¿Quién es la madre de Trunks?",
           answers: [
             { id: "a", text: "Chi-Chi" },
@@ -783,6 +796,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-17.webp",
           question: "¿A qué pueblo pertenece Piccolo?",
           answers: [
             { id: "a", text: "Los Saiyans" },
@@ -822,6 +836,7 @@ export const quizDragonBall: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-20.webp",
           question: "¿Qué esfera del dragón guarda Goku como recuerdo de su abuelo Gohan?",
           answers: [
             { id: "a", text: "La de una estrella" },

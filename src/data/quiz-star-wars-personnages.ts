@@ -25,6 +25,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-personnages-1.webp",
           question: "Qui est le père de Luke Skywalker ?",
           answers: [
             { id: "a", text: "Obi-Wan Kenobi" },
@@ -93,6 +94,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-star-wars-personnages-6.webp",
           question: "Qui tue Han Solo dans Le Réveil de la Force ?",
           answers: [
             { id: "a", text: "Snoke" },
@@ -159,6 +161,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-star-wars-personnages-11.webp",
           question: "Qui est le maître d'Obi-Wan Kenobi dans La Menace fantôme ?",
           answers: [
             { id: "a", text: "Mace Windu" },
@@ -198,6 +201,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-star-wars-personnages-14.webp",
           question: "Quel droïde orange et blanc accompagne Poe Dameron ?",
           answers: [
             { id: "a", text: "R2-D2" },
@@ -237,6 +241,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-personnages-17.webp",
           question: "Comment s'appelle l'enfant de la même espèce que Yoda, protégé par le Mandalorien ?",
           answers: [
             { id: "a", text: "Grogu" },
@@ -276,6 +281,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-personnages-20.webp",
           question: "Qui commande l'Étoile de la Mort dans Un nouvel espoir ?",
           answers: [
             { id: "a", text: "Le directeur Krennic" },
@@ -296,6 +302,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-personnages-1.webp",
           question: "Who is Luke Skywalker's father?",
           answers: [
             { id: "a", text: "Obi-Wan Kenobi" },
@@ -364,6 +371,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-star-wars-personnages-6.webp",
           question: "Who kills Han Solo in The Force Awakens?",
           answers: [
             { id: "a", text: "Snoke" },
@@ -430,6 +438,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-star-wars-personnages-11.webp",
           question: "Who is Obi-Wan Kenobi's master in The Phantom Menace?",
           answers: [
             { id: "a", text: "Mace Windu" },
@@ -469,6 +478,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-star-wars-personnages-14.webp",
           question: "Which orange and white droid travels with Poe Dameron?",
           answers: [
             { id: "a", text: "R2-D2" },
@@ -508,6 +518,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-personnages-17.webp",
           question: "What is the name of the child of Yoda's species protected by the Mandalorian?",
           answers: [
             { id: "a", text: "Grogu" },
@@ -547,6 +558,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-personnages-20.webp",
           question: "Who commands the Death Star in A New Hope?",
           answers: [
             { id: "a", text: "Director Krennic" },
@@ -567,6 +579,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-personnages-1.webp",
           question: "¿Quién es el padre de Luke Skywalker?",
           answers: [
             { id: "a", text: "Obi-Wan Kenobi" },
@@ -635,6 +648,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-star-wars-personnages-6.webp",
           question: "¿Quién mata a Han Solo en El despertar de la Fuerza?",
           answers: [
             { id: "a", text: "Snoke" },
@@ -701,6 +715,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-star-wars-personnages-11.webp",
           question: "¿Quién es el maestro de Obi-Wan Kenobi en La amenaza fantasma?",
           answers: [
             { id: "a", text: "Mace Windu" },
@@ -740,6 +755,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-star-wars-personnages-14.webp",
           question: "¿Qué droide naranja y blanco acompaña a Poe Dameron?",
           answers: [
             { id: "a", text: "R2-D2" },
@@ -779,6 +795,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-personnages-17.webp",
           question: "¿Cómo se llama el niño de la misma especie que Yoda al que protege el mandaloriano?",
           answers: [
             { id: "a", text: "Grogu" },
@@ -818,6 +835,7 @@ export const quizStarWarsPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-personnages-20.webp",
           question: "¿Quién está al mando de la Estrella de la Muerte en Una nueva esperanza?",
           answers: [
             { id: "a", text: "El director Krennic" },

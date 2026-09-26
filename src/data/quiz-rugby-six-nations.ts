@@ -42,6 +42,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-six-nations-2.webp",
           question: "Comment appelle-t-on le fait de gagner tous ses matchs du Tournoi ?",
           answers: [
             { id: "a", text: "Le Grand Chelem" },
@@ -55,6 +56,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-rugby-six-nations-3.webp",
           question: "Que reçoit, symboliquement, l'équipe qui perd tous ses matchs ?",
           answers: [
             { id: "a", text: "Le bonnet d'âne" },
@@ -175,6 +177,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rugby-six-nations-12.webp",
           question: "Dans quel stade l'Irlande joue-t-elle à Dublin ?",
           answers: [
             { id: "a", text: "Croke Park" },
@@ -214,6 +217,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rugby-six-nations-15.webp",
           question: "Combien d'essais faut-il marquer dans un match pour avoir le point de bonus offensif ?",
           answers: [
             { id: "a", text: "2" },
@@ -240,6 +244,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-six-nations-17.webp",
           question: "Qui a marqué le plus d'essais de l'histoire du Tournoi ?",
           answers: [
             { id: "a", text: "Brian O'Driscoll" },
@@ -279,6 +284,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-six-nations-20.webp",
           question: "Entre quelles équipes se joue la Triple Couronne ?",
           answers: [
             { id: "a", text: "Angleterre, Écosse, Irlande et pays de Galles" },
@@ -313,6 +319,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-six-nations-2.webp",
           question: "What do you call winning every one of your games in the Championship?",
           answers: [
             { id: "a", text: "A Grand Slam" },
@@ -326,6 +333,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-rugby-six-nations-3.webp",
           question: "What does the team that loses every game \"win\"?",
           answers: [
             { id: "a", text: "The dunce's cap" },
@@ -446,6 +454,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rugby-six-nations-12.webp",
           question: "Which stadium do Ireland play at in Dublin?",
           answers: [
             { id: "a", text: "Croke Park" },
@@ -485,6 +494,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rugby-six-nations-15.webp",
           question: "How many tries do you need in a game to get the attacking bonus point?",
           answers: [
             { id: "a", text: "2" },
@@ -511,6 +521,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-six-nations-17.webp",
           question: "Who has scored the most tries in Championship history?",
           answers: [
             { id: "a", text: "Brian O'Driscoll" },
@@ -550,6 +561,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-six-nations-20.webp",
           question: "Which teams compete for the Triple Crown?",
           answers: [
             { id: "a", text: "England, Scotland, Ireland and Wales" },
@@ -584,6 +596,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-six-nations-2.webp",
           question: "¿Cómo se llama ganar todos los partidos del Torneo?",
           answers: [
             { id: "a", text: "Grand Slam" },
@@ -597,6 +610,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-rugby-six-nations-3.webp",
           question: "¿Qué «gana» el equipo que pierde todos sus partidos?",
           answers: [
             { id: "a", text: "El gorro de burro" },
@@ -717,6 +731,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rugby-six-nations-12.webp",
           question: "¿En qué estadio juega Irlanda en Dublín?",
           answers: [
             { id: "a", text: "Croke Park" },
@@ -756,6 +771,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rugby-six-nations-15.webp",
           question: "¿Cuántos ensayos hay que marcar en un partido para el punto de bonus ofensivo?",
           answers: [
             { id: "a", text: "2" },
@@ -782,6 +798,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-six-nations-17.webp",
           question: "¿Quién ha marcado más ensayos en la historia del Torneo?",
           answers: [
             { id: "a", text: "Brian O'Driscoll" },
@@ -821,6 +838,7 @@ export const quizRugbySixNations: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-six-nations-20.webp",
           question: "¿Entre qué selecciones se juega la Triple Corona?",
           answers: [
             { id: "a", text: "Inglaterra, Escocia, Irlanda y Gales" },

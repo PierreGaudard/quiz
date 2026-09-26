@@ -47,6 +47,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-revolution-francaise-symboles-2.webp",
           question: "Dans quelle ville la Marseillaise a-t-elle été composée ?",
           answers: [
             { id: "a", text: "Marseille" },
@@ -74,6 +75,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-revolution-francaise-symboles-4.webp",
           question: "Quel mot complète la devise « Liberté, Égalité… » ?",
           answers: [
             { id: "a", text: "Solidarité" },
@@ -87,6 +89,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-revolution-francaise-symboles-5.webp",
           question: "Quel mois du calendrier républicain est celui des vendanges ?",
           answers: [
             { id: "a", text: "Vendémiaire" },
@@ -166,6 +169,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-revolution-francaise-symboles-11.webp",
           question: "Quel club se réunit dans un ancien couvent de la rue Saint-Honoré, à Paris ?",
           answers: [
             { id: "a", text: "Le club des Cordeliers" },
@@ -245,6 +249,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-revolution-francaise-symboles-17.webp",
           question: "Quel impôt versé à l'Église est supprimé en 1789 ?",
           answers: [
             { id: "a", text: "La taille" },
@@ -284,6 +289,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-symboles-20.webp",
           question: "En quelle année la Convention abolit-elle l'esclavage dans les colonies ?",
           answers: [
             { id: "a", text: "1794" },
@@ -318,6 +324,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-revolution-francaise-symboles-2.webp",
           question: "In which city was the Marseillaise written?",
           answers: [
             { id: "a", text: "Marseille" },
@@ -345,6 +352,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-revolution-francaise-symboles-4.webp",
           question: "Which word completes the motto \"Liberty, Equality...\"?",
           answers: [
             { id: "a", text: "Solidarity" },
@@ -358,6 +366,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-revolution-francaise-symboles-5.webp",
           question: "Which month of the Republican calendar is the grape harvest month?",
           answers: [
             { id: "a", text: "Vendémiaire" },
@@ -437,6 +446,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-revolution-francaise-symboles-11.webp",
           question: "Which club met in a former convent on Rue Saint-Honoré in Paris?",
           answers: [
             { id: "a", text: "The Cordeliers Club" },
@@ -516,6 +526,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-revolution-francaise-symboles-17.webp",
           question: "Which tax paid to the Church was abolished in 1789?",
           answers: [
             { id: "a", text: "The taille" },
@@ -555,6 +566,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-symboles-20.webp",
           question: "In what year did the Convention abolish slavery in the colonies?",
           answers: [
             { id: "a", text: "1794" },
@@ -589,6 +601,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-revolution-francaise-symboles-2.webp",
           question: "¿En qué ciudad se compuso La Marsellesa?",
           answers: [
             { id: "a", text: "Marsella" },
@@ -616,6 +629,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-revolution-francaise-symboles-4.webp",
           question: "¿Qué palabra completa el lema «Libertad, Igualdad…»?",
           answers: [
             { id: "a", text: "Solidaridad" },
@@ -629,6 +643,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-revolution-francaise-symboles-5.webp",
           question: "¿Qué mes del calendario republicano es el de la vendimia?",
           answers: [
             { id: "a", text: "Vendimiario" },
@@ -708,6 +723,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-revolution-francaise-symboles-11.webp",
           question: "¿Qué club se reunía en un antiguo convento de la calle Saint-Honoré, en París?",
           answers: [
             { id: "a", text: "El club de los Cordeliers" },
@@ -787,6 +803,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-revolution-francaise-symboles-17.webp",
           question: "¿Qué impuesto que se pagaba a la Iglesia se suprime en 1789?",
           answers: [
             { id: "a", text: "La talla" },
@@ -826,6 +843,7 @@ export const quizRevolutionFrancaiseSymboles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-symboles-20.webp",
           question: "¿En qué año abolió la Convención la esclavitud en las colonias?",
           answers: [
             { id: "a", text: "1794" },

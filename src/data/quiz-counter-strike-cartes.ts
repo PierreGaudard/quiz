@@ -147,6 +147,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-counter-strike-cartes-10.webp",
           question: "Sur la carte cs_office, que doivent faire les contre-terroristes ?",
           answers: [
             { id: "a", text: "Libérer des otages" },
@@ -186,6 +187,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-counter-strike-cartes-13.webp",
           question: "Quel est le décor de la carte Train ?",
           answers: [
             { id: "a", text: "Une station de métro" },
@@ -225,6 +227,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-counter-strike-cartes-16.webp",
           question: "Sur la carte cs_assault, où sont retenus les otages ?",
           answers: [
             { id: "a", text: "Dans un entrepôt" },
@@ -251,6 +254,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-counter-strike-cartes-18.webp",
           question: "Sur une carte dont le nom commence par « aim_ », à quoi sert-elle ?",
           answers: [
             { id: "a", text: "À courir le plus vite possible" },
@@ -277,6 +281,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-cartes-20.webp",
           question: "Combien de cartes compte la liste des cartes jouées en tournoi, l'Active Duty ?",
           answers: [
             { id: "a", text: "5" },
@@ -419,6 +424,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-counter-strike-cartes-10.webp",
           question: "On cs_office, what do the Counter-Terrorists have to do?",
           answers: [
             { id: "a", text: "Rescue hostages" },
@@ -458,6 +464,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-counter-strike-cartes-13.webp",
           question: "What's the setting of the Train map?",
           answers: [
             { id: "a", text: "A subway station" },
@@ -497,6 +504,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-counter-strike-cartes-16.webp",
           question: "On cs_assault, where are the hostages held?",
           answers: [
             { id: "a", text: "In a warehouse" },
@@ -523,6 +531,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-counter-strike-cartes-18.webp",
           question: "What is a map whose name starts with \"aim_\" for?",
           answers: [
             { id: "a", text: "Running as fast as possible" },
@@ -549,6 +558,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-cartes-20.webp",
           question: "How many maps are in the Active Duty pool, the list of maps played in tournaments?",
           answers: [
             { id: "a", text: "5" },
@@ -691,6 +701,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-counter-strike-cartes-10.webp",
           question: "En el mapa cs_office, ¿qué tienen que hacer los antiterroristas?",
           answers: [
             { id: "a", text: "Rescatar rehenes" },
@@ -730,6 +741,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-counter-strike-cartes-13.webp",
           question: "¿Cuál es el escenario del mapa Train?",
           answers: [
             { id: "a", text: "Una estación de metro" },
@@ -769,6 +781,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-counter-strike-cartes-16.webp",
           question: "En el mapa cs_assault, ¿dónde están los rehenes?",
           answers: [
             { id: "a", text: "En un almacén" },
@@ -795,6 +808,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-counter-strike-cartes-18.webp",
           question: "¿Para qué sirve un mapa cuyo nombre empieza por \"aim_\"?",
           answers: [
             { id: "a", text: "Para correr lo más rápido posible" },
@@ -821,6 +835,7 @@ export const quizCounterStrikeCartes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-cartes-20.webp",
           question: "¿Cuántos mapas tiene la lista de mapas de torneo, el Active Duty?",
           answers: [
             { id: "a", text: "5" },

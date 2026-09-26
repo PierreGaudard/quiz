@@ -31,6 +31,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-2.webp",
           question:
             "Quel matériau minimal faut-il pour miner du diamant ?",
           answers: [
@@ -159,6 +160,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-11.webp",
           question: "Quel est le vrai nom de Notch, le créateur de Minecraft ?",
           answers: [
             { id: "a", text: "Jens Bergensten" },
@@ -198,6 +200,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-14.webp",
           question: "Avec quoi paie-t-on les villageois pour faire des échanges ?",
           answers: [
             { id: "a", text: "Des diamants" },
@@ -237,6 +240,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-17.webp",
           question: "Quel objet, trouvé dans les navires des cités de l'End, permet de planer ?",
           answers: [
             { id: "a", text: "Le trident" },
@@ -276,6 +280,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-20.webp",
           question: "Qui joue Steve dans Minecraft, le film sorti en 2025 ?",
           answers: [
             { id: "a", text: "Jason Momoa" },
@@ -310,6 +315,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-2.webp",
           question:
             "What is the minimum material needed to mine diamonds?",
           answers: [
@@ -437,6 +443,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-11.webp",
           question: "What is the real name of Notch, the creator of Minecraft?",
           answers: [
             { id: "a", text: "Jens Bergensten" },
@@ -476,6 +483,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-14.webp",
           question: "What do you pay villagers with when trading?",
           answers: [
             { id: "a", text: "Diamonds" },
@@ -515,6 +523,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-17.webp",
           question: "Which item, found in the ships of End cities, lets you glide?",
           answers: [
             { id: "a", text: "The trident" },
@@ -554,6 +563,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-20.webp",
           question: "Who plays Steve in A Minecraft Movie, released in 2025?",
           answers: [
             { id: "a", text: "Jason Momoa" },
@@ -588,6 +598,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-2.webp",
           question:
             "¿Cuál es el material mínimo necesario para minar diamante?",
           answers: [
@@ -716,6 +727,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-11.webp",
           question: "¿Cuál es el nombre real de Notch, el creador de Minecraft?",
           answers: [
             { id: "a", text: "Jens Bergensten" },
@@ -755,6 +767,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-14.webp",
           question: "¿Con qué se paga a los aldeanos para comerciar?",
           answers: [
             { id: "a", text: "Con diamantes" },
@@ -794,6 +807,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-17.webp",
           question: "¿Qué objeto, que se encuentra en los barcos de las ciudades del End, permite planear?",
           answers: [
             { id: "a", text: "El tridente" },
@@ -833,6 +847,7 @@ export const quizMinecraft: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-20.webp",
           question: "¿Quién interpreta a Steve en Una película de Minecraft, estrenada en 2025?",
           answers: [
             { id: "a", text: "Jason Momoa" },

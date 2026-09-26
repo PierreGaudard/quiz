@@ -53,6 +53,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-my-hero-academia-heros-mechants-3.webp",
           question: "Après la retraite d'All Might, Endeavor devient le héros numéro 1.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -156,6 +157,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-my-hero-academia-heros-mechants-12.webp",
           question: "Le vrai nom d'Eraser Head est Hizashi Yamada.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -189,6 +191,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-my-hero-academia-heros-mechants-15.webp",
           question: "Gran Torino a été le mentor d'All Might quand il était jeune.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -211,6 +214,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-heros-mechants-17.webp",
           question: "Le méchant Muscular peut se rendre invisible.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -244,6 +248,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-heros-mechants-20.webp",
           question: "Sir Nighteye peut voir l'avenir d'une personne.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -285,6 +290,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-my-hero-academia-heros-mechants-3.webp",
           question: "After All Might retires, Endeavor becomes the number 1 hero.",
           answers: [
             { id: "a", text: "True" },
@@ -388,6 +394,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-my-hero-academia-heros-mechants-12.webp",
           question: "Eraser Head's real name is Hizashi Yamada.",
           answers: [
             { id: "a", text: "True" },
@@ -421,6 +428,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-my-hero-academia-heros-mechants-15.webp",
           question: "Gran Torino trained All Might when he was young.",
           answers: [
             { id: "a", text: "True" },
@@ -443,6 +451,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-heros-mechants-17.webp",
           question: "The villain Muscular can turn invisible.",
           answers: [
             { id: "a", text: "True" },
@@ -476,6 +485,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-heros-mechants-20.webp",
           question: "Sir Nighteye can see a person's future.",
           answers: [
             { id: "a", text: "True" },
@@ -517,6 +527,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-my-hero-academia-heros-mechants-3.webp",
           question: "Cuando All Might se retira, Endeavor pasa a ser el héroe número 1.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -620,6 +631,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-my-hero-academia-heros-mechants-12.webp",
           question: "El verdadero nombre de Eraser Head es Hizashi Yamada.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -653,6 +665,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-my-hero-academia-heros-mechants-15.webp",
           question: "Gran Torino fue el mentor de All Might cuando era joven.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -675,6 +688,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-heros-mechants-17.webp",
           question: "El villano Muscular puede volverse invisible.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -708,6 +722,7 @@ export const quizMyHeroAcademiaHerosMechants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-heros-mechants-20.webp",
           question: "Sir Nighteye puede ver el futuro de una persona.",
           answers: [
             { id: "a", text: "Verdadero" },

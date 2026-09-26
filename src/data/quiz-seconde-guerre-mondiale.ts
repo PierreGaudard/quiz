@@ -29,6 +29,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-1.webp",
           question: "En quelle année commence la Seconde Guerre mondiale ?",
           answers: [
             { id: "a", text: "1938" },
@@ -42,6 +43,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-seconde-guerre-mondiale-2.webp",
           question: "Quel pays l'Allemagne envahit-elle le 1er septembre 1939 ?",
           answers: [
             { id: "a", text: "La Belgique" },
@@ -82,6 +84,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-seconde-guerre-mondiale-5.webp",
           question: "Qui est le chef de l'État français installé à Vichy en 1940 ?",
           answers: [
             { id: "a", text: "Philippe Pétain" },
@@ -148,6 +151,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-seconde-guerre-mondiale-10.webp",
           question: "Dans quelle ville la 6e armée allemande capitule-t-elle en février 1943 ?",
           answers: [
             { id: "a", text: "Moscou" },
@@ -227,6 +231,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-seconde-guerre-mondiale-16.webp",
           question: "Quel camp l'Armée rouge libère-t-elle le 27 janvier 1945 ?",
           answers: [
             { id: "a", text: "Dachau" },
@@ -253,6 +258,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-seconde-guerre-mondiale-18.webp",
           question: "Qui dirige l'Allemagne nazie pendant toute la guerre ?",
           answers: [
             { id: "a", text: "Heinrich Himmler" },
@@ -300,6 +306,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-1.webp",
           question: "In what year did the Second World War begin?",
           answers: [
             { id: "a", text: "1938" },
@@ -313,6 +320,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-seconde-guerre-mondiale-2.webp",
           question: "Which country did Germany invade on 1 September 1939?",
           answers: [
             { id: "a", text: "Belgium" },
@@ -353,6 +361,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-seconde-guerre-mondiale-5.webp",
           question: "Who was head of the French State based in Vichy from 1940?",
           answers: [
             { id: "a", text: "Philippe Pétain" },
@@ -419,6 +428,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-seconde-guerre-mondiale-10.webp",
           question: "In which city did the German Sixth Army surrender in February 1943?",
           answers: [
             { id: "a", text: "Moscow" },
@@ -498,6 +508,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-seconde-guerre-mondiale-16.webp",
           question: "Which camp did the Red Army liberate on 27 January 1945?",
           answers: [
             { id: "a", text: "Dachau" },
@@ -524,6 +535,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-seconde-guerre-mondiale-18.webp",
           question: "Who led Nazi Germany throughout the war?",
           answers: [
             { id: "a", text: "Heinrich Himmler" },
@@ -571,6 +583,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seconde-guerre-mondiale-1.webp",
           question: "¿En qué año empezó la Segunda Guerra Mundial?",
           answers: [
             { id: "a", text: "1938" },
@@ -584,6 +597,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-seconde-guerre-mondiale-2.webp",
           question: "¿Qué país invadió Alemania el 1 de septiembre de 1939?",
           answers: [
             { id: "a", text: "Bélgica" },
@@ -624,6 +638,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-seconde-guerre-mondiale-5.webp",
           question: "¿Quién fue el jefe del Estado francés instalado en Vichy en 1940?",
           answers: [
             { id: "a", text: "Philippe Pétain" },
@@ -690,6 +705,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-seconde-guerre-mondiale-10.webp",
           question: "¿En qué ciudad se rindió el 6.º ejército alemán en febrero de 1943?",
           answers: [
             { id: "a", text: "Moscú" },
@@ -769,6 +785,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-seconde-guerre-mondiale-16.webp",
           question: "¿Qué campo liberó el Ejército Rojo el 27 de enero de 1945?",
           answers: [
             { id: "a", text: "Dachau" },
@@ -795,6 +812,7 @@ export const quizSecondeGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-seconde-guerre-mondiale-18.webp",
           question: "¿Quién dirigió la Alemania nazi durante toda la guerra?",
           answers: [
             { id: "a", text: "Heinrich Himmler" },

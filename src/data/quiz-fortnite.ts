@@ -25,6 +25,7 @@ export const quizFortnite: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-fortnite-1.webp",
           question: "Fortnite est développé par Epic Games.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -36,6 +37,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-fortnite-2.webp",
           question: "Le mode Battle Royale de Fortnite est sorti en septembre 2017.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -139,6 +141,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fortnite-11.webp",
           question: "Dans Fortnite, on construit avec trois matériaux : le bois, la pierre et le métal.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -172,6 +175,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fortnite-14.webp",
           question: "À sa sortie, le Battle Royale n'existait que sur Xbox.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -205,6 +209,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-17.webp",
           question: "Peely, le skin célèbre de Fortnite, est un ananas.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -238,6 +243,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-20.webp",
           question: "Dans Fortnite, on peut se soigner avec des bandages et des trousses de soins.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -256,6 +262,7 @@ export const quizFortnite: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-fortnite-1.webp",
           question: "Fortnite is developed by Epic Games.",
           answers: [
             { id: "a", text: "True" },
@@ -267,6 +274,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-fortnite-2.webp",
           question: "Fortnite's Battle Royale mode came out in September 2017.",
           answers: [
             { id: "a", text: "True" },
@@ -370,6 +378,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fortnite-11.webp",
           question: "In Fortnite, you build with three materials: wood, stone and metal.",
           answers: [
             { id: "a", text: "True" },
@@ -403,6 +412,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fortnite-14.webp",
           question: "When it came out, Battle Royale was only on Xbox.",
           answers: [
             { id: "a", text: "True" },
@@ -436,6 +446,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-17.webp",
           question: "Peely, the famous Fortnite skin, is a pineapple.",
           answers: [
             { id: "a", text: "True" },
@@ -469,6 +480,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-20.webp",
           question: "In Fortnite, you can heal with bandages and med kits.",
           answers: [
             { id: "a", text: "True" },
@@ -487,6 +499,7 @@ export const quizFortnite: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-fortnite-1.webp",
           question: "Fortnite está desarrollado por Epic Games.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -498,6 +511,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-fortnite-2.webp",
           question: "El modo Battle Royale de Fortnite salió en septiembre de 2017.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -601,6 +615,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fortnite-11.webp",
           question: "En Fortnite se construye con tres materiales: madera, piedra y metal.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -634,6 +649,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fortnite-14.webp",
           question: "Cuando salió, el Battle Royale solo estaba en Xbox.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -667,6 +683,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-17.webp",
           question: "Peely, el famoso skin de Fortnite, es una piña.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -700,6 +717,7 @@ export const quizFortnite: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-20.webp",
           question: "En Fortnite te puedes curar con vendas y botiquines.",
           answers: [
             { id: "a", text: "Verdadero" },

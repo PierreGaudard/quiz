@@ -85,6 +85,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-world-of-warcraft-races-6.webp",
           question: "De quel royaume humain viennent les worgens ?",
           answers: [
             { id: "a", text: "Lordaeron" },
@@ -153,6 +154,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-world-of-warcraft-races-12.webp",
           question: "Dans quel camp jouent les orcs ?",
           answers: [
             { id: "a", text: "La Horde" },
@@ -186,6 +188,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-world-of-warcraft-races-15.webp",
           question: "Dans quel camp jouent les elfes du Vide ?",
           answers: [
             { id: "a", text: "La Horde" },
@@ -208,6 +211,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-races-17.webp",
           question: "Qui a dirigé les taurens jusqu'à sa mort dans Cataclysm ?",
           answers: [
             { id: "a", text: "Cairne Sabot-de-Sang" },
@@ -241,6 +245,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-races-20.webp",
           question: "Qui est à la tête des elfes de la nuit ?",
           answers: [
             { id: "a", text: "Tyrande Murmevent" },
@@ -317,6 +322,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-world-of-warcraft-races-6.webp",
           question: "Which human kingdom do the worgen come from?",
           answers: [
             { id: "a", text: "Lordaeron" },
@@ -385,6 +391,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-world-of-warcraft-races-12.webp",
           question: "Which side do the orcs play on?",
           answers: [
             { id: "a", text: "The Horde" },
@@ -418,6 +425,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-world-of-warcraft-races-15.webp",
           question: "Which side do the void elves play on?",
           answers: [
             { id: "a", text: "The Horde" },
@@ -440,6 +448,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-races-17.webp",
           question: "Who led the tauren until he died in Cataclysm?",
           answers: [
             { id: "a", text: "Cairne Bloodhoof" },
@@ -473,6 +482,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-races-20.webp",
           question: "Who leads the night elves?",
           answers: [
             { id: "a", text: "Tyrande Whisperwind" },
@@ -549,6 +559,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-world-of-warcraft-races-6.webp",
           question: "¿De qué reino humano vienen los huargen?",
           answers: [
             { id: "a", text: "Lordaeron" },
@@ -617,6 +628,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-world-of-warcraft-races-12.webp",
           question: "¿En qué bando juegan los orcos?",
           answers: [
             { id: "a", text: "La Horda" },
@@ -650,6 +662,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-world-of-warcraft-races-15.webp",
           question: "¿En qué bando juegan los elfos del Vacío?",
           answers: [
             { id: "a", text: "La Horda" },
@@ -672,6 +685,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-races-17.webp",
           question: "¿Quién dirigió a los taurens hasta su muerte en Cataclysm?",
           answers: [
             { id: "a", text: "Cairne Pezuña de Sangre" },
@@ -705,6 +719,7 @@ export const quizWorldOfWarcraftRaces: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-races-20.webp",
           question: "¿Quién está al frente de los elfos de la noche?",
           answers: [
             { id: "a", text: "Tyrande Susurravientos" },

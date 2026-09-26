@@ -25,6 +25,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-sciences-savants-1.webp",
           question: "Qui a formulé la loi de la gravitation universelle ?",
           answers: [
             { id: "a", text: "Isaac Newton" },
@@ -36,6 +37,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-sciences-savants-2.webp",
           question: "Qui a expliqué l'évolution des espèces par la sélection naturelle ?",
           answers: [
             { id: "a", text: "Jean-Baptiste de Lamarck" },
@@ -139,6 +141,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-sciences-savants-11.webp",
           question: "Qui a montré en 1911 que l'atome a un petit noyau très dense en son centre ?",
           answers: [
             { id: "a", text: "Ernest Rutherford" },
@@ -172,6 +175,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-sciences-savants-14.webp",
           question: "Qui a mis au point le premier vaccin, contre la variole, en 1796 ?",
           answers: [
             { id: "a", text: "Louis Pasteur" },
@@ -205,6 +209,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-sciences-savants-17.webp",
           question: "Qui a découvert en 1831 qu'un aimant qui bouge dans une bobine crée un courant électrique ?",
           answers: [
             { id: "a", text: "Michael Faraday" },
@@ -238,6 +243,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-savants-20.webp",
           question: "Quelle physicienne a expliqué la fission nucléaire, découverte avec son collègue Otto Hahn ?",
           answers: [
             { id: "a", text: "Irène Joliot-Curie" },
@@ -256,6 +262,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-sciences-savants-1.webp",
           question: "Who came up with the law of universal gravitation?",
           answers: [
             { id: "a", text: "Isaac Newton" },
@@ -267,6 +274,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-sciences-savants-2.webp",
           question: "Who explained evolution through natural selection?",
           answers: [
             { id: "a", text: "Jean-Baptiste de Lamarck" },
@@ -370,6 +378,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-sciences-savants-11.webp",
           question: "Who showed in 1911 that the atom has a tiny, very dense nucleus at its centre?",
           answers: [
             { id: "a", text: "Ernest Rutherford" },
@@ -403,6 +412,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-sciences-savants-14.webp",
           question: "Who developed the first vaccine, against smallpox, in 1796?",
           answers: [
             { id: "a", text: "Louis Pasteur" },
@@ -436,6 +446,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-sciences-savants-17.webp",
           question: "Who discovered in 1831 that moving a magnet through a coil creates an electric current?",
           answers: [
             { id: "a", text: "Michael Faraday" },
@@ -469,6 +480,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-savants-20.webp",
           question: "Which physicist explained nuclear fission, discovered with her colleague Otto Hahn?",
           answers: [
             { id: "a", text: "Irène Joliot-Curie" },
@@ -487,6 +499,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-sciences-savants-1.webp",
           question: "¿Quién formuló la ley de la gravitación universal?",
           answers: [
             { id: "a", text: "Isaac Newton" },
@@ -498,6 +511,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-sciences-savants-2.webp",
           question: "¿Quién explicó la evolución de las especies por selección natural?",
           answers: [
             { id: "a", text: "Jean-Baptiste de Lamarck" },
@@ -601,6 +615,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-sciences-savants-11.webp",
           question: "¿Quién demostró en 1911 que el átomo tiene un núcleo muy pequeño y denso en el centro?",
           answers: [
             { id: "a", text: "Ernest Rutherford" },
@@ -634,6 +649,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-sciences-savants-14.webp",
           question: "¿Quién creó la primera vacuna, contra la viruela, en 1796?",
           answers: [
             { id: "a", text: "Louis Pasteur" },
@@ -667,6 +683,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-sciences-savants-17.webp",
           question: "¿Quién descubrió en 1831 que un imán que se mueve dentro de una bobina crea una corriente eléctrica?",
           answers: [
             { id: "a", text: "Michael Faraday" },
@@ -700,6 +717,7 @@ export const quizSciencesSavants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-savants-20.webp",
           question: "¿Qué física explicó la fisión nuclear, descubierta junto a su colega Otto Hahn?",
           answers: [
             { id: "a", text: "Irène Joliot-Curie" },

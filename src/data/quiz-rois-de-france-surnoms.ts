@@ -55,6 +55,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-rois-de-france-surnoms-3.webp",
           question: "Quel est le surnom de Louis X, roi de 1314 à 1316 ?",
           answers: [
             { id: "a", text: "Le Jeune" },
@@ -108,6 +109,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-rois-de-france-surnoms-7.webp",
           question: "Quel est le surnom de Louis VI, roi de 1108 à 1137 ?",
           answers: [
             { id: "a", text: "Le Jeune" },
@@ -175,6 +177,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rois-de-france-surnoms-12.webp",
           question: "Quel est le surnom de Charles VII, le roi que Jeanne d'Arc a fait sacrer à Reims ?",
           answers: [
             { id: "a", text: "Le Chauve" },
@@ -214,6 +217,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rois-de-france-surnoms-15.webp",
           question: "Quel est le surnom de Charles III, roi de 898 à 922 ?",
           answers: [
             { id: "a", text: "Le Sage" },
@@ -240,6 +244,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rois-de-france-surnoms-17.webp",
           question: "Quel est le surnom de Louis VIII, roi de 1223 à 1226 ?",
           answers: [
             { id: "a", text: "Le Lion" },
@@ -279,6 +284,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-surnoms-20.webp",
           question: "Quel est le surnom de Louis XVIII, revenu sur le trône en 1814 ?",
           answers: [
             { id: "a", text: "Le Désiré" },
@@ -326,6 +332,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-rois-de-france-surnoms-3.webp",
           question: "What was the nickname of Louis X, king from 1314 to 1316?",
           answers: [
             { id: "a", text: "The Young" },
@@ -379,6 +386,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-rois-de-france-surnoms-7.webp",
           question: "What was the nickname of Louis VI, king from 1108 to 1137?",
           answers: [
             { id: "a", text: "The Young" },
@@ -446,6 +454,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rois-de-france-surnoms-12.webp",
           question: "What was the nickname of Charles VII, the king Joan of Arc had crowned at Reims?",
           answers: [
             { id: "a", text: "The Bald" },
@@ -485,6 +494,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rois-de-france-surnoms-15.webp",
           question: "What was the nickname of Charles III, king from 898 to 922?",
           answers: [
             { id: "a", text: "The Wise" },
@@ -511,6 +521,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rois-de-france-surnoms-17.webp",
           question: "What was the nickname of Louis VIII, king from 1223 to 1226?",
           answers: [
             { id: "a", text: "The Lion" },
@@ -550,6 +561,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-surnoms-20.webp",
           question: "What was the nickname of Louis XVIII, who returned to the throne in 1814?",
           answers: [
             { id: "a", text: "The Desired" },
@@ -597,6 +609,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-rois-de-france-surnoms-3.webp",
           question: "¿Cuál es el apodo de Luis X, rey de 1314 a 1316?",
           answers: [
             { id: "a", text: "El Joven" },
@@ -650,6 +663,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-rois-de-france-surnoms-7.webp",
           question: "¿Cuál es el apodo de Luis VI, rey de 1108 a 1137?",
           answers: [
             { id: "a", text: "El Joven" },
@@ -717,6 +731,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-rois-de-france-surnoms-12.webp",
           question: "¿Cuál es el apodo de Carlos VII, el rey al que Juana de Arco hizo coronar en Reims?",
           answers: [
             { id: "a", text: "El Calvo" },
@@ -756,6 +771,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-rois-de-france-surnoms-15.webp",
           question: "¿Cuál es el apodo de Carlos III, rey de 898 a 922?",
           answers: [
             { id: "a", text: "El Sabio" },
@@ -782,6 +798,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rois-de-france-surnoms-17.webp",
           question: "¿Cuál es el apodo de Luis VIII, rey de 1223 a 1226?",
           answers: [
             { id: "a", text: "El León" },
@@ -821,6 +838,7 @@ export const quizRoisDeFranceSurnoms: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rois-de-france-surnoms-20.webp",
           question: "¿Cuál es el apodo de Luis XVIII, que volvió al trono en 1814?",
           answers: [
             { id: "a", text: "El Deseado" },

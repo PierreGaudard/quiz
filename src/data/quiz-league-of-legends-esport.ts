@@ -73,6 +73,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-league-of-legends-esport-5.webp",
           question: "Le championnat européen de League of Legends s'appelle la LCK.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -153,6 +154,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-esport-12.webp",
           question: "Les Worlds 2021 se sont joués en Islande.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -186,6 +188,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-esport-15.webp",
           question: "Une équipe nord-américaine a déjà gagné les Worlds.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -208,6 +211,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-esport-17.webp",
           question: "Avant 2019, la LEC s'appelait EU LCS.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -241,6 +245,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-esport-20.webp",
           question: "En 2018, l'équipe européenne Fnatic a joué la finale des Worlds.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -305,6 +310,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-league-of-legends-esport-5.webp",
           question: "The European League of Legends championship is called the LCK.",
           answers: [
             { id: "a", text: "True" },
@@ -385,6 +391,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-esport-12.webp",
           question: "Worlds 2021 was played in Iceland.",
           answers: [
             { id: "a", text: "True" },
@@ -418,6 +425,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-esport-15.webp",
           question: "A North American team has already won Worlds.",
           answers: [
             { id: "a", text: "True" },
@@ -440,6 +448,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-esport-17.webp",
           question: "Before 2019, the LEC was called the EU LCS.",
           answers: [
             { id: "a", text: "True" },
@@ -473,6 +482,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-esport-20.webp",
           question: "In 2018, the European team Fnatic played in the Worlds final.",
           answers: [
             { id: "a", text: "True" },
@@ -537,6 +547,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-league-of-legends-esport-5.webp",
           question: "El campeonato europeo de League of Legends se llama LCK.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -617,6 +628,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-esport-12.webp",
           question: "El Mundial 2021 se jugó en Islandia.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -650,6 +662,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-esport-15.webp",
           question: "Un equipo de Norteamérica ya ha ganado el Mundial.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -672,6 +685,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-esport-17.webp",
           question: "Antes de 2019, la LEC se llamaba EU LCS.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -705,6 +719,7 @@ export const quizLeagueOfLegendsEsport: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-esport-20.webp",
           question: "En 2018, el equipo europeo Fnatic jugó la final del Mundial.",
           answers: [
             { id: "a", text: "Verdadero" },

@@ -40,6 +40,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-league-of-legends-champions-2.webp",
           question: "Quel champion de Shurima a une tête de chacal ?",
           answers: [
             { id: "a", text: "Renekton" },
@@ -80,6 +81,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-league-of-legends-champions-5.webp",
           question: "Quel champion au sabre est le grand frère de Yasuo ?",
           answers: [
             { id: "a", text: "Yone" },
@@ -173,6 +175,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-champions-12.webp",
           question: "Combien de queues a Ahri, la championne renarde ?",
           answers: [
             { id: "a", text: "3" },
@@ -212,6 +215,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-champions-15.webp",
           question: "Quel art martial Maître Yi pratique-t-il ?",
           answers: [
             { id: "a", text: "Le Kinkou" },
@@ -238,6 +242,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-champions-17.webp",
           question: "Que pose Heimerdinger, le yordle inventeur de Piltover ?",
           answers: [
             { id: "a", text: "Des pièges à ours" },
@@ -277,6 +282,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-champions-20.webp",
           question: "Qui est la sœur jumelle de Kayle, l'ange à l'épée de feu ?",
           answers: [
             { id: "a", text: "Morgana" },
@@ -311,6 +317,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-league-of-legends-champions-2.webp",
           question: "Which Shurima champion has a jackal's head?",
           answers: [
             { id: "a", text: "Renekton" },
@@ -351,6 +358,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-league-of-legends-champions-5.webp",
           question: "Which sword-wielding champion is Yasuo's older brother?",
           answers: [
             { id: "a", text: "Yone" },
@@ -444,6 +452,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-champions-12.webp",
           question: "How many tails does Ahri, the fox champion, have?",
           answers: [
             { id: "a", text: "3" },
@@ -483,6 +492,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-champions-15.webp",
           question: "Which martial art does Master Yi practice?",
           answers: [
             { id: "a", text: "Kinkou" },
@@ -509,6 +519,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-champions-17.webp",
           question: "What does Heimerdinger, Piltover's yordle inventor, set down?",
           answers: [
             { id: "a", text: "Bear traps" },
@@ -548,6 +559,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-champions-20.webp",
           question: "Who is the twin sister of Kayle, the angel with the flaming sword?",
           answers: [
             { id: "a", text: "Morgana" },
@@ -582,6 +594,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-league-of-legends-champions-2.webp",
           question: "¿Qué campeón de Shurima tiene cabeza de chacal?",
           answers: [
             { id: "a", text: "Renekton" },
@@ -622,6 +635,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-league-of-legends-champions-5.webp",
           question: "¿Qué campeón con espada es el hermano mayor de Yasuo?",
           answers: [
             { id: "a", text: "Yone" },
@@ -715,6 +729,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-champions-12.webp",
           question: "¿Cuántas colas tiene Ahri, la campeona zorro?",
           answers: [
             { id: "a", text: "3" },
@@ -754,6 +769,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-champions-15.webp",
           question: "¿Qué arte marcial practica el Maestro Yi?",
           answers: [
             { id: "a", text: "El Kinkou" },
@@ -780,6 +796,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-champions-17.webp",
           question: "¿Qué coloca Heimerdinger, el yordle inventor de Piltover?",
           answers: [
             { id: "a", text: "Trampas para osos" },
@@ -819,6 +836,7 @@ export const quizLeagueOfLegendsChampions: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-champions-20.webp",
           question: "¿Quién es la hermana gemela de Kayle, el ángel de la espada de fuego?",
           answers: [
             { id: "a", text: "Morgana" },

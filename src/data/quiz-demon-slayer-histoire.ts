@@ -40,6 +40,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-histoire-2.webp",
           question: "Remets ces arcs dans l'ordre de l'histoire.",
           answers: [
             { id: "a", text: "Le Quartier des plaisirs" },
@@ -54,6 +55,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-demon-slayer-histoire-3.webp",
           question: "Remets ces Lunes supérieures de la plus forte à la moins forte.",
           answers: [
             { id: "a", text: "Kokushibo" },
@@ -169,6 +171,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-demon-slayer-histoire-11.webp",
           question: "Remets ces étapes dans l'ordre, juste après la Sélection finale.",
           answers: [
             { id: "a", text: "Tanjiro survit sept jours sur le mont Fujikasane" },
@@ -211,6 +214,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-demon-slayer-histoire-14.webp",
           question: "Remets ces moments de la vie de Nezuko dans l'ordre.",
           answers: [
             { id: "a", text: "Elle devient un démon" },
@@ -253,6 +257,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-demon-slayer-histoire-17.webp",
           question: "Remets ces respirations dans l'ordre, de la plus ancienne à celle qui en découle.",
           answers: [
             { id: "a", text: "Le Soleil" },
@@ -295,6 +300,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-histoire-20.webp",
           question: "Remets ces moments de la fin de l'histoire dans l'ordre.",
           answers: [
             { id: "a", text: "Muzan meurt au soleil" },
@@ -331,6 +337,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-histoire-2.webp",
           question: "Put these arcs in story order.",
           answers: [
             { id: "a", text: "Entertainment District" },
@@ -345,6 +352,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-demon-slayer-histoire-3.webp",
           question: "Put these Upper Moons from strongest to weakest.",
           answers: [
             { id: "a", text: "Kokushibo" },
@@ -460,6 +468,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-demon-slayer-histoire-11.webp",
           question: "Put these steps in order, right after the Final Selection.",
           answers: [
             { id: "a", text: "Tanjiro survives seven days on Mount Fujikasane" },
@@ -502,6 +511,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-demon-slayer-histoire-14.webp",
           question: "Put these moments from Nezuko's life in order.",
           answers: [
             { id: "a", text: "She becomes a demon" },
@@ -544,6 +554,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-demon-slayer-histoire-17.webp",
           question: "Put these breathing styles in order, from the oldest to the one that comes from it.",
           answers: [
             { id: "a", text: "Sun" },
@@ -586,6 +597,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-histoire-20.webp",
           question: "Put these moments from the end of the story in order.",
           answers: [
             { id: "a", text: "Muzan dies in the sunlight" },
@@ -622,6 +634,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-histoire-2.webp",
           question: "Pon estos arcos en el orden de la historia.",
           answers: [
             { id: "a", text: "El Distrito Rojo" },
@@ -636,6 +649,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-demon-slayer-histoire-3.webp",
           question: "Ordena estas Lunas Superiores de la más fuerte a la menos fuerte.",
           answers: [
             { id: "a", text: "Kokushibo" },
@@ -751,6 +765,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-demon-slayer-histoire-11.webp",
           question: "Ordena estos pasos, justo después de la Selección Final.",
           answers: [
             { id: "a", text: "Tanjiro sobrevive siete días en el monte Fujikasane" },
@@ -793,6 +808,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-demon-slayer-histoire-14.webp",
           question: "Ordena estos momentos de la vida de Nezuko.",
           answers: [
             { id: "a", text: "Se convierte en demonio" },
@@ -835,6 +851,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-demon-slayer-histoire-17.webp",
           question: "Ordena estas respiraciones, de la más antigua a la que nace de ella.",
           answers: [
             { id: "a", text: "El Sol" },
@@ -877,6 +894,7 @@ export const quizDemonSlayerHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-histoire-20.webp",
           question: "Ordena estos momentos del final de la historia.",
           answers: [
             { id: "a", text: "Muzan muere con la luz del sol" },

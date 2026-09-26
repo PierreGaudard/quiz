@@ -26,6 +26,7 @@ export const quizNaruto: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-naruto-1.webp",
           question: "Dans quel village vit Naruto ?",
           answers: [
             { id: "a", text: "Konoha" },
@@ -39,6 +40,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-naruto-2.webp",
           question: "Quel démon est scellé en Naruto ?",
           answers: [
             { id: "a", text: "Shukaku" },
@@ -52,6 +54,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-naruto-3.webp",
           question: "Qui entraîne Naruto pendant les deux ans et demi d'ellipse ?",
           answers: [
             { id: "a", text: "Kakashi" },
@@ -78,6 +81,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-naruto-5.webp",
           question: "Quel titre Naruto veut-il obtenir ?",
           answers: [
             { id: "a", text: "Kazekage" },
@@ -104,6 +108,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-naruto-7.webp",
           question: "Quelle organisation Itachi rejoint-il ?",
           answers: [
             { id: "a", text: "L'Akatsuki" },
@@ -143,6 +148,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-naruto-10.webp",
           question: "Comment s'appelle la coéquipière de Naruto et Sasuke ?",
           answers: [
             { id: "a", text: "Ino" },
@@ -169,6 +175,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-naruto-12.webp",
           question: "Quel est le plat préféré de Naruto ?",
           answers: [
             { id: "a", text: "Les sushis" },
@@ -208,6 +215,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-naruto-15.webp",
           question: "Qui devient le Cinquième Hokage ?",
           answers: [
             { id: "a", text: "Tsunade" },
@@ -234,6 +242,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-naruto-17.webp",
           question: "Comment s'appelle le fils de Naruto ?",
           answers: [
             { id: "a", text: "Kawaki" },
@@ -273,6 +282,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-20.webp",
           question: "Quel est le nom de famille de Naruto ?",
           answers: [
             { id: "a", text: "Uchiwa" },
@@ -293,6 +303,7 @@ export const quizNaruto: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-naruto-1.webp",
           question: "Which village does Naruto live in?",
           answers: [
             { id: "a", text: "Konoha" },
@@ -306,6 +317,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-naruto-2.webp",
           question: "Which beast is sealed inside Naruto?",
           answers: [
             { id: "a", text: "Shukaku" },
@@ -319,6 +331,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-naruto-3.webp",
           question: "Who trains Naruto during the two-and-a-half-year time skip?",
           answers: [
             { id: "a", text: "Kakashi" },
@@ -345,6 +358,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-naruto-5.webp",
           question: "Which title does Naruto want?",
           answers: [
             { id: "a", text: "Kazekage" },
@@ -371,6 +385,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-naruto-7.webp",
           question: "Which organisation does Itachi join?",
           answers: [
             { id: "a", text: "Akatsuki" },
@@ -410,6 +425,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-naruto-10.webp",
           question: "Who is the third member of Team 7?",
           answers: [
             { id: "a", text: "Ino" },
@@ -436,6 +452,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-naruto-12.webp",
           question: "What is Naruto's favourite food?",
           answers: [
             { id: "a", text: "Sushi" },
@@ -475,6 +492,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-naruto-15.webp",
           question: "Who becomes the Fifth Hokage?",
           answers: [
             { id: "a", text: "Tsunade" },
@@ -501,6 +519,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-naruto-17.webp",
           question: "What is the name of Naruto's son?",
           answers: [
             { id: "a", text: "Kawaki" },
@@ -540,6 +559,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-20.webp",
           question: "What is Naruto's surname?",
           answers: [
             { id: "a", text: "Uchiha" },
@@ -560,6 +580,7 @@ export const quizNaruto: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-naruto-1.webp",
           question: "¿En qué aldea vive Naruto?",
           answers: [
             { id: "a", text: "Konoha" },
@@ -573,6 +594,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-naruto-2.webp",
           question: "¿Qué bestia está sellada dentro de Naruto?",
           answers: [
             { id: "a", text: "Shukaku" },
@@ -586,6 +608,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-naruto-3.webp",
           question: "¿Quién entrena a Naruto durante el salto de dos años y medio?",
           answers: [
             { id: "a", text: "Kakashi" },
@@ -612,6 +635,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-naruto-5.webp",
           question: "¿Qué título quiere conseguir Naruto?",
           answers: [
             { id: "a", text: "Kazekage" },
@@ -638,6 +662,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-naruto-7.webp",
           question: "¿A qué organización se une Itachi?",
           answers: [
             { id: "a", text: "Akatsuki" },
@@ -677,6 +702,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-naruto-10.webp",
           question: "¿Quién es el tercer miembro del Equipo 7?",
           answers: [
             { id: "a", text: "Ino" },
@@ -703,6 +729,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-naruto-12.webp",
           question: "¿Cuál es la comida favorita de Naruto?",
           answers: [
             { id: "a", text: "El sushi" },
@@ -742,6 +769,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-naruto-15.webp",
           question: "¿Quién se convierte en el Quinto Hokage?",
           answers: [
             { id: "a", text: "Tsunade" },
@@ -768,6 +796,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-naruto-17.webp",
           question: "¿Cómo se llama el hijo de Naruto?",
           answers: [
             { id: "a", text: "Kawaki" },
@@ -807,6 +836,7 @@ export const quizNaruto: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-naruto-20.webp",
           question: "¿Cuál es el apellido de Naruto?",
           answers: [
             { id: "a", text: "Uchiha" },

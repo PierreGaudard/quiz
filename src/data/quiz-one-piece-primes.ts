@@ -36,6 +36,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-one-piece-primes-2.webp",
           question: "À combien de millions de berrys passe la prime de Luffy après l'arc Wano ?",
           answers: [],
           correctAnswer: "3000",
@@ -130,6 +131,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-one-piece-primes-12.webp",
           question: "Quelle est la prime de Nico Robin après l'arc Wano, en millions de berrys ?",
           answers: [],
           correctAnswer: "930",
@@ -157,6 +159,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-one-piece-primes-15.webp",
           question: "Après Enies Lobby, à combien de millions de berrys passe la prime de Luffy ?",
           answers: [],
           correctAnswer: "300",
@@ -175,6 +178,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-primes-17.webp",
           question: "Quelle était la prime de Barbe Blanche, en millions de berrys ?",
           answers: [],
           correctAnswer: "5046",
@@ -202,6 +206,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-primes-20.webp",
           question: "Quelle est la prime de Shanks le Roux, en millions de berrys ?",
           answers: [],
           correctAnswer: "4048.9",
@@ -228,6 +233,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-one-piece-primes-2.webp",
           question: "How many millions of berries is Luffy's bounty after the Wano arc?",
           answers: [],
           correctAnswer: "3000",
@@ -322,6 +328,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-one-piece-primes-12.webp",
           question: "What is Nico Robin's bounty after the Wano arc, in millions of berries?",
           answers: [],
           correctAnswer: "930",
@@ -349,6 +356,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-one-piece-primes-15.webp",
           question: "After Enies Lobby, how many millions of berries is Luffy's bounty?",
           answers: [],
           correctAnswer: "300",
@@ -367,6 +375,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-primes-17.webp",
           question: "What was Whitebeard's bounty, in millions of berries?",
           answers: [],
           correctAnswer: "5046",
@@ -394,6 +403,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-primes-20.webp",
           question: "What is Red-Haired Shanks' bounty, in millions of berries?",
           answers: [],
           correctAnswer: "4048.9",
@@ -420,6 +430,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-one-piece-primes-2.webp",
           question: "¿A cuántos millones de berries sube la recompensa de Luffy después del arco de Wano?",
           answers: [],
           correctAnswer: "3000",
@@ -514,6 +525,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-one-piece-primes-12.webp",
           question: "¿Cuál es la recompensa de Nico Robin después del arco de Wano, en millones de berries?",
           answers: [],
           correctAnswer: "930",
@@ -541,6 +553,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-one-piece-primes-15.webp",
           question: "Después de Enies Lobby, ¿a cuántos millones de berries sube la recompensa de Luffy?",
           answers: [],
           correctAnswer: "300",
@@ -559,6 +572,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-primes-17.webp",
           question: "¿Cuál era la recompensa de Barbablanca, en millones de berries?",
           answers: [],
           correctAnswer: "5046",
@@ -586,6 +600,7 @@ export const quizOnePiecePrimes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-primes-20.webp",
           question: "¿Cuál es la recompensa de Shanks el Pelirrojo, en millones de berries?",
           answers: [],
           correctAnswer: "4048.9",

@@ -42,6 +42,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-2.webp",
           question: "Classe ces pilotes du plus grand au plus petit nombre de titres mondiaux.",
           answers: [
             { id: "a", text: "Juan Manuel Fangio" },
@@ -56,6 +57,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-formule-1-3.webp",
           question: "Classe ces écuries de la plus ancienne à la plus récente, selon leur date de création.",
           answers: [
             { id: "a", text: "Ferrari" },
@@ -171,6 +173,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-formule-1-11.webp",
           question: "Classe ces champions du monde selon l'année de leur titre, du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Keke Rosberg" },
@@ -213,6 +216,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-formule-1-14.webp",
           question: "Remets dans l'ordre les écuries de Carlos Sainz.",
           answers: [
             { id: "a", text: "Toro Rosso" },
@@ -255,6 +259,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-formule-1-17.webp",
           question: "Remets ces directeurs de la Scuderia Ferrari dans l'ordre où ils ont pris le poste.",
           answers: [
             { id: "a", text: "Stefano Domenicali" },
@@ -297,6 +302,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-20.webp",
           question: "Classe ces écuries selon l'année de leur premier titre de champion du monde des constructeurs.",
           answers: [
             { id: "a", text: "Red Bull" },
@@ -333,6 +339,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-2.webp",
           question: "Rank these drivers from most to fewest world titles.",
           answers: [
             { id: "a", text: "Juan Manuel Fangio" },
@@ -347,6 +354,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-formule-1-3.webp",
           question: "Rank these teams from oldest to newest, by the year they were founded.",
           answers: [
             { id: "a", text: "Ferrari" },
@@ -462,6 +470,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-formule-1-11.webp",
           question: "Rank these world champions by the year of their title, from earliest to latest.",
           answers: [
             { id: "a", text: "Keke Rosberg" },
@@ -504,6 +513,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-formule-1-14.webp",
           question: "Put Carlos Sainz's teams in order.",
           answers: [
             { id: "a", text: "Toro Rosso" },
@@ -546,6 +556,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-formule-1-17.webp",
           question: "Put these Ferrari team principals in the order they took the job.",
           answers: [
             { id: "a", text: "Stefano Domenicali" },
@@ -588,6 +599,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-20.webp",
           question: "Rank these teams by the year of their first constructors' world title.",
           answers: [
             { id: "a", text: "Red Bull" },
@@ -624,6 +636,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-formule-1-2.webp",
           question: "Ordena a estos pilotos de más a menos títulos mundiales.",
           answers: [
             { id: "a", text: "Juan Manuel Fangio" },
@@ -638,6 +651,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-formule-1-3.webp",
           question: "Ordena estas escuderías de la más antigua a la más reciente, según su año de fundación.",
           answers: [
             { id: "a", text: "Ferrari" },
@@ -753,6 +767,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-formule-1-11.webp",
           question: "Ordena a estos campeones del mundo según el año de su título, del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "Keke Rosberg" },
@@ -795,6 +810,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-formule-1-14.webp",
           question: "Ordena las escuderías de Carlos Sainz.",
           answers: [
             { id: "a", text: "Toro Rosso" },
@@ -837,6 +853,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-formule-1-17.webp",
           question: "Ordena a estos jefes de Ferrari según el año en que llegaron al cargo.",
           answers: [
             { id: "a", text: "Stefano Domenicali" },
@@ -879,6 +896,7 @@ export const quizFormule1: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-formule-1-20.webp",
           question: "Ordena estas escuderías según el año de su primer título mundial de constructores.",
           answers: [
             { id: "a", text: "Red Bull" },

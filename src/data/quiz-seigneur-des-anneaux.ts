@@ -25,6 +25,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-1.webp",
           question: "Qui a réalisé la trilogie du Seigneur des Anneaux ?",
           answers: [
             { id: "a", text: "Guillermo del Toro" },
@@ -160,6 +161,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-11.webp",
           question: "Quel acteur joue Aragorn ?",
           answers: [
             { id: "a", text: "Orlando Bloom" },
@@ -199,6 +201,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-14.webp",
           question: "Dans quel film se déroule la bataille du Gouffre de Helm ?",
           answers: [
             { id: "a", text: "La Communauté de l'Anneau" },
@@ -238,6 +241,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-17.webp",
           question: "En quel métal est la cotte de mailles que Bilbon offre à Frodon ?",
           answers: [
             { id: "a", text: "En argent" },
@@ -277,6 +281,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-20.webp",
           question: "Quelle ville est la capitale du Gondor ?",
           answers: [
             { id: "a", text: "Edoras" },
@@ -297,6 +302,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-1.webp",
           question: "Who directed The Lord of the Rings trilogy?",
           answers: [
             { id: "a", text: "Guillermo del Toro" },
@@ -432,6 +438,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-11.webp",
           question: "Which actor plays Aragorn?",
           answers: [
             { id: "a", text: "Orlando Bloom" },
@@ -471,6 +478,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-14.webp",
           question: "Which film features the Battle of Helm's Deep?",
           answers: [
             { id: "a", text: "The Fellowship of the Ring" },
@@ -510,6 +518,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-17.webp",
           question: "What metal is the mail shirt Bilbo gives Frodo made of?",
           answers: [
             { id: "a", text: "Silver" },
@@ -549,6 +558,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-20.webp",
           question: "Which city is the capital of Gondor?",
           answers: [
             { id: "a", text: "Edoras" },
@@ -569,6 +579,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-1.webp",
           question: "¿Quién dirigió la trilogía de El Señor de los Anillos?",
           answers: [
             { id: "a", text: "Guillermo del Toro" },
@@ -704,6 +715,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-11.webp",
           question: "¿Qué actor interpreta a Aragorn?",
           answers: [
             { id: "a", text: "Orlando Bloom" },
@@ -743,6 +755,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-14.webp",
           question: "¿En qué película tiene lugar la batalla del Abismo de Helm?",
           answers: [
             { id: "a", text: "La Comunidad del Anillo" },
@@ -782,6 +795,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-17.webp",
           question: "¿De qué metal es la cota de malla que Bilbo le regala a Frodo?",
           answers: [
             { id: "a", text: "De plata" },
@@ -821,6 +835,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-20.webp",
           question: "¿Qué ciudad es la capital de Gondor?",
           answers: [
             { id: "a", text: "Edoras" },

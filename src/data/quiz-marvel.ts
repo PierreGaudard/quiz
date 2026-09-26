@@ -30,6 +30,7 @@ export const quizMarvel: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-marvel-1.webp",
           question: "Quel film est sorti le premier au cinéma ?",
           answers: [
             { id: "a", text: "Iron Man" },
@@ -41,6 +42,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-marvel-2.webp",
           question: "Lequel est le dieu du tonnerre ?",
           answers: [
             { id: "a", text: "Thor" },
@@ -52,6 +54,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-marvel-3.webp",
           question: "Qui porte le bouclier en vibranium ?",
           answers: [
             { id: "a", text: "Captain America" },
@@ -74,6 +77,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-marvel-5.webp",
           question: "Dans quelle ville vit Spider-Man ?",
           answers: [
             { id: "a", text: "New York" },
@@ -96,6 +100,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-marvel-7.webp",
           question: "Lequel a été créé par Stan Lee et Steve Ditko ?",
           answers: [
             { id: "a", text: "Spider-Man" },
@@ -129,6 +134,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-marvel-10.webp",
           question: "Qui est la sœur de Thor dans Ragnarok ?",
           answers: [
             { id: "a", text: "Hela" },
@@ -151,6 +157,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-marvel-12.webp",
           question: "De quel pays T'Challa est-il le roi ?",
           answers: [
             { id: "a", text: "La Latvérie" },
@@ -184,6 +191,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-marvel-15.webp",
           question: "Dans le film L'Ère d'Ultron, qui crée Ultron ?",
           answers: [
             { id: "a", text: "Hank Pym" },
@@ -206,6 +214,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-17.webp",
           question: "Comment s'appelle la tante de Peter Parker ?",
           answers: [
             { id: "a", text: "Tante Martha" },
@@ -239,6 +248,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-20.webp",
           question: "Quelle entreprise a racheté Marvel en 2009 ?",
           answers: [
             { id: "a", text: "Disney" },
@@ -257,6 +267,7 @@ export const quizMarvel: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-marvel-1.webp",
           question: "Which film came out first in cinemas?",
           answers: [
             { id: "a", text: "Iron Man" },
@@ -268,6 +279,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-marvel-2.webp",
           question: "Which one is the god of thunder?",
           answers: [
             { id: "a", text: "Thor" },
@@ -279,6 +291,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-marvel-3.webp",
           question: "Who carries the vibranium shield?",
           answers: [
             { id: "a", text: "Captain America" },
@@ -301,6 +314,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-marvel-5.webp",
           question: "Which city does Spider-Man live in?",
           answers: [
             { id: "a", text: "New York" },
@@ -323,6 +337,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-marvel-7.webp",
           question: "Which one was created by Stan Lee and Steve Ditko?",
           answers: [
             { id: "a", text: "Spider-Man" },
@@ -356,6 +371,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-marvel-10.webp",
           question: "Who is Thor's sister in Ragnarok?",
           answers: [
             { id: "a", text: "Hela" },
@@ -378,6 +394,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-marvel-12.webp",
           question: "Which country is T'Challa the king of?",
           answers: [
             { id: "a", text: "Latveria" },
@@ -411,6 +428,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-marvel-15.webp",
           question: "In the film Age of Ultron, who creates Ultron?",
           answers: [
             { id: "a", text: "Hank Pym" },
@@ -433,6 +451,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-17.webp",
           question: "What is the name of Peter Parker's aunt?",
           answers: [
             { id: "a", text: "Aunt Martha" },
@@ -466,6 +485,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-20.webp",
           question: "Which company bought Marvel in 2009?",
           answers: [
             { id: "a", text: "Disney" },
@@ -484,6 +504,7 @@ export const quizMarvel: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-marvel-1.webp",
           question: "¿Qué película se estrenó primero en cines?",
           answers: [
             { id: "a", text: "Iron Man" },
@@ -495,6 +516,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-marvel-2.webp",
           question: "¿Cuál es el dios del trueno?",
           answers: [
             { id: "a", text: "Thor" },
@@ -506,6 +528,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-marvel-3.webp",
           question: "¿Quién lleva el escudo de vibranium?",
           answers: [
             { id: "a", text: "Capitán América" },
@@ -528,6 +551,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-marvel-5.webp",
           question: "¿En qué ciudad vive Spider-Man?",
           answers: [
             { id: "a", text: "Nueva York" },
@@ -550,6 +574,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-marvel-7.webp",
           question: "¿Cuál fue creado por Stan Lee y Steve Ditko?",
           answers: [
             { id: "a", text: "Spider-Man" },
@@ -583,6 +608,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-marvel-10.webp",
           question: "¿Quién es la hermana de Thor en Ragnarok?",
           answers: [
             { id: "a", text: "Hela" },
@@ -605,6 +631,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-marvel-12.webp",
           question: "¿De qué país es rey T'Challa?",
           answers: [
             { id: "a", text: "Latveria" },
@@ -638,6 +665,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-marvel-15.webp",
           question: "En la película La era de Ultrón, ¿quién crea a Ultrón?",
           answers: [
             { id: "a", text: "Hank Pym" },
@@ -660,6 +688,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-17.webp",
           question: "¿Cómo se llama la tía de Peter Parker?",
           answers: [
             { id: "a", text: "Tía Martha" },
@@ -693,6 +722,7 @@ export const quizMarvel: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-20.webp",
           question: "¿Qué empresa compró Marvel en 2009?",
           answers: [
             { id: "a", text: "Disney" },

@@ -30,6 +30,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-2.webp",
           question: "Qui est le meilleur buteur de l'histoire de la Coupe du Monde ?",
           answers: [
             { id: "a", text: "Lionel Messi" },
@@ -142,6 +143,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-football-11.webp",
           question: "Quel est le transfert le plus cher de l'histoire du football ?",
           answers: [
             { id: "a", text: "Kylian Mbappé au Real Madrid" },
@@ -178,6 +180,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-football-14.webp",
           question: "Quel est le plus grand stade de football au monde en termes de capacité ?",
           answers: [
             { id: "a", text: "Camp Nou (Barcelone)" },
@@ -214,6 +217,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-17.webp",
           question: "Quel pays a gagné l'Euro 2024, en Allemagne ?",
           answers: [
             { id: "a", text: "Angleterre" },
@@ -253,6 +257,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-20.webp",
           question: "Quelle sélection est devenue la première d'Afrique à jouer une demi-finale de Coupe du monde, en 2022 ?",
           answers: [
             { id: "a", text: "Le Sénégal" },
@@ -285,6 +290,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-2.webp",
           question: "Who is the all-time top scorer in FIFA World Cup history?",
           answers: [
             { id: "a", text: "Lionel Messi" },
@@ -397,6 +403,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-football-11.webp",
           question: "What is the most expensive transfer in football history?",
           answers: [
             { id: "a", text: "Kylian Mbappé to Real Madrid" },
@@ -433,6 +440,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-football-14.webp",
           question: "What is the largest football stadium in the world by capacity?",
           answers: [
             { id: "a", text: "Camp Nou (Barcelona)" },
@@ -469,6 +477,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-17.webp",
           question: "Which country won Euro 2024 in Germany?",
           answers: [
             { id: "a", text: "England" },
@@ -508,6 +517,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-20.webp",
           question: "Which team became the first from Africa to play a World Cup semi-final, in 2022?",
           answers: [
             { id: "a", text: "Senegal" },
@@ -540,6 +550,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-2.webp",
           question: "¿Quién es el máximo goleador en la historia de la Copa del Mundo?",
           answers: [
             { id: "a", text: "Lionel Messi" },
@@ -652,6 +663,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-football-11.webp",
           question: "¿Cuál es el fichaje más caro en la historia del fútbol?",
           answers: [
             { id: "a", text: "Kylian Mbappé al Real Madrid" },
@@ -688,6 +700,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-football-14.webp",
           question: "¿Cuál es el estadio de fútbol más grande del mundo en términos de capacidad?",
           answers: [
             { id: "a", text: "Camp Nou (Barcelona)" },
@@ -724,6 +737,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-17.webp",
           question: "¿Qué selección ganó la Eurocopa 2024, en Alemania?",
           answers: [
             { id: "a", text: "Inglaterra" },
@@ -763,6 +777,7 @@ export const quizFootball: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-20.webp",
           question: "¿Qué selección fue la primera de África en jugar una semifinal del Mundial, en 2022?",
           answers: [
             { id: "a", text: "Senegal" },

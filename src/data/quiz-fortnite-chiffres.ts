@@ -46,6 +46,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fortnite-chiffres-3.webp",
           question: "Combien de joueurs compte une équipe en mode Section ?",
           answers: [],
           correctAnswer: "4",
@@ -131,6 +132,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fortnite-chiffres-12.webp",
           question: "En quelle année est sorti Unreal, le jeu qui a donné son nom au moteur de Fortnite ?",
           answers: [],
           correctAnswer: "1998",
@@ -158,6 +160,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fortnite-chiffres-15.webp",
           question: "À son lancement, quel pourcentage de chaque vente l'Epic Games Store gardait-il pour lui ?",
           answers: [],
           correctAnswer: "12",
@@ -176,6 +179,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-chiffres-17.webp",
           question: "En février 2024, combien de milliards de dollars Disney investit-il dans Epic Games ?",
           answers: [],
           correctAnswer: "1.5",
@@ -203,6 +207,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-chiffres-20.webp",
           question: "Retiré de l'App Store en 2020, Fortnite est revenu sur les iPhone américains. En quelle année ?",
           answers: [],
           correctAnswer: "2025",
@@ -238,6 +243,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fortnite-chiffres-3.webp",
           question: "How many players are there in a Squads team?",
           answers: [],
           correctAnswer: "4",
@@ -323,6 +329,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fortnite-chiffres-12.webp",
           question: "In what year did Unreal, the game that gave Fortnite's engine its name, come out?",
           answers: [],
           correctAnswer: "1998",
@@ -350,6 +357,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fortnite-chiffres-15.webp",
           question: "At launch, what percentage of each sale did the Epic Games Store keep?",
           answers: [],
           correctAnswer: "12",
@@ -368,6 +376,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-chiffres-17.webp",
           question: "In February 2024, how many billions of dollars did Disney invest in Epic Games?",
           answers: [],
           correctAnswer: "1.5",
@@ -395,6 +404,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-chiffres-20.webp",
           question: "Pulled from the App Store in 2020, Fortnite came back to American iPhones. In what year?",
           answers: [],
           correctAnswer: "2025",
@@ -430,6 +440,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fortnite-chiffres-3.webp",
           question: "¿Cuántos jugadores tiene un equipo en el modo Escuadrones?",
           answers: [],
           correctAnswer: "4",
@@ -515,6 +526,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fortnite-chiffres-12.webp",
           question: "¿En qué año salió Unreal, el juego que dio nombre al motor de Fortnite?",
           answers: [],
           correctAnswer: "1998",
@@ -542,6 +554,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fortnite-chiffres-15.webp",
           question: "Al abrir, ¿qué porcentaje de cada venta se quedaba la Epic Games Store?",
           answers: [],
           correctAnswer: "12",
@@ -560,6 +573,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fortnite-chiffres-17.webp",
           question: "En febrero de 2024, ¿cuántos miles de millones de dólares invirtió Disney en Epic Games?",
           answers: [],
           correctAnswer: "1.5",
@@ -587,6 +601,7 @@ export const quizFortniteChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fortnite-chiffres-20.webp",
           question: "Retirado de la App Store en 2020, Fortnite volvió a los iPhone de Estados Unidos. ¿En qué año?",
           answers: [],
           correctAnswer: "2025",

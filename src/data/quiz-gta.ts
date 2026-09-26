@@ -73,6 +73,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-gta-6.webp",
           question: "En combien de jours GTA V a-t-il rapporté un milliard de dollars ?",
           answers: [],
           correctAnswer: "3",
@@ -129,6 +130,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-gta-12.webp",
           question: "En quelle année est sorti GTA IV, avec Niko Bellic ?",
           answers: [],
           correctAnswer: "2008",
@@ -156,6 +158,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-gta-15.webp",
           question: "En quelle année se passe GTA London, l'extension du premier GTA sortie en 1999 ?",
           answers: [],
           correctAnswer: "1969",
@@ -174,6 +177,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-17.webp",
           question: "En quelle année éclate l'affaire « Hot Coffee », une scène cachée dans San Andreas ?",
           answers: [],
           correctAnswer: "2005",
@@ -201,6 +205,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-20.webp",
           question: "En quelle année est sorti GTA Chinatown Wars, d'abord sur Nintendo DS ?",
           answers: [],
           correctAnswer: "2009",
@@ -265,6 +270,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-gta-6.webp",
           question: "How many days did it take GTA V to make a billion dollars?",
           answers: [],
           correctAnswer: "3",
@@ -321,6 +327,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-gta-12.webp",
           question: "In what year did GTA IV, starring Niko Bellic, come out?",
           answers: [],
           correctAnswer: "2008",
@@ -348,6 +355,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-gta-15.webp",
           question: "In what year is GTA London, the expansion for the first GTA released in 1999, set?",
           answers: [],
           correctAnswer: "1969",
@@ -366,6 +374,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-17.webp",
           question: "In what year did the \"Hot Coffee\" scandal, over a hidden scene in San Andreas, break?",
           answers: [],
           correctAnswer: "2005",
@@ -393,6 +402,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-20.webp",
           question: "In what year did GTA Chinatown Wars come out, first on Nintendo DS?",
           answers: [],
           correctAnswer: "2009",
@@ -457,6 +467,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-gta-6.webp",
           question: "¿En cuántos días recaudó GTA V mil millones de dólares?",
           answers: [],
           correctAnswer: "3",
@@ -513,6 +524,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-gta-12.webp",
           question: "¿En qué año salió GTA IV, con Niko Bellic?",
           answers: [],
           correctAnswer: "2008",
@@ -540,6 +552,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-gta-15.webp",
           question: "¿En qué año transcurre GTA London, la expansión del primer GTA que salió en 1999?",
           answers: [],
           correctAnswer: "1969",
@@ -558,6 +571,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-17.webp",
           question: "¿En qué año estalla el escándalo \"Hot Coffee\", por una escena oculta en San Andreas?",
           answers: [],
           correctAnswer: "2005",
@@ -585,6 +599,7 @@ export const quizGta: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-20.webp",
           question: "¿En qué año salió GTA Chinatown Wars, primero en Nintendo DS?",
           answers: [],
           correctAnswer: "2009",

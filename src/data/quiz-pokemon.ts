@@ -41,6 +41,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-2.webp",
           question: "De quel type est Pikachu ?",
           answers: [
             { id: "a", text: "Électrik" },
@@ -54,6 +55,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-pokemon-3.webp",
           question: "En quelle année les premiers jeux Pokémon sont-ils sortis au Japon ?",
           answers: [
             { id: "a", text: "1994" },
@@ -174,6 +176,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-pokemon-12.webp",
           question: "Quel objet faut-il utiliser pour faire évoluer Pikachu en Raichu ?",
           answers: [
             { id: "a", text: "Une Pierre Foudre" },
@@ -213,6 +216,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-pokemon-15.webp",
           question: "Comment s'appelle le grand rival de Sacha au début du dessin animé ?",
           answers: [
             { id: "a", text: "Régis" },
@@ -239,6 +243,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-17.webp",
           question: "De quels mots japonais vient le nom « Pokémon » ?",
           answers: [
             { id: "a", text: "Poketto Monsutā, « monstres de poche »" },
@@ -278,6 +283,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-20.webp",
           question: "Quel Pokémon endort tout le monde en chantant, puis dessine sur le visage de ceux qui se sont endormis ?",
           answers: [
             { id: "a", text: "Rondoudou" },
@@ -312,6 +318,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-2.webp",
           question: "What type is Pikachu?",
           answers: [
             { id: "a", text: "Electric" },
@@ -325,6 +332,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-pokemon-3.webp",
           question: "In what year did the first Pokémon games come out in Japan?",
           answers: [
             { id: "a", text: "1994" },
@@ -445,6 +453,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-pokemon-12.webp",
           question: "Which item do you need to evolve Pikachu into Raichu?",
           answers: [
             { id: "a", text: "A Thunder Stone" },
@@ -484,6 +493,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-pokemon-15.webp",
           question: "Who is Ash's big rival at the start of the anime?",
           answers: [
             { id: "a", text: "Gary" },
@@ -510,6 +520,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-17.webp",
           question: "Which Japanese words does the name \"Pokémon\" come from?",
           answers: [
             { id: "a", text: "Poketto Monsutā, \"pocket monsters\"" },
@@ -549,6 +560,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-20.webp",
           question: "Which Pokémon sings everyone to sleep, then draws on the faces of those who fell asleep?",
           answers: [
             { id: "a", text: "Jigglypuff" },
@@ -583,6 +595,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-pokemon-2.webp",
           question: "¿De qué tipo es Pikachu?",
           answers: [
             { id: "a", text: "Eléctrico" },
@@ -596,6 +609,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-pokemon-3.webp",
           question: "¿En qué año salieron en Japón los primeros juegos de Pokémon?",
           answers: [
             { id: "a", text: "1994" },
@@ -716,6 +730,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-pokemon-12.webp",
           question: "¿Qué objeto hace falta para que Pikachu evolucione en Raichu?",
           answers: [
             { id: "a", text: "Una Piedra Trueno" },
@@ -755,6 +770,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-pokemon-15.webp",
           question: "¿Quién es el gran rival de Ash al principio del anime?",
           answers: [
             { id: "a", text: "Gary" },
@@ -781,6 +797,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-pokemon-17.webp",
           question: "¿De qué palabras japonesas viene el nombre «Pokémon»?",
           answers: [
             { id: "a", text: "Poketto Monsutā, «monstruos de bolsillo»" },
@@ -820,6 +837,7 @@ export const quizPokemon: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-pokemon-20.webp",
           question: "¿Qué Pokémon duerme a todo el mundo cantando y luego pinta la cara de los que se han dormido?",
           answers: [
             { id: "a", text: "Jigglypuff" },

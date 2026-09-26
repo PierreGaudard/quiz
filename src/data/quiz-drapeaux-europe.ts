@@ -37,6 +37,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-drapeaux-europe-2.webp",
           question: "Les bandes du drapeau italien sont horizontales.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -48,6 +49,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-drapeaux-europe-3.webp",
           question: "Les bandes noire, rouge et or du drapeau allemand sont verticales.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -139,6 +141,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-drapeaux-europe-11.webp",
           question: "Le drapeau de la Belgique est noir, jaune et rouge, en bandes verticales.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -172,6 +175,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-drapeaux-europe-14.webp",
           question: "Le drapeau de la Hongrie est rouge, blanc et bleu.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -205,6 +209,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-drapeaux-europe-17.webp",
           question: "Le drapeau de la Croatie porte un blason à damier rouge et blanc.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -238,6 +243,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-europe-20.webp",
           question: "Les drapeaux de la Slovaquie et de la Slovénie sont identiques.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -268,6 +274,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-drapeaux-europe-2.webp",
           question: "The stripes on the Italian flag are horizontal.",
           answers: [
             { id: "a", text: "True" },
@@ -279,6 +286,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-drapeaux-europe-3.webp",
           question: "The black, red and gold stripes of the German flag are vertical.",
           answers: [
             { id: "a", text: "True" },
@@ -370,6 +378,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-drapeaux-europe-11.webp",
           question: "The flag of Belgium is black, yellow and red, in vertical stripes.",
           answers: [
             { id: "a", text: "True" },
@@ -403,6 +412,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-drapeaux-europe-14.webp",
           question: "The flag of Hungary is red, white and blue.",
           answers: [
             { id: "a", text: "True" },
@@ -436,6 +446,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-drapeaux-europe-17.webp",
           question: "The flag of Croatia has a red and white checkerboard coat of arms.",
           answers: [
             { id: "a", text: "True" },
@@ -469,6 +480,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-europe-20.webp",
           question: "The flags of Slovakia and Slovenia are identical.",
           answers: [
             { id: "a", text: "True" },
@@ -499,6 +511,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-drapeaux-europe-2.webp",
           question: "Las franjas de la bandera italiana son horizontales.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -510,6 +523,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-drapeaux-europe-3.webp",
           question: "Las franjas negra, roja y dorada de la bandera alemana son verticales.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -601,6 +615,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-drapeaux-europe-11.webp",
           question: "La bandera de Bélgica es negra, amarilla y roja, en franjas verticales.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -634,6 +649,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-drapeaux-europe-14.webp",
           question: "La bandera de Hungría es roja, blanca y azul.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -667,6 +683,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-drapeaux-europe-17.webp",
           question: "La bandera de Croacia lleva un escudo ajedrezado rojo y blanco.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -700,6 +717,7 @@ export const quizDrapeauxEurope: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-europe-20.webp",
           question: "Las banderas de Eslovaquia y Eslovenia son idénticas.",
           answers: [
             { id: "a", text: "Verdadero" },

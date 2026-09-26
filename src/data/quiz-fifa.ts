@@ -102,6 +102,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fifa-9.webp",
           question: "En quelle année a eu lieu la première Coupe du monde de FIFA en e-sport, la FIFA Interactive World Cup ?",
           answers: [],
           correctAnswer: "2004",
@@ -120,6 +121,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fifa-11.webp",
           question: "En quelle année a été fondée Electronic Arts, l'éditeur des jeux FIFA ?",
           answers: [],
           correctAnswer: "1982",
@@ -138,6 +140,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fifa-13.webp",
           question: "Et combien de stades comptait FIFA 98 : En route pour la Coupe du monde ?",
           answers: [],
           correctAnswer: "16",
@@ -165,6 +168,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fifa-16.webp",
           question: "Pour la technologie HyperMotion de FIFA 22, combien de vrais joueurs ont disputé un match en combinaison de capture de mouvement ?",
           answers: [],
           correctAnswer: "22",
@@ -183,6 +187,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fifa-18.webp",
           question: "Dans Ultimate Team sur FIFA 23, combien de points de collectif une équipe peut-elle avoir au maximum ?",
           answers: [],
           correctAnswer: "33",
@@ -201,6 +206,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-20.webp",
           question: "En quelle année est sorti EA Sports FC 24, le premier jeu après la fin du nom FIFA ?",
           answers: [],
           correctAnswer: "2023",
@@ -293,6 +299,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fifa-9.webp",
           question: "In what year was the first FIFA esports world cup, the FIFA Interactive World Cup, held?",
           answers: [],
           correctAnswer: "2004",
@@ -311,6 +318,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fifa-11.webp",
           question: "In what year was Electronic Arts, the publisher of the FIFA games, founded?",
           answers: [],
           correctAnswer: "1982",
@@ -329,6 +337,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fifa-13.webp",
           question: "And how many stadiums did FIFA: Road to World Cup 98 have?",
           answers: [],
           correctAnswer: "16",
@@ -356,6 +365,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fifa-16.webp",
           question: "For FIFA 22's HyperMotion technology, how many real players played a match in motion capture suits?",
           answers: [],
           correctAnswer: "22",
@@ -374,6 +384,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fifa-18.webp",
           question: "In FIFA 23 Ultimate Team, what's the maximum number of chemistry points a team can have?",
           answers: [],
           correctAnswer: "33",
@@ -392,6 +403,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-20.webp",
           question: "In what year did EA Sports FC 24, the first game after the FIFA name was dropped, come out?",
           answers: [],
           correctAnswer: "2023",
@@ -484,6 +496,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fifa-9.webp",
           question: "¿En qué año se jugó el primer mundial de FIFA en esports, la FIFA Interactive World Cup?",
           answers: [],
           correctAnswer: "2004",
@@ -502,6 +515,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fifa-11.webp",
           question: "¿En qué año se fundó Electronic Arts, la editora de los FIFA?",
           answers: [],
           correctAnswer: "1982",
@@ -520,6 +534,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fifa-13.webp",
           question: "¿Y cuántos estadios tenía FIFA: Rumbo al Mundial 98?",
           answers: [],
           correctAnswer: "16",
@@ -547,6 +562,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fifa-16.webp",
           question: "Para la tecnología HyperMotion de FIFA 22, ¿cuántos jugadores reales disputaron un partido con trajes de captura de movimiento?",
           answers: [],
           correctAnswer: "22",
@@ -565,6 +581,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fifa-18.webp",
           question: "En Ultimate Team de FIFA 23, ¿cuántos puntos de química puede tener como máximo un equipo?",
           answers: [],
           correctAnswer: "33",
@@ -583,6 +600,7 @@ export const quizFifa: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-20.webp",
           question: "¿En qué año salió EA Sports FC 24, el primer juego después del fin del nombre FIFA?",
           answers: [],
           correctAnswer: "2023",

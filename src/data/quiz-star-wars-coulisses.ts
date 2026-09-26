@@ -24,6 +24,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-coulisses-1.webp",
           question: "George Lucas a réalisé les trois films de la trilogie originale.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -59,6 +60,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-star-wars-coulisses-4.webp",
           question: "Dans la trilogie originale, l'acteur dans le costume de Dark Vador est aussi celui qui fait sa voix en version originale.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -138,6 +140,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-star-wars-coulisses-11.webp",
           question: "Le bourdonnement des sabres laser mélange le bruit d'un vieux projecteur de cinéma et le grésillement d'un téléviseur.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -171,6 +174,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-star-wars-coulisses-14.webp",
           question: "Carrie Fisher avait plus de 25 ans pendant le tournage du premier Star Wars.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -204,6 +208,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-coulisses-17.webp",
           question: "Un acteur de 1,12 m, Kenny Baker, se glissait à l'intérieur de R2-D2.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -237,6 +242,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-coulisses-20.webp",
           question: "Peter Mayhew, l'acteur dans le costume de Chewbacca, mesurait moins de 2 mètres.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -255,6 +261,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-coulisses-1.webp",
           question: "George Lucas directed all three films of the original trilogy.",
           answers: [
             { id: "a", text: "True" },
@@ -290,6 +297,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-star-wars-coulisses-4.webp",
           question: "In the original trilogy, the actor in the Darth Vader suit also provides his voice.",
           answers: [
             { id: "a", text: "True" },
@@ -369,6 +377,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-star-wars-coulisses-11.webp",
           question: "The hum of the lightsabers mixes the sound of an old film projector with the buzz of a television set.",
           answers: [
             { id: "a", text: "True" },
@@ -402,6 +411,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-star-wars-coulisses-14.webp",
           question: "Carrie Fisher was over 25 when the first Star Wars was filmed.",
           answers: [
             { id: "a", text: "True" },
@@ -435,6 +445,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-coulisses-17.webp",
           question: "A 3 ft 8 in actor, Kenny Baker, climbed inside R2-D2.",
           answers: [
             { id: "a", text: "True" },
@@ -468,6 +479,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-coulisses-20.webp",
           question: "Peter Mayhew, the actor inside the Chewbacca suit, was under 6 ft 7 in.",
           answers: [
             { id: "a", text: "True" },
@@ -486,6 +498,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-coulisses-1.webp",
           question: "George Lucas dirigió las tres películas de la trilogía original.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -521,6 +534,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-star-wars-coulisses-4.webp",
           question: "En la trilogía original, el actor que lleva el traje de Darth Vader es el mismo que le pone la voz en versión original.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -600,6 +614,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-star-wars-coulisses-11.webp",
           question: "El zumbido de los sables de luz mezcla el ruido de un viejo proyector de cine y la interferencia de un televisor.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -633,6 +648,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-star-wars-coulisses-14.webp",
           question: "Carrie Fisher tenía más de 25 años durante el rodaje de la primera Star Wars.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -666,6 +682,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-coulisses-17.webp",
           question: "Un actor de 1,12 m, Kenny Baker, se metía dentro de R2-D2.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -699,6 +716,7 @@ export const quizStarWarsCoulisses: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-coulisses-20.webp",
           question: "Peter Mayhew, el actor dentro del traje de Chewbacca, medía menos de 2 metros.",
           answers: [
             { id: "a", text: "Verdadero" },

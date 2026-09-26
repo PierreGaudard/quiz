@@ -83,6 +83,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-corps-humain-7.webp",
           question: "Quelle est la température normale du corps humain, en degrés Celsius ?",
           answers: [],
           correctAnswer: "37",
@@ -130,6 +131,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-corps-humain-12.webp",
           question: "Combien d'os compte une main humaine, poignet compris ?",
           answers: [],
           correctAnswer: "27",
@@ -157,6 +159,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-corps-humain-15.webp",
           question: "Combien de paires de nerfs partent directement du cerveau (les nerfs crâniens) ?",
           answers: [],
           correctAnswer: "12",
@@ -175,6 +178,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-corps-humain-17.webp",
           question: "Combien de jours vit un globule rouge, en moyenne ?",
           answers: [],
           correctAnswer: "120",
@@ -202,6 +206,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-20.webp",
           question: "En quelle année est née Louise Brown, le premier bébé conçu par fécondation in vitro ?",
           answers: [],
           correctAnswer: "1978",
@@ -275,6 +280,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-corps-humain-7.webp",
           question: "What is normal human body temperature in degrees Celsius?",
           answers: [],
           correctAnswer: "37",
@@ -322,6 +328,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-corps-humain-12.webp",
           question: "How many bones are in a human hand, wrist included?",
           answers: [],
           correctAnswer: "27",
@@ -349,6 +356,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-corps-humain-15.webp",
           question: "How many pairs of nerves come straight out of the brain (the cranial nerves)?",
           answers: [],
           correctAnswer: "12",
@@ -367,6 +375,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-corps-humain-17.webp",
           question: "On average, how many days does a red blood cell live?",
           answers: [],
           correctAnswer: "120",
@@ -394,6 +403,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-20.webp",
           question: "In what year was Louise Brown, the first baby conceived through IVF, born?",
           answers: [],
           correctAnswer: "1978",
@@ -467,6 +477,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-corps-humain-7.webp",
           question: "¿Cuál es la temperatura normal del cuerpo humano, en grados Celsius?",
           answers: [],
           correctAnswer: "37",
@@ -514,6 +525,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-corps-humain-12.webp",
           question: "¿Cuántos huesos tiene una mano humana, contando la muñeca?",
           answers: [],
           correctAnswer: "27",
@@ -541,6 +553,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-corps-humain-15.webp",
           question: "¿Cuántos pares de nervios salen directamente del cerebro (los nervios craneales)?",
           answers: [],
           correctAnswer: "12",
@@ -559,6 +572,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-corps-humain-17.webp",
           question: "¿Cuántos días vive un glóbulo rojo, de media?",
           answers: [],
           correctAnswer: "120",
@@ -586,6 +600,7 @@ export const quizCorpsHumain: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-20.webp",
           question: "¿En qué año nació Louise Brown, el primer bebé concebido por fecundación in vitro?",
           answers: [],
           correctAnswer: "1978",

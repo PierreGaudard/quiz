@@ -37,6 +37,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-europe-2.webp",
           question: "La Norvège est membre de l'Union européenne.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -60,6 +61,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-europe-4.webp",
           question: "La capitale de la Turquie est Istanbul.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -139,6 +141,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-europe-11.webp",
           question: "Le Luxembourg est le plus petit pays de l'Union européenne.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -172,6 +175,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-europe-14.webp",
           question: "La Belgique a trois langues officielles.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -205,6 +209,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-europe-17.webp",
           question: "La Russie est le plus grand pays d'Europe.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -238,6 +243,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-20.webp",
           question: "L'Irlande fait partie du Royaume-Uni.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -268,6 +274,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-europe-2.webp",
           question: "Norway is a member of the European Union.",
           answers: [
             { id: "a", text: "True" },
@@ -291,6 +298,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-europe-4.webp",
           question: "The capital of Turkey is Istanbul.",
           answers: [
             { id: "a", text: "True" },
@@ -370,6 +378,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-europe-11.webp",
           question: "Luxembourg is the smallest country in the European Union.",
           answers: [
             { id: "a", text: "True" },
@@ -403,6 +412,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-europe-14.webp",
           question: "Belgium has three official languages.",
           answers: [
             { id: "a", text: "True" },
@@ -436,6 +446,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-europe-17.webp",
           question: "Russia is the largest country in Europe.",
           answers: [
             { id: "a", text: "True" },
@@ -469,6 +480,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-20.webp",
           question: "Ireland is part of the United Kingdom.",
           answers: [
             { id: "a", text: "True" },
@@ -499,6 +511,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-europe-2.webp",
           question: "Noruega es miembro de la Unión Europea.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -522,6 +535,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-europe-4.webp",
           question: "La capital de Turquía es Estambul.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -601,6 +615,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-europe-11.webp",
           question: "Luxemburgo es el país más pequeño de la Unión Europea.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -634,6 +649,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-europe-14.webp",
           question: "Bélgica tiene tres lenguas oficiales.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -667,6 +683,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-europe-17.webp",
           question: "Rusia es el país más grande de Europa.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -700,6 +717,7 @@ export const quizEurope: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-europe-20.webp",
           question: "Irlanda forma parte del Reino Unido.",
           answers: [
             { id: "a", text: "Verdadero" },

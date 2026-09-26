@@ -27,6 +27,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-litterature-personnages-1.webp",
           question: "Quelle héroïne de Lewis Carroll suit un lapin blanc dans son terrier ?",
           answers: [
             { id: "a", text: "Alice" },
@@ -107,6 +108,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-litterature-personnages-8.webp",
           question: "Dans quel roman de Stendhal trouve-t-on Julien Sorel ?",
           answers: [
             { id: "a", text: "Le Rouge et le Noir" },
@@ -152,6 +154,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-litterature-personnages-12.webp",
           question: "Dans quel roman d'Émile Zola suit-on Gervaise, une blanchisseuse de Paris ?",
           answers: [
             { id: "a", text: "Nana" },
@@ -185,6 +188,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-litterature-personnages-15.webp",
           question: "Dans L'Odyssée, comment s'appelle la femme d'Ulysse, qui l'attend pendant vingt ans ?",
           answers: [
             { id: "a", text: "Pénélope" },
@@ -207,6 +211,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-litterature-personnages-17.webp",
           question: "Dans quelle pièce de Molière Alceste reproche-t-il à tout le monde son hypocrisie ?",
           answers: [
             { id: "a", text: "Le Misanthrope" },
@@ -240,6 +245,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-personnages-20.webp",
           question: "Chez Rabelais, comment s'appelle le géant qui est le fils de Gargantua ?",
           answers: [
             { id: "a", text: "Panurge" },
@@ -258,6 +264,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-litterature-personnages-1.webp",
           question: "Which Lewis Carroll heroine follows a white rabbit down its hole?",
           answers: [
             { id: "a", text: "Alice" },
@@ -338,6 +345,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-litterature-personnages-8.webp",
           question: "Which Stendhal novel features Julien Sorel?",
           answers: [
             { id: "a", text: "The Red and the Black" },
@@ -383,6 +391,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-litterature-personnages-12.webp",
           question: "In which Émile Zola novel do we follow Gervaise, a Paris laundress?",
           answers: [
             { id: "a", text: "Nana" },
@@ -416,6 +425,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-litterature-personnages-15.webp",
           question: "In the Odyssey, what's the name of Odysseus's wife, who waits twenty years for him?",
           answers: [
             { id: "a", text: "Penelope" },
@@ -438,6 +448,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-litterature-personnages-17.webp",
           question: "In which Molière play does Alceste accuse everyone around him of hypocrisy?",
           answers: [
             { id: "a", text: "The Misanthrope" },
@@ -471,6 +482,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-personnages-20.webp",
           question: "In Rabelais, what's the name of the giant who is Gargantua's son?",
           answers: [
             { id: "a", text: "Panurge" },
@@ -489,6 +501,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-litterature-personnages-1.webp",
           question: "¿Qué heroína de Lewis Carroll sigue a un conejo blanco por su madriguera?",
           answers: [
             { id: "a", text: "Alicia" },
@@ -569,6 +582,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-litterature-personnages-8.webp",
           question: "¿En qué novela de Stendhal aparece Julien Sorel?",
           answers: [
             { id: "a", text: "Rojo y negro" },
@@ -614,6 +628,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-litterature-personnages-12.webp",
           question: "¿En qué novela de Émile Zola se sigue a Gervaise, una lavandera de París?",
           answers: [
             { id: "a", text: "Naná" },
@@ -647,6 +662,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-litterature-personnages-15.webp",
           question: "En la Odisea, ¿cómo se llama la mujer de Ulises, que lo espera durante veinte años?",
           answers: [
             { id: "a", text: "Penélope" },
@@ -669,6 +685,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-litterature-personnages-17.webp",
           question: "¿En qué obra de Molière acusa Alceste a todo el mundo de hipócrita?",
           answers: [
             { id: "a", text: "El misántropo" },
@@ -702,6 +719,7 @@ export const quizLitteraturePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-personnages-20.webp",
           question: "En la obra de Rabelais, ¿cómo se llama el gigante hijo de Gargantúa?",
           answers: [
             { id: "a", text: "Panurgo" },

@@ -27,6 +27,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-revolution-francaise-1.webp",
           question: "À quelle date la Bastille a-t-elle été prise ?",
           answers: [
             { id: "a", text: "Le 14 juillet 1789" },
@@ -108,6 +109,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-revolution-francaise-7.webp",
           question: "Quel révolutionnaire est tué dans sa baignoire par Charlotte Corday, en juillet 1793 ?",
           answers: [
             { id: "a", text: "Jean-Paul Marat" },
@@ -174,6 +176,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-revolution-francaise-12.webp",
           question: "Quel document chaque paroisse rédige-t-elle en 1789 pour faire connaître au roi les plaintes et les souhaits des habitants ?",
           answers: [
             { id: "a", text: "Un cahier de doléances" },
@@ -213,6 +216,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-revolution-francaise-15.webp",
           question: "Quel palais parisien est pris d'assaut le 10 août 1792, ce qui entraîne la chute de la monarchie ?",
           answers: [
             { id: "a", text: "Les Tuileries" },
@@ -278,6 +282,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-20.webp",
           question: "Quelle loi de septembre 1793 permet d'arrêter toute personne soupçonnée d'être hostile à la Révolution ?",
           answers: [
             { id: "a", text: "La loi Le Chapelier" },
@@ -298,6 +303,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-revolution-francaise-1.webp",
           question: "On what date was the Bastille stormed?",
           answers: [
             { id: "a", text: "14 July 1789" },
@@ -379,6 +385,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-revolution-francaise-7.webp",
           question: "Which revolutionary was killed in his bathtub by Charlotte Corday in July 1793?",
           answers: [
             { id: "a", text: "Jean-Paul Marat" },
@@ -445,6 +452,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-revolution-francaise-12.webp",
           question: "What document did every parish write in 1789 to tell the king about the people's complaints and wishes?",
           answers: [
             { id: "a", text: "A cahier de doléances, or book of grievances" },
@@ -484,6 +492,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-revolution-francaise-15.webp",
           question: "Which Paris palace was stormed on 10 August 1792, bringing down the monarchy?",
           answers: [
             { id: "a", text: "The Tuileries" },
@@ -549,6 +558,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-20.webp",
           question: "Which law of September 1793 allowed the arrest of anyone suspected of being hostile to the Revolution?",
           answers: [
             { id: "a", text: "The Le Chapelier law" },
@@ -569,6 +579,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-revolution-francaise-1.webp",
           question: "¿En qué fecha se tomó la Bastilla?",
           answers: [
             { id: "a", text: "El 14 de julio de 1789" },
@@ -650,6 +661,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-revolution-francaise-7.webp",
           question: "¿Qué revolucionario murió en su bañera a manos de Charlotte Corday, en julio de 1793?",
           answers: [
             { id: "a", text: "Jean-Paul Marat" },
@@ -716,6 +728,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-revolution-francaise-12.webp",
           question: "¿Qué documento redacta cada parroquia en 1789 para dar a conocer al rey las quejas y los deseos de sus habitantes?",
           answers: [
             { id: "a", text: "Un cuaderno de quejas" },
@@ -755,6 +768,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-revolution-francaise-15.webp",
           question: "¿Qué palacio de París fue asaltado el 10 de agosto de 1792, lo que provocó la caída de la monarquía?",
           answers: [
             { id: "a", text: "Las Tullerías" },
@@ -820,6 +834,7 @@ export const quizRevolutionFrancaise: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-revolution-francaise-20.webp",
           question: "¿Qué ley de septiembre de 1793 permite detener a cualquier persona sospechosa de ser hostil a la Revolución?",
           answers: [
             { id: "a", text: "La ley Le Chapelier" },

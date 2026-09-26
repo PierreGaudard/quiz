@@ -39,6 +39,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-fifa-jaquettes-2.webp",
           question: "Quel joueur a été choisi par un vote des fans pour la jaquette de FIFA 17 ?",
           answers: [
             { id: "a", text: "Marco Reus" },
@@ -106,6 +107,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-fifa-jaquettes-7.webp",
           question: "Qui est sur la jaquette américaine de FIFA 16, le premier FIFA avec des joueuses ?",
           answers: [
             { id: "a", text: "Hope Solo" },
@@ -159,6 +161,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fifa-jaquettes-11.webp",
           question: "Quel ancien attaquant brésilien est sur l'édition Icon de FIFA 18 ?",
           answers: [
             { id: "a", text: "Pelé" },
@@ -198,6 +201,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fifa-jaquettes-14.webp",
           question: "Quel joueur de Manchester United est sur la jaquette de FIFA Football 2003, avec Roberto Carlos et Edgar Davids ?",
           answers: [
             { id: "a", text: "David Beckham" },
@@ -237,6 +241,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fifa-jaquettes-17.webp",
           question: "Qui est sur la jaquette britannique de FIFA 14 ?",
           answers: [
             { id: "a", text: "Wayne Rooney" },
@@ -276,6 +281,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-jaquettes-20.webp",
           question: "Quel joueur de l'Olympique lyonnais est sur la jaquette française de FIFA 07, avec Ronaldinho ?",
           answers: [
             { id: "a", text: "Sidney Govou" },
@@ -310,6 +316,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-fifa-jaquettes-2.webp",
           question: "Which player was picked by a fan vote for the cover of FIFA 17?",
           answers: [
             { id: "a", text: "Marco Reus" },
@@ -377,6 +384,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-fifa-jaquettes-7.webp",
           question: "Who is on the US cover of FIFA 16, the first FIFA with women players?",
           answers: [
             { id: "a", text: "Hope Solo" },
@@ -430,6 +438,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fifa-jaquettes-11.webp",
           question: "Which former Brazilian striker is on the Icon Edition of FIFA 18?",
           answers: [
             { id: "a", text: "Pelé" },
@@ -469,6 +478,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fifa-jaquettes-14.webp",
           question: "Which Manchester United player is on the cover of FIFA Football 2003, with Roberto Carlos and Edgar Davids?",
           answers: [
             { id: "a", text: "David Beckham" },
@@ -508,6 +518,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fifa-jaquettes-17.webp",
           question: "Who is on the UK cover of FIFA 14?",
           answers: [
             { id: "a", text: "Wayne Rooney" },
@@ -547,6 +558,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-jaquettes-20.webp",
           question: "Which Olympique Lyonnais player is on the French cover of FIFA 07, with Ronaldinho?",
           answers: [
             { id: "a", text: "Sidney Govou" },
@@ -581,6 +593,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-fifa-jaquettes-2.webp",
           question: "¿Qué jugador eligieron los fans en una votación para la portada de FIFA 17?",
           answers: [
             { id: "a", text: "Marco Reus" },
@@ -648,6 +661,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-fifa-jaquettes-7.webp",
           question: "¿Quién sale en la portada estadounidense de FIFA 16, el primer FIFA con jugadoras?",
           answers: [
             { id: "a", text: "Hope Solo" },
@@ -701,6 +715,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fifa-jaquettes-11.webp",
           question: "¿Qué exdelantero brasileño aparece en la edición Icon de FIFA 18?",
           answers: [
             { id: "a", text: "Pelé" },
@@ -740,6 +755,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fifa-jaquettes-14.webp",
           question: "¿Qué jugador del Manchester United aparece en la portada de FIFA Football 2003, con Roberto Carlos y Edgar Davids?",
           answers: [
             { id: "a", text: "David Beckham" },
@@ -779,6 +795,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fifa-jaquettes-17.webp",
           question: "¿Quién aparece en la portada británica de FIFA 14?",
           answers: [
             { id: "a", text: "Wayne Rooney" },
@@ -818,6 +835,7 @@ export const quizFifaJaquettes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-jaquettes-20.webp",
           question: "¿Qué jugador del Olympique de Lyon aparece en la portada francesa de FIFA 07, junto a Ronaldinho?",
           answers: [
             { id: "a", text: "Sidney Govou" },

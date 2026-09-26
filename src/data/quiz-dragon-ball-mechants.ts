@@ -37,6 +37,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-mechants-2.webp",
           question: "C'est Goku qui tue Nappa.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -151,6 +152,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-dragon-ball-mechants-12.webp",
           question: "Goku Black est en fait le Vegeta d'un autre futur.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -184,6 +186,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-dragon-ball-mechants-15.webp",
           question: "Le tueur Tao Pai Pai est le frère de l'Ermite de la Grue.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +209,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-mechants-17.webp",
           question: "Broly est le fils du roi Vegeta.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +243,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-mechants-20.webp",
           question: "Le gros Majin Buu devient ami avec Mister Satan.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -269,6 +274,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-mechants-2.webp",
           question: "Goku is the one who kills Nappa.",
           answers: [
             { id: "a", text: "True" },
@@ -383,6 +389,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-dragon-ball-mechants-12.webp",
           question: "Goku Black is actually Vegeta from another future.",
           answers: [
             { id: "a", text: "True" },
@@ -416,6 +423,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-dragon-ball-mechants-15.webp",
           question: "The assassin Mercenary Tao is the brother of Master Shen, the Crane Hermit.",
           answers: [
             { id: "a", text: "True" },
@@ -438,6 +446,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-mechants-17.webp",
           question: "Broly is King Vegeta's son.",
           answers: [
             { id: "a", text: "True" },
@@ -471,6 +480,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-mechants-20.webp",
           question: "Fat Majin Buu becomes friends with Mr. Satan.",
           answers: [
             { id: "a", text: "True" },
@@ -501,6 +511,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-mechants-2.webp",
           question: "Es Goku quien mata a Nappa.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -615,6 +626,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-dragon-ball-mechants-12.webp",
           question: "Goku Black es en realidad el Vegeta de otro futuro.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -648,6 +660,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-dragon-ball-mechants-15.webp",
           question: "El asesino Tao Pai Pai es hermano del Ermitaño Grulla.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -670,6 +683,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-mechants-17.webp",
           question: "Broly es hijo del rey Vegeta.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -703,6 +717,7 @@ export const quizDragonBallMechants: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-mechants-20.webp",
           question: "El Majin Buu gordo se hace amigo de Mr. Satán.",
           answers: [
             { id: "a", text: "Verdadero" },

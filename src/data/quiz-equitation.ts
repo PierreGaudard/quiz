@@ -37,6 +37,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-equitation-2.webp",
           question: "Aux JO, les hommes et les femmes concourent ensemble en équitation.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -60,6 +61,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-equitation-4.webp",
           question: "La taille d'un cheval se mesure au garrot.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -139,6 +141,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-equitation-11.webp",
           question: "Un cheval peut dormir debout.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -172,6 +175,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-equitation-14.webp",
           question: "Aux JO de Paris 2024, les épreuves d'équitation ont eu lieu dans le parc du château de Versailles.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -205,6 +209,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-equitation-17.webp",
           question: "En saut d'obstacles, faire tomber une barre coûte 4 points de pénalité.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -238,6 +243,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-20.webp",
           question: "Un cheval domestique vit en général 25 à 30 ans.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -268,6 +274,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-equitation-2.webp",
           question: "At the Olympics, men and women compete against each other in equestrian events.",
           answers: [
             { id: "a", text: "True" },
@@ -291,6 +298,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-equitation-4.webp",
           question: "A horse's height is measured at the withers.",
           answers: [
             { id: "a", text: "True" },
@@ -370,6 +378,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-equitation-11.webp",
           question: "A horse can sleep standing up.",
           answers: [
             { id: "a", text: "True" },
@@ -403,6 +412,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-equitation-14.webp",
           question: "At the Paris 2024 Olympics, the equestrian events were held in the grounds of the Palace of Versailles.",
           answers: [
             { id: "a", text: "True" },
@@ -436,6 +446,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-equitation-17.webp",
           question: "In show jumping, knocking down a pole costs 4 penalty points.",
           answers: [
             { id: "a", text: "True" },
@@ -469,6 +480,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-20.webp",
           question: "A domestic horse usually lives 25 to 30 years.",
           answers: [
             { id: "a", text: "True" },
@@ -499,6 +511,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-equitation-2.webp",
           question: "En los Juegos, hombres y mujeres compiten juntos en hípica.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -522,6 +535,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-equitation-4.webp",
           question: "La altura de un caballo se mide a la cruz.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -601,6 +615,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-equitation-11.webp",
           question: "Un caballo puede dormir de pie.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -634,6 +649,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-equitation-14.webp",
           question: "En los Juegos de París 2024, la hípica se disputó en los jardines del palacio de Versalles.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -667,6 +683,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-equitation-17.webp",
           question: "En salto, derribar una barra cuesta 4 puntos de penalización.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -700,6 +717,7 @@ export const quizEquitation: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-20.webp",
           question: "Un caballo doméstico suele vivir entre 25 y 30 años.",
           answers: [
             { id: "a", text: "Verdadero" },

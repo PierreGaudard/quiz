@@ -50,6 +50,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-departements-carte-3.webp",
           question: "Lequel de ces deux départements est le plus au sud ?",
           answers: [
             { id: "a", text: "Le Var" },
@@ -153,6 +154,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-carte-12.webp",
           question: "Lequel de ces deux départements touche l'Allemagne ?",
           answers: [
             { id: "a", text: "Le Territoire de Belfort" },
@@ -186,6 +188,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-carte-15.webp",
           question: "Lequel de ces deux départements a Montpellier pour préfecture ?",
           answers: [
             { id: "a", text: "L'Hérault" },
@@ -208,6 +211,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-carte-17.webp",
           question: "Lequel de ces deux départements est traversé par la Garonne ?",
           answers: [
             { id: "a", text: "Le Lot-et-Garonne" },
@@ -241,6 +245,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-carte-20.webp",
           question: "Dans lequel de ces deux départements se trouve le mont Ventoux ?",
           answers: [
             { id: "a", text: "La Drôme" },
@@ -282,6 +287,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-departements-carte-3.webp",
           question: "Which of these two departments is further south?",
           answers: [
             { id: "a", text: "Var" },
@@ -385,6 +391,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-carte-12.webp",
           question: "Which of these two departments borders Germany?",
           answers: [
             { id: "a", text: "Territoire de Belfort" },
@@ -418,6 +425,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-carte-15.webp",
           question: "Which of these two departments has Montpellier as its prefecture?",
           answers: [
             { id: "a", text: "Hérault" },
@@ -440,6 +448,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-carte-17.webp",
           question: "Which of these two departments does the Garonne flow through?",
           answers: [
             { id: "a", text: "Lot-et-Garonne" },
@@ -473,6 +482,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-carte-20.webp",
           question: "Which of these two departments is Mont Ventoux in?",
           answers: [
             { id: "a", text: "Drôme" },
@@ -514,6 +524,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-departements-carte-3.webp",
           question: "¿Cuál de estos dos departamentos está más al sur?",
           answers: [
             { id: "a", text: "Var" },
@@ -617,6 +628,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-carte-12.webp",
           question: "¿Cuál de estos dos departamentos limita con Alemania?",
           answers: [
             { id: "a", text: "Territorio de Belfort" },
@@ -650,6 +662,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-carte-15.webp",
           question: "¿Cuál de estos dos departamentos tiene Montpellier como prefectura?",
           answers: [
             { id: "a", text: "Hérault" },
@@ -672,6 +685,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-carte-17.webp",
           question: "¿Cuál de estos dos departamentos atraviesa el Garona?",
           answers: [
             { id: "a", text: "Lot y Garona" },
@@ -705,6 +719,7 @@ export const quizDepartementsCarte: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-carte-20.webp",
           question: "¿En cuál de estos dos departamentos está el monte Ventoux?",
           answers: [
             { id: "a", text: "Drôme" },

@@ -27,6 +27,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-kpop-demon-hunters-1.webp",
           question: "Sur quelle plateforme KPop Demon Hunters est-il sorti en juin 2025 ?",
           answers: [
             { id: "a", text: "Disney+" },
@@ -40,6 +41,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-kpop-demon-hunters-2.webp",
           question: "Quel studio a fabriqué le film ?",
           answers: [
             { id: "a", text: "Sony Pictures Animation" },
@@ -161,6 +163,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-kpop-demon-hunters-11.webp",
           question: "Pour la chanson Your Idol, les Saja Boys portent des hanbok noirs et des chapeaux gat. Quelle figure du folklore coréen évoquent-ils ?",
           answers: [
             { id: "a", text: "Les jeoseung saja, les messagers de la mort" },
@@ -200,6 +203,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-kpop-demon-hunters-14.webp",
           question: "Qui est la maknae de HUNTR/X, c'est-à-dire la plus jeune du groupe ?",
           answers: [
             { id: "a", text: "Rumi" },
@@ -239,6 +243,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-kpop-demon-hunters-17.webp",
           question: "Quelle cérémonie HUNTR/X et les Saja Boys veulent-ils gagner ?",
           answers: [
             { id: "a", text: "Les Idol Awards" },
@@ -278,6 +283,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-20.webp",
           question: "À la fin du film, de quelle couleur est le nouveau Honmoon ?",
           answers: [
             { id: "a", text: "Doré" },
@@ -298,6 +304,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-kpop-demon-hunters-1.webp",
           question: "On which platform did KPop Demon Hunters come out in June 2025?",
           answers: [
             { id: "a", text: "Disney+" },
@@ -311,6 +318,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-kpop-demon-hunters-2.webp",
           question: "Which studio made the film?",
           answers: [
             { id: "a", text: "Sony Pictures Animation" },
@@ -432,6 +440,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-kpop-demon-hunters-11.webp",
           question: "For the song Your Idol, the Saja Boys wear black hanbok and gat hats. Which figure from Korean folklore do they bring to mind?",
           answers: [
             { id: "a", text: "The jeoseung saja, the messengers of death" },
@@ -471,6 +480,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-kpop-demon-hunters-14.webp",
           question: "Who is the maknae of HUNTR/X, meaning the youngest member?",
           answers: [
             { id: "a", text: "Rumi" },
@@ -510,6 +520,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-kpop-demon-hunters-17.webp",
           question: "Which award show do HUNTR/X and the Saja Boys both want to win?",
           answers: [
             { id: "a", text: "The Idol Awards" },
@@ -549,6 +560,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-20.webp",
           question: "At the end of the film, what color is the new Honmoon?",
           answers: [
             { id: "a", text: "Gold" },
@@ -569,6 +581,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-kpop-demon-hunters-1.webp",
           question: "¿En qué plataforma se estrenó KPop Demon Hunters en junio de 2025?",
           answers: [
             { id: "a", text: "Disney+" },
@@ -582,6 +595,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-kpop-demon-hunters-2.webp",
           question: "¿Qué estudio hizo la película?",
           answers: [
             { id: "a", text: "Sony Pictures Animation" },
@@ -703,6 +717,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-kpop-demon-hunters-11.webp",
           question: "En la canción Your Idol, los Saja Boys llevan hanbok negros y sombreros gat. ¿Qué figura del folclore coreano recuerdan?",
           answers: [
             { id: "a", text: "Los jeoseung saja, los mensajeros de la muerte" },
@@ -742,6 +757,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-kpop-demon-hunters-14.webp",
           question: "¿Quién es la maknae de HUNTR/X, es decir, la más joven del grupo?",
           answers: [
             { id: "a", text: "Rumi" },
@@ -781,6 +797,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-kpop-demon-hunters-17.webp",
           question: "¿Qué ceremonia quieren ganar HUNTR/X y los Saja Boys?",
           answers: [
             { id: "a", text: "Los Idol Awards" },
@@ -820,6 +837,7 @@ export const quizKpopDemonHunters: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-20.webp",
           question: "Al final de la película, ¿de qué color es el nuevo Honmoon?",
           answers: [
             { id: "a", text: "Dorado" },

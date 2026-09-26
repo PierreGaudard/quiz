@@ -94,6 +94,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-espace-7.webp",
           question: "Mars a deux lunes.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -151,6 +152,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-espace-12.webp",
           question: "Dans l'espace, on entend le bruit des explosions.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -184,6 +186,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-espace-15.webp",
           question: "La planète Uranus a été découverte par Galilée.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +209,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-17.webp",
           question: "Les astronautes flottent dans la Station spatiale parce qu'il n'y a plus de gravité là-haut.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +243,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-20.webp",
           question: "La Grande Tache rouge de Jupiter est une tempête.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -326,6 +331,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-espace-7.webp",
           question: "Mars has two moons.",
           answers: [
             { id: "a", text: "True" },
@@ -383,6 +389,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-espace-12.webp",
           question: "You can hear explosions in space.",
           answers: [
             { id: "a", text: "True" },
@@ -416,6 +423,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-espace-15.webp",
           question: "The planet Uranus was discovered by Galileo.",
           answers: [
             { id: "a", text: "True" },
@@ -438,6 +446,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-17.webp",
           question: "Astronauts float on the space station because there's no gravity up there.",
           answers: [
             { id: "a", text: "True" },
@@ -471,6 +480,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-20.webp",
           question: "Jupiter's Great Red Spot is a storm.",
           answers: [
             { id: "a", text: "True" },
@@ -558,6 +568,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-espace-7.webp",
           question: "Marte tiene dos lunas.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -615,6 +626,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-espace-12.webp",
           question: "En el espacio se oye el ruido de las explosiones.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -648,6 +660,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-espace-15.webp",
           question: "El planeta Urano lo descubrió Galileo.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -670,6 +683,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-espace-17.webp",
           question: "Los astronautas flotan en la Estación Espacial porque allí arriba no hay gravedad.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -703,6 +717,7 @@ export const quizEspace: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-espace-20.webp",
           question: "La Gran Mancha Roja de Júpiter es una tormenta.",
           answers: [
             { id: "a", text: "Verdadero" },

@@ -41,6 +41,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jujutsu-kaisen-personnages-2.webp",
           question: "Qui a élevé Yuji ?",
           answers: [
             { id: "a", text: "Sa tante" },
@@ -67,6 +68,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-jujutsu-kaisen-personnages-4.webp",
           question: "Quelle proportion Nanami utilise-t-il pour créer un point faible ?",
           answers: [
             { id: "a", text: "5:5" },
@@ -133,6 +135,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-jujutsu-kaisen-personnages-9.webp",
           question: "De quelle école vient Aoi Todo ?",
           answers: [
             { id: "a", text: "Tokyo" },
@@ -199,6 +202,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jujutsu-kaisen-personnages-14.webp",
           question: "Qui est le père de Megumi ?",
           answers: [
             { id: "a", text: "Naoya Zenin" },
@@ -252,6 +256,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-jujutsu-kaisen-personnages-18.webp",
           question: "Quel lien unit Maki et Mai Zenin ?",
           answers: [
             { id: "a", text: "Elles sont cousines" },
@@ -278,6 +283,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-personnages-20.webp",
           question: "Quel personnage se dit le grand frère de Yuji ?",
           answers: [
             { id: "a", text: "Todo" },
@@ -312,6 +318,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jujutsu-kaisen-personnages-2.webp",
           question: "Who raised Yuji?",
           answers: [
             { id: "a", text: "His aunt" },
@@ -338,6 +345,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-jujutsu-kaisen-personnages-4.webp",
           question: "Which ratio does Nanami use to create a weak point?",
           answers: [
             { id: "a", text: "5:5" },
@@ -404,6 +412,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-jujutsu-kaisen-personnages-9.webp",
           question: "Which school is Aoi Todo from?",
           answers: [
             { id: "a", text: "Tokyo" },
@@ -470,6 +479,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jujutsu-kaisen-personnages-14.webp",
           question: "Who is Megumi's father?",
           answers: [
             { id: "a", text: "Naoya Zenin" },
@@ -523,6 +533,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-jujutsu-kaisen-personnages-18.webp",
           question: "How are Maki and Mai Zenin related?",
           answers: [
             { id: "a", text: "They're cousins" },
@@ -549,6 +560,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-personnages-20.webp",
           question: "Which character calls himself Yuji's big brother?",
           answers: [
             { id: "a", text: "Todo" },
@@ -583,6 +595,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jujutsu-kaisen-personnages-2.webp",
           question: "¿Quién crió a Yuji?",
           answers: [
             { id: "a", text: "Su tía" },
@@ -609,6 +622,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-jujutsu-kaisen-personnages-4.webp",
           question: "¿Qué proporción usa Nanami para crear un punto débil?",
           answers: [
             { id: "a", text: "5:5" },
@@ -675,6 +689,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-jujutsu-kaisen-personnages-9.webp",
           question: "¿De qué escuela es Aoi Todo?",
           answers: [
             { id: "a", text: "Tokio" },
@@ -741,6 +756,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-jujutsu-kaisen-personnages-14.webp",
           question: "¿Quién es el padre de Megumi?",
           answers: [
             { id: "a", text: "Naoya Zenin" },
@@ -794,6 +810,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-jujutsu-kaisen-personnages-18.webp",
           question: "¿Qué relación hay entre Maki y Mai Zenin?",
           answers: [
             { id: "a", text: "Son primas" },
@@ -820,6 +837,7 @@ export const quizJujutsuKaisenPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jujutsu-kaisen-personnages-20.webp",
           question: "¿Qué personaje dice ser el hermano mayor de Yuji?",
           answers: [
             { id: "a", text: "Todo" },

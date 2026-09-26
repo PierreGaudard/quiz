@@ -93,6 +93,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-departements-francais-6.webp",
           question: "Quel est le plus grand département de France métropolitaine ?",
           answers: [
             { id: "a", text: "La Gironde" },
@@ -173,6 +174,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-francais-12.webp",
           question: "Dans quel département se trouve le pont du Gard ?",
           answers: [
             { id: "a", text: "Le Gard" },
@@ -212,6 +214,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-francais-15.webp",
           question: "Quelle ville est la préfecture de la Savoie ?",
           answers: [
             { id: "a", text: "Chambéry" },
@@ -238,6 +241,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-francais-17.webp",
           question: "Quel département d'outre-mer se trouve en Amérique du Sud ?",
           answers: [
             { id: "a", text: "La Guyane" },
@@ -277,6 +281,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-francais-20.webp",
           question: "Dans quel département se trouve la dune du Pilat ?",
           answers: [
             { id: "a", text: "La Gironde" },
@@ -365,6 +370,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-departements-francais-6.webp",
           question: "Which is the largest department in mainland France?",
           answers: [
             { id: "a", text: "Gironde" },
@@ -445,6 +451,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-francais-12.webp",
           question: "Which department is the Pont du Gard in?",
           answers: [
             { id: "a", text: "Gard" },
@@ -484,6 +491,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-francais-15.webp",
           question: "Which city is the prefecture of Savoie?",
           answers: [
             { id: "a", text: "Chambéry" },
@@ -510,6 +518,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-francais-17.webp",
           question: "Which French overseas department is in South America?",
           answers: [
             { id: "a", text: "French Guiana" },
@@ -549,6 +558,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-francais-20.webp",
           question: "Which department is the Dune du Pilat in?",
           answers: [
             { id: "a", text: "Gironde" },
@@ -637,6 +647,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-departements-francais-6.webp",
           question: "¿Cuál es el departamento más grande de la Francia metropolitana?",
           answers: [
             { id: "a", text: "Gironda" },
@@ -717,6 +728,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-francais-12.webp",
           question: "¿En qué departamento está el puente del Gard?",
           answers: [
             { id: "a", text: "Gard" },
@@ -756,6 +768,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-francais-15.webp",
           question: "¿Qué ciudad es la prefectura de Saboya?",
           answers: [
             { id: "a", text: "Chambéry" },
@@ -782,6 +795,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-francais-17.webp",
           question: "¿Qué departamento francés de ultramar está en América del Sur?",
           answers: [
             { id: "a", text: "Guayana Francesa" },
@@ -821,6 +835,7 @@ export const quizDepartementsFrancais: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-francais-20.webp",
           question: "¿En qué departamento está la duna de Pilat?",
           answers: [
             { id: "a", text: "Gironda" },

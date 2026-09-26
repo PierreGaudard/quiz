@@ -26,6 +26,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-league-of-legends-1.webp",
           question: "Quel studio a créé League of Legends ?",
           answers: [
             { id: "a", text: "Riot Games" },
@@ -37,6 +38,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-league-of-legends-2.webp",
           question: "En quelle année League of Legends est-il sorti ?",
           answers: [
             { id: "a", text: "2012" },
@@ -151,6 +153,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-12.webp",
           question: "Comment s'appelle le monde où se passent les histoires de League of Legends ?",
           answers: [
             { id: "a", text: "Azeroth" },
@@ -184,6 +187,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-15.webp",
           question: "Quel groupe virtuel de League of Legends chante « Pop/Stars » ?",
           answers: [
             { id: "a", text: "K/DA" },
@@ -206,6 +210,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-17.webp",
           question: "Combien de dragons élémentaires faut-il tuer pour obtenir l'âme du dragon ?",
           answers: [
             { id: "a", text: "4" },
@@ -239,6 +244,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-20.webp",
           question: "Quel mode de Riot, sorti en 2019, consiste à placer des champions sur un plateau ?",
           answers: [
             { id: "a", text: "Arena" },
@@ -257,6 +263,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-league-of-legends-1.webp",
           question: "Which studio made League of Legends?",
           answers: [
             { id: "a", text: "Riot Games" },
@@ -268,6 +275,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-league-of-legends-2.webp",
           question: "In what year did League of Legends come out?",
           answers: [
             { id: "a", text: "2012" },
@@ -382,6 +390,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-12.webp",
           question: "What's the name of the world where League of Legends stories take place?",
           answers: [
             { id: "a", text: "Azeroth" },
@@ -415,6 +424,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-15.webp",
           question: "Which League of Legends virtual group sings \"Pop/Stars\"?",
           answers: [
             { id: "a", text: "K/DA" },
@@ -437,6 +447,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-17.webp",
           question: "How many elemental dragons do you need to kill to get the Dragon Soul?",
           answers: [
             { id: "a", text: "4" },
@@ -470,6 +481,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-20.webp",
           question: "Which Riot mode, released in 2019, has you place champions on a board?",
           answers: [
             { id: "a", text: "Arena" },
@@ -488,6 +500,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-league-of-legends-1.webp",
           question: "¿Qué estudio creó League of Legends?",
           answers: [
             { id: "a", text: "Riot Games" },
@@ -499,6 +512,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-league-of-legends-2.webp",
           question: "¿En qué año salió League of Legends?",
           answers: [
             { id: "a", text: "2012" },
@@ -613,6 +627,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-league-of-legends-12.webp",
           question: "¿Cómo se llama el mundo donde pasan las historias de League of Legends?",
           answers: [
             { id: "a", text: "Azeroth" },
@@ -646,6 +661,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-league-of-legends-15.webp",
           question: "¿Qué grupo virtual de League of Legends canta «Pop/Stars»?",
           answers: [
             { id: "a", text: "K/DA" },
@@ -668,6 +684,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-league-of-legends-17.webp",
           question: "¿Cuántos dragones elementales hay que matar para conseguir el alma del dragón?",
           answers: [
             { id: "a", text: "4" },
@@ -701,6 +718,7 @@ export const quizLeagueOfLegends: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-league-of-legends-20.webp",
           question: "¿Qué modo de Riot, lanzado en 2019, consiste en colocar campeones en un tablero?",
           answers: [
             { id: "a", text: "Arena" },

@@ -29,6 +29,7 @@ export const quizStarWars: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-1.webp",
           question: "Remets ces films dans leur ordre de sortie en salles.",
           answers: [
             { id: "a", text: "Un nouvel espoir" },
@@ -43,6 +44,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-star-wars-2.webp",
           question: "Remets ces épisodes dans l'ordre chronologique de l'histoire.",
           answers: [
             { id: "a", text: "La Menace fantôme" },
@@ -57,6 +59,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-star-wars-3.webp",
           question: "Remets ces films dans leur ordre de sortie en salles.",
           answers: [
             { id: "a", text: "La Menace fantôme" },
@@ -85,6 +88,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-star-wars-5.webp",
           question: "Remets ces films dans l'ordre chronologique de l'histoire.",
           answers: [
             { id: "a", text: "Rogue One" },
@@ -113,6 +117,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-star-wars-7.webp",
           question: "Remets ces films dans leur ordre de sortie en salles.",
           answers: [
             { id: "a", text: "Le Retour du Jedi" },
@@ -155,6 +160,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-star-wars-10.webp",
           question: "Remets ces films dans l'ordre chronologique de l'histoire.",
           answers: [
             { id: "a", text: "La Menace fantôme" },
@@ -183,6 +189,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-star-wars-12.webp",
           question: "Remets ces séries d'animation dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "The Clone Wars" },
@@ -225,6 +232,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-star-wars-15.webp",
           question: "Remets ces moments de la vie d'Anakin dans l'ordre de l'histoire.",
           answers: [
             { id: "a", text: "Il gagne une course de modules sur Tatooine" },
@@ -253,6 +261,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-17.webp",
           question: "Attention, c'est serré : remets ces sorties dans l'ordre.",
           answers: [
             { id: "a", text: "Solo" },
@@ -295,6 +304,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-20.webp",
           question: "Remets ces films dans leur ordre de sortie en salles.",
           answers: [
             { id: "a", text: "La Revanche des Sith" },
@@ -316,6 +326,7 @@ export const quizStarWars: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-1.webp",
           question: "Put these films in the order they were released in cinemas.",
           answers: [
             { id: "a", text: "A New Hope" },
@@ -330,6 +341,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-star-wars-2.webp",
           question: "Put these episodes in the chronological order of the story.",
           answers: [
             { id: "a", text: "The Phantom Menace" },
@@ -344,6 +356,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-star-wars-3.webp",
           question: "Put these films in the order they were released in cinemas.",
           answers: [
             { id: "a", text: "The Phantom Menace" },
@@ -372,6 +385,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-star-wars-5.webp",
           question: "Put these films in the chronological order of the story.",
           answers: [
             { id: "a", text: "Rogue One" },
@@ -400,6 +414,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-star-wars-7.webp",
           question: "Put these films in the order they were released in cinemas.",
           answers: [
             { id: "a", text: "Return of the Jedi" },
@@ -442,6 +457,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-star-wars-10.webp",
           question: "Put these films in the chronological order of the story.",
           answers: [
             { id: "a", text: "The Phantom Menace" },
@@ -470,6 +486,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-star-wars-12.webp",
           question: "Put these animated series in release order.",
           answers: [
             { id: "a", text: "The Clone Wars" },
@@ -512,6 +529,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-star-wars-15.webp",
           question: "Put these moments of Anakin's life in story order.",
           answers: [
             { id: "a", text: "He wins a podrace on Tatooine" },
@@ -540,6 +558,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-17.webp",
           question: "Careful, it's close: put these releases in order.",
           answers: [
             { id: "a", text: "Solo" },
@@ -582,6 +601,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-20.webp",
           question: "Put these films in their order of release in cinemas.",
           answers: [
             { id: "a", text: "Revenge of the Sith" },
@@ -603,6 +623,7 @@ export const quizStarWars: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-star-wars-1.webp",
           question: "Ordena estas películas por su fecha de estreno en cines.",
           answers: [
             { id: "a", text: "Una nueva esperanza" },
@@ -617,6 +638,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-star-wars-2.webp",
           question: "Ordena estos episodios según el orden cronológico de la historia.",
           answers: [
             { id: "a", text: "La amenaza fantasma" },
@@ -631,6 +653,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-star-wars-3.webp",
           question: "Ordena estas películas por su fecha de estreno en cines.",
           answers: [
             { id: "a", text: "La amenaza fantasma" },
@@ -659,6 +682,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-star-wars-5.webp",
           question: "Ordena estas películas según el orden cronológico de la historia.",
           answers: [
             { id: "a", text: "Rogue One" },
@@ -687,6 +711,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-star-wars-7.webp",
           question: "Ordena estas películas por su fecha de estreno en cines.",
           answers: [
             { id: "a", text: "El retorno del Jedi" },
@@ -729,6 +754,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-star-wars-10.webp",
           question: "Ordena estas películas según el orden cronológico de la historia.",
           answers: [
             { id: "a", text: "La amenaza fantasma" },
@@ -757,6 +783,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-star-wars-12.webp",
           question: "Ordena estas series de animación por fecha de estreno.",
           answers: [
             { id: "a", text: "The Clone Wars" },
@@ -799,6 +826,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-star-wars-15.webp",
           question: "Ordena estos momentos de la vida de Anakin según el orden de la historia.",
           answers: [
             { id: "a", text: "Gana una carrera de vainas en Tatooine" },
@@ -827,6 +855,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-star-wars-17.webp",
           question: "Ojo, que está reñido: ordena estos estrenos.",
           answers: [
             { id: "a", text: "Solo" },
@@ -869,6 +898,7 @@ export const quizStarWars: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-star-wars-20.webp",
           question: "Ordena estas películas por su fecha de estreno en cines.",
           answers: [
             { id: "a", text: "La venganza de los Sith" },

@@ -49,6 +49,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fifa-notes-3.webp",
           question: "Dans FIFA 16, le premier FIFA avec des joueuses, qui avait la meilleure note ?",
           answers: [
             { id: "a", text: "Carli Lloyd" },
@@ -152,6 +153,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fifa-notes-12.webp",
           question: "Dans FIFA 15, qui avait la meilleure note générale ?",
           answers: [
             { id: "a", text: "Arjen Robben" },
@@ -185,6 +187,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fifa-notes-15.webp",
           question: "Dans FIFA 20, quel gardien avait la meilleure note ?",
           answers: [
             { id: "a", text: "Alisson" },
@@ -207,6 +210,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fifa-notes-17.webp",
           question: "Dans FIFA 21, qui avait la meilleure note générale ?",
           answers: [
             { id: "a", text: "Cristiano Ronaldo" },
@@ -240,6 +244,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-notes-20.webp",
           question: "Dans FIFA 22, entre ces deux avant-centres, qui avait la meilleure note ?",
           answers: [
             { id: "a", text: "Harry Kane" },
@@ -281,6 +286,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fifa-notes-3.webp",
           question: "In FIFA 16, the first FIFA with women players, who had the higher rating?",
           answers: [
             { id: "a", text: "Carli Lloyd" },
@@ -384,6 +390,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fifa-notes-12.webp",
           question: "In FIFA 15, who had the higher overall rating?",
           answers: [
             { id: "a", text: "Arjen Robben" },
@@ -417,6 +424,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fifa-notes-15.webp",
           question: "In FIFA 20, which goalkeeper had the higher rating?",
           answers: [
             { id: "a", text: "Alisson" },
@@ -439,6 +447,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fifa-notes-17.webp",
           question: "In FIFA 21, who had the higher overall rating?",
           answers: [
             { id: "a", text: "Cristiano Ronaldo" },
@@ -472,6 +481,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-notes-20.webp",
           question: "In FIFA 22, which of these two strikers had the higher rating?",
           answers: [
             { id: "a", text: "Harry Kane" },
@@ -513,6 +523,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fifa-notes-3.webp",
           question: "En FIFA 16, el primer FIFA con jugadoras, ¿quién tenía más media?",
           answers: [
             { id: "a", text: "Carli Lloyd" },
@@ -616,6 +627,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-fifa-notes-12.webp",
           question: "En FIFA 15, ¿quién tenía más media?",
           answers: [
             { id: "a", text: "Arjen Robben" },
@@ -649,6 +661,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-fifa-notes-15.webp",
           question: "En FIFA 20, ¿qué portero tenía más media?",
           answers: [
             { id: "a", text: "Alisson" },
@@ -671,6 +684,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fifa-notes-17.webp",
           question: "En FIFA 21, ¿quién tenía más media?",
           answers: [
             { id: "a", text: "Cristiano Ronaldo" },
@@ -704,6 +718,7 @@ export const quizFifaNotes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fifa-notes-20.webp",
           question: "En FIFA 22, entre estos dos delanteros centro, ¿quién tenía más media?",
           answers: [
             { id: "a", text: "Harry Kane" },

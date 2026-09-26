@@ -41,6 +41,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-boxe-2.webp",
           question: "Combien de minutes dure un round en boxe pro masculine ?",
           answers: [
             { id: "a", text: "2 minutes" },
@@ -148,6 +149,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-boxe-10.webp",
           question: "De quel pays vient Saúl « Canelo » Álvarez ?",
           answers: [
             { id: "a", text: "Mexique" },
@@ -187,6 +189,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-boxe-13.webp",
           question: "Qui a battu Tyson Fury en 2024 ?",
           answers: [
             { id: "a", text: "Anthony Joshua" },
@@ -226,6 +229,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-boxe-16.webp",
           question: "Quelle forme a un ring de boxe ?",
           answers: [
             { id: "a", text: "Rond" },
@@ -252,6 +256,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-boxe-18.webp",
           question: "Quel champion des lourds a pris sa retraite invaincu ?",
           answers: [
             { id: "a", text: "Rocky Marciano" },
@@ -278,6 +283,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-20.webp",
           question: "De quel pays viennent les frères Klitschko ?",
           answers: [
             { id: "a", text: "De Russie" },
@@ -312,6 +318,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-boxe-2.webp",
           question: "How long is a round in men's pro boxing?",
           answers: [
             { id: "a", text: "2 minutes" },
@@ -419,6 +426,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-boxe-10.webp",
           question: "Which country is Saúl \"Canelo\" Álvarez from?",
           answers: [
             { id: "a", text: "Mexico" },
@@ -458,6 +466,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-boxe-13.webp",
           question: "Who beat Tyson Fury in 2024?",
           answers: [
             { id: "a", text: "Anthony Joshua" },
@@ -497,6 +506,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-boxe-16.webp",
           question: "What shape is a boxing ring?",
           answers: [
             { id: "a", text: "Round" },
@@ -523,6 +533,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-boxe-18.webp",
           question: "Which heavyweight champion retired unbeaten?",
           answers: [
             { id: "a", text: "Rocky Marciano" },
@@ -549,6 +560,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-20.webp",
           question: "Which country are the Klitschko brothers from?",
           answers: [
             { id: "a", text: "Russia" },
@@ -583,6 +595,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-boxe-2.webp",
           question: "¿Cuántos minutos dura un asalto en el boxeo profesional masculino?",
           answers: [
             { id: "a", text: "2 minutos" },
@@ -690,6 +703,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-boxe-10.webp",
           question: "¿De qué país es Saúl «Canelo» Álvarez?",
           answers: [
             { id: "a", text: "México" },
@@ -729,6 +743,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-boxe-13.webp",
           question: "¿Quién venció a Tyson Fury en 2024?",
           answers: [
             { id: "a", text: "Anthony Joshua" },
@@ -768,6 +783,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-boxe-16.webp",
           question: "¿Qué forma tiene un ring de boxeo?",
           answers: [
             { id: "a", text: "Redondo" },
@@ -794,6 +810,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-boxe-18.webp",
           question: "¿Qué campeón del peso pesado se retiró invicto?",
           answers: [
             { id: "a", text: "Rocky Marciano" },
@@ -820,6 +837,7 @@ export const quizBoxe: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-boxe-20.webp",
           question: "¿De qué país son los hermanos Klitschko?",
           answers: [
             { id: "a", text: "De Rusia" },

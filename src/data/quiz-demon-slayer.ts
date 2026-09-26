@@ -40,6 +40,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-2.webp",
           question: "Qui a écrit et dessiné le manga Demon Slayer ?",
           answers: [
             { id: "a", text: "Gege Akutami" },
@@ -147,6 +148,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-demon-slayer-10.webp",
           question: "Combien y a-t-il de Piliers dans le corps des pourfendeurs de démons ?",
           answers: [
             { id: "a", text: "Sept" },
@@ -186,6 +188,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-demon-slayer-13.webp",
           question: "Comment Tanjiro transporte-t-il Nezuko pendant la journée ?",
           answers: [
             { id: "a", text: "Dans un chariot" },
@@ -225,6 +228,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-demon-slayer-16.webp",
           question: "Quel masque porte Sakonji Urokodaki, le maître de Tanjiro ?",
           answers: [
             { id: "a", text: "Un masque de tengu rouge" },
@@ -251,6 +255,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-demon-slayer-18.webp",
           question: "Quel animal transmet les missions aux pourfendeurs de démons ?",
           answers: [
             { id: "a", text: "Un corbeau" },
@@ -277,6 +282,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-20.webp",
           question: "Quelle danse, apprise de son père, Tanjiro utilise-t-il au combat ?",
           answers: [
             { id: "a", text: "La danse de la lune" },
@@ -311,6 +317,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-2.webp",
           question: "Who wrote and drew the Demon Slayer manga?",
           answers: [
             { id: "a", text: "Gege Akutami" },
@@ -418,6 +425,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-demon-slayer-10.webp",
           question: "How many Hashira are there in the Demon Slayer Corps?",
           answers: [
             { id: "a", text: "Seven" },
@@ -457,6 +465,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-demon-slayer-13.webp",
           question: "How does Tanjiro carry Nezuko during the day?",
           answers: [
             { id: "a", text: "In a cart" },
@@ -496,6 +505,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-demon-slayer-16.webp",
           question: "What mask does Sakonji Urokodaki, Tanjiro's master, wear?",
           answers: [
             { id: "a", text: "A red tengu mask" },
@@ -522,6 +532,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-demon-slayer-18.webp",
           question: "Which animal passes missions on to the demon slayers?",
           answers: [
             { id: "a", text: "A crow" },
@@ -548,6 +559,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-20.webp",
           question: "Which dance, learned from his father, does Tanjiro use in battle?",
           answers: [
             { id: "a", text: "The Moon Dance" },
@@ -582,6 +594,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-2.webp",
           question: "¿Quién escribió y dibujó el manga de Demon Slayer?",
           answers: [
             { id: "a", text: "Gege Akutami" },
@@ -689,6 +702,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-demon-slayer-10.webp",
           question: "¿Cuántos Pilares hay en el Cuerpo de Cazadores de Demonios?",
           answers: [
             { id: "a", text: "Siete" },
@@ -728,6 +742,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-demon-slayer-13.webp",
           question: "¿Cómo lleva Tanjiro a Nezuko durante el día?",
           answers: [
             { id: "a", text: "En un carro" },
@@ -767,6 +782,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-demon-slayer-16.webp",
           question: "¿Qué máscara lleva Sakonji Urokodaki, el maestro de Tanjiro?",
           answers: [
             { id: "a", text: "Una máscara de tengu roja" },
@@ -793,6 +809,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-demon-slayer-18.webp",
           question: "¿Qué animal les transmite las misiones a los cazadores de demonios?",
           answers: [
             { id: "a", text: "Un cuervo" },
@@ -819,6 +836,7 @@ export const quizDemonSlayer: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-20.webp",
           question: "¿Qué danza, aprendida de su padre, usa Tanjiro en combate?",
           answers: [
             { id: "a", text: "La danza de la luna" },

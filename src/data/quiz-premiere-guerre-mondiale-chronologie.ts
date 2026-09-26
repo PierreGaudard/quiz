@@ -48,6 +48,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-2.webp",
           question: "Remets ces pays dans l'ordre de leur entrée en guerre.",
           answers: [
             { id: "a", text: "Le Royaume-Uni" },
@@ -105,6 +106,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-6.webp",
           question: "Remets ces armistices dans l'ordre.",
           answers: [
             { id: "a", text: "Avec la Bulgarie" },
@@ -191,6 +193,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-12.webp",
           question: "Remets ces événements de la guerre sur mer dans l'ordre.",
           answers: [
             { id: "a", text: "La bataille de Coronel, au large du Chili" },
@@ -233,6 +236,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-15.webp",
           question: "Remets ces événements du Proche-Orient dans l'ordre.",
           answers: [
             { id: "a", text: "Le début de la révolte arabe contre les Ottomans" },
@@ -261,6 +265,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-17.webp",
           question: "Remets ces offensives alliées de 1915 dans l'ordre.",
           answers: [
             { id: "a", text: "La bataille de Neuve-Chapelle" },
@@ -303,6 +308,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-20.webp",
           question: "Remets ces accords et conférences dans l'ordre.",
           answers: [
             { id: "a", text: "Le pacte de Londres, qui fait entrer l'Italie dans la guerre" },
@@ -339,6 +345,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-2.webp",
           question: "Put these countries in the order they entered the war.",
           answers: [
             { id: "a", text: "The United Kingdom" },
@@ -396,6 +403,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-6.webp",
           question: "Put these armistices in order.",
           answers: [
             { id: "a", text: "With Bulgaria" },
@@ -482,6 +490,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-12.webp",
           question: "Put these events of the war at sea in order.",
           answers: [
             { id: "a", text: "The battle of Coronel, off Chile" },
@@ -524,6 +533,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-15.webp",
           question: "Put these events in the Middle East in order.",
           answers: [
             { id: "a", text: "The start of the Arab revolt against the Ottomans" },
@@ -552,6 +562,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-17.webp",
           question: "Put these Allied offensives of 1915 in order.",
           answers: [
             { id: "a", text: "The battle of Neuve-Chapelle" },
@@ -594,6 +605,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-20.webp",
           question: "Put these agreements and conferences in order.",
           answers: [
             { id: "a", text: "The Treaty of London, which brings Italy into the war" },
@@ -630,6 +642,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-2.webp",
           question: "Ordena estos países según su entrada en la guerra.",
           answers: [
             { id: "a", text: "El Reino Unido" },
@@ -687,6 +700,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-6.webp",
           question: "Ordena estos armisticios.",
           answers: [
             { id: "a", text: "Con Bulgaria" },
@@ -773,6 +787,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-12.webp",
           question: "Ordena estos hechos de la guerra en el mar.",
           answers: [
             { id: "a", text: "La batalla de Coronel, frente a Chile" },
@@ -815,6 +830,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-15.webp",
           question: "Ordena estos hechos de Oriente Próximo.",
           answers: [
             { id: "a", text: "El inicio de la revuelta árabe contra los otomanos" },
@@ -843,6 +859,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-17.webp",
           question: "Ordena estas ofensivas aliadas de 1915.",
           answers: [
             { id: "a", text: "La batalla de Neuve-Chapelle" },
@@ -885,6 +902,7 @@ export const quizPremiereGuerreMondialeChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-chronologie-20.webp",
           question: "Ordena estos acuerdos y conferencias.",
           answers: [
             { id: "a", text: "El pacto de Londres, que hace entrar a Italia en la guerra" },

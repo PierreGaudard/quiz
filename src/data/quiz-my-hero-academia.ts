@@ -40,6 +40,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-my-hero-academia-2.webp",
           question: "Qui a créé My Hero Academia ?",
           answers: [
             { id: "a", text: "Masashi Kishimoto" },
@@ -161,6 +162,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-my-hero-academia-11.webp",
           question: "Quel élève de la 1-A peut durcir son corps ?",
           answers: [
             { id: "a", text: "Tenya Iida" },
@@ -200,6 +202,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-my-hero-academia-14.webp",
           question: "Qui est le grand ennemi d'All Might ?",
           answers: [
             { id: "a", text: "Stain" },
@@ -239,6 +242,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-17.webp",
           question: "L'Alter de Tsuyu Asui imite quel animal ?",
           answers: [
             { id: "a", text: "Le chat" },
@@ -278,6 +282,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-20.webp",
           question: "Quelle est la devise de Yuei ?",
           answers: [
             { id: "a", text: "Plus Ultra" },
@@ -312,6 +317,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-my-hero-academia-2.webp",
           question: "Who created My Hero Academia?",
           answers: [
             { id: "a", text: "Masashi Kishimoto" },
@@ -433,6 +439,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-my-hero-academia-11.webp",
           question: "Which Class 1-A student can harden his body?",
           answers: [
             { id: "a", text: "Tenya Iida" },
@@ -472,6 +479,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-my-hero-academia-14.webp",
           question: "Who is All Might's archenemy?",
           answers: [
             { id: "a", text: "Stain" },
@@ -511,6 +519,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-17.webp",
           question: "Which animal is Tsuyu Asui's Quirk based on?",
           answers: [
             { id: "a", text: "Cat" },
@@ -550,6 +559,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-20.webp",
           question: "What is U.A.'s motto?",
           answers: [
             { id: "a", text: "Plus Ultra" },
@@ -584,6 +594,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-my-hero-academia-2.webp",
           question: "¿Quién creó My Hero Academia?",
           answers: [
             { id: "a", text: "Masashi Kishimoto" },
@@ -705,6 +716,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-my-hero-academia-11.webp",
           question: "¿Qué alumno de la 1-A puede endurecer su cuerpo?",
           answers: [
             { id: "a", text: "Tenya Iida" },
@@ -744,6 +756,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-my-hero-academia-14.webp",
           question: "¿Quién es el gran enemigo de All Might?",
           answers: [
             { id: "a", text: "Stain" },
@@ -783,6 +796,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-my-hero-academia-17.webp",
           question: "¿En qué animal se basa el Don de Tsuyu Asui?",
           answers: [
             { id: "a", text: "El gato" },
@@ -822,6 +836,7 @@ export const quizMyHeroAcademia: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-my-hero-academia-20.webp",
           question: "¿Cuál es el lema de la U.A.?",
           answers: [
             { id: "a", text: "Plus Ultra" },

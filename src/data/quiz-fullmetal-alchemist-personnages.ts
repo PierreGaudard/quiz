@@ -50,6 +50,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fullmetal-alchemist-personnages-3.webp",
           question: "Izumi Curtis est le maître d'alchimie des frères Elric.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -61,6 +62,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-fullmetal-alchemist-personnages-4.webp",
           question: "Van Hohenheim est l'oncle des frères Elric.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -140,6 +142,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-personnages-11.webp",
           question: "Ling Yao, le prince de Xing, vient à Amestris pour trouver le secret de l'immortalité.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -173,6 +176,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fullmetal-alchemist-personnages-14.webp",
           question: "Izumi Curtis n'a jamais tenté de transmutation humaine.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +210,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fullmetal-alchemist-personnages-17.webp",
           question: "Le bras droit de Scar est celui de son grand frère.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +244,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-personnages-20.webp",
           question: "Roy Mustang reste aveugle jusqu'à la fin de l'histoire.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -281,6 +287,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fullmetal-alchemist-personnages-3.webp",
           question: "Izumi Curtis is the Elric brothers' alchemy teacher.",
           answers: [
             { id: "a", text: "True" },
@@ -292,6 +299,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-fullmetal-alchemist-personnages-4.webp",
           question: "Van Hohenheim is the Elric brothers' uncle.",
           answers: [
             { id: "a", text: "True" },
@@ -371,6 +379,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-personnages-11.webp",
           question: "Ling Yao, the prince of Xing, comes to Amestris to find the secret of immortality.",
           answers: [
             { id: "a", text: "True" },
@@ -404,6 +413,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fullmetal-alchemist-personnages-14.webp",
           question: "Izumi Curtis has never attempted human transmutation.",
           answers: [
             { id: "a", text: "True" },
@@ -437,6 +447,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fullmetal-alchemist-personnages-17.webp",
           question: "Scar's right arm belonged to his older brother.",
           answers: [
             { id: "a", text: "True" },
@@ -470,6 +481,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-personnages-20.webp",
           question: "Roy Mustang stays blind until the end of the story.",
           answers: [
             { id: "a", text: "True" },
@@ -512,6 +524,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-fullmetal-alchemist-personnages-3.webp",
           question: "Izumi Curtis es la maestra de alquimia de los hermanos Elric.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -523,6 +536,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-fullmetal-alchemist-personnages-4.webp",
           question: "Van Hohenheim es el tío de los hermanos Elric.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -602,6 +616,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-personnages-11.webp",
           question: "Ling Yao, el príncipe de Xing, viene a Amestris a buscar el secreto de la inmortalidad.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -635,6 +650,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-fullmetal-alchemist-personnages-14.webp",
           question: "Izumi Curtis nunca ha intentado una transmutación humana.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -668,6 +684,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-fullmetal-alchemist-personnages-17.webp",
           question: "El brazo derecho de Scar era de su hermano mayor.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -701,6 +718,7 @@ export const quizFullmetalAlchemistPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-personnages-20.webp",
           question: "Roy Mustang se queda ciego hasta el final de la historia.",
           answers: [
             { id: "a", text: "Verdadero" },

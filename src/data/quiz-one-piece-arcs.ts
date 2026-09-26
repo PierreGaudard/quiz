@@ -25,6 +25,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-one-piece-arcs-1.webp",
           question: "Remets ces arcs dans l'ordre du récit.",
           answers: [
             { id: "a", text: "Arlong Park" },
@@ -170,6 +171,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-one-piece-arcs-11.webp",
           question: "Remets ces transformations de Luffy dans l'ordre de leur première apparition.",
           answers: [
             { id: "a", text: "Gear 2" },
@@ -212,6 +214,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-one-piece-arcs-14.webp",
           question: "Et après l'ellipse, dans quel ordre Luffy bat-il ces adversaires ?",
           answers: [
             { id: "a", text: "Hody Jones" },
@@ -254,6 +257,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-arcs-17.webp",
           question: "Remets ces moments de la vie du Vogue Merry dans l'ordre.",
           answers: [
             { id: "a", text: "Kaya offre le navire à l'équipage" },
@@ -296,6 +300,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-arcs-20.webp",
           question: "Remets ces films One Piece dans l'ordre de sortie.",
           answers: [
             { id: "a", text: "Strong World" },
@@ -317,6 +322,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-one-piece-arcs-1.webp",
           question: "Put these arcs in story order.",
           answers: [
             { id: "a", text: "Arlong Park" },
@@ -462,6 +468,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-one-piece-arcs-11.webp",
           question: "Put Luffy's transformations in the order they first appear.",
           answers: [
             { id: "a", text: "Gear 2" },
@@ -504,6 +511,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-one-piece-arcs-14.webp",
           question: "And after the timeskip, in what order does Luffy beat these enemies?",
           answers: [
             { id: "a", text: "Hody Jones" },
@@ -546,6 +554,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-arcs-17.webp",
           question: "Put these moments in the life of the Going Merry in order.",
           answers: [
             { id: "a", text: "Kaya gives the ship to the crew" },
@@ -588,6 +597,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-arcs-20.webp",
           question: "Put these One Piece movies in release order.",
           answers: [
             { id: "a", text: "Strong World" },
@@ -609,6 +619,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-one-piece-arcs-1.webp",
           question: "Ordena estos arcos según la historia.",
           answers: [
             { id: "a", text: "Arlong Park" },
@@ -754,6 +765,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-one-piece-arcs-11.webp",
           question: "Ordena estas transformaciones de Luffy según su primera aparición.",
           answers: [
             { id: "a", text: "Gear 2" },
@@ -796,6 +808,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-one-piece-arcs-14.webp",
           question: "Y después del salto temporal, ¿en qué orden derrota Luffy a estos enemigos?",
           answers: [
             { id: "a", text: "Hody Jones" },
@@ -838,6 +851,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-arcs-17.webp",
           question: "Ordena estos momentos de la vida del Going Merry.",
           answers: [
             { id: "a", text: "Kaya le regala el barco a la tripulación" },
@@ -880,6 +894,7 @@ export const quizOnePieceArcs: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-arcs-20.webp",
           question: "Ordena estas películas de One Piece por fecha de estreno.",
           answers: [
             { id: "a", text: "Strong World" },

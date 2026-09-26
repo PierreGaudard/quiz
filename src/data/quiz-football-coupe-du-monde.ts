@@ -41,6 +41,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-coupe-du-monde-2.webp",
           question: "Classe ces pays selon l'année de leur premier titre mondial, du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Brésil" },
@@ -70,6 +71,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-football-coupe-du-monde-4.webp",
           question: "Remets ces pays organisateurs dans l'ordre, du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Japon et Corée du Sud" },
@@ -170,6 +172,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-football-coupe-du-monde-11.webp",
           question: "Remets ces mascottes de la Coupe du monde dans l'ordre, de la plus ancienne à la plus récente.",
           answers: [
             { id: "a", text: "Footix" },
@@ -212,6 +215,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-football-coupe-du-monde-14.webp",
           question: "Remets ces nouveautés dans l'ordre où elles sont apparues en Coupe du monde.",
           answers: [
             { id: "a", text: "Les cartons jaunes et rouges" },
@@ -254,6 +258,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-coupe-du-monde-17.webp",
           question: "Remets ces polémiques de Coupe du monde dans l'ordre.",
           answers: [
             { id: "a", text: "L'agression de Schumacher sur Battiston" },
@@ -296,6 +301,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-coupe-du-monde-20.webp",
           question: "Remets dans l'ordre les adversaires de la France dans le tableau final de 1998, du huitième à la finale.",
           answers: [
             { id: "a", text: "Paraguay" },
@@ -332,6 +338,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-coupe-du-monde-2.webp",
           question: "Rank these countries by the year of their first World Cup win, earliest first.",
           answers: [
             { id: "a", text: "Brazil" },
@@ -361,6 +368,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-football-coupe-du-monde-4.webp",
           question: "Put these World Cup hosts in order, earliest first.",
           answers: [
             { id: "a", text: "Japan and South Korea" },
@@ -461,6 +469,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-football-coupe-du-monde-11.webp",
           question: "Put these World Cup mascots in order, from oldest to most recent.",
           answers: [
             { id: "a", text: "Footix" },
@@ -503,6 +512,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-football-coupe-du-monde-14.webp",
           question: "Put these innovations in the order they first appeared at the World Cup.",
           answers: [
             { id: "a", text: "Yellow and red cards" },
@@ -545,6 +555,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-coupe-du-monde-17.webp",
           question: "Put these World Cup controversies in order.",
           answers: [
             { id: "a", text: "Schumacher's challenge on Battiston" },
@@ -587,6 +598,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-coupe-du-monde-20.webp",
           question: "Put France's knockout opponents at the 1998 World Cup in order, from the last 16 to the final.",
           answers: [
             { id: "a", text: "Paraguay" },
@@ -623,6 +635,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-football-coupe-du-monde-2.webp",
           question: "Ordena estos países según el año de su primer Mundial, del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "Brasil" },
@@ -652,6 +665,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-football-coupe-du-monde-4.webp",
           question: "Ordena estos países anfitriones, del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "Japón y Corea del Sur" },
@@ -752,6 +766,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-football-coupe-du-monde-11.webp",
           question: "Ordena estas mascotas del Mundial, de la más antigua a la más reciente.",
           answers: [
             { id: "a", text: "Footix" },
@@ -794,6 +809,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-football-coupe-du-monde-14.webp",
           question: "Ordena estas novedades según el Mundial en que aparecieron.",
           answers: [
             { id: "a", text: "Las tarjetas amarilla y roja" },
@@ -836,6 +852,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-football-coupe-du-monde-17.webp",
           question: "Ordena estas polémicas del Mundial.",
           answers: [
             { id: "a", text: "La entrada de Schumacher a Battiston" },
@@ -878,6 +895,7 @@ export const quizFootballCoupeDuMonde: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-football-coupe-du-monde-20.webp",
           question: "Ordena los rivales de Francia en la fase final de 1998, de octavos a la final.",
           answers: [
             { id: "a", text: "Paraguay" },

@@ -26,6 +26,7 @@ export const quizValorant: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-valorant-1.webp",
           question: "Quel studio a créé Valorant ?",
           answers: [
             { id: "a", text: "Blizzard" },
@@ -39,6 +40,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-valorant-2.webp",
           question: "En quelle année Valorant est-il sorti ?",
           answers: [
             { id: "a", text: "2018" },
@@ -160,6 +162,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-valorant-11.webp",
           question: "Avec quoi achète-t-on ses armes en partie ?",
           answers: [
             { id: "a", text: "Des Valorant Points" },
@@ -238,6 +241,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-valorant-17.webp",
           question: "Comment s'appelle le championnat du monde de Valorant ?",
           answers: [
             { id: "a", text: "Worlds" },
@@ -277,6 +281,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-20.webp",
           question: "Quel est le rôle de Viper ?",
           answers: [
             { id: "a", text: "Duelliste" },
@@ -297,6 +302,7 @@ export const quizValorant: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-valorant-1.webp",
           question: "Which studio made Valorant?",
           answers: [
             { id: "a", text: "Blizzard" },
@@ -310,6 +316,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-valorant-2.webp",
           question: "In what year did Valorant come out?",
           answers: [
             { id: "a", text: "2018" },
@@ -431,6 +438,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-valorant-11.webp",
           question: "What do you buy weapons with during a match?",
           answers: [
             { id: "a", text: "Valorant Points" },
@@ -509,6 +517,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-valorant-17.webp",
           question: "What is the Valorant world championship called?",
           answers: [
             { id: "a", text: "Worlds" },
@@ -548,6 +557,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-20.webp",
           question: "What is Viper's role?",
           answers: [
             { id: "a", text: "Duelist" },
@@ -568,6 +578,7 @@ export const quizValorant: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-valorant-1.webp",
           question: "¿Qué estudio creó Valorant?",
           answers: [
             { id: "a", text: "Blizzard" },
@@ -581,6 +592,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-valorant-2.webp",
           question: "¿En qué año salió Valorant?",
           answers: [
             { id: "a", text: "2018" },
@@ -702,6 +714,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-valorant-11.webp",
           question: "¿Con qué se compran las armas durante la partida?",
           answers: [
             { id: "a", text: "Valorant Points" },
@@ -780,6 +793,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-valorant-17.webp",
           question: "¿Cómo se llama el campeonato mundial de Valorant?",
           answers: [
             { id: "a", text: "Worlds" },
@@ -819,6 +833,7 @@ export const quizValorant: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-20.webp",
           question: "¿Qué rol tiene Viper?",
           answers: [
             { id: "a", text: "Duelista" },

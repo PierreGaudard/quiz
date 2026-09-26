@@ -116,6 +116,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fullmetal-alchemist-9.webp",
           question: "Quel anime suit fidèlement le manga jusqu'à la fin ?",
           answers: [
             { id: "a", text: "Fullmetal Alchemist (2003)" },
@@ -138,6 +139,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-11.webp",
           question: "Comment s'appelle la mère d'Edward et Alphonse ?",
           answers: [
             { id: "a", text: "Pinako" },
@@ -160,6 +162,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fullmetal-alchemist-13.webp",
           question: "Pourquoi Edward peut-il faire de l'alchimie sans dessiner de cercle ?",
           answers: [
             { id: "a", text: "Grâce à ses automails" },
@@ -193,6 +196,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fullmetal-alchemist-16.webp",
           question: "Alphonse peut-il dormir dans son armure ?",
           answers: [
             { id: "a", text: "Oui, comme tout le monde" },
@@ -215,6 +219,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fullmetal-alchemist-18.webp",
           question: "Quel poste Roy Mustang veut-il atteindre ?",
           answers: [
             { id: "a", text: "Führer, le chef du pays" },
@@ -237,6 +242,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-20.webp",
           question: "Comment Edward fait-il sa déclaration à Winry, à la fin ?",
           answers: [
             { id: "a", text: "En lui offrant une bague" },
@@ -347,6 +353,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fullmetal-alchemist-9.webp",
           question: "Which anime follows the manga faithfully all the way to the end?",
           answers: [
             { id: "a", text: "Fullmetal Alchemist (2003)" },
@@ -369,6 +376,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-11.webp",
           question: "What is Edward and Alphonse's mother called?",
           answers: [
             { id: "a", text: "Pinako" },
@@ -391,6 +399,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fullmetal-alchemist-13.webp",
           question: "Why can Edward do alchemy without drawing a circle?",
           answers: [
             { id: "a", text: "Thanks to his automail" },
@@ -424,6 +433,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fullmetal-alchemist-16.webp",
           question: "Can Alphonse sleep in his armor?",
           answers: [
             { id: "a", text: "Yes, like anyone" },
@@ -446,6 +456,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fullmetal-alchemist-18.webp",
           question: "What position does Roy Mustang want to reach?",
           answers: [
             { id: "a", text: "Führer, the head of the country" },
@@ -468,6 +479,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-20.webp",
           question: "How does Edward confess his feelings to Winry at the end?",
           answers: [
             { id: "a", text: "By giving her a ring" },
@@ -578,6 +590,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fullmetal-alchemist-9.webp",
           question: "¿Qué anime sigue fielmente el manga hasta el final?",
           answers: [
             { id: "a", text: "Fullmetal Alchemist (2003)" },
@@ -600,6 +613,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-11.webp",
           question: "¿Cómo se llama la madre de Edward y Alphonse?",
           answers: [
             { id: "a", text: "Pinako" },
@@ -622,6 +636,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fullmetal-alchemist-13.webp",
           question: "¿Por qué Edward puede hacer alquimia sin dibujar un círculo?",
           answers: [
             { id: "a", text: "Gracias a su automail" },
@@ -655,6 +670,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fullmetal-alchemist-16.webp",
           question: "¿Puede dormir Alphonse dentro de su armadura?",
           answers: [
             { id: "a", text: "Sí, como cualquiera" },
@@ -677,6 +693,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fullmetal-alchemist-18.webp",
           question: "¿Qué puesto quiere alcanzar Roy Mustang?",
           answers: [
             { id: "a", text: "Führer, el jefe del país" },
@@ -699,6 +716,7 @@ export const quizFullmetalAlchemist: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-20.webp",
           question: "¿Cómo se declara Edward a Winry al final?",
           answers: [
             { id: "a", text: "Regalándole un anillo" },

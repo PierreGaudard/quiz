@@ -42,6 +42,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-zelda-jeux-2.webp",
           question: "Remets ces jeux dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Zelda II : The Adventure of Link" },
@@ -157,6 +158,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-zelda-jeux-10.webp",
           question: "Remets ces jeux dérivés de Zelda dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Link's Crossbow Training" },
@@ -199,6 +201,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-zelda-jeux-13.webp",
           question: "Dans Majora's Mask, remets ces régions de Termina dans l'ordre où Link y fait les temples.",
           answers: [
             { id: "a", text: "Le marais des Bois-Cascade, au sud" },
@@ -241,6 +244,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-zelda-jeux-16.webp",
           question: "Remets ces jeux dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Breath of the Wild" },
@@ -269,6 +273,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-zelda-jeux-18.webp",
           question: "Dans Ocarina of Time, remets ces moments de l'histoire dans l'ordre.",
           answers: [
             { id: "a", text: "Link trouve l'Épée Kokiri" },
@@ -297,6 +302,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-jeux-20.webp",
           question: "Remets ces jeux dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "A Link to the Past" },
@@ -333,6 +339,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-zelda-jeux-2.webp",
           question: "Put these games in their release order.",
           answers: [
             { id: "a", text: "Zelda II: The Adventure of Link" },
@@ -448,6 +455,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-zelda-jeux-10.webp",
           question: "Put these Zelda spin-offs in their release order.",
           answers: [
             { id: "a", text: "Link's Crossbow Training" },
@@ -490,6 +498,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-zelda-jeux-13.webp",
           question: "In Majora's Mask, put these regions of Termina in the order Link clears their temples.",
           answers: [
             { id: "a", text: "Woodfall, in the south" },
@@ -532,6 +541,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-zelda-jeux-16.webp",
           question: "Put these games in their release order.",
           answers: [
             { id: "a", text: "Breath of the Wild" },
@@ -560,6 +570,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-zelda-jeux-18.webp",
           question: "In Ocarina of Time, put these story moments in order.",
           answers: [
             { id: "a", text: "Link finds the Kokiri Sword" },
@@ -588,6 +599,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-jeux-20.webp",
           question: "Put these games in their release order.",
           answers: [
             { id: "a", text: "A Link to the Past" },
@@ -624,6 +636,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-zelda-jeux-2.webp",
           question: "Ordena estos juegos por fecha de lanzamiento.",
           answers: [
             { id: "a", text: "Zelda II: The Adventure of Link" },
@@ -739,6 +752,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-zelda-jeux-10.webp",
           question: "Ordena estos spin-offs de Zelda por fecha de lanzamiento.",
           answers: [
             { id: "a", text: "Link's Crossbow Training" },
@@ -781,6 +795,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-zelda-jeux-13.webp",
           question: "En Majora's Mask, ordena estas regiones de Termina según el orden en que Link hace sus templos.",
           answers: [
             { id: "a", text: "El pantano del sur" },
@@ -823,6 +838,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-zelda-jeux-16.webp",
           question: "Ordena estos juegos por fecha de lanzamiento.",
           answers: [
             { id: "a", text: "Breath of the Wild" },
@@ -851,6 +867,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-zelda-jeux-18.webp",
           question: "En Ocarina of Time, ordena estos momentos de la historia.",
           answers: [
             { id: "a", text: "Link encuentra la Espada Kokiri" },
@@ -879,6 +896,7 @@ export const quizZeldaJeux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-jeux-20.webp",
           question: "Ordena estos juegos por fecha de lanzamiento.",
           answers: [
             { id: "a", text: "A Link to the Past" },

@@ -38,6 +38,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-plateforme-2.webp",
           question: "Les Tix, l'ancienne monnaie gratuite de Roblox, existent toujours.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -49,6 +50,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-roblox-plateforme-3.webp",
           question: "Sur Roblox, on appelle « bacon hair » un avatar qui porte la coiffure donnée par défaut.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -151,6 +153,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-roblox-plateforme-12.webp",
           question: "Roblox est sorti sur les téléphones Android dès 2010.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -184,6 +187,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-roblox-plateforme-15.webp",
           question: "Erik Cassel, le cofondateur de Roblox, est mort en 2013.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +210,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-roblox-plateforme-17.webp",
           question: "Avant Roblox, David Baszucki avait créé un logiciel éducatif qui simulait la physique.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +244,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-plateforme-20.webp",
           question: "En février 2025, Roblox comptait en moyenne plus de 80 millions de joueurs actifs par jour.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -269,6 +275,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-plateforme-2.webp",
           question: "Tix, Roblox's old free currency, still exist.",
           answers: [
             { id: "a", text: "True" },
@@ -280,6 +287,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-roblox-plateforme-3.webp",
           question: "On Roblox, a \"bacon hair\" is an avatar wearing the default hairstyle.",
           answers: [
             { id: "a", text: "True" },
@@ -382,6 +390,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-roblox-plateforme-12.webp",
           question: "Roblox came out on Android phones as early as 2010.",
           answers: [
             { id: "a", text: "True" },
@@ -415,6 +424,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-roblox-plateforme-15.webp",
           question: "Erik Cassel, the co-founder of Roblox, died in 2013.",
           answers: [
             { id: "a", text: "True" },
@@ -437,6 +447,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-roblox-plateforme-17.webp",
           question: "Before Roblox, David Baszucki had made educational software that simulated physics.",
           answers: [
             { id: "a", text: "True" },
@@ -470,6 +481,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-plateforme-20.webp",
           question: "In February 2025, Roblox had on average more than 80 million daily active users.",
           answers: [
             { id: "a", text: "True" },
@@ -500,6 +512,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-roblox-plateforme-2.webp",
           question: "Los Tix, la antigua moneda gratis de Roblox, siguen existiendo.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -511,6 +524,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-roblox-plateforme-3.webp",
           question: "En Roblox, se llama «bacon hair» a un avatar con el peinado que viene por defecto.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -613,6 +627,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-roblox-plateforme-12.webp",
           question: "Roblox salió para móviles Android ya en 2010.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -646,6 +661,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-roblox-plateforme-15.webp",
           question: "Erik Cassel, el cofundador de Roblox, murió en 2013.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -668,6 +684,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-roblox-plateforme-17.webp",
           question: "Antes de Roblox, David Baszucki había creado un programa educativo que simulaba la física.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -701,6 +718,7 @@ export const quizRobloxPlateforme: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-roblox-plateforme-20.webp",
           question: "En febrero de 2025, Roblox tenía de media más de 80 millones de usuarios activos al día.",
           answers: [
             { id: "a", text: "Verdadero" },

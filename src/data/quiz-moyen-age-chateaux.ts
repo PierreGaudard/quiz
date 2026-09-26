@@ -39,6 +39,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-moyen-age-chateaux-2.webp",
           question: "Comment appelle-t-on le fossé, souvent rempli d'eau, qui entoure un château fort ?",
           answers: [
             { id: "a", text: "Les lices" },
@@ -160,6 +161,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-moyen-age-chateaux-11.webp",
           question: "Comment s'appelle le pont qu'on relève pour fermer l'accès au château ?",
           answers: [
             { id: "a", text: "Le pont-levis" },
@@ -199,6 +201,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-moyen-age-chateaux-14.webp",
           question: "Comment s'appelle la longue chemise en mailles de fer que porte le chevalier ?",
           answers: [
             { id: "a", text: "Le haubert" },
@@ -238,6 +241,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-chateaux-17.webp",
           question: "Comment s'appelle la cérémonie où le vassal s'agenouille, met ses mains dans celles de son seigneur et lui jure fidélité ?",
           answers: [
             { id: "a", text: "L'hommage" },
@@ -277,6 +281,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-chateaux-20.webp",
           question: "Comment s'appelle le gros tronc d'arbre qu'on lance contre une porte pour l'enfoncer ?",
           answers: [
             { id: "a", text: "Le mangonneau" },
@@ -311,6 +316,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-moyen-age-chateaux-2.webp",
           question: "What is the ditch around a castle called, often filled with water?",
           answers: [
             { id: "a", text: "The bailey" },
@@ -432,6 +438,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-moyen-age-chateaux-11.webp",
           question: "What is the bridge that can be raised to close off the castle called?",
           answers: [
             { id: "a", text: "The drawbridge" },
@@ -471,6 +478,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-moyen-age-chateaux-14.webp",
           question: "What is the long shirt of iron rings worn by a knight called?",
           answers: [
             { id: "a", text: "The hauberk" },
@@ -510,6 +518,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-chateaux-17.webp",
           question: "What is the ceremony where a vassal kneels, places his hands in his lord's and swears loyalty to him?",
           answers: [
             { id: "a", text: "Homage" },
@@ -549,6 +558,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-chateaux-20.webp",
           question: "What is the heavy tree trunk swung against a gate to break it down called?",
           answers: [
             { id: "a", text: "The mangonel" },
@@ -583,6 +593,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-moyen-age-chateaux-2.webp",
           question: "¿Cómo se llama la zanja, muchas veces llena de agua, que rodea un castillo?",
           answers: [
             { id: "a", text: "La liza" },
@@ -704,6 +715,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-moyen-age-chateaux-11.webp",
           question: "¿Cómo se llama el puente que se levanta para cerrar el acceso al castillo?",
           answers: [
             { id: "a", text: "El puente levadizo" },
@@ -743,6 +755,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-moyen-age-chateaux-14.webp",
           question: "¿Cómo se llama la larga camisa de mallas de hierro que lleva el caballero?",
           answers: [
             { id: "a", text: "La cota de malla" },
@@ -782,6 +795,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-chateaux-17.webp",
           question: "¿Cómo se llama la ceremonia en la que el vasallo se arrodilla, pone sus manos entre las de su señor y le jura fidelidad?",
           answers: [
             { id: "a", text: "El homenaje" },
@@ -821,6 +835,7 @@ export const quizMoyenAgeChateaux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-chateaux-20.webp",
           question: "¿Cómo se llama el gran tronco que se lanza contra una puerta para derribarla?",
           answers: [
             { id: "a", text: "La catapulta" },

@@ -81,6 +81,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-equitation-races-5.webp",
           question: "Quelle race court dans les grandes courses de galop, comme le Prix de l'Arc de Triomphe ?",
           answers: [
             { id: "a", text: "Le Trotteur français" },
@@ -175,6 +176,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-equitation-races-12.webp",
           question: "D'où vient le Haflinger, ce cheval à la robe alezane et aux crins blond clair ?",
           answers: [
             { id: "a", text: "De Bavière" },
@@ -214,6 +216,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-equitation-races-15.webp",
           question: "De quel pays vient le poney Connemara ?",
           answers: [
             { id: "a", text: "L'Irlande" },
@@ -279,6 +282,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-races-20.webp",
           question: "Le Falabella, un des plus petits chevaux du monde, vient :",
           answers: [
             { id: "a", text: "Du Chili" },
@@ -354,6 +358,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-equitation-races-5.webp",
           question: "Which breed runs in the big flat races, like the Kentucky Derby or the Prix de l'Arc de Triomphe?",
           answers: [
             { id: "a", text: "The French Trotter" },
@@ -448,6 +453,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-equitation-races-12.webp",
           question: "Where does the Haflinger, the chestnut horse with a flaxen mane, come from?",
           answers: [
             { id: "a", text: "Bavaria" },
@@ -487,6 +493,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-equitation-races-15.webp",
           question: "Which country does the Connemara pony come from?",
           answers: [
             { id: "a", text: "Ireland" },
@@ -552,6 +559,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-races-20.webp",
           question: "The Falabella, one of the smallest horses in the world, comes from:",
           answers: [
             { id: "a", text: "Chile" },
@@ -627,6 +635,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-equitation-races-5.webp",
           question: "¿Qué raza corre en las grandes carreras de galope, como el Derby de Kentucky?",
           answers: [
             { id: "a", text: "El trotón francés" },
@@ -721,6 +730,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-equitation-races-12.webp",
           question: "¿De dónde viene el Haflinger, el caballo alazán de crines rubias?",
           answers: [
             { id: "a", text: "De Baviera" },
@@ -760,6 +770,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-equitation-races-15.webp",
           question: "¿De qué país viene el poni Connemara?",
           answers: [
             { id: "a", text: "Irlanda" },
@@ -825,6 +836,7 @@ export const quizEquitationRaces: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-equitation-races-20.webp",
           question: "El Falabella, uno de los caballos más pequeños del mundo, viene de:",
           answers: [
             { id: "a", text: "Chile" },

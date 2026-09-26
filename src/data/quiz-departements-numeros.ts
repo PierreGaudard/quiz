@@ -85,6 +85,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-departements-numeros-7.webp",
           question: "Quel est le numéro du Nord, le département le plus peuplé de France ?",
           answers: [],
           correctAnswer: "59",
@@ -131,6 +132,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-numeros-12.webp",
           question: "Quel est le numéro du Finistère, à la pointe de la Bretagne ?",
           answers: [],
           correctAnswer: "29",
@@ -158,6 +160,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-numeros-15.webp",
           question: "Quel est le numéro de la Seine-Saint-Denis ?",
           answers: [],
           correctAnswer: "93",
@@ -176,6 +179,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-numeros-17.webp",
           question: "Quel est le numéro de l'Ille-et-Vilaine, le département de Rennes ?",
           answers: [],
           correctAnswer: "35",
@@ -203,6 +207,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-numeros-20.webp",
           question: "Combien de départements compte la région Île-de-France ?",
           answers: [],
           correctAnswer: "8",
@@ -277,6 +282,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-departements-numeros-7.webp",
           question: "What is the number of Nord, France's most populous department?",
           answers: [],
           correctAnswer: "59",
@@ -323,6 +329,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-numeros-12.webp",
           question: "What is the number of Finistère, at the tip of Brittany?",
           answers: [],
           correctAnswer: "29",
@@ -350,6 +357,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-numeros-15.webp",
           question: "What is the number of Seine-Saint-Denis?",
           answers: [],
           correctAnswer: "93",
@@ -368,6 +376,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-numeros-17.webp",
           question: "What is the number of Ille-et-Vilaine, the department of Rennes?",
           answers: [],
           correctAnswer: "35",
@@ -395,6 +404,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-numeros-20.webp",
           question: "How many departments are there in the Île-de-France region?",
           answers: [],
           correctAnswer: "8",
@@ -469,6 +479,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-departements-numeros-7.webp",
           question: "¿Qué número tiene el Norte, el departamento más poblado de Francia?",
           answers: [],
           correctAnswer: "59",
@@ -515,6 +526,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-departements-numeros-12.webp",
           question: "¿Cuál es el número de Finisterre, en la punta de Bretaña?",
           answers: [],
           correctAnswer: "29",
@@ -542,6 +554,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-departements-numeros-15.webp",
           question: "¿Cuál es el número de Seine-Saint-Denis?",
           answers: [],
           correctAnswer: "93",
@@ -560,6 +573,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-departements-numeros-17.webp",
           question: "¿Cuál es el número de Ille y Vilaine, el departamento de Rennes?",
           answers: [],
           correctAnswer: "35",
@@ -587,6 +601,7 @@ export const quizDepartementsNumeros: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-departements-numeros-20.webp",
           question: "¿Cuántos departamentos tiene la región de Isla de Francia?",
           answers: [],
           correctAnswer: "8",

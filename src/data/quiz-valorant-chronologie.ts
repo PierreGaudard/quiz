@@ -157,6 +157,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-valorant-chronologie-10.webp",
           question: "Remets ces étapes de l'histoire de Valorant dans l'ordre.",
           answers: [
             { id: "a", text: "La bêta fermée" },
@@ -199,6 +200,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-valorant-chronologie-13.webp",
           question: "Remets ces équipes dans l'ordre où elles ont gagné un Masters.",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -269,6 +271,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-valorant-chronologie-18.webp",
           question: "Remets ces initiateurs dans leur ordre d'arrivée dans le jeu.",
           answers: [
             { id: "a", text: "Sova" },
@@ -297,6 +300,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-chronologie-20.webp",
           question: "Remets ces villes dans l'ordre où elles ont accueilli un Masters.",
           answers: [
             { id: "a", text: "Berlin" },
@@ -448,6 +452,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-valorant-chronologie-10.webp",
           question: "Put these moments in Valorant's history in order.",
           answers: [
             { id: "a", text: "The closed beta" },
@@ -490,6 +495,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-valorant-chronologie-13.webp",
           question: "Put these teams in the order they won a Masters.",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -560,6 +566,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-valorant-chronologie-18.webp",
           question: "Put these initiators in the order they were added to the game.",
           answers: [
             { id: "a", text: "Sova" },
@@ -588,6 +595,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-chronologie-20.webp",
           question: "Put these cities in the order they hosted a Masters.",
           answers: [
             { id: "a", text: "Berlin" },
@@ -739,6 +747,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-valorant-chronologie-10.webp",
           question: "Ordena estos momentos de la historia de Valorant.",
           answers: [
             { id: "a", text: "La beta cerrada" },
@@ -781,6 +790,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-valorant-chronologie-13.webp",
           question: "Ordena estos equipos según cuándo ganaron un Masters.",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -851,6 +861,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-valorant-chronologie-18.webp",
           question: "Ordena estos iniciadores según su llegada al juego.",
           answers: [
             { id: "a", text: "Sova" },
@@ -879,6 +890,7 @@ export const quizValorantChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-valorant-chronologie-20.webp",
           question: "Ordena estas ciudades según cuándo acogieron un Masters.",
           answers: [
             { id: "a", text: "Berlín" },

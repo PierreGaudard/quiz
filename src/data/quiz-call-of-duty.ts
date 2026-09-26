@@ -141,6 +141,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-call-of-duty-9.webp",
           question: "Remets ces sorties dans l'ordre.",
           answers: [
             { id: "a", text: "Black Ops Cold War" },
@@ -169,6 +170,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-call-of-duty-11.webp",
           question: "Remets ces Black Ops dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Black Ops Cold War" },
@@ -197,6 +199,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-call-of-duty-13.webp",
           question: "Remets ces jeux Call of Duty sur mobile dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Call of Duty: Mobile" },
@@ -239,6 +242,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-call-of-duty-16.webp",
           question: "Dans Modern Warfare 2 (2009), range ces séries d'éliminations de la moins chère à la plus chère en éliminations.",
           answers: [
             { id: "a", text: "Drone" },
@@ -295,6 +299,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-20.webp",
           question: "Remets ces jeux de Sledgehammer Games dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Vanguard" },
@@ -432,6 +437,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-call-of-duty-9.webp",
           question: "Put these releases in order.",
           answers: [
             { id: "a", text: "Black Ops Cold War" },
@@ -460,6 +466,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-call-of-duty-11.webp",
           question: "Put these Black Ops games in release order.",
           answers: [
             { id: "a", text: "Black Ops Cold War" },
@@ -488,6 +495,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-call-of-duty-13.webp",
           question: "Put these Call of Duty mobile games in release order.",
           answers: [
             { id: "a", text: "Call of Duty: Mobile" },
@@ -530,6 +538,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-call-of-duty-16.webp",
           question: "In Modern Warfare 2 (2009), sort these killstreaks from the fewest kills needed to the most.",
           answers: [
             { id: "a", text: "UAV" },
@@ -586,6 +595,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-20.webp",
           question: "Put these Sledgehammer Games titles in release order.",
           answers: [
             { id: "a", text: "Vanguard" },
@@ -723,6 +733,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-call-of-duty-9.webp",
           question: "Ordena estos lanzamientos.",
           answers: [
             { id: "a", text: "Black Ops Cold War" },
@@ -751,6 +762,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-call-of-duty-11.webp",
           question: "Ordena estos Black Ops según su fecha de lanzamiento.",
           answers: [
             { id: "a", text: "Black Ops Cold War" },
@@ -779,6 +791,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-call-of-duty-13.webp",
           question: "Ordena estos Call of Duty para móvil según su fecha de lanzamiento.",
           answers: [
             { id: "a", text: "Call of Duty: Mobile" },
@@ -821,6 +834,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-call-of-duty-16.webp",
           question: "En Modern Warfare 2 (2009), ordena estas rachas de bajas de la que pide menos bajas a la que pide más.",
           answers: [
             { id: "a", text: "UAV" },
@@ -877,6 +891,7 @@ export const quizCallOfDuty: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-call-of-duty-20.webp",
           question: "Ordena estos juegos de Sledgehammer Games según su fecha de lanzamiento.",
           answers: [
             { id: "a", text: "Vanguard" },

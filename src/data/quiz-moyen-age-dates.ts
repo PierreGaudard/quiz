@@ -28,6 +28,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-moyen-age-dates-1.webp",
           question: "En quelle année Charles Martel arrête-t-il une armée venue d'Al-Andalus, près de Poitiers ?",
           answers: [],
           correctAnswer: "732",
@@ -132,6 +133,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-moyen-age-dates-12.webp",
           question: "En quelle année est fondée l'abbaye de Cluny, en Bourgogne ?",
           answers: [],
           correctAnswer: "910",
@@ -159,6 +161,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-moyen-age-dates-15.webp",
           question: "Combien d'arches reste-t-il aujourd'hui au pont d'Avignon, le pont Saint-Bénézet ?",
           answers: [],
           correctAnswer: "4",
@@ -177,6 +180,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-dates-17.webp",
           question: "Combien de mètres de haut mesure la flèche de la cathédrale de Strasbourg, achevée en 1439 ?",
           answers: [],
           correctAnswer: "142",
@@ -204,6 +208,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-dates-20.webp",
           question: "En quelle année les Rois catholiques prennent-ils Grenade, le dernier royaume musulman d'Espagne ?",
           answers: [],
           correctAnswer: "1492",
@@ -220,6 +225,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-moyen-age-dates-1.webp",
           question: "In what year did Charles Martel stop an army from Al-Andalus near Poitiers?",
           answers: [],
           correctAnswer: "732",
@@ -324,6 +330,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-moyen-age-dates-12.webp",
           question: "In what year was the abbey of Cluny, in Burgundy, founded?",
           answers: [],
           correctAnswer: "910",
@@ -351,6 +358,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-moyen-age-dates-15.webp",
           question: "How many arches does the bridge of Avignon, the Pont Saint-Bénézet, have today?",
           answers: [],
           correctAnswer: "4",
@@ -369,6 +377,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-dates-17.webp",
           question: "How many metres tall is the spire of Strasbourg Cathedral, finished in 1439?",
           answers: [],
           correctAnswer: "142",
@@ -396,6 +405,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-dates-20.webp",
           question: "In what year did the Catholic Monarchs take Granada, the last Muslim kingdom in Spain?",
           answers: [],
           correctAnswer: "1492",
@@ -412,6 +422,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-moyen-age-dates-1.webp",
           question: "¿En qué año frenó Carlos Martel a un ejército llegado de al-Ándalus, cerca de Poitiers?",
           answers: [],
           correctAnswer: "732",
@@ -516,6 +527,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-moyen-age-dates-12.webp",
           question: "¿En qué año se fundó la abadía de Cluny, en Borgoña?",
           answers: [],
           correctAnswer: "910",
@@ -543,6 +555,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-moyen-age-dates-15.webp",
           question: "¿Cuántos arcos le quedan hoy al puente de Aviñón, el puente Saint-Bénézet?",
           answers: [],
           correctAnswer: "4",
@@ -561,6 +574,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-moyen-age-dates-17.webp",
           question: "¿Cuántos metros de altura tiene la aguja de la catedral de Estrasburgo, terminada en 1439?",
           answers: [],
           correctAnswer: "142",
@@ -588,6 +602,7 @@ export const quizMoyenAgeDates: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-moyen-age-dates-20.webp",
           question: "¿En qué año toman los Reyes Católicos Granada, el último reino musulmán de España?",
           answers: [],
           correctAnswer: "1492",

@@ -73,6 +73,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-musique-rock-pop-5.webp",
           question: "Qui a chanté « Purple Rain » ?",
           answers: [
             { id: "a", text: "Stevie Wonder" },
@@ -152,6 +153,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-musique-rock-pop-12.webp",
           question: "Quelle chanteuse a sorti « Shake It Off » en 2014 ?",
           answers: [
             { id: "a", text: "Katy Perry" },
@@ -185,6 +187,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-musique-rock-pop-15.webp",
           question: "Quel groupe a chanté « Hotel California » ?",
           answers: [
             { id: "a", text: "Eagles" },
@@ -207,6 +210,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-musique-rock-pop-17.webp",
           question: "Qui chante « Umbrella », avec le rappeur Jay-Z ?",
           answers: [
             { id: "a", text: "Rihanna" },
@@ -240,6 +244,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-rock-pop-20.webp",
           question: "Quel chanteur canadien a sorti « Blinding Lights » ?",
           answers: [
             { id: "a", text: "Justin Bieber" },
@@ -305,6 +310,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-musique-rock-pop-5.webp",
           question: "Who sang \"Purple Rain\"?",
           answers: [
             { id: "a", text: "Stevie Wonder" },
@@ -384,6 +390,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-musique-rock-pop-12.webp",
           question: "Which singer released \"Shake It Off\" in 2014?",
           answers: [
             { id: "a", text: "Katy Perry" },
@@ -417,6 +424,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-musique-rock-pop-15.webp",
           question: "Which band sang \"Hotel California\"?",
           answers: [
             { id: "a", text: "Eagles" },
@@ -439,6 +447,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-musique-rock-pop-17.webp",
           question: "Who sings \"Umbrella\", featuring the rapper Jay-Z?",
           answers: [
             { id: "a", text: "Rihanna" },
@@ -472,6 +481,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-rock-pop-20.webp",
           question: "Which Canadian singer released \"Blinding Lights\"?",
           answers: [
             { id: "a", text: "Justin Bieber" },
@@ -537,6 +547,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-musique-rock-pop-5.webp",
           question: "¿Quién cantó «Purple Rain»?",
           answers: [
             { id: "a", text: "Stevie Wonder" },
@@ -616,6 +627,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-musique-rock-pop-12.webp",
           question: "¿Qué cantante sacó «Shake It Off» en 2014?",
           answers: [
             { id: "a", text: "Katy Perry" },
@@ -649,6 +661,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-musique-rock-pop-15.webp",
           question: "¿Qué grupo cantaba «Hotel California»?",
           answers: [
             { id: "a", text: "Eagles" },
@@ -671,6 +684,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-musique-rock-pop-17.webp",
           question: "¿Quién canta «Umbrella», con el rapero Jay-Z?",
           answers: [
             { id: "a", text: "Rihanna" },
@@ -704,6 +718,7 @@ export const quizMusiqueRockPop: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-rock-pop-20.webp",
           question: "¿Qué cantante canadiense sacó «Blinding Lights»?",
           answers: [
             { id: "a", text: "Justin Bieber" },

@@ -37,6 +37,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-toman-2.webp",
           question: "Kazutora a tué Shinichiro par accident, en voulant voler une moto.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -60,6 +61,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-tokyo-revengers-toman-4.webp",
           question: "Chifuyu Matsuno était le vice-capitaine de Baji.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -139,6 +141,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-toman-11.webp",
           question: "Avant Halloween sanglant, Baji quitte le Toman et rejoint Valhalla.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -172,6 +175,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-toman-14.webp",
           question: "Moebius est un gang de Yokohama.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -205,6 +209,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-toman-17.webp",
           question: "Les jumeaux Kawata dirigent la 4e division : Smiley en est le capitaine, Angry le vice-capitaine.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -238,6 +243,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-toman-20.webp",
           question: "En 2005, le Toman compte dix divisions.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -268,6 +274,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-toman-2.webp",
           question: "Kazutora killed Shinichiro by accident while trying to steal a motorcycle.",
           answers: [
             { id: "a", text: "True" },
@@ -291,6 +298,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-tokyo-revengers-toman-4.webp",
           question: "Chifuyu Matsuno was Baji's vice-captain.",
           answers: [
             { id: "a", text: "True" },
@@ -370,6 +378,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-toman-11.webp",
           question: "Before Bloody Halloween, Baji leaves the Toman and joins Valhalla.",
           answers: [
             { id: "a", text: "True" },
@@ -403,6 +412,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-toman-14.webp",
           question: "Moebius is a gang from Yokohama.",
           answers: [
             { id: "a", text: "True" },
@@ -436,6 +446,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-toman-17.webp",
           question: "The Kawata twins run the 4th Division: Smiley is captain and Angry is vice-captain.",
           answers: [
             { id: "a", text: "True" },
@@ -469,6 +480,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-toman-20.webp",
           question: "In 2005, the Toman has ten divisions.",
           answers: [
             { id: "a", text: "True" },
@@ -499,6 +511,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-toman-2.webp",
           question: "Kazutora mató a Shinichiro sin querer, al intentar robar una moto.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -522,6 +535,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-tokyo-revengers-toman-4.webp",
           question: "Chifuyu Matsuno era el vicecapitán de Baji.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -601,6 +615,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-toman-11.webp",
           question: "Antes del Halloween Sangriento, Baji deja el Toman y se une a Valhalla.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -634,6 +649,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-toman-14.webp",
           question: "Moebius es una banda de Yokohama.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -667,6 +683,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-toman-17.webp",
           question: "Los gemelos Kawata dirigen la 4.ª división: Smiley es el capitán y Angry el vicecapitán.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -700,6 +717,7 @@ export const quizTokyoRevengersToman: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-toman-20.webp",
           question: "En 2005, el Toman tiene diez divisiones.",
           answers: [
             { id: "a", text: "Verdadero" },

@@ -39,6 +39,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-corps-humain-organes-2.webp",
           question: "Quel est le plus grand organe du corps humain ?",
           answers: [
             { id: "a", text: "Le foie" },
@@ -51,6 +52,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-corps-humain-organes-3.webp",
           question: "Quels organes filtrent le sang pour fabriquer l'urine ?",
           answers: [
             { id: "a", text: "Les reins" },
@@ -149,6 +151,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-corps-humain-organes-11.webp",
           question: "Quel organe reçoit les aliments juste après l'œsophage ?",
           answers: [
             { id: "a", text: "L'estomac" },
@@ -173,6 +176,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-corps-humain-organes-13.webp",
           question: "Quel nerf relie l'œil au cerveau ?",
           answers: [
             { id: "a", text: "Le nerf sciatique" },
@@ -197,6 +201,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-corps-humain-organes-15.webp",
           question: "Quel muscle, sous les poumons, sert surtout à respirer ?",
           answers: [
             { id: "a", text: "Le diaphragme" },
@@ -258,6 +263,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-organes-20.webp",
           question: "Quelle partie du cerveau gère surtout l'équilibre ?",
           answers: [
             { id: "a", text: "L'hypothalamus" },
@@ -290,6 +296,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-corps-humain-organes-2.webp",
           question: "What is the largest organ of the human body?",
           answers: [
             { id: "a", text: "The liver" },
@@ -302,6 +309,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-corps-humain-organes-3.webp",
           question: "Which organs filter the blood to make urine?",
           answers: [
             { id: "a", text: "The kidneys" },
@@ -400,6 +408,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-corps-humain-organes-11.webp",
           question: "Which organ does food reach right after the oesophagus?",
           answers: [
             { id: "a", text: "The stomach" },
@@ -424,6 +433,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-corps-humain-organes-13.webp",
           question: "Which nerve connects the eye to the brain?",
           answers: [
             { id: "a", text: "The sciatic nerve" },
@@ -448,6 +458,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-corps-humain-organes-15.webp",
           question: "Which muscle below the lungs does most of the work when you breathe?",
           answers: [
             { id: "a", text: "The diaphragm" },
@@ -509,6 +520,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-organes-20.webp",
           question: "Which part of the brain mainly handles balance?",
           answers: [
             { id: "a", text: "The hypothalamus" },
@@ -541,6 +553,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-corps-humain-organes-2.webp",
           question: "¿Cuál es el órgano más grande del cuerpo humano?",
           answers: [
             { id: "a", text: "El hígado" },
@@ -553,6 +566,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-corps-humain-organes-3.webp",
           question: "¿Qué órganos filtran la sangre para fabricar la orina?",
           answers: [
             { id: "a", text: "Los riñones" },
@@ -651,6 +665,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-corps-humain-organes-11.webp",
           question: "¿A qué órgano llega la comida justo después del esófago?",
           answers: [
             { id: "a", text: "Al estómago" },
@@ -675,6 +690,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-corps-humain-organes-13.webp",
           question: "¿Qué nervio une el ojo con el cerebro?",
           answers: [
             { id: "a", text: "El nervio ciático" },
@@ -699,6 +715,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-corps-humain-organes-15.webp",
           question: "¿Qué músculo, debajo de los pulmones, hace casi todo el trabajo al respirar?",
           answers: [
             { id: "a", text: "El diafragma" },
@@ -760,6 +777,7 @@ export const quizCorpsHumainOrganes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-organes-20.webp",
           question: "¿Qué parte del cerebro se ocupa sobre todo del equilibrio?",
           answers: [
             { id: "a", text: "El hipotálamo" },

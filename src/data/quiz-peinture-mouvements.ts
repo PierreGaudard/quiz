@@ -25,6 +25,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-peinture-mouvements-1.webp",
           question: "Quel mouvement Pablo Picasso et Georges Braque ont-ils lancé au début du XXe siècle ?",
           answers: [
             { id: "a", text: "Le fauvisme" },
@@ -173,6 +174,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-peinture-mouvements-12.webp",
           question: "Comment s'appelle la technique de Léonard de Vinci qui estompe les contours, comme sur le sourire de La Joconde ?",
           answers: [
             { id: "a", text: "Le clair-obscur" },
@@ -212,6 +214,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-peinture-mouvements-15.webp",
           question: "Quel mouvement de la fin du XIXe siècle est connu pour ses lignes courbes et ses motifs de fleurs, comme les affiches d'Alfons Mucha ?",
           answers: [
             { id: "a", text: "L'Art nouveau" },
@@ -238,6 +241,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-peinture-mouvements-17.webp",
           question: "Quel mouvement italien, lancé par un manifeste en 1909, célébrait la vitesse, les machines et la ville moderne ?",
           answers: [
             { id: "a", text: "Le dadaïsme" },
@@ -277,6 +281,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-mouvements-20.webp",
           question: "Pierre Paul Rubens, le peintre flamand du XVIIe siècle, est un grand maître de quel style ?",
           answers: [
             { id: "a", text: "Le gothique" },
@@ -297,6 +302,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-peinture-mouvements-1.webp",
           question: "Which movement did Pablo Picasso and Georges Braque start in the early 20th century?",
           answers: [
             { id: "a", text: "Fauvism" },
@@ -445,6 +451,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-peinture-mouvements-12.webp",
           question: "What's the name of Leonardo da Vinci's technique for softening outlines, as on the Mona Lisa's smile?",
           answers: [
             { id: "a", text: "Chiaroscuro" },
@@ -484,6 +491,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-peinture-mouvements-15.webp",
           question: "Which late 19th-century movement is known for curving lines and flower patterns, like Alphonse Mucha's posters?",
           answers: [
             { id: "a", text: "Art Nouveau" },
@@ -510,6 +518,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-peinture-mouvements-17.webp",
           question: "Which Italian movement, launched with a manifesto in 1909, celebrated speed, machines and the modern city?",
           answers: [
             { id: "a", text: "Dada" },
@@ -549,6 +558,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-mouvements-20.webp",
           question: "Peter Paul Rubens, the 17th-century Flemish painter, is a great master of which style?",
           answers: [
             { id: "a", text: "Gothic" },
@@ -569,6 +579,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-peinture-mouvements-1.webp",
           question: "¿Qué movimiento crearon Pablo Picasso y Georges Braque a principios del siglo XX?",
           answers: [
             { id: "a", text: "El fauvismo" },
@@ -717,6 +728,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-peinture-mouvements-12.webp",
           question: "¿Cómo se llama la técnica de Leonardo da Vinci que difumina los contornos, como en la sonrisa de la Gioconda?",
           answers: [
             { id: "a", text: "El claroscuro" },
@@ -756,6 +768,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-peinture-mouvements-15.webp",
           question: "¿Qué movimiento de finales del siglo XIX es conocido por sus líneas curvas y sus motivos florales, como los carteles de Alfons Mucha?",
           answers: [
             { id: "a", text: "El art nouveau" },
@@ -782,6 +795,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-peinture-mouvements-17.webp",
           question: "¿Qué movimiento italiano, lanzado con un manifiesto en 1909, celebraba la velocidad, las máquinas y la ciudad moderna?",
           answers: [
             { id: "a", text: "El dadaísmo" },
@@ -821,6 +835,7 @@ export const quizPeintureMouvements: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-peinture-mouvements-20.webp",
           question: "¿De qué estilo es un gran maestro Pedro Pablo Rubens, el pintor flamenco del siglo XVII?",
           answers: [
             { id: "a", text: "El gótico" },

@@ -45,6 +45,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-2.webp",
           question: "Quel général commande l'armée française lors de la première bataille de la Marne, en septembre 1914 ?",
           answers: [
             { id: "a", text: "Robert Nivelle" },
@@ -179,6 +180,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-12.webp",
           question: "Quel gouverneur militaire de Paris réquisitionne des taxis pour envoyer des soldats sur la Marne, en septembre 1914 ?",
           answers: [
             { id: "a", text: "Joseph Gallieni" },
@@ -218,6 +220,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-15.webp",
           question: "Quelle infirmière britannique est fusillée par les Allemands en 1915 pour avoir aidé des soldats alliés à fuir la Belgique occupée ?",
           answers: [
             { id: "a", text: "Edith Cavell" },
@@ -244,6 +247,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-17.webp",
           question: "Quel poète, blessé à la tête par un éclat d'obus en 1916, publie le recueil « Calligrammes » en 1918 ?",
           answers: [
             { id: "a", text: "Charles Péguy" },
@@ -283,6 +287,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-20.webp",
           question: "Qui est Premier ministre du Royaume-Uni de décembre 1916 à la fin de la guerre ?",
           answers: [
             { id: "a", text: "Herbert Asquith" },
@@ -317,6 +322,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-2.webp",
           question: "Which general led the French army at the First Battle of the Marne in September 1914?",
           answers: [
             { id: "a", text: "Robert Nivelle" },
@@ -451,6 +457,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-12.webp",
           question: "Which military governor of Paris requisitioned taxis to send soldiers to the Marne in September 1914?",
           answers: [
             { id: "a", text: "Joseph Gallieni" },
@@ -490,6 +497,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-15.webp",
           question: "Which British nurse was shot by the Germans in 1915 for helping Allied soldiers escape from occupied Belgium?",
           answers: [
             { id: "a", text: "Edith Cavell" },
@@ -516,6 +524,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-17.webp",
           question: "Which poet, wounded in the head by shrapnel in 1916, published the collection \"Calligrammes\" in 1918?",
           answers: [
             { id: "a", text: "Charles Péguy" },
@@ -555,6 +564,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-20.webp",
           question: "Who was British Prime Minister from December 1916 to the end of the war?",
           answers: [
             { id: "a", text: "Herbert Asquith" },
@@ -589,6 +599,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-2.webp",
           question: "¿Qué general dirigía el ejército francés en la primera batalla del Marne, en septiembre de 1914?",
           answers: [
             { id: "a", text: "Robert Nivelle" },
@@ -723,6 +734,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-12.webp",
           question: "¿Qué gobernador militar de París requisó taxis para enviar soldados al Marne en septiembre de 1914?",
           answers: [
             { id: "a", text: "Joseph Gallieni" },
@@ -762,6 +774,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-15.webp",
           question: "¿Qué enfermera británica fue fusilada por los alemanes en 1915 por ayudar a soldados aliados a huir de la Bélgica ocupada?",
           answers: [
             { id: "a", text: "Edith Cavell" },
@@ -788,6 +801,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-17.webp",
           question: "¿Qué poeta, herido en la cabeza por un fragmento de obús en 1916, publica el libro «Caligramas» en 1918?",
           answers: [
             { id: "a", text: "Charles Péguy" },
@@ -827,6 +841,7 @@ export const quizPremiereGuerreMondialePersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-personnages-20.webp",
           question: "¿Quién fue primer ministro del Reino Unido desde diciembre de 1916 hasta el final de la guerra?",
           answers: [
             { id: "a", text: "Herbert Asquith" },

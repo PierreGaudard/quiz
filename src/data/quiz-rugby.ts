@@ -24,6 +24,7 @@ export const quizRugby: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-rugby-1.webp",
           question: "Combien de joueurs chaque équipe a-t-elle sur le terrain en rugby à XV ?",
           answers: [
             { id: "a", text: "11" },
@@ -37,6 +38,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-2.webp",
           question: "Combien de points rapporte un essai ?",
           answers: [
             { id: "a", text: "3 points" },
@@ -158,6 +160,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-rugby-11.webp",
           question: "Quel pays a gagné la toute première Coupe du monde, en 1987 ?",
           answers: [
             { id: "a", text: "La Nouvelle-Zélande" },
@@ -197,6 +200,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-rugby-14.webp",
           question: "Quel ailier néo-zélandais a marqué 15 essais en Coupe du monde, un record qu'il partage avec Bryan Habana ?",
           answers: [
             { id: "a", text: "Doug Howlett" },
@@ -236,6 +240,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-17.webp",
           question: "Dans quel stade s'est jouée la finale de la Coupe du monde 2023 ?",
           answers: [
             { id: "a", text: "Le Stade de France" },
@@ -275,6 +280,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-20.webp",
           question: "Quel pays organise la Coupe du monde de rugby 2027 ?",
           answers: [
             { id: "a", text: "L'Afrique du Sud" },
@@ -295,6 +301,7 @@ export const quizRugby: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-rugby-1.webp",
           question: "How many players does each team have on the pitch in rugby union?",
           answers: [
             { id: "a", text: "11" },
@@ -308,6 +315,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-2.webp",
           question: "How many points is a try worth?",
           answers: [
             { id: "a", text: "3 points" },
@@ -429,6 +437,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-rugby-11.webp",
           question: "Which country won the very first Rugby World Cup, in 1987?",
           answers: [
             { id: "a", text: "New Zealand" },
@@ -468,6 +477,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-rugby-14.webp",
           question: "Which New Zealand wing scored 15 World Cup tries, a record he shares with Bryan Habana?",
           answers: [
             { id: "a", text: "Doug Howlett" },
@@ -507,6 +517,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-17.webp",
           question: "Which stadium hosted the 2023 World Cup final?",
           answers: [
             { id: "a", text: "Stade de France" },
@@ -546,6 +557,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-20.webp",
           question: "Which country is hosting the 2027 Rugby World Cup?",
           answers: [
             { id: "a", text: "South Africa" },
@@ -566,6 +578,7 @@ export const quizRugby: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-rugby-1.webp",
           question: "¿Cuántos jugadores tiene cada equipo en el campo en rugby a XV?",
           answers: [
             { id: "a", text: "11" },
@@ -579,6 +592,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-rugby-2.webp",
           question: "¿Cuántos puntos vale un ensayo?",
           answers: [
             { id: "a", text: "3 puntos" },
@@ -700,6 +714,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-rugby-11.webp",
           question: "¿Qué país ganó el primer Mundial de rugby, en 1987?",
           answers: [
             { id: "a", text: "Nueva Zelanda" },
@@ -739,6 +754,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-rugby-14.webp",
           question: "¿Qué ala neozelandés marcó 15 ensayos en el Mundial, un récord que comparte con Bryan Habana?",
           answers: [
             { id: "a", text: "Doug Howlett" },
@@ -778,6 +794,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-rugby-17.webp",
           question: "¿En qué estadio se jugó la final del Mundial 2023?",
           answers: [
             { id: "a", text: "Stade de France" },
@@ -817,6 +834,7 @@ export const quizRugby: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-rugby-20.webp",
           question: "¿Qué país organiza el Mundial de rugby 2027?",
           answers: [
             { id: "a", text: "Sudáfrica" },

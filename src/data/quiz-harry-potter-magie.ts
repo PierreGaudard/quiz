@@ -24,6 +24,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-harry-potter-magie-1.webp",
           question: "Quel sort fait léviter les objets ?",
           answers: [
             { id: "a", text: "Accio" },
@@ -50,6 +51,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-harry-potter-magie-3.webp",
           question: "Quelle potion permet de prendre l'apparence de quelqu'un d'autre ?",
           answers: [
             { id: "a", text: "Le Veritaserum" },
@@ -158,6 +160,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-harry-potter-magie-11.webp",
           question: "Quel sort fait fuir un Épouvantard en le rendant ridicule ?",
           answers: [
             { id: "a", text: "Expelliarmus" },
@@ -197,6 +200,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-harry-potter-magie-14.webp",
           question: "Quel sort Harry lance sur Drago dans les toilettes, dans Le Prince de sang-mêlé ?",
           answers: [
             { id: "a", text: "Sectumsempra" },
@@ -236,6 +240,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-harry-potter-magie-17.webp",
           question: "Quel sort Harry utilise pour faire venir son Éclair de feu pendant la première tâche du Tournoi ?",
           answers: [
             { id: "a", text: "Accio" },
@@ -275,6 +280,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-magie-20.webp",
           question: "Qu'est-ce que Dumbledore lègue à Harry dans son testament, dans Les Reliques de la Mort ?",
           answers: [
             { id: "a", text: "Le Déluminateur" },
@@ -295,6 +301,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-harry-potter-magie-1.webp",
           question: "Which spell makes objects levitate?",
           answers: [
             { id: "a", text: "Accio" },
@@ -321,6 +328,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-harry-potter-magie-3.webp",
           question: "Which potion lets you take on someone else's appearance?",
           answers: [
             { id: "a", text: "Veritaserum" },
@@ -429,6 +437,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-harry-potter-magie-11.webp",
           question: "Which spell defeats a Boggart by making it look ridiculous?",
           answers: [
             { id: "a", text: "Expelliarmus" },
@@ -468,6 +477,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-harry-potter-magie-14.webp",
           question: "Which spell does Harry cast on Draco in the bathroom in Half-Blood Prince?",
           answers: [
             { id: "a", text: "Sectumsempra" },
@@ -507,6 +517,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-harry-potter-magie-17.webp",
           question: "Which spell does Harry use to summon his Firebolt during the first task of the Tournament?",
           answers: [
             { id: "a", text: "Accio" },
@@ -546,6 +557,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-magie-20.webp",
           question: "What does Dumbledore leave Harry in his will in Deathly Hallows?",
           answers: [
             { id: "a", text: "The Deluminator" },
@@ -566,6 +578,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-harry-potter-magie-1.webp",
           question: "¿Qué hechizo hace levitar los objetos?",
           answers: [
             { id: "a", text: "Accio" },
@@ -592,6 +605,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-harry-potter-magie-3.webp",
           question: "¿Qué poción permite tomar la apariencia de otra persona?",
           answers: [
             { id: "a", text: "El Veritaserum" },
@@ -700,6 +714,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-harry-potter-magie-11.webp",
           question: "¿Qué hechizo vence a un boggart volviéndolo ridículo?",
           answers: [
             { id: "a", text: "Expelliarmus" },
@@ -739,6 +754,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-harry-potter-magie-14.webp",
           question: "¿Qué hechizo le lanza Harry a Draco en el baño en El misterio del príncipe?",
           answers: [
             { id: "a", text: "Sectumsempra" },
@@ -778,6 +794,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-harry-potter-magie-17.webp",
           question: "¿Qué hechizo usa Harry para atraer su Saeta de Fuego en la primera prueba del Torneo?",
           answers: [
             { id: "a", text: "Accio" },
@@ -817,6 +834,7 @@ export const quizHarryPotterMagie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-harry-potter-magie-20.webp",
           question: "¿Qué le deja Dumbledore a Harry en su testamento en Las reliquias de la Muerte?",
           answers: [
             { id: "a", text: "El desiluminador" },

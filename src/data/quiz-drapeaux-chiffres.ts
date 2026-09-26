@@ -113,6 +113,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-drapeaux-chiffres-10.webp",
           question: "Combien d'étoiles rouges y a-t-il sur le drapeau de la Nouvelle-Zélande ?",
           answers: [],
           correctAnswer: "4",
@@ -140,6 +141,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-drapeaux-chiffres-13.webp",
           question: "Combien de bandes rouges et blanches compte le drapeau de la Malaisie ?",
           answers: [],
           correctAnswer: "14",
@@ -167,6 +169,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-drapeaux-chiffres-16.webp",
           question: "Combien de rayons a le soleil du drapeau des Philippines ?",
           answers: [],
           correctAnswer: "8",
@@ -185,6 +188,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-drapeaux-chiffres-18.webp",
           question: "Combien de bandes horizontales compte le drapeau de l'Uruguay ?",
           answers: [],
           correctAnswer: "9",
@@ -203,6 +207,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-chiffres-20.webp",
           question: "En quelle année une loi a-t-elle fait du disque rouge sur fond blanc le drapeau officiel du Japon ?",
           answers: [],
           correctAnswer: "1999",
@@ -305,6 +310,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-drapeaux-chiffres-10.webp",
           question: "How many red stars are on the flag of New Zealand?",
           answers: [],
           correctAnswer: "4",
@@ -332,6 +338,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-drapeaux-chiffres-13.webp",
           question: "How many red and white stripes are on the flag of Malaysia?",
           answers: [],
           correctAnswer: "14",
@@ -359,6 +366,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-drapeaux-chiffres-16.webp",
           question: "How many rays does the sun on the flag of the Philippines have?",
           answers: [],
           correctAnswer: "8",
@@ -377,6 +385,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-drapeaux-chiffres-18.webp",
           question: "How many horizontal stripes are on the flag of Uruguay?",
           answers: [],
           correctAnswer: "9",
@@ -395,6 +404,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-chiffres-20.webp",
           question: "In what year did a law make the red disc on white the official flag of Japan?",
           answers: [],
           correctAnswer: "1999",
@@ -497,6 +507,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-drapeaux-chiffres-10.webp",
           question: "¿Cuántas estrellas rojas hay en la bandera de Nueva Zelanda?",
           answers: [],
           correctAnswer: "4",
@@ -524,6 +535,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-drapeaux-chiffres-13.webp",
           question: "¿Cuántas franjas rojas y blancas tiene la bandera de Malasia?",
           answers: [],
           correctAnswer: "14",
@@ -551,6 +563,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-drapeaux-chiffres-16.webp",
           question: "¿Cuántos rayos tiene el sol de la bandera de Filipinas?",
           answers: [],
           correctAnswer: "8",
@@ -569,6 +582,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-drapeaux-chiffres-18.webp",
           question: "¿Cuántas franjas horizontales tiene la bandera de Uruguay?",
           answers: [],
           correctAnswer: "9",
@@ -587,6 +601,7 @@ export const quizDrapeauxChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-drapeaux-chiffres-20.webp",
           question: "¿En qué año una ley convirtió el disco rojo sobre fondo blanco en la bandera oficial de Japón?",
           answers: [],
           correctAnswer: "1999",

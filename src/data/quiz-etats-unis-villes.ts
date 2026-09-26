@@ -40,6 +40,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-etats-unis-villes-2.webp",
           question: "Quelle est la capitale du Texas ?",
           answers: [
             { id: "a", text: "Houston" },
@@ -80,6 +81,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-etats-unis-villes-5.webp",
           question: "Dans quel État se trouve la plus grande partie du parc de Yellowstone ?",
           answers: [
             { id: "a", text: "Montana" },
@@ -160,6 +162,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-etats-unis-villes-11.webp",
           question: "Près de quelle ville de Floride se trouve Walt Disney World ?",
           answers: [
             { id: "a", text: "Miami" },
@@ -199,6 +202,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-etats-unis-villes-14.webp",
           question: "Quelle ville est surnommée « Motor City » ?",
           answers: [
             { id: "a", text: "Cleveland" },
@@ -238,6 +242,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-villes-17.webp",
           question: "Quelle ville est surnommée « Mile High City » ?",
           answers: [
             { id: "a", text: "Denver" },
@@ -277,6 +282,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-villes-20.webp",
           question: "Dans quel État se trouve le centre spatial Kennedy ?",
           answers: [
             { id: "a", text: "Texas" },
@@ -311,6 +317,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-etats-unis-villes-2.webp",
           question: "What is the capital of Texas?",
           answers: [
             { id: "a", text: "Houston" },
@@ -351,6 +358,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-etats-unis-villes-5.webp",
           question: "Which state holds most of Yellowstone National Park?",
           answers: [
             { id: "a", text: "Montana" },
@@ -431,6 +439,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-etats-unis-villes-11.webp",
           question: "Walt Disney World is near which Florida city?",
           answers: [
             { id: "a", text: "Miami" },
@@ -470,6 +479,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-etats-unis-villes-14.webp",
           question: "Which city is nicknamed \"Motor City\"?",
           answers: [
             { id: "a", text: "Cleveland" },
@@ -509,6 +519,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-villes-17.webp",
           question: "Which city is nicknamed the \"Mile High City\"?",
           answers: [
             { id: "a", text: "Denver" },
@@ -548,6 +559,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-villes-20.webp",
           question: "Which state is the Kennedy Space Center in?",
           answers: [
             { id: "a", text: "Texas" },
@@ -582,6 +594,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-etats-unis-villes-2.webp",
           question: "¿Cuál es la capital de Texas?",
           answers: [
             { id: "a", text: "Houston" },
@@ -622,6 +635,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-etats-unis-villes-5.webp",
           question: "¿En qué estado está la mayor parte del parque de Yellowstone?",
           answers: [
             { id: "a", text: "Montana" },
@@ -702,6 +716,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-etats-unis-villes-11.webp",
           question: "¿Cerca de qué ciudad de Florida está Walt Disney World?",
           answers: [
             { id: "a", text: "Miami" },
@@ -741,6 +756,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-etats-unis-villes-14.webp",
           question: "¿Qué ciudad tiene el apodo de «Motor City»?",
           answers: [
             { id: "a", text: "Cleveland" },
@@ -780,6 +796,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-etats-unis-villes-17.webp",
           question: "¿Qué ciudad tiene el apodo de «Mile High City»?",
           answers: [
             { id: "a", text: "Denver" },
@@ -819,6 +836,7 @@ export const quizEtatsUnisVilles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-etats-unis-villes-20.webp",
           question: "¿En qué estado está el Centro Espacial Kennedy?",
           answers: [
             { id: "a", text: "Texas" },

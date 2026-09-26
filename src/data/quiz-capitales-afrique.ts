@@ -156,6 +156,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-capitales-afrique-12.webp",
           question: "Quelle est la capitale de l'Algérie ?",
           answers: [
             { id: "a", text: "Oran" },
@@ -189,6 +190,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-capitales-afrique-15.webp",
           question: "Quelle est la capitale de l'Ouganda ?",
           answers: [
             { id: "a", text: "Kampala" },
@@ -211,6 +213,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-capitales-afrique-17.webp",
           question: "Quelle est la capitale du Zimbabwe ?",
           answers: [
             { id: "a", text: "Harare" },
@@ -244,6 +247,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-capitales-afrique-20.webp",
           question: "Quelle est la capitale du Mali ?",
           answers: [
             { id: "a", text: "Tombouctou" },
@@ -389,6 +393,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-capitales-afrique-12.webp",
           question: "What is the capital of Algeria?",
           answers: [
             { id: "a", text: "Oran" },
@@ -422,6 +427,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-capitales-afrique-15.webp",
           question: "What is the capital of Uganda?",
           answers: [
             { id: "a", text: "Kampala" },
@@ -444,6 +450,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-capitales-afrique-17.webp",
           question: "What is the capital of Zimbabwe?",
           answers: [
             { id: "a", text: "Harare" },
@@ -477,6 +484,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-capitales-afrique-20.webp",
           question: "What is the capital of Mali?",
           answers: [
             { id: "a", text: "Timbuktu" },
@@ -622,6 +630,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-capitales-afrique-12.webp",
           question: "¿Cuál es la capital de Argelia?",
           answers: [
             { id: "a", text: "Orán" },
@@ -655,6 +664,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-capitales-afrique-15.webp",
           question: "¿Cuál es la capital de Uganda?",
           answers: [
             { id: "a", text: "Kampala" },
@@ -677,6 +687,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-capitales-afrique-17.webp",
           question: "¿Cuál es la capital de Zimbabue?",
           answers: [
             { id: "a", text: "Harare" },
@@ -710,6 +721,7 @@ export const quizCapitalesAfrique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-capitales-afrique-20.webp",
           question: "¿Cuál es la capital de Malí?",
           answers: [
             { id: "a", text: "Tombuctú" },

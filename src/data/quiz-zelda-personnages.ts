@@ -50,6 +50,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-zelda-personnages-3.webp",
           question: "Quel peuple ressemble à des oiseaux et sait voler ?",
           answers: [
             { id: "a", text: "Les Rito" },
@@ -95,6 +96,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-zelda-personnages-7.webp",
           question: "Dans Breath of the Wild, qui agrandit ton inventaire en échange de noix de Korogu ?",
           answers: [
             { id: "a", text: "Tingle" },
@@ -152,6 +154,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-zelda-personnages-12.webp",
           question: "Quel personnage en collant vert rêve de devenir une fée ?",
           answers: [
             { id: "a", text: "Tingle" },
@@ -185,6 +188,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-zelda-personnages-15.webp",
           question: "Quels animaux se jettent sur Link en groupe s'il les frappe trop souvent ?",
           answers: [
             { id: "a", text: "Les Octoroks" },
@@ -207,6 +211,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-zelda-personnages-17.webp",
           question: "Dans Breath of the Wild, quel prince Zora aide Link à approcher Vah'Ruta ?",
           answers: [
             { id: "a", text: "Kass" },
@@ -240,6 +245,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-personnages-20.webp",
           question: "Dans Breath of the Wild, quel Rito est le Prodige qui pilote Vah'Medoh ?",
           answers: [
             { id: "a", text: "Revali" },
@@ -281,6 +287,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-zelda-personnages-3.webp",
           question: "Which people look like birds and can fly?",
           answers: [
             { id: "a", text: "The Rito" },
@@ -326,6 +333,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-zelda-personnages-7.webp",
           question: "In Breath of the Wild, who expands your inventory in exchange for Korok seeds?",
           answers: [
             { id: "a", text: "Tingle" },
@@ -383,6 +391,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-zelda-personnages-12.webp",
           question: "Which character in green tights dreams of becoming a fairy?",
           answers: [
             { id: "a", text: "Tingle" },
@@ -416,6 +425,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-zelda-personnages-15.webp",
           question: "Which animals swarm Link if he hits them too many times?",
           answers: [
             { id: "a", text: "Octoroks" },
@@ -438,6 +448,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-zelda-personnages-17.webp",
           question: "In Breath of the Wild, which Zora prince helps Link reach Vah'Ruta?",
           answers: [
             { id: "a", text: "Kass" },
@@ -471,6 +482,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-personnages-20.webp",
           question: "In Breath of the Wild, which Rito is the Champion who pilots Vah'Medoh?",
           answers: [
             { id: "a", text: "Revali" },
@@ -512,6 +524,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-zelda-personnages-3.webp",
           question: "¿Qué pueblo parece de pájaros y sabe volar?",
           answers: [
             { id: "a", text: "Los orni" },
@@ -557,6 +570,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-zelda-personnages-7.webp",
           question: "En Breath of the Wild, ¿quién amplía tu inventario a cambio de semillas kolog?",
           answers: [
             { id: "a", text: "Tingle" },
@@ -614,6 +628,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-zelda-personnages-12.webp",
           question: "¿Qué personaje con mallas verdes sueña con ser un hada?",
           answers: [
             { id: "a", text: "Tingle" },
@@ -647,6 +662,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-zelda-personnages-15.webp",
           question: "¿Qué animales atacan a Link en grupo si les pega demasiadas veces?",
           answers: [
             { id: "a", text: "Los octoroks" },
@@ -669,6 +685,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-zelda-personnages-17.webp",
           question: "En Breath of the Wild, ¿qué príncipe zora ayuda a Link a acercarse a Vah'Ruta?",
           answers: [
             { id: "a", text: "Kass" },
@@ -702,6 +719,7 @@ export const quizZeldaPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-zelda-personnages-20.webp",
           question: "En Breath of the Wild, ¿qué orni es el Elegido que pilota a Vah'Medoh?",
           answers: [
             { id: "a", text: "Revali" },

@@ -25,6 +25,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-dragon-ball-chronologie-1.webp",
           question: "Remets ces sagas de Dragon Ball Z dans l'ordre du récit.",
           answers: [
             { id: "a", text: "La saga des Saiyans" },
@@ -39,6 +40,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-chronologie-2.webp",
           question: "Remets ces adversaires de Goku dans l'ordre où il les affronte.",
           answers: [
             { id: "a", text: "Pilaf" },
@@ -183,6 +185,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-dragon-ball-chronologie-12.webp",
           question: "Remets dans l'ordre ces adversaires de Goku au Tenkaichi Budokai, du premier tournoi au dernier.",
           answers: [
             { id: "a", text: "Jackie Chun" },
@@ -225,6 +228,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-dragon-ball-chronologie-15.webp",
           question: "Remets ces événements de la saga Freezer dans l'ordre du récit.",
           answers: [
             { id: "a", text: "Le commando Ginyu arrive sur Namek" },
@@ -253,6 +257,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-chronologie-17.webp",
           question: "Remets ces événements de la saga de Majin Buu dans l'ordre du récit.",
           answers: [
             { id: "a", text: "Le 25e Tenkaichi Budokai commence" },
@@ -295,6 +300,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-chronologie-20.webp",
           question: "Remets ces dates de l'histoire de Dragon Ball dans l'ordre.",
           answers: [
             { id: "a", text: "Le début du manga Dragon Ball" },
@@ -316,6 +322,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-dragon-ball-chronologie-1.webp",
           question: "Put these Dragon Ball Z sagas in story order.",
           answers: [
             { id: "a", text: "The Saiyan Saga" },
@@ -330,6 +337,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-chronologie-2.webp",
           question: "Put these enemies of Goku in the order he fights them.",
           answers: [
             { id: "a", text: "Pilaf" },
@@ -474,6 +482,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-dragon-ball-chronologie-12.webp",
           question: "Put these opponents Goku faces at the World Martial Arts Tournament in order, from the first tournament to the last.",
           answers: [
             { id: "a", text: "Jackie Chun" },
@@ -516,6 +525,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-dragon-ball-chronologie-15.webp",
           question: "Put these Frieza Saga events in story order.",
           answers: [
             { id: "a", text: "The Ginyu Force lands on Namek" },
@@ -544,6 +554,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-chronologie-17.webp",
           question: "Put these Majin Buu Saga events in story order.",
           answers: [
             { id: "a", text: "The 25th World Martial Arts Tournament begins" },
@@ -586,6 +597,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-chronologie-20.webp",
           question: "Put these dates from Dragon Ball's history in order.",
           answers: [
             { id: "a", text: "The Dragon Ball manga starts" },
@@ -607,6 +619,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-dragon-ball-chronologie-1.webp",
           question: "Ordena estas sagas de Dragon Ball Z según la historia.",
           answers: [
             { id: "a", text: "La saga de los Saiyans" },
@@ -621,6 +634,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-dragon-ball-chronologie-2.webp",
           question: "Ordena a estos enemigos de Goku según el orden en que se enfrenta a ellos.",
           answers: [
             { id: "a", text: "Pilaf" },
@@ -765,6 +779,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-dragon-ball-chronologie-12.webp",
           question: "Ordena a estos rivales de Goku en el Torneo de Artes Marciales, del primer torneo al último.",
           answers: [
             { id: "a", text: "Jackie Chun" },
@@ -807,6 +822,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-dragon-ball-chronologie-15.webp",
           question: "Ordena estos momentos de la saga de Freezer según la historia.",
           answers: [
             { id: "a", text: "Las Fuerzas Especiales Ginyu llegan a Namek" },
@@ -835,6 +851,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-dragon-ball-chronologie-17.webp",
           question: "Ordena estos momentos de la saga de Majin Bu según la historia.",
           answers: [
             { id: "a", text: "Empieza el 25.º Torneo de Artes Marciales" },
@@ -877,6 +894,7 @@ export const quizDragonBallChronologie: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-dragon-ball-chronologie-20.webp",
           question: "Ordena estas fechas de la historia de Dragon Ball.",
           answers: [
             { id: "a", text: "Empieza el manga Dragon Ball" },

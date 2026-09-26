@@ -40,6 +40,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-musique-classique-2.webp",
           question: "Qui a composé le Boléro ?",
           answers: [
             { id: "a", text: "Maurice Ravel" },
@@ -53,6 +54,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-musique-classique-3.webp",
           question: "De quel pays Frédéric Chopin était-il originaire ?",
           answers: [
             { id: "a", text: "L'Autriche" },
@@ -160,6 +162,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-musique-classique-11.webp",
           question: "Qui a composé la Symphonie du Nouveau Monde ?",
           answers: [
             { id: "a", text: "Bedřich Smetana" },
@@ -199,6 +202,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-musique-classique-14.webp",
           question: "Qui a composé Le Carnaval des animaux ?",
           answers: [
             { id: "a", text: "Georges Bizet" },
@@ -238,6 +242,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-musique-classique-17.webp",
           question: "Quel morceau de Beethoven sert d'hymne à l'Union européenne ?",
           answers: [
             { id: "a", text: "L'Ode à la joie" },
@@ -277,6 +282,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-classique-20.webp",
           question: "Quel instrument donne le la pour accorder tout l'orchestre avant un concert ?",
           answers: [
             { id: "a", text: "Le premier violon" },
@@ -311,6 +317,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-musique-classique-2.webp",
           question: "Who composed Boléro?",
           answers: [
             { id: "a", text: "Maurice Ravel" },
@@ -324,6 +331,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-musique-classique-3.webp",
           question: "Which country did Frédéric Chopin come from?",
           answers: [
             { id: "a", text: "Austria" },
@@ -431,6 +439,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-musique-classique-11.webp",
           question: "Who composed the New World Symphony?",
           answers: [
             { id: "a", text: "Bedřich Smetana" },
@@ -470,6 +479,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-musique-classique-14.webp",
           question: "Who composed The Carnival of the Animals?",
           answers: [
             { id: "a", text: "Georges Bizet" },
@@ -509,6 +519,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-musique-classique-17.webp",
           question: "Which piece by Beethoven is used as the anthem of the European Union?",
           answers: [
             { id: "a", text: "Ode to Joy" },
@@ -548,6 +559,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-classique-20.webp",
           question: "Which instrument plays the A that the whole orchestra tunes to before a concert?",
           answers: [
             { id: "a", text: "The first violin" },
@@ -582,6 +594,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-musique-classique-2.webp",
           question: "¿Quién compuso el Bolero?",
           answers: [
             { id: "a", text: "Maurice Ravel" },
@@ -595,6 +608,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-musique-classique-3.webp",
           question: "¿De qué país era Frédéric Chopin?",
           answers: [
             { id: "a", text: "De Austria" },
@@ -702,6 +716,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-musique-classique-11.webp",
           question: "¿Quién compuso la Sinfonía del Nuevo Mundo?",
           answers: [
             { id: "a", text: "Bedřich Smetana" },
@@ -741,6 +756,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-musique-classique-14.webp",
           question: "¿Quién compuso El carnaval de los animales?",
           answers: [
             { id: "a", text: "Georges Bizet" },
@@ -780,6 +796,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-musique-classique-17.webp",
           question: "¿Qué pieza de Beethoven es el himno de la Unión Europea?",
           answers: [
             { id: "a", text: "El Himno de la alegría" },
@@ -819,6 +836,7 @@ export const quizMusiqueClassique: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-musique-classique-20.webp",
           question: "¿Qué instrumento da el la para afinar toda la orquesta antes de un concierto?",
           answers: [
             { id: "a", text: "El primer violín" },

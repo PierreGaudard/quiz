@@ -26,6 +26,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-counter-strike-majors-1.webp",
           question: "Quelle équipe a gagné le Major de Katowice en 2014 ?",
           answers: [
             { id: "a", text: "Ninjas in Pyjamas" },
@@ -48,6 +49,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-counter-strike-majors-3.webp",
           question: "Qui a gagné le Major de Cologne en 2014 ?",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -151,6 +153,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-counter-strike-majors-12.webp",
           question: "Quelle équipe a été la première à gagner deux Majors de suite ?",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -184,6 +187,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-counter-strike-majors-15.webp",
           question: "Quelle équipe finlandaise a perdu la finale de Katowice 2019 contre Astralis ?",
           answers: [
             { id: "a", text: "Heroic" },
@@ -206,6 +210,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-counter-strike-majors-17.webp",
           question: "Qui a gagné le Major d'Anvers en 2022 ?",
           answers: [
             { id: "a", text: "FaZe Clan" },
@@ -239,6 +244,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-majors-20.webp",
           question: "Quelle équipe a gagné le Major de Cologne en juin 2026 ?",
           answers: [
             { id: "a", text: "Team Falcons" },
@@ -257,6 +263,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-counter-strike-majors-1.webp",
           question: "Which team won the Katowice Major in 2014?",
           answers: [
             { id: "a", text: "Ninjas in Pyjamas" },
@@ -279,6 +286,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-counter-strike-majors-3.webp",
           question: "Who won the Cologne Major in 2014?",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -382,6 +390,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-counter-strike-majors-12.webp",
           question: "Which team was the first to win two Majors in a row?",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -415,6 +424,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-counter-strike-majors-15.webp",
           question: "Which Finnish team lost the Katowice 2019 final to Astralis?",
           answers: [
             { id: "a", text: "Heroic" },
@@ -437,6 +447,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-counter-strike-majors-17.webp",
           question: "Who won the 2022 Antwerp Major?",
           answers: [
             { id: "a", text: "FaZe Clan" },
@@ -470,6 +481,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-majors-20.webp",
           question: "Which team won the Cologne Major in June 2026?",
           answers: [
             { id: "a", text: "Team Falcons" },
@@ -488,6 +500,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-counter-strike-majors-1.webp",
           question: "¿Qué equipo ganó el Major de Katowice en 2014?",
           answers: [
             { id: "a", text: "Ninjas in Pyjamas" },
@@ -510,6 +523,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-counter-strike-majors-3.webp",
           question: "¿Quién ganó el Major de Colonia en 2014?",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -613,6 +627,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-counter-strike-majors-12.webp",
           question: "¿Qué equipo fue el primero en ganar dos Majors seguidos?",
           answers: [
             { id: "a", text: "Fnatic" },
@@ -646,6 +661,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-counter-strike-majors-15.webp",
           question: "¿Qué equipo finlandés perdió la final de Katowice 2019 contra Astralis?",
           answers: [
             { id: "a", text: "Heroic" },
@@ -668,6 +684,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-counter-strike-majors-17.webp",
           question: "¿Quién ganó el Major de Amberes en 2022?",
           answers: [
             { id: "a", text: "FaZe Clan" },
@@ -701,6 +718,7 @@ export const quizCounterStrikeMajors: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-counter-strike-majors-20.webp",
           question: "¿Qué equipo ganó el Major de Colonia en junio de 2026?",
           answers: [
             { id: "a", text: "Team Falcons" },

@@ -26,6 +26,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-minecraft-chiffres-1.webp",
           question: "Combien de blocs de terre peut-on empiler au maximum dans une seule case d'inventaire ?",
           answers: [],
           correctAnswer: "64",
@@ -35,6 +36,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-chiffres-2.webp",
           question: "Et combien de perles de l'Ender tiennent dans une seule case ?",
           answers: [],
           correctAnswer: "16",
@@ -120,6 +122,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-chiffres-11.webp",
           question: "Un chunk fait combien de blocs de côté ?",
           answers: [],
           correctAnswer: "16",
@@ -147,6 +150,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-chiffres-14.webp",
           question: "Un bloc parcouru dans le Nether équivaut à combien de blocs dans le monde normal ?",
           answers: [],
           correctAnswer: "8",
@@ -174,6 +178,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-chiffres-17.webp",
           question: "Combien de points de vie a l'Ender Dragon ?",
           answers: [],
           correctAnswer: "200",
@@ -201,6 +206,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-chiffres-20.webp",
           question: "Combien de blocs de minerai faut-il pour construire une pyramide complète de balise, à quatre étages ?",
           answers: [],
           correctAnswer: "164",
@@ -217,6 +223,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-minecraft-chiffres-1.webp",
           question: "How many dirt blocks can you stack in a single inventory slot?",
           answers: [],
           correctAnswer: "64",
@@ -226,6 +233,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-chiffres-2.webp",
           question: "And how many Ender Pearls fit in a single slot?",
           answers: [],
           correctAnswer: "16",
@@ -311,6 +319,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-chiffres-11.webp",
           question: "How many blocks wide is a chunk?",
           answers: [],
           correctAnswer: "16",
@@ -338,6 +347,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-chiffres-14.webp",
           question: "One block traveled in the Nether equals how many blocks in the Overworld?",
           answers: [],
           correctAnswer: "8",
@@ -365,6 +375,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-chiffres-17.webp",
           question: "How much health does the Ender Dragon have?",
           answers: [],
           correctAnswer: "200",
@@ -392,6 +403,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-chiffres-20.webp",
           question: "How many mineral blocks do you need for a full four-level beacon pyramid?",
           answers: [],
           correctAnswer: "164",
@@ -408,6 +420,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-minecraft-chiffres-1.webp",
           question: "¿Cuántos bloques de tierra caben como máximo en una sola casilla del inventario?",
           answers: [],
           correctAnswer: "64",
@@ -417,6 +430,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-minecraft-chiffres-2.webp",
           question: "¿Y cuántas perlas de Ender caben en una sola casilla?",
           answers: [],
           correctAnswer: "16",
@@ -502,6 +516,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-minecraft-chiffres-11.webp",
           question: "¿Cuántos bloques de lado tiene un chunk?",
           answers: [],
           correctAnswer: "16",
@@ -529,6 +544,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-minecraft-chiffres-14.webp",
           question: "Un bloque recorrido en el Nether, ¿a cuántos bloques equivale en el mundo normal?",
           answers: [],
           correctAnswer: "8",
@@ -556,6 +572,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-minecraft-chiffres-17.webp",
           question: "¿Cuántos puntos de vida tiene el Ender Dragon?",
           answers: [],
           correctAnswer: "200",
@@ -583,6 +600,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-minecraft-chiffres-20.webp",
           question: "¿Cuántos bloques de mineral hacen falta para una pirámide completa de faro, de cuatro pisos?",
           answers: [],
           correctAnswer: "164",

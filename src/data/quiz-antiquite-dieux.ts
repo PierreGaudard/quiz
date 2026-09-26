@@ -106,6 +106,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-antiquite-dieux-8.webp",
           question: "Quel dieu romain de la guerre a donné son nom à un mois de l'année ?",
           answers: [
             { id: "a", text: "Mercure" },
@@ -128,6 +129,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-antiquite-dieux-10.webp",
           question: "Comment les Romains appellent-ils Héphaïstos, le forgeron des dieux ?",
           answers: [
             { id: "a", text: "Neptune" },
@@ -150,6 +152,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-antiquite-dieux-12.webp",
           question: "Quelle déesse de la chasse est la sœur jumelle d'Apollon ?",
           answers: [
             { id: "a", text: "Artémis" },
@@ -172,6 +175,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-antiquite-dieux-14.webp",
           question: "Quelle déesse des moissons est la mère de Perséphone ?",
           answers: [
             { id: "a", text: "Déméter" },
@@ -194,6 +198,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-dieux-16.webp",
           question: "Quel dieu romain à deux visages a donné son nom au mois de janvier ?",
           answers: [
             { id: "a", text: "Janus" },
@@ -238,6 +243,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-dieux-20.webp",
           question: "Comment les Romains appellent-ils Éros, le petit dieu de l'amour qui tire des flèches ?",
           answers: [
             { id: "a", text: "Cupidon" },
@@ -337,6 +343,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-antiquite-dieux-8.webp",
           question: "Which Roman god of war gave his name to a month of the year?",
           answers: [
             { id: "a", text: "Mercury" },
@@ -359,6 +366,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-antiquite-dieux-10.webp",
           question: "What do the Romans call Hephaestus, the blacksmith of the gods?",
           answers: [
             { id: "a", text: "Neptune" },
@@ -381,6 +389,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-antiquite-dieux-12.webp",
           question: "Which goddess of hunting is Apollo's twin sister?",
           answers: [
             { id: "a", text: "Artemis" },
@@ -403,6 +412,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-antiquite-dieux-14.webp",
           question: "Which goddess of the harvest is the mother of Persephone?",
           answers: [
             { id: "a", text: "Demeter" },
@@ -425,6 +435,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-dieux-16.webp",
           question: "Which two-faced Roman god gave his name to the month of January?",
           answers: [
             { id: "a", text: "Janus" },
@@ -469,6 +480,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-dieux-20.webp",
           question: "What do the Romans call Eros, the little god of love who shoots arrows?",
           answers: [
             { id: "a", text: "Cupid" },
@@ -568,6 +580,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-antiquite-dieux-8.webp",
           question: "¿Qué dios romano de la guerra le dio nombre a un mes del año?",
           answers: [
             { id: "a", text: "Mercurio" },
@@ -590,6 +603,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-antiquite-dieux-10.webp",
           question: "¿Cómo llaman los romanos a Hefesto, el herrero de los dioses?",
           answers: [
             { id: "a", text: "Neptuno" },
@@ -612,6 +626,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-antiquite-dieux-12.webp",
           question: "¿Qué diosa de la caza es la hermana gemela de Apolo?",
           answers: [
             { id: "a", text: "Artemisa" },
@@ -634,6 +649,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-antiquite-dieux-14.webp",
           question: "¿Qué diosa de las cosechas es la madre de Perséfone?",
           answers: [
             { id: "a", text: "Deméter" },
@@ -656,6 +672,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-dieux-16.webp",
           question: "¿Qué dios romano de dos caras dio su nombre al mes de enero?",
           answers: [
             { id: "a", text: "Jano" },
@@ -700,6 +717,7 @@ export const quizAntiquiteDieux: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-dieux-20.webp",
           question: "¿Cómo llaman los romanos a Eros, el pequeño dios del amor que lanza flechas?",
           answers: [
             { id: "a", text: "Cupido" },

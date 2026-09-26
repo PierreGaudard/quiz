@@ -45,6 +45,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-basketball-records-3.webp",
           question: "Combien de titres NBA d'affilée les Boston Celtics ont-ils gagnés entre 1959 et 1966 ?",
           answers: [],
           correctAnswer: "8",
@@ -82,6 +83,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-basketball-records-7.webp",
           question: "En quelle année la ligne à trois points est-elle apparue en NBA ?",
           answers: [],
           correctAnswer: "1979",
@@ -155,6 +157,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-basketball-records-15.webp",
           question: "Combien de matchs les Philadelphia 76ers ont-ils gagnés pendant la saison 1972-1973 ?",
           answers: [],
           correctAnswer: "9",
@@ -173,6 +176,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-basketball-records-17.webp",
           question: "Combien de matchs chaque équipe joue-t-elle en saison régulière de NBA ?",
           answers: [],
           correctAnswer: "82",
@@ -200,6 +204,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-records-20.webp",
           question: "Combien de titres NBA Robert Horry a-t-il gagnés ?",
           answers: [],
           correctAnswer: "7",
@@ -236,6 +241,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-basketball-records-3.webp",
           question: "How many NBA titles in a row did the Boston Celtics win between 1959 and 1966?",
           answers: [],
           correctAnswer: "8",
@@ -273,6 +279,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-basketball-records-7.webp",
           question: "In what year did the three-point line arrive in the NBA?",
           answers: [],
           correctAnswer: "1979",
@@ -346,6 +353,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-basketball-records-15.webp",
           question: "How many games did the Philadelphia 76ers win in the 1972-73 season?",
           answers: [],
           correctAnswer: "9",
@@ -364,6 +372,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-basketball-records-17.webp",
           question: "How many games does each team play in an NBA regular season?",
           answers: [],
           correctAnswer: "82",
@@ -391,6 +400,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-records-20.webp",
           question: "How many NBA titles did Robert Horry win?",
           answers: [],
           correctAnswer: "7",
@@ -427,6 +437,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-basketball-records-3.webp",
           question: "¿Cuántos títulos seguidos ganaron los Boston Celtics entre 1959 y 1966?",
           answers: [],
           correctAnswer: "8",
@@ -464,6 +475,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 7,
+          image: "/images/qi-basketball-records-7.webp",
           question: "¿En qué año llegó la línea de tres puntos a la NBA?",
           answers: [],
           correctAnswer: "1979",
@@ -537,6 +549,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-basketball-records-15.webp",
           question: "¿Cuántos partidos ganaron los Philadelphia 76ers en la temporada 1972-1973?",
           answers: [],
           correctAnswer: "9",
@@ -555,6 +568,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-basketball-records-17.webp",
           question: "¿Cuántos partidos juega cada equipo en la temporada regular de la NBA?",
           answers: [],
           correctAnswer: "82",
@@ -582,6 +596,7 @@ export const quizBasketballRecords: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-records-20.webp",
           question: "¿Cuántos títulos de la NBA ganó Robert Horry?",
           answers: [],
           correctAnswer: "7",

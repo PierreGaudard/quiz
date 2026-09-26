@@ -40,6 +40,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-2.webp",
           question: "Quel studio a créé Brawl Stars ?",
           answers: [
             { id: "a", text: "Rovio" },
@@ -53,6 +54,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-brawl-stars-3.webp",
           question: "En quelle année Brawl Stars est-il sorti dans le monde entier ?",
           answers: [
             { id: "a", text: "2016" },
@@ -160,6 +162,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-11.webp",
           question: "Que fait le Super de Leon ?",
           answers: [
             { id: "a", text: "Il le rend invisible" },
@@ -199,6 +202,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-14.webp",
           question: "Que pose Jessie avec son Super ?",
           answers: [
             { id: "a", text: "Un mur" },
@@ -277,6 +281,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-20.webp",
           question: "Qui est la petite sœur de Leon ?",
           answers: [
             { id: "a", text: "Shelly" },
@@ -311,6 +316,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-2.webp",
           question: "Which studio made Brawl Stars?",
           answers: [
             { id: "a", text: "Rovio" },
@@ -324,6 +330,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-brawl-stars-3.webp",
           question: "In what year did Brawl Stars launch worldwide?",
           answers: [
             { id: "a", text: "2016" },
@@ -431,6 +438,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-11.webp",
           question: "What does Leon's Super do?",
           answers: [
             { id: "a", text: "Turns him invisible" },
@@ -470,6 +478,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-14.webp",
           question: "What does Jessie place with her Super?",
           answers: [
             { id: "a", text: "A wall" },
@@ -548,6 +557,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-20.webp",
           question: "Who is Leon's little sister?",
           answers: [
             { id: "a", text: "Shelly" },
@@ -582,6 +592,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-2.webp",
           question: "¿Qué estudio creó Brawl Stars?",
           answers: [
             { id: "a", text: "Rovio" },
@@ -595,6 +606,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-brawl-stars-3.webp",
           question: "¿En qué año salió Brawl Stars en todo el mundo?",
           answers: [
             { id: "a", text: "2016" },
@@ -702,6 +714,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-11.webp",
           question: "¿Qué hace el súper de Leon?",
           answers: [
             { id: "a", text: "Lo vuelve invisible" },
@@ -741,6 +754,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-14.webp",
           question: "¿Qué coloca Jessie con su súper?",
           answers: [
             { id: "a", text: "Un muro" },
@@ -819,6 +833,7 @@ export const quizBrawlStars: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-20.webp",
           question: "¿Quién es la hermana pequeña de Leon?",
           answers: [
             { id: "a", text: "Shelly" },

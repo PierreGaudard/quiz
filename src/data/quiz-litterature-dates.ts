@@ -86,6 +86,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-litterature-dates-5.webp",
           question: "Range ces pièces de théâtre françaises de la plus ancienne à la plus récente.",
           answers: [
             { id: "a", text: "Le Cid de Corneille" },
@@ -173,6 +174,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-litterature-dates-11.webp",
           question: "Range ces œuvres de Victor Hugo de la plus ancienne à la plus récente.",
           answers: [
             { id: "a", text: "Hernani" },
@@ -215,6 +217,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-litterature-dates-14.webp",
           question: "Range ces recueils de poèmes français du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Méditations poétiques de Lamartine" },
@@ -257,6 +260,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-litterature-dates-17.webp",
           question: "Range ces romans français du XXe siècle du plus ancien au plus récent.",
           answers: [
             { id: "a", text: "Le Grand Meaulnes d'Alain-Fournier" },
@@ -299,6 +303,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-dates-20.webp",
           question: "Range ces sagas de fantasy et de science-fiction dans l'ordre de parution de leur premier tome.",
           answers: [
             { id: "a", text: "Le Monde de Narnia" },
@@ -378,6 +383,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-litterature-dates-5.webp",
           question: "Put these French plays in order, oldest first.",
           answers: [
             { id: "a", text: "Corneille's Le Cid" },
@@ -465,6 +471,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-litterature-dates-11.webp",
           question: "Put these works by Victor Hugo in order, from earliest to latest.",
           answers: [
             { id: "a", text: "Hernani" },
@@ -507,6 +514,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-litterature-dates-14.webp",
           question: "Put these French poetry collections in order, from earliest to latest.",
           answers: [
             { id: "a", text: "Poetical Meditations by Lamartine" },
@@ -549,6 +557,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-litterature-dates-17.webp",
           question: "Put these 20th-century French novels in order, from earliest to latest.",
           answers: [
             { id: "a", text: "Le Grand Meaulnes by Alain-Fournier" },
@@ -591,6 +600,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-dates-20.webp",
           question: "Put these fantasy and sci-fi series in order of their first book.",
           answers: [
             { id: "a", text: "The Chronicles of Narnia" },
@@ -670,6 +680,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-litterature-dates-5.webp",
           question: "Ordena estas obras de teatro francesas de la más antigua a la más reciente.",
           answers: [
             { id: "a", text: "El Cid de Corneille" },
@@ -757,6 +768,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-litterature-dates-11.webp",
           question: "Ordena estas obras de Victor Hugo de la más antigua a la más reciente.",
           answers: [
             { id: "a", text: "Hernani" },
@@ -799,6 +811,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-litterature-dates-14.webp",
           question: "Ordena estos poemarios franceses del más antiguo al más reciente.",
           answers: [
             { id: "a", text: "Meditaciones poéticas, de Lamartine" },
@@ -841,6 +854,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-litterature-dates-17.webp",
           question: "Ordena estas novelas francesas del siglo XX de la más antigua a la más reciente.",
           answers: [
             { id: "a", text: "El gran Meaulnes, de Alain-Fournier" },
@@ -883,6 +897,7 @@ export const quizLitteratureDates: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-litterature-dates-20.webp",
           question: "Ordena estas sagas de fantasía y ciencia ficción según la publicación de su primer libro.",
           answers: [
             { id: "a", text: "Las crónicas de Narnia" },

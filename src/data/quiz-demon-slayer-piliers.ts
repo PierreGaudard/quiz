@@ -38,6 +38,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-piliers-2.webp",
           question: "Mitsuri Kanroji est le Pilier de la Brume.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -61,6 +62,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-demon-slayer-piliers-4.webp",
           question: "Tengen Uzui, le Pilier du Son, n'a qu'une seule épouse.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -140,6 +142,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-demon-slayer-piliers-11.webp",
           question: "Kanae, la grande sœur de Shinobu, était le Pilier de la Fleur.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -173,6 +176,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-demon-slayer-piliers-14.webp",
           question: "Mitsuri Kanroji se bat avec un sabre rigide et très lourd.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +210,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-demon-slayer-piliers-17.webp",
           question: "Giyu Tomioka a passé la Sélection finale en même temps que Sabito.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +244,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-piliers-20.webp",
           question: "Gyomei Himejima se bat avec un sabre classique.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -269,6 +275,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-piliers-2.webp",
           question: "Mitsuri Kanroji is the Mist Hashira.",
           answers: [
             { id: "a", text: "True" },
@@ -292,6 +299,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-demon-slayer-piliers-4.webp",
           question: "Tengen Uzui, the Sound Hashira, has only one wife.",
           answers: [
             { id: "a", text: "True" },
@@ -371,6 +379,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-demon-slayer-piliers-11.webp",
           question: "Kanae, Shinobu's older sister, was the Flower Hashira.",
           answers: [
             { id: "a", text: "True" },
@@ -404,6 +413,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-demon-slayer-piliers-14.webp",
           question: "Mitsuri Kanroji fights with a stiff, very heavy sword.",
           answers: [
             { id: "a", text: "True" },
@@ -437,6 +447,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-demon-slayer-piliers-17.webp",
           question: "Giyu Tomioka took the Final Selection at the same time as Sabito.",
           answers: [
             { id: "a", text: "True" },
@@ -470,6 +481,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-piliers-20.webp",
           question: "Gyomei Himejima fights with a regular sword.",
           answers: [
             { id: "a", text: "True" },
@@ -500,6 +512,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-demon-slayer-piliers-2.webp",
           question: "Mitsuri Kanroji es la Pilar de la Niebla.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -523,6 +536,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-demon-slayer-piliers-4.webp",
           question: "Tengen Uzui, el Pilar del Sonido, tiene una sola esposa.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -602,6 +616,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-demon-slayer-piliers-11.webp",
           question: "Kanae, la hermana mayor de Shinobu, era la Pilar de la Flor.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -635,6 +650,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-demon-slayer-piliers-14.webp",
           question: "Mitsuri Kanroji pelea con una espada rígida y muy pesada.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -668,6 +684,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-demon-slayer-piliers-17.webp",
           question: "Giyu Tomioka hizo la Selección Final a la vez que Sabito.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -701,6 +718,7 @@ export const quizDemonSlayerPiliers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-demon-slayer-piliers-20.webp",
           question: "Gyomei Himejima pelea con una espada normal.",
           answers: [
             { id: "a", text: "Verdadero" },

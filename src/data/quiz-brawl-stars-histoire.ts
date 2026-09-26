@@ -37,6 +37,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-histoire-2.webp",
           question: "Les pouvoirs stellaires sont arrivés dans le jeu avant les gadgets.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -60,6 +61,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-brawl-stars-histoire-4.webp",
           question: "Les hypercharges sont arrivées dans le jeu en même temps que les gadgets.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -139,6 +141,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-histoire-11.webp",
           question: "Pendant sa phase de test, Brawl Stars se jouait en tenant le téléphone à la verticale.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -172,6 +175,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-histoire-14.webp",
           question: "Brawl Stars est sorti la même année que Clash Royale.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -238,6 +242,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-histoire-20.webp",
           question: "Les World Finals 2025 de Brawl Stars se sont jouées à Tokyo.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -268,6 +273,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-histoire-2.webp",
           question: "Star Powers came to the game before Gadgets.",
           answers: [
             { id: "a", text: "True" },
@@ -291,6 +297,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-brawl-stars-histoire-4.webp",
           question: "Hypercharges came to the game at the same time as Gadgets.",
           answers: [
             { id: "a", text: "True" },
@@ -370,6 +377,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-histoire-11.webp",
           question: "During its test phase, Brawl Stars was played holding the phone upright.",
           answers: [
             { id: "a", text: "True" },
@@ -403,6 +411,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-histoire-14.webp",
           question: "Brawl Stars came out the same year as Clash Royale.",
           answers: [
             { id: "a", text: "True" },
@@ -469,6 +478,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-histoire-20.webp",
           question: "The 2025 Brawl Stars World Finals were held in Tokyo.",
           answers: [
             { id: "a", text: "True" },
@@ -499,6 +509,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-histoire-2.webp",
           question: "Los poderes estelares llegaron al juego antes que los gadgets.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -522,6 +533,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-brawl-stars-histoire-4.webp",
           question: "Las hipercargas llegaron al juego a la vez que los gadgets.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -601,6 +613,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-histoire-11.webp",
           question: "Durante su fase de pruebas, Brawl Stars se jugaba con el móvil en vertical.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -634,6 +647,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-histoire-14.webp",
           question: "Brawl Stars salió el mismo año que Clash Royale.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -700,6 +714,7 @@ export const quizBrawlStarsHistoire: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-histoire-20.webp",
           question: "Las World Finals de 2025 de Brawl Stars se jugaron en Tokio.",
           answers: [
             { id: "a", text: "Verdadero" },

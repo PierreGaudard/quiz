@@ -133,6 +133,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fullmetal-alchemist-homonculus-9.webp",
           question: "Quel homonculus creuse un immense tunnel sous tout le pays ?",
           answers: [
             { id: "a", text: "Gluttony" },
@@ -159,6 +160,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-homonculus-11.webp",
           question: "Combien d'homonculus Père a-t-il créés à partir de lui-même ?",
           answers: [
             { id: "a", text: "Cinq" },
@@ -185,6 +187,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fullmetal-alchemist-homonculus-13.webp",
           question: "Quel pouvoir Greed possède-t-il ?",
           answers: [
             { id: "a", text: "Devenir invisible" },
@@ -224,6 +227,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fullmetal-alchemist-homonculus-16.webp",
           question: "Dans le manga et Brotherhood, qui porte le dernier coup à King Bradley ?",
           answers: [
             { id: "a", text: "Alphonse Elric" },
@@ -250,6 +254,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fullmetal-alchemist-homonculus-18.webp",
           question: "Qui finit par dévorer Gluttony ?",
           answers: [
             { id: "a", text: "Greed" },
@@ -276,6 +281,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-homonculus-20.webp",
           question: "D'où vient Père, à l'origine ?",
           answers: [
             { id: "a", text: "D'un petit être dans un flacon, créé à Xerxès" },
@@ -404,6 +410,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fullmetal-alchemist-homonculus-9.webp",
           question: "Which homunculus digs a huge tunnel under the whole country?",
           answers: [
             { id: "a", text: "Gluttony" },
@@ -430,6 +437,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-homonculus-11.webp",
           question: "How many homunculi did Father create from himself?",
           answers: [
             { id: "a", text: "Five" },
@@ -456,6 +464,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fullmetal-alchemist-homonculus-13.webp",
           question: "What power does Greed have?",
           answers: [
             { id: "a", text: "Turning invisible" },
@@ -495,6 +504,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fullmetal-alchemist-homonculus-16.webp",
           question: "In the manga and Brotherhood, who deals the final blow to King Bradley?",
           answers: [
             { id: "a", text: "Alphonse Elric" },
@@ -521,6 +531,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fullmetal-alchemist-homonculus-18.webp",
           question: "Who ends up eating Gluttony?",
           answers: [
             { id: "a", text: "Greed" },
@@ -547,6 +558,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-homonculus-20.webp",
           question: "Where does Father originally come from?",
           answers: [
             { id: "a", text: "A tiny being in a flask, created in Xerxes" },
@@ -675,6 +687,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 9,
+          image: "/images/qi-fullmetal-alchemist-homonculus-9.webp",
           question: "¿Qué homúnculo cava un túnel enorme bajo todo el país?",
           answers: [
             { id: "a", text: "Gluttony" },
@@ -701,6 +714,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-fullmetal-alchemist-homonculus-11.webp",
           question: "¿Cuántos homúnculos creó Padre a partir de sí mismo?",
           answers: [
             { id: "a", text: "Cinco" },
@@ -727,6 +741,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-fullmetal-alchemist-homonculus-13.webp",
           question: "¿Qué poder tiene Greed?",
           answers: [
             { id: "a", text: "Hacerse invisible" },
@@ -766,6 +781,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-fullmetal-alchemist-homonculus-16.webp",
           question: "En el manga y en Brotherhood, ¿quién le da el golpe final a King Bradley?",
           answers: [
             { id: "a", text: "Alphonse Elric" },
@@ -792,6 +808,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-fullmetal-alchemist-homonculus-18.webp",
           question: "¿Quién acaba devorando a Gluttony?",
           answers: [
             { id: "a", text: "Greed" },
@@ -818,6 +835,7 @@ export const quizFullmetalAlchemistHomonculus: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-fullmetal-alchemist-homonculus-20.webp",
           question: "¿De dónde viene Padre en su origen?",
           answers: [
             { id: "a", text: "De un pequeño ser en un frasco, creado en Xerxes" },

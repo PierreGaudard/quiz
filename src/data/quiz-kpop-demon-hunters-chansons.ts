@@ -129,6 +129,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-kpop-demon-hunters-chansons-10.webp",
           question: "Quel Grammy Golden a-t-elle gagné en 2026 ?",
           answers: [
             { id: "a", text: "Meilleure chanson écrite pour un média visuel" },
@@ -162,6 +163,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-kpop-demon-hunters-chansons-13.webp",
           question: "En version originale, qui chante les parties de Jinu ?",
           answers: [
             { id: "a", text: "Andrew Choi" },
@@ -195,6 +197,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-kpop-demon-hunters-chansons-16.webp",
           question: "Avec quelle maison de disques la bande originale est-elle sortie ?",
           answers: [
             { id: "a", text: "Republic Records" },
@@ -217,6 +220,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-kpop-demon-hunters-chansons-18.webp",
           question: "En août 2025, combien de chansons du film se trouvent en même temps dans le top 10 du Billboard Hot 100 ?",
           answers: [
             { id: "a", text: "Deux" },
@@ -239,6 +243,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-chansons-20.webp",
           question: "Kevin Woo, ancien membre du groupe U-KISS, chante pour quel groupe du film ?",
           answers: [
             { id: "a", text: "HUNTR/X" },
@@ -360,6 +365,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-kpop-demon-hunters-chansons-10.webp",
           question: "Which Grammy did Golden win in 2026?",
           answers: [
             { id: "a", text: "Best Song Written for Visual Media" },
@@ -393,6 +399,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-kpop-demon-hunters-chansons-13.webp",
           question: "In the original version, who sings Jinu's parts?",
           answers: [
             { id: "a", text: "Andrew Choi" },
@@ -426,6 +433,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-kpop-demon-hunters-chansons-16.webp",
           question: "Which record label released the soundtrack?",
           answers: [
             { id: "a", text: "Republic Records" },
@@ -448,6 +456,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-kpop-demon-hunters-chansons-18.webp",
           question: "In August 2025, how many songs from the film are in the Billboard Hot 100 top 10 at the same time?",
           answers: [
             { id: "a", text: "Two" },
@@ -470,6 +479,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-chansons-20.webp",
           question: "Kevin Woo, a former member of U-KISS, sings for which group in the film?",
           answers: [
             { id: "a", text: "HUNTR/X" },
@@ -591,6 +601,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-kpop-demon-hunters-chansons-10.webp",
           question: "¿Qué Grammy ganó Golden en 2026?",
           answers: [
             { id: "a", text: "Mejor canción escrita para medios visuales" },
@@ -624,6 +635,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-kpop-demon-hunters-chansons-13.webp",
           question: "En versión original, ¿quién canta las partes de Jinu?",
           answers: [
             { id: "a", text: "Andrew Choi" },
@@ -657,6 +669,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-kpop-demon-hunters-chansons-16.webp",
           question: "¿Con qué discográfica salió la banda sonora?",
           answers: [
             { id: "a", text: "Republic Records" },
@@ -679,6 +692,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-kpop-demon-hunters-chansons-18.webp",
           question: "En agosto de 2025, ¿cuántas canciones de la película están a la vez en el top 10 del Billboard Hot 100?",
           answers: [
             { id: "a", text: "Dos" },
@@ -701,6 +715,7 @@ export const quizKpopDemonHuntersChansons: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-kpop-demon-hunters-chansons-20.webp",
           question: "Kevin Woo, exmiembro del grupo U-KISS, canta para ¿qué grupo de la película?",
           answers: [
             { id: "a", text: "HUNTR/X" },

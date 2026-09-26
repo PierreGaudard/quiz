@@ -37,6 +37,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-death-note-regles-2.webp",
           question: "Après avoir écrit la cause de la mort, combien de temps a-t-on pour en écrire les détails ?",
           answers: [
             { id: "a", text: "Une heure" },
@@ -48,6 +49,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-death-note-regles-3.webp",
           question: "Quand un Death Note tombe dans le monde des humains, à qui appartient-il ?",
           answers: [
             { id: "a", text: "Au premier humain qui le ramasse" },
@@ -150,6 +152,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-death-note-regles-12.webp",
           question: "Peut-on sauver quelqu'un en effaçant son nom du cahier ?",
           answers: [
             { id: "a", text: "Oui, si on efface vite" },
@@ -183,6 +186,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-death-note-regles-15.webp",
           question: "Que se passe-t-il si la mort décrite est impossible pour la victime ?",
           answers: [
             { id: "a", text: "Elle ne meurt pas du tout" },
@@ -205,6 +209,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-death-note-regles-17.webp",
           question: "À quoi le cahier sert-il d'abord pour un dieu de la mort ?",
           answers: [
             { id: "a", text: "À juger les humains" },
@@ -238,6 +243,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-regles-20.webp",
           question: "La deuxième fausse règle que Light fait écrire dit que si on détruit le cahier…",
           answers: [
             { id: "a", text: "Tous ceux qui l'ont touché meurent" },
@@ -268,6 +274,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-death-note-regles-2.webp",
           question: "After writing the cause of death, how long do you have to write the details?",
           answers: [
             { id: "a", text: "One hour" },
@@ -279,6 +286,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-death-note-regles-3.webp",
           question: "When a Death Note falls into the human world, who does it belong to?",
           answers: [
             { id: "a", text: "The first human who picks it up" },
@@ -381,6 +389,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-death-note-regles-12.webp",
           question: "Can you save someone by erasing their name from the notebook?",
           answers: [
             { id: "a", text: "Yes, if you erase it fast" },
@@ -414,6 +423,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-death-note-regles-15.webp",
           question: "What happens if the death you describe is impossible for the victim?",
           answers: [
             { id: "a", text: "They don't die at all" },
@@ -436,6 +446,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-death-note-regles-17.webp",
           question: "What is the notebook mainly for, from a god of death's point of view?",
           answers: [
             { id: "a", text: "Judging humans" },
@@ -469,6 +480,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-regles-20.webp",
           question: "The second fake rule Light has written says that if the notebook is destroyed…",
           answers: [
             { id: "a", text: "Everyone who touched it dies" },
@@ -499,6 +511,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-death-note-regles-2.webp",
           question: "Después de escribir la causa de la muerte, ¿cuánto tiempo hay para escribir los detalles?",
           answers: [
             { id: "a", text: "Una hora" },
@@ -510,6 +523,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-death-note-regles-3.webp",
           question: "Cuando un Death Note cae en el mundo humano, ¿de quién es?",
           answers: [
             { id: "a", text: "Del primer humano que lo recoge" },
@@ -612,6 +626,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-death-note-regles-12.webp",
           question: "¿Se puede salvar a alguien borrando su nombre del cuaderno?",
           answers: [
             { id: "a", text: "Sí, si se borra rápido" },
@@ -645,6 +660,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-death-note-regles-15.webp",
           question: "¿Qué pasa si la muerte que se describe es imposible para la víctima?",
           answers: [
             { id: "a", text: "No muere" },
@@ -667,6 +683,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-death-note-regles-17.webp",
           question: "¿Para qué sirve sobre todo el cuaderno a un dios de la muerte?",
           answers: [
             { id: "a", text: "Para juzgar a los humanos" },
@@ -700,6 +717,7 @@ export const quizDeathNoteRegles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-death-note-regles-20.webp",
           question: "La segunda regla falsa que Light manda escribir dice que si se destruye el cuaderno…",
           answers: [
             { id: "a", text: "Mueren todos los que lo han tocado" },

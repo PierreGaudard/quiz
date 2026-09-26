@@ -37,6 +37,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-personnages-2.webp",
           question: "Quel animal Chifuyu Matsuno a-t-il chez lui ?",
           answers: [
             { id: "a", text: "Un chien, Peke J" },
@@ -48,6 +49,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-tokyo-revengers-personnages-3.webp",
           question: "Quel est le rêve de Keisuke Baji ?",
           answers: [
             { id: "a", text: "Ouvrir une animalerie" },
@@ -139,6 +141,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-personnages-11.webp",
           question: "Quels mots Shuji Hanma a-t-il tatoués sur les mains ?",
           answers: [
             { id: "a", text: "« Péché » et « Châtiment »" },
@@ -172,6 +175,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-personnages-14.webp",
           question: "Qui est le meilleur ami de Pah-chin ?",
           answers: [
             { id: "a", text: "Hakkai Shiba" },
@@ -205,6 +209,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-personnages-17.webp",
           question: "Quel quartier de Tokyo les frères Haitani contrôlent-ils ?",
           answers: [
             { id: "a", text: "Roppongi" },
@@ -238,6 +243,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-personnages-20.webp",
           question: "Que fait Mikey pendant les cours ?",
           answers: [
             { id: "a", text: "Il dessine des motos" },
@@ -268,6 +274,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-personnages-2.webp",
           question: "What pet does Chifuyu Matsuno have at home?",
           answers: [
             { id: "a", text: "A dog, Peke J" },
@@ -279,6 +286,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-tokyo-revengers-personnages-3.webp",
           question: "What is Keisuke Baji's dream?",
           answers: [
             { id: "a", text: "To open a pet shop" },
@@ -370,6 +378,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-personnages-11.webp",
           question: "What words does Shuji Hanma have tattooed on his hands?",
           answers: [
             { id: "a", text: "\"Sin\" and \"Punishment\"" },
@@ -403,6 +412,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-personnages-14.webp",
           question: "Who is Pah-chin's best friend?",
           answers: [
             { id: "a", text: "Hakkai Shiba" },
@@ -436,6 +446,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-personnages-17.webp",
           question: "Which part of Tokyo do the Haitani brothers control?",
           answers: [
             { id: "a", text: "Roppongi" },
@@ -469,6 +480,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-personnages-20.webp",
           question: "What does Mikey do during class?",
           answers: [
             { id: "a", text: "He draws motorcycles" },
@@ -499,6 +511,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-tokyo-revengers-personnages-2.webp",
           question: "¿Qué mascota tiene Chifuyu Matsuno en casa?",
           answers: [
             { id: "a", text: "Un perro, Peke J" },
@@ -510,6 +523,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-tokyo-revengers-personnages-3.webp",
           question: "¿Cuál es el sueño de Keisuke Baji?",
           answers: [
             { id: "a", text: "Abrir una tienda de animales" },
@@ -601,6 +615,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-tokyo-revengers-personnages-11.webp",
           question: "¿Qué palabras lleva Shuji Hanma tatuadas en las manos?",
           answers: [
             { id: "a", text: "«Pecado» y «Castigo»" },
@@ -634,6 +649,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-tokyo-revengers-personnages-14.webp",
           question: "¿Quién es el mejor amigo de Pah-chin?",
           answers: [
             { id: "a", text: "Hakkai Shiba" },
@@ -667,6 +683,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-tokyo-revengers-personnages-17.webp",
           question: "¿Qué barrio de Tokio controlan los hermanos Haitani?",
           answers: [
             { id: "a", text: "Roppongi" },
@@ -700,6 +717,7 @@ export const quizTokyoRevengersPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-tokyo-revengers-personnages-20.webp",
           question: "¿Qué hace Mikey durante las clases?",
           answers: [
             { id: "a", text: "Dibuja motos" },

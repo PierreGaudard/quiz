@@ -26,6 +26,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-personnages-1.webp",
           question: "Qui reçoit l'Anneau quand Bilbon quitte la Comté ?",
           answers: [
             { id: "a", text: "Frodon" },
@@ -37,6 +38,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-seigneur-des-anneaux-personnages-2.webp",
           question: "Quel hobbit accompagne Frodon jusqu'à la Montagne du Destin ?",
           answers: [
             { id: "a", text: "Pippin" },
@@ -140,6 +142,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-personnages-11.webp",
           question: "Quel est le vrai nom de Gollum ?",
           answers: [
             { id: "a", text: "Déagol" },
@@ -173,6 +176,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-personnages-14.webp",
           question: "Qui est le roi du Rohan ?",
           answers: [
             { id: "a", text: "Théoden" },
@@ -206,6 +210,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-personnages-17.webp",
           question: "Qui a forgé l'Anneau unique ?",
           answers: [
             { id: "a", text: "Saroumane" },
@@ -239,6 +244,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-personnages-20.webp",
           question: "Quelle créature de feu affronte Gandalf sur le pont de la Moria ?",
           answers: [
             { id: "a", text: "Le Roi-Sorcier" },
@@ -257,6 +263,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-personnages-1.webp",
           question: "Who gets the Ring when Bilbo leaves the Shire?",
           answers: [
             { id: "a", text: "Frodo" },
@@ -268,6 +275,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-seigneur-des-anneaux-personnages-2.webp",
           question: "Which hobbit goes with Frodo all the way to Mount Doom?",
           answers: [
             { id: "a", text: "Pippin" },
@@ -371,6 +379,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-personnages-11.webp",
           question: "What is Gollum's real name?",
           answers: [
             { id: "a", text: "Déagol" },
@@ -404,6 +413,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-personnages-14.webp",
           question: "Who is the King of Rohan?",
           answers: [
             { id: "a", text: "Théoden" },
@@ -437,6 +447,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-personnages-17.webp",
           question: "Who forged the One Ring?",
           answers: [
             { id: "a", text: "Saruman" },
@@ -470,6 +481,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-personnages-20.webp",
           question: "Which fiery creature does Gandalf face on the bridge in Moria?",
           answers: [
             { id: "a", text: "The Witch-king" },
@@ -488,6 +500,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-seigneur-des-anneaux-personnages-1.webp",
           question: "¿Quién recibe el Anillo cuando Bilbo se marcha de la Comarca?",
           answers: [
             { id: "a", text: "Frodo" },
@@ -499,6 +512,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-seigneur-des-anneaux-personnages-2.webp",
           question: "¿Qué hobbit acompaña a Frodo hasta el Monte del Destino?",
           answers: [
             { id: "a", text: "Pippin" },
@@ -602,6 +616,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-seigneur-des-anneaux-personnages-11.webp",
           question: "¿Cuál es el verdadero nombre de Gollum?",
           answers: [
             { id: "a", text: "Déagol" },
@@ -635,6 +650,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-seigneur-des-anneaux-personnages-14.webp",
           question: "¿Quién es el rey de Rohan?",
           answers: [
             { id: "a", text: "Théoden" },
@@ -668,6 +684,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-seigneur-des-anneaux-personnages-17.webp",
           question: "¿Quién forjó el Anillo Único?",
           answers: [
             { id: "a", text: "Saruman" },
@@ -701,6 +718,7 @@ export const quizSeigneurDesAnneauxPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-seigneur-des-anneaux-personnages-20.webp",
           question: "¿A qué criatura de fuego se enfrenta Gandalf en el puente de Moria?",
           answers: [
             { id: "a", text: "El Rey Brujo" },

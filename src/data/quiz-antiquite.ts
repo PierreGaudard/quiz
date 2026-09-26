@@ -54,6 +54,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-antiquite-3.webp",
           question: "Quel général carthaginois a traversé les Alpes avec des éléphants pour attaquer Rome ?",
           answers: [
             { id: "a", text: "Scipion l'Africain" },
@@ -147,6 +148,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-antiquite-10.webp",
           question: "En quelle année l'Empire romain d'Occident prend-il fin, avec la déposition de Romulus Augustule ?",
           answers: [
             { id: "a", text: "395" },
@@ -186,6 +188,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-antiquite-13.webp",
           question: "Quelle bataille navale de 480 av. J.-C. voit la flotte grecque battre celle des Perses ?",
           answers: [
             { id: "a", text: "Actium" },
@@ -225,6 +228,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-16.webp",
           question: "Quel gladiateur venu de Thrace mène une grande révolte d'esclaves contre Rome, de 73 à 71 av. J.-C. ?",
           answers: [
             { id: "a", text: "Jugurtha" },
@@ -251,6 +255,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-antiquite-18.webp",
           question: "Quel empereur règne sur Rome pendant le grand incendie de 64 apr. J.-C. ?",
           answers: [
             { id: "a", text: "Caligula" },
@@ -277,6 +282,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-20.webp",
           question: "Quelle ville est rasée par Rome en 146 av. J.-C., à la fin de la troisième guerre punique ?",
           answers: [
             { id: "a", text: "Carthage" },
@@ -325,6 +331,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-antiquite-3.webp",
           question: "Which Carthaginian general crossed the Alps with elephants to attack Rome?",
           answers: [
             { id: "a", text: "Scipio Africanus" },
@@ -418,6 +425,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-antiquite-10.webp",
           question: "In what year did the Western Roman Empire end, when Romulus Augustulus was deposed?",
           answers: [
             { id: "a", text: "395" },
@@ -457,6 +465,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-antiquite-13.webp",
           question: "Which naval battle of 480 BC saw the Greek fleet defeat the Persians?",
           answers: [
             { id: "a", text: "Actium" },
@@ -496,6 +505,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-16.webp",
           question: "Which gladiator from Thrace led a great slave revolt against Rome from 73 to 71 BC?",
           answers: [
             { id: "a", text: "Jugurtha" },
@@ -522,6 +532,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-antiquite-18.webp",
           question: "Which emperor ruled Rome during the great fire of AD 64?",
           answers: [
             { id: "a", text: "Caligula" },
@@ -548,6 +559,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-20.webp",
           question: "Which city was razed by Rome in 146 BC, at the end of the Third Punic War?",
           answers: [
             { id: "a", text: "Carthage" },
@@ -596,6 +608,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-antiquite-3.webp",
           question: "¿Qué general cartaginés cruzó los Alpes con elefantes para atacar Roma?",
           answers: [
             { id: "a", text: "Escipión el Africano" },
@@ -689,6 +702,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 10,
+          image: "/images/qi-antiquite-10.webp",
           question: "¿En qué año terminó el Imperio romano de Occidente, con la deposición de Rómulo Augústulo?",
           answers: [
             { id: "a", text: "395" },
@@ -728,6 +742,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 13,
+          image: "/images/qi-antiquite-13.webp",
           question: "¿Qué batalla naval del 480 a. C. ve a la flota griega vencer a la persa?",
           answers: [
             { id: "a", text: "Accio" },
@@ -767,6 +782,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 16,
+          image: "/images/qi-antiquite-16.webp",
           question: "¿Qué gladiador llegado de Tracia encabezó una gran revuelta de esclavos contra Roma, del 73 al 71 a. C.?",
           answers: [
             { id: "a", text: "Yugurta" },
@@ -793,6 +809,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 18,
+          image: "/images/qi-antiquite-18.webp",
           question: "¿Qué emperador gobernaba Roma durante el gran incendio del 64 d. C.?",
           answers: [
             { id: "a", text: "Calígula" },
@@ -819,6 +836,7 @@ export const quizAntiquite: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-antiquite-20.webp",
           question: "¿Qué ciudad arrasó Roma en el 146 a. C., al final de la tercera guerra púnica?",
           answers: [
             { id: "a", text: "Cartago" },

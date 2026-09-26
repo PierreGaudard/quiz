@@ -55,6 +55,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-gta-personnages-3.webp",
           question: "Que veut dire « CJ », le surnom du héros de San Andreas ?",
           answers: [
             { id: "a", text: "Chris Jackson" },
@@ -68,6 +69,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-gta-personnages-4.webp",
           question: "Comment s'appelle le héros muet de GTA III ?",
           answers: [
             { id: "a", text: "Huang Lee" },
@@ -161,6 +163,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-gta-personnages-11.webp",
           question: "Au tout début de GTA III, qui trahit Claude et lui tire dessus pendant un braquage ?",
           answers: [
             { id: "a", text: "Maria" },
@@ -200,6 +203,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-gta-personnages-14.webp",
           question: "Quel acteur double l'officier Tenpenny, le policier corrompu de San Andreas ?",
           answers: [
             { id: "a", text: "Denzel Washington" },
@@ -239,6 +243,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-personnages-17.webp",
           question: "Qui est le héros de The Lost and Damned, la première extension de GTA IV ?",
           answers: [
             { id: "a", text: "Luis Lopez" },
@@ -278,6 +283,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-personnages-20.webp",
           question: "Dans GTA V, comment s'appelle la femme de Michael ?",
           answers: [
             { id: "a", text: "Tracey" },
@@ -326,6 +332,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-gta-personnages-3.webp",
           question: "What does \"CJ\", the San Andreas hero's nickname, stand for?",
           answers: [
             { id: "a", text: "Chris Jackson" },
@@ -339,6 +346,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-gta-personnages-4.webp",
           question: "What's the name of the silent hero of GTA III?",
           answers: [
             { id: "a", text: "Huang Lee" },
@@ -432,6 +440,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-gta-personnages-11.webp",
           question: "At the very start of GTA III, who betrays Claude and shoots him during a robbery?",
           answers: [
             { id: "a", text: "Maria" },
@@ -471,6 +480,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-gta-personnages-14.webp",
           question: "Which actor voices Officer Tenpenny, the corrupt cop in San Andreas?",
           answers: [
             { id: "a", text: "Denzel Washington" },
@@ -510,6 +520,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-personnages-17.webp",
           question: "Who is the hero of The Lost and Damned, GTA IV's first expansion?",
           answers: [
             { id: "a", text: "Luis Lopez" },
@@ -549,6 +560,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-personnages-20.webp",
           question: "In GTA V, what's the name of Michael's wife?",
           answers: [
             { id: "a", text: "Tracey" },
@@ -597,6 +609,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-gta-personnages-3.webp",
           question: "¿Qué significa «CJ», el apodo del protagonista de San Andreas?",
           answers: [
             { id: "a", text: "Chris Jackson" },
@@ -610,6 +623,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-gta-personnages-4.webp",
           question: "¿Cómo se llama el protagonista mudo de GTA III?",
           answers: [
             { id: "a", text: "Huang Lee" },
@@ -703,6 +717,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-gta-personnages-11.webp",
           question: "Al principio de GTA III, ¿quién traiciona a Claude y le dispara durante un atraco?",
           answers: [
             { id: "a", text: "Maria" },
@@ -742,6 +757,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-gta-personnages-14.webp",
           question: "¿Qué actor pone la voz al agente Tenpenny, el policía corrupto de San Andreas?",
           answers: [
             { id: "a", text: "Denzel Washington" },
@@ -781,6 +797,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-gta-personnages-17.webp",
           question: "¿Quién es el protagonista de The Lost and Damned, la primera expansión de GTA IV?",
           answers: [
             { id: "a", text: "Luis Lopez" },
@@ -820,6 +837,7 @@ export const quizGtaPersonnages: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-gta-personnages-20.webp",
           question: "En GTA V, ¿cómo se llama la mujer de Michael?",
           answers: [
             { id: "a", text: "Tracey" },

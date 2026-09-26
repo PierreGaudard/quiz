@@ -41,6 +41,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-symboles-2.webp",
           question: "C'est Pierre de Coubertin qui a dessiné les anneaux olympiques.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -52,6 +53,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jeux-olympiques-symboles-3.webp",
           question: "Le drapeau olympique a un fond bleu.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -151,6 +153,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-jeux-olympiques-symboles-12.webp",
           question: "Pendant la cérémonie d'ouverture, un athlète prononce un serment au nom de tous les autres.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "a",
@@ -175,6 +178,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-jeux-olympiques-symboles-15.webp",
           question: "Au défilé des nations, c'est le pays organisateur qui ouvre la marche.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "b",
@@ -191,6 +195,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-symboles-17.webp",
           question: "Les Jeux paralympiques ont leur propre symbole, les « agitos », et pas les anneaux.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "a",
@@ -215,6 +220,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-symboles-20.webp",
           question: "Les mascottes des Jeux d'hiver de Milan-Cortina 2026 étaient deux ours.",
           answers: [{ id: "a", text: "Vrai" }, { id: "b", text: "Faux" }],
           correctAnswer: "b",
@@ -242,6 +248,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-symboles-2.webp",
           question: "Pierre de Coubertin designed the Olympic rings.",
           answers: [
             { id: "a", text: "True" },
@@ -253,6 +260,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jeux-olympiques-symboles-3.webp",
           question: "The Olympic flag has a blue background.",
           answers: [
             { id: "a", text: "True" },
@@ -352,6 +360,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-jeux-olympiques-symboles-12.webp",
           question: "During the opening ceremony, one athlete takes an oath on behalf of all the others.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "a",
@@ -376,6 +385,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-jeux-olympiques-symboles-15.webp",
           question: "In the parade of nations, the host country walks in first.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "b",
@@ -392,6 +402,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-symboles-17.webp",
           question: "The Paralympic Games have their own symbol, the \"agitos\", rather than the rings.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "a",
@@ -416,6 +427,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-symboles-20.webp",
           question: "The mascots of the Milan-Cortina 2026 Winter Games were two bears.",
           answers: [{ id: "a", text: "True" }, { id: "b", text: "False" }],
           correctAnswer: "b",
@@ -443,6 +455,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-jeux-olympiques-symboles-2.webp",
           question: "Pierre de Coubertin dibujó los aros olímpicos.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -454,6 +467,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-jeux-olympiques-symboles-3.webp",
           question: "La bandera olímpica tiene el fondo azul.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -553,6 +567,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-jeux-olympiques-symboles-12.webp",
           question: "En la ceremonia de apertura, un deportista pronuncia un juramento en nombre de todos los demás.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "a",
@@ -577,6 +592,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-jeux-olympiques-symboles-15.webp",
           question: "En el desfile de las naciones, el país organizador es el primero en entrar.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "b",
@@ -593,6 +609,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-jeux-olympiques-symboles-17.webp",
           question: "Los Juegos Paralímpicos tienen su propio símbolo, los « agitos », y no los aros.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "a",
@@ -617,6 +634,7 @@ export const quizJeuxOlympiquesSymboles: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-jeux-olympiques-symboles-20.webp",
           question: "Las mascotas de los Juegos de invierno de Milán-Cortina 2026 eran dos osos.",
           answers: [{ id: "a", text: "Verdadero" }, { id: "b", text: "Falso" }],
           correctAnswer: "b",

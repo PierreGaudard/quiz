@@ -39,6 +39,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-basketball-2.webp",
           question: "À quelle hauteur se trouve le cercle du panier ?",
           answers: [
             { id: "a", text: "2,85 m" },
@@ -52,6 +53,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-basketball-3.webp",
           question: "Combien de joueurs chaque équipe a-t-elle sur le terrain ?",
           answers: [
             { id: "a", text: "4" },
@@ -159,6 +161,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-basketball-11.webp",
           question: "En NBA, au bout de combien de fautes personnelles un joueur est-il exclu du match ?",
           answers: [
             { id: "a", text: "4" },
@@ -198,6 +201,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-basketball-14.webp",
           question: "Avec quelle équipe Stephen Curry a-t-il gagné ses quatre titres NBA ?",
           answers: [
             { id: "a", text: "Cleveland Cavaliers" },
@@ -237,6 +241,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-basketball-17.webp",
           question: "Comment appelle-t-on la faute d'un joueur qui fait trop de pas avec le ballon sans dribbler ?",
           answers: [
             { id: "a", text: "Le marcher" },
@@ -276,6 +281,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-20.webp",
           question: "Quel pays a gagné la Coupe du monde de basket en 2023 ?",
           answers: [
             { id: "a", text: "États-Unis" },
@@ -310,6 +316,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-basketball-2.webp",
           question: "How high is the basketball rim?",
           answers: [
             { id: "a", text: "9 feet 4 inches (2.85 m)" },
@@ -323,6 +330,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-basketball-3.webp",
           question: "How many players does each team have on the court?",
           answers: [
             { id: "a", text: "4" },
@@ -430,6 +438,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-basketball-11.webp",
           question: "In the NBA, how many personal fouls does it take for a player to foul out?",
           answers: [
             { id: "a", text: "4" },
@@ -469,6 +478,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-basketball-14.webp",
           question: "Which team did Stephen Curry win his four NBA titles with?",
           answers: [
             { id: "a", text: "Cleveland Cavaliers" },
@@ -508,6 +518,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-basketball-17.webp",
           question: "What's the violation called when a player takes too many steps with the ball without dribbling?",
           answers: [
             { id: "a", text: "Traveling" },
@@ -547,6 +558,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-20.webp",
           question: "Which country won the 2023 Basketball World Cup?",
           answers: [
             { id: "a", text: "United States" },
@@ -581,6 +593,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-basketball-2.webp",
           question: "¿A qué altura está el aro de la canasta?",
           answers: [
             { id: "a", text: "2,85 m" },
@@ -594,6 +607,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 3,
+          image: "/images/qi-basketball-3.webp",
           question: "¿Cuántos jugadores tiene cada equipo en la pista?",
           answers: [
             { id: "a", text: "4" },
@@ -701,6 +715,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-basketball-11.webp",
           question: "En la NBA, ¿con cuántas faltas personales queda eliminado un jugador?",
           answers: [
             { id: "a", text: "4" },
@@ -740,6 +755,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-basketball-14.webp",
           question: "¿Con qué equipo ganó Stephen Curry sus cuatro títulos de la NBA?",
           answers: [
             { id: "a", text: "Cleveland Cavaliers" },
@@ -779,6 +795,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-basketball-17.webp",
           question: "¿Cómo se llama la infracción de un jugador que da demasiados pasos con el balón sin botarlo?",
           answers: [
             { id: "a", text: "Pasos" },
@@ -818,6 +835,7 @@ export const quizBasketball: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-basketball-20.webp",
           question: "¿Qué país ganó el Mundial de baloncesto de 2023?",
           answers: [
             { id: "a", text: "Estados Unidos" },

@@ -25,6 +25,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-cyclisme-legendes-1.webp",
           question: "Quel coureur était surnommé « le Cannibale » ?",
           answers: [
             { id: "a", text: "Eddy Merckx" },
@@ -82,6 +83,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-cyclisme-legendes-6.webp",
           question: "Qui a perdu le Tour 1989 pour huit secondes, lors du dernier contre-la-montre ?",
           answers: [
             { id: "a", text: "Laurent Fignon" },
@@ -139,6 +141,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-cyclisme-legendes-11.webp",
           question: "Quel coureur était surnommé « le Blaireau » ?",
           answers: [
             { id: "a", text: "Laurent Fignon" },
@@ -172,6 +175,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-cyclisme-legendes-14.webp",
           question: "Qui a gagné Milan-San Remo à sept reprises ?",
           answers: [
             { id: "a", text: "Eddy Merckx" },
@@ -205,6 +209,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-legendes-17.webp",
           question: "Qui a gagné le Tour de France en 2022 et en 2023 ?",
           answers: [
             { id: "a", text: "Tadej Pogačar" },
@@ -238,6 +243,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-legendes-20.webp",
           question: "Lequel des deux a gagné le Tour de France, le Tour d'Italie et le Tour d'Espagne dans sa carrière ?",
           answers: [
             { id: "a", text: "Miguel Indurain" },
@@ -256,6 +262,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-cyclisme-legendes-1.webp",
           question: "Which rider was nicknamed \"the Cannibal\"?",
           answers: [
             { id: "a", text: "Eddy Merckx" },
@@ -313,6 +320,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-cyclisme-legendes-6.webp",
           question: "Who lost the 1989 Tour by eight seconds in the final time trial?",
           answers: [
             { id: "a", text: "Laurent Fignon" },
@@ -370,6 +378,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-cyclisme-legendes-11.webp",
           question: "Which rider was nicknamed \"the Badger\"?",
           answers: [
             { id: "a", text: "Laurent Fignon" },
@@ -403,6 +412,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-cyclisme-legendes-14.webp",
           question: "Who won Milan-San Remo seven times?",
           answers: [
             { id: "a", text: "Eddy Merckx" },
@@ -436,6 +446,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-legendes-17.webp",
           question: "Who won the Tour de France in both 2022 and 2023?",
           answers: [
             { id: "a", text: "Tadej Pogačar" },
@@ -469,6 +480,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-legendes-20.webp",
           question: "Which of the two won the Tour de France, the Giro d'Italia and the Vuelta during his career?",
           answers: [
             { id: "a", text: "Miguel Indurain" },
@@ -487,6 +499,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-cyclisme-legendes-1.webp",
           question: "¿A qué ciclista apodaban «el Caníbal»?",
           answers: [
             { id: "a", text: "Eddy Merckx" },
@@ -544,6 +557,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-cyclisme-legendes-6.webp",
           question: "¿Quién perdió el Tour de 1989 por ocho segundos en la última contrarreloj?",
           answers: [
             { id: "a", text: "Laurent Fignon" },
@@ -601,6 +615,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-cyclisme-legendes-11.webp",
           question: "¿A qué ciclista apodaban «el Tejón»?",
           answers: [
             { id: "a", text: "Laurent Fignon" },
@@ -634,6 +649,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-cyclisme-legendes-14.webp",
           question: "¿Quién ganó la Milán-San Remo siete veces?",
           answers: [
             { id: "a", text: "Eddy Merckx" },
@@ -667,6 +683,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-cyclisme-legendes-17.webp",
           question: "¿Quién ganó el Tour de Francia en 2022 y en 2023?",
           answers: [
             { id: "a", text: "Tadej Pogačar" },
@@ -700,6 +717,7 @@ export const quizCyclismeLegendes: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-cyclisme-legendes-20.webp",
           question: "¿Cuál de los dos ganó el Tour, el Giro y la Vuelta a lo largo de su carrera?",
           answers: [
             { id: "a", text: "Miguel Induráin" },

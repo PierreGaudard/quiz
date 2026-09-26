@@ -38,6 +38,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-corps-humain-idees-recues-2.webp",
           question: "Les ongles et les cheveux continuent de pousser après la mort.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -72,6 +73,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-corps-humain-idees-recues-5.webp",
           question: "Le cœur bat environ 100 000 fois par jour.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -140,6 +142,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-corps-humain-idees-recues-11.webp",
           question: "Notre ADN est identique à plus de 95 % à celui du chimpanzé.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -173,6 +176,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-corps-humain-idees-recues-14.webp",
           question: "Un chewing-gum avalé reste sept ans dans l'estomac.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -206,6 +210,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-corps-humain-idees-recues-17.webp",
           question: "L'émail des dents est la matière la plus dure du corps humain.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -239,6 +244,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-idees-recues-20.webp",
           question: "L'estomac fabrique de l'acide chlorhydrique.",
           answers: [
             { id: "a", text: "Vrai" },
@@ -269,6 +275,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-corps-humain-idees-recues-2.webp",
           question: "Nails and hair keep growing after death.",
           answers: [
             { id: "a", text: "True" },
@@ -303,6 +310,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-corps-humain-idees-recues-5.webp",
           question: "The heart beats about 100,000 times a day.",
           answers: [
             { id: "a", text: "True" },
@@ -371,6 +379,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-corps-humain-idees-recues-11.webp",
           question: "Our DNA is more than 95% the same as a chimpanzee's.",
           answers: [
             { id: "a", text: "True" },
@@ -404,6 +413,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-corps-humain-idees-recues-14.webp",
           question: "Swallowed gum stays in your stomach for seven years.",
           answers: [
             { id: "a", text: "True" },
@@ -437,6 +447,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-corps-humain-idees-recues-17.webp",
           question: "Tooth enamel is the hardest substance in the human body.",
           answers: [
             { id: "a", text: "True" },
@@ -470,6 +481,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-idees-recues-20.webp",
           question: "Your stomach makes hydrochloric acid.",
           answers: [
             { id: "a", text: "True" },
@@ -500,6 +512,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-corps-humain-idees-recues-2.webp",
           question: "Las uñas y el pelo siguen creciendo después de la muerte.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -534,6 +547,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 5,
+          image: "/images/qi-corps-humain-idees-recues-5.webp",
           question: "El corazón late unas 100 000 veces al día.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -602,6 +616,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-corps-humain-idees-recues-11.webp",
           question: "Nuestro ADN es igual en más de un 95 % al del chimpancé.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -635,6 +650,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-corps-humain-idees-recues-14.webp",
           question: "Un chicle tragado se queda siete años en el estómago.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -668,6 +684,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-corps-humain-idees-recues-17.webp",
           question: "El esmalte de los dientes es la sustancia más dura del cuerpo humano.",
           answers: [
             { id: "a", text: "Verdadero" },
@@ -701,6 +718,7 @@ export const quizCorpsHumainIdeesRecues: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-corps-humain-idees-recues-20.webp",
           question: "El estómago fabrica ácido clorhídrico.",
           answers: [
             { id: "a", text: "Verdadero" },

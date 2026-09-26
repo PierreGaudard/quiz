@@ -161,6 +161,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-one-piece-11.webp",
           question: "Quel est le rêve de Zoro ?",
           answers: [
             { id: "a", text: "Retrouver son père" },
@@ -200,6 +201,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-one-piece-14.webp",
           question: "Quel est le rêve de Sanji ?",
           answers: [
             { id: "a", text: "Battre Zeff en cuisine" },
@@ -239,6 +241,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-17.webp",
           question: "Quel frère adoptif de Luffy devient chef d'état-major de l'armée révolutionnaire ?",
           answers: [
             { id: "a", text: "Ace" },
@@ -278,6 +281,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-20.webp",
           question: "De quelle mer vient Luffy ?",
           answers: [
             { id: "a", text: "North Blue" },
@@ -434,6 +438,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-one-piece-11.webp",
           question: "What is Zoro's dream?",
           answers: [
             { id: "a", text: "To find his father" },
@@ -473,6 +478,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-one-piece-14.webp",
           question: "What is Sanji's dream?",
           answers: [
             { id: "a", text: "To beat Zeff at cooking" },
@@ -512,6 +518,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-17.webp",
           question: "Which of Luffy's sworn brothers becomes Chief of Staff of the Revolutionary Army?",
           answers: [
             { id: "a", text: "Ace" },
@@ -551,6 +558,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-20.webp",
           question: "Which sea is Luffy from?",
           answers: [
             { id: "a", text: "North Blue" },
@@ -707,6 +715,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-one-piece-11.webp",
           question: "¿Cuál es el sueño de Zoro?",
           answers: [
             { id: "a", text: "Encontrar a su padre" },
@@ -746,6 +755,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-one-piece-14.webp",
           question: "¿Cuál es el sueño de Sanji?",
           answers: [
             { id: "a", text: "Ganar a Zeff en la cocina" },
@@ -785,6 +795,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-one-piece-17.webp",
           question: "¿Qué hermano de Luffy llega a ser jefe del Estado Mayor del Ejército Revolucionario?",
           answers: [
             { id: "a", text: "Ace" },
@@ -824,6 +835,7 @@ export const quizOnePiece: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-one-piece-20.webp",
           question: "¿De qué mar viene Luffy?",
           answers: [
             { id: "a", text: "North Blue" },

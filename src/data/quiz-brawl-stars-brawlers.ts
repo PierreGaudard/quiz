@@ -39,6 +39,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-brawlers-2.webp",
           question: "Que fait le Super de Leon ?",
           answers: [
             { id: "a", text: "Il le rend invisible" },
@@ -66,6 +67,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-brawl-stars-brawlers-4.webp",
           question: "Avec quoi Mortis attaque-t-il ?",
           answers: [
             { id: "a", text: "Une faux" },
@@ -159,6 +161,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-brawlers-11.webp",
           question: "Que lance Tara quand elle attaque ?",
           answers: [
             { id: "a", text: "Des boules de feu" },
@@ -198,6 +201,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-brawlers-14.webp",
           question: "À quoi sert la tourelle que pose Pam avec son Super ?",
           answers: [
             { id: "a", text: "À ralentir les ennemis" },
@@ -237,6 +241,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-brawl-stars-brawlers-17.webp",
           question: "Qu'a de particulier la pioche que lance Carl ?",
           answers: [
             { id: "a", text: "Elle explose" },
@@ -276,6 +281,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-brawlers-20.webp",
           question: "Avec quoi Bibi frappe-t-elle ses ennemis ?",
           answers: [
             { id: "a", text: "Une batte de base-ball" },
@@ -310,6 +316,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-brawlers-2.webp",
           question: "What does Leon's Super do?",
           answers: [
             { id: "a", text: "It makes him invisible" },
@@ -337,6 +344,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-brawl-stars-brawlers-4.webp",
           question: "What does Mortis attack with?",
           answers: [
             { id: "a", text: "A scythe" },
@@ -430,6 +438,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-brawlers-11.webp",
           question: "What does Tara throw when she attacks?",
           answers: [
             { id: "a", text: "Fireballs" },
@@ -469,6 +478,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-brawlers-14.webp",
           question: "What is the turret that Pam sets down with her Super for?",
           answers: [
             { id: "a", text: "Slowing enemies down" },
@@ -508,6 +518,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-brawl-stars-brawlers-17.webp",
           question: "What's special about the pickaxe that Carl throws?",
           answers: [
             { id: "a", text: "It explodes" },
@@ -547,6 +558,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-brawlers-20.webp",
           question: "What does Bibi hit her enemies with?",
           answers: [
             { id: "a", text: "A baseball bat" },
@@ -581,6 +593,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-brawl-stars-brawlers-2.webp",
           question: "¿Qué hace el súper de Leon?",
           answers: [
             { id: "a", text: "Lo vuelve invisible" },
@@ -608,6 +621,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 4,
+          image: "/images/qi-brawl-stars-brawlers-4.webp",
           question: "¿Con qué ataca Mortis?",
           answers: [
             { id: "a", text: "Con una guadaña" },
@@ -701,6 +715,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-brawl-stars-brawlers-11.webp",
           question: "¿Qué lanza Tara cuando ataca?",
           answers: [
             { id: "a", text: "Bolas de fuego" },
@@ -740,6 +755,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-brawl-stars-brawlers-14.webp",
           question: "¿Para qué sirve la torreta que coloca Pam con su súper?",
           answers: [
             { id: "a", text: "Para frenar a los enemigos" },
@@ -779,6 +795,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-brawl-stars-brawlers-17.webp",
           question: "¿Qué tiene de especial el pico que lanza Carl?",
           answers: [
             { id: "a", text: "Explota" },
@@ -818,6 +835,7 @@ export const quizBrawlStarsBrawlers: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-brawl-stars-brawlers-20.webp",
           question: "¿Con qué golpea Bibi a sus enemigos?",
           answers: [
             { id: "a", text: "Un bate de béisbol" },

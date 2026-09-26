@@ -128,6 +128,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-marvel-ordre-8.webp",
           question: "Remets ces films Avengers dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Avengers : L'Ère d'Ultron" },
@@ -185,6 +186,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-marvel-ordre-12.webp",
           question: "Remets ces films où apparaissent les Gardiens de la Galaxie dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Les Gardiens de la Galaxie Vol. 3" },
@@ -227,6 +229,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-marvel-ordre-15.webp",
           question: "Remets ces films de la phase 1 et 2 dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Iron Man 3" },
@@ -255,6 +258,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-ordre-17.webp",
           question: "Attention, ordre de l'histoire : remets ces films dans l'ordre où se passent leurs événements.",
           answers: [
             { id: "a", text: "Avengers : Infinity War" },
@@ -297,6 +301,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-ordre-20.webp",
           question: "Tout est sorti en 2021. Remets ces films et cette série dans leur ordre de sortie.",
           answers: [
             { id: "a", text: "Shang-Chi et la Légende des Dix Anneaux" },
@@ -419,6 +424,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-marvel-ordre-8.webp",
           question: "Put these Avengers movies in release order.",
           answers: [
             { id: "a", text: "Avengers: Age of Ultron" },
@@ -476,6 +482,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-marvel-ordre-12.webp",
           question: "Put these films featuring the Guardians of the Galaxy in release order.",
           answers: [
             { id: "a", text: "Guardians of the Galaxy Vol. 3" },
@@ -518,6 +525,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-marvel-ordre-15.webp",
           question: "Put these Phase 1 and 2 films in release order.",
           answers: [
             { id: "a", text: "Iron Man 3" },
@@ -546,6 +554,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-ordre-17.webp",
           question: "Careful, story order: put these films in the order their events take place.",
           answers: [
             { id: "a", text: "Avengers: Infinity War" },
@@ -588,6 +597,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-ordre-20.webp",
           question: "All of these came out in 2021. Put these films and this series in release order.",
           answers: [
             { id: "a", text: "Shang-Chi and the Legend of the Ten Rings" },
@@ -710,6 +720,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 8,
+          image: "/images/qi-marvel-ordre-8.webp",
           question: "Ordena estas películas de los Vengadores por fecha de estreno.",
           answers: [
             { id: "a", text: "Vengadores: La era de Ultrón" },
@@ -767,6 +778,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-marvel-ordre-12.webp",
           question: "Ordena estas películas en las que salen los Guardianes de la Galaxia por fecha de estreno.",
           answers: [
             { id: "a", text: "Guardianes de la Galaxia Volumen 3" },
@@ -809,6 +821,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-marvel-ordre-15.webp",
           question: "Ordena estas películas de las fases 1 y 2 por fecha de estreno.",
           answers: [
             { id: "a", text: "Iron Man 3" },
@@ -837,6 +850,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-marvel-ordre-17.webp",
           question: "Ojo, orden de la historia: ordena estas películas según cuándo ocurren sus hechos.",
           answers: [
             { id: "a", text: "Vengadores: Infinity War" },
@@ -879,6 +893,7 @@ export const quizMarvelOrdre: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-marvel-ordre-20.webp",
           question: "Todo esto salió en 2021. Ordena estas películas y esta serie por fecha de estreno.",
           answers: [
             { id: "a", text: "Shang-Chi y la leyenda de los Diez Anillos" },

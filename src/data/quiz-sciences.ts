@@ -173,6 +173,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-sciences-12.webp",
           question: "Quel est le symbole chimique du sodium ?",
           answers: [
             { id: "a", text: "So" },
@@ -212,6 +213,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-sciences-15.webp",
           question: "Quelle particule de l'atome porte une charge électrique négative ?",
           answers: [
             { id: "a", text: "Le proton" },
@@ -277,6 +279,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-20.webp",
           question: "Que mesure l'échelle de Richter ?",
           answers: [
             { id: "a", text: "La force du vent" },
@@ -446,6 +449,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-sciences-12.webp",
           question: "What is the chemical symbol for sodium?",
           answers: [
             { id: "a", text: "So" },
@@ -485,6 +489,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-sciences-15.webp",
           question: "Which particle in an atom carries a negative electric charge?",
           answers: [
             { id: "a", text: "The proton" },
@@ -550,6 +555,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-20.webp",
           question: "What does the Richter scale measure?",
           answers: [
             { id: "a", text: "Wind strength" },
@@ -719,6 +725,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-sciences-12.webp",
           question: "¿Cuál es el símbolo químico del sodio?",
           answers: [
             { id: "a", text: "So" },
@@ -758,6 +765,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-sciences-15.webp",
           question: "¿Qué partícula del átomo tiene carga eléctrica negativa?",
           answers: [
             { id: "a", text: "El protón" },
@@ -823,6 +831,7 @@ export const quizSciences: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-sciences-20.webp",
           question: "¿Qué mide la escala de Richter?",
           answers: [
             { id: "a", text: "La fuerza del viento" },

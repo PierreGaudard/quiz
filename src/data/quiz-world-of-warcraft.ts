@@ -26,6 +26,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-world-of-warcraft-1.webp",
           question: "En quelle année est sorti World of Warcraft ?",
           answers: [
             { id: "a", text: "2001" },
@@ -39,6 +40,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-world-of-warcraft-2.webp",
           question: "Quel studio a créé World of Warcraft ?",
           answers: [
             { id: "a", text: "Riot Games" },
@@ -160,6 +162,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-world-of-warcraft-11.webp",
           question: "Comment s'appelle l'objet qui ramène le joueur à son auberge, et qui a donné son nom à un jeu de cartes de Blizzard ?",
           answers: [
             { id: "a", text: "La Pierre de foyer" },
@@ -199,6 +202,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-world-of-warcraft-14.webp",
           question: "Quel nom un joueur crie-t-il en fonçant seul sur les monstres, dans une vidéo culte de 2005 ?",
           answers: [
             { id: "a", text: "Chuck Norris" },
@@ -238,6 +242,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-17.webp",
           question: "Quel personnage lance aux joueurs « You are not prepared! » dans la version anglaise du jeu ?",
           answers: [
             { id: "a", text: "Arthas" },
@@ -277,6 +282,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-20.webp",
           question: "Quelle ville de mages flotte au-dessus du Norfendre dans Wrath of the Lich King ?",
           answers: [
             { id: "a", text: "Lune-d'argent" },
@@ -297,6 +303,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-world-of-warcraft-1.webp",
           question: "In what year did World of Warcraft come out?",
           answers: [
             { id: "a", text: "2001" },
@@ -310,6 +317,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-world-of-warcraft-2.webp",
           question: "Which studio made World of Warcraft?",
           answers: [
             { id: "a", text: "Riot Games" },
@@ -431,6 +439,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-world-of-warcraft-11.webp",
           question: "What's the item that sends you back to your inn, and that gave its name to a Blizzard card game?",
           answers: [
             { id: "a", text: "The Hearthstone" },
@@ -470,6 +479,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-world-of-warcraft-14.webp",
           question: "In a famous 2005 video, which name does a player shout as he charges the monsters on his own?",
           answers: [
             { id: "a", text: "Chuck Norris" },
@@ -509,6 +519,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-17.webp",
           question: "Which character greets players with \"You are not prepared!\"?",
           answers: [
             { id: "a", text: "Arthas" },
@@ -548,6 +559,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-20.webp",
           question: "Which city of mages floats above Northrend in Wrath of the Lich King?",
           answers: [
             { id: "a", text: "Silvermoon" },
@@ -568,6 +580,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
       questions: [
         {
           id: 1,
+          image: "/images/qi-world-of-warcraft-1.webp",
           question: "¿En qué año salió World of Warcraft?",
           answers: [
             { id: "a", text: "2001" },
@@ -581,6 +594,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-world-of-warcraft-2.webp",
           question: "¿Qué estudio creó World of Warcraft?",
           answers: [
             { id: "a", text: "Riot Games" },
@@ -702,6 +716,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 11,
+          image: "/images/qi-world-of-warcraft-11.webp",
           question: "¿Cómo se llama el objeto que te devuelve a tu posada y que dio nombre a un juego de cartas de Blizzard?",
           answers: [
             { id: "a", text: "La Piedra de hogar" },
@@ -741,6 +756,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 14,
+          image: "/images/qi-world-of-warcraft-14.webp",
           question: "En un vídeo mítico de 2005, ¿qué nombre grita un jugador mientras carga solo contra los monstruos?",
           answers: [
             { id: "a", text: "Chuck Norris" },
@@ -780,6 +796,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-world-of-warcraft-17.webp",
           question: "¿Qué personaje recibe a los jugadores con «You are not prepared!» en la versión inglesa del juego?",
           answers: [
             { id: "a", text: "Arthas" },
@@ -819,6 +836,7 @@ export const quizWorldOfWarcraft: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-world-of-warcraft-20.webp",
           question: "¿Qué ciudad de magos flota sobre Rasganorte en Wrath of the Lich King?",
           answers: [
             { id: "a", text: "Lunargenta" },

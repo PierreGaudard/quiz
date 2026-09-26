@@ -39,6 +39,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-2.webp",
           question: "Quel âge avait Gavrilo Princip, l'auteur de l'attentat de Sarajevo ?",
           answers: [],
           correctAnswer: "19",
@@ -76,6 +77,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-premiere-guerre-mondiale-6.webp",
           question: "Combien de jours a duré la bataille de la Somme ?",
           answers: [],
           correctAnswer: "141",
@@ -132,6 +134,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-12.webp",
           question: "En quelle année le paquebot britannique Lusitania est-il coulé par un sous-marin allemand ?",
           answers: [],
           correctAnswer: "1915",
@@ -159,6 +162,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-15.webp",
           question: "Combien de millions de soldats américains environ sont venus en France avant l'armistice ?",
           answers: [],
           correctAnswer: "2",
@@ -177,6 +181,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-17.webp",
           question: "Quel âge avait Lazare Ponticelli, le dernier poilu, à sa mort en 2008 ?",
           answers: [],
           correctAnswer: "110",
@@ -204,6 +209,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-20.webp",
           question: "Quel âge a Georges Clemenceau quand il devient président du Conseil, en novembre 1917 ?",
           answers: [],
           correctAnswer: "76",
@@ -230,6 +236,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-2.webp",
           question: "How old was Gavrilo Princip, the Sarajevo assassin?",
           answers: [],
           correctAnswer: "19",
@@ -267,6 +274,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-premiere-guerre-mondiale-6.webp",
           question: "How many days did the Battle of the Somme last?",
           answers: [],
           correctAnswer: "141",
@@ -323,6 +331,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-12.webp",
           question: "In what year was the British liner Lusitania sunk by a German submarine?",
           answers: [],
           correctAnswer: "1915",
@@ -350,6 +359,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-15.webp",
           question: "Roughly how many million American soldiers came to France before the armistice?",
           answers: [],
           correctAnswer: "2",
@@ -368,6 +378,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-17.webp",
           question: "How old was Lazare Ponticelli, the last French First World War veteran, when he died in 2008?",
           answers: [],
           correctAnswer: "110",
@@ -395,6 +406,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-20.webp",
           question: "How old was Georges Clemenceau when he became head of the French government in November 1917?",
           answers: [],
           correctAnswer: "76",
@@ -421,6 +433,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 2,
+          image: "/images/qi-premiere-guerre-mondiale-2.webp",
           question: "¿Qué edad tenía Gavrilo Princip, el autor del atentado de Sarajevo?",
           answers: [],
           correctAnswer: "19",
@@ -458,6 +471,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 6,
+          image: "/images/qi-premiere-guerre-mondiale-6.webp",
           question: "¿Cuántos días duró la batalla del Somme?",
           answers: [],
           correctAnswer: "141",
@@ -514,6 +528,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 12,
+          image: "/images/qi-premiere-guerre-mondiale-12.webp",
           question: "¿En qué año fue hundido el transatlántico británico Lusitania por un submarino alemán?",
           answers: [],
           correctAnswer: "1915",
@@ -541,6 +556,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 15,
+          image: "/images/qi-premiere-guerre-mondiale-15.webp",
           question: "¿Cuántos millones de soldados estadounidenses llegaron aproximadamente a Francia antes del armisticio?",
           answers: [],
           correctAnswer: "2",
@@ -559,6 +575,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 17,
+          image: "/images/qi-premiere-guerre-mondiale-17.webp",
           question: "¿Qué edad tenía Lazare Ponticelli, el último poilu, es decir, el último veterano francés de la guerra, cuando murió en 2008?",
           answers: [],
           correctAnswer: "110",
@@ -586,6 +603,7 @@ export const quizPremiereGuerreMondiale: TranslatedQuiz = {
         },
         {
           id: 20,
+          image: "/images/qi-premiere-guerre-mondiale-20.webp",
           question: "¿Qué edad tenía Georges Clemenceau cuando pasó a presidir el Gobierno francés, en noviembre de 1917?",
           answers: [],
           correctAnswer: "76",
