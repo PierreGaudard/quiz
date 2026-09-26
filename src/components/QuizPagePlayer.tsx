@@ -725,9 +725,7 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
                 )}
 
                 {/* Question image */}
-                {/* Image seulement pour la question en cours et les questions
-                    passées : dix-neuf photos grisées d'avance chargeaient la page. */}
-                {question.image && isActive && (
+                {question.image && (
                   <div className="px-3 md:px-6 pb-2 md:pb-4">
                     <div className="rounded-xl overflow-hidden">
                       <img
