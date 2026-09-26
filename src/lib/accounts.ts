@@ -59,10 +59,12 @@ export async function deleteAccount(db: D1Database, userId: number): Promise<voi
     "DELETE FROM password_resets WHERE user_id = ?",
   ].map((sql) => db.prepare(sql).bind(userId));
   statements.push(db.prepare("DELETE FROM friendships WHERE sender_id = ? OR receiver_id = ?").bind(userId, userId));
-  // Table créée à la première invitation : sur une base qui n'en a jamais eu,
+  // Tables créées au premier usage (invitation, note) : sur une base qui n'en a jamais eu,
   // la requête échouerait et ferait tomber tout le lot.
   const hasInvites = await db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'room_invites'").first();
   if (hasInvites) statements.push(db.prepare("DELETE FROM room_invites WHERE from_user = ? OR to_user = ?").bind(userId, userId));
+  const hasRatings = await db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'quiz_ratings'").first();
+  if (hasRatings) statements.push(db.prepare("DELETE FROM quiz_ratings WHERE user_id = ?").bind(userId));
   statements.push(db.prepare("DELETE FROM users WHERE id = ?").bind(userId));
   await db.batch(statements);
 }

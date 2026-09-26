@@ -160,6 +160,9 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
           if (levelBadge) { levelBadge.textContent = 'Lv.' + lv.level; levelBadge.className = 'text-[11px] font-bold px-1.5 py-0.5 rounded text-white ' + lv.color; }
         }
 
+        // Connexion faite sans recharger la page (fenêtre de vote de QuizRating).
+        window.addEventListener('wizy-auth', function(e) { if (e.detail && e.detail.user) updateHeader(e.detail.user); });
+
         fetch('/api/auth/me').then(function(r) { return r.json(); }).then(function(data) {
           if (!data.user) return;
           updateHeader(data.user);

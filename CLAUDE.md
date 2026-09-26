@@ -262,6 +262,13 @@ code et l'application de la migration, seul le bloc concerne disparait.
   Layout, qui interroge `/api/room/invites` toutes les 45 s). L'invitation
   meurt avec la salle. La table se crée d'elle-même à la première invitation.
 
+- `quiz_ratings` (010) : note de 1 à 5 donnée à un quiz, à l'écran de
+  résultat (`QuizRating`, monté dans `QuizSocialBlock`, donc dans les six
+  modes), par slug de base, une par joueur et par quiz (revoter la remplace).
+  Voter demande un compte : sans session, un clic sur une étoile ouvre une
+  fenêtre d'inscription ou de connexion sur place (le résultat de la partie
+  ne vit que dans l'état React), puis la note part toute seule. Route
+  `/api/quiz/rating`, la table se crée d'elle-même au premier vote.
 ### Comptes : mot de passe oublié
 
 `/api/auth/forgot` envoie un lien (jeton aléatoire, seule son empreinte
