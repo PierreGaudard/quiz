@@ -107,16 +107,16 @@ const T: Record<string, Record<string, string>> = {
   questionOne: { en: "1 question", fr: "1 question", es: "1 pregunta" },
   questionMany: { en: "{n} questions", fr: "{n} questions", es: "{n} preguntas" },
   explanationPrefix: { en: "Explanation:", fr: "Explication :", es: "Explicación:" },
-  step5TitleSaved: { en: "Your quiz is online!", fr: "Ton quiz est en ligne !", es: "¡Tu quiz está en línea!" },
+  step5TitleSaved: { en: "Your quiz is saved!", fr: "Ton quiz est enregistré !", es: "¡Tu quiz está guardado!" },
   step5IntroSaved: {
-    en: "It has its own permanent link, which you can send to whoever you want:",
-    fr: "Il a son propre lien permanent, que tu peux envoyer à qui tu veux :",
-    es: "Tiene su propio enlace permanente, que puedes mandar a quien quieras:",
+    en: "It has its own permanent link. You can already play it; your friends can once it has been reviewed:",
+    fr: "Il a son propre lien permanent. Tu peux déjà y jouer, tes amis pourront le faire dès qu'il aura été relu :",
+    es: "Tiene su propio enlace permanente. Tú ya puedes jugarlo; tus amigos podrán en cuanto se haya revisado:",
   },
   step5NoteSaved: {
-    en: "Only people who have the link can play it: it is not listed on the site or in search engines.",
-    fr: "Seules les personnes qui ont le lien peuvent y jouer : il n'est ni affiché sur le site ni référencé dans les moteurs de recherche.",
-    es: "Solo quien tenga el enlace puede jugarlo: no aparece en el sitio ni en los buscadores.",
+    en: "The WizyQuiz team reads every quiz before opening it. Once accepted, it also shows up in the community quizzes.",
+    fr: "L'équipe de WizyQuiz relit chaque quiz avant de l'ouvrir. Une fois accepté, il apparaît aussi dans les quiz de la communauté.",
+    es: "El equipo de WizyQuiz revisa cada quiz antes de abrirlo. Una vez aceptado, aparece también en los quizzes de la comunidad.",
   },
   step5TitleLocal: { en: "Your quiz is ready!", fr: "Ton quiz est prêt !", es: "¡Tu quiz está listo!" },
   step5IntroLocal: {

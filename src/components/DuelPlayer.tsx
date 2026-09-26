@@ -4,7 +4,7 @@ import type { QuizData } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
-import { trackQuizStart } from "../utils/track";
+import { trackAnswer, trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -106,6 +106,7 @@ export default function DuelPlayer({ quiz, locale = "en", roomHref = null }: Pro
       setAnimating(true);
 
       const isCorrect = answerId === currentQuestion.correctAnswer;
+      trackAnswer(isCorrect);
 
       // Short delay before revealing the answer for dramatic effect
       setTimeout(() => {

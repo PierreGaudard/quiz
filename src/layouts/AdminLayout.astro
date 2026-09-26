@@ -1,0 +1,44 @@
+---
+/**
+ * Gabarit du back office (/admin/). En français seulement : c'est un outil
+ * interne, hors de la règle de parité des langues. Jamais indexé, jamais
+ * mesuré (trackPageView n'y est pas monté).
+ */
+interface Props { title: string; active: "dashboard" | "quiz" }
+const { title, active } = Astro.props;
+const nav = [
+  { href: "/admin/", label: "Tableau de bord", key: "dashboard" },
+  { href: "/admin/quiz/", label: "Quiz des joueurs", key: "quiz" },
+];
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title} · Admin WizyQuiz</title>
+    <link rel="icon" href="/favicon.ico" />
+    <style is:global>
+      @import "../styles/fonts.css";
+      @import "../styles/global.css";
+      .admin p { max-width: none; }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-50 admin">
+    <header class="bg-ink">
+      <div class="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
+        <a href="/admin/" class="font-display text-white font-bold">WizyQuiz · admin</a>
+        <nav class="flex gap-1">
+          {nav.map((n) => (
+            <a href={n.href} class={`px-3 py-1.5 rounded-lg text-sm font-semibold ${active === n.key ? "bg-white/15 text-white" : "text-white/70 hover:text-white"}`}>{n.label}</a>
+          ))}
+        </nav>
+        <a href="/" class="ml-auto text-sm text-white/70 hover:text-white">Voir le site</a>
+      </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 py-8">
+      <slot />
+    </main>
+  </body>
+</html>

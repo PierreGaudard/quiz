@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { logServerEvent, quizInfo } from "../../../lib/analytics";
 import { ROOM_TTL_HOURS, addPlayer, cleanName, findQuiz, getDB, isLocale, json, randomCode } from "../../../lib/rooms";
 import { purgeExpiredInvites } from "../../../lib/room-invites";
 
@@ -44,6 +45,8 @@ export const POST: APIRoute = async ({ request }) => {
       const player = await addPlayer(db, code, name);
       if (player === "full") return json({ error: "unavailable" }, 503);
       await db.prepare("UPDATE rooms SET host_token = ? WHERE code = ?").bind(player.token, code).run();
+      const qi = quizInfo(quiz.slug);
+      await logServerEvent(db, request, { type: "room_create", quiz_slug: qi?.base ?? quiz.slug, mode: qi?.mode ?? null, locale: body.locale });
       return json({ code, token: player.token, playerId: player.id, name: player.name });
     }
     return json({ error: "unavailable" }, 503);

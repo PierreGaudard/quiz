@@ -1,0 +1,41 @@
+---
+/**
+ * Histogramme en barres verticales, une seule série (pas de légende : le
+ * titre la nomme). Barres fines à bout arrondi posées sur la ligne de base,
+ * 2 px d'écart, infobulle au survol et au focus avec la valeur exacte.
+ */
+interface Props {
+  title: string;
+  data: { label: string; value: number }[];
+  format?: (n: number) => string;
+  height?: number;
+  /** Haut de l'échelle imposé (100 pour un pourcentage). */
+  max?: number;
+}
+const { title, data, height = 140 } = Astro.props;
+const format = Astro.props.format ?? ((n: number) => n.toLocaleString("fr-FR"));
+const max = Astro.props.max ?? Math.max(1, ...data.map((d) => d.value));
+const total = data.reduce((s, d) => s + d.value, 0);
+---
+<figure class="bg-white border border-gray-100 rounded-2xl p-4">
+  <figcaption class="flex items-baseline justify-between gap-2 mb-3">
+    <span class="text-sm font-bold text-gray-900">{title}</span>
+    <span class="text-xs text-gray-500">max {format(max)}</span>
+  </figcaption>
+  <div class="relative flex items-end gap-[2px] border-b border-gray-200" style={`height:${height}px`} role="img" aria-label={`${title} : total ${format(total)}`}>
+    {data.map((d) => (
+      <div class="group relative flex-1 h-full flex items-end" tabindex="0">
+        <div class="w-full rounded-t bg-brand group-hover:bg-ink group-focus:bg-ink" style={`height:${d.value ? Math.max(2, (d.value / max) * 100) : 0}%`}></div>
+        <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block group-focus:block whitespace-nowrap rounded-md bg-ink px-2 py-1 text-xs text-white z-10">
+          {d.label} · <strong>{format(d.value)}</strong>
+        </div>
+      </div>
+    ))}
+  </div>
+  {data.length > 1 && (
+    <div class="flex justify-between text-xs text-gray-500 mt-1">
+      <span>{data[0].label}</span>
+      <span>{data[data.length - 1].label}</span>
+    </div>
+  )}
+</figure>

@@ -24,4 +24,4 @@ export const HOST = {
 };
 
 /** Date de mise à jour affichée en bas des pages juridiques. */
-export const LEGAL_UPDATED = { fr: "25 septembre 2026", en: "September 25, 2026", es: "25 de septiembre de 2026" };
+export const LEGAL_UPDATED = { fr: "26 septembre 2026", en: "September 26, 2026", es: "26 de septiembre de 2026" };

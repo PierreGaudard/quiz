@@ -4,7 +4,7 @@ import { useState, useRef, useCallback, useEffect } from "react";
 import type { QuizData, QuizQuestion } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
-import { trackQuizStart } from "../utils/track";
+import { trackAnswer, trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -139,6 +139,7 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
     (questionIndex: number, answerId: string) => {
       const q = quiz.questions[questionIndex];
       const isCorrect = answerId === q.correctAnswer;
+      trackAnswer(isCorrect);
       const currentState = questionStates[questionIndex];
 
       // Second chance: if wrong and has second chance active, don't mark as answered

@@ -11,7 +11,7 @@ export const prerender = true;
  * de l'ouverture, passer PRELAUNCH à false aurait retiré les noindex sans
  * rouvrir l'exploration, et rien ne serait entré à l'index.
  */
-const PRIVATE = ["/profile/", "/fr/profil/", "/es/perfil/", "/search/", "/fr/recherche/", "/es/buscar/", "/api/"];
+const PRIVATE = ["/profile/", "/fr/profil/", "/es/perfil/", "/search/", "/fr/recherche/", "/es/buscar/", "/api/", "/admin/"];
 
 export const GET: APIRoute = () => {
   const rules = (agent: string, allowAll: boolean) =>

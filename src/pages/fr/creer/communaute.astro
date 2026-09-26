@@ -1,0 +1,13 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import CommunityBody from "../../../components/CommunityBody.astro";
+import { getHreflangStaticPaths } from "../../../lib/hreflang-helpers";
+
+// Rendue à la demande (la liste vient de la base) et hors index : ces quiz
+// ne suivent pas la charte éditoriale du site.
+export const prerender = false;
+---
+
+<Layout title="Quiz de la communauté, créés par les joueurs | WizyQuiz" description="Des quiz créés par les joueurs de WizyQuiz et relus par l'équipe avant d'être ouverts : jouez gratuitement ou créez le vôtre en quelques minutes." locale="fr" hreflangPaths={getHreflangStaticPaths("community")} noindex={true}>
+  <CommunityBody locale="fr" />
+</Layout>

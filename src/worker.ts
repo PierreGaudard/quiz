@@ -5,6 +5,7 @@
 import astro from "@astrojs/cloudflare/entrypoints/server";
 import { purgeInactiveAccounts } from "./lib/accounts";
 import { purgeExpiredInvites } from "./lib/room-invites";
+import { purgeOldEvents } from "./lib/analytics";
 
 export default {
   ...astro,
@@ -22,5 +23,7 @@ export default {
         env.DB.prepare("DELETE FROM rooms WHERE expires_at <= datetime('now')"),
       ]).then(() => purgeExpiredInvites(env.DB)).catch((e) => console.error("purgeRooms", e)),
     );
+    // Mesure d'audience : rien au-delà de 13 mois (src/lib/analytics.ts).
+    ctx.waitUntil(purgeOldEvents(env.DB).catch((e) => console.error("purgeOldEvents", e)));
   },
 };

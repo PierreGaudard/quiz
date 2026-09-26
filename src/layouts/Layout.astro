@@ -230,5 +230,9 @@ const ogImageSize = ogImage ? null : { width: 1200, height: 630 };
       })();
     </script>
     <PlayCounts />
+    <script>
+      import { trackPageView } from "../utils/track";
+      trackPageView();
+    </script>
   </body>
 </html>

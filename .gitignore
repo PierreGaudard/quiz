@@ -38,3 +38,6 @@ pnpm-debug.log*
 # .claude/settings.local.json ne fait rien tant qu'il est absent.
 .claude/skills/impeccable/
 .claude/agents/impeccable-*.md
+
+# variables locales de wrangler (ADMIN_BYPASS pour le back office en local)
+.dev.vars

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { track } from "../utils/track";
 
 /**
  * La note du quiz, de 1 a 5, sous l'ecran de resultat.
@@ -157,7 +158,7 @@ export default function QuizRating({ quizSlug, locale = "en" }: Props) {
 
   async function vote(value: number) {
     setError(false);
-    if (!rating?.loggedIn) { setPending(value); return; }
+    if (!rating?.loggedIn) { setPending(value); track("signup_prompt", { q: quizSlug, n: value, x: { from: "rating" } }); return; }
     const res = await send(value);
     if (res === "auth") { setPending(value); return; }
     if (res === "error") { setError(true); return; }

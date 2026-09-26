@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { logServerEvent } from "../../../lib/analytics";
 import { verifyPassword, createSession, setSessionCookie } from "../../../lib/auth";
 import { localeFromPath, touchUser } from "../../../lib/accounts";
 import { TOO_MANY_ATTEMPTS_ERROR, clearLoginFailures, isLoginLocked, recordLoginFailure } from "../../../lib/password-policy";
@@ -41,6 +42,7 @@ export const POST: APIRoute = async ({ request }) => {
 
   const sessionId = await createSession(db, user.id);
   await touchUser(db, user.id, localeFromPath(request.headers.get("referer")));
+  await logServerEvent(db, request, { type: "login", user_id: user.id });
 
   return new Response(JSON.stringify({ ok: true, user: { id: user.id, username: user.username, email: user.email, xp: user.xp } }), {
     status: 200,

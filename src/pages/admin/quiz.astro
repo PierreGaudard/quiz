@@ -1,0 +1,128 @@
+---
+import AdminLayout from "../../layouts/AdminLayout.astro";
+import { adminDB, getAdmin } from "../../lib/admin";
+import { STATUSES, ensureModeration, setQuizStatus, type QuizStatus } from "../../lib/moderation";
+
+export const prerender = false;
+
+/**
+ * Moderation des quiz crees par les joueurs. Accepter ouvre le lien a tous
+ * et liste le quiz dans « Quiz de la communaute » ; refuser coupe le lien.
+ * Formulaires HTML simples (POST sur la page elle-meme), sans JavaScript.
+ */
+const admin = await getAdmin(Astro.request);
+if (!admin) return new Response("Accès refusé", { status: 403 });
+const db = await adminDB();
+if (!db) return new Response("Base indisponible", { status: 503 });
+await ensureModeration(db);
+
+let flash: string | null = null;
+if (Astro.request.method === "POST") {
+  const form = await Astro.request.formData();
+  const id = Number(form.get("id"));
+  const status = String(form.get("status")) as QuizStatus;
+  const note = String(form.get("note") || "").trim().slice(0, 300) || null;
+  if (Number.isInteger(id) && STATUSES.includes(status)) {
+    const ok = await setQuizStatus(db, id, status, note);
+    flash = ok ? (status === "approved" ? "Quiz accepté." : status === "rejected" ? "Quiz refusé." : "Quiz remis en attente.") : "Quiz introuvable.";
+  }
+}
+
+const filter = (Astro.url.searchParams.get("status") as QuizStatus) || "pending";
+const status: QuizStatus = STATUSES.includes(filter) ? filter : "pending";
+const counts = Object.fromEntries(
+  ((await db.prepare("SELECT status, COUNT(*) AS n FROM user_quizzes GROUP BY status").all<{ status: string; n: number }>()).results || []).map((r) => [r.status, r.n])
+);
+const rows = (
+  await db
+    .prepare(
+      "SELECT q.id, q.slug, q.title, q.category, q.data, q.play_count, q.created_at, q.reviewed_at, q.review_note, u.username, u.id AS user_id, " +
+        "(SELECT COUNT(*) FROM user_quizzes o WHERE o.user_id = q.user_id) AS author_quizzes " +
+        "FROM user_quizzes q JOIN users u ON u.id = q.user_id WHERE q.status = ? ORDER BY q.created_at " + (status === "pending" ? "ASC" : "DESC") + " LIMIT 100"
+    )
+    .bind(status)
+    .all<any>()
+).results || [];
+const quizzes = rows.map((r) => {
+  let data: any = {};
+  try { data = JSON.parse(r.data); } catch {}
+  return { ...r, data };
+});
+const LABEL: Record<QuizStatus, string> = { pending: "En attente", approved: "Acceptés", rejected: "Refusés" };
+const fmt = (d: string | null) => (d ? new Date(d.replace(" ", "T") + "Z").toLocaleString("fr-FR", { dateStyle: "short", timeStyle: "short", timeZone: "Europe/Paris" }) : "");
+---
+
+<AdminLayout title="Quiz des joueurs" active="quiz">
+  <h1 class="font-display text-2xl font-bold text-gray-900 mb-4">Quiz des joueurs</h1>
+  {flash && <p role="status" class="mb-4 p-3 rounded-lg bg-green-50 border border-green-200 text-sm text-green-800">{flash}</p>}
+
+  <div class="flex gap-2 mb-6">
+    {STATUSES.map((s) => (
+      <a href={`/admin/quiz/?status=${s}`} class={`px-4 py-2 rounded-lg text-sm font-semibold border ${s === status ? "bg-brand text-white border-brand" : "bg-white text-gray-700 border-gray-200"}`}>
+        {LABEL[s]} ({counts[s] ?? 0})
+      </a>
+    ))}
+  </div>
+
+  {quizzes.length === 0 && <p class="text-gray-600 bg-white border border-gray-100 rounded-2xl p-6">Rien ici.</p>}
+
+  <div class="space-y-4">
+    {quizzes.map((q) => (
+      <article class="bg-white border border-gray-100 rounded-2xl p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="min-w-0">
+            <h2 class="font-display text-lg font-bold text-gray-900">{q.title}</h2>
+            <p class="text-sm text-gray-500 mt-1">
+              {q.username} ({q.author_quizzes} quiz) · {q.category || "sans catégorie"} · {q.data.questions?.length ?? 0} questions · créé le {fmt(q.created_at)} · {q.play_count} ouvertures
+              {q.reviewed_at && <> · relu le {fmt(q.reviewed_at)}</>}
+            </p>
+            {q.review_note && <p class="text-sm text-gray-700 mt-1">Note : {q.review_note}</p>}
+            {q.data.description && <p class="text-sm text-gray-700 mt-2">{q.data.description}</p>}
+          </div>
+          <div class="flex flex-wrap gap-2 items-start">
+            <a href={`/fr/creer/jouer/?q=${q.slug}`} target="_blank" rel="noopener" class="h-9 px-3 inline-flex items-center rounded-lg border border-gray-200 text-sm font-semibold text-gray-700">Ouvrir</a>
+            {status !== "approved" && (
+              <form method="post">
+                <input type="hidden" name="id" value={q.id} />
+                <input type="hidden" name="status" value="approved" />
+                <button type="submit" class="h-9 px-4 rounded-lg bg-green-700 text-white text-sm font-bold">Accepter</button>
+              </form>
+            )}
+            {status !== "rejected" && (
+              <form method="post" class="flex gap-2">
+                <input type="hidden" name="id" value={q.id} />
+                <input type="hidden" name="status" value="rejected" />
+                <input name="note" aria-label="Motif du refus" placeholder="Motif (facultatif)" class="h-9 px-3 rounded-lg border border-gray-200 text-sm w-44" />
+                <button type="submit" class="h-9 px-4 rounded-lg bg-red-700 text-white text-sm font-bold">Refuser</button>
+              </form>
+            )}
+            {status !== "pending" && (
+              <form method="post">
+                <input type="hidden" name="id" value={q.id} />
+                <input type="hidden" name="status" value="pending" />
+                <button type="submit" class="h-9 px-3 rounded-lg border border-gray-200 text-sm font-semibold text-gray-700">Remettre en attente</button>
+              </form>
+            )}
+          </div>
+        </div>
+
+        <details class="mt-4" open={status === "pending"}>
+          <summary class="cursor-pointer text-sm font-semibold text-brand-700">Questions</summary>
+          <ol class="mt-3 space-y-3 list-decimal pl-5">
+            {(q.data.questions || []).map((qq: any) => (
+              <li class="text-sm">
+                <p class="font-semibold text-gray-900">{qq.question}</p>
+                <ul class="mt-1 flex flex-wrap gap-2">
+                  {(qq.answers || []).map((a: any) => (
+                    <li class={`px-2 py-0.5 rounded ${a.id === qq.correctAnswer ? "bg-green-100 text-green-900 font-semibold" : "bg-gray-100 text-gray-700"}`}>{a.text}</li>
+                  ))}
+                </ul>
+                {qq.explanation && <p class="text-gray-600 mt-1">{qq.explanation}</p>}
+              </li>
+            ))}
+          </ol>
+        </details>
+      </article>
+    ))}
+  </div>
+</AdminLayout>

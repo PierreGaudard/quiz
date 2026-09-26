@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import type { QuizData, CategoryData } from "../data/types";
 import { keywordMappings } from "../data/search-keywords";
+import { track } from "../utils/track";
 import { withBase, imageSrcset } from "../utils/base";
 
 /* ───────────────────────────── translations ───────────────────────────── */
@@ -187,6 +188,15 @@ export default function SearchPage({ quizzes, categories, locale }: SearchPagePr
       .sort((a, b) => b.score - a.score);
     return scored.map(({ quiz }) => quiz);
   }, [quizzes, query]);
+
+  // Recherche mesuree une fois la saisie posee (1,5 s), avec le nombre de
+  // resultats : les recherches sans resultat disent quels quiz manquent.
+  useEffect(() => {
+    const q = query.trim();
+    if (q.length < 2) return;
+    const id = setTimeout(() => track("search", { n: results.length, x: { q: q.slice(0, 100) } }), 1500);
+    return () => clearTimeout(id);
+  }, [query, results.length]);
 
   const hasQuery = query.trim().length > 0;
   const resultCount = results.length;

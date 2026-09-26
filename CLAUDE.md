@@ -287,9 +287,63 @@ de lien répond normalement mais aucun e-mail ne part.
 
 Un joueur connecté enregistre son quiz dans `user_quizzes`
 (`/api/quiz/custom`) et reçoit un lien permanent `/creer/jouer/?q=<slug>`
-(`/create/play/`, `/es/crear/jugar/`). Ce lien est hors index et hors
-catalogue : personne ne relit encore ces quiz. Sans compte, le quiz tient
-entier dans le hash du lien de partage.
+(`/create/play/`, `/es/crear/jugar/`), hors index. Chaque quiz est **relu à
+la main** dans le back office (`/admin/quiz/`, migration 012, colonnes
+`status`, `reviewed_at`, `review_note`, ajoutées d'elles-mêmes par
+`src/lib/moderation.ts`) : `pending` à la création, seul l'auteur y joue ;
+`approved`, le lien s'ouvre à tous et le quiz est listé dans « Quiz de la
+communauté » (`/fr/creer/communaute/`, `/create/community/`,
+`/es/crear/comunidad/`, rendue à la demande, noindex) ; `rejected`, le lien
+répond 410. Sans compte, le quiz tient entier dans le hash du lien de
+partage et échappe à la relecture (rien n'est stocké).
+
+## Back office (`/admin/`)
+
+Tableau de bord (`/admin/`, période `?p=1|7|30|90|365`, détail d'un quiz
+`?quiz=<slug de base>` : réussite et abandons question par question,
+répartition des scores) et modération (`/admin/quiz/`). En français
+seulement : outil interne, **exception à la règle de parité des langues**.
+Hors robots.txt, noindex, jamais mesuré.
+
+L'accès passe par **Cloudflare Access** (application sur `wizyquiz.com/admin*`
+et `wizyquiz.com/api/admin*`, le Google de Pierre en politique), et
+`src/lib/admin.ts` revérifie le jeton `Cf-Access-Jwt-Assertion` (signature,
+audience, expiration, adresse). Réglages en **secrets** du Worker `quiz`
+(jamais dans `wrangler.toml` : le dépôt est public et l'adresse identifierait
+l'éditeur) : `ACCESS_TEAM_DOMAIN`, `ACCESS_AUD`, `ADMIN_EMAILS`. Sans eux, tout est
+refusé (403). En local, `ADMIN_BYPASS="1"` dans `.dev.vars` (non versionné).
+
+## Mesure d'audience (table `events`, migration 011)
+
+Maison, sans outil tiers, dans le cadre de l'**exemption de consentement de
+la CNIL** : pas de bandeau. Conditions à ne jamais casser, sinon il faut un
+bandeau de consentement : pas d'adresse IP stockée, pas d'empreinte
+d'appareil, pas de cookie de mesure, aucun croisement ni transmission des
+données, identifiant visiteur aléatoire (`wq-vid`, stockage local, 13 mois),
+effacement des lignes à 13 mois (cron), opposition possible depuis la page
+cookies (`AnalyticsOptOut`, `wq-noanalytics`) et respect du signal Global
+Privacy Control. Les robots sont écartés au User-Agent (attention :
+Playwright en headless s'annonce « HeadlessChrome » et n'est donc pas
+mesuré, tester en `--headed`).
+
+- Navigateur (`src/utils/track.ts` → `/api/t`, sendBeacon) : `page_view`
+  (provenance, UTM, écran, langue), `page_leave` (temps visible),
+  `quiz_start`, `quiz_end` (durée, score, détail des réponses dans `extra.a`,
+  « 1 » bonne réponse, « 0 » mauvaise), `quiz_abandon` (à la fermeture de la
+  page, avec le nombre de réponses données), `search` (texte, nombre de
+  résultats), `share` (repéré au libellé du bouton), `signup_prompt`.
+- Serveur (`logServerEvent()` de `src/lib/analytics.ts`) : `signup`,
+  `login`, `quiz_created`, `rate`, `room_create`, `room_join`.
+- Une partie coûte deux écritures (début, fin ou abandon), pas une par
+  question : l'offre gratuite de D1 permet 100 000 écritures par jour, soit
+  de l'ordre de 15 000 à 20 000 visites quotidiennes.
+- Le détail question par question existe pour QCM, vrai-faux, chrono, duel
+  et les quiz joueurs (`trackAnswer()`), pas encore pour estimation et ordre.
+- À la suppression d'un compte, ses lignes restent mais `user_id` passe à
+  NULL (`deleteAccount()`).
+
+Toute nouvelle donnée mesurée s'ajoute le jour même aux pages cookies et
+confidentialité, dans les trois langues.
 
 ## Pages juridiques
 
@@ -299,9 +353,10 @@ l'éditeur et de l'hébergeur ne s'écrivent que dans `src/config/legal.ts`.
 Ces pages décrivent ce que le site fait réellement : toute nouvelle donnée
 collectée, tout nouveau cookie ou tout nouveau prestataire (analytics, pub,
 e-mail…) doit y être ajouté le jour même, dans les trois langues. Tant que
-le site n'a que le cookie `session` et le stockage local, aucun bandeau de
-consentement n'est nécessaire ; un outil de mesure d'audience ou de
-publicité en rendrait un obligatoire. Chaque compte se supprime depuis le
+le site n'a que le cookie `session`, le stockage local et sa mesure
+d'audience maison exemptée (voir « Mesure d'audience »), aucun bandeau de
+consentement n'est nécessaire ; un outil tiers de mesure (Google Analytics…)
+ou de publicité en rendrait un obligatoire. Chaque compte se supprime depuis le
 profil (`/api/auth/delete`, mot de passe redemandé).
 
 L'éditeur reste **anonyme** (LCEN art. 6-III-2, particulier à titre non

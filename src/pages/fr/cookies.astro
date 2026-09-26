@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import { getHreflangStaticPaths } from "../../lib/hreflang-helpers";
 import { localePath } from "../../utils/base";
 import { t } from "../../i18n/ui";
+import AnalyticsOptOut from "../../components/AnalyticsOptOut";
 import { EDITOR, LEGAL_UPDATED } from "../../config/legal";
 import type { Locale } from "../../i18n/config";
 
@@ -14,7 +15,7 @@ const th = "text-left font-semibold text-gray-900 p-2 border-b border-gray-200";
 const td = "p-2 align-top border-b border-gray-100";
 ---
 
-<Layout title="Cookies et stockage local | WizyQuiz" description="Le seul cookie de WizyQuiz sert à rester connecté. Pas de publicité, pas de mesure d'audience, pas de pistage : voici ce qui est gardé dans votre navigateur." locale={locale} hreflangPaths={getHreflangStaticPaths("cookies")}>
+<Layout title="Cookies et stockage local | WizyQuiz" description="Un seul cookie, pour rester connecté, et une mesure d'audience anonyme sans cookie ni pub : voici ce qui est gardé dans votre navigateur." locale={locale} hreflangPaths={getHreflangStaticPaths("cookies")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -25,7 +26,7 @@ const td = "p-2 align-top border-b border-gray-100";
     <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Cookies et stockage local</h1>
 
     <div class="space-y-8 text-sm leading-relaxed text-gray-700">
-      <p>WizyQuiz n'a ni publicité, ni outil de mesure d'audience, ni bouton de réseau social qui piste. Le site ne dépose donc qu'un seul cookie, celui qui vous garde connecté, et quelques réglages dans votre navigateur. Tout ça est nécessaire au fonctionnement du site : la loi (article 82 de la loi Informatique et Libertés) le dispense de consentement, c'est pour ça qu'aucun bandeau ne vous le demande.</p>
+      <p>WizyQuiz n'a ni publicité ni bouton de réseau social qui piste. Le site ne dépose qu'un seul cookie, celui qui vous garde connecté, garde quelques réglages dans votre navigateur et mesure son audience lui-même, sans outil extérieur. Le cookie et les réglages sont nécessaires au fonctionnement du site, et la mesure d'audience respecte les conditions fixées par la CNIL pour s'en passer : la loi (article 82 de la loi Informatique et Libertés) les dispense de consentement, c'est pour ça qu'aucun bandeau ne vous le demande. Vous pouvez tout de même refuser la mesure d'audience plus bas.</p>
 
       <section>
         <h2 class={h2}>1. Le cookie</h2>
@@ -52,18 +53,28 @@ const td = "p-2 align-top border-b border-gray-100";
               <tr><td class={td}><code>wizy-custom-quizzes</code></td><td class={td}>Garder les quiz que vous créez sans compte</td></tr>
               <tr><td class={td}><code>wq-tf-best, wq-flags-best, wq-hl-best-…</code></td><td class={td}>Votre meilleur score aux mini-jeux</td></tr>
               <tr><td class={td}><code>wizy-room-&lt;code&gt;</code></td><td class={td}>Vous reconnaître comme joueur d'une partie entre amis si vous rechargez la page</td></tr>
+              <tr><td class={td}><code>wq-vid</code></td><td class={td}>Identifiant tiré au hasard pour compter les visiteurs uniques (mesure d'audience, 13 mois au plus)</td></tr>
+              <tr><td class={td}><code>wq-sid</code></td><td class={td}>Identifiant tiré au hasard pour compter les visites, effacé à la fermeture de l'onglet</td></tr>
+              <tr><td class={td}><code>wq-noanalytics</code></td><td class={td}>Se souvenir que vous refusez la mesure d'audience</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
       <section>
-        <h2 class={h2}>3. Aucun service tiers</h2>
+        <h2 class={h2}>3. La mesure d'audience</h2>
+        <p>Pour savoir quels quiz plaisent, où les joueurs décrochent et d'où ils viennent, le site note les pages vues, le temps passé, les parties commencées, terminées ou abandonnées avec leurs réponses, les recherches, les partages et les inscriptions. Il note aussi le site d'où vous arrivez, les paramètres de campagne du lien (UTM), le pays (déduit par l'hébergeur, l'adresse IP n'est pas gardée), le type d'appareil, le navigateur, le système, la largeur d'écran et la langue. Ces données servent uniquement aux statistiques de WizyQuiz, ne sont croisées avec aucune autre, ne sont ni vendues ni transmises, et sont effacées au bout de 13 mois. Si vous avez un compte, elles y sont reliées tant qu'il existe, et détachées de lui à sa suppression.</p>
+        <p class="mt-2">Rien n'est mesuré si votre navigateur envoie le signal Global Privacy Control, ni si vous le refusez ici :</p>
+        <AnalyticsOptOut locale="fr" client:only="react" />
+      </section>
+
+      <section>
+        <h2 class={h2}>4. Aucun service tiers</h2>
         <p>Les polices de caractères et les images sont servies par le site lui-même. Afficher une page de WizyQuiz ne contacte ni Google, ni Facebook, ni aucun autre service extérieur.</p>
       </section>
 
       <section>
-        <h2 class={h2}>4. Tout effacer</h2>
+        <h2 class={h2}>5. Tout effacer</h2>
         <p>Vous pouvez supprimer le cookie et le stockage local depuis les réglages de votre navigateur (rubrique « Cookies et données de site »). Vous serez simplement déconnecté, et la liste de vos quiz joués sans compte repartira de zéro. Pour la liste complète des données et vos droits, voir la <a href={lp("/confidentialite")} class={link}>politique de confidentialité</a>. Une question : {EDITOR.email}.</p>
       </section>
 

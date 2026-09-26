@@ -65,6 +65,9 @@ export async function deleteAccount(db: D1Database, userId: number): Promise<voi
   if (hasInvites) statements.push(db.prepare("DELETE FROM room_invites WHERE from_user = ? OR to_user = ?").bind(userId, userId));
   const hasRatings = await db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'quiz_ratings'").first();
   if (hasRatings) statements.push(db.prepare("DELETE FROM quiz_ratings WHERE user_id = ?").bind(userId));
+  // Mesure d'audience : les lignes restent pour les statistiques, sans le lien au compte.
+  const hasEvents = await db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'events'").first();
+  if (hasEvents) statements.push(db.prepare("UPDATE events SET user_id = NULL WHERE user_id = ?").bind(userId));
   statements.push(db.prepare("DELETE FROM users WHERE id = ?").bind(userId));
   await db.batch(statements);
 }

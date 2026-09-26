@@ -4,7 +4,7 @@ import type { QuizData } from "../data/types";
 import { withBase, imageSrcset } from "../utils/base";
 import QuizSocialBlock from "./QuizSocialBlock";
 import { rankLabel } from "../i18n/ranks";
-import { trackQuizStart } from "../utils/track";
+import { trackAnswer, trackQuizStart } from "../utils/track";
 
 interface Props {
   quiz: QuizData;
@@ -145,6 +145,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en", roomHref = null }:
       if (hasAnswered) return;
 
       const isCorrect = answerId === correctAnswerId;
+      trackAnswer(isCorrect);
 
       setSelectedAnswer(answerId);
       setHasAnswered(true);

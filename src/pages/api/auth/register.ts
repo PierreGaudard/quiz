@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { logServerEvent } from "../../../lib/analytics";
 import { hashPassword, createSession, setSessionCookie } from "../../../lib/auth";
 import { localeFromPath, touchUser } from "../../../lib/accounts";
 import { WEAK_PASSWORD_ERROR, isStrongPassword } from "../../../lib/password-policy";
@@ -50,6 +51,7 @@ export const POST: APIRoute = async ({ request }) => {
   const userId = result.meta.last_row_id;
   const sessionId = await createSession(db, userId as number);
   await touchUser(db, userId as number, localeFromPath(request.headers.get("referer")));
+  await logServerEvent(db, request, { type: "signup", user_id: userId as number });
 
   return new Response(JSON.stringify({ ok: true, user: { id: userId, username, email, xp: 0 } }), {
     status: 201,

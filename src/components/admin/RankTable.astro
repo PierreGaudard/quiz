@@ -1,0 +1,31 @@
+---
+/**
+ * Classement : libellé, valeur et barre horizontale proportionnelle. Le
+ * chiffre est toujours écrit, la barre n'est qu'un repère.
+ */
+interface Props {
+  title: string;
+  rows: { label: string; value: number; sub?: string; href?: string }[];
+  format?: (n: number) => string;
+  empty?: string;
+}
+const { title, rows, empty = "Pas encore de données." } = Astro.props;
+const format = Astro.props.format ?? ((n: number) => n.toLocaleString("fr-FR"));
+const max = Math.max(1, ...rows.map((r) => r.value));
+---
+<section class="bg-white border border-gray-100 rounded-2xl p-4">
+  <h3 class="text-sm font-bold text-gray-900 mb-3">{title}</h3>
+  {rows.length === 0 ? <p class="text-sm text-gray-500">{empty}</p> : (
+    <ul class="space-y-2">
+      {rows.map((r) => (
+        <li class="text-sm">
+          <div class="flex items-baseline justify-between gap-3">
+            {r.href ? <a href={r.href} class="truncate text-brand-700 hover:underline">{r.label}</a> : <span class="truncate text-gray-800">{r.label}</span>}
+            <span class="shrink-0 font-semibold text-gray-900 tabular-nums">{format(r.value)}{r.sub && <span class="font-normal text-gray-500"> · {r.sub}</span>}</span>
+          </div>
+          <div class="h-1.5 mt-1 rounded-full bg-gray-100"><div class="h-full rounded-full bg-brand-400" style={`width:${(r.value / max) * 100}%`}></div></div>
+        </li>
+      ))}
+    </ul>
+  )}
+</section>

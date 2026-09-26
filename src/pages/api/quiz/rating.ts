@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { logServerEvent } from "../../../lib/analytics";
 import { allTranslatedQuizzes } from "../../../data/quizzes";
 import { getSessionFromCookies, getUserFromSession } from "../../../lib/auth";
 
@@ -110,5 +111,6 @@ export const POST: APIRoute = async ({ request }) => {
     await db.prepare(CREATE_TABLE).run();
     await upsert();
   }
+  await logServerEvent(db, request, { type: "rate", user_id: userId, quiz_slug: slug, num: rating });
   return json({ rating: await summary(db, slug, userId) });
 };

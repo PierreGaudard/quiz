@@ -1,0 +1,376 @@
+---
+import AdminLayout from "../../layouts/AdminLayout.astro";
+import BarChart from "../../components/admin/BarChart.astro";
+import RankTable from "../../components/admin/RankTable.astro";
+import { adminDB, getAdmin } from "../../lib/admin";
+import { ensureEvents } from "../../lib/analytics";
+import { ensureModeration } from "../../lib/moderation";
+import { allTranslatedQuizzes, getAllQuizzes } from "../../data/quizzes";
+
+export const prerender = false;
+
+/**
+ * Tableau de bord : audience, parties, comptes, quiz, recherches. Tout vient
+ * de la table `events` (src/lib/analytics.ts) et des tables du jeu. Rendu à
+ * la demande, sans JavaScript. `?p=` règle la période en jours, `?quiz=` ouvre
+ * le détail d'un quiz (réussite et abandons question par question).
+ */
+const admin = await getAdmin(Astro.request);
+if (!admin) return new Response("Accès refusé", { status: 403 });
+const db = await adminDB();
+if (!db) return new Response("Base indisponible", { status: 503 });
+await ensureEvents(db);
+await ensureModeration(db).catch(() => {});
+
+const PERIODS = [1, 7, 30, 90, 365];
+const p = Number(Astro.url.searchParams.get("p")) || 30;
+const days = PERIODS.includes(p) ? p : 30;
+const since = `-${days} days`;
+const prevSince = `-${days * 2} days`;
+const quizParam = Astro.url.searchParams.get("quiz");
+
+async function all<T = any>(sql: string, ...binds: unknown[]): Promise<T[]> {
+  try {
+    return ((await db!.prepare(sql).bind(...binds).all<T>()).results || []) as T[];
+  } catch {
+    return [];
+  }
+}
+async function one<T = any>(sql: string, ...binds: unknown[]): Promise<T | null> {
+  return (await all<T>(sql, ...binds))[0] ?? null;
+}
+
+const nf = (n: number | null | undefined, d = 0) => (n ?? 0).toLocaleString("fr-FR", { maximumFractionDigits: d, minimumFractionDigits: d });
+const pct = (a: number, b: number) => (b > 0 ? `${nf((a / b) * 100, 0)} %` : "–");
+const dur = (ms: number | null | undefined) => {
+  if (!ms) return "–";
+  const s = Math.round(ms / 1000);
+  return s < 60 ? `${s} s` : `${Math.floor(s / 60)} min ${String(s % 60).padStart(2, "0")}`;
+};
+
+// Titres des quiz du catalogue (FR), par slug de base.
+const frBySlug = new Map(getAllQuizzes("fr").map((q) => [q.slug, q]));
+const titleOf = (base: string) => {
+  if (base.startsWith("u:")) return `Quiz joueur · ${base.slice(2)}`;
+  const tq = allTranslatedQuizzes.find((q) => q.slug === base);
+  const frSlug = tq?.slugs?.fr || base;
+  return frBySlug.get(frSlug)?.title || tq?.translations.fr?.title || base;
+};
+
+// ---------- Chiffres clés, période et période précédente ----------
+async function kpis(from: string, to: string | null) {
+  const range = to ? "ts >= datetime('now', ?) AND ts < datetime('now', ?)" : "ts >= datetime('now', ?)";
+  const b = to ? [from, to] : [from];
+  const r = await one<any>(
+    `SELECT
+       COUNT(DISTINCT CASE WHEN type = 'page_view' THEN visitor END) AS visitors,
+       COUNT(DISTINCT CASE WHEN type = 'page_view' THEN session END) AS sessions,
+       SUM(type = 'page_view') AS pageviews,
+       SUM(type = 'quiz_start') AS starts,
+       SUM(type = 'quiz_end') AS ends,
+       SUM(type = 'quiz_abandon') AS abandons,
+       AVG(CASE WHEN type = 'quiz_end' AND duration_ms BETWEEN 5000 AND 7200000 THEN duration_ms END) AS game_ms,
+       AVG(CASE WHEN type = 'page_leave' AND duration_ms BETWEEN 1000 AND 3600000 THEN duration_ms END) AS page_ms,
+       COUNT(DISTINCT CASE WHEN type = 'quiz_start' THEN visitor END) AS players,
+       SUM(type = 'signup') AS signups,
+       SUM(type = 'login') AS logins,
+       SUM(type = 'signup_prompt') AS prompts,
+       SUM(type = 'share') AS shares,
+       SUM(type = 'room_create') AS rooms,
+       SUM(type = 'room_join') AS room_joins,
+       SUM(type = 'quiz_created') AS created,
+       SUM(type = 'rate') AS rates,
+       SUM(type = 'search') AS searches
+     FROM events WHERE ${range}`,
+    ...b
+  );
+  return r || {};
+}
+const cur = await kpis(since, null);
+const prev = await kpis(prevSince, since);
+
+const users = await one<any>(
+  `SELECT COUNT(*) AS total,
+     SUM(created_at >= datetime('now', ?)) AS fresh,
+     SUM(last_seen_at >= datetime('now', ?)) AS active
+   FROM users`, since, since
+) || await one<any>("SELECT COUNT(*) AS total FROM users") || {};
+const pendingQuiz = (await one<any>("SELECT COUNT(*) AS n FROM user_quizzes WHERE status = 'pending'"))?.n ?? 0;
+const ratingAll = await one<any>("SELECT COUNT(*) AS n, AVG(rating) AS avg FROM quiz_ratings");
+const allTime = await one<any>("SELECT (SELECT SUM(plays) FROM quiz_plays) AS plays, (SELECT SUM(starts) FROM quiz_starts) AS starts");
+const eventsSince = (await one<any>("SELECT MIN(ts) AS first FROM events"))?.first;
+
+function delta(a: number, b: number) {
+  if (!b) return null;
+  const d = ((a - b) / b) * 100;
+  return { text: `${d >= 0 ? "+" : ""}${nf(d, 0)} %`, up: d >= 0 };
+}
+const tiles = [
+  { label: "Visiteurs uniques", v: cur.visitors, prev: prev.visitors },
+  { label: "Visites", v: cur.sessions, prev: prev.sessions },
+  { label: "Pages vues", v: cur.pageviews, prev: prev.pageviews },
+  { label: "Joueurs", v: cur.players, prev: prev.players },
+  { label: "Parties commencées", v: cur.starts, prev: prev.starts },
+  { label: "Parties terminées", v: cur.ends, prev: prev.ends },
+  { label: "Taux de complétion", text: pct(cur.ends, cur.starts), sub: `${nf(cur.abandons)} abandons` },
+  { label: "Durée moyenne d'une partie", text: dur(cur.game_ms) },
+  { label: "Temps moyen par page", text: dur(cur.page_ms) },
+  { label: "Inscriptions", v: cur.signups, prev: prev.signups, sub: `${nf(cur.prompts)} fenêtres de vote ouvertes` },
+  { label: "Connexions", v: cur.logins, prev: prev.logins },
+  { label: "Comptes", v: users.total, sub: `${nf(users.active)} actifs sur la période` },
+  { label: "Votes", v: cur.rates, prev: prev.rates, sub: ratingAll?.n ? `moyenne ${nf(ratingAll.avg, 1)} / 5 sur ${nf(ratingAll.n)}` : undefined },
+  { label: "Partages", v: cur.shares, prev: prev.shares },
+  { label: "Salles entre amis", v: cur.rooms, prev: prev.rooms, sub: `${nf(cur.room_joins)} joueurs entrés` },
+  { label: "Quiz créés par des joueurs", v: cur.created, prev: prev.created, sub: `${nf(pendingQuiz)} en attente`, href: pendingQuiz ? "/admin/quiz/" : undefined },
+];
+
+// ---------- Séries par jour ----------
+const dayKeys: string[] = [];
+for (let i = days - 1; i >= 0; i--) dayKeys.push(new Date(Date.now() - i * 86400000).toISOString().slice(0, 10));
+const dayLabel = (k: string) => new Date(k + "T12:00:00Z").toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
+async function perDay(sql: string, ...binds: unknown[]) {
+  const rows = await all<{ d: string; n: number }>(sql, ...binds);
+  const m = new Map(rows.map((r) => [r.d, r.n]));
+  return dayKeys.map((k) => ({ label: dayLabel(k), value: m.get(k) ?? 0 }));
+}
+const byHourMode = days === 1;
+const hourSeries = async (type: string) => {
+  const rows = await all<{ h: number; n: number }>(
+    "SELECT CAST(strftime('%H', ts) AS INTEGER) AS h, COUNT(*) AS n FROM events WHERE type = ? AND ts >= datetime('now', ?) GROUP BY h", type, since
+  );
+  const m = new Map(rows.map((r) => [r.h, r.n]));
+  return Array.from({ length: 24 }, (_, h) => ({ label: `${h} h (UTC)`, value: m.get(h) ?? 0 }));
+};
+const visitorsDay = byHourMode ? await hourSeries("page_view") : await perDay(
+  "SELECT date(ts) AS d, COUNT(DISTINCT visitor) AS n FROM events WHERE type = 'page_view' AND ts >= datetime('now', ?) GROUP BY d", since);
+const endsDay = byHourMode ? await hourSeries("quiz_end") : await perDay(
+  "SELECT date(ts) AS d, COUNT(*) AS n FROM events WHERE type = 'quiz_end' AND ts >= datetime('now', ?) GROUP BY d", since);
+const signupsDay = byHourMode ? await hourSeries("signup") : await perDay(
+  "SELECT date(created_at) AS d, COUNT(*) AS n FROM users WHERE created_at >= datetime('now', ?) GROUP BY d", since);
+const hours = await hourSeries("quiz_start");
+
+// ---------- Quiz ----------
+const topQuiz = await all<any>(
+  `SELECT quiz_slug, mode,
+     SUM(type = 'quiz_start') AS starts, SUM(type = 'quiz_end') AS ends, SUM(type = 'quiz_abandon') AS abandons,
+     AVG(CASE WHEN type = 'quiz_end' AND duration_ms BETWEEN 5000 AND 7200000 THEN duration_ms END) AS ms,
+     AVG(CASE WHEN type = 'quiz_end' AND total > 0 THEN 1.0 * num / total END) AS score
+   FROM events WHERE quiz_slug IS NOT NULL AND type IN ('quiz_start','quiz_end','quiz_abandon') AND ts >= datetime('now', ?)
+   GROUP BY quiz_slug ORDER BY starts DESC LIMIT 40`, since
+);
+const ratings = new Map((await all<any>("SELECT quiz_slug, COUNT(*) AS n, AVG(rating) AS avg FROM quiz_ratings GROUP BY quiz_slug")).map((r) => [r.quiz_slug, r]));
+const modes = await all<any>(
+  "SELECT mode, SUM(type = 'quiz_start') AS starts, SUM(type = 'quiz_end') AS ends FROM events WHERE mode IS NOT NULL AND type IN ('quiz_start','quiz_end') AND ts >= datetime('now', ?) GROUP BY mode ORDER BY starts DESC", since
+);
+const neverPlayed = (() => {
+  const played = new Set(topQuiz.map((q) => q.quiz_slug));
+  return allTranslatedQuizzes.filter((q) => !played.has(q.slug)).length;
+})();
+
+// ---------- Audience ----------
+const dim = (col: string, limit = 10, where = "type = 'page_view'") =>
+  all<{ k: string; n: number }>(
+    `SELECT COALESCE(${col}, '(inconnu)') AS k, COUNT(DISTINCT visitor) AS n FROM events WHERE ${where} AND ts >= datetime('now', ?) GROUP BY k ORDER BY n DESC LIMIT ${limit}`, since
+  );
+const [pages, referrers, utm, countries, devices, browsers, oses, locales, langs] = await Promise.all([
+  all<{ k: string; n: number }>("SELECT path AS k, COUNT(*) AS n FROM events WHERE type = 'page_view' AND ts >= datetime('now', ?) GROUP BY k ORDER BY n DESC LIMIT 15", since),
+  dim("referrer", 12, "type = 'page_view' AND referrer IS NOT NULL"),
+  dim("utm_source || COALESCE(' / ' || utm_medium, '') || COALESCE(' / ' || utm_campaign, '')", 10, "type = 'page_view' AND utm_source IS NOT NULL"),
+  dim("country", 12),
+  dim("device", 5),
+  dim("browser", 8),
+  dim("os", 8),
+  dim("locale", 3),
+  dim("lang", 8),
+]);
+const direct = (await one<any>("SELECT COUNT(DISTINCT visitor) AS n FROM events WHERE type = 'page_view' AND referrer IS NULL AND ts >= datetime('now', ?)", since))?.n ?? 0;
+const screens = await all<{ k: string; n: number }>(
+  `SELECT CASE WHEN screen < 480 THEN 'moins de 480 px' WHEN screen < 768 THEN '480 à 767 px' WHEN screen < 1024 THEN '768 à 1 023 px' WHEN screen < 1440 THEN '1 024 à 1 439 px' ELSE '1 440 px et plus' END AS k,
+     COUNT(DISTINCT visitor) AS n FROM events WHERE type = 'page_view' AND screen > 0 AND ts >= datetime('now', ?) GROUP BY k ORDER BY n DESC`, since
+);
+const entries = await all<{ k: string; n: number }>(
+  `SELECT path AS k, COUNT(*) AS n FROM events e WHERE type = 'page_view' AND ts >= datetime('now', ?)
+     AND id = (SELECT MIN(id) FROM events f WHERE f.session = e.session AND f.type = 'page_view') GROUP BY k ORDER BY n DESC LIMIT 10`, since
+);
+const bounce = await one<any>(
+  `SELECT COUNT(*) AS sessions, SUM(n = 1) AS single FROM (SELECT session, COUNT(*) AS n FROM events WHERE type = 'page_view' AND session IS NOT NULL AND ts >= datetime('now', ?) GROUP BY session)`, since
+);
+
+// ---------- Recherches ----------
+const searches = await all<{ k: string; n: number; zero: number }>(
+  `SELECT lower(json_extract(extra, '$.q')) AS k, COUNT(*) AS n, SUM(num = 0) AS zero FROM events WHERE type = 'search' AND ts >= datetime('now', ?) GROUP BY k ORDER BY n DESC LIMIT 15`, since
+);
+const zeroSearches = searches.filter((s) => s.zero > 0);
+
+// ---------- Comptes ----------
+const lastUsers = await all<any>("SELECT username, created_at, xp FROM users ORDER BY id DESC LIMIT 12");
+
+// ---------- Détail d'un quiz ----------
+let detail: null | {
+  slug: string; title: string; questions: string[];
+  success: { label: string; value: number }[];
+  drop: { label: string; value: number }[];
+  games: number; abandons: number; scores: { label: string; value: number }[];
+} = null;
+if (quizParam) {
+  const tq = allTranslatedQuizzes.find((q) => q.slug === quizParam);
+  const qs = tq?.translations.fr?.questions?.map((q: any) => q.question) || [];
+  const endRows = await all<{ a: string; num: number; total: number }>(
+    "SELECT json_extract(extra, '$.a') AS a, num, total FROM events WHERE type = 'quiz_end' AND quiz_slug = ? AND ts >= datetime('now', ?) LIMIT 5000", quizParam, since
+  );
+  const abRows = await all<{ num: number; n: number }>(
+    "SELECT num, COUNT(*) AS n FROM events WHERE type = 'quiz_abandon' AND quiz_slug = ? AND ts >= datetime('now', ?) GROUP BY num", quizParam, since
+  );
+  const nQ = Math.max(qs.length, ...endRows.map((r) => (r.a || "").length), 1);
+  const ok = Array(nQ).fill(0), seen = Array(nQ).fill(0);
+  for (const r of endRows) for (let i = 0; i < (r.a || "").length; i++) { seen[i]++; if (r.a[i] === "1") ok[i]++; }
+  const ab = new Map(abRows.map((r) => [r.num, r.n]));
+  const scoreMap = new Map<number, number>();
+  for (const r of endRows) scoreMap.set(r.num, (scoreMap.get(r.num) || 0) + 1);
+  const maxScore = Math.max(0, ...endRows.map((r) => r.total || r.num));
+  detail = {
+    slug: quizParam,
+    title: titleOf(quizParam),
+    questions: qs,
+    success: Array.from({ length: nQ }, (_, i) => ({ label: `Q${i + 1}${qs[i] ? ` · ${qs[i].slice(0, 50)}` : ""}`, value: seen[i] ? Math.round((ok[i] / seen[i]) * 100) : 0 })),
+    // L'abandon porte le nombre de réponses données : n = 3, c'est parti pendant la question 4.
+    drop: Array.from({ length: nQ }, (_, i) => ({ label: `pendant Q${i + 1}`, value: ab.get(i) ?? 0 })),
+    games: endRows.length,
+    abandons: abRows.reduce((s, r) => s + r.n, 0),
+    scores: Array.from({ length: Math.min(maxScore, 60) + 1 }, (_, s) => ({ label: `${s} points`, value: scoreMap.get(s) ?? 0 })),
+  };
+}
+
+const MODE_LABEL: Record<string, string> = { qcm: "QCM", "vrai-faux": "Vrai ou faux", chrono: "Chrono", estimation: "Estimation", duel: "Duel", ordre: "Ordre" };
+const DEVICE_LABEL: Record<string, string> = { mobile: "Mobile", desktop: "Ordinateur", tablet: "Tablette" };
+const fmtDate = (d: string | null) => (d ? new Date(d.replace(" ", "T") + "Z").toLocaleString("fr-FR", { dateStyle: "short", timeStyle: "short", timeZone: "Europe/Paris" }) : "–");
+const periodHref = (n: number) => `/admin/?p=${n}${quizParam ? `&quiz=${quizParam}` : ""}`;
+---
+
+<AdminLayout title="Tableau de bord" active="dashboard">
+  <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+    <div>
+      <h1 class="font-display text-2xl font-bold text-gray-900">Tableau de bord</h1>
+      <p class="text-sm text-gray-500 mt-1">
+        Mesure depuis le {fmtDate(eventsSince)}. Robots exclus, visiteurs opposés à la mesure non comptés. Période comparée à la précédente de même durée.
+      </p>
+    </div>
+    <div class="flex gap-1" role="group" aria-label="Période">
+      {PERIODS.map((n) => (
+        <a href={periodHref(n)} class={`px-3 py-1.5 rounded-lg text-sm font-semibold border ${n === days ? "bg-brand text-white border-brand" : "bg-white text-gray-700 border-gray-200"}`}>
+          {n === 1 ? "24 h" : n === 365 ? "1 an" : `${n} j`}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  {detail && (
+    <section class="mb-10">
+      <div class="flex items-baseline justify-between gap-4 mb-3">
+        <h2 class="font-display text-xl font-bold text-gray-900">{detail.title}</h2>
+        <a href={`/admin/?p=${days}`} class="text-sm text-brand-700 hover:underline">Fermer le détail</a>
+      </div>
+      <p class="text-sm text-gray-600 mb-4">{nf(detail.games)} parties terminées, {nf(detail.abandons)} abandons sur la période. Le détail des réponses n'existe que pour les modes QCM, vrai ou faux, chrono et duel.</p>
+      <div class="grid lg:grid-cols-2 gap-4">
+        <BarChart title="Taux de bonnes réponses par question" data={detail.success} format={(n) => `${n} %`} max={100} />
+        <BarChart title="Abandons, par question" data={detail.drop} />
+        <BarChart title="Répartition des scores" data={detail.scores} />
+      </div>
+    </section>
+  )}
+
+  <section class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+    {tiles.map((t) => {
+      const d = t.prev !== undefined ? delta(t.v ?? 0, t.prev ?? 0) : null;
+      const body = (
+        <>
+          <p class="text-xs font-semibold text-gray-500">{t.label}</p>
+          <p class="font-display text-2xl font-bold text-gray-900 mt-1 tabular-nums">{t.text ?? nf(t.v)}</p>
+          <p class="text-xs mt-1 text-gray-500">
+            {d && <span class={d.up ? "text-green-700 font-semibold" : "text-red-700 font-semibold"}>{d.text}</span>}
+            {d && t.sub && " · "}
+            {t.sub}
+          </p>
+        </>
+      );
+      return t.href
+        ? <a href={t.href} class="block bg-white border border-brand-300 rounded-2xl p-4">{body}</a>
+        : <div class="bg-white border border-gray-100 rounded-2xl p-4">{body}</div>;
+    })}
+  </section>
+
+  <section class="grid lg:grid-cols-3 gap-4 mb-8">
+    <BarChart title={byHourMode ? "Pages vues par heure" : "Visiteurs uniques par jour"} data={visitorsDay} />
+    <BarChart title={byHourMode ? "Parties terminées par heure" : "Parties terminées par jour"} data={endsDay} />
+    <BarChart title={byHourMode ? "Inscriptions par heure" : "Inscriptions par jour"} data={signupsDay} />
+  </section>
+
+  <h2 class="font-display text-xl font-bold text-gray-900 mb-3">Quiz</h2>
+  <div class="bg-white border border-gray-100 rounded-2xl overflow-x-auto mb-4">
+    <table class="w-full text-sm">
+      <thead class="text-left text-xs text-gray-500 border-b border-gray-100">
+        <tr>
+          <th class="px-4 py-2 font-semibold">Quiz</th><th class="px-3 py-2 font-semibold">Mode</th>
+          <th class="px-3 py-2 font-semibold text-right">Commencées</th><th class="px-3 py-2 font-semibold text-right">Terminées</th>
+          <th class="px-3 py-2 font-semibold text-right">Complétion</th><th class="px-3 py-2 font-semibold text-right">Abandons</th>
+          <th class="px-3 py-2 font-semibold text-right">Durée moy.</th><th class="px-3 py-2 font-semibold text-right">Score moy.</th>
+          <th class="px-4 py-2 font-semibold text-right">Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        {topQuiz.length === 0 && <tr><td colspan="9" class="px-4 py-4 text-gray-500">Pas encore de partie sur la période.</td></tr>}
+        {topQuiz.map((q) => {
+          const r = ratings.get(q.quiz_slug);
+          return (
+            <tr class="border-b border-gray-50 last:border-0">
+              <td class="px-4 py-2"><a href={`/admin/?p=${days}&quiz=${encodeURIComponent(q.quiz_slug)}`} class="text-brand-700 hover:underline">{titleOf(q.quiz_slug)}</a></td>
+              <td class="px-3 py-2 text-gray-600">{MODE_LABEL[q.mode] || q.mode || "–"}</td>
+              <td class="px-3 py-2 text-right tabular-nums">{nf(q.starts)}</td>
+              <td class="px-3 py-2 text-right tabular-nums">{nf(q.ends)}</td>
+              <td class="px-3 py-2 text-right tabular-nums">{pct(q.ends, q.starts)}</td>
+              <td class="px-3 py-2 text-right tabular-nums">{nf(q.abandons)}</td>
+              <td class="px-3 py-2 text-right tabular-nums">{dur(q.ms)}</td>
+              <td class="px-3 py-2 text-right tabular-nums">{q.score != null ? `${nf(q.score * 100, 0)} %` : "–"}</td>
+              <td class="px-4 py-2 text-right tabular-nums">{r ? `${nf(r.avg, 1)} (${r.n})` : "–"}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm text-gray-500 mb-4">{nf(neverPlayed)} quiz du catalogue sans aucune partie sur la période. Depuis l'ouverture des compteurs : {nf(allTime?.starts)} parties commencées, {nf(allTime?.plays)} terminées.</p>
+  <section class="grid lg:grid-cols-2 gap-4 mb-8">
+    <RankTable title="Parties par mode de jeu" rows={modes.map((m) => ({ label: MODE_LABEL[m.mode] || m.mode, value: m.starts, sub: `${pct(m.ends, m.starts)} terminées` }))} />
+    <BarChart title="Parties commencées selon l'heure (UTC)" data={hours} />
+  </section>
+
+  <h2 class="font-display text-xl font-bold text-gray-900 mb-3">Audience</h2>
+  <p class="text-sm text-gray-500 mb-3">Visites à une seule page : {bounce?.sessions ? pct(bounce.single, bounce.sessions) : "–"}. Visiteurs venus sans provenance (accès direct, appli, favori) : {nf(direct)}.</p>
+  <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <RankTable title="Pages les plus vues" rows={pages.map((r) => ({ label: r.k, value: r.n, href: r.k }))} />
+    <RankTable title="Pages d'entrée" rows={entries.map((r) => ({ label: r.k, value: r.n }))} />
+    <RankTable title="Sites d'où viennent les visiteurs" rows={referrers.map((r) => ({ label: r.k, value: r.n }))} />
+    <RankTable title="Campagnes (UTM source / medium / campaign)" rows={utm.map((r) => ({ label: r.k, value: r.n }))} empty="Aucun lien marqué UTM sur la période." />
+    <RankTable title="Pays" rows={countries.map((r) => ({ label: r.k, value: r.n }))} />
+    <RankTable title="Langue du site" rows={locales.map((r) => ({ label: r.k.toUpperCase(), value: r.n }))} />
+    <RankTable title="Langue du navigateur" rows={langs.map((r) => ({ label: r.k, value: r.n }))} />
+    <RankTable title="Appareils" rows={devices.map((r) => ({ label: DEVICE_LABEL[r.k] || r.k, value: r.n }))} />
+    <RankTable title="Largeur d'écran" rows={screens.map((r) => ({ label: r.k, value: r.n }))} />
+    <RankTable title="Navigateurs" rows={browsers.map((r) => ({ label: r.k, value: r.n }))} />
+    <RankTable title="Systèmes" rows={oses.map((r) => ({ label: r.k, value: r.n }))} />
+  </section>
+
+  <h2 class="font-display text-xl font-bold text-gray-900 mb-3">Recherches et comptes</h2>
+  <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <RankTable title="Recherches internes" rows={searches.map((s) => ({ label: s.k, value: s.n, sub: s.zero ? `${s.zero} sans résultat` : undefined }))} />
+    <RankTable title="Recherches sans résultat (quiz à créer ?)" rows={zeroSearches.map((s) => ({ label: s.k, value: s.zero }))} empty="Aucune recherche sans résultat." />
+    <section class="bg-white border border-gray-100 rounded-2xl p-4">
+      <h3 class="text-sm font-bold text-gray-900 mb-3">Derniers inscrits</h3>
+      <ul class="space-y-1.5 text-sm">
+        {lastUsers.map((u) => (
+          <li class="flex justify-between gap-3"><span class="truncate text-gray-800">{u.username}</span><span class="shrink-0 text-gray-500 tabular-nums">{fmtDate(u.created_at)} · {nf(u.xp)} XP</span></li>
+        ))}
+      </ul>
+    </section>
+  </section>
+</AdminLayout>

@@ -22,6 +22,7 @@ const currentYear = new Date().getFullYear();
 // Locale-aware slug mapping for static pages
 const slugs: Record<string, Record<string, string>> = {
   create: { en: "/create", fr: "/creer", es: "/crear" },
+  community: { en: "/create/community", fr: "/creer/communaute", es: "/crear/comunidad" },
   legal: { en: "/legal-notices", fr: "/mentions-legales", es: "/aviso-legal" },
   privacy: { en: "/privacy-policy", fr: "/confidentialite", es: "/politica-privacidad" },
   terms: { en: "/terms-of-use", fr: "/cgu", es: "/condiciones-uso" },
@@ -81,6 +82,7 @@ const socials = Object.entries(SOCIAL_LINKS).filter(([n, h]) => h && SOCIAL_ICON
         <ul class="space-y-2.5">
           <li><a href={lp('/')} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.allQuizzes")}</a></li>
           <li><a href={lp(s('create'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.createQuiz")}</a></li>
+          <li><a href={lp(s('community'))} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "footer.community")}</a></li>
           <li><a href={getGamesHubPath(locale)} class="text-sm text-white/50 hover:text-white transition-colors">{t(locale, "games.hubName")}</a></li>
         </ul>
       </div>

@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { decodeQuizFromURL } from "../utils/custom-quiz";
 import { withBase } from "../utils/base";
 import type { QuizData } from "../data/types";
+import { trackAnswer, trackQuizEnd, trackQuizStart } from "../utils/track";
+
+/** Slug du lien permanent (?q=), ou « hash » pour un quiz partage par le lien seul. */
+const customSlug = () => new URLSearchParams(window.location.search).get("q") || "hash";
 
 /** Detect locale from current URL and return the locale-aware create page path */
 function getCreatePath(): string {
@@ -29,6 +33,23 @@ function getLocale(): "en" | "fr" | "es" {
  * au milieu. Tout passe par ce dictionnaire.
  */
 const T: Record<string, Record<string, string>> = {
+  pendingTitle: { en: "This quiz is being reviewed", fr: "Ce quiz est en cours de relecture", es: "Este quiz se está revisando" },
+  pendingText: {
+    en: "Every quiz created by a player is read by the WizyQuiz team before it opens to everyone. Come back in a little while!",
+    fr: "Chaque quiz créé par un joueur est relu par l'équipe de WizyQuiz avant d'être ouvert à tous. Revenez d'ici peu !",
+    es: "Cada quiz creado por un jugador lo revisa el equipo de WizyQuiz antes de abrirlo a todos. ¡Vuelve dentro de poco!",
+  },
+  rejectedTitle: { en: "This quiz is no longer available", fr: "Ce quiz n'est plus disponible", es: "Este quiz ya no está disponible" },
+  rejectedText: {
+    en: "It was not accepted after review.",
+    fr: "Il n'a pas été accepté après relecture.",
+    es: "No se aceptó tras la revisión.",
+  },
+  pendingBanner: {
+    en: "Only you can play this quiz for now: it opens to everyone once the WizyQuiz team has reviewed it.",
+    fr: "Vous êtes seul à pouvoir y jouer pour l'instant : le quiz s'ouvrira à tous une fois relu par l'équipe de WizyQuiz.",
+    es: "De momento solo tú puedes jugarlo: se abrirá a todos cuando el equipo de WizyQuiz lo haya revisado.",
+  },
   questionWord: { en: "Question", fr: "Question", es: "Pregunta" },
   loading: { en: "Loading quiz...", fr: "Chargement du quiz…", es: "Cargando el quiz…" },
   notFound: { en: "Quiz not found", fr: "Quiz introuvable", es: "Quiz no encontrado" },
@@ -87,6 +108,8 @@ export default function CustomQuizPlayer() {
   const [answers, setAnswers] = useState<(string | null)[]>([]);
   const [copied, setCopied] = useState(false);
   const [author, setAuthor] = useState<string | null>(null);
+  const [errorKind, setErrorKind] = useState<"pending" | "rejected" | null>(null);
+  const [isPending, setIsPending] = useState(false);
 
   useEffect(() => {
     try {
@@ -95,9 +118,11 @@ export default function CustomQuizPlayer() {
       const slug = new URLSearchParams(window.location.search).get("q");
       if (slug) {
         fetch(`/api/quiz/custom/${encodeURIComponent(slug)}`)
-          .then((r) => (r.ok ? r.json() : null))
+          .then((r) => (r.ok || r.status === 403 || r.status === 410 ? r.json() : null))
           .then((d) => {
+            if (d?.error === "pending" || d?.error === "rejected") { setErrorKind(d.error); setScreen("error"); return; }
             if (!d?.quiz?.questions?.length) { setScreen("error"); return; }
+            setIsPending(d.status === "pending");
             setQuiz({ ...d.quiz, path: "", category: d.quiz.category || "" } as QuizData);
             setAuthor(d.author || null);
             setScreen("intro");
@@ -129,6 +154,7 @@ export default function CustomQuizPlayer() {
   }, []);
 
   const handleStart = () => {
+    trackQuizStart(customSlug(), { custom: true });
     setScreen("playing");
     setCurrentIndex(0);
     setScore(0);
@@ -143,6 +169,7 @@ export default function CustomQuizPlayer() {
     const correct = answerId === question.correctAnswer;
     setSelectedAnswer(answerId);
     setHasAnswered(true);
+    trackAnswer(correct);
     if (correct) {
       setScore((s) => s + 1);
     }
@@ -152,6 +179,7 @@ export default function CustomQuizPlayer() {
   const goToNext = () => {
     if (!quiz) return;
     if (currentIndex + 1 >= quiz.questions.length) {
+      trackQuizEnd(customSlug(), score, quiz.questions.length);
       setScreen("result");
     } else {
       setCurrentIndex((i) => i + 1);
@@ -199,9 +227,11 @@ export default function CustomQuizPlayer() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
             </svg>
           </div>
-          <h2 className="font-display text-xl font-bold text-gray-900">{tt("notFound")}</h2>
+          <h2 className="font-display text-xl font-bold text-gray-900">
+            {errorKind === "pending" ? tt("pendingTitle") : errorKind === "rejected" ? tt("rejectedTitle") : tt("notFound")}
+          </h2>
           <p className="text-gray-500 text-sm">
-            {tt("invalid")}
+            {errorKind === "pending" ? tt("pendingText") : errorKind === "rejected" ? tt("rejectedText") : tt("invalid")}
           </p>
           <a
             href={getCreatePath()}
@@ -273,6 +303,9 @@ export default function CustomQuizPlayer() {
       <div className="min-h-[70vh] flex items-center justify-center p-4">
         <div className="max-w-lg w-full">
           {banner}
+          {isPending && (
+            <p role="status" className="mb-4 p-3 rounded-lg bg-amber-50 border border-amber-200 text-sm text-amber-900">{tt("pendingBanner")}</p>
+          )}
           <div className="text-center space-y-4">
             <span className="first-letter:uppercase inline-block text-brand-600 font-semibold text-sm">
               {quiz.category}

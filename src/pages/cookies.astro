@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { getHreflangStaticPaths } from "../lib/hreflang-helpers";
 import { localePath } from "../utils/base";
 import { t } from "../i18n/ui";
+import AnalyticsOptOut from "../components/AnalyticsOptOut";
 import { EDITOR, LEGAL_UPDATED } from "../config/legal";
 import type { Locale } from "../i18n/config";
 
@@ -14,7 +15,7 @@ const th = "text-left font-semibold text-gray-900 p-2 border-b border-gray-200";
 const td = "p-2 align-top border-b border-gray-100";
 ---
 
-<Layout title="Cookies and Local Storage | WizyQuiz" description="WizyQuiz's only cookie keeps you logged in. No ads, no analytics, no tracking: here is what is kept in your browser and why." locale={locale} hreflangPaths={getHreflangStaticPaths("cookies")}>
+<Layout title="Cookies and Local Storage | WizyQuiz" description="One cookie to keep you logged in and anonymous audience measurement with no cookie and no ads: here is what is kept in your browser." locale={locale} hreflangPaths={getHreflangStaticPaths("cookies")}>
   <main class="max-w-3xl mx-auto px-4 py-12">
     <nav class="flex items-center gap-1.5 text-xs text-gray-500 mb-8" aria-label="Breadcrumb">
       <a href={lp("/")} class="hover:text-brand-600 transition-colors font-medium">{t(locale, "breadcrumb.home")}</a>
@@ -25,7 +26,7 @@ const td = "p-2 align-top border-b border-gray-100";
     <h1 class="font-display text-3xl font-black text-gray-900 mb-8">Cookies and Local Storage</h1>
 
     <div class="space-y-8 text-sm leading-relaxed text-gray-700">
-      <p>WizyQuiz has no ads, no audience measurement tool and no social media button that tracks you. So the site only sets one cookie, the one that keeps you logged in, plus a few settings in your browser. All of this is needed for the site to work, which is why the law (article 82 of the French Data Protection Act) exempts it from consent, and why no banner asks you for it.</p>
+      <p>WizyQuiz has no ads and no social media button that tracks you. The site sets only one cookie, the one that keeps you logged in, keeps a few settings in your browser and measures its own audience, with no outside tool. The cookie and settings are needed for the site to work, and the audience measurement meets the conditions set by the CNIL (the French data protection authority) to do without consent: the law (article 82 of the French Data Protection Act) exempts them, which is why no banner asks you. You can still opt out of the audience measurement below.</p>
 
       <section>
         <h2 class={h2}>1. The cookie</h2>
@@ -52,18 +53,28 @@ const td = "p-2 align-top border-b border-gray-100";
               <tr><td class={td}><code>wizy-custom-quizzes</code></td><td class={td}>Keeping the quizzes you create without an account</td></tr>
               <tr><td class={td}><code>wq-tf-best, wq-flags-best, wq-hl-best-…</code></td><td class={td}>Your best score in the mini-games</td></tr>
               <tr><td class={td}><code>wizy-room-&lt;code&gt;</code></td><td class={td}>Recognising you as a player in a game with friends if you reload the page</td></tr>
+              <tr><td class={td}><code>wq-vid</code></td><td class={td}>Random identifier used to count unique visitors (audience measurement, 13 months at most)</td></tr>
+              <tr><td class={td}><code>wq-sid</code></td><td class={td}>Random identifier used to count visits, deleted when the tab is closed</td></tr>
+              <tr><td class={td}><code>wq-noanalytics</code></td><td class={td}>Remembering that you opted out of audience measurement</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
       <section>
-        <h2 class={h2}>3. No third-party services</h2>
+        <h2 class={h2}>3. Audience measurement</h2>
+        <p>To know which quizzes people like, where players drop off and where they come from, the site records pages viewed, time spent, games started, finished or abandoned with their answers, searches, shares and sign-ups. It also records the site you came from, the link's campaign parameters (UTM), the country (worked out by the host; the IP address is not kept), the type of device, the browser, the operating system, the screen width and the language. This data is only used for WizyQuiz's own statistics, is never combined with other data, sold or passed on, and is deleted after 13 months. If you have an account, it is linked to it while the account exists and detached from it when the account is deleted.</p>
+        <p class="mt-2">Nothing is measured if your browser sends the Global Privacy Control signal, or if you opt out here:</p>
+        <AnalyticsOptOut locale="en" client:only="react" />
+      </section>
+
+      <section>
+        <h2 class={h2}>4. No third-party services</h2>
         <p>Fonts and images are served by the site itself. Loading a WizyQuiz page does not contact Google, Facebook or any other outside service.</p>
       </section>
 
       <section>
-        <h2 class={h2}>4. Clearing everything</h2>
+        <h2 class={h2}>5. Clearing everything</h2>
         <p>You can delete the cookie and the local storage from your browser settings (under "Cookies and site data"). You will simply be logged out, and the list of quizzes you played without an account will start again from zero. For the full list of data and your rights, see the <a href={lp("/privacy-policy")} class={link}>privacy policy</a>. Any question: {EDITOR.email}.</p>
       </section>
 

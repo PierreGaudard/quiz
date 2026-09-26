@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { logServerEvent } from "../../../../lib/analytics";
 import { getSessionFromCookies, getUserFromSession } from "../../../../lib/auth";
 import { LIMITS, slugify, validateCustomQuiz } from "../../../../lib/custom-quiz-server";
 
@@ -61,7 +62,10 @@ export const POST: APIRoute = async ({ request }) => {
         )
         .bind(user.id, res.quiz.title, slug, res.quiz.category, data)
         .run();
-      if (r.meta.changes) return json({ slug });
+      if (r.meta.changes) {
+        await logServerEvent(db, request, { type: "quiz_created", user_id: user.id, quiz_slug: `u:${slug}`, total: res.quiz.questions.length });
+        return json({ slug, status: "pending" });
+      }
     }
     return json({ error: "slug" }, 409);
   } catch {

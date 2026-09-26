@@ -10,6 +10,7 @@ export const staticPageSlugs: Record<string, Record<Locale, string>> = {
   create: { en: "/create/", fr: "/creer/", es: "/crear/" },
   createNew: { en: "/create/new/", fr: "/creer/nouveau/", es: "/crear/nuevo/" },
   createPlay: { en: "/create/play/", fr: "/creer/jouer/", es: "/crear/jugar/" },
+  community: { en: "/create/community/", fr: "/creer/communaute/", es: "/crear/comunidad/" },
   leaderboard: { en: "/leaderboard/", fr: "/classement/", es: "/clasificacion/" },
   sitemap: { en: "/sitemap/", fr: "/plan-du-site/", es: "/mapa-del-sitio/" },
   legal: { en: "/legal-notices/", fr: "/mentions-legales/", es: "/aviso-legal/" },

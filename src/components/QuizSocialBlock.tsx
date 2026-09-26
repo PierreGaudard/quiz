@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import ScoreCompare from "./ScoreCompare";
 import QuizRating from "./QuizRating";
+import { trackQuizEnd } from "../utils/track";
 
 interface FriendScore {
   id: number;
@@ -69,6 +70,12 @@ const socialT: Record<string, Record<string, string>> = {
 export default function QuizSocialBlock(props: QuizSocialBlockProps) {
   const { quizSlug, userScore, totalQuestions, scoreOutOf, locale = "en" } = props;
   useSaveProgress(quizSlug, props.progress);
+  const ended = useRef(false);
+  useEffect(() => {
+    if (ended.current) return;
+    ended.current = true;
+    trackQuizEnd(quizSlug, userScore, scoreOutOf === undefined ? totalQuestions : scoreOutOf);
+  }, [quizSlug, userScore, totalQuestions, scoreOutOf]);
   // La comparaison avec tous les joueurs et la note du quiz s'affichent pour
   // tout le monde, connecte ou pas (voter, lui, demande un compte). Le bloc
   // amis n'existe que pour un compte.
