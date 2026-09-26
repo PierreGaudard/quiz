@@ -438,11 +438,7 @@ export default function VraiFauxPlayer({ quiz, locale = "en", roomHref = null }:
                   return (
                     <div
                       key={q.id}
-                      className={`flex items-start gap-3 p-3 rounded-xl border ${
-                        wasCorrect
-                          ? "bg-green-50/50 border-green-200"
-                          : "bg-red-50/50 border-red-200"
-                      }`}
+                      className="flex items-start gap-3 p-3 rounded-xl border bg-white border-gray-100"
                     >
                       <span
                         className={`flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold text-white ${

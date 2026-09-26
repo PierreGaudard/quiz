@@ -281,11 +281,7 @@ export default function DuelPlayer({ quiz, locale = "en", roomHref = null }: Pro
               return (
                 <div
                   key={q.id}
-                  className={`flex items-center gap-3 p-3 rounded-xl border ${
-                    isCorrect
-                      ? "bg-green-50 border-green-200"
-                      : "bg-red-50 border-red-200"
-                  }`}
+                  className="flex items-center gap-3 p-3 rounded-xl border bg-white border-gray-100"
                 >
                   <div
                     className={`w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold flex-shrink-0 ${

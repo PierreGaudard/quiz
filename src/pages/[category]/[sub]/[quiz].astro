@@ -129,8 +129,11 @@ const quizJsonLd = buildQuizStructuredData({
           </section>
         </noscript>
 
+        {/* Masquée au départ (le bouton « Jouer entre amis » est déjà à côté
+            du départ) et affichée à la fin de la partie, sous le résultat,
+            quand le joueur a envie de défier quelqu'un (QuizSocialBlock). */}
         {roomHref && (
-          <aside class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4 bg-white border border-line rounded-2xl p-5">
+          <aside id="room-cta" hidden class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4 bg-white border border-line rounded-2xl p-5">
             <div class="flex-1">
               <p class="font-display font-bold text-lg text-gray-900">{roomCopy.title}</p>
               <p class="text-sm text-gray-600 mt-1">{roomCopy.text}</p>

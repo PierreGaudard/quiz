@@ -77,6 +77,8 @@ export default function QuizSocialBlock(props: QuizSocialBlockProps) {
     // Le total est le nombre de questions jouées, pas le plafond du score :
     // le chrono passe scoreOutOf à null, sa partie n'aurait sinon aucun total.
     trackQuizEnd(quizSlug, userScore, totalQuestions);
+    // Carte « Défiez vos amis » de la page du quiz, cachée jusqu'ici.
+    document.getElementById("room-cta")?.removeAttribute("hidden");
   }, [quizSlug, userScore, totalQuestions]);
   // La comparaison avec tous les joueurs et la note du quiz s'affichent pour
   // tout le monde, connecte ou pas (voter, lui, demande un compte). Le bloc

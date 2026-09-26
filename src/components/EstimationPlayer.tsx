@@ -84,6 +84,11 @@ const esT: Record<string, Record<string, string>> = {
   foundInMany: { en: "Found in {n} attempts", fr: "Trouvé en {n} essais", es: "Encontrado en {n} intentos" },
   attempt: { en: "Attempt", fr: "Essai", es: "Intento" },
   tolerance: { en: "Tolerance", fr: "Tolérance", es: "Tolerancia" },
+  introFacts: {
+    en: "{q} questions · {n} attempts per question · 5% tolerance",
+    fr: "{q} questions · {n} essais par question · 5 % de tolérance",
+    es: "{q} preguntas · {n} intentos por pregunta · 5 % de tolerancia",
+  },
   howToPlay: { en: "How to play", fr: "Comment jouer", es: "Cómo jugar" },
   step1: { en: "Guess the number being asked", fr: "Devine le nombre demandé", es: "Adivina el número que se pide" },
   step2: { en: "Follow the clues: higher or lower", fr: "Suis les indices : plus haut ou plus bas", es: "Sigue las pistas: más alto o más bajo" },
@@ -264,24 +269,11 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
             </h1>
             <p className="text-gray-600 mb-6 leading-relaxed">{quiz.description}</p>
 
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="bg-gray-50 rounded-xl p-3">
-                <div className="text-2xl font-display font-black text-brand-600">
-                  {totalQuestions}
-                </div>
-                <div className="text-xs text-gray-500 font-medium">{tt("questions")}</div>
-              </div>
-              <div className="bg-gray-50 rounded-xl p-3">
-                <div className="text-2xl font-display font-black text-brand-600">
-                  {MAX_ATTEMPTS}
-                </div>
-                <div className="text-xs text-gray-500 font-medium">{tt("attempts")}</div>
-              </div>
-              <div className="bg-gray-50 rounded-xl p-3">
-                <div className="text-2xl font-display font-black text-brand-600">5%</div>
-                <div className="text-xs text-gray-500 font-medium">{tt("tolerance")}</div>
-              </div>
-            </div>
+            {/* Une ligne de texte plutôt qu'une rangée de trois chiffres en
+                tuiles, comme l'intro du chrono. */}
+            <p className="text-sm font-semibold text-gray-700 mb-6">
+              {tt("introFacts").replace("{q}", String(totalQuestions)).replace("{n}", String(MAX_ATTEMPTS))}
+            </p>
 
             <div className="bg-brand-50 rounded-xl p-4 mb-8 text-left border border-brand-100">
               <h3 className="font-display font-bold text-brand-800 mb-2 text-sm">
@@ -399,7 +391,7 @@ export default function EstimationPlayer({ quiz, locale = "en" }: Props) {
                 return (
                   <div
                     key={i}
-                    className={`rounded-xl border p-4 ${r.correct ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}
+                    className="rounded-xl border p-4 bg-white border-gray-100"
                   >
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex-1 min-w-0">

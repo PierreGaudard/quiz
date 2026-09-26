@@ -303,13 +303,7 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                   return (
                     <div
                       key={q.id}
-                      className={`flex items-center gap-3 p-3 rounded-xl border ${
-                        isPerfect
-                          ? "bg-green-50 border-green-200"
-                          : r.points > 0
-                            ? "bg-amber-50 border-amber-200"
-                            : "bg-red-50 border-red-200"
-                      }`}
+                      className="flex items-center gap-3 p-3 rounded-xl border bg-white border-gray-100"
                     >
                       <span
                         className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white ${

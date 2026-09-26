@@ -52,11 +52,14 @@ const qpT: Record<string, Record<string, string>> = {
   streakBest: { en: "Best streak", fr: "Meilleure série", es: "Mejor serie" },
 };
 
+// Cartes blanches : la couleur de la lettre suffit à repérer A, B, C et D,
+// quatre fonds pastel côte à côte chargeaient chaque question. Le fond teinté
+// ne vient qu'au survol, pour montrer ce qu'on va cliquer.
 const ANSWER_COLORS = [
-  { bg: "bg-brand-50 hover:bg-brand-100 border-brand-200", label: "bg-brand-600" },
-  { bg: "bg-blue-50 hover:bg-blue-100 border-blue-200", label: "bg-blue-600" },
-  { bg: "bg-amber-50 hover:bg-amber-100 border-amber-200", label: "bg-amber-700" },
-  { bg: "bg-rose-50 hover:bg-rose-100 border-rose-200", label: "bg-rose-600" },
+  { bg: "bg-white border-gray-200 hover:border-brand-300 hover:bg-brand-50", label: "bg-brand-600" },
+  { bg: "bg-white border-gray-200 hover:border-blue-300 hover:bg-blue-50", label: "bg-blue-600" },
+  { bg: "bg-white border-gray-200 hover:border-amber-300 hover:bg-amber-50", label: "bg-amber-700" },
+  { bg: "bg-white border-gray-200 hover:border-rose-300 hover:bg-rose-50", label: "bg-rose-600" },
 ];
 
 /**
@@ -699,7 +702,7 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
                     >
                       {state.hasAnswered ? (state.isCorrect ? "\u2713" : "\u2717") : qIndex + 1}
                     </span>
-                    <h2 className="font-display text-sm md:text-xl font-bold text-gray-900 leading-snug flex-1 pt-0.5">
+                    <h2 className="font-display text-base md:text-xl font-bold text-gray-900 leading-snug flex-1 pt-1">
                       {question.question}
                     </h2>
                   </div>
@@ -722,7 +725,9 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
                 )}
 
                 {/* Question image */}
-                {question.image && (
+                {/* Image seulement pour la question en cours et les questions
+                    passées : dix-neuf photos grisées d'avance chargeaient la page. */}
+                {question.image && isActive && (
                   <div className="px-3 md:px-6 pb-2 md:pb-4">
                     <div className="rounded-xl overflow-hidden">
                       <img
@@ -730,7 +735,7 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
                         alt={question.question}
                         width={800}
                         height={450}
-                        className="w-full max-h-28 md:max-h-64 object-cover"
+                        className="w-full max-h-40 md:max-h-64 object-cover"
                         loading="lazy"
                       />
                     </div>
@@ -739,7 +744,7 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
 
                 {/* Answers grid */}
                 <div className="px-3 md:px-6 pb-3 md:pb-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2.5">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-2.5">
                     {question.answers.map((answer, aIndex) => {
                       const color = ANSWER_COLORS[aIndex % ANSWER_COLORS.length];
                       const isSelected = state.selectedAnswer === answer.id;
@@ -783,10 +788,10 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
                           key={answer.id}
                           onClick={() => !state.hasAnswered && isActive && handleAnswer(qIndex, answer.id)}
                           disabled={state.hasAnswered || !isActive}
-                          className={`w-full flex items-center gap-2 p-2 md:p-3.5 rounded-xl transition-all duration-200 text-left disabled:cursor-default ${stateClasses}`}
+                          className={`w-full min-h-[52px] flex items-center gap-3 px-3 py-2.5 md:p-3.5 rounded-xl transition-colors duration-150 text-left disabled:cursor-default ${stateClasses}`}
                         >
                           <span
-                            className={`flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-md md:rounded-lg flex items-center justify-center text-[11px] md:text-xs font-bold transition-colors duration-200 ${
+                            className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-colors duration-200 ${
                               state.hasAnswered && isCorrectAnswer
                                 ? "bg-green-700 text-white"
                                 : state.hasAnswered && isSelected && !isCorrectAnswer
@@ -802,7 +807,7 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
                                 ? "\u2717"
                                 : LETTER_LABELS[aIndex]}
                           </span>
-                          <span className={`font-medium text-[13px] md:text-sm flex-1 ${
+                          <span className={`font-medium text-[15px] md:text-base leading-snug flex-1 ${
                             state.hasAnswered && !isCorrectAnswer && !isSelected ? "text-gray-500" : "text-gray-800"
                           }`}>
                             {answer.text}
@@ -815,7 +820,7 @@ export default function QuizPagePlayer({ quiz, locale = "en", roomHref = null }:
                   {/* Explanation after answer */}
                   {state.hasAnswered && question.explanation && (
                     <div
-                      className={`mt-2 md:mt-4 p-3 md:p-4 rounded-xl text-xs md:text-sm leading-relaxed ${
+                      className={`mt-3 md:mt-4 p-3 md:p-4 rounded-xl text-sm leading-relaxed ${
                         state.isCorrect
                           ? "bg-green-50 text-green-800 border border-green-200"
                           : "bg-amber-50 text-amber-900 border border-amber-200"
