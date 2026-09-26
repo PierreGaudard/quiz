@@ -65,9 +65,9 @@ const catPageT: Record<string, Record<string, string>> = {
   quizzes: { en: "quizzes", fr: "quiz", es: "quizzes" },
   whyPlayOur: { en: "How the quizzes work", fr: "Comment se jouent les quiz", es: "Cómo se juegan los quizzes" },
   whyPlayText: {
-    en: "A {cat} quiz is a good way to find out what stuck. When a question stumps you, there are three bonuses. 50/50 drops two wrong answers. Second chance forgives a mistake, and a hint points you the right way. An account is free and keeps your scores, if you want to watch your rank climb.",
-    fr: "Un quiz {cat}, c'est une bonne façon de voir ce qu'on a retenu. Quand une question bloque, il y a trois bonus. Le 50/50 enlève deux mauvaises réponses. La seconde chance pardonne une erreur, et l'indice met sur la piste. Le compte est gratuit et garde tes scores, si tu veux voir ton rang monter.",
-    es: "Un quiz de {cat} es una buena manera de ver qué se te quedó. Cuando una pregunta se atasca, tienes tres bonificaciones. El 50/50 quita dos respuestas falsas. La segunda oportunidad perdona un fallo, y la pista te orienta. La cuenta es gratis y guarda tus puntuaciones, si quieres ver subir tu rango.",
+    en: "A {cat} quiz is a good way to find out what stuck. In multiple-choice quizzes, three bonuses help when a question stumps you. 50/50 drops two wrong answers. Second chance forgives a mistake, and a hint points you the right way. An account is free and keeps your scores, if you want to watch your rank climb.",
+    fr: "Un quiz {cat}, c'est une bonne façon de voir ce qu'on a retenu. Dans les QCM, trois bonus aident quand une question bloque. Le 50/50 enlève deux mauvaises réponses. La seconde chance pardonne une erreur, et l'indice met sur la piste. Le compte est gratuit et garde tes scores, si tu veux voir ton rang monter.",
+    es: "Un quiz de {cat} es una buena manera de ver qué se te quedó. En los quizzes de opción múltiple, tres bonificaciones ayudan cuando una pregunta se atasca. El 50/50 quita dos respuestas falsas. La segunda oportunidad perdona un fallo, y la pista te orienta. La cuenta es gratis y guarda tus puntuaciones, si quieres ver subir tu rango.",
   },
   becomeMember: { en: "Become a member", fr: "Devenez membre", es: "Hazte miembro" },
   memberText: {
@@ -623,6 +623,12 @@ export default function CategoryPage({
       )}
 
       {/* ─── 7. SEO FOOTER ─── */}
+      {category.seoHtml ? (
+        <section
+          className="seo-content mt-14 mb-6 border-t border-gray-100 pt-10"
+          dangerouslySetInnerHTML={{ __html: category.seoHtml }}
+        />
+      ) : (
       <section className="mt-14 mb-6 space-y-10 border-t border-gray-100 pt-10">
         {/* intro */}
         <div>
@@ -704,6 +710,7 @@ export default function CategoryPage({
           </p>
         </div>
       </section>
+      )}
       </div>{/* end quiz-grid */}
 
         </div>{/* end main content column */}

@@ -294,3 +294,63 @@
   main p { max-width: 62ch; }
   main .text-center p:not(.flex > p), main p.text-center, main p.mx-auto { margin-inline: auto; }
 }
+
+/*
+ * Textes SEO des pages de catégorie et de sous-thème (src/data/seo-content).
+ * Le HTML vient des fichiers de données : on le met en forme ici plutôt que
+ * de semer des classes dans chaque texte.
+ */
+.seo-content h2 {
+  font-family: var(--font-display, inherit);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin: 2.5rem 0 0.75rem;
+}
+.seo-content > h2:first-child { margin-top: 0; }
+.seo-content h3 {
+  font-family: var(--font-display, inherit);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin: 1.5rem 0 0.5rem;
+}
+.seo-content p,
+.seo-content li {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-gray-600);
+}
+.seo-content p { margin-bottom: 0.875rem; }
+.seo-content ul { list-style: disc; padding-left: 1.25rem; margin: 0 0 1rem; }
+.seo-content li { margin-bottom: 0.5rem; }
+.seo-content strong { color: var(--color-gray-800); font-weight: 600; }
+.seo-content a {
+  color: var(--color-brand-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.seo-content a:hover { color: var(--color-brand-800); }
+.seo-content table {
+  /* Un tableau large défile dans son propre cadre sur mobile, jamais la page. */
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 40rem;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1.25rem;
+  font-size: 0.9375rem;
+}
+.seo-content th,
+.seo-content td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+.seo-content th { color: var(--color-gray-900); font-weight: 600; background: var(--color-gray-50); }
+@media (max-width: 640px) {
+  .seo-content table { font-size: 0.875rem; }
+  .seo-content th, .seo-content td { padding: 0.4rem 0.5rem; }
+}
+.seo-content td { color: var(--color-gray-600); }

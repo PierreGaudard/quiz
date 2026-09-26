@@ -83,9 +83,9 @@ export const quizHarryPotter: TranslatedQuiz = {
             { id: "c", text: "7" },
             { id: "d", text: "8" },
           ],
-          correctAnswer: "c",
+          correctAnswer: "b",
           explanation:
-            "Voldemort a créé intentionnellement 7 Horcruxes pour diviser son âme. Harry est devenu un Horcruxe involontaire, portant le total à 8 fragments d'âme.",
+            "Six : le journal de Jedusor, la bague des Gaunt, le médaillon de Serpentard, la coupe de Poufsouffle, le diadème de Serdaigle et Nagini. Avec le morceau resté dans son corps, son âme était en sept parties. Harry est devenu un septième Horcruxe par accident, la nuit où Voldemort a tenté de le tuer.",
         },
         {
           id: 6,
@@ -372,9 +372,9 @@ export const quizHarryPotter: TranslatedQuiz = {
             { id: "c", text: "7" },
             { id: "d", text: "8" },
           ],
-          correctAnswer: "c",
+          correctAnswer: "b",
           explanation:
-            "Voldemort intentionally created 7 Horcruxes to split his soul. Harry became an unintentional Horcrux, bringing the total to 8 soul fragments.",
+            "Six: Tom Riddle's diary, the Gaunt ring, Slytherin's locket, Hufflepuff's cup, Ravenclaw's diadem and Nagini. With the piece left in his body, his soul was in seven parts. Harry became a seventh Horcrux by accident, the night Voldemort tried to kill him.",
         },
         {
           id: 6,
@@ -661,9 +661,9 @@ export const quizHarryPotter: TranslatedQuiz = {
             { id: "c", text: "7" },
             { id: "d", text: "8" },
           ],
-          correctAnswer: "c",
+          correctAnswer: "b",
           explanation:
-            "Voldemort creó intencionalmente 7 Horrocruxes para dividir su alma. Harry se convirtió en un Horrocrux involuntario, elevando el total a 8 fragmentos de alma.",
+            "Seis: el diario de Tom Ryddle, el anillo de los Gaunt, el guardapelo de Slytherin, la copa de Hufflepuff, la diadema de Ravenclaw y Nagini. Con el trozo que quedaba en su cuerpo, su alma estaba dividida en siete partes. Harry se convirtió en un séptimo Horrocrux por accidente, la noche en que Voldemort intentó matarlo.",
         },
         {
           id: 6,

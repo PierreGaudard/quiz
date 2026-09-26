@@ -111,6 +111,8 @@ export interface CategoryData {
   subcategories: string[];
   seoIntro?: string;
   seoFooter?: string;
+  /** Texte SEO propre à la page (src/data/seo-content), remplace le pied générique. */
+  seoHtml?: string;
 }
 
 export interface GameTypeInfo {

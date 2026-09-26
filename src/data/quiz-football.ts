@@ -63,7 +63,7 @@ export const quizFootball: TranslatedQuiz = {
             { id: "d", text: "Olympique Lyonnais" },
           ],
           correctAnswer: "c",
-          explanation: "Le Paris Saint-Germain est le club le plus titré en Ligue 1 avec 12 titres de champion.",
+          explanation: "Le Paris Saint-Germain est le club le plus titré de Ligue 1, avec 14 titres de champion après celui de 2025-2026, quatre de plus que Saint-Étienne (10).",
         },
         {
           id: 5,
@@ -75,8 +75,8 @@ export const quizFootball: TranslatedQuiz = {
             { id: "c", text: "Hugo Lloris" },
             { id: "d", text: "Lilian Thuram" },
           ],
-          correctAnswer: "d",
-          explanation: "Lilian Thuram détient le record avec 142 sélections en équipe de France.",
+          correctAnswer: "c",
+          explanation: "Hugo Lloris détient le record avec 145 sélections. Il a dépassé Lilian Thuram (142) pendant la Coupe du monde 2022.",
         },
         {
           id: 6,
@@ -318,7 +318,7 @@ export const quizFootball: TranslatedQuiz = {
             { id: "d", text: "Olympique Lyonnais" },
           ],
           correctAnswer: "c",
-          explanation: "Paris Saint-Germain is the most decorated Ligue 1 club with 12 league titles.",
+          explanation: "Paris Saint-Germain is the most decorated Ligue 1 club, with 14 league titles after the 2025-26 season, four more than Saint-Étienne (10).",
         },
         {
           id: 5,
@@ -330,8 +330,8 @@ export const quizFootball: TranslatedQuiz = {
             { id: "c", text: "Hugo Lloris" },
             { id: "d", text: "Lilian Thuram" },
           ],
-          correctAnswer: "d",
-          explanation: "Lilian Thuram holds the record with 142 caps for the French national team.",
+          correctAnswer: "c",
+          explanation: "Hugo Lloris holds the record with 145 caps. He passed Lilian Thuram (142) during the 2022 World Cup.",
         },
         {
           id: 6,
@@ -573,7 +573,7 @@ export const quizFootball: TranslatedQuiz = {
             { id: "d", text: "Olympique Lyonnais" },
           ],
           correctAnswer: "c",
-          explanation: "El Paris Saint-Germain es el club más laureado de la Ligue 1 con 12 títulos de liga.",
+          explanation: "El Paris Saint-Germain es el club más laureado de la Ligue 1, con 14 títulos de liga tras la temporada 2025-2026, cuatro más que el Saint-Étienne (10).",
         },
         {
           id: 5,
@@ -585,8 +585,8 @@ export const quizFootball: TranslatedQuiz = {
             { id: "c", text: "Hugo Lloris" },
             { id: "d", text: "Lilian Thuram" },
           ],
-          correctAnswer: "d",
-          explanation: "Lilian Thuram ostenta el récord con 142 convocatorias con la selección francesa.",
+          correctAnswer: "c",
+          explanation: "Hugo Lloris ostenta el récord con 145 partidos. Superó a Lilian Thuram (142) durante el Mundial de 2022.",
         },
         {
           id: 6,
