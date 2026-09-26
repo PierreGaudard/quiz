@@ -596,7 +596,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
           ],
           correctAnswer: "d",
           explanation:
-            "Reiner Braun. Su Titán está cubierto de placas de piel endurecida, y así consigue derribar la puerta del Muro María.",
+            "Reiner Braun. Su Titán está cubierto de placas de piel endurecida, y así consigue derribar la puerta del Muralla María.",
         },
         {
           id: 3,
@@ -677,7 +677,7 @@ export const quizAttaqueDesTitansNeufTitans: TranslatedQuiz = {
           ],
           correctAnswer: "a",
           explanation:
-            "Armin. En la batalla para recuperar el Muro María queda quemado y casi muerto, y le hacen devorar a Bertholdt para salvarlo.",
+            "Armin. En la batalla para recuperar el Muralla María queda quemado y casi muerto, y le hacen devorar a Bertholdt para salvarlo.",
         },
         {
           id: 9,

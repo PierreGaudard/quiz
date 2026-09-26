@@ -60,7 +60,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 4,
           question:
-            "Quel pays a un drapeau à croix blanche sur fond rouge ?",
+            "Quel pays a un drapeau carré, rouge, avec une croix blanche au centre ?",
           answers: [
             { id: "a", text: "Danemark" },
             { id: "b", text: "Suède" },
@@ -69,7 +69,7 @@ export const quizDrapeaux: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "Le drapeau suisse est un carré rouge portant une croix blanche en son centre. Le Danemark a aussi une croix, mais blanche sur fond rouge avec une croix scandinave (décalée vers la gauche).",
+            "Le drapeau suisse est un carré rouge portant une croix blanche en son centre. Le Danemark a lui aussi une croix blanche sur fond rouge, mais son drapeau est rectangulaire et sa croix, dite scandinave, est décalée vers la hampe.",
         },
         {
           id: 5,
@@ -123,9 +123,9 @@ export const quizDrapeaux: TranslatedQuiz = {
             { id: "c", text: "Japon" },
             { id: "d", text: "Philippines" },
           ],
-          correctAnswer: "b",
+          correctAnswer: "a",
           explanation:
-            "Le drapeau de l'Uruguay arbore le Sol de Mayo (Soleil de Mai) avec 16 rayons droits et 16 rayons ondulés, soit 32 rayons au total.",
+            "Le Soleil de Mai du drapeau argentin a 32 rayons, 16 droits et 16 ondulés. L'Uruguay a lui aussi un Soleil de Mai sur son drapeau, mais avec 16 rayons.",
         },
         {
           id: 9,
@@ -242,7 +242,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 17,
           question:
-            "Quel drapeau est entièrement vert avec un croissant et une étoile blancs ?",
+            "Quel drapeau est vert avec une bande blanche côté hampe, un croissant et une étoile blancs ?",
           answers: [
             { id: "a", text: "Arabie saoudite" },
             { id: "b", text: "Mauritanie" },
@@ -344,7 +344,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 4,
           question:
-            "Which country has a flag with a white cross on a red background?",
+            "Which country has a square red flag with a white cross in the center?",
           answers: [
             { id: "a", text: "Denmark" },
             { id: "b", text: "Sweden" },
@@ -353,7 +353,7 @@ export const quizDrapeaux: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "The Swiss flag is a red square with a white cross at its center. Denmark also has a cross, but it is a Scandinavian cross (offset to the left) on a red background.",
+            "The Swiss flag is a red square with a white cross at its center. Denmark also has a white cross on red, but its flag is rectangular and its Scandinavian cross is offset toward the hoist.",
         },
         {
           id: 5,
@@ -407,9 +407,9 @@ export const quizDrapeaux: TranslatedQuiz = {
             { id: "c", text: "Japan" },
             { id: "d", text: "Philippines" },
           ],
-          correctAnswer: "b",
+          correctAnswer: "a",
           explanation:
-            "Uruguay's flag features the Sol de Mayo (Sun of May) with 16 straight rays and 16 wavy rays, totaling 32 rays.",
+            "The Sun of May on Argentina's flag has 32 rays, 16 straight and 16 wavy. Uruguay's flag also has a Sun of May, but with 16 rays.",
         },
         {
           id: 9,
@@ -526,7 +526,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 17,
           question:
-            "Which flag is entirely green with a white crescent and star?",
+            "Which flag is green with a white stripe at the hoist and a white crescent and star?",
           answers: [
             { id: "a", text: "Saudi Arabia" },
             { id: "b", text: "Mauritania" },
@@ -628,7 +628,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 4,
           question:
-            "\u00bfQué país tiene una bandera con una cruz blanca sobre fondo rojo?",
+            "\u00bfQué país tiene una bandera cuadrada, roja, con una cruz blanca en el centro?",
           answers: [
             { id: "a", text: "Dinamarca" },
             { id: "b", text: "Suecia" },
@@ -637,7 +637,7 @@ export const quizDrapeaux: TranslatedQuiz = {
           ],
           correctAnswer: "c",
           explanation:
-            "La bandera suiza es un cuadrado rojo con una cruz blanca en su centro. Dinamarca también tiene una cruz, pero es una cruz escandinava (desplazada a la izquierda) sobre fondo rojo.",
+            "La bandera suiza es un cuadrado rojo con una cruz blanca en su centro. Dinamarca también tiene una cruz blanca sobre fondo rojo, pero su bandera es rectangular y su cruz escandinava está desplazada hacia el asta.",
         },
         {
           id: 5,
@@ -691,9 +691,9 @@ export const quizDrapeaux: TranslatedQuiz = {
             { id: "c", text: "Japón" },
             { id: "d", text: "Filipinas" },
           ],
-          correctAnswer: "b",
+          correctAnswer: "a",
           explanation:
-            "La bandera de Uruguay presenta el Sol de Mayo con 16 rayos rectos y 16 rayos ondulados, un total de 32 rayos.",
+            "El Sol de Mayo de la bandera argentina tiene 32 rayos, 16 rectos y 16 ondulados. Uruguay también lleva un Sol de Mayo en su bandera, pero con 16 rayos.",
         },
         {
           id: 9,
@@ -810,7 +810,7 @@ export const quizDrapeaux: TranslatedQuiz = {
         {
           id: 17,
           question:
-            "\u00bfQué bandera es enteramente verde con una media luna y una estrella blancas?",
+            "\u00bfQué bandera es verde, con una franja blanca junto al asta y una media luna y una estrella blancas?",
           answers: [
             { id: "a", text: "Arabia Saudita" },
             { id: "b", text: "Mauritania" },

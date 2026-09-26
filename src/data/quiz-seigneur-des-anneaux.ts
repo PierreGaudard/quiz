@@ -502,7 +502,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
             { id: "a", text: "Glamdring" },
             { id: "b", text: "Orcrist" },
             { id: "c", text: "Andúril" },
-            { id: "d", text: "Dard" },
+            { id: "d", text: "Sting" },
           ],
           correctAnswer: "d",
           explanation:
@@ -774,7 +774,7 @@ export const quizSeigneurDesAnneaux: TranslatedQuiz = {
             { id: "a", text: "Glamdring" },
             { id: "b", text: "Orcrist" },
             { id: "c", text: "Andúril" },
-            { id: "d", text: "Dard" },
+            { id: "d", text: "Dardo" },
           ],
           correctAnswer: "d",
           explanation:

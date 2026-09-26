@@ -1,5 +1,6 @@
 import type { Locale } from "../i18n/config";
 import { getCategories, findCategoryDef, getGameTypes, categoryDefs, getSubcategoryImageSlug } from "../data/categories";
+import { getCategorySeoHtml, getSubcategorySeoHtml } from "../data/seo-content";
 import { getAllQuizzes, getQuizzesByCategory, getFeaturedQuiz, getAllSubcategoryPaths, getQuizzesBySubcategory, slugifySubcategory } from "../data/quizzes";
 
 /** Generate static paths for [slug].astro (categories only). */
@@ -33,7 +34,9 @@ export function getSubPaths(locale: Locale) {
 /** Resolve category page data. */
 export function resolveCategoryData(categorySlug: string, locale: Locale) {
   const categories = getCategories(locale);
-  const category = categories.find((c) => c.slug === categorySlug)!;
+  const found = categories.find((c) => c.slug === categorySlug)!;
+  const frSlug = findCategoryDef(categorySlug)?.slug || categorySlug;
+  const category = { ...found, seoHtml: getCategorySeoHtml(frSlug, locale) };
   const catQuizzes = getQuizzesByCategory(categorySlug, locale);
   const featured = getFeaturedQuiz(categorySlug, locale);
   const allGameTypes = getGameTypes(locale);
@@ -106,6 +109,7 @@ export function resolveSubcategoryData(categorySlug: string, subSlug: string, su
     seoIntro: quizzes[0]?.description || category.seoIntro,
     seoFooter: undefined,
     subcategories: [] as string[],
+    seoHtml: getSubcategorySeoHtml(getSubcategoryImageSlug(subName, locale), locale),
   };
 
   const featured = quizzes.find((q: any) => q.featured) || [...quizzes].sort((a: any, b: any) => (b.playCount || 0) - (a.playCount || 0))[0];

@@ -695,32 +695,34 @@ revient dans trois pages, on change, et la liste dit par quoi.
   propos, de ce côté-là, dans une certaine mesure, à bien y réfléchir, en
   quelque sorte, pour ainsi dire
 - à défaut de, faute de, quitte à, histoire de, question de, rien que pour, ne
-  serait-ce que, tout simplement, mine de rien, au bout du compte, au final
+  serait-ce que, tout simplement
 - entre autres, de loin, de près, à ce niveau-là, sur ce point-là, de ce point
   de vue, dans ce cas précis, à ce stade, pour le coup, à l'inverse, tant qu'à
   faire
-- autant dire que, il faut dire que, il faut bien reconnaître que, force est
-  de constater que, encore faut-il que, reste à savoir si
+- il faut dire que, encore faut-il que
 - tout dépend de, ça dépend surtout de, selon les cas, suivant les cas, dans
   bien des cas, la plupart du temps
 - une bonne partie de, une petite partie de, pas mal de, un certain nombre de,
   une poignée de, une multitude de
 - pas forcément, pas nécessairement, pas toujours, pas vraiment, plus ou
   moins, plus d'une fois, à plusieurs reprises
-- ce qui est intéressant, c'est que… / le problème, c'est que… / le truc,
-  c'est que… / on pourrait penser que… / en réalité, c'est un peu plus
-  compliqué / ça paraît simple, mais… / c'est là que ça devient intéressant
-- le plus simple reste de…, pour faire simple…, pour prendre un exemple
-  concret…, disons que…, autrement dit…, en clair…, pour le dire autrement…
-- ça change pas mal de choses, ça peut faire une vraie différence, ça reste
-  quand même…, ce n'est pas rien, ça vaut le coup de…, à chacun de voir
-- c'est surtout une question de…, tout est une question de…, il y a quand même
-  un point à garder en tête, c'est justement là que…, c'est souvent à ce
-  moment-là que…
+- le plus simple reste de…, pour prendre un exemple concret…, autrement
+  dit…, ça vaut le coup de…
 
 Et on évite systématiquement la formulation la plus élégante ou la plus
 académique quand une tournure simple, voire un peu familière, colle mieux au
 ton de la page.
+
+**Retiré de la réserve le 26/09/2026, à ne jamais employer** : « ce qui est
+intéressant, c'est que », « le problème, c'est que », « le truc, c'est que »,
+« on pourrait penser que », « en réalité, c'est un peu plus compliqué », « ça
+paraît simple, mais », « c'est là que ça devient intéressant », « ça change
+pas mal de choses », « ce n'est pas rien », « tout est une question de »,
+« c'est justement là que », « autant dire que », « force est de constater »,
+« mine de rien », « au final », « au bout du compte ». Elles venaient de
+quiz-couple, et ce sont des tics : fausse surprise, retournement, chute de
+paragraphe. Pierre a demandé le 26/09/2026 qu'aucun pattern d'écriture générée
+ne reste.
 
 ### Varier aussi la construction
 
@@ -736,6 +738,60 @@ proscrire :
 
 Une phrase courte a le droit de suivre une phrase longue. Une transition a le
 droit d'être directe. Un paragraphe a le droit de commencer sans connecteur.
+
+## Textes SEO des catégories et des sous-thèmes
+
+Les pages de catégorie et de sous-thème portent un texte propre, un fichier
+par page : `src/data/seo-content/cat/<slug FR>.ts` et
+`src/data/seo-content/sub/<slug FR du sous-thème>.ts` (le même slug que
+l'image `sub-<slug>.webp`), avec le HTML des trois langues. Quand il existe,
+il remplace le pied de page générique de `CategoryPage` (les blocs
+« explication », « niveaux de difficulté » et « comment se jouent les quiz »,
+identiques d'une page à l'autre). Les pages de quiz n'en ont pas, c'est voulu.
+
+### Le modèle à suivre
+
+Relevé sur les SERP le 26/09/2026. Les deux pages à imiter sont **Lumni**
+(chaque réponse apporte un fait daté ou chiffré : « Berne, environ 130 000
+habitants. On la confond souvent avec Genève, la deuxième ville du pays »)
+et **Geograck** (la page dit ce qui est inclus, pourquoi c'est difficile, sur
+quoi se concentrer, dans quel ordre s'entraîner, sans une phrase de
+remplissage). Les contre-modèles sont L'Étudiant et quiz-culture-generale.com
+(« Bienvenue sur notre quiz », « Que vous soyez expert ou novice », « amusant
+et interactif », « fait pour vous », « Alors, êtes-vous prêt ? »), Quizo
+(« Des formats qui changent tout », « Pas seulement bonne ou mauvaise »,
+vertu affichée) et quiz-couple lui-même (« n'a l'air de rien. Et pourtant »,
+« C'est la vraie question », « Soyons honnêtes », titres en aphorisme).
+
+Concrètement :
+
+- **Des faits, pas des effets.** Dates, chiffres, noms, et ce que contiennent
+  réellement les quiz de la page (nombre de questions, mode, niveau, exemples
+  de questions tirés des fichiers de quiz). Chaque fait se vérifie avant
+  d'être écrit ; dans le doute, on l'enlève.
+- **Aucune affirmation invérifiable** : pas de « un des quiz les plus
+  joués », « tombe régulièrement », « la question que tout le monde rate ».
+  Un chiffre d'audience ne s'écrit que s'il vient de la base (`quiz_scores`).
+- **Pas de question rhétorique dans la prose** (les questions ne vivent que
+  dans les titres de FAQ), pas de phrase de chute, pas de contraste « on croit
+  X / en fait Y », pas d'énumération « la première… la deuxième… », pas de
+  triade.
+- **Structure** : un H2 d'ouverture qui présente les quiz de la page, puis
+  des H2 qui répondent à ce que cherche la requête (dans quel ordre, pourquoi
+  c'est piégeux, comment retenir, etc.), un tableau quand il y a des données
+  à comparer, une FAQ en H3 à la fin. Au moins 2 liens internes en plein
+  texte, selon les règles de maillage ci-dessous.
+- **EN et ES s'écrivent pour leur marché**, à partir de leur propre brief,
+  pas en traduisant le FR.
+
+### Les deux contrôles, avant tout commit de texte
+
+1. `node scripts/check-seo-tics.mjs` doit sortir **sans aucune erreur** (les
+   « attention » se relisent à la main). Le détecteur couvre FR, EN et ES et
+   reprend les tics de cette charte et ceux relevés chez les concurrents.
+2. Le texte est noté dans corpus (brief `fr`, `us` ou `es` sur le mot-clé de
+   tête de la page) et doit **dépasser le meilleur concurrent**, en notant le
+   texte avec le H1 et la liste des quiz de la page, comme Google le voit.
 
 ## Maillage interne : les règles
 
