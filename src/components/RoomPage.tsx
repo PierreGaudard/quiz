@@ -625,7 +625,7 @@ export default function RoomPage({ locale = "en", quizzes }: Props) {
           )}
           {errorBox}
         </section>
-        <div className="md:sticky md:top-32 self-start">{scoreboard(tt("live"))}</div>
+        <div className="md:sticky md:top-36 self-start">{scoreboard(tt("live"))}</div>
       </div>
     );
   }
