@@ -181,7 +181,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
           ],
           correctAnswer: "a",
           explanation:
-            "Le capitaine Price, sur le toit d'un hôtel de Dubaï, en le pendant avec un câble. Shepherd ne pouvait pas le faire : Price l'avait déjà tué à la fin de Modern Warfare 2.",
+            "Le capitaine Price, sur le toit d'un hôtel de Dubaï, en le pendant avec un câble. Shepherd ne pouvait pas le faire : Soap l'avait déjà tué à la fin de Modern Warfare 2, d'un couteau lancé.",
         },
         {
           id: 15,
@@ -413,7 +413,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
           ],
           correctAnswer: "a",
           explanation:
-            "Captain Price, on the roof of a hotel in Dubai, by hanging him with a cable. Shepherd couldn't have done it: Price had already killed him at the end of Modern Warfare 2.",
+            "Captain Price, on the roof of a hotel in Dubai, by hanging him with a cable. Shepherd couldn't have done it: Soap had already killed him at the end of Modern Warfare 2, with a thrown knife.",
         },
         {
           id: 15,
@@ -645,7 +645,7 @@ export const quizCallOfDutyPersonnages: TranslatedQuiz = {
           ],
           correctAnswer: "a",
           explanation:
-            "El capitán Price, en la azotea de un hotel de Dubái, ahorcándolo con un cable. Shepherd no podía ser: Price ya lo había matado al final de Modern Warfare 2.",
+            "El capitán Price, en la azotea de un hotel de Dubái, ahorcándolo con un cable. Shepherd no podía ser: Soap ya lo había matado al final de Modern Warfare 2, con un cuchillo lanzado.",
         },
         {
           id: 15,
