@@ -279,7 +279,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
           correctAnswer: "30",
           correctValue: 30,
           explanation:
-            "30. To get there you need bookshelves around the table, and 30 experience levels to spend.",
+            "30. To get there you need bookshelves around the table, and at least 30 experience levels (the enchantment itself only costs 3).",
         },
         {
           id: 8,
@@ -470,7 +470,7 @@ export const quizMinecraftChiffres: TranslatedQuiz = {
           correctAnswer: "30",
           correctValue: 30,
           explanation:
-            "30. Para llegar ahí hay que rodear la mesa de estanterías y tener 30 niveles de experiencia para gastar.",
+            "30. Para llegar ahí hay que rodear la mesa de estanterías y tener al menos 30 niveles de experiencia (el encantamiento solo cuesta 3).",
         },
         {
           id: 8,
