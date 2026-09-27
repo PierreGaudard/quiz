@@ -1,4 +1,5 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import AuthModal from "./AuthModal";
 import { getCategories, categoryDefs, difficultyLabels } from "../data/categories";
 import { categoryIcons } from "../data/icons";
 import { withBase } from "../utils/base";
@@ -114,9 +115,9 @@ const T: Record<string, Record<string, string>> = {
     es: "Tiene su propio enlace permanente. Tú ya puedes jugarlo; tus amigos podrán en cuanto se haya revisado:",
   },
   step5NoteSaved: {
-    en: "The WizyQuiz team reads every quiz before opening it. Once accepted, it also shows up in the community quizzes.",
-    fr: "L'équipe de WizyQuiz relit chaque quiz avant de l'ouvrir. Une fois accepté, il apparaît aussi dans les quiz de la communauté.",
-    es: "El equipo de WizyQuiz revisa cada quiz antes de abrirlo. Una vez aceptado, aparece también en los quizzes de la comunidad.",
+    en: "The WizyQuiz team reads every quiz before opening it. Once accepted, it also shows up in the community quizzes. You'll find it in your profile, with the number of times it has been played.",
+    fr: "L'équipe de WizyQuiz relit chaque quiz avant de l'ouvrir. Une fois accepté, il apparaît aussi dans les quiz de la communauté. Tu le retrouves dans ton profil, avec le nombre de parties jouées.",
+    es: "El equipo de WizyQuiz revisa cada quiz antes de abrirlo. Una vez aceptado, aparece también en los quizzes de la comunidad. Lo encontrarás en tu perfil, con el número de partidas jugadas.",
   },
   step5TitleLocal: { en: "Your quiz is ready!", fr: "Ton quiz est prêt !", es: "¡Tu quiz está listo!" },
   step5IntroLocal: {
@@ -124,12 +125,18 @@ const T: Record<string, Record<string, string>> = {
     fr: "Partage-le avec ce lien. Le quiz entier est enregistré dans le lien lui-même, garde-le quelque part.",
     es: "Compártelo con este enlace. El quiz entero va dentro del propio enlace, guárdalo en algún sitio.",
   },
-  step5NoteLocal: {
-    en: "With a free account, your quizzes get a short permanent link and stay saved on every device.",
-    fr: "Avec un compte gratuit, tes quiz ont un lien permanent court et restent enregistrés sur tous tes appareils.",
-    es: "Con una cuenta gratuita, tus quiz tienen un enlace permanente corto y se guardan en todos tus dispositivos.",
+  myQuizzes: { en: "See my quizzes", fr: "Voir mes quiz", es: "Ver mis quizzes" },
+  // Créer un quiz demande un compte : fenêtre d'inscription sur place.
+  gateTitle: { en: "Sign up to create your quiz", fr: "Inscris-toi pour créer ton quiz", es: "Regístrate para crear tu quiz" },
+  gateLoginTitle: { en: "Log in to create your quiz", fr: "Connecte-toi pour créer ton quiz", es: "Inicia sesión para crear tu quiz" },
+  gateText: {
+    en: "Every quiz you make is tied to your account: you'll find it in your profile, with its link and the number of times other players have played it.",
+    fr: "Chaque quiz créé est rattaché à ton compte : tu le retrouves dans ton profil, avec son lien et le nombre de parties jouées par les autres joueurs.",
+    es: "Cada quiz que creas va unido a tu cuenta: lo encuentras en tu perfil, con su enlace y el número de partidas que han jugado los demás.",
   },
-  createAccount: { en: "Create an account", fr: "Créer un compte", es: "Crear una cuenta" },
+  gateSignup: { en: "Create my account", fr: "Créer mon compte", es: "Crear mi cuenta" },
+  gateLogin: { en: "I already have an account", fr: "J'ai déjà un compte", es: "Ya tengo cuenta" },
+  gateLoginCta: { en: "Log in", fr: "Me connecter", es: "Iniciar sesión" },
   copyLink: { en: "Copy the link", fr: "Copier le lien", es: "Copiar el enlace" },
   copied: { en: "Link copied!", fr: "Lien copié !", es: "¡Enlace copiado!" },
   saving: { en: "Saving…", fr: "Enregistrement…", es: "Guardando…" },
@@ -226,6 +233,22 @@ export default function QuizCreator({ locale = "en" }: { locale?: CreatorLocale 
     difficultyStyles.find((d) => labels[d.level] === value)?.level;
 
   const [step, setStep] = useState(1);
+  // null tant que /api/auth/me n'a pas répondu.
+  const [authed, setAuthed] = useState<boolean | null>(null);
+  const [authModal, setAuthModal] = useState<null | "signup" | "login">(null);
+  // Session expirée au moment de publier : on republie après la connexion.
+  const retrySubmit = useRef(false);
+
+  useEffect(() => {
+    fetch("/api/auth/me")
+      .then((r) => r.json())
+      .then((d) => {
+        const ok = !!d?.user;
+        setAuthed(ok);
+        if (!ok) setAuthModal("signup");
+      })
+      .catch(() => { setAuthed(false); setAuthModal("signup"); });
+  }, []);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedSubcategory, setSelectedSubcategory] = useState("");
   const [title, setTitle] = useState("");
@@ -376,20 +399,24 @@ export default function QuizCreator({ locale = "en" }: { locale?: CreatorLocale 
     let link = shareLink;
     let failed = false;
     try {
-      const me = await fetch("/api/auth/me").then((r) => r.json()).catch(() => null);
-      if (me?.user) {
-        const res = await fetch("/api/quiz/custom", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(quiz),
-        });
-        const data = await res.json().catch(() => null);
-        if (res.ok && data?.slug) {
-          mode = "saved";
-          link = window.location.origin + withBase(playPath) + "?q=" + encodeURIComponent(data.slug);
-        } else {
-          failed = true;
-        }
+      const res = await fetch("/api/quiz/custom", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(quiz),
+      });
+      if (res.status === 401) {
+        setSaving(false);
+        setAuthed(false);
+        retrySubmit.current = true;
+        setAuthModal("login");
+        return;
+      }
+      const data = await res.json().catch(() => null);
+      if (res.ok && data?.slug) {
+        mode = "saved";
+        link = window.location.origin + withBase(playPath) + "?q=" + encodeURIComponent(data.slug);
+      } else {
+        failed = true;
       }
     } catch {
       failed = true;
@@ -904,7 +931,7 @@ export default function QuizCreator({ locale = "en" }: { locale?: CreatorLocale 
   // --- Step 5: Submission success ---
   function renderStep5() {
     const saved = saveMode === "saved";
-    const signupPath = locale === "fr" ? "/fr/inscription/" : locale === "es" ? "/es/registrarse/" : "/sign-up/";
+    const profilePath = locale === "fr" ? "/fr/profil/" : locale === "es" ? "/es/perfil/" : "/profile/";
     const copy = () => {
       navigator.clipboard?.writeText(previewLink).then(() => {
         setLinkCopied(true);
@@ -929,7 +956,7 @@ export default function QuizCreator({ locale = "en" }: { locale?: CreatorLocale 
               {linkCopied ? tt("copied") : tt("copyLink")}
             </button>
           </div>
-          <p className="text-sm text-gray-600 max-w-md mx-auto mt-4">{tt(saved ? "step5NoteSaved" : "step5NoteLocal")}</p>
+          {saved && <p className="text-sm text-gray-600 max-w-md mx-auto mt-4">{tt("step5NoteSaved")}</p>}
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -939,9 +966,9 @@ export default function QuizCreator({ locale = "en" }: { locale?: CreatorLocale 
           >
             {tt("previewMine")}
           </a>
-          {!saved && (
-            <a href={withBase(signupPath)} className="border border-line text-gray-800 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition-colors inline-flex items-center justify-center">
-              {tt("createAccount")}
+          {saved && (
+            <a href={withBase(profilePath)} className="border border-line text-gray-800 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition-colors inline-flex items-center justify-center">
+              {tt("myQuizzes")}
             </a>
           )}
           <button
@@ -974,8 +1001,54 @@ export default function QuizCreator({ locale = "en" }: { locale?: CreatorLocale 
     }
   }
 
+  const modal = authModal && (
+    <AuthModal
+      lang={locale === "fr" || locale === "es" ? locale : "en"}
+      initialMode={authModal}
+      title={tt("gateTitle")}
+      loginTitle={tt("gateLoginTitle")}
+      text={tt("gateText")}
+      signupCta={tt("gateSignup")}
+      loginCta={tt("gateLoginCta")}
+      onClose={() => setAuthModal(null)}
+      onAuthenticated={() => {
+        setAuthModal(null);
+        setAuthed(true);
+        if (retrySubmit.current) {
+          retrySubmit.current = false;
+          submitQuiz();
+        }
+      }}
+    />
+  );
+
+  if (authed === null) return <div className="max-w-3xl mx-auto px-4 py-8 min-h-[50vh]" />;
+
+  // Sans compte, pas d'éditeur : la fenêtre s'ouvre d'elle-même, et cette
+  // carte permet de la rouvrir si on l'a fermée.
+  if (!authed && !submitted && step === 1 && !retrySubmit.current) {
+    return (
+      <div className="max-w-3xl mx-auto px-4 py-8">
+        <div className="bg-white rounded-2xl border border-gray-100 p-8 text-center">
+          <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">{tt("gateTitle")}</h2>
+          <p className="text-gray-600 max-w-md mx-auto mb-6">{tt("gateText")}</p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <button type="button" onClick={() => setAuthModal("signup")} className="cursor-pointer bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors">
+              {tt("gateSignup")}
+            </button>
+            <button type="button" onClick={() => setAuthModal("login")} className="cursor-pointer border border-gray-200 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition-colors">
+              {tt("gateLogin")}
+            </button>
+          </div>
+        </div>
+        {modal}
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
+      {modal}
       {renderProgress()}
 
       {renderCurrentStep()}

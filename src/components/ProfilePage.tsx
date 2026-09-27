@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { WEAK_PASSWORD_ERROR } from "../lib/password-policy";
 import { getLevelFromXp, getXpProgress } from "../lib/levels";
+import MyQuizzes from "./MyQuizzes";
 
 interface User {
   id: number;
@@ -239,6 +240,11 @@ export default function ProfilePage({ locale = "en" }: { locale?: string }) {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Quiz créés par le joueur, avec leurs parties jouées */}
+      <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 mb-6">
+        <MyQuizzes locale={(locale === "fr" || locale === "es" ? locale : "en")} />
       </div>
 
       {/* Quiz History */}

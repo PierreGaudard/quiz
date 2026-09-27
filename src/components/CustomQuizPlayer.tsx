@@ -180,6 +180,10 @@ export default function CustomQuizPlayer() {
     if (!quiz) return;
     if (currentIndex + 1 >= quiz.questions.length) {
       trackQuizEnd(customSlug(), score, quiz.questions.length);
+      // Quiz en base (?q=<slug>) : une partie de plus au compteur que son
+      // auteur voit dans son profil. Les liens par hash n'ont pas de compteur.
+      const q = new URLSearchParams(window.location.search).get("q");
+      if (q) fetch(`/api/quiz/custom/${encodeURIComponent(q)}`, { method: "POST", keepalive: true }).catch(() => {});
       setScreen("result");
     } else {
       setCurrentIndex((i) => i + 1);
