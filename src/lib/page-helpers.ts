@@ -1,6 +1,6 @@
 import type { Locale } from "../i18n/config";
 import { getCategories, findCategoryDef, getGameTypes, categoryDefs, getSubcategoryImageSlug } from "../data/categories";
-import { getCategorySeoHtml, getSubcategorySeoHtml } from "../data/seo-content";
+import { getCategorySeoHtml, getSubcategorySeoHtml, getCategoryIntro, getSubcategoryIntro } from "../data/seo-content";
 import { getAllQuizzes, getQuizzesByCategory, getFeaturedQuiz, getAllSubcategoryPaths, getQuizzesBySubcategory, slugifySubcategory } from "../data/quizzes";
 
 /** Generate static paths for [slug].astro (categories only). */
@@ -36,7 +36,7 @@ export function resolveCategoryData(categorySlug: string, locale: Locale) {
   const categories = getCategories(locale);
   const found = categories.find((c) => c.slug === categorySlug)!;
   const frSlug = findCategoryDef(categorySlug)?.slug || categorySlug;
-  const category = { ...found, seoHtml: getCategorySeoHtml(frSlug, locale) };
+  const category = { ...found, seoIntro: getCategoryIntro(frSlug, locale) || found.seoIntro, seoHtml: getCategorySeoHtml(frSlug, locale) };
   const catQuizzes = getQuizzesByCategory(categorySlug, locale);
   const featured = getFeaturedQuiz(categorySlug, locale);
   const allGameTypes = getGameTypes(locale);
@@ -103,10 +103,9 @@ export function resolveSubcategoryData(categorySlug: string, subSlug: string, su
     slug: subSlug,
     coverImage: `/images/sub-${getSubcategoryImageSlug(subName, locale)}.webp`,
     description: subcategoryDescription(subName, category.name, quizzes.length, locale),
-    // Les textes de la categorie parlaient de toute la categorie (« Football,
-    // basket, tennis... ») : sur la page d'un sous-theme, on montre plutot
-    // la description de son quiz, et pas de texte de pied de categorie.
-    seoIntro: quizzes[0]?.description || category.seoIntro,
+    // Intro propre au sous-thème (src/data/seo-content/intro/sub) ; à défaut,
+    // la description de son premier quiz, jamais le texte de la catégorie.
+    seoIntro: getSubcategoryIntro(getSubcategoryImageSlug(subName, locale), locale) || quizzes[0]?.description || category.seoIntro,
     seoFooter: undefined,
     subcategories: [] as string[],
     seoHtml: getSubcategorySeoHtml(getSubcategoryImageSlug(subName, locale), locale),

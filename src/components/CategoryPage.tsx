@@ -172,12 +172,15 @@ function formatPlayCount(n: number): string {
 
 /** Bold 1-2 short keywords in the intro text (category name + "quiz"). */
 function boldifyIntro(text: string, categoryName: string): React.ReactNode {
-  const regex = new RegExp(`(${categoryName}|quiz)`, "gi");
+  // Mots entiers seulement : « quiz » ne doit pas couper « quizzes » en deux.
+  const name = categoryName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`(?<!\\p{L})(${name}|quizzes|quiz)(?!\\p{L})`, "giu");
   const parts = text.split(regex);
   if (parts.length <= 1) return text;
   let boldCount = 0;
   return parts.map((part, i) => {
-    if (regex.test(part) && boldCount < 2) {
+    // Avec un seul groupe capturant, split place les mots trouvés aux indices impairs.
+    if (i % 2 === 1 && boldCount < 2) {
       boldCount++;
       return <strong key={i} className="text-gray-700">{part}</strong>;
     }
@@ -363,14 +366,14 @@ export default function CategoryPage({
         </div>
 
         <p className="text-sm italic text-gray-500 mt-2">{quizzes.length} quiz{totalPlays > 0 ? ` \u00b7 ${formatPlayCount(totalPlays)} ${tt("plays")}` : ""}</p>
-      </section>
 
-      {/* ─── seoIntro ─── */}
-      {category.seoIntro && (
-        <p className="text-sm text-gray-500 leading-relaxed mb-10 max-w-3xl">
-          {boldifyIntro(category.seoIntro, category.name.toLowerCase())}
-        </p>
-      )}
+        {/* ─── seoIntro : paragraphe propre à la page, sous le H1 ─── */}
+        {category.seoIntro && (
+          <p className="text-base text-gray-600 leading-relaxed mt-4 max-w-3xl">
+            {boldifyIntro(category.seoIntro, category.name.toLowerCase())}
+          </p>
+        )}
+      </section>
 
       {/* ─── SEARCH BAR ─── */}
       <section className="mb-6">
