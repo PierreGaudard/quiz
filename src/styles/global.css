@@ -332,25 +332,44 @@
   text-underline-offset: 2px;
 }
 .seo-content a:hover { color: var(--color-brand-800); }
-.seo-content table {
+/* Paragraphes, listes, intertitres et tableaux s'alignent sur une seule largeur. */
+.seo-content > * { max-width: 42rem; }
+.seo-content p { max-width: none; }
+.seo-content > p { max-width: 42rem; }
+.seo-table {
   /* Un tableau large défile dans son propre cadre sur mobile, jamais la page. */
-  display: block;
   overflow-x: auto;
+  margin: 0.75rem 0 1.5rem;
+  border: 1px solid var(--color-brand-100);
+  border-radius: 0.75rem;
+  background: #fff;
+}
+.seo-table table {
   width: 100%;
-  max-width: 40rem;
   border-collapse: collapse;
-  margin: 0.5rem 0 1.25rem;
   font-size: 0.9375rem;
+  line-height: 1.5;
 }
-.seo-content th,
-.seo-content td {
+.seo-table th,
+.seo-table td {
   text-align: left;
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid var(--color-gray-200);
+  vertical-align: top;
+  padding: 0.625rem 0.875rem;
 }
-.seo-content th { color: var(--color-gray-900); font-weight: 600; background: var(--color-gray-50); }
+.seo-table th {
+  background: var(--color-brand-600);
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.seo-table td {
+  color: var(--color-gray-700);
+  border-top: 1px solid var(--color-brand-100);
+}
+.seo-table tbody tr:nth-child(even) td { background: var(--color-brand-50); }
+.seo-table td:first-child { color: var(--color-gray-900); font-weight: 600; }
 @media (max-width: 640px) {
-  .seo-content table { font-size: 0.875rem; }
-  .seo-content th, .seo-content td { padding: 0.4rem 0.5rem; }
+  .seo-table table { font-size: 0.875rem; }
+  .seo-table th, .seo-table td { padding: 0.5rem 0.625rem; min-width: 7.5rem; }
+  .seo-table td:first-child { min-width: 6rem; }
 }
-.seo-content td { color: var(--color-gray-600); }

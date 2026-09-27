@@ -198,6 +198,12 @@ function slugify(text: string): string {
    MAIN COMPONENT
    ═══════════════════════════════════════════════════════════════════ */
 
+// Chaque tableau des textes SEO passe dans un cadre qui porte l'arrondi et le
+// défilement horizontal sur mobile, sans casser la largeur des colonnes.
+function wrapSeoTables(html: string): string {
+  return html.replace(/<table>/g, '<div class="seo-table"><table>').replace(/<\/table>/g, "</table></div>");
+}
+
 export default function CategoryPage({
   category,
   quizzes,
@@ -626,7 +632,7 @@ export default function CategoryPage({
       {category.seoHtml ? (
         <section
           className="seo-content mt-14 mb-6 border-t border-gray-100 pt-10"
-          dangerouslySetInnerHTML={{ __html: category.seoHtml }}
+          dangerouslySetInnerHTML={{ __html: wrapSeoTables(category.seoHtml) }}
         />
       ) : (
       <section className="mt-14 mb-6 space-y-10 border-t border-gray-100 pt-10">
