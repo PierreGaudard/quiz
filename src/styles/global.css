@@ -332,10 +332,9 @@
   text-underline-offset: 2px;
 }
 .seo-content a:hover { color: var(--color-brand-800); }
-/* Paragraphes, listes, intertitres et tableaux s'alignent sur une seule largeur. */
-.seo-content > * { max-width: 42rem; }
+/* Paragraphes, listes, intertitres et tableaux prennent toute la largeur du bloc de quiz. */
+.seo-content > *,
 .seo-content p { max-width: none; }
-.seo-content > p { max-width: 42rem; }
 .seo-table {
   /* Un tableau large défile dans son propre cadre sur mobile, jamais la page. */
   overflow-x: auto;
