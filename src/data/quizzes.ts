@@ -1,6 +1,7 @@
 import type { QuizData, TranslatedQuiz, Difficulty } from "./types";
 import type { Locale } from "../i18n/config";
 import { categoryDefs, getCategoryName, difficultyLabels } from "./categories";
+import { ANSWER_IMAGES } from "./answer-images";
 
 // Auto-discover all quiz-*.ts files
 const quizModules = import.meta.glob<{ default: TranslatedQuiz[] }>("./quiz-*.ts", { eager: true });
@@ -29,6 +30,26 @@ function resolveCategorySlug(baseCatSlug: string, locale: Locale): string {
   return catDef?.slugs?.[locale] || baseCatSlug;
 }
 
+/** Pose les images de ANSWER_IMAGES sur les réponses, dans toutes les langues. */
+function withAnswerImages(quiz: TranslatedQuiz, questions: QuizData["questions"]): QuizData["questions"] {
+  const map = ANSWER_IMAGES[quiz.slug];
+  const fr = quiz.translations.fr?.questions;
+  if (!map || !fr) return questions;
+  return questions.map((q) => {
+    const frQ = fr.find((x) => x.id === q.id);
+    if (!frQ) return q;
+    return {
+      ...q,
+      answers: q.answers.map((a) => {
+        if (a.image) return a;
+        const frText = frQ.answers.find((x) => x.id === a.id)?.text;
+        const image = frText ? map[frText] : undefined;
+        return image ? { ...a, image } : a;
+      }),
+    };
+  });
+}
+
 /** Resolve a TranslatedQuiz into a QuizData for a given locale. */
 export function resolveQuiz(quiz: TranslatedQuiz, locale: Locale): QuizData {
   const content = quiz.translations[locale] || quiz.translations.en || Object.values(quiz.translations)[0]!;
@@ -49,7 +70,7 @@ export function resolveQuiz(quiz: TranslatedQuiz, locale: Locale): QuizData {
     difficulty: diffLabel,
     coverImage: quiz.coverImage,
     timePerQuestion: quiz.timePerQuestion,
-    questions: content.questions,
+    questions: withAnswerImages(quiz, content.questions),
     gameType: quiz.gameType,
     featured: quiz.featured,
     playCount: quiz.playCount,

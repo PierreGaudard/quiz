@@ -34,7 +34,7 @@ const orT: Record<string, Record<string, string>> = {
   questionWord: { en: "Question", fr: "Question", es: "Pregunta" },
   introBefore: {
     en: "Put the items in the right order! For each question, click on the items in the order you think is correct. You earn",
-    fr: "Remets les éléments dans le bon ordre ! Pour chaque question, clique sur les éléments dans l'ordre qui te paraît juste. Tu gagnés",
+    fr: "Remets les éléments dans le bon ordre ! Pour chaque question, clique sur les éléments dans l'ordre qui te paraît juste. Tu gagnes",
     es: "¡Pon los elementos en el orden correcto! En cada pregunta, haz clic en los elementos en el orden que te parezca bueno. Ganas",
   },
   pointsWord: { en: "points", fr: "points", es: "puntos" },
@@ -577,6 +577,9 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                   </span>
                   {answer ? (
                     <>
+                      {answer.image && (
+                        <img src={withBase(answer.image)} srcSet={imageSrcset(answer.image)} sizes="160px" alt="" width={160} height={96} loading="lazy" className="w-full h-16 md:h-20 rounded-lg object-cover mb-1.5" />
+                      )}
                       <span className="text-[11px] md:text-xs font-semibold text-gray-800 text-center leading-tight line-clamp-2">
                         {answer.text}
                       </span>
@@ -639,6 +642,9 @@ export default function OrdrePlayer({ quiz, locale = "en" }: Props) {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                         </svg>
                       </span>
+                    )}
+                    {answer.image && (
+                      <img src={withBase(answer.image)} srcSet={imageSrcset(answer.image)} sizes="112px" alt="" width={112} height={72} loading="lazy" className="w-16 h-12 md:w-20 md:h-14 rounded-lg object-cover shrink-0" />
                     )}
                     <span
                       className={`font-medium text-sm flex-1 ${
